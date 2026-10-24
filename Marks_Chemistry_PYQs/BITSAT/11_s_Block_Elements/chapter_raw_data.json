@@ -1,0 +1,1833 @@
+{
+  "index": 11,
+  "chapterId": "61e7bd7aab48fb79284bc3e3",
+  "chapter": "s Block Elements",
+  "exam": "BITSAT",
+  "totalTopics": 5,
+  "totalQuestions": 27,
+  "downloadTime": "2026-10-08 20:02:50",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e85d6f5bfc7ab78aed59",
+      "title": "General Characteristics of Alkali Metals",
+      "totalQuestions": 8,
+      "questions": [
+        {
+          "_id": "67726d07c49e8ef28ee2b3b0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "The correct order of melting points of the following salts is\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/VjsWsP5Dro-Rd0Dy6T8mgq1mZsPQQ61axmIwru6fQwc.original.fullsize.png\"/><br/>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "4xFnK",
+              "text": "$\\mathrm{I}\\gt\\mathrm{II}\\gt\\mathrm{III}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "AKh4D",
+              "text": "II $\\gt$ I $\\gt$ III",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "pF6c9",
+              "text": "III $\\gt$ II $\\gt$ I",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ugs36",
+              "text": "II $\\gt$ III $\\gt$ I",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Smaller the size of anion, smaller is the covalent character and higher will be its melting point. Hence, the order of melting point of lithium salts is $\\mathrm{LiF}\\gt\\mathrm{LiCl}\\gt\\mathrm{LiBr}$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726cfbc49e8ef28ee2b351",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Thermal decomposition of lithium nitrate gives",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "DL1Yi",
+              "text": "$\\mathrm{LiO}_2, \\mathrm{O}_2, \\mathrm{NO}_2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "esnVm",
+              "text": "$\\mathrm{Li}_2 \\mathrm{O}, \\mathrm{O}_2, \\mathrm{~N}_2 \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "T8Ye8",
+              "text": "$\\mathrm{Li}_2 \\mathrm{O}, \\mathrm{O}_2, \\mathrm{~N}_2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FWMdJ",
+              "text": "$\\mathrm{Li}_2 \\mathrm{O}, \\mathrm{O}_2, \\mathrm{NO}_2$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{LiNO}_3 \\xrightarrow{\\Delta} 2 \\mathrm{Li}_2 \\mathrm{O}+4 \\mathrm{NO}_2+\\mathrm{O}_2$\nlithium nitrate",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8266f5bfc7ab78aeb06",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Two elements $A$ and $B$ have similar chemical properties. They don't form solid hydrogencarbonates, but react with nitrogen to form nitrides. A and B, respectively, are :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "k5wOf",
+              "text": "$Na$ and $Rb$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "NzPRn",
+              "text": "$Na$ and $Ca$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ujBn3",
+              "text": "$Cs$ and $Ba$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "PLsfE",
+              "text": "$Li$ and $Mg$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Li and $\\mathrm{Mg}$ do not form solid bicarbonate, but react with $\\mathrm{N}_{2}$ to give nitrides.\r\n\r\n$\\begin{array}{l}\r\n\r\n6 \\mathrm{Li}+\\mathrm{N}_{2} \\stackrel{\\Delta}{\\rightarrow} 2 \\mathrm{Li}_{3} \\mathrm{~N} \\\\\r\n\r\n3 \\mathrm{Mg}+\\mathrm{N}_{2} \\stackrel{\\Delta}{\\rightarrow} \\mathrm{Mg}_{3} \\mathrm{~N}_{2}\r\n\r\n\\end{array}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8256f5bfc7ab78aeb01",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which of the following has minimum melting point?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "DmoDG",
+              "text": "$\\mathrm{CsF}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "yG3Uc",
+              "text": "$\\mathrm{HCl}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "x4ziV",
+              "text": "$\\mathrm{HF}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "XZKaG",
+              "text": "$\\mathrm{LiF}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Ionic compounds have high melting point. Greater the ionic character, more is melting point. $\\mathrm{HCl}$ has least ionic character because of maximum electronegativity difference between the two constituent elements, ( $\\mathrm{H}$ and $\\mathrm{Cl}$ ) among $\\mathrm{CsF}, \\mathrm{HCl}, \\mathrm{HF}$ and $\\mathrm{LiF}$\r\n\r\n$\\therefore \\mathrm{HCl}$ has minimum melting point.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8076f5bfc7ab78ae9f5",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The correct order of mobility of alkali metal ions in aqueous solution is-",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "lCFKb",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Li</mi><mo>+</mo></msup><mo>&#62;</mo><msup><mi>Na</mi><mo>+</mo></msup><mo>&#62;</mo><msup><mi mathvariant=\"normal\">K</mi><mo>+</mo></msup><mo>&#62;</mo><msup><mi>Rb</mi><mo>+</mo></msup></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "5wsIz",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Na</mi><mo>+</mo></msup><mo>&#62;</mo><msup><mi mathvariant=\"normal\">K</mi><mo>+</mo></msup><mo>&#62;</mo><msup><mi>Rb</mi><mo>+</mo></msup><mo>&#62;</mo><msup><mi>Li</mi><mo>+</mo></msup></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "iFZZK",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">K</mi><mo>+</mo></msup><mo>&#62;</mo><msup><mi>Rb</mi><mo>+</mo></msup><mo>&#62;</mo><msup><mi>Na</mi><mo>+</mo></msup><mo>&#62;</mo><msup><mi>Li</mi><mo>+</mo></msup></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "SDiqT",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Rb</mi><mo>+</mo></msup><mo>&#62;</mo><msup><mi mathvariant=\"normal\">K</mi><mo>+</mo></msup><mo>&#62;</mo><msup><mi>Na</mi><mo>+</mo></msup><mo>&#62;</mo><msup><mi>Li</mi><mo>+</mo></msup></math>",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Mobility of alkali ions in aqueous solution&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8733;</mo><mfrac><mn>1</mn><mtext>&#160;size of hydrated ion&#160;</mtext></mfrac></math></p><p>The mobility of alkali ions is inversely proportional to the size of ion in hydrated state, because bigger ion can&#39;t move faster. Also, small ion get hydrolysed to large exent due to which its size get increased. In other words, smaller ion will form hydrated ion of larger size.</p><p>Hence, correct order of mobility is</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Rb</mi><mo>+</mo></msup><mo>&#62;</mo><msup><mi mathvariant=\"normal\">K</mi><mo>+</mo></msup><mo>&#62;</mo><msup><mi>Na</mi><mo>+</mo></msup><mo>&#62;</mo><msup><mi>Li</mi><mo>+</mo></msup></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ea6f5bfc7ab78ae8f9",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Sodium sulphate is soluble in water but barium sulphate is insoluble because",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "DdrHa",
+              "text": "hydration energy of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Na</mi><mn>2</mn></msub><msub><mi>SO</mi><mn>4</mn></msub></math>&nbsp;is more than of its lattice energy",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "WDPSu",
+              "text": "lattice energy of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>BaSO</mi><mn>4</mn></msub></math> is more than its hydration energy",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "gDfQs",
+              "text": "Both&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">a</mi><mo>)</mo></math> and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">b</mi><mo>)</mo></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Nmp8F",
+              "text": "None of the above",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>For any solution to become soluble in water hydration energy of the solution should me more than its lattice energy. Here&nbsp;the hydration energy of sodium sulphate is more than lattice energy but&nbsp;in case of barium sulphate lattice energy of barium sulphate is more than its hydration energy. &nbsp;</p><p>For dissolution hydration energy must be more higher <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mo>-</mo><mi>ve</mi><mo>)</mo></math> value than of lattice energy. Thus, (c) is the correct answer.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7be6f5bfc7ab78ae780",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which of the following among alkalimetal is most reactive?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Iz3rK",
+              "text": "$\\mathrm{Na}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ZWa5y",
+              "text": "$\\mathrm{K}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "kFuDZ",
+              "text": "$\\mathrm{Rb}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "3Pfsd",
+              "text": "$\\mathrm{Cs}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Amongst alkali metals, Cs is most reactive because of its lowest IE.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b16f5bfc7ab78ae706",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The alkali metals form salt-like hydrides by the direct synthesis at elevated temperature. The thermal stability of these hydrides decreases in which of the following orders?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "v3Fzl",
+              "text": "$\\mathrm{CsH}>\\mathrm{RbH}>\\mathrm{KH}>\\mathrm{NaH}>\\mathrm{LiH}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "avabx",
+              "text": "$\\mathrm{KH}>\\mathrm{NaH}>\\mathrm{LiH}>\\mathrm{CsH}>\\mathrm{RbH}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ZLeDv",
+              "text": "$\\mathrm{NaH}>\\mathrm{LiH}>\\mathrm{KH}>\\mathrm{RbH}>\\mathrm{CsH}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "b3PV5",
+              "text": "$\\mathrm{LiH}>\\mathrm{NaH}>\\mathrm{KH}>\\mathrm{RbH}>\\mathrm{CsH}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The stability of alkali metal hydrides decreases from Li to Cs. It is due to the fact that $\\mathrm{M}-\\mathrm{H}$ bonds becomes weaker with increase in size of alkali metals as we move down the group from $\\mathrm{Li}$ to $\\mathrm{Cs}$. Thus the order of stability of hydrides is $\\mathrm{LiH}>\\mathrm{NaH}>\\mathrm{KH}>\\mathrm{RbH}>\\mathrm{CsH}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e85d6f5bfc7ab78aed58",
+      "title": "Compounds of Alkali Metals",
+      "totalQuestions": 7,
+      "questions": [
+        {
+          "_id": "67726d09c49e8ef28ee2b3bd",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Which among the following is used in detergent",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "YYind",
+              "text": "Sodium acetate",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3nGXO",
+              "text": "Sodium stearate",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "t8mTb",
+              "text": "Calcium stearate",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nFhH2",
+              "text": "Sodium lauryl sulphate",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Sodium stearate is used in soap and sodium lauryl sulphate\n$\\mathrm{CH}_3\\left(\\mathrm{CH}_2\\right)_{10} \\mathrm{CH}_2-\\mathrm{OSO}_3^{\\ominus} \\mathrm{Na}^{\\oplus}$ is an anionic detergent",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8086f5bfc7ab78ae9fa",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Which of the following salt would give <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>SO</mi><mn>2</mn></msub></math> with hot and dil <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><msub><mi>SO</mi><mn>4</mn></msub></math> and also decolourises <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Br</mi><mn>2</mn></msub></math> water?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "11toB",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Na</mi><mn>2</mn></msub><msub><mi>SO</mi><mn>3</mn></msub></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "0kU3Y",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>NaHSO</mi><mn>4</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "NriZj",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Na</mi><mn>2</mn></msub><msub><mi>SO</mi><mn>4</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "EZ62O",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Na</mi><mn>2</mn></msub><mo>&#160;</mo><mi mathvariant=\"normal\">S</mi></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>When <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Na</mi><mn>2</mn></msub><msub><mi>SO</mi><mn>3</mn></msub></math> reacts with hot and dil <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><msub><mi>SO</mi><mn>4</mn></msub><mo>,</mo></math>&nbsp;it gives <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>SO</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></math> which decolourises bromine-water.</p><p>The reaction proceed as follows:</p><p>(i) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Na</mi><mn>2</mn></msub><msub><mi>SO</mi><mn>3</mn></msub><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><msub><mi>SO</mi><mn>4</mn></msub><mo>&#10230;</mo><msub><mi>Na</mi><mn>2</mn></msub><msub><mi>SO</mi><mn>4</mn></msub><mo>+</mo><msub><mi>SO</mi><mn>2</mn></msub><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></math></p><p>(ii) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Br</mi><mn>2</mn></msub><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mo>&#10230;</mo><mn>2</mn><mi>HBr</mi><mo>+</mo><mfenced open=\"[\" close=\"]\"><mi mathvariant=\"normal\">O</mi></mfenced></math></p><p>(iii) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>SO</mi><mn>2</mn></msub><mo>+</mo><mfenced open=\"[\" close=\"]\"><mi mathvariant=\"normal\">O</mi></mfenced><mo>&#10230;</mo><msub><mi>SO</mi><mn>3</mn></msub></math>&nbsp;(decolourisation of bromine-water)</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7fb6f5bfc7ab78ae98f",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "Which of the following property of alkaline earth metal increases with their atomic number?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "MjspE",
+              "text": "electronegativity",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "FAGrx",
+              "text": "solubility of their hydroxides in water",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Hc6zm",
+              "text": "solubility of their sulphate in water",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "JlUFO",
+              "text": "ionisation energy",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The lattice energy of the hydroxides of alkaline earth metal decreases more rapidly than their hydration energy leading to more negative value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#916;H</mi><mtext>sol</mtext></msub></math> down the group. More negative is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#916;H</mi><mtext>sol</mtext></msub></math>, more is the solubility of compounds. Hence the solubility of hydroxides of alkaline earth metal increases with their atomic number.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ec6f5bfc7ab78ae90b",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Which of the following elements mostly form covalent compounds?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "myHTf",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Cs</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Kl0MO",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Rb</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "eow0k",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">K</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "zVwKT",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Li</mi></math>",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>First member of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mi>st</mi></math> group i.e. lithium, mostly form covalent compounds due to its small size and comparatively high <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">I</mi><mo>.</mo><mi mathvariant=\"normal\">E</mi><mo>.</mo></math> (with respect to other members of its group).&nbsp;</p><p>Covalent character depends upon the atomic radii. Smaller the atomic radii, more the covalent character i.e. the covalent character is inversely proportional to atomic radii.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7cd6f5bfc7ab78ae802",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The by product of Solvay-ammonia process is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "a41fp",
+              "text": "$\\mathrm{CO}_{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "7kgTS",
+              "text": "$\\mathrm{NH}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "nh9yP",
+              "text": "$\\mathrm{CaCl}_{2}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "W0ID5",
+              "text": "$\\mathrm{CaCO}_{3}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{CaCl}_{2}$ is produced as a byproduct in solvay ammonia process.\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\text { (i) } \\mathrm{NaCl}+\\mathrm{CO}_{2}+\\mathrm{NH}_{3}+\\mathrm{H}_{2} \\mathrm{O} \\\\\r\n\r\n\\longrightarrow \\mathrm{NaHCO}_{3}+\\mathrm{NH}_{4} \\mathrm{Cl}\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\n(I) $\\mathrm{CaCO}_{3} \\longrightarrow \\mathrm{CO}_{2}+\\mathrm{CaO}$\r\n\r\n $2 \\mathrm{NH}_{2} \\mathrm{Cl}+\\mathrm{CaO} \\longrightarrow 2 \\mathrm{NH}_{3}+$\r\n\r\n$$\r\n\r\n\\mathrm{CaCl}_{2}+\\mathrm{H}_{2} \\mathrm{C}\r\n\r\n$$\r\n\r\nBy podust",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7936f5bfc7ab78ae60a",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "When a crystal of caustic soda is exposed to air, a liquid layer is deposited because :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "PIM0w",
+              "text": "Crystal loses water",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "gQfmr",
+              "text": "Crystal absorbs moisture and $\\mathrm{CO}_{2}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "nzHY6",
+              "text": "Crystal melts",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "zKZql",
+              "text": "Crystal sublimes",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "It is hygroscopic and deliquescent and hence absorbs moisture and $\\mathrm{CO}_{2}$ to form $\\mathrm{Na}_{2} \\mathrm{CO}_{3}$\n$$\n2 \\mathrm{NaOH}+\\mathrm{CO}_{2} \\longrightarrow \\mathrm{Na}_{2} \\mathrm{CO}_{3}+\\mathrm{H}_{2} \\mathrm{O}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7856f5bfc7ab78ae58d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "Sodium peroxide in contact with moist air turns white due to formation of:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Elxft",
+              "text": "$\\mathrm{Na}_{2} \\mathrm{CO}_{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "JWm9F",
+              "text": "$\\mathrm{Na}_{2} \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "eauFn",
+              "text": "$\\mathrm{NaOH}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "0l6oh",
+              "text": "$\\mathrm{NaHCO}_{3}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{Na}_{2} \\mathrm{O}_{2}+\\mathrm{H}_{2} \\mathrm{O} \\longrightarrow 2 \\mathrm{NaOH}+\\frac{1}{2} \\mathrm{O}_{2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e85d6f5bfc7ab78aed57",
+      "title": "Alkaline Earth Metals",
+      "totalQuestions": 4,
+      "questions": [
+        {
+          "_id": "65b7b87497ae24e9e2db8c7f",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following will precipitate first when aqueous solution containing sulphate ions are added?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "CkLyx",
+              "text": "$\\mathrm{Mg}^{2+}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "HZFuX",
+              "text": "$\\mathrm{Ca}^{2+}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Bgx2a",
+              "text": "$\\mathrm{Sr}^{2+}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Wy5Cg",
+              "text": "$\\mathrm{Ba}^{2+}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Down the group solubility of sulphate decreases. Thus, $\\mathrm{Ba}^{2+}$ ions will precipitate out most easily.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8166f5bfc7ab78aea77",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "$\\mathrm{BeF}_2,$ is soluble in water whereas fluorides of other alkaline earth metals are insoluble because of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "bl3oF",
+              "text": "ionic nature of $\\mathrm{BeF}_{2}$.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "vdMB0",
+              "text": "covalent nature of $\\mathrm{BeF}_{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "A19vz",
+              "text": "greater hydration energy of $\\mathrm{Be}^{2+}$ ion as compared to its lattice energy.",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Rzat0",
+              "text": "none of these.",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{Be}^{2+}$ being small in size is heavily hydrated and heat of hydration exceeds the lattice energy. Hence $\\mathrm{BeF}_{2}$ is soluble in water.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a16f5bfc7ab78ae688",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Which of the following has correct increasing basic strength?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "mmSQL",
+              "text": "$\\mathrm{MgO}<\\mathrm{BeO}<\\mathrm{CaO}<\\mathrm{BaO}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "g3gmV",
+              "text": "$\\mathrm{BeO}<\\mathrm{MgO}<\\mathrm{CaO}<\\mathrm{BaO}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "aEmq0",
+              "text": "$\\mathrm{BaO}<\\mathrm{CaO}<\\mathrm{MgO}<\\mathrm{BeO}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "B0wMd",
+              "text": "$\\mathrm{CaO}<\\mathrm{BaO}<\\mathrm{BeO}<\\mathrm{MgO}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The basic character of oxides increases down the group.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7766f5bfc7ab78ae50e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "For making good quality mirrors, plates of float glass are used. These are obtained by floating molten glass over a liquid metal which does not solidify before glass. The metal used can be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "1vxTf",
+              "text": "tin",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "G50r6",
+              "text": "sodium",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qLGj5",
+              "text": "magnesium",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "YOhap",
+              "text": "mercury",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "It is mercury, because mercury exists as liquid at room temperature.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "64c0e85d6f5bfc7ab78aed56",
+      "title": "Compounds of Alkaline Earth Metals",
+      "totalQuestions": 4,
+      "questions": [
+        {
+          "_id": "65b7b87d97ae24e9e2db8ce1",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Magnesium burns in $\\mathrm{CO}_2$ to form",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "VWbSX",
+              "text": "$\\mathrm{MgO}+\\mathrm{C}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "bVs2W",
+              "text": "$\\mathrm{MgO}+\\mathrm{CO}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "AQaep",
+              "text": "$\\mathrm{MgCO}_3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "RXzNy",
+              "text": "<br />MgO",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{Mg}$ burns in $\\mathrm{CO}_2$ to give $\\mathrm{MgO}$ and $\\mathrm{C}$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7dd6f5bfc7ab78ae884",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which of the followings forms the base of talcum powder?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "tz7gs",
+              "text": "Zine stearate",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "1f5zo",
+              "text": "Sodium aluminium silicate",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "9S6mM",
+              "text": "Magnesium hydrosilicate",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "d89Dz",
+              "text": "Chalk",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Magnesium hydrosilicate forms base of Talcum powder.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7d06f5bfc7ab78ae818",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Thomas slag is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "LufHp",
+              "text": "$\\mathrm{Ca}_{3}\\left(\\mathrm{PO}_{4}\\right)_{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "KEQE5",
+              "text": "$\\mathrm{CaSiO}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "E4qge",
+              "text": "Mixture of (a) and (b)",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "QF1PP",
+              "text": "$\\mathrm{FeSiO}_{3}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Calcium silicophosphate (a mixture of $\\left.\\mathrm{Ca}_{3}\\left(\\mathrm{PO}_{4}\\right)_{2} \\& \\mathrm{Ca}_{2} \\mathrm{SiO}_{4}\\right)$ is called Thomas slag.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7766f5bfc7ab78ae50d",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "The value of $\\mathrm{x}$ is maximum for",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "MQppl",
+              "text": "$\\mathrm{MgSO}_{4} \\cdot \\mathrm{x} \\mathrm{H}_{2} \\mathrm{O}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "u1dbB",
+              "text": "$\\mathrm{CaSO}_{4} \\cdot \\mathrm{x} \\mathrm{H}_{2} \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "NzcHZ",
+              "text": "$\\mathrm{BaSO}_{4} \\cdot \\mathrm{x} \\mathrm{H}_{2} \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nT9GK",
+              "text": "All have the same",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Because of smaller size, $\\mathrm{Mg}^{2+}$ ions are extensively hydrated.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "64c0e85d6f5bfc7ab78aed55",
+      "title": "Properties of S-block elements",
+      "totalQuestions": 4,
+      "questions": [
+        {
+          "_id": "64c0e82f6f5bfc7ab78aeb57",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which of the following compounds is thermodynamically is the most stable?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "rnXA6",
+              "text": "\r\n$\\mathrm{BaCO}_3$\r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Zj6UF",
+              "text": "\r\n$\\mathrm{MgCO}_3$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "4WaWp",
+              "text": "\r\n$\\mathrm{SrCO}_3$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "cYSHW",
+              "text": "\r\n$\\mathrm{CaCO}_3$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The thermal stability of carbonates increases down the group. So, the order of thermal stability of carbonates of alkaline earth metals is\r\n$$\r\n\\mathrm{BaCO}_3>\\mathrm{CaCO}_3>\\mathrm{MgCO}_3>\\mathrm{BeCO}_3 .\r\n$$\r\nTherefore, $\\mathrm{BaCO}_3$ is thermodynamically most stable and $\\mathrm{BeCO}_3$ is least stable.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7e96f5bfc7ab78ae8ee",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Choose the incorrect statement.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "0fiB4",
+              "text": "Sodium borohydride reacts very slowly with cold water",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "lPGgh",
+              "text": "Sodium borohydride reacts violently with cold water to give <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mo>(</mo><mi mathvariant=\"normal\">g</mi><mo>)</mo></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "8rDeh",
+              "text": "Solubility of sodium borohydride in water at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>25</mn><mn>0</mn></msup><mi mathvariant=\"normal\">C</mi></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>10</mn><mo>.</mo><mn>05</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi><mo>/</mo><mi>ml</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "vHYtJ",
+              "text": "Melting point of sodium borohydride is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>500</mn><mn>0</mn></msup><mi mathvariant=\"normal\">C</mi></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Option (b) is the incorrect statement as reaction of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>NaBH</mi><mn>4</mn></msub></math> with cold water is very slow. It is not violent. All other are correct statements.</p><p>The reaction of sodium borohydride&nbsp;(NaBH<sub>4​</sub>)&nbsp;with cold water is very slow.&nbsp;</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7926f5bfc7ab78ae602",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "Beryllium and aluminium exhibit many properties which are similar. But, the two elements differ in",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "pqDSr",
+              "text": "forming covalent halides",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "QCPP9",
+              "text": "forming polymeric hydrides",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pn1GU",
+              "text": "exhibiting maximum covalency in compounds",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "rWtRh",
+              "text": "exhibiting amphoteric nature in their oxides",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The valency of beryllium is +2 while that of aluminium is +3",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7756f5bfc7ab78ae504",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "Beryllium resembles much with :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "AJKB5",
+              "text": "$\\mathrm{Zn}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "WTP9r",
+              "text": "$\\mathrm{Al}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "C6b9A",
+              "text": "$\\mathrm{Li}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "7SblV",
+              "text": "$\\mathrm{Ra}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Beryllium resembles with aluminium due to similarity in the size of ions and similarity in electropositive character. This type of resemblance between first element of a group in second period with second element of the next group is termed as diagonal relationship.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

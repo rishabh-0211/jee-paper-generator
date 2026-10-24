@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JEE Advanced - p Block Elements (Group 13 & 14) PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚗️ JEE Advanced &bull; p Block Elements (Group 13 & 14)</h1>
+        <div class="sub">Chemistry PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 12, "chapterId": "616024affadca282982fd635", "chapter": "p Block Elements (Group 13 & 14)", "exam": "JEE Advanced", "totalTopics": 4, "totalQuestions": 16, "downloadTime": "2026-10-08 20:02:28", "topics": [{"index": 1, "topicId": "64b16ad3f23ac7d519f9b874", "title": "Boron and Its Compounds", "totalQuestions": 7, "questions": [{"_id": "64b16a4ff23ac7d519f9b342", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf828", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016 (Paper 1)", "title": "JEE Advanced 2016 (Paper 1)"}], "type": "multipleCorrect", "level": 1, "question": {"text": "The crystalline form of borax has", "image": null}, "options": [{"id": "A3jAR", "text": "Tetra nuclear <math><msup><mrow><mfenced close=\"]\" open=\"[\" separators=\"|\"><mrow><msub><mrow><mi mathvariant=\"normal\">B</mi></mrow><mrow><mn>4</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>5</mn></mrow></msub><msub><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></mrow></mfenced></mrow><mrow><mn>4</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>2</mn><mo>-</mo></mrow></msup></math> unit", "isCorrect": true, "image": null}, {"id": "j4oau", "text": "All boron atoms in the same plane", "isCorrect": false, "image": null}, {"id": "5EGfU", "text": "Equal number of <math><mi mathvariant=\"normal\">s</mi><msup><mrow><mi mathvariant=\"normal\">p</mi></mrow><mrow><mn>2</mn></mrow></msup></math> and <math><mi mathvariant=\"normal\">s</mi><msup><mrow><mi mathvariant=\"normal\">p</mi></mrow><mrow><mn>3</mn></mrow></msup></math> hybridized boron atoms", "isCorrect": true, "image": null}, {"id": "FYg00", "text": "One terminal hydroxide per boron atom", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/Jee_advance_Paper_1_Chem_Q._29_Ans_1.jpg\"/><br >(A) Having <math><msup><mrow><mfenced close=\"]\" open=\"[\" separators=\"|\"><mrow><msub><mrow><mi mathvariant=\"normal\">B</mi></mrow><mrow><mn>4</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>5</mn></mrow></msub><msub><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></mrow></mfenced></mrow><mrow><mn>4</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>2</mn><mo>-</mo></mrow></msup></math> tetra nuclear (boron) unit.<br >(B) All boron atoms not in same plane.<br >(C) Two boron are <math><mi mathvariant=\"normal\">s</mi><msup><mrow><mi mathvariant=\"normal\">p</mi></mrow><mrow><mn>2</mn></mrow></msup></math> hybridised and two boron are <math><mi mathvariant=\"normal\">s</mi><msup><mrow><mi mathvariant=\"normal\">p</mi></mrow><mrow><mn>3</mn></mrow></msup></math> hybridised.<br >(D) One terminal hydroxide per boron atom is present.", "image": null}, "videoSolution": {"videoId": "72b397f0a5aa497d9d806da9bca638ce", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/ldIAkrNVVEOCn.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/ldIAkrNVVEOCn.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf828", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016 (Paper 1)", "title": "JEE Advanced 2016 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a49f23ac7d519f9b305", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf827", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2015-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2015 (Paper 2)", "title": "JEE Advanced 2015 (Paper 2)"}], "type": "numerical", "level": 2, "question": {"text": "Three moles of <math><msub><mrow><mi mathvariant=\"normal\">B</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>6</mn></mrow></msub></math> are completely reacted with methanol. The number of moles of boron containing product formed is", "image": null}, "options": [], "correctValue": "6", "solution": {"text": "<math><msub><mrow><mi mathvariant=\"normal\">B</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>6</mn></mrow></msub><mo>+</mo><mn>6</mn><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi><mo>⟶</mo><mn>2</mn><mi mathvariant=\"normal\">B</mi><msub><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>3</mn></mrow></msub><mo>+</mo><mn>6</mn><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub></math> <br >For 3 moles of <math><msub><mrow><mi mathvariant=\"normal\">B</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>6</mn></mrow></msub></math>  mole of B containing product formed = 6", "image": null}, "videoSolution": {"videoId": "b1a80006c24a4f13991321b4b333b432", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/J9AMwqUHHhn6z.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/J9AMwqUHHhn6z.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf827", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2015-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2015 (Paper 2)", "title": "JEE Advanced 2015 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a35f23ac7d519f9b250", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf824", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014 (Paper 1)", "title": "JEE Advanced 2014 (Paper 1)"}], "type": "multipleCorrect", "level": 1, "question": {"text": "The correct statement(s) for orthoboric acid is/are", "image": null}, "options": [{"id": "HoEdH", "text": "It behaves as a weak acid in water due to self ionization.", "isCorrect": false, "image": null}, {"id": "Dw8ty", "text": "Acidity of its aqueous solution increases upon addition of ethylene glycol.", "isCorrect": true, "image": null}, {"id": "zWnRQ", "text": "It has a three dimensional structure due to hydrogen bonding.", "isCorrect": false, "image": null}, {"id": "OqQ0J", "text": "It is a weak electrolyte in water.", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>A]  <math><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub><mi mathvariant=\"normal\">B</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub></math>  is a weak monobasic Lewis acid.<br > <math><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub><mi mathvariant=\"normal\">B</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>+</mo><mi mathvariant=\"normal\">H</mi><mo>-</mo><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi><mo>⇌</mo><mi mathvariant=\"normal\">B</mi><msubsup><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></mrow></mfenced></mrow><mrow><mn>4</mn></mrow><mrow><mo>-</mo></mrow></msubsup><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mo>+</mo></mrow></msup><mo>…</mo><mo>.</mo><mo>.</mo><mo>(</mo><mi mathvariant=\"normal\">i</mi><mo>)</mo></math> <br >B] Equilibrium (i) is shifted in forward direction by the addition of syn-diols like ethylene glycol which forms a stable complex with  <math><mi mathvariant=\"normal\">B</mi><msubsup><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></mrow></mfenced></mrow><mrow><mn>4</mn></mrow><mrow><mo>-</mo></mrow></msubsup></math> .<br > <br/><img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/image7-ca6686b1-cc81-4cbf-8a9c-8caeb7858619.jpg\"/> <br >C] It has a planar sheet like structure due to hydrogen bonding.<br >D]  <math><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub><mi mathvariant=\"normal\">B</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub></math>  is a weak electrolyte in water.</p>", "image": null}, "videoSolution": {"videoId": "fe46c9e6f5b14911a2074ebc9c5e01e7", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/p9rrliUSovMj5.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/p9rrliUSovMj5.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf824", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014 (Paper 1)", "title": "JEE Advanced 2014 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b169f7f23ac7d519f9b016", "type": "multipleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1f77301f65c2f92c45", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2009-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2009 (Paper 2)", "title": "JEE Advanced 2009 (Paper 2)"}], "question": {"text": "In the reaction,\n$$\n2 \\mathrm{X}+\\mathrm{B}_2 \\mathrm{H}_6 \\longrightarrow\\left[\\mathrm{BH}_2(\\mathrm{X})_2\\right]^{+}\\left[\\mathrm{BH}_4\\right]^{-}\n$$\nThe amine (s) $X$, is (are)", "image": null}, "options": [{"id": "O7Mou", "text": "\n$\\mathrm{NH}_3$\n", "image": null, "isCorrect": true}, {"id": "LPRJv", "text": "\n$\\mathrm{CH}_3 \\mathrm{NH}_2$\n", "image": null, "isCorrect": true}, {"id": "hrA5n", "text": "\n$\\left(\\mathrm{CH}_3\\right)_2 \\mathrm{NH}$\n", "image": null, "isCorrect": true}, {"id": "B6PE5", "text": "\n$\\left(\\mathrm{CH}_3\\right)_3 \\mathrm{~N}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Small amines such as $\\mathrm{NH}_3 \\cdot \\mathrm{CH}_3 \\mathrm{NH}_2$ and $\\left(\\mathrm{CH}_3\\right)_2 \\mathrm{NH}$ give unsymmetrical cleavage of diborane according to following reaction,\n$$\n\\begin{aligned}\n&amp; \\mathrm{B}_2 \\mathrm{H}_6+2 \\mathrm{NH}_3 \\longrightarrow \\\\\n&amp; {\\left[\\mathrm{H}_2 \\mathrm{~B}\\left(\\mathrm{NH}_3\\right)_2\\right]^{+}\\left[\\mathrm{BH}_4\\right]^{-}} \\\\\n&amp;\n\\end{aligned}\n$$\nLarge amines, such as $\\left(\\mathrm{CH}_3\\right)_3 \\mathrm{~N}$ give symmetrical cleavage of diborane according to following reaction,\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/YhfSvFekusS1ekfppnWA9ksQ_OT9BCLkCB9xM2Mq8yE.rendered.fullsize.png\"/>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1f77301f65c2f92c45", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2009-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2009 (Paper 2)", "title": "JEE Advanced 2009 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b169d4f23ac7d519f9aed8", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1e77301f65c2f92c40", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2007-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2007 (Paper 1)", "title": "JEE Advanced 2007 (Paper 1)"}], "question": {"text": "Statement I In water, orthoboric acid behaves as a weak monobasic acid.\nStatement II In water, orthoboric acid acts as proton donor.", "image": null}, "options": [{"id": "rtLCm", "text": "\nStatement I is true, Statement II is true, Statement II is a correct explanation for Statement I\n", "image": null, "isCorrect": false}, {"id": "6vuF4", "text": "\nStatement I is true, Statement II is true, Statement II is not a correct explanation for Statement I\n", "image": null, "isCorrect": false}, {"id": "rUiZ3", "text": "\nStatement I is true, Statement II is false\n", "image": null, "isCorrect": true}, {"id": "q1vqo", "text": "\nStatement I is false, Statement II is true", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/OQOeazUA4dd1iVMdu8Earsn8kQ_qy9Kvxjtan4JOfPw.original.fullsize.png\"><br>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1e77301f65c2f92c40", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2007-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2007 (Paper 1)", "title": "JEE Advanced 2007 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b169d4f23ac7d519f9aed7", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1e77301f65c2f92c40", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2007-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2007 (Paper 1)", "title": "JEE Advanced 2007 (Paper 1)"}], "question": {"text": "Statement I Boron always forms covalent bond\nStatement II The small size of $\\mathrm{B}^{3+}$ favours formation of covalent bond.", "image": null}, "options": [{"id": "awafK", "text": "\nStatement I is true, Statement II is true, Statement II is a correct explanation for Statement I\n", "image": null, "isCorrect": true}, {"id": "tqrrz", "text": "\nStatement I is true, Statement II is true, Statement II is not a correct explanation for Statement II\n", "image": null, "isCorrect": false}, {"id": "WGJBM", "text": "\nStatement I is true, Statement II is false\n", "image": null, "isCorrect": false}, {"id": "5qbsI", "text": "\nStatement I is false, Statement II is true", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Boron always form covalent bond because boron requires very high energy to form $\\mathrm{B}^{3+}$ and again $\\mathrm{B}^{3+}$ due to its very small size having high polarising power thus cause greater polarisation and eventually significant covalent characteristics-Fajans rule.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1e77301f65c2f92c40", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2007-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2007 (Paper 1)", "title": "JEE Advanced 2007 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b169c8f23ac7d519f9ae68", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1e77301f65c2f92c3f", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2006-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2006", "title": "JEE Advanced 2006"}], "question": {"text": "$\\mathrm{B}(\\mathrm{OH})_3+\\mathrm{NaOH} \\rightleftharpoons \\mathrm{NaBO}_2+\\mathrm{Na}\\left[\\mathrm{B}(\\mathrm{OH})_4\\right]+\\mathrm{H}_2 \\mathrm{O}$.\nHow can this reaction is made to proceed in forward direction?", "image": null}, "options": [{"id": "i2Ycm", "text": "\nAddition of cis 1, 2 diol\n", "image": null, "isCorrect": true}, {"id": "kfFHf", "text": "\nAddition of borax\n", "image": null, "isCorrect": false}, {"id": "xjKgs", "text": "\nAddition of trans 1, 2 diol\n", "image": null, "isCorrect": false}, {"id": "XVIe6", "text": "\nAddition of $\\mathrm{Na}_2 \\mathrm{HPO}_4$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/2FNAWz1kMoW_1Cxacm9TeBErG-KHS5AEc7xNT453yjg.original.fullsize.png\"><br>\nThis reaction is reversible reaction because sodium metaborate, $\\mathrm{Na}^{+}\\left[\\mathrm{B}(\\mathrm{OH})_4\\right]^{-}$formed by the reaction between $\\mathrm{B}(\\mathrm{OH})_3$ and $\\mathrm{NaOH}$ gets hydrolysed to regenerate $\\mathrm{B}(\\mathrm{OH})_3$ and $\\mathrm{NaOH}$<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/HTQ4_yy4c1xOjkvE_9BMrxfhp7VKkCLr5fdyJ0Wx66E.original.fullsize.png\"><br>\nIf, some quantity of polyhydroxy compound like cis-1, 3-diol, catechol, glycerol etc. is added to the reaction mixture. The $\\mathrm{B}(\\mathrm{OH})_3$ combines with such polyhydroxy compound to give chelated complex compound. Due to complex compound formation, stability increases and due to higher stability of complex, reaction moves in forward direction.<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/AYuEJLlNLCpXuHv4OFV7V-Q0yw9fQtCkDRYG3LI-2Aw.original.fullsize.png\"><br>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1e77301f65c2f92c3f", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2006-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2006", "title": "JEE Advanced 2006"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64b16ad3f23ac7d519f9b877", "title": "Aluminium and Its Compounds", "totalQuestions": 2, "questions": [{"_id": "64b16a61f23ac7d519f9b3e5", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf82b", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2017-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2017 (Paper 2)", "title": "JEE Advanced 2017 (Paper 2)"}], "type": "multipleCorrect", "level": 2, "question": {"text": "Among the following, the correct statement(s) is(are)", "image": null}, "options": [{"id": "Ss3Cr", "text": "<math><mi>A</mi><mi>l</mi><msub><mrow><mfenced separators=\"|\"><mrow><mi>C</mi><msub><mrow><mi>H</mi></mrow><mrow><mn>3</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>3</mn></mrow></msub></math> has the three-centre two-electron bonds in its dimeric structure", "isCorrect": true, "image": null}, {"id": "9TaNA", "text": "<math><mi>A</mi><mi>l</mi><mi>C</mi><msub><mrow><mi>l</mi></mrow><mrow><mn>3</mn></mrow></msub></math>  has the three-centre two-electron bonds in its dimeric structure", "isCorrect": false, "image": null}, {"id": "F4DiV", "text": "<math><mi>B</mi><msub><mrow><mi>H</mi></mrow><mrow><mn>3</mn></mrow></msub></math> has the three-centre two-electron bonds in its dimeric structure", "isCorrect": true, "image": null}, {"id": "Piw58", "text": "The Lewis acidity of <math><mi>B</mi><mi>C</mi><msub><mrow><mi>l</mi></mrow><mrow><mn>3</mn></mrow></msub></math> is greater than that of <math><mi>A</mi><mi>l</mi><mi>C</mi><msub><mrow><mi>l</mi></mrow><mrow><mn>3</mn></mrow></msub></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>(i)  <img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/q-11.jpg\"/></p><p>(ii)  <img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/q-11-2.jpg\"/></p><p>(iii) <img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/q-11-3.jpg\"/></p><p>(iv)  Lewis acidic strength decreases down the group. The decrease in acid strength occurs because as size increases, the attraction between the incoming electron pair and the nucleus weakens.</p><p>Hence Lewis acidic strength of <math><mi>B</mi><mi>C</mi><msub><mrow><mi>l</mi></mrow><mrow><mn>3</mn></mrow></msub></math> is more than <math><mi>A</mi><mi>l</mi><mi>C</mi><msub><mrow><mi>l</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>.</mo></math></p><p> </p>", "image": null}, "videoSolution": {"videoId": "c793194d0f2f48e1a482422a12f5794b", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/051sE6pyMxL4l.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/051sE6pyMxL4l.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf82b", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2017-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2017 (Paper 2)", "title": "JEE Advanced 2017 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b169f8f23ac7d519f9b020", "type": "numerical", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1f77301f65c2f92c45", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2009-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2009 (Paper 2)", "title": "JEE Advanced 2009 (Paper 2)"}], "question": {"text": "The coordination number of $\\mathrm{Al}$ in the crystalline state of $\\mathrm{AlCl}_3$ is", "image": null}, "options": [], "correctValue": "6", "solution": {"text": "Coordination number of $\\mathrm{Al}=6$.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1f77301f65c2f92c45", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2009-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2009 (Paper 2)", "title": "JEE Advanced 2009 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64b16ad3f23ac7d519f9b875", "title": "Carbon and Its Compounds", "totalQuestions": 3, "questions": [{"_id": "64b16a97f23ac7d519f9b5d1", "previousYearPapers": [{"_id": "632c83573e3fd59bda92e46c", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022 (Paper 1)", "title": "JEE Advanced 2022 (Paper 1)"}], "type": "multipleCorrect", "level": 2, "question": {"text": "The treatment of galena with <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>HNO</mi><mn>3</mn></msub></math> produces a gas that is", "image": null}, "options": [{"id": "SIosV", "text": "paramagnetic", "isCorrect": true, "image": null}, {"id": "C1ho6", "text": "bent in geometry", "isCorrect": false, "image": null}, {"id": "1V3dB", "text": "an acidic oxide", "isCorrect": false, "image": null}, {"id": "fj597", "text": "colorless", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>Concentrated nitric acid is a strong oxidising agent and attacks most metals except noble metals such as gold and platinum. The&nbsp;products of oxidation depend upon the concentration of the acid, temperature and the nature of the material undergoing oxidation.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>PbS</mi><mo>+</mo><mi>dil</mi><mo>.</mo><msub><mi>HNO</mi><mn>3</mn></msub><mo>&#8594;</mo><mi>Pb</mi><msub><mfenced><msub><mi>NO</mi><mn>3</mn></msub></mfenced><mn>2</mn></msub><mo>+</mo><mi mathvariant=\"normal\">S</mi><mo>+</mo><mi>NO</mi><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>NO</mi></math> is paramagnetic due to the presence of unpaired electron. It is a neutral oxide. It is colourless.</p><p>Hence, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi mathvariant=\"normal\">A</mi></mfenced></math>&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi mathvariant=\"normal\">D</mi></mfenced></math>&nbsp;are correct statements.</p>", "image": null}, "videoSolution": {"videoId": "2dc6bc7fab704ee7b6e931565059c2bb", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/edhsyU7GLjMhN.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/edhsyU7GLjMhN.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "632c83573e3fd59bda92e46c", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022 (Paper 1)", "title": "JEE Advanced 2022 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a22f23ac7d519f9b1a8", "previousYearPapers": [{"_id": "620a8a1f77301f65c2f92c4b", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2012-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2012 (Paper 2)", "title": "JEE Advanced 2012 (Paper 2)"}], "type": "multipleCorrect", "level": 1, "question": {"text": "With respect to graphite and diamond, which of the statement(s) given below is (are) correct?", "image": null}, "options": [{"id": "rMWAO", "text": "Graphite is harder than diamond.", "isCorrect": false, "image": null}, {"id": "c510Q", "text": "Graphite has higher electrical conductivity than diamond.", "isCorrect": true, "image": null}, {"id": "RLfLi", "text": "Graphite has higher thermal conductivity than diamond.", "isCorrect": false, "image": null}, {"id": "uTU70", "text": "Graphite has higher C-C bond order than diamond.", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "(a) Diamond is harder than graphite.\r\n\r\n(b) Graphite is good conductor of electricity as each carbon is attached to three C-atoms leaving one valency free, which is responsible for electrical conduction, while in diamond, all the four valencies of carbon are satisfied, hence insulator.\r\n\r\n(c) Diamond is better thermal conductor than graphite. Whereas electrical conduction is due to availability of free electrons; thermal conduction is due to transfer of thermal vibrations from atom to atom. A compact and precisely aligned crystal like diamond thus facilitates fast movement of heat.\r\n\r\n(d) In graphite, $\\mathrm{C}-\\mathrm{C}$ bond acquires double bond character, hence higher bond order than in diamond.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1f77301f65c2f92c4b", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2012-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2012 (Paper 2)", "title": "JEE Advanced 2012 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b169c9f23ac7d519f9ae75", "type": "multipleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1e77301f65c2f92c3f", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2006-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2006", "title": "JEE Advanced 2006"}], "question": {"text": "The species present in solution when $\\mathrm{CO}_2$ is dissolved in water are", "image": null}, "options": [{"id": "KWi64", "text": "\n$\\mathrm{CO}_2, \\mathrm{H}_2 \\mathrm{CO}_3, \\mathrm{HCO}_3^{-}, \\mathrm{CO}_3^{2-}$\n", "image": null, "isCorrect": true}, {"id": "Xgk6O", "text": "\n$\\mathrm{H}_2 \\mathrm{CO}_3, \\mathrm{CO}_3^{2-}$\n", "image": null, "isCorrect": false}, {"id": "hLzzg", "text": "\n$\\mathrm{CO}_3^{2-}, \\mathrm{HCO}_3^{-}$\n", "image": null, "isCorrect": false}, {"id": "pBzLQ", "text": "\n$\\mathrm{CO}_2, \\mathrm{H}_2 \\mathrm{CO}_3$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "When $\\mathrm{CO}_2$ is dissolved in water, therefore it forms dibasic carbonic acid, which gives $\\mathrm{HCO}_3^{-}$ and $\\mathrm{CO}_3^{2-}$ ions on ionisation. Hence in solution $\\mathrm{CO}_2, \\mathrm{H}_2 \\mathrm{CO}_3, \\mathrm{HCO}_3^{-}$and $\\mathrm{CO}_3^{2-}$ are present.\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/eZ-xAZkHk1P-k6OdkfipgaRrtdiTqe1veNGCrErZJ80.original.fullsize.png\"><br>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1e77301f65c2f92c3f", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2006-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2006", "title": "JEE Advanced 2006"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "64b16ad3f23ac7d519f9b876", "title": "Silicon and Its Compounds", "totalQuestions": 4, "questions": [{"_id": "64b16aa3f23ac7d519f9b638", "type": "numerical", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "64b1672d25f94b8a85b91cd9", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2023-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Paper 1)", "title": "JEE Advanced 2023 (Paper 1)"}], "question": {"text": "<p>The stoichiometric reaction of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>516</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of dimethyldichlorosilane with water results in a tetrameric cyclic product <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"bold\">X</mi></math> in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>75</mn><mo>%</mo></math> yield. The weight (in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">g</mi></math>) of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"bold\">X</mi></math> obtained is ____________</p><p>[Use, molar mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><msup><mi>gmol</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mfenced><mo>:</mo><mi mathvariant=\"normal\">H</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi mathvariant=\"normal\">C</mi><mo>=</mo><mn>12</mn><mo>,</mo><mi mathvariant=\"normal\">O</mi><mo>=</mo><mn>16</mn><mo>,</mo><mi>Si</mi><mo>=</mo><mn>28</mn><mo>,</mo><mi>Cl</mi><mo>=</mo><mn>35</mn><mo>.</mo><mn>5</mn></math>]</p><p>&nbsp;</p>", "image": null}, "options": [], "correctValue": "222", "solution": {"text": "<blockquote><p>The dimethyldichlorosilane is&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mfenced><msub><mi>CH</mi><mn>3</mn></msub></mfenced><mn>2</mn></msub><msub><mi>SiCl</mi><mn>2</mn></msub></math>. The molecular mass is&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>129</mn><mo>&#160;</mo><mi mathvariant=\"normal\">u</mi></math>.</p><p>Number of moles of dimethyldichlorosilane initially taken&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mn>516</mn><mn>129</mn></mfrac><mo>=</mo><mo>&#160;</mo><mn>4</mn><mi>moles</mi></math></p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/fa487ddc-d077-4a3c-8639-81449232ebd8.png\" style=\"width: 438px; height: 215px;\" /></p><p>Applying POAC on Si atom</p><p>Moles of tetrameric cyclic product formed <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mn>4</mn><mn>4</mn></mfrac><mo>&#215;</mo><mfrac><mn>75</mn><mn>100</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>75</mn><mo>&#160;</mo><mi>moles</mi></math></p><p>Molar mass of product formed&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>296</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi><mo>/</mo><mi>moles</mi></math></p><p>The mass of product formed&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>296</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>75</mn><mo>=</mo><mn>222</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math></p></blockquote>", "image": null}, "videoSolution": {"videoId": "923a38d1efdf492ea4129343a21c0014", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/tsYJqBGwdunY3.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/tsYJqBGwdunY3.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64b1672d25f94b8a85b91cd9", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2023-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Paper 1)", "title": "JEE Advanced 2023 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a49f23ac7d519f9b307", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf827", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2015-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2015 (Paper 2)", "title": "JEE Advanced 2015 (Paper 2)"}], "type": "multipleCorrect", "level": 2, "question": {"text": "Under hydrolytic conditions, the compounds used for the preparation of linear polymer and for chain termination, respectively, are", "image": null}, "options": [{"id": "maXgO", "text": "<math><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>3</mn></mrow></msub></math>  and  <math><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">i</mi><msub><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>4</mn></mrow></msub></math>", "isCorrect": false, "image": null}, {"id": "W6k0e", "text": "<math><msub><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>2</mn></mrow></msub></math>  and  <math><msub><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>3</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">l</mi></math>", "isCorrect": true, "image": null}, {"id": "zFzGQ", "text": "<math><msub><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>2</mn></mrow></msub></math>  and  <math><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>3</mn></mrow></msub></math>", "isCorrect": false, "image": null}, {"id": "XpTMd", "text": "<math><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>4</mn></mrow></msub></math>  and  <math><msub><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>3</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">l</mi></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "For linear polymer, we need <math><msub><mrow><mi mathvariant=\"normal\">R</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>2</mn></mrow></msub></math>  and for termination, we need  <math><msub><mrow><mi mathvariant=\"normal\">R</mi></mrow><mrow><mn>3</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">l</mi></math> .", "image": null}, "videoSolution": {"videoId": "317055475202469ebf4185eb3551c5b1", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/735MnNvBqd3GM.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/735MnNvBqd3GM.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf827", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2015-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2015 (Paper 2)", "title": "JEE Advanced 2015 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a07f23ac7d519f9b0b1", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1f77301f65c2f92c47", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2010-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2010 (Paper 2)", "title": "JEE Advanced 2010 (Paper 2)"}], "question": {"text": "All the compounds listed in Column I react with water. Match the result of the respective reactions with the appropriate options listed in Column II.\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/0hk2ELITLGEeE6FsrD3YGnb7BhaBybjkCUYWJE087tg.original.fullsize.png\"><br>", "image": null}, "options": [{"id": "afVJD", "text": "\n(A) P,Q, (B) P,Q,R,T, (C) P,Q,T, (D) P\n", "image": null, "isCorrect": false}, {"id": "wKgAi", "text": "\n(A) P,Q, (B) P,Q,T, (C) P,Q,R,T, (D) Q\n", "image": null, "isCorrect": false}, {"id": "B1650", "text": "\n(A) P,S, (B) P,Q,R,T, (C) P,Q,T, (D) P\n", "image": null, "isCorrect": true}, {"id": "JTS5C", "text": "\n(A) P,S, (B) P,Q,T, (C) P,Q,R,T, (D) Q", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/oweF3s_sEGUv-gYhQtMusEWCNTt0D1g6YYpgxpH50pg.original.fullsize.png\"><br>\n\n$$\n\\begin{aligned}\n& \\quad 3 \\mathrm{XeF}_4+6 \\mathrm{H}_2 \\mathrm{O} \\longrightarrow \\mathrm{XeO}_3+2 \\mathrm{Xe}+\\frac{3}{2} \\mathrm{O}_2+12 \\mathrm{HF} \\\\\n& \\quad \\mathrm{Cl}_2+\\mathrm{H}_2 \\mathrm{O} \\longrightarrow 2 \\mathrm{HCl}+\\frac{1}{2} \\mathrm{O}_2 \\\\\n& \\quad \\mathrm{VCl}_5+\\mathrm{H}_2 \\mathrm{O} \\longrightarrow \\mathrm{VOCl}_3+2 \\mathrm{HCl} \\\\\n& \\text { Representative elements } \\\\\n& \\text { Factual } \\\\\n& \\text { III }\n\\end{aligned}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1f77301f65c2f92c47", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2010-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2010 (Paper 2)", "title": "JEE Advanced 2010 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b169ccf23ac7d519f9ae8d", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1e77301f65c2f92c3f", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2006-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2006", "title": "JEE Advanced 2006"}], "question": {"text": "Match the following\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/aP6PkZrkpVGT5Ap7bH-wIPaY4lRESHzYikGKWjxXO2w.original.fullsize.png\"><br>", "image": null}, "options": [{"id": "qD4sV", "text": "\n(A) Q,S, (B) S, (C) R, (D) Q,R\n", "image": null, "isCorrect": true}, {"id": "a4FiD", "text": "\n(A) Q,S, (B) R, (C) S, (D) Q\n", "image": null, "isCorrect": false}, {"id": "I255K", "text": "\n(A) P,R, (B) P, R, (C) R, (D) Q,R\n", "image": null, "isCorrect": false}, {"id": "nIJXt", "text": "\n(A) P,R, (B) P, (C) R, (D) Q,R", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "A match with $\\boldsymbol{Q}, \\boldsymbol{S} \\quad \\mathrm{Bi}^{3+}+\\mathrm{H}_2 \\mathrm{O} \\longrightarrow[\\mathrm{BiO}]^{+}+2 \\mathrm{H}^{+}$ B match with $\\boldsymbol{S} \\mathrm{NaAlO}_2+2 \\mathrm{H}_2 \\mathrm{O} \\longrightarrow \\mathrm{Al}(\\mathrm{OH})_3+\\mathrm{NaOH}$ C match with $\\boldsymbol{R} \\quad 2 \\mathrm{SiO}_4^{4-}+2 \\mathrm{H}^{+} \\longrightarrow \\mathrm{Si}_2 \\mathrm{O}_7^{6-}+\\mathrm{H}_2 \\mathrm{O}$ Pyrosilicate is formed by treating orthosilicate with acid. D match with $\\boldsymbol{Q}, \\boldsymbol{R} \\mathrm{Na}_2 \\mathrm{~B}_4 \\mathrm{O}_7 \\underset{\\text { or } \\mathrm{H}_2 \\mathrm{SO}_4}{\\stackrel{\\mathrm{HCl}}{\\mathrm{O}_3}} \\mathrm{H}_3 \\mathrm{BO}_3$\n$$\n\\mathrm{Na}_2 \\mathrm{~B}_4 \\mathrm{O}_4 \\stackrel{\\mathrm{H}_2 \\mathrm{O}}{\\longrightarrow} \\mathrm{H}_3 \\mathrm{BO}_3\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1e77301f65c2f92c3f", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2006-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2006", "title": "JEE Advanced 2006"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'JEE Advanced';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

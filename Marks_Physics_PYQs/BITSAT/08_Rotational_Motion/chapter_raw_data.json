@@ -1,0 +1,1768 @@
+{
+  "index": 8,
+  "chapterId": "61e7bd6fb80a936d82a83856",
+  "chapter": "Rotational Motion",
+  "exam": "BITSAT",
+  "subject": "Physics",
+  "totalTopics": 5,
+  "totalQuestions": 26,
+  "downloadTime": "2026-10-08 20:27:47",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e8536f5bfc7ab78aece0",
+      "title": "Moment of inertia of rigid bodies",
+      "totalQuestions": 10,
+      "questions": [
+        {
+          "_id": "67726d12c49e8ef28ee2b404",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "The moment of inertia of a cube of mass $m$ and side $a$ about one of its edges is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "JUg9s",
+              "text": "$\\frac{2}{3} m a^2$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "tMLXq",
+              "text": "$\\frac{4}{3} m a^2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "YtPNh",
+              "text": "$3 m a^2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BWolj",
+              "text": "$\\frac{8}{3} m a^2$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/fi98r898989hg.png\">\r\nFrom theorem of perpendicular axes, we have\n$\\begin{aligned} I & =I_C+m\\left(\\frac{a}{\\sqrt{2}}\\right)^2 \\\\ & =\\left[\\frac{m a^2}{12}+\\frac{m a^2}{12}\\right]+\\frac{m a^2}{2} \\\\ & =\\frac{2}{3} m a^2\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e82e6f5bfc7ab78aeb4a",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "A solid sphere of $80 \\mathrm{~kg}$ and radius $15 \\mathrm{~m}$ moving in a space becomes a circular disc of radius $20 \\mathrm{~m}$ in $1 \\mathrm{~h}$. The rate of change of moment of Inertia in this process is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "C6fe6",
+              "text": "\r\n$\\frac{30}{9} \\mathrm{~kg}^2 \\mathrm{~m}^2 \\mathrm{~s}^{-1}$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "8tJxs",
+              "text": "\r\n$\\frac{25}{9} \\mathrm{~kg}^{-\\mathrm{m}^2 \\mathrm{~s}^{-1}}$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "THjTo",
+              "text": "\r\n$\\frac{10}{9} \\mathrm{~kg}-\\mathrm{m}^2 \\mathrm{~s}^{-1}$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "wAVpN",
+              "text": "\r\n$\\frac{22}{9} \\mathrm{~kg}^{-\\mathrm{m}^2 \\mathrm{~s}^{-1}}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given, mass of solid sphere $=80 \\mathrm{~kg}$ radius of solid sphere, $R_s=15 \\mathrm{~m}$\r\nradius of circular disc, $R_c=20 \\mathrm{~m}$ and time $=1$ hour $=60$ minute $=60 \\times 60 \\mathrm{sec}$\r\n$\\therefore$ Moment of inertia of solid sphere, $I_s=\\frac{2}{5} M R^2$\r\n$$\r\n\\begin{aligned}\r\n& =\\frac{2}{5} \\times 80 \\times(15)^2 \\\\\r\n& =7200 \\mathrm{~kg}-\\mathrm{m}^2\r\n\\end{aligned}\r\n$$\r\nSimilarly,\r\n$$\r\n\\text { moment of inertia of the disc, } \\begin{aligned}\r\nI_c & =\\frac{1}{2} M R_c^2 \\\\\r\n& =\\frac{1}{2} \\times 80 \\times(20)^2 \\\\\r\n& =16000 \\mathrm{~kg}-\\mathrm{m}^2\r\n\\end{aligned}\r\n$$\r\n$$\r\n\\begin{aligned}\r\n\\text { Rate of change of moment of Inertia } & =\\frac{I_c-I_s}{t} \\\\\r\n& =\\frac{16000-7200}{60 \\times 60} \\\\\r\n& =\\frac{22}{9} \\mathrm{~kg}-\\mathrm{m}^2 \\mathrm{~s}^{-1}\r\n\\end{aligned}\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e82d6f5bfc7ab78aeb40",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "Four holes of radius $5 \\mathrm{~cm}$ are cut from a thin square plate of $20 \\mathrm{~cm}$ and mass $1 \\mathrm{~kg}$. The moment of inertia of the remaining portion about $Z$-axis is\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/W7qHSyWdsgJLSSdeTM4AeOLtifvChgly7ZgL0_gg0Qc.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "fjwQn",
+              "text": "\r\n$15 \\mathrm{~kg}-\\mathrm{m}^2$ \r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "6KkN6",
+              "text": "\r\n$0.37 \\mathrm{~kg}-\\mathrm{m}^2$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "QTr8v",
+              "text": "\r\n$0.0017 \\mathrm{~kg}-\\mathrm{m}^2$\r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "L4wKL",
+              "text": "\r\n$0.08 \\mathrm{~kg}-\\mathrm{m}^2$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Area mass density, $\\sigma=\\frac{M}{16 R^2}$\r\n$$\r\n\\left(\\because \\text { Area }=4 R \\times 4 R=16 R^2\\right)\r\n$$\r\nMass of each hole $m_1=\\sigma \\pi R^2=\\frac{M}{16 R^2} \\pi R^2=\\frac{\\pi M}{16}$\r\nDistance between centre of plate and centre of hole\r\n$$\r\nx=\\frac{\\sqrt{(2 R)^2+(2 R)^2}}{2}=\\frac{2 \\sqrt{2} R}{2} .\r\n$$\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/48sXRImgpSV6Uufo34i1MCTn62UFM3A0DRF5amDDeHk.original.fullsize.png\"><br>\r\nMoment of inertia of one hole at about Z-axis\r\n$$\r\nI_1=\\frac{1}{2} m_1 R^2+m_1 x^2=\\frac{5 \\pi}{32} M R^2\r\n$$\r\nMoment of inertia of whole plate about Z-axis,\r\n$$\r\nI=\\frac{M(4 R)^2}{6}=\\frac{8}{3} M R^2\r\n$$\r\nRequired moment of Inertia\r\n$$\r\nI_0=I-4 I_1,=\\left[\\frac{8}{3}-4\\left(\\frac{5 \\pi}{32}\\right)\\right] M R^2=\\left[\\frac{8}{3}-\\frac{5 \\pi}{8}\\right] M R^2\r\n$$\r\nGiven, $R=5 \\mathrm{~cm}$ and $M=1 \\mathrm{~kg}$\r\nSo, $I_0=\\left[\\frac{8}{3}-\\frac{5 \\pi}{8}\\right] 1 \\times 25 \\times 10^{-4}=0.0017 \\mathrm{~kg}-\\mathrm{m}^2$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8216f5bfc7ab78aead9",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Three particles, each of mass $m$ gram, are situated at the vertices of an equilateral triangle $A B C$ of side $\\ell \\mathrm{~cm}$ (as shown in the figure). The moment of inertia of the system about a line $A X$ perpendicular to $A B$ and in the plane of $A B C$, in gram $-\\mathrm{cm}^2$ units will be\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/2za3QMTRGZ5dV8Nb4P_9Rtw3Ka8TeXr4HDIyaJHK_U0.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "JPTdf",
+              "text": "$\\frac{3}{2} m l^{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "NTcpD",
+              "text": "$\\frac{3}{4} m l^{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "1pAYk",
+              "text": "$2 m l^{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "VQWPb",
+              "text": "$\\frac{5}{4} m l^{2}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/lGO2-PSVc5elOdsJMF-jQx9Acl8-LXMD7nj3eFgXusE.original.fullsize.png\"><br>\r\n\r\n$\\mathrm{I}_{\\mathrm{AX}}=\\mathrm{m}(\\mathrm{AB})^{2}+\\mathrm{m}(\\mathrm{OC})^{2}=\\mathrm{m} l^{2}+\\mathrm{m}\\left(l \\cos 60^{\\circ}\\right)^{2}=m l^{2}+\\frac{\\mathrm{m} l^{2}}{4}=\\frac{5}{4} \\mathrm{~m} l^{2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8126f5bfc7ab78aea55",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "M.I of a circular loop of radius $\\mathrm{R}$ about the axis in figure is\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/wKFguHAttmGuk0D7ytnbZUzSjJtulAv3RLaJS6JFPS8.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "4M3ge",
+              "text": "$\\mathrm{MR}^{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "sRZ6z",
+              "text": "$(3 / 4) \\mathrm{MR}^{2}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "AuEQD",
+              "text": "$\\mathrm{MR}^{2} / 2$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "fE1Kq",
+              "text": "$2 \\mathrm{MR}^{2}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Use theorem of parallel axes.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8026f5bfc7ab78ae9ca",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "A semicircular disc of mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>M</mi></math> and radius <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi></math> is free to rotate about its diameter. The moment of inertia of semicircular disc about a line perpendicular to its plane through centre is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "OZt2B",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>3</mn><mn>4</mn></mfrac><mi>M</mi><msup><mi>R</mi><mn>2</mn></msup></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "jV1jQ",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>M</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "3RRVY",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>M</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><mn>3</mn></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "RzcYS",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>M</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><mn>4</mn></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>The moment of inertia of disc of radius <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi></math> about its axis is</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi><mo>=</mo><mfrac><mrow><msup><mi>M</mi><mo>'</mo></msup><msup><mi>R</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></math></p><p>where,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>M</mi><mo>'</mo></msup><mo>=</mo></math>&nbsp;mass of complete disc&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>2</mn><mi>M</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>M</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi><mo>=</mo><mi>M</mi><msup><mi>R</mi><mn>2</mn></msup><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi mathvariant=\"normal\">i</mi></mfenced></math></p><p>If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>I</mi><mn>1</mn></msub></math> be the moment of inertia of semicircular disc about its. axis, then disc may be assumed as combination of two semi-circular parts,</p><p>Thus,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi><mo>=</mo><msub><mi>I</mi><mn>1</mn></msub><mo>+</mo><msub><mi>I</mi><mn>1</mn></msub><mo>&#8658;</mo><msub><mi>I</mi><mn>1</mn></msub><mo>=</mo><mfrac><mi>I</mi><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mi>M</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7db6f5bfc7ab78ae86f",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "A circular disc of radius $\\mathrm{R}$ and thickness $\\frac{R}{6}$ has moment inertia I about an axis passing through its centre perpendicular to its plane. It is melted and recasted into a solid sphere. The moment of inertia of the sphere about its diameter is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "H5aTA",
+              "text": "$I$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Dltey",
+              "text": "$\\frac{2 I}{8}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "83qSO",
+              "text": "$\\frac{I}{5}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "yZfsE",
+              "text": "$\\frac{I}{10}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "According to problem disc is melted and recasted into a solid sphere so their volume\r\n\r\n$$\r\n\r\n\\begin{array}{c}\r\n\r\n\\text { will be same. } \\\\\r\n\r\nV_{\\text {Disc }}=V_{\\text {Sphere }} \\Rightarrow \\pi R_{\\text {Disc }}^{2} t=\\frac{4}{3} \\pi R_{\\text {Sphere }}^{3} \\\\\r\n\r\n\\Rightarrow \\pi R_{\\text {Disc }}^{2}\\left(\\frac{R_{\\text {Disc }}}{6}\\right)=\\frac{4}{3} \\pi R_{\\text {Sphere }}^{3}\\left[t=\\frac{R_{\\text {Disc }}}{6}, \\text { given }\\right] \\\\\r\n\r\n\\Rightarrow R_{\\text {Disc }}^{3}=8 R_{\\text {Sphere }}^{3} \\Rightarrow R_{\\text {Sphere }}=\\frac{R_{\\text {Disc }}}{2}\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nMoment of inertia of disc\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\nI_{\\text {Disc }}=\\frac{1}{2} M R_{\\text {Disc }}^{2}=I \\text { (given) } \\\\\r\n\r\n\\therefore \\text { M }\\left(R_{\\text {Disc }}\\right)^{2}=2 I\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nMoment of inertia of sphere\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\nI_{\\text {Sphere }}=\\frac{1}{2} M R_{\\text {Sphere }}^{2} \\\\\r\n\r\n=\\frac{2}{5} M\\left(\\frac{R_{\\text {Disc }}}{2}\\right)^{2}=\\frac{M}{10}\\left(R_{\\text {Disc }}\\right)^{2}=\\frac{2 I}{10}=\\frac{I}{5}\r\n\r\n\\end{array}\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ca6f5bfc7ab78ae7e6",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "A thin rod of length 41 and mass $4 \\mathrm{~m}$ is bent at the points as shown in figure. What is the moment of inertia of the rod about the axis passes through point $\\mathrm{O}$ and perpendicular to the plane of paper?\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/Le_TQucLG1G48_m7oD_lKGohuAK-fnoJ4w4-Wc0mfo4.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "dK7JC",
+              "text": "$\\frac{\\mathrm{M} l^{2}}{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "5ALLx",
+              "text": "$\\frac{10 \\mathrm{M} l^{2}}{3}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "jitaJ",
+              "text": "$\\frac{\\mathrm{M} l^{2}}{12}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "GNKRE",
+              "text": "$\\frac{\\mathrm{M} l^{2}}{24}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Total moment of inertia\r\n\r\n$$\r\n\r\n=\\mathrm{I}_{1}+\\mathrm{I}_{2}+\\mathrm{I}_{3}+\\mathrm{I}_{4}=2 \\mathrm{I}_{1}+2 \\mathrm{I}_{2}\r\n\r\n$$\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n=2\\left(l_{1}+l_{2}\\right)\\left\\lceil I_{3}=I_{1}, I_{1}=I_{4}\\right] \\\\\r\n\r\n\\text { Now, } I_{2}=I_{3}=\\frac{M I^{2}}{3}\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nUsing parallel axes theorem, we have\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\mathrm{I}=\\mathrm{I}_{\\mathrm{CM}}+\\mathrm{Mx}^{2} \\text { and } \\mathrm{x}=\\sqrt{l^{2}+\\frac{l^{2}}{4}} \\\\\r\n\r\n\\mathrm{I}_{1}=\\mathrm{I}_{4}=\\frac{\\mathrm{M} l^{2}}{12}+\\mathrm{M}\\left[\\sqrt{l^{2}+\\left(\\frac{l}{2}\\right)^{2}}\\right]^{2}\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nPutting all values we get Moment of inertia, $\\mathrm{I}=10\\left(\\frac{\\mathrm{Ml}^{2}}{3}\\right)$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ab6f5bfc7ab78ae6da",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Two rings of radius $\\mathrm{R}$ and $\\mathrm{nR}$ made of same material have the ratio of moment of inertia about an axis passing through centre is 1: 8 . The value of $\\mathrm{n}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "bxK6M",
+              "text": "2",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "RIOcm",
+              "text": "$2 \\sqrt{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "0gUve",
+              "text": "4",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "8cHmV",
+              "text": "$1 / 2$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Ratio of moment of inertia of the rings\r\n\r\n$$\r\n\r\n\\frac{\\mathrm{I}_{1}}{\\mathrm{I}_{2}}=\\left(\\frac{\\mathrm{M}_{1}}{\\mathrm{M}_{2}}\\right)\\left(\\frac{\\mathrm{R}_{1}}{\\mathrm{R}_{2}}\\right)^{2}\r\n\r\n$$\r\n\r\n$\\begin{aligned}=&\\left(\\frac{\\lambda l_{1}}{\\lambda l_{2}}\\right)\\left(\\frac{R_{1}}{R_{2}}\\right)^{2}=\\left(\\frac{2 \\pi \\mathrm{R}}{2 \\pi \\mathrm{n} \\mathrm{R}}\\right)\\left(\\frac{\\mathrm{R}}{\\mathrm{n} \\mathrm{R}}\\right)^{2} \\\\ &(\\lambda=\\text { linear density of wire }=\\mathrm{constant}) \\\\ \\Rightarrow \\quad \\frac{\\mathrm{I}_{1}}{\\mathrm{I}_{2}}=\\frac{1}{\\mathrm{n}^{3}}=\\frac{1}{8} \\quad \\text { (given) } \\\\ \\therefore \\quad \\mathrm{n}^{3}=8 \\Rightarrow \\mathrm{n}=2 \\end{aligned}$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/JkVmSEPvkfJzbUYQif1yY1la2j2rfWcNpzIF3syUIzU.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e79b6f5bfc7ab78ae654",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "What is the moment of inertia of a solid sphere of density $\\rho$ and radius $\\mathrm{R}$ about its diameter?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "BQlKa",
+              "text": "$\\frac{105}{176} \\mathrm{R}^{5} \\rho$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "A42R6",
+              "text": "$\\frac{105}{176} \\mathrm{R}^{2} \\rho$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "5Ewlu",
+              "text": "$\\frac{176}{105} \\mathrm{R}^{5} \\rho$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "uY942",
+              "text": "$\\frac{176}{105} \\mathrm{R}^{2} \\rho$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "For solid sphere\r\n$\\begin{array}{l}\r\nI=\\frac{2}{5} M R^{2}=\\frac{2}{5}\\left(\\frac{4}{3} \\pi R^{3} \\rho\\right) R^{2} \\\\\r\n\\rho=\\frac{176}{105} R^{5} \\rho\r\n\\end{array}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e8536f5bfc7ab78aecde",
+      "title": "Torque",
+      "totalQuestions": 5,
+      "questions": [
+        {
+          "_id": "65b7b87b97ae24e9e2db8cc4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "The torque of a force $5 \\hat{i}+3 \\hat{j}-7 \\hat{k}$ about the origin is $\\tau$. If the force acts on a particle whose position vector is $2 \\hat{i}+2 \\hat{j}+\\hat{k}$, then the value of $\\tau$ will be :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "g51MQ",
+              "text": "$11 \\hat{\\mathrm{i}}+19 \\hat{\\mathrm{j}}-4 \\hat{\\mathrm{k}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "YlHOS",
+              "text": "$-11 \\hat{\\mathbf{i}}+9 \\hat{\\mathbf{j}}-16 \\hat{\\mathrm{k}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "78G2T",
+              "text": "$-17 \\hat{\\mathrm{i}}+19 \\hat{\\mathrm{j}}-4 \\hat{\\mathrm{k}}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Rsw2q",
+              "text": "$17 \\hat{i}+9 \\hat{j}+16 \\hat{k}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given that torque, $\\vec{\\tau}=5 \\hat{i}+3 \\hat{j}-7 \\hat{k}$<br />Position vector, $\\overrightarrow{\\mathrm{r}}=2 \\hat{\\mathrm{i}}++2 \\hat{\\mathrm{j}}+\\hat{\\mathrm{k}}$<br />$\\begin{aligned} & \\vec{\\tau}=\\overrightarrow{\\mathrm{r}} \\times \\overrightarrow{\\mathrm{F}}=\\left|\\begin{array}{ccc}\\mathrm{i} & \\mathrm{j} & \\mathrm{k} \\\\ 2 & 2 & 1 \\\\ 5 & 3 & -7\\end{array}\\right| \\\\ & =\\hat{\\mathrm{i}}(-14-3)-\\hat{\\mathrm{j}}(-14-5)+\\hat{\\mathrm{k}}(6-10) \\\\ & =-17 \\hat{\\mathrm{i}}+19 \\hat{\\mathrm{j}}-4 \\hat{\\mathrm{k}}\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c86f5bfc7ab78ae7d9",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "A square gate of size $1 \\mathrm{~m} \\times 1 \\mathrm{~m}$ is hinged at its mid-point. A fluid of density $\\rho$ fills the space to the left of the gate. The force F required to hold the gate stationary is\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/XVQ6n8l4hIPD-N4kpGu5JUES9xX1RTV_u98VibumF5s.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "vly7j",
+              "text": "$\\frac{\\rho g}{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Hng39",
+              "text": "$\\frac{\\rho g}{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "q3AIq",
+              "text": "$\\frac{\\rho g}{6}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "2aNVG",
+              "text": "$\\frac{\\rho g}{8}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The net force acting on the gate element of width dy at a depth y from the surface of the fluid, is\r\n\r\n$$\r\n\r\n\\begin{aligned}\r\n\r\n\\mathrm{dy} &=\\left(\\mathrm{p}_{0}+\\rho_{\\mathrm{g}} \\mathrm{y}-\\mathrm{p}_{0}\\right) \\times 1 \\mathrm{dy} \\\\\r\n\r\n&=\\rho \\mathrm{gydy}\r\n\r\n\\end{aligned}\r\n\r\n$$\r\n\r\nTorque about the hinge is\r\n\r\n$$\r\n\r\n\\mathrm{d} \\tau=\\operatorname{pgydy} \\times\\left(\\frac{1}{2}-\\mathrm{y}\\right)\r\n\r\n$$\r\n\r\nNet torque experience. by the gate is\r\n\r\n$$\r\n\r\n\\begin{aligned}\r\n\r\n\\tau_{\\text {net }} &=\\int \\mathrm{d} \\tau+\\mathrm{F} \\times \\frac{1}{2} \\\\\r\n\r\n&=\\int_{0}^{1} \\rho g \\mathrm{ydy}\\left(\\frac{1}{2}-\\mathrm{y}\\right)+\\mathrm{F} \\times \\frac{1}{2}=0 \\\\\r\n\r\n\\Rightarrow & \\mathrm{F}=\\frac{\\rho \\mathrm{g}}{6}\r\n\r\n\\end{aligned}\r\n\r\n$$\r\n\r\ni.e., The force $F$ required to hold the gate\r\n\r\nstationary is $\\frac{p g}{a}$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/e9c12zlBUuQI3hCrHSf5mHlJePI2pdgm1s0nk4-zrfE.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b96f5bfc7ab78ae754",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "An equilateral prism of mass $\\mathrm{m}$ rests on a rough horizontal surface with coefficient of friction $\\mu$. A horizontal force $\\mathrm{F}$ is applied on the prism as shown in the figure. If the coefficient of friction is sufficiently high so that the prism does not slide before toppling, then the minimum force required to topple the prism is -\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/llXXsXulrOCyOdtelaS45eSo9yo_CjwnnymwqnSD6ns.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "kREF5",
+              "text": "$\\frac{\\mathrm{mg}}{\\sqrt{3}}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "o6PUi",
+              "text": "$\\frac{\\mathrm{mg}}{4}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "QqjAC",
+              "text": "$\\frac{\\mu \\mathrm{mg}}{\\sqrt{3}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "eTgtq",
+              "text": "$\\frac{\\mu \\mathrm{mg}}{4}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The tendency of rotation will be about the point C.\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/7ajHS5azpo3enZxCfEwUl-mLjm-Bs22Hrq93d634eSk.original.fullsize.png\"><br>\r\n\r\nFor minimum force, the torque of $\\mathrm{F}$ about $\\mathrm{C}$ has to be equal to the torque of $\\mathrm{mg}$ about $\\mathrm{C}$.\r\n\r\n$$\r\n\r\n\\therefore \\quad \\mathrm{F}\\left(\\mathrm{a} \\frac{\\sqrt{3}}{2}\\right)=\\mathrm{mg}\\left(\\frac{\\mathrm{a}}{2}\\right) \\Rightarrow \\mathrm{F}=\\frac{\\mathrm{mg}}{\\sqrt{3}}\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e78e6f5bfc7ab78ae5de",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "A constant torque of $31.4 \\mathrm{~N}-\\mathrm{m}$ is exerted on a pivoted wheel. If angular acceleration of wheel is $4 \\pi \\mathrm{rad} / \\mathrm{s}^{2},$ then the moment of inertia of the wheel is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "uHbeB",
+              "text": "$2.5 \\mathrm{~kg} \\mathrm{~m}^{2}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ebiBM",
+              "text": "$3.5 \\mathrm{~kg} \\mathrm{~m}^{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "MzC7f",
+              "text": "$4.5 \\mathrm{~kg} \\mathrm{~m}^{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "bFjcq",
+              "text": "$5.5 \\mathrm{~kg} \\mathrm{~m}^{2}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$I=\\frac{\\tau}{\\alpha}=\\frac{31.4}{4 \\pi}=\\frac{31.4}{4 \\times 3.14}=2.5 \\mathrm{~kg} \\mathrm{~m}^{2}$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7716f5bfc7ab78ae4e2",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "A uniform cube of side a and mass m rests on a rough horizontal table. A horizontal force $\\mathrm{F}$ is applied normal to one of the faces at a point that is directly above the centre of the face, at a height $3 \\mathrm{a} / 4$ above the base. The minimum value of $\\mathrm{F}$ for which the cube begins to topple an edge is (assume that cube does not slide)\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/YrfzD_XOL40MULVsPnTe2iSYEtgjwGgq5EaxY862HdA.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "oKpZo",
+              "text": "$\\frac{\\mathrm{mg}}{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FpMlp",
+              "text": "$\\frac{\\mathrm{mg}}{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "whTcW",
+              "text": "$\\frac{2 \\mathrm{mg}}{3}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "6fbPA",
+              "text": "$\\frac{3 \\mathrm{mg}}{4}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "For toppling about edge $x$ x At the moment of toppling the normal force pass through axis $\\mathrm{xx}$ '.\n$$\n\\mathrm{F}_{\\min } \\frac{3 \\mathrm{a}}{4}=\\mathrm{mg} \\frac{\\mathrm{a}}{2} \\text { or } \\mathrm{F}_{\\min }=\\frac{2 \\mathrm{mg}}{3}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e8536f5bfc7ab78aece2",
+      "title": "Rotational kinematics",
+      "totalQuestions": 3,
+      "questions": [
+        {
+          "_id": "64c0e8206f5bfc7ab78aead1",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "A round disc of moment of inertia $\\mathrm{I}_{2}$ about its axis perpendicular to its plane and passing through its centre is placed over another disc of moment of inertia $\\mathrm{I}_{1}$ rotating with an angular velocity $\\omega$ about the same axis. The final angular velocity of the combination of discs is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "3xHGr",
+              "text": "$\\frac{\\left(\\mathrm{I}_{1}+\\mathrm{I}_{2}\\right) \\omega}{\\mathrm{I}_{1}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "gxFbI",
+              "text": "$\\frac{\\mathrm{I}_{2} \\omega}{\\mathrm{I}_{1}+\\mathrm{I}_{2}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "5mgcJ",
+              "text": "$\\omega$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "6DNJj",
+              "text": "$\\frac{\\mathrm{I}_{1} \\omega}{\\mathrm{I}_{1}+\\mathrm{I}_{2}}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Total angular momentum of the system initially \\(\\mathrm{L}_{\\mathrm{i}}=\\mathrm{I}_{1} \\mathrm{w}+\\mathrm{I}_{2}(0)=\\mathrm{I}_{1} \\mathrm{w}\\)\r\n\r\nTotal angular momentum of the system finally \\(L_{f}=\\left(I_{1}+I_{2}\\right) w_{2}\\)\r\n\r\nAccording to conservation of angular momentum i.e. \\(\\mathrm{L}_{\\mathrm{i}}=\\mathrm{L}_{\\mathrm{f}}\\)\r\n\r\n\\(\\begin{aligned}\r\n\r\n&\\Rightarrow \\mathrm{I}_{1} \\omega=\\left(\\mathrm{I}_{1}+\\mathrm{I}_{2}\\right) \\omega_{2} \\\\\r\n\r\n&\\Rightarrow \\omega_{2}=\\frac{\\mathrm{I}_{1} \\omega}{\\mathrm{I}_{1}+\\mathrm{I}_{2}}\r\n\r\n\\end{aligned}\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7f66f5bfc7ab78ae95f",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "A pulley of radius <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math> is rotated about its axis by a force <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfenced><mrow><mn>20</mn><mi>t</mi><mo>-</mo><mn>5</mn><msup><mi>t</mi><mn>2</mn></msup></mrow></mfenced></math> newton (where <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi></math> is measured in seconds) applied tangentially. If the moment of inertia of the pulley about its axis of rotation is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>10</mn><mo>&#160;</mo><mi>kg</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mn>2</mn></msup><mo>,</mo></math>&nbsp;the number of rotation made by the pulley before its direction of motion is reversed is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "a2T7u",
+              "text": "more than <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn></math> but less than <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>6</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "TfZyt",
+              "text": "more than <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>6</mn></math> but less than <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>9</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "dgVt3",
+              "text": "more than <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>9</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "92Uz1",
+              "text": "less than <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>We have,</p><p>Torque <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mi>r</mi><mo>&#215;</mo><mi>F</mi><mo>=</mo><mi>l</mi><mi>&#945;</mi></math></p><p>or&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mfenced><mrow><mn>20</mn><mi>t</mi><mo>-</mo><mn>5</mn><msup><mi>t</mi><mn>2</mn></msup></mrow></mfenced><mo>=</mo><mn>10</mn><mi>&#945;</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#945;</mi><mo>=</mo><mn>4</mn><mi>t</mi><mo>-</mo><msup><mi>t</mi><mn>2</mn></msup></math></p><p>But <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#945;</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mi>&#969;</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>,</mo></math>&nbsp;so</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi><mi>&#969;</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mn>4</mn><mi>t</mi><mo>-</mo><msup><mi>t</mi><mn>2</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>d</mi><mi>&#969;</mi><mo>=</mo><mfenced><mrow><mn>4</mn><mi>t</mi><mo>-</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></mfenced><mi>d</mi><mi>t</mi></math></p><p>Integrating&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#969;</mi><mo>=</mo><mn>2</mn><msup><mi>t</mi><mn>2</mn></msup><mo>-</mo><mfrac><msup><mi>t</mi><mn>3</mn></msup><mn>3</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#969;</mi></math> will&nbsp;be&nbsp;zero&nbsp;at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi><mo>=</mo><mn>6</mn><mo>&#160;</mo><mi mathvariant=\"normal\">s</mi></math></p><p>So,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#969;</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mi>&#952;</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mn>2</mn><msup><mi>t</mi><mn>2</mn></msup><mo>-</mo><mfrac><msup><mi>t</mi><mn>3</mn></msup><mn>3</mn></mfrac></math></p><p>or&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>d</mi><mi>&#952;</mi><mo>=</mo><mfenced><mrow><mn>2</mn><msup><mi>t</mi><mn>2</mn></msup><mo>-</mo><mfrac><msup><mi>t</mi><mn>3</mn></msup><mn>3</mn></mfrac></mrow></mfenced><mi>d</mi><mi>t</mi></math></p><p>Again, integrating both sides<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#952;</mi><mo>=</mo><mfrac><mrow><mn>2</mn><msup><mi>t</mi><mn>3</mn></msup></mrow><mn>3</mn></mfrac><mo>-</mo><mfrac><msup><mi>t</mi><mn>4</mn></msup><mn>12</mn></mfrac></math></p><p>since. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi><mo>=</mo><mn>6</mn><mo>&#160;</mo><mi mathvariant=\"normal\">s</mi></math></p><p>so, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#952;</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mo>&#215;</mo><msup><mn>6</mn><mn>3</mn></msup></mrow><mn>3</mn></mfrac><mo>-</mo><mfrac><msup><mn>6</mn><mn>4</mn></msup><mn>12</mn></mfrac><mo>=</mo><mn>36</mn></math></p><p>Number of turns, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi><mo>=</mo><mfrac><mi>&#952;</mi><mrow><mn>2</mn><mi>&#960;</mi></mrow></mfrac><mo>=</mo><mfrac><mn>36</mn><mrow><mn>2</mn><mi>&#960;</mi></mrow></mfrac><mo>=</mo><mn>5</mn><mo>.</mo><mn>73</mn></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7e76f5bfc7ab78ae8e0",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "<p>A uniform rod of length&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>l</mi></math> and&nbsp;mass&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi></math> is free to rotate in a vertical plane about <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math>. The rod initially in horizontal position is released. The initial angular acceleration of the rod is (Moment of inertia of rod about <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup></mrow><mn>3</mn></mfrac></math>)</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/94ef2144-e0eb-46d5-955b-554beab9130e-image.png\" style=\"width: 320px; height: 97px;\" /></p>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ML0hH",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>3</mn><mi>g</mi></mrow><mrow><mn>2</mn><mi>l</mi></mrow></mfrac></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "pLs9p",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>2</mn><mrow><mn>3</mn><mi>g</mi></mrow></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "6mmnB",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>3</mn><mi>g</mi></mrow><mrow><mn>2</mn><msup><mi>l</mi><mn>2</mn></msup></mrow></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "zx0RN",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi><mi>g</mi><mfrac><mi>l</mi><mn>2</mn></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>The moment of inertia of the uniform rod about an axis through one end and perpendicular to its length is&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup></mrow><mn>3</mn></mfrac></math></p><p>where, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi></math> is the mass and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>l</mi></math> its length.</p><p>Torque <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mi>&#964;</mi><mo>=</mo><mi>I</mi><mi>&#945;</mi></mrow></mfenced></math>&nbsp;acting on centre of gravity of rod is given by&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#964;</mi><mo>=</mo><mi>m</mi><mi>g</mi><mfrac><mi>l</mi><mn>2</mn></mfrac></math></p><p>also,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup></mrow><mn>3</mn></mfrac><mo>&#183;</mo><mi>&#945;</mi><mo>=</mo><mi>m</mi><mi>g</mi><mfrac><mi>l</mi><mn>2</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#945;</mi><mo>=</mo><mfrac><mrow><mn>3</mn><mi>g</mi></mrow><mrow><mn>2</mn><mi>l</mi></mrow></mfrac></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "64c0e8536f5bfc7ab78aece1",
+      "title": "Angular momentum and Angular impulse",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "64c0e7f56f5bfc7ab78ae955",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "If the time period is doubled, then the angular momentum of the body will (provided the moment of inertia of the body is constant)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "avrfN",
+              "text": "remain constant",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Z672F",
+              "text": "quadruple",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "hI3qr",
+              "text": "become half",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "MxVbZ",
+              "text": "double",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>As we know.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mo>=</mo><mi>I</mi><mi>&#969;</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>L</mi><mo>=</mo><mi>I</mi><mo>&#215;</mo><mfrac><mrow><mn>2</mn><mi>&#960;</mi></mrow><mi>T</mi></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>L</mi><mo>&#8733;</mo><mfrac><mn>1</mn><mi>T</mi></mfrac></math></p><p>Given, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>T</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn><mi>T</mi></math></p><p>Hence&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msub><mi>L</mi><mn>1</mn></msub><msub><mi>L</mi><mn>2</mn></msub></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mi>T</mi></mrow><mi>T</mi></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><msub><mi>L</mi><mn>2</mn></msub><mo>=</mo><mfrac><msub><mi>L</mi><mn>1</mn></msub><mn>2</mn></mfrac></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ab6f5bfc7ab78ae6db",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "A particle of mass ' $m$ ' is projected with a velocity $v$ making an angle of $30^{\\circ}$ with the horizontal. The magnitude of angular momentum of the projectile about the point of projection when the particle is at its maximum height ' $h$ ' is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "17y8j",
+              "text": "$\\frac{\\sqrt{3}}{2} \\frac{m v^{2}}{g}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "oPiL7",
+              "text": "zero",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "d3tiU",
+              "text": "$\\frac{m v^{3}}{\\sqrt{2 g}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "BGs36",
+              "text": "$\\frac{\\sqrt{3}}{16} \\frac{m v^{3}}{g}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Angular momentum $L_{0}=p r_{\\perp}$ $\\left(\\because\\right.$ linear momentum $p=m v \\cos \\theta$ and $\\left.\\mathrm{r}_{1}=H\\right)$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/nZ84PuGwoTRtrwb2Py798AbqUV7RMNwWKZjAOgiqSiM.original.fullsize.png\"><br>\r\n\r\n$\\Rightarrow L_{0}=m v \\cos \\theta H$\r\n\r\n$=m v \\frac{\\sqrt{3}}{2} \\cdot \\frac{v^{2} \\sin ^{2} 30^{\\circ}}{2 g}$\r\n\r\n$=\\frac{\\sqrt{3} m v^{3}}{16 g}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "64c0e8536f5bfc7ab78aecdf",
+      "title": "Rolling without Slipping",
+      "totalQuestions": 6,
+      "questions": [
+        {
+          "_id": "65b7b87297ae24e9e2db8c67",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "A disc is rolling without slipping on a surface. The radius of the disc is $R$. At $t=0$, the top most point on the disc is $\\mathrm{A}$ as shown in figure. When the disc completes half of its rotation, the displacement of point $A$ from its initial position is<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/q-SlnnL2YNKWPjSCnEgbYs-9BTAVQuKIBpDRx5eQUoE.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "3x5UX",
+              "text": "$\\mathrm{R} \\sqrt{\\left(\\pi^2+4\\right)}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ZKQxs",
+              "text": "$\\mathrm{R} \\sqrt{\\left(\\pi^2+1\\right)}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ADtJ0",
+              "text": "$2 \\mathrm{R}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "kk7RE",
+              "text": "$2 \\mathrm{R} \\sqrt{\\left(1+4 \\pi^2\\right)}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "(a) From figure,<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/Djr7jOTnwC9j_KyyquLbu_JqUqhoVr-OQSeyH17AjIk.original.fullsize.png\"><br><br />Displacement,<br />$\\mathrm{BA}=\\sqrt{(2 \\mathrm{R})^2+(\\pi \\mathrm{R})^2}=\\mathrm{R} \\sqrt{4+\\pi^2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8126f5bfc7ab78aea52",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "A solid cylinder and a hollow cylinder both of the same mass and same external diameter are released from the same height at the same time on an inclined plane. Both roll down without slipping. Which one will reach the bottom first?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "biQbP",
+              "text": "Solid cylinder",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "oFngt",
+              "text": "Both together",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "hE1Qz",
+              "text": "One with higher density",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Ddts8",
+              "text": "Hollow cylinder",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Solid cylinder reaches the bottom first because for solid cylinder $\\frac{\\mathrm{K}^{2}}{\\mathrm{R}^{2}}=\\frac{1}{2}$ and for hollow cylinder, $\\frac{\\mathrm{K}^{2}}{\\mathrm{R}^{2}}=1$.\r\n\r\nAcceleration down the inclined plane $\\propto \\frac{1}{1+K^{2} / R^{2}} .$ Solid cylinder has greater acceleration. It reaches the bottom first.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8056f5bfc7ab78ae9df",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "A cylinder of mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>&#160;</mo><mi>kg</mi></math> is released from rest from the top of an inclined plane of inclination <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>30</mn><mo>&#176;</mo></math> and length <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math>. If the cylinder rolls without slipping, then its speed when it reaches the bottom&nbsp;is [<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mo>=</mo><mn>10</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>]",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "SlTnr",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>20</mn><mn>3</mn></mfrac><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "AGvLU",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msqrt><mfrac><mn>20</mn><mn>3</mn></mfrac></msqrt><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "W3gEg",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>10</mn><mn>3</mn></mfrac><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "LrAvB",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msqrt><mfrac><mn>10</mn><mn>3</mn></mfrac></msqrt><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Potential energy of cylinder at top position</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/610ef1cd-4773-43f2-8366-3b0bd8d1f9fa-image.png\" style=\"width: 230px; height: 177px;\" /></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>U</mi><mo>=</mo><mi>m</mi><mi>g</mi><mfenced><mrow><mi>A</mi><mi>B</mi></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>2</mn><mo>&#215;</mo><mn>10</mn><mfenced close=\"]\" open=\"[\"><mrow><mn>1</mn><mo>.</mo><mi>sin</mi><mn>30</mn><mo>&#176;</mo></mrow></mfenced><mo>&#160;&#160;</mo><mfenced close=\"]\" open=\"[\"><mtable columnalign=\"left\"><mtr><mtd><mo>&#8757;</mo><mi>sin</mi><mn>30</mn><mo>&#176;</mo><mo>=</mo><mfrac><mrow><mi>A</mi><mi>B</mi></mrow><mrow><mi>B</mi><mi>C</mi></mrow></mfrac></mtd></mtr><mtr><mtd><mo>&#8756;</mo><mi>A</mi><mi>B</mi><mo>=</mo><mn>1</mn><mi>sin</mi><mn>30</mn><mo>&#176;</mo></mtd></mtr></mtable></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>10</mn><mo>&#160;</mo><mi mathvariant=\"normal\">J</mi></math></p><p>If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi></math> is the linear speed of cylinder when it reaches at bottom, then at bottom, total potential energy of cylinder is converted into kinetic energy,</p><p>i.e. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>K</mi><mo>=</mo><mi>U</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>I</mi><msup><mi>&#969;</mi><mn>2</mn></msup><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mn>10</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#183;</mo><mfrac><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>&#183;</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><msup><mi>r</mi><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mn>10</mn><mfenced close=\"]\" open=\"[\"><mrow><mo>&#8757;</mo><mi>&#969;</mi><mo>=</mo><mfrac><mi>v</mi><mi>r</mi></mfrac></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;&#160;</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mn>10</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi><mo>=</mo><msqrt><mfrac><mn>40</mn><mrow><mn>3</mn><mi>m</mi></mrow></mfrac></msqrt><mo>=</mo><msqrt><mfrac><mn>40</mn><mrow><mn>3</mn><mo>&#215;</mo><mn>2</mn></mrow></mfrac></msqrt><mo>=</mo><msqrt><mfrac><mn>20</mn><mn>3</mn></mfrac></msqrt><mo>&#160;</mo><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8046f5bfc7ab78ae9dc",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "A uniform solid cylindrical roller of mass&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi></math>&nbsp;is being pulled on horizontal surface with force <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>F</mi></math>&nbsp;parallel to the surface applied at its centre. If the acceleration of the cylinder is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math> and it is rolling without slipping, then the value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>F</mi></math> is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "GUjRY",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>&#160;</mo><mi>m</mi><mi>a</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "5CKHJ",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>&#160;</mo><mi>m</mi><mi>a</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "yUTiV",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>3</mn><mo>&#160;</mo><mi>m</mi><mi>a</mi></mrow><mn>2</mn></mfrac></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "jwGR7",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>5</mn><mo>&#160;</mo><mi>m</mi><mi>a</mi></mrow><mn>2</mn></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>By Newton&#39;s law of motion</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>F</mi><mo>-</mo><msub><mi>f</mi><mi>s</mi></msub><mo>=</mo><mi>m</mi><mi>a</mi></math>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;...(i)</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/05358344-ac1b-4eda-85b0-50c97631bbb1-image.png\" style=\"width: 210px; height: 142px;\" /></p><p>and torque, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#964;</mi><mo>=</mo><mi>l</mi><mi>&#945;</mi></math></p><p>where, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#945;</mi><mo>=</mo></math>&nbsp;tangential component of acceleration<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi><mo>=</mo><mtext>&#160;moment of inertia&#160;</mtext></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;&#160;</mo><mi>f</mi><mi>R</mi><mo>=</mo><mi>l</mi><mi>&#945;</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mi>R</mi><mo>=</mo><mfrac><mrow><mi>M</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>&#183;</mo><mfrac><mi>a</mi><mi>R</mi></mfrac><mfenced close=\"\" open=\"[\"><mrow><mo>&#8756;</mo><mi>I</mi><mo>=</mo><mfrac><mrow><mi>M</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow></mfenced></math>and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"]\" open=\"\"><mrow><mo>,</mo><mi>&#945;</mi><mo>=</mo><mfrac><mi>a</mi><mi>R</mi></mfrac></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;&#160;</mo><mi>f</mi><mo>=</mo><mfrac><mrow><mi>m</mi><mi>a</mi></mrow><mn>2</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>F</mi><mo>=</mo><mi>f</mi><mo>+</mo><mi>m</mi><mi>a</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mi>m</mi><mi>a</mi></mrow><mn>2</mn></mfrac><mo>+</mo><mi>m</mi><mi>a</mi><mo>=</mo><mfrac><mrow><mn>3</mn><mi>m</mi><mi>a</mi></mrow><mn>2</mn></mfrac></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ab6f5bfc7ab78ae6dc",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "A disc is performing pure rolling on a smooth stationary surface with constant angular velocity as shown in figure. At any instant, for the lower most point of the disc $-$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/bfu6gxTxLm9omThWIOLYfn6k6jrae-NkE4zEXENd360.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Cbbjl",
+              "text": "velocity is v, acceleration is zero",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "aZAjL",
+              "text": "velocity is zero, acceleration is\r\n\r\nzero",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "MBsbA",
+              "text": "velocity is v, acceleration is $\\mathrm{v}^{2} / \\mathrm{R}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "NoBEn",
+              "text": "velocity is zero, acceleration is $\\mathrm{v}^{2} / \\mathrm{R}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "As the disc is in combined rotation and translation, each point has a tangential velocity and a linear velocity in the forward direction. From figure $\\mathrm{v}_{\\text {net }}$ (for lowest point) $=\\mathrm{v}-\\mathrm{R} \\omega=\\mathrm{v}-\\mathrm{v}=0$\r\n\r\nand acceleration\r\n\r\n$=\\frac{\\mathrm{v}^{2}}{\\mathrm{R}}+0=\\frac{\\mathrm{v}^{2}}{\\mathrm{R}}$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/EyZu6lGUGQJRjAdr1OzjBi45khqyYV8BsmqTxCDUKjw.original.fullsize.png\"><br>\r\n\r\n(since linear speed is constant)",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7806f5bfc7ab78ae562",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "The ratio of the accelerations for a solid sphere (mass 'm' and radius 'R') rolling down an incline of angle ' $\\theta$ ' without slipping and slipping down the incline without rolling is:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "BzuVV",
+              "text": "5: 7",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "FZaHq",
+              "text": "2: 3",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4vXFV",
+              "text": "2: 5",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "9B1xi",
+              "text": "7: 5",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "For solid sphere rolling without slipping on inclined plane, acceleration\n$$\na_{1}=\\frac{g \\sin \\theta}{1+\\frac{K^{2}}{R^{2}}}\n$$\nFor solid sphere slipping on inclined plane without rolling, acceleration\n$$\na_{2}=g \\sin \\theta\n$$\nTherefore required ratio $=\\frac{\\mathrm{a}_{1}}{\\mathrm{a}_{2}}$\n$$\n=\\frac{1}{1+\\frac{K^{2}}{R^{2}}}=\\frac{1}{1+\\frac{2}{5}}=\\frac{5}{7}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3660 @@
+{
+  "index": 6,
+  "chapterId": "61c089b102f2b15919540e82",
+  "chapter": "Work Power Energy",
+  "exam": "MHT CET",
+  "subject": "Physics",
+  "totalTopics": 4,
+  "totalQuestions": 54,
+  "downloadTime": "2026-10-08 20:33:46",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "65a263420279619d9d8a3d8f",
+      "title": "Work done",
+      "totalQuestions": 9,
+      "questions": [
+        {
+          "_id": "6abb885a15a9fc0fc8c142e5",
+          "type": "singleCorrect",
+          "question": {
+            "text": "A particle moves from position $3\\hat{i} + 2\\hat{j} - 6\\hat{k}$ to $14\\hat{i} + 13\\hat{j} + 9\\hat{k}$ due to uniform force of $(4\\hat{i} + \\hat{j} + 3\\hat{k})$ N. If displacement is in metre then work done will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "xnzCc",
+              "label": "A",
+              "text": "$100$ J",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "RxuYL",
+              "label": "B",
+              "text": "$200$ J",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "8FbRt",
+              "label": "C",
+              "text": "$300$ J",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Tukwc",
+              "label": "D",
+              "text": "$250$ J",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Initial position vector, $\\vec{r}_1 = 3\\hat{i} + 2\\hat{j} - 6\\hat{k}$<br><br>Final position vector, $\\vec{r}_2 = 14\\hat{i} + 13\\hat{j} + 9\\hat{k}$<br><br>Displacement vector, $\\vec{s} = \\vec{r}_2 - \\vec{r}_1$<br><br>$\\vec{s} = (14 - 3)\\hat{i} + (13 - 2)\\hat{j} + (9 - (-6))\\hat{k}$<br><br>$\\vec{s} = 11\\hat{i} + 11\\hat{j} + 15\\hat{k}$<br><br>Force vector, $\\vec{F} = 4\\hat{i} + \\hat{j} + 3\\hat{k}$<br><br>Work done, $W = \\vec{F} \\cdot \\vec{s}$<br><br>$W = (4\\hat{i} + \\hat{j} + 3\\hat{k}) \\cdot (11\\hat{i} + 11\\hat{j} + 15\\hat{k})$<br><br>$W = (4 \\times 11) + (1 \\times 11) + (3 \\times 15)$<br><br>$W = 44 + 11 + 45 = 100$ J<br><br>Answer: $100$ J",
+            "image": null
+          },
+          "level": 1,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87ef2fe711bb1be99967",
+              "title": "MHT CET 2026 (13 May Shift 1)",
+              "shortName": "2026 (13 May Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-05-13T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87ef2fe711bb1be99967",
+            "title": "MHT CET 2026 (13 May Shift 1)",
+            "shortName": "2026 (13 May Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-05-13T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6a44d2f98c30a4553e1bded3",
+          "type": "singleCorrect",
+          "question": {
+            "text": "The spring is initially in unstretched condition. It is first stretched by a length '$x$' and the work done is $W_1$. Then again it is stretched by further length '$x$' when the work done is $W_2$. The value of $W_2$ is given by",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "biKiT",
+              "label": "A",
+              "text": "$W_1$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "0gVHd",
+              "label": "B",
+              "text": "$2W_1$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Zdkhk",
+              "label": "C",
+              "text": "$3W_1$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "q7I9Z",
+              "label": "D",
+              "text": "$4W_1$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Work done in stretching a spring from its natural length to an extension $x$ is given by $W_1 = \\dfrac{1}{2}kx^2$.<br><br>When the spring is further stretched by a length $x$, the total extension becomes $2x$.<br><br>Total work done from the natural length to an extension $2x$ is $W = \\dfrac{1}{2}k(2x)^2 = 4 \\left(\\dfrac{1}{2}kx^2\\right) = 4W_1$.<br><br>Work done in the second step is $W_2 = W - W_1 = 4W_1 - W_1 = 3W_1$.<br><br>Answer: $3W_1$",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d2802d2155b816ec4a7a",
+              "title": "MHT CET 2026 (19 April Shift 1)",
+              "shortName": "2026 (19 April Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-04-19T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 2,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d2802d2155b816ec4a7a",
+            "title": "MHT CET 2026 (19 April Shift 1)",
+            "shortName": "2026 (19 April Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-04-19T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871bb5bf9280d7f9932bbe",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376df9b67616acec78f79",
+              "heldOn": "2025-04-25T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (25 Apr Shift 2)",
+              "title": "MHT CET 2025 (25 Apr Shift 2)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "A constant force $\\overrightarrow{\\mathrm{F}}=3 \\hat{\\mathrm{i}}-2 \\hat{\\mathrm{j}}-\\hat{\\mathrm{k}}$ newton has a displacement $\\vec{r}=2 \\hat{i}-3 \\hat{j}-3 \\hat{k}$ metre in 2 second. The work done and the power are respectively",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "K0ISX",
+              "text": "20 joule , 10 watt",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "5X2f2",
+              "text": "15 joule, $7.5$ watt",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "lMWi4",
+              "text": "13 joule , $6.5$ watt",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "5pCvs",
+              "text": "10 joule , 5 watt",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Work done is given by the dot product of force and displacement vectors.<br><br>$W = \\overrightarrow{\\mathrm{F}} \\cdot \\vec{r}$<br><br>$W = (3 \\hat{\\mathrm{i}} - 2 \\hat{\\mathrm{j}} - \\hat{\\mathrm{k}}) \\cdot (2 \\hat{\\mathrm{i}} - 3 \\hat{\\mathrm{j}} - 3 \\hat{\\mathrm{k}})$<br><br>$W = (3)(2) + (-2)(-3) + (-1)(-3)$<br><br>$W = 6 + 6 + 3 = 15 \\text{ joule}$<br><br>Power is the rate of work done.<br><br>$P = \\dfrac{W}{t}$<br><br>$P = \\dfrac{15}{2} = 7.5 \\text{ watt}$<br><br>Answer: 15 joule, $7.5$ watt",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376df9b67616acec78f79",
+            "heldOn": "2025-04-25T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (25 Apr Shift 2)",
+            "title": "MHT CET 2025 (25 Apr Shift 2)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b93bf9280d7f9932a84",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376df9b67616acec78f77",
+              "heldOn": "2025-04-23T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (23 Apr Shift 2)",
+              "title": "MHT CET 2025 (23 Apr Shift 2)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "A particle is displaced from point $\\mathrm{P}(3 \\mathrm{~m}, 4 \\mathrm{~m}, 5 \\mathrm{~m})$ to a point $Q(2 m, 3 m, 4 m)$ under a constant force $\\vec{F}=(3 \\hat{i}+4 \\hat{j}+5 \\hat{k}) N$. The work done by the force in this process is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "eGfyK",
+              "text": "$+10 \\mathrm{~J}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6Ofa8",
+              "text": "$+4 \\mathrm{~J}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "KPPIm",
+              "text": "$-8 \\mathrm{~J}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2bgvo",
+              "text": "$-12 \\mathrm{~J}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Initial position vector $\\vec{r}_1 = 3\\hat{i} + 4\\hat{j} + 5\\hat{k}$<br><br>Final position vector $\\vec{r}_2 = 2\\hat{i} + 3\\hat{j} + 4\\hat{k}$<br><br>Displacement vector $\\vec{s} = \\vec{r}_2 - \\vec{r}_1 = (2-3)\\hat{i} + (3-4)\\hat{j} + (4-5)\\hat{k} = -\\hat{i} - \\hat{j} - \\hat{k}$<br><br>Force $\\vec{F} = 3\\hat{i} + 4\\hat{j} + 5\\hat{k}$<br><br>Work done $W = \\vec{F} \\cdot \\vec{s} = (3\\hat{i} + 4\\hat{j} + 5\\hat{k}) \\cdot (-\\hat{i} - \\hat{j} - \\hat{k})$<br><br>$W = 3(-1) + 4(-1) + 5(-1) = -3 - 4 - 5 = -12 \\text{ J}$<br><br>Answer: $-12 \\mathrm{~J}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376df9b67616acec78f77",
+            "heldOn": "2025-04-23T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (23 Apr Shift 2)",
+            "title": "MHT CET 2025 (23 Apr Shift 2)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6792141c0aee93fa0796de11",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e159a8109c6c5665cd0",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (15 May Shift 2)",
+              "title": "MHT CET 2024 (15 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "In an electric field due to charge $Q$, a charge $q$ moves from point $A$ to $B$ as shown in the figure. The work done is ( $\\varepsilon_0=$ permittivity of free space)\r\n<img src=\"https://cdn.quizrr.in/question-assets/mhtcet/py35bdsq/qNrIIxDZjIxBYoi64XAttw52TXvLMBwL41vIPs_zxOo.original.fullsize.png\"/><br/>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "SAuWj",
+              "text": "$\\frac{1}{4 \\pi \\varepsilon_0} \\frac{\\mathrm{Qq}}{\\mathrm{r}^2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "9WbtR",
+              "text": "$\\frac{1}{4 \\pi \\varepsilon_0} \\frac{\\mathrm{Qq}}{\\mathrm{r}^2} \\frac{\\pi}{6}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "QJxGx",
+              "text": "$\\frac{1}{4 \\pi \\varepsilon_0} \\frac{\\mathrm{Qq}}{\\mathrm{r}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "uZR1O",
+              "text": "zero",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The electric potential at a distance $r$ from a point charge $Q$ is given by $V = \\dfrac{1}{4\\pi\\varepsilon_0}\\dfrac{Q}{r}$.<br><br>From the given figure, both points $A$ and $B$ are at the same distance $r$ from the charge $+Q$.<br><br>Therefore, the electric potential at point $A$ is $V_A = \\dfrac{1}{4\\pi\\varepsilon_0}\\dfrac{Q}{r}$ and the electric potential at point $B$ is $V_B = \\dfrac{1}{4\\pi\\varepsilon_0}\\dfrac{Q}{r}$.<br><br>Since $V_A = V_B$, the potential difference between points $A$ and $B$ is $\\Delta V = V_B - V_A = 0$.<br><br>The work done in moving a charge $q$ from $A$ to $B$ is $W = q(V_B - V_A) = q(0) = 0$.<br><br>Alternatively, the path $AB$ is a circular arc centered at $+Q$, which means the electric force on charge $q$ is always radial and perpendicular to the tangential displacement. Since the angle between force and displacement is $90^{\\circ}$ at every point, the work done is zero.<br><br>Answer: zero",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e159a8109c6c5665cd0",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (15 May Shift 2)",
+            "title": "MHT CET 2024 (15 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679214190aee93fa0796ddf6",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e159a8109c6c5665cd0",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (15 May Shift 2)",
+              "title": "MHT CET 2024 (15 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "If the work done in blowing a soap bubble of volume ' V ' is ' W ', then the work done in blowing a soap bubble of volume ' 2 V ' will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "zZVv2",
+              "text": "W",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "NxqFs",
+              "text": "2 W",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Onfcm",
+              "text": "$\\mathrm{w} \\sqrt{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4wvT9",
+              "text": "$\\quad \\mathrm{W}(4)^{\\frac{1}{3}}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The work done in blowing a soap bubble of radius $R$ and surface tension $T$ is given by:<br><br>$W = 8\\pi R^2 T$<br><br>The volume of the soap bubble is:<br><br>$V = \\dfrac{4}{3}\\pi R^3$<br><br>From this, the radius $R$ in terms of volume $V$ is:<br><br>$R = \\left(\\dfrac{3V}{4\\pi}\\right)^{\\dfrac{1}{3}}$<br><br>Substituting $R$ into the expression for work done:<br><br>$W = 8\\pi T \\left(\\dfrac{3V}{4\\pi}\\right)^{\\dfrac{2}{3}}$<br><br>This implies that the work done is directly proportional to $V^{\\dfrac{2}{3}}$:<br><br>$W \\propto V^{\\dfrac{2}{3}}$<br><br>For a new volume $V' = 2V$, the new work done $W'$ is:<br><br>$\\dfrac{W'}{W} = \\left(\\dfrac{2V}{V}\\right)^{\\dfrac{2}{3}} = 2^{\\dfrac{2}{3}} = (2^2)^{\\dfrac{1}{3}} = 4^{\\dfrac{1}{3}}$<br><br>$W' = W(4)^{\\dfrac{1}{3}}$<br><br>Answer: $\\quad \\mathrm{W}(4)^{\\frac{1}{3}}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e159a8109c6c5665cd0",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (15 May Shift 2)",
+            "title": "MHT CET 2024 (15 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260ee0279619d9d8a2874",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b87f20917a5f41892a0",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2022-08-05T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022 (05 Aug Shift 2)",
+              "title": "MHT CET 2022 (05 Aug Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A gardener pushes a lawn roller through a distance $20 \\mathrm{~m}$. If he applies a force of $30 \\mathrm{~kg}-\\mathrm{wt}$ in a direction inclined at $60^{\\circ}$ to the ground, the work done by the gardener in pushing the roller is\n$$\n\\left[\\mathrm{g}=9.8 \\mathrm{~m} / \\mathrm{s}^2, \\sin 30^{\\circ}=\\cos 60^{\\circ}=\\frac{1}{2}, \\cos 30^{\\circ}=\\sin 60^{\\circ}=\\frac{\\sqrt{3}}{2}\\right]\n$$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "3k98d",
+              "text": "$3640 \\mathrm{~J}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Ggghf",
+              "text": "$2460 \\mathrm{~J}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Nul3o",
+              "text": "$3940 \\mathrm{~J}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "G2wKs",
+              "text": "$2940 \\mathrm{~J}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Consider the diagram below:\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/lqe7_l3G7blwEa5gDCJcYpccgWKBkK9UOlLCz7JnzP4.original.fullsize.png\">\n$\\begin{aligned} & \\mathrm{W}=\\mathrm{F} \\Delta \\mathrm{S} \\cos (\\theta) \\\\ & \\mathrm{W}=\\overrightarrow{\\mathrm{F}} \\cdot \\overrightarrow{\\Delta \\mathrm{S}}=\\mathrm{F} \\Delta \\mathrm{S} \\cos 60^{\\circ}=30 \\times(9.8) 20 \\times \\frac{1}{2}=2940 \\mathrm{~J}\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b87f20917a5f41892a0",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2022-08-05T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022 (05 Aug Shift 2)",
+            "title": "MHT CET 2022 (05 Aug Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fa10279619d9d8a1e07",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6e",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (15 Oct Shift 2)",
+              "title": "MHT CET 2020 (15 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A force $(5 \\hat{\\imath}-2 \\hat{\\jmath}+3 \\hat{k}) \\mathrm{N}$ acts on a body of mass $2 \\mathrm{~kg}$ and displaces it from $(3 \\hat{\\imath}+2 \\hat{\\jmath}-\\hat{k})$$\\mathrm{m}$ to $(6 \\hat{\\imath}-\\hat{\\jmath}+4 \\hat{k}) \\mathrm{m} .$ The work done is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "9FOyc",
+              "text": "27 J",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "tpWVu",
+              "text": "18 J",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "VHf2A",
+              "text": "$36 \\mathrm{~J}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "QTbII",
+              "text": "$9 \\mathrm{~J}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6e",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (15 Oct Shift 2)",
+            "title": "MHT CET 2020 (15 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f550279619d9d8a1b9e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6a",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-13T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (13 Oct Shift 2)",
+              "title": "MHT CET 2020 (13 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A block of mass 'm', kept on a horizontal surface, is moved through a distance 's'\nby applying a horizontal force (F) to it. What is the work done by the normal\nreaction?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "5H8YT",
+              "text": "$\\frac{\\mathrm{F}}{\\mathrm{s}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "LbW4j",
+              "text": "$\\mathrm{Fs}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Sd5Fp",
+              "text": "zero",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Jr32u",
+              "text": "$\\frac{\\mathrm{S}}{\\mathrm{F}}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In the first case, the centre of gravity is at a height $=\\frac{b}{2}$ $\\therefore$ Work done $=\\mathrm{mgh}=\\mathrm{mg}\\left(\\frac{b}{2}\\right)$\nIn the second case, the height of the centre of gravity $=\\frac{L}{2}$\n$\\therefore$ Work done $=m g \\frac{L}{2} \\therefore L>b$\n$\\therefore$ Extra work done $\\quad=m g\\left(\\frac{L-b}{2}\\right)$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6a",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-13T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (13 Oct Shift 2)",
+            "title": "MHT CET 2020 (13 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "65a263420279619d9d8a3d8e",
+      "title": "Energy",
+      "totalQuestions": 23,
+      "questions": [
+        {
+          "_id": "6abb889a15a9fc0fc8c14541",
+          "type": "singleCorrect",
+          "question": {
+            "text": "A lead bullet moving with velocity '$v$' strikes a wall and stops. $75\\%$ of its energy is converted into heat. If the increase in the temperature is $\\dfrac{v^2}{nJs}$, then the value of $n$ is $\\{s = \\text{specific heat of lead}, J = \\text{mechanical equivalent of heat}\\}$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "4fkO1",
+              "label": "A",
+              "text": "$\\dfrac{8}{3}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Q848B",
+              "label": "B",
+              "text": "$\\dfrac{4}{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "fZ1vI",
+              "label": "C",
+              "text": "$\\dfrac{3}{8}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "auaa3",
+              "label": "D",
+              "text": "$\\dfrac{3}{4}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The initial kinetic energy of the bullet is $K = \\dfrac{1}{2}mv^2$.<br><br>The energy converted into heat is $W = 75\\% \\text{ of } K = \\dfrac{3}{4} \\times \\dfrac{1}{2}mv^2 = \\dfrac{3}{8}mv^2$.<br><br>Using the relation $W = JH$, where the heat absorbed by the bullet is $H = ms\\Delta T$:<br><br>$\\dfrac{3}{8}mv^2 = Jms\\Delta T$<br><br>$\\Delta T = \\dfrac{3v^2}{8Js} = \\dfrac{v^2}{\\left(\\dfrac{8}{3}\\right)Js}$<br><br>Comparing this with the given expression $\\Delta T = \\dfrac{v^2}{nJs}$, we get:<br><br>$n = \\dfrac{8}{3}$<br><br>Answer: $\\dfrac{8}{3}$",
+            "image": null
+          },
+          "level": 2,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87f02fe711bb1be9996e",
+              "title": "MHT CET 2026 (19 May Shift 2)",
+              "shortName": "2026 (19 May Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-05-19T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87f02fe711bb1be9996e",
+            "title": "MHT CET 2026 (19 May Shift 2)",
+            "shortName": "2026 (19 May Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-05-19T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6abb883d15a9fc0fc8c141d0",
+          "type": "singleCorrect",
+          "question": {
+            "text": "The bob of a simple pendulum of length 2m is kept at P. It is released and when it reaches Q, it losses 20% of its total energy due to air resistance. Its velocity at Q is [Take $g = 9.8 \\text{ m/s}^2$]<br><img style=\"width: 400px\" src=\"https://cdn.quizrr.in/question-assets/mht_cet_pyqs_2026/may/watermarked_images/19_may_shift_1__q24_d1.png\" />",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ddKVr",
+              "label": "A",
+              "text": "$4.4 \\text{ m/s}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "XNI9t",
+              "label": "B",
+              "text": "$5.2 \\text{ m/s}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Cy3j1",
+              "label": "C",
+              "text": "$5.6 \\text{ m/s}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "BCWww",
+              "label": "D",
+              "text": "$6.2 \\text{ m/s}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let the mass of the bob be $m$.<br><br>The initial total energy of the bob at point P (taking the potential energy at Q as zero) is purely potential energy:<br><br>$E_i = mgh$<br><br>The bob loses $20\\%$ of its total energy due to air resistance as it moves from P to Q. Therefore, the remaining energy at Q is $80\\%$ of the initial energy:<br><br>$E_f = 0.8 E_i = 0.8 mgh$<br><br>At point Q, all the remaining energy is in the form of kinetic energy:<br><br>$\\dfrac{1}{2}mv^2 = 0.8 mgh$<br><br>$v^2 = 1.6 gh$<br><br>Substituting the given values $g = 9.8 \\text{ m/s}^2$ and $h = 2 \\text{ m}$:<br><br>$v^2 = 1.6 \\times 9.8 \\times 2$<br><br>$v^2 = 31.36$<br><br>$v = \\sqrt{31.36} = 5.6 \\text{ m/s}$<br><br>Answer: $5.6 \\text{ m/s}$",
+            "image": null
+          },
+          "level": 2,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87f02fe711bb1be9996d",
+              "title": "MHT CET 2026 (19 May Shift 1)",
+              "shortName": "2026 (19 May Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-05-19T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87f02fe711bb1be9996d",
+            "title": "MHT CET 2026 (19 May Shift 1)",
+            "shortName": "2026 (19 May Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-05-19T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6abb884d15a9fc0fc8c14268",
+          "type": "singleCorrect",
+          "question": {
+            "text": "A sphere of mass $50$ gram is placed on a vertical spring. It is compressed by $0.4$ m using a force $10$ N. When the spring is released the sphere will reach to a height of ($g = 10\\,m/s^2$)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ckheP",
+              "label": "A",
+              "text": "$8\\,m$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "s8Khc",
+              "label": "B",
+              "text": "$4\\,m$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "ZcjBH",
+              "label": "C",
+              "text": "$2\\,m$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "uODSP",
+              "label": "D",
+              "text": "$16\\,m$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The spring constant $k$ can be calculated using the given force and compression:<br><br>$k = \\dfrac{F}{x} = \\dfrac{10}{0.4} = 25\\, \\text{N/m}$<br><br>The elastic potential energy stored in the spring when it is compressed by $0.4\\, \\text{m}$ is:<br><br>$U = \\dfrac{1}{2} k x^2 = \\dfrac{1}{2} \\times 25 \\times (0.4)^2 = \\dfrac{1}{2} \\times 25 \\times 0.16 = 2\\, \\text{J}$<br><br>When the spring is released, this elastic potential energy is converted into the gravitational potential energy of the sphere at its maximum height $h$ (measured from the compressed position). Using the law of conservation of energy:<br><br>$mgh = U$<br><br>Given $m = 50\\, \\text{g} = 0.05\\, \\text{kg}$ and $g = 10\\, \\text{m/s}^2$, substituting the values we get:<br><br>$0.05 \\times 10 \\times h = 2$<br><br>$0.5 h = 2$<br><br>$h = 4\\, \\text{m}$<br><br>Answer: $4\\,m$",
+            "image": null
+          },
+          "level": 2,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87f02fe711bb1be9996c",
+              "title": "MHT CET 2026 (15 May Shift 2)",
+              "shortName": "2026 (15 May Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-05-15T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87f02fe711bb1be9996c",
+            "title": "MHT CET 2026 (15 May Shift 2)",
+            "shortName": "2026 (15 May Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-05-15T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6a44d32f8c30a4553e1be113",
+          "type": "singleCorrect",
+          "question": {
+            "text": "A block of mass 'm' moving on a frictionless horizontal surface collides with a spring of spring constant 'K' and compresses it through a distance 'x'. The maximum momentum of the block after collision is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "PrspM",
+              "label": "A",
+              "text": "zero",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ivNyl",
+              "label": "B",
+              "text": "$\\sqrt{\\text{km}}\\ x$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "BWcae",
+              "label": "C",
+              "text": "$\\text{mx}^2/\\text{K}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "rtccT",
+              "label": "D",
+              "text": "$\\text{Kx}^2/2\\text{m}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "By the principle of conservation of mechanical energy, the maximum kinetic energy of the block is equal to the maximum potential energy stored in the spring at maximum compression.<br><br>$\\dfrac{p^2}{2m} = \\dfrac{1}{2} K x^2$<br><br>$p^2 = m K x^2$<br><br>$p = \\sqrt{m K} x$<br><br>The maximum momentum of the block after the collision is equal in magnitude to its initial momentum, which is $\\sqrt{m K} x$.<br><br>Answer: $\\sqrt{\\text{km}}\\ x$",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d2802d2155b816ec4a74",
+              "title": "MHT CET 2026 (16 April Shift 1)",
+              "shortName": "2026 (16 April Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-04-16T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 2,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d2802d2155b816ec4a74",
+            "title": "MHT CET 2026 (16 April Shift 1)",
+            "shortName": "2026 (16 April Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-04-16T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b56bf9280d7f9932858",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376de9b67616acec78f73",
+              "heldOn": "2025-04-21T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (21 Apr Shift 2)",
+              "title": "MHT CET 2025 (21 Apr Shift 2)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "A pendulum bob has a speed $4 \\mathrm{~m} / \\mathrm{s}$ at its lowest position. The pendulum is 1 m long. When the length of the string makes an angle of $60^{\\circ}$ with the vertical, the speed of the bob at that position is (acceleration due to gravity, $g=10 \\mathrm{~m} / \\mathrm{s}^2, \\cos 60^{\\circ}=0.5$ )",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "eSqaq",
+              "text": "$6 \\mathrm{~m} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ldDsv",
+              "text": "$\\sqrt{3} \\mathrm{~m} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qT0Qr",
+              "text": "$\\sqrt{6} \\mathrm{~m} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Hpyz0",
+              "text": "$3 \\mathrm{~m} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "By the principle of conservation of mechanical energy, the total energy at the lowest point equals the total energy at an angle $\\theta$.<br><br>$\\dfrac{1}{2}mv_0^2 = \\dfrac{1}{2}mv^2 + mgh$<br><br>The height $h$ of the bob when the string makes an angle $\\theta$ with the vertical is given by $h = L(1 - \\cos \\theta)$.<br><br>Substituting the given values $L = 1 \\text{ m}$ and $\\theta = 60^\\circ$:<br><br>$h = 1(1 - \\cos 60^\\circ) = 1(1 - 0.5) = 0.5 \\text{ m}$<br><br>Using $v_0 = 4 \\text{ m/s}$ and $g = 10 \\text{ m/s}^2$:<br><br>$\\dfrac{1}{2}v_0^2 = \\dfrac{1}{2}v^2 + gh$<br><br>$v^2 = v_0^2 - 2gh$<br><br>$v^2 = 4^2 - 2(10)(0.5)$<br><br>$v^2 = 16 - 10 = 6$<br><br>$v = \\sqrt{6} \\text{ m/s}$<br><br>Answer: $\\sqrt{6} \\mathrm{~m} / \\mathrm{s}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376de9b67616acec78f73",
+            "heldOn": "2025-04-21T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (21 Apr Shift 2)",
+            "title": "MHT CET 2025 (21 Apr Shift 2)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b0bbf9280d7f99325e7",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376de9b67616acec78f6f",
+              "heldOn": "2025-04-19T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (19 Apr Shift 2)",
+              "title": "MHT CET 2025 (19 Apr Shift 2)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "A stone is projected with kinetic energy E, making an angle $\\theta$ with the horizontal. When it reaches a highest point, its kinetic energy is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "jLuMv",
+              "text": "$E^2 \\sin ^2 \\theta$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "v0S9l",
+              "text": "$E \\sin \\theta$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "tff9P",
+              "text": "$\\mathrm{E} \\cos ^2 \\theta$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "zjbTv",
+              "text": "$E \\cos \\theta$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let the mass of the stone be $m$ and its initial velocity be $u$.<br><br>Initial kinetic energy is given by $E = \\dfrac{1}{2}mu^2$.<br><br>At the highest point of the projectile motion, the vertical component of velocity becomes zero, while the horizontal component remains constant.<br><br>Velocity at the highest point is $v = u \\cos \\theta$.<br><br>Kinetic energy at the highest point is $E' = \\dfrac{1}{2}mv^2 = \\dfrac{1}{2}m(u \\cos \\theta)^2$.<br><br>$E' = \\left(\\dfrac{1}{2}mu^2\\right) \\cos^2 \\theta = E \\cos^2 \\theta$.<br><br>Answer: $\\mathrm{E} \\cos ^2 \\theta$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376de9b67616acec78f6f",
+            "heldOn": "2025-04-19T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (19 Apr Shift 2)",
+            "title": "MHT CET 2025 (19 Apr Shift 2)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6792143f0aee93fa0796df20",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e159a8109c6c5665cd1",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-16T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (16 May Shift 2)",
+              "title": "MHT CET 2024 (16 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "The bob of a pendulum of length ' $l$ ' is pulled aside from its equilibrium position through an angle ' $\\theta$ ' and then released. The bob will then pass through its equilibrium position with speed ' $v$ ', where ' $v$ ' equal to ( $g=$ acceleration due to gravity)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "k88zd",
+              "text": "$\\sqrt{2 g l(1-\\cos \\theta)}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "TcjlE",
+              "text": "$\\sqrt{2 g l(1+\\sin \\theta)}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "zhDTp",
+              "text": "$\\sqrt{2 g l(1-\\sin \\theta)}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "uBzFc",
+              "text": "$\\sqrt{2 \\mathrm{~g} l(1+\\cos \\theta)}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let the equilibrium position be the reference level for potential energy.<br><br>When the pendulum of length $l$ is pulled aside by an angle $\\theta$, the vertical height $h$ of the bob above the equilibrium position is given by:<br><br>$h = l - l \\cos \\theta = l(1 - \\cos \\theta)$<br><br>At the release point, the kinetic energy is zero and the potential energy is $mgh$.<br><br>At the equilibrium position, the potential energy is zero and the kinetic energy is $\\dfrac{1}{2}mv^2$.<br><br>By the principle of conservation of mechanical energy:<br><br>$\\dfrac{1}{2}mv^2 = mgh$<br><br>$\\dfrac{1}{2}mv^2 = mgl(1 - \\cos \\theta)$<br><br>$v^2 = 2gl(1 - \\cos \\theta)$<br><br>$v = \\sqrt{2gl(1 - \\cos \\theta)}$<br><br>Answer: $\\sqrt{2 g l(1-\\cos \\theta)}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e159a8109c6c5665cd1",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-16T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (16 May Shift 2)",
+            "title": "MHT CET 2024 (16 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6792141e0aee93fa0796de1e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e159a8109c6c5665cd0",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (15 May Shift 2)",
+              "title": "MHT CET 2024 (15 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A particle is moving in a circle with uniform speed. It has constant",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "nHGQm",
+              "text": "velocity.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6vcg9",
+              "text": "acceleration.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "REIWy",
+              "text": "kinetic energy.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "zlvtM",
+              "text": "displacement.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In uniform circular motion, the speed of the particle remains constant.<br><br>Velocity is a vector quantity. Although its magnitude (speed) is constant, its direction changes continuously along the tangent to the circular path. Hence, velocity is not constant.<br><br>Acceleration in uniform circular motion is centripetal, directed towards the centre. Its magnitude is constant ($v^2/r$), but its direction changes continuously. Hence, acceleration is not constant.<br><br>Displacement is a vector quantity that changes as the position of the particle changes.<br><br>Kinetic energy is a scalar quantity given by $K = \\dfrac{1}{2}mv^2$. Since both mass $m$ and speed $v$ are constant, the kinetic energy remains constant.<br><br>Answer: kinetic energy.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e159a8109c6c5665cd0",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (15 May Shift 2)",
+            "title": "MHT CET 2024 (15 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679213390aee93fa0796d718",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e139a8109c6c5665cc3",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-02T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (02 May Shift 2)",
+              "title": "MHT CET 2024 (02 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "The string of pendulum of length ' $L$ ' is displaced through $90^{\\circ}$ from the vertical and released. Then the maximum strength of the string in order to withstand the tension, as the pendulum passes through the mean position is ( $\\mathrm{m}=$ mass of pendulum, $\\mathrm{g}=$ acceleration due to gravity)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "8lbXv",
+              "text": "mg",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "q5CLG",
+              "text": "3 mg",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "0sX5x",
+              "text": "5 mg",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "XpuNy",
+              "text": "6 mg",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let the mass of the pendulum be $m$ and its length be $L$.<br><br>When the pendulum is released from a $90^{\\circ}$ angle, it falls through a vertical height $L$ to reach the mean position.<br><br>By conservation of mechanical energy, the potential energy lost is converted into kinetic energy at the lowest point:<br><br>$m g L = \\dfrac{1}{2} m v^2$<br><br>$v^2 = 2 g L$<br><br>At the mean position, the tension $T$ in the string and the weight $m g$ provide the necessary centripetal force:<br><br>$T - m g = \\dfrac{m v^2}{L}$<br><br>Substituting the value of $v^2$:<br><br>$T = m g + \\dfrac{m (2 g L)}{L}$<br><br>$T = m g + 2 m g = 3 m g$<br><br>The maximum tension occurs at the mean position, so the string must be able to withstand a tension of $3 m g$.<br><br>Answer: 3 mg",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e139a8109c6c5665cc3",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-02T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (02 May Shift 2)",
+            "title": "MHT CET 2024 (02 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a262300279619d9d8a3283",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b1",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-12T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (12 May Shift 2)",
+              "title": "MHT CET 2023 (12 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A body of mass ' $\\mathrm{m}$ ' attached at the end of a string is just completing the loop in a vertical circle. The apparent weight of the body at the lowest point in its path is ( $\\mathrm{g}=$ gravitational acceleration)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "OBsvG",
+              "text": "zero",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Qw8NN",
+              "text": "$\\mathrm{mg}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CEJPZ",
+              "text": "$3 \\mathrm{mg}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3O7U1",
+              "text": "$6 \\mathrm{mg}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The tension at the lowest point is $\\mathrm{T}=\\frac{\\mathrm{mv}^2}{\\mathrm{r}}+\\mathrm{mg}$ To complete the vertical circle, the minimum velocity should be $\\mathrm{v}=\\sqrt{5 \\mathrm{gr}}$\n$$\n\\begin{aligned}\n\\therefore \\quad \\mathrm{T} & =\\frac{\\mathrm{m}(\\sqrt{5 \\mathrm{gr}})^2}{\\mathrm{r}}+\\mathrm{mg} \\\\\n\\mathrm{R} & =5 \\mathrm{mg}+\\mathrm{mg} \\\\\n\\therefore \\quad \\mathrm{T} & =6 \\mathrm{mg}\n\\end{aligned}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b1",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-12T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (12 May Shift 2)",
+            "title": "MHT CET 2023 (12 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a261e40279619d9d8a3028",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892ad",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-10T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (10 May Shift 2)",
+              "title": "MHT CET 2023 (10 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A ball of mass ' $\\mathrm{m}$ ' is dropped from a height ' $\\mathrm{s}$ ' on a horizontal platform fixed at the top of a vertical spring. The platform is depressed by a distance ' $h$ '. The spring constant is ( $\\mathrm{g}=$ acceleration due to gravity)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "pJiex",
+              "text": "$\\frac{2 \\mathrm{mg}(\\mathrm{s}-\\mathrm{h})}{\\mathrm{h}^2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "mIIo6",
+              "text": "$\\frac{2 \\mathrm{mg}(\\mathrm{s}+\\mathrm{h})}{\\mathrm{h}^2}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "4pj21",
+              "text": "$\\frac{\\mathrm{mg}(\\mathrm{s}-\\mathrm{h})}{\\mathrm{h}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ihnIZ",
+              "text": "$\\frac{\\mathrm{mg}(\\mathrm{s}+\\mathrm{h})}{\\mathrm{h}}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "From the question, it can be understood that the total distance the ball falls is $(\\mathrm{S}+\\mathrm{h})$\nThe spring is compressed through a length $h$\n$\\therefore \\quad$ Loss of P.E. by the ball $=\\mathrm{mg}(\\mathrm{S}+\\mathrm{h})$\nWork done on the spring $=\\frac{1}{2} \\mathrm{Kh}^2$\nUsing law of conservation of energy,\n$\\begin{aligned}\n& \\frac{1}{2} \\mathrm{Kh}^2=\\mathrm{mg}(\\mathrm{S}+\\mathrm{h}) \\\\\n\\therefore \\quad & \\mathrm{K}=\\frac{2 \\mathrm{mg}(\\mathrm{S}+\\mathrm{h})}{\\mathrm{h}^2}\n\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892ad",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-10T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (10 May Shift 2)",
+            "title": "MHT CET 2023 (10 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a261a90279619d9d8a2e54",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892aa",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-09T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (09 May Shift 1)",
+              "title": "MHT CET 2023 (09 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A stone is projected vertically upwards with speed ' $v$ '. Another stone of same mass is projected at an angle of $60^{\\circ}$ with the vertical with the same speed ' $v$ '. The ratio of their potential energies at the highest points of their journey is $\\left[\\sin 30^{\\circ}=\\cos 60^{\\circ}=0.5\\right.$, $\\left.\\cos 30^{\\circ}=\\sin 60^{\\circ}=\\frac{\\sqrt{3}}{2}\\right]$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ZZ8tk",
+              "text": "$4:1$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "H7q3c",
+              "text": "$3:2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3ccPJ",
+              "text": "$2:1$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "O9gmy",
+              "text": "$1:1$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "P.E. of the stone projected vertically is, \nP.E. = mgh\nBut $\\mathrm{h}=\\frac{\\mathrm{v}^2}{2 \\mathrm{~g}}$\n$\\begin{aligned}\n\\therefore \\quad \\text { P. } \\mathrm{E}_1 & =\\mathrm{mg}\\left(\\frac{\\mathrm{v}^2}{2 \\mathrm{~g}}\\right) \\\\\n& =\\frac{\\mathrm{mv}^2}{2}... (i)\n\\end{aligned}$\nFor the second stone thrown at an angle $\\theta$ to the horizontal,\n$\\begin{array}{ll} \n& \\mathrm{h}=\\frac{\\mathrm{v}^2 \\sin ^2 \\theta}{2 \\mathrm{~g}}=\\frac{\\mathrm{v}^2 \\sin ^2 30^{\\circ}}{2 \\mathrm{~g}}=\\frac{\\mathrm{v}^2}{8 \\mathrm{~g}} \\\\\n\\therefore \\quad & \\text { P.E. } 2=\\mathrm{mg}\\left(\\frac{\\mathrm{v}^2}{8 \\mathrm{~g}}\\right)=\\frac{\\mathrm{mv}^2}{8}... (ii)\n\\end{array}$\nDividing equation (i) by equation (ii) -\n$-\\frac{P \\cdot E_1}{P \\cdot E_2}=\\frac{\\left(\\frac{m v^2}{2}\\right)}{\\left(\\frac{m v^2}{8}\\right)}=4: 1$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892aa",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-09T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (09 May Shift 1)",
+            "title": "MHT CET 2023 (09 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a261710279619d9d8a2c99",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892a7",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2022-08-10T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022 (10 Aug Shift 1)",
+              "title": "MHT CET 2022 (10 Aug Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "When a long spring of $4 \\mathrm{~cm}$ is stretched by $1 \\mathrm{~cm}$, the potential energy stored in the spring is $U$. If it is stretched by $4 \\mathrm{~cm}$, the potential energy stored in it is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "CXHrj",
+              "text": "$4 U$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "mW3ER",
+              "text": "$16 U$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "eGyXV",
+              "text": "$9 U$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "uTMqd",
+              "text": "$25 U$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The potential energy $U$ relates to an extension $x$ via,\n$\\begin{aligned} & U=\\frac{1}{2} K x^2 \\\\ & \\therefore \\frac{U^{\\prime}}{U}=\\frac{x^{\\prime 2}}{x^2}=\\frac{4^2}{1^2}=16\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892a7",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2022-08-10T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022 (10 Aug Shift 1)",
+            "title": "MHT CET 2022 (10 Aug Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260de0279619d9d8a27f1",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b87f20917a5f418929f",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2022-08-05T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022 (05 Aug Shift 1)",
+              "title": "MHT CET 2022 (05 Aug Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "The work done by a force on body of mass $5 \\mathrm{~kg}$ to accelerate it in the direction of force from rest to $20 \\mathrm{~m} / \\mathrm{s}$ in 10 second is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "7oma9",
+              "text": "$2 \\times 10^3 \\mathrm{~J}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CjMb1",
+              "text": "$10^3 \\mathrm{~J}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "nMCqf",
+              "text": "$10^{-3} \\mathrm{~J}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "kl2Ge",
+              "text": "$4 \\times 10^3 \\mathrm{~J}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The correct option is (B).\nConcept: According to the work-energy theorem:\nTotal work done by all forces (conservative or non - conservative) $=$ Change in K.E.\n$\\mathrm{W}=\\frac{1}{2} \\mathrm{mv}^2=\\frac{1}{2} \\times 5 \\times 20^2=10^3 \\mathrm{~J}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b87f20917a5f418929f",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2022-08-05T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022 (05 Aug Shift 1)",
+            "title": "MHT CET 2022 (05 Aug Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260dc0279619d9d8a27e5",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b87f20917a5f418929f",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2022-08-05T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022 (05 Aug Shift 1)",
+              "title": "MHT CET 2022 (05 Aug Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A $4 \\mathrm{~kg}$ mass and a $1 \\mathrm{~kg}$ mass are moving with equal energies. The ratio of the magnitude of their linear momenta is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "uHioJ",
+              "text": "$2: 1$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "jNNya",
+              "text": "$4: 1$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "WsIOE",
+              "text": "$1: 2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "TKKxW",
+              "text": "$1: 1$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The correct option is (A).\nKinetic Energy $\\mathrm{K}$ and momentum $p$ are related as:\n$\\mathrm{K}=\\frac{\\mathrm{p}^2}{2 \\mathrm{~m}}$\nTherefore,\n$P=\\sqrt{2 K m}$\nThe ratio of momentum for $4 \\mathrm{~kg}$ mass and $1 \\mathrm{~kg}$ mass moving with equal kinetic energy $\\mathrm{K}$ is\n$\\frac{\\mathrm{p}_{4 \\mathrm{~kg}}}{\\mathrm{p}_{1 \\mathrm{~kg}}}=\\sqrt{\\frac{2 \\mathrm{~K}(4 \\mathrm{~m})}{2 \\mathrm{~K}(\\mathrm{~m})}}=\\frac{2}{1}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b87f20917a5f418929f",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2022-08-05T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022 (05 Aug Shift 1)",
+            "title": "MHT CET 2022 (05 Aug Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260460279619d9d8a2328",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b87f20917a5f4189297",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2021-09-21T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021 (21 Sep Shift 1)",
+              "title": "MHT CET 2021 (21 Sep Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A sphere of mass 25 gram is placed on a vertical spring. Spring is compressed by $0.2 \\mathrm{~m}$ using a force $5 \\mathrm{~N}$. When the spring is relaxed, mass is reaching a height of $\\left(\\mathrm{g}=10 \\mathrm{~m} / \\mathrm{s}^2\\right)$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "6jBlD",
+              "text": "$6 \\mathrm{~cm}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "KZ3iK",
+              "text": "$8 \\mathrm{~cm}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "WxA4L",
+              "text": "$10 \\mathrm{~cm}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "VkgF6",
+              "text": "$2 \\mathrm{~m}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Gravitational potential energy gained by the ball $=$ Elastic potential energy in the spring\n$$\n\\begin{aligned}\n& \\mathrm{mgh}=\\frac{1}{2} \\mathrm{Fx} \\\\\n& \\therefore \\mathrm{h}=\\frac{\\mathrm{Fx}}{2 \\mathrm{mg}} \\\\\n& =\\frac{5 \\times 0.2}{2 \\times 25 \\times 10^{-3} \\times 10} \\\\\n& =2 \\mathrm{~m}\n\\end{aligned}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b87f20917a5f4189297",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2021-09-21T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021 (21 Sep Shift 1)",
+            "title": "MHT CET 2021 (21 Sep Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a2600e0279619d9d8a2162",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f74",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-20T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (20 Oct Shift 2)",
+              "title": "MHT CET 2020 (20 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "The kinetic energy of a light body and a heavy body is same. Which one of the following statements is CORRECT?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "tH3zz",
+              "text": "The light body has greater momentum.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "cgFd4",
+              "text": "A body having high velocity has greater momentum.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "bkg8h",
+              "text": "Both bodies have same momentum.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Tuz7V",
+              "text": "The heavy body has greater momentum.",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Kinetic energy,\n$\\mathrm{k}=\\frac{1}{2} \\mathrm{my}^{2}=\\frac{(\\mathrm{mv})^{2}}{2 \\mathrm{~m}}=\\frac{\\mathrm{p}^{2}}{2 \\mathrm{~m}}$\nor $\\mathrm{p}=\\sqrt{2 \\mathrm{mk}}$ i.e., $\\mathrm{p} \\propto=\\sqrt{\\mathrm{m}}$\nThus the heavier body has a greater momentum than the lighter one.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f74",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-20T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (20 Oct Shift 2)",
+            "title": "MHT CET 2020 (20 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fc40279619d9d8a1f13",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f70",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-16T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (16 Oct Shift 2)",
+              "title": "MHT CET 2020 (16 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A body slides down a smooth inclined plane having angle ' $\\theta$ ' and reaches the bottom with velocity 'v'. If a body is a sphere then its linear velocity at the bottom of the plane is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Cb63W",
+              "text": "$\\sqrt{\\frac{2}{7}} \\mathrm{v}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pVqOR",
+              "text": "$\\sqrt{\\frac{3}{7}} \\mathrm{v}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SCYV7",
+              "text": "$\\sqrt{\\frac{5}{7}} \\mathrm{v}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "VVVLb",
+              "text": "$\\sqrt{\\frac{9}{7}} \\mathrm{v}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The linear velocity of the body, $v=\\sqrt{2 g h}$\nThe velocity of the sphere about its centre,\n$v_{C M}=\\sqrt{\\frac{2 g h}{1+\\frac{K^{2}}{R^{2}}}}=\\frac{v}{\\sqrt{1+\\frac{K^{2}}{R^{2}}}} \\ldots(\\text { i })$\nFor uniform solid sphere,\n$\\frac{K^{2}}{R^{2}}=\\frac{2}{5}$\nSubstituting value in Eq. (i), we get\n$v_{C M}=\\frac{v}{\\sqrt{1+\\left(\\frac{2}{5}\\right)}}=\\sqrt{\\frac{5}{7} v}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f70",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-16T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (16 Oct Shift 2)",
+            "title": "MHT CET 2020 (16 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f8a0279619d9d8a1d4a",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6d",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (15 Oct Shift 1)",
+              "title": "MHT CET 2020 (15 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Two masses of 1 gram and 4 gram are moving with equal kinetic energy. The ratio\nof the magnitudes of their momenta is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ERw6v",
+              "text": "$4: 1$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "z1cVV",
+              "text": "$\\sqrt{2}: 1$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "jNXKp",
+              "text": "$1: 12$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "9Rcid",
+              "text": "$1: 16$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Kinetic energy $\\mathrm{K}=\\frac{\\mathrm{p}^{2}}{2 \\mathrm{~m}}$\nTwo masses are given as- $\\mathrm{m}_{1}=1 \\mathrm{gm}$ and $\\mathrm{m}_{2}=4 \\mathrm{gm}$\nBut $\\mathrm{K}_{1}=\\mathrm{K}_{2}$\n$\\therefore \\frac{\\mathrm{p}_{1}^{2}}{2 \\mathrm{~m}_{1}}=\\frac{\\mathrm{P}_{2}^{2}}{2 \\mathrm{~m}_{2}}$\nOr $\\frac{\\mathrm{P}_{1}^{2}}{2(1)}=\\frac{\\mathrm{P}_{2}^{2}}{2(4)}$\n$\\Longrightarrow \\mathrm{P}_{1}: \\mathrm{P}_{2}=1: 2$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6d",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (15 Oct Shift 1)",
+            "title": "MHT CET 2020 (15 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f7c0279619d9d8a1cdf",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6c",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-14T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (14 Oct Shift 2)",
+              "title": "MHT CET 2020 (14 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "The kinetic e nergy acquired by a body of mass 'M' in travelling a certain distance 'd:\nstarting from rest, under the action of constant force is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "L692V",
+              "text": "inversely proportional to $\\sqrt{\\mathrm{M}}$.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "E34NZ",
+              "text": "directly proportional to M.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iTYzl",
+              "text": "independent of M.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "QOA4B",
+              "text": "directly proportional to $\\sqrt{M}$.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Work done by external forces $=$ Change in kinetic energy\nSince particle starts from rest, its initial Kinetic Energy is o.\nTherefore, K.E.=Fd\nIt is given that force is constant.\nWe see that Kinetic energy is independent of mass.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6c",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-14T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (14 Oct Shift 2)",
+            "title": "MHT CET 2020 (14 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f400279619d9d8a1af7",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f69",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-13T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (13 Oct Shift 1)",
+              "title": "MHT CET 2020 (13 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Two springs of spring constants ' $\\mathrm{K}^{\\prime}$ and ' $2 \\mathrm{~K}^{\\prime}$ are stretched by same force. If ' $\\mathrm{w}_{1}{ }^{\\circ}$\nand ' $\\mathrm{w}_{2}$ ' are the energies stored in them respectively then",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "zOz6Z",
+              "text": "$\\mathrm{w}_{1}=2 \\mathrm{w}_{2}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "VQKLT",
+              "text": "$\\mathrm{w}_{1}=\\frac{\\mathrm{w}_{2}}{4}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lqhX2",
+              "text": "$\\mathrm{w}_{2}=2 \\mathrm{w}_{1}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lfiGP",
+              "text": "$\\mathrm{w}_{1}=\\mathrm{w}_{2}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Energy stored in spring of\n$$\nw_{1}=\\frac{1}{2} k x^{2} \\text { constant } k\n$$\nTh spring of contant 2k\n$$\nw_{2}=\\frac{1}{2} (2k) x^{2} \\text { constant } k\n$$\nSo, $w_{2}=2w_{1}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f69",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-13T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (13 Oct Shift 1)",
+            "title": "MHT CET 2020 (13 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e840279619d9d8a1515",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f5f",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "MHT CET 2011"
+            }
+          ],
+          "question": {
+            "text": "A sphere is suspended by a thread of length $l$ What minimum horizontal velocity has to be imparted the ball for it to reach the height of the suspension?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "G0YgY",
+              "text": "$\\mathrm{gl}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "JxvUY",
+              "text": "$2 \\mathrm{gl}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fEDEL",
+              "text": "$\\sqrt{2 g l}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "zmfby",
+              "text": "$\\sqrt{g l}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "KE given to a sphere at lowest point\n= potential energy at the height of suspension $\\frac{1}{2} m v^{2}=m g l$\n$\\therefore$\n$$\nv=\\sqrt{2 g l}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f5f",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "MHT CET 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e510279619d9d8a1372",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f5c",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2008-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2008",
+              "title": "MHT CET 2008"
+            }
+          ],
+          "question": {
+            "text": "A long spring is stretched by $2 \\mathrm{~cm}$ and its potential energy is $U$. If the spring is stretched by $10 \\mathrm{~cm}$; its potential energy will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "AvSDL",
+              "text": "$U / 5$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "76r3k",
+              "text": "$U / 25$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "aBLBG",
+              "text": "$5 U$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "q3VGE",
+              "text": "$25 U$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The potential energy of a stretched spring is\n$$\nU=\\frac{1}{2} k x^{2}\n$$\nHere, $k=$ spring constant, $x=$ elongation in spring. But given that, the elongation is $2 \\mathrm{~cm}$.\nSo, $U=\\frac{1}{2} k(2)^{2}$\n$$\n\\Rightarrow \\quad U=\\frac{1}{2} k \\times 4 ...(i)\n$$\nIf elongation is $10 \\mathrm{~cm}$ then potential energy\n$$\n\\begin{aligned}\nU^{\\prime} &=\\frac{1}{2} k(10)^{2} \\\\\nU^{\\prime} &=\\frac{1}{2} k \\times 100 ...(ii)\n\\end{aligned}\n$$\nOn dividing Eq. (ii) by Eq. (i), we have\n$$\n\\frac{U^{\\prime}}{U}=\\frac{\\frac{1}{2} k \\times 100}{\\frac{1}{2} k \\times 4}\n$$\nor $\\frac{U^{\\prime}}{U}=25 \\Rightarrow U^{\\prime}=25 U$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f5c",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2008-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2008",
+            "title": "MHT CET 2008"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "65a263420279619d9d8a3d91",
+      "title": "Power",
+      "totalQuestions": 6,
+      "questions": [
+        {
+          "_id": "6abb889a15a9fc0fc8c1453f",
+          "type": "singleCorrect",
+          "question": {
+            "text": "A body is moved along a straight line by a machine delivering constant power. The distance moved by the body in time $t$ is proportional to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "SwAGE",
+              "label": "A",
+              "text": "$t^{1/2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "2e4Nf",
+              "label": "B",
+              "text": "$t^{3/4}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "PC8GD",
+              "label": "C",
+              "text": "$t^{3/2}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "9j7ee",
+              "label": "D",
+              "text": "$t^{2}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Power $P = Fv = m \\left(\\dfrac{dv}{dt}\\right) v$<br><br>Since power is constant, integrating both sides gives:<br><br>$m \\int v \\, dv = \\int P \\, dt$<br><br>$\\dfrac{1}{2} m v^2 = Pt$<br><br>$v = \\left(\\dfrac{2P}{m}\\right)^{1/2} t^{1/2}$<br><br>Since $v = \\dfrac{dx}{dt}$, we have:<br><br>$\\dfrac{dx}{dt} = \\left(\\dfrac{2P}{m}\\right)^{1/2} t^{1/2}$<br><br>Integrating both sides with respect to time $t$ from $t=0$ to $t$:<br><br>$x = \\int \\left(\\dfrac{2P}{m}\\right)^{1/2} t^{1/2} \\, dt$<br><br>$x = \\left(\\dfrac{2P}{m}\\right)^{1/2} \\dfrac{t^{3/2}}{3/2}$<br><br>Therefore, $x \\propto t^{3/2}$<br><br>Answer: $t^{3/2}$",
+            "image": null
+          },
+          "level": 2,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87f02fe711bb1be9996e",
+              "title": "MHT CET 2026 (19 May Shift 2)",
+              "shortName": "2026 (19 May Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-05-19T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87f02fe711bb1be9996e",
+            "title": "MHT CET 2026 (19 May Shift 2)",
+            "shortName": "2026 (19 May Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-05-19T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6abb884d15a9fc0fc8c1426b",
+          "type": "singleCorrect",
+          "question": {
+            "text": "If the force acting on a body is inversely proportional to its speed, the kinetic energy of the body is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "lS0bV",
+              "label": "A",
+              "text": "constant",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "JgfP4",
+              "label": "B",
+              "text": "directly proportional to time",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "s2irY",
+              "label": "C",
+              "text": "inversely proportional to time",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "yvDL1",
+              "label": "D",
+              "text": "directly proportional to square of time",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given that force is inversely proportional to speed:<br><br>$F \\propto \\dfrac{1}{v}$<br><br>$F = \\dfrac{c}{v}$<br><br>Power $P = Fv = \\left(\\dfrac{c}{v}\\right)v = c$<br><br>Since power is constant, the rate of change of kinetic energy is constant.<br><br>$P = \\dfrac{dK}{dt} = c$<br><br>$dK = c \\, dt$<br><br>Integrating both sides:<br><br>$K = ct + K_0$<br><br>Assuming the initial kinetic energy is zero, $K = ct$.<br><br>Therefore, the kinetic energy of the body is directly proportional to time.<br><br>Answer: directly proportional to time",
+            "image": null
+          },
+          "level": 2,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87f02fe711bb1be9996c",
+              "title": "MHT CET 2026 (15 May Shift 2)",
+              "shortName": "2026 (15 May Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-05-15T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87f02fe711bb1be9996c",
+            "title": "MHT CET 2026 (15 May Shift 2)",
+            "shortName": "2026 (15 May Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-05-15T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6a44d2ce8c30a4553e1bdcfc",
+          "type": "singleCorrect",
+          "question": {
+            "text": "A body of mass 1kg begins to move under the action of a time dependent force $\\vec{F} = (t\\hat{i} + 3t^2\\hat{j})\\ \\text{N}$ where $\\hat{i}$ and $\\hat{j}$ are the unit vectors along x and y axis. The power developed by the above force at time $t = 2\\ \\text{s}$ will be (in watt)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "9xFZ3",
+              "label": "A",
+              "text": "$100$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "iKCm9",
+              "label": "B",
+              "text": "$50$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "gDqQS",
+              "label": "C",
+              "text": "$25$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "4T9ot",
+              "label": "D",
+              "text": "$5$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given $\\vec{F} = t\\hat{i} + 3t^2\\hat{j}$ and $m = 1\\ \\text{kg}$.<br><br>Acceleration $\\vec{a} = \\dfrac{\\vec{F}}{m} = t\\hat{i} + 3t^2\\hat{j}$<br><br>Velocity $\\vec{v} = \\int \\vec{a} dt = \\dfrac{t^2}{2}\\hat{i} + t^3\\hat{j}$ (since the body begins to move from rest, $\\vec{v}(0) = 0$).<br><br>At $t = 2\\ \\text{s}$:<br><br>$\\vec{F} = 2\\hat{i} + 3(2)^2\\hat{j} = 2\\hat{i} + 12\\hat{j}$<br><br>$\\vec{v} = \\dfrac{2^2}{2}\\hat{i} + (2)^3\\hat{j} = 2\\hat{i} + 8\\hat{j}$<br><br>Power $P = \\vec{F} \\cdot \\vec{v} = (2\\hat{i} + 12\\hat{j}) \\cdot (2\\hat{i} + 8\\hat{j})$<br><br>$P = (2 \\times 2) + (12 \\times 8) = 4 + 96 = 100\\ \\text{W}$<br><br>Answer: $100$",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d2802d2155b816ec4a75",
+              "title": "MHT CET 2026 (16 April Shift 2)",
+              "shortName": "2026 (16 April Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-04-16T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 2,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d2802d2155b816ec4a75",
+            "title": "MHT CET 2026 (16 April Shift 2)",
+            "shortName": "2026 (16 April Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-04-16T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b67bf9280d7f99328e4",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376df9b67616acec78f74",
+              "heldOn": "2025-04-22T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (22 Apr Shift 1)",
+              "title": "MHT CET 2025 (22 Apr Shift 1)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "A body of mass 1 kg begins to move under the action of a time dependent force $\\vec{F}=\\left(t \\hat{i}+2 t^2 \\hat{j}\\right) N$, where $\\hat{i}$ and $\\hat{j}$ are unit vectors along $x$ and $y$ axis. The power developed by above force at time $t=3$ second will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "3STFV",
+              "text": "$337.5 \\mathrm{~W}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "UAH6q",
+              "text": "$228.5 \\mathrm{~W}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6XcCN",
+              "text": "$422.5 \\mathrm{~W}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vPZsF",
+              "text": "$126.5 \\mathrm{~W}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given mass $m = 1$ kg and force $\\vec{F} = t \\hat{i} + 2t^2 \\hat{j}$.<br><br>Acceleration of the body is given by Newton's second law:<br><br>$\\vec{a} = \\dfrac{\\vec{F}}{m} = t \\hat{i} + 2t^2 \\hat{j}$<br><br>Since the body begins to move from rest, its velocity $\\vec{v}$ at time $t$ is:<br><br>$\\vec{v} = \\int \\vec{a} dt = \\int (t \\hat{i} + 2t^2 \\hat{j}) dt = \\dfrac{t^2}{2} \\hat{i} + \\dfrac{2t^3}{3} \\hat{j}$<br><br>Power developed by the force is the dot product of force and velocity:<br><br>$P = \\vec{F} \\cdot \\vec{v} = (t \\hat{i} + 2t^2 \\hat{j}) \\cdot \\left(\\dfrac{t^2}{2} \\hat{i} + \\dfrac{2t^3}{3} \\hat{j}\\right)$<br><br>$P = \\dfrac{t^3}{2} + \\dfrac{4t^5}{3}$<br><br>Substituting $t = 3$ s:<br><br>$P = \\dfrac{3^3}{2} + \\dfrac{4(3^5)}{3} = \\dfrac{27}{2} + \\dfrac{4 \\times 243}{3}$<br><br>$P = 13.5 + 4 \\times 81 = 13.5 + 324 = 337.5 \\mathrm{W}$<br><br>Answer: $337.5 \\mathrm{~W}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376df9b67616acec78f74",
+            "heldOn": "2025-04-22T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (22 Apr Shift 1)",
+            "title": "MHT CET 2025 (22 Apr Shift 1)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6792140b0aee93fa0796dd8a",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665cce",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (15 May Shift 1)",
+              "title": "MHT CET 2024 (15 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A body of mass 1 kg starts from rest and moves with uniform acceleration. In 2 seconds, its velocity is $10 \\mathrm{~m} / \\mathrm{s}$. The power exerted on the body at $t = 1 \\mathrm{~s}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "esEaW",
+              "text": "20 W",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "AvMCx",
+              "text": "25 W",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "UQhSn",
+              "text": "50 W",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "kHx1v",
+              "text": "100 W",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given $m = 1 \\text{ kg}$, $u = 0$, $v = 10 \\text{ m/s}$ at $t = 2 \\text{ s}$.<br><br>Using the equation of motion $v = u + at$:<br><br>$10 = 0 + a(2)$<br><br>$a = 5 \\text{ m/s}^2$<br><br>The force acting on the body is:<br><br>$F = ma = 1 \\times 5 = 5 \\text{ N}$<br><br>The velocity of the body at $t = 1 \\text{ s}$ is:<br><br>$v' = u + at = 0 + 5(1) = 5 \\text{ m/s}$<br><br>The power exerted on the body at $t = 1 \\text{ s}$ is:<br><br>$P = Fv' = 5 \\times 5 = 25 \\text{ W}$<br><br>Answer: 25 W",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665cce",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (15 May Shift 1)",
+            "title": "MHT CET 2024 (15 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a2606f0279619d9d8a2474",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b87f20917a5f4189299",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2021-09-22T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021 (22 Sep Shift 1)",
+              "title": "MHT CET 2021 (22 Sep Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A car of mass ' $m$ ' moving with velocity ' $u$ ' on a straight road in a straight line, doubles its velocity in time $t$. the power delivered by the engine of a car for doubling the velocity is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "UKTrA",
+              "text": "$\\frac{3 \\mathrm{mu}^2}{2 \\mathrm{t}}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "moxvk",
+              "text": "$\\frac{\\mathrm{mu}^2}{2 \\mathrm{t}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "bqJtn",
+              "text": "$\\frac{2 \\mathrm{mu}^2}{\\mathrm{t}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Khph4",
+              "text": "$\\frac{3 \\mathrm{mu}^2}{\\mathrm{t}}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Initial kinetic energy $\\mathrm{k}_1=\\frac{1}{2} \\mathrm{mu}^2$\nFinal kinetic energy $\\mathrm{k}_2=\\frac{1}{2} \\mathrm{mu}_2^2=\\frac{1}{2} \\mathrm{~m}(2 \\mathrm{u})^2=\\frac{1}{2}\\left(4 \\mathrm{mu}^2\\right)$\n$$\n\\therefore \\mathrm{k}_2-\\mathrm{k}_1=\\frac{3}{2} \\mathrm{mu}^2\n$$\nChange in K.E. is work done\nPower, $\\mathrm{P}=\\frac{\\text { workdone }}{\\mathrm{t}}=\\frac{3 \\mathrm{mu}^2}{2 \\mathrm{t}}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b87f20917a5f4189299",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2021-09-22T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021 (22 Sep Shift 1)",
+            "title": "MHT CET 2021 (22 Sep Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "65a263420279619d9d8a3d90",
+      "title": "Circular motion",
+      "totalQuestions": 16,
+      "questions": [
+        {
+          "_id": "6abb88a915a9fc0fc8c145d3",
+          "type": "singleCorrect",
+          "question": {
+            "text": "The maximum and minimum tensions in the string whirling in a circle of radius $2.5$ m are in the ratio $5:3$ then its velocity is ($g = 10\\ \\text{m/s}^2$)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "cljVp",
+              "label": "A",
+              "text": "$10\\ \\text{m/s}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "yd6aZ",
+              "label": "B",
+              "text": "$100\\ \\text{m/s}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "TVfYQ",
+              "label": "C",
+              "text": "$1\\ \\text{m/s}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "KIzUc",
+              "label": "D",
+              "text": "$5\\ \\text{m/s}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "For a particle whirling in a vertical circle with a constant speed $v$, the tension in the string is maximum at the lowest point and minimum at the highest point.<br><br>The maximum tension is given by:<br>$T_{\\text{max}} = \\dfrac{mv^2}{r} + mg$<br><br>The minimum tension is given by:<br>$T_{\\text{min}} = \\dfrac{mv^2}{r} - mg$<br><br>Given the ratio of maximum to minimum tension is $5:3$, we have:<br>$\\dfrac{T_{\\text{max}}}{T_{\\text{min}}} = \\dfrac{5}{3}$<br><br>$\\dfrac{\\dfrac{mv^2}{r} + mg}{\\dfrac{mv^2}{r} - mg} = \\dfrac{5}{3}$<br><br>Canceling the mass $m$ from the numerator and denominator:<br>$\\dfrac{\\dfrac{v^2}{r} + g}{\\dfrac{v^2}{r} - g} = \\dfrac{5}{3}$<br><br>Cross-multiplying yields:<br>$3 \\left( \\dfrac{v^2}{r} + g \\right) = 5 \\left( \\dfrac{v^2}{r} - g \\right)$<br><br>$3 \\dfrac{v^2}{r} + 3g = 5 \\dfrac{v^2}{r} - 5g$<br><br>$2 \\dfrac{v^2}{r} = 8g$<br><br>$\\dfrac{v^2}{r} = 4g$<br><br>$v = \\sqrt{4gr}$<br><br>Substituting the given values $r = 2.5\\ \\text{m}$ and $g = 10\\ \\text{m/s}^2$:<br>$v = \\sqrt{4 \\times 10 \\times 2.5}$<br><br>$v = \\sqrt{100} = 10\\ \\text{m/s}$<br><br>Answer: $10\\ \\text{m/s}$",
+            "image": null
+          },
+          "level": 2,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87f02fe711bb1be9996b",
+              "title": "MHT CET 2026 (15 May Shift 1)",
+              "shortName": "2026 (15 May Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-05-15T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87f02fe711bb1be9996b",
+            "title": "MHT CET 2026 (15 May Shift 1)",
+            "shortName": "2026 (15 May Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-05-15T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6abb886a15a9fc0fc8c1437b",
+          "type": "singleCorrect",
+          "question": {
+            "text": "A stone of mass m is tied to a string and is moved in a vertical circle of radius r making 'n' r.p.m. The total tension in the string when the stone is at the lowest point is ($g$ = acceleration due to gravity)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "JQlTx",
+              "label": "A",
+              "text": "$mg$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "3xFB7",
+              "label": "B",
+              "text": "$m(g + \\pi nr^2)$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ae1SS",
+              "label": "C",
+              "text": "$m(g + nr)$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Wf8qU",
+              "label": "D",
+              "text": "$m\\left[g + \\dfrac{\\pi^2 n^2 r}{900}\\right]$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $\\omega$ be the angular velocity of the stone. Since the stone makes $n$ revolutions per minute, the angular velocity in radians per second is given by<br><br>$\\omega = \\dfrac{2\\pi n}{60} = \\dfrac{\\pi n}{30}$<br><br>At the lowest point of the vertical circle, the forces acting on the stone are the tension $T$ in the string directed upwards towards the center and the weight $mg$ directed downwards. The net force provides the necessary centripetal acceleration:<br><br>$T - mg = m\\omega^2 r$<br><br>Substituting the value of $\\omega$, we get<br><br>$T = mg + m\\left(\\dfrac{\\pi n}{30}\\right)^2 r$<br><br>$T = m\\left[g + \\dfrac{\\pi^2 n^2 r}{900}\\right]$<br><br>Answer: $m\\left[g + \\dfrac{\\pi^2 n^2 r}{900}\\right]$",
+            "image": null
+          },
+          "level": 2,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87ef2fe711bb1be9996a",
+              "title": "MHT CET 2026 (14 May Shift 2)",
+              "shortName": "2026 (14 May Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-05-14T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87ef2fe711bb1be9996a",
+            "title": "MHT CET 2026 (14 May Shift 2)",
+            "shortName": "2026 (14 May Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-05-14T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6a44d3068c30a4553e1bdf5b",
+          "type": "singleCorrect",
+          "question": {
+            "text": "A body of mass 'm' attached at the end of a string is just completing the loop in a vertical circle. The apparent weight of the body at the lowest point in its path is<br>($g$ = gravitational acceleration)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "LAf77",
+              "label": "A",
+              "text": "$6\\,mg$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "aUBSM",
+              "label": "B",
+              "text": "$3\\,mg$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "DoLzX",
+              "label": "C",
+              "text": "$1\\,mg$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "4waQX",
+              "label": "D",
+              "text": "zero",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "For a body to just complete a vertical circle, the tension in the string at the highest point is zero.<br><br>$T_H + mg = \\dfrac{m v_H^2}{r} \\Rightarrow v_H = \\sqrt{gr}$<br><br>By conservation of mechanical energy between the highest and lowest points:<br><br>$\\dfrac{1}{2} m v_L^2 = \\dfrac{1}{2} m v_H^2 + mg(2r)$<br><br>$v_L^2 = v_H^2 + 4gr = gr + 4gr = 5gr$<br><br>At the lowest point, the net force towards the center provides the centripetal acceleration:<br><br>$T_L - mg = \\dfrac{m v_L^2}{r}$<br><br>$T_L = mg + \\dfrac{m(5gr)}{r} = mg + 5mg = 6mg$<br><br>The apparent weight of the body is equal to the tension in the string at that point, which is $6mg$.<br><br>Answer: $6\\,mg$",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d2802d2155b816ec4a7b",
+              "title": "MHT CET 2026 (19 April Shift 2)",
+              "shortName": "2026 (19 April Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-04-19T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 2,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d2802d2155b816ec4a7b",
+            "title": "MHT CET 2026 (19 April Shift 2)",
+            "shortName": "2026 (19 April Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-04-19T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6a44d2dd8c30a4553e1bdda1",
+          "type": "singleCorrect",
+          "question": {
+            "text": "A bucket containing water is revolved in vertical circle of radius r. To prevent the water from falling down, the period of revolution required is ($g$ = gravitational acceleration)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "khmkx",
+              "label": "A",
+              "text": "$2\\pi\\sqrt{\\dfrac{g}{r}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "AuBGv",
+              "label": "B",
+              "text": "$2\\pi\\sqrt{\\dfrac{r}{g}}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "A6rQz",
+              "label": "C",
+              "text": "$2\\pi\\sqrt{rg}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "VzQVs",
+              "label": "D",
+              "text": "$\\dfrac{\\sqrt{rg}}{2\\pi}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "At the highest point of the vertical circle, the forces acting on the water are its weight $mg$ downwards and the normal reaction $N$ from the bucket downwards.<br><br>The necessary centripetal force is provided by these forces:<br><br>$mg + N = \\dfrac{mv^2}{r}$<br><br>To prevent the water from falling down, the normal reaction must be greater than or equal to zero ($N \\ge 0$). The minimum speed $v$ is obtained when $N = 0$:<br><br>$mg = \\dfrac{mv^2}{r} \\Rightarrow v = \\sqrt{rg}$<br><br>The angular velocity $\\omega$ corresponding to this minimum speed is:<br><br>$\\omega = \\dfrac{v}{r} = \\sqrt{\\dfrac{g}{r}}$<br><br>The maximum period of revolution $T$ required to prevent the water from falling is:<br><br>$T = \\dfrac{2\\pi}{\\omega} = 2\\pi\\sqrt{\\dfrac{r}{g}}$<br><br>Answer: $2\\pi\\sqrt{\\dfrac{r}{g}}$",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d2802d2155b816ec4a73",
+              "title": "MHT CET 2026 (15 April Shift 2)",
+              "shortName": "2026 (15 April Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-04-15T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 2,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d2802d2155b816ec4a73",
+            "title": "MHT CET 2026 (15 April Shift 2)",
+            "shortName": "2026 (15 April Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-04-15T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871bf7bf9280d7f9932e13",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376de9b67616acec78f6d",
+              "heldOn": "2025-05-05T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (5 May Shift 2)",
+              "title": "MHT CET 2025 (5 May Shift 2)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "A stone of mass ' m ' kg is tied to a string of length ' L ' m and moved in a vertical circle of radius 49 cm in a vertical plane. If it completes 30 revolutions per minute, the tension in the string when it is at the lowermost point is nearly\n[Take $\\pi^2=10$ and acceleration due to gravity, $g=10 \\mathrm{~m} / \\mathrm{s}^2$ ]",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "G9IAV",
+              "text": "$(90 \\mathrm{~m}) \\mathrm{N}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "h85RY",
+              "text": "$(60 \\mathrm{~m}) \\mathrm{N}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "VdHZl",
+              "text": "$(45 \\mathrm{~m}) \\mathrm{N}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GUa2a",
+              "text": "$(15 \\mathrm{~m}) \\mathrm{N}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Frequency of revolution, $n = 30 \\text{ rpm} = \\dfrac{30}{60} \\text{ rev/s} = 0.5 \\text{ Hz}$<br><br>Angular velocity, $\\omega = 2\\pi n = 2\\pi \\times 0.5 = \\pi \\text{ rad/s}$<br><br>Radius of the vertical circle, $r = 49 \\text{ cm} = 0.49 \\text{ m}$<br><br>The tension in the string at the lowermost point of the vertical circle is given by:<br><br>$T = mg + mr\\omega^2$<br><br>Substituting the given values ($g = 10 \\text{ m/s}^2$ and $\\pi^2 = 10$):<br><br>$T = m(10) + m(0.49)(\\pi^2)$<br><br>$T = 10m + m(0.49)(10)$<br><br>$T = 10m + 4.9m = 14.9m \\text{ N}$<br><br>Therefore, the tension is nearly $15m \\text{ N}$.<br><br>Answer: $(15 \\mathrm{~m}) \\mathrm{N}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376de9b67616acec78f6d",
+            "heldOn": "2025-05-05T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (5 May Shift 2)",
+            "title": "MHT CET 2025 (5 May Shift 2)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871ba5bf9280d7f9932b32",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376df9b67616acec78f78",
+              "heldOn": "2025-04-25T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (25 Apr Shift 1)",
+              "title": "MHT CET 2025 (25 Apr Shift 1)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "A point mass ' $m$ ' attached at one end of a massless, inextensible string of length ' $\\ell$ ' performs a vertical circular motion and the string rotates in vertical plane, as shown in the diagram. The increase in the centripetal acceleration of the point mass when it moves from point $A$ to point C is\n[ $\\mathrm{g}=$ acceleration due to gravity.]\n<img src=\"https://cdn.quizrr.in/question-assets/mhtcet/mhtcet2025/evjtqGmmQxvu2ioIjHtwt8fbT0_ma2px_jo5MrC-B_8.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "nFDe1",
+              "text": "$3 g$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3zzMa",
+              "text": "$2 g$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "OFeke",
+              "text": "$g$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "T0sT2",
+              "text": "$\\frac{\\mathrm{g}}{2}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let the velocity of the point mass at the highest point A be $v_A$ and at the horizontal point C be $v_C$.<br><br>By the principle of conservation of mechanical energy between points A and C (taking the horizontal level of C as the reference for zero potential energy):<br><br>Total Energy at A = Total Energy at C<br><br>$\\dfrac{1}{2} m v_A^2 + mg\\ell = \\dfrac{1}{2} m v_C^2$<br><br>Rearranging the above equation, we get:<br><br>$v_C^2 - v_A^2 = 2g\\ell$<br><br>The centripetal acceleration of a particle moving in a circle of radius $\\ell$ with velocity $v$ is given by $a_c = \\dfrac{v^2}{\\ell}$.<br><br>The increase in centripetal acceleration when the mass moves from A to C is:<br><br>$\\Delta a_c = a_{cC} - a_{cA} = \\dfrac{v_C^2}{\\ell} - \\dfrac{v_A^2}{\\ell}$<br><br>$\\Delta a_c = \\dfrac{v_C^2 - v_A^2}{\\ell}$<br><br>Substituting $v_C^2 - v_A^2 = 2g\\ell$ into the equation:<br><br>$\\Delta a_c = \\dfrac{2g\\ell}{\\ell} = 2g$<br><br>Answer: $2 g$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376df9b67616acec78f78",
+            "heldOn": "2025-04-25T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (25 Apr Shift 1)",
+            "title": "MHT CET 2025 (25 Apr Shift 1)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b54bf9280d7f9932842",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376de9b67616acec78f73",
+              "heldOn": "2025-04-21T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (21 Apr Shift 2)",
+              "title": "MHT CET 2025 (21 Apr Shift 2)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "A simple pendulum oscillates with an angular amplitude $\\theta$. If the maximum tension in the string is 4 times the minimum tension then the value of $\\theta$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "cXb6J",
+              "text": "$\\cos ^{-1}(0.75)$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pjPkr",
+              "text": "$\\cos ^{-1}(0.5)$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Kv9V0",
+              "text": "$\\sin ^{-1}(0.5)$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "yKarJ",
+              "text": "$\\sin ^{-1}(0.75)$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let the mass of the bob be $m$ and the length of the pendulum be $l$.<br><br>The tension in the string at an angle $\\alpha$ with the vertical is given by:<br><br>$T = mg \\cos \\alpha + \\dfrac{mv^2}{l}$<br><br>By conservation of energy, the velocity $v$ at angle $\\alpha$ is:<br><br>$\\dfrac{1}{2} mv^2 = mgl (\\cos \\alpha - \\cos \\theta)$<br><br>$\\dfrac{mv^2}{l} = 2mg (\\cos \\alpha - \\cos \\theta)$<br><br>Substituting this in the tension equation, we get:<br><br>$T = mg \\cos \\alpha + 2mg (\\cos \\alpha - \\cos \\theta) = mg (3 \\cos \\alpha - 2 \\cos \\theta)$<br><br>The maximum tension occurs at the lowest point ($\\alpha = 0$):<br><br>$T_{max} = mg (3 - 2 \\cos \\theta)$<br><br>The minimum tension occurs at the extreme position ($\\alpha = \\theta$):<br><br>$T_{min} = mg (3 \\cos \\theta - 2 \\cos \\theta) = mg \\cos \\theta$<br><br>Given that $T_{max} = 4 T_{min}$:<br><br>$mg (3 - 2 \\cos \\theta) = 4 mg \\cos \\theta$<br><br>$3 - 2 \\cos \\theta = 4 \\cos \\theta$<br><br>$6 \\cos \\theta = 3$<br><br>$\\cos \\theta = 0.5$<br><br>$\\theta = \\cos^{-1}(0.5)$<br><br>Answer: $\\cos ^{-1}(0.5)$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376de9b67616acec78f73",
+            "heldOn": "2025-04-21T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (21 Apr Shift 2)",
+            "title": "MHT CET 2025 (21 Apr Shift 2)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b0cbf9280d7f99325ec",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376de9b67616acec78f6f",
+              "heldOn": "2025-04-19T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (19 Apr Shift 2)",
+              "title": "MHT CET 2025 (19 Apr Shift 2)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "A weightless thread can bear tension up to 3.7 kg wt. A stone of mass 500 gram is tied to it and revolved in circular path of radius 4 m in vertical plane. Maximum angular velocity of the stone will be (acceleration due to gravity, $g=10 \\mathrm{~m} / \\mathrm{s}^2$ )",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "JOhDC",
+              "text": "$16 \\mathrm{rad} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "piWTM",
+              "text": "$4 \\mathrm{rad} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "IV0bK",
+              "text": "$2 \\mathrm{rad} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "puHGz",
+              "text": "$8 \\mathrm{rad} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Maximum tension in a vertical circle occurs at the lowest point of the path.<br><br>$T_{\\text{max}} = m\\omega^2 r + mg$<br><br>Given $T_{\\text{max}} = 3.7 \\text{ kg wt} = 3.7 \\times 10 = 37 \\text{ N}$, $m = 500 \\text{ g} = 0.5 \\text{ kg}$, $r = 4 \\text{ m}$, and $g = 10 \\text{ m/s}^2$.<br><br>Substituting the values into the equation:<br><br>$37 = 0.5 \\times \\omega^2 \\times 4 + 0.5 \\times 10$<br><br>$37 = 2\\omega^2 + 5$<br><br>$2\\omega^2 = 32$<br><br>$\\omega^2 = 16$<br><br>$\\omega = 4 \\text{ rad/s}$<br><br>Answer: $4 \\mathrm{rad} / \\mathrm{s}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376de9b67616acec78f6f",
+            "heldOn": "2025-04-19T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (19 Apr Shift 2)",
+            "title": "MHT CET 2025 (19 Apr Shift 2)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871af9bf9280d7f9932540",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376de9b67616acec78f6e",
+              "heldOn": "2025-04-19T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (19 Apr Shift 1)",
+              "title": "MHT CET 2025 (19 Apr Shift 1)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "A stone of mass 1 kg tied to a light inextensible string of length $\\mathrm{L}=\\frac{5}{3} \\mathrm{~m}$ is rotating in a circular path of radius L in a vertical plane. If the ratio of maximum tension in the string to the minimum tension in the string is 3 , the speed of the stone at the highest point of the circle is ( $\\mathrm{g}=$ acceleration due to gravity)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "oWbSx",
+              "text": "$\\sqrt{\\mathrm{gL}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "XrOVk",
+              "text": "2 $\\sqrt{\\mathrm{gL}}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "f1wN6",
+              "text": "4 $\\sqrt{\\mathrm{gL}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "C6RuE",
+              "text": "8 $\\sqrt{\\mathrm{gL}}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $v_H$ and $v_L$ be the speeds of the stone at the highest and lowest points of the vertical circle, respectively.<br><br>The tension at the highest point (minimum tension) is given by:<br>$T_{min} = \\dfrac{m v_H^2}{L} - mg$<br><br>The tension at the lowest point (maximum tension) is given by:<br>$T_{max} = \\dfrac{m v_L^2}{L} + mg$<br><br>By the principle of conservation of mechanical energy between the highest and lowest points:<br>$\\dfrac{1}{2} m v_L^2 = \\dfrac{1}{2} m v_H^2 + mg(2L)$<br>$v_L^2 = v_H^2 + 4gL$<br><br>Substituting $v_L^2$ into the expression for $T_{max}$:<br>$T_{max} = \\dfrac{m(v_H^2 + 4gL)}{L} + mg = \\dfrac{m v_H^2}{L} + 5mg$<br><br>We are given that the ratio of maximum tension to minimum tension is 3:<br>$\\dfrac{T_{max}}{T_{min}} = 3$<br><br>$\\dfrac{\\dfrac{m v_H^2}{L} + 5mg}{\\dfrac{m v_H^2}{L} - mg} = 3$<br><br>$\\dfrac{m v_H^2}{L} + 5mg = 3\\left(\\dfrac{m v_H^2}{L} - mg\\right)$<br><br>$\\dfrac{m v_H^2}{L} + 5mg = 3\\dfrac{m v_H^2}{L} - 3mg$<br><br>$2\\dfrac{m v_H^2}{L} = 8mg$<br><br>$\\dfrac{v_H^2}{L} = 4g$<br><br>$v_H^2 = 4gL$<br><br>$v_H = 2\\sqrt{gL}$<br><br>Answer: 2 $\\sqrt{\\mathrm{gL}}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376de9b67616acec78f6e",
+            "heldOn": "2025-04-19T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (19 Apr Shift 1)",
+            "title": "MHT CET 2025 (19 Apr Shift 1)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679213820aee93fa0796d958",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665cc7",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-04T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (04 May Shift 2)",
+              "title": "MHT CET 2024 (04 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A body moves along a circular path of radius 15 cm . It starts from a point on the circular path and reaches the end of diameter in 3 second. The angular speed of the body in rad $/ \\mathrm{s}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "6lRxe",
+              "text": "$\\dfrac{\\pi}{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "sHWNr",
+              "text": "$\\dfrac{\\pi}{3}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "MpbcX",
+              "text": "$\\dfrac{\\pi}{4}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Pilje",
+              "text": "$\\dfrac{\\pi}{5}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The body moves from a point on the circular path to the end of the diameter, which means it covers a semicircular path.<br><br>The angular displacement $\\theta$ for a semicircle is $\\pi$ radians.<br><br>The time taken $t$ is $3$ seconds.<br><br>The angular speed $\\omega$ is given by:<br><br>$\\omega = \\dfrac{\\theta}{t}$<br><br>$\\omega = \\dfrac{\\pi}{3}$ rad/s<br><br>Answer: $\\dfrac{\\pi}{3}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665cc7",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-04T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (04 May Shift 2)",
+            "title": "MHT CET 2024 (04 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6792131f0aee93fa0796d652",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e139a8109c6c5665cc2",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-02T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (02 May Shift 1)",
+              "title": "MHT CET 2024 (02 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A particle at rest starts moving with a constant angular acceleration of $4 \\mathrm{rad} / \\mathrm{s}^2$ in a circular path. The time at which magnitudes of its centripetal acceleration and tangential acceleration will be equal, is (in second)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "yU1MJ",
+              "text": "$\\dfrac{1}{4}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "PKgLZ",
+              "text": "$\\dfrac{1}{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2CCnT",
+              "text": "$\\dfrac{1}{2}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "E99PY",
+              "text": "$\\dfrac{2}{3}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Initial angular velocity, $\\omega_0 = 0$<br><br>Angular acceleration, $\\alpha = 4$<br><br>Angular velocity at time $t$, $\\omega = \\omega_0 + \\alpha t = 4t$<br><br>Tangential acceleration, $a_t = r\\alpha$<br><br>Centripetal acceleration, $a_c = \\omega^2 r$<br><br>Given $a_c = a_t$<br><br>$\\omega^2 r = r\\alpha$<br><br>$\\omega^2 = \\alpha$<br><br>$(4t)^2 = 4$<br><br>$16t^2 = 4$<br><br>$t^2 = \\dfrac{1}{4}$<br><br>$t = \\dfrac{1}{2}$<br><br>Answer: $\\dfrac{1}{2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e139a8109c6c5665cc2",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-02T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (02 May Shift 1)",
+            "title": "MHT CET 2024 (02 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a261720279619d9d8a2ca1",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892a7",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2022-08-10T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022 (10 Aug Shift 1)",
+              "title": "MHT CET 2022 (10 Aug Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A string of $L$ is fixed at one end and carries a mass $M$ at the other end. The string makes $\\frac{\\pi}{2}$ revolutions per second around the vertical axis through the fixed end as shown in the figure, then the tension in the string is\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/zZRzA68H5xvGj460fq0X31Max0A90bOz1QrJfGh4J14.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "fMB1I",
+              "text": "$2 M L$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "y1230",
+              "text": "$M L$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Ndjy2",
+              "text": "$16 M L$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "6EDhy",
+              "text": "$4 M L$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given: $\\omega=\\frac{2}{\\pi}$ rev.per sec\n$\\Rightarrow \\omega=2 \\pi \\frac{2}{\\pi} \\mathrm{rad} / \\mathrm{s}=4 \\mathrm{rad} / \\mathrm{s}$\nThe horizontal force balance reads:\n$T \\sin \\theta=M R \\omega^2$\nFrom figure $R=L \\sin \\theta$\n$\\Rightarrow T=M L \\omega^2$\nOn introducing, $\\omega=4 \\mathrm{rad} / \\mathrm{s}$\n$\\Rightarrow T=M L(4)^2=16 \\mathrm{ML}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892a7",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2022-08-10T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022 (10 Aug Shift 1)",
+            "title": "MHT CET 2022 (10 Aug Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a2615e0279619d9d8a2c02",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892a6",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2022-08-08T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022 (08 Aug Shift 2)",
+              "title": "MHT CET 2022 (08 Aug Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A string of length ' $L$ ' fixed at one end carries a mass ' $m$ ' at the other end. The string makes $\\frac{3}{\\pi}$ r.p.s. around the vertical axis through fixed end. The tension in the string is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "uucOH",
+              "text": "72 mL",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "NMvru",
+              "text": "18 mL",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "sB4cb",
+              "text": "9 mL",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "WMBps",
+              "text": "36 mL",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Consider the free body diagram\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/n2nDIlDcvH9YACKzDueWttfgWWP2x4joTl1PKGdBc08.original.fullsize.png\"><br>\nOn considering horizontal force balance:\n$\\mathrm{T} \\sin \\theta=\\mathrm{m} \\omega^2 \\mathrm{R}$\nUsing the geometry, $\\mathrm{R}=\\mathrm{L} \\sin \\theta$\n$\\therefore \\mathrm{T}=\\left(\\mathrm{m} \\omega^2 \\mathrm{~L}\\right)$\nGiven, $\\omega=\\left(\\frac{3}{\\pi}\\right)$ r.p.s. $=\\left(\\frac{3}{\\pi}\\right)(2 \\pi) \\mathrm{rad} / \\mathrm{s}=6 \\mathrm{rad} / \\mathrm{s}$\n$\\therefore \\mathrm{T}=36 \\mathrm{~mL}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892a6",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2022-08-08T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022 (08 Aug Shift 2)",
+            "title": "MHT CET 2022 (08 Aug Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a261020279619d9d8a2910",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b87f20917a5f41892a1",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2022-08-06T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022 (06 Aug Shift 1)",
+              "title": "MHT CET 2022 (06 Aug Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A weightless string can support a tension up to $30 \\mathrm{~N}$. A stone of mass $0.5 \\mathrm{~kg}$ is tied to its one end and is revolved in a circular path of radius $2 \\mathrm{~m}$ in a vertical plane. Then the maximum angular velocity of the stone will be (acceleration due to gravity $g=10 \\mathrm{~m} / \\mathrm{s}^2$ )",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "f8a74",
+              "text": "$10 \\mathrm{rad} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "steej",
+              "text": "$\\sqrt{60} \\mathrm{rad} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BZ7nN",
+              "text": "$\\sqrt{30} \\mathrm{rad} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "jcgI9",
+              "text": "$5 \\mathrm{rad} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Considering force balance:\n$\\begin{aligned} & T_{\\max }=m \\omega_{\\max }^2 r+m g \\\\ & \\Rightarrow \\frac{T_{\\text {max }}}{m}=\\omega_{\\max }^2 r+g \\\\ & \\Rightarrow \\frac{30 \\mathrm{~N}}{0.5 \\mathrm{~kg}}-10 \\mathrm{~m} / \\mathrm{s}^2=\\omega_{\\max }^2 r \\\\ & \\Rightarrow \\omega_{\\max }=\\sqrt{\\frac{50}{2}}=5 \\mathrm{rad} / \\mathrm{s}\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b87f20917a5f41892a1",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2022-08-06T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022 (06 Aug Shift 1)",
+            "title": "MHT CET 2022 (06 Aug Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a2600e0279619d9d8a2163",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f74",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-20T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (20 Oct Shift 2)",
+              "title": "MHT CET 2020 (20 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A simple pendulum has length $2 \\mathrm{~m}$ and a bob of mass 100 gram. It is whirled in a horizontal plane. If the string breaks under a tension of $10 \\mathrm{~N}$, the angle made by the string with vertical is $\\left(\\mathrm{g}=10 \\mathrm{~m} / \\mathrm{s}^{2}\\right)$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "oTaG3",
+              "text": "$\\cos ^{-1}(0 \\cdot 4)$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "b4QHb",
+              "text": "$\\cos ^{-1}(0 \\cdot 1)$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "PurZW",
+              "text": "$\\cos ^{-1}(0 \\cdot 05)$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "uNu97",
+              "text": "$\\cos ^{-1}(0 \\cdot 2)$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "A simple pendulum has a length of $2 \\mathrm{~m}$ and a bob of mass of $100\\mathrm{~grams}$. It is whirled in a horizontal plane. If the string breaks under a tension of $10 \\mathrm{~N}$, the angle made by the string with vertical is $\\cos ^{-1}(0.1)$.\n$\\left(g=10 \\mathrm{~m} / \\mathrm{s}^{2}\\right)$\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/7x1r2ghe2Z8ZfzA_9c9P_f2SocNailvluu4iGW_QUxI.original.fullsize.png\"><br>\n$\\mathrm{L}=2 \\mathrm{~m}$\n$\\mathrm{~m}=\\frac{100}{1000}=0.1 \\mathrm{~kg}$\n$\\operatorname{Tcos} \\Phi=m g$\n$\\operatorname{Tsin} \\Phi=\\frac{m v^{2}}{R}$\n$\\cos \\Phi=\\frac{m g}{T}=\\frac{0.1 \\times 10}{10}=0.1$\n$\\therefore \\Phi=\\cos ^{-1}(0.1)$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f74",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-20T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (20 Oct Shift 2)",
+            "title": "MHT CET 2020 (20 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260010279619d9d8a20f6",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f73",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-20T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (20 Oct Shift 1)",
+              "title": "MHT CET 2020 (20 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A rod of length 'L' is hung from its one end and a mass 'm' is attached to its free\nend. What tangential velocity must be imparted to 'm', so that it reaches the top of\nthe vertical circle? (g = acceleration due to gravity)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "vevui",
+              "text": "$4 \\sqrt{\\mathrm{gL}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nlBfR",
+              "text": "$2 \\sqrt{\\mathrm{gL}}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "oqs8N",
+              "text": "$5 \\sqrt{\\mathrm{gL}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "yqCKJ",
+              "text": "$3 \\sqrt{\\mathrm{gL}}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$2 \\sqrt{g L}$\n$h=2 L$\n$\\frac{1}{2} \\mathrm{mv}^{2}=\\mathrm{mg} 2 \\mathrm{L}$\n$v_{2}=4 g L$\n$v=2 \\sqrt{g L}$\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/VULKwaqe_ecg9_GP2RKf6ZYVUgIjVP6qBCi8h-AuwtQ.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f73",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-20T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (20 Oct Shift 1)",
+            "title": "MHT CET 2020 (20 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

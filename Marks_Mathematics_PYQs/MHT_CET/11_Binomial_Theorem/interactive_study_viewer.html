@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MHT CET - Binomial Theorem PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>📐 MHT CET &bull; Binomial Theorem</h1>
+        <div class="sub">Mathematics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 11, "chapterId": "65a2601d0279619d9d8a21db", "chapter": "Binomial Theorem", "exam": "MHT CET", "subject": "Mathematics", "totalTopics": 5, "totalQuestions": 10, "downloadTime": "2026-10-08 20:42:44", "topics": [{"index": 1, "topicId": "65a263510279619d9d8a3e21", "title": "Properties of Binomial Coefficients", "totalQuestions": 6, "questions": [{"_id": "6a44d30f8c30a4553e1bdfb8", "type": "singleCorrect", "question": {"text": "If ${}^{n}C_4, {}^{n}C_5$ and ${}^{n}C_6$ are in arithmetic progression (A.P.), then the value of n is...", "image": null}, "options": [{"id": "OQmaX", "label": "A", "text": "$5$ or $11$", "isCorrect": false, "image": null}, {"id": "WG8z9", "label": "B", "text": "$7$ or $14$", "isCorrect": true, "image": null}, {"id": "na4Db", "label": "C", "text": "$8$ or $15$", "isCorrect": false, "image": null}, {"id": "7aAou", "label": "D", "text": "$6$ or $13$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Given that $^{n}C_4, ^{n}C_5, ^{n}C_6$ are in A.P.<br><br>$2 \\times ^{n}C_5 = ^{n}C_4 + ^{n}C_6$<br><br>$2 \\times \\dfrac{n!}{5!(n-5)!} = \\dfrac{n!}{4!(n-4)!} + \\dfrac{n!}{6!(n-6)!}$<br><br>Multiplying the entire equation by $\\dfrac{6!(n-4)!}{n!}$:<br><br>$2 \\times 6 \\times (n-4) = 6 \\times 5 + (n-4)(n-5)$<br><br>$12n - 48 = 30 + n^2 - 9n + 20$<br><br>$n^2 - 21n + 98 = 0$<br><br>$(n-7)(n-14) = 0$<br><br>$n = 7$ or $n = 14$<br><br>Answer: $7$ or $14$", "image": null}, "previousYearPapers": [{"_id": "6a44d2802d2155b816ec4a7b", "title": "MHT CET 2026 (19 April Shift 2)", "shortName": "2026 (19 April Shift 2)", "isVisible": true, "heldOn": "2026-04-19T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "level": 2, "questionLabels": [], "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6a44d2802d2155b816ec4a7b", "title": "MHT CET 2026 (19 April Shift 2)", "shortName": "2026 (19 April Shift 2)", "isVisible": true, "heldOn": "2026-04-19T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "68871c02bf9280d7f9932e75", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "688376de9b67616acec78f6d", "heldOn": "2025-05-05T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (5 May Shift 2)", "title": "MHT CET 2025 (5 May Shift 2)", "examId": "615d7745c52ffa3c944600e5"}], "question": {"text": "The value of ${ }^{47} C_4+\\sum_{j=1}^5{ }^{(52-j)} C_3$ is", "image": null}, "options": [{"id": "aCF94", "text": "${ }^{52} \\mathrm{C}_4$", "image": null, "isCorrect": true}, {"id": "nd21h", "text": "${ }^{52} \\mathrm{C}_2$", "image": null, "isCorrect": false}, {"id": "duvKH", "text": "${ }^{48} \\mathrm{C}_4$", "image": null, "isCorrect": false}, {"id": "PWCA7", "text": "${ }^{48} \\mathrm{C}_2$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "The given expression is $^{47}C_{4} + \\sum_{j=1}^{5} {}^{52-j}C_{3}$.<br><br>Expanding the summation, we get:<br><br>$^{47}C_{4} + ^{51}C_{3} + ^{50}C_{3} + ^{49}C_{3} + ^{48}C_{3} + ^{47}C_{3}$<br><br>Rearranging the terms:<br><br>$(^{47}C_{4} + ^{47}C_{3}) + ^{48}C_{3} + ^{49}C_{3} + ^{50}C_{3} + ^{51}C_{3}$<br><br>Using the identity $^{n}C_{r} + ^{n}C_{r-1} = ^{n+1}C_{r}$:<br><br>$^{47}C_{4} + ^{47}C_{3} = ^{48}C_{4}$<br><br>Substituting this back:<br><br>$^{48}C_{4} + ^{48}C_{3} + ^{49}C_{3} + ^{50}C_{3} + ^{51}C_{3}$<br><br>Applying the identity repeatedly:<br><br>$^{48}C_{4} + ^{48}C_{3} = ^{49}C_{4}$<br><br>$^{49}C_{4} + ^{49}C_{3} = ^{50}C_{4}$<br><br>$^{50}C_{4} + ^{50}C_{3} = ^{51}C_{4}$<br><br>$^{51}C_{4} + ^{51}C_{3} = ^{52}C_{4}$<br><br>Answer: ${ }^{52} \\mathrm{C}_4$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "688376de9b67616acec78f6d", "heldOn": "2025-05-05T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (5 May Shift 2)", "title": "MHT CET 2025 (5 May Shift 2)", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "68871ba2bf9280d7f9932b18", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "688376df9b67616acec78f77", "heldOn": "2025-04-23T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (23 Apr Shift 2)", "title": "MHT CET 2025 (23 Apr Shift 2)", "examId": "615d7745c52ffa3c944600e5"}], "question": {"text": "If ${ }^{15} \\mathrm{C}_4+{ }^{15} \\mathrm{C}_5+{ }^{16} \\mathrm{C}_6+{ }^{17} \\mathrm{C}_7+{ }^{18} \\mathrm{C}_8={ }^{19} \\mathrm{C}_{\\mathrm{r}}$, then the value of r is equal to", "image": null}, "options": [{"id": "bUBC0", "text": "9 or 10", "image": null, "isCorrect": false}, {"id": "MXV8x", "text": "7 or 12", "image": null, "isCorrect": false}, {"id": "nN5fk", "text": "8 or 10", "image": null, "isCorrect": false}, {"id": "9rVPJ", "text": "8 or 11", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Using the identity $^{n}C_{r} + ^{n}C_{r-1} = ^{n+1}C_{r}$, we can simplify the given expression step by step.<br><br>$^{15}C_{4} + ^{15}C_{5} = ^{16}C_{5}$<br><br>Substituting this into the given equation:<br><br>$^{16}C_{5} + ^{16}C_{6} + ^{17}C_{7} + ^{18}C_{8} = ^{19}C_{r}$<br><br>$^{17}C_{6} + ^{17}C_{7} + ^{18}C_{8} = ^{19}C_{r}$<br><br>$^{18}C_{7} + ^{18}C_{8} = ^{19}C_{r}$<br><br>$^{19}C_{8} = ^{19}C_{r}$<br><br>We know that if $^{n}C_{x} = ^{n}C_{y}$, then either $x = y$ or $x + y = n$.<br><br>Therefore, $r = 8$ or $r = 19 - 8 = 11$.<br><br>Answer: 8 or 11", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "688376df9b67616acec78f77", "heldOn": "2025-04-23T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (23 Apr Shift 2)", "title": "MHT CET 2025 (23 Apr Shift 2)", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a261ef0279619d9d8a3080", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b88f20917a5f41892ad", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-10T14:00:00.000Z", "isVisible": true, "shortName": "2023 (10 May Shift 2)", "title": "MHT CET 2023 (10 May Shift 2)"}], "question": {"text": "The value of $\\frac{{ }^{10} \\mathrm{C}_{\\mathrm{r}}}{{ }^{11} \\mathrm{C}_{\\mathrm{r}}}$, when both the numerator and denominator are at their greatest values, is", "image": null}, "options": [{"id": "vod0c", "text": "$\\frac{6}{11}$", "image": null, "isCorrect": true}, {"id": "STnwi", "text": "$\\frac{1}{11}$", "image": null, "isCorrect": false}, {"id": "e91Zk", "text": "$\\frac{4}{11}$", "image": null, "isCorrect": false}, {"id": "xPHdB", "text": "$\\frac{3}{11}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Greatest value of ${ }^{-10} \\mathrm{C}_{\\mathrm{r}}$ is at $\\mathrm{r}=5$ Greatest value of ${ }^{11} \\mathrm{C}_{\\mathrm{r}}$ is at $\\mathrm{r}=5$\n$\\therefore \\quad \\frac{{ }^{10} \\mathrm{C}_{\\mathrm{r}}}{{ }^{11} \\mathrm{C}_{\\mathrm{r}}}=\\frac{{ }^{10} \\mathrm{C}_5}{{ }^{11} \\mathrm{C}_5}=\\frac{\\frac{10 !}{5 ! 5 !}}{\\frac{11 !}{5 ! 6 !}}=\\frac{6}{11}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b88f20917a5f41892ad", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-10T14:00:00.000Z", "isVisible": true, "shortName": "2023 (10 May Shift 2)", "title": "MHT CET 2023 (10 May Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a260a20279619d9d8a2613", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b87f20917a5f418929b", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-23T09:00:00.000Z", "isVisible": true, "shortName": "2021 (23 Sep Shift 1)", "title": "MHT CET 2021 (23 Sep Shift 1)"}], "question": {"text": "The difference between the maximum values of ${ }^6 \\mathrm{C}_{\\mathrm{r}}$ and ${ }^n \\mathrm{C}_{\\mathrm{r}} 16$, then $\\mathrm{n}=$", "image": null}, "options": [{"id": "Sa4NE", "text": "3", "image": null, "isCorrect": false}, {"id": "hnUmv", "text": "5", "image": null, "isCorrect": false}, {"id": "pf6yP", "text": "2", "image": null, "isCorrect": false}, {"id": "3oRnw", "text": "4", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "The maximum value of ${ }^6 \\mathrm{C}_{\\mathrm{r}}$ occurs at $\\mathrm{r}=\\frac{6}{2}=3$\n$$\n\\therefore{ }^6 \\mathrm{C}_3=\\frac{6 !}{3 ! 3 !}=\\frac{6 \\times 5 \\times 4}{6}=20\n$$\nAs per data given $\\left|{ }^6 \\mathrm{C}_3-{ }^{\\mathrm{n}} \\mathrm{C}_3\\right|=16$\n$$\n\\therefore{ }^{\\mathrm{n}} \\mathrm{C}_3=20+16 \\text { or }{ }^{\\mathrm{n}} \\mathrm{C}_3=20-16\n$$\nIf ${ }^n C_3=36 \\Rightarrow \\frac{n !}{(n-3) ! n !}=36 \\Rightarrow n(n-1)(n-2)=216$ is not possible for\n$$\n\\mathrm{n} \\in \\mathrm{N}\n$$\n$$\n\\begin{aligned}\n& \\text { If }{ }^{\\mathrm{n}} \\mathrm{C}_3=4 \\Rightarrow \\frac{\\mathrm{n} !}{(\\mathrm{n}-3) ! 3 !}=4 \\Rightarrow \\mathrm{n}(\\mathrm{n}-1)(\\mathrm{n}-2)=24 \\\\\n& \\Rightarrow \\mathrm{n}=4\n\\end{aligned}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b87f20917a5f418929b", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-23T09:00:00.000Z", "isVisible": true, "shortName": "2021 (23 Sep Shift 1)", "title": "MHT CET 2021 (23 Sep Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a2601d0279619d9d8a21d9", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f74", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-20T14:00:00.000Z", "isVisible": true, "shortName": "2020 (20 Oct Shift 2)", "title": "MHT CET 2020 (20 Oct Shift 2)"}], "question": {"text": "The co-efficient of $x^{6}$ in the series of $e^{2 x}$ is", "image": null}, "options": [{"id": "jpfOg", "text": "$\\frac{2}{45}$", "image": null, "isCorrect": false}, {"id": "vQHmi", "text": "$\\frac{7}{45}$", "image": null, "isCorrect": false}, {"id": "ukhJr", "text": "$\\frac{4}{45}$", "image": null, "isCorrect": true}, {"id": "xNxe1", "text": "$\\frac{1}{45}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$e^{2 x}=1+2 x+\\frac{(2 x)^{2}}{2 !}+\\frac{(2 x)^{3}}{3 !}+\\frac{(2 x)^{4}}{4 !}+\\frac{(2 x)^{6}}{6 !}+$\n$x^{6} \\rightarrow$ coefficient $=\\left(\\frac{2^{6} \\cdot x^{6}}{6 !}=\\frac{4}{45}\\right.$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f74", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-20T14:00:00.000Z", "isVisible": true, "shortName": "2020 (20 Oct Shift 2)", "title": "MHT CET 2020 (20 Oct Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "6a44d3b08c30a4553e1be407", "title": "Binomial Theorem for Rational Index", "totalQuestions": 1, "questions": [{"_id": "6a44d2e88c30a4553e1bde19", "type": "singleCorrect", "question": {"text": "The approximate value of $(0.007)^{\\frac{1}{3}}$ is", "image": null}, "options": [{"id": "y7dGF", "label": "A", "text": "$\\dfrac{21}{120}$", "isCorrect": false, "image": null}, {"id": "hbb3b", "label": "B", "text": "$\\dfrac{23}{120}$", "isCorrect": true, "image": null}, {"id": "SzlUa", "label": "C", "text": "$\\dfrac{29}{120}$", "isCorrect": false, "image": null}, {"id": "lJmmF", "label": "D", "text": "$\\dfrac{31}{120}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Let $f(x) = x^{\\dfrac{1}{3}}$<br><br>Let $x = 0.008$ and $\\Delta x = -0.001$<br><br>$f(x) = (0.008)^{\\dfrac{1}{3}} = 0.2 = \\dfrac{1}{5}$<br><br>$f'(x) = \\dfrac{1}{3} x^{-\\dfrac{2}{3}}$<br><br>$f'(0.008) = \\dfrac{1}{3(0.008)^{\\dfrac{2}{3}}} = \\dfrac{1}{3(0.04)} = \\dfrac{1}{0.12} = \\dfrac{100}{12} = \\dfrac{25}{3}$<br><br>Using the approximation $f(x + \\Delta x) \\approx f(x) + f'(x) \\Delta x$<br><br>$f(0.007) \\approx \\dfrac{1}{5} + \\left(\\dfrac{25}{3}\\right)(-0.001)$<br><br>$f(0.007) \\approx \\dfrac{1}{5} - \\dfrac{25}{3000}$<br><br>$f(0.007) \\approx \\dfrac{1}{5} - \\dfrac{1}{120}$<br><br>$f(0.007) \\approx \\dfrac{24 - 1}{120} = \\dfrac{23}{120}$<br><br>Answer: $\\dfrac{23}{120}$", "image": null}, "previousYearPapers": [{"_id": "6a44d2802d2155b816ec4a73", "title": "MHT CET 2026 (15 April Shift 2)", "shortName": "2026 (15 April Shift 2)", "isVisible": true, "heldOn": "2026-04-15T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "level": 2, "questionLabels": [], "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6a44d2802d2155b816ec4a73", "title": "MHT CET 2026 (15 April Shift 2)", "shortName": "2026 (15 April Shift 2)", "isVisible": true, "heldOn": "2026-04-15T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "6abb891815a9fc0fc8c147a1", "title": "Terms of Binomial Expansion", "totalQuestions": 1, "questions": [{"_id": "6abb889515a9fc0fc8c14510", "type": "singleCorrect", "question": {"text": "The sum of the greatest values of ${}^{15}C_r$ and ${}^{12}C_r$ is equal to", "image": null}, "options": [{"id": "SwmeO", "label": "A", "text": "$6718$", "isCorrect": false, "image": null}, {"id": "KxYfA", "label": "B", "text": "$5353$", "isCorrect": false, "image": null}, {"id": "5kTEg", "label": "C", "text": "$5511$", "isCorrect": false, "image": null}, {"id": "GiGdK", "label": "D", "text": "$7359$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "The greatest value of $^{n}C_{r}$ occurs at $r = \\dfrac{n}{2}$ if $n$ is even, and at $r = \\dfrac{n-1}{2}$ or $\\dfrac{n+1}{2}$ if $n$ is odd.<br><br>For $n = 15$, the greatest value is $^{15}C_{7}$ (which is equal to $^{15}C_{8}$).<br><br>$^{15}C_{7} = \\dfrac{15!}{7!8!} = \\dfrac{15 \\times 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1} = 6435$<br><br>For $n = 12$, the greatest value is $^{12}C_{6}$.<br><br>$^{12}C_{6} = \\dfrac{12!}{6!6!} = \\dfrac{12 \\times 11 \\times 10 \\times 9 \\times 8 \\times 7}{6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1} = 924$<br><br>The sum of the greatest values is $6435 + 924 = 7359$.<br><br>Answer: $7359$", "image": null}, "level": 2, "videoSolution": null, "previousYearPapers": [{"_id": "6abb87ef2fe711bb1be99968", "title": "MHT CET 2026 (13 May Shift 2)", "shortName": "2026 (13 May Shift 2)", "isVisible": true, "heldOn": "2026-05-13T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6abb87ef2fe711bb1be99968", "title": "MHT CET 2026 (13 May Shift 2)", "shortName": "2026 (13 May Shift 2)", "isVisible": true, "heldOn": "2026-05-13T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "65a263510279619d9d8a3e22", "title": "Series involving Product of Coefficients", "totalQuestions": 1, "questions": [{"_id": "65a260c40279619d9d8a2725", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b87f20917a5f418929d", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-24T09:00:00.000Z", "isVisible": true, "shortName": "2021 (24 Sep Shift 1)", "title": "MHT CET 2021 (24 Sep Shift 1)"}], "question": {"text": "If ${ }^{11} \\mathrm{C}_4+{ }^{11} \\mathrm{C}_5+{ }^{12} \\mathrm{C}_6+{ }^{13} \\mathrm{C}_7={ }^{14} \\mathrm{C}_{\\mathrm{r}}$, then value of $\\mathrm{r}$ is", "image": null}, "options": [{"id": "J53bN", "text": "11", "image": null, "isCorrect": false}, {"id": "vql5P", "text": "14", "image": null, "isCorrect": false}, {"id": "a10Mu", "text": "7", "image": null, "isCorrect": true}, {"id": "ZLpXZ", "text": "3", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$$\n{ }^{11} \\mathrm{C}_4+{ }^{11} \\mathrm{C}_5+{ }^{12} \\mathrm{C}_6+{ }^{13} \\mathrm{C}_7={ }^{14} \\mathrm{C}_{\\mathrm{r}}\n$$\nWe know that ${ }^n C_r+{ }^n C_{r-1}={ }^{n+1} C_r$\n$$\n\\begin{aligned}\n& \\therefore{ }^{14} \\mathrm{C}_{\\mathrm{r}}=\\left({ }^{11} \\mathrm{C}_4+{ }^{11} \\mathrm{C}_5\\right)+{ }^{12} \\mathrm{C}_6+{ }^{13} \\mathrm{C}_7 \\\\\n& =\\left({ }^{12} \\mathrm{C}_5+{ }^{12} \\mathrm{C}_6\\right)+{ }^{13} \\mathrm{C}_7 \\\\\n& ={ }^{13} \\mathrm{C}_6+{ }^{13} \\mathrm{C}_7={ }^{14} \\mathrm{C}_7 \\\\\n& \\therefore \\mathrm{r}=7\n\\end{aligned}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b87f20917a5f418929d", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-24T09:00:00.000Z", "isVisible": true, "shortName": "2021 (24 Sep Shift 1)", "title": "MHT CET 2021 (24 Sep Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 5, "topicId": "68871ea0bf9280d7f993308b", "title": "Sum of Series", "totalQuestions": 1, "questions": [{"_id": "68871bb1bf9280d7f9932b9f", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "688376df9b67616acec78f78", "heldOn": "2025-04-25T09:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (25 Apr Shift 1)", "title": "MHT CET 2025 (25 Apr Shift 1)", "examId": "615d7745c52ffa3c944600e5"}], "question": {"text": "If ${ }^{\\mathrm{n}} \\mathrm{C}_0+\\frac{1}{2}{ }^{\\mathrm{n}} \\mathrm{C}_1+\\frac{1}{3}{ }^{\\mathrm{n}} \\mathrm{C}_2+\\ldots \\ldots \\ldots \\ldots . . \\cdot \\frac{1}{\\mathrm{n}}{ }^{\\mathrm{n}} \\mathrm{C}_{\\mathrm{n}-1}+\\frac{1}{\\mathrm{n}+1}{ }^{\\mathrm{n}} \\mathrm{C}_{\\mathrm{n}}=\\frac{1023}{10}$ then $\\mathrm{n}=$", "image": null}, "options": [{"id": "GvuC3", "text": "7", "image": null, "isCorrect": false}, {"id": "z9vPH", "text": "8", "image": null, "isCorrect": false}, {"id": "n0a2U", "text": "9", "image": null, "isCorrect": true}, {"id": "SSSf3", "text": "10", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Consider the binomial expansion:<br><br>$(1+x)^n = ^{n}C_0 + ^{n}C_1 x + ^{n}C_2 x^2 + \\dots + ^{n}C_n x^n$<br><br>Integrating both sides with respect to $x$ from $0$ to $1$:<br><br>$\\int_{0}^{1} (1+x)^n dx = \\int_{0}^{1} (^{n}C_0 + ^{n}C_1 x + ^{n}C_2 x^2 + \\dots + ^{n}C_n x^n) dx$<br><br>$\\left[ \\dfrac{(1+x)^{n+1}}{n+1} \\right]_0^1 = \\left[ ^{n}C_0 x + ^{n}C_1 \\dfrac{x^2}{2} + ^{n}C_2 \\dfrac{x^3}{3} + \\dots + ^{n}C_n \\dfrac{x^{n+1}}{n+1} \\right]_0^1$<br><br>$\\dfrac{2^{n+1}-1}{n+1} = ^{n}C_0 + \\dfrac{1}{2} ^{n}C_1 + \\dfrac{1}{3} ^{n}C_2 + \\dots + \\dfrac{1}{n+1} ^{n}C_n$<br><br>Given that the sum is equal to $\\dfrac{1023}{10}$, we have:<br><br>$\\dfrac{2^{n+1}-1}{n+1} = \\dfrac{1023}{10}$<br><br>Comparing the denominators, we can check $n+1 = 10 \\Rightarrow n = 9$.<br><br>Checking the numerator for $n = 9$:<br><br>$2^{9+1}-1 = 2^{10}-1 = 1024-1 = 1023$<br><br>This satisfies the equation perfectly.<br><br>Therefore, $n = 9$.<br><br>Answer: 9", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "688376df9b67616acec78f78", "heldOn": "2025-04-25T09:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (25 Apr Shift 1)", "title": "MHT CET 2025 (25 Apr Shift 1)", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'MHT CET';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

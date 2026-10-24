@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Electrostatics PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚡ BITSAT &bull; Electrostatics</h1>
+        <div class="sub">Physics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 17, "chapterId": "61e7bd7581a69b0b3a599b78", "chapter": "Electrostatics", "exam": "BITSAT", "subject": "Physics", "totalTopics": 5, "totalQuestions": 36, "downloadTime": "2026-10-08 20:28:02", "topics": [{"index": 1, "topicId": "64c0e8576f5bfc7ab78aed12", "title": "Electric Charge and Coulomb's law", "totalQuestions": 7, "questions": [{"_id": "67726d11c49e8ef28ee2b401", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "An oil drop of radius $1 \\mu \\mathrm{~m}$ is held stationary under a constant electric field of $3.65 \\times 10^4 \\mathrm{~N} / \\mathrm{C}$ due to some excess electrons presence on it. If the density of oil drop is $1.26 \\mathrm{~g} / \\mathrm{cm}^3$, then number of excess electrons on the oil drop approximately are\n[Take, $g=10 \\mathrm{~ms}^{-2}$ ]", "image": null}, "options": [{"id": "qvlbx", "text": "7", "image": null, "isCorrect": false}, {"id": "1nLBl", "text": "12", "image": null, "isCorrect": false}, {"id": "I8evR", "text": "9", "image": null, "isCorrect": true}, {"id": "DYCjt", "text": "8", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$E=3.65 \\times 10^4 \\mathrm{~N} / \\mathrm{C}, r=1 \\mu \\mathrm{~m}=10^{-6} \\mathrm{~m}$\n$\\begin{aligned}\n\\rho_{\\text {oil }} & =1.26 \\mathrm{~g} / \\mathrm{cm}^3 \\\\\n& =1.26 \\times 10^3 \\mathrm{~kg} / \\mathrm{m}^3\n\\end{aligned}$\nSince, droplet is stationary hence weight of droplet $=$ force due to electric field\n$\\Rightarrow \\quad \\frac{4}{3} \\pi r^3 \\cdot \\rho_{\\text {oil }} \\cdot g=q E...(i)$\nIf $n$ be the number of excess electrons in the oil drop, then\n$q=n e$\nHence, from Eq. (i), $\\frac{4}{3} \\pi r^3 \\rho_{\\text {oil }} \\cdot g=n e E$\n$\\begin{aligned}\n\\Rightarrow n & =\\frac{4 \\pi r^3 \\rho_{\\text {oill }} g}{3 e E} \\\\\n& =\\frac{4 \\times 3.14 \\times\\left(10^{-6}\\right)^3 \\times 1.26 \\times 10^3 \\times 10}{3 \\times 1.6 \\times 10^{-19} \\times 3.65 \\times 10^4} \\\\\n& =9.03 \\simeq 9\n\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726d03c49e8ef28ee2b390", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "If two charges $q_1$ and $q_2$ are separated with distance ' $d$ ' and placed in a medium of dielectric constant $K$. What will be the equivalent distance between charges in air for the same electrostatic force ?", "image": null}, "options": [{"id": "ibnJx", "text": "$d \\sqrt{K}$", "image": null, "isCorrect": true}, {"id": "wKOEc", "text": "$K \\sqrt{d}$", "image": null, "isCorrect": false}, {"id": "4y6YP", "text": "$1.5 d \\sqrt{K}$", "image": null, "isCorrect": false}, {"id": "iu6mf", "text": "$2 d \\sqrt{K}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "As. $F$(air)=$F$(medium)\n$\\Rightarrow \\frac{1}{4 \\pi \\epsilon_0} \\frac{\\mathrm{q}_1 \\mathrm{q}_2}{\\mathrm{~d}_{\\text {air }}^2}=\\frac{1}{\\mathrm{~K}} \\frac{1}{4 \\pi \\epsilon_0} \\frac{\\mathrm{q}_1 \\mathrm{q}_2}{\\mathrm{~d}^2} \\Rightarrow \\mathrm{~d}_{\\text {air }}=\\mathrm{d} \\sqrt{\\mathrm{K}}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87097ae24e9e2db8c56", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "The force between two small charged spheres having charges of $1 \\times 10^{-7} \\mathrm{C}$ and $2 \\times 10^{-7} \\mathrm{C}$ placed $20 \\mathrm{~cm}$ apart in air is", "image": null}, "options": [{"id": "1hKeX", "text": "$4.5 \\times 10^{-2} \\mathrm{~N}$", "image": null, "isCorrect": false}, {"id": "zweW4", "text": "$5.4 \\times 10^{-2} \\mathrm{~N}$", "image": null, "isCorrect": false}, {"id": "is7Ih", "text": "$4.5 \\times 10^{-3} \\mathrm{~N}$", "image": null, "isCorrect": true}, {"id": "DHBUn", "text": "$5.4 \\times 10^{-3} \\mathrm{~N}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Here, $q_1=1 \\times 10^{-7} \\mathrm{C}, q_2$ and $2 \\times 10^{-7} \\mathrm{C}$, $r=20 \\mathrm{~cm}=20 \\times 10^{-2} \\mathrm{~m}$<br />$F=\\frac{q_1 q_2}{4 \\pi \\varepsilon_0 r^2}=\\frac{9 \\times 10^9 \\times 1 \\times 10^{-7} \\times 2 \\times 10^{-7}}{\\left(20 \\times 10^{-2}\\right)^2}$<br />$=4.5 \\times 10^{-3} N$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8126f5bfc7ab78aea56", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 2, "question": {"text": "Three charge q, Q and 4q are placed in a straight line of length $l$ at points distant $0, \\frac{1}{2}$ and $l$ respectively from one end. In order to make the net froce on q zero, the charge Q must be equal to", "image": null}, "options": [{"id": "lmYCI", "text": "$-\\mathrm{q}$", "isCorrect": true, "image": null}, {"id": "XKc5L", "text": "$-2 q$", "isCorrect": false, "image": null}, {"id": "otl9h", "text": "$\\frac{-\\mathrm{q}}{2}$", "isCorrect": false, "image": null}, {"id": "GJ39t", "text": "q", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\left(\\mathrm{F}_{\\text {net }}\\right)_{\\mathrm{q}}=0$\r\n\r\n$\\Rightarrow \\quad \\mathrm{k} \\frac{\\mathrm{Qq}}{\\left(\\frac{\\ell}{2}\\right)^{2}}+\\mathrm{k} \\frac{4 \\mathrm{q}^{2}}{\\ell^{2}}=0$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/ZvOvFUXON_xQCFHF2M09zraYh8gPpGX6EQ5cMMGa20k.original.fullsize.png\"><br>\r\n\r\n$\\begin{array}{l}\r\n\r\n\\text { where } \\mathrm{k}=\\frac{1}{4 \\pi \\varepsilon_{0}} \\\\\r\n\r\n\\Rightarrow 4 \\mathrm{Qq}+4 \\mathrm{q}^{2}=0 \\quad \\Rightarrow \\mathrm{Q}=-\\mathrm{q}\r\n\r\n\\end{array}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7da6f5bfc7ab78ae86a", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 3, "question": {"text": "Two identical charged spheres suspended from a common point by two massless strings of lengths I, are initially at a distance d $(\\mathrm{d}<<1)$ apart because of their mutual repulsion. The charges begin to leak from both the spheres at a constant rate. As a result, the spheres approach each other with a velocity $v$. Then $v$ varies as a function of the distance $\\mathrm{x}$ between the spheres, as:", "image": null}, "options": [{"id": "Vj2MK", "text": "$\\quad v \\propto x^{\\frac{1}{2}}$", "isCorrect": false, "image": null}, {"id": "vi0AB", "text": "$v \\propto x$", "isCorrect": false, "image": null}, {"id": "jcJHN", "text": "$v \\propto x^{-\\frac{1}{2}}$", "isCorrect": true, "image": null}, {"id": "2riSU", "text": "$\\quad v \\propto x^{-1}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/DTRzdyMoussxQgg4C-oltdiGOAWvRE5VnSHJsRkUHPY.original.fullsize.png\"><br>\r\n\r\nFrom figure $\\tan \\theta=\\frac{\\mathrm{F}_{\\mathrm{e}}}{\\mathrm{mg}} \\simeq \\theta$\r\n\r\n$$\r\n\r\n\\frac{\\mathrm{kq}^{2}}{\\mathrm{x}^{2} \\mathrm{mg}}=\\frac{\\mathrm{x}}{2 \\ell}\r\n\r\n$$\r\n\r\nor $x^{3} \\propto q^{2} \\ldots$ (1)\r\n\r\nor $x^{3 / 2} \\propto q \\ldots(2)$\r\n\r\nDifferentiating eq. (1) w.r.t. time\r\n\r\n$3 \\mathrm{x}^{2} \\frac{\\mathrm{dx}}{\\mathrm{dt}} \\propto 2 \\mathrm{q} \\frac{\\mathrm{dq}}{\\mathrm{dt}}$ but $\\frac{\\mathrm{dq}}{\\mathrm{dt}}$ is constant\r\n\r\n$$\r\n\r\n\\text { so } \\mathrm{x}^{2}(\\mathrm{v}) \\propto \\mathrm{q} \\text { Replace } \\mathrm{q} \\text { from eq. }(2)\r\n\r\n$$\r\n\r\n$\\mathrm{x}^{2}(\\mathrm{v}) \\propto \\mathrm{x}^{3 / 2} \\quad$ or $\\quad \\mathrm{v} \\propto \\mathrm{x}^{-1 / 2}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ad6f5bfc7ab78ae6ea", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 1, "question": {"text": "Three equal charges (q) are placed at corners of an equilateral triangle of side $a$. The force on any charge is", "image": null}, "options": [{"id": "0acs4", "text": "zero", "isCorrect": false, "image": null}, {"id": "5tYad", "text": "$\\sqrt{3} \\frac{\\mathrm{Kq}^{2}}{\\mathrm{a}^{2}}$", "isCorrect": true, "image": null}, {"id": "XnqfV", "text": "$\\frac{\\mathrm{Kq}^{2}}{\\sqrt{3} \\mathrm{a}^{2}}$", "isCorrect": false, "image": null}, {"id": "GjcRE", "text": "$3 \\sqrt{3} \\frac{\\mathrm{Kq}^{2}}{\\mathrm{a}^{2}}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{F}_{\\text {net }}=\\sqrt{\\mathrm{F}^{2}+\\mathrm{F}^{2}+2 \\mathrm{~F}^{2} \\cos 60^{\\circ}}=\\sqrt{3} \\mathrm{~F}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e78f6f5bfc7ab78ae5ec", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "A charge $\\mathrm{Q}_{1}$ exerts some force on a second charge $\\mathrm{Q}_{2}$. If a 3 rd charge $\\mathrm{Q}_{3}$ is brought near, then the force of $\\mathrm{Q}_{1}$ exerted on $\\mathrm{Q}_{2}-$", "image": null}, "options": [{"id": "DMwSJ", "text": "will increase", "image": null, "isCorrect": false}, {"id": "sE2T9", "text": "will decrease", "image": null, "isCorrect": false}, {"id": "DbhQ5", "text": "will remain unchanged", "image": null, "isCorrect": true}, {"id": "b56q2", "text": "will increase if $\\mathrm{Q}_{3}$ is of the same sign as $\\mathrm{Q}_{1}$ and will decrease if $\\mathrm{Q}_{3}$ is of opposite sign.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "No Solution available", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8576f5bfc7ab78aed0f", "title": "Electric Field and Electric Field Lines", "totalQuestions": 8, "questions": [{"_id": "67726d13c49e8ef28ee2b40d", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "Electric field at point $(30,30,0)$ due to a charge of $0.008 \\mu \\mathrm{C}$ placed at origin will be, (coordinates are in cm )", "image": null}, "options": [{"id": "iHbDH", "text": "$8000 \\mathrm{NC}^{-1}$", "image": null, "isCorrect": false}, {"id": "rARc4", "text": "$4000(\\hat{\\mathbf{i}}+\\hat{\\mathbf{j}}) \\mathrm{NC}^{-1}$", "image": null, "isCorrect": false}, {"id": "cF2au", "text": "$200 \\sqrt{2}(\\hat{\\mathbf{i}}+\\hat{\\mathbf{j}}) \\mathrm{NC}^{-1}$", "image": null, "isCorrect": true}, {"id": "62mAl", "text": "$400 \\sqrt{2}(\\hat{\\mathbf{i}}+\\hat{\\mathbf{j}}) \\mathrm{NC}^{-1}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$E=\\frac{K q}{r^2} \\cdot \\hat{r}=\\frac{K q}{r^3} \\cdot r$\nHere,\n$\\begin{aligned}\nr & =\\sqrt{\\left(x_2-x_1\\right)^2+\\left(y_2-y_1\\right)^2+\\left(z_2-z_1\\right)^2} \\\\\n& =\\sqrt{(30)^2+(30)^2+0^2} \\\\\n& =30 \\sqrt{2} \\mathrm{~cm} \\\\\n& =30 \\sqrt{2} \\times 10^{-2} \\mathrm{~m}\n\\end{aligned}$\n$\\text { and } q=8 \\times 10^{-3} \\times 10^{-6} \\mathrm{C}$\nAlso, $\\quad \\mathbf{r}=(30 \\hat{\\mathbf{i}}+30 \\hat{\\mathbf{j}}) \\times 10^{-2} \\mathrm{~m}$\n$\\begin{aligned}\n\\text { So, } \\mathrm{E} & =\\frac{9 \\times 10^9 \\times 8 \\times 10^{-3} \\times 10^{-6}}{\\left(30 \\sqrt{2} \\times 10^{-2}\\right)^3} \\times(30 \\hat{\\mathbf{i}}+30 \\hat{\\mathbf{j}}) \\times 10^{-2} \\\\\n& =\\frac{9 \\times 8 \\times 10^9 \\times 10^{-11}}{27 \\times 2 \\sqrt{2} \\times 10^{-6} \\times 10^3} \\times 30(\\hat{\\mathbf{i}}+\\hat{\\mathbf{j}}) \\\\\n& =\\frac{9 \\times 8 \\times 10^2 \\times 3}{27 \\times 2 \\sqrt{2}}(\\hat{\\mathbf{i}}+\\hat{\\mathbf{j}}) \\\\\n& =200 \\sqrt{2}(\\hat{\\mathbf{i}}+\\hat{\\mathbf{j}}) \\mathrm{NC}^{-1}\n\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726d12c49e8ef28ee2b409", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "A dust particle of mass $4 \\times 10^{-12} \\mathrm{mg}$ in suspended in air under the influence of an electric field of $50 \\mathrm{~N} / \\mathrm{C}$ directed vertically upwards. How many electrons were removed from the neutral dust particle? [Take, $g=10 \\mathrm{~m} / \\mathrm{s}$ ${ }^2$ ]", "image": null}, "options": [{"id": "S5PFn", "text": "15", "image": null, "isCorrect": false}, {"id": "XENlJ", "text": "8", "image": null, "isCorrect": false}, {"id": "og82m", "text": "5", "image": null, "isCorrect": true}, {"id": "uvrbU", "text": "4", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Mass of dust particle, $m=4 \\times 10^{-12} \\mathrm{mg}$\n$\\begin{aligned}\n& =4 \\times 10^{-12} \\times 10^{-3} \\mathrm{~g} \\\\\n& =4 \\times 10^{-12} \\times 10^{-3} \\times 10^{-3} \\mathrm{~kg} \\\\\n& =4 \\times 10^{-18} \\mathrm{~kg}\n\\end{aligned}$\nElectric field, $E=50 \\mathrm{~N} / \\mathrm{C}$\nWeight of dust particle, $W=m g$\n$=4 \\times 10^{-18} \\times 10=4 \\times 10^{-17} \\mathrm{~N}$\nElectric force experienced by dust particle,\n$\\begin{aligned}\n& F_e=q E \\\\\n& F_e=n e \\cdot E=n \\times 1.6 \\times 10^{-19} \\times 50\n\\end{aligned}$\nwhere, $n$ is the number of electrons removed from neutral dust particle.\n$\\therefore$ At balance condition,\n$\\begin{aligned}\n& \\text { Electric force }=\\text { Weight of dust particle } \\\\\n& n \\times 1.6 \\times 10^{-19} \\times 50=4 \\times 10^{-17} \\\\\n& n=\\frac{4 \\times 10^{-17}}{1.6 \\times 10^{-19} \\times 50} \\\\\n& =\\frac{400}{80}=5\n\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7e76f5bfc7ab78ae8da", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 2, "question": {"text": "<p>Three charges are placed at the three vertices of an equilateral triangle of side <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math>&nbsp;as shown in the figure. The force experienced by the charge placed at the vertex <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math> in a direction normal to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi><mi>C</mi></math> is</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/8e9baabd-eb7a-44a9-8fdc-f4f176b3ecf0-image.png\" style=\"width: 240px; height: 185px;\" /></p>", "image": null}, "options": [{"id": "pF2wn", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msup><mi>Q</mi><mn>2</mn></msup><mrow><mn>4</mn><mi>&#960;</mi><msub><mi>&#949;</mi><mn>0</mn></msub><msup><mi>a</mi><mn>2</mn></msup></mrow></mfrac></math>", "isCorrect": false, "image": null}, {"id": "vZIGL", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mfrac><msup><mi>Q</mi><mn>2</mn></msup><mrow><mn>4</mn><mi>&#960;</mi><msub><mi>&#949;</mi><mn>0</mn></msub><msup><mi>a</mi><mn>2</mn></msup></mrow></mfrac></math>", "isCorrect": false, "image": null}, {"id": "T6qDe", "text": "zero", "isCorrect": true, "image": null}, {"id": "sxeql", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msup><mi>Q</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>&#960;</mi><msub><mi>&#949;</mi><mn>0</mn></msub><msup><mi>a</mi><mn>2</mn></msup></mrow></mfrac></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Resultant force</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>F</mi><mo>&#39;</mo></msup><mo>=</mo><msqrt><msup><mi>F</mi><mn>2</mn></msup><mo>+</mo><msup><mi>F</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>F</mi><mi>F</mi><mi>cos</mi><mn>120</mn><mo>&#176;</mo></msqrt><mo>=</mo><mi>F</mi></math>&nbsp; &nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"]\" open=\"[\"><mrow><mo>&#8757;</mo><mi>cos</mi><mn>120</mn><mo>&#176;</mo><mo>=</mo><mfrac><mrow><mo>-</mo><mn>1</mn></mrow><mn>2</mn></mfrac></mrow></mfenced></math></p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/2ca33903-5b85-4ca6-a0d8-ece8058f4f1e-image.png\" style=\"width: 250px; height: 220px;\" /></p><p>Now, from figure</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>F</mi><mo>=</mo><msqrt><msup><mi>F</mi><mrow><mo>&#39;</mo><mn>2</mn></mrow></msup><mo>+</mo><msup><mi>F</mi><mrow><mo>&#39;</mo><mo>&#39;</mo><mn>2</mn></mrow></msup><mo>+</mo><mn>2</mn><msup><mi>F</mi><mo>&#39;</mo></msup><msup><mi>F</mi><mrow><mo>&#39;</mo><mo>&#39;</mo></mrow></msup><mi>cos</mi><mn>90</mn><mo>&#176;</mo></msqrt></math></p><p>Now, the force normal to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi><mi>C</mi></math> at vertex <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math> is</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>F</mi><mrow><mo>&#39;</mo><mo>&#39;</mo></mrow></msup><mo>=</mo><msqrt><msup><mi>F</mi><mn>2</mn></msup><mo>-</mo><msup><mi>F</mi><mrow><mo>&#39;</mo><mn>2</mn></mrow></msup></msqrt><mo>=</mo><mn>0</mn></math>&nbsp; &nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mo>&#8757;</mo><msup><mi>F</mi><mo>&#39;</mo></msup><mo>=</mo><mi>F</mi></mrow></mfenced></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7d66f5bfc7ab78ae84a", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 2, "question": {"text": "The surface charge density of a thin charged disc of radius $\\mathrm{R}$ is $\\sigma$. The value of the electric field at the centre of the disc is $\\frac{\\sigma}{2 \\epsilon_{0}}$. With respect to the field at the centre, the electric field along the axis at a distance $\\mathrm{R}$ from the centre of the $\\operatorname{disc}$", "image": null}, "options": [{"id": "tlzhB", "text": "reduces by $70.7 \\%$", "isCorrect": true, "image": null}, {"id": "6oUmH", "text": "reduces by $29.3 \\%$", "isCorrect": false, "image": null}, {"id": "ApPnQ", "text": "reduces by $9.7 \\%$", "isCorrect": false, "image": null}, {"id": "LU3ZK", "text": "reduces by $14.6 \\%$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Electric field intensity at the centre of the disc.\r\n\r\n\\(\\mathrm{E}=\\frac{\\sigma}{2 \\epsilon_{0}} \\text { (given) }\\)\r\n\r\nElectric field along the axis at any distance \\(x\\) from the centre of the disc\r\n\r\n\\(\\mathrm{E}^{\\prime}=\\frac{\\sigma}{2 \\epsilon_{0}}\\left(1-\\frac{\\mathrm{x}}{\\sqrt{\\mathrm{x}^{2}}-\\mathrm{R}^{2}}\\right)\\)\r\n\r\nFrom question, \\(\\mathrm{x}=\\mathrm{R}\\) (radius of disc)\r\n\r\n\\(\\begin{aligned}\r\n\r\n&\\therefore E^{\\prime}=\\frac{\\sigma}{2 \\epsilon_{0}}\\left(1-\\frac{R}{\\sqrt{R^{2}+R^{2}}}\\right) \\\\\r\n\r\n&=\\frac{\\sigma}{2 \\epsilon_{0}}\\left(\\frac{\\sqrt{2} R-R}{\\sqrt{2} R}\\right) \\\\\r\n\r\n&=\\frac{4}{14} E\r\n\r\n\\end{aligned}\\)\r\n\r\n\\(\\therefore\\) \\% reduction in the value of electric field\r\n\r\n\\(=\\frac{\\left(\\mathrm{E}-\\frac{4}{14} \\mathrm{E}\\right) \\times 100}{\\mathrm{E}}=\\frac{1000}{14} \\%=70.7 \\%\\)", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7c76f5bfc7ab78ae7d0", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 2, "question": {"text": "A solid sphere of radius $R$ has a charge $Q$ distributed in its volume with a charge density $\\rho$ $=k r^{a}$, where $k$ and $a$ are constants and $r$ is the distance from its centre. If the electric field at $r=$ $\\frac{R}{2}$ is $\\frac{1}{8}$ times that at $r=R,$ the value of $a$ is", "image": null}, "options": [{"id": "sRvWp", "text": "3", "isCorrect": false, "image": null}, {"id": "hjFec", "text": "5", "isCorrect": false, "image": null}, {"id": "F02je", "text": "2", "isCorrect": true, "image": null}, {"id": "TIMuP", "text": "7", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Using Gauss's law, we have\r\n\r\n$$\r\n\r\n\\oint \\vec{E} \\cdot d \\vec{A}=\\frac{1}{\\epsilon_{0}} \\int(\\rho d v)=\\frac{1}{\\epsilon_{0}} \\int_{0}^{R} k r^{a} \\times 4 \\pi r^{2} d r\r\n\r\n$$\r\n\r\nor $E \\times 4 \\pi R^{2}=\\left(\\frac{4 \\pi k}{\\epsilon_{0}}\\right) \\frac{R^{(a+3)}}{(a+3)}$\r\n\r\n$$\r\n\r\n\\therefore \\quad E_{1}=\\frac{k R^{(a+1)}}{\\epsilon_{0}(a+3)}\r\n\r\n$$\r\n\r\nFor $r=\\frac{R}{2} \\cdot E_{2}=\\frac{k\\left(\\frac{R}{2}\\right)^{a+1}}{\\epsilon_{0}(a+3)}$\r\n\r\nGiven, $E_{2}=\\frac{E_{1}}{8}$\r\n\r\nor $\\frac{k\\left(\\frac{R}{2}\\right)^{a+1}}{\\epsilon_{0}(a+3)}=\\frac{1}{8} \\frac{k R^{(a+1)}}{\\epsilon_{0}(a+3)}$\r\n\r\n$$\r\n\r\n\\begin{array}{ll}\r\n\r\n\\therefore & \\quad \\frac{1}{a+1}=\\frac{1}{8} \\\\\r\n\r\n\\text { or } & a=2 .\r\n\r\n\\end{array}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e79e6f5bfc7ab78ae66b", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 2, "question": {"text": "The electric field intensity just sufficient to balance the earth's gravitational attraction on an electron will be: (given mass and charge of an electron respectively are $9.1 \\times 10^{-31} \\mathrm{~kg}$ and $1.6 \\times$ $\\left.10^{-19} \\mathrm{C} .\\right)$", "image": null}, "options": [{"id": "jU0pV", "text": "$-5.6 \\times 10^{-11} \\mathrm{~N} / \\mathrm{C}$", "isCorrect": true, "image": null}, {"id": "4lr5d", "text": "$-4.8 \\times 10^{-15} \\mathrm{~N} / \\mathrm{C}$", "isCorrect": false, "image": null}, {"id": "dmjNe", "text": "$-1.6 \\times 10^{-19} \\mathrm{~N} / \\mathrm{C}$", "isCorrect": false, "image": null}, {"id": "XvFRc", "text": "$-3.2 \\times 10^{-19} \\mathrm{~N} / \\mathrm{C}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$-\\mathrm{eE}=\\mathrm{mg}$\r\n$\\overrightarrow{\\mathrm{E}}=-\\frac{9.1 \\times 10^{-31} \\times 10}{1.6 \\times 10^{-19}}=-5.6 \\times 10^{-11} \\mathrm{~N} / \\mathrm{C}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e78f6f5bfc7ab78ae5eb", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "In an uniformly charged sphere of total charge Q and radius $\\mathrm{R},$ the electric field $\\mathrm{E}$ is plotted as function of distance from the centre. The graph which would correspond to the above will be", "image": null}, "options": [{"id": "jLh31", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/5g3wlwkjOFFNVL-73z9d5nXenCg3gegSoxB_eiGjKwk.original.fullsize.png\">", "image": null, "isCorrect": false}, {"id": "xDTtG", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/PGS4imYljxacnBqSujsGbmu7gGwhjwJ_3WMkmF9ZTds.original.fullsize.png\">", "image": null, "isCorrect": false}, {"id": "jkQ5h", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/RRtdjCK5zmkxA9ivUBZaOkoE6SWm_uIQWR4WEK7TkEs.original.fullsize.png\">", "image": null, "isCorrect": true}, {"id": "LSII2", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/L1H63FoWiLT_MlmJsC5BDH4ro2ynZxgmRpmgvIq6i4k.original.fullsize.png\">", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Electric field inside the uniformly charged sphere varies linearly, $E=\\frac{k Q}{R^{3}} r,(r \\leq R)$ while outside the sphere, it varies as inverse\nsquare of distance, $E=\\frac{k Q}{r^{2}} ;(r \\geq R)$ which is correctly represented in option (c).", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7736f5bfc7ab78ae4ef", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "If an electron has an initial velocity in a direction different from that of an electric field, the path of the electron is", "image": null}, "options": [{"id": "RTD0r", "text": "a straight line", "image": null, "isCorrect": false}, {"id": "WQV36", "text": "a circle", "image": null, "isCorrect": false}, {"id": "QQMd4", "text": "an ellipse", "image": null, "isCorrect": false}, {"id": "BvaoT", "text": "a parabola", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "The path is a parabola, because initial velocity can be resolved into two rectangular components, one along $\\overrightarrow{\\mathrm{E}}$ and other $\\perp$ to $\\overrightarrow{\\mathrm{E}}$. The former decreases at a constant rate and latter is unaffected. The resultant path is therefore a parabola.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e8576f5bfc7ab78aed10", "title": "Electric Potential and Potential Energy", "totalQuestions": 15, "questions": [{"_id": "67726d12c49e8ef28ee2b405", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "The potential of a large liquid drop when eight liquid drops are combined is 20 V , then the potential of each single drop was", "image": null}, "options": [{"id": "S1C7q", "text": "10 V", "image": null, "isCorrect": false}, {"id": "RPRYN", "text": "7.5 V", "image": null, "isCorrect": false}, {"id": "13CY7", "text": "5 V", "image": null, "isCorrect": true}, {"id": "WnhIB", "text": "2.5 V", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Volume of eight drops = Volume of a big drop\n$\\therefore \\quad\\left(\\frac{4}{3} \\pi r^3\\right) \\times 8=\\frac{4}{3} \\pi R^3$\n$\\Rightarrow \\quad 2 r=R$...(i)\nAccording to charge conservation,\n$8 q=Q$...(ii)\nPotential of one small drop, $V^{\\prime}=\\frac{q}{4 \\pi \\varepsilon_0 r}$\nSimilarly, potential of big drop, $V=\\frac{Q}{4 \\pi \\varepsilon_0 R}$\nNow, $\\quad \\frac{V^{\\prime}}{V}=\\frac{q}{Q} \\times \\frac{R}{r}$\n$\\Rightarrow \\quad \\frac{V^{\\prime}}{20}=\\frac{q}{8 q} \\times \\frac{2 r}{r} \\quad$ [from Eqs. (i) and (ii)]\n$\\therefore \\quad V^{\\prime}=5 \\mathrm{~V}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726d03c49e8ef28ee2b394", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "Electric potential at a point 'P' due to a point charge of $5 \\times 10^{-9} \\mathrm{C}$ is 50 V . The distance of ' P ' from the point charge is:\n(Assume, $\\frac{1}{4 \\pi \\varepsilon_0}=9 \\times 10^{+9} \\mathrm{Nm}^2 \\mathrm{C}^{-2}$ )", "image": null}, "options": [{"id": "RdaJq", "text": "3 cm", "image": null, "isCorrect": false}, {"id": "GQweZ", "text": "9 cm", "image": null, "isCorrect": false}, {"id": "XS5nz", "text": "90 cm", "image": null, "isCorrect": true}, {"id": "4c0BJ", "text": "0.9 cm", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Electric potential at a point P due to a point charge, $\\left(\\because \\mathrm{K}=9 \\times 10^9\\right)$\n$V_P=\\frac{K Q}{r}$\n$\\Rightarrow \\quad 50=\\frac{9 \\times 10^9 \\times 5 \\times 10^{-9}}{\\mathrm{r}}$\n$\\Rightarrow \\quad \\mathrm{r}=\\frac{45}{50}=\\frac{9}{10}=0.9 \\mathrm{~m}=90 \\mathrm{~cm}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e82c6f5bfc7ab78aeb3d", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 1, "question": {"text": "Which one of the following graphs represents the variation of electric potential with distance $r$ from the centre of a non-conducting charged sphere of radius $R$ ?", "image": null}, "options": [{"id": "2vvIH", "text": "\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/j2oUTm9NwK9X7IGk8AltfrKVU6IClR6bLmhrUPvV_-s.original.fullsize.png\"><br>", "isCorrect": false, "image": null}, {"id": "RYtaS", "text": "\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/STHocV7jR3y4iT5e4FNAokgj48eOy8pakOSjxAkCHmA.original.fullsize.png\"><br>", "isCorrect": false, "image": null}, {"id": "MWUKZ", "text": "\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/UdUkDzwg2_QufpOqFnrN6-UXSyMiRCNeiMpRPncf2gs.original.fullsize.png\"><br>", "isCorrect": false, "image": null}, {"id": "JMPjr", "text": "\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/Y1j1Q9fnmIkp2dHi_nBipGNpB0Cfzu96yTOyJvKTypE.original.fullsize.png\"><br>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Electric potential at centre $R=0$\r\n$$\r\nV_{\\text {centre }}=1.5 V_{\\text {surface }}\r\n$$\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/JPf3SXkOJwUq0wKVWyoOTmYpnxkuFO7gQ3A73DV-j_8.original.fullsize.png\"><br>\r\nwhere,\r\n$$\r\n\\begin{aligned}\r\nV_0 & =\\frac{k Q}{R} \\\\\r\nV_{\\text {inside }} & =\\frac{k Q}{2 R}\\left(3-\\frac{r^2}{R^2}\\right)\r\n\\end{aligned}\r\n$$<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/YwEC8mM2hhxQSxrBswndzaLb6UKhFu6vRLWqOXkmnrU.original.fullsize.png\"><br>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8216f5bfc7ab78aead8", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 2, "question": {"text": "A charge $Q$ is placed at each of the opposite corners of a square. A charge $q$ is placed at each of the other two corners. If the net electrical force on $Q$ is zero, then $\\frac{Q}{q}$ equals:", "image": null}, "options": [{"id": "QVuan", "text": "$-1$", "isCorrect": false, "image": null}, {"id": "jqblx", "text": "$1$", "isCorrect": false, "image": null}, {"id": "LOH49", "text": "$-\\frac{1}{\\sqrt{2}}$", "isCorrect": false, "image": null}, {"id": "qSTMq", "text": "$-2 \\sqrt{2}$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/Hts9_DP0I9bJeoH6q8wbY_mrR2-h2VwGI2mzTegRaJc.original.fullsize.png\"><br>\r\n\r\nIt is given that $\\vec{F}_{A}+\\vec{F}_{B}+\\vec{F}_{D}=0$\r\n\r\nWhere $\\vec{F}_{A}, \\vec{F}_{B}$ and $\\vec{F}_{D}$ are the forces applied by charges placed at $A, B$ and $D$ on the charge placed at $C$.\r\n\r\n$\\begin{array}{l}\r\n\r\n\\Rightarrow \\overrightarrow{\\mathrm{F}}_{\\mathrm{B}}+\\overrightarrow{\\mathrm{F}}_{\\mathrm{D}}=-\\overrightarrow{\\mathrm{F}}_{\\mathrm{A}} \\\\\r\n\r\n\\left|\\overrightarrow{\\mathrm{F}}_{\\mathrm{B}}+\\overrightarrow{\\mathrm{F}}_{\\mathrm{D}}\\right|=\\sqrt{2} \\frac{\\mathrm{KqQ}}{\\mathrm{a}^{2}} \\\\\r\n\r\n\\Rightarrow\\left|\\overrightarrow{\\mathrm{F}}_{\\mathrm{A}}\\right|=\\frac{\\mathrm{KQ}^{2}}{2 a^{2}} \\\\\r\n\r\n\\therefore \\sqrt{2} \\frac{\\mathrm{KqQ}}{a^{2}}=-\\frac{\\mathrm{KQ}^{2}}{2 a^{2}} \\\\\r\n\r\n\\Rightarrow \\frac{\\mathrm{Q}}{q}=-2 \\sqrt{2}\r\n\r\n\\end{array}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e81d6f5bfc7ab78aeab9", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 1, "question": {"text": "The electric potential $V$ is given as a function of distance $\\times($ metre $)$ by $V=\\left(5 x^{2}+10 x-4\\right)$ volt.\r\n\r\n<strong>Question:</strong> Value of electric field at $x=1 \\mathrm{~m}$ is", "image": null}, "options": [{"id": "WudA1", "text": "$-23 \\mathrm{~V} / \\mathrm{m}$", "isCorrect": false, "image": null}, {"id": "VEUAm", "text": "$11 \\mathrm{~V} / \\mathrm{m}$", "isCorrect": false, "image": null}, {"id": "K1ynK", "text": "$6 \\mathrm{~V} / \\mathrm{m}$", "isCorrect": false, "image": null}, {"id": "Kwbf4", "text": "$-20 \\mathrm{~V} / \\mathrm{m}$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{V}=5 x^{2}+10 x-4$\r\n\r\n$\\mathrm{E}=\\frac{-\\mathrm{dV}}{\\mathrm{dx}}=-(10 x+10)$\r\n\r\nAt $x=1 m, \\mathrm{E}=-20 \\mathrm{~V} / m$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8056f5bfc7ab78ae9e3", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 1, "question": {"text": "In the following figures, which figure represents the variation of the electric field with distance from the centre of a uniformly charged non-conducting spheres of radius&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi></math>&nbsp;?", "image": null}, "options": [{"id": "UaB37", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/4fb09fe8-09cd-4c4f-8c11-10e643f54d14-image.png\" style=\"width: 220px; height: 188px;\" />", "isCorrect": false, "image": null}, {"id": "0KEsW", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/1935f8e6-c845-49a1-8a8e-ebd12c7640e2-image.png\" style=\"width: 220px; height: 187px;\" />", "isCorrect": false, "image": null}, {"id": "ofy2G", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/2cd268d1-a051-4ff8-86e0-ca7e471e9e05-image.png\" style=\"width: 220px; height: 188px;\" />", "isCorrect": true, "image": null}, {"id": "wDMYt", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/ca443cf8-3d12-4ee1-8f56-869e5a98be17-image.png\" style=\"width: 220px; height: 188px;\" />", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>The electric field intensity at a point lying outside the sphere (non-conducting) is</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>4</mn><mi>&#960;</mi><msub><mi>&#949;</mi><mn>0</mn></msub></mrow></mfrac><mo>&#183;</mo><mfrac><mi>q</mi><msup><mi>r</mi><mn>2</mn></msup></mfrac></math></p><p>i.e.&nbsp;&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>E</mi><mo>&#8733;</mo><mfrac><mn>1</mn><msup><mi>r</mi><mn>2</mn></msup></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8230;</mo><mfenced><mi mathvariant=\"normal\">i</mi></mfenced></math></p><p>The electric field intensity at the surface <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi>r</mi><mo>=</mo><mi>R</mi><mo>)</mo></math>,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>4</mn><mi>&#960;</mi><msub><mi>&#949;</mi><mn>0</mn></msub></mrow></mfrac><mfrac><mi>q</mi><msup><mi>R</mi><mn>2</mn></msup></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>E</mi><mo>&#8733;</mo><mfrac><mn>1</mn><msup><mi>R</mi><mn>2</mn></msup></mfrac></math></p><p>where, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi></math> being the radius of sphere,</p><p>The electric field intensity inside the sphere is</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>E</mi><mo>=</mo><mfrac><mrow><mi>q</mi><mi>r</mi></mrow><mrow><mn>4</mn><mi>&#960;</mi><msub><mi>&#949;</mi><mn>0</mn></msub><msup><mi>R</mi><mn>3</mn></msup></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>E</mi><mo>&#8733;</mo><mi>r</mi></math></p><p>At the centre of sphere, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi><mo>=</mo><mn>0</mn><mo>,</mo><mo>&#160;</mo><mo>&#8756;</mo><mi>E</mi><mo>=</mo><mn>0</mn></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7e56f5bfc7ab78ae8c8", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 1, "question": {"text": "Two metal plates having a potential difference of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>800</mn><mo>&#160;</mo><mi mathvariant=\"normal\">V</mi></math> are <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>&#160;</mo><mi>cm</mi></math> apart. It is found that a particle of mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>.</mo><mn>96</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>15</mn></mrow></msup><mo>&#160;</mo><mi>kg</mi></math> remains suspended in the region between the plates. The charge on the particle must be (<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>e</mi><mo>=</mo></math> elementary charge)", "image": null}, "options": [{"id": "Mz9kh", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>&#160;</mo><mi>e</mi></math>", "isCorrect": false, "image": null}, {"id": "JOabC", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>&#160;</mo><mi>e</mi></math>", "isCorrect": true, "image": null}, {"id": "V6o2n", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>6</mn><mo>&#160;</mo><mi>e</mi></math>", "isCorrect": false, "image": null}, {"id": "OXxZn", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>8</mn><mo>&#160;</mo><mi>e</mi></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>V</mi><mo>=</mo><mn>800</mn><mo>&#160;</mo><mi mathvariant=\"normal\">V</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>E</mi><mo>=</mo><mfrac><mi>V</mi><mi>d</mi></mfrac><mo>=</mo><mfrac><mn>800</mn><mrow><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup></mrow></mfrac><mo>&#160;</mo><mi mathvariant=\"normal\">V</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mn>4</mn></msup><mo>&#160;</mo><mo>&#160;</mo><mi mathvariant=\"normal\">V</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math></p><p>At equilibrium electrostatic force must be equal to force due to weight.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>q</mi><mi>E</mi><mo>=</mo><mi>m</mi><mi>g</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>q</mi><mo>=</mo><mfrac><mrow><mi>m</mi><mi>g</mi></mrow><mi>E</mi></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>96</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>15</mn></mrow></msup><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>8</mn></mrow><mrow><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mn>4</mn></msup></mrow></mfrac></math>&nbsp;coulomb</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>96</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>15</mn></mrow></msup><mo>&#215;</mo><mn>9</mn><mo>.</mo><mn>8</mn></mrow><mrow><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mn>4</mn></msup><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>19</mn></mrow></msup></mrow></mfrac></math>&nbsp;elementary charges</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>3</mn><mo>&#160;</mo><mi>e</mi></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7c96f5bfc7ab78ae7dc", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 2, "question": {"text": "At the corners of an equilateral triangle of side a (1 metre), three point charges are placed (each of $0.1 \\mathrm{C}$ ). If this system is supplied energy at the rate of $1 \\mathrm{kw},$ then calculate the time required to move one of the mid-point of the line joining the other two.\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/8In6JAsI0AamkIYTHB0MdNAF6pH7Zrru4DZDMNygNqw.original.fullsize.png\">", "image": null}, "options": [{"id": "u26oI", "text": "$50 \\mathrm{~h}$", "isCorrect": true, "image": null}, {"id": "Wzje4", "text": "$60 \\mathrm{~h}$", "isCorrect": false, "image": null}, {"id": "pZFrt", "text": "$48 \\mathrm{~h}$", "isCorrect": false, "image": null}, {"id": "TxeeM", "text": "$54 \\mathrm{~h}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Initial potential energy of the system\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n=\\frac{1}{4 \\pi \\varepsilon_{0}}\\left[\\frac{\\mathrm{q}^{2}}{\\mathrm{a}}+\\frac{\\mathrm{q}^{2}}{\\mathrm{a}}+\\frac{\\mathrm{q}^{2}}{\\mathrm{a}}\\right]=\\frac{1}{4 \\pi \\varepsilon_{0}}\\left(\\frac{3 \\mathrm{q}^{2}}{\\mathrm{a}}\\right) \\\\\r\n\r\n=9 \\times 10^{9}\\left(3 \\times \\frac{(0.1)^{2}}{1}\\right)=27 \\times 10^{7} \\mathrm{~J}\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nLet charge at $\\mathrm{A}$ is moved to mid-point $\\mathrm{O}$ Then final potential energy of thhe system\r\n\r\n$$\r\n\r\n\\begin{aligned}\r\n\r\n\\mathrm{U}_{\\mathrm{f}} &=\\frac{1}{4 \\pi \\varepsilon_{0}}\\left[\\frac{2 \\mathrm{q}^{2}}{(\\mathrm{a} / 2)}+\\frac{\\mathrm{q}^{2}}{\\mathrm{a}}\\right] \\\\\r\n\r\n&=5 \\times \\frac{1}{4 \\pi \\varepsilon_{0}}\\left(\\frac{\\mathrm{q}^{2}}{\\mathrm{a}^{2}}\\right)=45 \\times 10^{7} \\mathrm{~J}\r\n\r\n\\end{aligned}\r\n\r\n$$\r\n\r\nWork done $=\\mathrm{U}_{\\mathrm{f}}-\\mathrm{U}_{\\mathrm{i}}=18 \\times 10^{7} \\mathrm{~J}$\r\n\r\nAlso, energy supplied per sec $=1000 \\mathrm{~J}$ (given) Time required to move one of the mid-point of the line joining the other two\r\n\r\n$$\r\n\r\n\\mathrm{t}=\\frac{18 \\times 10^{7}}{1000}=18 \\times 10^{4} \\mathrm{~s}=50 \\mathrm{~h}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7bb6f5bfc7ab78ae764", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 3, "question": {"text": "Two long coaxial and conducting cylinders of radius a and $\\mathrm{b}$ are separated by a material of conductivity $\\sigma$ and a constant potential difference $\\mathrm{V}$ is maintained between them, by a battery. Then the current, per unit length of the cylinder flowing from one cylinder to the other is -", "image": null}, "options": [{"id": "oSUiW", "text": "$\\frac{4 \\pi \\sigma}{\\ln (b / a)} V$", "isCorrect": false, "image": null}, {"id": "Pe1RA", "text": "$\\frac{4 \\pi \\sigma}{(b+a)} V$", "isCorrect": false, "image": null}, {"id": "SSA0B", "text": "$\\frac{2 \\pi \\sigma}{\\ln (b / a)} V$", "isCorrect": true, "image": null}, {"id": "NlSBT", "text": "$\\frac{2 \\pi \\sigma}{(b+a)} V$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{V}=\\int_{\\mathrm{a}}^{\\mathrm{b}} \\mathrm{E} \\cdot \\mathrm{d} \\ell=\\frac{\\lambda}{2 \\pi \\varepsilon_{0} \\mathrm{r}} \\ln \\left(\\frac{\\mathrm{b}}{\\mathrm{a}}\\right)$\r\n\r\nNow, $I=\\sigma \\int \\vec{E} \\cdot \\overrightarrow{d A}=\\sigma \\int \\frac{\\lambda}{2 \\pi \\varepsilon_{0} r} \\cdot 2 \\pi d r=\\frac{\\sigma \\lambda}{\\varepsilon_{0}}$\r\n\r\nFrom (1)$: I=\\frac{2 \\sigma \\pi \\varepsilon_{0}}{\\varepsilon_{0} \\ln (b / a)}=\\frac{2 \\pi \\sigma}{\\ln (b / a)} v$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7bb6f5bfc7ab78ae762", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 1, "question": {"text": "Electric field in theregion is given by $\\mathrm{E}=\\left(\\frac{\\mathrm{M}}{\\mathrm{x}^{3}}\\right) \\hat{\\mathrm{i}}$, then the correct expression for the potential in the region is [assume potential at infinity is zero]", "image": null}, "options": [{"id": "Y0gVw", "text": "$\\frac{\\mathrm{M}}{2 \\mathrm{x}^{2}}$", "isCorrect": true, "image": null}, {"id": "4lp2k", "text": "$\\mathrm{Mx}^{2}$", "isCorrect": false, "image": null}, {"id": "vg3bF", "text": "$\\frac{\\mathrm{M}}{3 \\mathrm{x}^{4}}$", "isCorrect": false, "image": null}, {"id": "Wjrvs", "text": "$\\frac{\\mathrm{M}}{\\mathrm{x}^{2}}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$V=-\\int_{\\infty}^{x} E \\cdot d r=-\\int_{\\infty}^{x} \\frac{M}{x^{3}} d x=\\frac{M}{2 x^{2}}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ba6f5bfc7ab78ae755", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 1, "question": {"text": "A spherically symmetric gravitational system of particles has a mass density $\\rho=\\left\\{\\begin{array}{ll}\\rho_{0} & \\text { for } \\mathrm{r} \\leq \\mathrm{R} \\\\ 0 & \\text { for } \\mathrm{r}>\\mathrm{R}\\end{array}\\right.$\r\n\r\nwhere $\\mathrm{r}_{0}$ is a constant. A test mass can undergo\r\n\r\ncircular motion under the influence of the gravitational field of particles. Its speed $\\mathrm{V}$ as a function of distance $r(0<r<\\infty)$ from the centre of the system is represented by", "image": null}, "options": [{"id": "wRmoM", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/4_mVNkW8izvk4YpMzNKAmHSO0bin9AXBKI6-p65iKKc.original.fullsize.png\">", "isCorrect": false, "image": null}, {"id": "pzHqq", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/uw-k7WgNaR6afUBiWAXADXwmrGzFD8-hxY-4VHV4RlQ.original.fullsize.png\">", "isCorrect": false, "image": null}, {"id": "lrDbL", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/zlmjtZrHwk9bZI1kJjha9uzSrXfRvbMccZpIFYZiThM.original.fullsize.png\">", "isCorrect": true, "image": null}, {"id": "K8tgB", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/ky9ucJjGYT4arSBcXVk96lSrhwvZIwCeMwskrxZAQLY.original.fullsize.png\">", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Given mass density \\(P=\\left\\{P_{0}\\right.\\) for \\(r \\leq R O\\) for \\(\\left.r>R\\right\\}\\)\r\n\r\nSince gravitational depends on mass, which is zero for \\(r>R\\), hence it only acts for \\(r \\leq R\\).\r\n\r\n\\(\\begin{aligned}\r\n\r\n&\\overrightarrow{\\mathrm{F}}_{\\text {graw }}=\\overrightarrow{\\mathrm{F}}_{\\text {circular }} \\\\\r\n\r\n&\\Rightarrow \\frac{\\mathrm{GM}_{\\text {sphere }} \\times \\mathrm{M}}{\\mathrm{R}^{2}}=\\frac{\\mathrm{M}(\\mathrm{e})^{2}}{\\mathrm{R}} \\\\\r\n\r\n&\\Rightarrow \\mathrm{V}^{2} \\alpha \\frac{\\mathrm{M}_{\\text {sphere }}}{\\mathrm{R}} \\text { since } \\mathrm{r} \\leq \\mathrm{R} \\\\\r\n\r\n&\\Rightarrow \\mathrm{V}^{2} \\alpha \\frac{\\mathrm{R}^{3}}{\\mathrm{R}} \\alpha \\mathrm{R}^{2} \\Rightarrow \\mathrm{V} \\alpha \\mathrm{R} \\quad \\text { straight line }+\\mathrm{ve} \\text { slope }\r\n\r\n\\end{aligned}\\)\r\n\r\nBeyond \\(\\mathrm{r}=\\mathrm{R}\\), mass density \\(=0 \\Rightarrow\\) acceleration due to gravity \\(=0 \\Rightarrow\\) velocity stays constant.\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/gsdhgwt463hsjhwu.png\">", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e78f6f5bfc7ab78ae5ed", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "A hollow metal sphere of radius $5 \\mathrm{~cm}$ is charged such that the potential on its surface is $10 \\mathrm{~V}$. The potential at a distance of $2 \\mathrm{~cm}$ from the centre of the sphere is", "image": null}, "options": [{"id": "3JmHy", "text": "zero", "image": null, "isCorrect": false}, {"id": "FX8SV", "text": "$10 \\mathrm{~V}$", "image": null, "isCorrect": true}, {"id": "r3VNS", "text": "$4 \\mathrm{~V}$", "image": null, "isCorrect": false}, {"id": "HfTaj", "text": "$10 / 3 \\mathrm{~V}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Potential at any point inside the sphere $=$ potential at the surface of the sphere $=10 \\mathrm{~V}$.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7826f5bfc7ab78ae573", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "In a region, the potential is represented by $\\mathrm{V}(\\mathrm{x}, \\mathrm{y}, \\mathrm{z})=6 \\mathrm{x}-8 \\mathrm{xy}-8 \\mathrm{y}+6 \\mathrm{yz},$ where $\\mathrm{V}$ is in volts and $\\mathrm{x}, \\mathrm{y}, \\mathrm{z}$ are in metres. The electric force experienced by a charge of 2 coulomb situated at point (1,1,1) is :", "image": null}, "options": [{"id": "128Zr", "text": "$6 \\sqrt{5} \\mathrm{~N}$", "image": null, "isCorrect": false}, {"id": "OnWxv", "text": "$30 \\mathrm{~N}$", "image": null, "isCorrect": false}, {"id": "nmKdT", "text": "$24 \\mathrm{~N}$", "image": null, "isCorrect": false}, {"id": "QGllN", "text": "$4 \\sqrt{35} \\mathrm{~N}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "$\\overrightarrow{\\mathrm{E}}=-\\frac{\\partial \\mathrm{V}}{\\partial \\mathrm{x}} \\hat{\\mathrm{i}}-\\frac{\\partial \\mathrm{V}}{\\partial \\mathrm{y}} \\hat{\\mathrm{j}}-\\frac{\\partial \\mathrm{V}}{\\partial \\mathrm{z}} \\hat{\\mathrm{k}}$\n$=-[(6-8 \\mathrm{y}) \\hat{\\mathrm{i}}+(-8 \\mathrm{x}-8+6 \\mathrm{z}) \\hat{\\mathrm{j}}+(6 \\mathrm{y}) \\hat{\\mathrm{k}}]$\n$\\mathrm{At}(1,1,1), \\overrightarrow{\\mathrm{E}}=2 \\hat{\\mathrm{i}}+10 \\hat{\\mathrm{j}}-6 \\hat{\\mathrm{k}}$\n$\\Rightarrow \\quad(\\overrightarrow{\\mathrm{E}})=\\sqrt{2^{2}+10^{2}+6^{2}}=\\sqrt{140}=2 \\sqrt{35}$\n$\\therefore \\quad \\mathrm{F}=\\mathrm{q} \\overrightarrow{\\mathrm{E}}=2 \\times 2 \\sqrt{35}=4 \\sqrt{35}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7826f5bfc7ab78ae572", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "Two metallic spheres of radii $1 \\mathrm{~cm}$ and $3 \\mathrm{~cm}$ are given charges of $-1 \\times 10^{-2} \\mathrm{C}$ and $5 \\times 10^{-2} \\mathrm{C}$, respectively. If these are connected by a conducting wire, the final charge on the bigger sphere is", "image": null}, "options": [{"id": "VymiI", "text": "$2 \\times 10^{-2} \\mathrm{C}$", "image": null, "isCorrect": false}, {"id": "skmJE", "text": "$3 \\times 10^{-2} C$", "image": null, "isCorrect": true}, {"id": "ZPbfq", "text": "$4 \\times 10^{-2} C$", "image": null, "isCorrect": false}, {"id": "kwmbo", "text": "$1 \\times 10^{-2} C$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\quad \\frac{k x}{1 \\mathrm{~cm}}=\\frac{k(Q-x)}{3 \\mathrm{~cm}}$\n$3 x=Q-x \\Rightarrow 4 x=Q$\n$x=\\frac{Q}{4}=\\frac{4 \\times 10^{-2}}{4} C=1 \\times 10^{-2}$\n$Q^{\\prime}=\\mathrm{Q}-x=3 \\times 10^{-2} \\mathrm{C}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7736f5bfc7ab78ae4f0", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "If on combining two charged bodies, the current does not flow then", "image": null}, "options": [{"id": "l47OE", "text": "charge is equal on both", "image": null, "isCorrect": false}, {"id": "y9kJA", "text": "capacitance is equal on both", "image": null, "isCorrect": false}, {"id": "rYfPI", "text": "potential is equal on both", "image": null, "isCorrect": true}, {"id": "jaf27", "text": "resistance is equal on both", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "No Solution available", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "64c0e8576f5bfc7ab78aed13", "title": "Electric Dipole", "totalQuestions": 1, "questions": [{"_id": "64c0e7bb6f5bfc7ab78ae761", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 2, "question": {"text": "Two point dipoles $\\mathrm{p} \\hat{\\mathrm{k}}$ and $\\frac{\\mathrm{p}}{2} \\hat{\\mathrm{k}}$ are located at (0,0,0) and $(1 \\mathrm{~m}, 0,2 \\mathrm{~m})$ respectively. The resultant electric field due to the two dipoles at the point $(1 \\mathrm{~m}, 0,0)$ is", "image": null}, "options": [{"id": "F8G2e", "text": "$\\frac{9 \\mathrm{p}}{32 \\pi \\epsilon_{0}} \\hat{\\mathrm{k}}$", "isCorrect": false, "image": null}, {"id": "0HyN1", "text": "$\\frac{-7 \\mathrm{p}}{32 \\pi \\epsilon_{0}} \\hat{\\mathrm{k}}$", "isCorrect": true, "image": null}, {"id": "5lxRH", "text": "$\\frac{7 \\mathrm{p}}{32 \\pi \\epsilon_{0}} \\hat{\\mathrm{k}}$", "isCorrect": false, "image": null}, {"id": "ZJ3BL", "text": "None of these", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/YgVh4Z41MPZDma9TbgAGMNjjHrJwf_jNINKRm8wVk1c.original.fullsize.png\"><br>\r\n\r\nThe given point is at axis of $\\frac{\\overrightarrow{\\mathrm{P}}}{2}$ dipole and\r\n\r\nat equatorial line of $\\overrightarrow{\\mathrm{P}}$ dipole so that field at given point.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 5, "topicId": "64c0e8576f5bfc7ab78aed11", "title": "Electric Flux and Gauss Law", "totalQuestions": 5, "questions": [{"_id": "67726cf6c49e8ef28ee2b331", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "Five charges $+q,+5 q,-2 q,+3 q$ and $-4 q$ are situated as shown in the figure, The electric flux due to this configuration through the surface S is :\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/ESYs0oOGMfXxPjYnJuRC4u6SJM0fVI_GIDixGUNPM6w.original.fullsize.png\"/><br/>", "image": null}, "options": [{"id": "DkKzq", "text": "$\\frac{5 q}{\\epsilon_0}$", "image": null, "isCorrect": false}, {"id": "tLPzW", "text": "$\\frac{4 q}{\\epsilon_0}$", "image": null, "isCorrect": true}, {"id": "DvV7R", "text": "$\\frac{3 q}{\\epsilon_0}$", "image": null, "isCorrect": false}, {"id": "N2kXa", "text": "$\\frac{q}{\\epsilon_0}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Using Gauss's law, $\\phi=\\frac{q}{\\epsilon_0}$\nHere, $\\mathrm{q}=$ charge inside the closed surface\n$\\therefore \\phi=\\frac{q+(-2 q)+5 q}{\\epsilon_0}$\n$\\Rightarrow \\phi=\\frac{4 q}{\\epsilon_0}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87997ae24e9e2db8cb6", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "In a cuboid of dimension $2 \\mathrm{~L} \\times 2 \\mathrm{~L} \\times \\mathrm{L}$, a charge $q$ is placed at the centre of the surface ' $S$ ' having area of $4 \\mathrm{~L}^2$. The flux through the opposite surface to ' $\\mathrm{S}$ ' is given by", "image": null}, "options": [{"id": "igeTu", "text": "$\\frac{\\mathrm{q}}{12 \\varepsilon_0}$", "image": null, "isCorrect": false}, {"id": "zaixl", "text": "$\\frac{\\mathrm{q}}{3 \\varepsilon_0}$", "image": null, "isCorrect": false}, {"id": "1tUb3", "text": "$\\frac{\\mathrm{q}}{2 \\varepsilon_0}$", "image": null, "isCorrect": false}, {"id": "cnb5V", "text": "$\\frac{q}{6 \\varepsilon_0}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "After placing similar cubic at the bottom, we get cube of side $2 \\mathrm{~L}$ having change $\\mathrm{q}$ at its centre.<br /><br />From the Gauss's law electric flux through whole<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/SzzTvHFauXWrbQsPicAom_uB5-dLuGGyZuCfDeMd-ys.original.fullsize.png\"><br><br />Flux passing through shaded face<br />$\\phi=\\frac{\\mathrm{q} / \\varepsilon_0}{6}=\\frac{\\mathrm{q}}{6 \\varepsilon_0}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8136f5bfc7ab78aea5f", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 1, "question": {"text": "A charge $+q$ is at a distance $L / 2$ above a square of side $\\mathrm{L}$. Then what is the flux linked with the surface?", "image": null}, "options": [{"id": "53zeS", "text": "$\\frac{\\mathrm{q}}{4 \\varepsilon_{0}}$", "isCorrect": false, "image": null}, {"id": "QoXCO", "text": "$\\frac{2 q}{3 \\varepsilon_{0}}$", "isCorrect": false, "image": null}, {"id": "rJVkp", "text": "$\\frac{\\mathrm{q}}{6 \\varepsilon_{0}}$", "isCorrect": true, "image": null}, {"id": "FYg8c", "text": "$\\frac{6 \\mathrm{q}}{\\varepsilon_{0}}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/yVVO3LpdmZ20CqO6ICa0d7KACe8LFNfQG2cK4diHrEs.original.fullsize.png\"><br>m{L}\r\n\r\nThe given square of side $L$ may be considered as one of the faces of a cube with edge $L$. Then given charge q will be considered to be placed at the centre of the cube. Then according to Gauss's theorem, the magnitude of the electric flux through the faces (six) of the cube is given by\r\n\r\n$\\phi=\\mathrm{q} / \\varepsilon_{0}$\r\n\r\nHence, electric flux through one face of the cube for the given square will be\r\n\r\n$\\phi^{\\prime}=\\frac{1}{6} \\phi=\\frac{\\mathrm{q}}{6 \\varepsilon_{0}}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e79d6f5bfc7ab78ae66a", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 2, "question": {"text": "In a region of space having a uniform electric field $\\mathrm{E}$, a hemispherical bowl of radius $\\mathrm{r}$ is placed. The electric flux $\\phi$ through the bowl is", "image": null}, "options": [{"id": "UvB8Y", "text": "$2 \\pi \\mathrm{RE}$", "isCorrect": false, "image": null}, {"id": "33iAf", "text": "$4 \\pi R^{2} E$", "isCorrect": false, "image": null}, {"id": "mfGzt", "text": "$2 \\pi R^{2} E$", "isCorrect": true, "image": null}, {"id": "y1Tan", "text": "$\\pi R^{2} E$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\phi=\\mathrm{E}(\\mathrm{ds}) \\cos \\theta=\\mathrm{E}\\left(2 \\pi \\mathrm{r}^{2}\\right) \\cos 0^{\\circ}=2 \\pi \\mathrm{r}^{2} \\mathrm{E}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7816f5bfc7ab78ae571", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "A charge $+q$ is at a distance $L / 2$ above a square of side $\\mathrm{L}$. Then what is the flux linked with the surface?", "image": null}, "options": [{"id": "hGrfo", "text": "$\\frac{\\mathrm{q}}{4 \\varepsilon_{0}}$", "image": null, "isCorrect": false}, {"id": "ZVv8M", "text": "$\\frac{2 q}{3 \\varepsilon_{0}}$", "image": null, "isCorrect": false}, {"id": "v9Ls6", "text": "$\\frac{\\mathrm{q}}{6 \\varepsilon_{0}}$", "image": null, "isCorrect": true}, {"id": "c60aG", "text": "$\\frac{6 \\mathrm{q}}{\\varepsilon_{0}}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/DsLEBhteUM-6NOBx-ICwRFdm3sbtxNxlWNhELIGFTTQ.original.fullsize.png\"><br>\nThe given square of side $\\mathrm{L}$ may be considered as one of the faces of a cube with edge $\\mathrm{L}$. Then given charge $\\mathrm{q}$ will be considered to be placed at the centre of the cube. Then according to Gauss's theorem, the magnitude of the electric flux through the faces (six) of the cube is given by\n$$\n\\phi=\\mathrm{q} / \\varepsilon_{0}\n$$\nHence, electric flux through one face of the cube for the given square will be\n$\\phi^{\\prime}=\\frac{1}{6} \\phi=\\frac{\\mathrm{q}}{6 \\varepsilon_{0}}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

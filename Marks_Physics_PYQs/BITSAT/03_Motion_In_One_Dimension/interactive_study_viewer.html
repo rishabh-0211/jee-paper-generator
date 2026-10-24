@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Motion In One Dimension PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚡ BITSAT &bull; Motion In One Dimension</h1>
+        <div class="sub">Physics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 3, "chapterId": "61e7bd6fad78beb2af09d046", "chapter": "Motion In One Dimension", "exam": "BITSAT", "subject": "Physics", "totalTopics": 6, "totalQuestions": 18, "downloadTime": "2026-10-08 20:27:43", "topics": [{"index": 1, "topicId": "64c0e8556f5bfc7ab78aecfc", "title": "Rest and Motion", "totalQuestions": 3, "questions": [{"_id": "67726cf6c49e8ef28ee2b32e", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "The distance travelled by a particle starting from rest and moving with an acceleration $\\frac{4}{3} \\mathrm{~ms}^{-2}$, in the third second is:", "image": null}, "options": [{"id": "9emtN", "text": "6 m", "image": null, "isCorrect": false}, {"id": "AXJRi", "text": "4 m", "image": null, "isCorrect": false}, {"id": "AYBlO", "text": "$\\frac{10}{3} \\mathrm{~m}$", "image": null, "isCorrect": true}, {"id": "xOex8", "text": "$\\frac{19}{3} \\mathrm{~m}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Distance travelled in the nth second is given by\n$\\mathrm{t}_{\\mathrm{n}}=\\mathrm{u}+\\frac{\\mathrm{a}}{2}(2 \\mathrm{n}-1)$\nput $\\mathrm{u}=0, \\mathrm{a}=\\frac{4}{3} \\mathrm{~ms}^{-2}, \\mathrm{n}=3$\n$\\therefore \\quad d=0+\\frac{4}{3 \\times 2}(2 \\times 3-1)=\\frac{4}{6} \\times 5=\\frac{10}{3} m$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b86f97ae24e9e2db8c51", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "An object moves with speed $v_1, v_2$ and $v_3$ along a line segment $A B, B C$ and $C D$ respectively as shown in figure. Where $A B=B C$ and $A D=3 A B$, then average speed of the object will be:<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/_0HaGMo78di3prbwk2wmHmioxKdmfhVWHtLgzdIcEj0.original.fullsize.png\"><br>", "image": null}, "options": [{"id": "hJb5L", "text": "$\\frac{v_1 v_2 v_3}{3\\left(v_1 v_2+v_2 v_3+v_3 v_1\\right)}$", "image": null, "isCorrect": false}, {"id": "F7QMr", "text": "$\\frac{3 v_1 v_2 v_3}{\\left(v_1 v_2+v_2 v_3+v_3 v_1\\right)}$", "image": null, "isCorrect": true}, {"id": "P6iIv", "text": "$\\frac{\\left(u_1+z_2+v_3\\right)}{3}$", "image": null, "isCorrect": false}, {"id": "GKvk0", "text": "$\\frac{\\left(v_1+v_2+v_3\\right)}{3 v_1 v_2 v_3}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Consider,<br />$\\mathrm{AB}=x$<br />$\\mathrm{BC}=x$<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/EbqEENaTNsqrjlTiWsxn2gJmzuooLaDquP4T5PeIBPI.original.fullsize.png\"><br><br />$2 x+\\mathrm{CD}=3 x \\Rightarrow \\mathrm{CD}=3 x-2 x=x$<br />Average speed of the object $ < \\mathrm{v}>$<br />$=\\frac{\\text { Total distance }}{\\text { Total time }}$<br />$ < \\mathrm{v}>=\\frac{3 x}{\\frac{x}{v_1}+\\frac{x}{v_2}+\\frac{x}{v_3}}=\\frac{3 v_1 v_2 v_3}{v_2 v_3+v_1 v_3+v_1 v_2}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7f56f5bfc7ab78ae953", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 1, "question": {"text": "Consider the acceleration, velocity and displacement of a tennis ball as its falls to the ground and bounces back. Directions of which of these change in the process?", "image": null}, "options": [{"id": "XS128", "text": "Velocity only", "isCorrect": false, "image": null}, {"id": "66RQo", "text": "Displacement and velocity", "isCorrect": true, "image": null}, {"id": "IY1TF", "text": "Acceleration, velocity and displacement", "isCorrect": false, "image": null}, {"id": "ozBIm", "text": "Displacement and acceleration", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "When a tennis ball falls on the ground and bounces back, its velocity and displacement changes in reverse direction while direction of acceleration remains same.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8556f5bfc7ab78aecf9", "title": "Uniform Motion", "totalQuestions": 5, "questions": [{"_id": "64c0e8126f5bfc7ab78aea59", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 1, "question": {"text": "From a $200 \\mathrm{~m}$ high tower, one ball is thrown upwards with speed of $10 \\mathrm{~ms}^{-1}$ and another is thrown vertically downwards at the same speeds simultaneously. The time difference of their reaching the ground will be nearest to", "image": null}, "options": [{"id": "aDiDy", "text": "$12 \\mathrm{~s}$", "isCorrect": false, "image": null}, {"id": "jKbKG", "text": "$6 \\mathrm{~s}$", "isCorrect": false, "image": null}, {"id": "Kc1EX", "text": "$2 \\mathrm{~s}$", "isCorrect": true, "image": null}, {"id": "JCc9N", "text": "$1 \\mathrm{~s}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The ball thrown upward will lose velocity in ls. It return back to thrown point in another $1 \\mathrm{~s}$ with the same velocity as second. Thus the difference will be $2 \\mathrm{~s}$.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7e86f5bfc7ab78ae8e9", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 3, "question": {"text": "A particle moving along <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>X</mi></math>-axis has acceleration&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi></math>,&nbsp;at time <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi></math> given by<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>=</mo><msub><mi>f</mi><mn>0</mn></msub><mfenced><mrow><mn>1</mn><mo>-</mo><mfrac><mi>t</mi><mi>T</mi></mfrac></mrow></mfenced></math>, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>f</mi><mn>0</mn></msub></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>T</mi></math> are constants. The particle at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi><mo>=</mo><mn>0</mn></math> and the instant when&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>=</mo><mn>0</mn></math>, the particle&#39;s velocity <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>v</mi><mi>x</mi></msub></math> is", "image": null}, "options": [{"id": "smojq", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>f</mi><mn>0</mn></msub><mi>T</mi></math>", "isCorrect": false, "image": null}, {"id": "57lBX", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>f</mi><mn>0</mn></msub><msup><mi>T</mi><mn>2</mn></msup></math>", "isCorrect": false, "image": null}, {"id": "ZWJss", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>f</mi><mn>0</mn></msub><msup><mi>T</mi><mn>2</mn></msup></math>", "isCorrect": false, "image": null}, {"id": "4BezT", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>f</mi><mn>0</mn></msub><mi>T</mi></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>&nbsp;Acceleration</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mi>v</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><msub><mi>f</mi><mn>0</mn></msub><mfenced><mrow><mn>1</mn><mo>+</mo><mfrac><mi>t</mi><mi>T</mi></mfrac></mrow></mfenced></math></p><p>or <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>d</mi><mi>v</mi><mo>=</mo><msub><mi>f</mi><mn>0</mn></msub><mfenced><mrow><mn>1</mn><mo>-</mo><mfrac><mi>t</mi><mi>T</mi></mfrac></mrow></mfenced><mo>&#183;</mo><mi>d</mi><mi>t</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>&#160;</mo><mo>&#160;</mo><mi>E</mi><mi>q</mi><mo>(</mo><mi>i</mi><mo>)</mo></math></p><p>Integrating Eq. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">i</mi><mo>)</mo></math> on both sides, we get</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi><mo>=</mo><msub><mi>f</mi><mn>0</mn></msub><mi>t</mi><mo>-</mo><mfrac><msub><mi>f</mi><mn>0</mn></msub><mi>T</mi></mfrac><mo>&#183;</mo><mfrac><msup><mi>t</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo>+</mo><mi>C</mi></math></p><p>After applying boundary conditions&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi><mo>=</mo><mn>0</mn></math> at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi><mo>=</mo><mn>0</mn></math></p><p>We get, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>v</mi><mo>=</mo><msub><mi>f</mi><mn>0</mn></msub><mi>t</mi><mo>-</mo><mfrac><msub><mi>f</mi><mn>0</mn></msub><mi>T</mi></mfrac><mo>&#183;</mo><mfrac><msup><mi>t</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>&#160;</mo><mo>&#160;</mo><mi>E</mi><mi>q</mi><mo>(</mo><mi>i</mi><mi>i</mi><mo>)</mo></math>&nbsp; &nbsp;</p><p>As <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>=</mo><msub><mi>f</mi><mn>0</mn></msub><mfenced><mrow><mn>1</mn><mo>-</mo><mfrac><mi>t</mi><mi>T</mi></mfrac></mrow></mfenced></math></p><p>When <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mi>t</mi><mo>=</mo><mi>T</mi></math></p><p>Substituting <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi><mo>=</mo><mi>T</mi></math>&nbsp;in Eq. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi>ii</mi><mo>)</mo></math>, then velocity</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>v</mi><mi>x</mi></msub><mo>=</mo><msub><mi>f</mi><mn>0</mn></msub><mi>T</mi><mo>-</mo><mfrac><msub><mi>f</mi><mn>0</mn></msub><mi>T</mi></mfrac><mo>&#183;</mo><mfrac><msup><mi>T</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>f</mi><mn>0</mn></msub><mi>T</mi></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7b96f5bfc7ab78ae74f", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 1, "question": {"text": "A train accelerating uniformly from rest attains a maximum speed of $40 \\mathrm{~ms}^{-1}$ in $20 \\mathrm{~s}$. It travels at the speed for $20 \\mathrm{~s}$ and is brought to rest with uniform retardation in further $40 \\mathrm{~s}$. What is the average velocity during the period ?", "image": null}, "options": [{"id": "2aMQX", "text": "$80 \\mathrm{~m} / \\mathrm{s}$", "isCorrect": false, "image": null}, {"id": "7ukMV", "text": "$25 \\mathrm{~m} / \\mathrm{s}$", "isCorrect": true, "image": null}, {"id": "m7LAe", "text": "$40 \\mathrm{~m} / \\mathrm{s}$", "isCorrect": false, "image": null}, {"id": "Aafus", "text": "$30 \\mathrm{~m} / \\mathrm{s}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "(i) $\\mathrm{v}=\\mathrm{u}+$ at $_{1}$\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n40=0+a \\times 20 \\\\\r\n\r\na=2 m / s^{2} \\\\\r\n\r\nv^{2}-u^{2}=2 a s \\\\\r\n\r\n40^{2}-0=2 \\times 2 s_{1} \\\\\r\n\r\n\\text { (ii) } s_{1}=400 \\mathrm{~m} \\\\\r\n\r\n\\text { (iii) } v=u+a t \\\\\r\n\r\n\\quad 0=40+a \\times 40 \\\\\r\n\r\na=-1 \\mathrm{~m} / \\mathrm{s}^{2} \\\\\r\n\r\n0^{2}-40^{2}=2(-1) \\mathrm{s}_{3} \\\\\r\n\r\n\\mathrm{~s}_{3}=800 \\mathrm{~m} \\\\\r\n\r\n\\text { Total distance travelled }=\\mathrm{s}_{1}+\\mathrm{s}_{2}+\\mathrm{s}_{3} \\\\\r\n\r\n=400+800+800=2000 \\mathrm{~m} \\\\\r\n\r\n\\text { Total time taken }=20+20+40=80 \\mathrm{~s} \\\\\r\n\r\n\\text { Average velocity }=\\frac{2000}{80}=25 \\mathrm{~m} / \\mathrm{s}\r\n\r\n\\end{array}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7aa6f5bfc7ab78ae6d2", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 1, "question": {"text": "A man runs at a speed of $4 \\mathrm{~m} / \\mathrm{s}$ to overtake a standing bus. When he is $6 \\mathrm{~m}$ behind the door at $\\mathrm{t}=0,$ the bus moves forward and continuous with a constant acceleration of $1.2 \\mathrm{~m} / \\mathrm{s}^{2}$. The man reaches the door in time $\\mathrm{t}$. Then,", "image": null}, "options": [{"id": "mf8hG", "text": "$4 \\mathrm{t}=6+0.6 \\mathrm{t}^{2}$", "isCorrect": true, "image": null}, {"id": "fvkgG", "text": "$1.2 \\mathrm{t}^{2}=4 \\mathrm{t}$", "isCorrect": false, "image": null}, {"id": "Lv25S", "text": "$4 t^{2}=1.2 t$", "isCorrect": false, "image": null}, {"id": "YaFEX", "text": "$6+4 \\mathrm{t}=0.2 \\mathrm{t}^{2}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Let us draw the figure for given situation,\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/BWqLadMkE5KfR_ErIKoeVL-josDUGvLdgPXyZx0GQ_I.original.fullsize.png\"><br>\r\n\r\n$\\Rightarrow \\quad 4 \\mathrm{t}=6+\\frac{1}{2} \\times 1.2 \\times \\mathrm{t}^{2}$\r\n\r\n$\\Rightarrow \\quad 4 \\mathrm{t}=6+0.6 \\mathrm{t}^{2}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e78d6f5bfc7ab78ae5d8", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "A particle is moving in a straight line with initial velocity and uniform acceleration a. If the sum of the distance travelled in $t^{\\text {th }}$ and $(t+1)^{\\text {th }}$ seconds is $100 \\mathrm{~cm}$, then its velocity after $t$ seconds, in $\\mathrm{cm} / \\mathrm{s}, \\mathrm{is}$", "image": null}, "options": [{"id": "sEB9o", "text": "80", "image": null, "isCorrect": false}, {"id": "PBQcx", "text": "50", "image": null, "isCorrect": true}, {"id": "Q5gdD", "text": "20", "image": null, "isCorrect": false}, {"id": "DV0Bn", "text": "30", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "No Solution available", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e8556f5bfc7ab78aecfa", "title": "Graphs of motion in one dimension", "totalQuestions": 1, "questions": [{"_id": "64c0e79b6f5bfc7ab78ae655", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 1, "question": {"text": "A body moves with uniform acceleration, then which of the following graph is correct?", "image": null}, "options": [{"id": "VmBS6", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/qR6bhfrifCO0s7hleCQyLX-wbA8lqA3SIcJ9NWIuqxg.original.fullsize.png\">", "isCorrect": false, "image": null}, {"id": "aXE4h", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/sH0QxPXPNGB7GOMynNN8UeUEzh2MbN1_cKePGzVuwQw.original.fullsize.png\">", "isCorrect": false, "image": null}, {"id": "9afxb", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/ImoGN37Q8Fucfa1wETFiFFnSkDVmgW9ytAax5dTXZBY.original.fullsize.png\">", "isCorrect": true, "image": null}, {"id": "7cjsA", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/CwDT_PyhEyQZ2YxMZ2VLWEVqSaAB5t-omR-d6SmMfU8.original.fullsize.png\">", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "An object is said to be moving with a uniform acceleration, if its velocity changes by equal amount in equal intervals of time. The velocity-time graph of uniformly accelerated motion is a straight line inclined to time axis. Acceleration of an object in a uniformly accelerated motion in one dimension is equal to the slope of the velocity-time graph with time axis.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "64c0e8556f5bfc7ab78aecf8", "title": "Non-uniform Motion", "totalQuestions": 3, "questions": [{"_id": "67726d04c49e8ef28ee2b397", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "A particle is moving in a straight line. The variation of position ' $x$ ' as a function of time ' $t$ ' is given as $x=\\left(t^3-6 t^2+20 t+15\\right) m$.\nThe velocity of the body when its acceleration becomes zero is:", "image": null}, "options": [{"id": "VC9sF", "text": "$6 \\mathrm{~m} / \\mathrm{s}$", "image": null, "isCorrect": false}, {"id": "EaVHw", "text": "$10 \\mathrm{~m} / \\mathrm{s}$", "image": null, "isCorrect": false}, {"id": "3Ltx4", "text": "$8 \\mathrm{~m} / \\mathrm{s}$", "image": null, "isCorrect": true}, {"id": "T5HuS", "text": "$4 \\mathrm{~m} / \\mathrm{s}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Displacement, $x=t^3-6 t^2+20 t+15$\n$\\therefore$ Velocity, $v=\\frac{\\mathrm{dx}}{\\mathrm{dt}}=3 \\mathrm{t}^2-12 \\mathrm{t}+20$\n$\\therefore$ Acceleration, $a=\\frac{d v}{d t}=6 t-12$\nWhen $a=0$\n$\\Rightarrow 6 \\mathrm{t}-12=0 \\Rightarrow t=2 \\mathrm{~s}$\nAt $\\mathrm{t}=2 \\mathrm{~s}, v=3(2)^2-12(2)+20=8 \\mathrm{~m} / \\mathrm{s}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e77f6f5bfc7ab78ae55b", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "The position $\\mathrm{x}$ of a particle varies with time $(\\mathrm{t})$ as $\\mathrm{x}=\\mathrm{A} \\mathrm{t}^{2}-\\mathrm{B} \\mathrm{t}^{3}$. The acceleration at time $\\mathrm{t}$ of the particle will be equal to zero. What is the value of $t ?$", "image": null}, "options": [{"id": "zh8b2", "text": "$\\frac{2 \\mathrm{~A}}{3 \\mathrm{~B}}$", "image": null, "isCorrect": false}, {"id": "em5Ck", "text": "$\\frac{\\mathrm{A}}{\\mathrm{B}}$", "image": null, "isCorrect": false}, {"id": "0gEYo", "text": "$\\frac{A}{3 B}$", "image": null, "isCorrect": true}, {"id": "T9lVb", "text": "zero", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Given that $x=A t^{2}-B t^{3}$\n$$\n\\therefore \\text { velocity }=\\frac{\\mathrm{dx}}{\\mathrm{dt}}=2 \\mathrm{~A} \\mathrm{t}-3 \\mathrm{~B} \\mathrm{t}^{2}\n$$\nand acceleration \n$$ \n=\\frac{\\mathrm{d}}{\\mathrm{dt}}\\left(\\frac{\\mathrm{dx}}{\\mathrm{dt}}\\right)=2 \\mathrm{~A}-6 \\mathrm{Bt}\n$$\nFor acceleration to be zero $2 \\mathrm{~A}-6 \\mathrm{Bt}=0$.\n$$\n\\therefore \\quad \\mathrm{t}=\\frac{2 \\mathrm{~A}}{6 \\mathrm{~B}}=\\frac{\\mathrm{A}}{3 \\mathrm{~B}}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7726f5bfc7ab78ae4e8", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "A particle starts moving rectilinearly at time $\\mathrm{t}=0$ such that its velocity $\\mathrm{v}$ changes with time $\\mathrm{t}$ according to the equation $v=t^{2}-t$ where $t$ is in seconds and $v$ is in $\\mathrm{m} / \\mathrm{s}$. Find the time interval for which the particle retards.", "image": null}, "options": [{"id": "DX7al", "text": "$\\frac{1}{2}<\\mathrm{t}<1$", "image": null, "isCorrect": true}, {"id": "S8lPP", "text": "$\\frac{1}{2}>t>1$", "image": null, "isCorrect": false}, {"id": "mTSzI", "text": "$\\frac{1}{4}<\\mathrm{t}<1$", "image": null, "isCorrect": false}, {"id": "1XGE9", "text": "$\\frac{1}{2}<t<\\frac{3}{4}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Acceleration of the particle $a=2 t-1$ The particle retards when acceleration is opposite to velocity.\n$$\n\\Rightarrow \\text { a } \\cdot v<0 \\Rightarrow(2 t-1)\\left(t^{2}-t\\right)<0 \\Rightarrow t(2 t-1)\n$$\n$(\\mathrm{t}-1)<0$\nNow t is always positive\n$$\n\\therefore(2 t-1)(t-1)<0\n$$\nor $2 \\mathrm{t}-1<0$ and $\\mathrm{t}-1>0 \\Rightarrow \\mathrm{t}<\\frac{1}{2}$ and $\\mathrm{t}>1$.\nThis is not possible or $2 \\mathrm{t}-1>0 \\& \\mathrm{t}-1<0 \\Rightarrow 1 / 2<\\mathrm{t}<1$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 5, "topicId": "64c0e8556f5bfc7ab78aecfb", "title": "Motion Under Gravity", "totalQuestions": 5, "questions": [{"_id": "64c0e81e6f5bfc7ab78aeabd", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 1, "question": {"text": "A balloon is rising vertically up with a velocity of $29 \\mathrm{~ms}^{-1}$. A stone is dropped from it and it reaches the ground in 10 seconds. The height of the balloon when the stone was dropped from it, was $\\left(\\mathrm{g}=9.8 \\mathrm{~ms}^{-2}\\right)$", "image": null}, "options": [{"id": "CJke2", "text": "$100 \\mathrm{~m}$", "isCorrect": false, "image": null}, {"id": "MVR5u", "text": "$200 \\mathrm{~m}$", "isCorrect": true, "image": null}, {"id": "QvSaH", "text": "$400 \\mathrm{~m}$", "isCorrect": false, "image": null}, {"id": "MH6tS", "text": "$150 \\mathrm{~m}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "For stone to be dropped from rising balloon of velocity $29 \\mathrm{~m} / \\mathrm{s}, \\mathrm{u}=-29 \\mathrm{~m} / \\mathrm{s}, \\mathrm{t}=10 \\mathrm{sec} .$\r\n\r\n$\\begin{array}{l}\r\n\r\n\\therefore \\mathrm{h}=-29 \\times 10+\\frac{1}{2} \\times 9.8 \\times 100 \\\\\r\n\r\n=-290+490=200 \\mathrm{~m} .\r\n\r\n\\end{array}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7f76f5bfc7ab78ae967", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 2, "question": {"text": "A ball is dropped vertically from a height <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>d</mi></math>&nbsp;above the ground. It hits the ground and bounces up vertically to a height <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>d</mi><mo>/</mo><mn>2</mn><mo>.</mo></math> Neglecting subsequent motion and air resistance, its velocity <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi></math> varies with height <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi></math> above the ground as", "image": null}, "options": [{"id": "vl15R", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/c9f34755-a0da-4eb7-88b7-7d64123d4824-image.png\" style=\"width: 210px; height: 208px;\" />", "isCorrect": true, "image": null}, {"id": "hO351", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/d7fd39e2-dd4c-41fd-acf8-efc69b8c9adf-image.png\" style=\"width: 210px; height: 216px;\" />", "isCorrect": false, "image": null}, {"id": "BsPzr", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/a16d3a52-2ec5-4b81-af3b-f71233f03b6e-image.png\" style=\"width: 210px; height: 219px;\" />", "isCorrect": false, "image": null}, {"id": "1ufX4", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/cf90d266-7e93-4f3c-acb2-0bf1599aaab5-image.png\" style=\"width: 210px; height: 208px;\" />", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>For the uniformly accelerated/decelcrated motion,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><msup><mi>u</mi><mn>2</mn></msup><mo>&#177;</mo><mn>2</mn><mi>g</mi><mi>h</mi></math></p><p>So. from this equation. we can say&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi><mo>-</mo><mi>h</mi></math>&nbsp;paragraph is parabola.</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/9a271acb-9ff1-4c78-bc96-8aba42a9ec7d-image.png\" style=\"width: 220px; height: 218px;\" /></p><p>Initially, velocity is downwards <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mo>-</mo><mi>v</mi><mi>e</mi><mo>)</mo></math>&nbsp;after collision, it reverses the direction with smaller magnitude and velocity is upwards <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mo>-</mo><mi>v</mi><mi>e</mi><mo>)</mo></math>.</p><p>So. graph (a) satisfies these conditions.</p><p>Also, When <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo><mo>&#160;</mo><mi>h</mi><mo>=</mo><mi>d</mi></math>&nbsp;Velocity increases downwards <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">U</mi><mo>&#8594;</mo><mi mathvariant=\"normal\">A</mi><mo>)</mo></math></p><p>When <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi><mo>-</mo><mn>1</mn></math> velocity reverses its direction <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><msup><mi>A</mi><mo>&#39;</mo></msup><mo>&#8594;</mo><mi>B</mi></mrow></mfenced></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7f56f5bfc7ab78ae957", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 3, "question": {"text": "A stone is projected with velocity <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><msqrt><mi>g</mi><mi>h</mi></msqrt></math>, so that it just clears two walls of equal height <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi></math>, at distance of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi>h</mi></math> from each other. The time interval of passing between the two walls is", "image": null}, "options": [{"id": "J2wiu", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msqrt><mfrac><mi>h</mi><mi>g</mi></mfrac></msqrt></math>", "isCorrect": false, "image": null}, {"id": "rWvvJ", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msqrt><mfrac><mrow><mn>2</mn><mi>h</mi></mrow><mi>g</mi></mfrac></msqrt></math>", "isCorrect": false, "image": null}, {"id": "aKtVc", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><msqrt><mfrac><mi>h</mi><mi>g</mi></mfrac></msqrt></math>", "isCorrect": true, "image": null}, {"id": "vfGh5", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>2</mn><mi>h</mi></mrow><mi>g</mi></mfrac></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi>h</mi><mo>=</mo><mi>u</mi><mi>t</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>u</mi><mi>x</mi></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mi>h</mi></mrow><mrow><mi mathvariant=\"normal\">&#916;</mi><mi>t</mi></mrow></mfrac><mo>&#160;</mo><mfenced close=\"]\" open=\"[\"><mrow><mo>&#8757;</mo><mi>u</mi><mo>=</mo><msub><mi>u</mi><mi>x</mi></msub><mo>,</mo><mi>t</mi><mo>=</mo><mi mathvariant=\"normal\">&#916;</mi><mi>t</mi></mrow></mfenced><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi mathvariant=\"normal\">i</mi></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi><mo>=</mo><msub><mi>u</mi><mi>y</mi></msub><mi>t</mi><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>g</mi><msup><mi>t</mi><mn>2</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><msup><mi>t</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><msub><mi>u</mi><mi>y</mi></msub><mi>t</mi><mo>+</mo><mn>2</mn><mi>h</mi><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>t</mi><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mn>2</mn><msub><mi>u</mi><mi>y</mi></msub><mo>+</mo><msqrt><mn>4</mn><msubsup><mi>u</mi><mi>y</mi><mn>2</mn></msubsup><mo>-</mo><mn>8</mn><mi>g</mi><mi>h</mi></msqrt></mrow><mrow><mn>2</mn><mi>g</mi></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>t</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mn>2</mn><msub><mi>u</mi><mi>y</mi></msub><mo>-</mo><msqrt><mn>4</mn><msubsup><mi>u</mi><mi>y</mi><mn>2</mn></msubsup><mo>-</mo><mn>8</mn><mi>g</mi><mi>h</mi></msqrt></mrow><mrow><mn>2</mn><mi>g</mi></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#916;</mi><mi>t</mi><mo>=</mo><msub><mi>t</mi><mn>1</mn></msub><mo>-</mo><msub><mi>t</mi><mn>2</mn></msub><mo>=</mo><mfrac><msqrt><mn>4</mn><msubsup><mi>u</mi><mi>y</mi><mn>2</mn></msubsup><mo>-</mo><mn>8</mn><mi>g</mi><mi>h</mi></msqrt><mi>g</mi></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>u</mi><mi>y</mi><mn>2</mn></msubsup><mo>=</mo><mfrac><mrow><msup><mi>g</mi><mn>2</mn></msup><mo>(</mo><mi>&#916;</mi><mi>t</mi><msup><mo>)</mo><mn>2</mn></msup></mrow><mn>4</mn></mfrac><mo>+</mo><mn>2</mn><mi>g</mi><mi>h</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>u</mi><mi>x</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>u</mi><mi>y</mi><mn>2</mn></msubsup><mo>=</mo><msup><mi>u</mi><mn>2</mn></msup><mo>=</mo><mo>(</mo><mn>2</mn><msqrt><mi>g</mi><mi>h</mi></msqrt><msup><mo>)</mo><mn>2</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>4</mn><msup><mi>n</mi><mn>2</mn></msup></mrow><mrow><mo>(</mo><mi mathvariant=\"normal\">&#916;</mi><mi>t</mi><msup><mo>)</mo><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mrow><msup><mi>g</mi><mn>2</mn></msup><mo>(</mo><mi mathvariant=\"normal\">&#916;</mi><mi>t</mi><msup><mo>)</mo><mn>2</mn></msup></mrow><mn>4</mn></mfrac><mo>+</mo><mn>2</mn><mi>g</mi><mi>h</mi><mo>=</mo><mn>4</mn><mi>g</mi><mi>h</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msup><mi>g</mi><mn>2</mn></msup><mn>4</mn></mfrac><msup><mfenced><mrow><mi mathvariant=\"normal\">&#916;</mi><mi>t</mi></mrow></mfenced><mn>4</mn></msup><mo>-</mo><mn>2</mn><mi>g</mi><mi>h</mi><msup><mfenced><mrow><mi mathvariant=\"normal\">&#916;</mi><mi>t</mi></mrow></mfenced><mn>2</mn></msup><mo>+</mo><mn>4</mn><msup><mi>h</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mi mathvariant=\"normal\">&#916;</mi><mi>t</mi></mrow></mfenced><mo>=</mo><mfrac><mrow><mn>2</mn><mi>g</mi><mi>h</mi><mo>&#177;</mo><msqrt><mn>4</mn><msup><mi>g</mi><mn>2</mn></msup><msup><mi>h</mi><mn>2</mn></msup><mo>-</mo><mn>4</mn><msup><mi>g</mi><mn>2</mn></msup><msup><mi>h</mi><mn>2</mn></msup></msqrt></mrow><mrow><msup><mi>g</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>4</mn><mi>h</mi></mrow><mi>g</mi></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#916;</mi><mi>t</mi><mo>=</mo><mn>2</mn><msqrt><mfrac><mi>h</mi><mi>g</mi></mfrac></msqrt></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7e56f5bfc7ab78ae8ce", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 1, "question": {"text": "An aeroplane is flying in a horizontal direction with a velocity <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math> and at a height of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2000</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math>. When it is vertically below a point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math> on the ground a food packet is released from it. The packet strikes the ground at point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math>. If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mi>B</mi><mo>=</mo><mn>3</mn><mo>&#160;</mo><mi>km</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mo>=</mo><mn>10</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>, then the value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math> is", "image": null}, "options": [{"id": "MDE3T", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>54</mn><mo>&#160;</mo><mi>km</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">h</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>", "isCorrect": false, "image": null}, {"id": "fO9A7", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>540</mn><mo>&#160;</mo><mi>km</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">h</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>", "isCorrect": true, "image": null}, {"id": "S53FP", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>150</mn><mo>&#160;</mo><mi>km</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">h</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>", "isCorrect": false, "image": null}, {"id": "Js9Iw", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>300</mn><mo>&#160;</mo><mi>km</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">h</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Given <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi><mo>=</mo><mn>3</mn><mo>&#160;</mo><mi>km</mi><mo>=</mo><mn>3000</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math></p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/d0e544e3-2c92-4ceb-8b42-ecc6f5f9f71f-image.png\" style=\"width: 170px; height: 205px;\" /></p><p>Range, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi><mo>=</mo><mi>u</mi><msqrt><mfrac><mrow><mn>2</mn><mi>h</mi></mrow><mi>g</mi></mfrac></msqrt></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>u</mi><mo>=</mo><mi>R</mi><msqrt><mfrac><mi>g</mi><mrow><mn>2</mn><mi>h</mi></mrow></mfrac></msqrt></math>or <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi><mo>=</mo><mn>3000</mn><mo>&#215;</mo><msqrt><mfrac><mn>10</mn><mrow><mn>2</mn><mo>&#215;</mo><mn>2000</mn></mrow></mfrac></msqrt></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>3000</mn><mo>&#215;</mo><mfrac><mn>1</mn><mn>20</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>150</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>150</mn><mo>&#215;</mo><mfrac><mn>18</mn><mn>5</mn></mfrac><mo>&#160;</mo><mi>km</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">h</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>540</mn><mo>&#160;</mo><mi>km</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">h</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7c86f5bfc7ab78ae7d5", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 1, "question": {"text": "A body is thrown vertically upwards from A, the top of the tower, reaches the ground in time $t_{1}$. If it is thrown vertically downwards from A with the same speed, it reaches the ground in time $\\mathrm{t}_{2}$. If it is allowed to fall freely from $\\mathrm{A},$ then the time it takes to reach the ground is given by", "image": null}, "options": [{"id": "KOu43", "text": "$\\mathrm{t}=\\frac{\\mathrm{t}_{1}+\\mathrm{t}_{2}}{2}$", "isCorrect": false, "image": null}, {"id": "Q8bLA", "text": "$\\mathrm{t}=\\frac{\\mathrm{t}_{1}-\\mathrm{t}_{2}}{2}$", "isCorrect": false, "image": null}, {"id": "ljsYa", "text": "$\\quad \\mathrm{t}=\\sqrt{\\mathrm{t}_{1} \\mathrm{t}_{2}}$", "isCorrect": true, "image": null}, {"id": "2fdIE", "text": "$\\mathrm{t}=\\sqrt{\\frac{\\mathrm{t}_{1}}{\\mathrm{t}_{2}}}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Let the body is projected vertically upwards from A with a speed $u_{0}$ Using equation, $\\mathrm{s}=\\mathrm{ut}+\\frac{1}{2} \\mathrm{at}^{2}$\r\n\r\nFor case $(1)-\\mathrm{h}=\\mathrm{u}_{0} \\mathrm{t}_{1}-\\frac{1}{2} \\mathrm{gt}_{1}^{2} \\quad \\ldots(1)$\r\n\r\nFor case (2) $-\\mathrm{h}=\\mathrm{u}_{0} \\mathrm{t}_{2}-\\frac{1}{2} \\mathrm{gt}_{1}^{2}$\r\n\r\nSubtracting eq (2) from (1), we get\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n0=\\mathrm{u}_{0}\\left(\\mathrm{t}_{2}+\\mathrm{t}_{1}\\right)+\\frac{1}{2} \\mathrm{~g}\\left(\\mathrm{t}_{2}^{2}-\\mathrm{t}_{1}^{2}\\right) \\\\\r\n\r\n\\Rightarrow \\mathrm{u}_{0}=\\frac{1}{2} \\mathrm{~g}\\left(\\mathrm{t}_{1}-\\mathrm{t}_{2}\\right)\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nPutting the value of $\\mathrm{u}_{0}$ in eq (2), we get\r\n\r\n$$\r\n\r\n-\\mathrm{h}=-\\left(\\frac{1}{2}\\right) \\mathrm{g}\\left(\\mathrm{t}_{1}-\\mathrm{t}_{2}\\right) \\mathrm{t}_{2}-\\left(\\frac{1}{2}\\right) \\mathrm{gt}_{2}^{2}\r\n\r\n$$\r\n\r\n$$\r\n\r\n\\Rightarrow \\mathrm{h}=\\frac{1}{2} \\mathrm{~g}\\left(\\mathrm{t}_{1} \\mathrm{t}_{2}\\right)\r\n\r\n$$\r\n\r\nFor case $3, \\mathrm{u}_{0}=0, \\mathrm{t}=?$\r\n\r\n$$\r\n\r\n-\\mathrm{h}=0 \\times \\mathrm{t}-\\left(\\frac{1}{2}\\right) \\mathrm{gt}^{2}\r\n\r\n$$\r\n\r\n$\\mathrm{h}=\\left(\\frac{1}{2}\\right) \\mathrm{gt}^{2}$\r\n\r\nComparing eq. (4) and $(5),$ we get\r\n\r\n$$\r\n\r\n\\frac{1}{2} \\mathrm{gt}^{2}=\\frac{1}{2} \\mathrm{gt}_{1} \\mathrm{t}_{2} \\quad \\therefore \\mathrm{t}=\\sqrt{\\mathrm{t}_{1} \\mathrm{t}_{2}}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 6, "topicId": "65b7b88797ae24e9e2db8d2c", "title": "Relative Motion", "totalQuestions": 1, "questions": [{"_id": "65b7b87a97ae24e9e2db8cb9", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "A passenger sitting in a train A moving at $90 \\mathrm{~km} /$ $h$ observes another train B moving in the opposite direction for $8 \\mathrm{~s}$. If the velocity of the train B is $54 \\mathrm{~km} / \\mathrm{h}$, then length of train B is :", "image": null}, "options": [{"id": "1S1Dj", "text": "$80 \\mathrm{~m}$", "image": null, "isCorrect": false}, {"id": "SO25Q", "text": "$200 \\mathrm{~m}$", "image": null, "isCorrect": false}, {"id": "GBjCz", "text": "$120 \\mathrm{~m}$", "image": null, "isCorrect": false}, {"id": "Q75s9", "text": "$320 \\mathrm{~m}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Velocity of train A<br />\\(\\mathrm{V}_{\\mathrm{A}}=90 \\frac{\\mathrm{km}}{\\mathrm{hr}}=90 \\times \\frac{5}{18}=25 \\mathrm{~m} / \\mathrm{s}\\)<br />Velocity of train B<br />\\(\\mathrm{V}_{\\mathrm{B}}=54 \\frac{\\mathrm{km}}{\\mathrm{hr}}=54 \\times \\frac{5}{18}=15 \\mathrm{~m} / \\mathrm{s}\\)<br />Velocity of train B w.r.t. train<br />\\(\\begin{aligned}<br />A=\\vec{V}_B & -\\vec{V}_A \\\\<br />& =15-(-25) \\mathrm{m} / \\mathrm{s} \\\\<br />& =40 \\mathrm{~m} / \\mathrm{s}<br />\\end{aligned}\\)<br />Time of crossing \\(=\\frac{\\text { length of train }}{\\text { relative velocity }}\\)<br />\\((8)=\\frac{\\ell}{40}\\)<br />\\(\\ell=8 \\times 40=320\\) meter.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

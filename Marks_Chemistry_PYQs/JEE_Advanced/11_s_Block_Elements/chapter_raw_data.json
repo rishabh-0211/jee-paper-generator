@@ -1,0 +1,319 @@
+{
+  "index": 11,
+  "chapterId": "616024aa469321ec08c68901",
+  "chapter": "s Block Elements",
+  "exam": "JEE Advanced",
+  "totalTopics": 3,
+  "totalQuestions": 4,
+  "downloadTime": "2026-10-08 20:02:28",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64b16ad8f23ac7d519f9b8ae",
+      "title": "General Characteristics of Alkali Metals",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "64b169f1f23ac7d519f9afe0",
+          "type": "multipleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "620a8a1f77301f65c2f92c44",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009 (Paper 1)",
+              "title": "JEE Advanced 2009 (Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "The compound(s) formed upon combustion of sodium metal in excess air is (are)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "in7PP",
+              "text": "\n$\\mathrm{Na}_2 \\mathrm{O}_2$\n",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Kdhwy",
+              "text": "\n$\\mathrm{Na}_2 \\mathrm{O}$\n",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "T23lC",
+              "text": "\n$\\mathrm{NaO}_2$\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Zbbo3",
+              "text": "\n$\\mathrm{NaOH}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Sodium on heating in air forms both normal oxide and peroxides.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "620a8a1f77301f65c2f92c44",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009 (Paper 1)",
+            "title": "JEE Advanced 2009 (Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b169dbf23ac7d519f9af19",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "620a8a1f77301f65c2f92c41",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2007-04-30T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2007 (Paper 2)",
+              "title": "JEE Advanced 2007 (Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Statement I Alkali metals dissolve in liquid ammonia to give blue solutions. Statement II Alkali metals in liquid ammonia give solvated species of the type $\\left(M\\left(\\mathrm{NH}_3\\right)_n\\right]^{+}(M=$ alkali metals $)$.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "5j5hN",
+              "text": "\nStatement I is true, Statement II is true, Statement II is a correct explanation for Statement I\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nwQNl",
+              "text": "\nStatement I is true, Statement II is true, Statement II is not a correct explanation for Statement I\n",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "WXy3o",
+              "text": "\nStatement I is true, Statement II is false\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "KUpxe",
+              "text": "\nStatement $\\mathrm{I}$ is false, Statement $\\mathrm{II}$ is true",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Alkali metals in ammonia gives blue colour due to ammoniated $e^{-}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "620a8a1f77301f65c2f92c41",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2007-04-30T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2007 (Paper 2)",
+            "title": "JEE Advanced 2007 (Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64b16ad8f23ac7d519f9b8af",
+      "title": "Compounds of Alkali Metals",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64b16a7ef23ac7d519f9b4e9",
+          "previousYearPapers": [
+            {
+              "_id": "615d92eede3d91842a5cf830",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (Paper 1)",
+              "title": "JEE Advanced 2020 (Paper 1)"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Which of the following liberates <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub></math> upon hydrolysis?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "UXhLc",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Pb</mi><mn>3</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>4</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "quJ8K",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>KO</mi><mn>2</mn></msub></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "bl0po",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Na</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Hr3GJ",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Li</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi mathvariant=\"normal\">A</mi></mfenced></math>&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Pb</mi><mn>3</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>4</mn></msub><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mo>&#8594;</mo></math>No reaction</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">B</mi><mo>)</mo></math>&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><msub><mi>KO</mi><mn>2</mn></msub><mo>+</mo><mn>2</mn><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mo>&#8594;</mo><mn>2</mn><mi>KOH</mi><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub><mo>+</mo><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">C</mi><mo>)</mo></math>&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Na</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub><mo>+</mo><mn>2</mn><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mo>&#8594;</mo><mn>2</mn><mi>NaOH</mi><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">D</mi><mo>)</mo></math>&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Li</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub><mo>+</mo><mn>2</mn><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mo>&#8594;</mo><mn>2</mn><mi>LOH</mi><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub></math>&nbsp;</p>",
+            "image": null
+          },
+          "videoSolution": {
+            "videoId": "0425608ccaa24ea19576325c0329385c",
+            "provider": "vdocipher",
+            "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/GaglobKujwOqg.480.jpeg",
+            "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/GaglobKujwOqg.480.jpeg",
+            "premiumModules": [
+              {
+                "premiumModuleId": "6628114842d540dfcb148ecb",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "64c7e8e829737784b294e469",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "6788cc0b2dbc1ecacabb7026",
+                "isFree": false
+              }
+            ],
+            "description": "JEE Advanced (All PYQs from 2023 - 2013)"
+          },
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "615d92eede3d91842a5cf830",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (Paper 1)",
+            "title": "JEE Advanced 2020 (Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64b16ad8f23ac7d519f9b8ad",
+      "title": "Compounds of Alkaline Earth Metals",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64b169caf23ac7d519f9ae7b",
+          "type": "multipleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "620a8a1e77301f65c2f92c3f",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2006-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2006",
+              "title": "JEE Advanced 2006"
+            }
+          ],
+          "question": {
+            "text": "$\\mathrm{MgSO}_4$ on reaction with $\\mathrm{NH}_4 \\mathrm{OH}$ and $\\mathrm{Na}_2 \\mathrm{HPO}_4$ forms a white crystalline precipitate. What is its formula?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "BJQtm",
+              "text": "\n$\\mathrm{Mg}\\left(\\mathrm{NH}_4\\right) \\mathrm{PO}_4$\n",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ngVhq",
+              "text": "\n$\\mathrm{Mg}_3\\left(\\mathrm{PO}_4\\right)_2$\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "HHrYY",
+              "text": "\n$\\mathrm{MgCl}_2 \\cdot \\mathrm{MgSO}_4$\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "PD1N0",
+              "text": "\n$\\mathrm{MgSO}_4$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{MgSO}_4$ on reaction with $\\mathrm{Na}_2 \\mathrm{HPO}_4$ (disodium hydrogen phosphate) in presence of $\\mathrm{NH}_4 \\mathrm{OH}$ to give white precipitate of magnesium ammonium phosphate $\\left(\\mathrm{Mg}\\left(\\mathrm{NH}_4\\right) \\mathrm{PO}_4\\right)$.\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/MpRey9k-Y2s158WLfD5sHyIYsJf5OFY_P-DHgLZbHkM.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "620a8a1e77301f65c2f92c3f",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2006-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2006",
+            "title": "JEE Advanced 2006"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

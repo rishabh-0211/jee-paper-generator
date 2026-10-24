@@ -1,0 +1,2262 @@
+{
+  "index": 12,
+  "chapterId": "61c089ac91662ead8f480b34",
+  "chapter": "Sequences and Series",
+  "exam": "MHT CET",
+  "subject": "Mathematics",
+  "totalTopics": 7,
+  "totalQuestions": 33,
+  "downloadTime": "2026-10-08 20:42:47",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "65a263500279619d9d8a3e14",
+      "title": "Arithmetic Progression",
+      "totalQuestions": 10,
+      "questions": [
+        {
+          "_id": "6a44d3578c30a4553e1be2b3",
+          "type": "singleCorrect",
+          "question": {
+            "text": "If $a_1, a_2, a_3, \\ldots, a_n$ are in arithmetic progression with common difference d, then $\\tan\\left[\\tan^{-1}\\left(\\dfrac{d}{1 + a_1 a_2}\\right) + \\tan^{-1}\\left(\\dfrac{d}{1 + a_2 a_3}\\right) + \\ldots + \\tan^{-1}\\left(\\dfrac{d}{1 + a_{n-1} a_n}\\right)\\right] = $ ____",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "oXx3e",
+              "label": "A",
+              "text": "$\\dfrac{a_1 - a_n}{1 + a_1 a_n}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "mgmx8",
+              "label": "B",
+              "text": "$\\dfrac{a_n - a_1}{1 - a_1 a_n}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "8G0mw",
+              "label": "C",
+              "text": "$\\dfrac{a_n - a_1}{1 + a_1 a_n}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "tXL6i",
+              "label": "D",
+              "text": "$\\dfrac{a_1 + a_n}{1 + a_1 a_n}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given $a_1, a_2, \\ldots, a_n$ are in arithmetic progression with common difference $d$.<br><br>$d = a_2 - a_1 = a_3 - a_2 = \\ldots = a_n - a_{n-1}$<br><br>The general term of the series is:<br><br>$\\tan^{-1}\\left(\\dfrac{d}{1 + a_k a_{k+1}}\\right) = \\tan^{-1}\\left(\\dfrac{a_{k+1} - a_k}{1 + a_k a_{k+1}}\\right)$<br><br>Using the identity $\\tan^{-1}\\left(\\dfrac{x - y}{1 + xy}\\right) = \\tan^{-1} x - \\tan^{-1} y$, we get:<br><br>$\\tan^{-1}\\left(\\dfrac{a_{k+1} - a_k}{1 + a_k a_{k+1}}\\right) = \\tan^{-1} a_{k+1} - \\tan^{-1} a_k$<br><br>Let $S$ be the sum of the inverse trigonometric series:<br><br>$S = \\sum_{k=1}^{n-1} \\tan^{-1}\\left(\\dfrac{d}{1 + a_k a_{k+1}}\\right)$<br><br>$S = (\\tan^{-1} a_2 - \\tan^{-1} a_1) + (\\tan^{-1} a_3 - \\tan^{-1} a_2) + \\ldots + (\\tan^{-1} a_n - \\tan^{-1} a_{n-1})$<br><br>This is a telescoping sum, which simplifies to:<br><br>$S = \\tan^{-1} a_n - \\tan^{-1} a_1$<br><br>Applying the inverse tangent difference formula:<br><br>$S = \\tan^{-1}\\left(\\dfrac{a_n - a_1}{1 + a_1 a_n}\\right)$<br><br>The given expression is $\\tan(S)$:<br><br>$\\tan(S) = \\tan\\left[\\tan^{-1}\\left(\\dfrac{a_n - a_1}{1 + a_1 a_n}\\right)\\right] = \\dfrac{a_n - a_1}{1 + a_1 a_n}$",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d2802d2155b816ec4a7c",
+              "title": "MHT CET 2026 (20 April Shift 1)",
+              "shortName": "2026 (20 April Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-04-20T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 2,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d2802d2155b816ec4a7c",
+            "title": "MHT CET 2026 (20 April Shift 1)",
+            "shortName": "2026 (20 April Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-04-20T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6a44d3578c30a4553e1be2b1",
+          "type": "singleCorrect",
+          "question": {
+            "text": "In a right-angled $\\triangle ABC$, the measures of the angles are in an Arithmetic Progression (A.P.) If its smallest side is $4$ units, then the area of $\\triangle ABC$ is.....",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "kUTOT",
+              "label": "A",
+              "text": "$16$ sq. units",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "aXnuk",
+              "label": "B",
+              "text": "$8\\sqrt{3}$ sq. units",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "moUyn",
+              "label": "C",
+              "text": "$16\\sqrt{3}$ sq. units",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "JNW0c",
+              "label": "D",
+              "text": "$32$ sq. units",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let the angles of the right-angled triangle be $a - d$, $a$, and $a + d$.<br><br>The sum of the angles in a triangle is $180^{\\circ}$.<br><br>$(a - d) + a + (a + d) = 180^{\\circ} \\Rightarrow 3a = 180^{\\circ} \\Rightarrow a = 60^{\\circ}$<br><br>Since the triangle is right-angled, the largest angle is $90^{\\circ}$.<br><br>$a + d = 90^{\\circ} \\Rightarrow 60^{\\circ} + d = 90^{\\circ} \\Rightarrow d = 30^{\\circ}$<br><br>The angles of the triangle are $30^{\\circ}$, $60^{\\circ}$, and $90^{\\circ}$.<br><br>The smallest side is opposite to the smallest angle, which is $30^{\\circ}$. Let this side be $x = 4$ units.<br><br>The other perpendicular side, opposite to $60^{\\circ}$, is $y = x \\tan 60^{\\circ} = 4\\sqrt{3}$ units.<br><br>The area of the right-angled triangle is $\\dfrac{1}{2} \\times x \\times y$.<br><br>Area $= \\dfrac{1}{2} \\times 4 \\times 4\\sqrt{3} = 8\\sqrt{3}$ sq. units.<br><br>Answer: $8\\sqrt{3}$ sq. units",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d2802d2155b816ec4a7c",
+              "title": "MHT CET 2026 (20 April Shift 1)",
+              "shortName": "2026 (20 April Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-04-20T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 2,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d2802d2155b816ec4a7c",
+            "title": "MHT CET 2026 (20 April Shift 1)",
+            "shortName": "2026 (20 April Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-04-20T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679213dd0aee93fa0796dc1d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665cc4",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-10T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (10 May Shift 2)",
+              "title": "MHT CET 2024 (10 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "If $x, y, \\mathrm{z}$ are in Arithmetic Progression and $\\tan ^{-1} x, \\tan ^{-1} y, \\tan ^{-1} z$ are also in Arithmetic progression, where $x, \\mathrm{z}\\gt0$ and $x \\mathrm{z} \\lt 1, y \\lt 1$, then",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ybjYQ",
+              "text": "$x=y=z$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "68NWP",
+              "text": "$2 x=3 y=6 z$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fIa5z",
+              "text": "$6 x=3 y=2 z$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "djxzd",
+              "text": "$6 x=4 y=3 z$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given $x, y, z$ are in Arithmetic Progression:<br><br>$2y = x + z$<br><br>Given $\\tan^{-1} x, \\tan^{-1} y, \\tan^{-1} z$ are also in Arithmetic Progression:<br><br>$2 \\tan^{-1} y = \\tan^{-1} x + \\tan^{-1} z$<br><br>Using the inverse trigonometric formulas for $y \\lt 1$ and $xz \\lt 1$:<br><br>$\\tan^{-1} \\left( \\dfrac{2y}{1 - y^2} \\right) = \\tan^{-1} \\left( \\dfrac{x + z}{1 - xz} \\right)$<br><br>Equating the arguments:<br><br>$\\dfrac{2y}{1 - y^2} = \\dfrac{x + z}{1 - xz}$<br><br>Substituting $2y = x + z$ into the equation:<br><br>$\\dfrac{x + z}{1 - y^2} = \\dfrac{x + z}{1 - xz}$<br><br>Since $x, z \\gt 0$, $x + z \\neq 0$. Dividing both sides by $x + z$ gives:<br><br>$\\dfrac{1}{1 - y^2} = \\dfrac{1}{1 - xz}$<br><br>$1 - y^2 = 1 - xz$<br><br>$y^2 = xz$<br><br>This shows that $x, y, z$ are also in Geometric Progression. Substituting $y = \\dfrac{x + z}{2}$ into $y^2 = xz$ gives:<br><br>$\\left( \\dfrac{x + z}{2} \\right)^2 = xz$<br><br>$x^2 + 2xz + z^2 = 4xz$<br><br>$x^2 - 2xz + z^2 = 0$<br><br>$(x - z)^2 = 0$<br><br>$x = z$<br><br>Substituting $x = z$ into $2y = x + z$ yields $2y = 2x$, so $x = y$.<br><br>Therefore, $x = y = z$.<br><br>Answer: $x=y=z$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665cc4",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-10T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (10 May Shift 2)",
+            "title": "MHT CET 2024 (10 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679213680aee93fa0796d88f",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665cc8",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-03T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (03 May Shift 2)",
+              "title": "MHT CET 2024 (03 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "If $\\sin \\left(\\theta^{\\circ}-\\alpha\\right), \\sin \\theta$ and $\\sin (\\theta+\\alpha)$ are in H.P., then the value of $\\cos ^2 \\theta$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "72K6d",
+              "text": "$1-2 \\cos ^2 \\dfrac{\\alpha}{2}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "m0Jol",
+              "text": "$1+2 \\cos ^2 \\dfrac{\\alpha}{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8o8PH",
+              "text": "$1-4 \\cos ^2 \\dfrac{\\alpha}{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6btiu",
+              "text": "$\\quad 1+4 \\cos ^2 \\dfrac{\\alpha}{2}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given that $\\sin(\\theta - \\alpha)$, $\\sin\\theta$, and $\\sin(\\theta + \\alpha)$ are in H.P., their reciprocals are in A.P.<br><br>$\\dfrac{2}{\\sin\\theta} = \\dfrac{1}{\\sin(\\theta - \\alpha)} + \\dfrac{1}{\\sin(\\theta + \\alpha)}$<br><br>$\\dfrac{2}{\\sin\\theta} = \\dfrac{\\sin(\\theta + \\alpha) + \\sin(\\theta - \\alpha)}{\\sin(\\theta - \\alpha)\\sin(\\theta + \\alpha)}$<br><br>Using the sum-to-product formula in the numerator and the difference of squares formula in the denominator:<br><br>$\\dfrac{2}{\\sin\\theta} = \\dfrac{2\\sin\\theta\\cos\\alpha}{\\sin^2\\theta - \\sin^2\\alpha}$<br><br>Cross-multiplying gives:<br><br>$\\sin^2\\theta - \\sin^2\\alpha = \\sin^2\\theta\\cos\\alpha$<br><br>Rearranging the terms to group $\\sin^2\\theta$:<br><br>$\\sin^2\\theta(1 - \\cos\\alpha) = \\sin^2\\alpha$<br><br>Since $\\sin^2\\alpha = 1 - \\cos^2\\alpha = (1 - \\cos\\alpha)(1 + \\cos\\alpha)$, we can substitute this into the equation:<br><br>$\\sin^2\\theta(1 - \\cos\\alpha) = (1 - \\cos\\alpha)(1 + \\cos\\alpha)$<br><br>Assuming $1 - \\cos\\alpha \\neq 0$, we divide both sides by $(1 - \\cos\\alpha)$:<br><br>$\\sin^2\\theta = 1 + \\cos\\alpha$<br><br>Using the identity $\\sin^2\\theta = 1 - \\cos^2\\theta$:<br><br>$1 - \\cos^2\\theta = 1 + \\cos\\alpha$<br><br>$\\cos^2\\theta = -\\cos\\alpha$<br><br>Using the half-angle identity $\\cos\\alpha = 2\\cos^2\\dfrac{\\alpha}{2} - 1$:<br><br>$\\cos^2\\theta = -\\left(2\\cos^2\\dfrac{\\alpha}{2} - 1\\right) = 1 - 2\\cos^2\\dfrac{\\alpha}{2}$<br><br>Answer: $1-2 \\cos ^2 \\dfrac{\\alpha}{2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665cc8",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-03T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (03 May Shift 2)",
+            "title": "MHT CET 2024 (03 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a2624d0279619d9d8a336d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b2",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-13T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (13 May Shift 1)",
+              "title": "MHT CET 2023 (13 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Angles of a triangle are in the ratio $4: 1: 1$. Then the ratio of its greatest side to its perimeter is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "s9fcz",
+              "text": "$3:(2+\\sqrt{3})$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Te5L8",
+              "text": "$\\sqrt{3}:(2+\\sqrt{3})$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "nt55y",
+              "text": "$\\sqrt{3}:(2-\\sqrt{3})$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "5JGod",
+              "text": "$1:(2+\\sqrt{3})$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let the angles of the triangle be $4 x, x$ and $x$.\n$$\n\\therefore 4 x+x+x=180^{\\circ} \\Rightarrow 6 x=180^{\\circ} \\Rightarrow x=30^{\\circ}\n$$\nBy sine rule,\n$$\n\\begin{aligned}\n& \\frac{\\sin 120^{\\circ}}{\\mathrm{a}}=\\frac{\\sin 30^{\\circ}}{\\mathrm{b}}=\\frac{\\sin 30^{\\circ}}{\\mathrm{c}} \\\\\n\\therefore \\quad & \\mathrm{a}:(\\mathrm{a}+\\mathrm{b}+\\mathrm{c}) \\\\\n& =\\left(\\sin 120^{\\circ}\\right):\\left(\\sin 120^{\\circ}+\\sin 30^{\\circ}+\\sin 30^{\\circ}\\right) \\\\\n& =\\frac{\\sqrt{3}}{2}: \\frac{\\sqrt{3}+2}{2}=\\sqrt{3}: \\sqrt{3}+2\n\\end{aligned}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b2",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-13T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (13 May Shift 1)",
+            "title": "MHT CET 2023 (13 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a2624d0279619d9d8a3369",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b2",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-13T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (13 May Shift 1)",
+              "title": "MHT CET 2023 (13 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "The sides of a triangle are three consecutive natural numbers and its largest angle is twice the smallest one, then the sides of the triangle (in units) are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ZaI9X",
+              "text": "$3,4,5$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lDqky",
+              "text": "$4,5,6$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "HoPEW",
+              "text": "$5,6,7$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "havH2",
+              "text": "$2,3,4$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/lpHZd4XcROiL8d3saNHyzfeqPuWQbWKprNbZBBB-OME.original.fullsize.png\"><br>\n\nLet $\\mathrm{AC}=\\mathrm{n}, \\mathrm{AB}=\\mathrm{n}+1, \\mathrm{BC}=\\mathrm{n}+2$\n$\\therefore \\quad$ Largest angle is $\\mathrm{A}$ and smallest angle is $\\mathrm{B}$.\n$$\n\\therefore \\quad \\mathrm{A}=2 \\mathrm{~B}\n$$\nSince $\\mathrm{A}+\\mathrm{B}+\\mathrm{C}=180^{\\circ}$\n$\\therefore \\quad 3 \\mathrm{~B}+\\mathrm{C}=180^{\\circ}$\n$$\n\\begin{aligned}\n& \\Rightarrow \\mathrm{C}=180^{\\circ}-3 \\mathrm{~B} \\\\\n& \\Rightarrow \\sin \\mathrm{C}=\\sin \\left(180^{\\circ}-3 \\mathrm{~B}\\right)=\\sin 3 \\mathrm{~B}\n\\end{aligned}\n$$\nBy sine rule,\n$$\n\\begin{aligned}\n& \\frac{\\sin A}{n+2}=\\frac{\\sin B}{n}=\\frac{\\sin C}{n+1} \\\\\n& \\Rightarrow \\frac{\\sin 2 B}{n+2}=\\frac{\\sin B}{n}=\\frac{\\sin 3 B}{n+1} \\\\\n& \\Rightarrow \\frac{2 \\sin B \\cos B}{n+2}=\\frac{\\sin B}{n}=\\frac{3 \\sin B-4 \\sin ^3 B}{n+1} \\\\\n& \\Rightarrow \\frac{2 \\cos B}{n+2}=\\frac{1}{n}=\\frac{3-4 \\sin ^2 B}{n+1} \\\\\n\\therefore & \\cos B=\\frac{n+2}{2 n}, 3-4 \\sin ^2 B=\\frac{n+1}{n} \\\\\n\\therefore \\quad & 3-4\\left(1-\\cos ^2 B\\right)=\\frac{n+1}{n} \\\\\n\\therefore \\quad & -4+4\\left(\\frac{n+2}{2 n}\\right)^2=\\frac{n+1}{n} \\\\\n& \\Rightarrow-1+\\frac{n^2+4 n+4}{n^2}=\\frac{n+1}{n} \\\\\n& \\Rightarrow-n^2+n^2+4 n+4=n^2+n \\\\\n& \\Rightarrow n^2-3 n-4=0 \\\\\n& \\Rightarrow(n+1)(n-4)=0 \\\\\n& \\Rightarrow n=-1 \\text { or } n=4\n\\end{aligned}\n$$\nBut $\\mathrm{n}$ cannot be negative.\n$$\n\\therefore \\mathrm{n}=4\n$$\n$\\therefore \\quad$ The sides of the $\\Delta$ are $4,5,6$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b2",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-13T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (13 May Shift 1)",
+            "title": "MHT CET 2023 (13 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a2623d0279619d9d8a32ef",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b1",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-12T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (12 May Shift 2)",
+              "title": "MHT CET 2023 (12 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "The lengths of sides of a triangle are three consecutive natural numbers and its largest angle is twice the smallest one. Then the length of the sides of the triangle (in units) are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "4q2mJ",
+              "text": "$3,4,5$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "aKWTU",
+              "text": "$4,5,6$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "gUkUR",
+              "text": "$5,6,7$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "oP1Kk",
+              "text": "$2,3,4$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $a, a+1, a+2$ be the sides of the triangle and $\\mathrm{A}, \\mathrm{B}, \\mathrm{C}$ be the angles opposite to them respectively.\n\nAccording to the given condition,\n$$\n\\mathrm{C}=2 \\mathrm{~A}\n$$\n$$\n\\begin{aligned}\n\\therefore \\quad \\sin C & =\\sin 2 A \\\\\n\\sin C & =2 \\sin A \\cos A\n\\end{aligned}\n$$\n\nNote that $\\frac{\\sin A}{a}=\\frac{\\sin C}{a+2}=k$\n$$\n\\begin{aligned}\n& \\begin{array}{l}\n\\Rightarrow \\sin A=k a \\text { and } \\sin C=k(a+2) \\\\\n\\text { Also, } \\cos A=\\frac{(a+1)^2+(a+2)^2-a^2}{2(a+1)(a+2)} \\\\\n=\\frac{a^2+2 a+1+a^2+4 a+4-a^2}{2\\left(a^2+3 a+2\\right)} \\\\\n=\\frac{a^2+6 a+5}{2\\left(a^2+3 a+2\\right)} \\\\\n\\therefore \\quad(i) \\Rightarrow k(a+2)=2 \\times k a \\times \\frac{a^2+6 a+5}{2\\left(a^2+3 a+2\\right)} \\\\\n\\therefore \\quad a+2=\\frac{a\\left(a^2+6 a+5\\right)}{\\left(a^2+3 a+2\\right)} \\\\\n\\therefore \\quad(a+2)\\left(a^2+3 a+2\\right)=a^3+6 a^2+5 a\n\\end{array}\n\\end{aligned}\n$$\n$$\n\\begin{array}{ll}\n\\therefore & a^3+5 a^2+8 a+4=a^3+6 a^2+5 a \\\\\n\\therefore & a^2-3 a-4=0 \\\\\n\\therefore & (a-4)(a+1)=0 \\\\\n& \\Rightarrow a=4 \\text { or }-1\n\\end{array}\n$$\n\nBut $\\mathrm{a}=-1$ is not possible.\n$\\therefore \\quad 4,5,6$ are the lengths of the sides of the triangle.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b1",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-12T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (12 May Shift 2)",
+            "title": "MHT CET 2023 (12 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a261f30279619d9d8a309e",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892ad",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-10T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (10 May Shift 2)",
+              "title": "MHT CET 2023 (10 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "If $x, y, \\mathrm{z}$ are in A.P. and $\\tan ^{-1} x, \\tan ^{-1} y$ and $\\tan ^{-1} z$ are also in A.P., then",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "64omA",
+              "text": "$x=y=\\mathrm{z}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "srlqj",
+              "text": "$2 x=3 y=6 z$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "rGtfW",
+              "text": "$6 x=3 y=2 z$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "guZZV",
+              "text": "$6 x=4 y=3 z$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given, $x, y, \\mathrm{z}$ are in A.P.\n$\\therefore \\quad 2 y=x+z... (i)$\nAlso,\n$\\begin{aligned}\n& \\tan ^{-1} x, \\tan ^{-1} y, \\tan ^{-1} z \\text { are in A.P. } \\\\\n\\therefore \\quad & 2 \\tan ^{-1} y=\\tan ^{-1} x+\\tan ^{-1} z \\\\\n& \\Rightarrow \\tan ^{-1}\\left(\\frac{2 y}{1-y^2}\\right)=\\tan ^{-1}\\left(\\frac{x+z}{1-x z}\\right) \\\\\n& \\Rightarrow \\frac{2 y}{1-y^2}=\\frac{x+z}{1-x z} \\\\\n& \\Rightarrow \\frac{2 y}{1-y^2}=\\frac{2 y}{1-x z}... [From (i)] \\\\\n& \\Rightarrow 1-y^2=1-x z \\\\\n& \\Rightarrow y^2=x z\n\\end{aligned}$\n$\\therefore \\quad x, y, \\mathrm{z} \\text { are in G.P. }... (ii)$\nFrom (i) and (ii), \nwe get $x=y=\\mathrm{z}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892ad",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-10T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (10 May Shift 2)",
+            "title": "MHT CET 2023 (10 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fc00279619d9d8a1ef0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6f",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-16T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (16 Oct Shift 1)",
+              "title": "MHT CET 2020 (16 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "If for an Arithmetic progression, 9 times nineth term is equal to 13 times thirteenth term, then value of twenty second term is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "uROmE",
+              "text": "0",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "vHOm2",
+              "text": "2",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2Ofbm",
+              "text": "4",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "HcZb8",
+              "text": "5",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let the first term and common difference of given $\\mathrm{AP}$ be a and d, respectively.\nGiven\n$\\begin{array}{l}\n9 . a_{9}=13 . a_{13} \\\\\n\\Rightarrow 9[a+(9-1) d]=13[a+(13-1) d] \\\\\n\\Rightarrow 9[a+8 d]=13[a+12 d] \\\\\n\\Rightarrow 9 a+72 d=13 a+156 d \\\\\n\\Rightarrow 4 a+84 d=0 \\\\\n\\Rightarrow 4[a+21 d]=0 \\\\\n\\Rightarrow 4[a+(22-1) d=0 \\\\\n\\Rightarrow a+(22-1) d=0 \\\\\n\\Rightarrow a_{22}=0\n\\end{array}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6f",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-16T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (16 Oct Shift 1)",
+            "title": "MHT CET 2020 (16 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f4d0279619d9d8a1b5b",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f69",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-13T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (13 Oct Shift 1)",
+              "title": "MHT CET 2020 (13 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "For a sequence if $S_{n}=\\frac{5^{n}-2^{n}}{2^{n}}$, then its fourth term is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "rqSsQ",
+              "text": "$\\frac{375}{16}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "QyBDG",
+              "text": "$\\frac{375}{8}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "dqr9p",
+              "text": "$\\frac{251}{8}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "i0CS5",
+              "text": "$\\frac{251}{16}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$s_{n}=\\frac{5^{n}-2^{n}}{2^{n}} ; s_{n-1}=\\frac{5^{n-1}-2^{n-1}}{2^{n-1}}$\n$\\begin{aligned} T_{n} &=s_{n}-s_{n-1} \\\\ T_{n} &=\\frac{5^{n}-2^{n} \\cdot 5^{n-1}}{2^{n}} \\\\ T_{4} &=\\frac{5^{4}-2 \\cdot 5^{3}}{2^{4}} \\\\ &=\\frac{625-250}{16} \\\\ &=\\frac{375}{16} \\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f69",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-13T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (13 Oct Shift 1)",
+            "title": "MHT CET 2020 (13 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "6abb891715a9fc0fc8c147a0",
+      "title": "Inequalities",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "6abb886815a9fc0fc8c1436c",
+          "type": "singleCorrect",
+          "question": {
+            "text": "The minimum value of $e^{2x} + e^{-2x}$ is .......",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "GTAZJ",
+              "label": "A",
+              "text": "$-2$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "32exy",
+              "label": "B",
+              "text": "$0$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "rqGPd",
+              "label": "C",
+              "text": "$1$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "lrEBU",
+              "label": "D",
+              "text": "$2$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Using the AM-GM inequality for positive real numbers $e^{2x}$ and $e^{-2x}$:<br><br>$\\dfrac{e^{2x} + e^{-2x}}{2} \\ge \\sqrt{e^{2x} \\cdot e^{-2x}}$<br><br>$\\dfrac{e^{2x} + e^{-2x}}{2} \\ge 1$<br><br>$e^{2x} + e^{-2x} \\ge 2$<br><br>The equality holds when $e^{2x} = e^{-2x}$, which gives $x = 0$.<br><br>The minimum value is $2$.<br><br>Answer: $2$",
+            "image": null
+          },
+          "level": 1,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87ef2fe711bb1be99967",
+              "title": "MHT CET 2026 (13 May Shift 1)",
+              "shortName": "2026 (13 May Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-05-13T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87ef2fe711bb1be99967",
+            "title": "MHT CET 2026 (13 May Shift 1)",
+            "shortName": "2026 (13 May Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-05-13T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6abb886715a9fc0fc8c1435b",
+          "type": "singleCorrect",
+          "question": {
+            "text": "With usual notations, if the perimeter of a triangle is $2s$, then its maximum area is:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "2J0tO",
+              "label": "A",
+              "text": "$\\dfrac{s^2}{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "G2kpD",
+              "label": "B",
+              "text": "$\\dfrac{\\sqrt{3} s^2}{4}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "HwY92",
+              "label": "C",
+              "text": "$\\dfrac{s^2}{\\sqrt{3}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "QT3ew",
+              "label": "D",
+              "text": "$\\dfrac{s^2}{3\\sqrt{3}}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Using Heron's formula, the area of a triangle is given by $\\Delta = \\sqrt{s(s-a)(s-b)(s-c)}$.<br><br>To maximize $\\Delta$, we need to maximize the product $(s-a)(s-b)(s-c)$.<br><br>Applying the AM-GM inequality to the positive numbers $(s-a)$, $(s-b)$, and $(s-c)$:<br><br>$\\dfrac{(s-a) + (s-b) + (s-c)}{3} \\ge \\sqrt[3]{(s-a)(s-b)(s-c)}$<br><br>Since $a+b+c = 2s$, the sum in the numerator is $3s - (a+b+c) = 3s - 2s = s$.<br><br>$\\dfrac{s}{3} \\ge \\sqrt[3]{(s-a)(s-b)(s-c)}$<br><br>Cubing both sides, we get:<br><br>$(s-a)(s-b)(s-c) \\le \\dfrac{s^3}{27}$<br><br>Substituting this maximum value back into Heron's formula:<br><br>$\\Delta_{max} = \\sqrt{s \\left(\\dfrac{s^3}{27}\\right)} = \\sqrt{\\dfrac{s^4}{27}} = \\dfrac{s^2}{3\\sqrt{3}}$<br><br>Equality holds when $s-a = s-b = s-c$, which implies $a = b = c = \\dfrac{2s}{3}$ (an equilateral triangle).<br><br>Answer: $\\dfrac{s^2}{3\\sqrt{3}}$",
+            "image": null
+          },
+          "level": 2,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87ef2fe711bb1be99967",
+              "title": "MHT CET 2026 (13 May Shift 1)",
+              "shortName": "2026 (13 May Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-05-13T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87ef2fe711bb1be99967",
+            "title": "MHT CET 2026 (13 May Shift 1)",
+            "shortName": "2026 (13 May Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-05-13T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "65a2634f0279619d9d8a3e13",
+      "title": "Geometric Progression",
+      "totalQuestions": 9,
+      "questions": [
+        {
+          "_id": "68871b7ebf9280d7f99329c1",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376df9b67616acec78f75",
+              "heldOn": "2025-04-22T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (22 Apr Shift 2)",
+              "title": "MHT CET 2025 (22 Apr Shift 2)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "If $\\frac{1}{6} \\sin \\theta, \\cos \\theta, \\tan \\theta$ are in G.P., then the general solution of $\\theta$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ZZyIa",
+              "text": "$2 n \\pi \\pm \\frac{\\pi}{3}, n \\in \\mathbb{Z}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "eLL52",
+              "text": "$\\mathrm{n} \\pi+\\frac{\\pi}{3}, \\mathrm{n} \\in \\mathbb{Z}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "huKWU",
+              "text": "$\\mathrm{n} \\pi+\\frac{\\pi}{4}, \\mathrm{n} \\in \\mathbb{Z}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "UVd8q",
+              "text": "$2 \\mathrm{n} \\pi \\pm \\frac{\\pi}{6}, \\mathrm{n} \\in \\mathbb{Z}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given that $\\dfrac{1}{6} \\sin \\theta, \\cos \\theta, \\tan \\theta$ are in G.P.<br><br>$\\cos^2 \\theta = \\dfrac{1}{6} \\sin \\theta \\cdot \\tan \\theta$<br><br>$\\cos^2 \\theta = \\dfrac{1}{6} \\sin \\theta \\cdot \\dfrac{\\sin \\theta}{\\cos \\theta}$<br><br>$6 \\cos^3 \\theta = \\sin^2 \\theta$<br><br>$6 \\cos^3 \\theta = 1 - \\cos^2 \\theta$<br><br>$6 \\cos^3 \\theta + \\cos^2 \\theta - 1 = 0$<br><br>$(2 \\cos \\theta - 1)(3 \\cos^2 \\theta + 2 \\cos \\theta + 1) = 0$<br><br>For the quadratic factor $3 \\cos^2 \\theta + 2 \\cos \\theta + 1 = 0$, the discriminant is $D = 2^2 - 4(3)(1) = -8 < 0$, so it has no real roots.<br><br>Therefore, we must have:<br><br>$2 \\cos \\theta - 1 = 0$<br><br>$\\cos \\theta = \\dfrac{1}{2}$<br><br>$\\cos \\theta = \\cos \\left(\\dfrac{\\pi}{3}\\right)$<br><br>The general solution is:<br><br>$\\theta = 2n\\pi \\pm \\dfrac{\\pi}{3}, n \\in \\mathbb{Z}$<br><br>Answer: $2 n \\pi \\pm \\frac{\\pi}{3}, n \\in \\mathbb{Z}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376df9b67616acec78f75",
+            "heldOn": "2025-04-22T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (22 Apr Shift 2)",
+            "title": "MHT CET 2025 (22 Apr Shift 2)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b2ebf9280d7f99326ec",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376de9b67616acec78f70",
+              "heldOn": "2025-04-20T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (20 Apr Shift 1)",
+              "title": "MHT CET 2025 (20 Apr Shift 1)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "The money invested in a company is compounded continuously. ₹400 invested today becomes $₹ 800$ in 6 years, then at the end of 33 years, it will become $_{-}(\\sqrt{2} = 1.4142)$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "byJBO",
+              "text": "$9050.88$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "uWvV9",
+              "text": "$18101.76$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "xLm8y",
+              "text": "$6788.16$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "rAKzg",
+              "text": "$12067.84$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $P$ be the principal amount and $A$ be the amount at time $t$.<br><br>Since the money is compounded continuously, the rate of growth is proportional to the amount present, which gives $A = P e^{rt}$.<br><br>Given $P = 400$ and $A = 800$ when $t = 6$.<br><br>$800 = 400 e^{6r}$<br><br>$e^{6r} = 2$<br><br>We need to find the amount $A$ when $t = 33$.<br><br>$A = 400 e^{33r}$<br><br>$A = 400 (e^{6r})^{\\dfrac{33}{6}}$<br><br>$A = 400 (2)^{\\dfrac{11}{2}}$<br><br>$A = 400 \\times 2^5 \\times 2^{\\dfrac{1}{2}}$<br><br>$A = 400 \\times 32 \\times \\sqrt{2}$<br><br>$A = 12800 \\sqrt{2}$<br><br>Substituting $\\sqrt{2} = 1.4142$:<br><br>$A = 12800 \\times 1.4142 = 18101.76$<br><br>Answer: $18101.76$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376de9b67616acec78f70",
+            "heldOn": "2025-04-20T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (20 Apr Shift 1)",
+            "title": "MHT CET 2025 (20 Apr Shift 1)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a2624e0279619d9d8a3373",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b2",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-13T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (13 May Shift 1)",
+              "title": "MHT CET 2023 (13 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Rate of increase of bacteria in a culture is proportional to the number of bacteria present at that instant and it is found that the number doubles in 6 hours. The number of bacteria becomes times at the end of 18 hours.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "U5vxt",
+              "text": "9",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "uRkuJ",
+              "text": "6",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "U6zoB",
+              "text": "8",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "SbK54",
+              "text": "3",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $P_0$ be the initial population and let the population after $t$ years be $P$. Then,\n$$\n\\begin{aligned}\n& \\frac{\\mathrm{dP}}{\\mathrm{dt}}=\\mathrm{kP} \\text {, where } \\mathrm{k}>0 \\\\\n& \\Rightarrow \\frac{\\mathrm{dP}}{\\mathrm{P}}=\\mathrm{kdt}\n\\end{aligned}\n$$\nIntegrating on both sides, we get\n$$\n\\begin{aligned}\n& \\log \\mathrm{P}=\\mathrm{kt}+\\mathrm{c} \\\\\n& \\text { When } \\mathrm{t}=0, \\mathrm{P}=\\mathrm{P}_0 \\\\\n& \\therefore \\quad \\log \\mathrm{P}_0=0+\\mathrm{c} \\\\\n& \\Rightarrow c=\\log \\mathrm{P}_0 \\\\\n& \\log \\mathrm{P}=\\mathrm{kt}+\\log \\mathrm{P}_0 \\\\\n& \\Rightarrow \\log \\frac{\\mathrm{P}}{\\mathrm{P}_0}=\\mathrm{kt} \\\\\n& \\begin{aligned}\n\\therefore \\quad & \\log \\mathrm{P}=\\mathrm{kt}+\\log \\mathrm{P}_0 \\\\\n& \\Rightarrow \\log \\frac{\\mathrm{P}}{\\mathrm{P}_0}=\\mathrm{kt} \\\\\n& \\text { When } \\mathrm{t}=6 \\text { hrs, } \\mathrm{P}=2 \\mathrm{P}_0\n\\end{aligned} \\\\\n& \\therefore \\quad \\log \\frac{2 \\mathrm{P}_0}{\\mathrm{P}_0}=6 \\mathrm{k} \\\\\n& \\Rightarrow \\mathrm{k}=\\frac{\\log 2}{6} \\\\\n& \\therefore \\quad \\log \\frac{P}{P_0}=\\frac{\\log 2}{6} t \\\\\n& \\text { When } \\mathrm{t}=18 \\mathrm{hrs} \\text {, we have } \\\\\n& \\log \\frac{P}{P_0}=\\frac{\\log 2}{6} \\times 18 \\\\\n& =3 \\log 2 \\\\\n& \\therefore \\quad \\log \\frac{P}{P_0}=\\log 8 \\\\\n& \\Rightarrow \\mathrm{P}=8 \\mathrm{P}_0 \\\\\n&\n\\end{aligned}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b2",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-13T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (13 May Shift 1)",
+            "title": "MHT CET 2023 (13 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fe40279619d9d8a2013",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f71",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-19T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (19 Oct Shift 1)",
+              "title": "MHT CET 2020 (19 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "The sum of first four terms of a G.P. is 160 and the common ratio is 3 , then the $4^{\\text {th }}$\nterm is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "en998",
+              "text": "118",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6jlO1",
+              "text": "100",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6Tnly",
+              "text": "108",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "65c7x",
+              "text": "102",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$a, a r, a r^{2}, a r^{3}$\n$2=3$\n$\\frac{a\\left(\\varepsilon^{4}-1\\right)}{(\\varepsilon-1)}=160$\nSolving these we get $a=4$\n$a \\varepsilon^{3}=t_{4}=108$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f71",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-19T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (19 Oct Shift 1)",
+            "title": "MHT CET 2020 (19 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fd50279619d9d8a1f9b",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f70",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-16T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (16 Oct Shift 2)",
+              "title": "MHT CET 2020 (16 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "The rational form of a number $1 \\cdot \\overline{41}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "s9hqJ",
+              "text": "$\\frac{154}{99}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "mjwFT",
+              "text": "$\\frac{55}{99}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wrOH2",
+              "text": "$\\frac{140}{99}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "BpgFh",
+              "text": "$\\frac{41}{99}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The rational form of a number $1.41$ is $\\frac{140}{99}$.\nLet $x=1.414141 \\quad$...(i) $100 x=141.414141 \\quad$...(ii)\nSubtract Eq. (i) from Eq. (ii), we get\n$99 x=140$\n$x=\\frac{140}{99}$ $\\therefore 1 . \\overline{41}=\\frac{140}{99}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f70",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-16T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (16 Oct Shift 2)",
+            "title": "MHT CET 2020 (16 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f710279619d9d8a1c82",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6b",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-14T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (14 Oct Shift 1)",
+              "title": "MHT CET 2020 (14 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "For a sequence $\\left(t_{n}\\right)$ if $s_{n}=7\\left(3^{n}-1\\right)$, then $t_{n}=$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "761j2",
+              "text": "$(7) 3^{n-1}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "kakpV",
+              "text": "(14) $3^{n+1}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vHUCS",
+              "text": "$(14) 3^{n-1}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "mD2zX",
+              "text": "$\\quad(7) 3^{n+1}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "A sequence; $t_{n} ;$\n$$\n\\begin{aligned}\ns_{n} &=7\\left(3^{n-1}\\right) \\\\\ns_{n-1} &=7\\left(3^{n-1}-1\\right) \\\\\n&\n\\end{aligned}\n$$\n$$\n\\begin{aligned}\nt_{n} &=s_{n}-s_{n-1} \\\\\nt_{n} &=7\\left(3^{n}-3^{n-1}\\right) \\\\\n&=7 \\cdot 3^{n-1} \\cdot 2 \\\\\n&=14 \\cdot 3^{n-1}\n\\end{aligned}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6b",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-14T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (14 Oct Shift 1)",
+            "title": "MHT CET 2020 (14 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25ef00279619d9d8a187e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f66",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2019-05-02T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019 (02 May Shift 1)",
+              "title": "MHT CET 2019 (02 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "For a G.P., if <math><msup><mrow><mfenced separators=\"|\"><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></mfenced></mrow><mrow><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">h</mi></mrow></msup></math> term is <math><mi>p</mi></math> and <math><msup><mrow><mfenced separators=\"|\"><mrow><mi>m</mi><mo>-</mo><mi>n</mi></mrow></mfenced></mrow><mrow><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">h</mi></mrow></msup></math> term is <math><mi>q</mi><mo>,</mo></math> then <math><msup><mrow><mi>m</mi></mrow><mrow><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">h</mi></mrow></msup></math> term is ________",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "AhiAO",
+              "text": "<math><mi>p</mi><mi>q</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "uhAeb",
+              "text": "<math><msqrt><mi>p</mi><mi>q</mi></msqrt></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "SkSYM",
+              "text": "<math><mfrac><mrow><mi>p</mi></mrow><mrow><mi>q</mi></mrow></mfrac></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "a5FMV",
+              "text": "<math><mi></mi><mfrac><mrow><mi>q</mi></mrow><mrow><mi>p</mi></mrow></mfrac></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In a G.P., each term is G. M. of terms which we are equal distance from it <br/>Then, <math><msup><mrow><mfenced separators=\"|\"><mrow><msub><mrow><mi>T</mi></mrow><mrow><mi>m</mi></mrow></msub></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><msub><mrow><mi>T</mi></mrow><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></msub><mo> </mo><msub><mrow><mi>T</mi></mrow><mrow><mi>m</mi><mo>-</mo><mi>n</mi></mrow></msub></math>  <br/>then, <math><mo> </mo><msub><mrow><mi>T</mi></mrow><mrow><mi>m</mi></mrow></msub><mo>=</mo><msqrt><mi>p</mi><mi>q</mi></msqrt></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f66",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2019-05-02T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019 (02 May Shift 1)",
+            "title": "MHT CET 2019 (02 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f170279619d9d8a19af",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f65",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2019-04-30T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019 (Shift 2)",
+              "title": "MHT CET 2019 (Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "If the sum of an infinite GP be 9 and sum of first two terms be 5 then their common ratio is …..",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "9M9QP",
+              "text": "<math><mfrac><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "dJqds",
+              "text": "3",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "7dYpL",
+              "text": "<math><mfrac><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "tyOhx",
+              "text": "<math><mfrac><mrow><mn>3</mn></mrow><mrow><mn>2</mn></mrow></mfrac></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We have, <br/>Sum of infinite GP, <math><mfrac><mrow><mi>a</mi></mrow><mrow><mn>1</mn><mo>-</mo><mi>r</mi></mrow></mfrac><mo>=</mo><mn>9</mn></math>  <br/><math><mo>&#8658;</mo><mi>a</mi><mo>+</mo><mi>a</mi><mi>r</mi><mo>=</mo><mn>5</mn></math>  <br/><math><mo>&#8658;</mo><mi>a</mi><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfenced><mo>=</mo><mn>5</mn></math>  <br/><math><mo>&#8658;</mo><mn>9</mn><mfenced separators=\"|\"><mrow><mn>1</mn><mo>-</mo><mi>r</mi></mrow></mfenced><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfenced><mo>=</mo><mn>5</mn></math>  <br/><math><mo>&#8658;</mo><mn>1</mn><mo>-</mo><msup><mrow><mi>r</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mfrac><mrow><mn>5</mn></mrow><mrow><mn>9</mn></mrow></mfrac><mo>&#8658;</mo><msup><mrow><mi>r</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mfrac><mrow><mn>4</mn></mrow><mrow><mn>9</mn></mrow></mfrac><mo>&#8658;</mo><mi>r</mi><mo>=</mo><mfrac><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f65",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2019-04-30T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019 (Shift 2)",
+            "title": "MHT CET 2019 (Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f060279619d9d8a192b",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d0071b5bb33b3f9f64",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019 (Shift 1)",
+              "title": "MHT CET 2019 (Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "If A, B, C are <math><msup><mrow><mi>p</mi></mrow><mrow><mi>t</mi><mi>h</mi></mrow></msup><mo>,</mo><msup><mrow><mi>q</mi></mrow><mrow><mi>t</mi><mi>h</mi></mrow></msup><mi></mi></math> and <math><msup><mrow><mi>r</mi></mrow><mrow><mi>t</mi><mi>h</mi></mrow></msup><mi></mi></math> terms of a GP respectively then <math><msup><mrow><mi>A</mi></mrow><mrow><mi>q</mi><mo>-</mo><mi>r</mi></mrow></msup><mo>.</mo><msup><mrow><mi>B</mi></mrow><mrow><mi>r</mi><mo>-</mo><mi>p</mi></mrow></msup><mo>.</mo><msup><mrow><mi>C</mi></mrow><mrow><mi>p</mi><mo>-</mo><mi>q</mi></mrow></msup><mo>=</mo></math> ….",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "IimZr",
+              "text": "0",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "OgBzP",
+              "text": "1",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "kqCdU",
+              "text": "3",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "cR9uU",
+              "text": "– 1",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let first term and common ratio of a GP are m and n respectively. Then,<math><mi>A</mi><mo>=</mo><mi>m</mi><mfenced separators=\"|\"><mrow><msup><mrow><mi>n</mi></mrow><mrow><mi>p</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mfenced><mtext>    </mtext><mo>…</mo></math> (i)<br /><math><mi>B</mi><mo>=</mo><mi>m</mi><mfenced separators=\"|\"><mrow><msup><mrow><mi>n</mi></mrow><mrow><mi>q</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mfenced><mtext>    </mtext><mo>…</mo></math> (ii)<br />and <math><mi>C</mi><mo>=</mo><mi>m</mi><mfenced separators=\"|\"><mrow><msup><mrow><mi>n</mi></mrow><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mfenced><mtext>    </mtext><mo>…</mo></math> (iii)<br />Now, <math><msup><mrow><mi>A</mi></mrow><mrow><mi>q</mi><mo>-</mo><mi>r</mi></mrow></msup><mo>.</mo><msup><mrow><mi>B</mi></mrow><mrow><mi>r</mi><mo>-</mo><mi>p</mi></mrow></msup><mo>.</mo><msup><mrow><mi>C</mi></mrow><mrow><mi>p</mi><mo>-</mo><mi>q</mi></mrow></msup></math><br /><math><mo>=</mo><msup><mrow><mi>m</mi></mrow><mrow><mfenced separators=\"|\"><mrow><mi>q</mi><mo>-</mo><mi>r</mi></mrow></mfenced></mrow></msup><mo>.</mo><msup><mrow><mi>n</mi></mrow><mrow><mfenced separators=\"|\"><mrow><mi>q</mi><mo>-</mo><mi>r</mi></mrow></mfenced><mfenced separators=\"|\"><mrow><mi>p</mi><mo>-</mo><mn>1</mn></mrow></mfenced></mrow></msup><mo>.</mo><msup><mrow><mi>m</mi></mrow><mrow><mfenced separators=\"|\"><mrow><mi>r</mi><mo>-</mo><mi>p</mi></mrow></mfenced></mrow></msup><mo>.</mo><msup><mrow><mi>n</mi></mrow><mrow><mfenced separators=\"|\"><mrow><mi>r</mi><mo>-</mo><mi>p</mi></mrow></mfenced><mfenced separators=\"|\"><mrow><mi>q</mi><mo>-</mo><mn>1</mn></mrow></mfenced></mrow></msup><mo>.</mo><msup><mrow><mi>m</mi></mrow><mrow><mfenced separators=\"|\"><mrow><mi>p</mi><mo>-</mo><mi>q</mi></mrow></mfenced></mrow></msup><mo>.</mo><msup><mrow><mi>n</mi></mrow><mrow><mfenced separators=\"|\"><mrow><mi>p</mi><mo>-</mo><mi>q</mi></mrow></mfenced><mfenced separators=\"|\"><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow></mfenced></mrow></msup></math><br /><math><mo>=</mo><msup><mrow><mi>m</mi></mrow><mrow><mi>q</mi><mo>-</mo><mi>r</mi><mo>+</mo><mi>r</mi><mo>-</mo><mi>p</mi><mo>+</mo><mi>p</mi><mo>-</mo><mi>q</mi></mrow></msup><mo>.</mo><msup><mrow><mi>n</mi></mrow><mrow><mi>q</mi><mi>p</mi><mo>-</mo><mi>q</mi><mo>-</mo><mi>r</mi><mi>p</mi><mo>+</mo><mi>r</mi><mo>+</mo><mi>r</mi><mi>q</mi><mo>-</mo><mi>r</mi><mo>-</mo><mi>r</mi><mo>-</mo><mi>p</mi><mi>q</mi><mo>+</mo><mi>p</mi><mo>+</mo><mi>p</mi><mi>r</mi><mo>-</mo><mi>p</mi><mo>-</mo><mi>q</mi><mi>r</mi><mo>+</mo><mi>q</mi></mrow></msup></math><br /><math><mo>=</mo><msup><mrow><mi>m</mi></mrow><mrow><mn>0</mn></mrow></msup><mo>.</mo><msup><mrow><mi>n</mi></mrow><mrow><mn>0</mn></mrow></msup><mo>=</mo><mn>1</mn><mo>×</mo><mn>1</mn><mo>=</mo><mn>1</mn></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d0071b5bb33b3f9f64",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019 (Shift 1)",
+            "title": "MHT CET 2019 (Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "65a263500279619d9d8a3e16",
+      "title": "Mixed Question on AP and GP",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "65a2624d0279619d9d8a336a",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b2",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-13T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (13 May Shift 1)",
+              "title": "MHT CET 2023 (13 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "$x, y, z$ are in G.P. and $\\tan ^{-1} x, \\tan ^{-1} y, \\tan ^{-1} z$ are in A.P., then",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "eq9eA",
+              "text": "$6 x=4 y=3 z$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "OSwAM",
+              "text": "$2 x=3 y=6 z$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "XYpiI",
+              "text": "$6 x=3 y=2 z$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "c3ByO",
+              "text": "$x=y=z$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$x, y, \\mathrm{z}$ are in G.P.\n$$\n\\Rightarrow y^2=x \\mathrm{z}\n$$\n\nAlso, $\\tan ^{-1} x, \\tan ^{-1} y, \\tan ^{-1} z$ are in A.P.\n$$\n\\begin{aligned}\n& \\Rightarrow 2 \\tan ^{-1} y=\\tan ^{-1} x+\\tan ^{-1} \\mathrm{z} \\\\\n& \\Rightarrow \\tan ^{-1}\\left(\\frac{2 y}{1-y^2}\\right)=\\tan ^{-1}\\left(\\frac{x+\\mathrm{z}}{1-x \\mathrm{z}}\\right) \\\\\n& \\Rightarrow \\frac{2 y}{1-y^2}=\\frac{x+\\mathrm{z}}{1-x \\mathrm{z}} \\\\\n& \\Rightarrow \\frac{2 y}{1-x \\mathrm{z}}=\\frac{x+\\mathrm{z}}{1-x \\mathrm{z}}\n\\end{aligned}\n$$\n$$\n\\Rightarrow 2 y=x+\\mathrm{z}\n$$\n$\\Rightarrow x, y, \\mathrm{z}$ are in A.P.\nFrom (i) and (ii), we get\n$$\nx=y=\\mathrm{Z}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b2",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-13T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (13 May Shift 1)",
+            "title": "MHT CET 2023 (13 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "65a263500279619d9d8a3e15",
+      "title": "Harmonic Progression",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "65a25f990279619d9d8a1dca",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6d",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (15 Oct Shift 1)",
+              "title": "MHT CET 2020 (15 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "If $\\frac{1}{4}, \\mathrm{a}, \\mathrm{b}, \\frac{1}{19}$ form a H.P. then the values of a and $\\mathrm{b}$ are respectively",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "TOtaU",
+              "text": "$\\frac{1}{12}, \\frac{1}{15}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lmFPI",
+              "text": "$\\frac{1}{5}, \\frac{1}{7}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "76wPX",
+              "text": "$\\frac{1}{9}, \\frac{1}{14}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "f8ZMg",
+              "text": "$\\frac{1}{11}, \\frac{1}{17}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\frac{1}{4}, a, b, \\frac{1}{19} \\longrightarrow$ H.P.\n$4, \\frac{1}{a}, \\frac{1}{b}, 19 \\rightarrow$ AP\n$a=\\frac{1}{9}, b=\\frac{1}{14}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6d",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (15 Oct Shift 1)",
+            "title": "MHT CET 2020 (15 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f630279619d9d8a1c14",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6a",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-13T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (13 Oct Shift 2)",
+              "title": "MHT CET 2020 (13 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "If for the harmonic progression, $t_{7}=\\frac{1}{10}, t_{12}=\\frac{1}{25}$, then $t_{20}=$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "dUqWG",
+              "text": "$\\frac{1}{48}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "zBMsC",
+              "text": "49",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "VdgI8",
+              "text": "$\\frac{1}{49}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "1E5eB",
+              "text": "48",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "First term of an $\\mathrm{AP}=10$ and the $12^{\\text {th }}$ term $=25$. Considering corresponding AP $a+6 d=10$ and $a+11 d=25 d=3, a=-8$\n$\\Rightarrow T_{20}=a+19 d=8+57=49$\nHence, the $20^{\\text {th }}$ term of the corresponding HP is $1 / 49$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6a",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-13T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (13 Oct Shift 2)",
+            "title": "MHT CET 2020 (13 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "topicId": "65a263500279619d9d8a3e17",
+      "title": "Arithmetic Geometric Progression",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "65a262610279619d9d8a3411",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b3",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-13T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (13 May Shift 2)",
+              "title": "MHT CET 2023 (13 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A radioactive substance, with initial mass $m_0$, has a half-life of $\\mathrm{h}$ days. Then its initial decay rate is given by",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "1wazg",
+              "text": "$\\frac{\\mathrm{m}_0}{\\mathrm{~h}} \\log 2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0SnGq",
+              "text": "$\\mathrm{m}_0 \\mathrm{~h} \\log 2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vikuM",
+              "text": "$-\\frac{\\mathrm{m}_0}{\\mathrm{~h}} \\log 2$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "stHSR",
+              "text": "$-m_0 \\mathrm{~h} \\log 2$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $\\mathrm{m}$ be the mass of substance at time $\\mathrm{t}$. Then,\n$\\begin{aligned} & \\frac{\\mathrm{dm}}{\\mathrm{dt}}=-\\mathrm{km} \\text {, where } \\mathrm{k}>0 \\\\ & \\Rightarrow \\frac{\\mathrm{dm}}{\\mathrm{m}}=-\\mathrm{kdt}\\end{aligned}$\nIntegrating on both sides, we get\n$\\log m=-k t+c$\nWhen $\\mathrm{t}=0, \\mathrm{~m}=\\mathrm{m}_0$\n$\\therefore \\quad \\log \\mathrm{m}_0=0+\\mathrm{c}$\n$\\Rightarrow \\mathrm{c}=\\log \\mathrm{m}_0$\n$\\therefore \\quad \\log m=-k t+\\log m_0$\n$\\Rightarrow \\log \\frac{\\mathrm{m}}{\\mathrm{m}_0}=-\\mathrm{kt}$\nWhen $\\mathrm{t}=\\mathrm{h}, \\mathrm{m}=\\frac{1}{2} \\mathrm{~m}_0$\n$\\therefore \\quad \\log \\left(\\frac{\\frac{1}{2} m_0}{m_0}\\right)=-k h$\n$\\begin{aligned} & \\Rightarrow \\log \\frac{1}{2}=-\\mathrm{kh} \\\\ & \\Rightarrow \\log 2=\\mathrm{kh}\\end{aligned}$\n$\\Rightarrow \\mathrm{k}=\\frac{\\log 2}{\\mathrm{~h}}$  ...(i)\nInitial decay rate,\n$\\frac{\\mathrm{dm}}{\\mathrm{dt}}=-\\mathrm{km}_0$\n$=\\frac{-\\mathrm{m}_0}{\\mathrm{~h}} \\log 2$  ...[From (i)]",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b3",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-13T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (13 May Shift 2)",
+            "title": "MHT CET 2023 (13 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "topicId": "65a2634f0279619d9d8a3e12",
+      "title": "Summation of Series",
+      "totalQuestions": 8,
+      "questions": [
+        {
+          "_id": "65a2600a0279619d9d8a213e",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f73",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-20T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (20 Oct Shift 1)",
+              "title": "MHT CET 2020 (20 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "The sum to 10 terms of the series $1 \\times 3^{2}+2 \\times 5^{2}+3 \\times 7^{2}+\\ldots \\ldots \\ldots \\ldots . .$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "oFBEv",
+              "text": "13,495",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pGEGh",
+              "text": "$\\cdot 15,595$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "rDVQd",
+              "text": "$13,000$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "xSb7L",
+              "text": "13,695",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$1 \\times 3^{2}+2 \\times 5^{2}+3 \\times 7^{2}+$\nTerm : $\\rightarrow 2(2 q+1)^{2}$\n$S=\\sum_{\\varepsilon=1}^{10} z(2 q+1)^{2}$\n$S=\\sum_{\\varepsilon=1}^{10}\\left(4 z^{2}+4 z+1\\right) \\varepsilon$\n$S=\\sum_{z=1}^{10}\\left[4 z^{3}+4 z^{2}+2\\right]$\n$S=\\frac{4 \\times 10^{2} \\times 11^{2}}{4}+\\frac{4 \\times 10 \\times 11 x}{6}$$+\\frac{10 \\times 11}{2}$\n$S=13,695$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f73",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-20T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (20 Oct Shift 1)",
+            "title": "MHT CET 2020 (20 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f860279619d9d8a1d2d",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6c",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-14T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (14 Oct Shift 2)",
+              "title": "MHT CET 2020 (14 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "$\\frac{1^{2}}{2}+\\frac{1^{2}+2^{2}}{3}+\\frac{1^{2}+2^{2}+3^{2}}{4}+\\frac{1^{2}+2^{2}+3^{2}+4^{2}}{5}+\\ldots \\ldots \\ldots \\ldots$ upto 8 terms $=$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "cks5m",
+              "text": "76",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "VbOal",
+              "text": "74",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "mKz3q",
+              "text": "78",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "PkeOz",
+              "text": "72",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\frac{1^{2}}{2}+\\frac{1^{2}+2^{2}}{3}+\\frac{1^{2}+2^{2}+3^{2}}{4}+$\n$\\begin{array}{l}\\text { general } \\\\ \\text { term }\\end{array} \\sum_{t=1}^{8} \\frac{\\sum \\varepsilon^{2}}{\\varepsilon}=$\n$=\\sum_{\\varepsilon=1}^{8} \\frac{\\varepsilon(\\varepsilon+1)(2 q+1)}{6 \\varepsilon}$\n$=\\frac{1}{6} \\sum_{\\varepsilon=1}^{8} \\frac{(2+1)(2 \\varepsilon+1)}{(8)}$\n$=\\frac{1}{6} \\sum_{\\varepsilon=1}^{8}\\left[2 \\varepsilon^{2}+3 r+1\\right]$\n$=\\frac{1}{6}\\left[\\frac{2 \\times 8 \\times 9 \\times 17}{6}+\\frac{3 \\times 8 \\times 9}{2}+8\\right]$\n$=74$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6c",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-14T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (14 Oct Shift 2)",
+            "title": "MHT CET 2020 (14 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f390279619d9d8a1abe",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f68",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-12T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (12 Oct Shift 2)",
+              "title": "MHT CET 2020 (12 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "$$\n5^{2}+6^{2}+7^{2}+\\ldots \\ldots \\ldots \\ldots \\ldots+20^{2}=\n$$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ZysDi",
+              "text": "2860",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "YIvbd",
+              "text": "2840",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "xlqFu",
+              "text": "2830",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vnvEp",
+              "text": "2850",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The given series is $5^{2}+6^{2}+7^{2}+\\ldots+20^{2} n^{\\text {th }}$ term,\n$\\begin{aligned}\na_{n} &=(n+4)^{2}=n^{2}+8 n+16 \\\\\n\\therefore S_{n} &=\\sum_{k=1}^{n} a_{k}=\\sum_{k=1}^{n}\\left(k^{2}+8 k+16\\right) \\\\\n&=\\sum_{k=1}^{n} k^{2}+8 \\sum_{k=1}^{n} k+\\sum_{k=1}^{n} 16 \\\\\n&=\\frac{n(n+1)(2 n+1)}{6}+\\frac{8 n(n+1)}{2}+16 n\n\\end{aligned}$\n$16^{\\text {th }}$ term is $(16+4)^{2}=20^{2}$\n$\\begin{aligned}\n\\therefore S_{10} &=\\frac{16(16+1)(2 \\times 16+1)}{6}+\\frac{8 \\times 16 \\times(16+1)}{2}+16 \\times 16 \\\\\n&=\\frac{(16)(17)(33)}{6}+\\frac{(8) \\times 16 \\times(16+1)}{2}+16 \\times 16 \\\\\n&=\\frac{(16)(17)(33)}{6}+\\frac{(8)(16)(17)}{2}+256 \\\\\n&=1496+1088+256 \\\\\n&=2840 \\\\\n\\therefore 5^{2} &+6^{2}+7^{2}+\\ldots \\ldots+20^{2}=2840\n\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f68",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-12T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (12 Oct Shift 2)",
+            "title": "MHT CET 2020 (12 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f290279619d9d8a1a40",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f67",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-12T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (12 Oct Shift 1)",
+              "title": "MHT CET 2020 (12 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "If $\\frac{2+4+6+8-------\\text { upto } n \\text { terms }}{1+3+5+7-------\\text { upto } n \\text { terms }}=\\frac{37}{36}$, then $n=$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "BDJLx",
+              "text": "36",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "IcQEo",
+              "text": "29",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "DrCmq",
+              "text": "23",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Lit8K",
+              "text": "37",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "sum of $n$ even natural numbers $=n(n+1)$\nsum of $n$ odd natural numbers $=n^{\\wedge} 2$\n$n(n+1) / n^{\\wedge} 2=37 / 36$\n$n+1 / n=37 / 36$\ncross multiplication\n$36(n+1)=37 n$\n$36 n+36=37 n$\n$37 n-36 n=36$\n$n=36$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f67",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-12T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (12 Oct Shift 1)",
+            "title": "MHT CET 2020 (12 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25eee0279619d9d8a186d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f66",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2019-05-02T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019 (02 May Shift 1)",
+              "title": "MHT CET 2019 (02 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "For a G.P., if <math><msub><mrow><mi>S</mi></mrow><mrow><mi>n</mi></mrow></msub><mo>=</mo><mfrac><mrow><msup><mrow><mn>4</mn></mrow><mrow><mi>n</mi></mrow></msup><mo>-</mo><msup><mrow><mn>3</mn></mrow><mrow><mi>n</mi></mrow></msup></mrow><mrow><msup><mrow><mn>3</mn></mrow><mrow><mi>n</mi></mrow></msup></mrow></mfrac><mo>,</mo></math> then, <math><msub><mrow><mi>t</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo></math> ________",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "rhjsj",
+              "text": "<math><mfrac><mrow><mn>1</mn></mrow><mrow><mn>9</mn></mrow></mfrac></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fFvYp",
+              "text": "<math><mfrac><mrow><mn>2</mn></mrow><mrow><mn>9</mn></mrow></mfrac></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "OivsY",
+              "text": "<math><mfrac><mrow><mn>7</mn></mrow><mrow><mn>9</mn></mrow></mfrac></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "q0k6j",
+              "text": "<math><mfrac><mrow><mn>4</mn></mrow><mrow><mn>9</mn></mrow></mfrac></math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given <math><msub><mrow><mi>S</mi></mrow><mrow><mi>n</mi></mrow></msub><mo>=</mo><mfrac><mrow><msup><mrow><mn>4</mn></mrow><mrow><mi>n</mi></mrow></msup><mo>-</mo><msup><mrow><mn>3</mn></mrow><mrow><mi>n</mi></mrow></msup></mrow><mrow><msup><mrow><mn>3</mn></mrow><mrow><mi mathvariant=\"normal\">n</mi></mrow></msup></mrow></mfrac></math>  <br/><math><msub><mrow><mi>T</mi></mrow><mrow><mi>n</mi></mrow></msub><mo>=</mo><msub><mrow><mi>S</mi></mrow><mrow><mi>n</mi></mrow></msub><mo>-</mo><msub><mrow><mi>S</mi></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub></math>  <br/><math><msub><mrow><mi>T</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><msub><mrow><mi>S</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>-</mo><msub><mrow><mi>S</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>=</mo><mfrac><mrow><msup><mrow><mn>4</mn></mrow><mrow><mn>2</mn></mrow></msup><mo>-</mo><msup><mrow><mn>3</mn></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><msup><mrow><mn>3</mn></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfrac><mo>-</mo><mfrac><mrow><mn>4</mn><mo>-</mo><mn>3</mn></mrow><mrow><mn>3</mn></mrow></mfrac></math>  <br/><math><mo>=</mo><mfrac><mrow><mn>7</mn></mrow><mrow><mn>9</mn></mrow></mfrac><mo>-</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mo>&#8658;</mo><mfrac><mrow><mn>4</mn></mrow><mrow><mn>9</mn></mrow></mfrac></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f66",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2019-05-02T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019 (02 May Shift 1)",
+            "title": "MHT CET 2019 (02 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f140279619d9d8a1999",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f65",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2019-04-30T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019 (Shift 2)",
+              "title": "MHT CET 2019 (Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "If <math><mrow><msubsup><mo stretchy=\"true\">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></msubsup><mrow><mfenced separators=\"|\"><mrow><mn>2</mn><mi>r</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mo>=</mo><mn>440</mn></mrow></mrow></math> , then n =…..",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "dcyVA",
+              "text": "20",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "47fY6",
+              "text": "22",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "PWz9M",
+              "text": "21",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "grkBH",
+              "text": "19",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We have, <math><mrow><munderover><mo stretchy=\"true\">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mfenced separators=\"|\"><mrow><mn>2</mn><mi>r</mi><mo>+</mo><mi>l</mi></mrow></mfenced><mo>=</mo><mn>440</mn></mrow></mrow></math>  <br/><math><mo>&#8658;</mo><mn>3</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>7</mn><mo>…</mo><mo>+</mo><mfenced separators=\"|\"><mrow><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mo>=</mo><mn>440</mn></math>  <br/><math><mo>&#8658;</mo><mfrac><mrow><mi>n</mi></mrow><mrow><mn>2</mn></mrow></mfrac><mfenced close=\"]\" open=\"[\" separators=\"|\"><mrow><mn>2</mn><mo>×</mo><mn>3</mn><mo>+</mo><mfenced separators=\"|\"><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mfenced><mfenced separators=\"|\"><mrow><mn>2</mn></mrow></mfenced></mrow></mfenced><mo>=</mo><mn>440</mn></math>  <br/><math><mo>&#8658;</mo><mi>n</mi><mfenced separators=\"|\"><mrow><mn>3</mn><mo>+</mo><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mfenced><mo>=</mo><mn>440</mn></math>  <br/><math><mo>&#8658;</mo><mi>n</mi><mfenced separators=\"|\"><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></mfenced><mo>=</mo><mn>440</mn></math>  <br/><math><mo>&#8658;</mo><mi>n</mi><mo>=</mo><mn>20</mn></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f65",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2019-04-30T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019 (Shift 2)",
+            "title": "MHT CET 2019 (Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f050279619d9d8a1927",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d0071b5bb33b3f9f64",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019 (Shift 1)",
+              "title": "MHT CET 2019 (Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "For a sequence <math><mfenced separators=\"|\"><mrow><msub><mrow><mi>t</mi></mrow><mrow><mi>n</mi></mrow></msub></mrow></mfenced></math> , if <math><msub><mrow><mi>S</mi></mrow><mrow><mi>n</mi></mrow></msub><mo>=</mo><mn>5</mn><mfenced separators=\"|\"><mrow><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi></mrow></msup><mo>-</mo><mn>1</mn></mrow></mfenced></math> then <math><msub><mrow><mi>t</mi></mrow><mrow><mi>n</mi></mrow></msub><mo>=</mo><mo>…</mo></math>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "QDmIw",
+              "text": "<math><mn>5</mn><mfenced separators=\"|\"><mrow><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "mQ3kb",
+              "text": "<math><mfrac><mrow><mn>5</mn><mo>×</mo><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi></mrow></msup></mrow><mrow><mn>4</mn></mrow></mfrac></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "L89kK",
+              "text": "<math><mn>5</mn><mfenced separators=\"|\"><mrow><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "0dD57",
+              "text": "<math><mfrac><mrow><mn>2</mn><mo>×</mo><mfenced separators=\"|\"><mrow><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mfenced></mrow><mrow><mn>5</mn></mrow></mfrac></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We have, <math><msub><mrow><mi>S</mi></mrow><mrow><mi>n</mi></mrow></msub><mo>=</mo><mn>5</mn><mfenced separators=\"|\"><mrow><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi></mrow></msup><mo>-</mo><mn>1</mn></mrow></mfenced></math><br />We know that <math><msub><mrow><mi>a</mi></mrow><mrow><mi>n</mi></mrow></msub><mo>=</mo><msub><mrow><mi>S</mi></mrow><mrow><mi>n</mi></mrow></msub><mo>-</mo><msub><mrow><mi>S</mi></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub></math><br /><math><mo>=</mo><mn>5</mn><mfenced separators=\"|\"><mrow><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi></mrow></msup><mo>-</mo><mn>1</mn></mrow></mfenced><mo>-</mo><mn>5</mn><mfenced separators=\"|\"><mrow><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>-</mo><mn>1</mn></mrow></mfenced></math><br /><math><mo>=</mo><mn>5</mn><mfenced separators=\"|\"><mrow><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi></mrow></msup><mo>-</mo><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mfenced></math><br /><math><mo>=</mo><mn>5</mn><mfenced separators=\"|\"><mrow><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mfenced></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d0071b5bb33b3f9f64",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019 (Shift 1)",
+            "title": "MHT CET 2019 (Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25ede0279619d9d8a17ef",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cf071b5bb33b3f9f63",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "MHT CET 2018"
+            }
+          ],
+          "question": {
+            "text": "The sum of the first <math><mn>10</mn></math> terms of the series <math><mn>9</mn><mo>+</mo><mn>99</mn><mo>+</mo><mn>999</mn><mo>+</mo><mo>.</mo><mo>…</mo><mo>.</mo></math> is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "iRIuf",
+              "text": "<math><mfrac><mrow><mn>9</mn></mrow><mrow><mn>8</mn></mrow></mfrac><mfenced separators=\"|\"><mrow><msup><mrow><mn>9</mn></mrow><mrow><mn>10</mn></mrow></msup><mo>-</mo><mn>1</mn></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ghgDQ",
+              "text": "<math><mfrac><mrow><mn>100</mn></mrow><mrow><mn>9</mn></mrow></mfrac><mfenced separators=\"|\"><mrow><msup><mrow><mn>10</mn></mrow><mrow><mn>9</mn></mrow></msup><mo>-</mo><mn>1</mn></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Yg2VN",
+              "text": "<math><msup><mrow><mn>10</mn></mrow><mrow><mn>9</mn></mrow></msup><mo>-</mo><mn>1</mn></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "IiiQT",
+              "text": "<math><mfrac><mrow><mn>100</mn></mrow><mrow><mn>9</mn></mrow></mfrac><mfenced separators=\"|\"><mrow><msup><mrow><mn>10</mn></mrow><mrow><mn>10</mn></mrow></msup><mo>-</mo><mn>1</mn></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math> <mrow> <msub> <mi>S</mi> <mi>n</mi> </msub> <mo>=</mo><mrow><mo>(</mo> <mrow> <mn>10</mn><mo>−</mo><mn>1</mn><mo>+</mo><mn>100</mn><mo>−</mo><mn>1</mn><mo>+</mo><mn>1000</mn><mo>−</mo><mn>1</mn><mo>+</mo><mn>....</mn></mrow> <mo>)</mo></mrow></mrow> </math><br /><math><mrow><mo>=</mo><mrow><mo>(</mo> <mrow> <mn>10</mn><mo>+</mo><mn>100</mn><mo>+</mo><mn>1000</mn><mo>+</mo><mn>....</mn></mrow> <mo>)</mo></mrow><mo>−</mo><mrow><mo>(</mo> <mrow> <mn>1</mn><mo>+</mo><mn>1</mn><mo>+</mo><mn>1......</mn></mrow> <mo>)</mo></mrow></mrow> </math><br /><math><mrow><mo>=</mo><mn>10</mn><mrow><mo>(</mo> <mrow> <mfrac> <mrow> <msup> <mrow> <mn>10</mn></mrow> <mi>n</mi> </msup> <mo>−</mo><mn>1</mn></mrow> <mrow> <mn>10</mn><mo>−</mo><mn>1</mn></mrow> </mfrac> </mrow> <mo>)</mo></mrow><mo>−</mo><mi>n</mi></mrow> </math><br /><math> <mo>⇒</mo><mrow> <msub> <mi>S</mi> <mrow> <mn>10</mn></mrow> </msub> <mo>=</mo><mn>10</mn><mrow><mo>(</mo> <mrow> <mfrac> <mrow> <msup> <mrow> <mn>10</mn></mrow> <mrow> <mn>10</mn></mrow> </msup> <mo>−</mo><mn>1</mn></mrow> <mn>9</mn> </mfrac> </mrow> <mo>)</mo></mrow><mo>−</mo><mn>10</mn></mrow> </math><br /><math><mrow><mo>=</mo><mn>10</mn><mrow><mo>(</mo> <mrow> <mfrac> <mrow> <msup> <mrow> <mn>10</mn></mrow> <mrow> <mn>10</mn></mrow> </msup> <mo>−</mo><mn>1</mn></mrow> <mn>9</mn> </mfrac> <mo>−</mo><mn>1</mn></mrow> <mo>)</mo></mrow></mrow> </math><br /><math><mrow><mo>=</mo><mn>10</mn><mrow><mo>(</mo> <mrow> <mfrac> <mrow> <msup> <mrow> <mn>10</mn></mrow> <mrow> <mn>10</mn></mrow> </msup> <mo>−</mo><mn>1</mn><mo>−</mo><mn>9</mn></mrow> <mn>9</mn> </mfrac> </mrow> <mo>)</mo></mrow></mrow> </math><br /><math><mrow><mo>=</mo><mn>10</mn><mrow><mo>(</mo> <mrow> <mfrac> <mrow> <msup> <mrow> <mn>10</mn></mrow> <mrow> <mn>10</mn></mrow> </msup> <mo>−</mo><mn>10</mn></mrow> <mn>9</mn> </mfrac> </mrow> <mo>)</mo></mrow></mrow> </math><br /><math><mrow><mo>=</mo><mfrac> <mrow> <mn>100</mn></mrow> <mn>9</mn> </mfrac> <mrow><mo>(</mo> <mrow> <msup> <mrow> <mn>10</mn></mrow> <mn>9</mn> </msup> <mo>−</mo><mn>1</mn></mrow> <mo>)</mo></mrow></mrow> </math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cf071b5bb33b3f9f63",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "MHT CET 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Properties of Triangles PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>📐 BITSAT &bull; Properties of Triangles</h1>
+        <div class="sub">Mathematics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 5, "chapterId": "61e7bd82ee203f86bfb58ce0", "chapter": "Properties of Triangles", "exam": "BITSAT", "subject": "Mathematics", "totalTopics": 3, "totalQuestions": 7, "downloadTime": "2026-10-08 20:36:47", "topics": [{"index": 1, "topicId": "64c0e8706f5bfc7ab78aee2e", "title": "Sine Rule and its application", "totalQuestions": 5, "questions": [{"_id": "64c0e8366f5bfc7ab78aeb96", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 3, "question": {"text": "If in a $\\triangle A B C, 2 b^2=a^2+c^2$, then $\\frac{\\sin 3B}{\\sin B}$ is equal to", "image": null}, "options": [{"id": "FNNNx", "text": "\r\n$\\frac{c^2-a^2}{2 c a}$\r\n", "isCorrect": false, "image": null}, {"id": "sFOA1", "text": "\r\n$\\frac{c^2-a^2}{c a}$\r\n", "isCorrect": false, "image": null}, {"id": "ZpkJw", "text": "\r\n$\\frac{\\left(c^2-a^2\\right)^2}{(c a)^2}$\r\n", "isCorrect": false, "image": null}, {"id": "ipSID", "text": "\r\n$\\left[\\frac{c^2-a^2}{2 c a}\\right]^2$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "$\\frac{\\sin 3 B}{\\sin B}=\\frac{3 \\sin B-4 \\sin ^3 B}{\\sin B}$\r\n$=3-4 \\sin ^2 B$\r\n$=3-4\\left(1-\\cos ^2 B\\right)$\r\n$=-1+\\frac{4\\left(a^2+c^2-b^2\\right)^2}{4(a c)^2}$\r\n$=-1+\\frac{\\left(\\frac{a^2+c^2}{2}\\right)^2}{(a c)^2}$\r\n$=-1+\\frac{\\left(a^2+c^2\\right)^2}{4(a c)^2}$\r\n$=(\\frac{c^2-a^2}{2 a c})^2$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e80a6f5bfc7ab78aea12", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 2, "question": {"text": "Let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mi>B</mi><mi>C</mi></math> be an acute-angled triangle and let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>D</mi></math> be the mid-point of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi><mi>C</mi></math>. If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mi>B</mi><mo>=</mo><mi>A</mi><mi>D</mi></math>, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>tan</mi><mi>B</mi></mrow><mrow><mi>tan</mi><mi>C</mi></mrow></mfrac></math>&nbsp;equal", "image": null}, "options": [{"id": "970IH", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msqrt><mn>2</mn></msqrt></math>", "isCorrect": false, "image": null}, {"id": "XGtEb", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msqrt><mn>3</mn></msqrt></math>", "isCorrect": false, "image": null}, {"id": "SUdly", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn></math>", "isCorrect": false, "image": null}, {"id": "UVyWK", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>In &nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8710;</mo><mi>A</mi><mi>B</mi><mi>C</mi><mo>,</mo><mi>D</mi></math> be the mid-point of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi><mi>C</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mi>B</mi><mo>=</mo><mi>A</mi><mi>D</mi><mo>&#8658;</mo><mi mathvariant=\"normal\">&#916;</mi><mi>A</mi><mi>B</mi><mi>D</mi></math> is isosceles.</p><p>Let&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mi>M</mi></math>&nbsp;be the perpendicular drawn from&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math>&nbsp;to&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi><mi>C</mi></math>.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi>A</mi><mi>M</mi></math> is perpendicular bisector of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi><mi>D</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi><mi>M</mi><mo>=</mo><mi>M</mi><mi>D</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>ln</mi><mo>&#160;</mo><mi mathvariant=\"normal\">&#916;</mi><mi>A</mi><mi>B</mi><mi>M</mi><mo>,</mo><mo>&#160;</mo><mi>tan</mi><mi>B</mi><mo>=</mo><mfrac><mrow><mi>A</mi><mi>M</mi></mrow><mrow><mi>B</mi><mi>M</mi></mrow></mfrac></math></p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/3f893ec8-7600-4ae1-9129-15ccf51bb877-d36.png\" style=\"width: 375px; height: 170px;\" /></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>ln</mi><mo>&#160;</mo><mi>&#916;</mi><mi>A</mi><mi>M</mi><mi>C</mi><mo>,</mo><mo>&#160;</mo><mi>tan</mi><mi>C</mi><mo>=</mo><mfrac><mrow><mi>A</mi><mi>M</mi></mrow><mrow><mi>C</mi><mi>M</mi></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mfrac><mrow><mi>tan</mi><mi>B</mi></mrow><mrow><mi>tan</mi><mi>C</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>C</mi><mi>M</mi></mrow><mrow><mi>B</mi><mi>M</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn><mi>B</mi><mi>M</mi></mrow><mrow><mi>B</mi><mi>M</mi></mrow></mfrac><mo>=</mo><mn>3</mn><mo>&#160;&#160;</mo><mfenced close=\"]\" open=\"[\"><mrow><mo>&#8757;</mo><mi>C</mi><mi>M</mi><mo>=</mo><mi>D</mi><mi>M</mi><mo>+</mo><mi>C</mi><mi>D</mi></mrow></mfenced></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7e06f5bfc7ab78ae89e", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 1, "question": {"text": "In a $\\triangle \\mathrm{ABC},$ if $\\frac{\\cos A}{\\mathrm{a}}=\\frac{\\cos \\mathrm{B}}{\\mathrm{b}}=\\frac{\\cos \\mathrm{C}}{\\mathrm{c}},$ and the side $\\mathrm{a}=2,$ then area of the triangle is", "image": null}, "options": [{"id": "g7ZlB", "text": "1", "isCorrect": false, "image": null}, {"id": "W5vTD", "text": "2", "isCorrect": false, "image": null}, {"id": "uP6QK", "text": "$\\frac{\\sqrt{3}}{2}$", "isCorrect": false, "image": null}, {"id": "N10iy", "text": "$\\sqrt{3}$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "$\\frac{\\cos A}{a}=\\frac{\\cos B}{b}=\\frac{\\cos C}{c}$\r\n\r\n$\\Rightarrow \\frac{\\cos \\mathrm{A}}{2 \\mathrm{R} \\sin \\mathrm{A}}=\\frac{\\cos \\mathrm{B}}{2 \\mathrm{R} \\sin \\mathrm{B}}=\\frac{\\cos \\mathrm{C}}{2 \\mathrm{R} \\sin \\mathrm{C}}$\r\n\r\n$\\Rightarrow \\cot A=\\cot B=\\cot C$\r\n\r\n$\\Rightarrow \\mathrm{A}=\\mathrm{B}=\\mathrm{C}=60^{\\circ} \\Rightarrow \\Delta \\mathrm{ABC}$ is equilateral\r\n\r\nHence, area of $\\Delta=\\frac{\\sqrt{3}}{4} \\mathrm{a}^{2}=\\sqrt{3}$.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7a96f5bfc7ab78ae6cb", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 2, "question": {"text": "In a triangle $\\mathrm{ABC},$ if $\\mathrm{a}=2, \\mathrm{~B}=60^{\\circ}$ and $\\mathrm{C}=75^{\\circ}$, then b equals", "image": null}, "options": [{"id": "kmlz2", "text": "$\\sqrt{3}$", "isCorrect": false, "image": null}, {"id": "0nXjS", "text": "$\\sqrt{6}$", "isCorrect": true, "image": null}, {"id": "qZ24A", "text": "$\\sqrt{9}$", "isCorrect": false, "image": null}, {"id": "ZTCqf", "text": "$1+\\sqrt{2}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{A}=180^{\\circ}-60^{\\circ}-75^{\\circ}=180^{\\circ}-135^{\\circ}=45^{\\circ}$\r\nNow, $\\frac{\\mathrm{a}}{\\sin \\mathrm{A}}=\\frac{\\mathrm{b}}{\\sin \\mathrm{B}}$\r\n$\\Rightarrow \\frac{2}{\\sin 45^{\\circ}}=\\frac{\\mathrm{b}}{\\sin 60^{\\circ}} \\Rightarrow \\mathrm{b}=\\frac{2 \\cdot(\\sqrt{3} / 2)}{1 / \\sqrt{2}}=\\sqrt{6}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e77e6f5bfc7ab78ae551", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "The random variable \\(\\mathrm{X}\\) has the following probability distribution\n\\(\\begin{array}{|c|c|c|c|c|c|}\n\\hline \\mathrm{x} & 0 & 1 & 2 & 3 & 4 \\\\\n\\hline \\mathrm{P}(\\mathrm{X}=\\mathrm{x}) & \\mathrm{k} & 3 \\mathrm{k} & 5 \\mathrm{k} & 2 \\mathrm{k} & \\mathrm{k} \\\\\n\\hline\n\\end{array}\\)\nThen the value of \\(P(X \\geq 2)\\) is", "image": null}, "options": [{"id": "k6L3F", "text": "\\(\\frac{1}{3}\\)", "image": null, "isCorrect": false}, {"id": "8m2In", "text": "\\(\\frac{2}{3}\\)", "image": null, "isCorrect": true}, {"id": "XhL9O", "text": "\\(\\frac{3}{4}\\)", "image": null, "isCorrect": false}, {"id": "zXB1Y", "text": "\\(\\frac{1}{4}\\)", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Since, \\(\\Sigma \\mathrm{P}_{\\mathrm{i}}(\\mathrm{X}=\\mathrm{x})=1\\)\n\\(\\begin{aligned}\n& \\therefore \\mathrm{k}+3 \\mathrm{k}+5 \\mathrm{k}+2 \\mathrm{k}+\\mathrm{k}=1 \\therefore 12 \\mathrm{k}=1 \\therefore \\mathrm{k}=\\frac{1}{12} \\\\\n& \\text { Now, } \\mathrm{P}(\\mathrm{X} \\geq 2)=\\mathrm{P}(\\mathrm{X}=2)+\\mathrm{P}(\\mathrm{X}=3)+\\mathrm{P}(\\mathrm{X}=4) \\\\\n& =5 \\mathrm{k}+2 \\mathrm{k}+\\mathrm{k}=8 \\mathrm{k}=8\\left(\\frac{1}{12}\\right)=\\frac{2}{3}\n\\end{aligned}\\)", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8706f5bfc7ab78aee30", "title": "Cosine Rule and Projection Formula", "totalQuestions": 1, "questions": [{"_id": "64c0e7d36f5bfc7ab78ae82b", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 2, "question": {"text": "In a $\\triangle A B C$, the lengths of the two larger sides are 10 and 9 units, respectively. If the angles are in $\\mathrm{AP}$, then the length of the third side can be", "image": null}, "options": [{"id": "FEeiK", "text": "$5 \\pm \\sqrt{6}$", "isCorrect": true, "image": null}, {"id": "3lvdY", "text": "$3 \\sqrt{3}$", "isCorrect": false, "image": null}, {"id": "omNsO", "text": "$\\underline{5}$", "isCorrect": false, "image": null}, {"id": "wqGEc", "text": "None of these", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Let A, B and $C$ be the three angles of $\\Delta A B C$ and Let $a=10$ and $b=9$ It is given that the angles are in $\\mathrm{AP}$. $\\therefore 2 \\mathrm{~B}=\\mathrm{A}+\\mathrm{C}$ on adding $\\mathrm{B}$ both the sides,\r\n\r\nwe get\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n3 \\mathrm{~B}=\\mathrm{A}+\\mathrm{B}+\\mathrm{C} \\\\\r\n\r\n\\Rightarrow 3 \\mathrm{~B}=180^{\\circ} \\Rightarrow \\mathrm{B}=60^{\\circ}\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nNow, we know $\\cos \\mathrm{B}=\\frac{\\mathrm{a}^{2}+\\mathrm{c}^{2}-\\mathrm{b}^{2}}{2 \\mathrm{ac}}$\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\Rightarrow \\cos 60^{\\circ}=\\frac{10^{2}+\\mathrm{c}^{2}-9^{2}}{2 \\times 10 \\times \\mathrm{c}} \\\\\r\n\r\n\\Rightarrow \\frac{1}{2}=\\frac{100+\\mathrm{c}^{2}-81}{20 \\mathrm{c}} \\\\\r\n\r\n\\Rightarrow \\mathrm{c}^{2}-10 \\mathrm{c}+19=0 \\Rightarrow \\mathrm{c}=5 \\pm \\sqrt{6}\r\n\r\n\\end{array}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e8706f5bfc7ab78aee2f", "title": "Circle Connected to Triangle", "totalQuestions": 1, "questions": [{"_id": "64c0e79b6f5bfc7ab78ae652", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "In an equilateral triangle, the in radius, circumradius and one of the ex-radii are in the ratio", "image": null}, "options": [{"id": "zLIaP", "text": "\\(2: 3: 5\\)", "image": null, "isCorrect": false}, {"id": "Ytq1Y", "text": "\\(1: 2: 3\\)", "image": null, "isCorrect": true}, {"id": "V9tbt", "text": "\\(3: 7: 9\\)", "image": null, "isCorrect": false}, {"id": "YP1Hv", "text": "\\(3: 7: 9\\)", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "We have \\(\\Delta=\\frac{\\sqrt{3}}{4} \\mathrm{a}^2, \\mathrm{~s}=\\frac{3 \\mathrm{a}}{2}\\)\n\\(\\therefore \\quad r=\\frac{\\Delta}{\\mathrm{s}}=\\frac{\\mathrm{a}}{2 \\sqrt{3}}, \\mathrm{R}=\\frac{\\mathrm{abc}}{4 \\Delta}=\\frac{\\mathrm{a}^3}{\\sqrt{3} \\mathrm{a}^2}=\\frac{\\mathrm{a}}{\\sqrt{3}}\\) and \\(r_1=\\frac{\\Delta}{s-a}=\\frac{\\sqrt{3} / 4 a^2}{a / 2}=\\frac{\\sqrt{3}}{2} a\\)\nHence, \\(\\mathrm{r}: \\mathrm{R}: \\mathrm{r}_1=\\frac{\\mathrm{a}}{2 \\sqrt{3}}: \\frac{\\mathrm{a}}{\\sqrt{3}}: \\frac{\\sqrt{3}}{2} \\mathrm{a}=1: 2: 3\\)", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

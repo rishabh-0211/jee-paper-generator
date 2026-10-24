@@ -1,0 +1,432 @@
+{
+  "index": 1,
+  "chapterId": "61e7bd79c8ca5ec1f00e8ceb",
+  "chapter": "Mathematics in Physics",
+  "exam": "BITSAT",
+  "subject": "Physics",
+  "totalTopics": 3,
+  "totalQuestions": 6,
+  "downloadTime": "2026-10-08 20:27:42",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e8516f5bfc7ab78aecc9",
+      "title": "Fundamentals of Vectors",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e7e86f5bfc7ab78ae8e4",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "<p>The velocity of a projectile at the initial point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math>&nbsp;is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>2</mn><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>-</mo><mn>3</mn><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover></mrow></mfenced><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>. Its velocity (in&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>) at point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math> is</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/37ddd8a8-ec7d-4555-bea7-f806e51fc14e-image.png\" style=\"width: 190px; height: 183px;\" /></p>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "WJXM9",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mn>2</mn><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>-</mo><mn>3</mn><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "UGyqN",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mn>2</mn><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>+</mo><mn>3</mn><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "vZsT8",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>-</mo><mn>3</mn><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "kEhFb",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>+</mo><mn>3</mn><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover></math>",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>From the figure, the <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>X</mi></math>-component remains unchanged while the <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Y</mi></math>-component is reverse. Then, the velocity at point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>2</mn><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>+</mo><mn>3</mn><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover></mrow></mfenced><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e8516f5bfc7ab78aecc8",
+      "title": "Addition and Subtraction of Vectors",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "64c0e78d6f5bfc7ab78ae5d9",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "The two vectors $\\overrightarrow{\\mathrm{A}}$ and $\\overrightarrow{\\mathrm{B}}$ are drawn from a common point and $\\overrightarrow{\\mathrm{C}}=\\overrightarrow{\\mathrm{A}}+\\overrightarrow{\\mathrm{B}},$ then angle\nbetween $\\overrightarrow{\\mathrm{A}}$ and $\\overrightarrow{\\mathrm{B}}$ is -\n(1) $90^{\\circ}$ if $\\mathrm{C}^{2}=\\mathrm{A}^{2}+\\mathrm{B}^{2}$\n(2) greater than $90^{\\circ}$ if $\\mathrm{C}^{2}<\\mathrm{A}^{2}+\\mathrm{B}^{2}$\n(3) greater than $90^{\\circ}$ if $\\mathrm{C}^{2}>\\mathrm{A}^{2}+\\mathrm{B}^{2}$\n(4) less than $90^{\\circ}$ if $\\mathrm{C}^{2}>\\mathrm{A}^{2}+\\mathrm{B}^{2}$\nCorrect options are -",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "1ZKrR",
+              "text": "1,2",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "N8RQQ",
+              "text": "1,2,3,4",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "PLCHn",
+              "text": "2,3,4",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "uytAh",
+              "text": "1,2,4",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution available",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7706f5bfc7ab78ae4db",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "Given that $\\overrightarrow{\\mathrm{A}}+\\overrightarrow{\\mathrm{B}}=\\overrightarrow{\\mathrm{R}}$ and $\\mathrm{A}^{2}+\\mathrm{B}^{2}=\\mathrm{R}^{2}$. The angle between $\\overrightarrow{\\mathrm{A}}$ and $\\overrightarrow{\\mathrm{B}}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "KT2CN",
+              "text": "0",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "HktK6",
+              "text": "$\\pi / 4$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "rCrtt",
+              "text": "$\\pi / 2$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "b6x6K",
+              "text": "$\\pi$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\cos \\theta=\\frac{\\mathrm{R}^{2}-\\mathrm{A}^{2}-\\mathrm{B}^{2}}{2 \\mathrm{~A} \\mathrm{~B}}=\\frac{\\mathrm{R}^{2}-\\mathrm{R}^{2}}{2 \\mathrm{AB}}=0$\n$\\therefore \\theta=\\pi / 2$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e8516f5bfc7ab78aecca",
+      "title": "Errors of Measurement",
+      "totalQuestions": 3,
+      "questions": [
+        {
+          "_id": "67726d13c49e8ef28ee2b40b",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "You measure two quantities as $A=1.0 \\mathrm{~m} \\pm 0.2 \\mathrm{~m}$, $B=2.0 \\mathrm{~m} \\pm 0.2 \\mathrm{~m}$. We should report correct value for $\\sqrt{A B}$ as",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "midHw",
+              "text": "$1.4 \\mathrm{~m} \\pm 0.4 \\mathrm{~m}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "aWYBZ",
+              "text": "$1.41 \\mathrm{~m} \\pm 0.15 \\mathrm{~m}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "AFRwY",
+              "text": "$1.4 \\mathrm{~m} \\pm 0.3 \\mathrm{~m}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3cZSo",
+              "text": "$1.4 \\mathrm{~m} \\pm 0.2 \\mathrm{~m}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given, $A=1.0 \\mathrm{~m} \\pm 0.2 \\mathrm{~m}, B=2.0 \\mathrm{~m} \\pm 0.2 \\mathrm{~m}$\nLet $Y=\\sqrt{A B}=\\sqrt{(1.0)(20)}=1.414 \\mathrm{~m}$\nRounding off to two significant digits\n$\\begin{aligned}\nY & =1.4 \\mathrm{~m} \\\\\n\\frac{\\Delta Y}{Y} & =\\frac{1}{2}\\left[\\frac{\\Delta A}{A}+\\frac{\\Delta B}{B}\\right] \\\\\n& =\\frac{1}{2}\\left[\\frac{0.2}{1.0}+\\frac{0.2}{2.0}\\right] \\\\\n& =\\frac{0.6}{2 \\times 20} \\\\\n\\Rightarrow \\quad \\Delta Y & =\\frac{0.6 Y}{2 \\times 20}=\\frac{0.6 \\times 1.4}{2 \\times 20}=0.212\n\\end{aligned}$\nRounding off to one significant digit,\n$\\Delta Y=0.2 \\mathrm{~m}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87a97ae24e9e2db8cc0",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Two resistances are given as $R_1=(10 \\pm$ $0.5) \\Omega$ and $R_2=(15 \\pm 0.5) \\Omega$. The percentage error in the measurement of equivalent resistance when they are connected in parallel is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "sbxtl",
+              "text": "<br />6.33",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "WZm7W",
+              "text": "<br />2.33",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "agqey",
+              "text": "<br />4.33",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "4KdwL",
+              "text": "<br />5.33",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Equivalent resistance in parallel combination is given by<br />$\\begin{aligned}<br />& \\frac{1}{R_{\\text {eq }}}=\\frac{1}{R_1}+\\frac{1}{R_2} \\\\<br />& \\Rightarrow R_{\\text {eq }}=\\frac{R_1 R_2}{R_1+R_2}=\\frac{10 \\times 15}{10+15}=6<br />\\end{aligned}$<br />Differentiating both sides, we get<br />$\\begin{aligned} & \\frac{\\Delta R_{\\text {eq }}}{\\mathrm{R}_{\\mathrm{eq}}^2}=\\frac{\\Delta \\mathrm{R}_1}{\\mathrm{R}_1^2}+\\frac{\\Delta \\mathrm{R}_2}{\\mathrm{R}_2^2} \\\\ & \\Rightarrow \\frac{\\Delta \\mathrm{R}_{\\mathrm{eq}}}{\\mathrm{R}_{\\mathrm{eq}}}=\\left(\\frac{\\Delta \\mathrm{R}_1}{\\mathrm{R}_1^2}+\\frac{\\Delta \\mathrm{R}_2}{\\mathrm{R}_2^2}\\right) \\mathrm{R}_{\\mathrm{eq}} \\\\ & =\\left(\\frac{0.5}{100}+\\frac{0.5}{225}\\right) \\cdot 6=\\left(\\frac{6 \\times 0.5}{25}\\right)\\left(\\frac{1}{4}+\\frac{1}{9}\\right)=\\frac{13}{300} \\\\ & \\frac{\\Delta \\mathrm{R}_{\\mathrm{eq}}}{\\mathrm{R}_{\\mathrm{eq}}} \\times 100=\\frac{13}{3}=4.33 \\%\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8106f5bfc7ab78aea41",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The heat generated in a circuit is given by $\\mathrm{Q}=\\mathrm{I}^{2} \\mathrm{Rt},$ where I is current, $\\mathrm{R}$ is resistance and tis time. If the percentage errors in measuring I. $\\mathrm{R}$ and $\\mathrm{t}$ are $2 \\%, 1 \\%$ and $1 \\%$ respectively, then the maximum error in measuring heat will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "iejjN",
+              "text": "$2 \\%$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "QVdW3",
+              "text": "$3 \\%$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "dvNU9",
+              "text": "$4 \\%$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "827Iu",
+              "text": "$6 \\%$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\begin{aligned} \\frac{\\Delta Q}{Q} \\times 100 &=\\frac{2 \\Delta I}{I} \\times 100+\\frac{\\Delta R}{R} \\times 100+\\frac{\\Delta t}{t} \\times 100 \\\\ &=2 \\times 2 \\%+1 \\%+1 \\%=6 \\% \\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

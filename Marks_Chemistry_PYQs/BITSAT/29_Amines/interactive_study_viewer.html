@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Amines PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚗️ BITSAT &bull; Amines</h1>
+        <div class="sub">Chemistry PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 29, "chapterId": "61e7bd731e4da5f9a9cd5e17", "chapter": "Amines", "exam": "BITSAT", "totalTopics": 3, "totalQuestions": 13, "downloadTime": "2026-10-08 20:03:01", "topics": [{"index": 1, "topicId": "64c0e8746f5bfc7ab78aee5e", "title": "Preparation and Properties of Amines", "totalQuestions": 9, "questions": [{"_id": "64c0e8066f5bfc7ab78ae9ed", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 1, "question": {"text": "For the reaction <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">C</mi><mn>6</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>5</mn></msub><mo>.</mo><msub><mi>NH</mi><mn>2</mn></msub><munderover><mo>&#8594;</mo><mrow><mn>180</mn><mo>&#176;</mo><mi mathvariant=\"normal\">C</mi></mrow><mrow><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><msub><mi>SO</mi><mn>4</mn></msub></mrow></munderover><munder><mrow><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mo>&#160;</mo><mi mathvariant=\"normal\">N</mi><mo>&#183;</mo><msub><mi mathvariant=\"normal\">C</mi><mn>6</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>4</mn></msub><mfenced><mrow><msub><mi>SO</mi><mn>3</mn></msub><mi mathvariant=\"normal\">H</mi></mrow></mfenced></mrow><mfenced><mi>Para</mi></mfenced></munder></math>&nbsp;the true statement about the product is", "image": null}, "options": [{"id": "HDp52", "text": "it does not exist as Zwitter ion", "isCorrect": false, "image": null}, {"id": "uFsPx", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><msub><mi>NH</mi><mn>2</mn></msub></math>&nbsp;group displays a powerful basic character", "isCorrect": false, "image": null}, {"id": "trMyD", "text": "it does not act as inner salt", "isCorrect": false, "image": null}, {"id": "AiVlh", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><msub><mi>SO</mi><mn>3</mn></msub><mi mathvariant=\"normal\">H</mi></math>,&nbsp;diminishes the basic character of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><msub><mi>NH</mi><mn>2</mn></msub></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/2fd89102-b824-4df8-abe9-b9abd3157e9b-image.png\" style=\"width: 388px; height: 248px;\" /></p><p>A zwitterion is a compound with no overall electrical charge, but which contains separate parts which are positively and negatively charged.</p><p>Sulphanilic acid exist as dipolar ion (zwitter ion); act as inner salt and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>SO</mi><mn>3</mn></msub><mi mathvariant=\"normal\">H</mi></math>&nbsp;group diminishes the basic character of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><msub><mi>NH</mi><mn>2</mn></msub></math>.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ec6f5bfc7ab78ae904", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 1, "question": {"text": "Maximum <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>pK</mi><mi mathvariant=\"normal\">b</mi></msub></math>&nbsp;value is of&nbsp;", "image": null}, "options": [{"id": "CUNn7", "text": "<p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/892301c2-dcab-4ce6-9d04-fd5c95c1f201-image.png\" style=\"width: 120px; height: 155px;\" /></p>", "isCorrect": false, "image": null}, {"id": "ojXle", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mfenced><mrow><msub><mi>CH</mi><mn>3</mn></msub><msub><mi>CH</mi><mn>2</mn></msub></mrow></mfenced><mn>2</mn></msub><mi>NH</mi></math>", "isCorrect": false, "image": null}, {"id": "10UIk", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mfenced><msub><mi>CH</mi><mn>3</mn></msub></mfenced><mn>2</mn></msub><mi>NH</mi></math>", "isCorrect": false, "image": null}, {"id": "Fw5aA", "text": "<p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/106826dd-1642-402e-80ef-d0ccfd7f88e9-image.png\" style=\"width: 200px; height: 59px;\" /></p>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>Maximum <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>pK</mi><mi mathvariant=\"normal\">b</mi></msub></math> (least basic) is (d) since, lone pair on<br />N-atom is used to delocalise <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#960;</mi></math> -electrons on two benzene<br />rings.</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/8d2d198b-a01d-4120-96c2-7c4b8d6b9d53-image.png\" style=\"width: 260px; height: 107px;\" /></p><p>Least basic has maximum value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>pK</mi><mi mathvariant=\"normal\">b</mi></msub></math>.</p><p>Since, in (d), lone pair of electrons over <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">N</mi></math>-atom are delocalised to two benzene rings, thus is least basic.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ea6f5bfc7ab78ae8fa", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 1, "question": {"text": "<p>In the reaction,&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CH</mi><mn>3</mn></msub><mo>&#183;</mo><msub><mi>CH</mi><mn>2</mn></msub><mo>&#183;</mo><mi>Cl</mi><mover><mo>&#10230;</mo><mi>KCN</mi></mover><mfenced><mi mathvariant=\"normal\">A</mi></mfenced><mover><mo>&#10230;</mo><msub><mi>LiAlH</mi><mn>4</mn></msub></mover><mfenced><mi mathvariant=\"normal\">P</mi></mfenced></math> end product <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi mathvariant=\"normal\">P</mi></mfenced></math> is</p>", "image": null}, "options": [{"id": "F3Uyu", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CH</mi><mn>3</mn></msub><msub><mi>CH</mi><mn>2</mn></msub><mo>&#183;</mo><msub><mi>NO</mi><mn>2</mn></msub></math>", "isCorrect": false, "image": null}, {"id": "mkgs7", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CH</mi><mn>3</mn></msub><msub><mi>CH</mi><mn>2</mn></msub><msub><mi>CH</mi><mn>2</mn></msub><msub><mi>NO</mi><mn>2</mn></msub></math>", "isCorrect": false, "image": null}, {"id": "S1Fuv", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CH</mi><mn>3</mn></msub><msub><mi>CH</mi><mn>2</mn></msub><msub><mi>NH</mi><mn>2</mn></msub></math>", "isCorrect": false, "image": null}, {"id": "YJrik", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CH</mi><mn>3</mn></msub><mo>&#183;</mo><msub><mi>CH</mi><mn>2</mn></msub><mo>&#183;</mo><msub><mi>CH</mi><mn>2</mn></msub><msub><mi>NH</mi><mn>2</mn></msub></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>When the reducing agent is lithium aluminium hydride, the aldehyde group is reduced to primary alcohol but the carbon-carbon double bond is unaffected.</p><p>In the given reaction the end product is (d). It is obtained<br />as follows.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CH</mi><mn>3</mn></msub><msub><mi>CH</mi><mn>2</mn></msub><mo>&#183;</mo><mi>Cl</mi><mover><mo>&#10230;</mo><mi>KCN</mi></mover><munder><mrow><msub><mi>CH</mi><mn>3</mn></msub><msub><mi>CH</mi><mn>2</mn></msub><mi>CN</mi></mrow><mrow><mo>(</mo><mi mathvariant=\"normal\">A</mi><mo>)</mo></mrow></munder><munderover><mo>&#8594;</mo><mrow><mo>(</mo><mi>Reduction</mi><mo>)</mo></mrow><msub><mi>LiAlH</mi><mn>4</mn></msub></munderover><msub><mi>CH</mi><mn>3</mn></msub><msub><mi>CH</mi><mn>2</mn></msub><msub><mi>CH</mi><mn>2</mn></msub><mo>&#183;</mo><msub><mi>NH</mi><mn>2</mn></msub></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ea6f5bfc7ab78ae8f5", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 2, "question": {"text": "The most reactive amine towards reactions with dil.&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>HCl</mi></math> is", "image": null}, "options": [{"id": "4UEtM", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CH</mi><mn>3</mn></msub><mo>-</mo><msub><mi>NH</mi><mn>2</mn></msub></math>", "isCorrect": false, "image": null}, {"id": "iBmw7", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mrow><mo>(</mo><msub><mi>CH</mi><mn>3</mn></msub><mo>)</mo></mrow><mn>2</mn></msub><mi>NH</mi></math>", "isCorrect": true, "image": null}, {"id": "8xYUZ", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mfenced><msub><mi>CH</mi><mn>3</mn></msub></mfenced><mn>3</mn></msub><mo>&#183;</mo><mi mathvariant=\"normal\">N</mi></math>", "isCorrect": false, "image": null}, {"id": "xeEhl", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>PhNH</mi><mn>2</mn></msub></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>More be the ability of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">N</mi></math>-atom of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><msub><mi>NH</mi><mn>2</mn></msub></math> group to donate lone pair of electrons to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>HCl</mi></math> (dil.), more be the reactivity of amine.</p><p>In (B) two alkyl groups are attached to the <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><msub><mi>NH</mi><mn>2</mn></msub></math> (having electron releasing nature) which increases the electron donating ability of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">N</mi></math>-atom of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><msub><mi>NH</mi><mn>2</mn></msub></math>. In aqueous medium, secondary amine is most basic.&nbsp;Hence, it&nbsp;is most reactive.&nbsp;&nbsp;In (D), due to resonance, lone pair of electrons get delocalised and its basic strength is very less.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7c16f5bfc7ab78ae798", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 2, "question": {"text": "Aniline reacts with phosgene and $\\mathrm{KOH}$ to form", "image": null}, "options": [{"id": "vIDoe", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/C850GYFrfmwvQGMoHGIrBmF5nN53RLL8HcfLWfzKab4.original.fullsize.png\">", "isCorrect": false, "image": null}, {"id": "uXlDj", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/peN6boTbGXanBvzmg3tZyKD7u8o-brBy7wVCGMaCBF0.original.fullsize.png\">", "isCorrect": false, "image": null}, {"id": "ZUAml", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/GMytsPxpWnuwUvakN9T4r5rI9A13g1b7AFDxUJmagmA.original.fullsize.png\">", "isCorrect": true, "image": null}, {"id": "Wi0pK", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/tfHPc7hUR1IZbkKinqfZirSSXq0roN29M53VbSz-IDY.original.fullsize.png\">", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{C}_{6} \\mathrm{H}_{5} \\mathrm{NH}_{2}+\\mathrm{COCl}_{2} \\longrightarrow \\mathrm{C}_{6} \\mathrm{H}_{5} \\mathrm{NH.COCl}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7a36f5bfc7ab78ae69c", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 3, "question": {"text": "Identify 'C' in the following reaction:\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/gPq-uYxrKXIVEG2dEf0rPldHts6lM50AET-nvrO5RZE.original.fullsize.png\">", "image": null}, "options": [{"id": "L9iV4", "text": "Benzamide", "isCorrect": false, "image": null}, {"id": "xVytA", "text": "Benzoic acid", "isCorrect": false, "image": null}, {"id": "H5B7s", "text": "Chlorobenzene", "isCorrect": false, "image": null}, {"id": "BXiMI", "text": "Aniline", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/8VdWdWnBNe6ZuHxYA_Tj0RGiIVZSDNAIh8kykcFE-XI.original.fullsize.png\">", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7956f5bfc7ab78ae623", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "Aniline reacts with nitrous acid to produce", "image": null}, "options": [{"id": "XPtTO", "text": "phenol", "image": null, "isCorrect": false}, {"id": "ytfJo", "text": "nitrobenzene", "image": null, "isCorrect": false}, {"id": "bSbl9", "text": "chlorobenzene", "image": null, "isCorrect": false}, {"id": "nh0WM", "text": "benzene diazonium chloride", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "When aniline is treated with nitrous acid in the presence of $\\mathrm{HCl}$, then benzene diazonium chloride is obtained.\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/sA5-zSN9xSSWKnD5yuRNhRQSKM92XDuwFnXAJI3G16Q.original.fullsize.png\">", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7956f5bfc7ab78ae620", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "Schotten-Baumann reaction is a reaction of phenols with", "image": null}, "options": [{"id": "0mJOi", "text": "benzoyl chloride and sodium hydroxide.", "image": null, "isCorrect": true}, {"id": "Znhuc", "text": "acetyl chloride and sodium hydroxide.", "image": null, "isCorrect": false}, {"id": "0InYf", "text": "salicylic acid and conc. $\\mathrm{H}_{2} \\mathrm{SO}_{4}$.", "image": null, "isCorrect": false}, {"id": "dSh0B", "text": "acetyl chloride and conc $\\mathrm{H}_{2} \\mathrm{SO}_{4}$.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/WBj_lWT234eV9FqLu0bDtcEjrjKE21EKAVHbwLeMJ6g.original.fullsize.png\"><br>\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/Cnjcx-Cwfm0WM4lOCaNK6DQW2O1AjgJAYWoBR4q05dE.original.fullsize.png\">", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7876f5bfc7ab78ae5a4", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "When ethylamine react with sodium metal, the gas evolved is", "image": null}, "options": [{"id": "Tf6Rg", "text": "$\\mathrm{H}_{2}$", "image": null, "isCorrect": true}, {"id": "BLdRp", "text": "$\\mathrm{C}_{2} \\mathrm{H}_{5}$", "image": null, "isCorrect": false}, {"id": "rC258", "text": "$\\mathrm{N}_{2}$", "image": null, "isCorrect": false}, {"id": "UBFaT", "text": "$\\mathrm{NH}_{3}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "When ethylamine is heated with sodium metal, then hydrogen gas is evolved. $2 \\mathrm{C}_{2} \\mathrm{H}_{5} \\mathrm{NH}_{2}+2 \\mathrm{Na} \\longrightarrow$\n$$\n2 \\mathrm{C}_{2} \\mathrm{H}_{5} \\overline{\\mathrm{N}} \\mathrm{HNa}^{+}+\\mathrm{H}_{2} \\uparrow\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8746f5bfc7ab78aee5f", "title": "Preparation and Properties of Cyanides", "totalQuestions": 1, "questions": [{"_id": "64c0e7b36f5bfc7ab78ae71b", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 2, "question": {"text": "Identify the prdouct $\\mathrm{C}$ in the series\r\n\r\n$$\r\n\r\n\\begin{aligned}\r\n\r\n\\mathrm{CH}_{3} \\mathrm{CN} \\frac{\\mathrm{Na} / \\mathrm{C}_{2} \\mathrm{H}_{5} \\mathrm{OH}}{\\longrightarrow} \\mathrm{A} & \\\\\r\n\r\n\\stackrel{\\mathrm{HNO}_{2}}{\\longrightarrow} \\mathrm{B} \\frac{\\mathrm{Cu} / 573 \\mathrm{~K}}{\\longrightarrow} \\mathrm{C}\r\n\r\n\\end{aligned}\r\n\r\n$$", "image": null}, "options": [{"id": "k52xo", "text": "$\\mathrm{CH}_{3} \\mathrm{COOH}$", "isCorrect": false, "image": null}, {"id": "ct8Vm", "text": "$\\mathrm{CH}_{3} \\mathrm{CH}_{2} \\mathrm{NHOH}$", "isCorrect": false, "image": null}, {"id": "HDxiT", "text": "$\\mathrm{CH}_{3} \\mathrm{CONH}_{2}$", "isCorrect": false, "image": null}, {"id": "NtdVi", "text": "$\\mathrm{CH}_{3} \\mathrm{CHO}$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/lw24-iE-YNe0nii00Gg2JHwVmx19iaaq_RT0SueLZFg.original.fullsize.png\">", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e8746f5bfc7ab78aee60", "title": "Preparation and Properties of Isocyanides", "totalQuestions": 3, "questions": [{"_id": "65b7b87e97ae24e9e2db8ce5", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "Primary amines can be distinguished from secondary and tertiary amines by reacting with", "image": null}, "options": [{"id": "zlq0j", "text": "<br />Chloroform and alcoholic $\\mathrm{KOH}$", "image": null, "isCorrect": true}, {"id": "PZymD", "text": "<br />Methyl iodide", "image": null, "isCorrect": false}, {"id": "5ornx", "text": "<br />Chloroform alone", "image": null, "isCorrect": false}, {"id": "LO3QG", "text": "<br />Zinc Dust", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$1^{\\circ}$ amines (aliphatic and aromatic) react with $\\mathrm{CHCl}_3 / \\mathrm{KOH}$ to yield isocyanide (foul smelling) This is known as carbylamine test which is not given by $2^{\\circ}$ and $3^{\\circ}$ amines.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8256f5bfc7ab78aeafd", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 2, "question": {"text": "$[\\mathrm{A}] \\stackrel{\\text { reduction }}{\\longrightarrow}[\\mathrm{B}] \\stackrel{\\mathrm{CHCl}_{3}+\\mathrm{KOH}}{\\longrightarrow}[\\mathrm{C}] \\stackrel{\\text { reduction }}{\\longrightarrow} \\mathrm{N}-$ Methylaniline, A is?", "image": null}, "options": [{"id": "Zn2Vn", "text": "Formaldehyde", "isCorrect": false, "image": null}, {"id": "sJpYj", "text": "Trichloromethane", "isCorrect": false, "image": null}, {"id": "doNCq", "text": "Nitrobenzene", "isCorrect": true, "image": null}, {"id": "k4VvE", "text": "Toluene", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/PDsYarnqvnc295Z_m5Jv-KN_v0rhAajUG7c3K8XplGY.original.fullsize.png\">", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7cd6f5bfc7ab78ae7fe", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 1, "question": {"text": "The carbylamine reaction is", "image": null}, "options": [{"id": "zCv51", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/EVuJWcyyAryG9k6z1moOv-NF-ugTwyHzXu10IlCNStk.original.fullsize.png\">", "isCorrect": false, "image": null}, {"id": "wPECW", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/Y1xRv6XaOvMfxarWorG3VgIYP2D00f8_2AjBHD2tuis.original.fullsize.png\">", "isCorrect": true, "image": null}, {"id": "9CHeM", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/7K2B8UfzAjEimME7HOo9doc9YelfoU9QVDxM0Cs-7Tk.original.fullsize.png\">", "isCorrect": false, "image": null}, {"id": "gD7v9", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/4ZDV-C1_YPnp1w-ET_JO-ofupUOA4a-JhJK_fDDpe50.original.fullsize.png\">", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Primary amines (aromatic or aliphatic) on warming with chloroform and alcoholic KOH, gives carbylamine having offensive smell. This reaction is called carbylamine reaction.\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/XOcOrHmBhgzAeKgYlWvaoHflmlTNtB0X0uz61zdqJ4U.original.fullsize.png\">", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Coordination Compounds PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚗️ BITSAT &bull; Coordination Compounds</h1>
+        <div class="sub">Chemistry PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 24, "chapterId": "61e7bd8115b9968c5625dc7d", "chapter": "Coordination Compounds", "exam": "BITSAT", "totalTopics": 6, "totalQuestions": 37, "downloadTime": "2026-10-08 20:02:58", "topics": [{"index": 1, "topicId": "64c0e8636f5bfc7ab78aed9c", "title": "Terminology of coordination compounds", "totalQuestions": 8, "questions": [{"_id": "67726d17c49e8ef28ee2b42e", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "Match List I with List II.\n\\begin{array}{llll}\\hline & {c}{\\begin{array}{c} List I \\\\(\\mathrm{Complex})\\end{array}} & & {c}{\\begin{array}{c} List II \\\\(Oxidation \\\\number of metal)\\end{array}} \\\\\\hline A. & \\mathrm{Ni}(\\mathrm{CO})_4 & I. & +1 \\\\\\hline B. & {\\left[\\mathrm{Fe}\\left(\\mathrm{H}_2 \\mathrm{O}\\right)_5 \\mathrm{NO}\\right]^{2+}} & II. & Zero \\\\\\hline C. & {\\left[\\mathrm{Co}(\\mathrm{CO})_5\\right]^{2-}} & III. & -1 \\\\\\hline D. & {\\left[\\mathrm{Cr}_2(\\mathrm{CO})_{10}\\right]^{2-}} & IV. & -2 \\\\\\hline\\end{array}\nChoose the correct answer from the options given below:", "image": null}, "options": [{"id": "9ka9H", "text": "A-II, B-I, C-IV, D-III", "image": null, "isCorrect": true}, {"id": "3XyDR", "text": "A-II, B-IV, C-I, D-III", "image": null, "isCorrect": false}, {"id": "ydLEA", "text": "A-II, B-III, C-I, D-IV", "image": null, "isCorrect": false}, {"id": "WVjF2", "text": "A-I, B-II, C-IV, D $\\_$III", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "The correct match is A-II, B-I, C-IV, D-III.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726d08c49e8ef28ee2b3bc", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "The correct statement among the following is;", "image": null}, "options": [{"id": "nxaIR", "text": "Ferrocene has two cyclohexadiene rings coordinated to iron atom.", "image": null, "isCorrect": false}, {"id": "1Hifm", "text": "Ferrocene has two cyclopentadienyl anion rings bonded to iron (II) ion.", "image": null, "isCorrect": true}, {"id": "iT2ON", "text": "Perxenate ion is $\\left[\\mathrm{XeO}_2 \\mathrm{~F}_2\\right]^{2-}$", "image": null, "isCorrect": false}, {"id": "WH3JG", "text": "Perxenate ion is tetrahedral is shape.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Ferocene is $\\mathrm{Fe}\\left(\\eta^5-\\mathrm{C}_5 \\mathrm{H}_5\\right)_2$\nPerxenate ion is $\\left[\\mathrm{XeO}_6\\right]^4$ which is octahedral.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726cfac49e8ef28ee2b34b", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "Ferrocene is:", "image": null}, "options": [{"id": "28YnW", "text": "$\\mathrm{Fe}\\left(\\mathrm{n}^5-\\mathrm{C}_5 \\mathrm{H}_5\\right)_2$", "image": null, "isCorrect": true}, {"id": "6fviX", "text": "$\\mathrm{Fe}\\left(\\mathrm{n}^2-\\mathrm{C}_5 \\mathrm{H}_5\\right)_2$", "image": null, "isCorrect": false}, {"id": "eFgmR", "text": "$\\mathrm{Cr}\\left(\\mathrm{n}^5-\\mathrm{C}_5 \\mathrm{H}_5\\right)_5$", "image": null, "isCorrect": false}, {"id": "zT5Jc", "text": "$\\mathrm{Os}\\left(\\mathrm{n}^5-\\mathrm{C}_5 \\mathrm{H}_5\\right)_2$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Ferrocene has two cyclopentadienyl rings coordinated to an $\\mathrm{Fe}^{2+}$ ion. The hapticity of each ring is 5 .", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8226f5bfc7ab78aeae3", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 1, "question": {"text": "Which one of the following coordination compounds is used to inhibit the growth of tumours?", "image": null}, "options": [{"id": "s3cte", "text": "Trans-platin", "isCorrect": false, "image": null}, {"id": "YgDac", "text": "EDTA complex of calcium", "isCorrect": false, "image": null}, {"id": "ox6RM", "text": "$\\left[\\left(\\mathrm{Ph}_{3} \\mathrm{P}\\right)_{3} \\mathrm{RhCl}\\right]$", "isCorrect": false, "image": null}, {"id": "XGW6V", "text": "Cis - platin", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Cisplatin $\\left[\\mathrm{Pt}\\left(\\mathrm{NH}_{3}\\right)_{2} \\mathrm{Cl}_{2}\\right]$ is used in cancer treatment.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "correct", "lastPracticed": "2024-11-27T10:00:34.261Z"}, {"_id": "64c0e7cf6f5bfc7ab78ae810", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 2, "question": {"text": "Which of the following represents hexadentate ligand?", "image": null}, "options": [{"id": "G5e5Q", "text": "EDTA", "isCorrect": true, "image": null}, {"id": "UBe01", "text": "DMG", "isCorrect": false, "image": null}, {"id": "TA7yw", "text": "Ethylenediamine", "isCorrect": false, "image": null}, {"id": "mDDwd", "text": "None of the above", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "EDTA is hexadentate ligand\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/Sjg1YAHX0iZTNFeGHJyM1tChDWhtg57g8c8TVsKYuO8.original.fullsize.png\">", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7cc6f5bfc7ab78ae7fd", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 2, "question": {"text": "Some salts containing two different metallic elements give test for only one of them in solution, such salts are", "image": null}, "options": [{"id": "R4Tx7", "text": "double salts", "isCorrect": false, "image": null}, {"id": "Hl88X", "text": "normal salts", "isCorrect": false, "image": null}, {"id": "5endJ", "text": "complex salts", "isCorrect": true, "image": null}, {"id": "LeFLL", "text": "None of these", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Complex compounds contains two different metallic elements but give test only for one of them. Because complex ions such as [Fe $\\left.(\\mathrm{CN})_{6}\\right]^{4-}$ of $\\mathrm{K}_{4}\\left[\\mathrm{Fe}(\\mathrm{CN})_{6}\\right],$ do not dissociate\r\n\r\ninto Fe $^{2+}$ and $\\mathrm{CN}$ -ions.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7956f5bfc7ab78ae61c", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "The most stable ion is", "image": null}, "options": [{"id": "3PrW9", "text": "$\\left[\\mathrm{Fe}(\\mathrm{OH})_{3}\\right]^{3-}$", "image": null, "isCorrect": false}, {"id": "59KPn", "text": "$\\left[\\mathrm{FeCl}_{6}\\right]^{3-}$", "image": null, "isCorrect": true}, {"id": "n5rra", "text": "$\\left[\\mathrm{Fe}(\\mathrm{CN})_{6}\\right]^{3-}$", "image": null, "isCorrect": false}, {"id": "Pilur", "text": "$\\left[\\mathrm{Fe}\\left(\\mathrm{H}_{2} \\mathrm{O}\\right)_{6}\\right]^{3+}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "A more basic ligand forms stable bond with metal ion, $\\mathrm{Cl}^{-}$ is most basic amongst all.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7786f5bfc7ab78ae521", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "$[\\mathrm{EDTA}]^{4-}$ is a :", "image": null}, "options": [{"id": "TZHZo", "text": "monodentate ligand", "image": null, "isCorrect": false}, {"id": "SA6Lj", "text": "bidentate ligand", "image": null, "isCorrect": false}, {"id": "exhaH", "text": "quadridentate ligand", "image": null, "isCorrect": false}, {"id": "1X45t", "text": "hexadentate ligand", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/4pNbWCwM9Q8g5M3Zef_BWJwpI_0axygrJ0aJXVdMCA8.original.fullsize.png\"><br>\nIt can act as hexadentate ligand as it has six donar atoms ( 2 nitrogen atoms and 4 oxygen atom).", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8646f5bfc7ab78aed9f", "title": "Nomenclature of coordination compounds", "totalQuestions": 4, "questions": [{"_id": "67726cfcc49e8ef28ee2b35c", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "IUPAC name of $\\left[\\mathrm{Pt}\\left(\\mathrm{NH}_3\\right)_2 \\mathrm{Cl}\\left(\\mathrm{NH}_2 \\mathrm{CH}_3\\right)\\right] \\mathrm{Cl}$ is", "image": null}, "options": [{"id": "nbEHh", "text": "(Amino methane) chloro (diammine) platinum (II) chloride.", "image": null, "isCorrect": false}, {"id": "fOpse", "text": "Chlorodiammine (methanamine) platinum(II) chloride.", "image": null, "isCorrect": false}, {"id": "g7IVW", "text": "Diamminechloro(methanamine) platinum(II) chloride.", "image": null, "isCorrect": true}, {"id": "TcOtA", "text": "Diamminechloro(methylamine) platinum(IV) chloride.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "The complex is a cationic complex with two ammine $\\left(\\mathrm{NH}_3\\right)$, one chloro $(\\mathrm{Cl})$ and one methanamine ligand.\nThus, the name will be :Diamminechloro (methanamine) platinum (II) chloride.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726cfac49e8ef28ee2b34c", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "The chemical name of calgon is", "image": null}, "options": [{"id": "Yzfle", "text": "Sodium hexametaphosphite", "image": null, "isCorrect": false}, {"id": "QJISo", "text": "Potassium hexametaphosphate", "image": null, "isCorrect": false}, {"id": "xcwCo", "text": "Calcium hexametaphosphate", "image": null, "isCorrect": false}, {"id": "rdaNw", "text": "Sodium hexametaphosphate", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Calgon is sodium hexametaphosphate with the formula $\\mathrm{Na}_6 \\mathrm{P}_6 \\mathrm{O}_{18}$ :", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7db6f5bfc7ab78ae875", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 1, "question": {"text": "The hypothetical complex chlorodiaquatriamminecobalt (III) chloride can be represented as", "image": null}, "options": [{"id": "hBZ08", "text": "$\\left[\\mathrm{CoCl}\\left(\\mathrm{NH}_{3}\\right)_{3}\\left(\\mathrm{H}_{2} \\mathrm{O}\\right)_{2}\\right] \\mathrm{Cl}_{2}$", "isCorrect": true, "image": null}, {"id": "0Fozt", "text": "$\\left[\\mathrm{Co}\\left(\\mathrm{NH}_{3}\\right)_{3}\\left(\\mathrm{H}_{2} \\mathrm{O}\\right) \\mathrm{Cl}_{3}\\right]$", "isCorrect": false, "image": null}, {"id": "IDeEY", "text": "$\\left[\\mathrm{Co}\\left(\\mathrm{NH}_{3}\\right)_{3}\\left(\\mathrm{H}_{2} \\mathrm{O}\\right)_{2} \\mathrm{Cl}\\right]$", "isCorrect": false, "image": null}, {"id": "wkzUI", "text": "$\\left[\\mathrm{Co}\\left(\\mathrm{NH}_{3}\\right)_{3}\\left(\\mathrm{H}_{2} \\mathrm{O}\\right)_{3}\\right] \\mathrm{Cl}_{3}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The complex chlorodiaquatriammine cobalt (III) chloride can have the structure $\\left[\\mathrm{CoCl}\\left(\\mathrm{NH}_{3}\\right)_{3}\\left(\\mathrm{H}_{2} \\mathrm{O}\\right)_{2}\\right] \\mathrm{Cl}_{2}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7cd6f5bfc7ab78ae801", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 1, "question": {"text": "The common name of $\\mathrm{K}\\left[\\mathrm{PtCl}_{3}\\left(\\eta^{2} \\cdot \\mathrm{C}_{2} \\mathrm{H}_{4}\\right)\\right]$ is", "image": null}, "options": [{"id": "zoic9", "text": "potassium salt", "isCorrect": false, "image": null}, {"id": "hL2n9", "text": "Zeise's salt", "isCorrect": true, "image": null}, {"id": "rvAFk", "text": "complex salt", "isCorrect": false, "image": null}, {"id": "MAORj", "text": "None of these", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Zeise's salt is common name of $\\mathrm{K}\\left[\\mathrm{P} \\mathrm{C}_{3}\\left(\\mathrm{\\eta}^{2}=\\mathrm{C}_{2} \\mathrm{H}_{4}\\right)\\right]$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e8646f5bfc7ab78aeda0", "title": "Isomerism of coordination compounds", "totalQuestions": 4, "questions": [{"_id": "67726d09c49e8ef28ee2b3bf", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "The type of isomerism present in nitropentammine chromium (III) chloride is", "image": null}, "options": [{"id": "FbhbS", "text": "optical", "image": null, "isCorrect": false}, {"id": "wYVO2", "text": "linkage", "image": null, "isCorrect": true}, {"id": "UW5UL", "text": "ionization", "image": null, "isCorrect": false}, {"id": "cK9lG", "text": "polymerisation.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "The chemical formula of nitropenta ammine chromium(III) chloride is:\n$\\left[\\mathrm{Cr}\\left(\\mathrm{NH}_3\\right)_5\\left(\\mathrm{NO}_2\\right)\\right] \\mathrm{Cl}_2$\nIt can exist in following two structures\n$\\left[\\mathrm{Cr}\\left(\\mathrm{NH}_3\\right)_5\\left(\\mathrm{NO}_2\\right)\\right] \\mathrm{Cl}_2$ and\nPentaamminenitrochromium (III) chloride\n$\\left[\\mathrm{Cr}\\left(\\mathrm{NH}_3\\right)_5 \\mathrm{ONO}\\right] \\mathrm{Cl}_2$\nPentaamminenitritochromium (III) chloride\nTherefore, the type of isomerism found in this compound is linkage isomerism as $\\mathrm{NO}_2$ group is linked through N as $-\\mathrm{NO}_2$ or through O as ONO.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87e97ae24e9e2db8cec", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "The compounds $\\left[\\mathrm{PtCl}_2\\left(\\mathrm{NH}_3\\right)_4\\right] \\mathrm{Br}_2$ and $\\left[\\mathrm{PtBr}_2\\left(\\mathrm{NH}_3\\right)_4\\right] \\mathrm{Cl}_2$ constitutes a pair of", "image": null}, "options": [{"id": "oUpac", "text": "<br />coordination isomers", "image": null, "isCorrect": false}, {"id": "dFxpm", "text": "<br />linkage isomers", "image": null, "isCorrect": false}, {"id": "FJ9v1", "text": "<br />ionization isomers", "image": null, "isCorrect": true}, {"id": "V8HtO", "text": "<br />optical isomers", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\left[\\mathrm{PtCl}_2\\left(\\mathrm{NH}_3\\right)_4\\right] \\mathrm{Br}_2$ and $\\left[\\mathrm{PtBr}_2\\left(\\mathrm{NH}_3\\right)_4\\right] \\mathrm{Cl}_2$ are ionisation isomers.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "correct", "lastPracticed": "2024-11-27T09:56:43.757Z"}, {"_id": "64c0e8306f5bfc7ab78aeb60", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 3, "question": {"text": "Select the correct statement about the complex\r\n$\\left[\\mathrm{Co}\\left(\\mathrm{NH}_3\\right)_5 \\mathrm{SO}_4\\right] \\mathrm{Br}$", "image": null}, "options": [{"id": "4R0pI", "text": "\r\nIts ionisation isomer is $\\left[\\mathrm{Co}\\left(\\mathrm{NH}_3\\right)_5 \\mathrm{Br}\\right] \\mathrm{SO}_4$.\r\n", "isCorrect": false, "image": null}, {"id": "m2GPh", "text": "\r\nIt gives yellow precipitate with $\\mathrm{AgNO}_3$.\r\n", "isCorrect": false, "image": null}, {"id": "ZM8Zs", "text": "\r\nIts ionisation isomer give while precipitate with $\\mathrm{BaCl}_2$\r\n", "isCorrect": false, "image": null}, {"id": "NLUBV", "text": "\r\nAll the above are correct statements.", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/UGHrZBe_j7OY0Ci6VlgJA61s8XKmHcpyVsfbq698xIc.original.fullsize.png\"><br><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/mpsL_7-9mRm24R4XN74Ege9AE3tgSCT43oR-6z39pRE.original.fullsize.png\"><br>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "correct", "lastPracticed": "2024-11-27T09:59:10.209Z"}, {"_id": "64c0e8236f5bfc7ab78aeaed", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 2, "question": {"text": "$\\left[\\mathrm{Fe}(\\mathrm{en})_{2}\\left(\\mathrm{H}_{2} \\mathrm{O}\\right)_{2}\\right]^{2+}+$ en $\\rightarrow$ complex $(\\mathrm{X})$. The correct statement about the complex (X) is -", "image": null}, "options": [{"id": "QCYHI", "text": "it is a low spin complex", "isCorrect": false, "image": null}, {"id": "83W78", "text": "it is diamagnetic", "isCorrect": false, "image": null}, {"id": "MsL3Z", "text": "it shows geometrical isomerism", "isCorrect": false, "image": null}, {"id": "zvhpU", "text": "(a) and (b) both", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Complex $\\mathrm{X}$ is $\\left[\\mathrm{Fe}(\\mathrm{en})_{3} \\mathrm{right}\\right]^{2+} ;$ as 'en' is a strong field ligand pairing of electrons will take place. $\\left[\\mathrm{Fe}(\\mathrm{en})_{3}\\right]^{2+}$ :\r\n\r\n$d^{2} s p^{3}$ hybridisation\r\n\r\nHence, hybridisation is $d^{2} s p^{3}$ and complex is diamagnetic. As it has 3 bidentate symmetrical 'en' ligands so it will not show geometrical isomerism.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "correct", "lastPracticed": "2024-11-27T10:00:51.644Z"}]}, {"index": 4, "topicId": "64c0e8636f5bfc7ab78aed9e", "title": "Werner's theory and Valence Bond Theory", "totalQuestions": 10, "questions": [{"_id": "67726d17c49e8ef28ee2b42d", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "Hybridisation and geometry of $\\left[\\mathrm{Ni}(\\mathrm{CN})_4\\right]^{2-}$ are", "image": null}, "options": [{"id": "twaSp", "text": "$s p^3 d$ and tetrahedral", "image": null, "isCorrect": false}, {"id": "u0D23", "text": "$s p^3$ and square planar", "image": null, "isCorrect": false}, {"id": "qyPkU", "text": "$s p^3$ and tetrahedral", "image": null, "isCorrect": false}, {"id": "rMqbr", "text": "$d s p^2$ and square planar", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "$\\operatorname{In}\\left[\\mathrm{Ni}(\\mathrm{CN})_4\\right]^{2-}, \\mathrm{Ni}^{2+}=3 d^8 4 s^0$\n$\\mathrm{AsCN}^{-}$is a strong ligand, pairing of electrons take place, Therefore,\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/3M-jDztERIO8220IcojGSckh1Tlnl_NeYQu4gfgaZ_k.original.fullsize.png\"/>\n$d s p^2$ hybridisation gives square planar geometry.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726d09c49e8ef28ee2b3c1", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "Identify, from the following, the diamagnetic, tetrahedral complex", "image": null}, "options": [{"id": "qnasa", "text": "$\\left[\\mathrm{Ni}(\\mathrm{Cl})_4\\right]^{2-}$", "image": null, "isCorrect": false}, {"id": "ujgBZ", "text": "$\\left[\\mathrm{Co}\\left(\\mathrm{C}_2 \\mathrm{O}_4\\right)_3\\right]^3$", "image": null, "isCorrect": false}, {"id": "0btLM", "text": "$\\left[\\mathrm{Ni}(\\mathrm{CN})_4\\right]^{2-}$", "image": null, "isCorrect": false}, {"id": "AoTpa", "text": "$\\left[\\mathrm{Ni}(\\mathrm{CO})_4\\right]$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "(a) Ni in $\\left[\\mathrm{Ni}(\\mathrm{Cl})_4\\right]^{2-}$ exist as $\\mathrm{Ni}^{2+}$ ion.\nCl is a weak field ligand (high spin). It will not cause pairing of electrons.\nHence, configuration of $\\left[\\mathrm{Ni}(\\mathrm{Cl})_4\\right]^{2-}$ is\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/WaLH-YIamr2A4NaIiLzXjpizSQ1rAQtB2e8NG2Ze5IA.original.fullsize.png\"/>\nTetrahedral with two unpaired electrons (i.e., paramagnetic) and has $s p^3$ hybridisation.\n(b) In $\\left[\\mathrm{Co}\\left(\\mathrm{C}_2 \\mathrm{O}_4\\right)_3\\right]^{3-},\\left(\\mathrm{C}_2 \\mathrm{O}_4\\right)_3^{2-}$ is a bidentate ligand thus, give octahedral structure.\n(c) In $\\left[\\mathrm{Ni}(\\mathrm{CN})_4\\right]^{2-}$, Ni exist as $\\mathrm{Ni}^{2+}$ ion.\n$\\mathrm{CN}^{-}$is a strong field ligand (low spin). Causes pairing of electrons of $3 d$ orbital.<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/P4Het3AiUZxtXo_o6SbFFTyNIwcwyz6tGzmZXpd8uFs.original.fullsize.png\"/>\nHence, the structure of is square planar and it is diamagnetic.\n(d) In $\\left[\\mathrm{Ni}(\\mathrm{CO})_4\\right]$, Ni has zero oxidation state. i.e.,<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/E4XkpkehfqjFdqiIw7a2dXLfPp8t3jzQ_zok7yyOMaE.original.fullsize.png\"/>\nCO is a strong field ligand causes rearrangement and pairing of electrons of $3 d$ and $4 s$ orbital.<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/d7ojM9KPIGbFaJT0Vs5CgT0Gh5mnP-spAtz3wftQK0A.original.fullsize.png\"/>\nStructure of $\\mathrm{Ni}\\left(\\mathrm{CO}_4\\right)$ is tetrahedral with $s p^3$ hybridisation and it is diamagnetic.\nHence, (4) is the correct answer.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726d08c49e8ef28ee2b3b7", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "Which of the following is correct order of ligand field strength?", "image": null}, "options": [{"id": "69O0k", "text": "$\\mathrm{CO} \\lt $ en $ \\lt \\mathrm{NH}_3 \\lt \\mathrm{C}_2 \\mathrm{O}_4^{2-} \\lt \\mathrm{S}^{2-}$", "image": null, "isCorrect": false}, {"id": "YmNUJ", "text": "$\\mathrm{S}^{2-} \\lt \\mathrm{C}_2 \\mathrm{O}_4^{2-} \\lt \\mathrm{NH}_3 \\lt \\mathrm{en} \\lt \\mathrm{CO}$", "image": null, "isCorrect": true}, {"id": "KWf8m", "text": "$\\mathrm{NH}_3 \\lt \\mathrm{en} \\lt \\mathrm{CO} \\lt \\mathrm{S}^{2-} \\lt \\mathrm{C}_2 \\mathrm{O}_4^{2-}$", "image": null, "isCorrect": false}, {"id": "LGNUg", "text": "$\\mathrm{S}^{2-} \\lt \\mathrm{NH}_3 \\lt \\mathrm{en} \\lt \\mathrm{CO} \\lt \\mathrm{C}_2 \\mathrm{O}_4^{2-}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "The increasing order of field strength of ligands (according to spectrochemical series)\n$\\mathrm{S}^{2-} \\lt \\mathrm{C}_2 \\mathrm{O}_4^{2-} \\lt \\mathrm{NH}_3 \\lt \\mathrm{en} \\lt \\mathrm{CO}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87597ae24e9e2db8c88", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "Among the ligands $\\mathrm{NH}_3$, en, $\\mathrm{CN}^{-}$and $\\mathrm{CO}$ the correct order of their increasing field strength, is :", "image": null}, "options": [{"id": "Fwypg", "text": "$\\mathrm{NH}_3 < $ en $ < \\mathrm{CN}^{-} < \\mathrm{CO}$", "image": null, "isCorrect": true}, {"id": "eEaMf", "text": "$\\mathrm{CN}^{-} < \\mathrm{NH}_3 < \\mathrm{NH}_3 < $ en", "image": null, "isCorrect": false}, {"id": "B19VD", "text": "en $ < \\mathrm{CN}^{-} < \\mathrm{NH}_3 < \\mathrm{CO}$", "image": null, "isCorrect": false}, {"id": "jaODp", "text": "$\\mathrm{CO} < \\mathrm{NH}_3 < $ en $ < \\mathrm{CN}^{-}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Ligands can be arranged in a series in the orders of increasing field strength as given below:<br />Weak field ligands:<br />$\\mathrm{I}^{-} < \\mathrm{Br}^{-} < \\mathrm{S}^{2-} < \\mathrm{SCN} < \\mathrm{Cl}^{-} < \\mathrm{N}_3^{-}, \\mathrm{F}^{-}$ $ < $ Urea, OH $ < $ oxalate<br />Strong field ligands<br />$\\mathrm{O}^{--} < \\mathrm{H}_2 \\mathrm{O} < \\mathrm{NCS}^{-} < \\text {EDTA } < \\mathrm{Py}, \\mathrm{NH}_3 < $ en $=\\mathrm{SO}_3^{-} < $bipy, Phen $ < \\mathrm{NO}_2^{-} < \\mathrm{CH}_3^{-}$ $ < \\mathrm{C}_6 \\mathrm{H}_5^{-} < \\mathrm{CN}^{-} < \\mathrm{CO}$<br />Such a series is termed as spectrochemical series. It is an experimentally determined series based on the absorption of light by complexes with different ligands.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "correct", "lastPracticed": "2024-11-27T09:56:57.397Z"}, {"_id": "64c0e8176f5bfc7ab78aea82", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 2, "question": {"text": "The $d$ -electron configurations of $\\mathrm{Cr}^{2+}, \\mathrm{Mn}^{2+}, \\mathrm{Fe}^{2+}$ and $\\mathrm{Co}^{2+}$ are $d^{4}, d^{5}, d^{6}$ and $d^{7}$ respectively. Which one of the following will exhibit the lowest paramagnetic behaviour?  (Atomic no. $\\mathrm{Cr}=24, \\mathrm{Mn}=25, \\mathrm{Fe}=26, \\mathrm{Co}=27)$", "image": null}, "options": [{"id": "rriHM", "text": "$\\left[\\mathrm{Co}\\left(\\mathrm{H}_{2} \\mathrm{O}\\right)_{6}\\right]^{2+}$", "isCorrect": true, "image": null}, {"id": "vSjsO", "text": "$\\left[\\mathrm{Cr}\\left(\\mathrm{H}_{2} \\mathrm{O}\\right)_{6}\\right]^{2+}$", "isCorrect": false, "image": null}, {"id": "XRgzt", "text": "$\\left[\\mathrm{Mn}\\left(\\mathrm{H}_{2} \\mathrm{O}\\right)_{6}\\right]^{2+}$", "isCorrect": false, "image": null}, {"id": "49P8b", "text": "$\\left[\\mathrm{Fe}\\left(\\mathrm{H}_{2} \\mathrm{O}\\right)_{6}\\right]^{2+}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/vbd2kuAN3rND1Bi_t98U12zf5nOBeglEF_jqJmrl2Tk.original.fullsize.png\"><br>\r\n\r\n$\\therefore$ Since $\\mathrm{Co}^{2+}$ has lowest no. of unpaired electrons hence lowest paramagnetic behaviour is shown by $\\left[\\mathrm{Co}\\left(\\mathrm{H}_{2} \\mathrm{O}\\right)_{6}\\right]^{2+}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7db6f5bfc7ab78ae874", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 2, "question": {"text": "Which of the following is paramagnetic?", "image": null}, "options": [{"id": "MobZI", "text": "$\\left[\\mathrm{Fe}(\\mathrm{CN})_{6}\\right]^{4-}$", "isCorrect": false, "image": null}, {"id": "MSZc6", "text": "$\\left[\\mathrm{Ni}(\\mathrm{CO})_{4}\\right]$", "isCorrect": false, "image": null}, {"id": "2soly", "text": "$\\left[\\mathrm{Ni}(\\mathrm{CN})_{4}\\right]^{2-}$", "isCorrect": false, "image": null}, {"id": "Ifkum", "text": "$\\left[\\mathrm{CoF}_{6}\\right]^{3-}$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{Fe}^{2+}$ electronic configuration is $[\\mathrm{Ar}] 3 \\mathrm{~d}^{6}$. Since CN is strong field ligand d electrons are paired . In $\\mathrm{Ni}(\\mathrm{CO})_{4} \\mathrm{O} . \\mathrm{S}$. of $\\mathrm{Ni}$ is zero electronic configuration is $[\\mathrm{Ar}\\} 3 \\mathrm{~d}^{8} 4 \\mathrm{~s}^{2} . \\mathrm{In}$\r\n\r\npresence of $\\mathrm{CO}$ it is $[\\mathrm{Ar}] 3 \\mathrm{~d}^{10} 4 \\mathrm{~s}^{0},$ electrons are paired. Electronic configuration of $\\mathrm{Ni}^{2+}$ $[\\mathrm{Ar}] 3 \\mathrm{~d}^{8} 4 \\mathrm{~s}^{0},$ due to $\\mathrm{CN}^{-}$ ligand all electrons\r\n\r\nare paired. $\\mathrm{Co}^{3+}$ is $[\\mathrm{Ar}] 3 \\mathrm{~d}^{6}$ since $\\mathrm{F}$ is weak ligand hence paramagnetic.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7db6f5bfc7ab78ae873", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 2, "question": {"text": "Which of the following arrangements does not represent the correct order of the property stated against it?", "image": null}, "options": [{"id": "b5KTH", "text": "$\\mathrm{V}^{2+}<\\mathrm{Cr}^{2+}<\\mathrm{Mn}^{2+}<\\mathrm{Fe}^{2+}$ :paramagnetic\r\n\r\nbehaviour", "isCorrect": true, "image": null}, {"id": "NioeU", "text": "$\\mathrm{Ni}^{2+}<\\mathrm{Co}^{2+}<\\mathrm{Fe}^{2+}<\\mathrm{Mn}^{2+}:$ ionic size", "isCorrect": false, "image": null}, {"id": "qDsPG", "text": "$\\mathrm{Co}^{3+}<\\mathrm{Fe}^{3+}<\\mathrm{Cr}^{3+}<\\mathrm{Sc}^{3+}:$ stability in\r\n\r\naqueous solution", "isCorrect": false, "image": null}, {"id": "ijT8E", "text": "$\\mathrm{Sc}<\\mathrm{Ti}<\\mathrm{Cr}<\\mathrm{Mn}:$ number of oxidation states", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "No Solution", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7c06f5bfc7ab78ae792", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 1, "question": {"text": "The correct order of magnetic moments (spin only values in B.M.) is:", "image": null}, "options": [{"id": "oOPuL", "text": "$\\left[\\mathrm{Fe}(\\mathrm{CN})_{6}\\right]^{4-}>\\left[\\mathrm{MnCl}_{4}\\right]^{2-}>\\left[\\mathrm{CoCl}_{4}\\right]^{2-}$", "isCorrect": false, "image": null}, {"id": "aXgEc", "text": "$\\left[\\mathrm{MnCl}_{4}\\right]^{2-}>\\left[\\mathrm{Fe}(\\mathrm{CN})_{6}\\right]^{4-}>\\left[\\mathrm{CoCl}_{4}\\right]^{2-}$", "isCorrect": false, "image": null}, {"id": "XT5TT", "text": "$\\left[\\mathrm{MnCl}_{4}\\right]^{2-}>\\left[\\mathrm{CoCl}_{4}\\right]^{2-}>\\left[\\mathrm{Fe}(\\mathrm{CN})_{6}\\right]^{4-}$", "isCorrect": true, "image": null}, {"id": "m6eRs", "text": "$\\left[\\mathrm{Fe}(\\mathrm{CN})_{6}\\right]^{4-}>\\left[\\mathrm{CoCl}_{4}\\right]^{2-}>\\left[\\mathrm{MnCl}_{4}\\right]^{2-}$\r\n\r\n(Atomic nos. : $\\mathrm{Mn}=25, \\mathrm{Fe}=26, \\mathrm{Co}=27)$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Number of unpaired electrons in central atom\r\n\r\n$$\r\n\r\n\\left[\\mathrm{Fe}(\\mathrm{CN})_{6}\\right]^{4-},\\left[\\mathrm{CoCl}_{4}\\right]^{2-},\\left[\\mathrm{MnCl}_{4}\\right]^{2-}\r\n\r\n$$\r\n\r\nzer three five The greater the number of unpaired electrons, the higher the value of magnetic\r\n\r\nmoment", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7b26f5bfc7ab78ae715", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 2, "question": {"text": "The pair in which both species have same magnetic moment (spin onlyvalue) is:", "image": null}, "options": [{"id": "gTlvc", "text": "$\\left[\\mathrm{Cr}\\left(\\mathrm{H}_{2} \\mathrm{O}\\right)_{6}\\right]^{2+},\\left[\\mathrm{CoCI}_{4}\\right]^{2-}$", "isCorrect": false, "image": null}, {"id": "b36q7", "text": "$\\left[\\mathrm{Cr}\\left(\\mathrm{H}_{2} \\mathrm{O}_{6}\\right)^{2+},\\left[\\mathrm{Fe}\\left(\\mathrm{H}_{2} \\mathrm{O}\\right)_{6}\\right]^{3+}\\right.$", "isCorrect": true, "image": null}, {"id": "UyC0x", "text": "$\\left[\\mathrm{Mn}\\left(\\mathrm{H}_{2} \\mathrm{O}\\right)_{6}\\right)^{2+},\\left[\\mathrm{Cr}\\left(\\mathrm{H}_{2} \\mathrm{O}\\right)_{6}\\right]^{2+}$", "isCorrect": false, "image": null}, {"id": "QXTNC", "text": "$\\left[\\mathrm{CoCl}_{4}\\right)^{2-},\\left[\\mathrm{Fe}\\left(\\mathrm{H}_{2} \\mathrm{O}\\right)_{6}\\right]^{2+}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\left[\\mathrm{Cr}\\left(\\mathrm{H}_{2} \\mathrm{O}\\right)_{6}\\right]^{2+} \\mathrm{Cr}$ is in $\\mathrm{Cr}^{2+}$ form\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/96z0AGm1c1kEuq8J6tQkVtXLnCLkVRLwbk_6e_pYPtE.original.fullsize.png\"><br>\r\n\r\nIn $\\left[\\mathrm{Fe}\\left(\\mathrm{H}_{2} \\mathrm{O}\\right)\\right]^{2+} \\mathrm{Fe}^{2+}$ form. Both will have 4\r\n\r\nunpaired electrons.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7a26f5bfc7ab78ae697", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 1, "question": {"text": "Among the following the lowest degree of paramagnetism per mole of the compound at 298 $\\mathrm{K}$ will be shown by", "image": null}, "options": [{"id": "6Mm9A", "text": "$\\mathrm{MnSO}_{4} \\cdot 4 \\mathrm{H}_{2} \\mathrm{O}$", "isCorrect": false, "image": null}, {"id": "AGHUk", "text": "$\\mathrm{CuSO}_{4} .5 \\mathrm{H}_{2} \\mathrm{O}$", "isCorrect": true, "image": null}, {"id": "Pwjia", "text": "$\\mathrm{FeSO}_{4} \\cdot 6 \\mathrm{H}_{2} \\mathrm{O}$", "isCorrect": false, "image": null}, {"id": "I49Sg", "text": "$\\mathrm{NiSO}_{4} \\cdot 6 \\mathrm{H}_{2} \\mathrm{O}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\begin{array}{lllll}\\text { Ion } & \\mathrm{Mn}^{2+} & \\mathrm{Cu}^{2+} & \\mathrm{Fe}^{2+} & \\mathrm{Ni}^{2+} \\\\ \\text { EC } & 3 d^{5} & 3 d^{9} & 3 d^{6} & 3 d^{8} \\\\ \\text { Number of } & 5 & 1 & 4 & 2\\end{array}$ \r\nunpaired electron \r\nHence lowest paramagnetism is shown by $\\mathrm{CuSO}_{4} \\cdot 5 \\mathrm{H}_{2} \\mathrm{O}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 5, "topicId": "64c0e8636f5bfc7ab78aed9d", "title": "Crystal Field Theory", "totalQuestions": 10, "questions": [{"_id": "67726cfdc49e8ef28ee2b364", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "Which of the following complexes will exhibit maximum attraction to an applied magnetic field?", "image": null}, "options": [{"id": "esb7z", "text": "$\\left[\\mathrm{Zn}\\left(\\mathrm{H}_2 \\mathrm{O}\\right)_6\\right]^{2+}$", "image": null, "isCorrect": false}, {"id": "nMHjS", "text": "$\\left[\\mathrm{Co}\\left(\\mathrm{H}_2 \\mathrm{O}\\right)_6\\right]^{2+}$", "image": null, "isCorrect": true}, {"id": "iOp2A", "text": "$\\left[\\mathrm{Co}(\\mathrm{en})_3\\right]^{3+}$", "image": null, "isCorrect": false}, {"id": "VU5SD", "text": "$\\left[\\mathrm{Ni}\\left(\\mathrm{H}_2 \\mathrm{O}\\right)_6\\right]^{2+}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Complex with maximum number of unpaired electron will exhibit maximum attraction to an applied magnetic field.\n$\\left[\\mathrm{Zn}\\left(\\mathrm{H}_2 \\mathrm{O}\\right)_6\\right]^{2+} \\rightarrow \\mathrm{d}^{10}$ system $\\rightarrow \\mathrm{t}_{2 \\mathrm{~g}}^6 \\mathrm{e}_{\\mathrm{g}}^4$\n0 unpaired $\\mathrm{e}^{-}$\n$\\left[\\mathrm{Co}\\left(\\mathrm{H}_2 \\mathrm{O}\\right)_6\\right]^{2+} \\rightarrow \\mathrm{d}^7$ system $\\rightarrow \\mathrm{t}_{2 \\mathrm{~g}}^{5} \\mathrm{e}_{\\mathrm{g}}^2$\n3 unpaired $\\mathrm{e}^{-}$\n$\\left[\\mathrm{Co}(\\mathrm{en})_3\\right]^{3+} \\rightarrow \\mathrm{d}^6$ system $\\rightarrow \\mathrm{t}_{2 \\mathrm{~g}}^6 \\mathrm{e}_{\\mathrm{g}}^0$\n0 unpaired $\\mathrm{e}^{-}$\n$\\left[\\mathrm{Ni}\\left(\\mathrm{H}_2 \\mathrm{O}\\right)_6\\right]^{2+} \\rightarrow \\mathrm{d}^8$ system $\\rightarrow \\mathrm{t}_{2 \\mathrm{~g}}^{6} \\mathrm{e}_{\\mathrm{g}}^2$\n2 unpaired e", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726cfbc49e8ef28ee2b355", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "The complex with highest magnitude of crystal field splitting energy $\\left(\\Delta_0\\right)$ is", "image": null}, "options": [{"id": "PBUgQ", "text": "$\\left[\\mathrm{Cr}\\left(\\mathrm{OH}_2\\right)_6\\right]^{3+}$", "image": null, "isCorrect": true}, {"id": "qQc3q", "text": "$\\left[\\mathrm{Ti}\\left(\\mathrm{OH}_2\\right)_6\\right]^{3+}$", "image": null, "isCorrect": false}, {"id": "bQHAL", "text": "$\\left[\\mathrm{Fe}\\left(\\mathrm{OH}_2\\right)_6\\right]^{3+}$", "image": null, "isCorrect": false}, {"id": "MRg26", "text": "$\\left[\\mathrm{Mn}\\left(\\mathrm{OH}_2\\right)_6\\right]^{3+}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "smaller cations prefer coordinate bonding due to greater polarizing power. $\\mathrm{Ti}^{+3}=67 \\mathrm{pm}$ radius, $\\mathrm{Cr}^{3+}=62 \\mathrm{pm}$ radius $\\mathrm{Mn}^{+3}=65 \\mathrm{pm}$ radius, $\\mathrm{Fe}^{+3}=65 \\mathrm{pm}$ radius So, $\\mathrm{Cr}^{3+}$ has highest tendency to attract ligand.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8306f5bfc7ab78aeb5a", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 3, "question": {"text": "What is the hybridisation of $\\left[\\mathrm{CrF}_6\\right]^{3-}$ ?", "image": null}, "options": [{"id": "s3njy", "text": "\r\n$s p^3 d$\r\n", "isCorrect": false, "image": null}, {"id": "qlA5u", "text": "\r\n$s p^3 d^2$\r\n", "isCorrect": false, "image": null}, {"id": "7oRfW", "text": "\r\n$d^2 s p^3$\r\n", "isCorrect": true, "image": null}, {"id": "4hcuk", "text": "\r\n$d^2 s p$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The electronic configuration of $\\mathrm{Cr}$ is $[\\mathrm{Ar}] 3 d^5 4 s^1$.\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/GRgumZbGj8rJxG3h3aRG8kzu9auCpNa7OEI4p3WJjE4.original.fullsize.png\"><br>\r\n$\\left[\\mathrm{CrF}_6\\right]^{3-}$ has $d^2 s p^3$-hybridisation and octahedral geometry.<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/P530dI7r3bZQFwuTOvRrhNCiJwjR2dfidwr2pm055Pg.original.fullsize.png\"><br>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "correct", "lastPracticed": "2024-11-27T09:57:24.457Z"}, {"_id": "64c0e8066f5bfc7ab78ae9e9", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 2, "question": {"text": "For the octahedral complex, which of the following <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">d</mi></math>-electron configuration will give maximum value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CFSE</mi></math>", "image": null}, "options": [{"id": "rhox4", "text": "high&nbsp;spin,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">d</mi><mn>6</mn></msup></math>", "isCorrect": false, "image": null}, {"id": "35MDl", "text": "low spin, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">d</mi><mn>4</mn></msup></math>", "isCorrect": false, "image": null}, {"id": "j7oHp", "text": "Iow spin, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">d</mi><mn>5</mn></msup></math>", "isCorrect": true, "image": null}, {"id": "Sl5YM", "text": "high spin, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">d</mi><mn>7</mn></msup></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">&#916;</mi><mn>0</mn></msub><mo>=</mo><mfenced><mrow><mo>-</mo><mn>0</mn><mo>.</mo><mn>4</mn><mo>&#215;</mo><msub><mi>nt</mi><mrow><mn>2</mn><mi mathvariant=\"normal\">g</mi></mrow></msub></mrow></mfenced><mo>+</mo><mfenced><mrow><mn>0</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><msub><mi>ne</mi><mi mathvariant=\"normal\">g</mi></msub></mrow></mfenced></math></p><p>where, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>=</mo></math>number of electrons in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>nt</mi><mrow><mn>2</mn><mi mathvariant=\"normal\">g</mi></mrow></msub></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>ne</mi><mi mathvariant=\"normal\">g</mi></msub></math>.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CFSE</mi></math> of given <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#945;</mi></math> -electrons configuration are as follows</p><p>a. For high spin, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">d</mi><mn>6</mn></msup></math>;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">&#916;</mi><mn>0</mn></msub><mfenced><mi>CFSE</mi></mfenced><mo>=</mo><mo>-</mo><mn>0</mn><mo>.</mo><mn>4</mn><mo>&#215;</mo><mn>4</mn><mo>+</mo><mn>0</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><mn>2</mn><mo>=</mo><mo>-</mo><mn>0</mn><mo>.</mo><mn>4</mn></math></p><p>b. For low spin, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">d</mi><mn>4</mn></msup></math>;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">&#916;</mi><mn>0</mn></msub><mfenced><mi>CFSE</mi></mfenced><mo>=</mo><mo>-</mo><mn>0</mn><mo>.</mo><mn>4</mn><mo>&#215;</mo><mn>4</mn><mo>+</mo><mn>0</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><mn>0</mn><mo>=</mo><mn>1</mn><mo>.</mo><mn>6</mn></math></p><p>c. For low spin&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">d</mi><mn>5</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">&#916;</mi><mn>0</mn></msub><mfenced><mi>CFSE</mi></mfenced><mo>=</mo><mo>-</mo><mn>0</mn><mo>.</mo><mn>4</mn><mo>&#215;</mo><mn>5</mn><mo>+</mo><mn>0</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><mn>0</mn><mo>=</mo><mo>-</mo><mn>2</mn><mo>.</mo><mn>0</mn></math></p><p>d. For high spin, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">d</mi><mn>7</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">&#916;</mi><mn>0</mn></msub><mfenced><mi>CFSE</mi></mfenced><mo>=</mo><mo>-</mo><mn>0</mn><mo>.</mo><mn>4</mn><mo>&#215;</mo><mn>5</mn><mo>+</mo><mn>0</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><mn>2</mn><mo>=</mo><mo>-</mo><mn>0</mn><mo>.</mo><mn>8</mn></math></p><p>Neglecting <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mi>ve</mi></math> sign (as it indicates that energy is released).</p><p>Hence, maximum <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">&#916;</mi><mn>0</mn></msub></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi>CFSE</mi></mfenced></math> value is shown by low spin <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">d</mi><mn>5</mn></msup></math> configuration.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7f86f5bfc7ab78ae96d", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 1, "question": {"text": "Which of the following is the correct order for the wavelength if absorption in the visible region.", "image": null}, "options": [{"id": "J5fJR", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced open=\"[\" close=\"]\"><mrow><mi>Ni</mi><msub><mfenced><msub><mi>NO</mi><mn>2</mn></msub></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>4</mn><mo>-</mo></mrow></msup><mo>&#60;</mo><msup><mfenced open=\"[\" close=\"]\"><mrow><mi>Ni</mi><msub><mfenced><msub><mi>NH</mi><mn>3</mn></msub></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&#60;</mo><msup><mfenced open=\"[\" close=\"]\"><mrow><mi>Ni</mi><msub><mfenced><mrow><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></mrow></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>2</mn><mo>+</mo></mrow></msup></math>", "isCorrect": true, "image": null}, {"id": "1PLW3", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced open=\"[\" close=\"]\"><mrow><mi>Ni</mi><msub><mfenced><msub><mi>NO</mi><mn>2</mn></msub></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>4</mn><mo>-</mo></mrow></msup><mo>&#60;</mo><msup><mfenced open=\"[\" close=\"]\"><mrow><mi>Ni</mi><msub><mfenced><mrow><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></mrow></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&#60;</mo><msup><mfenced open=\"[\" close=\"]\"><mrow><mi>Ni</mi><msub><mfenced><msub><mi>NH</mi><mn>3</mn></msub></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>2</mn><mo>+</mo></mrow></msup></math>", "isCorrect": false, "image": null}, {"id": "3PLxp", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced open=\"[\" close=\"]\"><mrow><mi>Ni</mi><msub><mfenced><mrow><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></mrow></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&#60;</mo><msup><mfenced open=\"[\" close=\"]\"><mrow><mi>Ni</mi><msub><mfenced><msub><mi>NH</mi><mn>3</mn></msub></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&#60;</mo><msup><mfenced open=\"[\" close=\"]\"><mrow><mi>Ni</mi><msub><mfenced><msub><mi>NO</mi><mn>2</mn></msub></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>4</mn><mo>-</mo></mrow></msup></math>", "isCorrect": false, "image": null}, {"id": "bRGhN", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced open=\"[\" close=\"]\"><mrow><mi>Ni</mi><msub><mfenced><msub><mi>NH</mi><mn>3</mn></msub></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&#60;</mo><msup><mfenced open=\"[\" close=\"]\"><mrow><mi>Ni</mi><msub><mfenced><mrow><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></mrow></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&#60;</mo><msup><mfenced open=\"[\" close=\"]\"><mrow><mi>Ni</mi><msub><mfenced><msub><mi>NO</mi><mn>2</mn></msub></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>4</mn><mo>-</mo></mrow></msup></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>When central metal ion is same (here <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Ni</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></math> ), the absorption of colour depends on the ligand.</p><p>According to spectrochemical series, various ligands are as follows</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">I</mi><mo>&#60;</mo><msup><mi>Br</mi><mo>-</mo></msup><mo>&#60;</mo><msup><mi>Cl</mi><mo>-</mo></msup><mo>&#60;</mo><msubsup><mi>NO</mi><mn>3</mn><mo>-</mo></msubsup><mo>&#60;</mo><msup><mi mathvariant=\"normal\">F</mi><mo>-</mo></msup><mo>&#60;</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#60;</mo><msub><mi>NH</mi><mn>3</mn></msub><mo>&#60;</mo><msubsup><mi>NO</mi><mn>2</mn><mo>-</mo></msubsup><mo>&#60;</mo><msup><mi>CN</mi><mo>-</mo></msup><mo>&#60;</mo><mi>CO</mi></math></p><p>Thus, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></math>&nbsp;is the weakest ligand among these, therefore the absorbed energy will be lowest in<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced close=\"]\" open=\"[\"><mrow><mi>Ni</mi><msub><mfenced><mrow><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></mrow></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>,</mo></math> so it will absorb highest wavelength (red light).</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">E</mi><mo>&#8733;</mo><mfrac><mn>1</mn><mi mathvariant=\"normal\">&#955;</mi></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math>&nbsp;The order of increasing wavelength is</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced close=\"]\" open=\"[\"><mrow><mi>Ni</mi><msub><mfenced><msub><mi>NO</mi><mn>2</mn></msub></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>4</mn><mo>-</mo></mrow></msup><mo>&#60;</mo><msup><mfenced close=\"]\" open=\"[\"><mrow><mi>Ni</mi><msub><mfenced><msub><mi>NH</mi><mn>3</mn></msub></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&#60;</mo><msup><mfenced close=\"]\" open=\"[\"><mrow><mi>Ni</mi><msub><mfenced><mrow><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></mrow></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>2</mn><mo>+</mo></mrow></msup></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ed6f5bfc7ab78ae910", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 2, "question": {"text": "Which of the following shows maximum magnetic moment?&nbsp;", "image": null}, "options": [{"id": "VFXOm", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Mg</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></math>", "isCorrect": false, "image": null}, {"id": "kHTlM", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Ti</mi><mrow><mn>3</mn><mo>+</mo></mrow></msup></math>", "isCorrect": false, "image": null}, {"id": "9PQLi", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">V</mi><mrow><mn>3</mn><mo>+</mo></mrow></msup></math>", "isCorrect": false, "image": null}, {"id": "XsypI", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Fe</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>More be the number of unpaired electrons <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8594;</mo></math> more be the magnetic moment.</p><p>and</p><p>Number of unpaired electrons in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Mg</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>=</mo><mn>0</mn></math></p><p>Number of unpaired electrons in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Ti</mi><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo>=</mo><mn>1</mn></math></p><p>Number of unpaired electrons in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">V</mi><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo>=</mo><mn>2</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Fe</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>=</mo><mn>4</mn></math></p><p>Number of unpaired electrons in</p><p>Thus, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Fe</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></math> show maximum value of magnetic moment <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">&#956;</mi><mo>)</mo></math>.</p><p>also, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#956;</mi><mo>=</mo><msqrt><mi mathvariant=\"normal\">n</mi><mo>(</mo><mi mathvariant=\"normal\">n</mi><mo>+</mo><mn>2</mn><mo>)</mo></msqrt></math>.&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>BM</mo></math>&nbsp;(<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>=</mo></math> Number of unpaired electrons).</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ed6f5bfc7ab78ae90f", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 1, "question": {"text": "The hybridisation of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Fe</mi></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">K</mi><mn>3</mn></msub><mo>[</mo><mi>Fe</mi><mo>(</mo><mi>CN</mi><msub><mo>)</mo><mn>6</mn></msub><mo>]</mo></math> is", "image": null}, "options": [{"id": "68Qzv", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>sp</mi><mn>3</mn></msup></math>", "isCorrect": false, "image": null}, {"id": "AcKqf", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>dsp</mi><mn>3</mn></msup></math>", "isCorrect": false, "image": null}, {"id": "32czM", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>sp</mi><mn>3</mn></msup><msup><mi mathvariant=\"normal\">d</mi><mn>2</mn></msup></math>", "isCorrect": false, "image": null}, {"id": "apuvI", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">d</mi><mn>2</mn></msup><msup><mi>sp</mi><mn>3</mn></msup></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>Electronic configuration of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Fe</mi><mo>=</mo><mo>[</mo><mi>Ar</mi><mo>]</mo><mn>4</mn><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mn>2</mn></msup><mn>3</mn><mo>&#160;</mo><msup><mi mathvariant=\"normal\">d</mi><mn>6</mn></msup></math>&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Fe</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>=</mo><mo>[</mo><mi>Ar</mi><mo>]</mo><mn>3</mn><msup><mi mathvariant=\"normal\">d</mi><mn>6</mn></msup></math></p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/e4b105c2-28c7-4742-ac7e-a200f29b22d6-image.png\" style=\"width: 400px; height: 78px;\" /></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>CN</mi><mo>-</mo></msup></math> are strong field ligands</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/6019f557-2bcb-415a-bcc6-8620cc2a7d96-image.png\" style=\"width: 400px; height: 58px;\" /></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">d</mi><mn>2</mn></msup><msup><mi>sp</mi><mn>3</mn></msup></math> hybridisation</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo><mo>&#160;</mo><msup><mi>CN</mi><mo>-</mo></msup></math> is a strong ligand and from six coordinate&nbsp;bonds with&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Fe</mi><mrow><mn>3</mn><mo>+</mo></mrow></msup></math> . Thus <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Fe</mi></math> show <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">d</mi><mn>2</mn></msup><msup><mi>sp</mi><mn>3</mn></msup></math> hybridisation in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">K</mi><mn>3</mn></msub><mi>Fe</mi><mo>(</mo><mi>CN</mi><msub><mo>)</mo><mn>6</mn></msub></math>.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7eb6f5bfc7ab78ae8fe", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 2, "question": {"text": "Which of the following is a diamagnetic complex", "image": null}, "options": [{"id": "2qTHU", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced open=\"[\" close=\"]\"><mrow><mi>Co</mi><msub><mfenced><msub><mi>NH</mi><mn>3</mn></msub></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>3</mn><mo>+</mo></mrow></msup></math>", "isCorrect": true, "image": null}, {"id": "BWkus", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced open=\"[\" close=\"]\"><msub><mi>NiCl</mi><mn>4</mn></msub></mfenced><mrow><mn>2</mn><mo>-</mo></mrow></msup></math>", "isCorrect": false, "image": null}, {"id": "wquEi", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced open=\"[\" close=\"]\"><msub><mi>CuCl</mi><mn>4</mn></msub></mfenced><mrow><mn>2</mn><mo>-</mo></mrow></msup></math>", "isCorrect": false, "image": null}, {"id": "3IFD2", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced open=\"[\" close=\"]\"><mrow><mi>Fe</mi><msub><mfenced><mrow><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></mrow></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>3</mn><mo>+</mo></mrow></msup></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Among the given option (a) is a diamagnetic complex.</p><p>(a) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced close=\"]\" open=\"[\"><mrow><mi>Co</mi><msub><mfenced><msub><mi>NH</mi><mn>3</mn></msub></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo>&#8658;</mo><mi>Co</mi><mfenced><mn>27</mn></mfenced><mo>&#8658;</mo><msup><mi>Co</mi><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo>=</mo><mn>3</mn><msup><mi mathvariant=\"normal\">d</mi><mn>6</mn></msup><mn>4</mn><msup><mi mathvariant=\"normal\">s</mi><mn>0</mn></msup></math>.</p><p>Thus, has no unpaired electrons and is a diamagnetic complex.</p><p>(b) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced close=\"]\" open=\"[\"><msub><mi>NiCl</mi><mn>4</mn></msub></mfenced><mrow><mn>2</mn><mo>-</mo></mrow></msup><mo>&#8658;</mo><mi>Ni</mi><mfenced><mn>28</mn></mfenced><mo>&#8658;</mo><msup><mi>Ni</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>=</mo><mn>3</mn><msup><mi mathvariant=\"normal\">d</mi><mn>8</mn></msup><mn>4</mn><msup><mi mathvariant=\"normal\">s</mi><mn>0</mn></msup></math>&nbsp;</p><p>Thus, has two unpaired electrons is paramagnetic.</p><p>(c) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced close=\"]\" open=\"[\"><msub><mi>CuCl</mi><mn>4</mn></msub></mfenced><mrow><mn>2</mn><mo>-</mo></mrow></msup><mo>&#8658;</mo><mi>Cu</mi><mfenced><mn>29</mn></mfenced><mo>&#8658;</mo><msup><mi>Cu</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>=</mo><mn>3</mn><msup><mi mathvariant=\"normal\">d</mi><mn>9</mn></msup><mn>4</mn><msup><mi mathvariant=\"normal\">s</mi><mn>0</mn></msup></math></p><p>Thus, has one unpaired electrons and is paramagnetic.</p><p>(d) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced close=\"]\" open=\"[\"><mrow><mi>Fe</mi><msub><mfenced><mrow><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></mrow></mfenced><mn>6</mn></msub></mrow></mfenced><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo>&#8658;</mo><mi>Fe</mi><mfenced><mn>26</mn></mfenced><mo>&#8658;</mo><msup><mi>Fe</mi><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo>=</mo><mn>3</mn><msup><mi mathvariant=\"normal\">d</mi><mn>5</mn></msup><mn>4</mn><msup><mi mathvariant=\"normal\">s</mi><mn>0</mn></msup></math></p><p>Thus, has five unpaired electrons and is paramagnetic.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7cc6f5bfc7ab78ae7f7", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 1, "question": {"text": "The color of $\\mathrm{CoCl}_{3} .5 \\mathrm{NH}_{3} \\cdot \\mathrm{H}_{2} \\mathrm{O}$ is", "image": null}, "options": [{"id": "WiLLO", "text": "red", "isCorrect": false, "image": null}, {"id": "I0gTN", "text": "orange", "isCorrect": false, "image": null}, {"id": "Itsyi", "text": "orange - yellow", "isCorrect": false, "image": null}, {"id": "6XULe", "text": "pink", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{CoCl}_{3} .5 \\mathrm{NH}_{3} \\mathrm{H}_{2} \\mathrm{O}$ is pink in colour", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7876f5bfc7ab78ae59f", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "Which of the following has square planar geometry?", "image": null}, "options": [{"id": "7ViK7", "text": "$\\left[\\mathrm{PtCl}_{4}\\right]^{2-}$", "image": null, "isCorrect": true}, {"id": "E7d9c", "text": "$\\left[\\mathrm{NiCl}_{4}\\right]^{2-}$", "image": null, "isCorrect": false}, {"id": "WBG4z", "text": "$\\left[\\mathrm{ZnCl}_{4}\\right]^{2-}$", "image": null, "isCorrect": false}, {"id": "hIggK", "text": "$\\left[\\mathrm{CoCl}_{4}\\right]^{2-}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\left[\\mathrm{PtCl}_{4}\\right]^{2-}$ has square planar geometry. $\\mathrm{Pt}: 5 d^{9} 6 s^{1}$\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/-gdRq6NOhCl92znyLCzO5N9qVC0JmexUVrElhAzON38.original.fullsize.png\"><br>\nTwo electrons are removed from $5 d$ shell and $6 s$ shell. So, hybridisation takes place is $d s p^{2}$ i.e. square planar geometry.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 6, "topicId": "64c0e8646f5bfc7ab78aeda1", "title": "Carbonyl Compounds", "totalQuestions": 1, "questions": [{"_id": "64c0e8306f5bfc7ab78aeb5e", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 1, "question": {"text": "Match the species in Column I with their types in Column II.\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/By8XOCIgUQhU_HxTxE-HHoSBVJoNHWc8SN-de7gMuX8.original.fullsize.png\"><br>\r\nCodes", "image": null}, "options": [{"id": "bC1di", "text": "\r\n$\\mathrm{A} \\rightarrow 4, \\mathrm{~B} \\rightarrow 3, \\mathrm{C} \\rightarrow 2, \\mathrm{D} \\rightarrow 1$\r\n", "isCorrect": true, "image": null}, {"id": "hN50t", "text": "\r\n$\\mathrm{A} \\rightarrow 1, \\mathrm{~B} \\rightarrow 2, \\mathrm{C} \\rightarrow 3, \\mathrm{D} \\rightarrow 1$\r\n", "isCorrect": false, "image": null}, {"id": "FkhGS", "text": "\r\n$\\mathrm{A} \\rightarrow 2, \\mathrm{~B} \\rightarrow 3, \\mathrm{C} \\rightarrow 1, \\mathrm{D} \\rightarrow 4$\r\n", "isCorrect": false, "image": null}, {"id": "rV1Bc", "text": "\r\n$\\mathrm{A} \\rightarrow 3, \\mathrm{~B} \\rightarrow 1, \\mathrm{C} \\rightarrow 2, \\mathrm{D} \\rightarrow 4$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The correct match is\r\n$\\mathrm{A} \\rightarrow(4) ; \\mathrm{B} \\rightarrow(3) ; \\mathrm{C} \\rightarrow(2) ; \\mathrm{D} \\rightarrow(1)$\r\nA. DDT $\\quad \\rightarrow$ Pesticides\r\nB. $\\mathrm{NaClO}_3 \\rightarrow$ Herbicides\r\nC. $\\mathrm{Cl}_2 \\rightarrow$ Disinfectant\r\nD. PAN $\\quad \\rightarrow$ Photochemical smog", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "correct", "lastPracticed": "2024-11-27T09:58:36.464Z"}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

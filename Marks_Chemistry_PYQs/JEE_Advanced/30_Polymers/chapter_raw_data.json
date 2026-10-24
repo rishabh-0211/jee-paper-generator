@@ -1,0 +1,483 @@
+{
+  "index": 30,
+  "chapterId": "616025176d32a507fa743450",
+  "chapter": "Polymers",
+  "exam": "JEE Advanced",
+  "totalTopics": 2,
+  "totalQuestions": 6,
+  "downloadTime": "2026-10-08 20:02:43",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64b16ae7f23ac7d519f9b962",
+      "title": "Classification of Polymers",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "64b169f0f23ac7d519f9afdb",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "620a8a1f77301f65c2f92c44",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009 (Paper 1)",
+              "title": "JEE Advanced 2009 (Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Among cellulose, polyvinyl chloride, nylon and natural rubber, the polymer in which the intermolecular force of attraction is weakest in",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "hgC7j",
+              "text": "\nnylon\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "XVEGP",
+              "text": "\npolyvinyl chloride\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "KPD4T",
+              "text": "\ncellulose\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Dpuv8",
+              "text": "\nnatural rubber",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$$\n\\text { Nylon has amid linkage capable of forming intermolecular } \\mathrm{H} \\text {-bonding as }\n$$\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/2Z4rUd48WCf_t7lkv_gHa5HajDJtInxtryet1Vuhhl8.original.fullsize.png\"><br>\nDue to $\\mathrm{H}$-bonding, nylon has strong intermolecular attraction.\nCellulose is a polyhydroxy compound, also capable of forming strong intermolecular $\\mathrm{H}$-bonding. Polyvinyl chloride is a polar polymer due to carbon chlorine bond and it possess strong dipole-dipole attraction. Natural rubber is poly (isoprene), a hydrocarbon, possess weak van der Waal's attraction.<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/f5i0Bw1-Ql-QNczMQa41ENvUzZ4r3kWg82G8MZwPurQ.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "620a8a1f77301f65c2f92c44",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009 (Paper 1)",
+            "title": "JEE Advanced 2009 (Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b169d5f23ac7d519f9aee3",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "620a8a1e77301f65c2f92c40",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2007-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2007 (Paper 1)",
+              "title": "JEE Advanced 2007 (Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Match the chemical substance in Column I with type of polymers/type of bond in Column II. Indicate your answer by darkening the appropriate bubbles of $4 \\times 4$ matrix given in the ORS.\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/aBcz_-koYhRdo9Zs0JRtXZYX4tgTBARB13Q2LAWna7c.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "IvCDn",
+              "text": "\nA-p; B-q; C-p; D-q, r\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BYthu",
+              "text": "\nA-p, s; B-q, r; C-p, r; D-s\n",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "9uCyd",
+              "text": "\nA-s; B-p; C-p; D-q\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "AQ5Ca",
+              "text": "\nA-p, s; B-r; C-p, q; D-s",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "(A) $p, s$\n(B) $q, r$\n(C) $p, r$\n(D) $s$\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/0u0UXSHYX2s-C2PZe6qS4EkMFVTL9LWZNY5ja52juUQ.original.fullsize.png\"><br>\nSucrose (diasaccharide) < smiles>OCC1OC(CO)C(O)C(O)C1O < /smiles>\nSucrose/glucosidic as well as fructosidic linkage",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "620a8a1e77301f65c2f92c40",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2007-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2007 (Paper 1)",
+            "title": "JEE Advanced 2007 (Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64b16ae8f23ac7d519f9b963",
+      "title": "Preparation and Properties of Polymers",
+      "totalQuestions": 4,
+      "questions": [
+        {
+          "_id": "64b16a9df23ac7d519f9b609",
+          "previousYearPapers": [
+            {
+              "_id": "632c83583e3fd59bda92e46d",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2022-04-30T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022 (Paper 2)",
+              "title": "JEE Advanced 2022 (Paper 2)"
+            }
+          ],
+          "type": "multipleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Among the following, the correct statement(s) about polymers is(are)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "aE4es",
+              "text": "The polymerization of chloroprene gives natural rubber.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "mMtXP",
+              "text": "Teflon is prepared from tetrafluoroethene by heating it with persulphate catalyst at high pressures.",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "up3Th",
+              "text": "PVC are thermoplastic polymers.",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "5v7ta",
+              "text": "Ethene at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>350</mn><mo>-</mo><mn>570</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></math>&nbsp;temperature and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1000</mn><mo>-</mo><mn>2000</mn></math> atm pressure in the presence of a peroxide initiator yields high density polythene.",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>(A) Polymerization of chloroprene gives synthetic rubber</p><p>(B) Teflon is manufactured by heating tetrafluoroethene with a free radical or persulphate catalyst at hight pressure.</p><p>(C) Polyvinyl chloride (PVC) is a thermoplastic polymer and used in making hand bags, vinyl flooring and water pipes.</p><p>(D) Ethene at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>350</mn><mo>-</mo><mn>570</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></math> temperature and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1000</mn><mo>-</mo><mn>2000</mn><mo>&#160;</mo><mi>atm</mi></math> pressure in the presence of a peroxide initiator yields low density polythene.</p>",
+            "image": null
+          },
+          "videoSolution": {
+            "videoId": "f977de3a4b9d473ca4967e40fe73d985",
+            "provider": "vdocipher",
+            "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/3RshIH270GVJZ.480.jpeg",
+            "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/3RshIH270GVJZ.480.jpeg",
+            "premiumModules": [
+              {
+                "premiumModuleId": "6628114842d540dfcb148ecb",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "64c7e8e829737784b294e469",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "6788cc0b2dbc1ecacabb7026",
+                "isFree": false
+              }
+            ],
+            "description": "JEE Advanced (All PYQs from 2023 - 2013)"
+          },
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "632c83583e3fd59bda92e46d",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2022-04-30T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022 (Paper 2)",
+            "title": "JEE Advanced 2022 (Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b16a78f23ac7d519f9b4b8",
+          "previousYearPapers": [
+            {
+              "_id": "615d92eede3d91842a5cf82f",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2019-04-30T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019 (Paper 2)",
+              "title": "JEE Advanced 2019 (Paper 2)"
+            }
+          ],
+          "type": "multipleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Choose the correct option(s) from the following",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "5grIl",
+              "text": "Natural rubber is polyisoprene containing <em>trans</em> alkene units.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "uLcAD",
+              "text": "Nylon- <math><mn>6</mn></math> has amide linkages.",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "c0B1P",
+              "text": "Cellulose has only <math><mi>α</mi></math> -D-glucose units that are joined by glycosidic linkages.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ethBs",
+              "text": "Teflon prepared by heating tetrafluoroethene in presence of a persulphate catalyst at high pressure.",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">A</mi></mrow></mfenced></math> Natural rubber is poly isoprene containing Cis stereo-chemistry alkene units. <br/><math><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">B</mi></mrow></mfenced></math> Nylon- <math><mn>6</mn></math> has amide linkage, i.e., <img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/f746db1c-a695-4679-9e93-9bbbf14189f0-image47.png\"/>. <br/><math><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi></mrow></mfenced></math> Cellulose is a straight chain polysaccharide composed of <math><mi>B</mi><mo>→</mo></math> Glucose units held together by <math><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>-</mo><msub><mrow><mi>C</mi></mrow><mrow><mn>4</mn></mrow></msub></math> glycosidic linkage <br/><math><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">D</mi></mrow></mfenced></math> <br/><img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/c9ff7abc-9597-41b9-a444-e99f03f8e1e5-image48.png\"/>",
+            "image": null
+          },
+          "videoSolution": {
+            "videoId": "a0ff399a832f4438b315c297faa93997",
+            "provider": "vdocipher",
+            "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/iqTaFelLHeBhd.480.jpeg",
+            "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/iqTaFelLHeBhd.480.jpeg",
+            "premiumModules": [
+              {
+                "premiumModuleId": "6628114842d540dfcb148ecb",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "64c7e8e829737784b294e469",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "6788cc0b2dbc1ecacabb7026",
+                "isFree": false
+              }
+            ],
+            "description": "JEE Advanced (All PYQs from 2023 - 2013)"
+          },
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "615d92eede3d91842a5cf82f",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2019-04-30T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019 (Paper 2)",
+            "title": "JEE Advanced 2019 (Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b16a4ef23ac7d519f9b33b",
+          "previousYearPapers": [
+            {
+              "_id": "615d92eede3d91842a5cf828",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016 (Paper 1)",
+              "title": "JEE Advanced 2016 (Paper 1)"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "On complete hydrogenation, natural rubber produces",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "rFJHO",
+              "text": "Ethylene-propylene copolymer",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "69gAQ",
+              "text": "Vulcanised rubber",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "S6crL",
+              "text": "Polypropylene",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "BusBI",
+              "text": "Polybutylene",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/Jee_advance_Paper_1_Chem_Q._22_Ans_1_.jpg\"/>",
+            "image": null
+          },
+          "videoSolution": {
+            "videoId": "d1aa1ad25bff4308ba5d8f1f4d304d1c",
+            "provider": "vdocipher",
+            "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/d5tnHCiS0LvBk.480.jpeg",
+            "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/d5tnHCiS0LvBk.480.jpeg",
+            "premiumModules": [
+              {
+                "premiumModuleId": "6628114842d540dfcb148ecb",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "64c7e8e829737784b294e469",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "6788cc0b2dbc1ecacabb7026",
+                "isFree": false
+              }
+            ],
+            "description": "JEE Advanced (All PYQs from 2023 - 2013)"
+          },
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "615d92eede3d91842a5cf828",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016 (Paper 1)",
+            "title": "JEE Advanced 2016 (Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b16a15f23ac7d519f9b129",
+          "type": "multipleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "620a8a1f77301f65c2f92c49",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2011-04-30T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011 (Paper 2)",
+              "title": "JEE Advanced 2011 (Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "The correct functional group $X$ and the reagent/reaction conditions $Y$ in the following schemes are $\\mathrm{X}-\\left(\\mathrm{CH}_2\\right)_4-X$\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/B4PneOQG7lvxe2R4OUEi1a5OrGBqkYzPVj-l4HcsdTo.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "F5rGM",
+              "text": "\n$X=\\mathrm{COOCH}_3, Y=\\mathrm{H}_2 / \\mathrm{Ni} /$ heat\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fDw2j",
+              "text": "\n$X=\\mathrm{CONH}_2, Y=\\mathrm{H}_2 / \\mathrm{Ni} /$ heat\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "7pmyi",
+              "text": "\n$X=\\mathrm{CONH}_2, \\quad Y=\\mathrm{Br}_2 / \\mathrm{NaOH}$\n",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "B04A0",
+              "text": "\n$X=\\mathrm{CN}, Y=\\mathrm{H}_2 / \\mathrm{Ni} /$ heat",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "(a) <img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/8yG7DY1gJXc4iUCEOER-m_1UdvdV_gvkjBLqdA44bzg.original.fullsize.png\"><br>\n(b)<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/rxpqZzH3d5lVE-WlPs6Ut1ZgpUDmVb5crAU54xotfFY.original.fullsize.png\"><br>\n(c)<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/zfi7JK9uaNGjLxX4gh4PcKfwAYM_ZAmsnxT4axnqnfM.original.fullsize.png\"><br>\n(d)<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/C7pT7CVPeovTexhOTafI8TbQNslCMk0IIPvS_s7dq_I.original.fullsize.png\"><br>\n$$\n\\text { In author's opinion (a) and (b) should also be the answer. }\n$$<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/E4Bs3vfZ3lfBPb9mHMQ0te9i4wAnWAY_P_eo5gvqx2A.original.fullsize.png\"><br>\nPolyester, a condensation polymer<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/tneLqzL0MI0skr6ZHl-Xj1c_DETeEDMLAn8BbF1KN7Q.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "620a8a1f77301f65c2f92c49",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2011-04-30T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011 (Paper 2)",
+            "title": "JEE Advanced 2011 (Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

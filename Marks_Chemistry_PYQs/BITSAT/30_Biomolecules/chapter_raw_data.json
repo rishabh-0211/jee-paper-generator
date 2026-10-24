@@ -1,0 +1,1783 @@
+{
+  "index": 30,
+  "chapterId": "61e7bd83287be10f1f6a68bf",
+  "chapter": "Biomolecules",
+  "exam": "BITSAT",
+  "totalTopics": 7,
+  "totalQuestions": 26,
+  "downloadTime": "2026-10-08 20:03:02",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e8656f5bfc7ab78aedb4",
+      "title": "Carbohydrates",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "64c0e8176f5bfc7ab78aea84",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/KBcdhcuUGW5ruwW422lOf7Sw9wfrbkJohUBgBp_FXO0.original.fullsize.png\"><br>\r\n\r\nCompounds I and II may be grouped as",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "5OqRM",
+              "text": "diastereomers",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "9Z23P",
+              "text": "epimers",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "zh5qM",
+              "text": "$\\mathrm{C}-2$ epimers",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "PyHri",
+              "text": "all of the three.",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "When structures I and II are $\\mathrm{C}-2$ epimers, it implies that these are epimers and diastereomers too.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7dd6f5bfc7ab78ae882",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Fructose on reduction gives a mixture of two alcohols which are related as",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "dywDs",
+              "text": "diastereomers",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "U493u",
+              "text": "epimers",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "VJsi8",
+              "text": "both (a) and (b)",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "t1IUY",
+              "text": "anomers.",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Ketoses on reduction produce a new chiral carbon leading to the formation of two isomeric alcohols which are diastereomeric as well as $\\mathrm{C}-2$ epimers.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e8656f5bfc7ab78aedb1",
+      "title": "Preparation and Reactions of Glucose",
+      "totalQuestions": 3,
+      "questions": [
+        {
+          "_id": "64c0e82f6f5bfc7ab78aeb58",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Glucose reacts with $X$ number of molecules of phenyl hydrazine to yield osazone. The value of $X$ is,",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "NtThV",
+              "text": "\r\nthree\r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "iIa2v",
+              "text": "\r\ntwo\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "uQfwM",
+              "text": "\r\none\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "S3wq3",
+              "text": "\r\nfour",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/ZOOuQsUzZQSa5jdIEWbEoHRgBdhlpU0skNaB-09x4QI.original.fullsize.png\"><br>\r\nHence, three molecules of phenyl hydrazine $\\left(\\mathrm{C}_6 \\mathrm{H}_5 \\mathrm{NHNH}_2\\right)$ is used to yield osazone.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8176f5bfc7ab78aea83",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "An organic compound with the formula $\\mathrm{C}_{6} \\mathrm{H}_{12} \\mathrm{O}_{6}$ forms a yellow crystalline solid with phenylhydrazine and gives a mixture of sorbitol and mannitol when reduced with sodium. Which among the following could be the compound?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "5oFt3",
+              "text": "fructose",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "agx9E",
+              "text": "glucose",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "KazWc",
+              "text": "mannose",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "xvOPr",
+              "text": "sucrose",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Since the compound forms a yellow crystalline solid, i.e. osazone with phenylhydrazine, it may be an aldohexose or a ketohexose. Further, since on reduction, compound forms a mixture of sorbitol and mannitol, it must be a ketohexose, i.e. fructose. Recall that glucose on reduction gives only one alcohol glucitol (Sorbitol)",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a36f5bfc7ab78ae69e",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Complete hydrolysis of cellulose gives",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "uRpgK",
+              "text": "D-ribose",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "sdfqO",
+              "text": "$\\mathrm{D}$ -glucose",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "XivW7",
+              "text": "$\\quad \\mathrm{L}$ -glucose",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "c2JWX",
+              "text": "D-fructose",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/pmcN3xK9NMsx8OwSItV0jFrYxU4LX_bz7Rg3kvLXMDY.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e8656f5bfc7ab78aedb2",
+      "title": "Disaccharides and Polysaccharides",
+      "totalQuestions": 4,
+      "questions": [
+        {
+          "_id": "67726cfac49e8ef28ee2b350",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Glycosidic linkage between $C_1$ of $\\alpha$-glucose and $C_2$ of $\\beta$-fructose is found in",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "qTefR",
+              "text": "maltose",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GwHCc",
+              "text": "sucrose",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "0hEQj",
+              "text": "lactose",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "jUfxt",
+              "text": "amylose",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "- Maltose is composed of two glucose units.\n- Sucrose has glycosidic linkage between $\\mathrm{C}_1$ of $\\alpha$-glucose and $C_2$ of $\\beta$-fructose.\n- Lactose is composed of galactose and glucose\n- Amylose has glycosidic linkage between $C_1$ of $\\alpha$-glucose $C_4$ of $\\alpha$-glucose.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8076f5bfc7ab78ae9f8",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "<p>The correct statement about the following disaccharide is-</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/e4a6db5c-58bd-4cc1-8998-c140ff07ca07-qwqwqa.png\" style=\"width: 629px; height: 312px;\" /></p>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "T376X",
+              "text": "Ring <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi mathvariant=\"normal\">I</mi></mfenced></math> is pyranose with <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#945;</mi></math>-glycosidic link",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "nhcOx",
+              "text": "Ring <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi mathvariant=\"normal\">I</mi></mfenced></math> is furanose with <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#945;</mi></math>-glycosidic link",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "5cRDX",
+              "text": "Ring <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi>II</mi></mfenced></math> is furanose with <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#945;</mi></math>-glycosidic link",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "dgAll",
+              "text": "Ring <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi>II</mi></mfenced></math> is pyranose with <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#945;</mi></math>-glycosidic link",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>In the given structure, ring one <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi mathvariant=\"normal\">I</mi></mfenced></math> has one <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">O</mi></math>-atom and is a <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>6</mn></math> membered ring, thus is called pyranose ring, whereas ring <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi>II</mi></mfenced></math> has one <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">O</mi></math>-atom and is a five membered ring, thus is called furanose.</p><p>The disaccharide is linked by a glycosidic bond between <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">C</mi><mo>-</mo><mn>1</mn></math> of glucose (in the <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#945;</mi></math> -position, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#945;</mi></math> linkage) and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">C</mi><mo>-</mo><mn>2</mn></math>&nbsp;of fructose (in the <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#946;</mi></math>-position, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#946;</mi></math>-linkage).</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7fb6f5bfc7ab78ae98c",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "<p>In non-reducing disaccharide, the reducing group of monosaccharides i.e. aldehydic or ketonic group are bounded.</p><p>Which of the following disaccharide is a non-reducing sugar?</p>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "xEWeD",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/ad4ba0e6-44fc-4e5f-ac13-1d28498a5a1a-image.png\" style=\"width: 428px; height: 169px;\" />",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "HiBBx",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/9d5e6421-d71b-4d6a-9618-107da7a7da96-image.png\" style=\"width: 414px; height: 169px;\" />",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "F7a55",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/3a2ff1e6-c8ac-4133-81b3-889ce8bb7698-image.png\" style=\"width: 447px; height: 172px;\" />",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "OzL5Y",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/28aa40f7-61cb-45e2-b795-2e7a42d40116-image.png\" style=\"width: 460px; height: 172px;\" />",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/2dcb5ff4-85e4-492f-b1e4-31a14c01f623-image.png\" style=\"width: 446px; height: 199px;\" /></p><p>This structure represents sucrose in which <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#945;</mi><mo>-</mo><mi mathvariant=\"normal\">D</mi><mo>-</mo></math>glucose and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#946;</mi><mo>-</mo><mi mathvariant=\"normal\">D</mi><mo>-</mo></math>fructose is attached to each other by <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">C</mi><mn>1</mn></msub><mo>-</mo><msub><mi mathvariant=\"normal\">C</mi><mn>2</mn></msub></math> glycosidic linkage. Since reducing groups of glucose and fructose are involved in glycosidic bond formation, this is considered as non-reducing sugar.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c06f5bfc7ab78ae78f",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Starch can be used as an indicator for the detection of traces of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Ruon5",
+              "text": "glucose in aqueous solution",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "feull",
+              "text": "proteins in blood",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "WXEFU",
+              "text": "iodine in aqueous solution",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "9NxES",
+              "text": "urea in blood",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{I}_{2}$ gives blue colour with starch.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "64c0e8656f5bfc7ab78aedb0",
+      "title": "Properties and Preparation of Amino Acids",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "67726cfcc49e8ef28ee2b35f",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "The naturally occurring amino acid that contains only one basic functional group in its chemical structure is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "1xJn4",
+              "text": "arginine",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "UyFBt",
+              "text": "lysine",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "NyIOM",
+              "text": "asparagine",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "aVFP4",
+              "text": "histidine",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Asparagine has only one basic functional group in its chemical structure.\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/VOclyjkbWzY-rIx9wm5G3rwZEeYtt-y9PpbG01vIe7g.original.fullsize.png\"/>\nOthers are basic amino acid with more than one basic functional group.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7956f5bfc7ab78ae624",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "The structural feature which distinguishes proline from natural $\\alpha$ -amino acids?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "48dcP",
+              "text": "Proline is optically inactive.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "guWgP",
+              "text": "Proline contains aromatic group.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "uBrPK",
+              "text": "Proline is a dicarboxylic acid.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2tkS2",
+              "text": "Proline is a secondary amine.",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/EVjiw_wywOmLBIoma9hdXxh2tjN1bH_um9XjbEc5cT4.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "64c0e8656f5bfc7ab78aedaf",
+      "title": "Proteins",
+      "totalQuestions": 5,
+      "questions": [
+        {
+          "_id": "67726d17c49e8ef28ee2b42a",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "A tetrapeptide is made of naturally occuring alanine, serine, glycine and valine. If the $C$-terminal amino acid is alanine and N -terminal amino acid is chiral, the number of possible sequence of the tetrapeptide is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "tYZqA",
+              "text": "4",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Pw7SQ",
+              "text": "8",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "aYVwP",
+              "text": "6",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "osxH6",
+              "text": "12",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Since glycine (gly) is achiral, alanine (Ala) is the C-terminal amino acid, therefore N -terminal amino acid can be valine (val) or serine (ser). In the view of these condition, the following four sequences for the tetrapeptide is possible.\n(i) Val-gly-Ser-Ala\n(ii) Val-Ser-gly-Ala\n(iii) Ser-gly-Val-Ala\n(iv) Ser-Val-gly-Ala",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87497ae24e9e2db8c83",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "The helical structure of protein is stabilized by",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "n4r4F",
+              "text": "dipeptide bonds",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "33TbR",
+              "text": "hydrogen bonds",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "byjlI",
+              "text": "ether bonds",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8mwtW",
+              "text": "peptide bonds",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The $\\alpha$-helix structure is formed when the chain of $\\alpha$-amino acids coils as a right handed screw (called $\\alpha$-helix) because of the formation of hydrogen bonds between amide groups of the same peptide chain, i.e., NH group in one unit is linked to carbonyl oxygen of the third unit by hydrogen bonding. This hydrogen bonding between different units is responsible for holding helix in a position.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b36f5bfc7ab78ae71e",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Which statement is incorrect about peptide bond?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "81jZM",
+              "text": "$\\mathrm{C}-\\mathrm{N}$ bond length in proteins is longer than usual $\\mathrm{C}-\\mathrm{N}$ bond length.",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "QW58A",
+              "text": "Spectroscopic analysis shows planar structure of \r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/OrpMWh5WojSOZ2jV_NOfD8AmJPUN9CUm6OKCd2Hq4L4.original.fullsize.png\"><br> bond.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "O8xAz",
+              "text": "$\\mathrm{C}-\\mathrm{N}$ bond length in proteins is smaller than usual $\\mathrm{C}-\\mathrm{N}$ bond length.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "DZc5F",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Due to resonance,\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/Yw-QMaS3GE_T2sAna8rRZZp6TMTIfKFsRJrxg4JG6F0.original.fullsize.png\"><br>\r\n\r\nbond acquires some double bond character, hence shorter in length.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a36f5bfc7ab78ae69d",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The helical structure of protein is stabilised by",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "AA6CJ",
+              "text": "peptide bonds",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "LRhrW",
+              "text": "dipeptide bonds",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "025wd",
+              "text": "hydrogen bonds",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "ktbl6",
+              "text": "vander waals forces",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Fibrous proteins have thread like molecules which lie side by side to form fibres. The various molecules are held together by hydrogen bonds.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7876f5bfc7ab78ae5a5",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "The secondary structure of a protein refers to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "5fvUJ",
+              "text": "fixed configuration of the polypeptide backbone",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "yeww7",
+              "text": "$\\alpha$ -helical backbone",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "zqFgZ",
+              "text": "hydrophobic interactions",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "bNsJa",
+              "text": "sequence of $\\alpha$ -amino acids.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The secondary structure of a protein refers to the shape in which a long peptide chain can exist. There are two different conformations of the peptide linkage present in protein are $\\alpha$ -helix and $\\beta$ -conformation. The $\\alpha$ -helix always has a right handed arrangement. In $\\beta$ -conformation all peptide chains are streched out to nearly maximum extension and then laid side by side held together by intermolecular hydrogen bonds. The structure resembles the pleated folds of drapery and therefore is known as $\\beta$ -pleated shelt.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "topicId": "64c0e8656f5bfc7ab78aedb3",
+      "title": "Nucleic Acids",
+      "totalQuestions": 3,
+      "questions": [
+        {
+          "_id": "64c0e8076f5bfc7ab78ae9f9",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "If one strand of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>DNA</mi></math> has sequence <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>ATCGTATG</mi></math>, the sequence in the complementary strand would be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "FPbQn",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>TAGCTTAC</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ggJfH",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>TCACATAC</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "rgN2W",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>TAGCATAC</mi></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "aoUDh",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>TACGATAC</mi></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Due to size and geometries of bases, the only possible pairing in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>DNA</mi></math> are between <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">G</mi></math> (guanine) and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">C</mi></math> (cytosine) through three <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">H</mi></math>-bonds and between <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">A</mi></math> (adenine) and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math> (thymine) through two <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">H</mi></math>-bonds.</p><p>Thus, the complementary strand of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>DNA</mi></math> will be</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/f9d01d1b-61cb-4fd8-8254-611feaaced3e-image.png\" style=\"width: 641px; height: 116px;\" /></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7eb6f5bfc7ab78ae902",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The transfer <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>RNA</mi></math> anticodon for the messenger <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>RNA</mi></math>&nbsp;codon&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">G</mi><mo>-</mo><mi mathvariant=\"normal\">C</mi><mo>-</mo><mi mathvariant=\"normal\">A</mi></math>&nbsp;is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "9JNYD",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">C</mi><mo>-</mo><mi mathvariant=\"normal\">G</mi><mo>-</mo><mi mathvariant=\"normal\">U</mi></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "V8tBB",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">C</mi><mo>-</mo><mi mathvariant=\"normal\">C</mi><mo>-</mo><mi mathvariant=\"normal\">U</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "W7fMX",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">U</mi><mo>-</mo><mi mathvariant=\"normal\">C</mi><mo>-</mo><mi mathvariant=\"normal\">C</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "u1c7b",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">G</mi><mo>-</mo><mi mathvariant=\"normal\">U</mi><mo>-</mo><mi mathvariant=\"normal\">C</mi></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>The transfer <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>RNA</mi></math> anticodon for messanger <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>RNA</mi></math> codon&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">G</mi><mo>-</mo><mi mathvariant=\"normal\">C</mi><mo>-</mo><mi mathvariant=\"normal\">A</mi></math> is</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">C</mi><mo>-</mo><mi mathvariant=\"normal\">G</mi><mo>-</mo><mi mathvariant=\"normal\">U</mi></math>, because in anticodon of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>RNA</mi></math>,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">G</mi></math> replaced by <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">C</mi></math><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">C</mi></math> replaced by <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">G</mi></math><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">A</mi></math> replaced by <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">U</mi></math></p><p>Here, C(cytosine) forms triple bond with G (guanine) and A (adenine) forms double bond with U (uracil).</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7d06f5bfc7ab78ae819",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "A sequence of how many nucleotides in messenger RNA makes a codon for an amino acid?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ZVZ2K",
+              "text": "Three",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "fYFt3",
+              "text": "Four",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "s5twO",
+              "text": "One",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "L37XR",
+              "text": "Two",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The sequence of bases in mRNA are read in a serial order in groups of three at a time. Each triplet of nucleotides (having a specific sequence of bases) in known as codon. Each codon specifies one amino acid. Further since, there are four bases. therefore, $4^{3}=64$ triplets or codons are possible.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "topicId": "64c0e8656f5bfc7ab78aedae",
+      "title": "Vitamins",
+      "totalQuestions": 7,
+      "questions": [
+        {
+          "_id": "67726d16c49e8ef28ee2b426",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "Cheilosis and digestive disorders are due to deficiency of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "XttnO",
+              "text": "Vitamin A",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2A7F1",
+              "text": "Thiamine",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GmX6I",
+              "text": "Riboflavin",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "4UBdo",
+              "text": "Ascorbic acid",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Deficiency of riboflavin (vitamin $\\mathrm{B}_2$) can cause cheilosis and digestive disorder.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726d08c49e8ef28ee2b3b9",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Which one of the following is a water soluble vitamin, that is not excreted easily?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "YvG0Y",
+              "text": "Vitamin $B_2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Er8AW",
+              "text": "Vitamin $B_1$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lLmkS",
+              "text": "Vitamin $B_6$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3SUQq",
+              "text": "Vitamin $B_{12}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "B group vitamins and vitamin C are soluble in water except vitamin $\\mathrm{B}_{12}$ all are excreted easily.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87d97ae24e9e2db8cdf",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Thiamine and pyridoxine are also known respectively as :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "lYfQ9",
+              "text": "<br />Vitamin $B_2$ and Vitamin $E$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "I5X7d",
+              "text": "<br />Vitamin $E$ and Vitamin $B_2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "QrsgA",
+              "text": "<br />Vitamin $B_6$ and Vitamin $B_2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Rvpfy",
+              "text": "<br />Vitamin $B_1$ and Vitamin $B_6$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Vitamin $B_1$ - Thiamin Vitamin<br />$\\mathrm{B}_6$ - Pyridoxine",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8256f5bfc7ab78aeafc",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which of the following acts as an antioxidant in edible oils?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "vvXw9",
+              "text": "Vitamin B",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "TZxly",
+              "text": "Vitamin C",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "fAVXd",
+              "text": "Vitamin D",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "MEn8h",
+              "text": "Vitamin E",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Vitamin $\\mathrm{E}$ is an antioxidant present in edible oils.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7eb6f5bfc7ab78ae901",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "The night-blindness is developed due to deficiency of vitamin",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "miCyn",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">B</mi><mn>6</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "tzx04",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">C</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "7fGVg",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">B</mi><mn>12</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "bzwOA",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">A</mi></math>",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Night blindness is developed due to deficiency of vitamin-<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">A</mi></math>.</p><p>Vitamin A deficiency leads to a disease known as night blindness.&nbsp;People with night blindness have a normal vision when adequate light is present&nbsp;but poor vision in the dark.</p><p>Vitamin A is necessary for the production of retinal, a component of rhodopsin.&nbsp;</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7cc6f5bfc7ab78ae7f8",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The metal present in vitamin $\\mathrm{B}_{12}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "I0U6e",
+              "text": "magnesium",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "EUVrs",
+              "text": "cobalt",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "WinWz",
+              "text": "copper",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "PHfag",
+              "text": "zinc",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Cobalt is present in vitamin $\\mathrm{B}_{12}$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7796f5bfc7ab78ae526",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "Which of the following statements about vitamin B-12 is incorrect?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "eY7MT",
+              "text": "It has a cobalt atom.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "OEbA3",
+              "text": "It also occurs in plants.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "mI9WG",
+              "text": "It is also present in rain water.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "hMG7Y",
+              "text": "It is needed for human body in very small amounts.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Vitamin $\\mathrm{B}_{12}$ does not occur in plants.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

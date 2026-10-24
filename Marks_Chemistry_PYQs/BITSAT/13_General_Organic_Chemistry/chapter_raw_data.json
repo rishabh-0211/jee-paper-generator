@@ -1,0 +1,3259 @@
+{
+  "index": 13,
+  "chapterId": "61e7bd763d4a5821d8e1c282",
+  "chapter": "General Organic Chemistry",
+  "exam": "BITSAT",
+  "totalTopics": 10,
+  "totalQuestions": 48,
+  "downloadTime": "2026-10-08 20:02:51",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e8606f5bfc7ab78aed75",
+      "title": "IUPAC Nomenclature",
+      "totalQuestions": 5,
+      "questions": [
+        {
+          "_id": "67726cfbc49e8ef28ee2b354",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "The IUPAC name of the following molecule is\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/1z-ZP9Emm55Sf2CzXk6tNR9-O7rXDxqVNtQ7zhxd9Ys.original.fullsize.png\"/><br/>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Pl6ek",
+              "text": "2-Methyl-5 nitro-1-chlorobenzene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fGyqD",
+              "text": "3-Chloro-4 methyl-1-nitrobenzene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8Oq1Y",
+              "text": "2-Chloro-1 methyl-4-nitorbenzene",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "BN47u",
+              "text": "2-Chloro-4 nitro-1-methylbenzene",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$-\\mathrm{NO}_2$ and -Cl are written as prefixes with $\\mathrm{CH}_3$ being given the highest preference for numbering $(\\mathrm{C}-1)$.\nThus, the name of the compound will be $2-$ chloro-1-methyl-4-nitrobenzene.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ce6f5bfc7ab78ae806",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The prefix $10^{18}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "nXOdM",
+              "text": "giga",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "dhhQj",
+              "text": "kilo",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "FD9I1",
+              "text": "exa",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "boFz0",
+              "text": "nano",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{Exa}=10^{18}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7be6f5bfc7ab78ae781",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which of the following compounds has wrong IUPAC name?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "IW590",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/iG1Y8zlNZScTEwy15la1xLqf-_8UNGcRKU_vAXZoeuA.original.fullsize.png\">",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "RLS9l",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/2nzvE1eHqMcqS_npC2bNR5QUSO8kO19fXDnLhyXUDzU.original.fullsize.png\">",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "DcjS8",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/UIeBUfVDVcDljl7nRI54mG2HEHMwP4PHuLLLcWPwZLg.original.fullsize.png\">",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "RSaTv",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/kgySC1XpnvKCp8dPNmjSFIvuYuClDwoEPzTzX0wQ-5k.original.fullsize.png\">",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7856f5bfc7ab78ae590",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "According to IUPAC system, the correct name of the compound having the formula\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/29cmiCLRu8UdYCTE-tLStfUOdzmirGUm5or-8InRi0M.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "7BXBK",
+              "text": "2 -ethyl-3-methyl but- 1 -ene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "IL3OE",
+              "text": "2 -methyl pent- 3 -ene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "oB9Y1",
+              "text": "2 -methyl but- 1 -ene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "irtkL",
+              "text": "None of these",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/sGhbzLvJyK1n7buDUQR0MYRqBmLPcvOiDw9YiMYCLK8.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7776f5bfc7ab78ae512",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "Which one of the following contain isopropyl group?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "gDK3K",
+              "text": "2,2,3,3 -Tetramethylpentane",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3qhLK",
+              "text": "2 -Methylpentane",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "1OYfJ",
+              "text": "2,2,3 -Trimethylpentane",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "tooBh",
+              "text": "3,3 -Dimethylpentane",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/61dNBFBjwvJ1pyBldB15FfyL3Glkb76VGfONqrhzuoI.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e8606f5bfc7ab78aed7b",
+      "title": "Classification of organic compounds",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "64c0e7ed6f5bfc7ab78ae90d",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Which of the following compound does not follow Huckel&#39;s rule?&nbsp;",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "WoviD",
+              "text": "<p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/182262fe-3b28-4b37-84d2-e3ef3b5fcdad-image.png\" style=\"width: 120px; height: 117px;\" /></p>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "eTITo",
+              "text": "<p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/428ee751-8502-4036-96f9-c63da75d26a7-image.png\" style=\"width: 80px; height: 136px;\" /></p>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "RlZ1I",
+              "text": "<p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/9f500ce5-02c3-4032-a466-c58eda08a125-image.png\" style=\"width: 100px; height: 117px;\" /></p>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "zYpR7",
+              "text": "<p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/1be4d869-fd86-42c5-9c0b-9a0d3cce09c8-image.png\" style=\"width: 100px; height: 104px;\" /></p>",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>An aromatic compound can follow Huckel&#39;s rule if it has <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mn>4</mn><mi mathvariant=\"normal\">n</mi><mo>+</mo><mn>2</mn><mo>)</mo><mi mathvariant=\"normal\">&#960;</mi></math>-electrons</p><p>where, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>=</mo></math> integer <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>&#8230;</mo></math> etc.</p><p>Thus,&nbsp;</p><p>(a) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>=</mo><mn>0</mn><mo>;</mo><mo>&#160;</mo><mn>4</mn><mo>&#215;</mo><mn>0</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>2</mn><mi mathvariant=\"normal\">&#960;</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> follow Huckel&#39;s rule</p><p>(b) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>=</mo><mn>1</mn><mo>;</mo></math> Number of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#960;</mi></math>-electrons <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>6</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> follows Huckels rules.</p><p>(c) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>=</mo><mn>1</mn><mo>;</mo></math> Number of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#960;</mi></math>-electrons <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>6</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> follows Huckel&#39;s rule.</p><p>(d) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>=</mo><mn>1</mn></math>, Number of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#960;</mi></math>-electrons <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>8</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mn>4</mn><mi mathvariant=\"normal\">n</mi><mo>+</mo><mn>2</mn><mo>=</mo><mn>4</mn><mo>&#215;</mo><mn>1</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>6</mn><mo>)</mo></math></p><p>but this compound has <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>8</mn></math> electrons which distorts the plane and hence does not follows Huckel&#39;s rule.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7dc6f5bfc7ab78ae878",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which of the following compound has all the four types $\\left(1^{\\circ}, 2^{\\circ}, 3^{\\circ}\\right.$ and $\\left.4^{\\circ}\\right)$ of carbon atoms?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "1tBtd",
+              "text": "2,3,4 -Trimethylpentane",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "M7nv2",
+              "text": "neo-Pentane",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "cG71q",
+              "text": "2,2,4 -Trimethylpentane",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "neyB3",
+              "text": "None of the three",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/16fn6fJh1ZkQRvxLgyxWSLUmIpVMoZPpLsPR7UteAZU.original.fullsize.png\"><br>\r\n\r\n$\\mathrm{C}_{1}$ and $\\mathrm{C}_{5}$ are $1^{\\circ}, \\mathrm{C}_{3}$ is $2^{\\circ}, \\mathrm{C}_{4}$ is $3^{\\circ},$ and $\\mathrm{C}_{2}$ is $4^{\\circ}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e8606f5bfc7ab78aed73",
+      "title": "Reaction Intermediates",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "67726cfbc49e8ef28ee2b358",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Choose the correct stability order of the given free radicals.\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/bchdufy-bjhh.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "qIwFh",
+              "text": "I > II > III > IV",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "5CPSv",
+              "text": "II > I > IV > III",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "LcCBG",
+              "text": "II = I > IV > III",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "jj8Zo",
+              "text": "III > IV > II > I",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In compounds (I), (III) and (IV) the -M effect and hyperconjugation effect are inoperative at meta positions. So we should consider the inductive effect of the groups. -I effect will decrease the stability of the free radical by withdrawing the electrons toward it itself. The order of -I effect is \\(\\mathrm{NO}_2>\\mathrm{CN}>\\mathrm{OH}\\). Therefore (III) is most destabilised.\r\nIn compound (II) the OH act as electron donating group through +M effect which is operative at para position. This increase the electron density at para position and stabilise the free radical. Hence compound (1) is most stabilised. The order of stability of free radical is\r\n\\(\\text { II }>\\text { I }>\\text { IV }>\\text { III }\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7766f5bfc7ab78ae50f",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "The intermediate formed during the addition of $\\mathrm{HCl}$ to propene in the presence of peroxide is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "sOOoy",
+              "text": "$\\mathrm{CH}_{3} \\mathrm{CHCH}_{2} \\mathrm{CI}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CSk2S",
+              "text": "$\\mathrm{CH}_{2} \\mathrm{CHCH}_{3}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "xYFGH",
+              "text": "$\\mathrm{CH}_{3} \\mathrm{CH}_{2} \\mathrm{CH}_{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8VMF9",
+              "text": "$\\mathrm{CH}_{3} \\mathrm{CH}_{2} \\mathrm{C} \\mathrm{H}_{2}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The addition of HCl to propene proceeds by ionic mechanism and not by free radical mechanism. Hence it forms intermediate carbonium ion.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "64c0e8606f5bfc7ab78aed76",
+      "title": "Electron displacement effects",
+      "totalQuestions": 6,
+      "questions": [
+        {
+          "_id": "65b7b87497ae24e9e2db8c84",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following factors affect the basic strength of amine?<br />(i) Inductive effect<br />(ii) Steric hinderance<br />(iii) Solvation effect<br />(iv) Solubility in organic solvents.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "vLCQe",
+              "text": "(i) and (iv)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "UeclC",
+              "text": "(i), (ii) and (iii)",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "aaKvd",
+              "text": "(ii) and (iii)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "UKWBV",
+              "text": "(ii) and (iv)",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Inductive effect, steric hinderance and solvation effect the basic strength of amines.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8166f5bfc7ab78aea7a",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/sweYDLJwR5isJiXV6OOnbBE_po2OPIfDcYhNF0V63X8.original.fullsize.png\"><br>\r\n\r\n$\\mathrm{Br}^{\\huge\\cdot}$ will abstract which of the hydrogen most readily?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "GNlX4",
+              "text": "a",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "uSzwJ",
+              "text": "$b$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "mtBZ7",
+              "text": "$\\mathrm{c}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "RanbX",
+              "text": "$\\mathrm{d}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Bromine is more selective\r\n\r\n$\\therefore$ abstract that hydrogen which forms stable free- radical\r\n\r\n$\\therefore$ <img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/7ZLnC1gNopnDAOlftcP25DdgUrrGPt87Gca5yXTfSOY.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ea6f5bfc7ab78ae8f2",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "<p>In the compound,&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><munder><msub><mi>CH</mi><mn>2</mn></msub><mrow><mo>(</mo><mi mathvariant=\"normal\">I</mi><mo>)</mo></mrow></munder><mo>=</mo><munder><mi>CH</mi><mrow><mo>(</mo><mi>II</mi><mo>)</mo></mrow></munder><mo>-</mo><mi mathvariant=\"normal\">C</mi><munder><mrow><mo>&#8801;</mo><mi>CH</mi></mrow><mrow><mo>(</mo><mi>III</mi><mo>)</mo></mrow></munder></math></p><p>The most acidic hydrogen atom is</p>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "sQ4P6",
+              "text": "Only&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">I</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "rKzGl",
+              "text": "Only <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>II</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "5EgH1",
+              "text": "Only <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>III</mi></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "9oXj8",
+              "text": "All are equally acidic",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>The hydrogen attached with most electronegative carbon will be the most acidic.</p><p>The hydrogen, attached with&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>sp</mi></math>-hybrid <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">C</mi></math>-atom is most acidic because of highest electronegativity of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>sp</mi></math> hybrid carbon atom, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">H</mi></math> atom becomes relatively more acidic.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7bf6f5bfc7ab78ae782",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The compound which gives the most stable carbonium ion on dehydration is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "KWjn8",
+              "text": "$\\mathrm{CH}_{3} \\mathrm{CH}\\left(\\mathrm{CH}_{3}\\right) \\mathrm{CH}_{2} \\mathrm{OH}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Liwf3",
+              "text": "$\\left(\\mathrm{CH}_{3}\\right)_{3} \\mathrm{COH}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "tTjbC",
+              "text": "$\\mathrm{CH}_{2}=\\mathrm{CHCH}_{2} \\mathrm{CH}_{2} \\mathrm{OH}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "1cAUB",
+              "text": "$\\mathrm{CH}_{3} \\mathrm{CHOHCH}_{2} \\mathrm{CH}_{3}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/UbwmVFeMm7GyWps8b-N0zzVW1cPxIOChaYKg7qLCan4.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b16f5bfc7ab78ae707",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The most stable carbanion among the following is:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "GvKnE",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/eIWE5DJ0bxoLGiid-9a4zGFAh6W02GG3tmecQNQkatY.original.fullsize.png\">",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ZPnce",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/5XQX2jfJbtTObtplxqseMDGrUe9kkjDZnNpKpFfx3q0.original.fullsize.png\">",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "sm5rg",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/9y6QxRWo1h3SiaAt5E9oIhPpnevM9qQRQskE-NOSW20.original.fullsize.png\">",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "nJOqi",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/MQDfpIkroNJDd_2YgJHnopdfFe2tWnFOWA4_-xY-Cb4.original.fullsize.png\">",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$-\\mathrm{NO}_{2}$ group, being strong electron withdrawing, disperses the -ve charge, hence stabilizes the concerned carbanion.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7796f5bfc7ab78ae529",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "The one which is least basic is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "mu8l3",
+              "text": "$\\mathrm{NH}_{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "bz6jf",
+              "text": "$\\mathrm{C}_{6} \\mathrm{H}_{5} \\mathrm{NH}_{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "G25lP",
+              "text": "$\\left(\\mathrm{C}_{6} \\mathrm{H}_{5}\\right)_{3} \\mathrm{~N}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "mE73E",
+              "text": "$\\left(\\mathrm{C}_{6} \\mathrm{H}_{5}\\right)_{2} \\mathrm{NH}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "More the electron density on $\\mathrm{N}$, higher will be the basicity. Density on $\\mathrm{N}$ is influenced by the (i) nature of the group (+I or -I) present in alkyl group or benzene nucleus and (ii) resonance (delocalisation of the electron present on $\\mathrm{N}$ ). In $\\left(\\mathrm{C}_{6} \\mathrm{H}_{5}\\right)_{3} \\mathrm{~N}$ :\nelectron pair is delocalised to the maximum extent due to three benzene rings and hence least available for protonation, thus it will be least basic)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "64c0e8606f5bfc7ab78aed78",
+      "title": "Conjugation and Aromaticity",
+      "totalQuestions": 6,
+      "questions": [
+        {
+          "_id": "67726d09c49e8ef28ee2b3c4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Correct order of stability of carbanion is\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/RwbXgq0e98g2MbfoSQDe_I132uDFiCAYMOKyyDOpRvQ.original.fullsize.png\"/><br/>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "fqtLV",
+              "text": "$\\mathrm{C}\\gt\\mathrm{B}\\gt\\mathrm{D}\\gt\\mathrm{A}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "EQmNM",
+              "text": "$\\mathrm{A}\\gt\\mathrm{B}\\gt\\mathrm{C}\\gt\\mathrm{D}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pmuYA",
+              "text": "$\\mathrm{D}\\gt\\mathrm{A}\\gt\\mathrm{C}\\gt\\mathrm{B}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "S8yHn",
+              "text": "$\\mathrm{D}\\gt\\mathrm{C}\\gt\\mathrm{B}\\gt\\mathrm{A}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "As we know compound (4) is aromatic and the compound (1) is anti-aromatic. Hence compound (4) is most stable and compound (1) is least stable among these in compound (2) and (3) carbon atom having charge is $\\mathrm{sp}^3$ hybridised. On the basis of angle strain theory compound (3) is more stable than compound (2).\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/afbYcdjILpHCUdx9umgUDi13TMgHFMFifpTdY5I3AkU.original.fullsize.png\"/><br/>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726cfcc49e8ef28ee2b35d",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is strongest Bronsted base?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "MxFh7",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/wQAKpmNUtOk_ypTJJQusNOFtynfDOLpeeoM9RLKNfew.original.fullsize.png\"/><br/>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "YdtPr",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/_N1mI8m2Qpttd2iOBMpSnQNlI2mmbJuPVzelCdbMS6Q.original.fullsize.png\"/><br/>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Bt9ns",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/7XQ6KP1IIMpWNEEN1JfHU7rfCy-3CmtgeDTQeYwmgzA.original.fullsize.png\"/><br/>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZzuZz",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/h9iyVjo7lHZxmEwuhKX20AT-iY4-iqeQkLCt9ARvfOw.original.fullsize.png\"/><br/>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/Em8WRYAO_0ieBqsm6sHEk5df1i43p6v3nT6EqQfUJUI.original.fullsize.png\"/><br/>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8246f5bfc7ab78aeaf6",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "The correct stability order of following species is -\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/Xlowm4C2XksQH3G6bi5ZpKxnx4FnZGhKQT_c7R6S6YA.original.fullsize.png\"><br><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/3Y6XCSSB-KZxD-6ieOsWnCwNaKWOhWzYaRPOXaeHtUw.original.fullsize.png\"><br><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/FkObPo5-iP0hWPi4_F79iaMjUPSb9j2E4AU80S1DtsE.original.fullsize.png\"><br><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/xwxkwsN3G8RWy52SJWHForKEPBy1PsLDTZBycKdmsIM.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "zmw56",
+              "text": "$x>y>w>z$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "P9NvC",
+              "text": "$y>x>w>z$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "viqY5",
+              "text": "$x>w>z>y$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "pTmRy",
+              "text": "$z>x>y>w$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$x$ has a conjugated diene system, $\\mathrm{w}$ an isolated diene system, $\\mathrm{z}$ a cumulated diene system, and y an antiaromatic system.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c16f5bfc7ab78ae796",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The ionization constant of phenol is higher than that of ethanol because :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "QGUlS",
+              "text": "Phenoxide ion is bulkier than ethoxide",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ARWlt",
+              "text": "Phenoxide ion is stronger base than ethoxide",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "fXNoW",
+              "text": "Phenoxide ion is stabilized through delocalization",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "e5RK1",
+              "text": "Phenoxide ion is less stable than ethoxide",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The acidic nature of phenol is due to the formation of stable phenoxide ion in solution\r\n\r\n$$\r\n\r\n\\mathrm{C}_{6} \\mathrm{H}_{5} \\mathrm{OH}+\\mathrm{H}_{2} \\mathrm{O} \\rightleftharpoons \\mathrm{C}_{6} \\mathrm{H}_{5} \\mathrm{O}_{\\text {Phenoxide ion }}^{-}+\\mathrm{H}_{3} \\mathrm{O}^{+}\r\n\r\n$$\r\n\r\nThe phenoxide ion is stable due to\r\n\r\nresonance.\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/VttJ3r5W3I-CAaXjKp-AiYl2kqdRZoaZU0w-wqAHrK0.original.fullsize.png\"><br>\r\n\r\nThe negative charge is delocalized in the benzene ring which is a stabilizing factor in the phenoxide ion and increase acidity of phenol. wheras no resonance is possible in alkoxide ions $\\left(\\mathrm{RO}^{-}\\right)$ derived from alcohol. The negative charge is localized on oxygen atom. Thus, alcohols are not acidic.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7936f5bfc7ab78ae60e",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "In the anion $\\mathrm{HCOO}^{-}$ the two carbon-oxygen bonds are found to be of equal length. What is the reason for it?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "r5o3U",
+              "text": "The $\\mathrm{C}=\\mathrm{O}$ bond is weaker than the $\\mathrm{C}-\\mathrm{O}$ bond.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "kCxKt",
+              "text": "The anion $\\mathrm{HCOO}^{-}$ has two resonating structures.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "7AlCt",
+              "text": "The anion is obtained byremoval of a proton from the acid molecule.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ScBGe",
+              "text": "Electronic orbitals of carbon atom are hybridised.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/ccZH-QVFFp4nOA6a0li2mleynlx7S7UfKm5sWcgQafc.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7856f5bfc7ab78ae592",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "Hyperconjugation involves",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "JcZzB",
+              "text": "$\\sigma-\\pi$ conjugation",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GDXqJ",
+              "text": "$\\sigma-\\pi$ delocalisation",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "EUcn2",
+              "text": "No bond resonance",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "j0lQd",
+              "text": "All",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution available",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "topicId": "64c0e8606f5bfc7ab78aed79",
+      "title": "Attacking reagents",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "67726d0ac49e8ef28ee2b3c6",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is not correct about Grignard reagent?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "1z53V",
+              "text": "It is a nucleophile",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "TOdVb",
+              "text": "Forms new carbon-carbon bond",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wXV7b",
+              "text": "Reacts with carbonyl compounds",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "DiGkD",
+              "text": "It is an organomanganese compound",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Grignard reagent $=\\mathrm{R}-\\stackrel{\\delta+}{\\mathrm{Mg}} \\stackrel{\\delta-}{\\mathrm{X}}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7936f5bfc7ab78ae60d",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "The correct nucleophilicity order is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "mdGIR",
+              "text": "$\\mathrm{CH}_{3}^{-}<\\mathrm{NH}_{2}^{-}<\\mathrm{HO}^{-}<\\mathrm{F}^{-}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "AfbO0",
+              "text": "$\\mathrm{CH}_{3}^{-} \\simeq \\mathrm{NH}_{2}^{-}>\\mathrm{HO}^{-} \\simeq \\mathrm{F}^{-}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "LxQ5f",
+              "text": "$\\mathrm{CH}_{3}^{-}>\\mathrm{NH}_{2}^{-}>\\mathrm{HO}^{-}>\\mathrm{F}^{-}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "FEkJU",
+              "text": "$\\mathrm{NH}_{2}^{-}>\\mathrm{F}^{-}>\\mathrm{HO}^{-}>\\mathrm{CH}_{3}^{-}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Nucleophilicity increases with the decrease in electronegativity of the central atom. Since electronegativity follows the order:\n$\\mathrm{F}>\\mathrm{O}>\\mathrm{N}>\\mathrm{C} ;$ nucleophilicity of the\nconcerned group will follow the reverse order i.e.,\n$\\mathrm{CH}_{3}^{-}>\\mathrm{NH}_{2}^{-}>\\mathrm{OH}^{-}>\\mathrm{F}^{-}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "topicId": "64c0e8606f5bfc7ab78aed74",
+      "title": "Isomerism of Organic Compounds",
+      "totalQuestions": 15,
+      "questions": [
+        {
+          "_id": "67726d15c49e8ef28ee2b41e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "The number of geometrical isomers possible for the compound, $\\mathrm{CH}_3 \\mathrm{CH}=\\mathrm{CH}-\\mathrm{CH}=\\mathrm{CH}_2$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "XqGmA",
+              "text": "2",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Oead2",
+              "text": "3",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "tjJfR",
+              "text": "4",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iWEBs",
+              "text": "6",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Although $\\mathrm{CH}_3 \\mathrm{C}=\\mathrm{CH}-\\mathrm{CH}=\\mathrm{CH}_2$ has two double bond but one of them has two similar atoms (i.e. H -atom) therefore no geometrical isomerism is possible around the double bond. However each carbon atom of other double bond has two different atoms/groups and hence geometrical isomerism is possible around this double bond.\nHence, only two geometrical isomers are possible.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87d97ae24e9e2db8ce2",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Which one of the following exhibits geometrical isomerism?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ik8MZ",
+              "text": "<br />1,2-Dibromopropene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "kAAFA",
+              "text": "<br />2, 3-Dimethylbut-2-ene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "dymM5",
+              "text": "<br />2, 3-Dibromobut-2-ene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "65wp3",
+              "text": "<br />Both (a) and (c)",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Alkenes having double bonds with two different groups on each end of the double bond show geometrical isomerism. $A_2 b_2 c_2, A_2 b_2 c d$, $A_2$ bcde.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87497ae24e9e2db8c7c",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Geometrical isomerism is not shown by",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "g8ate",
+              "text": "<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/6-c-mjbuXBSrAesP6TsNc4RCNzNid4f2FZz75u8cTpU.original.fullsize.png\"><br>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "DIQAj",
+              "text": "<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/x0Tonud3mBbsm1CTONJhdy7Qo3KEam6ZGMPC8EVaLWs.original.fullsize.png\"><br>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "dNzxX",
+              "text": "$\\mathrm{CH}_2=\\mathrm{C}(\\mathrm{Cl}) \\mathrm{CH}_3$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ZI2Ld",
+              "text": "$\\mathrm{CH}_3-\\mathrm{CH}=\\mathrm{CH}-\\mathrm{CH}=\\mathrm{CH}_2$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The condition for geometrical isomerism is<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/hfp5bPWrnOcaaVrc5k3y59crU4bxXNhYh1fvjNXdK4c.original.fullsize.png\"><br><br />$\\mathrm{CH}_2=\\mathrm{C}(\\mathrm{Cl}) \\mathrm{CH}_3$ does not follow above mention condition.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8146f5bfc7ab78aea67",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Maleic acid and fumaric acids are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Q5weP",
+              "text": "Chain isomers",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "TnOti",
+              "text": "Functional isomers",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "az3jb",
+              "text": "Tautomers",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "IBfmf",
+              "text": "Geometrical isomers",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Maleic acid and fumaric acids are geometrical isomers.\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/6g5mUYq1HbBCOFgQI_bTLZLV-ntesFRcTziwkZ3QS5E.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7fb6f5bfc7ab78ae988",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "<p>The addition of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>HBr</mi></math>&nbsp;to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math>-butene gives a mixture of products <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant=\"normal\">y</mi></math>&nbsp;and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">z</mi></math></p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/20a136e8-0593-4984-a8df-0777e183bb31-image.png\" style=\"width: 487px; height: 162px;\" /></p><p>The mixture consists of</p>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "C7dhZ",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">y</mi></math> as major and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">z</mi></math> as minor products",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "eqacC",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">y</mi></math> as major, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi></math>&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">z</mi></math> as minor products",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "fIis5",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">y</mi></math> as minor, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi></math>&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">z</mi></math> as major products",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "5856M",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">y</mi></math> as minor and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">z</mi></math> as major&nbsp;products",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>The alkene is unsymmetrical, hence will follow Markownikoff&#39;s rule to give major product.</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/c11f11a6-5587-47c0-b37e-e6797e116bff-image.png\" style=\"width: 411px; height: 184px;\" /></p><p>since, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">y</mi></math> contains, a chiral carbon, it exists in two enantiomers&nbsp;(<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">y</mi></math>)&nbsp;which are mirror images of each other.</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/1660552e-1626-4b50-9ed6-8dd960f85287-image.png\" style=\"width: 341px; height: 195px;\" /></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7fa6f5bfc7ab78ae983",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "<div>Which of the following is the correct order of stability of conformations for <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>NH</mi><mn>2</mn></msub><mo>-</mo><msub><mi>CH</mi><mn>2</mn></msub><mo>-</mo><msub><mi>CH</mi><mn>2</mn></msub><mo>-</mo><mi>OH</mi></math>.</div>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "bYR7d",
+              "text": "<div>gauche <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#62;</mo></math> eclipsed <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#62;</mo></math> anti</div>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "gCnnw",
+              "text": "gauche <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#62;</mo></math> anti <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#62;</mo></math> eclipsed",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "4vXBS",
+              "text": "eclipsed <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#62;</mo></math> gauche <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#62;</mo></math> anti",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "6UxQc",
+              "text": "anti <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#62;</mo></math> eclipsed <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#62;</mo></math> gauche",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>The anti conformation is most stable in which <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>NH</mi><mn>2</mn></msub></math>&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>OH</mi></math> groups are far apart as possible and minimum repulsion between two groups occurs.</p><p>In fully eclipsed conformation <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>NH</mi><mn>2</mn></msub></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>OH</mi></math> groups are so close that the steric strain is maximum.</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/4ef874f7-b82c-45e9-b3d6-c5d2670bf826-d2b47552-9c8d-4ca1-9836-ff525f6ae662-QWW.png\" style=\"width: 513px; height: 219px;\" /></p><p>Since, gauche form is stabilised by intermolecular hydrogen bonding, hence it is more stable than anti.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7dc6f5bfc7ab78ae87d",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "An aromatic compound has molecular formula $\\mathrm{C}_{7} \\mathrm{H}_{7} \\mathrm{Br}$. Give the possible isomers and the appropriate method to distinguish them.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "C5pVb",
+              "text": "3 isomers; by heating with $\\mathrm{AgNO}_{3}$ solution",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "PKFX6",
+              "text": "4 isomers; by treating with $\\mathrm{AgNO}_{3}$ solution",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "VuEmF",
+              "text": "4 isomers; by oxidation",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "kbhNf",
+              "text": "5 isomers; by oxidation",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/rxdi4eb42TTeYE9QPzNfNl9R00rtjsiCkz9xapd_FfI.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7dc6f5bfc7ab78ae879",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Which of the following has two stereoisomers?\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/NHlci56U-Z-BDlSTU3UIg8JOcbbpKL1V5o2Su8rlYfQ.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Oie3M",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "d6hhg",
+              "text": "Only I",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "qX1dV",
+              "text": "Only III",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ZTWyC",
+              "text": "$\\mathrm{I}$ and III",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "A rapid umbrella type inversion rapidly converts the structure III to its enantiomer; hence the two enantiomers are not separable.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b16f5bfc7ab78ae709",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The number of enantiomers of the compound $\\mathrm{CH}_{3} \\mathrm{CHBrCHBrCOOH}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "aQYkW",
+              "text": "0",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "qo4qJ",
+              "text": "1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "KOBxh",
+              "text": "3",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "2zXiG",
+              "text": "4",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The structure $\\mathrm{CH}_{3}{ }^{*} \\mathrm{CH} \\mathrm{Br} \\mathrm{C}^{*} \\mathrm{H} \\mathrm{Br} \\mathrm{COOH}$\r\n\r\nhas two different chiral carbon atoms, hence number of enantiomers (optically active forms) is $2^{n}=2^{2}=4$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b16f5bfc7ab78ae708",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Among the following four structures I to IV,\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/RvGKlP_q4aZjgQmNXVsLZT-cY8i1JDj0gRJiVp4Avno.original.fullsize.png\"><br>\r\n\r\nit is true that",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "LJgR4",
+              "text": "only I and II are chiral compounds.",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "lrrAZ",
+              "text": "only III is a chiral compound.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "icO6A",
+              "text": "only II and IV are chiral compounds.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "t318e",
+              "text": "all four are chiral compounds.",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "A chiral object or structure has four different groups attached to the carbon.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a16f5bfc7ab78ae689",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The following two compounds are\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/j-DZw5_jEzsKI1y7cBn9sOKe5SEWT6veeOWO4wN3298.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "9iU3D",
+              "text": "enantiomers",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "cYHNy",
+              "text": "diastereomers",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "4z9ul",
+              "text": "identical",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "HzoIR",
+              "text": "epimers",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The given two structures are optical isomers but as these are mirror image of each other, hence they represent enantiomers of each other.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7936f5bfc7ab78ae60c",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "$\\mathrm{C}_{6} \\mathrm{H}_{5} \\mathrm{C} \\equiv \\mathrm{N}$ and $\\mathrm{C}_{6} \\mathrm{H}_{5} \\mathrm{~N} \\stackrel{\\rightarrow}{=} \\mathrm{C}$ exhibit which\ntype of isomerism?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "0YPi0",
+              "text": "Position",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "K3NoG",
+              "text": "Functional",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "zzY2X",
+              "text": "Demotropism",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "cKZOJ",
+              "text": "Position isomerism",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution available",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7936f5bfc7ab78ae60b",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "Which of the following compound is not chiral?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "lh4t7",
+              "text": "$\\mathrm{DCH}_{2} \\mathrm{CH}_{2} \\mathrm{CH}_{2} \\mathrm{Cl}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "1U0FC",
+              "text": "$\\mathrm{CH}_{3} \\mathrm{CHDCH}_{2} \\mathrm{Cl}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SacTv",
+              "text": "$\\mathrm{CH}_{3} \\mathrm{CHClCH}_{2} \\mathrm{D}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "oyYnS",
+              "text": "$\\mathrm{CH}_{3} \\mathrm{CH}_{2} \\mathrm{CHDCl}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "None of the carbon atoms in $\\mathrm{DCH}_{2} \\mathrm{CH}_{2} \\mathrm{CH}_{2} \\mathrm{Cl}$ is chiral i.e., each carbon\natom is achiral (symmetric).",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7856f5bfc7ab78ae58f",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "The number of geometrical isomers of $\\mathrm{CH}_{3}-\\mathrm{CH}=\\mathrm{CH}-\\mathrm{CH}=\\mathrm{CH}-\\mathrm{CH}=\\mathrm{CHCl}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "gXUJh",
+              "text": "2",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "cylq6",
+              "text": "4",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "C2A19",
+              "text": "6",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fIjTx",
+              "text": "8",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The given structure has three double bonds whose each carbon atom is differently substituted hence number of geometrical isomers will be $2^{n}=2^{3^{\\prime}}=8$, where $n$ is the number of double bonds whose each carbon atom is differently substituted.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7776f5bfc7ab78ae511",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "Keto-enol tautomerism is observed in",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "oNHel",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/PaiZz9RJz3brrzzggM2nvGcFzdaLJ9EvQBwmizuYzUc.original.fullsize.png\">",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Aem0B",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/rajqT5ZVwGk2zcKH0dt_XKifJOGhC8b734RZ7xPotMA.original.fullsize.png\">",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "XO1uH",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/9Sc3gmrF8js04MYsVttGwxpbKweSw1Zett4oiiAMcCc.original.fullsize.png\">",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wWdtB",
+              "text": "None",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/fNLG-orkNxqwV9Upaq_TIyaOCebTkyjQ4onU1s0Vpcw.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "topicId": "64c0e8606f5bfc7ab78aed7a",
+      "title": "Purification of Organic Compounds",
+      "totalQuestions": 4,
+      "questions": [
+        {
+          "_id": "65b7b87d97ae24e9e2db8cde",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following acts as the stationary phase in paper chromatography?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "FvKbr",
+              "text": "<br />Water",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "SJzzt",
+              "text": "<br />Alumina",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Apviu",
+              "text": "<br />Silica gel",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "zb5Sh",
+              "text": "<br />None of these",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Chromatography paper contains water trapped in it, which acts as the stationary phase.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87497ae24e9e2db8c7d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "For the separation of two immiscible liquids which method is used?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "nfNps",
+              "text": "Chromatography",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "uPrIx",
+              "text": " Fractionating column",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "hauVc",
+              "text": "Fractional distillation",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "mDpSO",
+              "text": "Separating funnel",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Separating funnel is used when the two liquids are immiscible.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7cd6f5bfc7ab78ae800",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The anthracene is purified by",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "v6Ar7",
+              "text": "crystallisation",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "NoDKS",
+              "text": "filtration",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "HcVHY",
+              "text": "distillation",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "9jy4C",
+              "text": "sublimation",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Anthracene is purified by sublimation. In sublimation, a solid is converted directly into gaseous state on heating without passing through liquid phase.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a16f5bfc7ab78ae68a",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "In paper chromatography:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "yxy3e",
+              "text": "Mobile phase is liquid and stationary phase is solid.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "aGZeO",
+              "text": "Mobile phase is solid and stationary phase is liquid.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "j2mrC",
+              "text": "Both phases are liquids.",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "5mUWG",
+              "text": "Both phases are solids.",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Paper chromatography is a special case of partition chromatography where the special quality paper containing water trapped in it acts as a stationary phase and solvent as a mobile phase. Thus, both phases are liquids.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "topicId": "64c0e8606f5bfc7ab78aed77",
+      "title": "Qualitative analysis of organic compounds",
+      "totalQuestions": 5,
+      "questions": [
+        {
+          "_id": "64c0e82f6f5bfc7ab78aeb55",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Ninhydrin gives yellow colour in paper chromatography with which amino acid?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "OX3ok",
+              "text": "\r\nTryptophan\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "cWeIx",
+              "text": "\r\nProline\r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "47kQk",
+              "text": "\r\nAlanine\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "RHpNp",
+              "text": "\r\nTyrosine",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The amino acid which gives yellow colour with ninhydrin in paper chromatography is proline.\r\nNinhydrin + Proline $\\longrightarrow$ Yellow-orange product",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8146f5bfc7ab78aea65",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "The Lassaigne's extract is boiled with dil. $\\mathrm{HNO}_{3}$ before testing for halogens because",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "C17Nd",
+              "text": "silver halides are soluble in $\\mathrm{HNO}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "lY94I",
+              "text": "$\\mathrm{Na}_{2} \\mathrm{~S}$ and $\\mathrm{NaCN}$ are decomposed by $\\mathrm{HNO}_{3}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "ZiPR3",
+              "text": "$\\mathrm{Ag}_{2} \\mathrm{~S}$ is soluble in $\\mathrm{HNO}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "PF215",
+              "text": "$\\mathrm{AgCN}$ is soluble in $\\mathrm{HNO}_{3}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{Na}_{2} \\mathrm{~S}$ and $\\mathrm{NaCN},$ formed during fusion with metallic sodium, must be removed before adding $\\mathrm{AgNO}_{3},$ otherwise black ppt. due to $\\mathrm{Na}_{2} \\mathrm{~S}$ or white precipitate due to $\\mathrm{AgCN}$ will be formed and thus white precipitate of $\\mathrm{AgCl}$ will not be identified easily.\r\n\r\n$\\mathrm{Na}_{2} \\mathrm{~S}+2 \\mathrm{AgNO}_{3} \\longrightarrow 2 \\mathrm{NaNO}_{3}+\\underset{\\text { Black }}{\\mathrm{Ag}_{2} \\mathrm{~S}} \\downarrow$\r\n\r\n$\\mathrm{NaCN}+\\mathrm{AgNO}_{3} \\longrightarrow \\mathrm{NaNO}_{3} + \\underset{\\text { White }}{\\mathrm{Ag} \\mathrm{CN}} \\downarrow$\r\n\r\n$\\mathrm{NaCl}+\\mathrm{AgNO}_{3} \\longrightarrow \\mathrm{NaNO}_{3}+\\underset{\\text { White }}{\\mathrm{Ag} \\mathrm{Cl}} \\downarrow$\r\n\r\n$\\mathrm{Na}_{2} \\mathrm{~S}+2 \\mathrm{HNO}_{3} \\stackrel{\\text { boil }}{\\longrightarrow} 2 \\mathrm{NaNO}_{3}+\\mathrm{H}_{2} \\mathrm{~S} \\uparrow$\r\n\r\n$\\mathrm{NaCN}+\\mathrm{HNO}_{3} \\stackrel{\\text { boil }}{\\longrightarrow} \\mathrm{NaNO}_{3}+\\mathrm{HCN} \\uparrow$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7fa6f5bfc7ab78ae981",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which of the following compound will give blood red colour while doing the Lassaigne&#39;s test for <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">N</mi></math>.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "nfOXq",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mfenced><msub><mi>NH</mi><mn>2</mn></msub></mfenced><mn>2</mn></msub><mi mathvariant=\"normal\">C</mi><mo>=</mo><mi mathvariant=\"normal\">O</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "kjmgK",
+              "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">N</mi><mfenced><mrow><msub><mi mathvariant=\"normal\">C</mi><mn>6</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>4</mn></msub></mrow></mfenced><msub><mi>SO</mi><mn>3</mn></msub><mi mathvariant=\"normal\">H</mi></math></p>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "yZXV4",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">C</mi><mn>6</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>5</mn></msub><msub><mi>SO</mi><mn>3</mn></msub><mi mathvariant=\"normal\">H</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "kcKvJ",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CHCl</mi><mn>3</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>When nitrogen and sulphur both are present in the organic compound, they combine during fusion to form sodium thiocyanate (sulphocyanide).</p><p>Thus, the compounds containing both <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">N</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">S</mi></math> give blood red colour in Lassaigne&#39;s test due to the formation of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Fe</mi><msub><mfenced><mi>SCN</mi></mfenced><mn>2</mn></msub></math>. Thus, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">N</mi><mfenced><mrow><msub><mi mathvariant=\"normal\">C</mi><mn>6</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>4</mn></msub></mrow></mfenced><msub><mi>SO</mi><mn>3</mn></msub><mi mathvariant=\"normal\">H</mi></math> gives blood red colour in Lassaigne&#39;s test of nitrogen.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7f86f5bfc7ab78ae970",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Which test among the following is not used for the distinction among <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>1</mn><mn>0</mn></msup><mo>,</mo><mo>&#160;</mo><msup><mn>2</mn><mn>0</mn></msup></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>3</mn><mn>0</mn></msup></math> aliphatic amine.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "pElW0",
+              "text": "Hinsberg&#39;s reagent test",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "OE9B9",
+              "text": "Carbylamine reaction",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ZCLGQ",
+              "text": "Azo dye test",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "ts3da",
+              "text": "Action with nitrous acid",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Hinsberg test&nbsp;for the detection and distinction of primary, secondary, and tertiary amines in a given sample.</p><p>Carbylamine reaction&nbsp;is the reaction of a primary amine, chloroform and a base to synthesize isocyanides.</p><p>Azo dye test is not used for the detection of primary, secondary and tertiary aliphatic amines.</p><p>The Reaction of Amines with Nitrous Acid, primary and secondary amines react with nitrous acid forming arene&nbsp;diazonium salts and N-nitrosoamine&nbsp;respectively.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7856f5bfc7ab78ae591",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "Liebig's method is used for the estimation of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "6fgD6",
+              "text": "Nitrogen",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SMI1F",
+              "text": "Sulphur",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SbIRz",
+              "text": "Carbon and hydrogen",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "cscCx",
+              "text": "Halogens",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution available",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "topicId": "64c0e8606f5bfc7ab78aed7c",
+      "title": "Quantitative analysis of organic compounds",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e8326f5bfc7ab78aeb71",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "$0.20 \\mathrm{~g}$ of an organic compound gave $0.12 \\mathrm{~g}$ of AgBr By using Carius method, the percentage of bromine in the compound will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "GMrT4",
+              "text": "\r\n$34.06 \\%$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "3bcLr",
+              "text": "\r\n$44.04 \\%$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "vbsFo",
+              "text": "\r\n$54 \\%$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "R0s0J",
+              "text": "\r\n$25 \\%$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given,\r\nMass of an organic compound $=0.20 \\mathrm{~g}$\r\nMass of $\\mathrm{AgBr}=0.12 \\mathrm{~g}$\r\nMolecular mass of $\\mathrm{AgBr}=188 \\mathrm{~g} \\mathrm{~mol}^{-1}$\r\n$188 \\mathrm{~g}$ of AgBr contains $80 \\mathrm{~g}$ of bromine\r\n$\\therefore 0.12 \\mathrm{~g}$ of $\\mathrm{AgBr}$ will contain $=\\frac{80}{188} \\times 0.12$\r\n$=0.05 \\mathrm{~g}$ of bromine\r\n$\\therefore$ Percentage of bromine $=\\frac{0.05}{0.20} \\times 100$\r\n$=25 \\%$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

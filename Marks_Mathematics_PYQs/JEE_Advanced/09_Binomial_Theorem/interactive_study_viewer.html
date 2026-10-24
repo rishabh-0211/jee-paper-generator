@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JEE Advanced - Binomial Theorem PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>📐 JEE Advanced &bull; Binomial Theorem</h1>
+        <div class="sub">Mathematics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 9, "chapterId": "61602532f7669a7344ecdb8e", "chapter": "Binomial Theorem", "exam": "JEE Advanced", "subject": "Mathematics", "totalTopics": 3, "totalQuestions": 10, "downloadTime": "2026-10-08 20:36:09", "topics": [{"index": 1, "topicId": "64b16aeef23ac7d519f9b9ae", "title": "Terms of Binomial Expansion", "totalQuestions": 6, "questions": [{"_id": "685102c26bba689a3eb09ca8", "type": "numerical", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "684c67d769037fad219cb0c2", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2025-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2025 (Paper 2)", "title": "JEE Advanced 2025 (Paper 2)"}], "question": {"text": "Let $a_0, a_1, \\ldots, a_{23}$ be real numbers such that\n$\\left(1+\\frac{2}{5} x\\right)^{23}=\\sum_{i=0}^{23} a_i x^i$\nfor every real number $x$. let $a_r$ be the largest among the numbers $a_j$ for $0 \\leq j \\leq 23$.\nThe the value of $r$ is ______", "image": null}, "options": [], "correctValue": "6", "solution": {"text": "For $\\mathrm{x}=1$\n$\\left(1+\\frac{2}{5}\\right)^{23}=a_0+a_1+a_2+\\ldots+a_{23}$\nfor numerically greatest term\n$\\frac{n+1}{1+\\left|\\frac{a}{b}\\right|}=\\frac{23+1}{1+\\frac{5}{2}}=\\frac{48}{7}$\n$\\Rightarrow\\left[\\frac{48}{7}\\right]=6=\\mathrm{m}$ (where [.] greatest integer function)\nso, $\\mathrm{T}_7$ is numerical greatest term\nHence $r=6$", "image": null}, "videoSolution": {"videoId": "0f547a19bddd4920a5a812a9e7c56fa6", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/n5qD5Q2KWd0LE.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/n5qD5Q2KWd0LE.480.jpeg", "premiumModules": [{"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}, {"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "684c67d769037fad219cb0c2", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2025-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2025 (Paper 2)", "title": "JEE Advanced 2025 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16aa5f23ac7d519f9b64e", "type": "numerical", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "64b1672d25f94b8a85b91cd9", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2023-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Paper 1)", "title": "JEE Advanced 2023 (Paper 1)"}], "question": {"text": "Let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi></math> be two nonzero real numbers. If the coefficient of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>5</mn></msup></math>&nbsp;in the expansion of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mfrac><mn>70</mn><mrow><mn>27</mn><mi>b</mi><mi>x</mi></mrow></mfrac></mrow></mfenced><mn>4</mn></msup></math>&nbsp;is equal to the coefficient of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mrow><mo>-</mo><mn>5</mn></mrow></msup></math> in the expansion of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mi>a</mi><mi>x</mi><mo>-</mo><mfrac><mn>1</mn><mrow><mi>b</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow></mfenced><mn>7</mn></msup></math>, then the value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi>b</mi></math> is", "image": null}, "options": [], "correctValue": "3", "solution": {"text": "<blockquote><p>Given,</p><p>The coefficient of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>5</mn></msup></math>&nbsp;in&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mfrac><mn>70</mn><mrow><mn>27</mn><mi>b</mi><mi>x</mi></mrow></mfrac></mrow></mfenced><mn>4</mn></msup></math>&nbsp;is equal to coefficient of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mrow><mo>-</mo><mn>5</mn></mrow></msup></math>&nbsp;in&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mi>a</mi><mi>x</mi><mo>-</mo><mfrac><mn>1</mn><mrow><mi>b</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow></mfenced><mn>7</mn></msup></math>,</p><p>Now finding the coefficient of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>5</mn></msup></math>&nbsp;in&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mfrac><mn>70</mn><mrow><mn>27</mn><mi>b</mi><mi>x</mi></mrow></mfrac></mrow></mfenced><mn>4</mn></msup></math>&nbsp;we get,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>T</mi><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mmultiscripts><mi>C</mi><mi>r</mi><none></none><mprescripts></mprescripts><none></none><mn>4</mn></mmultiscripts><msup><mfenced><mrow><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfenced><mrow><mn>4</mn><mo>-</mo><mi>r</mi></mrow></msup><mo>&#183;</mo><msup><mfenced><mfrac><mn>70</mn><mrow><mn>27</mn><mi>b</mi><mi>x</mi></mrow></mfrac></mfenced><mi>r</mi></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><msub><mi>T</mi><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mmultiscripts><mi>C</mi><mi>r</mi><none></none><mprescripts></mprescripts><none></none><mn>4</mn></mmultiscripts><msup><mfenced><mi>a</mi></mfenced><mrow><mn>4</mn><mo>-</mo><mi>r</mi></mrow></msup><mo>&#183;</mo><msup><mfenced><mfrac><mn>70</mn><mrow><mn>27</mn><mi>b</mi></mrow></mfrac></mfenced><mi>r</mi></msup><mo>&#183;</mo><msup><mi>x</mi><mrow><mn>8</mn><mo>-</mo><mn>2</mn><mi>r</mi><mo>-</mo><mi>r</mi></mrow></msup></math></p><p>So,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>8</mn><mo>-</mo><mn>2</mn><mi>r</mi><mo>-</mo><mi>r</mi><mo>=</mo><mn>5</mn><mo>&#8658;</mo><mi>r</mi><mo>=</mo><mn>1</mn></math></p><p>So,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>T</mi><mn>2</mn></msub><mo>=</mo><mmultiscripts><mi>C</mi><mn>1</mn><none></none><mprescripts></mprescripts><none></none><mn>4</mn></mmultiscripts><msup><mi>a</mi><mn>3</mn></msup><mo>&#183;</mo><mfrac><mn>70</mn><mrow><mn>27</mn><mi>b</mi></mrow></mfrac><mo>&#183;</mo><msup><mi>x</mi><mn>5</mn></msup></math></p><p>Now finding the coefficient of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mrow><mo>-</mo><mn>5</mn></mrow></msup></math>&nbsp;in&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mi>a</mi><mi>x</mi><mo>-</mo><mfrac><mn>1</mn><mrow><mi>b</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow></mfenced><mn>7</mn></msup></math>&nbsp;we get,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>T</mi><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mmultiscripts><mi>C</mi><mi>r</mi><none></none><mprescripts></mprescripts><none></none><mn>7</mn></mmultiscripts><msup><mfenced><mrow><mi>a</mi><mi>x</mi></mrow></mfenced><mrow><mn>7</mn><mo>-</mo><mi>r</mi></mrow></msup><mo>&#183;</mo><msup><mfenced><mfrac><mn>1</mn><mrow><mi>b</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mfenced><mi>r</mi></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><msub><mi>T</mi><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mmultiscripts><mi>C</mi><mi>r</mi><none></none><mprescripts></mprescripts><none></none><mn>7</mn></mmultiscripts><msup><mfenced><mi>a</mi></mfenced><mrow><mn>7</mn><mo>-</mo><mi>r</mi></mrow></msup><mo>&#183;</mo><msup><mfenced><mfrac><mn>1</mn><mi>b</mi></mfrac></mfenced><mi>r</mi></msup><mo>&#183;</mo><msup><mi>x</mi><mrow><mn>7</mn><mo>-</mo><mi>r</mi><mo>-</mo><mn>2</mn><mi>r</mi></mrow></msup></math></p><p>So,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>7</mn><mo>-</mo><mi>r</mi><mo>-</mo><mn>2</mn><mi>r</mi><mo>=</mo><mo>-</mo><mn>5</mn><mo>&#8658;</mo><mi>r</mi><mo>=</mo><mn>4</mn></math></p><p>So,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>T</mi><mn>5</mn></msub><mo>=</mo><mmultiscripts><mi>C</mi><mn>4</mn><none></none><mprescripts></mprescripts><none></none><mn>7</mn></mmultiscripts><msup><mfenced><mi>a</mi></mfenced><mn>3</mn></msup><mo>&#183;</mo><msup><mfenced><mfrac><mn>1</mn><mi>b</mi></mfrac></mfenced><mn>4</mn></msup><mo>&#183;</mo><msup><mi>x</mi><mrow><mo>-</mo><mn>5</mn></mrow></msup></math></p><p>Now equating the coefficient of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>5</mn></msup><mo>&#160;</mo><mo>&#38;</mo><mo>&#160;</mo><msup><mi>x</mi><mrow><mo>-</mo><mn>5</mn></mrow></msup></math>&nbsp;we get,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mmultiscripts><mi>C</mi><mn>4</mn><none></none><mprescripts></mprescripts><none></none><mn>7</mn></mmultiscripts><msup><mfenced><mi>a</mi></mfenced><mn>3</mn></msup><mo>&#183;</mo><msup><mfenced><mfrac><mn>1</mn><mi>b</mi></mfrac></mfenced><mn>4</mn></msup><mo>=</mo><mmultiscripts><mi>C</mi><mn>1</mn><none></none><mprescripts></mprescripts><none></none><mn>4</mn></mmultiscripts><msup><mi>a</mi><mn>3</mn></msup><mo>&#183;</mo><mfrac><mn>70</mn><mrow><mn>27</mn><mi>b</mi></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mn>35</mn><msup><mi>a</mi><mn>3</mn></msup><mo>&#183;</mo><msup><mfenced><mfrac><mn>1</mn><mi>b</mi></mfrac></mfenced><mn>4</mn></msup><mo>=</mo><mn>4</mn><msup><mi>a</mi><mn>3</mn></msup><mo>&#183;</mo><mfrac><mn>70</mn><mrow><mn>27</mn><mi>b</mi></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><msup><mfenced><mfrac><mn>1</mn><mi>b</mi></mfrac></mfenced><mn>3</mn></msup><mo>=</mo><mn>4</mn><mo>&#215;</mo><mfrac><mn>2</mn><mn>27</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>b</mi><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>&#8658;</mo><mn>2</mn><mi>b</mi><mo>=</mo><mn>3</mn></math></p></blockquote>", "image": null}, "videoSolution": {"videoId": "b098a00e5dd34b4e85a349903b878b0a", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/1O7b7kL59nlNd.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/1O7b7kL59nlNd.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64b1672d25f94b8a85b91cd9", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2023-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Paper 1)", "title": "JEE Advanced 2023 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a4af23ac7d519f9b317", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf827", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2015-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2015 (Paper 2)", "title": "JEE Advanced 2015 (Paper 2)"}], "type": "numerical", "level": 1, "question": {"text": "The coefficient of <math><msup><mrow><mi>x</mi></mrow><mrow><mn>9</mn></mrow></msup></math> in the expansion of <math><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mi>&#160;</mi><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfenced><mi>&#160;</mi><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><msup><mrow><mi>x</mi></mrow><mrow><mn>3</mn></mrow></msup></mrow></mfenced><mo>&#8230;</mo><mo>&#8230;</mo><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><msup><mrow><mi>x</mi></mrow><mrow><mn>100</mn></mrow></msup></mrow></mfenced></math> is", "image": null}, "options": [], "correctValue": "8", "solution": {"text": "<math><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mi> </mi><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfenced><mo>…</mo><mo>.</mo><mo>(</mo><mn>1</mn><mo>+</mo><msup><mrow><mi>x</mi></mrow><mrow><mn>100</mn></mrow></msup><mo>)</mo></math>  <br >Possible combination of 9 are (0, 9), (1, 8), (2, 7), (3, 6), (4, 5), (1, 2, 6), (1, 3, 5), (2, 3, 4)<br >So, coefficient = 8.", "image": null}, "videoSolution": {"videoId": "bdad09684fc04dd8b92d53bd8b8ba248", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/ikFuZFhWqflFC.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/ikFuZFhWqflFC.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf827", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2015-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2015 (Paper 2)", "title": "JEE Advanced 2015 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a3ef23ac7d519f9b2a2", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf825", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2014-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2014 (Paper 2)", "title": "JEE Advanced 2014 (Paper 2)"}], "type": "singleCorrect", "level": 3, "question": {"text": "Coefficient of <math><msup><mrow><mi mathvariant=\"normal\">x</mi></mrow><mrow><mn>11</mn></mrow></msup></math> in the expansion of <math><msup><mrow><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">x</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfenced></mrow><mrow><mn>4</mn></mrow></msup><mi mathvariant=\"normal\">&#160;</mi><msup><mrow><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">x</mi></mrow><mrow><mn>3</mn></mrow></msup></mrow></mfenced></mrow><mrow><mn>7</mn></mrow></msup><mi mathvariant=\"normal\">&#160;</mi><msup><mrow><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">x</mi></mrow><mrow><mn>4</mn></mrow></msup></mrow></mfenced></mrow><mrow><mn>12</mn></mrow></msup></math> is", "image": null}, "options": [{"id": "5D6oc", "text": "1051", "isCorrect": false, "image": null}, {"id": "h8Ty7", "text": "1106", "isCorrect": false, "image": null}, {"id": "8uXqo", "text": "1113", "isCorrect": true, "image": null}, {"id": "zSXuw", "text": "1120", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<math><mn>2</mn><msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>+</mo><mn>3</mn><msub><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>+</mo><mn>4</mn><msub><mrow><mi>x</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>=</mo><mn>11</mn></math>  <br >Possibilities are  <math><mfenced separators=\"|\"><mrow><mn>0</mn><mo>,</mo><mi> </mi><mn>1</mn><mo>,</mo><mi> </mi><mn>2</mn></mrow></mfenced><mo>;</mo><mfenced separators=\"|\"><mrow><mn>1</mn><mo>,</mo><mi> </mi><mn>3</mn><mo>,</mo><mi> </mi><mn>0</mn></mrow></mfenced><mo>;</mo><mfenced separators=\"|\"><mrow><mn>2</mn><mo>,</mo><mi> </mi><mn>1</mn><mo>,</mo><mi> </mi><mn>1</mn></mrow></mfenced><mo>;</mo><mfenced separators=\"|\"><mrow><mn>4</mn><mo>,</mo><mi> </mi><mn>1</mn><mo>,</mo><mi> </mi><mn>0</mn></mrow></mfenced></math> <br > <math><mo>∴</mo><mi> </mi><mi> </mi><mi> </mi></math>  Required coefficients<br > <math><mo>=</mo><mfenced separators=\"|\"><mrow><msup><mrow><mi> </mi></mrow><mrow><mn>4</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>0</mn></mrow></msub><mo>×</mo><msup><mrow><mi> </mi></mrow><mrow><mn>7</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>×</mo><msup><mrow><mi> </mi></mrow><mrow><mn>12</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfenced><mo>+</mo><mfenced separators=\"|\"><mrow><msup><mrow><mi> </mi></mrow><mrow><mn>4</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>×</mo><msup><mrow><mi> </mi></mrow><mrow><mn>7</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>×</mo><msup><mrow><mi> </mi></mrow><mrow><mn>12</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>0</mn></mrow></msub></mrow></mfenced><mo>+</mo><mfenced separators=\"|\"><mrow><msup><mrow><mi> </mi></mrow><mrow><mn>4</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>×</mo><msup><mrow><mi> </mi></mrow><mrow><mn>7</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>×</mo><msup><mrow><mi> </mi></mrow><mrow><mn>12</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow></mfenced><mo>+</mo><mo>(</mo><msup><mrow><mi> </mi></mrow><mrow><mn>4</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>4</mn></mrow></msub><mo>×</mo><msup><mrow><mi> </mi></mrow><mrow><mn>7</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>×</mo><mn>1</mn><mo>)</mo></math>   <br > <math><mo>=</mo><mfenced separators=\"|\"><mrow><mn>1</mn><mo>×</mo><mn>7</mn><mo>×</mo><mn>66</mn></mrow></mfenced><mo>+</mo><mfenced separators=\"|\"><mrow><mn>4</mn><mo>×</mo><mn>35</mn><mo>×</mo><mn>1</mn></mrow></mfenced><mo>+</mo><mfenced separators=\"|\"><mrow><mn>6</mn><mo>×</mo><mn>7</mn><mo>×</mo><mn>12</mn></mrow></mfenced><mo>+</mo><mfenced separators=\"|\"><mrow><mn>1</mn><mo>×</mo><mn>7</mn></mrow></mfenced></math>  <br > <math><mo>=</mo><mn>462</mn><mo>+</mo><mn>140</mn><mo>+</mo><mn>504</mn><mo>+</mo><mn>7</mn><mo>=</mo><mn>1113</mn></math>", "image": null}, "videoSolution": {"videoId": "76055dc0880d4df38808f4a19acc4a54", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/6BbCLMXt1CgT0.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/6BbCLMXt1CgT0.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf825", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2014-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2014 (Paper 2)", "title": "JEE Advanced 2014 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a2bf23ac7d519f9b1f7", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf822", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013 (Paper 1)", "title": "JEE Advanced 2013 (Paper 1)"}], "type": "numerical", "level": 1, "question": {"text": "The coefficients of three consecutive terms of&nbsp;<math> <mrow> <msup> <mrow> <mfenced close=\")\" open=\"(\" separators=\",\"> <mrow> <mn>1</mn> <mo>+</mo> <mtext>x</mtext> </mrow> </mfenced> </mrow> <mrow> <mtext>n</mtext> <mo>+</mo> <mn>5</mn> </mrow> </msup> </mrow> </math> are in the ratio <math> <mrow> <mtext>5 : 10 : 14</mtext> </mrow> </math>. Then <math> <mrow> <mtext>n</mtext> <mo>&#160;=</mo> </mrow> </math>", "image": null}, "options": [], "correctValue": "6", "solution": {"text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mspace/><mrow><mtext>n</mtext><mo>+</mo><mn>5</mn></mrow></msup><msub><mtext>C</mtext><mrow><mtext>r</mtext><mo>-</mo><mn>1</mn></mrow></msub><mtext>&#160;:&#160;</mtext><msup><mspace/><mrow><mtext>n</mtext><mo>+</mo><mn>5</mn></mrow></msup><msub><mtext>C</mtext><mtext>r</mtext></msub><mtext>&#160;:&#160;</mtext><msup><mspace/><mrow><mtext>n</mtext><mo>+</mo><mn>5</mn></mrow></msup><msub><mtext>C</mtext><mrow><mtext>r</mtext><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mtext>5 : 10 :14</mtext></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfrac><mrow><mfenced><mrow><mi>n</mi><mo>+</mo><mn>5</mn></mrow></mfenced><mo>!</mo></mrow><mrow><mfenced><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow></mfenced><mo>!</mo><mfenced><mrow><mi>n</mi><mo>-</mo><mi>r</mi><mo>+</mo><mn>6</mn></mrow></mfenced><mo>!</mo></mrow></mfrac><mo>:</mo><mfrac><mrow><mfenced><mrow><mi>n</mi><mo>+</mo><mn>5</mn></mrow></mfenced><mo>!</mo></mrow><mrow><mfenced><mi>r</mi></mfenced><mo>!</mo><mfenced><mrow><mi>n</mi><mo>-</mo><mi>r</mi><mo>+</mo><mn>5</mn></mrow></mfenced><mo>!</mo></mrow></mfrac><mo>:</mo><mfrac><mrow><mfenced><mrow><mi>n</mi><mo>+</mo><mn>5</mn></mrow></mfenced><mo>!</mo></mrow><mrow><mfenced><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mo>!</mo><mfenced><mrow><mi>n</mi><mo>-</mo><mi>r</mi><mo>+</mo><mn>4</mn></mrow></mfenced><mo>!</mo></mrow></mfrac><mo>=</mo><mtext>5 : 10 :14</mtext></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfrac><mn>1</mn><mrow><mfenced><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow></mfenced><mo>!</mo><mfenced><mrow><mi>n</mi><mo>-</mo><mi>r</mi><mo>+</mo><mn>6</mn></mrow></mfenced><mo>!</mo></mrow></mfrac><mo>:</mo><mfrac><mn>1</mn><mrow><mfenced><mi>r</mi></mfenced><mo>!</mo><mfenced><mrow><mi>n</mi><mo>-</mo><mi>r</mi><mo>+</mo><mn>5</mn></mrow></mfenced><mo>!</mo></mrow></mfrac><mo>:</mo><mfrac><mn>1</mn><mrow><mfenced><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mo>!</mo><mfenced><mrow><mi>n</mi><mo>-</mo><mi>r</mi><mo>+</mo><mn>4</mn></mrow></mfenced><mo>!</mo></mrow></mfrac><mo>=</mo><mtext>5 : 10 :14</mtext></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfrac><mrow><mfenced><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mi>r</mi></mrow><mrow><mfenced><mrow><mi>n</mi><mo>-</mo><mi>r</mi><mo>+</mo><mn>6</mn></mrow></mfenced><mo>!</mo></mrow></mfrac><mo>:</mo><mfrac><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow><mrow><mfenced><mrow><mi>n</mi><mo>-</mo><mi>r</mi><mo>+</mo><mn>5</mn></mrow></mfenced><mo>!</mo></mrow></mfrac><mo>:</mo><mfrac><mn>1</mn><mrow><mfenced><mrow><mi>n</mi><mo>-</mo><mi>r</mi><mo>+</mo><mn>4</mn></mrow></mfenced><mo>!</mo></mrow></mfrac><mo>=</mo><mtext>5 : 10 :14</mtext></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfenced><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mi>r</mi><mo>&#160;</mo><mo>:</mo><mo>&#160;</mo><mfenced><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mfenced><mrow><mi>n</mi><mo>-</mo><mi>r</mi><mo>+</mo><mn>6</mn></mrow></mfenced><mo>&#160;</mo><mo>:</mo><mo>&#160;</mo><mfenced><mrow><mi>n</mi><mo>-</mo><mi>r</mi><mo>+</mo><mn>6</mn></mrow></mfenced><mfenced><mrow><mi>n</mi><mo>-</mo><mi>r</mi><mo>+</mo><mn>5</mn></mrow></mfenced><mo>=</mo><mtext>5 : 10 :14</mtext></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mspace width=\"0.5em\"/><mspace width=\"0.5em\"/><mfrac><mrow><mspace/><mfenced><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mfenced><mrow><mi>n</mi><mo>-</mo><mi>r</mi><mo>+</mo><mn>6</mn></mrow></mfenced></mrow><mrow><mspace/><mfenced><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mi>r</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mn>0</mn></mrow><mn>5</mn></mfrac><mspace width=\"0.5em\"/><mspace width=\"0.5em\"/><mtext>and</mtext><mspace width=\"0.5em\"/><mspace width=\"0.5em\"/><mfrac><mrow><mspace/><mfenced><mrow><mi>n</mi><mo>-</mo><mi>r</mi><mo>+</mo><mn>6</mn></mrow></mfenced><mfenced><mrow><mi>n</mi><mo>-</mo><mi>r</mi><mo>+</mo><mn>5</mn></mrow></mfenced></mrow><mrow><mfenced><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mfenced><mrow><mi>n</mi><mo>-</mo><mi>r</mi><mo>+</mo><mn>6</mn></mrow></mfenced></mrow></mfrac><mo>=</mo><mfrac><mn>14</mn><mrow><mn>1</mn><mn>0</mn></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mspace width=\"0.5em\"/><mspace width=\"0.5em\"/><mfrac><mrow><mspace/><mfenced><mrow><mi>n</mi><mo>-</mo><mi>r</mi><mo>+</mo><mn>6</mn></mrow></mfenced></mrow><mrow><mspace/><mi>r</mi></mrow></mfrac><mo>=</mo><mn>2</mn><mspace width=\"0.5em\"/><mspace width=\"0.5em\"/><mtext>and</mtext><mspace width=\"0.5em\"/><mspace width=\"0.5em\"/><mfrac><mfenced><mrow><mi>n</mi><mo>-</mo><mi>r</mi><mo>+</mo><mn>5</mn></mrow></mfenced><mfenced><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></mfenced></mfrac><mo>=</mo><mfrac><mn>7</mn><mn>5</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mspace width=\"0.5em\"/><mspace width=\"0.5em\"/><mi>n</mi><mo>=</mo><mn>3</mn><mi>r</mi><mo>-</mo><mn>6</mn><mspace width=\"0.5em\"/><mspace width=\"0.5em\"/><mtext>and</mtext><mspace width=\"0.5em\"/><mspace width=\"0.5em\"/><mtext>n</mtext><mo>=</mo><mfrac><mrow><mn>12</mn><mi>r</mi><mo>-</mo><mn>18</mn></mrow><mn>5</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mn>3</mn><mi>r</mi><mo>-</mo><mn>6</mn><mo>=</mo><mfrac><mrow><mn>12</mn><mi>r</mi><mo>-</mo><mn>18</mn></mrow><mn>5</mn></mfrac><mo>=</mo><mi>n</mi><mo>&#160;</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mn>15</mn><mi>r</mi><mo>-</mo><mn>30</mn><mo>=</mo><mn>12</mn><mi>r</mi><mo>-</mo><mn>18</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>r</mi><mo>=</mo><mn>4</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>n</mi><mo>=</mo><mn>6</mn></math></p>", "image": null}, "videoSolution": {"videoId": "a1fcdbbb84db44228a842faee7405eb0", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/Cw0B5QyNLvd3v.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/Cw0B5QyNLvd3v.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf822", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013 (Paper 1)", "title": "JEE Advanced 2013 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a08f23ac7d519f9b0b4", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1f77301f65c2f92c47", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2010-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2010 (Paper 2)", "title": "JEE Advanced 2010 (Paper 2)"}], "question": {"text": "For $r=0,1, \\ldots, 10$, let $A_r, B_r$ and $C_r$ denote, respectively, the coefficient of $x^r$ in the expansions of $(1+x)^{10}$, $(1+x)^{20}$ and $(1+x)^{30}$. Then $\\sum_{r=1}^{10} A_r\\left(B_{10} B_r-C_{10} A_r\\right)$ is equal to", "image": null}, "options": [{"id": "wOTsD", "text": "\n$B_{10}-C_{10}$\n", "image": null, "isCorrect": false}, {"id": "1nhKg", "text": "\n$A_{10}\\left(B_{10}^2-C_{10} A_{10}\\right)$\n", "image": null, "isCorrect": false}, {"id": "FbT8k", "text": "\n0\n", "image": null, "isCorrect": false}, {"id": "KLT4n", "text": "\n$C_{10}-B_{10}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "$A_r=$ Coefficient of $x^r$ in\n$$\n\\begin{aligned}\n& (1+x)^{10}={ }^{10} C_r \\\\\n& B_r=\\text { Coefficient of } x^r \\text { in } \\\\\n& (1+x)^{20}={ }^{20} C_r \\\\\n& C_r=\\text { Coefficient of } x^r \\text { in } \\\\\n& (1+x))^{30}={ }^{30} C_r \\\\\n& \\therefore \\sum_{r=1}^{10} A_r\\left(B_{10} B_r-C_{10} A_r\\right) \\\\\n& =\\sum_{r=1}^{10} A_r B_{10} B_r-\\sum_{r=1}^{10} A_r C_{10} A_r \\\\\n& =\\sum_{r=1}^{10}{ }^{10} C_r{ }^{20} C_{10}{ }^{20} C_r \\\\\n& -\\sum_{r=1}^{10}{ }^{10} C_r{ }^{30} C_{10}{ }^{10} C_r \\\\\n& =\\sum_{r=1}^{10}{ }^{10} C_{10-r}{ }^{20} C_{10}{ }^{20} C_r \\\\\n& -\\sum_{r=1}^{10}{ }^{10} C_{10-r}{ }^{30} C_{10}{ }^{10} C_r \\\\\n&\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n& ={ }^{20} C_{10} \\sum_{r=1}^{10}{ }^{10} C_{10-r} \\cdot{ }^{20} C_r \\\\\n& \\quad-{ }^{30} C_{10} \\sum_{r=1}^{10}{ }^{10} C_{10-r}{ }^{10} C_r \\\\\n& ={ }^{20} C_{10}\\left({ }^{30} C_{10}-1\\right)-{ }^{30} C_{10}\\left({ }^{20} C_{10}-1\\right) \\\\\n& ={ }^{30} C_{10}-{ }^{20} C_{10}=C_{10}-B_{10}\n\\end{aligned}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1f77301f65c2f92c47", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2010-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2010 (Paper 2)", "title": "JEE Advanced 2010 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64b16aeef23ac7d519f9b9af", "title": "Sum of Series", "totalQuestions": 2, "questions": [{"_id": "64b16a7bf23ac7d519f9b4cc", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf82f", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2019-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2019 (Paper 2)", "title": "JEE Advanced 2019 (Paper 2)"}], "type": "numerical", "level": 3, "question": {"text": "Suppose <math><mrow><mrow><mi mathvariant=\"normal\">det</mi></mrow><mo>&#8289;</mo><mrow><mfenced close=\"]\" open=\"[\" separators=\"|\"><mrow><mtable><mtr><mtd><mrow><munderover><mo stretchy=\"false\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mi>k</mi></mrow></mrow></mtd><mtd><mrow><munderover><mo stretchy=\"false\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi mathvariant=\"normal\">&#160;</mi></mrow><mrow><mi>n</mi></mrow></mmultiscripts><msup><mrow><mi>k</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mrow></mtd></mtr><mtr><mtd><mrow><munderover><mo stretchy=\"false\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi mathvariant=\"normal\">&#160;</mi></mrow><mrow><mi>n</mi></mrow></mmultiscripts><mi>k</mi></mrow></mrow></mtd><mtd><mrow><munderover><mo stretchy=\"false\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi mathvariant=\"normal\">&#160;</mi></mrow><mrow><mi>n</mi></mrow></mmultiscripts><msup><mrow><mn>3</mn></mrow><mrow><mi>k</mi></mrow></msup></mrow></mrow></mtd></mtr></mtable></mrow></mfenced><mo>=</mo><mn>0</mn><mo>,</mo></mrow></mrow></math> holds for some positive integer <math><mi>n</mi><mo>.</mo></math> Then <math><mrow><munderover><mo stretchy=\"false\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mfrac><mrow><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi></mrow></mmultiscripts></mrow><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow></mrow></math> equals", "image": null}, "options": [], "correctValue": "6.2", "solution": {"text": "<p>As given <math> <mrow> <mfenced close=\"|\" open=\"|\"> <mrow> <mtable equalcolumns=\"true\" equalrows=\"true\"> <mtr> <mtd> <mrow> <munderover> <mstyle><mo>&#8721;</mo></mstyle> <mrow> <mi>k</mi><mo>=</mo><mn>0</mn></mrow> <mi>n</mi> </munderover> <mi>k</mi></mrow> </mtd> <mtd> <mrow> <munderover> <mstyle><mo>&#8721;</mo></mstyle> <mrow> <mi>k</mi><mo>=</mo><mn>0</mn></mrow> <mi>n</mi> </munderover> <mmultiscripts> <mi>C</mi> <mprescripts></mprescripts> <mo>&#160;</mo> <mi>n</mi> </mmultiscripts> <msub> <mrow></mrow> <mi>k</mi> </msub> <msup> <mi>k</mi> <mn>2</mn> </msup> </mrow> </mtd> </mtr> <mtr> <mtd> <mrow> <munderover> <mstyle><mo>&#8721;</mo></mstyle> <mrow> <mi>k</mi><mo>=</mo><mn>0</mn></mrow> <mi>n</mi> </munderover> <mmultiscripts> <mi>C</mi> <mprescripts></mprescripts> <mo>&#160;</mo> <mi>n</mi> </mmultiscripts> <msub> <mrow></mrow> <mi>k</mi> </msub> <mi>k</mi></mrow> </mtd> <mtd> <mrow> <munderover> <mstyle><mo>&#8721;</mo></mstyle> <mrow> <mi>k</mi><mo>=</mo><mn>0</mn></mrow> <mi>n</mi> </munderover> <mmultiscripts> <mi>C</mi> <mprescripts></mprescripts> <mo>&#160;</mo> <mi>n</mi> </mmultiscripts> <msub> <mrow></mrow> <mi>k</mi> </msub> <msup> <mn>3</mn> <mi>k</mi> </msup> </mrow> </mtd> </mtr> </mtable></mrow> </mfenced><mo>=</mo><mn>0</mn></mrow> </math><br /><math><mfenced separators=\"\\&#34;|\\&#34;\"><mrow><mi>a</mi></mrow></mfenced><mi>&#160;</mi><mrow><munderover><mo stretchy=\"\\&#34;false\\&#34;\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mi>k</mi><mo>=</mo></mrow></mrow><mfrac><mrow><mi>n</mi><mfenced separators=\"\\&#34;|\\&#34;\"><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></mfrac></math><br /><math><mfenced separators=\"\\&#34;|\\&#34;\"><mrow><mi>b</mi></mrow></mfenced><mi>&#160;</mi><mrow><munderover><mo stretchy=\"\\&#34;false\\&#34;\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi></mrow></mmultiscripts><mfenced separators=\"\\&#34;|\\&#34;\"><mrow><msup><mrow><mi>k</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfenced></mrow></mrow><mo>=</mo><mrow><munderover><mo stretchy=\"\\&#34;false\\&#34;\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><msup><mrow><mfenced separators=\"\\&#34;|\\&#34;\"><mrow><msup><mrow><mi>k</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>-</mo><mi>k</mi><mo>+</mo><mi>k</mi></mrow></mfenced></mrow><mrow><mi>n</mi></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi></mrow></msub></mrow></mrow></math><br /><math><mo>=</mo><mrow><munderover><mo stretchy=\"\\&#34;false\\&#34;\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mfenced separators=\"\\&#34;|\\&#34;\"><mrow><msup><mrow><mi>k</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>-</mo><mi>k</mi></mrow></mfenced><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi></mrow></mmultiscripts></mrow></mrow><mo>+</mo><mrow><munderover><mo stretchy=\"\\&#34;false\\&#34;\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mi>k</mi><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi></mrow></mmultiscripts></mrow></mrow></math><br /><math><mo>=</mo><mrow><munderover><mo stretchy=\"\\&#34;false\\&#34;\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mi>k</mi><mfenced separators=\"\\&#34;|\\&#34;\"><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></mfenced><mfrac><mrow><mi>n</mi></mrow><mrow><mi>k</mi></mrow></mfrac><mo>.</mo><mfrac><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></mfrac></mrow></mrow><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi><mo>-</mo><mn>2</mn></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow></mmultiscripts><mo>+</mo><mrow><munderover><mo stretchy=\"\\&#34;false\\&#34;\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mi>k</mi><mfrac><mrow><mi>n</mi></mrow><mrow><mi>k</mi></mrow></mfrac><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mmultiscripts></mrow></mrow></math><br /><math><mo>=</mo><mi>n</mi><mfenced separators=\"\\&#34;|\\&#34;\"><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mfenced><mrow><munderover><mo stretchy=\"\\&#34;false\\&#34;\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi><mo>-</mo><mn>2</mn></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow></mmultiscripts><mo>+</mo><mi>n</mi><mrow><munderover><mo stretchy=\"\\&#34;false\\&#34;\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mmultiscripts></mrow></mrow></mrow></mrow></math><br /><math><mo>=</mo><mi>n</mi><mfenced separators=\"\\&#34;|\\&#34;\"><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mfenced><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow></msup><mo>+</mo><mi>n</mi><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>=</mo><mi>n</mi><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow></msup><mfenced separators=\"\\&#34;|\\&#34;\"><mrow><mi>n</mi><mo>-</mo><mn>1</mn><mo>+</mo><mn>2</mn></mrow></mfenced><mo>=</mo><mi>n</mi><mfenced separators=\"\\&#34;|\\&#34;\"><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>2</mn></mrow></msup></math><br /><math><mfenced separators=\"\\&#34;|\\&#34;\"><mrow><mtable><mtr><mtd><mrow><maligngroup></maligngroup><mo>&#8756;</mo><mi>r</mi><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>r</mi></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi></mrow></mmultiscripts><mo>=</mo><mi>n</mi><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mmultiscripts></mrow></mtd></mtr><mtr><mtd><mrow><maligngroup></maligngroup><mo>&#8756;</mo><mi>&#160;</mi><mrow><munderover><mo stretchy=\"\\&#34;false\\&#34;\">&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>r</mi></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi></mrow></mmultiscripts><mo>=</mo><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi></mrow></msup></mrow></mrow></mrow></mtd></mtr></mtable></mrow></mfenced></math><br /><math><mfenced separators=\"\\&#34;|\\&#34;\"><mrow><mi>c</mi></mrow></mfenced><mi>&#160;</mi><mrow><munderover><mo stretchy=\"\\&#34;false\\&#34;\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi></mrow></mmultiscripts><mi>k</mi><mo>=</mo><mrow><munderover><mo stretchy=\"\\&#34;false\\&#34;\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mi>k</mi><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi></mrow></mmultiscripts><mo>=</mo><mrow><munderover><mo stretchy=\"\\&#34;false\\&#34;\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mi>k</mi><mfrac><mrow><mi>n</mi></mrow><mrow><mi>k</mi></mrow></mfrac><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mmultiscripts></mrow></mrow></mrow></mrow></mrow></mrow></math><br /><math><mo>=</mo><mi>n</mi><mrow><munderover><mo stretchy=\"\\&#34;false\\&#34;\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mmultiscripts><mo>=</mo><mi>n</mi><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math><br /><math><mfenced separators=\"\\&#34;|\\&#34;\"><mrow><mi>d</mi></mrow></mfenced><mi>&#160;</mi><mrow><munderover><mo stretchy=\"\\&#34;false\\&#34;\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi></mrow></mmultiscripts><msup><mrow><mn>3</mn></mrow><mrow><mi>k</mi></mrow></msup></mrow></mrow><mo>=</mo><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mn>0</mn></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi></mrow></mmultiscripts><mo>+</mo><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub><mn>3</mn><mo>+</mo><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi></mrow></mmultiscripts><msup><mrow><mn>3</mn></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><mo>&#8230;</mo><mo>+</mo><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>n</mi></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi></mrow></mmultiscripts><msup><mrow><mn>3</mn></mrow><mrow><mi>n</mi></mrow></msup></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi></mrow></mmultiscripts></math><br /><math><mo>=</mo><msup><mrow><mfenced separators=\"\\&#34;|\\&#34;\"><mrow><mn>1</mn><mo>+</mo><mn>3</mn></mrow></mfenced></mrow><mrow><mi>n</mi></mrow></msup></math><br /><math><mo>=</mo><msup><mrow><mn>4</mn></mrow><mrow><mi>n</mi></mrow></msup></math><br />now <math> <mrow> <mfenced close=\"|\" open=\"|\"> <mrow> <mtable equalcolumns=\"true\" equalrows=\"true\"> <mtr> <mtd> <mrow> <mfrac> <mrow> <mi>n</mi><mfenced> <mrow> <mi>n</mi><mo>+</mo><mn>1</mn></mrow> </mfenced></mrow> <mn>2</mn> </mfrac> </mrow> </mtd> <mtd> <mrow> <mi>n</mi><mfenced> <mrow> <mi>n</mi><mo>+</mo><mn>1</mn></mrow> </mfenced><msup> <mn>2</mn> <mrow> <mi>n</mi><mo>&#8722;</mo><mn>2</mn></mrow> </msup> </mrow> </mtd> </mtr> <mtr> <mtd> <mrow> <mi>n</mi><msup> <mn>2</mn> <mrow> <mi>n</mi><mo>&#8722;</mo><mn>1</mn></mrow> </msup> </mrow> </mtd> <mtd> <mrow> <msup> <mn>4</mn> <mi>n</mi> </msup> </mrow> </mtd> </mtr> </mtable></mrow> </mfenced><mo>=</mo><mn>0</mn></mrow> </math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi><mfenced><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced><msup><mn>2</mn><mrow><mn>2</mn><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>-</mo><msup><mi>n</mi><mn>2</mn></msup><mfenced><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced><msup><mn>2</mn><mrow><mn>2</mn><mi>n</mi><mo>-</mo><mn>3</mn></mrow></msup><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>2</mn><mrow><mn>2</mn><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>-</mo><mi>n</mi><msup><mn>2</mn><mrow><mn>2</mn><mi>n</mi><mo>-</mo><mn>3</mn></mrow></msup><mo>=</mo><mn>0</mn></math><br /><math><mi>n</mi><mo>=</mo><mn>4</mn></math><br />Now <math><mrow><munderover><mo stretchy=\"\\&#34;false\\&#34;\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mn>4</mn></mrow></munderover><mrow><mfrac><mrow><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mn>4</mn></mrow></mmultiscripts></mrow><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow></mrow><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mrow><munderover><mo stretchy=\"\\&#34;false\\&#34;\">&#8721;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mn>4</mn></mrow></munderover><mrow><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mn>5</mn></mrow></mmultiscripts></mrow></mrow></math><br /><math><mtable><mtr><mtd><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mfenced separators=\"\\&#34;|\\&#34;\"><mrow><msup><mrow><mn>2</mn></mrow><mrow><mn>5</mn></mrow></msup><mo>-</mo><mn>1</mn></mrow></mfenced></mtd><mtd><mfenced separators=\"\\&#34;|\\&#34;\"><mrow><mo>&#8756;</mo><mfrac><mrow><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>r</mi></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi></mrow></mmultiscripts></mrow><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mmultiscripts></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow></mfenced></mtd></mtr></mtable></math><br /><math><mtable><mtr><mtd><mo>=</mo><mfrac><mrow><mn>31</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mo>=</mo><mn>6.20</mn></mtd><mtd><mfenced separators=\"\\&#34;|\\&#34;\"><mrow><mo>&#8756;</mo><mi>&#160;</mi><mrow><munderover><mo stretchy=\"\\&#34;false\\&#34;\">&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mmultiscripts><mrow><msub><mrow><mi>C</mi></mrow><mrow><mi>r</mi></mrow></msub><mo>=</mo><msup><mrow><mn>2</mn></mrow><mrow><mi>r</mi></mrow></msup><mo>-</mo><mn>1</mn></mrow><mprescripts></mprescripts><mrow><mi>&#160;</mi></mrow><mrow><mi>n</mi></mrow></mmultiscripts></mrow></mrow></mrow></mfenced></mtd></mtr></mtable></math></p>", "image": null}, "videoSolution": {"videoId": "b722b732dd8347bdb6316e4ecec03388", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/vqyNg25VjV214.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/vqyNg25VjV214.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf82f", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2019-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2019 (Paper 2)", "title": "JEE Advanced 2019 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a52f23ac7d519f9b357", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf828", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016 (Paper 1)", "title": "JEE Advanced 2016 (Paper 1)"}], "type": "numerical", "level": 2, "question": {"text": "Let m be the smallest positive integer such that the coefficient of <math><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup></math> in the expansion of <math><msup><mrow><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced></mrow><mrow><mn>3</mn></mrow></msup><mo>+</mo><mo>&#8230;</mo><mo>+</mo><msup><mrow><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced></mrow><mrow><mn>49</mn></mrow></msup><mo>+</mo><msup><mrow><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><mi>m</mi><mi>x</mi></mrow></mfenced></mrow><mrow><mn>50</mn></mrow></msup></math> is <math><mfenced separators=\"|\"><mrow><mn>3</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mi>&#160;</mi><msup><mrow></mrow><mrow><mn>51</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>3</mn></mrow></msub></math> for some positive integer n.<br />Then the value of n is", "image": null}, "options": [], "correctValue": "5", "solution": {"text": "Coefficient of <math><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup></math> in the expansion of<br /><math><msup><mrow><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced></mrow><mrow><mn>3</mn></mrow></msup><mo>+</mo><mo>…</mo><msup><mrow><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced></mrow><mrow><mn>49</mn></mrow></msup><mo>+</mo><msup><mrow><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><mi>m</mi><mi>x</mi></mrow></mfenced></mrow><mrow><mn>50</mn></mrow></msup></math> is<br /><math><msup><mrow></mrow><mrow><mn>2</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>+</mo><msup><mrow></mrow><mrow><mn>3</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>+</mo><mo>…</mo><msup><mrow></mrow><mrow><mn>49</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>+</mo><msup><mrow></mrow><mrow><mn>50</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub><msup><mrow><mi>m</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mfenced separators=\"|\"><mrow><mn>3</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced><msup><mrow></mrow><mrow><mn>51</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>3</mn></mrow></msub></math><br />⇒ <math><msup><mrow></mrow><mrow><mn>3</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>+</mo><msup><mrow></mrow><mrow><mn>3</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>+</mo><mo>…</mo><msup><mrow></mrow><mrow><mn>49</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>+</mo><msup><mrow></mrow><mrow><mn>50</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub><msup><mrow><mi>m</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mfenced separators=\"|\"><mrow><mn>3</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced><msup><mrow></mrow><mrow><mn>51</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>3</mn></mrow></msub></math> &nbsp; &nbsp; (Use <math> <mrow> <msup> <mi></mi> <mi>n</mi> </msup> <msub> <mi>C</mi> <mi>r</mi> </msub> <msup> <mo>+</mo> <mi>n</mi> </msup> <msub> <mi>C</mi> <mrow> <mi>r</mi><mo>+</mo><mn>1</mn> </mrow> </msub> <msup> <mo>=</mo> <mrow> <mi>n</mi><mo>+</mo><mn>1</mn> </mrow> </msup> <msub> <mi>C</mi> <mrow> <mi>r</mi><mo>+</mo><mn>1</mn> </mrow> </msub> </mrow> </math>)<br />⇒ <math><msup><mrow></mrow><mrow><mn>50</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>+</mo><msup><mrow></mrow><mrow><mn>50</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub><msup><mrow><mi>m</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mfenced separators=\"|\"><mrow><mn>3</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mi>&nbsp;</mi><msup><mrow></mrow><mrow><mn>51</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>3</mn></mrow></msub></math><br /><math><mfrac><mrow><mn>50.49.48</mn></mrow><mrow><mn>6</mn></mrow></mfrac><mo>+</mo><mfrac><mrow><mn>50.49</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mi>&nbsp;</mi><msup><mrow><mi>m</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mfenced separators=\"|\"><mrow><mn>3</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mfrac><mrow><mn>51.50.49</mn></mrow><mrow><mn>6</mn></mrow></mfrac></math><br /><math><msup><mrow><mi>m</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>51</mn><mi>n</mi><mo>+</mo><mn>1</mn></math> must be a perfect square<br /><math><mo>By trial ⇒</mo></math> <math><mi>n</mi><mo>=</mo><mn>5</mn></math> and <math><mi>m</mi><mo>=</mo><mn>16</mn></math> &nbsp; &nbsp; (<math><mi mathvariant=\"normal\">M</mi><mo>,</mo><mi mathvariant=\"normal\">n</mi><mo>∈</mo><mi mathvariant=\"normal\">N</mi></math>)<br /><math><mo>⇒</mo><mi> </mi><mi>n</mi><mi> </mi><mo>=</mo><mn>5</mn></math>", "image": null}, "videoSolution": {"videoId": "575cf585c4364cc2b2c8d1cd840dbbc2", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/rykmqn13FfwJl.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/rykmqn13FfwJl.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf828", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016 (Paper 1)", "title": "JEE Advanced 2016 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64b16aeef23ac7d519f9b9b0", "title": "Series involving Product of Coefficients", "totalQuestions": 2, "questions": [{"_id": "64b16a87f23ac7d519f9b53b", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf831", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2020-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2020 (Paper 2)", "title": "JEE Advanced 2020 (Paper 2)"}], "type": "multipleCorrect", "level": 3, "question": {"text": "For nonnegative integers <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>s</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi></math>, let&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mtable columnalign=\"left\"><mtr><mtd><mi>s</mi></mtd></mtr><mtr><mtd><mi>r</mi></mtd></mtr></mtable></mfenced><mo>=</mo><mfenced close=\"\" open=\"{\"><mtable columnalign=\"left\"><mtr><mtd><mfrac><mrow><mi>s</mi><mo>!</mo></mrow><mrow><mi>r</mi><mo>!</mo><mfenced><mrow><mi>s</mi><mo>-</mo><mi>r</mi></mrow></mfenced><mo>!</mo></mrow></mfrac></mtd><mtd><mtext>&#160;if&#160;</mtext><mi>r</mi><mo>&#8804;</mo><mi>s</mi></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mtext>&#160;if&#160;</mtext><mi>r</mi><mo>&#62;</mo><mi>s</mi></mtd></mtr></mtable></mfenced></math>. For positive integers <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi><mo>,</mo></math> let&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mfenced><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></mfenced><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>p</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></munderover><mfrac><mrow><mi>f</mi><mfenced><mrow><mi>m</mi><mo>,</mo><mi>n</mi><mo>,</mo><mi>p</mi></mrow></mfenced></mrow><mfenced><mtable><mtr><mtd><mi>n</mi><mo>+</mo><mi>p</mi></mtd></mtr><mtr><mtd><mi>p</mi></mtd></mtr></mtable></mfenced></mfrac></math>, where for any nonnegative integer <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi></math>,<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced><mrow><mi>m</mi><mo>,</mo><mi>n</mi><mo>,</mo><mi>p</mi></mrow></mfenced><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>p</mi></munderover><mfenced><mtable><mtr><mtd><mi>m</mi></mtd></mtr><mtr><mtd><mi>i</mi></mtd></mtr></mtable></mfenced><mfenced><mtable><mtr><mtd><mi>n</mi><mo>+</mo><mi>i</mi></mtd></mtr><mtr><mtd><mi>p</mi></mtd></mtr></mtable></mfenced><mfenced><mtable><mtr><mtd><mi>p</mi><mo>+</mo><mi>n</mi></mtd></mtr><mtr><mtd><mi>p</mi><mo>-</mo><mi>i</mi></mtd></mtr></mtable></mfenced></math>. Then which of the following statements is/are TRUE?", "image": null}, "options": [{"id": "MxHN1", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mfenced><mrow><mi>m</mi><mo>,</mo><mo>&#160;</mo><mi>n</mi></mrow></mfenced><mo>=</mo><mi>g</mi><mfenced><mrow><mi>n</mi><mo>,</mo><mo>&#160;</mo><mi>m</mi></mrow></mfenced></math> for all positive integers <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi><mo>,</mo><mo>&#160;</mo><mi>n</mi></math>", "isCorrect": true, "image": null}, {"id": "6ZA6P", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mfenced><mrow><mi>m</mi><mo>,</mo><mo>&#160;</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mo>=</mo><mi>g</mi><mfenced><mrow><mi>m</mi><mo>+</mo><mn>1</mn><mo>,</mo><mi>n</mi></mrow></mfenced></math> for all positive integers <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi><mo>,</mo><mo>&#160;</mo><mi>n</mi></math>", "isCorrect": true, "image": null}, {"id": "cyMgB", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mfenced><mrow><mn>2</mn><mi>m</mi><mo>,</mo><mo>&#160;</mo><mn>2</mn><mi>n</mi></mrow></mfenced><mo>=</mo><mn>2</mn><mo>&#160;</mo><mi>g</mi><mfenced><mrow><mi>m</mi><mo>,</mo><mo>&#160;</mo><mi>n</mi></mrow></mfenced></math> for all positive integers <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi><mo>,</mo><mo>&#160;</mo><mi>n</mi></math>", "isCorrect": false, "image": null}, {"id": "nDdGA", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mfenced><mrow><mn>2</mn><mi>m</mi><mo>,</mo><mo>&#160;</mo><mn>2</mn><mi>n</mi></mrow></mfenced><mo>=</mo><msup><mfenced><mrow><mi>g</mi><mfenced><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></mfenced></mrow></mfenced><mn>2</mn></msup></math>&nbsp;for all positive intergers&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi><mo>,</mo><mo>&#160;</mo><mi>n</mi></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced><mrow><mi>m</mi><mo>,</mo><mi>n</mi><mo>,</mo><mi>p</mi></mrow></mfenced><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>p</mi></munderover><mfenced><mtable><mtr><mtd><mi>m</mi></mtd></mtr><mtr><mtd><mi>i</mi></mtd></mtr></mtable></mfenced><mfenced><mtable><mtr><mtd><mi>n</mi><mo>+</mo><mi>i</mi></mtd></mtr><mtr><mtd><mi>p</mi></mtd></mtr></mtable></mfenced><mfenced><mtable><mtr><mtd><mi>p</mi><mo>+</mo><mi>n</mi></mtd></mtr><mtr><mtd><mi>p</mi><mo>-</mo><mi>i</mi></mtd></mtr></mtable></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>p</mi></munderover><mmultiscripts><mi>C</mi><mi>i</mi><none/><mprescripts/><none/><mi>m</mi></mmultiscripts><mo>&#183;</mo><mfrac><mrow><mfenced><mrow><mi>n</mi><mo>+</mo><mi>i</mi></mrow></mfenced><mo>!</mo></mrow><mrow><mi>p</mi><mo>!</mo><mfenced><mrow><mi>n</mi><mo>+</mo><mi>i</mi><mo>-</mo><mi>p</mi></mrow></mfenced><mo>!</mo></mrow></mfrac><mo>&#183;</mo><mfrac><mrow><mo>(</mo><mi>p</mi><mo>+</mo><mi>n</mi><mo>)</mo><mo>!</mo></mrow><mrow><mfenced><mrow><mi>p</mi><mo>-</mo><mi>i</mi></mrow></mfenced><mo>!</mo><mfenced><mrow><mi>n</mi><mo>+</mo><mi>i</mi></mrow></mfenced><mo>!</mo></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>p</mi></munderover><mmultiscripts><mi>C</mi><mi>i</mi><none/><mprescripts/><none/><mi>m</mi></mmultiscripts><mo>&#183;</mo><mfrac><mrow><mo>(</mo><mi>p</mi><mo>+</mo><mi>n</mi><mo>)</mo><mo>!</mo></mrow><mrow><mi>p</mi><mo>!</mo><mi>n</mi><mo>!</mo></mrow></mfrac><mo>&#183;</mo><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mfenced><mrow><mi>n</mi><mo>+</mo><mi>i</mi><mo>-</mo><mi>p</mi></mrow></mfenced><mo>!</mo><mfenced><mrow><mi>p</mi><mo>-</mo><mi>i</mi></mrow></mfenced><mo>!</mo></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>p</mi></munderover><mmultiscripts><mi>C</mi><mi>i</mi><none/><mprescripts/><none/><mi>m</mi></mmultiscripts><mo>.</mo><mmultiscripts><mi>C</mi><mi>p</mi><none/><mprescripts/><none/><mrow><mi>p</mi><mo>+</mo><mi>n</mi></mrow></mmultiscripts><mo>&#183;</mo><mmultiscripts><mi>C</mi><mrow><mi>p</mi><mo>-</mo><mi>i</mi></mrow><none/><mprescripts/><none/><mi>n</mi></mmultiscripts></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mmultiscripts><mi>C</mi><mi>p</mi><none/><mprescripts/><none/><mrow><mi>p</mi><mo>+</mo><mi>n</mi></mrow></mmultiscripts><mo>&#183;</mo><munderover><mo>&#8721;</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>p</mi></munderover><mmultiscripts><mi>C</mi><mi>i</mi><none/><mprescripts/><none/><mi>m</mi></mmultiscripts><mo>&#183;</mo><mmultiscripts><mi>C</mi><mrow><mi>p</mi><mo>-</mo><mi>i</mi></mrow><none/><mprescripts/><none/><mi>n</mi></mmultiscripts></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mo>&#8757;</mo><munderover><mo>&#8721;</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>p</mi></munderover><mmultiscripts><mi>C</mi><mi>i</mi><none/><mprescripts/><none/><mi>m</mi></mmultiscripts><mo>&#183;</mo><mmultiscripts><mi>C</mi><mrow><mi>p</mi><mo>-</mo><mi>i</mi></mrow><none/><mprescripts/><none/><mi>n</mi></mmultiscripts><mo>=</mo><mmultiscripts><mi>C</mi><mi>p</mi><none/><mprescripts/><none/><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></mmultiscripts></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mi>f</mi><mfenced><mrow><mi>m</mi><mo>,</mo><mi>n</mi><mo>,</mo><mi>p</mi></mrow></mfenced><mo>=</mo><mmultiscripts><mi>C</mi><mi>p</mi><none/><mprescripts/><none/><mrow><mi>p</mi><mo>+</mo><mi>n</mi></mrow></mmultiscripts><mo>.</mo><mmultiscripts><mi>C</mi><mi>p</mi><none/><mprescripts/><none/><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></mmultiscripts></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfrac><mrow><mi>f</mi><mfenced><mrow><mi>m</mi><mo>,</mo><mi>n</mi><mo>,</mo><mi>p</mi></mrow></mfenced></mrow><mmultiscripts><mi>C</mi><mi>p</mi><none/><mprescripts/><none/><mrow><mi>p</mi><mo>+</mo><mi>n</mi></mrow></mmultiscripts></mfrac><mo>=</mo><mmultiscripts><mi>C</mi><mi>p</mi><none/><mprescripts/><none/><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></mmultiscripts></math>.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mfenced><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></mfenced><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>p</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></munderover><mmultiscripts><mi>C</mi><mi>p</mi><none></none><mprescripts></mprescripts><none></none><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></mmultiscripts><mo>=</mo><msup><mn>2</mn><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></msup></math></p><p>(A)&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mo>(</mo><mn>2</mn><mi>m</mi><mo>,</mo><mo>&#160;</mo><mn>2</mn><mi>n</mi><mo>)</mo><mo>=</mo><msup><mn>2</mn><mrow><mn>2</mn><mi>m</mi><mo>+</mo><mn>2</mn><mi>n</mi></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi>g</mi><mfenced><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></mfenced><mo>=</mo><mn>2</mn><mo>.</mo><msup><mn>2</mn><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></msup></math></p><p>(B)&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mfenced><mrow><mi>m</mi><mo>,</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mo>=</mo><msup><mn>2</mn><mrow><mi>m</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>=</mo><mi>g</mi><mfenced><mrow><mi>m</mi><mo>+</mo><mn>1</mn><mo>,</mo><mi>n</mi></mrow></mfenced></math></p><p>(C) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mfenced><mrow><mn>2</mn><mi>m</mi><mo>,</mo><mn>2</mn><mi>n</mi></mrow></mfenced><mo>=</mo><msup><mn>2</mn><mrow><mn>2</mn><mi>m</mi><mo>+</mo><mn>2</mn><mi>n</mi></mrow></msup><mo>=</mo><msup><mfenced><msup><mn>2</mn><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></msup></mfenced><mn>2</mn></msup><mo>=</mo><msup><mfenced><mrow><mi>g</mi><mfenced><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></mfenced></mrow></mfenced><mn>2</mn></msup></math></p><p>(D) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mfenced><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></mfenced><mo>=</mo><mi>g</mi><mfenced><mrow><mi>n</mi><mo>,</mo><mi>m</mi></mrow></mfenced></math>.</p>", "image": null}, "videoSolution": {"videoId": "87330ff109304b6a90e055836d392343", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/7lZ7MPfiIrgll.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/7lZ7MPfiIrgll.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf831", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2020-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2020 (Paper 2)", "title": "JEE Advanced 2020 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a6ff23ac7d519f9b465", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf82d", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2018-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2018 (Paper 2)", "title": "JEE Advanced 2018 (Paper 2)"}], "type": "numerical", "level": 2, "question": {"text": "Let <math><mi>X</mi><mo>=</mo><msup><mrow><mfenced separators=\"|\"><mrow><msup><mrow></mrow><mrow><mn>10</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><mn>2</mn><msup><mrow><mfenced separators=\"|\"><mrow><msup><mrow></mrow><mrow><mn>10</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><mn>3</mn><msup><mrow><mfenced separators=\"|\"><mrow><msup><mrow></mrow><mrow><mn>10</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>3</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><mo>&#8230;</mo><mo>+</mo><mn>10</mn><msup><mrow><mfenced separators=\"|\"><mrow><msup><mrow></mrow><mrow><mn>10</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>10</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup></math> , where <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mrow></mrow><mn>10</mn></msup><msub><mi>C</mi><mi>r</mi></msub><mo>,</mo><mi>&#160;</mi><mi>r</mi><mo>&#8712;</mo><mfenced close=\"}\" open=\"{\" separators=\"|\"><mrow><mn>1,2</mn><mo>,</mo><mo>&#8230;</mo><mo>.</mo><mo>,</mo><mn>10</mn></mrow></mfenced></math>&nbsp;denote binomial coefficients. Then, the value of <math><mfrac><mrow><mn>1</mn></mrow><mrow><mn>1430</mn></mrow></mfrac><mi>X</mi></math> is ______ .", "image": null}, "options": [], "correctValue": "646", "solution": {"text": "<math><mi>X</mi><mo>=</mo><mrow><munderover><mo stretchy=\"false\">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><mi>r</mi><mo>.</mo></mrow></mrow><msup><mrow><mfenced separators=\"|\"><mrow><msup><mrow/><mrow><mi>n</mi></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mi>r</mi></mrow></msub></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup><mo>;</mo><mi>n</mi><mo>=</mo><mn>10</mn></math>  <br > <math><mi>X</mi><mo>=</mo><mi>n</mi><mo>.</mo><mrow><munderover><mo stretchy=\"false\">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><msup><mrow/><mrow><mi>n</mi></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mi>r</mi></mrow></msub></mrow></mrow><mo>.</mo><mi> </mi><mi> </mi><msup><mrow/><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow></msub></math>  <br > <math><mi>X</mi><mo>=</mo><mi>n</mi><mo>.</mo><mrow><munderover><mo stretchy=\"false\">∑</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><mrow><msup><mrow/><mrow><mi>n</mi></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mi>n</mi><mo>-</mo><mi>r</mi></mrow></msub></mrow></mrow><mo>.</mo><mi> </mi><mi> </mi><msup><mrow/><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow></msub></math>  <br >  <math><mi>X</mi><mo>=</mo><mi>n</mi><mo>.</mo><mi> </mi><msup><mrow/><mrow><mn>2</mn><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>;</mo><mi>n</mi><mo>=</mo><mn>10</mn></math> <br > <math><mi>X</mi><mo>=</mo><mn>10</mn><mo>.</mo><mi> </mi><msup><mrow/><mrow><mn>19</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>9</mn></mrow></msub></math>  <br > <math><mfrac><mrow><mi>X</mi></mrow><mrow><mn>1430</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>143</mn></mrow></mfrac><mo>.</mo><msup><mrow/><mrow><mn>19</mn></mrow></msup><msub><mrow><mi>C</mi></mrow><mrow><mn>9</mn></mrow></msub></math>  <br > <math><mo>=</mo><mn>646</mn></math>", "image": null}, "videoSolution": {"videoId": "6eadebc304af41c2afc0fa613bb5deba", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/xnspdpTThYknV.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/xnspdpTThYknV.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf82d", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2018-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2018 (Paper 2)", "title": "JEE Advanced 2018 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'JEE Advanced';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

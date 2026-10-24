@@ -1,0 +1,2130 @@
+{
+  "index": 10,
+  "chapterId": "61e7bd7cccd6ab1da4b641d4",
+  "chapter": "Permutation Combination",
+  "exam": "BITSAT",
+  "subject": "Mathematics",
+  "totalTopics": 9,
+  "totalQuestions": 31,
+  "downloadTime": "2026-10-08 20:36:51",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e8696f5bfc7ab78aeddb",
+      "title": "Factorial",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e7ee6f5bfc7ab78ae918",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mn>10</mn></munderover><mi>r</mi><mo>&#183;</mo><mfrac><mmultiscripts><mi>C</mi><mi>r</mi><none/><mprescripts/><none/><mi>n</mi></mmultiscripts><mmultiscripts><mi>C</mi><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow><none/><mprescripts/><none/><mi>n</mi></mmultiscripts></mfrac></math> is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Y1nnJ",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn><mfenced><mrow><mn>2</mn><mi>n</mi><mo>-</mo><mn>9</mn></mrow></mfenced></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "x7XEu",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>10</mn><mi>n</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "qq4wz",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>9</mn><mo>(</mo><mi>n</mi><mo>-</mo><mn>4</mn><mo>)</mo></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "FmcuP",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>We have,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mn>10</mn></munderover><mi>r</mi><mo>&#183;</mo><mfrac><mmultiscripts><mi>C</mi><mi>r</mi><none/><mprescripts/><none/><mi>n</mi></mmultiscripts><mmultiscripts><mi>C</mi><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow><none/><mprescripts/><none/><mi>n</mi></mmultiscripts></mfrac><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mn>10</mn></munderover><mfenced><mrow><mi>n</mi><mo>-</mo><mi>r</mi><mo>+</mo><mn>1</mn></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mn>10</mn></munderover><mi>r</mi><mo>&#183;</mo><mfrac><mmultiscripts><mi>C</mi><mi>r</mi><none/><mprescripts/><none/><mi>n</mi></mmultiscripts><mmultiscripts><mi>C</mi><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow><none/><mprescripts/><none/><mi>n</mi></mmultiscripts></mfrac><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mn>10</mn></munderover><mfenced open=\"{\" close=\"}\"><mrow><mfenced><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mo>-</mo><mi>r</mi></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mn>10</mn></munderover><mi>r</mi><mo>&#183;</mo><mfrac><mmultiscripts><mi>C</mi><mi>r</mi><none/><mprescripts/><none/><mi>n</mi></mmultiscripts><mmultiscripts><mi>C</mi><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow><none/><mprescripts/><none/><mi>n</mi></mmultiscripts></mfrac><mo>=</mo><mn>10</mn><mfenced><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mo>-</mo><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mn>10</mn></munderover><mi>r</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>1</mn></mrow><mn>10</mn></munderover><mi>r</mi><mo>&#183;</mo><mfrac><mmultiscripts><mi>C</mi><mi>r</mi><none/><mprescripts/><none/><mi>n</mi></mmultiscripts><mmultiscripts><mi>C</mi><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow><none/><mprescripts/><none/><mi>n</mi></mmultiscripts></mfrac><mo>=</mo><mn>10</mn><mfenced><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mo>-</mo><mn>55</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>10</mn><mi>n</mi><mo>-</mo><mn>45</mn><mo>=</mo><mn>5</mn><mfenced><mrow><mn>2</mn><mi>n</mi><mo>-</mo><mn>9</mn></mrow></mfenced></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e8686f5bfc7ab78aedd7",
+      "title": "Permutation",
+      "totalQuestions": 10,
+      "questions": [
+        {
+          "_id": "67726cfec49e8ef28ee2b36d",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "The number of arrangements of all digits of 12345 such that at least 3 digits will not come in its position is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "QIFZo",
+              "text": "$89$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "DnOZh",
+              "text": "$109$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "HreVF",
+              "text": "$78$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "KJg54",
+              "text": "$57$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Total number of ways such that at least 3 digits will not come in its position\n$={ }^5 C_3\\left\\{3!-{ }^3 C_1 2!+{ }^3 C_2 1!-{ }^3 C_3 0!\\right\\}$\n$+{ }^5 C_4\\left\\{4!-{ }^4 C_1(3!)+{ }^4 C_2(2!)-{ }^4 C_3(1!)+{ }^4 C_4\\right.(0!)\\}$\n$+{ }^5 C_4\\left\\{5!-{ }^5 C_1 4!+{ }^5 C_7 3!-{ }^5 C_2 2!+{ }^5 C_4 1!-\\right.\\left.{ }^5 C_5(0!)\\right\\}$\n$=10(2)+5(9)+(44)=20+45+44=109$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87f97ae24e9e2db8cf6",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "How many different nine digit numbers can be formed from the number 223355888 by rearranging its digits so that the odd digits occupy even positions?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "BNS7B",
+              "text": "<br />16",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "oFe2X",
+              "text": "<br />36",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "HWuVJ",
+              "text": "<br />60",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "YDh9R",
+              "text": "<br />180",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{X}-\\mathrm{X}-\\mathrm{X}-\\mathrm{X}-\\mathrm{X}$. The four digits 3, 3, 5,5 can be arranged at $(-)$ places in $\\frac{4 !}{2 ! 2 !}=6$ ways. The five digits $2,2,8,8,8$ can be arranged at $(X)$ places in $\\frac{5 !}{2 ! 3 !}$ ways $=10$ ways<br />Total no. of arrangements $=6 \\times 10=60$ ways",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8336f5bfc7ab78aeb78",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The number of different seven-digit numbers that can be written using only the three digit 1 , 2 and 3 with the condition that the digit 2 occurs twice in each number is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "VKvKD",
+              "text": "\r\n${ }^7 C_2 2^5$\r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "IPh61",
+              "text": "\r\n${ }^7 p_2 2^5$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "3kKDP",
+              "text": "\r\n${ }^7 C_2 5^2$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "6aMcZ",
+              "text": "\r\nNone of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Other than 2, remaining five places can be filled by 1 and 3 for each place. The number of ways for five places is $2 \\times 2 \\times 2 \\times 2 \\times 2=2^5$. For 2 , selecting 2 places out of 7 is ${ }^7 C_2$. Hence, the required number of ways is ${ }^7 C_2 \\times 2^5$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8276f5bfc7ab78aeb10",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "How many numbers lying between 999 and 10000 can be formed with the help of the digits $0,2,3,6,7,8$, when the digits are not repeated?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "zyRRT",
+              "text": "100",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "6lGhb",
+              "text": "200",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "jpWFK",
+              "text": "300",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "v4JdW",
+              "text": "400",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The numbers between 999 and 10000 are all 4-digit numbers. The number of 4 - digit numbers formed by digits $0,2,3,6,7,8$ is ${ }^{6} \\mathrm{P}_{4}=360$. But here those numbers are also involved which begin from 0 . So, we take those numbers as three-digit numbers.\r\n\r\nTaking initial digit 0 , the number of ways to fill remaining 3 places from five digits $2,3,6,7,8$ are ${ }^{5} \\mathrm{P}_{3}=60$\r\n\r\nSo, the required numbers $=360-60=300$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e81a6f5bfc7ab78aea9a",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The number of possible outcomes in a throw of n ordinary dice in which at least one of the dice shows an odd number is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "iGfWN",
+              "text": "$6^{n}-1$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "o4Boz",
+              "text": "$3^{n}-1$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "fE4eO",
+              "text": "$6^{n}-3^{n}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "eN4XZ",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Total number of ways $=6 \\times 6 \\times \\ldots \\ldots$ to $n$ times $=6^{n}$ Total number of ways to show only even number $=3 \\times 3 \\times \\ldots \\ldots$ to $n$ times $=3^{n}$\r\n\r\n$\\therefore$ required number of ways $=6^{\\mathrm{n}}-3^{\\mathrm{n}}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7fd6f5bfc7ab78ae99a",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If a parallelogram is cut by two sets of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi></math> lines parallel to its sides, then the number of parallelogram thus formed, is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "hHOzX",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mmultiscripts><mi>C</mi><mn>2</mn><none/><mprescripts/><none/><mi>m</mi></mmultiscripts><mo>&#215;</mo><mmultiscripts><mi>C</mi><mn>2</mn><none/><mprescripts/><none/><mi>m</mi></mmultiscripts></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "O73or",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mfenced><mmultiscripts><mi>C</mi><mn>2</mn><none/><mprescripts/><none/><mrow><mi>m</mi><mo>+</mo><mn>2</mn></mrow></mmultiscripts></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "2wjeY",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mmultiscripts><mi>C</mi><mn>2</mn><none/><mprescripts/><none/><mrow><mi>m</mi><mo>+</mo><mn>2</mn></mrow></mmultiscripts></mfenced><mn>2</mn></msup></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "NzFko",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>The two sets of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi></math> parallel lines along with two sets of two parallel lines of the given parallelogram will form two sets of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mi>m</mi><mo>+</mo><mn>2</mn></mrow></mfenced></math> parallel lines. Each parallelogram is formed by choosing two parallel lines from each of the above</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> Total number of parallelograms</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mmultiscripts><mi>C</mi><mn>2</mn><none/><mprescripts/><none/><mrow><mi>m</mi><mo>+</mo><mn>2</mn></mrow></mmultiscripts><mo>&#215;</mo><mmultiscripts><mi>C</mi><mn>2</mn><none/><mprescripts/><none/><mrow><mi>m</mi><mo>+</mo><mn>2</mn></mrow></mmultiscripts><mo>=</mo><msup><mfenced><mmultiscripts><mi>C</mi><mn>2</mn><none/><mprescripts/><none/><mrow><mi>m</mi><mo>+</mo><mn>2</mn></mrow></mmultiscripts></mfenced><mn>2</mn></msup></math></p><p>Hence, option (c) is correct.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7e46f5bfc7ab78ae8c0",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "All the words that can be formed using alphabets A, $H, L, U$ and $R$ are written as in a dictionary (no alphabet is repeated). Rank of the word RAHUL is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "drpv7",
+              "text": "71",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "8REAA",
+              "text": "72",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ZsQev",
+              "text": "73",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "R25OR",
+              "text": "74",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No. of words starting with $\\mathrm{A}$ are $4 !=24$\r\n\r\nNo. of words starting with $\\mathrm{H}$ are $4 !=24$\r\n\r\nNo. of words starting with $L$ are $4 !=24$\r\n\r\nThese account for 72 words Next word is RAHLU and the $74^{\\text {th }}$ word RAHUL",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7886f5bfc7ab78ae5af",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "In a polygon no three diagonals are concurrent. If the total number of points of intersection of diagonals interior to the polygon be 70 then the number of diagonals of the polygon is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "VONpZ",
+              "text": "20",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "RUAdg",
+              "text": "28",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "M2ezu",
+              "text": "8",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "tkx5n",
+              "text": "None of these",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "A combination of four vertices is equivalent to one interior point of intersection of diagonals.\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/rPkMaoMA84X7jjk_MZSrQoolKg3Y1oDMudbyYmES1nc.original.fullsize.png\"><br>\n\\(\\therefore\\) No. of interior points of intersection\n\\(\\begin{aligned}\n& ={ }^{\\mathrm{n}} \\mathrm{C}_4=70 \\\\\n& \\Rightarrow \\mathrm{n}(\\mathrm{n}-1)(\\mathrm{n}-2)(\\mathrm{n}-3)=5.6 .7 .8 \\\\\n& \\therefore \\mathrm{n}=8\n\\end{aligned}\\)\nSo, number of diagonals \\(={ }^8 \\mathrm{C}_2-8=20\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7886f5bfc7ab78ae5ae",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "If \\(\\frac{1-i \\alpha}{1+i \\alpha}=A+i B\\), then \\(A^2+B^2\\) equals to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "7xQMK",
+              "text": "1",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "TaPzJ",
+              "text": "\\(\\alpha^2\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GvaO3",
+              "text": "-1",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "hHrDe",
+              "text": "\\(-\\alpha^2\\)",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "\\(\\begin{aligned}\n& A+i B=\\frac{1-i \\alpha}{1+i \\alpha} \\Rightarrow A-i B=\\frac{1+i \\alpha}{1-i \\alpha} \\\\\n& \\Rightarrow(A+i B)(A-i B)=\\frac{(1-i \\alpha)(1+i \\alpha)}{(1+i \\alpha)(1-i \\alpha)}=1 \\\\\n& \\Rightarrow A^2+B^2=1\n\\end{aligned}\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e77b6f5bfc7ab78ae534",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "If \\(\\frac{2 x+3}{5}  < \\frac{4 x-1}{2}\\), then \\(x\\) lies in the interval",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "3M8Nm",
+              "text": "\\(\\left[0, \\frac{11}{16}\\right)\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "R8cp2",
+              "text": "\\(\\left[\\frac{11}{16}, \\infty\\right)\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "VJIxz",
+              "text": "\\(\\left(0, \\frac{11}{16}\\right)\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "KyEtc",
+              "text": "\\(\\left(\\frac{11}{16}, \\infty\\right)\\)",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "\\(\\begin{aligned}\n& \\frac{2 x+3}{5}  < \\frac{4 x-1}{2} \\Rightarrow-16 x < -11 \\\\\n& \\Rightarrow 16 x > 11 \\Rightarrow x > \\frac{11}{16} \\\\\n& \\text { Hence, } x \\in\\left(\\frac{11}{16}, \\infty\\right)\n\\end{aligned}\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e8686f5bfc7ab78aedd8",
+      "title": "Combination",
+      "totalQuestions": 9,
+      "questions": [
+        {
+          "_id": "67726d0cc49e8ef28ee2b3d9",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "At an election a voter may vote for any number of candidates not exceeding the number to be elected. If 4 candidates are to be elected out of the 12 contested in the election and voter votes for at least one candidate, then the number of way of selections",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "WEqOn",
+              "text": "$793$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "F1Jk1",
+              "text": "$298$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "dRLY4",
+              "text": "$781$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "1nZkP",
+              "text": "$1585$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Total contested candidates $=12$\n4 candidates are to be elected and voter votes for at least one candidate then total number of ways of selections.\n$={ }^{12} \\mathrm{C}_1+{ }^{12} \\mathrm{C}_2+{ }^{12} \\mathrm{C}_3+{ }^{12} \\mathrm{C}_4$\n$=12+\\frac{12 \\times 11}{2 \\times 1}+\\frac{12 \\times 11 \\times 10}{3 \\times 2 \\times 1}+\\frac{12 \\times 11 \\times 10 \\times 9}{4 \\times 3 \\times 2 \\times 1}$\n$=12+66+220+495=793$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e80d6f5bfc7ab78aea2c",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "A person writes letter to six friends and addresses the corresponding envelopes. Let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math> be the numbers of ways so that at least two of the letters are in wrong envelopes and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math> be the numbers of ways so that all the letters are in wrong envelopes. Then <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>-</mo><mi>y</mi><mo>=</mo></math>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "0KLxF",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>719</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "pOg2P",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>265</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "FvOGt",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>454</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "D2i7Y",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>720</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Since only one letters can not be in wrong envelope so that at least two letters are in wrong envelope means all the letters are not in right envelopes.<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi>x</mi><mo>=</mo><mn>6</mn><mo>!</mo><mo>-</mo><mn>1</mn><mo>=</mo><mn>720</mn><mo>-</mo><mn>1</mn><mo>=</mo><mn>719</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Y</mi><mo>=</mo></math> number of ways, so that all the letters are in wrong envelops</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>6</mn><mo>!</mo><mfenced><mrow><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>!</mo></mrow></mfrac><mo>-</mo><mfrac><mn>1</mn><mrow><mn>3</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mn>4</mn><mo>!</mo></mrow></mfrac><mo>-</mo><mfrac><mn>1</mn><mrow><mn>5</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mn>6</mn><mo>!</mo></mrow></mfrac></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>360</mn><mo>-</mo><mn>120</mn><mo>+</mo><mn>30</mn><mo>-</mo><mn>6</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>265</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi>x</mi><mo>-</mo><mi>y</mi><mo>=</mo><mn>719</mn><mo>-</mo><mn>265</mn><mo>=</mo><mn>454</mn></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7e46f5bfc7ab78ae8c3",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If three vertices of a regular hexagon are chosen at random, then the chance that they form an equilateral triangle is:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "NdCX2",
+              "text": "$\\frac{1}{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "sTykm",
+              "text": "$\\frac{1}{5}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "HDUpo",
+              "text": "$\\frac{1}{10}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "XPLxn",
+              "text": "$\\frac{1}{2}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Three vertices can be selected in ${ }^{6} \\mathrm{C}_{3}$ ways.\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/YwWmXDaEV9LZX_I_avY1qkPu_rA3XsvxmHeX49ysZMc.original.fullsize.png\"><br>\r\n\r\nThe only equilateral triangles possible are $\\mathrm{A}_{1} \\mathrm{~A}_{3} \\mathrm{~A}_{5}$ and $\\mathrm{A}_{2} \\mathrm{~A}_{4} \\mathrm{~A}_{6}$\r\n\r\n$\\mathrm{p}=\\frac{2}{{ }^{6} \\mathrm{C}_{3}}=\\frac{2}{20}=\\frac{1}{10}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7d36f5bfc7ab78ae829",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The total number of 4 -digit numbers in which the digits are in descending order, is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ccJja",
+              "text": "${ }^{n} C_{4} \\times 4 !$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "SGrTF",
+              "text": "${ }^{10} \\mathrm{C}_{4}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "31Ruy",
+              "text": "$\\frac{10 !}{4 !}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "9NqZu",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Total number of arrangements of 10 digits $0,1,2, \\ldots, 9$ bytaking 4 at atime $={ }^{10} \\mathrm{C}_{4} \\times 4 !$\r\n\r\nWe observe that in every arrangement of 4 selected digits there is just one arrangement in which the digits are in descending order.\r\n\r\n$\\therefore$ Required number of 4 -digit numbers.\r\n\r\n$$\r\n\r\n=\\frac{{ }^{10} \\mathrm{C}_{4} \\times 4 !}{4 !}={ }^{10} \\mathrm{C}_{4}\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c36f5bfc7ab78ae7a8",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "In how many ways can a committee of 5 made out 6 men and 4 women containing atleast one woman?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ILWzt",
+              "text": "246",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "YuiK4",
+              "text": "222",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "pQBdc",
+              "text": "186",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "icz8G",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "A committee of 5 out of $6+4=10$ can be made in ${ }^{10} \\mathrm{C}_{5}=252$ ways. If no woman is to be included, thennumber of ways $={ }^{5} \\mathrm{C}_{5}=6$\r\n\r\n$\\therefore$ the required number $=252-6=246$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c36f5bfc7ab78ae7a7",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The number of all three elements subsets of the set $\\left\\{a_{1}, a_{2}, a_{3} \\ldots a_{n}\\right\\}$ which contain $a_{3}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "fHPO4",
+              "text": "${ }^{\\mathrm{n}} \\mathrm{C}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "yOAK0",
+              "text": "${ }^{\\mathrm{n}-1} \\mathrm{C}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "1gjJH",
+              "text": "${ }^{\\mathrm{n}-1} \\mathrm{C}_{2}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Dz2HF",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The number of three elements subsets containing $\\mathrm{a}_{3}$ is equal to the number of ways of selecting 2 elements out of $\\mathrm{n}-1$ elements. So, the required number of subsets is ${ }^{\\mathrm{n}-1} \\mathrm{C}_{2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b56f5bfc7ab78ae729",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "A box contains two white balls, three black balls and four red balls. In how many ways can three balls be drawn from the box if at least one black ball is to be included in the draw?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "KK7xo",
+              "text": "64",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "FLkWy",
+              "text": "129",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "a6RBn",
+              "text": "84",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ToktQ",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Atleast one black ball can be drawn in the following ways\r\n\r\n(1) one black and two other colour balls\r\n\r\n$$\r\n\r\n={ }^{3} \\mathrm{C}_{1} \\times{ }^{6} \\mathrm{C}_{2}=3 \\times 15=45\r\n\r\n$$\r\n\r\n(ii) two black and one other colour balls\r\n\r\n$$\r\n\r\n={ }^{3} \\mathrm{C}_{2} \\times{ }^{6} \\mathrm{C}_{1}=3 \\times 6=18\r\n\r\n$$\r\n\r\n(iii) All the three are black $={ }^{3} \\mathrm{C}_{3} \\times{ }^{6} \\mathrm{C}_{0}=1$\r\n\r\n$\\therefore$ Req. no. of ways $=45+18+1=64$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a56f5bfc7ab78ae6ab",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The number of positive integral solution of $\\mathrm{abc}=30 \\mathrm{is}$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Je28q",
+              "text": "30",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "jQDdi",
+              "text": "27",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "fh9oB",
+              "text": "8",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "xqnZP",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We have : $30=2 \\times 3 \\times 5 .$ So, 2 can be assigned to either a or b or ci.e. 2 can be assigned in 3 ways. Similarly, each of 3 and 5 can be assigned in 3 ways. Thus, the number of solutions is $3 \\times 3 \\times 3=27$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7976f5bfc7ab78ae62f",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "If \\({ }^{20} \\mathrm{C}_{\\mathrm{r}}={ }^{20} \\mathrm{C}_{\\mathrm{r}-10}\\) then \\({ }^{18} \\mathrm{C}_{\\mathrm{r}}\\) is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "EeJFY",
+              "text": "4896",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "uO6uc",
+              "text": "816",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "gBVym",
+              "text": "1632",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fEQDy",
+              "text": "None of these",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "\\({ }^{20} \\mathrm{C}_{\\mathrm{r}}={ }^{20} \\mathrm{C}_{\\mathrm{r}-10} \\Rightarrow \\mathrm{r}+(\\mathrm{r}-10)=20 \\Rightarrow \\mathrm{r}=15\\)\n\\(\\therefore \\quad{ }^{18} \\mathrm{C}_{\\mathrm{r}}={ }^{18} \\mathrm{C}_{15}={ }^{18} \\mathrm{C}_3=\\frac{18 \\cdot 17 \\cdot 16}{1 \\cdot 2 \\cdot 3}=816\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "64c0e8696f5bfc7ab78aedde",
+      "title": "Arrangement under Constraint",
+      "totalQuestions": 4,
+      "questions": [
+        {
+          "_id": "67726d1cc49e8ef28ee2b455",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "How many different nine digit numbers can be formed from the number 223355888 by rearranging its digits so that the odd digits occupy even positions",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "vuium",
+              "text": "16",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZKBAy",
+              "text": "36",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "tGVuS",
+              "text": "60",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "7b7lh",
+              "text": "100",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Here we have 4 odd digits $(3,3,5,5)$ and 5 even digits (2, 2, 8, 8, 8).\n$\\bar{O} \\bar{E} \\bar{O} \\bar{E} \\bar{O} \\bar{O} \\bar{E} \\bar{O}$\nwhere, $E \\rightarrow$ even place and $O \\rightarrow$ odd place\n$\\Rightarrow$ Number of ways odd digits will be place on even places\n$=\\frac{4!}{2!2!}$\nNumber of ways even digits will be place on odd places\n$\\begin{aligned}\n& \\quad=\\frac{5!}{2!3!} \\\\\n& \\therefore \\text { Total number of ways }=\\frac{4!}{2!2!} \\times \\frac{5!}{2!3!}=60\n\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87597ae24e9e2db8c8e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Number of words from the letters of the words BHARAT in which $B$ and $\\mathrm{H}$ will never come together is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "4uj9W",
+              "text": "210",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3v7OT",
+              "text": "240",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "5h1M5",
+              "text": "422",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qnfac",
+              "text": "400",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "There are 6 letters in the word BHARAT, 2 of them are identical. Hence total number of words $=6 ! / 2 !=360$<br />Number of words in which $B$ and $\\mathrm{H}$ come together<br />$=\\frac{5 ! 2 !}{2 !}=120$<br />final ans $=360-120=240$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8356f5bfc7ab78aeb87",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The number of ways of arranging letters of the word HAVANA so that $\\mathrm{V}$ and $\\mathrm{N}$ do not appear together is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "p3kdX",
+              "text": "\r\n40\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "MUQ5q",
+              "text": "\r\n60\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "wQqF0",
+              "text": "\r\n80\r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "IcWEf",
+              "text": "\r\n100",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We can arrange the letters $\\mathrm{H}, \\mathrm{A}, \\mathrm{A}, \\mathrm{A}$ in $\\frac{4 !}{3 !}=4$ ways. If one possible arrangement is\r\n$$\r\nX X X X\r\n$$\r\nThen, we can arrange $\\mathrm{V}, \\mathrm{N}$ at any of the two places marked with $\\mathrm{O}$ in the following arrangement\r\n$$\r\n\\mathrm{O} \\times \\mathrm{O} \\times \\mathrm{O} \\times \\mathrm{O} \\times \\mathrm{O}\r\n$$\r\nThus, we can arrange $V$ and $N$ in ${ }^5 P_2=20$ ways. Thus, the number of ways in which letters can be arranged is $4 \\times 20=80$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e81c6f5bfc7ab78aeaaa",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "A person invites a party of 10 friends at dinner and place them so that 4 are on one round table and 6 on the other round table. The number of ways in which he can arrange the guests is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "yqqXY",
+              "text": "$\\frac{(10) !}{6 !}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "RHGD2",
+              "text": "$\\frac{(10) !}{24}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "BG9FH",
+              "text": "$\\frac{(9) !}{24}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "LcDNd",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Selection of 6 guests $=10 \\mathrm{C} 6$ \r\n\r\nPermutation of 6 on round table $=5 !$ \r\n\r\nPermutation of 4 on round table $=3 !$\r\n\r\nThen, total number of arrangements $=10 \\mathrm{C} 6.5 ! .3 !$\r\n\r\n$=\\frac{(10) !}{6 ! 4 !} \\cdot 5 ! .3 !=\\frac{(10) !}{24}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "64c0e8696f5bfc7ab78aedda",
+      "title": "Circular Permutation",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "67726d1bc49e8ef28ee2b44c",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "A person invites a party of 10 friends at dinner and place so that 4 are on one round table and 6 on the other round table. Total number of ways in which he can arrange the guests is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "1DSNZ",
+              "text": "$\\frac{10!}{6!}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nix3j",
+              "text": "$\\frac{10!}{24}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "RKbF4",
+              "text": "$\\frac{9!}{24}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iD2sY",
+              "text": "None of these",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Total person $=10$\nTwo groups are formed containing 4 and 6 persons.\n$\\therefore$ Total ways of formation of groups $=\\frac{10!}{4!6!}$\nNow, 4 persons can be arranged on round table\n$=(4-1)!=3!$\nand 6 persons can be arranged on round table $=(6-1)$ !\n$=5!$\n$\\therefore$ Total ways of arranging the guest\n$=\\frac{10!}{4!6!} \\times 3!\\times 5!=\\frac{10!}{24}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b46f5bfc7ab78ae728",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "In how many ways can 5 boys and 5 girls be seated at a round table so that no two girls may be together?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "HWyq8",
+              "text": "$4 !$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Mop3w",
+              "text": "$5 !$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "6FbeW",
+              "text": "$4 !+5 !$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ORcqj",
+              "text": "$4 ! \\times 5 !$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Leaving one seat vacant between two boys, 5 boys may be seated in $4 !$ ways. Then at remaining 5 seats, 5 girls any sit in $5 !$ ways. Hence the required number $=4 ! \\times 5 !$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "topicId": "64c0e8696f5bfc7ab78aeddc",
+      "title": "Selection of one or more item",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "64c0e81b6f5bfc7ab78aeaa2",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Total number of ways of selecting 2 white squares on a normal chess board if the squares are not from the same row or column is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "wAjm5",
+              "text": "480",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "892SR",
+              "text": "496",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "k3nbD",
+              "text": "412",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "xEkss",
+              "text": "400",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "2 white squares can be selected in ${ }^{32} \\mathrm{C}_{2}$ ways If they belong to some row or same column then $2\\left(8 \\cdot{ }^{4} \\mathrm{C}_{2}\\right)$ ways.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ef6f5bfc7ab78ae91e",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The number of times the digit <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn></math> will be written when listing the integers from <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math> to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1000</mn></math>, is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "LGntb",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>271</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "mJJiD",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>272</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ViSRS",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>300</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "RbScc",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Any number&nbsp;between&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math>&nbsp;to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>999</mn></math> is of the form <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mi>b</mi><mi>c</mi></math> when <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>&#8804;</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>&#8804;</mo><mn>9</mn></math>. Let us first count the number in which <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn></math> occurs exactly once.</p><p>Since, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn></math> can occur at one place in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&#215;</mo><mmultiscripts><mi>C</mi><mn>1</mn><none></none><mprescripts></mprescripts><none></none><mn>3</mn></mmultiscripts><mo>&#215;</mo><mn>9</mn><mo>&#215;</mo><mn>9</mn><mo>=</mo><mn>243</mn></math> ways, next <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn></math> can occur in exactly two places in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mmultiscripts><mi mathvariant=\"normal\">C</mi><mn>2</mn><none></none><mprescripts></mprescripts><none></none><mn>3</mn></mmultiscripts><mo>&#215;</mo><mn>9</mn><mo>=</mo><mn>27</mn></math>.</p><p>Lastly, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn></math> can occur in all three digits in only one way.</p><p>Hence, the number of times <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn></math> occurs</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>1</mn><mo>&#215;</mo><mn>243</mn><mo>+</mo><mn>27</mn><mo>&#215;</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>&#215;</mo><mn>3</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>243</mn><mo>+</mo><mn>54</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>300</mn></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "topicId": "64c0e8696f5bfc7ab78aedd9",
+      "title": "Division and Distribution of Distinct Items",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e7a56f5bfc7ab78ae6aa",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "In how many ways can 5 prizes be distributed among 4 boys when every boy can take one or more prizes?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "o6l4z",
+              "text": "1024",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "A6lkK",
+              "text": "625",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "YskQo",
+              "text": "120",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "rPtaO",
+              "text": "600",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "First prize may be given to any one of the 4 boys, hence first prize can be distributed in 4 ways. similarly every one of second, third, fourth and fifth prizes can also be given in 4 ways. the number of ways of their distribution $=4 \\times 4 \\times 4 \\times 4 \\times 4=4^{5}=1024$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "topicId": "64c0e8696f5bfc7ab78aeddd",
+      "title": "Division of Identical items",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e8196f5bfc7ab78aea90",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If 16 identical pencils are distributed among 4 children such that each gets at least 3 pencils. The number of ways of distributing the pencils is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "muVDX",
+              "text": "15",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "NjzHn",
+              "text": "25",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "pmnea",
+              "text": "35",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "nMkd8",
+              "text": "40",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Required number of ways\r\n\r\n$=\\text { coeff. of } x^{16} \\text { in }\\left(x^{3}+x^{4}+x^{5}+x^{6}+x^{7}\\right)^{4}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "topicId": "67726da1c49e8ef28ee2b4af",
+      "title": "Geometric Permutation",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "67726d0cc49e8ef28ee2b3d8",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "If ${ }^{22} P_{r+1}:{ }^{20} P_{r+2}=11: 52$, then $r$ is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "uhrln",
+              "text": "$3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "du7vH",
+              "text": "$5$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fg8VL",
+              "text": "$7$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "inF7N",
+              "text": "$9$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "${ }^{22} P_{r+1}:{ }^{20} P_{r+2}=11: 52$\nor $(21-r)(20-r)(19-r)=52 \\times 2 \\times 21$\n$\\Rightarrow(21-r)(20-r)(19-r)=14 \\times 13 \\times 12$\n$\\begin{aligned} & \\Rightarrow(21-r)(20-r)(19-r)=(21-7)(20-7)(19 \\\\ & -7)\\end{aligned}$\n$\\Rightarrow r=7$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

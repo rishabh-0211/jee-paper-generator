@@ -1,0 +1,1421 @@
+{
+  "index": 15,
+  "chapterId": "616024c50e12f91df5ea7f3f",
+  "chapter": "Solid State",
+  "exam": "JEE Advanced",
+  "totalTopics": 5,
+  "totalQuestions": 20,
+  "downloadTime": "2026-10-08 20:02:32",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64b16adaf23ac7d519f9b8c5",
+      "title": "Properties and Types of Solids",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64b16a15f23ac7d519f9b12d",
+          "type": "numerical",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "620a8a1f77301f65c2f92c49",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2011-04-30T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011 (Paper 2)",
+              "title": "JEE Advanced 2011 (Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "The number of hexagonal faces that are present in a truncated octahedron is",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "8",
+          "solution": {
+            "text": "The truncated octahedron is the 14 -faced Archimedean solid, with 14 total faces. 6 squares and 8 regular hexagons. The truncated octahedron is formed by removing the six right square pyramids one from each point of a regular octahedron as:\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/0Ays1Y-sIvRd3Z-6kSPicKswM180avyRcr1VQ0V2Nyg.original.fullsize.png\"><br><img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/-JlvmLRDxeTV2uTP4_0yf8aXiTq-5DXDl3m_3A87Uvo.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "620a8a1f77301f65c2f92c49",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2011-04-30T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011 (Paper 2)",
+            "title": "JEE Advanced 2011 (Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64b16adaf23ac7d519f9b8c3",
+      "title": "Crystal Structure of Solids",
+      "totalQuestions": 4,
+      "questions": [
+        {
+          "_id": "64b16a9ef23ac7d519f9b60a",
+          "previousYearPapers": [
+            {
+              "_id": "632c83583e3fd59bda92e46d",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2022-04-30T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022 (Paper 2)",
+              "title": "JEE Advanced 2022 (Paper 2)"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Atom <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">X</mi></math> occupies the fcc lattice sites as well as alternate tetrahedral voids of the same lattice. The packing efficiency (in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>%</mo></math>) of the resultant solid is closest to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "OywWw",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>25</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "9MWjX",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>35</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Jiynd",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>55</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "8levN",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>75</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<blockquote><p>Atom <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">X</mi></math> occupies FCC lattice sites as well as alternate tetrahedral voids of FCC. In FCC, tetrahedral voids are <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>8</mn></math> (in a unit cell) Hence</p><p>Atom <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">X</mi></math> in a unit cell (FCC lattice sites)</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>8</mn><mo>&#215;</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>+</mo><mn>6</mn><mo>&#215;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>=</mo><mn>4</mn></math></p><p>Atom <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">X</mi></math> in a unit cell (in T.V.) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#215;</mo><mn>8</mn><mo>=</mo><mn>4</mn></math></p><p>Total atom<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">X</mi></math> &nbsp;in one unit cell <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>8</mn></math></p><p>For relation between a and r, since Tetrahedral void&nbsp;&nbsp;forms at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mn>4</mn></mfrac></math>th of body diagonal,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi mathvariant=\"normal\">a</mi><msqrt><mn>3</mn></msqrt></mrow><mn>4</mn></mfrac><mo>=</mo><mn>2</mn><mi mathvariant=\"normal\">r</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">a</mi><mo>=</mo><mfrac><mrow><mn>8</mn><mi mathvariant=\"normal\">r</mi></mrow><msqrt><mn>3</mn></msqrt></mfrac></math></p><p>Packing efficiency <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mn>8</mn><mo>&#215;</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><msup><mi>&#960;r</mi><mn>3</mn></msup></mrow><msup><mi mathvariant=\"normal\">a</mi><mn>3</mn></msup></mfrac><mo>&#215;</mo><mn>100</mn><mo>=</mo><mfrac><mrow><mn>8</mn><mo>&#215;</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><msup><mi>&#960;r</mi><mn>3</mn></msup></mrow><msup><mfenced><mfrac><mrow><mn>8</mn><mi mathvariant=\"normal\">r</mi></mrow><msqrt><mn>3</mn></msqrt></mfrac></mfenced><mn>3</mn></msup></mfrac><mo>&#215;</mo><mn>100</mn><mo>=</mo><mn>35</mn><mo>%</mo></math></p></blockquote>",
+            "image": null
+          },
+          "videoSolution": {
+            "videoId": "b8b999c7b6ac4a14a45dc4b8f159cc12",
+            "provider": "vdocipher",
+            "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/xZnY7wCSR5C5w.480.jpeg",
+            "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/xZnY7wCSR5C5w.480.jpeg",
+            "premiumModules": [
+              {
+                "premiumModuleId": "6628114842d540dfcb148ecb",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "64c7e8e829737784b294e469",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "6788cc0b2dbc1ecacabb7026",
+                "isFree": false
+              }
+            ],
+            "description": "JEE Advanced (All PYQs from 2023 - 2013)"
+          },
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "632c83583e3fd59bda92e46d",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2022-04-30T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022 (Paper 2)",
+            "title": "JEE Advanced 2022 (Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b16a27f23ac7d519f9b1d4",
+          "previousYearPapers": [
+            {
+              "_id": "615d92eede3d91842a5cf822",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013 (Paper 1)",
+              "title": "JEE Advanced 2013 (Paper 1)"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "<p>The arrangement of X<sup>-</sup> ions around A<sup>+</sup> ion in solid AX is given in the figure (not drawn to scale). If the radius of X<sup>-</sup> is 250 pm, the radius of A<sup>+</sup> is <br ><img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/EM00012583_JEE_ADVANCED_2013.jpg\"/></p>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "IFTa6",
+              "text": "104 pm",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "xnsP5",
+              "text": "125&nbsp;​pm",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "xIPeg",
+              "text": "183&nbsp;​pm",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "zU5kc",
+              "text": "57&nbsp;​pm",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "A<sup>+</sup> cation is filled in octahedral hole generated by X<sup>-</sup> anion&nbsp;<br />i.e.,&nbsp;<math> <mrow> <mfrac> <mrow> <msub> <mtext>r</mtext> <msup> <mtext>A</mtext> <mo>+</mo> </msup> </msub> </mrow> <mrow> <msub> <mtext>r</mtext> <msup> <mtext>X</mtext> <mo>-</mo> </msup> </msub> </mrow> </mfrac> <mo>=</mo> <mtext>0.414</mtext> </mrow> </math><br /><math> <mrow> <msub> <mtext>r</mtext> <msup> <mtext>A</mtext> <mo>+</mo> </msup> </msub> <mo>=</mo> <mtext>0.414</mtext> <mo>×</mo> <mn>2</mn> <mn>5</mn> <mn>0</mn> <mo>=</mo> <mtext>103.5</mtext> <mtext>&nbsp;pm</mtext> </mrow> </math><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math> <mrow> <mo>≈</mo> <mn>1</mn> <mn>0</mn> <mn>4</mn> <mtext>pm</mtext> </mrow> </math>",
+            "image": null
+          },
+          "videoSolution": {
+            "videoId": "56d98896c2e54282a0a8f6a6d49ea3db",
+            "provider": "vdocipher",
+            "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/xiAUWW5XQEMMV.480.jpeg",
+            "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/xiAUWW5XQEMMV.480.jpeg",
+            "premiumModules": [
+              {
+                "premiumModuleId": "6628114842d540dfcb148ecb",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "64c7e8e829737784b294e469",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "6788cc0b2dbc1ecacabb7026",
+                "isFree": false
+              }
+            ],
+            "description": "JEE Advanced (All PYQs from 2023 - 2013)"
+          },
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "615d92eede3d91842a5cf822",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013 (Paper 1)",
+            "title": "JEE Advanced 2013 (Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b16a1af23ac7d519f9b15f",
+          "previousYearPapers": [
+            {
+              "_id": "620a8a1f77301f65c2f92c4a",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012 (Paper 1)",
+              "title": "JEE Advanced 2012 (Paper 1)"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "A compound $\\mathrm{M}_{\\mathrm{p}} \\mathrm{X}_{\\mathrm{q}}$ has cubic close packing (ccp) arrangement of $\\mathrm{X}$. Its unit cell structure is shown below. The empirical formula of the compound is\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/0OaasNwsPUCQ9ofdG8mPkRg9E7U5S4FL1zoVZBkEghQ.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Du1NN",
+              "text": "$\\mathrm{MX}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "jHYxo",
+              "text": "$\\mathrm{MX}_{2}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "4743k",
+              "text": "$\\mathrm{M}_{2} \\mathrm{X}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "1xIh4",
+              "text": "$\\mathrm{M}_{5} \\mathrm{X}_{14}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No. of $M$ atoms $=\\frac{1}{4} \\times 4+1=1+1=2$\r\n\r\nNo. of $X$ atoms $=\\frac{1}{2} \\times 6+\\frac{1}{8} \\times 8=3+1=4$\r\n\r\nSo, formula $=M_{2} X_{4}=M X_{2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "620a8a1f77301f65c2f92c4a",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012 (Paper 1)",
+            "title": "JEE Advanced 2012 (Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b169dcf23ac7d519f9af25",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "620a8a1f77301f65c2f92c41",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2007-04-30T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2007 (Paper 2)",
+              "title": "JEE Advanced 2007 (Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Match the specified conditions in solids listed in Column I with their properties in Column II. Indicate your answer by darkening the appropriate bubbles of the $4 \\times 4$ matrix given in the ORS.\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/FOTt4rDNn0Mz5UEqBBqMEkmbIqJQz5GwTJtTKCsEoiI.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "NSuuN",
+              "text": "\nA-p; B-q; C-p; D-p, r\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "u0IFD",
+              "text": "\nA-p, s; B-p, q; C-q; D-p, r\n",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "btSzP",
+              "text": "\nA-s; B-p; C-p; D-q, r\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZQgNl",
+              "text": "\nA-p, s; B-p; C-p, q; D-p, s",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{A}-p, s, \\quad \\mathrm{~B}-p, q, \\quad \\mathrm{C}-q, \\quad \\mathrm{D}-q, r$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "620a8a1f77301f65c2f92c41",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2007-04-30T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2007 (Paper 2)",
+            "title": "JEE Advanced 2007 (Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64b16adaf23ac7d519f9b8c2",
+      "title": "Cubic system",
+      "totalQuestions": 13,
+      "questions": [
+        {
+          "_id": "685102c56bba689a3eb09cc7",
+          "type": "numerical",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "684c67d769037fad219cb0c2",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2025-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2025 (Paper 2)",
+              "title": "JEE Advanced 2025 (Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "The density (in $\\mathrm{g} \\mathrm{cm}^{-3}$ ) of the metal which forms a cubic close packed (ccp) lattice with an axial distance (edge length) equal to 400 pm is $\\qquad$ .\nUse: Atomic mass of metal $=105.6 \\mathrm{amu}$ and Avogadro's constant $=6 \\times 10^{23} \\mathrm{~mol}^{-1}$",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "11",
+          "solution": {
+            "text": "$\\begin{aligned} & \\text { CCP : } \\\\ & (\\mathrm{Z}=4, \\mathrm{a}=400 \\mathrm{pm}, \\mathrm{M}=105.6 \\mathrm{~g} / \\mathrm{mol}) \\\\ & \\text { Density }=\\frac{\\mathrm{Z} \\times \\mathrm{M}}{\\mathrm{a}^3 \\times \\mathrm{N}_{\\mathrm{A}}} \\\\ & =\\frac{4 \\times 105.6}{\\left(400 \\times 10^{-10}\\right)^3 \\times 6 \\times 10^{23}}=11.00 \\mathrm{~g} / \\mathrm{cm}^3\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": {
+            "videoId": "f719850165e24bcaba295d74c680266c",
+            "provider": "vdocipher",
+            "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/JplLtnbSjqiI6.480.jpeg",
+            "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/JplLtnbSjqiI6.480.jpeg",
+            "premiumModules": [
+              {
+                "premiumModuleId": "6788cc0b2dbc1ecacabb7026",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "6628114842d540dfcb148ecb",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "64c7e8e829737784b294e469",
+                "isFree": false
+              }
+            ],
+            "description": "JEE Advanced (All PYQs from 2023 - 2013)"
+          },
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "684c67d769037fad219cb0c2",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2025-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2025 (Paper 2)",
+            "title": "JEE Advanced 2025 (Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b16aa8f23ac7d519f9b66b",
+          "type": "multipleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "64b1672d25f94b8a85b91cda",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2023-04-30T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Paper 2)",
+              "title": "JEE Advanced 2023 (Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "<p>Atoms of metals <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant=\"normal\">y</mi></math>&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">z</mi></math>&nbsp;form face-centred cubic (fcc) unit cell of edge length <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">x</mi></msub></math>, body-centred cubic (bcc) unit cell of edge length <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">y</mi></msub></math>, and simple cubic unit cell of edge length <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">z</mi></msub></math>, respectively. If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">z</mi></msub><mo>=</mo><mfrac><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">y</mi></msub><mo>;</mo><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">y</mi></msub><mo>=</mo><mfrac><mn>8</mn><msqrt><mn>3</mn></msqrt></mfrac><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi></msub><mo>;</mo><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">z</mi></msub><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">y</mi></msub></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">z</mi></msub><mo>=</mo><mn>3</mn><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">x</mi></msub></math>, then the correct statement(s) is(are)</p><p>[Given: <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">x</mi></msub><mo>,</mo><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">y</mi></msub></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">z</mi></msub></math> are molar masses of metals <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant=\"normal\">y</mi></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>z</mi></math>, respectively. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi></msub><mo>,</mo><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">y</mi></msub></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">z</mi></msub></math> are atomic radii of metals <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi><mo>,</mo><mi mathvariant=\"normal\">y</mi></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">z</mi></math>, respectively.]</p>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "M6b4n",
+              "text": "Packing efficiency of unit cell of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi><mo>&#62;</mo></math> Packing efficiency of unit cell of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">y</mi><mo>&#62;</mo></math> Packing efficiency of unit cell of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">z</mi></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "hHQTr",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">y</mi></msub><mo>&#62;</mo><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">z</mi></msub></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "VCJjm",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">x</mi></msub><mo>&#62;</mo><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">y</mi></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lzfuz",
+              "text": "Density of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi><mo>&#62;</mo></math> Density of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">y</mi></math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Metal <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi></math> forms FCC (edge length <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">x</mi></msub></math> )</p><p>Metal y forms BCC (edge length <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">y</mi></msub></math> )</p><p>Metal <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">z</mi></math> forms SC (edge length <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">z</mi></msub></math> )</p><p>Given <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">z</mi></msub><mo>=</mo><mfrac><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">y</mi></msub></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">y</mi></msub><mo>=</mo><mfrac><mn>8</mn><msqrt><mn>3</mn></msqrt></mfrac><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;&#160;</mo><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">z</mi></msub><mo>=</mo><mfrac><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac><mo>&#215;</mo><mfrac><mn>8</mn><msqrt><mn>3</mn></msqrt></mfrac><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi></msub><mo>=</mo><mn>4</mn><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">z</mi></msub><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">y</mi></msub><mo>&#160;&#160;</mo><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">z</mi></msub><mo>=</mo><mn>3</mn><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">x</mi></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">y</mi></msub><mo>=</mo><mn>2</mn><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">x</mi></msub></math></p><p>Packing efficiency <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>FCC</mi><mo>&#160;</mo><mo>&#62;</mo><mo>&#160;</mo><mi>BCC</mi><mo>&#160;</mo><mo>&#62;</mo><mo>&#160;</mo><mi>SC</mi></math></p><p>Packing efficiency unit cell <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi><mo>&#62;</mo><mi mathvariant=\"normal\">y</mi><mo>&#62;</mo><mi mathvariant=\"normal\">z</mi></math></p><p>In FCC unit cell:- atoms along the face diagonals are in contact.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><msqrt><mn>2</mn></msqrt><mo>&#160;</mo><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">x</mi></msub><mo>=</mo><mn>4</mn><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi></msub><mo>&#8658;</mo><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">x</mi></msub><mo>=</mo><mn>2</mn><msqrt><mn>2</mn></msqrt><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi></msub></math></p><p>In BCC unit cell: atoms along the body diagonal are</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><msqrt><mn>3</mn></msqrt><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">y</mi></msub><mo>=</mo><mn>4</mn><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">y</mi></msub><mo>&#8658;</mo><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">y</mi></msub><mo>=</mo><mfrac><mn>4</mn><msqrt><mn>3</mn></msqrt></mfrac><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">y</mi></msub><mo>=</mo><mfrac><mn>4</mn><msqrt><mn>3</mn></msqrt></mfrac><mo>&#215;</mo><mfrac><mn>8</mn><msqrt><mn>3</mn></msqrt></mfrac><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi></msub><mo>=</mo><mfrac><mn>32</mn><mn>3</mn></mfrac><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">y</mi></msub><mo>=</mo><mfrac><mn>32</mn><mn>3</mn></mfrac><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi></msub></math></p><p>In SC unit cell, atoms along the edge are in contact</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">z</mi></msub><mo>=</mo><mn>2</mn><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">z</mi></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>2</mn><mo>&#215;</mo><mn>4</mn><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi></msub><mo>=</mo><mn>8</mn><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">x</mi></msub><mo>=</mo><mn>2</mn><msqrt><mn>2</mn></msqrt><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">y</mi></msub><mo>=</mo><mfrac><mn>32</mn><mn>3</mn></mfrac><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">z</mi></msub><mo>=</mo><mn>8</mn><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">y</mi></msub><mo>&#62;</mo><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">z</mi></msub><mo>&#62;</mo><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">x</mi></msub></math></p><p>Density of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi></math>&nbsp;(Number of atoms of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi></math> per unit cell <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">z</mi><mo>)</mo><mo>=</mo><mn>4</mn><mo>)</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">d</mi><mi mathvariant=\"normal\">x</mi></msub><mo>=</mo><mfrac><msub><mi>zM</mi><mi mathvariant=\"normal\">x</mi></msub><mrow><msup><mfenced><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">x</mi></msub></mfenced><mn>3</mn></msup><mo>&#160;</mo><msub><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">A</mi></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>4</mn><mo>&#215;</mo><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">x</mi></msub></mrow><mrow><msup><mfenced><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi></msub></mrow></mfenced><mn>3</mn></msup><mo>&#215;</mo><msub><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">A</mi></msub></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mn>4</mn><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">x</mi></msub></mrow><mrow><mn>16</mn><msqrt><mn>2</mn></msqrt><msubsup><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi><mn>3</mn></msubsup><msub><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">A</mi></msub></mrow></mfrac><mo>=</mo><mfrac><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">x</mi></msub><mrow><mn>4</mn><msqrt><mn>2</mn></msqrt><msubsup><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi><mn>3</mn></msubsup><msub><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">A</mi></msub></mrow></mfrac></math></p><p>Density of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">y</mi></math> : (Number of atoms of y per unit cell <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">z</mi><mo>)</mo><mo>=</mo><mn>2</mn></math>&nbsp;)</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">d</mi><mi mathvariant=\"normal\">y</mi></msub><mo>=</mo><mfrac><msub><mi>zM</mi><mi mathvariant=\"normal\">y</mi></msub><mrow><msup><mfenced><msub><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">y</mi></msub></mfenced><mn>3</mn></msup><msub><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">A</mi></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>&#215;</mo><mn>2</mn><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">x</mi></msub></mrow><mrow><msup><mfenced><mrow><mfrac><mn>32</mn><mn>3</mn></mfrac><msub><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi></msub></mrow></mfenced><mn>3</mn></msup><msub><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">A</mi></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>108</mn><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">x</mi></msub></mrow><mrow><mn>32768</mn><msubsup><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">x</mi><mn>3</mn></msubsup><msub><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">A</mi></msub></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> Density of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi><mo>&#62;</mo></math> density of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">y</mi></math>.</p>",
+            "image": null
+          },
+          "videoSolution": {
+            "videoId": "d67f2ed9e3164059b14e350d74d00afd",
+            "provider": "vdocipher",
+            "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/F9Bq9mJ2lvjEl.480.jpeg",
+            "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/F9Bq9mJ2lvjEl.480.jpeg",
+            "premiumModules": [
+              {
+                "premiumModuleId": "6628114842d540dfcb148ecb",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "64c7e8e829737784b294e469",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "6788cc0b2dbc1ecacabb7026",
+                "isFree": false
+              }
+            ],
+            "description": "JEE Advanced (All PYQs from 2023 - 2013)"
+          },
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64b1672d25f94b8a85b91cda",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2023-04-30T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Paper 2)",
+            "title": "JEE Advanced 2023 (Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b16a8af23ac7d519f9b557",
+          "previousYearPapers": [
+            {
+              "_id": "619f94337e944e1fdc2859b4",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021 (Paper 1)",
+              "title": "JEE Advanced 2021 (Paper 1)"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "For the given close packed structure of a salt made of cation <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">X</mi></math> and anion <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">Y</mi></math> shown below (ions of only one face are shown for clarity), the packing fraction is approximately (packing fraction&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mi>packing</mi><mo>&#160;</mo><mi>efficiency</mi></mrow><mn>100</mn></mfrac></math>)\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/473afc46-762a-48df-9498-d5d241667701-image.png\" style=\"width: 216px; height: 220px;\" />",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "CZl50",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>74</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "olRmr",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>63</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "q8JSk",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>52</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Pwmaj",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>48</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Total number of atoms in a unit cell<p>No. of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi></math>&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>6</mn><mo>&#215;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>=</mo><mn>3</mn></math>&nbsp;atom (at face centres)</p><p>No. of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">y</mi></math>&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>8</mn><mo>&#215;</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>=</mo><mn>1</mn></math>&nbsp;atom (at all corners)</p><p>So, the formula of compound is&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">x</mi><mn>3</mn></msub><mi mathvariant=\"normal\">y</mi></math></p><p>Now</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/a2604bb1-0253-4229-b94d-b07fc118d1a6-image.png\" style=\"width: 171px; height: 170px;\" /></p><p>If radius of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi></math>&nbsp;is&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">r</mi></math>&nbsp;and radius of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">y</mi></math>&nbsp;is&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">R</mi></math>&nbsp;then side length&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">a</mi><mo>=</mo><mn>2</mn><mi mathvariant=\"normal\">R</mi></math></p><p>and face diagonal&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msqrt><mn>2</mn></msqrt><mi mathvariant=\"normal\">a</mi><mo>=</mo><mn>2</mn><mi mathvariant=\"normal\">R</mi><mo>+</mo><mn>2</mn><mi mathvariant=\"normal\">r</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">r</mi><mo>=</mo><mfenced><mrow><msqrt><mn>2</mn></msqrt><mo>&#8722;</mo><mn>1</mn></mrow></mfenced><mi mathvariant=\"normal\">R</mi></math></p><p>Now Packing fraction&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mi>volume</mi><mo>&#160;</mo><mi>of</mi><mo>&#160;</mo><mi>atoms</mi><mo>&#160;</mo></mrow><mrow><mi>Volume</mi><mo>&#160;</mo><mi>of</mi><mo>&#160;</mo><mi>unit</mi><mo>&#160;</mo><mi>cell</mi></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mn>1</mn><mo>&#215;</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><msup><mi>&#960;R</mi><mn>3</mn></msup><mo>+</mo><mn>3</mn><mo>&#215;</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><msup><mi>&#960;r</mi><mn>3</mn></msup></mrow><msup><mi mathvariant=\"normal\">a</mi><mn>3</mn></msup></mfrac></math></p><p>Substituting <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">a</mi><mo>=</mo><mn>2</mn><mo>&#160;</mo><mi mathvariant=\"normal\">R</mi></math> and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">r</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>414</mn><mo>&#160;</mo><mi mathvariant=\"normal\">R</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mfrac><mn>4</mn><mn>3</mn></mfrac><msup><mi>&#960;R</mi><mn>3</mn></msup><mfenced><mrow><mn>1</mn><mo>+</mo><mn>3</mn><msup><mfenced><mrow><mn>0</mn><mo>.</mo><mn>414</mn></mrow></mfenced><mn>3</mn></msup></mrow></mfenced></mrow><msup><mfenced><mrow><mn>2</mn><mi mathvariant=\"normal\">R</mi></mrow></mfenced><mn>3</mn></msup></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mn>4</mn><mi mathvariant=\"normal\">&#960;</mi></mrow><mrow><mn>3</mn><mo>&#215;</mo><mn>8</mn></mrow></mfrac><mo>&#160;</mo><mfenced><mrow><mn>1</mn><mo>+</mo><mn>0</mn><mo>.</mo><mn>07096</mn><mo>&#215;</mo><mn>3</mn></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mi mathvariant=\"normal\">&#960;</mi><mn>6</mn></mfrac><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>212</mn><mo>=</mo><mn>0</mn><mo>.</mo><mn>63</mn></math></p>",
+            "image": null
+          },
+          "videoSolution": {
+            "videoId": "c61254c2f277404c84143e7adfebe176",
+            "provider": "vdocipher",
+            "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/V3Zw0FeeNOLLy.480.jpeg",
+            "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/V3Zw0FeeNOLLy.480.jpeg",
+            "premiumModules": [
+              {
+                "premiumModuleId": "6628114842d540dfcb148ecb",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "64c7e8e829737784b294e469",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "6788cc0b2dbc1ecacabb7026",
+                "isFree": false
+              }
+            ],
+            "description": "JEE Advanced (All PYQs from 2023 - 2013)"
+          },
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "619f94337e944e1fdc2859b4",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021 (Paper 1)",
+            "title": "JEE Advanced 2021 (Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b16a7ff23ac7d519f9b4f3",
+          "previousYearPapers": [
+            {
+              "_id": "615d92eede3d91842a5cf830",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (Paper 1)",
+              "title": "JEE Advanced 2020 (Paper 1)"
+            }
+          ],
+          "type": "multipleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The cubic unit cell structure of a compound containing cation <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">M</mi></math> and anion <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">X</mi></math> is shown below. When compared to the anion, the cation has smaller ionic radius. Choose the correct statement(s).\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/354372e2-04a1-477f-a885-42e90ebde8a5-image.png\"/>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "lWfl5",
+              "text": "The empirical formula of the compound is&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>MX</mi></math>.",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "4Azc4",
+              "text": "The cation&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">M</mi></math> and anion<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">X</mi></math>&nbsp;have different coordination geometries.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "eR7pz",
+              "text": "The ratio of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">M</mi><mo>-</mo><mi mathvariant=\"normal\">X</mi></math> bond length to the cubic unit cell edge length is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>866</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "OVgx3",
+              "text": "The ratio of the ionic radii of cation&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">M</mi></math> to anion&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">X</mi></math>&nbsp;is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>414</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">M</mi><mrow><mn>2</mn><mo>&#215;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msub><msub><mi mathvariant=\"normal\">X</mi><mrow><mn>4</mn><mo>&#215;</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></msub><mo>=</mo><mi>MX</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">d</mi><mn>2</mn></msup><mo>=</mo><msup><mfenced><mfrac><mi mathvariant=\"normal\">a</mi><msqrt><mn>2</mn></msqrt></mfrac></mfenced><mn>2</mn></msup><mo>+</mo><msup><mfenced><mfrac><mi mathvariant=\"normal\">a</mi><mn>2</mn></mfrac></mfenced><mn>2</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">d</mi><mn>2</mn></msup><mo>=</mo><mfrac><msup><mi mathvariant=\"normal\">a</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo>+</mo><mfrac><msup><mi mathvariant=\"normal\">a</mi><mn>2</mn></msup><mn>4</mn></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn><msup><mi mathvariant=\"normal\">a</mi><mn>2</mn></msup></mrow><mn>4</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msup><mi mathvariant=\"normal\">d</mi><mn>2</mn></msup><msup><mi mathvariant=\"normal\">a</mi><mn>2</mn></msup></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi mathvariant=\"normal\">d</mi><mi mathvariant=\"normal\">a</mi></mfrac><mo>=</mo><mfrac><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>732</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>866</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msub><mi mathvariant=\"normal\">r</mi><mo>+</mo></msub><msub><mi mathvariant=\"normal\">r</mi><mo>-</mo></msub></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>732</mn></math></p>",
+            "image": null
+          },
+          "videoSolution": {
+            "videoId": "4776e20980e44f8db33fb3bbf3637826",
+            "provider": "vdocipher",
+            "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/1QwFIP9ITjjgt.480.jpeg",
+            "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/1QwFIP9ITjjgt.480.jpeg",
+            "premiumModules": [
+              {
+                "premiumModuleId": "6628114842d540dfcb148ecb",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "64c7e8e829737784b294e469",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "6788cc0b2dbc1ecacabb7026",
+                "isFree": false
+              }
+            ],
+            "description": "JEE Advanced (All PYQs from 2023 - 2013)"
+          },
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "615d92eede3d91842a5cf830",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (Paper 1)",
+            "title": "JEE Advanced 2020 (Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b16a5bf23ac7d519f9b3ab",
+          "previousYearPapers": [
+            {
+              "_id": "615d92eede3d91842a5cf82a",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017 (Paper 1)",
+              "title": "JEE Advanced 2017 (Paper 1)"
+            }
+          ],
+          "type": "numerical",
+          "level": 2,
+          "question": {
+            "text": "A crystalline solid of a pure substance has a face-centred cubic structure with a cell edge of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>400</mn><mi mathvariant=\"normal\">&#160;</mi><mi>pm</mi></math> . If the density of the substance in the crystal is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>8</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi><mi mathvariant=\"normal\">&#160;</mi><msup><mi>cm</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>,</mo><mi mathvariant=\"normal\">&#160;</mi></math> then the number of atoms present in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>256</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of the crystal <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>is</mi><mi mathvariant=\"normal\">&#160;</mi><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">&#160;</mi><mo>&#215;</mo><mi mathvariant=\"normal\">&#160;</mi><msup><mn>10</mn><mn>24</mn></msup></math> . The value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">N</mi><mo>&#160;</mo></math>is",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "2",
+          "solution": {
+            "text": "<p>Formula of density <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mi mathvariant=\"normal\">Z</mi><mo>&#215;</mo><mi mathvariant=\"normal\">M</mi></mrow><mrow><msub><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">A</mi></msub><mo>&#215;</mo><msup><mi mathvariant=\"normal\">a</mi><mn>3</mn></msup></mrow></mfrac></math></p><p>For FCC unit cell <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">Z</mi><mo>,</mo><mo>=</mo><mn>4</mn></math></p><p>Edge length,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">a</mi><mo>=</mo><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>8</mn></mrow></msup><mi mathvariant=\"normal\">&#160;</mi><mi>cm</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">M</mi><mo>=</mo><mfrac><mrow><mi mathvariant=\"normal\">d</mi><mo>&#215;</mo><msub><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">A</mi></msub><mo>&#215;</mo><msup><mi mathvariant=\"normal\">a</mi><mn>3</mn></msup></mrow><mi mathvariant=\"normal\">Z</mi></mfrac><mo>=</mo><mfrac><mrow><mn>8</mn><mo>&#215;</mo><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mn>23</mn></msup><mo>&#215;</mo><mn>64</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>24</mn></mrow></msup></mrow><mn>4</mn></mfrac><mi mathvariant=\"normal\">&#160;</mi><mi mathvariant=\"normal\">g</mi><mo>/</mo><mi>mol</mi></math></p><p>Number&nbsp;of atoms <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mi>wt</mi><mfenced separators=\"|\"><mi mathvariant=\"normal\">g</mi></mfenced></mrow><mrow><mi>molar</mi><mi mathvariant=\"normal\">&#160;</mi><mi>mass</mi></mrow></mfrac><mo>&#215;</mo><msub><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">A</mi></msub><mo>=</mo><mfrac><mrow><mn>256</mn><mo>&#215;</mo><mn>10</mn><mo>&#215;</mo><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mn>23</mn></msup></mrow><mrow><mn>8</mn><mo>&#215;</mo><mn>6</mn><mo>&#215;</mo><mn>16</mn></mrow></mfrac><mo>=</mo><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mn>24</mn></msup></math>&nbsp;</p><p>&nbsp; Hence, the required value of &nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">N</mi><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>2</mn></math></p>",
+            "image": null
+          },
+          "videoSolution": {
+            "videoId": "9333f59ad37542bebf60f4270e8ab80d",
+            "provider": "vdocipher",
+            "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/3Bp9P2VD9VQfd.480.jpeg",
+            "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/3Bp9P2VD9VQfd.480.jpeg",
+            "premiumModules": [
+              {
+                "premiumModuleId": "6628114842d540dfcb148ecb",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "64c7e8e829737784b294e469",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "6788cc0b2dbc1ecacabb7026",
+                "isFree": false
+              }
+            ],
+            "description": "JEE Advanced (All PYQs from 2023 - 2013)"
+          },
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "615d92eede3d91842a5cf82a",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017 (Paper 1)",
+            "title": "JEE Advanced 2017 (Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b16a55f23ac7d519f9b377",
+          "previousYearPapers": [
+            {
+              "_id": "615d92eede3d91842a5cf829",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2016-04-30T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016 (Paper 2)",
+              "title": "JEE Advanced 2016 (Paper 2)"
+            }
+          ],
+          "type": "multipleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The CORRECT statement(s) for cubic close packed (ccp) three dimensional structure is (are)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "QhmtV",
+              "text": "The number of the nearest neighbours of an atom present in the topmost layer is 12",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "hpoDq",
+              "text": "The efficiency of atom packing is  <math><mn>74</mn><mi mathvariant=\"normal\">%</mi></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "zR351",
+              "text": "The number of octahedral and tetrahedral voids per atom are 1 and 2, respectively",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "2S2Qh",
+              "text": "The unit cell edge length is <math><mn>2</mn><msqrt><mn>2</mn></msqrt></math> times the radius of the atom",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "CCP is ABC ABC ..... type packing<br />A] In topmost layer, each atom is in contact with 6 atoms in same layer and 3 atoms below this layer.<br />B] Packing fraction <math><mo>=</mo><mfrac><mrow><mn>4</mn><mo>×</mo><mfrac><mrow><mn>4</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">π</mi><msup><mrow><mi mathvariant=\"normal\">r</mi></mrow><mrow><mn>3</mn></mrow></msup></mrow><mrow><msup><mrow><mfenced separators=\"|\"><mrow><mfrac><mrow><mn>4</mn><mi mathvariant=\"normal\">r</mi></mrow><mrow><msqrt><mn>2</mn></msqrt></mrow></mfrac></mrow></mfenced></mrow><mrow><mn>3</mn></mrow></msup></mrow></mfrac><mo>=</mo><mfenced separators=\"|\"><mrow><mn>0.74</mn></mrow></mfenced></math><br />C] Each FCC unit has effective no of atoms = 4<br />Octahedral void = 4<br />Tetrahedral void = 8<br />D] <math><mn>4</mn><mi mathvariant=\"normal\">r</mi><mo>=</mo><mi mathvariant=\"normal\">a</mi><msqrt><mn>2</mn></msqrt></math>",
+            "image": null
+          },
+          "videoSolution": {
+            "videoId": "2dfc3f6619bb481fb2081e9d7ca36ea3",
+            "provider": "vdocipher",
+            "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/eusIwI6m5z78Y.480.jpeg",
+            "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/eusIwI6m5z78Y.480.jpeg",
+            "premiumModules": [
+              {
+                "premiumModuleId": "6628114842d540dfcb148ecb",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "64c7e8e829737784b294e469",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "6788cc0b2dbc1ecacabb7026",
+                "isFree": false
+              }
+            ],
+            "description": "JEE Advanced (All PYQs from 2023 - 2013)"
+          },
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "615d92eede3d91842a5cf829",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2016-04-30T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016 (Paper 2)",
+            "title": "JEE Advanced 2016 (Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b16a43f23ac7d519f9b2d3",
+          "previousYearPapers": [
+            {
+              "_id": "615d92eede3d91842a5cf826",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015 (Paper 1)",
+              "title": "JEE Advanced 2015 (Paper 1)"
+            }
+          ],
+          "type": "multipleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If the unit cell of a mineral has cubic close packed (ccp) array of oxygen atoms with m fraction of octahedral holes occupied by aluminium ions and n fraction of tetrahedral holes occupied by magnesium ions, m and n, respectively, are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "DvOeN",
+              "text": "<math><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mo>,</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>8</mn></mrow></mfrac></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "XaqHX",
+              "text": "<math><mn>1</mn><mo>,</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>4</mn></mrow></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "BVSZW",
+              "text": "<math><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mo>,</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "nngE4",
+              "text": "<math><mfrac><mrow><mn>1</mn></mrow><mrow><mn>4</mn></mrow></mfrac><mo>,</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>8</mn></mrow></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In ccp,  <math><msup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn><mo>-</mo></mrow></msup></math>  ions are 4.<br >        Hence total negative charge = -8<br >        Let  <math><mi mathvariant=\"normal\">A</mi><msup><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup></math>  ions be x, and  <math><mi mathvariant=\"normal\">M</mi><msup><mrow><mi mathvariant=\"normal\">g</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup></math>  ions be y.<br >        Total positive charge = 3x + 2y<br >         <math><mo>⇒</mo><mn>3</mn><mi mathvariant=\"normal\">x</mi><mo>+</mo><mn>2</mn><mi mathvariant=\"normal\">y</mi><mo>=</mo><mn>8</mn></math> <br >        This relation is satisfied only by x = 2 and y = 1.<br >        Hence number of  <math><mi mathvariant=\"normal\">A</mi><msup><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo>=</mo><mn>2</mn></math> <br >        and number of  <math><mi mathvariant=\"normal\">M</mi><msup><mrow><mi mathvariant=\"normal\">g</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>=</mo><mn>1</mn></math> <br >         <math><mo>⇒</mo></math>  n = fraction of octahedral holes occupied by  <math><mi mathvariant=\"normal\">A</mi><msup><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup></math> <br >         <math><mo>=</mo><mfrac><mrow><mn>2</mn></mrow><mrow><mn>4</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac></math> <br >        and m = fraction of tetrahedral holes occupied by  <math><mi mathvariant=\"normal\">M</mi><msup><mrow><mi mathvariant=\"normal\">g</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup></math> <br >         <math><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>8</mn></mrow></mfrac></math>",
+            "image": null
+          },
+          "videoSolution": {
+            "videoId": "61eedaf1d67b4008a90b0148a8a1aeb2",
+            "provider": "vdocipher",
+            "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/CEUl2vKpWN0QU.480.jpeg",
+            "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/CEUl2vKpWN0QU.480.jpeg",
+            "premiumModules": [
+              {
+                "premiumModuleId": "6628114842d540dfcb148ecb",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "64c7e8e829737784b294e469",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "6788cc0b2dbc1ecacabb7026",
+                "isFree": false
+              }
+            ],
+            "description": "JEE Advanced (All PYQs from 2023 - 2013)"
+          },
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "615d92eede3d91842a5cf826",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015 (Paper 1)",
+            "title": "JEE Advanced 2015 (Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b16a06f23ac7d519f9b0a5",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "620a8a1f77301f65c2f92c47",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2010-04-30T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010 (Paper 2)",
+              "title": "JEE Advanced 2010 (Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Silver (atomic weight $=108 \\mathrm{~g} \\mathrm{~mol}^{-1}$ ) has a density of $10.5 \\mathrm{~g} \\mathrm{~cm}^{-3}$. The number of silver atoms on a surface of area $10^{-12} \\mathrm{~m}^2$ can be expressed in scientific notation as $y \\times 10^x$. The value of $x$ is",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "7",
+          "solution": {
+            "text": "Volume of one mole of silver atoms $=\\frac{108}{10.5} \\mathrm{~cm}^3 /$ mole Volume of one silver atom $=\\frac{108}{10.5} \\times \\frac{1}{6.022 \\times 10^{23}} \\mathrm{~cm}^3$\nSo,\n$$\n\\begin{aligned}\n\\frac{4}{3} \\pi R^3 & =\\frac{108}{10.5} \\times \\frac{1}{6.022 \\times 10^{23}}=1.708 \\times 10^{-23} \\\\\nR^3 & =0.407 \\times 10^{-23} \\mathrm{~cm}^3 \\\\\n& =0.407 \\times 10^{-29} \\mathrm{~m}^3\n\\end{aligned}\n$$\nArea of each silver atom\n$$\n\\pi R^2=\\pi \\times\\left(0.407 \\times 10^{-29} \\mathrm{~m}^3\\right)^{2 / 3}\n$$\nSo number of silver atoms in given area\n$$\n=\\frac{10^{-12}}{\\left(0.407 \\times 10^{-29} \\mathrm{~m}^3\\right)^{2 / 3}}=\\frac{10^8}{(\\pi \\times 2)}=1.6 \\times 10^7=y \\times 10^x \\quad \\text { so, } \\quad x=7\n$$\nSolid state\nMathematical understanding\nIII",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "620a8a1f77301f65c2f92c47",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2010-04-30T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010 (Paper 2)",
+            "title": "JEE Advanced 2010 (Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b16a06f23ac7d519f9b0a1",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "620a8a1f77301f65c2f92c47",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2010-04-30T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010 (Paper 2)",
+              "title": "JEE Advanced 2010 (Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "The packing efficiency of the two-dimensional square unit cell shown below is\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/1GI_qPidPegKD2EP9BSvUDM_IF5A73pwDlxMTT4J-P4.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "S1VJ3",
+              "text": "\n$39.27 \\%$\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "hEYjq",
+              "text": "\n$68.02 \\%$\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "rAEpB",
+              "text": "\n$74.05 \\%$\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "9IUSo",
+              "text": "\n$78.54 \\%$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$a=(2 \\sqrt{2} r)$\nPacking fraction $=\\frac{2 \\times \\pi r^2}{2(\\sqrt{2} r)^2}=\\frac{2 \\pi r^2}{8 r^2}=\\frac{\\pi}{4}$\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/T5RShQcdyOg6O3iKjmyk2CpslG7xobqZhsV4L4FM-8k.original.fullsize.png\"><br>\nSolid state\nBasic analysis (understanding)\nII",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "620a8a1f77301f65c2f92c47",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2010-04-30T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010 (Paper 2)",
+            "title": "JEE Advanced 2010 (Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b169eaf23ac7d519f9afa6",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "620a8a1f77301f65c2f92c43",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2008-04-30T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2008 (Paper 2)",
+              "title": "JEE Advanced 2008 (Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "<strong>Paragraph:</strong>\nIn hexagonal system of crystals, a frequently encountered arrangement of atoms is described as a hexagonal prism. Here, the top and bottom of the cell are regular hexagons and three atoms are sandwiched in between them. A space-filling model of this structure, called hexagonal close-packed (HCP), is constituted of a sphere on a flat surface surrounded in the same plane by six identical spheres as closely as possible. Three spheres are then placed over the first layer so that they touch each other and represent the second layer. Each one of the three spheres touches three spheres of the bottom layer. Finally, the second layer is covered with a third layer that is identical to the bottom layer in relative position. Assume radius of every sphere to be ' $r$ '.<strong>Question:</strong>\nThe empty space in this $\\mathrm{HCP}$ unit cell is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "hE9Xy",
+              "text": "\n$74 \\%$\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "U8gKY",
+              "text": "\n$47.6 \\%$\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3zOHL",
+              "text": "\n$32 \\%$\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "kHKPk",
+              "text": "\n$26 \\%$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Packing fraction $=\\frac{\\text { Volume of the atoms in one unit cell }}{\\text { Volume of one unit cell }}=74 \\%$ Empty space $=26 \\%$\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/OnsGaUN15fScF3Q0tueA8hVAg9RDtQFJmWn4vJYC4Xw.original.fullsize.png\"><br><img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/TD8j_GOcJoybP1EWu5xu2fMT_oi3wE3GVJirHqfr4AI.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "620a8a1f77301f65c2f92c43",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2008-04-30T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2008 (Paper 2)",
+            "title": "JEE Advanced 2008 (Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b169eaf23ac7d519f9afa5",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "620a8a1f77301f65c2f92c43",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2008-04-30T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2008 (Paper 2)",
+              "title": "JEE Advanced 2008 (Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "<strong>Paragraph:</strong>\nIn hexagonal system of crystals, a frequently encountered arrangement of atoms is described as a hexagonal prism. Here, the top and bottom of the cell are regular hexagons and three atoms are sandwiched in between them. A space-filling model of this structure, called hexagonal close-packed (HCP), is constituted of a sphere on a flat surface surrounded in the same plane by six identical spheres as closely as possible. Three spheres are then placed over the first layer so that they touch each other and represent the second layer. Each one of the three spheres touches three spheres of the bottom layer. Finally, the second layer is covered with a third layer that is identical to the bottom layer in relative position. Assume radius of every sphere to be ' $r$ '.<strong>Question:</strong>\nThe volume of this $\\mathrm{HCP}$ unit cell is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "rn3aU",
+              "text": "\n$24 \\sqrt{2} r^3$\n",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "iOa8T",
+              "text": "\n$16 \\sqrt{2} r^3$\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "1QLGz",
+              "text": "\n$12 \\sqrt{2} r^3$\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "28n68",
+              "text": "\n$\\frac{64}{3 \\sqrt{3}} r^3$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Height of unit cell $=\\sqrt{\\frac{2}{4}} 4 r$\n$$\n\\begin{aligned}\n& \\text { Base area }=6 \\times \\frac{\\sqrt{3}}{4}(2 r)^2 \\\\\n& \\text { Volume }=\\frac{6 \\sqrt{3}}{4}(2 r)^2 \\cdot \\sqrt{\\frac{2}{3}} 4 r=24 \\sqrt{2} r^3\n\\end{aligned}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "620a8a1f77301f65c2f92c43",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2008-04-30T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2008 (Paper 2)",
+            "title": "JEE Advanced 2008 (Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b169eaf23ac7d519f9afa4",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "620a8a1f77301f65c2f92c43",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2008-04-30T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2008 (Paper 2)",
+              "title": "JEE Advanced 2008 (Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "<strong>Paragraph:</strong>\nIn hexagonal system of crystals, a frequently encountered arrangement of atoms is described as a hexagonal prism. Here, the top and bottom of the cell are regular hexagons and three atoms are sandwiched in between them. A space-filling model of this structure, called hexagonal close-packed (HCP), is constituted of a sphere on a flat surface surrounded in the same plane by six identical spheres as closely as possible. Three spheres are then placed over the first layer so that they touch each other and represent the second layer. Each one of the three spheres touches three spheres of the bottom layer. Finally, the second layer is covered with a third layer that is identical to the bottom layer in relative position. Assume radius of every sphere to be ' $r$ '.<strong>Question:</strong>\nThe number of atoms in this HCP unit cell is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "a8PrZ",
+              "text": "\n4\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "WhuYy",
+              "text": "\n6\n",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "nLwX0",
+              "text": "\n12\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fW2QS",
+              "text": "\n17",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The effective number of atoms in the hcp is $=12 \\times \\frac{1}{6}+2 \\times \\frac{1}{2}+3=6$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "620a8a1f77301f65c2f92c43",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2008-04-30T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2008 (Paper 2)",
+            "title": "JEE Advanced 2008 (Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64b169cbf23ac7d519f9ae8b",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "620a8a1e77301f65c2f92c3f",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2006-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2006",
+              "title": "JEE Advanced 2006"
+            }
+          ],
+          "question": {
+            "text": "The edge length of unit cell of a metal having molecular weight $75 \\mathrm{~g} / \\mathrm{mol}$ is 5 Å which crystallizes in cubic lattice. If the density is $2 \\mathrm{~g} / \\mathrm{cc}$ then find the radius of metal atom, $\\left(N_A=6 \\times 10^{23}\\right)$. Give the answer in pm.",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "216.5",
+          "solution": {
+            "text": "For cubic lattice, $\\rho=\\frac{Z \\times A}{N_A \\times V}$ or $Z=\\frac{\\rho \\times N_A \\times V}{A}$\nGiven that,\n$$\n\\begin{aligned}\n& A=75 \\mathrm{~g} / \\mathrm{mol} \\\\\n& V=(5 Å)^3=\\left(5 \\times 10^{-8}\\right)^3 \\mathrm{~cm}^3 \\\\\n& =125 \\times 10^{-24} \\mathrm{~cm}^3 \\\\\n& N_{\\mathrm{A}}=6.02 \\times 10^{23} \\\\\n& \\rho=2 \\mathrm{gm} / \\mathrm{cc} \\\\\n& \\therefore \\quad Z=\\frac{2 \\times 6.02 \\times 10^{23} \\times 125 \\times 10^{-24}}{75} \\approx 2 \\\\\n&\n\\end{aligned}\n$$\nThe value of $Z$ represents that element must have body centred cubic (bcc) structure.\nFor bcc structure atomic radius $(r)=\\frac{\\sqrt{3}}{4} a=\\frac{\\sqrt{3}}{4} \\times 5=2.165 Å$\n$$\n=216.5 \\mathrm{pm}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "620a8a1e77301f65c2f92c3f",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2006-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2006",
+            "title": "JEE Advanced 2006"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "64b16adaf23ac7d519f9b8c6",
+      "title": "Ionic structure",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64b16a67f23ac7d519f9b418",
+          "previousYearPapers": [
+            {
+              "_id": "615d92eede3d91842a5cf82c",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018 (Paper 1)",
+              "title": "JEE Advanced 2018 (Paper 1)"
+            }
+          ],
+          "type": "numerical",
+          "level": 3,
+          "question": {
+            "text": "Consider an ionic solid <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>MX</mi></math>,&nbsp;with <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>NaCl</mi></math> structure. Construct a new structure <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi mathvariant=\"normal\">Z</mi></mfenced></math>,&nbsp;whose unit cell is constructed from the unit cell of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>MX</mi></math>,&nbsp;following the sequential instructions given below. Neglect the charge balance.<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">i</mi><mo>)</mo></math> Remove all the anions <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi mathvariant=\"normal\">X</mi></mfenced></math>,&nbsp;except the central one.<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi>ii</mi><mo>)</mo></math> Replace all the face centered cations <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi mathvariant=\"normal\">M</mi></mfenced></math>,&nbsp;by anions <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi mathvariant=\"normal\">X</mi></mfenced></math>.<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi>iii</mi><mo>)</mo></math> Remove all the corner cations <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi mathvariant=\"normal\">M</mi></mfenced></math>.<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi>iv</mi><mo>)</mo></math> Replace the central anion <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi mathvariant=\"normal\">X</mi></mfenced></math>,&nbsp;with cation <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi mathvariant=\"normal\">M</mi></mfenced></math>.<br />The value of <math><mfenced separators=\"|\"><mrow><mfrac><mrow><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">u</mi><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">b</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">&#160;</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">&#160;</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">s</mi></mrow><mrow><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">u</mi><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">b</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">&#160;</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">&#160;</mi><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">s</mi></mrow></mfrac></mrow></mfenced></math> in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">Z</mi></math>&nbsp;is _____.",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "3",
+          "solution": {
+            "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">X</mi><mo>-</mo></msup><mo>&#8658;</mo><mi mathvariant=\"normal\">O</mi><mo>.</mo><mi mathvariant=\"normal\">V</mi></math><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">M</mi><mo>+</mo></msup><mo>&#8658;</mo><mi>FCC</mi></math><table border=\"1\">\t<tbody>\t\t<tr>\t\t\t<td>&nbsp;</td>\t\t\t<td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">M</mi><mo>+</mo></msup></math></td>\t\t\t<td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">X</mi><mo>^</mo><mo>-</mo></math></td>\t\t</tr>\t\t<tr>\t\t\t<td>(i)</td>\t\t\t<td>4</td>\t\t\t<td>1</td>\t\t</tr>\t\t<tr>\t\t\t<td>(ii)</td>\t\t\t<td>4 &ndash; 3</td>\t\t\t<td>3 + 1</td>\t\t</tr>\t\t<tr>\t\t\t<td>(iii)</td>\t\t\t<td>4 &ndash; 3 &ndash; 1</td>\t\t\t<td>3 + 1</td>\t\t</tr>\t\t<tr>\t\t\t<td>(iv)</td>\t\t\t<td>1</td>\t\t\t<td>3</td>\t\t</tr>\t</tbody></table><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">Z</mi><mo>=</mo><mfrac><mn>3</mn><mn>1</mn></mfrac><mo>=</mo><mn>3</mn></math>.",
+            "image": null
+          },
+          "videoSolution": {
+            "videoId": "6ccfc77cb09d44aea5d7d01e2542db27",
+            "provider": "vdocipher",
+            "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/YvA5GwH3jqfli.480.jpeg",
+            "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/YvA5GwH3jqfli.480.jpeg",
+            "premiumModules": [
+              {
+                "premiumModuleId": "6628114842d540dfcb148ecb",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "64c7e8e829737784b294e469",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "6788cc0b2dbc1ecacabb7026",
+                "isFree": false
+              }
+            ],
+            "description": "JEE Advanced (All PYQs from 2023 - 2013)"
+          },
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "615d92eede3d91842a5cf82c",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018 (Paper 1)",
+            "title": "JEE Advanced 2018 (Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "64b16adaf23ac7d519f9b8c4",
+      "title": "Stoichiometric defects",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64b169f1f23ac7d519f9afe1",
+          "type": "multipleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "620a8a1f77301f65c2f92c44",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009 (Paper 1)",
+              "title": "JEE Advanced 2009 (Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "The correct statement(s) regarding defects in solids is (are)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "zBWwg",
+              "text": "\nFrenkel defect is usually favoured by a very small difference in the sizes of cation and anion\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZJNyc",
+              "text": "\nFrenkel defect is a dislocation defect\n",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Kptgq",
+              "text": "\nTrapping of an electron in the lattice leads to the formation of F-centre\n",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "4Nb4j",
+              "text": "\nSchottky defects have no effect on the physical properties of solids",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "(a) Wrong Frenkel defect is favoured when the difference in ionic radii is very large. In the given case Schottky defect is favoured.\n(b) Correct Frenkel defect arises due to dislocation of smaller ion from its normal lattice point to the interstitial space.\n(c) Correct When alkali metal in the gaseous state is passed over salts like $\\mathrm{NaCl}$, electrons from metal are trapped in the interstitial space giving rise to F-centre defect which is a type of Frenkel defect.\n(d) Wrong Schottky defect affects physical properties of solids.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "620a8a1f77301f65c2f92c44",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009 (Paper 1)",
+            "title": "JEE Advanced 2009 (Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

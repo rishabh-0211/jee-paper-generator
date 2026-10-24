@@ -1,0 +1,2312 @@
+{
+  "index": 11,
+  "chapterId": "61e7bd7ddf871d2a6297f8ad",
+  "chapter": "Binomial Theorem",
+  "exam": "BITSAT",
+  "subject": "Mathematics",
+  "totalTopics": 7,
+  "totalQuestions": 34,
+  "downloadTime": "2026-10-08 20:36:51",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e8676f5bfc7ab78aedc8",
+      "title": "Terms of Binomial Expansion",
+      "totalQuestions": 18,
+      "questions": [
+        {
+          "_id": "67726d1cc49e8ef28ee2b452",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "The coefficient of $x^n$ in the expansion of $\\frac{e^{7 x}+e^x}{e^{3 x}}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "IIsq5",
+              "text": "$\\frac{4^{n-1}+(-2)^n}{n!}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "LnhPu",
+              "text": "$\\frac{4^{n-1}+2^n}{n!}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "do0Zp",
+              "text": "$\\frac{4^n+(-2)^n}{n!}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "GkQiF",
+              "text": "$\\frac{4^{n-1}+(-2)^{n-1}}{n!}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given, $\\frac{e^{7 x}+e^x}{e^{3 x}} \\Rightarrow e^{4 x}+e^{-2 x}$\nSeries of $e^a=1+\\frac{a}{1!}+\\frac{a^2}{2!}+\\frac{a^3}{3!} \\ldots$\n$\\begin{aligned}\n\\Rightarrow e^{4 x}+ & e^{-2 x}=\\left(1+\\frac{4 x}{1!}+\\frac{(4 x)^2}{2!}+\\frac{(4 x)^3}{3!}+\\ldots\\right) \\\\\n& +\\left(1+\\frac{(-2 x)}{1!}+\\frac{(-2 x)^2}{2!}+\\ldots \\ldots\\right)\n\\end{aligned}$\nHere, coefficient of\n$\\begin{aligned}\n& x^2 \\equiv \\frac{4^2}{2!}+\\frac{(-2)^2}{2!} \\\\\n& x^3  \\equiv \\frac{4^3}{3!}+\\frac{(-2)^3}{3!} \\\\\n& \\vdots \\\\\n& x^n=\\frac{4^n}{n!}+\\frac{(-2)^n}{n!}\n\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726d1cc49e8ef28ee2b44f",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "The coefficient of $x^2$ term in the binomial expansion of $\\left(\\frac{1}{3} x^{\\frac{1}{2}}+x^{\\frac{-1}{4}}\\right)^{10}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "on7n4",
+              "text": "$\\frac{70}{243}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "H0Jtj",
+              "text": "$\\frac{60}{423}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4aSrr",
+              "text": "$\\frac{50}{13}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SJKQG",
+              "text": "None of these",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "General term of given binomial expansion is\n$\\begin{aligned}\nT_{r+1} & ={ }^{10} C_r\\left(\\frac{1}{3} x^{\\frac{1}{2}}\\right)^{10-r}\\left(x^{-\\frac{1}{4}}\\right)^r \\\\\n& ={ }^{10} C_r \\times\\left(\\frac{1}{3}\\right)^{10-r} x^{\\frac{10-r}{2}-\\frac{r}{4}}\n\\end{aligned}$\nWe have to find coefficient of $x^2$\n$\\begin{aligned}\n\\frac{10-r}{2}-\\frac{r}{4} & =2 \\Rightarrow r=4 \\\\\n\\Rightarrow \\quad T_{4+1} & ={ }^{10} C_4\\left(\\frac{1}{3}\\right)^6 x^2 \\\\\n\\therefore \\text { Coefficient of } x^2 & ={ }^{10} C_4\\left(\\frac{1}{3}\\right)^6 \\\\\n& =\\frac{10 \\times 9 \\times 8 \\times 7}{4 \\times 3 \\times 2 \\times 1} \\times \\frac{1}{3^6}=\\frac{70}{243}\n\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726d0cc49e8ef28ee2b3da",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "The coefficient of the highest power of $x$ in the expansion of \n$\\left(x+\\sqrt{x^2-1}\\right)^8+\\left(x-\\sqrt{x^2-1}\\right)^8$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "89dud",
+              "text": "$64$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "UzGe7",
+              "text": "$128$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "e4Prl",
+              "text": "$256$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "mGIWx",
+              "text": "$512$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Since $\\left(x+\\sqrt{x^2-1}\\right)^8+\\left(x-\\sqrt{x^2-1}\\right)^8$\n$\\begin{array}{r}=2\\left\\{{ }^8 C_0 x^8+{ }^8 C_2 x^6\\left(x^2-1\\right)+{ }^8 C_4 x^4\\left(x^2-1\\right)^2\\right. \\\\ \\left.+{ }^8 C_6 x^2\\left(x^2-1\\right)^3+{ }^8 C_8 x^0\\left(x^2-1\\right)^4\\right\\}\\end{array}$\nSo coefficient of highest power of $x$\n$=2\\left\\{{ }^8 C_0+{ }^8 C_2+{ }^8 C_4+{ }^8 C_6+{ }^8 C_8\\right\\}$\n$=(1+1)^8+(1-1)^8=2^8=256$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b88297ae24e9e2db8d11",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "If $x^{18}$ occurs in the rth term in the expansion of $\\left(x^4+\\frac{1}{x^3}\\right)^{15}$, then what is the value of $r$ ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "DXxcF",
+              "text": "<br />3",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BjDDK",
+              "text": "<br />5",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4NH0q",
+              "text": "<br />7",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "3bdBm",
+              "text": "<br />9",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In the expansion of $\\left(x^4+\\frac{1}{x^3}\\right)^{15}$, let $T_r$ is the $r^{\\text {th }}$ term<br />$\\begin{aligned}<br />T_r & ={ }^{15} C_{r-1}\\left(x^4\\right)^{15-r+1}\\left(\\frac{1}{x^3}\\right)^{r-1} \\\\<br />& ={ }^{15} C_{r-1} x^{64-4 r-3 r+3}=15_{C_{r-1}} x^{67-7 r}<br />\\end{aligned}$<br />$\\mathrm{x}^{18}$ occurs in this term<br />$\\Rightarrow 18=67-7 r \\Rightarrow 7 r=49 \\Rightarrow r=7 .$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87897ae24e9e2db8cac",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "The middle term in the expansion of $\\left(\\frac{10}{x}+\\frac{x}{10}\\right)^{10}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "sRIfX",
+              "text": "${ }^{10} \\mathrm{C}_5$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "NXLiI",
+              "text": "${ }^{10} \\mathrm{C}_6$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "bWTVg",
+              "text": " ${ }^{10} \\mathrm{C}_5 \\frac{1}{x^{10}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "KKh8g",
+              "text": "${ }^{10} \\mathrm{C}_5 \\mathrm{x}^{10}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "General term $=T_{r+1}$<br />$={ }^{10} \\mathrm{C}_r\\left(\\frac{10}{x}\\right)^{10-r}\\left(\\frac{x}{10}\\right)^r$<br />Here $n=10$, which is an even number.<br />Now, $\\left[\\frac{10}{2}+1\\right]^{\\text {th }}$ term i.e. $6^{\\text {th }}$ term is the middle term.<br />Hence, middle term $=T_6$<br />$\\mathrm{T}_{5+1}={ }^{10} \\mathrm{C}_5\\left(\\frac{10}{x}\\right)^{10-5}\\left(\\frac{x}{10}\\right)^5$<br />$={ }^{10} \\mathrm{C}_5\\left(\\frac{10}{x}\\right)^5\\left(\\frac{x}{10}\\right)^5={ }^{10} \\mathrm{C}_5$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8366f5bfc7ab78aeb97",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If the sum of the coefficients in the expansion of $(x+y)^n$ is 1024 , then the value of the greatest coefficient in the expansion is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Ufykb",
+              "text": "\r\n$356$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "LAVcc",
+              "text": "\r\n$252$\r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "dqMYw",
+              "text": "\r\n$210$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "E3HME",
+              "text": "\r\n$120$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given, sum of the coefficient $=1024$\r\n$\\begin{array}{ll}\\text { i.e. } & 2^n=1024=2^{10} \\\\ \\Rightarrow & n=10\\end{array}$\r\nSince, $n$ is even, so greatest coefficient\r\n$={ }^n C_{n / 2}={ }^{10} C_5=252$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8336f5bfc7ab78aeb77",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "The number of terms in the expansion of $(1+5 \\sqrt{2} x)^9+(1-5 \\sqrt{2} x)^9$, is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "RUe2t",
+              "text": "\r\n5\r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "jj4Wj",
+              "text": "\r\n7\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "nvdSA",
+              "text": "\r\n9\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "1Lhor",
+              "text": "\r\n10",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We have,\r\n$(1+5 \\sqrt{2} x)^9+(1-5 \\sqrt{2} x)^9$\r\n$=2\\left\\{{ }^2 C_0+{ }^9 C_2(5 \\sqrt{2} x)^2+\\ldots+{ }^9 C_8(5 \\sqrt{2} x)^8\\right\\}$\r\nClearly, it has 5 terms.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8296f5bfc7ab78aeb23",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Coefficient of $x^{13}$ in the expansion of $(1-x)^{5}\\left(1+x+x^{2}+x^{3}\\right)^{4}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "CPaJL",
+              "text": "4",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "zNyXA",
+              "text": "6",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "5MI1K",
+              "text": "32",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "qtooM",
+              "text": "5",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Expression $=(1-x)^{5} \\cdot(1+x)^{4}\\left(1+x^{2}\\right)^{4}$\r\n\r\n$\\begin{array}{l}\r\n\r\n=(1-x)\\left(1-x^{2}\\right)^{4}\\left(1+x^{2}\\right)^{4} \\\\\r\n\r\n=(1-x)\\left(1-x^{4}\\right)^{4}\r\n\r\n\\end{array}$\r\n\r\n$\\therefore$ Coefficient of $x^{13}=-{ }^{4} \\mathrm{C}_{3}(-1)^{3}=4$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8286f5bfc7ab78aeb17",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The coefficient of the term independent of $x$ in the expansion of $\\left(\\sqrt{\\frac{x}{3}}+\\frac{3}{2 x^{2}}\\right)^{10}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Okjuu",
+              "text": "$\\frac{5}{4}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "94B0J",
+              "text": "$\\frac{7}{4}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "NUUdl",
+              "text": "$\\frac{9}{4}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "vO7s7",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The $(r+1)$ th term in the expansion of $\\left(\\sqrt{\\frac{x}{3}}+\\frac{3}{2 x^{2}}\\right)^{10}$ is given by\r\n\r\n$\\begin{array}{l}\r\n\r\n\\mathrm{T}_{r+1}={ }^{10} \\mathrm{C}_{r}\\left(\\sqrt{\\frac{x}{3}}\\right)^{10-r}\\left(\\frac{3}{2 x^{2}}\\right)^{r} \\\\\r\n\r\n={ }^{10} \\mathrm{C}_{r} \\frac{x^{5-\\left(\\frac{r}{2}\\right)}}{3^{5-\\left(\\frac{r}{2}\\right)}} \\cdot \\frac{3^{r}}{2^{r} x^{2 r}} \\\\\r\n\r\n={ }^{10} \\mathrm{C}_{r} \\frac{3^{\\left(\\frac{3 r}{2}\\right)-5}-5-\\left(\\frac{5 r}{2}\\right)}{2^{r}} x\r\n\r\n\\end{array}$\r\n\r\n$\\mathrm{T}_{r+1}={ }^{10} \\mathrm{C}_{r}\\left(\\sqrt{\\frac{x}{3}}\\right)^{10-r}\\left(\\frac{3}{2 x^{2}}\\right)^{r}$ $={ }^{10} \\mathrm{C}_{r} \\frac{x^{5-\\left(\\frac{r}{2}\\right)}}{3} \\cdot \\frac{3^{r}}{2^{r} x^{2 r}}$ $={ }^{10} \\mathrm{C}_{r} \\frac{3^{\\left(\\frac{3 r}{2}\\right)-5}-\\left(\\frac{5}{2}\\right)-\\left(\\frac{5 r}{2}\\right)}{2^{r}} x$ For $\\mathrm{T}_{r+1}$ to be independent of $x$, we must have $5-\\left(\\frac{5 r}{2}\\right)=0$ or $r=2$.\r\n\r\nThus, the 3 rd term is independent of $x$ and is equal to ${ }^{10} \\mathrm{C}_{2} \\frac{3^{3-5}}{2^{2}}=\\frac{10 \\times 9}{2} \\times \\frac{3^{-2}}{4}=\\frac{5}{4}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e80c6f5bfc7ab78aea20",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If the coefficient of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>3</mn></msup></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>4</mn></msup></math> in the expansion of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>1</mn><mo>+</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfenced><msup><mfenced><mrow><mn>1</mn><mo>-</mo><mn>2</mn><mi>x</mi></mrow></mfenced><mn>18</mn></msup></math> in powers of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math> are both zero, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mi>a</mi><mo>,</mo><mo>&#160;</mo><mi>b</mi></mrow></mfenced></math> is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "nb3az",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>16</mn><mo>,</mo><mfrac><mn>251</mn><mn>3</mn></mfrac></mrow></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "1jIRX",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>14</mn><mo>,</mo><mfrac><mn>251</mn><mn>3</mn></mfrac></mrow></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "LMnNQ",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>14</mn><mo>,</mo><mfrac><mn>272</mn><mn>3</mn></mfrac></mrow></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "53O04",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>16</mn><mo>,</mo><mfrac><mn>272</mn><mn>3</mn></mfrac></mrow></mfenced></math>",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>We have,&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>1</mn><mo>+</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfenced><msup><mfenced><mrow><mn>1</mn><mo>-</mo><mn>2</mn><mi>x</mi></mrow></mfenced><mn>18</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>1</mn><mo>+</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfenced><mfenced><mrow><mn>1</mn><mo>-</mo><mmultiscripts><mi>C</mi><mn>1</mn><none/><mprescripts/><none/><mn>18</mn></mmultiscripts><mn>2</mn><mi>x</mi><mo>+</mo><mmultiscripts><mi>C</mi><mn>2</mn><none/><mprescripts/><none/><mn>18</mn></mmultiscripts><mfenced><mrow><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup></mrow></mfenced><mo>-</mo><mmultiscripts><mi>C</mi><mn>3</mn><none/><mprescripts/><none/><mn>18</mn></mmultiscripts><msup><mfenced><mrow><mn>2</mn><mi>x</mi></mrow></mfenced><mn>3</mn></msup><mo>+</mo><mmultiscripts><mi>C</mi><mn>4</mn><none/><mprescripts/><none/><mn>18</mn></mmultiscripts><msup><mfenced><mrow><mn>2</mn><mi>x</mi></mrow></mfenced><mn>4</mn></msup><mo>&#8230;</mo></mrow></mfenced></math></p><p>Coefficient of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>3</mn></msup></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mmultiscripts><mi>C</mi><mn>3</mn><none/><mprescripts/><none/><mn>18</mn></mmultiscripts><msup><mfenced><mn>2</mn></mfenced><mn>3</mn></msup><mo>+</mo><mi>a</mi><mo>&#183;</mo><mmultiscripts><mi>C</mi><mn>2</mn><none/><mprescripts/><none/><mn>18</mn></mmultiscripts><msup><mfenced><mn>2</mn></mfenced><mn>2</mn></msup><mo>-</mo><msup><mi>b</mi><mn>18</mn></msup><msub><mi>C</mi><mn>1</mn></msub><mfenced><mn>2</mn></mfenced></math></p><p>and coefficient of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>4</mn></msup></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mmultiscripts><mi>C</mi><mn>4</mn><none/><mprescripts/><none/><mn>18</mn></mmultiscripts><msup><mfenced><mn>2</mn></mfenced><mn>4</mn></msup><mo>-</mo><mmultiscripts><mi>C</mi><mn>3</mn><none/><mprescripts/><none/><mn>18</mn></mmultiscripts><msup><mfenced><mn>2</mn></mfenced><mn>3</mn></msup><mi>a</mi><mo>+</mo><mmultiscripts><mi>C</mi><mn>2</mn><none/><mprescripts/><none/><mn>18</mn></mmultiscripts><msup><mfenced><mn>2</mn></mfenced><mn>2</mn></msup><mi>b</mi></math></p><p>Coefficient of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>3</mn></msup></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>4</mn></msup></math> are zero.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mo>-</mo><mmultiscripts><mi>C</mi><mn>3</mn><none/><mprescripts/><none/><mn>18</mn></mmultiscripts><msup><mfenced><mn>2</mn></mfenced><mn>3</mn></msup><mo>+</mo><mmultiscripts><mi>C</mi><mn>2</mn><none/><mprescripts/><none/><mn>18</mn></mmultiscripts><msup><mfenced><mn>2</mn></mfenced><mn>2</mn></msup><mfenced><mi>a</mi></mfenced><mo>-</mo><mmultiscripts><mi>C</mi><mn>1</mn><none/><mprescripts/><none/><mn>18</mn></mmultiscripts><mfenced><mn>2</mn></mfenced><mi>b</mi><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mfrac><mrow><mn>4</mn><mo>&#215;</mo><mn>17</mn><mo>&#215;</mo><mn>16</mn></mrow><mrow><mn>3</mn><mo>&#215;</mo><mn>2</mn></mrow></mfrac><mo>-</mo><mn>17</mn><mi>a</mi><mo>+</mo><mi>b</mi><mo>=</mo><mn>0</mn></math>&nbsp; &nbsp;&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi mathvariant=\"normal\">i</mi></mfenced></math></p><p>and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>80</mn><mo>-</mo><mfrac><mn>32</mn><mn>3</mn></mfrac><mi>a</mi><mo>+</mo><mi>b</mi><mo>=</mo><mn>0</mn></math>&nbsp; &nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi>ii</mi></mfenced></math></p><p>Solving Eqs. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">i</mi><mo>)</mo></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi>ii</mi><mo>)</mo></math>, we get</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>=</mo><mn>16</mn><mo>,</mo><mi>b</mi><mo>=</mo><mfrac><mn>272</mn><mn>3</mn></mfrac></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7fc6f5bfc7ab78ae993",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The greatest term in the expansion of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msqrt><mn>3</mn></msqrt><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac></mrow></mfenced><mn>20</mn></msup></math> is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "TGlBD",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>26840</mn><mn>9</mn></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "fR3gm",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>24840</mn><mn>9</mn></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "OI6MM",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>25840</mn><mn>9</mn></mfrac></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "n3V1s",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>T</mi><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><msqrt><mn>3</mn></msqrt><msup><mo>&#183;</mo><mn>20</mn></msup><msub><mi>C</mi><mi>r</mi></msub><msup><mfenced><mfrac><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac></mfenced><mi>r</mi></msup></math></p><p>and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>T</mi><mi>r</mi></msub><mo>=</mo><msqrt><mn>3</mn></msqrt><msup><mo>&#183;</mo><mn>20</mn></msup><msub><mi>C</mi><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow></msub><msup><mfenced><mfrac><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac></mfenced><mrow><mi>r</mi><mo>-</mo><mn>1</mn></mrow></msup></math></p><p>Now,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msub><mi>T</mi><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msub><msub><mi>T</mi><mi>r</mi></msub></mfrac><mo>=</mo><mfrac><mrow><mn>20</mn><mo>-</mo><mi>r</mi><mo>+</mo><mn>1</mn></mrow><mi>r</mi></mfrac><mfenced><mfrac><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac></mfenced></math></p><p>Since,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>T</mi><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>&#8805;</mo><msub><mi>T</mi><mi>r</mi></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mn>20</mn><mo>-</mo><mi>r</mi><mo>+</mo><mn>1</mn><mo>&#8805;</mo><msqrt><mn>3</mn></msqrt><mi>r</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>r</mi><mo>&#8804;</mo><mfrac><mn>21</mn><mrow><msqrt><mn>3</mn></msqrt><mo>+</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mfrac><mn>21</mn><mrow><mn>2</mn><mo>.</mo><mn>73</mn></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>r</mi><mo>&#8804;</mo><mn>7</mn><mo>.</mo><mn>692</mn><mo>&#8658;</mo><mi>r</mi><mo>=</mo><mn>7</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> The greatest term is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>T</mi><mn>8</mn></msub><mo>=</mo><msqrt><mn>3</mn></msqrt><mo>&#183;</mo><mmultiscripts><mi>C</mi><mn>7</mn><none/><mprescripts/><none/><mn>20</mn></mmultiscripts><msup><mfenced><mfrac><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac></mfenced><mn>7</mn></msup><mo>=</mo><mfrac><mn>25840</mn><mn>9</mn></mfrac></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7fc6f5bfc7ab78ae992",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The coefficient of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mrow><mo>-</mo><mi>n</mi></mrow></msup></math> in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mi>n</mi></msup><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow></mfenced><mi>n</mi></msup></math> is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "jbLSd",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "NIuKG",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "fv10k",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>2</mn><mi>n</mi></msup></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "7gOh6",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi>n</mi></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mi>n</mi></msup><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow></mfenced><mi>n</mi></msup><mo>=</mo><msup><mfenced close=\"]\" open=\"[\"><mrow><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mfenced><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow></mfenced></mrow></mfenced><mi>n</mi></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mi>n</mi></msup><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow></mfenced><mi>n</mi></msup><mo>=</mo><msup><mfenced close=\"]\" open=\"[\"><mrow><mn>1</mn><mo>+</mo><mi>x</mi><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>+</mo><mn>1</mn></mrow></mfenced><mi>n</mi></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mi>n</mi></msup><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow></mfenced><mi>n</mi></msup><mo>=</mo><msup><mfenced close=\"]\" open=\"[\"><mrow><mfenced><mrow><mn>2</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow></mfenced><mi>n</mi></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mi>n</mi></msup><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow></mfenced><mi>n</mi></msup><mo>=</mo><mmultiscripts><mi>C</mi><mn>0</mn><none/><mprescripts/><none/><mi>n</mi></mmultiscripts><msup><mfenced><mrow><mn>2</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mi>n</mi></msup><mo>&#183;</mo><mfenced><mfrac><mn>1</mn><mi>x</mi></mfrac></mfenced><mo>+</mo><mmultiscripts><mi>C</mi><mn>1</mn><none/><mprescripts/><none/><mi>n</mi></mmultiscripts><msup><mfenced><mrow><mn>2</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>&#183;</mo><msup><mfenced><mfrac><mn>1</mn><mi>x</mi></mfrac></mfenced><mn>1</mn></msup><mo>+</mo><mo>&#8230;</mo><mo>+</mo><mmultiscripts><mi>C</mi><mi>n</mi><none/><mprescripts/><none/><mi>n</mi></mmultiscripts><mo>&#183;</mo><mfrac><mn>1</mn><msup><mi>x</mi><mi>n</mi></msup></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> Coefficient of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mrow><mo>-</mo><mi>n</mi></mrow></msup><mo>=</mo><mmultiscripts><mi>C</mi><mi>n</mi><none></none><mprescripts></mprescripts><none></none><mi>n</mi></mmultiscripts><mo>=</mo><mn>1</mn></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ee6f5bfc7ab78ae915",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The coefficient of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>5</mn></msup></math> in the expansion of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mn>21</mn></msup><mo>+</mo><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mn>22</mn></msup><mo>+</mo><mo>&#8230;</mo><mo>+</mo><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mn>30</mn></msup></math> is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "bYqOT",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mmultiscripts><mi>C</mi><mn>5</mn><none/><mprescripts/><none/><mn>51</mn></mmultiscripts></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "98cJE",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mmultiscripts><mi>C</mi><mn>5</mn><none/><mprescripts/><none/><mn>9</mn></mmultiscripts></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "7C89G",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mmultiscripts><mi>C</mi><mn>6</mn><none/><mprescripts/><none/><mn>31</mn></mmultiscripts><mo>-</mo><mmultiscripts><mi>C</mi><mn>6</mn><none/><mprescripts/><none/><mn>21</mn></mmultiscripts></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "6JAbP",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mmultiscripts><mi>C</mi><mn>5</mn><none/><mprescripts/><none/><mn>30</mn></mmultiscripts><mo>+</mo><mmultiscripts><mi>C</mi><mn>5</mn><none/><mprescripts/><none/><mn>20</mn></mmultiscripts></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mn>21</mn></msup><mo>+</mo><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mn>22</mn></msup><mo>+</mo><mo>&#8230;</mo><mo>&#8230;</mo><mo>+</mo><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mn>30</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mn>21</mn></msup><mfenced open=\"[\" close=\"]\"><mrow><mn>1</mn><mo>+</mo><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mn>1</mn></msup><mo>+</mo><mo>&#8230;</mo><mo>+</mo><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mn>9</mn></msup></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mn>21</mn></msup><mfenced open=\"[\" close=\"]\"><mfrac><mrow><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mn>10</mn></msup><mo>-</mo><mn>1</mn></mrow><mrow><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mo>-</mo><mn>1</mn></mrow></mfrac></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mn>1</mn><mi>x</mi></mfrac><mfenced open=\"[\" close=\"]\"><mrow><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mn>31</mn></msup><mo>-</mo><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mn>21</mn></msup></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> Coefficient of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>5</mn></msup></math> in the given expression</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo></math> Coefficient of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>5</mn></msup></math> in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mi>x</mi></mfrac><mfenced open=\"[\" close=\"]\"><mrow><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mn>31</mn></msup><mo>-</mo><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mn>21</mn></msup></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo></math> Coefficient of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>6</mn></msup></math> in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"[\" close=\"]\"><mrow><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mn>31</mn></msup><mo>-</mo><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mn>21</mn></msup></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mmultiscripts><mi>C</mi><mn>6</mn><none></none><mprescripts></mprescripts><none></none><mn>31</mn></mmultiscripts><mo>-</mo><mmultiscripts><mi>C</mi><mn>6</mn><none></none><mprescripts></mprescripts><none></none><mn>21</mn></mmultiscripts></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b56f5bfc7ab78ae72a",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The coefficient of the middle term in the expansion of $(2+3 \\mathrm{x})^{4}$ is:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "wrynF",
+              "text": "6",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "WBfIg",
+              "text": "$5 !$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "nSIPZ",
+              "text": "$8 !$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "yccFI",
+              "text": "216",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "When exponent is $n$ then total number of terms are $\\mathrm{n}+1 .$ So, total number of terms in $(2+3 x)^{4}=5$\r\n\r\nMiddle term is 3rd. $\\Rightarrow \\mathrm{T}_{3}={ }^{4} \\mathrm{C}_{2}(2)^{2} \\cdot(3 \\mathrm{x})^{2}$\r\n\r\n$$\r\n\r\n=\\frac{4 \\times 3 \\times 2 \\times 1}{2 \\times 1 \\times 2} \\times 4 \\times 9 \\mathrm{x}^{2}=216 \\mathrm{x}^{2}\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7976f5bfc7ab78ae631",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "In the binomial \\(\\left(2^{1 / 3}+3^{-1 / 3}\\right)^{\\mathrm{n}}\\), if the ratio of the seventh term from the beginning of the expansion to the seventh term from its end is \\(1 / 6\\), then \\(n\\) equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "mVHdN",
+              "text": "6",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "EvJr1",
+              "text": "9",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "I1YGq",
+              "text": "12",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8l5hG",
+              "text": "15",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "\\(\\mathrm{T}_{\\mathrm{r}+1}={ }^{\\mathrm{n}} \\mathrm{C}_{\\mathrm{r}} a^{\\mathrm{n}-\\mathrm{r}} \\cdot \\mathrm{b}^{\\mathrm{r}}\\) where \\(\\mathrm{a}=2^{1 / 3}\\) and \\(\\mathrm{b}=3^{-1 / 3}\\)\n\\(\\mathrm{T}_7\\) from beginning \\(={ }^n \\mathrm{C}_6 a^{\\mathrm{n}-6} \\mathrm{~b}^6\\) and \\(\\mathrm{T}_7\\) from end \\(={ }^{\\mathrm{n}} \\mathrm{C}_6 \\quad \\mathrm{~b}^{\\mathrm{n}-6} \\quad \\mathrm{a}^6\\)\n\\(\\begin{aligned}\n& \\Rightarrow \\frac{\\mathrm{a}^{\\mathrm{n}-12}}{\\mathrm{~b}^{\\mathrm{n}-12}}=\\frac{1}{6} \\Rightarrow 2^{\\frac{\\mathrm{n}-12}{3}} \\cdot 3^{\\frac{\\mathrm{n}-12}{3}}=6^{-1} \\\\\n& \\Rightarrow \\mathrm{n}-12=-3 \\Rightarrow \\mathrm{n}=9\n\\end{aligned}\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7976f5bfc7ab78ae630",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "The term independent of \\(x\\) in the expansion of \\(\\left(9 \\mathrm{x}-\\frac{1}{3 \\sqrt{\\mathrm{x}}}\\right)^{18}, \\mathrm{x} > 0\\), is a times the corresponding binomial coefficient. Then a is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "GVB2Y",
+              "text": "3",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "JAqTa",
+              "text": "\\(1 / 3\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "rSUHg",
+              "text": "\\(-1 / 3\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Wq8sV",
+              "text": "None of these",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "\\(\\begin{aligned}\n\\mathrm{T}_{\\mathrm{r}+1} & ={ }^{18} \\mathrm{C}_{\\mathrm{r}}(9 \\mathrm{x})^{18-\\mathrm{r}}\\left(-\\frac{1}{3 \\sqrt{\\mathrm{x}}}\\right)^{\\mathrm{r}} \\\\\n& =(-\\mathrm{r})^{\\mathrm{r}}{ }^{18} \\mathrm{C}_{\\mathrm{r}} 9^{18-\\frac{3 \\mathrm{r}}{2}} \\mathrm{x}^{18-\\frac{3 \\mathrm{r}}{2}}\n\\end{aligned}\\)\nis independent of \\(\\mathrm{x}\\) provided \\(\\mathrm{r}=12\\) and then \\(\\mathrm{a}=1\\).",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7896f5bfc7ab78ae5b0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "With 17 consonants and 5 vowels the number of words of four letters that can be formed having two different vowels in the middle and one consonant, repeated or different at each end is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "IPr7r",
+              "text": "5780",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "iUbf2",
+              "text": "2890",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "s7a4r",
+              "text": "5440",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "1CTxV",
+              "text": "2720",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The two letters, the first and the last of the four lettered word can be chosen in \\((17)^2\\) ways, as repetition is allowed for consonants. The two vowels in the middle are distinct so that the number of ways of filling up the two places is \\({ }^5 \\mathrm{P}_2=20\\).\nThe no. of different words \\(=(17)^2 \\cdot 20=5780\\).",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e77b6f5bfc7ab78ae535",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "The letters of the word TOUGH are written in all possible orders and these words are written out as in a dictionary, then the rank of the word TOUGH is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "eQorL",
+              "text": "120",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "PXgFI",
+              "text": "88",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "UKJTp",
+              "text": "89",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "p6lhu",
+              "text": "90",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "\\(\\begin{aligned}\n& \\text { Rank }=(4 ! \\times 3)+(3 ! \\times 2)+(2 ! \\times 2)+1 \\\\\n& =72+12+4+1=89\n\\end{aligned}\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e8676f5bfc7ab78aedc7",
+      "title": "Remainder and Divisibility Problems",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "64c0e7966f5bfc7ab78ae62b",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "For \\(n \\in \\mathrm{N}, x^{n+1}+(x+1)^{2 n-1}\\) is divisible by",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "QLIyc",
+              "text": "\\(x\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0y1s7",
+              "text": "\\(x+1\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "jZxqM",
+              "text": "\\(x^2+x+1\\)",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "AC689",
+              "text": "\\(x^2-x+1\\)",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "For \\(n=1\\), we have;\n\\(x^{n+1}+(x+1)^{2 n-1}=x^2+(x+1)=x^2+x+1 \\text {, }\\)\nwhich is divisible by \\(x^2+x+1\\)\nFor \\(n=2\\), we have; \\(x^{n+1}+(x+1)^{2 n-1}\\)\n\\(=x^3+(x+1)^3=(2 x+1)\\left(x^2+x+1\\right) \\text {, }\\)\nwhich is divisible by \\(x^2+x+1\\).",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e77a6f5bfc7ab78ae52f",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "The general solution of \\(8 \\tan ^2 \\frac{x}{2}=1+\\sec x\\) is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "y16UR",
+              "text": "\\(2 n \\pi \\pm \\cos ^{-1}\\left(\\frac{-1}{3}\\right)\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SKBmA",
+              "text": "\\(2 \\mathrm{n} \\pi \\pm \\frac{\\pi}{6}\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vLWsd",
+              "text": "\\(2 \\mathrm{n} \\pi \\pm \\cos ^{-1}\\left(\\frac{1}{3}\\right)\\)",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "PztZM",
+              "text": "None of these",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We have, \\(8 \\tan ^2 \\frac{x}{2}=1+\\sec x\\)\n\\(\\begin{aligned}\n& \\Rightarrow 8\\left(\\frac{1-\\cos x}{1+\\cos x}\\right)=1+\\frac{1}{\\cos x}=\\frac{1+\\cos x}{\\cos x} \\\\\n& \\Rightarrow 8 \\cos x-8 \\cos ^2 x=(1+\\cos x)^2 \\\\\n& \\Rightarrow 9 \\cos ^2 \\mathrm{x}-6 \\cos \\mathrm{x}+1=0 \\\\\n& \\Rightarrow(3 \\cos \\mathrm{x}-1)^2=0 \\Rightarrow 3 \\cos \\mathrm{x}-1=0 \\\\\n& \\Rightarrow \\cos \\mathrm{x}=\\frac{1}{3}=\\cos \\alpha \\text { (say) }  \\Rightarrow \\mathrm{x}=2 \\mathrm{n} \\pi \\pm \\alpha \\\\\n& \\therefore \\mathrm{x}=2 \\mathrm{n} \\pi \\pm \\cos ^{-1}\\left(\\frac{1}{3}\\right) \\text { where } \\mathrm{n} \\in \\mathrm{I}\n\\end{aligned}\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e8676f5bfc7ab78aedcb",
+      "title": "Multinomial Theorem",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "64c0e80d6f5bfc7ab78aea2b",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "In the expansion of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi><mo>+</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>x</mi><mn>4</mn></msup></mrow></mfenced><mn>10</mn></msup></math>, the coefficient of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>4</mn></msup></math> is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "PnTpP",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>235</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "2s6BP",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>310</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "VvIOL",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>285</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "qsEHT",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>325</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi><mo>+</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>x</mi><mn>4</mn></msup></mrow></mfenced><mn>10</mn></msup><mo>=</mo><msup><mfenced close=\"]\" open=\"[\"><mrow><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mfenced><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>3</mn></msup></mrow></mfenced></mrow></mfenced><mn>10</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfenced><mn>10</mn></msup><msup><mfenced><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>3</mn></msup></mrow></mfenced><mn>10</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfenced><mrow><mn>1</mn><mo>+</mo><mmultiscripts><mi>C</mi><mn>1</mn><none></none><mprescripts></mprescripts><none></none><mn>10</mn></mmultiscripts><mi>x</mi><mo>+</mo><mmultiscripts><mi>C</mi><mn>2</mn><none></none><mprescripts></mprescripts><none></none><mn>10</mn></mmultiscripts><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mmultiscripts><mi>C</mi><mn>3</mn><none></none><mprescripts></mprescripts><none></none><mn>10</mn></mmultiscripts><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mmultiscripts><mi>C</mi><mn>4</mn><none></none><mprescripts></mprescripts><none></none><mn>10</mn></mmultiscripts><msup><mi>x</mi><mn>4</mn></msup><mo>&#8230;</mo></mrow></mfenced><mo>&#215;</mo><mfenced><mrow><mn>1</mn><mo>+</mo><mmultiscripts><mi>C</mi><mn>1</mn><none></none><mprescripts></mprescripts><none></none><mn>10</mn></mmultiscripts><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mmultiscripts><mi>C</mi><mn>2</mn><none></none><mprescripts></mprescripts><none></none><mn>10</mn></mmultiscripts><msup><mi>x</mi><mn>6</mn></msup><mo>+</mo><mo>&#8230;</mo><mo>.</mo></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> Coefficient of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>4</mn></msup><mo>=</mo><mfenced><mmultiscripts><mi>C</mi><mn>1</mn><none></none><mprescripts></mprescripts><none></none><mn>10</mn></mmultiscripts></mfenced><mfenced><mmultiscripts><mi>C</mi><mn>1</mn><none></none><mprescripts></mprescripts><none></none><mn>10</mn></mmultiscripts></mfenced><mo>+</mo><mmultiscripts><mi>C</mi><mn>4</mn><none></none><mprescripts></mprescripts><none></none><mn>10</mn></mmultiscripts></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>100</mn><mo>+</mo><mn>210</mn><mo>=</mo><mn>310</mn></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c36f5bfc7ab78ae7a9",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "The coefficient of $\\mathrm{x}^{4}$ in the expansion of $\\left(1+x+x^{2}+x^{3}\\right)^{11},$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "yOSAg",
+              "text": "440",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "oiq0t",
+              "text": "770",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Bkqwt",
+              "text": "990",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "qNCX6",
+              "text": "1001",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We have coefficient of $x^{4}$ in $\\left(1+x+x^{2}+x^{3}\\right)^{11}$\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n=\\text { coefficient of } \\mathrm{x}^{4} \\text { in }\\left(1+\\mathrm{x}^{2}\\right)^{11}(1+\\mathrm{x})^{11} \\\\\r\n\r\n=\\text { coefficient of } \\mathrm{x}^{4} \\text { in }(1+\\mathrm{x})^{11}+\\text { coefficient } \\\\\r\n\r\n\\text { of } \\mathrm{x}^{2} \\text { in } \\\\\r\n\r\n\\text { 11. }(1+\\mathrm{x})^{11}+\\text { constant term is }{ }^{11} \\mathrm{C}_{2} \\cdot(1+\\mathrm{x})^{11} \\\\\r\n\r\n={ }^{11} \\mathrm{C}_{4}+11 .{ }^{11} \\mathrm{C}_{2}+{ }^{11} \\mathrm{C}_{2}=990\r\n\r\n\\end{array}\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "64c0e8676f5bfc7ab78aedca",
+      "title": "Properties of Binomial Coefficients",
+      "totalQuestions": 5,
+      "questions": [
+        {
+          "_id": "67726cfec49e8ef28ee2b36e",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "If the $17^{\\text {th }}$ and the $18^{\\text {th }}$ terms in the expansion of $(2+a)^{50}$ are equal, then the coefficient of $x^{35}$ in the expansion of $(a+x)^{-2}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "gItO1",
+              "text": "$-35$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "mFJWO",
+              "text": "$3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "N6lzg",
+              "text": "$36$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "09MvW",
+              "text": "$-36$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given, $17^{\\text {th }}$ and $18^{\\text {th }}$ terms in the expansion $(2+a)^{50}$ are equal\n$\\therefore T_{17}=T_{18}$\n$\\Rightarrow{ }^{50} C_{16}(2)^{34}(a)^{16}={ }^{50} C_{17}(2)^{33}(a)^{17}$\n$\\Rightarrow a=\\frac{{ }^{50} C_{16}}{{ }^{50} C_{17}} \\times 2=1$\n$\\therefore$ Now, coefficient of $x^{35}$ in the expansion\n$(1+x)^{-2}=-36$\n$\\because$ Coefficient of $x^r$ is $(r+1)$ in $(1-x)^{-2}$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e81d6f5bfc7ab78aeab3",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If a, b, c are three natural numbers in AP and a + $\\mathrm{b}+\\mathrm{c}=21$ then the possible number of values of the ordered triplet $(\\mathrm{a}, \\mathrm{b}, \\mathrm{c})$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "pHOF8",
+              "text": "15",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "PsLS5",
+              "text": "14",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "hgWPb",
+              "text": "13",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "5OWqi",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\quad$ Let $a=b-d$ and $c=b+d$, then $a+b+c=21$ $\\Rightarrow \\mathrm{b}=7$\r\n\r\nSo, the equation is $\\mathrm{a}+\\mathrm{c}=14$\r\n\r\n$\\therefore$ No. of solution $=$ coeff. of $x^{14}$ in $\\left(x+x^{2}+\\ldots .\\right)$ $={ }^{13} \\mathrm{C}_{12}=13$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7e46f5bfc7ab78ae8be",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The number of values of satisfying the equation ${ }^{39} \\mathrm{C}_{3 \\mathrm{r}-1}-{ }^{39} \\mathrm{C}_{\\mathrm{r}^{2}}={ }^{39} \\mathrm{C}_{\\mathrm{r}^{2}-1}-{ }^{39} \\mathrm{C}_{3 \\mathrm{r}}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "OPbgI",
+              "text": "1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "NEjj6",
+              "text": "2",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "N1DKv",
+              "text": "3",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "unj6h",
+              "text": "4",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "${ }^{39} \\mathrm{C}_{3 \\mathrm{r}-1}-{ }^{39} \\mathrm{C}_{\\mathrm{r}^{2}}={ }^{39} \\mathrm{C}_{\\mathrm{r}^{2}-1}-{ }^{39} \\mathrm{C}_{3 \\mathrm{r}}$\r\n\r\n$\\Rightarrow{ }^{39} \\mathrm{C}_{3 \\mathrm{r}-1}+{ }^{39} \\mathrm{C}_{3 \\mathrm{r}}={ }^{39} \\mathrm{C}_{\\mathrm{r}^{2}-1}+{ }^{39} \\mathrm{C}_{\\mathrm{r}^{2}}$\r\n\r\n$\\Rightarrow{ }^{40} \\mathrm{C}_{3 \\mathrm{r}}={ }^{40} \\mathrm{C}_{\\mathrm{r}^{2}}$\r\n\r\n$\\Rightarrow \\mathrm{r}^{2}=3 \\mathrm{r}$ or $\\mathrm{r}^{2}=40-3 \\mathrm{r}$\r\n\r\n$\\Rightarrow \\mathrm{r}=0,3$ or -8,5\r\n\r\n3 and 5 are the values as the given equation is not defined by $r=0$ and $r=-8$. Hence, the number of values of $\\mathrm{r}$ is 2 .",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c36f5bfc7ab78ae7aa",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If $\\mathrm{T}_{0}, \\mathrm{~T}_{1}, \\mathrm{~T}_{2} \\ldots \\ldots \\mathrm{T}_{\\mathrm{n}}$ represent the terms in the\r\n\r\nexpansion of $(x+a)^{n}$, then $\\left(\\mathrm{T}_{0}-\\mathrm{T}_{2}+\\mathrm{T}_{4}-\\ldots \\ldots .\\right)^{2}+$\r\n\r\n$\\left(\\mathrm{T}_{1}-\\mathrm{T}_{3}+\\mathrm{T}_{5}-\\ldots . .\\right)^{2}=$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "DPUKY",
+              "text": "$\\left(x^{2}+a^{2}\\right)$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "QGuzu",
+              "text": "$\\left(x^{2}+a^{2}\\right)^{n}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "FqxWN",
+              "text": "$\\left(x^{2}+a^{2}\\right)^{1 / n}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "KZ5Ps",
+              "text": "$\\left(x^{2}+a^{2}\\right)^{-1 / n}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "From the given condition, replacing $a$ by a and $-a i$ respectively, we get\r\n\r\n$(x+a i)^{n}=\\left(T_{0}-T_{2}+T_{4}-\\ldots \\ldots\\right)+i\\left(T_{1}-T_{3}+T_{5}-\\ldots .\\right)$ ...(i)\r\n\r\nand\r\n\r\n$(x-a i)^{n}=\\left(T_{0}-T_{2}+T_{4}-\\ldots \\ldots\\right)-i\\left(T_{1}-T_{3}+T_{5}-\\ldots\\right)$...(ii)\r\n\r\nMultiplying (ii) and\r\n\r\n(i) we get required result i.e.,\r\n\r\n$$\r\n\r\n\\left(x^{2}+a^{2}\\right)^{n}=\\left(T_{0}-T_{2}+T_{4}-\\ldots .\\right)^{2}+\\left(T_{1}-T_{3}+T_{5}-\\ldots\\right)^{2}\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b56f5bfc7ab78ae72b",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If $\\mathrm{C}_{0}, \\mathrm{C}_{1}, \\mathrm{C}_{2}, \\ldots \\ldots \\ldots \\ldots . \\mathrm{C}_{\\mathrm{n}}$ denote the binomial\r\n\r\ncoefficientsin the expansion of $(1+\\mathrm{x})^{\\mathrm{n}}$, then the value of $\\mathrm{C}_{0}+\\left(\\mathrm{C}_{0}+\\mathrm{C}_{1}\\right)+\\left(\\mathrm{C}_{0}+\\mathrm{C}_{1}+\\mathrm{C}_{2}\\right)+\\ldots$\r\n\r\n$+\\left(C_{0}+C_{1}+\\ldots . .+C_{n-1}\\right)$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "0n2n8",
+              "text": "$\\mathrm{n} \\cdot 2^{\\mathrm{n}-1}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "805CG",
+              "text": "$\\mathrm{n} \\cdot 2^{\\mathrm{n}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "34YJY",
+              "text": "$(n-1) \\cdot 2^{n-1}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "pRP84",
+              "text": "$(n-1) \\cdot 2^{n}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\begin{aligned} & \\mathrm{C}_{0}+\\left(\\mathrm{C}_{0}+\\mathrm{C}_{1}\\right)+\\left(\\mathrm{C}_{0}+\\mathrm{C}_{1}+\\mathrm{C}_{2}\\right)+\\ldots \\ldots \\ldots \\ldots \\ldots \\\\ &+\\left(\\mathrm{C}_{0}+\\mathrm{C}_{1}+\\ldots \\ldots \\ldots . \\mathrm{C}_{\\mathrm{n}-1}\\right) \\\\ &=\\mathrm{n} \\mathrm{C}_{0}+(\\mathrm{n}-1) \\mathrm{C}_{1}+(\\mathrm{n}-2) \\mathrm{C}_{2}+\\ldots \\ldots \\mathrm{C}_{\\mathrm{n}-1} \\\\ &=\\mathrm{C}_{1}+2 \\mathrm{C}_{2}+3 \\mathrm{C}_{3}+4 \\mathrm{C}_{4} \\ldots \\ldots \\mathrm{n} \\mathrm{C}_{\\mathrm{n}}=\\mathrm{n} .2^{\\mathrm{n}-1} \\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "64c0e8676f5bfc7ab78aedcd",
+      "title": "Sum of Series",
+      "totalQuestions": 3,
+      "questions": [
+        {
+          "_id": "64c0e80b6f5bfc7ab78aea18",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfenced><mn>20</mn></msup><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mn>40</mn></munderover><msub><mi>a</mi><mi>r</mi></msub><mo>&#183;</mo><msup><mi>x</mi><mi>r</mi></msup></math>, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mn>39</mn></munderover><msup><mfenced><mrow><mo>-</mo><mn>1</mn></mrow></mfenced><mi>r</mi></msup><mo>&#183;</mo><msub><mi>a</mi><mi>r</mi></msub><mo>&#183;</mo><msub><mi>a</mi><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msub></math>&nbsp;equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "UhWG5",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>79</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Pck98",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>2</mn><mn>39</mn></msup><mo>&#183;</mo><mmultiscripts><mi>C</mi><mn>39</mn><none/><mprescripts/><none/><mn>78</mn></mmultiscripts></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "YRrM2",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>3</mn><mn>39</mn></msup><mo>&#183;</mo><mmultiscripts><mi>C</mi><mn>39</mn><none/><mprescripts/><none/><mn>78</mn></mmultiscripts></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "4jqCY",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn></math>",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>We have, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfenced><mn>20</mn></msup><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mn>40</mn></munderover><msub><mi>a</mi><mi>r</mi></msub><msup><mi>x</mi><mi>r</mi></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math> is replaced by <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></math>, we get</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>+</mo><mfrac><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow></mfenced><mn>20</mn></msup><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mn>40</mn></munderover><mo>(</mo><mo>-</mo><mn>1</mn><msup><mo>)</mo><mi>r</mi></msup><msub><mi>a</mi><mi>r</mi></msub><msup><mfenced><mfrac><mn>1</mn><mi>x</mi></mfrac></mfenced><mi>r</mi></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mn>1</mn><mo>-</mo><mi>x</mi><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfenced><mn>20</mn></msup><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mn>40</mn></munderover><mo>(</mo><mo>-</mo><mn>1</mn><msup><mo>)</mo><mi>r</mi></msup><msub><mi>a</mi><mi>r</mi></msub><msup><mi>x</mi><mrow><mn>40</mn><mo>-</mo><mi>r</mi></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mn>39</mn></munderover><msup><mfenced><mrow><mo>-</mo><mn>1</mn></mrow></mfenced><mi>r</mi></msup><msub><mi>a</mi><mi>r</mi></msub><mo>&#183;</mo><msub><mi>a</mi><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msub></math> is coefficient of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math> in product of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfenced><mn>20</mn></msup><msup><mfenced><mrow><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>+</mo><mfrac><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow></mfenced><mn>20</mn></msup></math></p><p>Now,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mn>1</mn><mo>+</mo><mi>x</mi><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfenced><mn>20</mn></msup><msup><mfenced><mrow><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>+</mo><mfrac><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow></mfenced><mn>20</mn></msup><mo>=</mo><msup><mfenced><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mfrac><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow></mfenced><mn>20</mn></msup></math></p><p>Here, there will be no term of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math>.</p><p>Hence, the coefficient of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math>&nbsp;will be&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn></math>.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e80a6f5bfc7ab78aea11",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "Let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn></mrow></mfenced><mn>10</mn></msup><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mn>20</mn></munderover><msub><mi>a</mi><mi>r</mi></msub><msup><mi>x</mi><mi>r</mi></msup></math>, then the value of $\\frac{a_{8}}{a_{12}},$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "6IDcC",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "CcGhn",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "LaUdZ",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>8</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Ayv5Q",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>16</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Given,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn></mrow></mfenced><mn>10</mn></msup><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mn>20</mn></munderover><msub><mi>a</mi><mi>r</mi></msub><msup><mi>x</mi><mi>r</mi></msup></math></p><p>Replacing <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math> by <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>2</mn><mi>x</mi></mfrac></math>, we get</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mfrac><mn>8</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><mn>6</mn><mi>x</mi></mfrac><mo>+</mo><mn>4</mn></mrow></mfenced><mn>10</mn></msup><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mn>20</mn></munderover><msub><mi>a</mi><mi>r</mi></msub><msup><mfenced><mfrac><mn>2</mn><mi>x</mi></mfrac></mfenced><mi>r</mi></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><msup><mn>2</mn><mn>10</mn></msup><msup><mfenced><mrow><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn></mrow></mfenced><mn>10</mn></msup><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mn>20</mn></munderover><msub><mi>a</mi><mi>r</mi></msub><msup><mn>2</mn><mi>r</mi></msup><msup><mi>x</mi><mrow><mn>20</mn><mo>-</mo><mi>r</mi></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><msup><mn>2</mn><mn>10</mn></msup><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mn>20</mn></munderover><msub><mi>a</mi><mi>r</mi></msub><msup><mi>x</mi><mi>r</mi></msup><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mn>20</mn></munderover><msub><mi>a</mi><mi>r</mi></msub><msup><mn>2</mn><mi>r</mi></msup><msup><mi>x</mi><mrow><mn>20</mn><mo>-</mo><mi>r</mi></mrow></msup></math></p><p>Comparing ccefficient of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>8</mn></msup></math> both sides, we get</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>2</mn><mn>10</mn></msup><msub><mi>a</mi><mn>8</mn></msub><mo>=</mo><msub><mi>a</mi><mn>12</mn></msub><msup><mn>2</mn><mn>12</mn></msup><mo>&#8658;</mo><mfrac><msub><mi>a</mi><mn>8</mn></msub><msub><mi>a</mi><mn>12</mn></msub></mfrac><mo>=</mo><mfrac><msup><mn>2</mn><mn>12</mn></msup><msup><mn>2</mn><mn>10</mn></msup></mfrac><mo>=</mo><mn>4</mn></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7e46f5bfc7ab78ae8bf",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "If $\\sum_{r=0}^{n} \\frac{r+2}{r+1}^{n} C_{r}=\\frac{2^{8}-1}{6},$ then $n=$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "02ybA",
+              "text": "8",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "XG32I",
+              "text": "4",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "aNC2I",
+              "text": "6",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "H4iHH",
+              "text": "5",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\sum_{r=0}^{n} \\frac{r+2}{r+1}{ }^{n} C_{r}=\\frac{2^{8}-1}{6}$\r\n\r\n$$\r\n\r\n\\begin{aligned}\r\n\r\n& \\Rightarrow \\sum_{r=0}^{n}\\left[1+\\frac{1}{r+1}\\right]{ }^{n} C_{r}=\\frac{2^{8}-1}{6} \\\\\r\n\r\n& \\Rightarrow 2^{n}+\\sum_{r=0}^{n} \\frac{1}{n+1} \\cdot{ }^{n+1} C_{r+1}=\\frac{2^{8}-1}{6} \\\\\r\n\r\n\\Rightarrow 2^{n}+& \\frac{2^{n+1}-1}{n+1}=\\frac{2^{8}-1}{6} \\Rightarrow \\frac{2^{n}(n+3)-1}{n+1}=\\frac{2^{8}-1}{6} \\\\\r\n\r\n\\Rightarrow & \\frac{2^{n}(n+1+2)-1}{n+1}=\\frac{2^{5}(6+2)-1}{6}\r\n\r\n\\end{aligned}\r\n\r\n$$\r\n\r\nComparing we get $\\mathrm{n}+1=6 \\Rightarrow \\mathrm{n}=5$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "topicId": "64c0e8676f5bfc7ab78aedc9",
+      "title": "Binomial Theorem for Rational Index",
+      "totalQuestions": 3,
+      "questions": [
+        {
+          "_id": "64c0e7e46f5bfc7ab78ae8c2",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If the third term in the expansion of $\\left[\\mathrm{x}+\\mathrm{x}^{\\log _{10} \\mathrm{x}}\\right]^{5}$\r\n\r\nis $10^{6},$ then $\\mathrm{x}$ may be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ZIci8",
+              "text": "1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "JmRzr",
+              "text": "$\\sqrt{10}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Pd5mN",
+              "text": "10",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "gJ9to",
+              "text": "$10^{-2 / 5}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Put $\\log _{10} x=y,$ the given expression becomes $\\left(x+x^{y}\\right)^{5}$\r\n\r\n$\\mathrm{T}_{3}={ }^{5} \\mathrm{C}_{2} \\cdot \\mathrm{x}^{3}\\left(\\mathrm{x}^{\\mathrm{y}}\\right)^{2}=10 \\mathrm{x}^{3+2 \\mathrm{y}}=10^{6}$ (given)\r\n\r\n$\\Rightarrow(3+2 \\mathrm{y}) \\log _{10} \\mathrm{x}=5 \\log _{10} 10=5$\r\n\r\n$\\Rightarrow(3+2 \\mathrm{y}) \\mathrm{y}=5$\r\n\r\n$\\Rightarrow \\mathrm{y}=1,-\\frac{5}{2}$\r\n\r\n$\\Rightarrow \\log _{10} \\mathrm{x}=1$ or $\\log _{10} \\mathrm{x}=-\\frac{5}{2}$\r\n\r\n$\\therefore \\mathrm{x}=10$ or $\\mathrm{x}=(10)^{-5 / 2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7e46f5bfc7ab78ae8c1",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If the sum of odd numbered terms and the sum of even numbered terms in the expansion of $(x+a)^{n}$ are $A$ and $B$ respectively, then the value of $\\left(x^{2}-\\right.$ $\\left.a^{2}\\right)^{n}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "vDBMP",
+              "text": "$\\mathrm{A}^{2}-\\mathrm{B}^{2}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "wmZCC",
+              "text": "$\\mathrm{A}^{2}+\\mathrm{B}^{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "uqKDI",
+              "text": "$4 \\mathrm{AB}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Nm6ir",
+              "text": "None",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$$\r\n\r\n\\begin{array}{r}\r\n\r\n(x+a)^{n}={ }^{n} C_{0} x^{n}+{ }^{n} C_{1} x^{n-1} a+{ }^{n} C_{2} x^{n-2} a^{2} \\\\\r\n\r\n+{ }^{n} C_{3} x^{n-3} a^{3}+{ }^{n} C_{4} x^{n-4} a^{4}+\\ldots . \\\\\r\n\r\n=\\left({ }^{n} C_{0} x^{n}+{ }^{n} C_{2} x^{n-2} a^{2}+{ }^{n} C_{4} x^{n-4} a^{4}+\\ldots .\\right)+ \\\\\r\n\r\n+\\left({ }^{n} C_{1} x^{n-1} a+{ }^{n} C_{3} x^{n-3} a^{3}+{ }^{n} C_{5} x^{n-5} a^{5}\\right)+\\ldots .\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\n$=A+B$ ....(i)\r\n\r\nSimilarly, $(x-a)^{n}=A-B$ ....(ii)\r\n\r\nMultiplying eqns. (1) and (2), we get\r\n\r\n$$\r\n\r\n\\left(\\mathrm{x}^{2}-\\mathrm{a}^{2}\\right)^{\\mathrm{n}}=\\mathrm{A}^{2}-\\mathrm{B}^{2}\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a56f5bfc7ab78ae6ac",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The coefficient of $x^{20}$ in the expansion of\r\n$\\left(1+x^{2}\\right)^{40} \\cdot\\left(x^{2}+2+\\frac{1}{x^{2}}\\right)^{-5}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "i3V4B",
+              "text": "${ }^{30} \\mathrm{C}_{10}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "xuMO7",
+              "text": "${ }^{30} \\mathrm{C}_{25}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "HCjDo",
+              "text": "1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "EYIhH",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Expression $=\\left(1+x^{2}\\right)^{40} \\cdot\\left(x+\\frac{1}{x}\\right)^{-10}$\r\n$=\\left(1+x^{2}\\right)^{30} \\cdot x^{10}$\r\nThe coefficient of $x^{20}$ in $x^{10}\\left(1+x^{2}\\right)^{30}$ $=$ the coefficient of $\\mathrm{x}^{10}$ in $\\left(1+\\mathrm{x}^{2}\\right)^{30}$\r\n$={ }^{30} \\mathrm{C}_{5}={ }^{30} \\mathrm{C}_{30-5}={ }^{30} \\mathrm{C}_{25}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "topicId": "64c0e8676f5bfc7ab78aedcc",
+      "title": "Binomial Theorem for Negative Index",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e7d26f5bfc7ab78ae827",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If $\\frac{e^{x}+e^{5 x}}{e^{3 x}}=a_{0}+a_{1} x+a_{2} x^{2}+a_{3} x^{3}+\\ldots$ then\r\n\r\nthe value of $2 a_{1}+2^{3} a_{3}+2^{5} a_{5}+\\ldots$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "hI0OF",
+              "text": "$e^{2}+e^{-2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "gEuFh",
+              "text": "$e^{4}-e^{-4}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "dywiH",
+              "text": "$e^{t}+e^{-1}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "CgBLf",
+              "text": "0",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $\\frac{\\mathrm{e}^{\\mathrm{x}}+\\mathrm{e}^{5 \\mathrm{x}}}{\\mathrm{e}^{3 \\mathrm{x}}}=\\mathrm{a}_{0}+\\mathrm{a}_{1} \\mathrm{x}+\\mathrm{a}_{2} \\mathrm{x}^{2}+\\mathrm{a}_{3} \\mathrm{a}^{3}+\\ldots .$\r\n\r\n$\\begin{aligned} &=\\frac{\\mathrm{e}^{\\mathrm{x}}}{\\mathrm{e}^{3 \\mathrm{x}}}+\\frac{\\mathrm{e}^{5 \\mathrm{x}}}{\\mathrm{e}^{3 \\mathrm{x}}}=\\mathrm{a}_{0}+\\mathrm{a}_{1} \\mathrm{x}+\\mathrm{a}_{2} \\mathrm{x}^{2}+\\ldots . \\\\=& \\mathrm{e}^{-2 \\mathrm{x}}+\\mathrm{e}^{2 \\mathrm{x}}=\\mathrm{a}_{0}+\\mathrm{a}_{1} \\mathrm{x}+\\mathrm{a}_{2} \\mathrm{x}^{2}+\\mathrm{a}_{3} \\mathrm{x}^{3}+\\ldots . \\end{aligned}$\r\n\r\nBy using $\\mathrm{e}^{\\mathrm{x}}=1+\\mathrm{x}+\\frac{\\mathrm{x}^{2}}{2 !}+\\frac{\\mathrm{x}^{3}}{3 !}+{ }_{--}--$ and\r\n\r\n$\\mathrm{e}^{-\\mathrm{x}}=1-\\mathrm{x}+\\frac{\\mathrm{x}^{2}}{2 !}-\\frac{\\mathrm{x}^{3}}{3 !}+---$\r\n\r\n$\\mathrm{e}^{-2 \\mathrm{x}}+\\mathrm{e}^{2 \\mathrm{x}}=2\\left[1+\\frac{(2 \\mathrm{x})^{2}}{21}+\\frac{(2 \\mathrm{x})^{4}}{41}+\\ldots .\\right]$\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n=a_{0}+a_{1} x+a_{2} x^{2}+a_{3} a^{3}+\\ldots . \\\\\r\n\r\n=a_{1}=a_{3}=a_{5}=\\ldots=0\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nHence, $2 \\mathrm{a}_{1}+2^{3} \\mathrm{a}_{3}+2^{5} \\mathrm{a}_{5}+\\ldots .=0$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

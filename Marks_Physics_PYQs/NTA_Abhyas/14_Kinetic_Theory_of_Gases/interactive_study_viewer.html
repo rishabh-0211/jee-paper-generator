@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NTA Abhyas (JEE Main) - Kinetic Theory of Gases PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚡ NTA Abhyas (JEE Main) &bull; Kinetic Theory of Gases</h1>
+        <div class="sub">Physics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 14, "chapterId": "616023f085c7cecc9d170114", "chapter": "Kinetic Theory of Gases", "exam": "NTA Abhyas (JEE Main)", "subject": "Physics", "totalTopics": 4, "totalQuestions": 11, "downloadTime": "2026-10-08 20:32:21", "topics": [{"index": 1, "topicId": "6aa3ab79aa8dc1ff68178060", "title": "Gas Laws", "totalQuestions": 1, "questions": [{"_id": "6151e8630d2f33abe380f325", "type": "singleCorrect", "level": 1, "questionLabels": [{"title": "NTA Abhyas Paper", "value": "22", "isVisible": true}], "previousYearPapers": [{"_id": "6904b6feef55966cf1d71f2a", "title": "NTA Abhyas (JEE Main) 2020", "shortName": "2020", "isVisible": true, "heldOn": "2020-05-25T09:00:00.000Z"}], "question": {"text": "Two vessels separately contain two ideal gases <math> <mtext>A</mtext> </math> and <math> <mtext>B</mtext> </math> at the same temperature, the pressure of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">A</mi></math> being twice that of <math> <mtext>B</mtext></math>.&nbsp;Under such conditions, the density of <math> <mtext>A</mtext> </math> is found to be <math> <mtext>1.5</mtext> </math> times the density of <math> <mtext>B</mtext></math>. The ratio of molecular weights of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtext>A</mtext></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtext>B</mtext></math> is", "image": null}, "options": [{"id": "aO4p2", "text": "<math><mfrac><mrow><mn>3</mn></mrow><mrow><mn>4</mn></mrow></mfrac></math>", "image": null, "isCorrect": true}, {"id": "qhGee", "text": "<math><mn>2</mn></math>", "image": null, "isCorrect": false}, {"id": "ljZlr", "text": "<math><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac></math>", "image": null, "isCorrect": false}, {"id": "nagqD", "text": "<math><mfrac><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac></math>", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">P</mi><mi mathvariant=\"normal\">A</mi></msub><mo>=</mo><mi mathvariant=\"normal\">&#160;</mi><mfrac><mrow><msub><mi mathvariant=\"normal\">&#961;</mi><mi mathvariant=\"normal\">A</mi></msub><mi>RT</mi></mrow><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">A</mi></msub></mfrac><mo>,</mo><mi mathvariant=\"normal\">&#160;</mi><msub><mi mathvariant=\"normal\">P</mi><mi mathvariant=\"normal\">B</mi></msub><mo>=</mo><mi mathvariant=\"normal\">&#160;</mi><mfrac><mrow><msub><mi mathvariant=\"normal\">&#961;</mi><mi mathvariant=\"normal\">B</mi></msub><mi>RT</mi></mrow><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">B</mi></msub></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi mathvariant=\"normal\">&#160;</mi><mfrac><msub><mi mathvariant=\"normal\">P</mi><mi mathvariant=\"normal\">A</mi></msub><msub><mi mathvariant=\"normal\">P</mi><mi mathvariant=\"normal\">B</mi></msub></mfrac><mo>=</mo><mi mathvariant=\"normal\">&#160;</mi><mfrac><msub><mi mathvariant=\"normal\">&#961;</mi><mi mathvariant=\"normal\">A</mi></msub><msub><mi mathvariant=\"normal\">&#961;</mi><mi mathvariant=\"normal\">B</mi></msub></mfrac><mi mathvariant=\"normal\">&#160;</mi><mfrac><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">B</mi></msub><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">A</mi></msub></mfrac><mo>=</mo><mn>2</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mfrac><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">B</mi></msub><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">A</mi></msub></mfrac><mo>=</mo><mn>2</mn></math><br />So, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">A</mi></msub><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">B</mi></msub></mfrac><mi mathvariant=\"normal\">&#160;</mi><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></math></p>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": null, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "6aa3ab79aa8dc1ff68178062", "title": "Speed of Gas", "totalQuestions": 4, "questions": [{"_id": "6151e863ef9a8058e376b098", "type": "singleCorrect", "level": 1, "questionLabels": [{"title": "NTA Abhyas Paper", "value": "75", "isVisible": true}], "previousYearPapers": [{"_id": "6904b6feef55966cf1d71f2a", "title": "NTA Abhyas (JEE Main) 2020", "shortName": "2020", "isVisible": true, "heldOn": "2020-05-25T09:00:00.000Z"}], "question": {"text": "The temperature of an ideal gas is increased from <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>100</mn><mo>&nbsp;</mo><mi mathvariant=\"normal\">K</mi></math> to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>400</mn><mo>&nbsp;</mo><mi mathvariant=\"normal\">K</mi></math> . If the <math><mi>r</mi><mi>m</mi><mi>s</mi></math> speed of the gas molecule is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>V</mi></math>&nbsp;at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>100</mn><mo>&nbsp;</mo><mi mathvariant=\"normal\">K</mi></math> , then at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>400</mn><mo>&nbsp;</mo><mi mathvariant=\"normal\">K</mi></math> it becomes", "image": null}, "options": [{"id": "GGfZy", "text": "<math><mn>2</mn><mi>V</mi></math>", "image": null, "isCorrect": true}, {"id": "y0nHn", "text": "<math><mn>4</mn><mi>V</mi></math>", "image": null, "isCorrect": false}, {"id": "yLuOT", "text": "<math><mn>0.5</mn><mi>V</mi></math>", "image": null, "isCorrect": false}, {"id": "K87ME", "text": "<math><mi>V</mi></math>", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<math><mo>∵</mo><mi>&nbsp;</mi><mi>&nbsp;</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">s</mi></math> speed of molecule <math><msub><mrow><mi>V</mi></mrow><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">s</mi></mrow></msub><mo>∝</mo><msqrt><mi>T</mi></msqrt></math><br /><br />for <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>T</mi><mo>=</mo><mn>100</mn><mo>&nbsp;</mo><mi mathvariant=\"normal\">K</mi></math><br /><br /><math><msub><mrow><mfenced separators=\"|\"><mrow><msub><mrow><mi>V</mi></mrow><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">s</mi></mrow></msub></mrow></mfenced></mrow><mrow><mn>1</mn></mrow></msub><mo>∝</mo><msqrt><mn>100</mn></msqrt></math><br /><br />For <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>T</mi><mo>=</mo><mn>400</mn><mo>&nbsp;</mo><mi mathvariant=\"normal\">K</mi></math><br /><br /><math><msub><mrow><mfenced separators=\"|\"><mrow><msub><mrow><mi>V</mi></mrow><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">s</mi></mrow></msub></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msub><mo>∝</mo><msqrt><mn>400</mn></msqrt></math><br /><br />therefore, <math><mfrac><mrow><msub><mrow><mfenced separators=\"|\"><mrow><msub><mrow><mi>V</mi></mrow><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">s</mi></mrow></msub></mrow></mfenced></mrow><mrow><mn>1</mn></mrow></msub></mrow><mrow><msub><mrow><mfenced separators=\"|\"><mrow><msub><mrow><mi>V</mi></mrow><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">s</mi></mrow></msub></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><msqrt><mn>100</mn></msqrt></mrow><mrow><msqrt><mn>400</mn></msqrt></mrow></mfrac></math><br /><br />or <math><mfrac><mrow><mi>V</mi></mrow><mrow><msub><mrow><mfenced separators=\"|\"><mrow><msub><mrow><mi>V</mi></mrow><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">s</mi></mrow></msub></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac></math><br /><br />or <math><msub><mrow><mfenced separators=\"|\"><mrow><msub><mrow><mi>V</mi></mrow><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">s</mi></mrow></msub></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mn>2</mn><mi>V</mi></math>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": null, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6151e863a7a393bbbd066da2", "type": "singleCorrect", "level": 1, "questionLabels": [{"title": "NTA Abhyas Paper", "value": "21", "isVisible": true}], "previousYearPapers": [{"_id": "6904b6feef55966cf1d71f2a", "title": "NTA Abhyas (JEE Main) 2020", "shortName": "2020", "isVisible": true, "heldOn": "2020-05-25T09:00:00.000Z"}], "question": {"text": "Two identical vessels contain two different ideal gases at the same temperature. If the average speed of gas molecules in the first vessel is equal to the most probable speed of molecules in the second vessel, then the ratio of the mass of gas molecules in the first vessel to that in the second vessel is", "image": null}, "options": [{"id": "1kYJJ", "text": "<math><mfrac><mrow><mn>4</mn></mrow><mrow><mi>π</mi></mrow></mfrac></math>", "image": null, "isCorrect": true}, {"id": "sB7O9", "text": "<math><mfrac><mrow><mn>8</mn></mrow><mrow><mi>π</mi></mrow></mfrac></math>", "image": null, "isCorrect": false}, {"id": "iZCSd", "text": "<math><mfrac><mrow><mn>2</mn></mrow><mrow><mi>π</mi></mrow></mfrac></math>", "image": null, "isCorrect": false}, {"id": "9ZcDq", "text": "<math><mfrac><mrow><mi>π</mi></mrow><mrow><mn>2</mn></mrow></mfrac></math>", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">v</mi><mi>avg</mi></msub><mo>=</mo><msqrt><mfrac><mrow><mn>8</mn><mi>RT</mi></mrow><msub><mi>&#960;M</mi><mn>1</mn></msub></mfrac></msqrt></math><br /><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">v</mi><mi>mp</mi></msub><mo>=</mo><msqrt><mfrac><mrow><mn>2</mn><mi>RT</mi></mrow><msub><mi mathvariant=\"normal\">M</mi><mn>2</mn></msub></mfrac></msqrt></math><br /><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>8</mn><mrow><msub><mi mathvariant=\"normal\">M</mi><mn>1</mn></msub><mi mathvariant=\"normal\">&#960;</mi></mrow></mfrac><mo>=</mo><mfrac><mn>2</mn><msub><mi mathvariant=\"normal\">M</mi><mn>2</mn></msub></mfrac></math><br /><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msub><mi mathvariant=\"normal\">M</mi><mn>1</mn></msub><msub><mi mathvariant=\"normal\">M</mi><mn>2</mn></msub></mfrac><mo>=</mo><mfrac><mn>4</mn><mi mathvariant=\"normal\">&#960;</mi></mfrac></math>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": null, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6151e86387e3ab7b48d39a53", "type": "singleCorrect", "level": 1, "questionLabels": [{"title": "NTA Abhyas Paper", "value": "95", "isVisible": true}], "previousYearPapers": [{"_id": "6904b6feef55966cf1d71f2a", "title": "NTA Abhyas (JEE Main) 2020", "shortName": "2020", "isVisible": true, "heldOn": "2020-05-25T09:00:00.000Z"}], "question": {"text": "The temperature at which a &nbsp;molecule of nitrogen will have the same rms velocity as a &nbsp;molecule of oxygen at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>127</mn><mo>&nbsp;</mo><mo>°</mo><mi mathvariant=\"normal\">C</mi></math>&nbsp;is&nbsp;", "image": null}, "options": [{"id": "FHWQU", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>457</mn><mo>&#160;</mo><mi mathvariant=\"normal\">&#8451;</mi></math>", "image": null, "isCorrect": false}, {"id": "EH1tG", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>273</mn><mo>&#160;</mo><mi mathvariant=\"normal\">&#8451;</mi></math>", "image": null, "isCorrect": false}, {"id": "lqEWw", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>350</mn><mo>&#160;</mo><mi mathvariant=\"normal\">&#8451;</mi></math>", "image": null, "isCorrect": false}, {"id": "qNvuo", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>77</mn><mo>&#160;</mo><mi mathvariant=\"normal\">&#8451;</mi></math>", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Root mean square velocity<br /><br /><math><msub><mrow><mi>v</mi></mrow><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">s</mi></mrow></msub><mo>=</mo><msqrt><mfrac><mrow><mn>3</mn><mi>R</mi><mi>T</mi></mrow><mrow><mi>M</mi></mrow></mfrac></msqrt></math><br /><br />where <math><mi>R</mi></math> is gas constant, <math><mi>T</mi></math> the temperature and <math><mi>M</mi></math> molecular weight.<br /><br />Given, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><msub><mi>M</mi><mi mathvariant=\"normal\">N</mi></msub><mn>2</mn></msub><mo>=</mo><mn>28</mn><mo>,</mo><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><msub><msub><mi>M</mi><mi mathvariant=\"normal\">O</mi></msub><mn>2</mn></msub><mo>=</mo><mn>32</mn><mo>,</mo><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><msub><msub><mi>T</mi><mi mathvariant=\"normal\">O</mi></msub><mn>2</mn></msub><mo>=</mo><mn>127</mn><mo>&#160;</mo><mi mathvariant=\"normal\">&#8451;</mi><mo>=</mo><mn>127</mn><mo>+</mo><mn>273</mn><mo>=</mo><mn>400</mn></math> K<br /><br /><math><mo>&#8756;</mo><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mfrac><mrow><msub><mrow><msub><mrow><mi>v</mi></mrow><mrow><mi mathvariant=\"normal\">O</mi></mrow></msub></mrow><mrow><mn>2</mn></mrow></msub></mrow><mrow><msub><mrow><msub><mrow><mi>v</mi></mrow><mrow><mi mathvariant=\"normal\">N</mi></mrow></msub></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfrac><mo>=</mo><msqrt><mfrac><mrow><msub><mrow><msub><mrow><mi>T</mi></mrow><mrow><mi mathvariant=\"normal\">O</mi></mrow></msub></mrow><mrow><mn>2</mn></mrow></msub></mrow><mrow><msub><mrow><msub><mrow><mi>M</mi></mrow><mrow><mi mathvariant=\"normal\">O</mi></mrow></msub></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfrac><mo>&#215;</mo><mfrac><mrow><msub><mrow><msub><mrow><mi>M</mi></mrow><mrow><mi mathvariant=\"normal\">N</mi></mrow></msub></mrow><mrow><mn>2</mn></mrow></msub></mrow><mrow><msub><mrow><msub><mrow><mi>T</mi></mrow><mrow><mi mathvariant=\"normal\">N</mi></mrow></msub></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfrac></msqrt><mo>=</mo><msqrt><mfrac><mrow><mn>400</mn></mrow><mrow><mn>32</mn></mrow></mfrac><mo>&#215;</mo><mfrac><mrow><mn>28</mn></mrow><mrow><msub><mrow><msub><mrow><mi>T</mi></mrow><mrow><mi mathvariant=\"normal\">N</mi></mrow></msub></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfrac></msqrt><mo>=</mo><mn>1</mn></math><br /><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><msub><msub><mi>T</mi><mi mathvariant=\"normal\">N</mi></msub><mn>2</mn></msub><mo>=</mo><mn>350</mn><mi>&#160;</mi><mi mathvariant=\"normal\">K</mi><mo>=</mo><mn>77</mn><mo>&#160;</mo><mi mathvariant=\"normal\">&#8451;</mi></math>.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": null, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6151e8637d01bf5ec7fe198b", "type": "singleCorrect", "level": 1, "questionLabels": [{"title": "NTA Abhyas Paper", "value": "08", "isVisible": true}], "previousYearPapers": [{"_id": "6904b6feef55966cf1d71f2a", "title": "NTA Abhyas (JEE Main) 2020", "shortName": "2020", "isVisible": true, "heldOn": "2020-05-25T09:00:00.000Z"}], "question": {"text": "A mixture of two gasses <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math>&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math>&nbsp;is kept in a vessel which is maintained at a temperature&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>T</mi></math>. In the vessel there are&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>N</mi></math> molecules each of mass&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi></math>, of the gas&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math>&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi>N</mi></math> molecules each of mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi>m</mi></math> of the gas&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math>.&nbsp;The mean square velocity of the molecules of the gas&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math>&nbsp;is&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>v</mi><mn>2</mn></msup></math>&nbsp;and the mean square velocity of the molecules of the gas&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math> along the&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math>&nbsp;direction is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>w</mi><mn>2</mn></msup></math>.&nbsp;The value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msup><mi>w</mi><mn>2</mn></msup><msup><mi>v</mi><mn>2</mn></msup></mfrac></math>&nbsp;is", "image": null}, "options": [{"id": "XPUKt", "text": "<math> <mtext>2</mtext></math>", "image": null, "isCorrect": false}, {"id": "53LyC", "text": "<math> <mtext>1</mtext></math>", "image": null, "isCorrect": false}, {"id": "Tw5yh", "text": "<math><mfrac><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac></math>", "image": null, "isCorrect": false}, {"id": "rqzKJ", "text": "<math><mfrac><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac></math>", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Mean kinetic energy of the two types of molecules should be equal. The mean square velocity of A type molecules  <math><mo>=</mo><msup><mrow><mi mathvariant=\"normal\">ω</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">ω</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">ω</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>3</mn><msup><mrow><mi mathvariant=\"normal\">ω</mi></mrow><mrow><mn>2</mn></mrow></msup></math> <br/><br/>Therefore,  <math><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mi mathvariant=\"normal\">m</mi><mfenced separators=\"|\"><mrow><mn>3</mn><msup><mrow><mi mathvariant=\"normal\">ω</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfenced><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mfenced separators=\"|\"><mrow><mn>2</mn><mi mathvariant=\"normal\">m</mi></mrow></mfenced><msup><mrow><mi mathvariant=\"normal\">v</mi></mrow><mrow><mn>2</mn></mrow></msup></math> <br/><br/>This gives  <math><mfrac><mrow><msup><mrow><mi mathvariant=\"normal\">ω</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><msup><mrow><mi mathvariant=\"normal\">v</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac></math>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": null, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "6aa3ab79aa8dc1ff6817805f", "title": "Degree of Freedom and Specific Heat", "totalQuestions": 2, "questions": [{"_id": "6151e8637649047d29cfcbd2", "type": "singleCorrect", "level": 1, "questionLabels": [{"title": "NTA Abhyas Paper", "value": "74", "isVisible": true}], "previousYearPapers": [{"_id": "6904b6feef55966cf1d71f2a", "title": "NTA Abhyas (JEE Main) 2020", "shortName": "2020", "isVisible": true, "heldOn": "2020-05-25T09:00:00.000Z"}], "question": {"text": "An iron rocket fragment initially at<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&nbsp;</mo><mo>-</mo><mn>100</mn><mo>&nbsp;</mo><mo>°</mo><mi mathvariant=\"normal\">C</mi></math> enters the earth's atmosphere almost horizontally and quickly fuses completely in atmospheric friction. Specific heat of iron is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>11</mn><mo>&nbsp;</mo><mi>kcal</mi><mo>&nbsp;</mo><msup><mi>kg</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&nbsp;</mo><mo>°</mo><msup><mi mathvariant=\"normal\">C</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>, its melting point is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1535</mn><mo>&nbsp;</mo><mo>°</mo><mi mathvariant=\"normal\">C</mi></math>&nbsp;and the latent heat of fusion is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>&nbsp;</mo><mi>kcal</mi><mo>&nbsp;</mo><msup><mi>kg</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>. The minimum velocity with which the fragment must have entered the atmosphere is", "image": null}, "options": [{"id": "4lm8J", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>45</mn><mo>&#160;</mo><mi>km</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>", "image": null, "isCorrect": false}, {"id": "3bKTI", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>.</mo><mn>32</mn><mo>&#160;</mo><mi>km</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math><div id=\"gtx-trans\" style=\"position: absolute; left: 76px; top: -5.77778px;\"><div class=\"gtx-trans-icon\">&nbsp;</div></div>", "image": null, "isCorrect": true}, {"id": "GsHjk", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>.</mo><mn>32</mn><mo>&#160;</mo><mi>km</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math><div id=\"gtx-trans\" style=\"position: absolute; left: 76px; top: -5.77778px;\"><div class=\"gtx-trans-icon\">&nbsp;</div></div>", "image": null, "isCorrect": false}, {"id": "NIuFf", "text": "Zero", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "The kinetic energy of the fragment is changed to heat. Expressing mass m in kilograms everywher, we have<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mfenced open=\"[\" close=\"]\"><mrow><mi>m</mi><mfenced><mrow><mn>3</mn><mn>0</mn></mrow></mfenced><mo>+</mo><mi>m</mi><mfenced><mtext>0.11</mtext></mfenced><mfenced><mrow><mn>1</mn><mn>5</mn><mn>3</mn><msup><mn>5</mn><mo>&#8728;</mo></msup><mo>+</mo><mn>1</mn><mn>0</mn><msup><mn>0</mn><mo>&#8728;</mo></msup></mrow></mfenced></mrow></mfenced><mn>4</mn><mn>1</mn><mn>8</mn><mn>4</mn></math><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mfenced><mrow><mn>8</mn><mn>3</mn><mn>6</mn><mn>8</mn></mrow></mfenced><mfenced open=\"[\" close=\"]\"><mrow><mn>3</mn><mn>0</mn><mo>+</mo><mn>1</mn><mn>8</mn><mn>0</mn></mrow></mfenced><mo>&#8771;</mo><mtext>1.76</mtext><mo>&#215;</mo><mn>1</mn><msup><mn>0</mn><mn>6</mn></msup></math><br /><br />Hence<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi><mo>=</mo><mfenced><msqrt><mtext>1.76</mtext></msqrt></mfenced><mo>&#215;</mo><mn>1</mn><msup><mn>0</mn><mn>3</mn></msup><mo>=</mo><msup><mtext>1.32 km&#160;s</mtext><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": null, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6151e86360035d73b0158c2d", "type": "numerical", "level": 1, "questionLabels": [{"title": "NTA Abhyas Paper", "value": "39", "isVisible": true}], "previousYearPapers": [{"_id": "6904b6feef55966cf1d71f2a", "title": "NTA Abhyas (JEE Main) 2020", "shortName": "2020", "isVisible": true, "heldOn": "2020-05-25T09:00:00.000Z"}], "question": {"text": "Under standard conditions, the density of a gas is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1.3</mn><mtext> </mtext><msup><mi mathvariant=\"normal\">mg&nbsp;cm</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup></math> and the velocity of propagation of sound, in it, is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>330</mn><mo>&nbsp;</mo><mi mathvariant=\"normal\">m</mi><mo>&nbsp;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>. The number of degrees of freedom of gas is", "image": null}, "options": [], "correctValue": "5", "solution": {"text": "<p><math><msub><mrow><mi>V</mi></mrow><mrow><mi>s</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>d</mi></mrow></msub><mo>=</mo><msqrt><mfrac><mrow><mi>γ</mi><mi>P</mi></mrow><mrow><mi>ρ</mi></mrow></mfrac></msqrt></math> and <math><mi>γ</mi><mo>=</mo><mn>1</mn><mo>+</mo><mfrac><mrow><mn>2</mn></mrow><mrow><mi>f</mi></mrow></mfrac></math><br /><br /><math><mo>∴</mo></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>+</mo><mfrac><mn>2</mn><mi>f</mi></mfrac><mo>=</mo><mfrac><mrow><msubsup><mi>v</mi><mrow><mi>s</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>d</mi></mrow><mn>2</mn></msubsup><mo>×</mo><mi>ρ</mi></mrow><mi>P</mi></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>+</mo><mfrac><mn>2</mn><mi>f</mi></mfrac><mo>=</mo><mfrac><mrow><mo>(</mo><mn>330</mn><msup><mo>)</mo><mn>2</mn></msup><mo>×</mo><mo>(</mo><mn>1</mn><mo>.</mo><mn>3</mn><mo>)</mo></mrow><mrow><mn>1</mn><mo>.</mo><mn>01</mn><mo>×</mo><msup><mn>10</mn><mn>5</mn></msup></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>+</mo><mfrac><mn>2</mn><mi>f</mi></mfrac><mo>=</mo><mn>1</mn><mo>.</mo><mn>40</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>=</mo><mn>5</mn></math></p>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": null, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "6aa3ab79aa8dc1ff68178061", "title": "Pressure and Energy of Gas", "totalQuestions": 4, "questions": [{"_id": "6151e8637d01bf5ec7fe198b", "type": "singleCorrect", "level": 1, "questionLabels": [{"title": "NTA Abhyas Paper", "value": "08", "isVisible": true}], "previousYearPapers": [{"_id": "6904b6feef55966cf1d71f2a", "title": "NTA Abhyas (JEE Main) 2020", "shortName": "2020", "isVisible": true, "heldOn": "2020-05-25T09:00:00.000Z"}], "question": {"text": "A mixture of two gasses <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math>&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math>&nbsp;is kept in a vessel which is maintained at a temperature&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>T</mi></math>. In the vessel there are&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>N</mi></math> molecules each of mass&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi></math>, of the gas&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math>&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi>N</mi></math> molecules each of mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi>m</mi></math> of the gas&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math>.&nbsp;The mean square velocity of the molecules of the gas&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math>&nbsp;is&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>v</mi><mn>2</mn></msup></math>&nbsp;and the mean square velocity of the molecules of the gas&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math> along the&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math>&nbsp;direction is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>w</mi><mn>2</mn></msup></math>.&nbsp;The value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msup><mi>w</mi><mn>2</mn></msup><msup><mi>v</mi><mn>2</mn></msup></mfrac></math>&nbsp;is", "image": null}, "options": [{"id": "XPUKt", "text": "<math> <mtext>2</mtext></math>", "image": null, "isCorrect": false}, {"id": "53LyC", "text": "<math> <mtext>1</mtext></math>", "image": null, "isCorrect": false}, {"id": "Tw5yh", "text": "<math><mfrac><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac></math>", "image": null, "isCorrect": false}, {"id": "rqzKJ", "text": "<math><mfrac><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac></math>", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Mean kinetic energy of the two types of molecules should be equal. The mean square velocity of A type molecules  <math><mo>=</mo><msup><mrow><mi mathvariant=\"normal\">ω</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">ω</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">ω</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>3</mn><msup><mrow><mi mathvariant=\"normal\">ω</mi></mrow><mrow><mn>2</mn></mrow></msup></math> <br/><br/>Therefore,  <math><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mi mathvariant=\"normal\">m</mi><mfenced separators=\"|\"><mrow><mn>3</mn><msup><mrow><mi mathvariant=\"normal\">ω</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfenced><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mfenced separators=\"|\"><mrow><mn>2</mn><mi mathvariant=\"normal\">m</mi></mrow></mfenced><msup><mrow><mi mathvariant=\"normal\">v</mi></mrow><mrow><mn>2</mn></mrow></msup></math> <br/><br/>This gives  <math><mfrac><mrow><msup><mrow><mi mathvariant=\"normal\">ω</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><msup><mrow><mi mathvariant=\"normal\">v</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac></math>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": null, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6151e8637649047d29cfcbd2", "type": "singleCorrect", "level": 1, "questionLabels": [{"title": "NTA Abhyas Paper", "value": "74", "isVisible": true}], "previousYearPapers": [{"_id": "6904b6feef55966cf1d71f2a", "title": "NTA Abhyas (JEE Main) 2020", "shortName": "2020", "isVisible": true, "heldOn": "2020-05-25T09:00:00.000Z"}], "question": {"text": "An iron rocket fragment initially at<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&nbsp;</mo><mo>-</mo><mn>100</mn><mo>&nbsp;</mo><mo>°</mo><mi mathvariant=\"normal\">C</mi></math> enters the earth's atmosphere almost horizontally and quickly fuses completely in atmospheric friction. Specific heat of iron is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>11</mn><mo>&nbsp;</mo><mi>kcal</mi><mo>&nbsp;</mo><msup><mi>kg</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&nbsp;</mo><mo>°</mo><msup><mi mathvariant=\"normal\">C</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>, its melting point is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1535</mn><mo>&nbsp;</mo><mo>°</mo><mi mathvariant=\"normal\">C</mi></math>&nbsp;and the latent heat of fusion is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>&nbsp;</mo><mi>kcal</mi><mo>&nbsp;</mo><msup><mi>kg</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>. The minimum velocity with which the fragment must have entered the atmosphere is", "image": null}, "options": [{"id": "4lm8J", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>45</mn><mo>&#160;</mo><mi>km</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>", "image": null, "isCorrect": false}, {"id": "3bKTI", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>.</mo><mn>32</mn><mo>&#160;</mo><mi>km</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math><div id=\"gtx-trans\" style=\"position: absolute; left: 76px; top: -5.77778px;\"><div class=\"gtx-trans-icon\">&nbsp;</div></div>", "image": null, "isCorrect": true}, {"id": "GsHjk", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>.</mo><mn>32</mn><mo>&#160;</mo><mi>km</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math><div id=\"gtx-trans\" style=\"position: absolute; left: 76px; top: -5.77778px;\"><div class=\"gtx-trans-icon\">&nbsp;</div></div>", "image": null, "isCorrect": false}, {"id": "NIuFf", "text": "Zero", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "The kinetic energy of the fragment is changed to heat. Expressing mass m in kilograms everywher, we have<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mfenced open=\"[\" close=\"]\"><mrow><mi>m</mi><mfenced><mrow><mn>3</mn><mn>0</mn></mrow></mfenced><mo>+</mo><mi>m</mi><mfenced><mtext>0.11</mtext></mfenced><mfenced><mrow><mn>1</mn><mn>5</mn><mn>3</mn><msup><mn>5</mn><mo>&#8728;</mo></msup><mo>+</mo><mn>1</mn><mn>0</mn><msup><mn>0</mn><mo>&#8728;</mo></msup></mrow></mfenced></mrow></mfenced><mn>4</mn><mn>1</mn><mn>8</mn><mn>4</mn></math><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mfenced><mrow><mn>8</mn><mn>3</mn><mn>6</mn><mn>8</mn></mrow></mfenced><mfenced open=\"[\" close=\"]\"><mrow><mn>3</mn><mn>0</mn><mo>+</mo><mn>1</mn><mn>8</mn><mn>0</mn></mrow></mfenced><mo>&#8771;</mo><mtext>1.76</mtext><mo>&#215;</mo><mn>1</mn><msup><mn>0</mn><mn>6</mn></msup></math><br /><br />Hence<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi><mo>=</mo><mfenced><msqrt><mtext>1.76</mtext></msqrt></mfenced><mo>&#215;</mo><mn>1</mn><msup><mn>0</mn><mn>3</mn></msup><mo>=</mo><msup><mtext>1.32 km&#160;s</mtext><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": null, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6151e8634525536ed136e630", "type": "singleCorrect", "level": 1, "questionLabels": [{"title": "NTA Abhyas Paper", "value": "72", "isVisible": true}], "previousYearPapers": [{"_id": "6904b6feef55966cf1d71f2a", "title": "NTA Abhyas (JEE Main) 2020", "shortName": "2020", "isVisible": true, "heldOn": "2020-05-25T09:00:00.000Z"}], "question": {"text": "If the average kinetic energy of a molecule of hydrogen gas at <math><mn>300</mn><mi>&nbsp;</mi><mn>K</mn></math> is <math><mi>E</mi></math>, then the average kinetic energy of a molecule of nitrogen gas at the same temperature is", "image": null}, "options": [{"id": "D8aRx", "text": "<math><mn>7</mn><mi>E</mi></math>", "image": null, "isCorrect": false}, {"id": "zZh5o", "text": "<math><mn>14</mn><mi>E</mi></math>", "image": null, "isCorrect": false}, {"id": "8M0Nf", "text": "<math><mfrac><mrow><mi>E</mi></mrow><mrow><mn>7</mn></mrow></mfrac></math>", "image": null, "isCorrect": false}, {"id": "WfD1E", "text": "<math><mi>E</mi></math>", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "We know that,<br/><br/>Kinetic energy <math><mo>∝</mo><mi>T</mi></math> <br/><br/>In the question, temperature is same in both conditions. So, the kinetic energy in the second condition is <math><mi>E</mi></math> .", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": null, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6151e8630fdcd2605d519165", "type": "numerical", "level": 1, "questionLabels": [{"title": "NTA Abhyas Paper", "value": "78", "isVisible": true}], "previousYearPapers": [{"_id": "6904b6feef55966cf1d71f2a", "title": "NTA Abhyas (JEE Main) 2020", "shortName": "2020", "isVisible": true, "heldOn": "2020-05-25T09:00:00.000Z"}], "question": {"text": "In an ideal gas at temperature <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>T</mi></math>, the average force that a molecule applies on the walls of a closed container depends on&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>T</mi></math> as <math><msup><mrow><mi>T</mi></mrow><mrow><mi>q</mi></mrow></msup></math>. A good estimate for&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>q</mi></math> is", "image": null}, "options": [], "correctValue": "1", "solution": {"text": "The pressure exerted by molecules of a gas on the walls <math><mi>p</mi><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mi>n</mi><mi>m</mi><msup><mrow><mi>c</mi></mrow><mrow><mn>2</mn></mrow></msup></math><br /><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi>p</mi><mo>&#8733;</mo><msup><mi>c</mi><mn>2</mn></msup></math><br /><br />But <math><mi>C</mi><mo>&#8733;</mo><msqrt><mi>T</mi></msqrt></math> and <math><msup><mrow><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>&#8733;</mo><mi>T</mi></math><br /><br /><math><mo>&#8756;</mo><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>P</mi><mo>&#8733;</mo><mi>T</mi></math><br /><br /><math><mo>&#8757;</mo><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi></math> Force <math><mo>=</mo><mi>P</mi><mo>&#215;</mo><mi>A</mi></math><br /><br /><math><mo>&#8756;</mo><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>F</mi><mo>&#8733;</mo><msup><mrow><mi>T</mi></mrow><mrow><mn>1</mn></mrow></msup></math><br /><br /><math><mi>q</mi><mo>=</mo><mn>1</mn></math>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": null, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'NTA Abhyas (JEE Main)';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

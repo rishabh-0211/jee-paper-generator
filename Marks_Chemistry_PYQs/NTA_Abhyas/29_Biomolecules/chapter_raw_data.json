@@ -1,0 +1,3485 @@
+{
+  "index": 29,
+  "chapterId": "61602593ffb3d20e1b2c9b14",
+  "chapter": "Biomolecules",
+  "exam": "NTA Abhyas (JEE Main)",
+  "totalTopics": 6,
+  "totalQuestions": 59,
+  "downloadTime": "2026-10-08 20:05:36",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "6aa3ab79aa8dc1ff68177ea2",
+      "title": "Carbohydrates",
+      "totalQuestions": 17,
+      "questions": [
+        {
+          "_id": "6151e863c87db97662e0dbaf",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "46",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The structure of D-(+)-glucose is<br />\r<br />\r<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/0639289_que.JPG\" style=\"width: 100px; height: 148px;\" /><br />\rThe structure of L-(-)-glucose is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "sybuE",
+              "text": "<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/0639289_opt_1.JPG\" style=\"width: 100px; height: 142px;\" />",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "GQ8Qu",
+              "text": "<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/0639289_opt_2.JPG\" style=\"width: 100px; height: 140px;\" />",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "WfIMz",
+              "text": "<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/0639289_opt_3.JPG\" style=\"width: 100px; height: 148px;\" />",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "H1M56",
+              "text": "<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/0639289_opt_4.JPG\" style=\"width: 100px; height: 134px;\" />",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The structures of D(+)-glucose and L(-)-glucose are given below from these it is clear that they differ in configuration at second, third, fourth and fifth C atoms.<br /><br /><img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/vypjzglwcwkmtnfrfasfdnsfmmfhcwkowyzbddqesemnttepph.jpeg\" /> <img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/zdelqjoialwhlbtjmwpemyuqkmuqqnprdmxfdpxihvnkqjtlpl.jpeg\" /><br /><br />D-Glucose L-Glucose",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863c615e623a2f11699",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "12",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "<div>\r<p><span>Which of the following reactions and facts of <math> <mtext>D</mtext> </math>-glucose cannot be explained by its open chain structure?</span></p>\r\r<p><span>(i) Despite having the aldehyde group, glucose does not give Schiff test and <math> <mrow> <mtext>2,4-DNP</mtext></mrow> </math> test. </span></p>\r\r<p><span>(ii) Glucose does not react with sodium hydrogen sulphite to form addition product.</span></p>\r\r<p align=\"left\" style=\"text-align:left;\"><span>(iii) The pentaacetate of glucose does not react with hydroxyl amine showing the absence of free-<math> <mrow> <mtext>CHO</mtext></mrow> </math> group.</span></p>\r</div>\r",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "wIBkB",
+              "text": "<div><p align=\"left\" style=\"text-align:left;\"><span>(i)</span></p></div>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "79JWG",
+              "text": "<div><p align=\"left\" style=\"text-align:left;\"><span>(ii)</span></p></div>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2itsL",
+              "text": "<div><p align=\"left\" style=\"text-align:left;\"><span>(iii)</span></p></div>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ApWNO",
+              "text": "<div><p align=\"left\" style=\"text-align:left;\"><span>All of above </span></p></div>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<div><p align=\"left\" style=\"text-align:left;\"><span>The above behaviour could not be explained by the open chain structure. Because one of the &ndash;OH groups of glucose add to the &ndash;CHO group and form a cyclic hemiacetal structure. It was found that glucose forms a six membered ring in which &ndash;OH at C-5 is involved in ring formation. This explains the absence of &ndash;CHO group.</span></p></div>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863a5d86d8e5a6f6913",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "70",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "An aldohexose (e.g., glucose) and 2-oxohexose (e.g., fructose) can be distinguished with the help of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "KIXB7",
+              "text": "Tollen's reagent",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "gwlre",
+              "text": "Fehling's solution",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4GyBK",
+              "text": "Benedict solution",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "aOnnR",
+              "text": "<math> <mrow>  <msub>   <mrow>    <mtext>Br</mtext></mrow>   <mtext>2</mtext>  </msub>  <mtext>&#x2004;</mtext><mtext>+</mtext><mtext>&#x2004;</mtext><msub>   <mtext>H</mtext>   <mtext>2</mtext>  </msub>  <mtext>O</mtext></mrow></math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "an aldohexose on reaction with <math> <mrow>  <msub>   <mrow>    <mtext>Br</mtext></mrow>   <mtext>2</mtext>  </msub>  <mtext>&#x2004;</mtext><mtext>+</mtext><mtext>&#x2004;</mtext><msub>   <mtext>H</mtext>   <mtext>2</mtext>  </msub>  <mtext>O</mtext></mrow></math> forms glyconic acids, <math><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></mrow></mfenced></mrow><mrow><mn>4</mn></mrow></msub><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></mrow></mfenced></math> , with open-chain glucose.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8639049281474080387",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "105",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The open-chain glucose, (an aldohexose) and fructose (a 2-oxohexose) have X and Y chiral carbons respectively. Find the sum of X + Y.",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "7",
+          "solution": {
+            "text": "Open-chain glucose,<br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/668626_1.PNG\" style=\"max-width:100%; object-fit:contain\" style=\"width: 111px; height: 157px;\" />&nbsp;and open-chain fructose,<br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/668626_2.PNG\" style=\"max-width:100%; object-fit:contain\" style=\"width: 114px; height: 168px;\" />&nbsp;has three chiral carbons.<br />Hence sum of X + Y = 4 + 3 = 7.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8638e485a84b789ff41",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "109",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following structures is the correct Haworth representation of D-aldose?<br />\r<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/c4ae4084-fb6a-4659-bc78-06bef0cae4f3.png\" style=\"max-width:100%; object-fit:contain\" style=\"width:1.16667in;height:2.36667in\" />",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "e925W",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/f9dfb4af-56f6-401d-bca5-8c6eee943f06.png\" style=\"max-width:100%; object-fit:contain\" style=\"width:1.60694in;height:1.80694in\">",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "oY4ap",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/a127e244-e556-4078-b376-5687c92a2762.png\" style=\"max-width:100%; object-fit:contain\" style=\"width:1.74028in;height:1.92708in\" />",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "QwPNB",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/2f0fe5f0-e2f4-4e6a-a01f-8918351e255b.png\" style=\"max-width:100%; object-fit:contain\" style=\"width:1.89375in;height:2.08681in\">",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "PJe5P",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/9eadd25d-2dba-4208-b6db-b67de38a53b2.png\" style=\"max-width:100%; object-fit:contain\" style=\"width:1.72708in;height:1.88681in\">",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The Haworth representation of D-aldose can be given as<br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/WhatsApp_Image_2020-09-04_at_2.10.52_PM.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"width: 550px; height: 308px;\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8638ce297f684ef9ee5",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "28",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "D-Glucose and D-mannose are:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "HzKxl",
+              "text": "enantiomers",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "K3trD",
+              "text": "functional isomers",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6MonA",
+              "text": "epimers",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ckqIW",
+              "text": "metamers",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math><mi mathvariant=\"normal\">D</mi></math>  -mannose, is a  <math><mi mathvariant=\"normal\">C</mi></math>  -2 epimer of  <math><mi mathvariant=\"normal\">D</mi></math>  -glucose<br/><br/> <img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/abs/zfzttvozrwthjpliddsofhugfqfrxqzparpdyyurmkxpzuclyl.jpeg\"/>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86369ee9dad5928b47c",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "85",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Identify the non-reducing sugar.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "IsiZk",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/9ed8038b-0d71-463a-8cec-e613e65d6851.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"height: 54px; width: 100px;\" />",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8EW5O",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/2bcd259f-324b-4982-b956-f69ab2a00cc4.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"height: 52px; width: 100px;\" />",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pYqX6",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/8c7cb88f-0224-4462-8661-981b9e0dc13f.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"height: 68px; width: 70px;\" />",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "JrsGG",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/5719a4ae-fe43-46c3-b098-06b07e69510e.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"height: 49px; width: 100px;\" />",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "As compound having free anomeric carbon is reducing in nature. Therefore D is non-reducing as in it there is no free anomeric carbon.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86362111d32727c47d5",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "104",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The change in optical rotation of a freshly prepared solution of sugar is known as",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Eb7Zd",
+              "text": "Mutarotation",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "3IcDp",
+              "text": "Hydrolysis",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "zlw6a",
+              "text": "Rotatory motion",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "P3qK7",
+              "text": "Specific angle rotation",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/8_solu_Ca_cye.JPG\" style=\"max-width:100%; object-fit:contain\" style=\"width: 550px; height: 56px;\" /><br />Glucose has two forms <math><mi mathvariant=\"normal\">α</mi></math> and <math><mi mathvariant=\"normal\">β</mi></math> . When either of these two is dissolved in water and allowed to stand, it gets converted to an equilibrium mixture of <math><mi mathvariant=\"normal\">α</mi></math> and <math><mi mathvariant=\"normal\">β</mi></math> forms.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86356e405e4b586fc8c",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "80",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Reduction of hexose A (molecular formula <math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>6</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>12</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>6</mn></mrow></msub></math> ) with sodium borohydride gives compound B and C. Compound B is optically inactive, whereas compound C is optically active. Which of the following is compound A?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "aNfnu",
+              "text": "D-fructose",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "5OChI",
+              "text": "D-glucose",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "AQGkl",
+              "text": "D-mannose",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4RnzS",
+              "text": "D-galactose",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/20_solu_chedf.JPG\" style=\"max-width:100%; object-fit:contain\" style=\"width: 400px; height: 265px;\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8634f38b92ada9866e6",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "79",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The number of chiral carbons in <math><mi mathvariant=\"normal\">β</mi></math> -D(+)-glucose is",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "5.00",
+          "solution": {
+            "text": "The number of chiral carbons in <math><mi mathvariant=\"normal\">β</mi></math> -D(+)-glucose is 5.<br /><img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/sfsadfasdfxczc.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"width: 181px; height: 188px;\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863466888081d135283",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "15",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Glucose does not react with:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "YaTpU",
+              "text": "pure <math> <mrow>  <mtext>HCN</mtext></mrow></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "IynjJ",
+              "text": "Schiff's reagent",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Qjy4l",
+              "text": "<math><msub><mrow><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "r873b",
+              "text": "all of these",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Glucose does not react with pure <math><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">N</mi></math> , Schiff s reagent, <math><msub><mrow><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub></math> as they cannot open the ring of cyclic glucose.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86345e2bea2042bab2a",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "102",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "If number of aldose, ketose, furanose and pyranose units present in maltose are p, q, r, s respectively. Find the value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">p</mi><mo>+</mo><mi mathvariant=\"normal\">q</mi><mo>+</mo><mi mathvariant=\"normal\">r</mi><mo>+</mo><mi mathvariant=\"normal\">s</mi></math><br />\r<br />\r<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/a8814cfc-1094-4da9-8cdf-f99f03c31a62.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"width:3.525in;height:1.75833in\" />",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "4",
+          "solution": {
+            "text": "Monomer of maltose is <math><mi mathvariant=\"normal\">α</mi></math> -D-glucopyranose. It is disaciharide, so 2 aldose and 2 pyranose forms are present in maltose.<br />Hence, p = 2, q = 0, r = 0 and s = 2<br />So, sum of p + q + r + s = 2 + 0 + 0 + 2 = 4.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8633b1db29ec4c0a6ef",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "54",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "What is the relationship between the given structures (look at the arrows)?<br />\r<br />\r<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/fddgghfg.JPG\" style=\"width: 350px; height: 150px;\" />",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "OGWKU",
+              "text": "Enantiomers",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ie7nY",
+              "text": "Anomers",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "8199u",
+              "text": "Diastereomers",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "IUoOi",
+              "text": "Metamers",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The isomers which differ in position at C-1 carbon are known as anomers.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86330e9a2923b9c93c5",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "103",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which is the correct relation between glucose and mannose?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "HIz5p",
+              "text": "Structural isomers",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nSbjK",
+              "text": "Disaccharides",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SL5A7",
+              "text": "Epimers",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "7DSUg",
+              "text": "Anomers",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Glucose and mannose are epimers because they both differ in configuration at  <math><mi mathvariant=\"normal\">C</mi><mo>-</mo><mn>2</mn></math>  and the Pair of diastereomer which differ at in configuration at only one chiral atom is known as epimers of each other.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86325d457a12a153c52",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "53",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The two forms of D-glucopyranose obtained from the solution of D-glucose are called",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "hxhws",
+              "text": "Isomers",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "H5Uso",
+              "text": "Anomers",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "YZVPM",
+              "text": "Epimers",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wd4Rp",
+              "text": "Enantiomers",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Two forms of D-glucopyranose are <math><mi mathvariant=\"normal\">α-</mi><mi mathvariant=\"normal\">D-</mi><mfenced separators=\"|\"><mrow><mo>+-</mo></mrow></mfenced></math>glucopyranose and <math><mi mathvariant=\"normal\">β-</mi><mi mathvariant=\"normal\">D-</mi><mfenced separators=\"|\"><mrow><mo>+-</mo></mrow></mfenced></math>glucopyranose. These are anomers (a pair of stereoisomers which differ in configuration only around first-carbon atom are called anomers).<br /><br /><br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/ci/image17-d43ee635-a482-4a48-8171-87187b4ef399.jpg\" style=\"width: 381px; height: 274px;\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8630b6efab73817b249",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "34",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Consider the following<br />\r<br />\r<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/635632.JPG\" style=\"width: 499px; height: 199px;\" /><br />\r<br />\rThe above process in which α and <math><mi>β</mi></math> form remain in equilibrium with acyclic form and a change in optical rotation is observed, is called as-",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "df6kn",
+              "text": "Mutarotation",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "jvJSj",
+              "text": "Epimerisation",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "j7IBB",
+              "text": "Condensation",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "i63ui",
+              "text": "Inversion",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The above phenomenon is called as mutarotation.<br />Mutarotation is the change in the optical rotation because of the change in the equilibrium between two anomers, when the corresponding stereocenters interconvert. Cyclic sugars show mutarotation as α and β anomeric forms interconvert.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8630a85035db4df6008",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "24",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Epimers of glucose is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ig9Yy",
+              "text": "Fructose",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "TKYSO",
+              "text": "Galactose",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "1TqBn",
+              "text": "Talose",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "gvMIc",
+              "text": "Ribose",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Galactose is C-4 epimer of glucose",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "6aa3ab79aa8dc1ff68177ea3",
+      "title": "Disaccharides and Polysaccharides",
+      "totalQuestions": 8,
+      "questions": [
+        {
+          "_id": "6151e863da4ff48b5cf64a82",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "40",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Amylopectin is composed of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Hnrah",
+              "text": "<math><mi mathvariant=\"normal\">α</mi></math> -D-glucose with&nbsp;<math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>—</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>4</mn></mrow></msub></math> and <math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>—</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>6</mn></mrow></msub></math> linkage",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "uBuMx",
+              "text": "<math><mi mathvariant=\"normal\">α</mi></math> -D-glucose&nbsp;with&nbsp;<math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>—</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>4</mn></mrow></msub></math> and <math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>—</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>6</mn></mrow></msub></math> linkage",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "adAmo",
+              "text": "<math><mi mathvariant=\"normal\">β</mi></math> -D-glucose with <math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>—</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>4</mn></mrow></msub></math> and <math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>—</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>6</mn></mrow></msub></math> linkage",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "D4xvb",
+              "text": "<math><mi mathvariant=\"normal\">β</mi></math> -D-glucose&nbsp;with&nbsp;<math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>—</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>4</mn></mrow></msub></math> and <math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>—</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>6</mn></mrow></msub></math> linkage",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Amylopectin is a homopolymer of <math><mi mathvariant=\"normal\">α</mi></math> D-glucose having <math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>—</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>4</mn></mrow></msub></math> <math><mi mathvariant=\"normal\">β</mi></math> -glycocidic linkage (for linear chain formation) and <math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>—</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>6</mn></mrow></msub></math> linkage (for branch chain formation).<br /><br /><img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/mnehwovopkkhnxeglqubyuypezepjzocnuvvkcrmnienrjcngj.jpeg\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863cc814dfc5ad59ab4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "78",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Maltose on hydrolysis gives",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "arW1S",
+              "text": "Mannose + glucose",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fqPe5",
+              "text": "Galactose + glucose",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "mk2TW",
+              "text": "Glucose",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "1xSRZ",
+              "text": "Mannose + fructose",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math><munder><mrow><msub><mrow><mtext>C</mtext></mrow><mrow><mn>12</mn></mrow></msub><msub><mrow><mtext>H</mtext></mrow><mrow><mn>22</mn></mrow></msub><msub><mrow><mtext>O</mtext></mrow><mrow><mn>11</mn></mrow></msub></mrow><mrow><mtext mathvariant=\"normal\">M</mtext><mtext mathvariant=\"normal\">a</mtext><mtext mathvariant=\"normal\">l</mtext><mtext mathvariant=\"normal\">t</mtext><mtext mathvariant=\"normal\">o</mtext><mtext mathvariant=\"normal\">s</mtext><mtext mathvariant=\"normal\">e</mtext></mrow></munder><mo>+</mo><msub><mrow><mtext>H</mtext></mrow><mrow><mn>2</mn></mrow></msub><mtext>O</mtext><munder><mrow><mover accent=\"false\"><mo>→</mo><mrow><mtext mathvariant=\"normal\">M</mtext><mtext mathvariant=\"normal\">a</mtext><mtext mathvariant=\"normal\">l</mtext><mtext mathvariant=\"normal\">t</mtext><mtext mathvariant=\"normal\">a</mtext><mtext mathvariant=\"normal\">s</mtext><mtext mathvariant=\"normal\">e</mtext></mrow></mover></mrow><mrow><mfenced separators=\"|\"><mrow><mtext mathvariant=\"normal\">f</mtext><mtext mathvariant=\"normal\">r</mtext><mtext mathvariant=\"normal\">o</mtext><mtext mathvariant=\"normal\">m</mtext><mtext mathvariant=\"normal\">&nbsp;</mtext><mtext mathvariant=\"normal\">&nbsp;</mtext><mtext mathvariant=\"normal\">y</mtext><mtext mathvariant=\"normal\">e</mtext><mtext mathvariant=\"normal\">a</mtext><mtext mathvariant=\"normal\">s</mtext><mtext mathvariant=\"normal\">t</mtext></mrow></mfenced></mrow></munder><munder><mrow><mn>2</mn><msub><mrow><mtext>C</mtext></mrow><mrow><mn>6</mn></mrow></msub><msub><mrow><mtext>H</mtext></mrow><mrow><mn>12</mn></mrow></msub><msub><mrow><mtext>O</mtext></mrow><mrow><mn>6</mn></mrow></msub></mrow><mrow><mtext mathvariant=\"normal\">G</mtext><mtext mathvariant=\"normal\">l</mtext><mtext mathvariant=\"normal\">u</mtext><mtext mathvariant=\"normal\">c</mtext><mtext mathvariant=\"normal\">o</mtext><mtext mathvariant=\"normal\">s</mtext><mtext mathvariant=\"normal\">e</mtext></mrow></munder></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863b64bb242687d9eb3",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "61",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following treatment will convert starch directly into glucose?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ymrpx",
+              "text": "Heating with dilute  <math><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>4</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "MOj6y",
+              "text": "Fermentation by diastase",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GPDoU",
+              "text": "Fermentation by zymase",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "gHiUh",
+              "text": "Heating with dilute NaOH",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Fermentation by diastase will convert starch into maltose but not into glucose. <br/><br/>Zymase does not effect starch. <br/><br/>Further, dilute NaOH will not hydrolyse starch because the various glucose units in it are linked to each other by glycosidic (ether) linkage which are resistant to hydrolysis by NaOH. Thus only dilute  <math><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>4</mn></mrow></msub></math>  will hydrolyse starch into glucose.<br/><br/> <math><munder><mrow><msub><mrow><mfenced separators=\"|\"><mrow><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>6</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>10</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>5</mn></mrow></msub></mrow></mfenced></mrow><mrow><mi>x</mi></mrow></msub></mrow><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">h</mi></mrow></munder><munder><mrow><mover accent=\"false\"><mo>→</mo><mrow><mo> </mo><mi mathvariant=\"normal\">n</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">O</mi><mo> </mo></mrow></mover></mrow><mrow><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">z</mi><mi mathvariant=\"normal\">y</mi><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">s</mi></mrow></munder><munder><mrow><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>6</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>12</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>6</mn></mrow></msub></mrow><mrow><mtext>Glucose</mtext></mrow></munder></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86345e2bea2042bab2a",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "102",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "If number of aldose, ketose, furanose and pyranose units present in maltose are p, q, r, s respectively. Find the value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">p</mi><mo>+</mo><mi mathvariant=\"normal\">q</mi><mo>+</mo><mi mathvariant=\"normal\">r</mi><mo>+</mo><mi mathvariant=\"normal\">s</mi></math><br />\r<br />\r<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/a8814cfc-1094-4da9-8cdf-f99f03c31a62.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"width:3.525in;height:1.75833in\" />",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "4",
+          "solution": {
+            "text": "Monomer of maltose is <math><mi mathvariant=\"normal\">α</mi></math> -D-glucopyranose. It is disaciharide, so 2 aldose and 2 pyranose forms are present in maltose.<br />Hence, p = 2, q = 0, r = 0 and s = 2<br />So, sum of p + q + r + s = 2 + 0 + 0 + 2 = 4.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8633527988d72c6aee8",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "93",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "How many <math><mo>-</mo><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></math> groups are present in one molecule of sucrose?",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "8",
+          "solution": {
+            "text": "Each molecule of sucrose has <math> <mrow>  <mtext>8</mtext><mo>&#x2212;</mo><mtext>OH</mtext></mrow></math> groups.<br /><img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/2d89e0ed-f928-4af9-b359-9fca18d39822.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"width:3.24167in;height:1.60833in\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863190883a0ee90fe7a",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "49",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following disaccharide will not reduce Tollen's reagent?<br />\r<br />\r<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/641029_1.JPG\" style=\"width: 334px; height: 229px;\" /><br />\r<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/EM0641029.jpg\" style=\"width: 336px; height: 232px;\" />",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "WK3I7",
+              "text": "P",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SKlUH",
+              "text": "Q",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "M3ApJ",
+              "text": "P and Q both",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ie135",
+              "text": "None of these",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In (Q), it could be found that both the pyranose rings are attached through their reducing group, hence it will not be hydrolysed, and it can not reduce Tollen's reagent. So (Q) is not a reducing sugar, whereas in (P) one ring is hemiacetal which can be hydrolysed therefore it will be hydrolysed in solution and can reduce Tollen's reagent.<br /><br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/641029_3.JPG\" style=\"width: 384px; height: 228px;\" /><br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/EM0641029.jpg\" style=\"width: 336px; height: 232px;\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86315725e1cf6743104",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "37",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Hydrolysis of sucrose gives",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "C7MbV",
+              "text": "Two molecules of glucose ",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qIogt",
+              "text": "Two molecules of fructose",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "PrbRf",
+              "text": "One molecule each of glucose and fructose ",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "AbLhe",
+              "text": "One molecule each of glucose and mannose",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Sucrose is a disaccharide consisting of one molecule of glucose and one molecule of frctose.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8630060f8e7ec90be79",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "63",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Study the structure of maltose and mark the incorrect statement. <br/><img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/4853afd3-4ff5-4b3b-b2ee-94366c6a2b8c.png\" style=\"width:2.62014in;height:1.24028in\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "YJsty",
+              "text": "Maltose is composed of two <math><mi mathvariant=\"normal\">α</mi></math> -D-glucose units",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "90U6M",
+              "text": "C-1 of one glucose is linked to C-4 of other unit",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GqW9O",
+              "text": "It is a non-reducing sugar",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "X3JXR",
+              "text": "It is a disaccharide",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "It is a reducing sugar. The free aldehyde group can be produced at C-1 of second glucose in solution and it shows reducing properties.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "6aa3ab79aa8dc1ff68177ea5",
+      "title": "Preparation and Reactions of Glucose",
+      "totalQuestions": 10,
+      "questions": [
+        {
+          "_id": "6151e863c615e623a2f11699",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "12",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "<div>\r<p><span>Which of the following reactions and facts of <math> <mtext>D</mtext> </math>-glucose cannot be explained by its open chain structure?</span></p>\r\r<p><span>(i) Despite having the aldehyde group, glucose does not give Schiff test and <math> <mrow> <mtext>2,4-DNP</mtext></mrow> </math> test. </span></p>\r\r<p><span>(ii) Glucose does not react with sodium hydrogen sulphite to form addition product.</span></p>\r\r<p align=\"left\" style=\"text-align:left;\"><span>(iii) The pentaacetate of glucose does not react with hydroxyl amine showing the absence of free-<math> <mrow> <mtext>CHO</mtext></mrow> </math> group.</span></p>\r</div>\r",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "wIBkB",
+              "text": "<div><p align=\"left\" style=\"text-align:left;\"><span>(i)</span></p></div>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "79JWG",
+              "text": "<div><p align=\"left\" style=\"text-align:left;\"><span>(ii)</span></p></div>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2itsL",
+              "text": "<div><p align=\"left\" style=\"text-align:left;\"><span>(iii)</span></p></div>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ApWNO",
+              "text": "<div><p align=\"left\" style=\"text-align:left;\"><span>All of above </span></p></div>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<div><p align=\"left\" style=\"text-align:left;\"><span>The above behaviour could not be explained by the open chain structure. Because one of the &ndash;OH groups of glucose add to the &ndash;CHO group and form a cyclic hemiacetal structure. It was found that glucose forms a six membered ring in which &ndash;OH at C-5 is involved in ring formation. This explains the absence of &ndash;CHO group.</span></p></div>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863b64bb242687d9eb3",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "61",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following treatment will convert starch directly into glucose?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ymrpx",
+              "text": "Heating with dilute  <math><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>4</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "MOj6y",
+              "text": "Fermentation by diastase",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GPDoU",
+              "text": "Fermentation by zymase",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "gHiUh",
+              "text": "Heating with dilute NaOH",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Fermentation by diastase will convert starch into maltose but not into glucose. <br/><br/>Zymase does not effect starch. <br/><br/>Further, dilute NaOH will not hydrolyse starch because the various glucose units in it are linked to each other by glycosidic (ether) linkage which are resistant to hydrolysis by NaOH. Thus only dilute  <math><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>4</mn></mrow></msub></math>  will hydrolyse starch into glucose.<br/><br/> <math><munder><mrow><msub><mrow><mfenced separators=\"|\"><mrow><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>6</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>10</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>5</mn></mrow></msub></mrow></mfenced></mrow><mrow><mi>x</mi></mrow></msub></mrow><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">h</mi></mrow></munder><munder><mrow><mover accent=\"false\"><mo>→</mo><mrow><mo> </mo><mi mathvariant=\"normal\">n</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">O</mi><mo> </mo></mrow></mover></mrow><mrow><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">z</mi><mi mathvariant=\"normal\">y</mi><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">s</mi></mrow></munder><munder><mrow><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>6</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>12</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>6</mn></mrow></msub></mrow><mrow><mtext>Glucose</mtext></mrow></munder></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863aed98f0837e9e654",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "35",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "<math> <mrow> <mtext>D</mtext><mo>−</mo><mtext>glucose</mtext><mover> <mo>→</mo> <mrow> <mtext>Tollen</mtext><mo>′</mo><mtext>s</mtext><mtext> </mtext><mtext>reagent</mtext></mrow> </mover> <mfenced> <mtext>A</mtext> </mfenced></mrow> </math> ;<br />\r<math> <mrow> <mtext>D</mtext><mo>−</mo><mtext>glucose</mtext><mover> <mo>→</mo> <mrow> <msub> <mrow> <mtext>Br</mtext></mrow> <mtext>2</mtext> </msub> <mtext>-water</mtext></mrow> </mover> <mfenced> <mtext>B</mtext> </mfenced></mrow> </math><br />\r<math><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">A</mi></mrow></mfenced></math> and <math><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">B</mi></mrow></mfenced></math> are:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "fv3eY",
+              "text": "gluconic acid, gluconic acid",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "AdWo7",
+              "text": "glucaric acid, gluconic acid",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "yiE9y",
+              "text": "salt of gluconic acid, gluconic acid",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "UK7CS",
+              "text": "salt of gluconic acid, glucaric acid",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Tollen's reagent is a mild oxidising agent and easily oxidises the aldehyde group, but can not oxidise the ketone or alcohol group and form salt of gluconic acid.<br/><br/> <img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/abs/cmsxxcysbsodeakfgchugrrxvfyilfglwjifyyhuqtyskxorcb.jpeg\"/> <br/><br/> <math><mrow><mrow><mi mathvariant=\"normal\">B</mi><msub><mrow><mi mathvariant=\"normal\">r</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow><mo>/</mo><mrow><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">O</mi></mrow></mrow></math>  is a mild oxidising agent and easily oxidises the aldehyde group, but cannot oxidise the ketone or alcohol group.<br/><br/> <img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/abs/bkmbfenyimszushkarwegbecakmayctgxmxcactbbkztpnewro.jpeg\"/>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863a5d86d8e5a6f6913",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "70",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "An aldohexose (e.g., glucose) and 2-oxohexose (e.g., fructose) can be distinguished with the help of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "KIXB7",
+              "text": "Tollen's reagent",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "gwlre",
+              "text": "Fehling's solution",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4GyBK",
+              "text": "Benedict solution",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "aOnnR",
+              "text": "<math> <mrow>  <msub>   <mrow>    <mtext>Br</mtext></mrow>   <mtext>2</mtext>  </msub>  <mtext>&#x2004;</mtext><mtext>+</mtext><mtext>&#x2004;</mtext><msub>   <mtext>H</mtext>   <mtext>2</mtext>  </msub>  <mtext>O</mtext></mrow></math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "an aldohexose on reaction with <math> <mrow>  <msub>   <mrow>    <mtext>Br</mtext></mrow>   <mtext>2</mtext>  </msub>  <mtext>&#x2004;</mtext><mtext>+</mtext><mtext>&#x2004;</mtext><msub>   <mtext>H</mtext>   <mtext>2</mtext>  </msub>  <mtext>O</mtext></mrow></math> forms glyconic acids, <math><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></mrow></mfenced></mrow><mrow><mn>4</mn></mrow></msub><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></mrow></mfenced></math> , with open-chain glucose.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863773eaa8701ee3647",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "45",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Glucose on reaction with <math><mi mathvariant=\"normal\">B</mi><msub><mrow><mi mathvariant=\"normal\">r</mi></mrow><mrow><mn>2</mn></mrow></msub></math> water gives",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "DWtnz",
+              "text": "Glucaric acid",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0qEvD",
+              "text": "Gluconic acid",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "55RAc",
+              "text": "Saccharic acid",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "cccxG",
+              "text": "Citric acid",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Glucose on oxidation with <math><mi mathvariant=\"normal\">B</mi><msub><mrow><mi mathvariant=\"normal\">r</mi></mrow><mrow><mn>2</mn></mrow></msub></math> water gives gluconic acid.<br /><br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/MH-CET_solved_paper_2011_Quest_39.jpg\" style=\"width: 308px; height: 129px;\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86369ee9dad5928b47c",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "85",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Identify the non-reducing sugar.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "IsiZk",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/9ed8038b-0d71-463a-8cec-e613e65d6851.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"height: 54px; width: 100px;\" />",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8EW5O",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/2bcd259f-324b-4982-b956-f69ab2a00cc4.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"height: 52px; width: 100px;\" />",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pYqX6",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/8c7cb88f-0224-4462-8661-981b9e0dc13f.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"height: 68px; width: 70px;\" />",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "JrsGG",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/5719a4ae-fe43-46c3-b098-06b07e69510e.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"height: 49px; width: 100px;\" />",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "As compound having free anomeric carbon is reducing in nature. Therefore D is non-reducing as in it there is no free anomeric carbon.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8635d0f9abbe7fdada5",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "73",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The open-chain glucose on oxidation with <math><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">I</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>4</mn></mrow></msub></math> gives",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ZSFpR",
+              "text": "<math><mn>5</mn><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi><mo>+</mo><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">C</mi><mo>=</mo><mi mathvariant=\"normal\">O</mi></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "G3fxc",
+              "text": "<math><mn>4</mn><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi><mo>+</mo><mn>2</mn><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">C</mi><mo>=</mo><mi mathvariant=\"normal\">O</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "K2fgD",
+              "text": "<math><mn>3</mn><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi><mo>+</mo><mn>3</mn><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">C</mi><mo>=</mo><mi mathvariant=\"normal\">O</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6iea6",
+              "text": "<math><mn>2</mn><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi><mo>+</mo><mn>4</mn><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">C</mi><mo>=</mo><mi mathvariant=\"normal\">O</mi></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Both CHO and CHOH form HCOOH; while <math><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub></math> forms <math><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">C</mi><mo>=</mo><mi mathvariant=\"normal\">O</mi></math> giving <math><mn>5</mn><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi><mo>+</mo><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">C</mi><mo>=</mo><mi mathvariant=\"normal\">O</mi></math> .<br /><br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/fgsadgsf.PNG\" style=\"max-width:\"100%\"; object-fit:contain\" style=\"width: 300px; height: 150px;\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86356e405e4b586fc8c",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "80",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Reduction of hexose A (molecular formula <math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>6</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>12</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>6</mn></mrow></msub></math> ) with sodium borohydride gives compound B and C. Compound B is optically inactive, whereas compound C is optically active. Which of the following is compound A?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "aNfnu",
+              "text": "D-fructose",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "5OChI",
+              "text": "D-glucose",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "AQGkl",
+              "text": "D-mannose",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4RnzS",
+              "text": "D-galactose",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/20_solu_chedf.JPG\" style=\"max-width:100%; object-fit:contain\" style=\"width: 400px; height: 265px;\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863466888081d135283",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "15",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Glucose does not react with:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "YaTpU",
+              "text": "pure <math> <mrow>  <mtext>HCN</mtext></mrow></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "IynjJ",
+              "text": "Schiff's reagent",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Qjy4l",
+              "text": "<math><msub><mrow><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "r873b",
+              "text": "all of these",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Glucose does not react with pure <math><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">N</mi></math> , Schiff s reagent, <math><msub><mrow><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub></math> as they cannot open the ring of cyclic glucose.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86321417ca3f81aa49a",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "25",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following statement is correct?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "FaKjG",
+              "text": "Gluconic acid is a dicarboxylic acid",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "HLWJD",
+              "text": "Gluconic acid is a partial oxidation product of glucose",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "pk6hM",
+              "text": "Gluconic acid can form cyclic (acetal/hemiacetal) structure",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wfUn6",
+              "text": "Gluconic acid is obtained by oxidation of glucose with  <math><mtext>HN</mtext><msub><mrow><mtext>O</mtext></mrow><mrow><mn>3</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Here only <math><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">B</mi></mrow></mfenced></math> is correct and rest are incorrect. As Gluconic acid is a monocarboxylic acid which is formed by the partial oxidation of glucose.<br /><br />As Gluconic acid can not form cyclic (acetal/hemiacetal) structure and oxidation of glucose with <math><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">N</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub></math> gives Saccharic acid.<br /><br /><img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/swimfknuncroqpifhwfktjvrjuqeceefxlviiudzdsyrhwpdhq.jpeg\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "6aa3ab79aa8dc1ff68177ea6",
+      "title": "Properties and Preparation of Amino Acids",
+      "totalQuestions": 13,
+      "questions": [
+        {
+          "_id": "6151e863da84ed25c26c8d28",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "27",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The number of essential amino acids among the following is ________<br />\rHistidine, Glycine, Valine, Alanine, Aspartic acid, Lysine, Methionine.",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "4",
+          "solution": {
+            "text": "Histidine, Valine, Lysine, Methionine",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863bb3c66c3c00d6eb6",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "55",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "What will be the nature of existence of an amino acid (containing one amino and one carboxylic acid group) in solution of pH &lt; <math><mi mathvariant=\"normal\">p</mi><msub><mrow><mi mathvariant=\"normal\">K</mi></mrow><mrow><msub><mrow><mi mathvariant=\"normal\">a</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow></msub></math> ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "v7nFx",
+              "text": "It exists an anion",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "QFt2W",
+              "text": "It exists as cation",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "p0W1f",
+              "text": "It exists as zwitter ion",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Hv4fn",
+              "text": "It exists as neutral species with no charge",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "At low pH (acidic solution) <math><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><msup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mo>-</mo></mrow></msup></math> ion acts as the base and accepts proton to form the cation.<br /><br /><math> <mrow> <munder> <mrow> <msub> <mtext>H</mtext> <mn>3</mn> </msub> <mover> <mtext>N</mtext> <mo>+</mo> </mover> <mo>−</mo><mover> <mrow> <mover> <mrow> <munder> <mrow> <munder> <mtext>C</mtext> <mo>|</mo> </munder> </mrow> <mtext>R</mtext> </munder> </mrow> <mo>|</mo> </mover> </mrow> <mtext>H</mtext> </mover> <mo>−</mo><mover> <mrow> <mover> <mtext>C</mtext> <mrow> <mo>|</mo><mo>|</mo> </mrow> </mover> </mrow> <mtext>O</mtext> </mover> <mo>−</mo><msup> <mtext>O</mtext> <mo>−</mo> </msup> </mrow> <mrow> <mtext>Zwitter</mtext><mtext> </mtext><mtext>ion</mtext> </mrow> </munder> <mover> <mo>→</mo> <mrow> <mtext>In acidic</mtext><mi>&nbsp;</mi><mtext>medium</mtext> </mrow> </mover> <munder> <mrow> <msub> <mtext>H</mtext> <mn>3</mn> </msub> <mover> <mtext>N</mtext> <mo>+</mo> </mover> <mo>−</mo><mover> <mrow> <mover> <mrow> <munder> <mrow> <munder> <mtext>C</mtext> <mo>|</mo> </munder> </mrow> <mtext>R</mtext> </munder> </mrow> <mo>|</mo> </mover> </mrow> <mtext>H</mtext> </mover> <mo>−</mo><mover> <mrow> <mover> <mtext>C</mtext> <mrow> <mo>|</mo><mo>|</mo> </mrow> </mover> </mrow> <mtext>O</mtext> </mover> <mo>−</mo><mtext>OH</mtext> </mrow> <mrow> <mtext>Cation</mtext> </mrow> </munder> </mrow> </math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863b9a0c7f6b3df2ea4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "09",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "An amino acid having isoelectric point below <math> <mtext>7</mtext> </math> (at <math> <mrow> <msup> <mrow> <mtext>25</mtext></mrow> <mtext>o</mtext> </msup> <mtext>C</mtext></mrow> </math> ), when kept in a alkaline medium present in an electric field will show migration towards -",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "34noZ",
+              "text": "Cathode",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "S1xpO",
+              "text": "Anode",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "zpj6k",
+              "text": "Either Cathode/Anode",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "noasC",
+              "text": "No migration",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In alkaline medium the zwitter ion will lose a proton & migrate towards anode due to net negative charge",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8639d65be7d54d369b8",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "38",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Among the given amino acids, the basic essential amino acid is:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "FQCnT",
+              "text": "Valine",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BsZF3",
+              "text": "Lysine",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "goMP8",
+              "text": "Alanine",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "hDszD",
+              "text": "Arginine",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Lysine is essential basic amino acid.<br/><br/> <img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/abs/dimuhtldpdtcmdzjhcxrgvhsztagcncrqbwmfnogvdqclnhdjz.jpeg\"/>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86393dfc2d4a6169482",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "31",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "A tetrapeptide has <math> <mrow> <mtext>-COOH</mtext></mrow> </math> group on alanine. This produces glycine (Gly), valine (Val), phenyl alanine (Phe) and alanine (Ala), on complete hydrolysis. For this tetrapeptide, the number of possible sequences (primary structures) with <math><mo>-</mo><mi mathvariant=\"normal\">N</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub></math> group attached to a chiral center is",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "4",
+          "solution": {
+            "text": "<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/634794_1.JPG\" style=\"width: 201px; height: 58px;\" /><br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/634794_2.JPG\" style=\"width: 238px; height: 66px;\" /><br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/634794_3.JPG\" style=\"width: 267px; height: 67px;\" /><br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/634794_4.JPG\" /><br />No. of possible sequences (primary structures) with <math><mo>-</mo><mtext>N</mtext><msub><mrow><mtext>H</mtext></mrow><mrow><mn>2</mn></mrow></msub></math> group attached to a chiral center is 4.<br>Since <math> <mrow>  <mtext>-COOH</mtext></mrow></math> group is attached to alanine, one terminal of the tetrapeptide contains alanine. Thus, its position is fixed.<br>Glycine is achiral whereas valine and phenylalanine are chiral. Thus, <math> <mrow>  <msub>   <mrow>    <mtext>-NH</mtext></mrow>   <mtext>2</mtext>  </msub>  </mrow></math><br> group is attached to either valine or phenylalanine.<br>Thus following are the four possible combinations of the tetrapeptide.<br><math> <mrow>  <msub>   <mtext>H</mtext>   <mtext>2</mtext>  </msub>  <mtext>&#x200B;</mtext><mtext>N</mtext><mo>&#x2212;</mo><mtext>Val</mtext><mo>&#x2212;</mo><mtext>Gly</mtext><mo>&#x2212;</mo><mtext>Phe</mtext><mo>&#x2212;</mo><mtext>Ala</mtext><mo>&#x2212;</mo><mtext>COOH</mtext></mrow></math><br><math> <mrow>  <msub>   <mtext>H</mtext>   <mtext>2</mtext>  </msub>  <mtext>&#x200B;</mtext><mtext>N</mtext><mo>&#x2212;</mo><mtext>Val</mtext><mo>&#x2212;</mo><mtext>Phe</mtext><mo>&#x2212;</mo><mtext>Gly</mtext><mo>&#x2212;</mo><mtext>Ala</mtext><mo>&#x2212;</mo><mtext>COOH</mtext></mrow></math><br><math> <mrow>  <msub>   <mtext>H</mtext>   <mtext>2</mtext>  </msub>  <mtext>&#x200B;</mtext><mtext>N</mtext><mo>&#x2212;</mo><mtext>Phe</mtext><mo>&#x2212;</mo><mtext>Gly</mtext><mo>&#x2212;</mo><mtext>Val</mtext><mo>&#x2212;</mo><mtext>Ala</mtext><mo>&#x2212;</mo><mtext>COOH</mtext></mrow></math><br><math> <mrow>  <msub>   <mtext>H</mtext>   <mtext>2</mtext>  </msub>  <mtext>&#x200B;</mtext><mtext>N</mtext><mo>&#x2212;</mo><mtext>Phe</mtext><mo>&#x2212;</mo><mtext>Val</mtext><mo>&#x2212;</mo><mtext>Gly</mtext><mo>&#x2212;</mo><mtext>Ala</mtext><mo>&#x2212;</mo><mtext>COOH</mtext></mrow></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8638bc7d0aab67ea017",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "74",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Pick out incorrect statement",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "SrRVw",
+              "text": "In a electrolysis experiment,  <math><mi mathvariant=\"normal\">α</mi></math>  -amino acids migrate at the isoelectric point towards electrodes",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "X3AnL",
+              "text": "p-aminobenzenesulphonic acid as a dipolar ion; while p-aminobenzoic acid does not",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "MuK16",
+              "text": "Sulphanilic acid is soluble in base, but not in acid",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "e4Ndb",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>3</mn></msub><mover><mi mathvariant=\"normal\">N</mi><mo>+</mo></mover><mi mathvariant=\"normal\">C</mi><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></math> is more acidic than <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">R</mi><mi mathvariant=\"normal\">C</mi><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "A. The pH at which Anion = Cation is called isoelectric point. At isoelectric point,  <math><mi mathvariant=\"normal\">α</mi></math>  -amino acids do not migrate when electric field is applied.<br/><br/>B.  <math><mo>-</mo><mi mathvariant=\"normal\">S</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub><mi mathvariant=\"normal\">H</mi></math>  is strongly acidic and donates  <math><msup><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mo>+</mo></mrow></msup></math>  to weakly basic arylamino group. ArCOOH is not acidic enough to transfer  <math><msup><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mo>+</mo></mrow></msup></math>  to the arylamino group.<br/><br/>C. In  <math><mi mathvariant=\"normal\">p</mi><mo>-</mo><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub><mover><mrow><mi mathvariant=\"normal\">N</mi></mrow><mrow><mo>+</mo></mrow></mover><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>6</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>4</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>,</mo><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub><mover><mrow><mi mathvariant=\"normal\">N</mi></mrow><mrow><mo>+</mo></mrow></mover></math>  is acid enough to transfer  <math><msup><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mo>+</mo></mrow></msup></math>  to bases to give the soluble anion,  <math><mi mathvariant=\"normal\">p</mi><mo>-</mo><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">N</mi><mo>-</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>6</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>4</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>.</mo><mo>-</mo><mi mathvariant=\"normal\">S</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub></math>  is too feebly basic and cannot accept  <math><msup><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mo>+</mo></mrow></msup></math>  from acids.<br/><br/>D.  <math><mi mathvariant=\"normal\">α</mi><mtext>-</mtext><msub><mrow><mtext>H</mtext></mrow><mrow><mn>3</mn></mrow></msub><mover><mrow><mi mathvariant=\"normal\">N</mi></mrow><mrow><mo>+</mo></mrow></mover></math>  group increases acidity, because of its electron-withdrawing inductive effect.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863771ddcf10d83c3a8",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "29",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following amino acids is basic in nature?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "m22Nr",
+              "text": "Valine",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "HrcJq",
+              "text": "Tyrosine",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GfwRq",
+              "text": "Arginine",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "P5SYt",
+              "text": "Leucine",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Arginine consists of amine group as the&nbsp;functional group. Hence, is basic in nature.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863614ac6d56026a85a",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "23",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The <math> <mrow> <msub> <mrow> <mtext>pK</mtext></mrow> <mtext>a</mtext> </msub> </mrow> </math> values of ionisable groups in lysine are <math><mn>2.18,8.95</mn></math> and <math><mn>10.79</mn></math> respectively. Find isoelectric point of lysine.",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "9.87",
+          "solution": {
+            "text": "<math> <mrow>  <mtext>Isoelectric</mtext><mtext>&#x2004;</mtext><mtext>point</mtext><mo>=</mo><mfrac>   <mrow>    <mn>8.95</mn><mo>+</mo><mn>10.79</mn></mrow>   <mn>2</mn>  </mfrac>  <mo>=</mo><mn>9.87</mn></mrow></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8634e077e663c2898a0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "84",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Pick out the correct statement.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "bg7Ex",
+              "text": "Both glycine and p-aminobenzoic acid form dipoler ions",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "LcRyT",
+              "text": "Both sulphanilic acid and p-aminobenzoic acid form dipolar ions",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "RqxlL",
+              "text": "Glycine does not form dipolar ion, but p-aminobenzoic acid forms dipolar ion",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "mMX0v",
+              "text": "Both sulphanilic acid and glycine form dipolar ions, but p-aminobenzoic acid does not form dipolar ion",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The aliphatic <math><mo>-</mo><mi mathvariant=\"normal\">N</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub></math> is sufficiently basic to accept <math><msup><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mo>+</mo></mrow></msup></math> from <math><mo>-</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></math> group in glycine, <math><mi mathvariant=\"normal\">N</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></math> . The <math><mo>-</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></math> is not strong enough to donate <math><msup><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mo>+</mo></mrow></msup></math> to the weakly basic aromatic <math><mi mathvariant=\"normal\">N</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub></math> in p-aminobenzoic acid, <img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/04fdd905-cc09-4497-94a7-723265b5a3cd.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"width:1.75in;height:0.56667in\" /> The <math><mo>-</mo><mi mathvariant=\"normal\">S</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub><mi mathvariant=\"normal\">H</mi></math> is a sufficiently strong acid to donate <math><msup><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mo>+</mo></mrow></msup></math> to weakly basic aromatic <math><mi mathvariant=\"normal\">N</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub></math> .<br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/657103.PNG\" style=\"max-width:100%; object-fit:contain\" style=\"width: 338px; height: 94px;\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86340955d0abd47d274",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "98",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "A terapeptide has <math> <mrow> <mo>−</mo><mtext>COOH</mtext></mrow> </math> group on alanine. This produces glycine (Gly), valine (Val). Phenyl alamine (Phe) and alanine (Ala) on complete hydrolysis. For this tetrapeptide, the number of possible sequences (primary structures) with <math> <mrow> <mo>−</mo><msub> <mrow> <mtext>NH</mtext></mrow> <mtext>2</mtext> </msub> </mrow> </math> group attached to a chiral center is.",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "4",
+          "solution": {
+            "text": "6 Combinations as last amino acid will be Alanine as it has free <math><mo>-</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></math> group. Let's represent Alanine as A then the combinations feasible are: <math><mi mathvariant=\"normal\">D</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">A</mi><mo>,</mo><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">D</mi><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">A</mi><mo>,</mo><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">D</mi><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">A</mi><mo>,</mo><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">D</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">A</mi><mo>,</mo><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">D</mi><mi mathvariant=\"normal\">A</mi><mo>,</mo><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">D</mi><mi mathvariant=\"normal\">A</mi></math> . But glycine ia achiral thus tetrapeptide with <math> <mrow>  <mo>&#x2212;</mo><msub>   <mrow>    <mtext>NH</mtext></mrow>   <mtext>2</mtext>  </msub>  </mrow></math> group attached to chiral center is 4.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8633c9b8d46e40afe36",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "17",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "How many acidic group is present in given amino acid<br />\r<br />\r<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/uhckqgeqoxrgueuagcnrpotgnarwkyubeapwcxnjdvlagencrj.jpeg\" />",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "2",
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/gvszqbfevppowdioirtojqfcqaykkmlcplahcryvwaozavkboy.jpeg\" /><br /><br />Two group have acidic hydrogen",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86339a1282529435954",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "64",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following statements is not correct?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "1mX6P",
+              "text": "Proteins are polyamides formed from amino acids",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "owUok",
+              "text": "Except glycine, all other amino acids show optical activity",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "d5Hsn",
+              "text": "Natural proteins are commonly made up of L-isomer of amino acids",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FV4TN",
+              "text": "In <math><mi mathvariant=\"normal\">α</mi></math> -amino acids, <math><mo>-</mo><mi mathvariant=\"normal\">N</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub></math> and <math><mo>-</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></math> groups are attached to different carbon atoms",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In <math><mi mathvariant=\"normal\">α</mi></math> -amino acids, <math><mo>-</mo><mi mathvariant=\"normal\">N</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub></math> and <math><mo>-</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></math> groups are attached to the same carbon atoms, <img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/20_sol.JPG\" style=\"width: 120px; height: 61px;\" />&nbsp;.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86328035774fa5c04a3",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "72",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which among the following statements are true for glycine?<br />\r<br />\r<math><mn>1</mn><mo>.</mo></math> It exists in crsytalline form<br />\r<br />\r<math><mn>2</mn><mo>.</mo></math> It is optically active<br />\r<br />\r<math><mn>3</mn><mo>.</mo></math> It is soluble in water<br />\r<br />\r<math><mn>4</mn><mo>.</mo></math> It can form Zwitter ions",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "uxCIz",
+              "text": "1, 2 and 3",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "EK4j1",
+              "text": "1, 2 and 4",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "QJPCp",
+              "text": "1, 3 and 4",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "TRpsg",
+              "text": "2, 3 and 4",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "It is ionic, so it exists in cyrstalline form because it is ionic, so it is soluble in water. Because acidic and basic groups are present in the same molecule, so internal salt formation occurs to form dipolar ion <math><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub><mover><mrow><mi mathvariant=\"normal\">N</mi></mrow><mrow><mo>+</mo></mrow></mover><mo>-</mo><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><msup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mo>-</mo></mrow></msup></math> .",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "6aa3ab79aa8dc1ff68177ea7",
+      "title": "Proteins",
+      "totalQuestions": 5,
+      "questions": [
+        {
+          "_id": "6151e863e7aa67198c6f6669",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "41",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The number of peptide bond(s) in the following molecule is/are<br />\r<br />\r<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/dfadasfdas.png\" style=\"width: 350px; height: 92px;\" />",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "2",
+          "solution": {
+            "text": "Peptide bond is the amide linkage between two  <math><mi>α</mi></math> - amino acids.<br/><br/> <img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/abs/xhiompydxtbvkypdhwcqcvtmnjhjgkdbvuuadpyaqxqjoshaly.jpeg\"/>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86393dfc2d4a6169482",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "31",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "A tetrapeptide has <math> <mrow> <mtext>-COOH</mtext></mrow> </math> group on alanine. This produces glycine (Gly), valine (Val), phenyl alanine (Phe) and alanine (Ala), on complete hydrolysis. For this tetrapeptide, the number of possible sequences (primary structures) with <math><mo>-</mo><mi mathvariant=\"normal\">N</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub></math> group attached to a chiral center is",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "4",
+          "solution": {
+            "text": "<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/634794_1.JPG\" style=\"width: 201px; height: 58px;\" /><br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/634794_2.JPG\" style=\"width: 238px; height: 66px;\" /><br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/634794_3.JPG\" style=\"width: 267px; height: 67px;\" /><br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/634794_4.JPG\" /><br />No. of possible sequences (primary structures) with <math><mo>-</mo><mtext>N</mtext><msub><mrow><mtext>H</mtext></mrow><mrow><mn>2</mn></mrow></msub></math> group attached to a chiral center is 4.<br>Since <math> <mrow>  <mtext>-COOH</mtext></mrow></math> group is attached to alanine, one terminal of the tetrapeptide contains alanine. Thus, its position is fixed.<br>Glycine is achiral whereas valine and phenylalanine are chiral. Thus, <math> <mrow>  <msub>   <mrow>    <mtext>-NH</mtext></mrow>   <mtext>2</mtext>  </msub>  </mrow></math><br> group is attached to either valine or phenylalanine.<br>Thus following are the four possible combinations of the tetrapeptide.<br><math> <mrow>  <msub>   <mtext>H</mtext>   <mtext>2</mtext>  </msub>  <mtext>&#x200B;</mtext><mtext>N</mtext><mo>&#x2212;</mo><mtext>Val</mtext><mo>&#x2212;</mo><mtext>Gly</mtext><mo>&#x2212;</mo><mtext>Phe</mtext><mo>&#x2212;</mo><mtext>Ala</mtext><mo>&#x2212;</mo><mtext>COOH</mtext></mrow></math><br><math> <mrow>  <msub>   <mtext>H</mtext>   <mtext>2</mtext>  </msub>  <mtext>&#x200B;</mtext><mtext>N</mtext><mo>&#x2212;</mo><mtext>Val</mtext><mo>&#x2212;</mo><mtext>Phe</mtext><mo>&#x2212;</mo><mtext>Gly</mtext><mo>&#x2212;</mo><mtext>Ala</mtext><mo>&#x2212;</mo><mtext>COOH</mtext></mrow></math><br><math> <mrow>  <msub>   <mtext>H</mtext>   <mtext>2</mtext>  </msub>  <mtext>&#x200B;</mtext><mtext>N</mtext><mo>&#x2212;</mo><mtext>Phe</mtext><mo>&#x2212;</mo><mtext>Gly</mtext><mo>&#x2212;</mo><mtext>Val</mtext><mo>&#x2212;</mo><mtext>Ala</mtext><mo>&#x2212;</mo><mtext>COOH</mtext></mrow></math><br><math> <mrow>  <msub>   <mtext>H</mtext>   <mtext>2</mtext>  </msub>  <mtext>&#x200B;</mtext><mtext>N</mtext><mo>&#x2212;</mo><mtext>Phe</mtext><mo>&#x2212;</mo><mtext>Val</mtext><mo>&#x2212;</mo><mtext>Gly</mtext><mo>&#x2212;</mo><mtext>Ala</mtext><mo>&#x2212;</mo><mtext>COOH</mtext></mrow></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86340955d0abd47d274",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "98",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "A terapeptide has <math> <mrow> <mo>−</mo><mtext>COOH</mtext></mrow> </math> group on alanine. This produces glycine (Gly), valine (Val). Phenyl alamine (Phe) and alanine (Ala) on complete hydrolysis. For this tetrapeptide, the number of possible sequences (primary structures) with <math> <mrow> <mo>−</mo><msub> <mrow> <mtext>NH</mtext></mrow> <mtext>2</mtext> </msub> </mrow> </math> group attached to a chiral center is.",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "4",
+          "solution": {
+            "text": "6 Combinations as last amino acid will be Alanine as it has free <math><mo>-</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></math> group. Let's represent Alanine as A then the combinations feasible are: <math><mi mathvariant=\"normal\">D</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">A</mi><mo>,</mo><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">D</mi><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">A</mi><mo>,</mo><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">D</mi><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">A</mi><mo>,</mo><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">D</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">A</mi><mo>,</mo><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">D</mi><mi mathvariant=\"normal\">A</mi><mo>,</mo><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">D</mi><mi mathvariant=\"normal\">A</mi></math> . But glycine ia achiral thus tetrapeptide with <math> <mrow>  <mo>&#x2212;</mo><msub>   <mrow>    <mtext>NH</mtext></mrow>   <mtext>2</mtext>  </msub>  </mrow></math> group attached to chiral center is 4.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86339a1282529435954",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "64",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following statements is not correct?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "1mX6P",
+              "text": "Proteins are polyamides formed from amino acids",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "owUok",
+              "text": "Except glycine, all other amino acids show optical activity",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "d5Hsn",
+              "text": "Natural proteins are commonly made up of L-isomer of amino acids",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FV4TN",
+              "text": "In <math><mi mathvariant=\"normal\">α</mi></math> -amino acids, <math><mo>-</mo><mi mathvariant=\"normal\">N</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub></math> and <math><mo>-</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></math> groups are attached to different carbon atoms",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In <math><mi mathvariant=\"normal\">α</mi></math> -amino acids, <math><mo>-</mo><mi mathvariant=\"normal\">N</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub></math> and <math><mo>-</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></math> groups are attached to the same carbon atoms, <img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/20_sol.JPG\" style=\"width: 120px; height: 61px;\" />&nbsp;.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86322a9a7b53a04a8ca",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "69",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The helical structure of protein is stabilized by",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "01N4m",
+              "text": "Dipeptide bonds",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "yO4up",
+              "text": "Hydrogen bonds",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Cu3NN",
+              "text": "Ether bonds",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Gv4sQ",
+              "text": "Peptide bonds",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The helical structure of protein is stabilized by hydrogen bonds between amide group of the same peptide chain.  These bonds are formed by <math><mo>–</mo><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">H</mi><mo>-</mo></math> group of one unit and oxygen of carbonyl group of the third unit.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "topicId": "6aa3ab79aa8dc1ff68177ea4",
+      "title": "Nucleic Acids",
+      "totalQuestions": 6,
+      "questions": [
+        {
+          "_id": "6151e863fff603050f30a4eb",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "21",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The pyrimidine bases present in DNA are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "OzguL",
+              "text": "Cytosine and Uracil",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "mwB9e",
+              "text": "Cytosine and Thymine",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "XLWqY",
+              "text": "Cytosine and Guanine",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "LYiM3",
+              "text": "Cytosine and Adenine",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In DNA four bases are present adenine (A), guanine (G), cytosine (C) and thymine (T). Out of which pyrimidine bases are cytosine and thymine.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863cdb54b5b88669e6f",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "52",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "RNA and DNA are chiral molecules, their chirality is due to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "QSfQP",
+              "text": "chiral bases",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6rDjN",
+              "text": "chiral phosphate ester units",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZfOjX",
+              "text": "D-sugar component",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "4n0ty",
+              "text": "L-sugar component",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The constituents of nucleic acids are nitrogenous bases, sugar and phosphoric acid. The sugar present in DNA is D(-)-2-deoxyribose  and the sugar present in RNA is D(-) ribose. Due to these D(-)-sugar components, DNA and RNA molecules are chiral molecules.<br/><br/> <img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/abs/znnjgwadmeoeljdzcmdvovakstrjcfdtanmsffiyhzkejsghon.jpeg\"/>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8639d40489d47612b4e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "56",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which carbon atom of deoxyribose sugar in DNA does not contain  <math><mo>-</mo><mover><mrow><munder><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mo>|</mo></mrow></munder></mrow><mrow><mo>|</mo></mrow></mover><mo>-</mo><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></math>  bond?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "lebGV",
+              "text": "<math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>5</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZIvIB",
+              "text": "<math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>3</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "XV28y",
+              "text": "<math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "DY53V",
+              "text": "<math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>1</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/abs/yogxvedipbyfwlqezcubvrqklocetmskkvobzjmyjmfxqcxtgk.jpeg\"/> <br/><br/>C-2 carbon atom of deoxyribose sugar in DNA does not contain  <math><mo>-</mo><mover><mrow><munder><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mo>|</mo></mrow></munder></mrow><mrow><mo>|</mo></mrow></mover><mo>-</mo><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></math>  bond.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8634b736157e1a7eeb7",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "76",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The sequence of an mRNA molecule produced from a DNA template strand with the composition <br/><br/>5'-AGCTACACT-3' is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "1mvA9",
+              "text": "5'-AGUGUAGCU-3'",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "10EcD",
+              "text": "5'-UCGAUGUGA-3'",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "mAO9e",
+              "text": "5'-AGTGTAGCT-3'",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BTRys",
+              "text": "5'-TCGATGTGA-3'",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The two stands of DNA are complementary to each other and the bases of one stand are paired with the bases of other strand by means of hydrogen bonding, i.e., A = T and  <math><mi mathvariant=\"normal\">G</mi><mo>≡</mo><mi mathvariant=\"normal\">C</mi></math> . But uracil (U) instead of thymine (T) is present in case of RNA. Thus, the sequence of base on m-RNA molecule is<br/><br/>DNA strand      5'-AGCTACACT-3'<br/><br/>m-RNA           5'-UCGAUGUCA-3'",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8631fa9259023ef6d74",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "67",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "A nucleoside on hydrolysis gives",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "FbzZ5",
+              "text": "an aldopentose and a nitrogenous base",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "PVmhl",
+              "text": "an aldopentose and phosphoric acid",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "XmlTl",
+              "text": "an aldopentose, a nitrogenous base and phosphoric acid",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "1ZwAd",
+              "text": "a nitrogenous base and phosphoric acid",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "A nucleoside on hydrolysis gives an aldopentose and a nitrogenous base.<br /><br />Nucleoside is a unit formed by the attachment of a base to an aldopentose sugar.<br /><br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/6_ques.JPG\" style=\"width: 160px; height: 122px;\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86319649936424be12a",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "75",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Adenine is one of the two purine bases involved in the formation of nucleotides of the nucleic acids. The molecular formula of adenine is <math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mi mathvariant=\"normal\">x</mi></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mi mathvariant=\"normal\">x</mi></mrow></msub><msub><mrow><mi mathvariant=\"normal\">N</mi></mrow><mrow><mi mathvariant=\"normal\">x</mi></mrow></msub></math> the value of <math><mi mathvariant=\"normal\">'</mi><mi mathvariant=\"normal\">x</mi><mi mathvariant=\"normal\">'</mi></math> is",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "5",
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/843c2ce6-6894-41de-8287-cac82a7d4b25.png\" style=\"max-width:100%; object-fit:contain\" style=\"width:1.27986in;height:1.27986in\"> <br/>The molecular formula of adenine is <math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>5</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>5</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">N</mi></mrow><mrow><mn>5</mn></mrow></msub></math> . So, value of <math><mi mathvariant=\"normal\">'</mi><mi mathvariant=\"normal\">x</mi><mi mathvariant=\"normal\">'</mi></math> is <math><mn>5</mn></math> .",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

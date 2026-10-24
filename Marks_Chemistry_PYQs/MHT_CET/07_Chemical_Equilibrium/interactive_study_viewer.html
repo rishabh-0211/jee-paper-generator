@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MHT CET - Chemical Equilibrium PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚗️ MHT CET &bull; Chemical Equilibrium</h1>
+        <div class="sub">Chemistry PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 7, "chapterId": "61c089997d196d442645c1f0", "chapter": "Chemical Equilibrium", "exam": "MHT CET", "totalTopics": 2, "totalQuestions": 21, "downloadTime": "2026-10-08 20:05:56", "topics": [{"index": 1, "topicId": "65a2634b0279619d9d8a3deb", "title": "Law of Mass Action, Equilibrium Constant (Kc and Kp) and its Application", "totalQuestions": 20, "questions": [{"_id": "6a44d3518c30a4553e1be276", "type": "singleCorrect", "question": {"text": "Calculate $\\triangle G^\\circ$ for reaction,<br>$\\text{CH}_{4(g)} + \\text{H}_{2(g)} \\rightarrow \\text{C}_2\\text{H}_{6(g)}$ ($K_p = 2 \\times 10^{17}$, $R = 8.314\\ \\text{JK}^{-1}\\text{mol}^{-1}$)", "image": null}, "options": [{"id": "HTWDK", "label": "A", "text": "$-64.695$ kJ mol$^{-1}$", "isCorrect": false, "image": null}, {"id": "JWBKW", "label": "B", "text": "$-98.716$ kJ mol$^{-1}$", "isCorrect": true, "image": null}, {"id": "P24V6", "label": "C", "text": "$-44.08$ kJ mol$^{-1}$", "isCorrect": false, "image": null}, {"id": "Oi9X2", "label": "D", "text": "$-58.78$ kJ mol$^{-1}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The standard Gibbs free energy change is related to the equilibrium constant by the equation:<br><br>$\\Delta G^\\circ = -RT \\ln K_p = -2.303 RT \\log K_p$<br><br>Assuming standard temperature $T = 298 \\text{ K}$ and substituting the given values:<br><br>$\\Delta G^\\circ = -2.303 \\times 8.314 \\times 298 \\times \\log(2 \\times 10^{17})$<br><br>$\\Delta G^\\circ = -5705.84 \\times (\\log 2 + 17 \\log 10)$<br><br>$\\Delta G^\\circ = -5705.84 \\times (0.3010 + 17)$<br><br>$\\Delta G^\\circ = -5705.84 \\times 17.3010$<br><br>$\\Delta G^\\circ = -98716 \\text{ J mol}^{-1}$<br><br>$\\Delta G^\\circ = -98.716 \\text{ kJ mol}^{-1}$<br><br>Answer: $-98.716$ kJ mol$^{-1}$", "image": null}, "previousYearPapers": [{"_id": "6a44d2802d2155b816ec4a7c", "title": "MHT CET 2026 (20 April Shift 1)", "shortName": "2026 (20 April Shift 1)", "isVisible": true, "heldOn": "2026-04-20T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "level": 2, "questionLabels": [], "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6a44d2802d2155b816ec4a7c", "title": "MHT CET 2026 (20 April Shift 1)", "shortName": "2026 (20 April Shift 1)", "isVisible": true, "heldOn": "2026-04-20T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6a44d2e28c30a4553e1bddd2", "type": "singleCorrect", "question": {"text": "Find $\\Delta n$ when 1 mol of each $\\text{NH}_{3(g)}$ and $\\text{HCl}_{(g)}$, reacts to form solid $\\text{NH}_4\\text{Cl}$.", "image": null}, "options": [{"id": "uwcF7", "label": "A", "text": "$1$", "isCorrect": false, "image": null}, {"id": "OeFFY", "label": "B", "text": "$-2$", "isCorrect": true, "image": null}, {"id": "hyb1n", "label": "C", "text": "$-1$", "isCorrect": false, "image": null}, {"id": "vXuau", "label": "D", "text": "$-3$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The balanced chemical equation for the reaction is:<br><br>$\\text{NH}_{3(g)} + \\text{HCl}_{(g)} \\rightarrow \\text{NH}_4\\text{Cl}_{(s)}$<br><br>The change in the number of moles of gaseous species, $\\Delta n$, is given by the difference between the number of moles of gaseous products and gaseous reactants.<br><br>Number of moles of gaseous products, $n_P = 0$<br><br>Number of moles of gaseous reactants, $n_R = 1 + 1 = 2$<br><br>$\\Delta n = n_P - n_R = 0 - 2 = -2$<br><br>Answer: $-2$", "image": null}, "previousYearPapers": [{"_id": "6a44d2802d2155b816ec4a73", "title": "MHT CET 2026 (15 April Shift 2)", "shortName": "2026 (15 April Shift 2)", "isVisible": true, "heldOn": "2026-04-15T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "level": 1, "questionLabels": [], "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6a44d2802d2155b816ec4a73", "title": "MHT CET 2026 (15 April Shift 2)", "shortName": "2026 (15 April Shift 2)", "isVisible": true, "heldOn": "2026-04-15T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a2620f0279619d9d8a317c", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b89f20917a5f41892af", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-11T14:00:00.000Z", "isVisible": true, "shortName": "2023 (11 May Shift 2)", "title": "MHT CET 2023 (11 May Shift 2)"}], "question": {"text": "Calculate the degree of dissociation of $0.01 \\mathrm{M}$ acetic acid at $25^{\\circ} \\mathrm{C}\\left[\\Lambda_{\\mathrm{c}}=15.0 \\Omega^{-1} \\mathrm{~cm}^2 \\mathrm{~mol}^{-1}\\right.$ and $\\left.\\Lambda_0=300 \\Omega^{-1} \\mathrm{~cm}^2 \\mathrm{~mol}^{-1}\\right]$", "image": null}, "options": [{"id": "pDiEz", "text": "$0.042$", "image": null, "isCorrect": false}, {"id": "z0r5v", "text": "$0.035$", "image": null, "isCorrect": false}, {"id": "wGFSX", "text": "$0.025$", "image": null, "isCorrect": false}, {"id": "i4Vzv", "text": "$0.05$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Degree of dissociation $(\\alpha)=\\frac{\\Lambda_c}{\\Lambda_0}=\\frac{15.0}{300}=0.05$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b89f20917a5f41892af", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-11T14:00:00.000Z", "isVisible": true, "shortName": "2023 (11 May Shift 2)", "title": "MHT CET 2023 (11 May Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a2620e0279619d9d8a3174", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b89f20917a5f41892af", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-11T14:00:00.000Z", "isVisible": true, "shortName": "2023 (11 May Shift 2)", "title": "MHT CET 2023 (11 May Shift 2)"}], "question": {"text": "A weak base is $1.42 \\%$ dissociated in its $0.05 \\mathrm{M}$ solution. Calculate its dissociation constant.", "image": null}, "options": [{"id": "nvGNK", "text": "$5.5 \\times 10^{-5}$", "image": null, "isCorrect": false}, {"id": "aAgbW", "text": "$4.0 \\times 10^{-5}$", "image": null, "isCorrect": false}, {"id": "19QDk", "text": "$1.8 \\times 10^{-5}$", "image": null, "isCorrect": false}, {"id": "pIVEy", "text": "$1.0 \\times 10^{-5}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Percent dissociation $=1.42 \\%$\n$\\therefore \\quad \\alpha=0.0142$\nFor a weak monoacidic base,\n$\\begin{aligned}\n\\mathrm{K}_{\\mathrm{b}} & =\\alpha^2 \\mathrm{C} \\\\\n& =(0.0142)^2 \\times(0.05) \\\\\n& =1.0082 \\times 10^{-5}\n\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b89f20917a5f41892af", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-11T14:00:00.000Z", "isVisible": true, "shortName": "2023 (11 May Shift 2)", "title": "MHT CET 2023 (11 May Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a261650279619d9d8a2c36", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b88f20917a5f41892a6", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-08T14:00:00.000Z", "isVisible": true, "shortName": "2022 (08 Aug Shift 2)", "title": "MHT CET 2022 (08 Aug Shift 2)"}], "question": {"text": "A weak monobasic acid dissociates to $0.001 \\%$ in its $0.01 \\mathrm{M}$ solution. What is its dissociation constant?", "image": null}, "options": [{"id": "dejIW", "text": "$1 \\times 10^{-6}$", "image": null, "isCorrect": false}, {"id": "L90fw", "text": "$1 \\times 10^{-8}$", "image": null, "isCorrect": false}, {"id": "kpvdn", "text": "$1 \\times 10^{-3}$", "image": null, "isCorrect": false}, {"id": "KnZdh", "text": "$1 \\times 10^{-12}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "$\\begin{aligned} & \\mathrm{K}_{\\mathrm{a}}=\\propto^2 \\mathrm{C} \\\\ & =\\left(\\frac{0.001}{100}\\right)^2 \\times 0.01 \\\\ & =1 \\times 10^{-12}\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b88f20917a5f41892a6", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-08T14:00:00.000Z", "isVisible": true, "shortName": "2022 (08 Aug Shift 2)", "title": "MHT CET 2022 (08 Aug Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a261500279619d9d8a2b90", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b88f20917a5f41892a5", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-08T09:00:00.000Z", "isVisible": true, "shortName": "2022 (08 Aug Shift 1)", "title": "MHT CET 2022 (08 Aug Shift 1)"}], "question": {"text": "The percent dissociation of weak monobasic acid is $3 \\%$ in its $0.02 \\mathrm{M}$ solution. What is the dissociation constant of acid?", "image": null}, "options": [{"id": "ZNRhM", "text": "$9 \\times 10^{-4}$", "image": null, "isCorrect": false}, {"id": "ZSxSp", "text": "$3 \\times 10^{-2}$", "image": null, "isCorrect": false}, {"id": "bLDBW", "text": "$2 \\times 10^{-2}$", "image": null, "isCorrect": false}, {"id": "iI9CS", "text": "$1.8 \\times 10^{-5}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "$\\begin{aligned} & K_a=\\propto^2 C \\\\ & =\\left(\\frac{3}{100}\\right)^2 \\times 0.02 \\\\ & =1.8 \\times 10^{-5}\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b88f20917a5f41892a5", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-08T09:00:00.000Z", "isVisible": true, "shortName": "2022 (08 Aug Shift 1)", "title": "MHT CET 2022 (08 Aug Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a2613f0279619d9d8a2b00", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b88f20917a5f41892a4", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-07T14:00:00.000Z", "isVisible": true, "shortName": "2022 (07 Aug Shift 2)", "title": "MHT CET 2022 (07 Aug Shift 2)"}], "question": {"text": "A weak monoacidic base is $1.2 \\%$ dissociated in its $0.2 \\mathrm{M}$ solution. What is the value of dissociation constant?", "image": null}, "options": [{"id": "2drOg", "text": "$1.21 \\times 10^{-5}$", "image": null, "isCorrect": false}, {"id": "htRNv", "text": "$1.44 \\times 10^{-5}$", "image": null, "isCorrect": false}, {"id": "6E2RH", "text": "$2.54 \\times 10^{-5}$", "image": null, "isCorrect": false}, {"id": "Blz2Z", "text": "$2.88 \\times 10^{-5}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "$\\begin{aligned} & \\mathrm{K}_{\\mathrm{b}}=\\propto^2 \\mathrm{C} \\\\ & =(0.012)^2 \\times 0.2 \\\\ & =2.88 \\times 10^{-5}\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b88f20917a5f41892a4", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-07T14:00:00.000Z", "isVisible": true, "shortName": "2022 (07 Aug Shift 2)", "title": "MHT CET 2022 (07 Aug Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a2612c0279619d9d8a2a67", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b88f20917a5f41892a3", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-07T09:00:00.000Z", "isVisible": true, "shortName": "2022 (07 Aug Shift 1)", "title": "MHT CET 2022 (07 Aug Shift 1)"}], "question": {"text": "A weak monobasic acid is $2 \\%$ dissociated in its $0.1 \\mathrm{M}$ solution. What is its dissociation constant?", "image": null}, "options": [{"id": "AxVMK", "text": "$4.0 \\times 10^{-5}$", "image": null, "isCorrect": true}, {"id": "eY8Lm", "text": "$1.0 \\times 10^{-5}$", "image": null, "isCorrect": false}, {"id": "KS1Ec", "text": "$2.0 \\times 10^{-5}$", "image": null, "isCorrect": false}, {"id": "5DoV2", "text": "$2.5 \\times 10^{-5}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\begin{aligned} & \\mathrm{K}_{\\mathrm{a}}=\\propto^2 \\mathrm{C} \\\\ & =(0.02)^2 \\times 0.1 \\\\ & =4 \\times 10^{-5}\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b88f20917a5f41892a3", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-07T09:00:00.000Z", "isVisible": true, "shortName": "2022 (07 Aug Shift 1)", "title": "MHT CET 2022 (07 Aug Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a2611b0279619d9d8a29de", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b87f20917a5f41892a2", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-06T14:00:00.000Z", "isVisible": true, "shortName": "2022 (06 Aug Shift 2)", "title": "MHT CET 2022 (06 Aug Shift 2)"}], "question": {"text": "An acid dissociated to $1.5 \\%$ in its $0.1 \\mathrm{M}$ solution. Calculate its dissociation constant.", "image": null}, "options": [{"id": "KxkBg", "text": "$1.2 \\times 10^{-5}$", "image": null, "isCorrect": false}, {"id": "rjrCd", "text": "$2.25 \\times 10^{-5}$", "image": null, "isCorrect": true}, {"id": "ITSvD", "text": "$1.1 \\times 10^{-5}$", "image": null, "isCorrect": false}, {"id": "WMEhU", "text": "$1.5 \\times 10^{-5}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\begin{aligned} & K_a=\\alpha^2 C \\\\ & =\\left(\\frac{1.5}{100}\\right)^2 \\times 0.1 \\\\ & =2.25 \\times 10^{-5}\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b87f20917a5f41892a2", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-06T14:00:00.000Z", "isVisible": true, "shortName": "2022 (06 Aug Shift 2)", "title": "MHT CET 2022 (06 Aug Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a2610a0279619d9d8a2953", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b87f20917a5f41892a1", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-06T09:00:00.000Z", "isVisible": true, "shortName": "2022 (06 Aug Shift 1)", "title": "MHT CET 2022 (06 Aug Shift 1)"}], "question": {"text": "An organic weak monobasic acid is 0.001 percent dissociated in its $0.05 \\mathrm{M}$ solution. What is its dissociation constant?", "image": null}, "options": [{"id": "0jaTe", "text": "$6 \\times 10^{-12}$", "image": null, "isCorrect": false}, {"id": "UeeUo", "text": "$5 \\times 10^{-12}$", "image": null, "isCorrect": true}, {"id": "TbIVq", "text": "$4 \\times 10^{-12}$", "image": null, "isCorrect": false}, {"id": "6EsAu", "text": "$1 \\times 10^{-12}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\begin{aligned} & \\mathrm{Ka}=\\alpha^2 \\mathrm{C} \\\\ & =\\left(\\frac{0.001}{100}\\right)^2 \\times 0.05 \\\\ & =5 \\times 10^{-12}\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b87f20917a5f41892a1", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-06T09:00:00.000Z", "isVisible": true, "shortName": "2022 (06 Aug Shift 1)", "title": "MHT CET 2022 (06 Aug Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a260bc0279619d9d8a26e6", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b87f20917a5f418929d", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-24T09:00:00.000Z", "isVisible": true, "shortName": "2021 (24 Sep Shift 1)", "title": "MHT CET 2021 (24 Sep Shift 1)"}], "question": {"text": "At $298 \\mathrm{~K}, 0.1 \\mathrm{M}$ solution of acetic acid is $1.34 \\%$ ionized. What is the dissociation constant of acetic acid?", "image": null}, "options": [{"id": "NSA0T", "text": "$1.4 \\times 10^{-3}$", "image": null, "isCorrect": false}, {"id": "XF3ry", "text": "$1.8 \\times 10^{-5}$", "image": null, "isCorrect": true}, {"id": "6HFgA", "text": "$1.6 \\times 10^{-3}$", "image": null, "isCorrect": false}, {"id": "N7uHo", "text": "$1.34 \\times 10^{-5}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/gGYM_oXlcH8vwKSfz72k2vEVvNHSLBApn-ihgSeS4dQ.original.fullsize.png\"><br>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b87f20917a5f418929d", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-24T09:00:00.000Z", "isVisible": true, "shortName": "2021 (24 Sep Shift 1)", "title": "MHT CET 2021 (24 Sep Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a260a70279619d9d8a2640", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b87f20917a5f418929c", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-23T14:00:00.000Z", "isVisible": true, "shortName": "2021 (23 Sep Shift 2)", "title": "MHT CET 2021 (23 Sep Shift 2)"}], "question": {"text": "A weak monobasic acid is $3.0 \\%$ dissociated in it's $0.04 \\mathrm{M}$ solution. What is the dissociation constant of acid?", "image": null}, "options": [{"id": "v0IEx", "text": "$9 \\times 10^{-4}$", "image": null, "isCorrect": false}, {"id": "R6dpY", "text": "$3.6 \\times 10^{-5}$", "image": null, "isCorrect": true}, {"id": "4kWBQ", "text": "$3 \\times 10^{-2}$", "image": null, "isCorrect": false}, {"id": "U9qTf", "text": "$4 \\times 10^{-2}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/DhcH9U2X6w_eNt--GoZYCVZrEV2VYD58p1BcdG3lzIc.original.fullsize.png\"><br>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b87f20917a5f418929c", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-23T14:00:00.000Z", "isVisible": true, "shortName": "2021 (23 Sep Shift 2)", "title": "MHT CET 2021 (23 Sep Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a260990279619d9d8a25cf", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b87f20917a5f418929b", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-23T09:00:00.000Z", "isVisible": true, "shortName": "2021 (23 Sep Shift 1)", "title": "MHT CET 2021 (23 Sep Shift 1)"}], "question": {"text": "The $\\mathrm{pH}$ of monoacidic weak base is 10.9. Calculate the percent dissociation in $0.02 \\mathrm{M}$ solution.", "image": null}, "options": [{"id": "afafK", "text": "$7.92 \\%$", "image": null, "isCorrect": false}, {"id": "Fj9B9", "text": "$3.95 \\%$", "image": null, "isCorrect": true}, {"id": "GE1qk", "text": "$6.25 \\%$", "image": null, "isCorrect": false}, {"id": "6dzqn", "text": "$2.51 \\%$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Monoacidic weak base $\\mathrm{BOH}$\n$$\n\\begin{aligned}\n& \\mathrm{BOH}_{(\\mathrm{aq})} \\rightleftharpoons \\mathrm{B}_{(\\mathrm{aq})}^{+}+\\mathrm{OH}_{(\\mathrm{aq})}^{-} \\\\\n& \\mathrm{C} \\quad \\mathrm{C} \\alpha \\quad \\mathrm{C} \\alpha \\\\\n& \\mathrm{C} \\alpha \\quad- \\\\\n& \\mathrm{pH}=10.9 \\\\\n& \\mathrm{pH}+\\mathrm{pOH}=14 \\\\\n& \\mathrm{pOH}=14-10.9=3.1 \\\\\n& \\mathrm{pOH}=-\\log _{10}\\left[\\mathrm{OH}^{-}\\right] \\\\\n& {\\left[\\mathrm{OH}^{-}\\right]=10^{-\\mathrm{pOH}}} \\\\\n& =10^{-3.1}=10^{-4}+0.9 \\\\\n& =10^{-4} \\times 10^{0.9} \\\\\n& {\\left[\\mathrm{OH}^{-}\\right]=7.9 \\times 10^{-4} \\mathrm{M}} \\\\\n& {\\left[\\mathrm{OH}^{-}\\right]=\\mathrm{C}_\\alpha} \\\\\n& \\alpha=\\frac{7.9 \\times 10^{-4}}{0.02} \\\\\n& \\alpha=3.95 \\times 10^{-2} \\\\\n& \\% \\alpha=3.95 \\times 10^{-2} \\times 100 \\\\\n& =3.95 \\%\n\\end{aligned}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b87f20917a5f418929b", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-23T09:00:00.000Z", "isVisible": true, "shortName": "2021 (23 Sep Shift 1)", "title": "MHT CET 2021 (23 Sep Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a260970279619d9d8a25bf", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b87f20917a5f418929b", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-23T09:00:00.000Z", "isVisible": true, "shortName": "2021 (23 Sep Shift 1)", "title": "MHT CET 2021 (23 Sep Shift 1)"}], "question": {"text": "What is percent dissociation of acetic acid in it's $0.01 \\mathrm{M}$ solution if dissociation constant of acid is $1.34 \\times 10^{-6}$ ?", "image": null}, "options": [{"id": "PBEpd", "text": "$13.4 \\%$", "image": null, "isCorrect": false}, {"id": "H6xG7", "text": "$4.02 \\%$", "image": null, "isCorrect": false}, {"id": "CYkjz", "text": "$2.68 \\%$", "image": null, "isCorrect": false}, {"id": "GD6TM", "text": "$1.15 \\%$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/Z7B4kJe8D5753J7n91ev93l9onKLLz9MS-VjDQ5DLH0.original.fullsize.png\"><br>\n$\\begin{aligned} & \\mathrm{K}_{\\mathrm{a}}=\\frac{\\mathrm{C} \\alpha^2}{1-\\alpha} \\quad 1-\\alpha \\simeq 1 \\\\ & \\mathrm{~K}_{\\mathrm{a}}=\\mathrm{Co}^2 \\\\ & \\alpha=\\sqrt{\\frac{\\mathrm{K}_{\\mathrm{a}}}{\\mathrm{C}}} \\\\ & \\% \\alpha=\\sqrt{\\frac{\\mathrm{K}_{\\mathrm{a}}}{\\mathrm{C}}} \\times 100=\\sqrt{\\frac{1.34 \\times 00^{-6}}{0.01}} \\times 100 \\\\ & =1.15 \\% \\\\ & \\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b87f20917a5f418929b", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-23T09:00:00.000Z", "isVisible": true, "shortName": "2021 (23 Sep Shift 1)", "title": "MHT CET 2021 (23 Sep Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a260860279619d9d8a2533", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b87f20917a5f418929a", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-22T14:00:00.000Z", "isVisible": true, "shortName": "2021 (22 Sep Shift 2)", "title": "MHT CET 2021 (22 Sep Shift 2)"}], "question": {"text": "A weak monobasic acid is $10 \\%$ dissociated in $0.05 \\mathrm{M}$ solution. What is its percentage dissociation in $0.10 \\mathrm{M}$ solution?", "image": null}, "options": [{"id": "mcLs7", "text": "$5.27 \\%$", "image": null, "isCorrect": false}, {"id": "BdpFd", "text": "$7.17 \\%$", "image": null, "isCorrect": true}, {"id": "4alCo", "text": "$10.3 \\%$", "image": null, "isCorrect": false}, {"id": "Ssa3E", "text": "$4.5 \\%$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Weak monobasic acid (HA)\n$$\n\\begin{aligned}\n& \\underset{\\mathrm{C}}{\\mathrm{HA}_{(\\mathrm{aq})}} \\rightleftharpoons \\mathrm{H}_{\\mathrm{aq}}^{+}+\\mathrm{A}_{\\mathrm{aq}}^{-} \\\\\n& \\text {C-C } \\quad \\mathrm{C} \\propto \\quad \\mathrm{C} \\propto \\\\\n& \\mathrm{Ka}=\\frac{\\mathrm{C} \\propto^2}{1-\\propto} \\\\\n& 1-\\propto \\simeq 1 \\\\\n& \\left(\\begin{array}{l}\n\\mathrm{C}_1=0.05, \\propto=10 \\%=0.1 \\\\\n\\mathrm{C}_2=0.1, \\propto_2=?\n\\end{array}\\right. \\\\\n& \\mathrm{K}_{\\mathrm{a}}=\\mathrm{C}^2 \\\\\n& \\mathrm{C}_1 \\propto_1^2=\\mathrm{C}_2 \\propto \\boldsymbol{c}_2^2 \\\\\n& 0.05 \\times 0.1 \\times 0.1=0.1 \\times \\propto_2^2 \\\\\n& \\alpha_2^2=5 \\times 10^{-3} \\\\\n& =\\frac{5}{1000}=\\frac{1}{200} \\\\\n& \\propto_2=\\sqrt{\\frac{1}{200}}=0.717 \\\\\n& \\propto_2=7.17 \\% \\\\\n&\n\\end{aligned}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b87f20917a5f418929a", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-22T14:00:00.000Z", "isVisible": true, "shortName": "2021 (22 Sep Shift 2)", "title": "MHT CET 2021 (22 Sep Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a260740279619d9d8a24a3", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b87f20917a5f4189299", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-22T09:00:00.000Z", "isVisible": true, "shortName": "2021 (22 Sep Shift 1)", "title": "MHT CET 2021 (22 Sep Shift 1)"}], "question": {"text": "The dissociation constant of weak monobasic acid is $2.7 \\times 10^{-5}$. If degree of dissociation of acid is $3 \\times 10^{-2}$, what is the concentration of acid?", "image": null}, "options": [{"id": "XgqEi", "text": "0.24 M", "image": null, "isCorrect": false}, {"id": "IMyKh", "text": "0.03 M", "image": null, "isCorrect": true}, {"id": "XvWuH", "text": "0.3 M", "image": null, "isCorrect": false}, {"id": "HSlWp", "text": "0.11 M", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/dQtsdP-QtS0iSmXWSguZ7947-BpxXqV0Hz0swgrkyeY.original.fullsize.png\"><br>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b87f20917a5f4189299", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-22T09:00:00.000Z", "isVisible": true, "shortName": "2021 (22 Sep Shift 1)", "title": "MHT CET 2021 (22 Sep Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a260510279619d9d8a2384", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b87f20917a5f4189297", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-21T09:00:00.000Z", "isVisible": true, "shortName": "2021 (21 Sep Shift 1)", "title": "MHT CET 2021 (21 Sep Shift 1)"}], "question": {"text": "Dissociation constant of propionic acid is $1.32 \\times 10^{-5}$. Calculate the degree of dissociation of acid in $0.05 \\mathrm{M}$ solution.", "image": null}, "options": [{"id": "JHgXv", "text": "$2.6 \\times 10^{-4}$", "image": null, "isCorrect": false}, {"id": "eux7p", "text": "$1.61 \\times 10^{-2}$", "image": null, "isCorrect": true}, {"id": "1bfsr", "text": "$1.90 \\times 10^{-2}$", "image": null, "isCorrect": false}, {"id": "mlYuA", "text": "$3.5 \\times 10^{-5}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\mathrm{CH}_3 \\mathrm{CH}_2 \\mathrm{COOH}$ (Propionic Acid)\n$$\n\\begin{aligned}\n& \\mathrm{CH}_3 \\mathrm{CH}_2 \\mathrm{COOH}_{(\\mathrm{aq})} \\rightleftharpoons \\mathrm{CH}_3 \\mathrm{CH}_2 \\mathrm{COO}_{(\\mathrm{aq})}^{-}+\\mathrm{H}_{(\\mathrm{aq})}^{+} \\\\\n& \\mathrm{t}=0_1 \\quad \\mathrm{C} \\\\\n& \\mathrm{t}=\\mathrm{t}_{\\mathrm{aq}}, \\quad \\mathrm{C}-\\mathrm{C} \\propto \\quad \\mathrm{C} \\propto \\quad \\mathrm{C} \\propto \\\\\n& \\mathrm{k}_{\\mathrm{a}}=\\frac{\\mathrm{c} \\propto^2}{1-\\propto} \\quad(1-\\propto \\simeq 1) \\\\\n&\n\\end{aligned}\n$$\n\n\n$$\n\\begin{aligned}\n& \\propto=\\sqrt{\\frac{\\mathrm{k}_{\\mathrm{a}}}{\\mathrm{C}}}=\\sqrt{\\frac{1.32 \\times 10^{-5}}{0.05}}=\\sqrt{\\frac{132 \\times 10^{-1}}{5}} \\times 10^{-2} \\quad \\mathrm{k}_{\\mathrm{a}}=\\mathrm{c}^2 \\\\\n& =\\sqrt{2.64} \\times 10^{-2}=1.61 \\times 10^{-2}\n\\end{aligned}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b87f20917a5f4189297", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-21T09:00:00.000Z", "isVisible": true, "shortName": "2021 (21 Sep Shift 1)", "title": "MHT CET 2021 (21 Sep Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a2603c0279619d9d8a22d8", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b87f20917a5f4189296", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-20T14:00:00.000Z", "isVisible": true, "shortName": "2021 (20 Sep Shift 2)", "title": "MHT CET 2021 (20 Sep Shift 2)"}], "question": {"text": "The $\\mathrm{pH}$ of $0.1 \\mathrm{M}$ solution of monobasic acid is 2.34 . Calculate the degree of dissociation of the acid.", "image": null}, "options": [{"id": "xcmA9", "text": "$3.1 \\times 10^{-2}$", "image": null, "isCorrect": false}, {"id": "9VrUR", "text": "$4.5 \\times 10^{-2}$", "image": null, "isCorrect": true}, {"id": "qOFiA", "text": "$2.18 \\times 10^{-2}$", "image": null, "isCorrect": false}, {"id": "8Kkch", "text": "$2.5 \\times 10^{-3}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$$\n\\mathrm{pH}=2.34, \\mathrm{c}=0.1 \\mathrm{M}\n$$\n(i) $\\mathrm{pH}=-\\log _{10}\\left[\\mathrm{H}^{+}\\right]$\n$$\n\\begin{gathered}\n\\log _{10}\\left[\\mathrm{H}^{+}\\right]=-\\mathrm{pH}=-2.34 \\\\\n=-2-0.34-1+1 \\\\\n=-3+0.66=\\overline{3} .66\n\\end{gathered}\n$$\n$$\n\\therefore\\left[\\mathrm{H}^{+}\\right]=\\text {antilog } \\overline{3} .66\n$$\n$$\n=4.571 \\times 10^{-3} \\mathrm{~mol} \\mathrm{dm}^{-3}\n$$\n(ii) $\\left[\\mathrm{H}^{+}\\right]=\\mathrm{c} \\alpha$\n$$\n\\therefore \\alpha=\\frac{\\left[\\mathrm{H}^{+}\\right]}{\\mathrm{c}}=\\frac{4.571 \\times 10^{-3}}{0.1}=4.571 \\times 10^{-2}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b87f20917a5f4189296", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-20T14:00:00.000Z", "isVisible": true, "shortName": "2021 (20 Sep Shift 2)", "title": "MHT CET 2021 (20 Sep Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a2602c0279619d9d8a2258", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b86f20917a5f4189295", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-20T09:00:00.000Z", "isVisible": true, "shortName": "2021 (20 Sep Shift 1)", "title": "MHT CET 2021 (20 Sep Shift 1)"}], "question": {"text": "What is molar concentration of weak monobasic acid if dissociation constant is $5 \\times 10^{-8}$ and undergoes $0.5 \\%$ dissociation?", "image": null}, "options": [{"id": "q6rvY", "text": "$0.03 \\mathrm{M}$", "image": null, "isCorrect": false}, {"id": "67KlB", "text": "$0.002 \\mathrm{M}$", "image": null, "isCorrect": true}, {"id": "huRkM", "text": "$0.001 \\mathrm{M}$", "image": null, "isCorrect": false}, {"id": "oCaTf", "text": "0.005", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\begin{aligned} & \\text { Weak monobasic acid } \\longrightarrow \\mathrm{HA} \\\\ & \\mathrm{t}=0, \\mathrm{CA} \\\\ & \\mathrm{t}, \\mathrm{C}-\\mathrm{cx} \\\\ & \\text { Dissociation Constant }(\\mathrm{K})=\\frac{\\left[\\mathrm{H}^{+}\\right]\\left[\\mathrm{A}^{-}\\right]}{[\\mathrm{HA}]}+\\mathrm{A}_{\\mathrm{aq}}^{-} \\\\ & =\\frac{\\mathrm{cx} \\cdot \\mathrm{cx}}{\\mathrm{c}-\\mathrm{cx}} \\\\ & \\mathrm{K}=\\frac{\\mathrm{cx}}{1-\\mathrm{x}} \\\\ & \\mathrm{x}=0.5 \\% \\text { or } 0.005=5 \\times 10^{-3} \\\\ & \\text { So } 1-\\mathrm{x} \\simeq 1 \\\\ & \\mathrm{~K}=\\mathrm{cx} \\\\ & \\mathrm{C}=\\frac{\\mathrm{k}}{\\mathrm{x}^2}=\\frac{5 \\times 10^{-8}}{\\left(5 \\times 10^{-3}\\right)^2}=\\frac{10^{-2}}{5} \\\\ & =0.002 \\mathrm{M}\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b86f20917a5f4189295", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-20T09:00:00.000Z", "isVisible": true, "shortName": "2021 (20 Sep Shift 1)", "title": "MHT CET 2021 (20 Sep Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25eb20279619d9d8a168c", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61c078cd071b5bb33b3f9f61", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "MHT CET 2016"}], "question": {"text": "A&nbsp;chemical reaction takes places in two steps as follows:<br /><br><br /><br>(i) <math><mi>N</mi><msub><mrow><mi>O</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>C</mi><mrow><mi>l</mi><mn>&nbsp;</mn></mrow><mrow><mfenced separators=\"|\"><mrow><mi>g</mi></mrow></mfenced></mrow><mover accent=\"false\"><mo>→</mo><mrow><msub><mrow><mi>K</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow></mover><mi>N</mi><mrow><mi>O</mi></mrow><mrow><mn>2</mn><mn>&nbsp;</mn><mfenced separators=\"|\"><mrow><mi>g</mi></mrow></mfenced></mrow><mo>+</mo><mi>C</mi><mrow><mi>l</mi><mn>&nbsp;</mn></mrow><mrow><mfenced separators=\"|\"><mrow><mi>g</mi></mrow></mfenced></mrow></math><br /><br><br /><br>(ii) <math> <mrow> <mi>N</mi><msub> <mi>O</mi> <mn>2</mn> </msub> <mi>C</mi><mi>l</mi><mrow><mo>(</mo> <mi>g</mi> <mo>)</mo></mrow><mo>+</mo><mi>C</mi><mi>l</mi><mrow><mo>(</mo> <mi>g</mi> <mo>)</mo></mrow><mover> <mo>→</mo> <mrow> <msub> <mi>K</mi> <mn>2</mn> </msub> </mrow> </mover> <mi>N</mi><msub> <mi>O</mi> <mn>2</mn> </msub> <mrow><mo>(</mo> <mi>g</mi> <mo>)</mo></mrow><mo>+</mo><mi>C</mi><msub> <mi>l</mi> <mn>2</mn> </msub> <mrow><mo>(</mo> <mi>g</mi> <mo>)</mo></mrow></mrow> </math><br /><br><br /><br>Identify the reaction intermediate.", "image": null}, "options": [{"id": "0NhOE", "text": "<math><mi>N</mi><msub><mrow><mi>O</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>C</mi><mrow><mi>l</mi><mo>&nbsp;</mo></mrow><mrow><mfenced separators=\"|\"><mrow><mi>g</mi></mrow></mfenced></mrow></msub></math>", "image": null, "isCorrect": false}, {"id": "TQatx", "text": "<math><mi>N</mi><msub><mrow><mi>O</mi></mrow><mrow><mn>2</mn></msub><mo>&nbsp;</mo><mfenced separators=\"|\"><mrow><mi>g</mi></mrow></mfenced></mrow></math>", "image": null, "isCorrect": false}, {"id": "sS9lh", "text": "<math><mi>C</mi><msub><mrow><mi>l</mi></mrow><mrow><mn>2</mn></msub><mo>&nbsp;</mo><mfenced separators=\"|\"><mrow><mi>g</mi></mrow></mfenced></mrow></msub></math>", "image": null, "isCorrect": false}, {"id": "CAAry", "text": "<math><mi>C</mi><mrow><mi>l</mi><mo>&nbsp;</mo></mrow><mrow><mfenced separators=\"|\"><mrow><mi>g</mi></mrow></mfenced></mrow></math>", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "<math> <mrow> <mi>N</mi><msub> <mi>O</mi> <mn>2</mn> </msub> <mi>C</mi><mi>l</mi><mover> <mo>→</mo> <mrow> <msub> <mi>K</mi> <mn>1</mn> </msub> </mrow> </mover> <mover> <mrow> <mi>N</mi><msub> <mi>O</mi> <mn>2</mn> </msub> </mrow> <mo>•</mo> </mover> <mrow><mo>(</mo> <mi>g</mi> <mo>)</mo></mrow><mo>+</mo><munder> <mrow> <mover> <mrow> <mi>C</mi><mi>l</mi></mrow> <mo>•</mo> </mover> <mrow><mo>(</mo> <mi>g</mi> <mo>)</mo></mrow></mrow> <mrow> <mrow><mo>(</mo> <mrow> <mtext>free</mtext><mtext> </mtext><mtext>radical</mtext></mrow> <mo>)</mo></mrow></mrow> </munder> </mrow> </math><br /><math> <mrow> <mover> <mrow> <mi>N</mi><msub> <mi>O</mi> <mn>2</mn> </msub> </mrow> <mo>•</mo> </mover> <mi>C</mi><mi>l</mi><mrow><mo>(</mo> <mi>g</mi> <mo>)</mo></mrow><mo>+</mo><mover> <mrow> <mi>C</mi><mi>l</mi></mrow> <mo>•</mo> </mover> <mrow><mo>(</mo> <mi>g</mi> <mo>)</mo></mrow><mover> <mo>→</mo> <mrow> <msub> <mi>K</mi> <mn>2</mn> </msub> </mrow> </mover> <mi>N</mi><msub> <mi>O</mi> <mn>2</mn> </msub> <mrow><mo>(</mo> <mi>g</mi> <mo>)</mo></mrow><mo>+</mo><mi>C</mi><msub> <mi>l</mi> <mn>2</mn> </msub> <mrow><mo>(</mo> <mi>g</mi> <mo>)</mo></mrow></mrow></math><br />The intermediate generated is <math> <mrow> <mover> <mrow> <mi>C</mi><mi>l</mi></mrow> <mo>•</mo> </mover> </mrow> </math>.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078cd071b5bb33b3f9f61", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "MHT CET 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "68871e96bf9280d7f9933087", "title": "Le chatelier's principle", "totalQuestions": 1, "questions": [{"_id": "68871b12bf9280d7f9932609", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "688376de9b67616acec78f6f", "heldOn": "2025-04-19T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (19 Apr Shift 2)", "title": "MHT CET 2025 (19 Apr Shift 2)", "examId": "615d7745c52ffa3c944600e5"}], "question": {"text": "Identify from following salts so that the solubility of salt in water decreases with increase in temperature.", "image": null}, "options": [{"id": "kLENB", "text": "NaBr", "image": null, "isCorrect": false}, {"id": "P7Vfo", "text": "NaCl", "image": null, "isCorrect": false}, {"id": "P3hCM", "text": "$\\mathrm{NaNO}_3$", "image": null, "isCorrect": false}, {"id": "PhVIF", "text": "$\\mathrm{Na}_2 \\mathrm{SO}_4$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "The solubility of most solid solutes in water increases with an increase in temperature.<br><br>For salts like $\\mathrm{NaNO}_3$ and $\\mathrm{NaBr}$, solubility increases significantly with temperature.<br><br>For $\\mathrm{NaCl}$, solubility increases only slightly with temperature.<br><br>For $\\mathrm{Na}_2\\mathrm{SO}_4$, the solubility decreases with an increase in temperature.<br><br>Hence, $\\mathrm{Na}_2\\mathrm{SO}_4$ is the salt whose solubility decreases with an increase in temperature.<br><br>Answer: $\\mathrm{Na}_2 \\mathrm{SO}_4$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "688376de9b67616acec78f6f", "heldOn": "2025-04-19T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (19 Apr Shift 2)", "title": "MHT CET 2025 (19 Apr Shift 2)", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'MHT CET';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

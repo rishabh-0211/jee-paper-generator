@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MHT CET - Environmental Chemistry PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚗️ MHT CET &bull; Environmental Chemistry</h1>
+        <div class="sub">Chemistry PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 15, "chapterId": "65a25ea10279619d9d8a15ff", "chapter": "Environmental Chemistry", "exam": "MHT CET", "totalTopics": 5, "totalQuestions": 35, "downloadTime": "2026-10-08 20:06:19", "topics": [{"index": 1, "topicId": "65a263490279619d9d8a3dd3", "title": "Air Pollution", "totalQuestions": 9, "questions": [{"_id": "6abb88d515a9fc0fc8c14762", "type": "singleCorrect", "question": {"text": "Green chemistry helps to protect the presence of the ozone layer in,", "image": null}, "options": [{"id": "OeYjH", "label": "A", "text": "atmosphere", "isCorrect": false, "image": null}, {"id": "PzBf5", "label": "B", "text": "stratosphere", "isCorrect": true, "image": null}, {"id": "Hv9nY", "label": "C", "text": "lithosphere", "isCorrect": false, "image": null}, {"id": "07C0g", "label": "D", "text": "homosphere", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The ozone layer is a region of Earth's stratosphere that absorbs most of the Sun's ultraviolet radiation. Green chemistry aims to design chemical products and processes that reduce or eliminate the use or generation of hazardous substances, thereby helping to protect the ozone layer present in the stratosphere.<br><br>Answer: stratosphere", "image": null}, "level": 1, "videoSolution": null, "previousYearPapers": [{"_id": "6abb87f02fe711bb1be9996f", "title": "MHT CET 2026 (20 May Shift 1)", "shortName": "2026 (20 May Shift 1)", "isVisible": true, "heldOn": "2026-05-20T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6abb87f02fe711bb1be9996f", "title": "MHT CET 2026 (20 May Shift 1)", "shortName": "2026 (20 May Shift 1)", "isVisible": true, "heldOn": "2026-05-20T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "68871bfebf9280d7f9932e49", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "688376de9b67616acec78f6d", "heldOn": "2025-05-05T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (5 May Shift 2)", "title": "MHT CET 2025 (5 May Shift 2)", "examId": "615d7745c52ffa3c944600e5"}], "question": {"text": "Which from following gases causes the depletion of ozone layer in upper atmosphere?", "image": null}, "options": [{"id": "4NMzs", "text": "NO", "image": null, "isCorrect": true}, {"id": "gZYRm", "text": "$\\mathrm{NO}_2$", "image": null, "isCorrect": false}, {"id": "7y8Oj", "text": "$\\mathrm{N}_2 \\mathrm{O}$", "image": null, "isCorrect": false}, {"id": "6JbvF", "text": "$\\mathrm{N}_2 \\mathrm{O}_5$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Nitric oxide (NO) released from the exhausts of supersonic transport aeroplanes causes depletion of the ozone layer in the upper atmosphere.<br><br>The reaction involved is:<br><br>$\\mathrm{NO} + \\mathrm{O}_3 \\rightarrow \\mathrm{NO}_2 + \\mathrm{O}_2$<br><br>Thus, NO is responsible for the depletion of the ozone layer.<br><br>Answer: NO", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "688376de9b67616acec78f6d", "heldOn": "2025-05-05T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (5 May Shift 2)", "title": "MHT CET 2025 (5 May Shift 2)", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "68871bdcbf9280d7f9932d18", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "688376df9b67616acec78f7b", "heldOn": "2025-04-26T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (26 Apr Shift 2)", "title": "MHT CET 2025 (26 Apr Shift 2)", "examId": "615d7745c52ffa3c944600e5"}], "question": {"text": "Which from following is the most commonly used refrigerant Freon-12?", "image": null}, "options": [{"id": "uvoAS", "text": "Chlorofluoromethane", "image": null, "isCorrect": false}, {"id": "YFX3B", "text": "Dichlorodifluoromethane", "image": null, "isCorrect": true}, {"id": "LNOlk", "text": "Chlorodifluoromethane", "image": null, "isCorrect": false}, {"id": "2p76s", "text": "Dichlorofluoromethane", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Freon-12 is a chlorofluorocarbon (CFC) with the chemical formula $CCl_2F_2$.<br><br>Its chemical name is dichlorodifluoromethane. It is widely used as a refrigerant and aerosol propellant.<br><br>Answer: Dichlorodifluoromethane", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "688376df9b67616acec78f7b", "heldOn": "2025-04-26T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (26 Apr Shift 2)", "title": "MHT CET 2025 (26 Apr Shift 2)", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "68871b49bf9280d7f99327e3", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "688376de9b67616acec78f72", "heldOn": "2025-04-21T09:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (21 Apr Shift 1)", "title": "MHT CET 2025 (21 Apr Shift 1)", "examId": "615d7745c52ffa3c944600e5"}], "question": {"text": "Which of the following gases causes depletion in ozone layer?", "image": null}, "options": [{"id": "lV1Cx", "text": "He", "image": null, "isCorrect": false}, {"id": "dMDzo", "text": "NO", "image": null, "isCorrect": true}, {"id": "Ixhpq", "text": "$\\mathrm{CO}_2$", "image": null, "isCorrect": false}, {"id": "XD6jY", "text": "$\\mathrm{H}_2$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Nitric oxide ($\\mathrm{NO}$) is a reactive gas that contributes to the depletion of the ozone layer in the stratosphere. It reacts with ozone ($\\mathrm{O}_3$) to form nitrogen dioxide ($\\mathrm{NO}_2$) and diatomic oxygen ($\\mathrm{O}_2$).<br><br>The reaction is given by:<br>$\\mathrm{NO} + \\mathrm{O}_3 \\rightarrow \\mathrm{NO}_2 + \\mathrm{O}_2$<br><br>Helium ($\\mathrm{He}$), carbon dioxide ($\\mathrm{CO}_2$), and hydrogen ($\\mathrm{H}_2$) do not directly cause ozone layer depletion.<br><br>Answer: NO", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "688376de9b67616acec78f72", "heldOn": "2025-04-21T09:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (21 Apr Shift 1)", "title": "MHT CET 2025 (21 Apr Shift 1)", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "68871b02bf9280d7f9932591", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "688376de9b67616acec78f6e", "heldOn": "2025-04-19T09:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (19 Apr Shift 1)", "title": "MHT CET 2025 (19 Apr Shift 1)", "examId": "615d7745c52ffa3c944600e5"}], "question": {"text": "Which of the following is one of the products of ozonolysis of alkenes in the atmosphere?", "image": null}, "options": [{"id": "KHEmV", "text": "alcohol", "image": null, "isCorrect": false}, {"id": "3ZCJD", "text": "alkane", "image": null, "isCorrect": false}, {"id": "ceeJR", "text": "aldehyde", "image": null, "isCorrect": true}, {"id": "nE8gu", "text": "ester", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Ozonolysis of alkenes involves the cleavage of the carbon-carbon double bond by ozone.<br><br>The reaction produces an ozonide intermediate, which subsequently decomposes to form carbonyl compounds.<br><br>Depending on the structure of the original alkene, the products formed are either aldehydes or ketones.<br><br>Therefore, an aldehyde is one of the products of the ozonolysis of alkenes in the atmosphere.<br><br>Answer: aldehyde", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "688376de9b67616acec78f6e", "heldOn": "2025-04-19T09:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (19 Apr Shift 1)", "title": "MHT CET 2025 (19 Apr Shift 1)", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "679213b20aee93fa0796dace", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67920e149a8109c6c5665ccb", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-09T14:00:00.000Z", "isVisible": true, "shortName": "2024 (09 May Shift 2)", "title": "MHT CET 2024 (09 May Shift 2)"}], "question": {"text": "Which is the most commonly used refrigerant Freon-12?", "image": null}, "options": [{"id": "yMC1p", "text": "Monochloromonofluoromethane", "image": null, "isCorrect": false}, {"id": "Wu1Su", "text": "Dichlorodifluoromethane", "image": null, "isCorrect": true}, {"id": "sRUVq", "text": "Chlorodifluoromethane", "image": null, "isCorrect": false}, {"id": "0Bs03", "text": "Dichlorofluoromethane", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Freon-12 is the trade name for the chemical compound dichlorodifluoromethane.<br><br>Its chemical formula is $CCl_2F_2$.<br><br>It is manufactured from carbon tetrachloride by Swarts reaction and is widely used as a refrigerant and aerosol propellant.<br><br>Answer: Dichlorodifluoromethane", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67920e149a8109c6c5665ccb", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-09T14:00:00.000Z", "isVisible": true, "shortName": "2024 (09 May Shift 2)", "title": "MHT CET 2024 (09 May Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a260640279619d9d8a241e", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b87f20917a5f4189298", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-21T14:00:00.000Z", "isVisible": true, "shortName": "2021 (21 Sep Shift 2)", "title": "MHT CET 2021 (21 Sep Shift 2)"}], "question": {"text": "Which among the following statements about ozone depletion is NOT true?", "image": null}, "options": [{"id": "v4MI3", "text": "Depletion of ozone is most pronounced over Antarctica.", "image": null, "isCorrect": false}, {"id": "ZaCSP", "text": "Freons used in aerosol that enters into atmosphere causes depletion of ozone layer.", "image": null, "isCorrect": false}, {"id": "RbiFX", "text": "Nitrogen oxide released from cars causes ozone depletion.", "image": null, "isCorrect": false}, {"id": "REFUP", "text": "Due to ozone depletion less amount of UV radiations reaches to earth surface.", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "The ozone layer is mainly found in the lower portion of the earth's atmosphere. It has the potential to absorb around $97-99 \\%$ of the harmful ultraviolet radiations coming from the sun that can damage life on earth. If the ozone layer was absent, millions of people would develop skin diseases and may have weakened immune systems.\nDue to ozone depletion high amount of UV radiations reaches to earth surface", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b87f20917a5f4189298", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-21T14:00:00.000Z", "isVisible": true, "shortName": "2021 (21 Sep Shift 2)", "title": "MHT CET 2021 (21 Sep Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a260150279619d9d8a219d", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f74", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-20T14:00:00.000Z", "isVisible": true, "shortName": "2020 (20 Oct Shift 2)", "title": "MHT CET 2020 (20 Oct Shift 2)"}], "question": {"text": "Which of the following is NOT an example of freons?", "image": null}, "options": [{"id": "lsUgh", "text": "Dichloro difluoromethane", "image": null, "isCorrect": false}, {"id": "F4GcD", "text": "Diphenyl", "image": null, "isCorrect": true}, {"id": "bFb4p", "text": "Trichloro fluoromethane", "image": null, "isCorrect": false}, {"id": "aLp3i", "text": "Chloro difluoromethane", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Freons are chlorofluoro compounds of methane and ethane.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f74", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-20T14:00:00.000Z", "isVisible": true, "shortName": "2020 (20 Oct Shift 2)", "title": "MHT CET 2020 (20 Oct Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25ea10279619d9d8a15fd", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61c078cd071b5bb33b3f9f60", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "MHT CET 2012"}], "question": {"text": "The tetraethyl lead mixed in petrol works as", "image": null}, "options": [{"id": "1OlIq", "text": "cooling agent", "image": null, "isCorrect": false}, {"id": "vvhT5", "text": "anti-knocking agent", "image": null, "isCorrect": true}, {"id": "lCbV7", "text": "bleaching agent", "image": null, "isCorrect": false}, {"id": "jrqCh", "text": "None of the above", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Tetraethyl lead (TEL) is mixed in petrol as an anti-knocking agent. It increases octane number of petrol.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078cd071b5bb33b3f9f60", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "MHT CET 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "6792168d0aee93fa0796e197", "title": "Introduction to Nanochemistry", "totalQuestions": 3, "questions": [{"_id": "679214340aee93fa0796decb", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67920e149a8109c6c5665ccf", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-16T09:00:00.000Z", "isVisible": true, "shortName": "2024 (16 May Shift 1)", "title": "MHT CET 2024 (16 May Shift 1)"}], "question": {"text": "Identify one dimensional nanostructure from following.", "image": null}, "options": [{"id": "c3GmR", "text": "Nanowires", "image": null, "isCorrect": true}, {"id": "odFez", "text": "Nanoparticles", "image": null, "isCorrect": false}, {"id": "6nLnY", "text": "Thin films", "image": null, "isCorrect": false}, {"id": "iFIQC", "text": "Quantum dots", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Nanomaterials are classified based on the number of dimensions that are not confined to the nanoscale range ($<100$ nm).<br><br>Zero-dimensional (0D) nanostructures have all three dimensions in the nanoscale. Examples include nanoparticles and quantum dots.<br><br>One-dimensional (1D) nanostructures have two dimensions in the nanoscale and one dimension outside the nanoscale. Examples include nanowires, nanotubes, and nanorods.<br><br>Two-dimensional (2D) nanostructures have one dimension in the nanoscale and two dimensions outside the nanoscale. Examples include thin films and graphene.<br><br>Therefore, nanowires are one-dimensional nanostructures.<br><br>Answer: Nanowires", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67920e149a8109c6c5665ccf", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-16T09:00:00.000Z", "isVisible": true, "shortName": "2024 (16 May Shift 1)", "title": "MHT CET 2024 (16 May Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "679213c20aee93fa0796db4e", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67920e149a8109c6c5665cc5", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-10T09:00:00.000Z", "isVisible": true, "shortName": "2024 (10 May Shift 1)", "title": "MHT CET 2024 (10 May Shift 1)"}], "question": {"text": "Identify the instrument used to find the structure of surface of material.", "image": null}, "options": [{"id": "7VUMO", "text": "Scanning electron microscope", "image": null, "isCorrect": true}, {"id": "M6lP5", "text": "X ray diffractometer", "image": null, "isCorrect": false}, {"id": "WxDEl", "text": "Transmission electron microscope", "image": null, "isCorrect": false}, {"id": "EoeVl", "text": "UV-visible spectrophotometer", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "A Scanning Electron Microscope (SEM) produces images of a sample by scanning the surface with a focused beam of electrons. The electrons interact with atoms in the sample, producing various signals that contain information about the surface topography and composition of the material.<br><br>X-ray diffractometer is used to determine the crystal structure of a material.<br><br>Transmission electron microscope is used to view the internal structure of thin specimens.<br><br>UV-visible spectrophotometer is used to measure the absorbance or transmittance of light by a sample.<br><br>Answer: Scanning electron microscope", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67920e149a8109c6c5665cc5", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-10T09:00:00.000Z", "isVisible": true, "shortName": "2024 (10 May Shift 1)", "title": "MHT CET 2024 (10 May Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6792133c0aee93fa0796d735", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67920e139a8109c6c5665cc3", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-02T14:00:00.000Z", "isVisible": true, "shortName": "2024 (02 May Shift 2)", "title": "MHT CET 2024 (02 May Shift 2)"}], "question": {"text": "Which from following nanomaterials has two dimensions less than 100 nm ?", "image": null}, "options": [{"id": "F6DZ9", "text": "Nano wires", "image": null, "isCorrect": true}, {"id": "3NabH", "text": "Microcapsules", "image": null, "isCorrect": false}, {"id": "BbSTF", "text": "Quantum dots", "image": null, "isCorrect": false}, {"id": "KD4Vo", "text": "Nanorings", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Nanomaterials are classified based on the number of dimensions that are in the nanoscale range (typically $1$ to $100$ nm).<br><br>Zero-dimensional (0D) nanomaterials have all three dimensions in the nanoscale. Examples include quantum dots and nanoparticles.<br><br>One-dimensional (1D) nanomaterials have two dimensions in the nanoscale and one dimension outside the nanoscale. Examples include nanowires, nanotubes, and nanorods.<br><br>Two-dimensional (2D) nanomaterials have one dimension in the nanoscale and two dimensions outside the nanoscale. Examples include thin films and graphene.<br><br>Since nanowires are 1D nanomaterials, they have exactly two dimensions less than $100$ nm.<br><br>Answer: Nano wires", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67920e139a8109c6c5665cc3", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-02T14:00:00.000Z", "isVisible": true, "shortName": "2024 (02 May Shift 2)", "title": "MHT CET 2024 (02 May Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "6792168d0aee93fa0796e198", "title": "Water Pollution", "totalQuestions": 1, "questions": [{"_id": "6792139a0aee93fa0796da0f", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "67920e149a8109c6c5665cca", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-09T09:00:00.000Z", "isVisible": true, "shortName": "2024 (09 May Shift 1)", "title": "MHT CET 2024 (09 May Shift 1)"}], "question": {"text": "Which of the following solvents reduces the environmental pollution?", "image": null}, "options": [{"id": "Eyeh8", "text": "Water", "image": null, "isCorrect": true}, {"id": "sWigX", "text": "Dichloromethane", "image": null, "isCorrect": false}, {"id": "bKgi4", "text": "Trichloromethane", "image": null, "isCorrect": false}, {"id": "knLQa", "text": "Tetrachloromethane", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Green chemistry principles advocate the use of safer and environmentally friendly solvents to reduce pollution.<br><br>Water is considered a green solvent because it is non-toxic, non-flammable, abundant, and does not contribute to environmental pollution.<br><br>On the other hand, dichloromethane, trichloromethane, and tetrachloromethane are chlorinated organic solvents. They are highly volatile, toxic, and contribute significantly to environmental pollution, including ozone layer depletion and groundwater contamination.<br><br>Therefore, water is the solvent that reduces environmental pollution.<br><br>Answer: Water", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67920e149a8109c6c5665cca", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-09T09:00:00.000Z", "isVisible": true, "shortName": "2024 (09 May Shift 1)", "title": "MHT CET 2024 (09 May Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "68871e7abf9280d7f9933081", "title": "Land Pollution", "totalQuestions": 1, "questions": [{"_id": "68871b7abf9280d7f993299c", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "688376df9b67616acec78f75", "heldOn": "2025-04-22T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (22 Apr Shift 2)", "title": "MHT CET 2025 (22 Apr Shift 2)", "examId": "615d7745c52ffa3c944600e5"}], "question": {"text": "Which of the following is effectively used instead of DDT?", "image": null}, "options": [{"id": "J0Nf9", "text": "BHC", "image": null, "isCorrect": true}, {"id": "cf1qg", "text": "$\\mathrm{CHCl}_3$", "image": null, "isCorrect": false}, {"id": "fheew", "text": "$\\mathrm{CH}_2 \\mathrm{Cl}_2$", "image": null, "isCorrect": false}, {"id": "PNdRH", "text": "Picric acid", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "BHC (Benzene hexachloride), also known as Gammexane or Lindane, is a powerful insecticide.<br><br>Due to the adverse environmental effects of DDT, BHC is effectively used as a substitute for DDT in agriculture for pest control.<br><br>$\\mathrm{CHCl}_3$ (Chloroform) is used as a solvent and was formerly used as an anesthetic.<br><br>$\\mathrm{CH}_2 \\mathrm{Cl}_2$ (Dichloromethane) is used as a solvent and paint remover.<br><br>Picric acid is used in explosives and as a dye.<br><br>Answer: BHC", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "688376df9b67616acec78f75", "heldOn": "2025-04-22T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (22 Apr Shift 2)", "title": "MHT CET 2025 (22 Apr Shift 2)", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 5, "topicId": "65a263490279619d9d8a3dd4", "title": "Control of environmental pollution", "totalQuestions": 21, "questions": [{"_id": "6abb88a415a9fc0fc8c145a0", "type": "singleCorrect", "question": {"text": "Which of the following is NOT a role of green chemistry?", "image": null}, "options": [{"id": "bZHSW", "label": "A", "text": "To promote innovative chemical technologies not having pollution.", "isCorrect": false, "image": null}, {"id": "Qq21v", "label": "B", "text": "To eliminate the use of hazardous chemicals.", "isCorrect": false, "image": null}, {"id": "o5lkr", "label": "C", "text": "To protect the ozone layer.", "isCorrect": false, "image": null}, {"id": "Ipfax", "label": "D", "text": "Use of volatile solvents like $\\text{CCl}_4$.", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Green chemistry is a way of thinking and is about utilizing the existing knowledge and principles of chemistry and other sciences to reduce the adverse impact on the environment.<br><br>One of the principles of green chemistry is the use of safer solvents and auxiliaries. The use of volatile, toxic, and environmentally harmful solvents like $\\text{CCl}_4$ is discouraged in green chemistry because they can cause pollution and deplete the ozone layer.<br><br>Therefore, the use of volatile solvents like $\\text{CCl}_4$ is not a role of green chemistry.<br><br>Answer: Use of volatile solvents like $\\text{CCl}_4$.", "image": null}, "level": 1, "videoSolution": null, "previousYearPapers": [{"_id": "6abb87f02fe711bb1be9996e", "title": "MHT CET 2026 (19 May Shift 2)", "shortName": "2026 (19 May Shift 2)", "isVisible": true, "heldOn": "2026-05-19T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6abb87f02fe711bb1be9996e", "title": "MHT CET 2026 (19 May Shift 2)", "shortName": "2026 (19 May Shift 2)", "isVisible": true, "heldOn": "2026-05-19T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6abb884515a9fc0fc8c1421c", "type": "singleCorrect", "question": {"text": "Which of the following processes is according to principles of green chemistry?", "image": null}, "options": [{"id": "g8q7m", "label": "A", "text": "Running reactions at high temperatures to maximize production", "isCorrect": false, "image": null}, {"id": "hyVc8", "label": "B", "text": "Burning chemical waste for quick disposal", "isCorrect": false, "image": null}, {"id": "iS7vv", "label": "C", "text": "Replacing hazardous solvents with water or ethanol in synthesis", "isCorrect": true, "image": null}, {"id": "wDdcm", "label": "D", "text": "Increasing the use of petroleum-based feedstocks", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Green chemistry principles emphasize the design of chemical products and processes that reduce or eliminate the use or generation of hazardous substances.<br><br>Replacing hazardous solvents with safer alternatives like water or ethanol directly aligns with the principle of using safer solvents and auxiliaries.<br><br>Running reactions at high temperatures violates the principle of energy efficiency. Burning chemical waste violates the principle of waste prevention. Increasing the use of petroleum-based feedstocks violates the principle of using renewable feedstocks.<br><br>Answer: Replacing hazardous solvents with water or ethanol in synthesis", "image": null}, "level": 1, "videoSolution": null, "previousYearPapers": [{"_id": "6abb87f02fe711bb1be9996d", "title": "MHT CET 2026 (19 May Shift 1)", "shortName": "2026 (19 May Shift 1)", "isVisible": true, "heldOn": "2026-05-19T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6abb87f02fe711bb1be9996d", "title": "MHT CET 2026 (19 May Shift 1)", "shortName": "2026 (19 May Shift 1)", "isVisible": true, "heldOn": "2026-05-19T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6abb885515a9fc0fc8c142b2", "type": "singleCorrect", "question": {"text": "Bottom ash of thermal power stations can be used as raw material for cement and brick industry. This example illustrates which of the following principle of green chemistry?", "image": null}, "options": [{"id": "1RdPc", "label": "A", "text": "Atom economy", "isCorrect": false, "image": null}, {"id": "NU59G", "label": "B", "text": "Designing safer chemicals", "isCorrect": false, "image": null}, {"id": "063rO", "label": "C", "text": "Design for energy efficiency", "isCorrect": false, "image": null}, {"id": "CHZN9", "label": "D", "text": "Prevention of waste or by products", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Bottom ash is a waste product generated by thermal power stations, and its disposal poses a significant environmental challenge.<br><br>By utilizing this bottom ash as a raw material in the cement and brick industries, the accumulation of waste is avoided.<br><br>This practice directly aligns with the green chemistry principle of 'Prevention of waste or by products', which emphasizes minimizing waste generation rather than treating or cleaning up waste after it has been created.<br><br>Answer: Prevention of waste or by products", "image": null}, "level": 1, "videoSolution": null, "previousYearPapers": [{"_id": "6abb87f02fe711bb1be9996c", "title": "MHT CET 2026 (15 May Shift 2)", "shortName": "2026 (15 May Shift 2)", "isVisible": true, "heldOn": "2026-05-15T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6abb87f02fe711bb1be9996c", "title": "MHT CET 2026 (15 May Shift 2)", "shortName": "2026 (15 May Shift 2)", "isVisible": true, "heldOn": "2026-05-15T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6abb88b415a9fc0fc8c14636", "type": "singleCorrect", "question": {"text": "Identify a compound used as green solvent from following.", "image": null}, "options": [{"id": "oiGvP", "label": "A", "text": "$\\text{CH}_2\\text{Cl}_2$", "isCorrect": false, "image": null}, {"id": "vpCjH", "label": "B", "text": "$\\text{CHCl}_3$", "isCorrect": false, "image": null}, {"id": "9fea5", "label": "C", "text": "Super critical $\\text{CO}_2$", "isCorrect": true, "image": null}, {"id": "0MAVf", "label": "D", "text": "$\\text{CCl}_4$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Green solvents are environmentally friendly, non-toxic, and sustainable solvents used in chemical processes.<br><br>Chlorinated solvents such as $\\text{CH}_2\\text{Cl}_2$, $\\text{CHCl}_3$, and $\\text{CCl}_4$ are highly toxic, hazardous to health, and cause environmental pollution. They are not considered green solvents.<br><br>Supercritical $\\text{CO}_2$ is non-toxic, non-flammable, inexpensive, and can be easily removed and recycled without leaving harmful residues. Hence, it is widely used as a green solvent in various chemical processes and extractions.<br><br>Answer: Super critical $\\text{CO}_2$", "image": null}, "level": 1, "videoSolution": null, "previousYearPapers": [{"_id": "6abb87f02fe711bb1be9996b", "title": "MHT CET 2026 (15 May Shift 1)", "shortName": "2026 (15 May Shift 1)", "isVisible": true, "heldOn": "2026-05-15T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6abb87f02fe711bb1be9996b", "title": "MHT CET 2026 (15 May Shift 1)", "shortName": "2026 (15 May Shift 1)", "isVisible": true, "heldOn": "2026-05-15T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6abb88c415a9fc0fc8c146cc", "type": "singleCorrect", "question": {"text": "E.coli bacteria from water can be effectively removed by using-", "image": null}, "options": [{"id": "LuQ6u", "label": "A", "text": "Au-Nps", "isCorrect": false, "image": null}, {"id": "TLlJA", "label": "B", "text": "Pt-Nps", "isCorrect": false, "image": null}, {"id": "iLasb", "label": "C", "text": "Ag-Nps", "isCorrect": true, "image": null}, {"id": "1L9Bx", "label": "D", "text": "Si-Nps", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Silver nanoparticles (Ag-Nps) are well known for their strong antimicrobial and antibacterial properties. They are highly effective in destroying bacteria such as E. coli by disrupting their cell membranes and interfering with their metabolic processes. Therefore, Ag-Nps are widely used in water purification systems to effectively remove E. coli bacteria from water.<br><br>Answer: Ag-Nps", "image": null}, "level": 2, "videoSolution": null, "previousYearPapers": [{"_id": "6abb87ef2fe711bb1be99966", "title": "MHT CET 2026 (12 May Shift 2)", "shortName": "2026 (12 May Shift 2)", "isVisible": true, "heldOn": "2026-05-12T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6abb87ef2fe711bb1be99966", "title": "MHT CET 2026 (12 May Shift 2)", "shortName": "2026 (12 May Shift 2)", "isVisible": true, "heldOn": "2026-05-12T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6a44d2ba8c30a4553e1bdc2e", "type": "singleCorrect", "question": {"text": "Which of the following is a green alternative for dry cleaning solvents?", "image": null}, "options": [{"id": "bK6jt", "label": "A", "text": "Benzene", "isCorrect": false, "image": null}, {"id": "hciyF", "label": "B", "text": "Carbon tetrachloride", "isCorrect": false, "image": null}, {"id": "fPZmE", "label": "C", "text": "Perchloroethylene", "isCorrect": false, "image": null}, {"id": "qwfYG", "label": "D", "text": "Supercritical $\\text{CO}_2$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Tetrachloroethene (perchloroethylene) was traditionally used as a solvent for dry cleaning. However, it contaminates groundwater and is a suspected carcinogen.<br><br>To minimize environmental pollution and health hazards, green chemistry principles have led to the replacement of halogenated solvents with liquefied or supercritical $\\text{CO}_2$ along with a suitable detergent.<br><br>Using supercritical $\\text{CO}_2$ is a greener alternative as it is non-toxic, non-flammable, and does not contaminate groundwater.", "image": null}, "previousYearPapers": [{"_id": "6a44d27f2d2155b816ec4a6e", "title": "MHT CET 2026 (11 April Shift 1)", "shortName": "2026 (11 April Shift 1)", "isVisible": true, "heldOn": "2026-04-11T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "level": 1, "questionLabels": [], "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6a44d27f2d2155b816ec4a6e", "title": "MHT CET 2026 (11 April Shift 1)", "shortName": "2026 (11 April Shift 1)", "isVisible": true, "heldOn": "2026-04-11T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "68871bfebf9280d7f9932e4b", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "688376de9b67616acec78f6d", "heldOn": "2025-05-05T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (5 May Shift 2)", "title": "MHT CET 2025 (5 May Shift 2)", "examId": "615d7745c52ffa3c944600e5"}], "question": {"text": "Find principle of green chemistry to show protection of selective group is not advantageous.", "image": null}, "options": [{"id": "YP8wv", "text": "Use of renewable feed stock", "image": null, "isCorrect": false}, {"id": "B2GZs", "text": "Reduce number of derivatives", "image": null, "isCorrect": true}, {"id": "jRiZX", "text": "Use of catalysis", "image": null, "isCorrect": false}, {"id": "SfHa8", "text": "Design for degradation", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "According to the principles of green chemistry, Principle 8 is \"Reduce derivatives\".<br><br>Unnecessary derivatization, such as the use of blocking groups, protection/deprotection, and temporary modification of physical/chemical processes, should be minimized or avoided if possible. These additional steps require extra reagents and often generate more waste.<br><br>Therefore, the protection of a selective group is not advantageous, which aligns with the principle to reduce the number of derivatives.<br><br>Answer: Reduce number of derivatives", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "688376de9b67616acec78f6d", "heldOn": "2025-05-05T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (5 May Shift 2)", "title": "MHT CET 2025 (5 May Shift 2)", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "68871b8cbf9280d7f9932a46", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "688376df9b67616acec78f76", "heldOn": "2025-04-23T09:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (23 Apr Shift 1)", "title": "MHT CET 2025 (23 Apr Shift 1)", "examId": "615d7745c52ffa3c944600e5"}], "question": {"text": "Identify the principle suggesting to avoid protection and deprotection of selective group for organic reactions in green chemistry.", "image": null}, "options": [{"id": "0MTcn", "text": "Reduce derivatives", "image": null, "isCorrect": true}, {"id": "GgjCV", "text": "Use of renewable feed stock", "image": null, "isCorrect": false}, {"id": "1xCC9", "text": "Design for energy efficiency", "image": null, "isCorrect": false}, {"id": "VvGsy", "text": "Designing safer chemicals", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "According to the twelve principles of green chemistry, the principle 'Reduce derivatives' states that unnecessary derivatization, such as the use of blocking groups, protection, and deprotection, should be minimized or avoided if possible. This is because such steps require additional reagents and can generate waste.<br><br>Answer: Reduce derivatives", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "688376df9b67616acec78f76", "heldOn": "2025-04-23T09:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (23 Apr Shift 1)", "title": "MHT CET 2025 (23 Apr Shift 1)", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "68871b6abf9280d7f99328fe", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "688376df9b67616acec78f74", "heldOn": "2025-04-22T09:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (22 Apr Shift 1)", "title": "MHT CET 2025 (22 Apr Shift 1)", "examId": "615d7745c52ffa3c944600e5"}], "question": {"text": "Which of the following is used as Green solvent?", "image": null}, "options": [{"id": "RlLiD", "text": "Supercritical $\\mathrm{CO}_2$", "image": null, "isCorrect": true}, {"id": "pRXB7", "text": "$\\mathrm{CHCl}_3$", "image": null, "isCorrect": false}, {"id": "FrmHl", "text": "$\\mathrm{CH}_2 \\mathrm{Cl}_2$", "image": null, "isCorrect": false}, {"id": "30Ydd", "text": "$\\mathrm{CCl}_4$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Green chemistry promotes the use of environmentally friendly, non-toxic, and safe solvents. Halogenated solvents like $\\mathrm{CHCl}_3$, $\\mathrm{CH}_2 \\mathrm{Cl}_2$, and $\\mathrm{CCl}_4$ are toxic, volatile, and harmful to the environment.<br><br>Supercritical $\\mathrm{CO}_2$ is widely used as a green solvent because it is non-toxic, non-flammable, inexpensive, and can be easily removed by depressurization without leaving harmful residues.<br><br>Answer: Supercritical $\\mathrm{CO}_2$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "688376df9b67616acec78f74", "heldOn": "2025-04-22T09:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (22 Apr Shift 1)", "title": "MHT CET 2025 (22 Apr Shift 1)", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "68871b48bf9280d7f99327d2", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "688376de9b67616acec78f72", "heldOn": "2025-04-21T09:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (21 Apr Shift 1)", "title": "MHT CET 2025 (21 Apr Shift 1)", "examId": "615d7745c52ffa3c944600e5"}], "question": {"text": "Which of the following principal of green chemistry suggests use of chemicals made from plant based sources?", "image": null}, "options": [{"id": "rJicG", "text": "Minimisation of steps in process", "image": null, "isCorrect": false}, {"id": "1lRkE", "text": "Design for degradation", "image": null, "isCorrect": false}, {"id": "dLO5T", "text": "Use of renewable feed stocks", "image": null, "isCorrect": true}, {"id": "tDm4m", "text": "Reduce number of derivatives", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "The principle of green chemistry that suggests the use of chemicals made from plant-based sources is the \"Use of renewable feedstocks\". Plant-based sources (biomass) are renewable, whereas fossil fuels (petroleum, coal, natural gas) are depleting.<br><br>Answer: Use of renewable feed stocks", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "688376de9b67616acec78f72", "heldOn": "2025-04-21T09:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (21 Apr Shift 1)", "title": "MHT CET 2025 (21 Apr Shift 1)", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "68871b16bf9280d7f993262c", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "688376de9b67616acec78f6f", "heldOn": "2025-04-19T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (19 Apr Shift 2)", "title": "MHT CET 2025 (19 Apr Shift 2)", "examId": "615d7745c52ffa3c944600e5"}], "question": {"text": "Which solvent from following is used in order to avoid creation of waste and pollution of air?", "image": null}, "options": [{"id": "PVM1W", "text": "$\\mathrm{CH}_2 \\mathrm{Cl}_3$", "image": null, "isCorrect": false}, {"id": "3R3Bh", "text": "$\\mathrm{CHCl}_3$", "image": null, "isCorrect": false}, {"id": "g9soX", "text": "$\\mathrm{CCl}_4$", "image": null, "isCorrect": false}, {"id": "Zqk6H", "text": "$\\mathrm{H}_2 \\mathrm{O}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "According to the principles of green chemistry, the use of safer solvents is recommended to minimize environmental impact. Traditional organic solvents like $\\mathrm{CHCl}_3$ and $\\mathrm{CCl}_4$ are volatile, toxic, and contribute to air pollution and hazardous waste.<br><br>Water ($\\mathrm{H}_2\\mathrm{O}$) is considered a green solvent because it is non-toxic, non-flammable, inexpensive, and environmentally benign. Using water as a solvent helps in avoiding the creation of waste and prevents air pollution.<br><br>Answer: $\\mathrm{H}_2 \\mathrm{O}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "688376de9b67616acec78f6f", "heldOn": "2025-04-19T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (19 Apr Shift 2)", "title": "MHT CET 2025 (19 Apr Shift 2)", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "679213eb0aee93fa0796dc90", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "67920e149a8109c6c5665ccc", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-11T09:00:00.000Z", "isVisible": true, "shortName": "2024 (11 May Shift 1)", "title": "MHT CET 2024 (11 May Shift 1)"}], "question": {"text": "What is the percentage atom economy when formula weight of product obtained is 70 u and the sum of formula weight of reactant is 140 u ?", "image": null}, "options": [{"id": "N3xHP", "text": "$30 \\%$", "image": null, "isCorrect": false}, {"id": "zJts6", "text": "$35 \\%$", "image": null, "isCorrect": false}, {"id": "rNshQ", "text": "$50 \\%$", "image": null, "isCorrect": true}, {"id": "5K0jp", "text": "$75 \\%$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "The percentage atom economy is calculated using the formula:<br><br>$\\% \\text{ atom economy} = \\dfrac{\\text{Formula weight of the desired product}}{\\text{Sum of formula weights of all reactants}} \\times 100$<br><br>Substituting the given values:<br><br>$\\% \\text{ atom economy} = \\dfrac{70}{140} \\times 100$<br><br>$\\% \\text{ atom economy} = 50 \\%$<br><br>Answer: $50 \\%$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67920e149a8109c6c5665ccc", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-11T09:00:00.000Z", "isVisible": true, "shortName": "2024 (11 May Shift 1)", "title": "MHT CET 2024 (11 May Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "679213d30aee93fa0796dbce", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "67920e149a8109c6c5665cc4", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-10T14:00:00.000Z", "isVisible": true, "shortName": "2024 (10 May Shift 2)", "title": "MHT CET 2024 (10 May Shift 2)"}], "question": {"text": "Which from following reactions exhibits good atom economy according to the principles of green chemistry?", "image": null}, "options": [{"id": "eIivK", "text": "$\\begin{aligned} & \\mathrm{C}_4 \\mathrm{H}_9 \\mathrm{OH}+\\mathrm{NaBr}+\\mathrm{H}_2 \\mathrm{SO}_4 \\longrightarrow \\\\ & \\mathrm{C}_4 \\mathrm{H}_9 \\mathrm{Br}+\\mathrm{NaHSO}_4+\\mathrm{H}_2 \\mathrm{O}\\end{aligned}$", "image": null, "isCorrect": false}, {"id": "lCZjC", "text": "$\\mathrm{C}_2 \\mathrm{H}_4+\\mathrm{H}_2 \\xrightarrow{\\mathrm{Ni}} \\mathrm{C}_2 \\mathrm{H}_6$", "image": null, "isCorrect": true}, {"id": "39CJD", "text": "$\\mathrm{C}_2 \\mathrm{H}_5 \\mathrm{OH}+\\mathrm{C}_2 \\mathrm{H}_5 \\mathrm{COOH} \\longrightarrow \\mathrm{C}_2 \\mathrm{H}_5 \\mathrm{COOC}_2 \\mathrm{H}_5+\\mathrm{H}_2 \\mathrm{O}$", "image": null, "isCorrect": false}, {"id": "EIhGo", "text": "$\\begin{aligned} & \\mathrm{C}_4 \\mathrm{H}_9 \\mathrm{OH}+\\mathrm{SOCl}_2 \\xrightarrow{\\Delta} \\mathrm{C}_4 \\mathrm{H}_9 \\mathrm{Cl}+\\mathrm{HCl}+ \\\\ & \\mathrm{SO}_2\\end{aligned}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Atom economy is a measure of the proportion of reactant atoms that become part of the desired product in a chemical reaction. It is calculated as the ratio of the molecular mass of the desired product to the sum of the molecular masses of all reactants, multiplied by $100$.<br><br>A reaction with $100\\%$ atom economy incorporates all the atoms from the reactants into the final product, producing no byproducts. Addition reactions typically have $100\\%$ atom economy.<br><br>In the reaction $\\mathrm{C}_2 \\mathrm{H}_4+\\mathrm{H}_2 \\xrightarrow{\\mathrm{Ni}} \\mathrm{C}_2 \\mathrm{H}_6$, all the reactant atoms are converted into the single product $\\mathrm{C}_2 \\mathrm{H}_6$. There are no byproducts formed. Therefore, this reaction exhibits $100\\%$ atom economy.<br><br>The other given reactions produce byproducts such as $\\mathrm{NaHSO}_4$, $\\mathrm{H}_2 \\mathrm{O}$, $\\mathrm{HCl}$, and $\\mathrm{SO}_2$, which lowers their atom economy.<br><br>Answer: $\\mathrm{C}_2 \\mathrm{H}_4+\\mathrm{H}_2 \\xrightarrow{\\mathrm{Ni}} \\mathrm{C}_2 \\mathrm{H}_6$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67920e149a8109c6c5665cc4", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-10T14:00:00.000Z", "isVisible": true, "shortName": "2024 (10 May Shift 2)", "title": "MHT CET 2024 (10 May Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "679213ad0aee93fa0796daa7", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67920e149a8109c6c5665ccb", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-09T14:00:00.000Z", "isVisible": true, "shortName": "2024 (09 May Shift 2)", "title": "MHT CET 2024 (09 May Shift 2)"}], "question": {"text": "Which from following polymers is believed to leach human carcinogen in to food when used as household plastic?", "image": null}, "options": [{"id": "BSm3f", "text": "LDPE", "image": null, "isCorrect": false}, {"id": "xWVHS", "text": "PP", "image": null, "isCorrect": false}, {"id": "Rj6AL", "text": "PS", "image": null, "isCorrect": true}, {"id": "QeWyj", "text": "PET", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Polystyrene (PS) is a synthetic aromatic polymer made from the monomer styrene. When used as household plastic, such as in food containers or cups, it is believed to leach styrene into food and beverages, especially when heated. Styrene has been classified as a possible human carcinogen.<br><br>Other polymers like LDPE (Low-Density Polyethylene), PP (Polypropylene), and PET (Polyethylene Terephthalate) are generally considered safer for food contact and do not leach known carcinogens under normal conditions.<br><br>Answer: PS", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67920e149a8109c6c5665ccb", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-09T14:00:00.000Z", "isVisible": true, "shortName": "2024 (09 May Shift 2)", "title": "MHT CET 2024 (09 May Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6792134d0aee93fa0796d7b5", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "67920e149a8109c6c5665cc6", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-03T09:00:00.000Z", "isVisible": true, "shortName": "2024 (03 May Shift 1)", "title": "MHT CET 2024 (03 May Shift 1)"}], "question": {"text": "Which from following statements is NOT true according to principles of green chemistry?", "image": null}, "options": [{"id": "s4Ss8", "text": "It is good to use the technique of protection and deprotection of functional group in organic synthesis.", "image": null, "isCorrect": true}, {"id": "T0mpW", "text": "Use of chemicals derived from plant resource is better than crude oil.", "image": null, "isCorrect": false}, {"id": "STScl", "text": "Use of biodegradable pesticides is advantageous.", "image": null, "isCorrect": false}, {"id": "61PJ7", "text": "Use of critical $\\mathrm{CO}_2$ as solvent is better than organic solvents.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "According to the eighth principle of green chemistry (Reduce derivatives), unnecessary derivatization such as the use of blocking groups, protection, and deprotection should be minimized or avoided if possible. Such steps require additional reagents and can generate significant amounts of waste.<br><br>Therefore, the statement that it is good to use the technique of protection and deprotection of functional groups in organic synthesis is not true.<br><br>The other statements align with the principles of green chemistry:<br>Using chemicals derived from plant resources follows the principle of using renewable feedstocks.<br>Using biodegradable pesticides follows the principle of designing chemicals for degradation.<br>Using supercritical $\\mathrm{CO}_2$ as a solvent follows the principle of using safer solvents and auxiliaries.<br><br>Answer: It is good to use the technique of protection and deprotection of functional group in organic synthesis.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67920e149a8109c6c5665cc6", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-03T09:00:00.000Z", "isVisible": true, "shortName": "2024 (03 May Shift 1)", "title": "MHT CET 2024 (03 May Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a2626e0279619d9d8a3479", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b89f20917a5f41892b4", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-14T09:00:00.000Z", "isVisible": true, "shortName": "2023 (14 May Shift 1)", "title": "MHT CET 2023 (14 May Shift 1)"}], "question": {"text": "Calculate the percent atom economy when a product of formula weight $175 \\mathrm{u}$ is obtained in a chemical reaction using $225 \\mathrm{u}$ formula weight reactant.", "image": null}, "options": [{"id": "ZksTx", "text": "$70.1 \\%$", "image": null, "isCorrect": false}, {"id": "kgQVM", "text": "$77.7 \\%$", "image": null, "isCorrect": true}, {"id": "VTZF8", "text": "$90.5 \\%$", "image": null, "isCorrect": false}, {"id": "La3zc", "text": "$95.0 \\%$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\%$ atom economy\n$$\n\\begin{aligned}\n& =\\frac{\\text { Formula weight of the desired product }}{\\text { Sum of formula weight of all the reactants }} \\times 100 \\\\\n& \\text { used in the reaction } \\\\\n& =\\frac{175 \\mathrm{u}}{225 \\mathrm{u}} \\times 100 \\\\\n& =77.7 \\%\n\\end{aligned}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b89f20917a5f41892b4", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-14T09:00:00.000Z", "isVisible": true, "shortName": "2023 (14 May Shift 1)", "title": "MHT CET 2023 (14 May Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a261d50279619d9d8a2fb1", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b88f20917a5f41892ac", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-10T09:00:00.000Z", "isVisible": true, "shortName": "2023 (10 May Shift 1)", "title": "MHT CET 2023 (10 May Shift 1)"}], "question": {"text": "Which among following statements is NOT true according to principles of green chemistry?", "image": null}, "options": [{"id": "kPwy5", "text": "In a chemical synthesis the waste product should be zero or minimum.", "image": null, "isCorrect": false}, {"id": "oHQTh", "text": "Good atom economy means very few atoms of reactants are incorporated in the product.", "image": null, "isCorrect": true}, {"id": "vs0vR", "text": "Only small amounts of unwanted by products are formed.", "image": null, "isCorrect": false}, {"id": "3yxMN", "text": "Use of lindane is better than DDT.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Good atom economy means most of the atoms of the reactants are incorporated in the desired products and only small amounts of unwanted byproducts are formed and hence lesser problems of waste disposal.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b88f20917a5f41892ac", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-10T09:00:00.000Z", "isVisible": true, "shortName": "2023 (10 May Shift 1)", "title": "MHT CET 2023 (10 May Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a2619f0279619d9d8a2e07", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b88f20917a5f41892a9", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-11T09:00:00.000Z", "isVisible": true, "shortName": "2022 (11 Aug Shift 1)", "title": "MHT CET 2022 (11 Aug Shift 1)"}], "question": {"text": "Which among the following statements is NOT true according to principles of green chemistry?", "image": null}, "options": [{"id": "zqgzd", "text": "Use of catalyst minimize waste.", "image": null, "isCorrect": false}, {"id": "BtsrM", "text": "Benzene being volatile compound pollutes air.", "image": null, "isCorrect": false}, {"id": "Vd6LQ", "text": "Carrying out reactions at high temperature and high pressure minimizes use of energy.", "image": null, "isCorrect": true}, {"id": "Imf9r", "text": "Use renewable chemicals rather than crude oil.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Theory based", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b88f20917a5f41892a9", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-11T09:00:00.000Z", "isVisible": true, "shortName": "2022 (11 Aug Shift 1)", "title": "MHT CET 2022 (11 Aug Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a261540279619d9d8a2bae", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b88f20917a5f41892a5", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-08T09:00:00.000Z", "isVisible": true, "shortName": "2022 (08 Aug Shift 1)", "title": "MHT CET 2022 (08 Aug Shift 1)"}], "question": {"text": "Which among the following is an example of 2-dimensional nanostructure?", "image": null}, "options": [{"id": "MyEFh", "text": "Microcapsules", "image": null, "isCorrect": false}, {"id": "Ox8so", "text": "Nanowires", "image": null, "isCorrect": false}, {"id": "g4kD2", "text": "Thin films", "image": null, "isCorrect": true}, {"id": "6qzDa", "text": "Nanorings", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Thin films are an example of 2-dimensional nanostructure.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b88f20917a5f41892a5", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-08T09:00:00.000Z", "isVisible": true, "shortName": "2022 (08 Aug Shift 1)", "title": "MHT CET 2022 (08 Aug Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a2610b0279619d9d8a295a", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b87f20917a5f41892a1", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-06T09:00:00.000Z", "isVisible": true, "shortName": "2022 (06 Aug Shift 1)", "title": "MHT CET 2022 (06 Aug Shift 1)"}], "question": {"text": "Which among following statements is NOT a principle of green chemistry?", "image": null}, "options": [{"id": "ZfIpW", "text": "Effluents of one industry can be used as coolant for thermal power stations.", "image": null, "isCorrect": false}, {"id": "qZQRW", "text": "To develop technology for zero waste.", "image": null, "isCorrect": false}, {"id": "dOcSL", "text": "To give priority for prevention of waste.", "image": null, "isCorrect": false}, {"id": "GGMaX", "text": "It aims to dump waste product formed in one system instead to use as raw material for other system.", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Theory based", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b87f20917a5f41892a1", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-06T09:00:00.000Z", "isVisible": true, "shortName": "2022 (06 Aug Shift 1)", "title": "MHT CET 2022 (06 Aug Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a260e20279619d9d8a280f", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b87f20917a5f418929f", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-05T09:00:00.000Z", "isVisible": true, "shortName": "2022 (05 Aug Shift 1)", "title": "MHT CET 2022 (05 Aug Shift 1)"}], "question": {"text": "Which among the following statements is against to the principles of green chemistry?", "image": null}, "options": [{"id": "LtEVj", "text": "Protecting and deprotecting functional groups in organic reactions reduces the number of steps.", "image": null, "isCorrect": true}, {"id": "VqTmn", "text": "Unnecessary derivatization should be minimized.", "image": null, "isCorrect": false}, {"id": "GWsHr", "text": "Use of biodegradable polymers help to clean the environment.", "image": null, "isCorrect": false}, {"id": "rgK7R", "text": "Use of renewable resource ensures the sharing of resources by future generations.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Protecting and deprotecting functional groups in organic reactions reduces the number of steps.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b87f20917a5f418929f", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2022-08-05T09:00:00.000Z", "isVisible": true, "shortName": "2022 (05 Aug Shift 1)", "title": "MHT CET 2022 (05 Aug Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'MHT CET';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

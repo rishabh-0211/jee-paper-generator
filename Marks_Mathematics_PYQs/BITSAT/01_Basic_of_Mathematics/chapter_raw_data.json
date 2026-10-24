@@ -1,0 +1,836 @@
+{
+  "index": 1,
+  "chapterId": "61e7bd81ce5dab43c54c1c10",
+  "chapter": "Basic of Mathematics",
+  "exam": "BITSAT",
+  "subject": "Mathematics",
+  "totalTopics": 4,
+  "totalQuestions": 12,
+  "downloadTime": "2026-10-08 20:36:41",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e8786f5bfc7ab78aee89",
+      "title": "Divisibility Test",
+      "totalQuestions": 3,
+      "questions": [
+        {
+          "_id": "65b7b88097ae24e9e2db8cfc",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "If $n$ is a positive integer, then $2.4^{2 n+1}+3^{3 n+1}$ is divisible by:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "JiqZt",
+              "text": "<br />2",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "7CrTa",
+              "text": "<br />7",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "L2pBP",
+              "text": "<br />11",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "nPr79",
+              "text": "<br />27",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $P(n)=2 \\cdot 4^{2 n+1}+3^{3 n+1}$<br />Then $P(1)=2.4^3+3^4=209$, which is divisible by 11 but not divisible by 2,7 or 27 .<br />Further, let $P(k)=2.4^{2 k+1}+3^{3 k+1}$ is divisible by 11 , that is,<br />$2.4^{2 k+1}+3^{3 k+1}=11 q$ for some integer q. Now<br />$\\begin{aligned}<br />\\mathrm{P}(\\mathrm{k}+1) & =2 \\cdot 4^{2 \\mathrm{k}+3}+3^{3 \\mathrm{k}+4} \\\\<br />& =2 \\cdot 4^{2 \\mathrm{k}+1} \\cdot 4^2+3^{3 \\mathrm{k}+1} \\cdot 3^3 \\\\<br />& =16 \\cdot 2 \\cdot 4^{2 \\mathrm{k}+1}+27 \\cdot 3^{3 \\mathrm{k}+1} \\\\<br />& =16 \\cdot 2 \\cdot 4^{2 \\mathrm{k}+1}+(16+11) \\cdot 3^{3 \\mathrm{k}+1} \\\\<br />& =16\\left[2 \\cdot 4^{2 \\mathrm{k}+1}+3^{3 \\mathrm{k}+1}\\right]+11 \\cdot 3^{3 \\mathrm{k}+1} \\\\<br />& =16 \\cdot 11 \\mathrm{q}+11 \\cdot 3^{3 \\mathrm{k}+1} \\\\<br />& =11\\left(16 \\mathrm{q}+3^{3 \\mathrm{k}+1}\\right)=11 \\mathrm{~m}<br />\\end{aligned}$<br />where $m=16 q+3^{3 k+1}$ is another integer.<br />$\\therefore \\mathrm{P}(\\mathrm{k}+1)$ is divisible by 11 .",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c26f5bfc7ab78ae7a3",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The greatest positive integer, which divides\r\n\r\n$\\mathrm{n}(\\mathrm{n}+1)(\\mathrm{n}+2)(\\mathrm{n}+3)$ for all $\\mathrm{n} \\in \\mathbf{N},$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "4UU4Q",
+              "text": "2",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "nfzO8",
+              "text": "6",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "qzpOP",
+              "text": "24",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "UKBpl",
+              "text": "120",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The product of $\\mathrm{r}$ consecutive integers is divisible byr! . Thus $n(n+1)(n+2)(n+3)$ is divisible by $4 !=24$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c26f5bfc7ab78ae7a2",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "$2^{3 n}-7 n-1$ is divisible by",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "mjQJR",
+              "text": "64",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "wvifx",
+              "text": "36",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "biDsz",
+              "text": "49",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "RjLt9",
+              "text": "25",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$2^{3 n}-7 n-1 \\quad$ Taking $n=2 ;$\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n2^{6}-7 \\times 2-1 \\\\\r\n\r\n=64-15=49\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nTherefore this is divisible by 49 .",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e8786f5bfc7ab78aee88",
+      "title": "Ratio and Proportion",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e7a96f5bfc7ab78ae6cc",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "Prabhat wants to invest the total amount of $Rs 15,000$ in saving certificates and national saving bonds. According to rules, he has to invest at least $Rs 2000$ in saving certificates and $Rs 2500$ in national saving bonds. The interest rate is $8 \\%$ on saving certificate and $10 \\%$ on national saving bonds per annum. He invest $Rs$ x in saving certificate and $Rs$ y in national saving bonds. Then the objective function for this problem is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "QYDlj",
+              "text": "$0.08 \\mathrm{x}+0.10 \\mathrm{y}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "QUTQh",
+              "text": "$\\frac{x}{2000}+\\frac{y}{2500}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "qWrgC",
+              "text": "$2000 \\mathrm{x}+2500 \\mathrm{y}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Fdd00",
+              "text": "$\\frac{x}{8}+\\frac{y}{10}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The function is given by profit function\r\n$$\r\n=x \\cdot \\frac{8}{100}+y \\times \\frac{10}{100}=0.08+0.10 y .\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e8786f5bfc7ab78aee8a",
+      "title": "Logarithm",
+      "totalQuestions": 3,
+      "questions": [
+        {
+          "_id": "64c0e80d6f5bfc7ab78aea2d",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><msub><mi>log</mi><mn>5</mn></msub><mn>3</mn><mo>+</mo><msub><mi>log</mi><mn>7</mn></msub><mn>5</mn><mo>+</mo><msub><mi>log</mi><mn>9</mn></msub><mn>7</mn></math>, then",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "pc8HQ",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>&#62;</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "oPviW",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>&#62;</mo><mfrac><mn>1</mn><mroot><mn>2</mn><mn>3</mn></mroot></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "RGzZ7",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>&#62;</mo><mfrac><mn>3</mn><mroot><mn>2</mn><mn>3</mn></mroot></mfrac></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "INFMy",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>&#62;</mo><mroot><mn>2</mn><mn>3</mn></mroot></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<blockquote><p>We have, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><msub><mi>log</mi><mn>5</mn></msub><mn>3</mn><mo>+</mo><msub><mi>log</mi><mn>7</mn></msub><mn>5</mn><mo>+</mo><msub><mi>log</mi><mn>9</mn></msub><mn>7</mn></math></p><p>Using&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>AM</mi><mo>&#8805;</mo><mi>GM</mi></math>&nbsp;for three positive real numbers&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi></mrow><mn>3</mn></mfrac><mo>&#8805;</mo><msup><mfenced><mrow><mi>a</mi><mi>b</mi><mi>c</mi></mrow></mfenced><mfrac bevelled=\"true\"><mn>1</mn><mn>3</mn></mfrac></msup></math>. Equality holds when&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>=</mo><mi>b</mi><mo>=</mo><mi>c</mi><mo>.</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mfrac><mrow><msub><mi>log</mi><mn>5</mn></msub><mn>3</mn><mo>+</mo><msub><mi>log</mi><mn>7</mn></msub><mn>5</mn><mo>+</mo><msub><mi>log</mi><mn>9</mn></msub><mn>7</mn></mrow><mn>3</mn></mfrac><mo>&#62;</mo><msup><mfenced><mrow><msub><mi>log</mi><mn>5</mn></msub><mn>3</mn><mo>&#183;</mo><msub><mi>log</mi><mn>7</mn></msub><mn>5</mn><mo>&#183;</mo><msub><mi>log</mi><mn>9</mn></msub><mn>7</mn></mrow></mfenced><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup></math><math xmlns=\"http://www.w3.org/1998/Math/MathML\"></math><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>x</mi><mo>&#62;</mo><mn>3</mn><msup><mfenced><mrow><mfrac><mrow><mi>log</mi><mn>3</mn></mrow><mrow><mi>log</mi><mn>5</mn></mrow></mfrac><mo>&#215;</mo><mfrac><mrow><mi>log</mi><mn>5</mn></mrow><mrow><mi>log</mi><mn>7</mn></mrow></mfrac><mo>&#215;</mo><mfrac><mrow><mi>log</mi><mn>7</mn></mrow><mrow><mi>log</mi><mn>9</mn></mrow></mfrac></mrow></mfenced><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>x</mi><mo>&#62;</mo><mn>3</mn><msup><mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></mfenced><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>&#8658;</mo><mi>x</mi><mo>&#62;</mo><mfrac><mn>3</mn><mroot><mn>2</mn><mn>3</mn></mroot></mfrac></math></p></blockquote>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7f26f5bfc7ab78ae93d",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>2</mn><mrow><mn>1</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><mrow><mn>2</mn><mo>+</mo><mn>4</mn></mrow><mrow><mn>2</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><mrow><mn>2</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>6</mn></mrow><mrow><mn>3</mn><mo>!</mo></mrow></mfrac><mo>+</mo><mo>&#8230;</mo><mo>.</mo></math> is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "S8MG3",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>e</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "rB2jo",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi>e</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "58ybT",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mi>e</mi></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "pZTqu",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Here,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>T</mi><mi>n</mi></msub><mo>=</mo><mfrac><mrow><mi>n</mi><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow><mrow><mi>n</mi><mo>!</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>n</mi><mo>-</mo><mn>1</mn><mo>+</mo><mn>2</mn></mrow><mrow><mo>(</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>!</mo></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mo>(</mo><mi>n</mi><mo>-</mo><mn>2</mn><mo>)</mo><mo>!</mo></mrow></mfrac><mo>+</mo><mfrac><mn>2</mn><mrow><mo>(</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>!</mo></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi>S</mi><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mo>&#8734;</mo></munderover><msub><mi>T</mi><mi>n</mi></msub><mo>=</mo><munderover><mo>&#8721;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mo>&#8734;</mo></munderover><mfrac><mn>1</mn><mrow><mo>(</mo><mi>n</mi><mo>-</mo><mn>2</mn><mo>)</mo><mo>!</mo></mrow></mfrac><mo>+</mo><mn>2</mn><munderover><mo>&#8721;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mo>&#8734;</mo></munderover><mfrac><mn>1</mn><mrow><mo>(</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>!</mo></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mi>e</mi><mo>+</mo><mn>2</mn><mi>e</mi><mo>=</mo><mn>3</mn><mi>e</mi></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ee6f5bfc7ab78ae91b",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>=</mo><msub><mi>log</mi><mn>2</mn></msub><mn>3</mn><mo>,</mo><mi>b</mi><mo>=</mo><msub><mi>log</mi><mn>2</mn></msub><mn>5</mn></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>c</mi><mo>=</mo><msub><mi>log</mi><mn>7</mn></msub><mn>2</mn></math>, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>log</mi><mn>140</mn></msub><mn>63</mn></math> in terms of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></math> is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "vBImD",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>2</mn><mi>a</mi><mi>c</mi><mo>+</mo><mn>1</mn></mrow><mrow><mn>2</mn><mi>c</mi><mo>+</mo><mi>a</mi><mi>b</mi><mi>c</mi><mo>+</mo><mn>1</mn></mrow></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "cgw8T",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>2</mn><mi>a</mi><mi>c</mi><mo>+</mo><mn>1</mn></mrow><mrow><mn>2</mn><mi>a</mi><mo>+</mo><mi>c</mi><mo>+</mo><mi>a</mi></mrow></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "vlsJ5",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>2</mn><mi>a</mi><mi>c</mi><mo>+</mo><mn>1</mn></mrow><mrow><mn>2</mn><mi>c</mi><mo>+</mo><mi>a</mi><mi>b</mi><mo>+</mo><mi>a</mi></mrow></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "pzSQp",
+              "text": "None of these",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>We have,&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>log</mi><mn>140</mn></msub><mn>63</mn><mo>=</mo><msub><mi>log</mi><mrow><msup><mn>2</mn><mn>2</mn></msup><mo>&#215;</mo><mn>5</mn><mo>&#215;</mo><mn>7</mn></mrow></msub><mo>(</mo><mn>3</mn><mo>&#215;</mo><mn>3</mn><mo>&#215;</mo><mn>7</mn><mo>)</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><msub><mi>log</mi><mn>2</mn></msub><mo>(</mo><mn>3</mn><mo>&#215;</mo><mn>3</mn><mo>&#215;</mo><mn>7</mn><mo>)</mo></mrow><mrow><msub><mi>log</mi><mn>2</mn></msub><mfenced><mrow><msup><mn>2</mn><mn>2</mn></msup><mo>&#215;</mo><mn>5</mn><mo>&#215;</mo><mn>7</mn></mrow></mfenced></mrow></mfrac><mo>=</mo><mfrac><mrow><msub><mi>log</mi><mn>2</mn></msub><mn>3</mn><mo>+</mo><msub><mi>log</mi><mn>2</mn></msub><mn>3</mn><mo>+</mo><msub><mi>log</mi><mn>2</mn></msub><mn>7</mn></mrow><mrow><mn>2</mn><msub><mi>log</mi><mn>2</mn></msub><mn>2</mn><mo>+</mo><msub><mi>log</mi><mn>2</mn></msub><mn>5</mn><mo>+</mo><msub><mi>log</mi><mn>2</mn></msub><mn>7</mn></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mn>2</mn><mi>a</mi><mo>+</mo><mfrac><mn>1</mn><mi>c</mi></mfrac></mrow><mrow><mn>2</mn><mo>+</mo><mi>b</mi><mo>+</mo><mfrac><mn>1</mn><mi>c</mi></mfrac></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mi>a</mi><mi>c</mi><mo>+</mo><mn>1</mn></mrow><mrow><mn>2</mn><mi>c</mi><mo>+</mo><mi>b</mi><mi>c</mi><mo>+</mo><mn>1</mn></mrow></mfrac></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "64c0e8786f5bfc7ab78aee87",
+      "title": "Inequalities",
+      "totalQuestions": 5,
+      "questions": [
+        {
+          "_id": "65b7b88197ae24e9e2db8d0a",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "The solution set of $(x-2)^{x^3-6 x+8}>1$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "oAdmf",
+              "text": "$(2, \\infty)$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8zlZf",
+              "text": "$(2,3) \\cup(4, \\infty)$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "hJqX8",
+              "text": "$(4,5) \\cup(5, \\infty)$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4ckhg",
+              "text": "$(2,3) \\cup(4,5)$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Clearly $x>2$. Write the given inequality<br />as<br />$\\begin{aligned}<br />& \\left(x^2-6 x+8\\right) \\log (x-2)>0 \\Leftrightarrow(x-2)(x-4) \\log (x-2)> \\\\<br />& 0 \\\\<br />& \\Leftrightarrow(x-4) \\log (x-2)>0 \\quad[\\therefore x>2]<br />\\end{aligned}$<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/3oxXvNf76QSQceF-Ow1dFlaYH4BOy9y9a8VtiBEtZ-E.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e81b6f5bfc7ab78aeaa9",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "If $x, y$ and $z$ are real numbers, the $x^{2}+4 y^{2}+9 z^{2}-6 y z-3 z x-2 x y$ is always",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ESRNK",
+              "text": "positive",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "w8y6P",
+              "text": "non-positive",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "dL5Gj",
+              "text": "zero",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "I9tpf",
+              "text": "non-negative",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$x^{2}+4 y^{2}+9 z^{2}-6 y z-3 z x-2 x y$\r\n\r\n$=x^{2}+(2 y)^{2}+(3 z)^{2}-(2 y)(3 z)-(3 z)(x)-$ $x(2 y) \\geq 0 \\forall x, y, z$\r\n\r\n$\\left[\\because \\mathrm{a}^{2}+\\mathrm{b}^{2}+\\mathrm{c}^{2}-\\mathrm{ab}-\\mathrm{bc}-\\mathrm{ca} \\geq 0\\right]$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b46f5bfc7ab78ae727",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If x satisfies $|3 x-2|+|3 x-4|+|3 x-6| \\geq 12$, then",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "57T02",
+              "text": "$0 \\leq \\mathrm{x} \\geq \\frac{8}{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "T5SXv",
+              "text": "$x \\geq \\frac{8}{3}$ or $\\frac{-4}{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Q4H9R",
+              "text": "$x \\leq 0$ or $x \\geq \\frac{8}{3}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "ROUu9",
+              "text": "$x \\geq 2$ only",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Dividing $\\mathrm{R}$ at $\\frac{2}{3}, \\frac{4}{3}$ and $2,$ analyse 4 cases. When $\\mathrm{x} \\leq \\frac{2}{3},$ the inequality becomes $2-3 x+4-3 x+6-3 x \\geq 12$\r\n\r\nimplying $-9 x \\geq 0 \\Rightarrow x \\leq 0$\r\n\r\nwhen $\\mathrm{x} \\geq 2$ the ineqality becomes $3 x-2+3 x-4+3 x-6 \\geq 12$\r\n\r\nImplying $9 \\mathrm{x} \\geq 24 \\Rightarrow \\mathrm{x} \\geq 8 / 3$\r\n\r\nThe inequality in invalid in the other two sections.\r\n\r\n$\\therefore$ either $x \\leq 0$ or $x \\geq 8 / 3$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b46f5bfc7ab78ae726",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The set of all real $x$ satisfying the inequality\r\n\r\n$\\frac{3-|x|}{4-|x|} \\geq 0,$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Oiv9f",
+              "text": "[-3,3]$\\cup(-\\infty,-4) \\cup(4, \\infty)$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "EJRsH",
+              "text": "$(-\\infty,-4) \\cup(4, \\infty)$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "PkaJb",
+              "text": "$(-\\infty,-3) \\cup(4, \\infty)$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "egi38",
+              "text": "$(-\\infty,-3) \\cup(3, \\infty)$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given, $\\frac{3-|x|}{4-|x|} \\geq 0$\r\n\r\n$\\Rightarrow 3-|x| \\leq 0$ and $4-|x|<0$\r\n\r\nor $3-|x| \\geq 0$ and $4-|x|<0$\r\n\r\n$\\Rightarrow|x| \\geq 3$ and $|x|>4$\r\n\r\nor $|x| \\leq 3$ and $|x|<4$\r\n\r\n$\\Rightarrow|x|>4$ or $|x| \\leq 3$\r\n\r\n$\\Rightarrow x \\in(-\\infty,-4) \\cup[-3,3] \\cup(4, \\infty)$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a46f5bfc7ab78ae6a5",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Let $x$ and $y$ be two natural numbers such that $x y=12(x+y)$ and $x \\leq y$. Then the total number of pairs $(x, y)$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "AZGY0",
+              "text": "8",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "fZHC8",
+              "text": "6",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "lR3oq",
+              "text": "4",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "uFXtD",
+              "text": "16",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$x y-12 x-12 y=0 \\Rightarrow(x-12)(y-12)=144$\r\nNow 144 can be factorised into two factors $x$ and $y$ where $x \\leq y$ and the factors are (1,144),(2,72),(3,48),(4,36),(6,24),(8,18)\r\n(9,16),(12,12)\r\nThus there are eight solutions.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

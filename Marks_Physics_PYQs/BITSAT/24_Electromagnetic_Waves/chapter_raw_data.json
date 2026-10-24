@@ -1,0 +1,688 @@
+{
+  "index": 24,
+  "chapterId": "61e7bd75cfe22022f28241f6",
+  "chapter": "Electromagnetic Waves",
+  "exam": "BITSAT",
+  "subject": "Physics",
+  "totalTopics": 2,
+  "totalQuestions": 10,
+  "downloadTime": "2026-10-08 20:28:13",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e85a6f5bfc7ab78aed34",
+      "title": "Electromagnetic Waves and Maxwell's equations",
+      "totalQuestions": 9,
+      "questions": [
+        {
+          "_id": "67726d10c49e8ef28ee2b3f8",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "A parallel plate capacitor consists of two circular plates of radius $R=0.1 \\mathrm{~m}$. They are separated by a short distance. If electric field between the capacitor plates changes as $\\frac{d E}{d t}=6 \\times 10^{13} \\frac{\\mathrm{~V}}{\\mathrm{~m} \\times \\mathrm{s}}$, then the value of displacement current is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ijhBW",
+              "text": "15.25 A",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Kld9N",
+              "text": "6.25 A",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "zLKfm",
+              "text": "16.67 A",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "C5cOf",
+              "text": "4.69 A",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given, area of plates, $A=\\pi R^2=3.14 \\times(0.1)^2 \\mathrm{~m}^2$ and $\\frac{d E}{d t}=6 \\times 10^{13} \\frac{\\mathrm{~V}}{\\mathrm{~m} \\times \\mathrm{s}}$\nDisplacement current between the plates,\n$\\begin{aligned}\nI_d & =\\varepsilon_0 \\frac{d \\phi}{d t} \\\\\n\\Rightarrow \\quad I_d & =\\varepsilon_0 A\\left(\\frac{d E}{d t}\\right) \\quad\\left[\\because \\frac{d \\phi}{d t}=A \\frac{d E}{d t}\\right] \\\\\n& =8.85 \\times 10^{-12} \\times 3.14 \\times(0.1)^2 \\times 6 \\times 10^{13} \\\\\n\\Rightarrow \\quad I_d & =16.67 \\mathrm{~A}\n\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726d04c49e8ef28ee2b399",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Electromagnetic waves travel in a medium with speed of $1.5 \\times 10^8 \\mathrm{~ms}^{-1}$. The relative permeability of the medium is 2.0 . The relative permittivity will be :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "RAQJg",
+              "text": "$5$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "F3615",
+              "text": "$1$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4Hxu3",
+              "text": "$4$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "tqa1I",
+              "text": "$2$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$v=\\frac{C}{\\sqrt{\\mu_{\\mathrm{r}} \\epsilon_{\\mathrm{r}}}}$\n$\\Rightarrow 1.5 \\times 10^8=\\frac{3 \\times 10^8}{\\sqrt{2 \\times \\epsilon_{\\mathrm{r}}}}$\n$\\Rightarrow 2 \\epsilon_{\\mathrm{T}}=4 \\Rightarrow \\epsilon_{\\mathrm{T}}=2$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87a97ae24e9e2db8cc2",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "If $\\overrightarrow{\\mathrm{E}}$ and $\\overrightarrow{\\mathrm{K}}$ represent electric field and propagation vectors of the EM waves in vacuum, then magnetic field vector is given by: ( $\\omega$ - angular frequency) :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "3ZuJi",
+              "text": "$\\frac{1}{\\omega}(\\overrightarrow{\\mathrm{K}} \\times \\overrightarrow{\\mathrm{E}})$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "DvSMx",
+              "text": "$\\omega(\\overrightarrow{\\mathrm{E}} \\times \\overrightarrow{\\mathrm{K}})$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wiCY8",
+              "text": "$\\omega(\\overrightarrow{\\mathrm{K}} \\times \\overrightarrow{\\mathrm{E}})$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "mkFzp",
+              "text": "$\\overrightarrow{\\mathrm{K}} \\times \\overrightarrow{\\mathrm{E}}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "For an EM wave<br />$\\overrightarrow{\\mathrm{B}}=\\frac{1}{\\omega}(\\overrightarrow{\\mathrm{K}} \\times \\overrightarrow{\\mathrm{E}})$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87297ae24e9e2db8c6c",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "The ratio of average electric energy density and total average energy density of electromagnetic wave is :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "cXrKw",
+              "text": "2",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Qr7fX",
+              "text": "$\\frac{1}{2}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "lYn3r",
+              "text": "1",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qmdWa",
+              "text": "3",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We have $\\frac{\\mathrm{U}_{\\mathrm{E}}}{\\mathrm{U}_{\\mathrm{T}}}=\\frac{\\mathrm{U}_{\\mathrm{E}}}{\\mathrm{U}_{\\mathrm{E}}+\\mathrm{U}_{\\mathrm{B}}}=\\frac{\\mathrm{U}_{\\mathrm{E}}}{2 \\mathrm{U}_{\\mathrm{E}}}=\\frac{1}{2}$<br />$\\left[\\because \\mathrm{U}_{\\mathrm{E}}=\\mathrm{U}_{\\mathrm{B}}=\\frac{1}{2} \\in_0 \\mathrm{E}_0^2=\\frac{\\mathrm{B}_0^2}{2 \\mu_0}\\right]$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87197ae24e9e2db8c64",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following Maxwell's equations is valid for time varying conditions but not valid for static conditions :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "y8QE8",
+              "text": "$\\oint \\overrightarrow{\\mathrm{B}} \\cdot \\overrightarrow{\\mathrm{dl}}=\\mu_0 \\mathrm{I}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Hta2p",
+              "text": "$\\oint \\overrightarrow{\\mathrm{E}} \\cdot \\overrightarrow{\\mathrm{dl}}=0$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "TBh23",
+              "text": "$\\oint \\overrightarrow{\\mathrm{E}} \\cdot \\overrightarrow{\\mathrm{dl}}=-\\frac{\\partial \\phi_{\\mathrm{B}}}{\\partial \\mathrm{t}}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "SkAd3",
+              "text": "$\\oint \\overrightarrow{\\mathrm{D}} \\cdot \\overrightarrow{\\mathrm{dA}}=\\mathrm{Q}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "For time varying condition Maxwell's equation, $\\oint \\overrightarrow{\\mathrm{E}} \\cdot \\overrightarrow{\\mathrm{dl}}=-\\frac{\\mathrm{d} \\phi_{\\mathrm{B}}}{\\mathrm{dt}}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e82d6f5bfc7ab78aeb45",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "An electromagnetic wave is propagating along $X$-axis. At $x=1 \\mathrm{~cm}$ and $t=18 \\mathrm{~s}$, its electric vector $|E|=8 \\mathrm{~V} / \\mathrm{m}$, then the magnitude of its magnetic vector is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "eOvfz",
+              "text": "\r\n$266 \\times 10^{-8}$\r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "87QKB",
+              "text": "\r\n$3 \\times 10^{-7}$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "S2VLy",
+              "text": "\r\n$3.14 \\times 10^{-8}$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "gCJbl",
+              "text": "\r\n$3.16 \\times 10^{-7}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "As we know that, $\\frac{E}{B}=c$\r\n$$\r\n\\text { so, } B=\\frac{E}{c}=\\frac{8}{3 \\times 10^8}=2.66 \\times 10^{-8}\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ae6f5bfc7ab78ae6f3",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which of the following electromagnetic radiations has the smallest wavelength?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "0D5Bx",
+              "text": "Ultraviolet rays",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "n7pwK",
+              "text": "X-rays",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "UFQYe",
+              "text": "$\\gamma$ -rays",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "YCSm7",
+              "text": "Microwaves",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7906f5bfc7ab78ae5f4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "An electromagnetic wave passes through space and its equation is given by $\\mathrm{E}=\\mathrm{E}_{0} \\sin (\\omega \\mathrm{t}-\\mathrm{kx})$\nwhere $\\mathrm{E}$ is electric field. Energy density of electromagnetic wave in space is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "eTTb4",
+              "text": "$\\frac{1}{2} \\varepsilon_{0} \\mathrm{E}_{0}^{2}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "xOqFE",
+              "text": "$\\frac{1}{4} \\varepsilon_{0} \\mathrm{E}_{0}^{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ktrtl",
+              "text": "$\\varepsilon_{0} \\mathrm{E}_{0}^{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "aWePQ",
+              "text": "$2 \\varepsilon_{0} \\mathrm{E}_{0}^{2}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Energy density\n$$\n=\\varepsilon_{0} \\mathrm{E}_{\\mathrm{rm}}^{2}=\\varepsilon_{0}\\left(\\frac{\\mathrm{E}_{0}}{\\sqrt{2}}\\right)^{2}=\\frac{1}{2} \\varepsilon_{0} \\mathrm{E}_{0}^{2}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7746f5bfc7ab78ae4f9",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "The magnetic field in a travelling electromagnetic wave has a peak value of $20 \\mathrm{nT}$. The peak value of electric field strength is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "sbNoo",
+              "text": "$3 \\mathrm{~V} / \\mathrm{m}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "V443v",
+              "text": "$6 \\mathrm{~V} / \\mathrm{m}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "sOzOi",
+              "text": "$9 \\mathrm{~V} / \\mathrm{m}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "cYoDM",
+              "text": "$12 \\mathrm{~V} / \\mathrm{m}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\overrightarrow{\\mathrm{E}}_{0}=\\overrightarrow{\\mathrm{B}}_{0} \\times \\overrightarrow{\\mathrm{C}}$\n$$\n\\left|\\overrightarrow{\\mathrm{E}}_{0}\\right|=\\left|\\mathrm{B}_{0}\\right| \\cdot|\\overrightarrow{\\mathrm{C}}|=20 \\times 10^{-9} \\times 3 \\times 10^{8}=6 \\mathrm{~V} / \\mathrm{m}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e85a6f5bfc7ab78aed35",
+      "title": "X-Rays",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e7756f5bfc7ab78ae4ff",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "An X-ray tube is operated at $15 \\mathrm{kV}$. Calculate the upper limit of the speed of the electrons striking the target.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ZWhS6",
+              "text": "$7.26 \\times 10^{7} \\mathrm{~m} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "XHgq9",
+              "text": "$7.62 \\times 10^{7} \\mathrm{~m} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "G7GLm",
+              "text": "$7.62 \\times 10^{7} \\mathrm{~cm} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "826HL",
+              "text": "$7.26 \\times 10^{9} \\mathrm{~m} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The maximum kinetic energy of an electron accelerated through a potential difference of $\\mathrm{V}$ volt is $\\frac{1}{2} \\mathrm{mv}^{2}=\\mathrm{eV}$\n$$\n\\begin{array}{l}\n\\therefore \\text { maximum velocity } \\mathrm{v}=\\sqrt{\\frac{2 \\mathrm{eV}}{\\mathrm{m}}} \\\\\n\\mathrm{v}=\\sqrt{\\frac{2 \\times 1.6 \\times 10^{-19} \\times 15000}{9.1 \\times 10^{-31}}} \\\\\n\\mathrm{v}=7.26 \\times 10^{7} \\mathrm{~m} / \\mathrm{s}\n\\end{array}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

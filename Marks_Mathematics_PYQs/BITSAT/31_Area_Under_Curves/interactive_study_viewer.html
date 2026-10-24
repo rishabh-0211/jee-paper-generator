@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Area Under Curves PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>📐 BITSAT &bull; Area Under Curves</h1>
+        <div class="sub">Mathematics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 31, "chapterId": "61e7bd837f780b3c67d85974", "chapter": "Area Under Curves", "exam": "BITSAT", "subject": "Mathematics", "totalTopics": 3, "totalQuestions": 24, "downloadTime": "2026-10-08 20:37:21", "topics": [{"index": 1, "topicId": "64c0e8756f5bfc7ab78aee6b", "title": "Area of Curve along axis", "totalQuestions": 3, "questions": [{"_id": "65b7b87797ae24e9e2db8ca3", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "The area enclosed between the curve $y=\\log _e(x+e)$ and the coordinate axes is", "image": null}, "options": [{"id": "JyKBe", "text": "1", "image": null, "isCorrect": true}, {"id": "b7USo", "text": "2", "image": null, "isCorrect": false}, {"id": "tOI44", "text": "3", "image": null, "isCorrect": false}, {"id": "RCOHr", "text": "4", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/ZM6sWNxcXPEqQvB8_byL2CiWCn7MvniGotvUdZThfPs.original.fullsize.png\"><br><br />Required area $A=\\int_{1-e}^0 y d x=\\int_{1-e}^0 \\log _e(x+e) d x$<br />put $x+e=t \\Rightarrow d x=d t$ also when $x=1-e, t=$ 1 and when $x=0, t=e$<br />$\\therefore A=\\int_1^e \\log _e t d t=\\left[t \\log _e t-t\\right]_1^e$<br />$e-e-0+1=1$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e79a6f5bfc7ab78ae64d", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "What is the area bounded by \\(y=\\tan x, y=0\\) and \\(x=\\frac{\\pi}{4} ?\\)", "image": null}, "options": [{"id": "t4g3P", "text": "\\(\\ell n ~2~ \\mathrm{sq}\\). units", "image": null, "isCorrect": false}, {"id": "Uzlcd", "text": "\\(\\frac{\\ell n 2}{2} ~\\mathrm{sq}\\). units", "image": null, "isCorrect": true}, {"id": "FcvN6", "text": "\\(2~(\\ell n ~2)~ \\mathrm{sq}\\). units", "image": null, "isCorrect": false}, {"id": "tNUyE", "text": "None of these", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Required area \\(=\\int_0^{\\frac{\\pi}{4}} \\tan x d x\\)\n\\(=\\ln |\\sec 1|_0^{\\frac{\\pi}{4}}=\\ln \\sqrt{2}=\\frac{\\ln 2}{2}\\)", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e78b6f5bfc7ab78ae5c6", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "If \\(\\mathrm{I}_{\\mathrm{m}}=\\int_1^{\\mathrm{e}}(\\ln \\mathrm{x})^{\\mathrm{m}} \\mathrm{dx}\\), where \\(\\mathrm{m} \\in \\mathrm{N}\\), then \\(I_{10}+10 I_9\\) is equal to -", "image": null}, "options": [{"id": "5sjIu", "text": "\\(\\mathrm{e}^{10}\\)", "image": null, "isCorrect": false}, {"id": "DTwG4", "text": "\\(\\frac{\\mathrm{e}^{10}}{10}\\)", "image": null, "isCorrect": false}, {"id": "n9G3X", "text": "\\(\\mathrm{e}\\)", "image": null, "isCorrect": true}, {"id": "SiM8e", "text": "\\(\\mathrm{e}-1\\)", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "\\(\\begin{aligned}\n& \\mathrm{I}_{10}=\\int_1^{\\mathrm{e}} 1 \\cdot(\\ln \\mathrm{x})^{10} \\mathrm{dx}=\\left[(\\ln \\mathrm{x})^{10} \\mathrm{x}\\right]_1^{\\mathrm{e}} \\\\\n& -\\int_1^{\\mathrm{e}} 10(\\ln \\mathrm{x})^9 \\cdot \\frac{1}{\\mathrm{x}} \\cdot \\mathrm{xdx}=\\mathrm{e}-0-10 \\int_1^{\\mathrm{e}}(\\ln \\mathrm{x})^9 \\mathrm{dx} \\\\\n& =\\mathrm{e}-10 \\mathrm{I}_9+10 \\mathrm{I}_9=\\mathrm{e}\n\\end{aligned}\\)", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8756f5bfc7ab78aee6c", "title": "Area bounded by two curves", "totalQuestions": 12, "questions": [{"_id": "67726d1dc49e8ef28ee2b457", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "The area enclosed by the curves $y=x^3$ and $y=\\sqrt{x}$ is", "image": null}, "options": [{"id": "cpBaA", "text": "$\\frac{5}{3}$ sq. units", "image": null, "isCorrect": false}, {"id": "XNQUu", "text": "$\\frac{5}{4}$ sq. units", "image": null, "isCorrect": false}, {"id": "tptoX", "text": "$\\frac{5}{12}$ sq. unit", "image": null, "isCorrect": true}, {"id": "wPFnp", "text": "$\\frac{12}{5}$ sq. units", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Given curves are $y=x^3$ and $y=\\sqrt{x}$\nBoth curves intersects at $x=0$ and $x=1$\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/z_KznZMe4vfzCzaJXSNJ_XvekF3NnRaPnjhDPnsu5nk.original.fullsize.png\"/>\nShaded region is required area\n$\\begin{aligned}\nA & =\\left|\\int_0^1\\left(x^3-\\sqrt{x}\\right) d x\\right|=\\left|\\left[\\frac{x^4}{4}-\\frac{2 x^{3 / 2}}{3}\\right]_0^1\\right| \\\\\n& =\\left|\\left[\\frac{1}{4}-\\frac{2}{3}\\right]\\right| \\\\\n& =\\frac{5}{12} \\text { sq. unit }\n\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726d0ec49e8ef28ee2b3e8", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "The area of the region bounded by the curves $x$ $=y^2-2$ and $x=y$ is", "image": null}, "options": [{"id": "42aSp", "text": "$\\frac{9}{4}$", "image": null, "isCorrect": false}, {"id": "v4FUc", "text": "$9$", "image": null, "isCorrect": false}, {"id": "rWAQj", "text": "$\\frac{9}{2}$", "image": null, "isCorrect": true}, {"id": "GrYcf", "text": "$\\frac{9}{7}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Given, $x=y^2-2$ and $x=y$.\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/cC7sDC8y5-9eTwJAFhGUAwnXFfpFeZcB1zZr6N7rFhM.original.fullsize.png\"/>\nOn solving, $x=y^2-2$ and $x=y$, we get $(-1,-1)$ and $(2,2)$.\nArea of the shaded region,\n$\\begin{aligned}\n& A=\\int_{-1}^2 y d y-\\int_{-1}^2\\left(y^2-2\\right) d y \\\\\n& =\\left[\\frac{y^2}{2}-\\frac{y^3}{3}+2 y\\right]_{-1}^2=\\left(\\frac{4}{2}-\\frac{8}{3}+4\\right)-\\left(\\frac{1}{2}+\\frac{1}{3}-2\\right) \\\\\n& =\\frac{10}{3}+\\frac{7}{6}=\\frac{27}{6}=\\frac{9}{2} .\n\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726d02c49e8ef28ee2b389", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "If the area bounded by the curves $y=a x^2$ and $x$ $=a y^2,(a\\gt0)$ is 3 sq units, then the value of $a$ is", "image": null}, "options": [{"id": "dSpo4", "text": "$\\frac{2}{3}$", "image": null, "isCorrect": false}, {"id": "3kxLr", "text": "$\\frac{1}{3}$", "image": null, "isCorrect": true}, {"id": "pZfZG", "text": "$1$", "image": null, "isCorrect": false}, {"id": "P62dT", "text": "$4$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "We have given, $y=a x^2$    ....(i)\nand $x=a y^2$      ......(ii)\nPut the value of $y$ by Eq. (i) in Eq. (ii), we get\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/AYIkM7DV4l9eiCiqDpgUdJvdN-otyvL0SyszpeihR4s.original.fullsize.png\"/>\n$x=a \\times a^2 x^4 \\Rightarrow x^4 a^3-x=0$\n$x\\left(x^3 a^3-1\\right)=0 \\Rightarrow x=0, \\frac{1}{2}$\nWhen, $x=0 \\Rightarrow y=0$ and $x=\\frac{1}{a} \\Rightarrow y=\\frac{1}{a}$\nHere, points of intersection of curves $y=a x^2$\nand $x=a y^2$ are $(0,0)$ and $\\left(\\frac{1}{a}, \\frac{1}{a}\\right)$.\n$\\therefore \\quad$ Required area\n$A=\\int_{x=a}^{x=b}\\left[f_2(x)-f_1(x)\\right] d x$\n$3=\\int_0^{1 / a}\\left(\\frac{\\sqrt{x}}{\\sqrt{a}}-a x^2\\right) d x$\n$3=\\left[\\frac{1}{\\sqrt{a}} \\times \\frac{2}{3} x^{3 / 2}-\\frac{a x^3}{3}\\right]_0^{1 / a}$\n$3=\\frac{2}{3 \\sqrt{a}}\\left[\\left(\\frac{1}{a}\\right)^{3 / 2}\\right]-\\frac{a}{3}\\left[\\left(\\frac{1}{a}\\right)^3\\right]$\n$3=\\frac{2}{3 \\sqrt{a}} \\times \\frac{1}{a \\sqrt{a}}-\\frac{a}{3} \\times \\frac{1}{a^3}$\n$3=\\frac{2}{3 a^2}-\\frac{1}{3 a^2} \\Rightarrow 3=\\frac{2-1}{3 a^2} \\Rightarrow 9 a^2=1$\n$a^2=\\frac{1}{9} \\Rightarrow a=\\frac{1}{3}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b88097ae24e9e2db8cfa", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "The area of the region<br />$\\mathbf{R}=\\left\\{(x, y): 5 x^2 \\leq y \\leq 2 x^2+9\\right\\} \\text { is : }$", "image": null}, "options": [{"id": "zIKQM", "text": "$11 \\sqrt{3}$ square units", "image": null, "isCorrect": false}, {"id": "rd8wi", "text": "$12 \\sqrt{3}$ square units", "image": null, "isCorrect": true}, {"id": "BAffU", "text": "$9 \\sqrt{3}$ square units", "image": null, "isCorrect": false}, {"id": "ngwGb", "text": "$6 \\sqrt{3}$ square units", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/TYcOVCHhyD7Ep5QjIfRNd4Z-BVnCVVqI_MsguvXZzqQ.original.fullsize.png\"><br><br />$\\begin{aligned} & \\text { Required area }=2 \\int_0^{\\sqrt{3}}\\left(2 x^2+9-5 x^2\\right) d x \\\\ & =2\\left[9 x-x^3\\right]_0^{\\sqrt{3}}=2[9 \\sqrt{3}-3 \\sqrt{3}]=12 \\sqrt{3} .\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e82a6f5bfc7ab78aeb25", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 2, "question": {"text": "The area bounded by curves $(x-1)^{2}+y^{2}=1$ and $x^{2}+y^{2}=1$ is", "image": null}, "options": [{"id": "4qhQI", "text": "$\\left(\\frac{2 \\pi}{3}-\\frac{\\sqrt{3}}{2}\\right)$", "isCorrect": true, "image": null}, {"id": "yOMOF", "text": "$\\frac{2 \\pi}{3}$", "isCorrect": false, "image": null}, {"id": "7YbIC", "text": "$\\frac{\\sqrt{3}}{2}$", "isCorrect": false, "image": null}, {"id": "YUMCK", "text": "$\\frac{2 \\pi}{3}+\\frac{\\sqrt{3}}{2}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Given circles are $x^{2}+y^{2}=1 \\ldots$ (i) and $(x-1)^{2}+y^{2}=1 \\ldots$ (ii)\r\n\r\nCentre of (i) is $\\mathrm{O}(0,0)$ and radius $=1$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/h-abKd3JCjcK1BeOZKRiAZ6yaZvRisMxeLCXMht6Nb0.original.fullsize.png\"><br>\r\n\r\nBoth these circle are symmetrical about $x$-axis solving (i) and (ii), we get, $-2 x+1=0$\r\n\r\n$\\Rightarrow x=\\frac{1}{2}$\r\n\r\n$\\begin{array}{l}\r\n\r\n\\text { then } y^{2}=1-\\left(\\frac{1}{2}\\right)^{2}=34 \\\\\r\n\r\n\\Rightarrow y=\\frac{\\sqrt{3}}{2}\r\n\r\n\\end{array}$\r\n\r\n$\\therefore$ The points of intersection are\r\n\r\n$\\mathrm{P}\\left(\\frac{1}{2}, \\frac{\\sqrt{3}}{2}\\right)$ and $\\mathrm{Q}\\left(\\frac{1}{2},-\\frac{\\sqrt{3}}{2}\\right)$\r\n\r\nIt is clear from the figure that the shaded portion in region whose area is required.\r\n\r\n$\\therefore$ Required area = area OQAPO\r\n\r\n$=2 \\times$ area of the region OLAP\r\n\r\n$=2 \\times($ area of the region $O L P O+$ area of $L A P L$ )\r\n\r\n$=2\\left[\\int_{0}^{\\frac{1}{2}} \\sqrt{1-(x-1)^{2}} d x+\\int_{\\frac{1}{2}}^{1} \\sqrt{1-x^{2}} \\mathrm{dx}\\right]$\r\n\r\n$=2\\left[\\frac{(x-1) \\sqrt{1-(x-1)^{2}}}{2}+\\frac{1}{2} \\sin ^{-1}(x-1)\\right]_{0}^{\\frac{1}{2}}+2\\left[\\frac{x \\sqrt{1-x^{2}}}{2}+\\frac{1}{2} \\sin ^{-1} x\\right]_{\\frac{1}{2}}^{1}$\r\n\r\n$=-\\frac{1}{2} \\cdot \\frac{\\sqrt{3}}{2}+\\sin ^{-1}\\left(\\frac{-1}{2}\\right)-\\sin ^{-1}(-1)+0+\\sin ^{-1}(1)-\\left(\\frac{1}{2} \\cdot \\frac{\\sqrt{3}}{2}+\\sin ^{-1}\\left(\\frac{1}{2}\\right)\\right)$\r\n\r\n$=\\left(\\frac{2 \\pi}{3}-\\frac{\\sqrt{3}}{2}\\right)$ sq. units.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8296f5bfc7ab78aeb1e", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 2, "question": {"text": "The area bounded by the curves $x+2 y^{2}=0$ and $x+3 y^{2}=1$ is", "image": null}, "options": [{"id": "i9iNa", "text": "1 sq. unit", "isCorrect": false, "image": null}, {"id": "yS9R4", "text": "$\\frac{1}{3}$ sq. units", "isCorrect": false, "image": null}, {"id": "o3Lez", "text": "$\\frac{2}{3}$ sq. units", "isCorrect": false, "image": null}, {"id": "1qwdm", "text": "$\\frac{4}{3}$ sq. units", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "We have, $x+2 y^{2}=0$\r\n\r\n$\\Rightarrow y^{2}=-\\frac{x}{2} \\ldots \\text { (i) }$\r\n\r\na parabola with vertex $(0,0)$ and $x+3 y^{2}=1$\r\n\r\n$\\Rightarrow y^{2}=\\frac{1-x}{3}=-\\left(\\frac{x-1}{3}\\right) \\ldots$ (ii), a parabola with vertex $(1,0)$\r\n\r\nSolving (i) and (ii), we get $y=\\pm 1$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/1uUb_Wysw315Rl0DFYCFG6Ly7ChrUi0sAteTJV3PPqo.original.fullsize.png\"><br>\r\n\r\n$\\mathrm{A}=\\int_{-1}^{1}\\left(\\left(1-3 y^{2}\\right)-\\left(-2 y^{2}\\right)\\right) d y$\r\n\r\n$=2 \\int_{0}^{1}\\left(1-y^{2}\\right) d y=2\\left[y-\\frac{y^{3}}{3}\\right]_{0}^{1}$\r\n\r\n$=\\frac{4}{3}$ sq.units", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e81d6f5bfc7ab78aeab6", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 2, "question": {"text": "The line $y=m x$ bisects the area enclosed by lines $x$ $=0, \\mathrm{y}=0$ and $\\mathrm{x}=3 / 2$ and the curve $\\mathrm{y}=1+4 \\mathrm{x}-\\mathrm{x}^{2}$\r\n\r\nThen the value of $\\mathrm{m}$ is", "image": null}, "options": [{"id": "NKLqg", "text": "$\\frac{13}{6}$", "isCorrect": true, "image": null}, {"id": "S35hB", "text": "$\\frac{13}{2}$", "isCorrect": false, "image": null}, {"id": "6HYL9", "text": "$\\frac{13}{5}$", "isCorrect": false, "image": null}, {"id": "EOgER", "text": "$\\frac{13}{7}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$y=1+4 x-x^{2}=5-(x-2)^{2}$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/MzY8V4T1MJrhjGUbkQlVjCwugtbohShak5aX8iphZQQ.original.fullsize.png\"><br>\r\n\r\nWe have $\\int_{0}^{3 / 2}\\left(1+4 x-x^{2}\\right) \\mathrm{dx}=2 \\int_{0}^{3 / 2} \\operatorname{mx} \\mathrm{dx}$\r\n\r\n$=\\frac{3}{2}+2\\left(\\frac{9}{4}\\right)-\\frac{1}{3}\\left(\\frac{27}{8}\\right)=\\mathrm{m} \\cdot \\frac{9}{4}$\r\n\r\nOn solving we get $\\mathrm{m}=\\frac{13}{6}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7f16f5bfc7ab78ae933", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 2, "question": {"text": "The area enclosed by the curves <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><msqrt><mi>x</mi></msqrt></math> is", "image": null}, "options": [{"id": "Ib27q", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>5</mn><mn>3</mn></mfrac><mo>&#160;</mo><mi>sq</mi><mo>&#160;</mo><mi>units</mi></math>", "isCorrect": false, "image": null}, {"id": "c9MW4", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>5</mn><mn>4</mn></mfrac><mo>&#160;</mo><mi>sq</mi><mo>&#160;</mo><mi>units</mi></math>", "isCorrect": false, "image": null}, {"id": "uFvLA", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>5</mn><mn>12</mn></mfrac><mo>&#160;</mo><mi>sq</mi><mo>&#160;</mo><mi>units</mi></math>", "isCorrect": true, "image": null}, {"id": "NP0EL", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>12</mn><mn>5</mn></mfrac><mo>&#160;</mo><mi>sq</mi><mo>&#160;</mo><mi>units</mi></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Since, the intersection of two curves</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><msqrt><mi>x</mi></msqrt></math> are <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mn>0</mn></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mn>1</mn></math></p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/80f98405-f09a-4775-8881-61be77488333-image.png\" style=\"width: 313px; height: 197px;\" /></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi>A</mi><mo>=</mo><mfenced close=\"|\" open=\"|\"><mrow><msubsup><mo>&#8747;</mo><mn>0</mn><mn>1</mn></msubsup><mfenced><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>-</mo><msqrt><mi>x</mi></msqrt></mrow></mfenced><mi>d</mi><mi>x</mi></mrow></mfenced><mo>=</mo><mfenced close=\"|\" open=\"|\"><msubsup><mfenced close=\"]\" open=\"[\"><mrow><mfrac><msup><mi>x</mi><mn>4</mn></msup><mn>4</mn></mfrac><mo>-</mo><mfrac><mrow><mn>2</mn><msup><mi>x</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow><mn>3</mn></mfrac></mrow></mfenced><mn>0</mn><mn>1</mn></msubsup></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfenced close=\"|\" open=\"|\"><mfenced close=\"]\" open=\"[\"><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>-</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></mfenced></mfenced><mo>=</mo><mfrac><mn>5</mn><mn>12</mn></mfrac><mo>&#160;</mo><mi>sq</mi><mo>&#160;</mo><mi>units</mi></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7d16f5bfc7ab78ae824", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 3, "question": {"text": "The area of the region $\\mathrm{R}=\\left\\{(x, y):|x| \\leq|y|\\right.$ and $x^{2}$ $\\left.+y^{2} \\leq 1\\right\\}$ is", "image": null}, "options": [{"id": "6b8AM", "text": "$\\frac{3 \\pi}{8}$ sq units", "isCorrect": false, "image": null}, {"id": "0UZOh", "text": "$\\frac{5 \\pi}{8} \\mathrm{sq}$ units", "isCorrect": false, "image": null}, {"id": "cl8xq", "text": "$\\frac{\\pi}{2}$ sq units", "isCorrect": true, "image": null}, {"id": "Jjeiz", "text": "$\\frac{\\pi}{8}$ sq unit", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/5nCmf5KCGMlyNK8_pS9tpwndw7e6OZXR_vf-JKknoYU.original.fullsize.png\"><br>\r\n\r\nRequired area $=4$ (Area of the shaded region in first quadrant)\r\n\r\n$$\r\n\r\n=4 \\int_{0}^{1 \\sqrt{2}}\\left(y_{1}-y_{2}\\right) d x=4 \\int_{0}^{1 \\sqrt{2}}\\left(\\sqrt{1-x^{2}}-x\\right) d x\r\n\r\n$$\r\n\r\n$=4\\left[\\frac{x}{2} \\sqrt{1-x^{2}}+\\frac{1}{2} \\sin ^{-1} x-\\frac{x^{2}}{2}\\right]_{0}^{1 / \\sqrt{2}}$\r\n\r\n$=4\\left[\\frac{1}{2 \\sqrt{2}} \\times \\frac{1}{\\sqrt{2}}+\\frac{1}{2} \\times \\frac{\\pi}{4}-\\frac{1}{4}\\right]$\r\n\r\n$=4\\left[\\frac{1}{4}+\\frac{\\pi}{8}-\\frac{1}{4}\\right]=\\frac{4 \\pi}{8}=\\frac{\\pi}{2}$ sq units", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7c56f5bfc7ab78ae7be", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 2, "question": {"text": "The area bounded by the $x$ -axis, the curve $y=f(x)$ and the lines $\\mathrm{x}=1, \\mathrm{x}=\\mathrm{b},$ is equal to $\\sqrt{\\mathrm{b}^{2}+1}-\\sqrt{2}$\r\n\r\nfor all $b>1,$ then $f(x)$ is", "image": null}, "options": [{"id": "yUcxM", "text": "$\\sqrt{x-1}$", "isCorrect": false, "image": null}, {"id": "JsLdt", "text": "$\\sqrt{x+1}$", "isCorrect": false, "image": null}, {"id": "QI8nu", "text": "$\\sqrt{x^{2}+1}$", "isCorrect": false, "image": null}, {"id": "kny0N", "text": "$\\frac{x}{\\sqrt{1+x^{2}}}$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Given $\\int_{1}^{\\mathrm{b}} \\mathrm{f}(\\mathrm{x}) \\mathrm{dx}=\\sqrt{\\mathrm{b}^{2}+1}-\\sqrt{2}$\r\n\r\nDifferentiate with respect to $\\mathrm{b}$\r\n\r\n$$\r\n\r\nf(b)=\\frac{b}{\\sqrt{b^{2}+1}} \\Rightarrow f(x)=\\frac{x}{\\sqrt{x^{2}+1}}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7b76f5bfc7ab78ae743", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 2, "question": {"text": "Area intercepted by the curves $y=\\cos x$ $\\mathrm{x} \\in[0, \\pi]$ and $\\mathrm{y}=\\cos 2 \\mathrm{x}, \\mathrm{x} \\in[0, \\pi],$ is", "image": null}, "options": [{"id": "41lC8", "text": "$\\frac{3 \\pi}{2}$", "isCorrect": false, "image": null}, {"id": "kfcDV", "text": "$\\frac{3 \\sqrt{3}}{2}$", "isCorrect": false, "image": null}, {"id": "kyQE5", "text": "$\\frac{3 \\pi}{4}$", "isCorrect": false, "image": null}, {"id": "Xd5lT", "text": "$\\frac{3 \\sqrt{3}}{4}$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/zfwTWdt8ypDGn1Kd40Tfp2wMLHvDOZc5ABLKKnpg7dI.original.fullsize.png\"><br>\r\n\r\n$$\r\n\r\n\\text { Area }=\\int_{0}^{2 \\pi / 3}(\\cos x-\\cos 2 x) d x=\\frac{3 \\sqrt{3}}{4}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7a86f5bfc7ab78ae6c2", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 1, "question": {"text": "The area bounded by the curve $y=\\sin x, x$ -axis and the ordinates $x=0$ and $x=\\pi / 2$ is", "image": null}, "options": [{"id": "MGgkb", "text": "$\\pi$", "isCorrect": false, "image": null}, {"id": "7q1yS", "text": "$\\pi / 2$", "isCorrect": false, "image": null}, {"id": "m7agS", "text": "1", "isCorrect": true, "image": null}, {"id": "tk16s", "text": "2", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Area $=\\int_{0}^{\\pi / 2} \\mathrm{y} \\mathrm{dx}=\\int_{0}^{\\pi / 2} \\sin \\mathrm{x} \\mathrm{dx}=[-\\cos \\mathrm{x}]_{0}^{\\pi / 2}=1$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e8756f5bfc7ab78aee6d", "title": "Area bounded by Miscellaneous Curves", "totalQuestions": 9, "questions": [{"_id": "67726d1cc49e8ef28ee2b450", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "If $a, c, b$ are in GP, then the area of the triangle formed by the lines $a x+b y+c=0$ with the coordinates axes is equal to", "image": null}, "options": [{"id": "JwKet", "text": "1", "image": null, "isCorrect": false}, {"id": "qaDXq", "text": "2", "image": null, "isCorrect": false}, {"id": "GWtMD", "text": "$\\frac{1}{2}$", "image": null, "isCorrect": true}, {"id": "lpVRs", "text": "None of these", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Given $a, c, b$ are in GP\n$\\Rightarrow \\quad c^2=a b$...(i)\nAccording to question,\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/IGkrU0wr51ePLRxTWR_E5mha2CU4XxNUbUIUo1KLP64.original.fullsize.png\"/>\n$\\begin{aligned}\n\\therefore \\text { Area of } \\triangle O A B & =\\left|\\frac{1}{2} \\times O A \\times O B\\right| \\\\\n= & \\left|\\frac{1}{2} \\times\\left(\\frac{-c}{b}\\right) \\times\\left(\\frac{-c}{a}\\right)\\right| \\\\\n& =\\frac{1}{2} \\times \\frac{c^2}{a b}=\\frac{1}{2} [by Eq. (i)]\n\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726d1ac49e8ef28ee2b446", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "The line $y=m x$ bisects the area unclosed by lines $x=0, y=0$ and $x=\\frac{3}{2}$ and the curve $y=1+4 x-x^2$. Then, the value of $m$ is", "image": null}, "options": [{"id": "VOdEh", "text": "$\\frac{13}{6}$", "image": null, "isCorrect": true}, {"id": "dixAw", "text": "$\\frac{13}{2}$", "image": null, "isCorrect": false}, {"id": "dQFy7", "text": "$\\frac{13}{5}$", "image": null, "isCorrect": false}, {"id": "GEkbx", "text": "$\\frac{13}{7}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Given, $y=1+4 x-x^2$\n$\\begin{aligned}\n& \\Rightarrow \\quad \\frac{d y}{d x}=4-2 x=0 \\Rightarrow x=2 \\text{[point of maxima]}\\\\\n& \\Rightarrow \\quad y_{\\max }=1+4 \\times 2-4=5\n\\end{aligned}$\n when, $x=0, y=1$\n$\\therefore$ Graph according to question and above information\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/QwdnEHXNpPCFPWMPaOVaSmqS7VsEqWQT6S-P2fi4noU.original.fullsize.png\"/>\n$\\begin{aligned} & \\Rightarrow \\text { If } y=m x \\text { bisects the area bounded } \\\\ & \\Rightarrow \\quad A_1=A_2 \\\\ & \\Rightarrow \\quad \\int_0^{3 / 2}\\left(1+4 x-x^2\\right) d x=2 \\int_0^{3 / 2} m x d x \\\\ & \\Rightarrow \\quad\\left[x+2 x^2-\\frac{x^3}{3}\\right]_0^{3 / 2}=\\left[m x^2\\right]_0^{3 / 2} \\\\ & \\Rightarrow \\frac{3}{2}+2 \\times \\frac{9}{4}-\\frac{27}{8} \\times \\frac{1}{3}=m \\times \\frac{9}{4} \\\\ & \\therefore \\quad m=\\frac{13}{6}\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8376f5bfc7ab78aeb98", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 2, "question": {"text": "The area enclosed by the curves $y=\\sin x+\\cos x$ and $y=|\\cos x-\\sin x|$ over the interval $\\left[0, \\frac{\\pi}{2}\\right]$ is", "image": null}, "options": [{"id": "JAAPL", "text": "\r\n$4(\\sqrt{2}-1)$\r\n", "isCorrect": false, "image": null}, {"id": "IqVwW", "text": "\r\n$2 \\sqrt{2}(\\sqrt{2}-1)$\r\n", "isCorrect": true, "image": null}, {"id": "vFunl", "text": "\r\n$2(\\sqrt{2}+1)$\r\n", "isCorrect": false, "image": null}, {"id": "mDoKH", "text": "\r\n$2 \\sqrt{2}(\\sqrt{2}+1)$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Given, $y=\\sin x+\\cos x, x \\in[0, \\pi / 2]$\r\n$\\frac{d y}{d x}=\\cos x-\\sin x$\r\n$\\begin{aligned} y & =|\\cos x-\\sin x| \\\\ & =\\left[\\begin{array}{cc}\\cos x-\\sin x & x \\in[0, \\pi / 4] \\\\ \\sin x-\\cos x & x \\in[\\pi / 4, \\pi / 2]\\end{array}\\right]\\end{aligned}$\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/Bqoq95Rpm-j5ycIe8E3qOccP5zZI1leuKUG20Kyp-38.original.fullsize.png\"><br>\r\n$\\therefore$ Required area\r\n$\\begin{aligned}\r\n&=\\int_0^{\\pi / 4}|(\\sin x+\\cos x)-(\\cos x-\\sin x)| d x+\\int_{\\pi / 4}^{\\pi / 2}|2 \\cos x| d x\r\n\\end{aligned}$\r\n$=\\int_0^{\\pi / 4}|2 \\sin x| d x+\\int_{\\pi / 4}^{\\pi / 2}|2 \\cos x| d x$\r\n$=2(-\\cos x)_0^{\\pi / 4}+2(\\sin x)_{\\pi / 4}^{\\pi / 2}$\r\n$=2\\left[-\\frac{1}{\\sqrt{2}}+1+1-\\frac{1}{\\sqrt{2}}\\right]$<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/h0i2UrjkiqoD78hh_1S802WjWVfCXjP7KBP5OpVWwrA.original.fullsize.png\"><br>\r\n$\\begin{aligned}= & 2\\left(2-\\frac{2}{\\sqrt{2}}\\right) \\\\ = & 2(2-\\sqrt{2}) \\\\ = & 4-2 \\sqrt{2} \\\\ = & 2 \\sqrt{2}(\\sqrt{2}-1)\\end{aligned}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8346f5bfc7ab78aeb81", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 1, "question": {"text": "The area of the region bounded by the parabola $(y-2)^2=(x-1)$, the tangent to the parabola at the point $(2,3)$ and the $X$-axis is", "image": null}, "options": [{"id": "UeHXS", "text": "\r\n3\r\n", "isCorrect": false, "image": null}, {"id": "l0B2O", "text": "\r\n6\r\n", "isCorrect": false, "image": null}, {"id": "wKTpG", "text": "\r\n9\r\n", "isCorrect": true, "image": null}, {"id": "3lJUe", "text": "\r\n12", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The equation of the parabola is $y^2-4 y-x+5=0$ The equation of tangent at $(2,3)$ is\r\n$$\r\n\\begin{aligned}\r\n3 y-2(y+3)-\\frac{x+2}{2}+5 & =0 \\\\\r\n2 y-x-4 & =0\r\n\\end{aligned}\r\n$$\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/9b_OFOiPC-yESmoX1Lqx_VI1P1QvG9cP_LVngQLK6ac.original.fullsize.png\"><br>\r\n$\\therefore$ Required area $A$ is given by\r\n$$\r\n\\begin{aligned}\r\n& A=\\int_0^3\\left(x_2-x_1\\right) d y \\\\\r\n& \\Rightarrow \\quad A=\\int_0^3\\left[\\left\\{(y-2)^2+1\\right\\}-\\{2 y-4\\}\\right] d y \\\\\r\n& \\Rightarrow \\quad A=\\int_0^3\\left(y^2-6 y+9\\right) d y=\\int_0^3(3-y)^2 d y \\\\\r\n& =-\\left[\\frac{(3-y)^3}{3}\\right]_0^3=9 \\\\\r\n&\r\n\\end{aligned}\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e80d6f5bfc7ab78aea28", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 2, "question": {"text": "Area bounded by two branches of the curve <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mi>y</mi><mo>-</mo><mi>x</mi></mrow></mfenced><mn>2</mn></msup><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mn>1</mn></math> is", "image": null}, "options": [{"id": "fZzam", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>5</mn><mn>4</mn></mfrac><mo>&#160;</mo><mi>sq</mi><mo>&#160;</mo><mi>unit</mi></math>", "isCorrect": false, "image": null}, {"id": "i25Jo", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>&#160;</mo><mi>sq</mi><mo>&#160;</mo><mi>unit</mi></math>", "isCorrect": false, "image": null}, {"id": "XbqYJ", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>&#160;</mo><mi>sq</mi><mo>&#160;</mo><mi>unit</mi></math>", "isCorrect": false, "image": null}, {"id": "ItGPN", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>4</mn><mn>5</mn></mfrac><mo>&#160;</mo><mi>sq</mi><mo>&#160;</mo><mi>unit</mi></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>Given, curve is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><mi>y</mi><mo>-</mo><mi>x</mi></mrow></mfenced><mn>2</mn></msup><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>y</mi><mo>-</mo><mi>x</mi><mo>=</mo><mo>&#177;</mo><mi>x</mi><msqrt><mi>x</mi></msqrt></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>y</mi><mo>=</mo><mi>x</mi><mo>&#177;</mo><mi>x</mi><msqrt><mi>x</mi></msqrt></math></p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/90b534b6-e3c4-4b5a-bf86-c78cbdd9038c-d43.png\" style=\"width: 301px; height: 300px;\" /></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> Area bounded <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfenced close=\"|\" open=\"|\"><mrow><msubsup><mo>&#8747;</mo><mn>0</mn><mn>1</mn></msubsup><mfenced close=\"}\" open=\"{\"><mrow><mfenced><mrow><mi>x</mi><mo>+</mo><mi>x</mi><msqrt><mi>x</mi></msqrt></mrow></mfenced><mo>-</mo><mfenced><mrow><mi>x</mi><mo>-</mo><mi>x</mi><msqrt><mi>x</mi></msqrt></mrow></mfenced></mrow></mfenced><mi>d</mi><mi>x</mi></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfenced close=\"|\" open=\"|\"><mrow><mn>2</mn><msubsup><mo>&#8747;</mo><mn>0</mn><mn>1</mn></msubsup><msup><mi>x</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup><mi>d</mi><mi>x</mi></mrow></mfenced><mo>=</mo><mfrac><mn>4</mn><mn>5</mn></mfrac><mo>&#160;</mo><mi>sq</mi><mo>&#160;</mo><mi>unit</mi></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e80d6f5bfc7ab78aea26", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 2, "question": {"text": "The point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mo>[</mo><mi>P</mi><mo>+</mo><mn>1</mn><mo>]</mo><mo>,</mo><mo>[</mo><mi>P</mi><mo>]</mo><mo>)</mo></math> (where, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>[</mo><mi>x</mi><mo>]</mo></math>&nbsp;is the greatest integer function) lying inside the region bounded by the circle <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>x</mi><mo>-</mo><mn>15</mn><mo>=</mo><mn>0</mn></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>x</mi><mo>-</mo><mn>7</mn><mo>=</mo><mn>0</mn></math>, then", "image": null}, "options": [{"id": "2wZVx", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mo>&#8712;</mo><mo>[</mo><mo>-</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo><mo>-</mo><mo>{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>}</mo></math>", "isCorrect": false, "image": null}, {"id": "0vOKQ", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mo>&#8712;</mo><mo>[</mo><mo>-</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo><mo>&#8746;</mo><mo>(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>)</mo><mo>&#8746;</mo><mo>(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>]</mo></math>", "isCorrect": false, "image": null}, {"id": "0BpQO", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mo>&#8712;</mo><mo>(</mo><mo>-</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>)</mo></math>", "isCorrect": false, "image": null}, {"id": "1KnZj", "text": "None of these", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>[</mo><mi>P</mi><mo>+</mo><mn>1</mn><mo>]</mo><mo>=</mo><mo>[</mo><mi>P</mi><mo>]</mo><mo>+</mo><mn>1</mn></math>, Let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>[</mo><mi>P</mi><mo>]</mo><mo>=</mo><mi>n</mi></math>, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi></math> is integer</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mo>(</mo><mo>[</mo><mi>P</mi><mo>+</mo><mn>1</mn><mo>]</mo><mo>,</mo><mo>[</mo><mi>P</mi><mo>]</mo><mo>)</mo><mo>=</mo><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>,</mo><mi>n</mi><mo>)</mo></math> lie inside the region of circles</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>S</mi><mn>1</mn></msub><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>x</mi><mo>-</mo><mn>15</mn><mo>=</mo><mn>0</mn><mo>,</mo><msub><mi>C</mi><mn>1</mn></msub><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo><mo>,</mo><msub><mi>r</mi><mn>1</mn></msub><mo>=</mo><mn>4</mn></math></p><p>and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>S</mi><mn>2</mn></msub><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>x</mi><mo>-</mo><mn>7</mn><mo>=</mo><mn>0</mn><mo>,</mo><msub><mi>C</mi><mn>2</mn></msub><mo>=</mo><mo>(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>)</mo><mo>,</mo><msub><mi>r</mi><mn>2</mn></msub><mo>=</mo><mn>2</mn><msqrt><mn>2</mn></msqrt></math></p><p>Both circles are concentric.&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><msup><mo>)</mo><mn>2</mn></msup><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo><mo>-</mo><mn>7</mn><mo>&#62;</mo><mn>0</mn></math></p><p>and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><msup><mo>)</mo><mn>2</mn></msup><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mo>(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo><mo>-</mo><mn>15</mn><mo>&#60;</mo><mn>0</mn><mo>&#8658;</mo><mn>4</mn><mo>&#60;</mo><msup><mi>n</mi><mn>2</mn></msup><mo>&#60;</mo><mn>8</mn></math></p><p>Which is not possible for any integer.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8006f5bfc7ab78ae9b9", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 3, "question": {"text": "The area of the region included between the curves <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msqrt><mfenced open=\"|\" close=\"|\"><mi>x</mi></mfenced></msqrt><mo>+</mo><msqrt><mfenced open=\"|\" close=\"|\"><mi>y</mi></mfenced></msqrt><mo>=</mo><msqrt><mi>a</mi></msqrt><mfenced><mrow><mi>a</mi><mo>&#62;</mo><mn>0</mn></mrow></mfenced></math> is", "image": null}, "options": [{"id": "XzG3s", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mi>&#960;</mi><mo>-</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></mfenced><msup><mi>a</mi><mn>2</mn></msup></math>&nbsp;sq units", "isCorrect": true, "image": null}, {"id": "Up4zZ", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>-</mo><mi>&#960;</mi></mrow></mfenced><msup><mi>a</mi><mn>2</mn></msup></math>&nbsp;sq units", "isCorrect": false, "image": null}, {"id": "aw2ri", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>&#960;</mi><msup><mi>a</mi><mn>2</mn></msup></math>&nbsp;sq units", "isCorrect": false, "image": null}, {"id": "DNniY", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mi>&#960;</mi><mo>+</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></mfenced><msup><mi>a</mi><mn>2</mn></msup></math>&nbsp;sq units", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Given curves are</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msqrt><mfenced close=\"|\" open=\"|\"><mi>x</mi></mfenced></msqrt><mo>+</mo><msqrt><mfenced close=\"|\" open=\"|\"><mi>y</mi></mfenced></msqrt><mo>=</mo><msqrt><mi>a</mi></msqrt><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi mathvariant=\"normal\">i</mi></mfenced></math></p><p>and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi>ii</mi></mfenced></math></p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/92c79c76-2fd3-47b1-8567-d7127f1e10c3-image.png\" style=\"width: 234px; height: 270px;\" /></p><p>Now, required areas <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>4</mn></math>[shaded area in the first quadrant]</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>4</mn><mfenced close=\"]\" open=\"[\"><mrow><mfrac><mrow><mi>&#960;</mi><msup><mi>a</mi><mn>2</mn></msup></mrow><mn>4</mn></mfrac><mo>-</mo><msubsup><mo>&#8747;</mo><mn>0</mn><mi>a</mi></msubsup><msup><mfenced><mrow><msqrt><mi>a</mi></msqrt><mo>-</mo><msqrt><mi>x</mi></msqrt></mrow></mfenced><mn>2</mn></msup><mi>d</mi><mi>x</mi></mrow></mfenced></math>&nbsp;&nbsp;[from Eqs. (i) and (ii)]</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>4</mn><mfenced close=\"]\" open=\"[\"><mrow><mfrac><mrow><mi>&#960;</mi><msup><mi>a</mi><mn>2</mn></msup></mrow><mn>4</mn></mfrac><mo>-</mo><msubsup><mo>&#8747;</mo><mn>0</mn><mi>a</mi></msubsup><mfenced><mrow><mi>a</mi><mo>+</mo><mi>x</mi><mo>-</mo><mn>2</mn><msqrt><mi>a</mi></msqrt><msqrt><mi>x</mi></msqrt></mrow></mfenced><mi>d</mi><mi>x</mi></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>4</mn><mfrac><mrow><mi>&#960;</mi><msup><mi>a</mi><mn>2</mn></msup></mrow><mn>4</mn></mfrac><mo>-</mo><mn>4</mn><msubsup><mfenced close=\"]\" open=\"[\"><mrow><mi>a</mi><mi>x</mi><mo>+</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo>-</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><msqrt><mi>a</mi></msqrt><msup><mi>x</mi><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></mfenced><mn>0</mn><mi>a</mi></msubsup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfenced><mrow><mi>&#960;</mi><mo>-</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow></mfenced><msup><mi>a</mi><mn>2</mn></msup></math>&nbsp;sq units</p><p>Hence, option (a) is correct.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7f16f5bfc7ab78ae931", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 2, "question": {"text": "The area under the curve <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mfenced open=\"|\" close=\"|\"><mrow><mi>cos</mi><mi>x</mi><mo>-</mo><mi>sin</mi><mi>x</mi></mrow></mfenced><mo>,</mo><mn>0</mn><mo>&#8804;</mo><mi>x</mi><mo>&#8804;</mo><mfrac><mi>&#960;</mi><mn>2</mn></mfrac></math>&nbsp;and above <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>X</mi></math>-axis, is", "image": null}, "options": [{"id": "jJ6Ho", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><msqrt><mn>2</mn></msqrt></math>", "isCorrect": false, "image": null}, {"id": "Bz20r", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><msqrt><mn>2</mn></msqrt><mo>-</mo><mn>2</mn></math>", "isCorrect": true, "image": null}, {"id": "AlBhn", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><msqrt><mn>2</mn></msqrt><mo>+</mo><mn>2</mn></math>", "isCorrect": false, "image": null}, {"id": "golmp", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Required area <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><msubsup><mo>&#8747;</mo><mn>0</mn><mrow><mi>&#960;</mi><mo>/</mo><mn>2</mn></mrow></msubsup><mfenced close=\"|\" open=\"|\"><mrow><mi>cos</mi><mi>x</mi><mo>-</mo><mi>sin</mi><mi>x</mi></mrow></mfenced><mi>d</mi><mi>x</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><msubsup><mo>&#8747;</mo><mn>0</mn><mrow><mi>&#960;</mi><mo>/</mo><mn>4</mn></mrow></msubsup><mfenced><mrow><mi>cos</mi><mi>x</mi><mo>-</mo><mi>sin</mi><mi>x</mi></mrow></mfenced><mi>d</mi><mi>x</mi><mo>+</mo><msubsup><mo>&#8747;</mo><mrow><mi>&#960;</mi><mo>/</mo><mn>4</mn></mrow><mrow><mi>&#960;</mi><mo>/</mo><mn>2</mn></mrow></msubsup><mfenced><mrow><mi>sin</mi><mi>x</mi><mo>-</mo><mi>cos</mi><mi>x</mi></mrow></mfenced><mi>d</mi><mi>x</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><msubsup><mfenced open=\"[\" close=\"]\"><mrow><mi>sin</mi><mi>x</mi><mo>+</mo><mi>cos</mi><mi>x</mi></mrow></mfenced><mn>0</mn><mrow><mi>&#960;</mi><mo>/</mo><mn>4</mn></mrow></msubsup><mo>+</mo><msubsup><mfenced open=\"[\" close=\"]\"><mrow><mo>-</mo><mi>cos</mi><mi>x</mi><mo>-</mo><mi>sin</mi><mi>x</mi></mrow></mfenced><mrow><mi>&#960;</mi><mo>/</mo><mn>4</mn></mrow><mrow><mi>&#960;</mi><mo>/</mo><mn>2</mn></mrow></msubsup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfenced><mrow><msqrt><mn>2</mn></msqrt><mo>-</mo><mn>1</mn></mrow></mfenced><mo>-</mo><mfenced><mrow><mn>1</mn><mo>-</mo><msqrt><mn>2</mn></msqrt></mrow></mfenced><mo>=</mo><mn>2</mn><msqrt><mn>2</mn></msqrt><mo>-</mo><mn>2</mn></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7e26f5bfc7ab78ae8b2", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 2, "question": {"text": "A wire $34 \\mathrm{~cm}$ long is to be bent in the form of a quadrilateral of which each angle is $90^{\\circ} .$ What is the maximum area which can be enclosed inside the quadrilateral?", "image": null}, "options": [{"id": "4ktBD", "text": "$68 \\mathrm{~cm}^{2}$", "isCorrect": false, "image": null}, {"id": "8Fj9H", "text": "$70 \\mathrm{~cm}^{2}$", "isCorrect": false, "image": null}, {"id": "q2eiO", "text": "$71.25 \\mathrm{~cm}^{2}$", "isCorrect": false, "image": null}, {"id": "mSFkE", "text": "$72.25 \\mathrm{~cm}^{2}$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Let one side of quadrilateral be $\\mathrm{x}$ and another side be $y$ so, $2(x+y)=34$\r\n\r\nor $(x+y)=17$\r\n\r\nWe know from the basic principle that for a given perimeter square has the maximum area, $\\mathrm{so}, \\mathrm{x}=\\mathrm{y}$ and putting this value in equation (i)\r\n\r\n$\\mathrm{x}=\\mathrm{y}=\\frac{17}{2}$\r\n\r\nArea $=x \\cdot y=\\frac{17}{2} \\times \\frac{17}{2}=\\frac{289}{4}=72.25$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

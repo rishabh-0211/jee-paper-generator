@@ -1,0 +1,1479 @@
+{
+  "index": 3,
+  "chapterId": "61e7bd80be29bf9b0cc9a13e",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "exam": "BITSAT",
+  "totalTopics": 2,
+  "totalQuestions": 22,
+  "downloadTime": "2026-10-08 20:02:46",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e85e6f5bfc7ab78aed5b",
+      "title": "Modern periodic table",
+      "totalQuestions": 5,
+      "questions": [
+        {
+          "_id": "65b7b87c97ae24e9e2db8cd4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "How many elements are there in $6^{\\text {th }}$ period of periodic table?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "8qnbE",
+              "text": "<br />18",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "cL23H",
+              "text": "<br />8",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Fy9Xs",
+              "text": "<br />30",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "VFKXK",
+              "text": "<br />32",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$6^{\\text {th }}$ period consists of 32 elements.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87397ae24e9e2db8c72",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Element with electronic configuration $1 s^2 2 s^2 2 p^6$ $3 s^2 3 p^6 3 d^{10} 4 s^2 4 p^6 4 d^{10} 5 s^2 5 p^3$ belongs to the following group of the periodic table",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "xLL5B",
+              "text": "5th",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZSkJU",
+              "text": "15th",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "csxMn",
+              "text": "$3 \\mathrm{rd}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "NUtLI",
+              "text": "17th",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Its valence shell has 5 electrons $\\left(n s^2, n p^3\\right)$ It belongs to 15 th group of the periodic table.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7cc6f5bfc7ab78ae7f9",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Cobalt (60) isotope is used in the treatment of :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "xzoFn",
+              "text": "Heart diseases",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "fXaBO",
+              "text": "Skin diseases",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "9jysR",
+              "text": "Diabetes",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "bPoZw",
+              "text": "Cancer",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Cobalt ( 60 ) isotope is used in the treatment of cancer.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7cc6f5bfc7ab78ae7f5",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The element, with atomic number $118,$ will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "1Mla3",
+              "text": "alkali",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "iFun9",
+              "text": "noble gas",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "UkyZQ",
+              "text": "lanthanide",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "0QA5x",
+              "text": "transition element",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Electronic configuration of element with atomic number 118 will be $[\\mathrm{Rn}] 5 \\mathrm{f}^{14} 6 \\mathrm{~d}^{10}$ $7 \\mathrm{~s}^{2} 7 \\mathrm{p}^{6} .$ Since its elctronic configuration in the outer moot or bit (ns $^{2} n p^{6}$ ) resemble with that of inert or noble gases, therefore it will be noble gas element.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7846f5bfc7ab78ae585",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "Which of the following pairs has both members from the same period of periodic table:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "jwPnT",
+              "text": "$\\mathrm{Na}, \\mathrm{Ca}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8T0iN",
+              "text": "$\\mathrm{Na}, \\mathrm{Cl}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "3NHIH",
+              "text": "$\\mathrm{Ca}, \\mathrm{Cl}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nAQ1v",
+              "text": "$\\mathrm{Cl}, \\mathrm{Br}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$_{11} \\mathrm{Na} \\Rightarrow 2,8,1 ;{ }_{17} \\mathrm{Cl} \\Rightarrow 2,8,7$\nThese have same number of shells. Hence, they are the elements of the same period.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e85e6f5bfc7ab78aed5a",
+      "title": "Periodic properties",
+      "totalQuestions": 17,
+      "questions": [
+        {
+          "_id": "67726d15c49e8ef28ee2b41b",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "The ionic radii in $(Ã…)$ of $\\mathrm{N}^{3-}, \\mathrm{O}^{2-}$ and $\\mathrm{F}^{-}$are respectively.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "k6Hgc",
+              "text": "1.71, 1.40 and 1.36",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "OlAfd",
+              "text": "1.71, 1.36 and 1.40",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3I5Fe",
+              "text": "$1.36,1.40$ and 1.71",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "quOW6",
+              "text": "$1.36,1.71$ and 1.40",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{N}^{3-}, \\mathrm{O}^{2-}$ and $\\mathrm{F}^{-}$are isoelectronics ( 10 electrons) species. Their ionic radii will decrease with increase in magnitude of the nuclear charge from $\\mathrm{N}(\\mathrm{Z}=7)$ to O $(Z=8)$ and $F(Z=9)$.\ni.e.\n$\\begin{array}{ccc}\n\\mathrm{N}^{3-}\\gt & \\mathrm{O}^{2-}\\gt&\\mathrm{F}^{-} \\\\\n1.71 Ã… & 1.40 Ã… & 1.36 Ã…\n\\end{array}$\nHence, option (1) is correct.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726d14c49e8ef28ee2b418",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "Electron affinity is positive, when",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Qx3uI",
+              "text": "O changes into $\\mathrm{O}^{-}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "YEpQ6",
+              "text": "$\\mathrm{O}^{-}$changes to $\\mathrm{O}^{2-}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ow8tm",
+              "text": "O changes into $\\mathrm{O}^{+}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "F9IWg",
+              "text": "O changes to $\\mathrm{O}^{2+}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "When $\\mathrm{O}^{-}$changes into $\\mathrm{O}^{2-}$, energy is absorbed i.e the change is endothermic because $\\mathrm{O}^{-}$repels the incoming electron due to similar charge.\nH ice, it needs energy to add (accept) the electron. So, electron affinity $\\left(\\mathrm{EA}_2\\right)$ is positive.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8156f5bfc7ab78aea70",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Arrange the following ions in the order of decreasing $\\mathrm{X}-\\mathrm{O}$ bond length, where $\\mathrm{X}$ is the central atom",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Fu2NU",
+              "text": "$\\mathrm{ClO}_{4}^{-}, \\mathrm{SO}_{4}^{2-}, \\mathrm{PO}_{4}^{3-}, \\mathrm{SiO}_{4}^{-}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "dvNwz",
+              "text": "$\\mathrm{SiO}_{4}^{4-}, \\mathrm{PO}_{4}^{3-}, \\mathrm{SO}_{4}^{2-}, \\mathrm{ClO}_{4}^{-}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "YJPhg",
+              "text": "$\\mathrm{SiO}_{4}^{4-}, \\mathrm{PO}_{4}^{3-}, \\mathrm{ClO}_{4}^{-}, \\mathrm{SO}_{4}^{2-}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "7gwMp",
+              "text": "$\\mathrm{SiO}_{4}^{4-}, \\mathrm{SO}_{4}^{2-}, \\mathrm{PO}_{4}^{3-}, \\mathrm{ClO}_{4}^{-}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "More will be the electronegativity of $\\mathrm{X}$ lesser will be the bond length of $\\underline{X}-\\mathrm{O}$ bond.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8156f5bfc7ab78aea6e",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The correct order of acidic strength :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "0JFok",
+              "text": "$\\mathrm{Cl}_{2} \\mathrm{O}_{7}>\\mathrm{SO}_{2}>\\mathrm{P}_{4} \\mathrm{O}_{10}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "uT1o0",
+              "text": "$\\mathrm{K}_{2} \\mathrm{O}>\\mathrm{CaO}>\\mathrm{MgO}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "6KFkx",
+              "text": "$\\mathrm{CO}_{2}>\\mathrm{N}_{2} \\mathrm{O}_{5}>\\mathrm{SO}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "qgrRJ",
+              "text": "$\\mathrm{Na}_{2} \\mathrm{O}>\\mathrm{MgO}>\\mathrm{Al}_{2} \\mathrm{O}_{3}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Acidic character of oxide $\\propto$ Non-metallic nature of element. Non-metallic character increases along the period. Hence order of acidic character is\r\n\r\n$\\mathrm{Cl}_{2} \\mathrm{O}_{7}>\\mathrm{SO}_{2}>\\mathrm{P}_{4} \\mathrm{O}_{10}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ed6f5bfc7ab78ae911",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "<p>Consider the following radioactive decays</p><p>I. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mmultiscripts><mi mathvariant=\"normal\">U</mi><mprescripts/><mn>92</mn><none/></mmultiscripts><msub><mover><mo>&#10230;</mo><mrow><mo>-</mo><mi mathvariant=\"normal\">&#945;</mi></mrow></mover><mn>90</mn></msub><mi>Th</mi></math>&nbsp;and</p><p>II. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mrow></mrow><mn>90</mn></msub><mi>Th</mi><mover><mo>&#10230;</mo><mrow><mo>-</mo><mi mathvariant=\"normal\">&#945;</mi></mrow></mover><mmultiscripts><mi>Ra</mi><mprescripts></mprescripts><mn>88</mn><none></none></mmultiscripts></math></p><p>In which case group of parent and daughter elements remains unchanged.</p>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "XEPI9",
+              "text": "In <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">I</mi><mo>)</mo></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "V12oI",
+              "text": "In&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi>II</mi><mo>)</mo></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "YXtcX",
+              "text": "Both in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">I</mi><mo>)</mo></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi>II</mi><mo>)</mo></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "7z86E",
+              "text": "None of the above",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>For the following radioactive decays</p><p>I. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mmultiscripts><mi mathvariant=\"normal\">U</mi><mprescripts></mprescripts><mn>92</mn><none></none></mmultiscripts><msub><mover><mo>&#10230;</mo><mrow><mo>-</mo><mi mathvariant=\"normal\">&#945;</mi></mrow></mover><mn>90</mn></msub><mi>Th</mi></math> and<br />II. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mmultiscripts><mi>Th</mi><mprescripts></mprescripts><mn>90</mn><none></none></mmultiscripts><msub><mover><mo>&#10230;</mo><mrow><mo>-</mo><mi mathvariant=\"normal\">&#945;</mi></mrow></mover><mn>88</mn></msub><mi>Ra</mi></math></p><p>&nbsp;In&nbsp;both Uranium and Thorium belongs to IIIB group.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo></math> Elements with atomic number <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>90</mn></math> to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>103</mn></math> belongs to same group, i.e. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>III</mi><mo>-</mo><mi mathvariant=\"normal\">B</mi></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mi>rd</mi></math> group (i.e. actinoids).</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7e96f5bfc7ab78ae8f1",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "<p>Two elements <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">A</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">B</mi></math> have electronegativities <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>.</mo><mn>2</mn></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>.</mo><mn>0</mn></math> respectively. The nature of bond between <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">A</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">B</mi></math> would be</p>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "I19gf",
+              "text": "ionic",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "u2THw",
+              "text": "covalent",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "5Jiyz",
+              "text": "co-ordinate",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "5lGaj",
+              "text": "metallic",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo></math> Difference of electronegativity between <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">A</mi><mo>)</mo></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">B</mi><mo>)</mo></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>3</mn><mo>.</mo><mn>0</mn><mo>-</mo><mn>1</mn><mo>.</mo><mn>2</mn><mo>=</mo><mn>1</mn><mo>.</mo><mn>8</mn></math> and, a&nbsp;bond having electronegativity difference greater than <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>.</mo><mn>65</mn></math> is of ionic nature.</p><p>Hence, bond between <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">A</mi><mo>)</mo></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">B</mi><mo>)</mo></math> would be of ionic nature.&nbsp;</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7db6f5bfc7ab78ae871",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The decreasing order of the ionization potential of the following elements is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "6fdir",
+              "text": "$\\quad \\mathrm{Ne}>\\mathrm{Cl}>\\mathrm{P}>\\mathrm{S}>\\mathrm{Al}>\\mathrm{Mg}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "SVjnA",
+              "text": "$\\quad \\mathrm{Ne}>\\mathrm{Cl}>\\mathrm{P}>\\mathrm{S}>\\mathrm{Mg}>\\mathrm{Al}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "GSegG",
+              "text": "$\\quad \\mathrm{Ne}>\\mathrm{Cl}>\\mathrm{S}>\\mathrm{P}>\\mathrm{Mg}>\\mathrm{Al}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "cKqaH",
+              "text": "$\\mathrm{Ne}>\\mathrm{Cl}>\\mathrm{S}>\\mathrm{P}>\\mathrm{Al}>\\mathrm{Mg}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Closed shell (Ne), half filled (P) and completely filled configuration (Mg) are the cause of higher value of I.E.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7cd6f5bfc7ab78ae804",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which of the following is a strong base?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "nUp95",
+              "text": "$\\mathrm{PH}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "k7k1K",
+              "text": "$\\mathrm{AsH}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "9jydf",
+              "text": "$\\mathrm{NH}_{3}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "NJHow",
+              "text": "$\\mathrm{SbH}_{3}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Order of basic character is $\\mathrm{NH}_{3}>\\mathrm{PH}_{3}>$ $\\mathrm{AsH}_{3}>\\mathrm{SbH}_{3} .$ Basic-character decreases down the group from $\\mathrm{N}$ to Bi due to increase in atomic size.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c06f5bfc7ab78ae790",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Which one of the following arrangements represents the correct order of electron gain enthalpy (with negative sign) of the given atomic species?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "aasF2",
+              "text": "$\\quad \\mathrm{S}<\\mathrm{O}<\\mathrm{Cl}<\\mathrm{F}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "vkYRU",
+              "text": "$\\quad \\mathrm{Cl}<\\mathrm{F}<\\mathrm{S}<\\mathrm{O}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "PpB20",
+              "text": "$\\quad \\mathrm{F}<\\mathrm{Cl}<\\mathrm{O}<\\mathrm{S}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "YME2J",
+              "text": "$\\quad \\mathrm{O}<\\mathrm{S}<\\mathrm{F}<\\mathrm{Cl}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The amount of energy released when an electron is added to an isolated gaseous atom to produce a monovalent anion is called electron gain enthalpy.\r\n\r\nElectron affinity value generally increase on moving from left to right in a period however there are exceptions of this rule in the case of those atoms which have stable configuration. These atoms resist the addition of extra electron, therefore the low value of electron affinity $\\underset{-1.48}{\\mathrm{O}}<\\underset{-2.0}{\\mathrm{~S}}<\\underset{-3.6}{\\mathrm{~F}}<\\underset{-3.8}{\\mathrm{Cl}}$\r\n\r\nOn the other hand $\\mathrm{Cl}$, because of its comparatively bigger size than $\\mathrm{F}$, allow the addition of an extra electron more easily.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7bd6f5bfc7ab78ae778",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The valency shell of element A contains 3 electrons while the valency shell of element $\\mathrm{B}$ contains 6 electrons. If A combines with $\\mathrm{B}$, the probable formula of the compound formed will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "zLodF",
+              "text": "$\\mathrm{AB}_{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "u8QB5",
+              "text": "$A_{2} B$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "p9otI",
+              "text": "$\\mathrm{A}_{2} \\mathrm{~B}_{3}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "GkuE3",
+              "text": "$\\mathrm{A}_{3} \\mathrm{~B}_{2}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The element A is $\\mathrm{ns}^{2} p^{1}$ and $\\mathrm{B}$ is $\\mathrm{ns}^{2} p^{4}$. They can form compound of the type $\\mathrm{A}_{2} \\mathrm{~B}_{3}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b06f5bfc7ab78ae6fd",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The ions $\\mathrm{O}^{2-}, \\mathrm{F}^{-}, \\mathrm{Na}^{+}, \\mathrm{Mg}^{2+}$ and $\\mathrm{Al}^{3+}$ are\r\n\r\nisoelectronic. Their ionic radii show:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "gfydk",
+              "text": "A decrease from $\\mathrm{O}^{2-}$ to $\\mathrm{F}^{-}$ and then increase from $\\mathrm{Na}^{+}$ to $\\mathrm{Al}^{3+}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "mByj5",
+              "text": "A significant increase from $\\mathrm{O}^{2-}$ to $\\mathrm{Al}^{3+}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "JrMqN",
+              "text": "A significant decrease from $\\mathrm{O}^{2-}$ to $\\mathrm{Al}^{3+}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "7Gd7j",
+              "text": "An increase from $\\mathrm{O}^{2-}$ to $\\mathrm{F}^{-}$ and then decrease from $\\mathrm{Na}^{+}$ to $\\mathrm{Al}^{3+}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Amongst isoelectronic species, ionic radii of anion is more than that of cations. Further size of anion increase with increase in -ve charge and size of cation decrease with increase in $+$ ve charge. Hence ionic radii decreases from $\\mathrm{O}^{-}$ to $\\mathrm{Al}^{3+}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b06f5bfc7ab78ae6fc",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "When the first ionisation energies are plotted against atomic number, the peaks are occupied by",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "rWuP2",
+              "text": "Alkali metals",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "2WsK4",
+              "text": "Rare gases",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "8XYaL",
+              "text": "Halogens",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "1j1h1",
+              "text": "Transition elements",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Rare gases; as the $\\mathrm{e}^{-}$ is to be removed from stable configuration.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7af6f5bfc7ab78ae6fb",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The screening effect of $d$ -electrons is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "1iBXD",
+              "text": "Equal to $p$ -electrons",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Vk2Hj",
+              "text": "Much more than $p$ -electrons",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "cRWI0",
+              "text": "Same as $f$ -electrons",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ZC0X5",
+              "text": "Less than $p$ -electrons.",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The screening effect of inner electron of the nucleus causes the decrease in ionization potential, therefore the order of the screening effect is\r\n\r\n$$\r\n\r\nf<d<p<s\r\n\r\n$$\r\n\r\nHence, the screening effect of $d$ -electron is less than $p$ -electron.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a06f5bfc7ab78ae67e",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which of the following does not have valence electron in $3 d$ -subshell?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "OuVwH",
+              "text": "Fe(III)",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "41N1J",
+              "text": "$\\mathrm{Mn}(\\mathrm{II})$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "EtfZM",
+              "text": "$\\mathrm{Cr}(\\mathrm{I})$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "22ewp",
+              "text": "$\\mathrm{P}(0)$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{P}$ (At no. 15 ) has electronic configuration $1 s^{2}, 2 s^{2} p^{6}, 3 s^{2} p^{3},$ hence no electron in $d$ -subshell.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7926f5bfc7ab78ae601",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "The correct order of radii is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "QwXm3",
+              "text": "$\\quad \\mathrm{N}<\\mathrm{Be}<\\mathrm{B}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "5nMdt",
+              "text": "$\\mathrm{F}^{-}<\\mathrm{O}^{2-}<\\mathrm{N}^{3-}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "fd81T",
+              "text": "$\\quad \\mathrm{Na}<\\mathrm{L}_{1}<\\mathrm{K}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4lrTd",
+              "text": "$\\mathrm{Fe}^{3+}<\\mathrm{Fe}^{2+}<\\mathrm{Fe}^{4+}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Effective nuclear charge (i,e. Z/e ratio) decreases from $\\mathrm{F}^{-}$ to $\\mathrm{N}^{3-}$ hence the radii follows the order: $\\mathrm{F}^{-}<\\mathrm{O}^{2-}<\\mathrm{N}^{3-} . \\mathrm{Z} / \\mathrm{e}$ for\n$\\mathrm{F}^{-}=9 / 10=0.9,$ for $\\mathrm{O}^{2-}=8 / 10=.8,$ for $\\mathrm{N}^{3-}=0.7$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7846f5bfc7ab78ae586",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "In the periodic table, with the increase in atomic number, the metallic character of an element",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "X8YUy",
+              "text": "decreases in a period and increases in a group",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "tqsQ9",
+              "text": "increases in a period and decreases in a group",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "eCy1r",
+              "text": "increases both in a period and the group",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "YseUG",
+              "text": "decreases in a period and the group",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution available",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7756f5bfc7ab78ae505",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "Which one of the following ions has the highest value of ionic radius?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "DGm2S",
+              "text": "$\\mathrm{O}^{2-}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "23NHH",
+              "text": "$\\mathrm{B}^{3+}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GDQdV",
+              "text": "$\\mathrm{Li}^{+}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iGrd9",
+              "text": "$\\mathrm{F}^{-}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The ionic radii follows the order $\\mathrm{O}^{2-}>\\mathrm{F}^{-}>\\mathrm{Li}^{+}>\\mathrm{B}^{3+}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

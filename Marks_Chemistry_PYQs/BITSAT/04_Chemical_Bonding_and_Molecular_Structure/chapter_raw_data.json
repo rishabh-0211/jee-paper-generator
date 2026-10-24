@@ -1,0 +1,2897 @@
+{
+  "index": 4,
+  "chapterId": "61e7bd716d6f7a6d0517f627",
+  "chapter": "Chemical Bonding and Molecular Structure",
+  "exam": "BITSAT",
+  "totalTopics": 6,
+  "totalQuestions": 43,
+  "downloadTime": "2026-10-08 20:02:46",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e85e6f5bfc7ab78aed60",
+      "title": "Covalent and Co-ordinate Bonding",
+      "totalQuestions": 9,
+      "questions": [
+        {
+          "_id": "67726cfac49e8ef28ee2b34d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Identify the species having one $\\pi$-bond and maximum number of canonical forms from the following:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "w00H8",
+              "text": "$\\mathrm{SO}_3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fsXbH",
+              "text": "$\\mathrm{O}_2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZZWQD",
+              "text": "$\\mathrm{SO}_2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lFe10",
+              "text": "$\\mathrm{CO}_3^{2-}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/yPRHtOUxGf2QxRn4yajT43JsHblybNpUbV6hftQsxeg.original.fullsize.png\"/><br/>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8236f5bfc7ab78aeae8",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Which of the following does not contain any coordinate bond?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "y1hj0",
+              "text": "$\\mathrm{H}_{3} \\mathrm{O}^{+}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Kgn12",
+              "text": "$\\mathrm{BF}_{4}{ }^{-}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "pUMxv",
+              "text": "$\\mathrm{HF}_{2}{ }^{-}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Vw1PB",
+              "text": "$\\mathrm{SO}_{2}{ }^{-}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{HF}_{2}$ is the only compound among the given options which does not contain any coordinate bond because it has hydrogen bonding.\r\n\r\n$[\\mathrm{H}-\\mathrm{F} \\bullet \\bullet \\bullet \\mathrm{H}]^{-}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8226f5bfc7ab78aeae6",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which of the following has the highest $p \\pi-p \\pi$ bonding tendency?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "48BFG",
+              "text": "$N$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Kp7qY",
+              "text": "$P$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "QqnJJ",
+              "text": "$As$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "cobLF",
+              "text": "$Sb$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Nitrogen due to small size is able to show $p \\pi-p \\pi$ lateral overlap forming $\\mathrm{N} \\equiv \\mathrm{N}$, rest elements due to bigger size are not able to show $p \\pi-p \\pi$ lateral overlap.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8226f5bfc7ab78aeae2",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Which of the following represents the correct order of $\\mathrm{Cl}-\\mathrm{O}$ bond lengths in\r\n\r\n$\\mathrm{ClO}^{-}, \\mathrm{ClO}_{2}^{-}, \\mathrm{ClO}_{3}^{-}, \\mathrm{ClO}_{4}^{-} \\text {? }$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "zo511",
+              "text": "$\\mathrm{ClO}_{4}^{-}=\\mathrm{ClO}_{3}^{-}=\\mathrm{ClO}_{2}^{-}=\\mathrm{ClO}^{-}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "DaevJ",
+              "text": "$\\mathrm{ClO}^{-} < \\mathrm{ClO}_{2}^{-} < \\mathrm{ClO}_{3}^{-} < \\mathrm{ClO}_{4}^{-}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "0rFSi",
+              "text": "$\\mathrm{ClO}_{4}^{-} < \\mathrm{ClO}_{3}^{-} < \\mathrm{ClO}_{2}^{-} < \\mathrm{ClO}^{-}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "o56GL",
+              "text": "$\\mathrm{ClO}_{3}^{-} < \\mathrm{ClO}_{4}^{-} < \\mathrm{ClO}_{2}^{-} < \\mathrm{ClO}^{-}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The b.o in $\\mathrm{Cl}-\\mathrm{O}^{-}$is 1\r\n\r\nThe b.o in $\\mathrm{O}=\\mathrm{Cl}-\\mathrm{O}^{-}$is $1.5$\r\n\r\nThe b.o. in $\\mathrm{O}=\\mathrm{Cl}=\\mathrm{O}$ is $\\frac{5}{3}=1.66$\r\n\r\nThe b.o. in $\\mathrm{O}=\\underset{\\mathrm{O}}{\\stackrel{\\mathrm{O}}{\\|}} \\mathrm{l}-\\mathrm{O}^{-}$is $\\frac{7}{4}=1.75$\r\n\r\nThe bond length increases as b.o. decreases.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8226f5bfc7ab78aeae1",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Which one of the following ions has the maximum magnetic moment?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "maY1s",
+              "text": "$\\mathrm{Sc}^{3+}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "1TQ6A",
+              "text": "$\\mathrm{Ti}^{3+}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "R6I0T",
+              "text": "$\\mathrm{Cr}^{3+}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "15ymQ",
+              "text": "$\\mathrm{Fe}^{3+}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{Fe}^{3+}\\left(d^{5}\\right)$ has 5 unpaired electrons therefore magneticmoment $=\\sqrt{n(n+2)}=\\sqrt{5(5+2)}=5.91$ which is maximum among given options. As $\\mathrm{Sc}^{3+}, \\mathrm{Ti}^{3+}, \\mathrm{Cr}^{3+}$ and $\\mathrm{V}^{3+}$ contain $0,1,3$, and 2 number of unpaired electrons respectively.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7fb6f5bfc7ab78ae98b",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Valence electrons in the element <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">A</mi></math> are <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn></math> and that in element <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">B</mi></math>&nbsp;are&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>6</mn></math>. Most probable compound formed from <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">A</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">B</mi></math> is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "TsgA7",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">A</mi><mn>2</mn></msub><mi mathvariant=\"normal\">B</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "If2Bn",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>AB</mi><mn>2</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "X8AiN",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">A</mi><mn>6</mn></msub><msub><mi mathvariant=\"normal\">B</mi><mn>3</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "sRJAf",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">A</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">B</mi><mn>3</mn></msub></math>",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Valence electrons in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">A</mi><mo>=</mo><mn>3</mn></math></p><p>Valence electron in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">B</mi><mo>=</mo><mn>6</mn></math></p><p>Thus, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">A</mi></math> is electropositive and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">B</mi></math> is electronegative, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">A</mi></math> can lose three electrons and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">B</mi></math> can gain two electrons to attain stable configuration.</p><p>Hence, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">A</mi></math> exist as <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">A</mi><mrow><mn>3</mn><mo>+</mo></mrow></msup></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">B</mi></math> as <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">B</mi><mrow><mn>2</mn><mo>-</mo></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> Compound formed is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">A</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">B</mi><mn>3</mn></msub></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7e96f5bfc7ab78ae8f0",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "<p>Which of the following are isoelectronic species?</p><p>I. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi mathvariant=\"normal\">C</mi><mo>+</mo></mover><msub><mi mathvariant=\"normal\">H</mi><mn>3</mn></msub></math></p><p>II.&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>NH</mi><mn>2</mn><mo>-</mo></msubsup></math></p><p>III.&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>NH</mi><mn>4</mn><mo>+</mo></msubsup></math></p><p>IV.&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>NH</mi><mn>3</mn></msub></math></p>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "elUiD",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">I</mi><mo>,</mo><mo>&#160;</mo><mi>II</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>III</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Rsc35",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>II</mi><mo>,</mo><mo>&#160;</mo><mi>III</mi></math><span style=\"background-color:null;\"> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>IV</mi></math></span>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "pacwt",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">I</mi><mo>,</mo><mo>&#160;</mo><mi>II</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>IV</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "1lIHI",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>II</mi></math>&nbsp;and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">I</mi></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>I. Number of electrons in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi mathvariant=\"normal\">C</mi><mo>+</mo></mover><msub><mi mathvariant=\"normal\">H</mi><mn>3</mn></msub><mo>=</mo><mn>6</mn><mo>+</mo><mn>3</mn><mo>-</mo><mn>1</mn><mo>=</mo><mn>8</mn></math></p><p>II. Number of electrons in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>NH</mi><mn>2</mn><mo>-</mo></msubsup><mo>=</mo><mn>7</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>10</mn></math></p><p>III. Number of electrons in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>NH</mi><mn>4</mn><mo>+</mo></msubsup><mo>=</mo><mn>7</mn><mo>+</mo><mn>4</mn><mo>-</mo><mn>1</mn><mo>=</mo><mn>10</mn></math></p><p>IV. Number of electrons in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>NH</mi><mn>3</mn></msub><mo>=</mo><mn>7</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>10</mn></math></p><p>Since, species with same number of electrons are called isoelectronic species, Hence, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>IInd</mi><mo>,</mo><mi>IIIrd</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>IVth</mi></math> are isoelectronic.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7d06f5bfc7ab78ae81a",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Which of the following molecule/ion has all the three types of bonds, electrovalent, covalent and co-ordinate:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Ol8gP",
+              "text": "$\\mathrm{HCl}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "iasW2",
+              "text": "$\\mathrm{NH}_{4}^{+}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "UVzv9",
+              "text": "$\\mathrm{Cl}^{-}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "WsG91",
+              "text": "$\\mathrm{H}_{2} \\mathrm{O}_{2}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Bond structure of molecules are:\r\n\r\n$\\mathrm{HCl}=\\mathrm{H}^{+}-\\mathrm{Cl}^{-}$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/FxJrv1IChOVhvGmxCIMv3hnNqiKj8TAl84j1vusc4kM.original.fullsize.png\"><br>\r\n\r\nhence, clearly $\\mathrm{NH}_{4}^{+}$ ion contains all three types of bonds.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ce6f5bfc7ab78ae808",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which one of the following does not follow octate rule?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "UD5vp",
+              "text": "$\\mathrm{PF}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "pCFBg",
+              "text": "$\\mathrm{BF}_{3}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "WyGcM",
+              "text": "$\\mathrm{CO}_{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "A3LSF",
+              "text": "$\\mathrm{CCl}_{4}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{BF}_{3}$ does not follow octate rule because central atom, boron lacks an electron pair. Thus, it also acts as Lewis acid.\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/FEtEJfwKKzcxm-mq9J5kdgMMbsV7colrfigKqLSvytU.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e85e6f5bfc7ab78aed5c",
+      "title": "Hybridisation and VSEPR Theory",
+      "totalQuestions": 15,
+      "questions": [
+        {
+          "_id": "67726d16c49e8ef28ee2b423",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "The hybridisation scheme for the central atom includes a $d$-orbital contribution in",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "p2FAM",
+              "text": "$\\mathrm{I}_3^{-}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "npOjV",
+              "text": "$\\mathrm{PCl}_3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Ngqkg",
+              "text": "$\\mathrm{NO}_3^{-}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZngB2",
+              "text": "$\\mathrm{H}_2 \\mathrm{Se}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{I}_3^{-}$is linear with central iodine atom undergoing $s p^3 d$-hybridisation and three lone pairs occupying equatorial position.\nThus, this structure include $d$-orbital contribution to the hybridisation scheme.\nThe structure is,\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/BG4fY7jMOsB4UjCF25RtcpyFgdhDzJBTzNjMAZ5Xdp8.original.fullsize.png\"/>\n$\\mathrm{PCl}_3$ structure is $s p^3$-hybridised with one lone pair.\n$\\mathrm{NO}_3^{-}$is $s p^2$-hybridised and $\\mathrm{H}_2 \\mathrm{Se}$ is $s p^3$ - hybridised with two lone pairs of Se atom.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726cfac49e8ef28ee2b34e",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "$\\mathrm{sp}^3 \\mathrm{~d}^2$ hybridisation is not displayed by :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "aMy8L",
+              "text": "$\\mathrm{BrF}_5$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZXLuG",
+              "text": "$\\mathrm{SF}_6$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "DIser",
+              "text": "$\\left[\\mathrm{CrF}_6\\right]^{3-}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "PfcNU",
+              "text": "$\\mathrm{PF}_5$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/8q2nsf5xHTdRHqUJwpVaigCrVx-M8w5eZbwvQEe1q8M.original.fullsize.png\"/><br/>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8326f5bfc7ab78aeb70",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "In the molecules $\\mathrm{CH}_4, \\mathrm{NF}_3, \\mathrm{NH}_4^{+}$and $\\mathrm{H}_2 \\mathrm{O}$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "pE3tv",
+              "text": "\r\nnumber of lone pairs are same\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Xq1Wh",
+              "text": "\r\nall have same hybridisation of centre of atom \r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "ISsyF",
+              "text": "\r\nthe bond angles are same \r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "k5Jwh",
+              "text": "\r\nnumber of bond pairs are same",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{CH}_4 ; \\mathrm{bp}=4 ; s p^3$-hybridisation\r\n$\\mathrm{NF}_3 ; \\mathrm{bp}=3 ; l p=1 ; s p^3$-hybridisation\r\n$\\mathrm{NH}_4^{+} ; \\mathrm{bp}=4 ; l p=0 ; s p^3$-hybridisation\r\n$\\mathrm{H}_2 \\mathrm{O} ; \\mathrm{bp}=2 ; l p=2 ; s p^3$-hybridisation\r\nHence, all have the same slope.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8306f5bfc7ab78aeb5f",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "In which pair or pairs is the stronger bond found in the first species?\r\nI. $\\mathrm{O}_2^{2-}, \\mathrm{O}_2$;           II. $\\mathrm{N}_2, \\mathrm{~N}_2^{+}$ III. $\\mathrm{NO}^{+}, \\mathrm{NO}^{-}$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "IMUQ8",
+              "text": "\r\nI only\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "9NOLg",
+              "text": "\r\nII only\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "jzMD6",
+              "text": "\r\nI and II only\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ShUox",
+              "text": "\r\nII and III only",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/ekQnbHmAdXQXv6IoU5trsD3ixQ9-xL9Byqgtb06Si28.original.fullsize.png\"><br>\r\nLarger the bond order, stronger the bond formed.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8306f5bfc7ab78aeb5b",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "$\\mathrm{OF}$ and $\\mathrm{F}_2$ can be compared in terms of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "kMZf9",
+              "text": "\r\n$\\mathrm{OF}$ is paramagnetic while $\\mathrm{F}_2$ is diamagnetic\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "XYHW6",
+              "text": "\r\nOF is more stable towards dissociation into atoms\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "0eZEy",
+              "text": "\r\nBoth (a) and (b) are correct\r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "9nZZ1",
+              "text": "\r\nNone of the above is correct",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/BlF17NzSVsXnf9GsAVD-1smgvmLZQdQph_p7vuw3vZg.original.fullsize.png\"><br>\r\nThis is one unpaired electron in $(\\mathrm{O}-\\mathrm{F})$, hence paramagnetic, thus (a) is correct.\r\nAs bond order of $\\mathrm{O}-\\mathrm{F}>\\mathrm{F}-\\mathrm{F}$ thus, bond energy of $\\mathrm{O}-\\mathrm{F}>\\mathrm{F}-\\mathrm{F}$.\r\nHence, (a) and (b) both are correct.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8246f5bfc7ab78aeaf1",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "In $\\mathrm{XeF}_{2}, \\mathrm{XeF}_{4}, \\mathrm{XeF}_{6}$ the number of lone pairs on $\\mathrm{Xe}$ are respectively",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "CSUhO",
+              "text": "$2,3,1$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "650pO",
+              "text": "$1,2,3$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "toM33",
+              "text": "$4,1,2$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "YscDJ",
+              "text": "$3,2,1$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/poozu7ppK0XX5QeghKr0J1d8mTTY5QRhxzyKCkmrntU.original.fullsize.png\"><br><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/QVhmwKY6fzOtwbBnLk6midAtZBAPqXmSKi0flSqBDCE.original.fullsize.png\"><br><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/gp5Xq268TgoDT2CjxBP_XNLH0OMIYpsTy0KE2sMXMdc.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8236f5bfc7ab78aeae9",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "Which of the following set contains species having same angle around the central atom?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "jvP5i",
+              "text": "$\\mathrm{SF}_{4}, \\mathrm{CH}_{4}, \\mathrm{NH}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "K1amR",
+              "text": "$\\mathrm{NF}_{3}, \\mathrm{BCl}_{3}, \\mathrm{NH}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "6fhEQ",
+              "text": "$\\mathrm{BF}_{3}, \\mathrm{NF}_{3}, \\mathrm{AlCl}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "45ETp",
+              "text": "$\\mathrm{BF}_{3}, \\mathrm{BCl}_{3}, \\mathrm{BBr}_{3}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{BF}_{3}, \\mathrm{BCl}_{3}, \\mathrm{BBr}_{3}$ are $s p^{2}$ hybridised. So, all have same structure and bond angle i.e. $120^{\\circ}$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8156f5bfc7ab78aea6f",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "In the reaction $2 \\mathrm{PCl}_{5} \\rightleftharpoons \\mathrm{PCl}_{4}^{+}+\\mathrm{PCl}_{6}^{-}$, the change in hybridisation is from",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "VnYSq",
+              "text": "$s p^{3} d$ to $s p^{3}$ and $s p^{3} d^{2}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "d5mCO",
+              "text": "$s p^{3} d$ to $s p^{2}$ and $s p^{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "epDns",
+              "text": "$s p^{3} d$ to $s p^{3} d^{2}$ and $s p^{3} d^{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "KUQLh",
+              "text": "$s p^{3} d^{2}$ to $s p^{3}$ and $s p^{3} d$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$2 \\mathrm{PCl}_{5} \\rightleftharpoons \\mathrm{PCl}_{4}^{+}+\\mathrm{PCl}_{6}^{-}$\r\n\r\n$\\uparrow s p^{3} d \\quad \\uparrow s p^{3} \\quad \\uparrow s p^{3} d^{2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7f96f5bfc7ab78ae977",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Which of the following diatomic molecules would be stabilised by the removal of an electron?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "HK7WR",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">C</mi><mn>2</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "20cTQ",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CN</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "sZiv7",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">N</mi><mn>2</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "UhvlR",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub></math>",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub></math>, molecule, last two electrons are present in anti bonding<br />orbitals.<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub><mfenced><mrow><mn>8</mn><mo>+</mo><mn>8</mn><mo>=</mo><mn>16</mn></mrow></mfenced><mo>=</mo><mi mathvariant=\"normal\">&#963;</mi><mn>1</mn><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mn>2</mn></msup><mo>,</mo><msup><mi mathvariant=\"normal\">&#963;</mi><mo>*</mo></msup><mn>1</mn><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mn>2</mn></msup><mo>,</mo><mi mathvariant=\"normal\">&#963;</mi><mn>2</mn><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mn>2</mn></msup><mo>,</mo><msup><mi mathvariant=\"normal\">&#963;</mi><mo>*</mo></msup><mn>2</mn><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mn>2</mn></msup><mo>,</mo><mo>&#160;</mo><mi mathvariant=\"normal\">&#963;</mi><mn>2</mn><msup><msub><mi mathvariant=\"normal\">p</mi><mi mathvariant=\"normal\">z</mi></msub><mn>2</mn></msup><mo>,</mo><mi mathvariant=\"normal\">&#960;</mi><mn>2</mn><msup><msub><mi mathvariant=\"normal\">p</mi><mi mathvariant=\"normal\">x</mi></msub><mn>2</mn></msup><mo>=</mo><mi mathvariant=\"normal\">&#960;</mi><mn>2</mn><msup><msub><mi mathvariant=\"normal\">p</mi><mi mathvariant=\"normal\">y</mi></msub><mn>2</mn></msup><mo>,</mo><msup><mi mathvariant=\"normal\">&#960;</mi><mo>*</mo></msup><mn>2</mn><msup><msub><mi mathvariant=\"normal\">p</mi><mi mathvariant=\"normal\">x</mi></msub><mn>1</mn></msup><mo>=</mo><msup><mi mathvariant=\"normal\">&#960;</mi><mo>*</mo></msup><mn>2</mn><msup><msub><mi mathvariant=\"normal\">p</mi><mi mathvariant=\"normal\">y</mi></msub><mn>1</mn></msup></math><br />Removal of one electron from the <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub></math>, molecule gives <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi mathvariant=\"normal\">O</mi><mn>2</mn><mo>+</mo></msubsup></math> in which the number of anti bonding electrons is one less and hence, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>BO</mi></math> increases. Thus, removal of one electron from <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub></math> stabilises the molecule.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7f86f5bfc7ab78ae971",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The incorrect statement about carbonate <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><msubsup><mi>CO</mi><mn>3</mn><mrow><mn>2</mn><mo>-</mo></mrow></msubsup></mfenced></math> ion is,",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Gw3ps",
+              "text": "It has planar structure",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "1zskx",
+              "text": "It has one coordinate bond",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "3lNfV",
+              "text": "It has three resonating structure",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "jWTf9",
+              "text": "Hydrolysis of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>CO</mi><mn>3</mn><mrow><mn>2</mn><mo>-</mo></mrow></msubsup></math> ion gives basic solution",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Resonating structure of carbonate <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>CO</mi><mn>3</mn><mrow><mn>2</mn><mo>-</mo></mrow></msubsup></math> ion are</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/296d8d16-fa2d-456c-8c26-2b39438519d1-be6ca139-a28a-4b8f-96c4-d250dd3fe4c9-image.png\" style=\"width: 955px; height: 185px;\" /></p><p>In resonating structures bonds are not fixed and therefore, all bond lengths are equal.</p><p>The hybridisation of central atom is&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>sp</mi><mn>2</mn></msup></math>.</p><p>Thus, there is no coordinate bond present in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>CO</mi><mn>3</mn><mrow><mn>2</mn><mo>-</mo></mrow></msubsup></math>. Hence, the second statement is incorrect.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ec6f5bfc7ab78ae907",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which of the following show maximum bond-order?&nbsp;",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "3wJmz",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "BWLmq",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi mathvariant=\"normal\">O</mi><mn>2</mn><mo>-</mo></msubsup></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "cxZw5",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi mathvariant=\"normal\">O</mi><mn>2</mn><mo>+</mo></msubsup></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "jOmsp",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi mathvariant=\"normal\">O</mi><mn>2</mn><mrow><mn>2</mn><mo>-</mo></mrow></msubsup></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo></math> Bond order&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi>BO</mi></mfenced><mo>=</mo><mfrac><mrow><msub><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">b</mi></msub><mo>-</mo><msub><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">a</mi></msub></mrow><mn>2</mn></mfrac></math></p><p>Here, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">b</mi></msub></math>&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">a</mi></msub></math> are the number of bonding and anti bonding electrons, respectively.</p><p>for <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub><mo>,</mo><mi>BO</mi><mo>=</mo><mfrac><mrow><mn>10</mn><mo>-</mo><mn>6</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>2</mn></math></p><p>for <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi mathvariant=\"normal\">O</mi><mn>2</mn><mo>-</mo></msubsup><mo>,</mo><mi>BO</mi><mo>=</mo><mfrac><mrow><mn>10</mn><mo>-</mo><mn>7</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>1</mn><mo>.</mo><mn>5</mn></math></p><p>for <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi mathvariant=\"normal\">O</mi><mn>2</mn><mo>+</mo></msubsup><mo>,</mo><mi>BO</mi><mo>=</mo><mfrac><mrow><mn>10</mn><mo>-</mo><mn>5</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>2</mn><mo>.</mo><mn>5</mn></math></p><p>for <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi mathvariant=\"normal\">O</mi><mn>2</mn><mrow><mn>2</mn><mo>-</mo></mrow></msubsup><mo>,</mo><mi>BO</mi><mo>=</mo><mfrac><mrow><mn>10</mn><mo>-</mo><mn>8</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>1</mn></math></p><p>Hence, maximum value for <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>BO</mi></math> is for <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi mathvariant=\"normal\">O</mi><mn>2</mn><mo>+</mo></msubsup></math>.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7be6f5bfc7ab78ae77a",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which one of the following pairs is isostructural (i.e., having the same shape and hybridization)?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ZREOr",
+              "text": "$\\left[\\mathrm{BCl}_{3}\\right.$ and $\\left.\\mathrm{BrCl}_{3}^{-}\\right]$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "2JVmM",
+              "text": "$\\left[\\mathrm{NH}_{3}\\right.$ and $\\left.\\mathrm{NO}_{3}^{-}\\right]$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "rLPuG",
+              "text": "$\\left[\\mathrm{NF}_{3}\\right.$ and $\\left.\\mathrm{BF}_{3}\\right]$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "53kTn",
+              "text": "$\\left[\\mathrm{BF}_{4}^{-}\\right.$ and $\\left.\\mathrm{NH}_{4}^{+}\\right]$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{BF}_{4}^{-}$ hybridisation $\\mathrm{sp}^{3}$, tetrahedral structure.\r\n\r\n$\\mathrm{NH}_{4}^{+}$ hybridisation $s p^{3},$ tetrahedral structure.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7926f5bfc7ab78ae604",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "$\\mathrm{A} \\sigma$ bonded molecule $\\mathrm{MX}_{3}$ is T-shaped. The number of non bonded pair of electrons is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "SSSYb",
+              "text": "0",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "rnDP8",
+              "text": "2",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "U2fwi",
+              "text": "1",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "bhCcO",
+              "text": "can be predicted only if atomic number is known",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "For T-shape geometry the molecule must have 3 bonded pair and 2 lone pair of electrons.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7846f5bfc7ab78ae587",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "Which of the following statements is/are true?\n1.$\\mathrm{PH}_{5}$ and $\\mathrm{BiCl}_{5}$ do not exist.\n2.$p \\pi-d \\pi$ bond is present in $\\mathrm{SO}_{2}$\n3.$\\mathrm{I}_{3}^{+}$ has bent geometry.\n4.$\\mathrm{SeF}_{4}$ and $\\mathrm{CH}_{4}$, have same shape.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "u053a",
+              "text": "1,2,3",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "fiMOY",
+              "text": "1,3",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "LEkMz",
+              "text": "1,3,4",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "w9vtE",
+              "text": "1,2,4",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "All the three statements are correct.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7756f5bfc7ab78ae506",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "Which of the following two are isostructural?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "rh9pN",
+              "text": "$\\mathrm{XeF}_{2,} \\mathrm{IF}_{2}^{-}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "mk3XD",
+              "text": "$\\mathrm{NH}_{3}, \\mathrm{BF}_{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "TZKsv",
+              "text": "$\\mathrm{CO}_{3}^{2-}, \\mathrm{SO}_{3}^{2-}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "aJ25K",
+              "text": "$\\mathrm{PCI}_{5}, \\mathrm{ICI}_{5}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{XeF}_{2}$ and $\\mathrm{IF}_{2}^{-}$ both are linear and have hybridisation $s p^{3} d$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e85e6f5bfc7ab78aed5f",
+      "title": "Molecular Orbital Theory",
+      "totalQuestions": 9,
+      "questions": [
+        {
+          "_id": "67726d17c49e8ef28ee2b42c",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "The spin only magnetic moment of $\\mathrm{Fe}^{3+}$ ion (in BM) is approximately.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "woDkp",
+              "text": "4",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Z6d5r",
+              "text": "5",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SMgli",
+              "text": "6",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "8pYn0",
+              "text": "7",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Electronic configuration of Fe .\n$\\begin{aligned}\n{ }_{26} \\mathrm{Fe} & =[\\mathrm{Ar}] 3 d^6 4 s^2 \\\\\n\\mathrm{Fe}^{3+} & =[\\mathrm{Ar}] 3 d^5\n\\end{aligned}$\nNumber of unpaired electrons, $n=5$\nSpin only magnetic moment, $\\mu_s=\\sqrt{n(n+2)} \\mathrm{BM}$\n$\\begin{gathered}\n\\mu_s=\\sqrt{5(5+2)} \\\\\n\\mu_s=\\sqrt{35} \\\\\n\\mu_s=5.85 \\mathrm{BM} \\text { or } \\mu_s \\simeq 6 \\mathrm{BM}\n\\end{gathered}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726d17c49e8ef28ee2b42b",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "In the following species, how many species have same magnetic moment?\n(i) $\\mathrm{Cr}^{2+}$\n(ii) $\\mathrm{Mn}^{3+}$\n(iii) $\\mathrm{Ni}^{3+}$\n(iv) $\\mathrm{Sc}^{2+}$\n(v) $\\mathrm{Zn}^{2+}$\n(vi) $\\mathrm{V}^{3+}$\n(vii) $\\mathrm{Ti}^{+}$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "6RZSz",
+              "text": "1",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "yQ9Fu",
+              "text": "3",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "5ItyF",
+              "text": "2",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "BUqGa",
+              "text": "4",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Among the given species, $\\mathrm{Cr}^{2+}$ and $\\mathrm{Mn}^{3+}$ have same number of unpaired electrons.\n$\\begin{aligned}\n& \\text { Unpaired electrons, } n=4 \\\\\n& \\text { Magnetic moment, } \\begin{aligned}\n\\mu & =\\sqrt{n(n+2)}=\\sqrt{4(4+2)} \\\\\n& =\\sqrt{24} \\mathrm{BM}\n\\end{aligned}\n\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726d08c49e8ef28ee2b3bb",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Which one of the following compounds is having maximum 'lone pair-lone pair' electron repulsions?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "94Djx",
+              "text": "$\\mathrm{ClF}_3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "MFhda",
+              "text": "$\\mathrm{IF}_5$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "YVCCO",
+              "text": "$\\mathrm{SF}_4$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CwMvu",
+              "text": "$\\mathrm{XeF}_2$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{XeF}_2$ has three lone pairs and two bond pairs. The three lone pairs are arranged in the equatorial positions because of which they face maximum repulsion from each other.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7db6f5bfc7ab78ae870",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "In $\\mathrm{PO}_{4}^{3-},$ the formal charge on each oxygen atom and the $\\mathrm{P}-\\mathrm{O}$ bond order respectively are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "qwepA",
+              "text": "-0.75,0.6",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "c6sQo",
+              "text": "-0.75,1.0",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "y7Hvu",
+              "text": "-0.75,1.25",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "IUZwv",
+              "text": "-3,1.25",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/tA7unZEkDn7bmgq12DkXbxTD4nGXISHeFNZ86LWXnlY.original.fullsize.png\"><br>\r\n\r\nBond order\r\n\r\n$=\\frac{\\text { Number of bonds }}{\\text { Number of Resonating structures }}$\r\n\r\n$=\\frac{5}{4}=1.25$\r\n\r\nThree unit negative charge is being shared by four $\\mathrm{O}$ atoms. Formal charge $=-3 / 4$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7bf6f5bfc7ab78ae783",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The correct order of increasing $\\mathrm{C}-\\mathrm{O}$ bond length $\\mathrm{CO}, \\mathrm{CO}_{3}^{2-}, \\mathrm{CO}_{2}$ is:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "EEUCR",
+              "text": "$\\mathrm{CO}<\\mathrm{CO}_{2}<\\mathrm{CO}_{3}^{2-}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "gdUGG",
+              "text": "$\\mathrm{CO}_{2}<\\mathrm{CO}_{3}^{2-}<\\mathrm{CO}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "biqkP",
+              "text": "$\\mathrm{CO}<\\mathrm{CO}_{3}^{2-}<\\mathrm{CO}_{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "LkkOY",
+              "text": "$\\mathrm{CO}_{3}^{2-}<\\mathrm{CO}_{3}<\\mathrm{CO}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{C} \\equiv \\mathrm{Ohas}$ lowest bond length due to highest bond order. $\\mathrm{O}=\\mathrm{C}=\\mathrm{O}$ has second lowest bond length due to double bond.\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/59NZmD41nCRFHd9WGd8a4BKP7zFCShzEp5Ag_LE5u-I.original.fullsize.png\"><br>\r\n\r\nhas highest has bond length due to lowest bond order which is due to\r\n\r\nresonance.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7be6f5bfc7ab78ae77b",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "$\\mathrm{N}_{2}$ and $\\mathrm{O}_{2}$ are converted into mono anions, $\\mathrm{N}_{2}^{-}$ and $\\mathrm{O}_{2}^{-}$ respectively. Which of the following statements is wrong ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Y8MC2",
+              "text": "$\\operatorname{In} \\mathrm{N}_{2}$, the $\\mathrm{N}-\\mathrm{N}$ bond weakens",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "cFElo",
+              "text": "In $\\mathrm{O}_{2}$, the $\\mathrm{O}-\\mathrm{O}$ bond order increases",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "H6OYk",
+              "text": "In $\\mathrm{O}_{2},$ bond length decreases",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "0rkwr",
+              "text": "$\\mathrm{N}_{2}^{-}$ becomes diamagnetic",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We know that in $\\mathrm{O}_{2}$ bond, the order is 2 and in $\\mathrm{O}_{2}^{-}$ bond, the order is 1.5 . Therefore the wrong statements is (b).",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b06f5bfc7ab78ae6fe",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Using MOT, which of the following pairs denote paramagnetic species?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "J69rN",
+              "text": "$\\mathrm{B}_{2}$ and $\\mathrm{C}_{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "xED61",
+              "text": "$\\mathrm{B}_{2}$ and $\\mathrm{O}_{2}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "QHRbp",
+              "text": "$\\mathrm{N}_{2}$ and $\\mathrm{C}_{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "DM6PC",
+              "text": "$\\mathrm{O}_{2}$ and $\\mathrm{O}_{2}^{2-}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{B}_{2}$ and $\\mathrm{O}_{2}$ are paramagnetic due to presence of unpaired electron. MO electronic configuration of $\\mathrm{B}_{2}$ is:\r\n\r\n$$\r\n\r\n\\sigma 1 s^{2} \\sigma^{*} 1 s^{2} \\sigma 2 s^{2} \\sigma^{*} 2 s^{2} \\pi 2 p_{x}^{1}=\\pi 2 p_{y}^{1}\r\n\r\n$$\r\n\r\nMO electorn i.e. configuration of $\\mathrm{O}_{2}$ is:\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\sigma 1 s^{2} \\sigma^{*} 1 s^{2} \\sigma 2 s^{2} \\sigma^{*} 2 s^{2} \\sigma 2 p_{z}^{2} \\pi 2 p_{x}^{2} \\\\\r\n\r\n=\\pi 2 p_{y}^{2} \\pi * 2 p_{x}^{1}=\\pi * 2 p_{y}^{1}\r\n\r\n\\end{array}\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a06f5bfc7ab78ae682",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "Bond enthalpies of $\\mathrm{H}_{2}, \\mathrm{X}_{2}$ and $\\mathrm{HX}$ are in the ratio 2: 1: 2 . If enthalpy of formation of $\\mathrm{HX}$ is $-50 \\mathrm{~kJ}$ $\\mathrm{mol}^{-1},$ the bond enthalpy of $\\mathrm{X}_{2}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "7HWQy",
+              "text": "$100 \\mathrm{~kJ} \\mathrm{~mol}^{-1}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "P4mcE",
+              "text": "$300 \\mathrm{~kJ} \\mathrm{~mol}^{-1}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "IgKLy",
+              "text": "$200 \\mathrm{~kJ} \\mathrm{~mol}^{-1}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "fqTRq",
+              "text": "$400 \\mathrm{~kJ} \\mathrm{~mol}^{-1}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\frac{1}{2} \\mathrm{H}_{2}+\\frac{1}{2} \\mathrm{X}_{2} \\longrightarrow \\mathrm{HX}$\r\nLet the bond enthalpy of $\\mathrm{X}-\\mathrm{X}$ bond be $x$.\r\n$\\Delta \\mathrm{H}_{\\mathrm{f}}(\\mathrm{HX})=-50$\r\n$=\\frac{1}{2} \\Delta \\mathrm{H}_{\\mathrm{H}-\\mathrm{H}}+\\frac{1}{2} \\Delta \\mathrm{H}_{\\mathrm{X}-\\mathrm{X}}-\\Delta \\mathrm{H}_{\\mathrm{H}-\\mathrm{X}}$\r\n$=\\frac{1}{2} 2 x+\\frac{1}{2} x-2 x=\\frac{-x}{2}$\r\n$\\therefore x=50 \\times 2=100 \\mathrm{~kJ} \\mathrm{~mol}^{-1}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7926f5bfc7ab78ae605",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "The correct bond order in the following species is:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "IFU8Y",
+              "text": "$\\mathrm{O}_{2}^{2+}<\\mathrm{O}_{2}^{-}<\\mathrm{O}_{2}^{+}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Q7F1U",
+              "text": "$\\mathrm{O}_{2}^{+}<\\mathrm{O}_{2}^{-}<\\mathrm{O}_{2}^{2+}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "XJAzh",
+              "text": "$\\mathrm{O}_{2}^{-}<\\mathrm{O}_{2}^{+}<\\mathrm{O}_{2}^{2+}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "8K7hm",
+              "text": "$\\mathrm{O}_{2}^{2+}<\\mathrm{O}_{2}^{+}<\\mathrm{O}_{2}^{-}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{O}_{2}^{+}$ ion - Total number of electrons\n$(16-1)=15$\nE.C.:\n$$\n\\begin{array}{r}\n\\sigma 1 s^{2} \\sigma^{*} 1 s^{2} \\sigma 2 s^{2} \\sigma^{*} 2 s^{2} \\sigma 2 p_{z}^{2} \\\\\n\\pi 2 p_{x}^{2}=\\pi 2 p_{y}^{2} \\pi^{*} 2 p_{x}^{1}=\\pi^{*} 2 p_{y} \\\\\n\\text { Bond order }=\\frac{\\mathrm{N}_{\\mathrm{b}}-\\mathrm{N}_{\\mathrm{a}}}{2}=\\frac{10-5}{2}=\\frac{5}{2}=2 \\frac{1}{2}\n\\end{array}\n$$\n$\\mathrm{O}_{2}^{-}$ (Super oxide ion): Total number of\nelectrons $(16+1)=17$\nE.C.:\n$$\n\\begin{array}{l}\n\\text { \\sigma1s }^{2} \\sigma^{*} 1 s^{2} \\sigma 2 s^{2} \\sigma^{*} 2 s^{2} \\sigma 2 p_{z}^{2} \\\\\n\\pi 2 p_{x}^{2}=\\pi 2 p_{y}^{2} \\pi^{*} 2 p_{x}^{2}=\\pi^{*} 2 p_{y}^{1} \\\\\n\\text { Bond order }=\\frac{\\left(\\mathrm{N}_{\\mathrm{b}}-\\mathrm{N}_{\\mathrm{a}}\\right)}{2}=\\frac{10-7}{2}=\\frac{3}{2}=1 \\frac{1}{2}\n\\end{array}\n$$\n$\\mathrm{O}_{2}^{2+}$ ion: Total number of electrons $=(16-2)=14$\nE.C.\n$$\n\\begin{array}{l}\n\\sigma 1 s^{2} \\sigma^{*} 1 s^{2} \\sigma 2 s^{2} \\sigma^{*} 2 s^{2} \\pi 2 p_{x}^{2}=\\pi 2 p_{y}^{2} \\sigma 2 p_{z}^{2} \\\\\n\\text { Bond order }=\\frac{\\left(N_{b}-N_{a}\\right)}{2}=\\frac{10-4}{2}=\\frac{6}{2}=3\n\\end{array}\n$$\nSo bond order: $\\mathrm{O}_{2}^{-}<\\mathrm{O}_{2}^{+}<\\mathrm{O}_{2}^{2+}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "65b7b88f97ae24e9e2db8d30",
+      "title": "Ionic bond",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "65b7b87c97ae24e9e2db8cd8",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Energy required to completely separate one mole of a solid ionic compound into gaseous. constituent ions is called",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ENSCS",
+              "text": "<br />Interstitial defect",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iQwKH",
+              "text": "<br />Valency defect",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ibjt5",
+              "text": "<br />Frenkel defect",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "p4Yov",
+              "text": "<br />Schottky defect",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Frenkel defect is due to dislocation of ion from its usual lattice site to interstitial position.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87397ae24e9e2db8c73",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following pairs will form the most stable ionic bond?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "KQwCj",
+              "text": " $\\mathrm{Na}$ and $\\mathrm{Cl}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "bcfBJ",
+              "text": "$\\mathrm{Mg}$ and $\\mathrm{F}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "7E9Pp",
+              "text": "$\\mathrm{Li}$ and $\\mathrm{F}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "MnIvV",
+              "text": "$\\mathrm{Na}$ and F",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The stability of the ionic bond depends upon the lattice energy which is expected to be more between $\\mathrm{Mg}$ and $\\mathrm{F}$ due to +2 charge on Mg atom.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "64c0e85e6f5bfc7ab78aed5d",
+      "title": "Dipole moment",
+      "totalQuestions": 3,
+      "questions": [
+        {
+          "_id": "64c0e7f86f5bfc7ab78ae973",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Which substance has a dipole moment?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ihCY7",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CCl</mi><mn>4</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "omYUb",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CH</mi><mn>2</mn></msub><msub><mi>Cl</mi><mn>2</mn></msub></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "cimOE",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">C</mi><mn>2</mn></msub><msub><mi>Cl</mi><mn>2</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "2nrAg",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">C</mi><mn>2</mn></msub><msub><mi>Cl</mi><mn>4</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CH</mi><mn>2</mn></msub><msub><mi>Cl</mi><mn>2</mn></msub></math> is similar to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CH</mi><mn>4</mn></msub></math> (tetrahedral) but it has three different bond angles.<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>HCH</mi><mo>,</mo><mi>HCCl</mi><mo>,</mo><mi>ClCCl</mi><mo>,</mo></math>&nbsp;which are close to but not equal to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>109</mn><mo>.</mo><mn>5</mn><mo>&#176;</mo><mo>.</mo></math>&nbsp;Since, electronegativity of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Cl</mi><mo>&#62;</mo><mi mathvariant=\"normal\">C</mi><mo>&#62;</mo><mi mathvariant=\"normal\">H</mi></math> the bond dipole moments do not cancel and the molecule has a dipole moment.</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/d9d2342b-0c1a-46bf-a87b-1fbff1c0ca92-image.png\" style=\"width: 199px; height: 209px;\" /></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a06f5bfc7ab78ae67f",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The vapour pressure of\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/-f7gWA2egEV8jcvJ5Uvfr_P5oMbYmwgeVhguXPezdZc.original.fullsize.png\"><br>\r\nis higher than\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/9RPwDWv2fLFqbgvWByU00cU9GDISFpdEXthNc2aJcAY.original.fullsize.png\"><br>\r\ndue to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "soF9o",
+              "text": "Dipole moment",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "dQm2E",
+              "text": "Dipole- dipole interaction",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "DmOdE",
+              "text": "$\\mathrm{H}$ - bonding",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "sMvFe",
+              "text": "Lattice structure",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Ortho-nitrophenol has intramolecular\r\nH bonding \r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/Rt43sBNInI87vhCPxQ2h5ieDrSuBJOUrJeIszsEbVIM.original.fullsize.png\"><br>\r\nand paranitrophenol has intermolecular H-bonding.\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/W6V28xNUc5zQOAq06FtYvBrtaB9UiMs9iMRDWELnDdc.original.fullsize.png\"><br>\r\nHence former is more volatile than latter.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7776f5bfc7ab78ae510",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "Which of the following has zero dipole moment?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "7IwsJ",
+              "text": "1,1 -dichloromethane",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0m9hR",
+              "text": "cis -1,2 -dichloroethene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "cT9Yf",
+              "text": "trans -1,2 -dichloroethene",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "j0uSL",
+              "text": "1 -chloroethane",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution available",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "topicId": "64c0e85e6f5bfc7ab78aed5e",
+      "title": "Van Der Waals Forces, Hydrogen Bonding and Metallic Bonding",
+      "totalQuestions": 5,
+      "questions": [
+        {
+          "_id": "67726d16c49e8ef28ee2b421",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "Intramolecular hydrogen bonding is found in",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "tbecc",
+              "text": "o-nitrophenol",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "4ULvV",
+              "text": "m-nitrophenol",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FaXqD",
+              "text": "$p$-nitrophenol",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "EnIDa",
+              "text": "phenol",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In o-nitrophenol, hydrogen of $\\mathrm{O}-\\mathrm{H}$ group and oxygen of nitro group form intramolecular hydrogen bonding producing a six membered ring structure while in $m$-nitrophenol, $p$-nitrophenol and phenol, intermolecular hydrogen bonding are present.\nThe structure is,\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/bJMHIfwCUYjejPxFDVsiw5tqm-7snTCelfdPxnxX7CE.original.fullsize.png\"/><br/>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8246f5bfc7ab78aeaf2",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Which one of the following molecules will form a linear polymeric structure due to hydrogen bonding?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "UjbXg",
+              "text": "$\\mathrm{NH}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "hCauf",
+              "text": "$\\mathrm{H}_{2} \\mathrm{O}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "N9g4s",
+              "text": "$\\mathrm{HCl}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "2uffp",
+              "text": "$\\mathrm{HF}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "HF form linear polymeric structure due to hydrogen bonding.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7cc6f5bfc7ab78ae7fc",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The boiling point of alkyl halide are higher than those of corresponding alkanes because of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "HudFy",
+              "text": "dipole-dipole interaction",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "ZlKcc",
+              "text": "dipole-induced dipole interaction",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Xs5Tj",
+              "text": "H-bonding",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "s86Dd",
+              "text": "None of the above",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Due to dipole-dipole interaction the boiling point of alkyl halide is higher as compared to corresponding alkanes.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a16f5bfc7ab78ae687",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The boiling point of water is exceptionally high because",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "U33O1",
+              "text": "there is a covalent bond between $\\mathrm{H}$ and $\\mathrm{O}$.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "yuWPq",
+              "text": "water molecule is linear.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "EkUVR",
+              "text": "water molecules associate due to hydrogen bonding.",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "i19Mh",
+              "text": "water molecule is not linear.",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The high boiling point of water is due to H-bonding.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e77a6f5bfc7ab78ae52a",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "Interparticle forces present in nylon 66 are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "cgLXt",
+              "text": "van der Waal's",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "xzm3E",
+              "text": "hydrogen bonding",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "VUoMz",
+              "text": "dipole-dipole interactions",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "u9NBd",
+              "text": "None of the above",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution available",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

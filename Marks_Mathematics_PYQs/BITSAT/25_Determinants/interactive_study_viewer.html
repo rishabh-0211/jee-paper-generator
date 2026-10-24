@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Determinants PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>📐 BITSAT &bull; Determinants</h1>
+        <div class="sub">Mathematics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 25, "chapterId": "61e7bd7d211e05bce84fe206", "chapter": "Determinants", "exam": "BITSAT", "subject": "Mathematics", "totalTopics": 4, "totalQuestions": 20, "downloadTime": "2026-10-08 20:37:12", "topics": [{"index": 1, "topicId": "64c0e86c6f5bfc7ab78aee05", "title": "Expansion of Determinants", "totalQuestions": 8, "questions": [{"_id": "64c0e7fc6f5bfc7ab78ae996", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 1, "question": {"text": "If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mfenced open=\"|\" close=\"|\"><mtable><mtr><mtd><mi>sin</mi><mi>&#952;</mi></mtd><mtd><mi>cos</mi><mi>&#952;</mi></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mo>-</mo><mi>cos</mi><mi>&#952;</mi></mtd><mtd><mi>sin</mi><mi>&#952;</mi></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mi>sin</mi><mi>&#952;</mi></mtd><mtd><mi>cos</mi><mi>&#952;</mi></mtd><mtd><mn>2</mn></mtd></mtr></mtable></mfenced></math> then the value of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mi>sin</mi><mfrac><mrow><mn>3</mn><mi>&#960;</mi></mrow><mn>2</mn></mfrac><mo>+</mo><mn>5</mn></math>&nbsp;is", "image": null}, "options": [{"id": "lv9as", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>13</mn><mo>-</mo><msqrt><mn>2</mn></msqrt></math>", "isCorrect": false, "image": null}, {"id": "YLCsr", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>13</mn><mo>+</mo><msqrt><mn>2</mn></msqrt></math>", "isCorrect": false, "image": null}, {"id": "FihrT", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msqrt><mn>2</mn></msqrt><mo>-</mo><mn>13</mn></math>", "isCorrect": false, "image": null}, {"id": "HwoFm", "text": "Both (A) and (B)", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>Given,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mfenced open=\"|\" close=\"|\"><mtable><mtr><mtd><mi>sin</mi><mi>&#952;</mi></mtd><mtd><mi>cos</mi><mi>&#952;</mi></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mo>-</mo><mi>cos</mi><mi>&#952;</mi></mtd><mtd><mi>sin</mi><mi>&#952;</mi></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mi>sin</mi><mi>&#952;</mi></mtd><mtd><mi>cos</mi><mi>&#952;</mi></mtd><mtd><mn>2</mn></mtd></mtr></mtable></mfenced></math></p><p>On expanding <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"|\" close=\"|\"><mtable><mtr><mtd><mi>sin</mi><mi>&#952;</mi></mtd><mtd><mi>cos</mi><mi>&#952;</mi></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mo>-</mo><mi>cos</mi><mi>&#952;</mi></mtd><mtd><mi>sin</mi><mi>&#952;</mi></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mi>sin</mi><mi>&#952;</mi></mtd><mtd><mi>cos</mi><mi>&#952;</mi></mtd><mtd><mn>2</mn></mtd></mtr></mtable></mfenced></math> along <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>C</mi><mn>3</mn></msub></math>, we get</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn><mo>-</mo><mn>1</mn><mfenced open=\"|\" close=\"|\"><mtable><mtr><mtd><mi>sin</mi><mi>&#952;</mi></mtd><mtd><mi>cos</mi><mi>&#952;</mi></mtd></mtr><mtr><mtd><mi>sin</mi><mi>&#952;</mi></mtd><mtd><mi>cos</mi><mi>&#952;</mi></mtd></mtr></mtable></mfenced><mo>+</mo><mn>2</mn><mfenced open=\"|\" close=\"|\"><mtable><mtr><mtd><mi>sin</mi><mi>&#952;</mi></mtd><mtd><mi>cos</mi><mi>&#952;</mi></mtd></mtr><mtr><mtd><mo>-</mo><mi>cos</mi><mi>&#952;</mi></mtd><mtd><mi>sin</mi><mi>&#952;</mi></mtd></mtr></mtable></mfenced><mo>=</mo><mo>-</mo><mn>1</mn><mfenced><mrow><mi>sin</mi><mi>&#952;</mi><mi>cos</mi><mi>&#952;</mi><mo>-</mo><mi>sin</mi><mi>&#952;</mi><mi>cos</mi><mi>&#952;</mi></mrow></mfenced><mo>+</mo><mn>2</mn><mfenced><mrow><msup><mi>sin</mi><mn>2</mn></msup><mi>&#952;</mi><mo>+</mo><msup><mi>cos</mi><mn>2</mn></msup><mi>&#952;</mi></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mo>-</mo><mn>1</mn><mo>&#215;</mo><mn>0</mn><mo>+</mo><mn>2</mn><mo>&#215;</mo><mn>1</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>2</mn><mo>&#8658;</mo><mi>x</mi><mo>=</mo><mo>&#177;</mo><msqrt><mn>2</mn></msqrt></math></p><p>If&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><msqrt><mn>2</mn></msqrt></math>, then</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mi>sin</mi><mfrac><mrow><mn>3</mn><mi>&#960;</mi></mrow><mn>2</mn></mfrac><mo>+</mo><mn>5</mn><mo>=</mo><mn>4</mn><mo>&#215;</mo><msup><mfenced><msqrt><mn>2</mn></msqrt></mfenced><mn>2</mn></msup><mo>-</mo><msqrt><mn>2</mn></msqrt><mo>+</mo><mn>5</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>8</mn><mo>-</mo><msqrt><mn>2</mn></msqrt><mo>+</mo><mn>5</mn><mo>=</mo><mfenced><mrow><mn>13</mn><mo>-</mo><msqrt><mn>2</mn></msqrt></mrow></mfenced></math></p><p>If&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mo>-</mo><msqrt><mn>2</mn></msqrt></math>, then</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mi>sin</mi><mfrac><mrow><mn>3</mn><mi>&#960;</mi></mrow><mn>2</mn></mfrac><mo>+</mo><mn>5</mn><mo>=</mo><mn>4</mn><mo>&#215;</mo><msup><mfenced><mrow><mo>-</mo><msqrt><mn>2</mn></msqrt></mrow></mfenced><mn>2</mn></msup><mo>+</mo><msqrt><mn>2</mn></msqrt><mo>+</mo><mn>5</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>8</mn><mo>+</mo><msqrt><mn>2</mn></msqrt><mo>+</mo><mn>5</mn><mo>=</mo><mfenced><mrow><mn>13</mn><mo>+</mo><msqrt><mn>2</mn></msqrt></mrow></mfenced></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7e16f5bfc7ab78ae8a8", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 1, "question": {"text": "If [ ] denotes the greatest integer less than or equal to the real number under consideration and $-1 \\leq x<0 ; 0 \\leq y<1 ; 1 \\leq z<2,$ then the value of the determinant\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/DgEyjvV-MrArf9uTrBueZOFNbrMce-IM0nBGrN4pi28.original.fullsize.png\"><br> is", "image": null}, "options": [{"id": "IT5KG", "text": "$[z]$", "isCorrect": true, "image": null}, {"id": "B2595", "text": "$[y]$", "isCorrect": false, "image": null}, {"id": "CEx60", "text": "$[\\mathrm{x}]$", "isCorrect": false, "image": null}, {"id": "XZ0A7", "text": "None of these", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Since, $-1 \\leq x<0$ $\\begin{array}{ll}\\therefore \\quad & {[\\mathrm{x}]=-1} \\\\ & 0 \\leq \\mathrm{y}<1 \\quad \\therefore[\\mathrm{y}]=0 \\\\ & 1 \\leq \\mathrm{z}<2 \\quad \\therefore[\\mathrm{z}]=1 \\\\ \\therefore \\quad & \\text { Given determinant }=\\left|\\begin{array}{ccc}0 & 0 & 1 \\\\ -1 & 1 & 1 \\\\ -1 & 0 & 2\\end{array}\\right|=1=[\\mathrm{z}]\\end{array}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7e16f5bfc7ab78ae8a6", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 2, "question": {"text": "If the matrix $\\left[\\begin{array}{ccc}1 & 3 & \\lambda+2 \\\\ 2 & 4 & 8 \\\\ 3 & 5 & 10\\end{array}\\right]$ is singular, then $\\lambda=$", "image": null}, "options": [{"id": "Jri7N", "text": "-2", "isCorrect": false, "image": null}, {"id": "uJA8O", "text": "4", "isCorrect": true, "image": null}, {"id": "i2Zg6", "text": "2", "isCorrect": false, "image": null}, {"id": "oy3Db", "text": "-4", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$|\\mathrm{A}|=0$ as the matrix $\\mathrm{A}$ is singular\r\n\r\n$$\r\n\r\n\\therefore|\\mathrm{A}|=\\left|\\begin{array}{ccc}\r\n\r\n1 & 3 & \\lambda+2 \\\\\r\n\r\n2 & 4 & 8 \\\\\r\n\r\n3 & 5 & 10\r\n\r\n\\end{array}\\right|=0\r\n\r\n$$\r\n\r\nApply $\\mathrm{R}_{2} \\rightarrow \\mathrm{R}_{2}-2 \\mathrm{R}_{1}$ and $\\mathrm{R}_{3} \\rightarrow \\mathrm{R}_{3}-3 \\mathrm{R}_{1}$\r\n\r\nand expand. $-2(4-3 \\lambda)+4(4-2 \\lambda)=0$\r\n\r\n$$\r\n\r\n\\Rightarrow 8-2 \\lambda=0 \\Rightarrow \\lambda=4\r\n\r\n$$\r\n\r\nFor $\\lambda=4,$ the second and the third column are proportional.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7c66f5bfc7ab78ae7c8", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 1, "question": {"text": "If $\\left|\\begin{array}{ccc}\\mathrm{p} & \\mathrm{q}-\\mathrm{y} & \\mathrm{r}-\\mathrm{z} \\\\ \\mathrm{p}-\\mathrm{x} & \\mathrm{q} & \\mathrm{r}-\\mathrm{z} \\\\ \\mathrm{p}-\\mathrm{x} & \\mathrm{q}-\\mathrm{y} & \\mathrm{r}\\end{array}\\right|=0,$ then the value of\r\n\r\n$\\frac{p}{x}+\\frac{q}{y}+\\frac{r}{z}$ is", "image": null}, "options": [{"id": "c5tA8", "text": "0", "isCorrect": false, "image": null}, {"id": "vVtLQ", "text": "1", "isCorrect": false, "image": null}, {"id": "goFIo", "text": "2", "isCorrect": true, "image": null}, {"id": "k5OhP", "text": "$4 \\mathrm{pqr}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\left|\\begin{array}{ccc}\\mathrm{p} & \\mathrm{q}-\\mathrm{y} & \\mathrm{r}-\\mathrm{z} \\\\ \\mathrm{p}-\\mathrm{x} & \\mathrm{q} & \\mathrm{r}-\\mathrm{z} \\\\ \\mathrm{p}-\\mathrm{x} & \\mathrm{q}-\\mathrm{y} & \\mathrm{r}\\end{array}\\right|=0$\r\n\r\nApply $\\mathrm{R}_{1} \\rightarrow \\mathrm{R}_{1}-\\mathrm{R}_{3}$ and $\\mathrm{R}_{2} \\rightarrow \\mathrm{R}_{2}-\\mathrm{R}_{3},$ we get\r\n\r\n$\\left|\\begin{array}{ccc}\\mathrm{x} & 0 & -\\mathrm{z} \\\\ 0 & \\mathrm{y} & -\\mathrm{z} \\\\ \\mathrm{p}-\\mathrm{x} & \\mathrm{q}-\\mathrm{y} & \\mathrm{r}\\end{array}\\right|=0$\r\n\r\n$\\Rightarrow \\mathrm{x}[\\mathrm{yr}+\\mathrm{z}(\\mathrm{q}-\\mathrm{y})]-\\mathrm{z}[0-\\mathrm{y}(\\mathrm{p}-\\mathrm{x})]=0$\r\n\r\n[Expansion along first row $]$\r\n\r\n$\\Rightarrow x y r+z x q+y z p=2 x y z \\Rightarrow \\frac{p}{x}+\\frac{q}{y}+\\frac{r}{z}=2$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7b66f5bfc7ab78ae73a", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 2, "question": {"text": "The determinant $\\left|\\begin{array}{ccc}1 & (x-3) & (x-3)^{2} \\\\ 1 & (x-4) & (x-4)^{2} \\\\ 1 & (x-5) & (x-5)^{2}\\end{array}\\right|$", "image": null}, "options": [{"id": "o2nfX", "text": "3 values of $x$", "isCorrect": false, "image": null}, {"id": "1AqfQ", "text": "2 values of $x$", "isCorrect": false, "image": null}, {"id": "IO9cj", "text": "1 values of $x$", "isCorrect": false, "image": null}, {"id": "LU3zv", "text": "No value of $x$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "The given determinant vanishes, i.e.,\r\n\r\n$$\r\n\r\n\\left|\\begin{array}{ccc}\r\n\r\n1 & x-3 & (x-3)^{2} \\\\\r\n\r\n1 & x-4 & (x-4)^{2} \\\\\r\n\r\n1 & x-5 & (x-5)^{2}\r\n\r\n\\end{array}\\right|=0\r\n\r\n$$\r\n\r\nExpanding along $\\mathrm{C}_{1},$ we get\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n(x-4)(x-5)^{2}-(x-5)(x-4)^{2}-\\left\\{(x-3)(x-5)^{2}\\right. \\\\\r\n\r\n\\left.-(x-5)(x-3)^{2}\\right\\}+(x-3)(x-4)^{2} \\\\\r\n\r\n-(x-4)(x-3)^{2}=0 \\\\\r\n\r\n\\Rightarrow(x-4)(x-5)(x-5-x+4) \\\\\r\n\r\n-(x-3)(x-5)(x-5-x+3) \\\\\r\n\r\n+(x-3)(x-4)(x-4-x+3)=0\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\n$$\r\n\r\n\\Rightarrow-(x-4)(x-5)+2(x-3)(x-5)-(x-3)\r\n\r\n$$\r\n\r\n$(x-4)=0$\r\n\r\n$$\r\n\r\n\\Rightarrow-x^{2}+9 x-20+2 x^{2}-16 x+30-x^{2}+7 x-12=0\r\n\r\n$$\r\n\r\n$\\Rightarrow-32+30=0 \\Rightarrow-2=0$\r\n\r\nWhich is not possible, hence no value of $\\mathrm{x}$ satisfies the given condition.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7a76f5bfc7ab78ae6b9", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 2, "question": {"text": "The value of the determinant \r\n$\\left|\\begin{array}{lll}265 & 240 & 219 \\\\ 240 & 225 & 198 \\\\ 219 & 198 & 181\\end{array}\\right|$ is", "image": null}, "options": [{"id": "4vBvF", "text": "1000", "isCorrect": false, "image": null}, {"id": "EB2y1", "text": "779", "isCorrect": false, "image": null}, {"id": "XZOme", "text": "679", "isCorrect": false, "image": null}, {"id": "N9DnT", "text": "0", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Applying $\\mathrm{C}_{1}-\\mathrm{C}_{2}$ and $\\mathrm{C}_{2}-\\mathrm{C}_{3},$ we get\r\n$\\begin{aligned}\r\n\\text { Det. } &=\\left|\\begin{array}{ccc}\r\n25 & 21 & 219 \\\\\r\n15 & 27 & 198 \\\\\r\n21 & 17 & 181\r\n\\end{array}\\right|=\\left|\\begin{array}{ccc}\r\n4 & 21 & 9 \\\\\r\n-12 & 27 & -72 \\\\\r\n4 & 17 & 11\r\n\\end{array}\\right| \\\\\r\n=&\\left[\\begin{array}{llc}\r\n4 & 21 & 9 \\\\\r\n0 & 90 & -45 \\\\\r\n0 & -4 & 2\r\n\\end{array} \\mid\\left[\\mathrm{By} \\mathrm{R}_{2}+3 \\mathrm{R}_{1}, \\mathrm{R}_{3}-\\mathrm{R}_{1}\\right]\\right.\\\\\r\n=4(180-180)=0\r\n\\end{aligned}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e78a6f5bfc7ab78ae5bf", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "If \\(A=\\left[\\begin{array}{ll}1 & 3 \\\\ 3 & 2 \\\\ 2 & 5\\end{array}\\right]\\) and \\(B=\\left[\\begin{array}{cc}-1 & -2 \\\\ 0 & 5 \\\\ 3 & 1\\end{array}\\right]\\) and \\(\\mathrm{A}+\\mathrm{B}-\\mathrm{D}=0\\) (zero matrix), then \\(\\mathrm{D}\\) matrix will be -", "image": null}, "options": [{"id": "fTACO", "text": "\\(\\left[\\begin{array}{ll}0 & 2 \\\\ 3 & 7 \\\\ 6 & 5\\end{array}\\right]\\)", "image": null, "isCorrect": false}, {"id": "eosXf", "text": "\\(\\left[\\begin{array}{ll}0 & 2 \\\\ 3 & 7 \\\\ 5 & 6\\end{array}\\right]\\)", "image": null, "isCorrect": false}, {"id": "EdQsM", "text": "\\(\\left[\\begin{array}{ll}0 & 1 \\\\ 3 & 7 \\\\ 5 & 6\\end{array}\\right]\\)", "image": null, "isCorrect": true}, {"id": "ylewd", "text": "\\(\\left[\\begin{array}{cc}0 & -2 \\\\ -3 & -7 \\\\ -5 & -6\\end{array}\\right]\\)", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Let \\(D=\\left[\\begin{array}{ll}a & b \\\\ c & d \\\\ e & f\\end{array}\\right]\\)\n\\(\\begin{aligned} & \\therefore A+B-C=\\left[\\begin{array}{ll}1 & 3 \\\\ 3 & 2 \\\\ 2 & 5\\end{array}\\right]+\\left[\\begin{array}{cc}-1 & -2 \\\\ 0 & 5 \\\\ 3 & 1\\end{array}\\right]-\\left[\\begin{array}{ll}\\mathrm{a} & \\mathrm{b} \\\\ \\mathrm{c} & \\mathrm{d} \\\\ \\mathrm{e} & \\mathrm{f}\\end{array}\\right] \\\\ & \\Rightarrow\\left[\\begin{array}{ll}1-1-\\mathrm{a} & 3-2-\\mathrm{b} \\\\ 3+0-\\mathrm{c} & 2+5-\\mathrm{d} \\\\ 2+3-\\mathrm{e} & 5+1-\\mathrm{f}\\end{array}\\right]=\\left[\\begin{array}{ll}0 & 0 \\\\ 0 & 0 \\\\ 0 & 0\\end{array}\\right]\\end{aligned}\\)\n\\(\\begin{array}{ll}-\\mathrm{a}=0 \\Rightarrow \\mathrm{a}=0,1-\\mathrm{b}=0 \\Rightarrow \\mathrm{b}=1, \\\\ 3-\\mathrm{c}=0 \\Rightarrow \\mathrm{c}=3, & 7-\\mathrm{d}=0 \\Rightarrow \\mathrm{d}=7, \\\\ 5-\\mathrm{e}=0 \\Rightarrow \\mathrm{e}=5, & 6-\\mathrm{f}=0 \\Rightarrow \\mathrm{f}=6,\\end{array}\\)\n\\(\\therefore D=\\left[\\begin{array}{ll}0 & 1 \\\\ 3 & 7 \\\\ 5 & 6\\end{array}\\right]\\)", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e77c6f5bfc7ab78ae540", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "If \\(\\mathrm{a} > 0, \\mathrm{~b} > 0, \\mathrm{c} > 0\\) are respectively the \\(\\mathrm{pth}, \\mathrm{q}\\) th, rth terms of GP., then the value of the determinant \\(\\left|\\begin{array}{lll}\\log \\mathrm{a} & \\mathrm{p} & 1 \\\\ \\log \\mathrm{b} & \\mathrm{q} & 1 \\\\ \\log \\mathrm{c} & \\mathrm{r} & 1\\end{array}\\right|\\) is", "image": null}, "options": [{"id": "P2nbS", "text": "0", "image": null, "isCorrect": true}, {"id": "UHCR2", "text": "1", "image": null, "isCorrect": false}, {"id": "alzGR", "text": "-1", "image": null, "isCorrect": false}, {"id": "nQTLX", "text": "None of these", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Let \\(A\\) be the 1 st term and \\(\\mathrm{R}\\) the common ratio of G.P., then\n\\(\\begin{aligned}\n& a=T_p=A R^{p-1} \\\\\n& \\therefore \\log \\mathrm{a}=\\log \\mathrm{A}+(\\mathrm{p}-1) \\log \\mathrm{R}\n\\end{aligned}\\)\nSimilarly, \\(\\log \\mathrm{b}=\\log \\mathrm{A}+(\\mathrm{q}-1) \\log \\mathrm{R}\\)\nand \\(\\log \\mathrm{c}=\\log \\mathrm{A}+(\\mathrm{r}-1) \\log \\mathrm{R}\\)\n\\(\\therefore \\Delta=\\left|\\begin{array}{lll}\n\\log A+(p-1) \\log R & p & 1 \\\\\n\\log A+(q-1) \\log R & q & 1 \\\\\n\\log A+(r-1) \\log R & r & 1\n\\end{array}\\right|\\)\nSplit into two determinants and in the first take \\(\\log A\\) common and in the second take \\(\\log \\mathrm{R}\\) common\n\\(\\Delta=\\log A\\left|\\begin{array}{lll}\n1 & p & 1 \\\\\n1 & q & 1 \\\\\n1 & r & 1\n\\end{array}\\right|+\\log R\\left|\\begin{array}{lll}\np-1 & p & 1 \\\\\nq-1 & q & 1 \\\\\nr-1 & r & 1\n\\end{array}\\right|\\)\nApply \\(\\mathrm{C}_1 \\rightarrow \\mathrm{C}_2 \\rightarrow \\mathrm{C}_3\\) in the second\n\\(\\Delta=0+\\log R\\left|\\begin{array}{lll}\n0 & p & 1 \\\\\n0 & q & 1 \\\\\n0 & r & 1\n\\end{array}\\right|=0\\)", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e86c6f5bfc7ab78aee06", "title": "Multiplication of Determinants", "totalQuestions": 1, "questions": [{"_id": "64c0e77c6f5bfc7ab78ae541", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "The digits \\(\\mathrm{A}, \\mathrm{B}\\) and \\(\\mathrm{C}\\) are such that the three digit numbers \\(A 88,6 \\mathrm{~B} 8,86 \\mathrm{C}\\) are divisible by 72 then the determinant \\(\\left|\\begin{array}{ccc}\\text { A } & 6 & 8 \\\\ 8 & B & 6 \\\\ 8 & 8 & C\\end{array}\\right|\\) is divisible by", "image": null}, "options": [{"id": "YnbWq", "text": "72", "image": null, "isCorrect": true}, {"id": "COYsE", "text": "144", "image": null, "isCorrect": false}, {"id": "cCg3N", "text": "288", "image": null, "isCorrect": false}, {"id": "bfRc1", "text": "216", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "\\(R_3 \\rightarrow 100 R_1+10 R_2+R_3\\)\n\\(\\Rightarrow\\left|\\begin{array}{ccc}\nA & 6 & 8 \\\\\n8 & B & 6 \\\\\n8 & 8 & C\n\\end{array}\\right|=\\left|\\begin{array}{ccc}\nA & 6 & 8 \\\\\n8 & B & 6 \\\\\nA 88 & 6 B C & 86 C\n\\end{array}\\right|\\)\nwhich is divisible by 72.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e86c6f5bfc7ab78aee07", "title": "System of Linear Equations", "totalQuestions": 10, "questions": [{"_id": "67726d1cc49e8ef28ee2b451", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "Suppose $p, q, r \\neq 0$ and system of equation\n$\\begin{gathered}\n(p+a) x+b y+c z=0 \\\\\na x+(q+b) y+c z=0\n\\end{gathered}$\n$a x+b y+(r+c) z=0$, has a non-trivial solution, then the value of $\\frac{a}{p}+\\frac{b}{q}+\\frac{c}{r}$ is", "image": null}, "options": [{"id": "GkqsY", "text": "-1", "image": null, "isCorrect": true}, {"id": "E7SPs", "text": "0", "image": null, "isCorrect": false}, {"id": "Z5xKN", "text": "1", "image": null, "isCorrect": false}, {"id": "dMiSr", "text": "2", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Let $|A|=\\left|\\begin{array}{ccc}p+a & b & c \\\\ a & q+b & c \\\\ a & b & r+c\\end{array}\\right|$\nAlso, given that equations has non trivial solution\n$|A|=0$\n$\\begin{aligned}\n& \\Rightarrow \\quad\\left|\\begin{array}{ccc}\np+a & b & c \\\\\na & q+b & c \\\\\na & b & r+c\n\\end{array}\\right|=0 \\\\\n& \\Rightarrow(p+a)[(q+b)(r+c)-b c]-b[a(r+c)-c a] \\\\\n& +c[a b-a(q+b)]=0 \\\\\n& \\Rightarrow \\quad(p+a)[q r+q c+b r]-b[a r]+c[-a q]=0 \\\\\n& \\Rightarrow \\quad p q r+p q c+p b r+a q r=0\n\\end{aligned}$\nDividing whole equation by $p q r$\n$\\begin{aligned}\n\\Rightarrow & \\frac{p q r}{p q r}+\\frac{p q c}{p q r}+\\frac{p r b}{p q r}+\\frac{q r a}{p q r} & =0 \\\\\n\\Rightarrow & 1+\\frac{c}{r}+\\frac{b}{q}+\\frac{a}{p} & =0 \\\\\n\\Rightarrow & \\frac{a}{p}+\\frac{b}{q}+\\frac{c}{r} & =-1\n\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726d0ec49e8ef28ee2b3e4", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "The equations $x-y+2 z=4$\n$3 x+y+4 z=6$\n$x+y+z=1$ have", "image": null}, "options": [{"id": "vII2x", "text": "unique solution", "image": null, "isCorrect": false}, {"id": "VJ8ep", "text": "infinitely many solutions", "image": null, "isCorrect": true}, {"id": "DFJ8H", "text": "no solution", "image": null, "isCorrect": false}, {"id": "xVY6v", "text": "two solutions", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Given equations, $x-y+2 z=4$\n$3 x+y+4 z=6$\n$x+y+z=1$\nLet $\\Delta=\\left|\\begin{array}{ccc}1 & -1 & 2 \\\\ 3 & 1 & 4 \\\\ 1 & 1 & 1\\end{array}\\right|$\n$=1(1-4)+1(3-4)+2(3-1)$\n$=-3-1+4=0$\nand $\\Delta_1=\\left|\\begin{array}{ccc}4 & -1 & 2 \\\\ 6 & 1 & 4 \\\\ 1 & 1 & 1\\end{array}\\right|$\n$=4(1-4)+1(6-4)+2(6-1)$\n$=-12+2+10=0$\nNow, $\\Delta=0$ and $\\Delta_1=0$\n$\\therefore$ These equations have infinitely many solutions.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726d00c49e8ef28ee2b37e", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "If the system of linear equations $2 x+y-z=7$\n$x-3 y+2 z=1 ; x+4 y+\\delta z=k$\nwhere $\\delta, k \\in R$ has infinitely many solutions, then $\\delta+k$ is equal to:", "image": null}, "options": [{"id": "7BUzv", "text": "$-3$", "image": null, "isCorrect": false}, {"id": "81Nrh", "text": "$3$", "image": null, "isCorrect": true}, {"id": "7D3YC", "text": "$6$", "image": null, "isCorrect": false}, {"id": "JbR7S", "text": "$9$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "For getting infinite solutions $\\mathrm{D}=0, \\mathrm{D}_1=$ $\\mathrm{D}_2=\\mathrm{D}=0$ then check all the three equations\nLet $\\Delta=\\left|\\begin{array}{ccc}2 & 1 & -1 \\\\ 1 & -3 & 2 \\\\ 1 & 4 & \\delta\\end{array}\\right|=0 \\quad \\Rightarrow \\delta=-3$\nAnd $\\Delta_1=\\left|\\begin{array}{ccc}7 & 1 & -1 \\\\ 1 & -3 & 2 \\\\ k & 4 & -3\\end{array}\\right|=0 \\Rightarrow k=6$\n$\\Rightarrow \\delta+k=3$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8366f5bfc7ab78aeb91", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 2, "question": {"text": "If $p \\neq a, q \\neq b, r \\neq c$ and the system of equations\r\n$\\begin{aligned}\r\n& p x+a y+a z=0 \\\\\r\n& b x+q y+b z=0 \\\\\r\n& c x+c y+r z=0\r\n\\end{aligned}$\r\nhas a non-trivial solution, then the value of \r\n$\\frac{p}{p-a}+\\frac{q}{q-b}+\\frac{r}{r-c}$ is", "image": null}, "options": [{"id": "hBFjP", "text": "\r\n$1$\r\n", "isCorrect": false, "image": null}, {"id": "I7KKS", "text": "\r\n$2$\r\n", "isCorrect": true, "image": null}, {"id": "7SIxc", "text": "\r\n$\\frac{1}{2}$\r\n", "isCorrect": false, "image": null}, {"id": "tDhce", "text": "\r\n$0$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "As the given system of equations has a non-trivial solution.\r\n$\\Delta=\\left|\\begin{array}{lll}p & a & a \\\\ b & q & b \\\\ c & c & r\\end{array}\\right|=0$\r\nApplying $C_2 \\rightarrow C_2-C_1$ and $C_3 \\rightarrow C_3-C_1$\r\n$\\Delta=\\left|\\begin{array}{ccc}p & a-p & a-p \\\\ b & q-b & 0 \\\\ c & 0 & r-c\\end{array}\\right|=0$\r\nExpanding along $C_3$, we get\r\n$(a-p)\\left|\\begin{array}{cc}b & q-b \\\\ c & 0\\end{array}\\right|+(r-c)\\left|\\begin{array}{cc}p & a-p \\\\ b & q-b\\end{array}\\right|=0$\r\n$\\begin{aligned}\r\n& \\Rightarrow(a-p)(-c)(q-b)+(r-c) \\\\\r\n& \\{p(q-b)-b(a-p)\\}=0 \\\\\r\n& \\Rightarrow \\\\\r\n& (p-a)(q-b) c+p(r-c)(q-b)+b(r-c)(p-a)=0\r\n\\end{aligned}$\r\nDividing by $(p-a)(q-b)(r-c)$, we get\r\n$\\frac{c}{r-c}+\\frac{p}{p-a}+\\frac{b}{q-b}=0$\r\n$\\Rightarrow \\frac{p}{p-a}+\\frac{q}{q-b}+\\frac{r}{r-c}=\\frac{q-b}{q-b}+\\frac{r-c}{r-c}=2$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8336f5bfc7ab78aeb79", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 1, "question": {"text": "Given $2 x-y+2 z=2, x-2 y+z=-4$, $x+y+\\lambda z=4$, then the value of $\\lambda$ such that the given system of equation has no solution is", "image": null}, "options": [{"id": "3RSv8", "text": "\r\n$-3$\r\n", "isCorrect": false, "image": null}, {"id": "exMCK", "text": "\r\n1\r\n", "isCorrect": false, "image": null}, {"id": "pL7D9", "text": "\r\n0\r\n", "isCorrect": false, "image": null}, {"id": "IOcDX", "text": "\r\n3", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Since, the system has no solution.\r\n$\\left|\\begin{array}{ccc}2 & -1 & 2 \\\\ 1 & -2 & -1 \\\\ 1 & 1 & \\lambda\\end{array}\\right|=0$\r\n$\\Rightarrow 2(-2 \\lambda+1)+1(\\lambda+1)+2(3)=0$\r\n$\\Rightarrow \\quad-4 \\lambda+2+\\lambda+1+6=0$\r\n$\\Rightarrow \\quad 3 \\lambda=9 \\Rightarrow \\lambda=3$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e81c6f5bfc7ab78aeaaf", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 1, "question": {"text": "Suppose $\\mathrm{p}, \\mathrm{q}, \\mathrm{r} \\neq 0$ and system of equation $(\\mathrm{p}+\\mathrm{a}) \\mathrm{x}+\\mathrm{by}+\\mathrm{cz}=0$\r\n\r\n$a x+(q+b) y+c z=0$\r\n\r\n$a x+b y+(r+c) z=0$ has a non-trivial solution,\r\n\r\nthen value of $\\frac{a}{p}+\\frac{b}{q}+\\frac{c}{r}$ is", "image": null}, "options": [{"id": "pCSYr", "text": "-1", "isCorrect": true, "image": null}, {"id": "vP0ox", "text": "0", "isCorrect": false, "image": null}, {"id": "Oup6K", "text": "1", "isCorrect": false, "image": null}, {"id": "tH2Y8", "text": "2", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Since the system is homogeneous and has a non-trivial solution\r\n\r\n$0=\\left|\\begin{array}{ccc}p+a & b & c \\\\ a & q+b & c \\\\ a & b & r+c\\end{array}\\right|=\\left|\\begin{array}{ccc}p & -q & 0 \\\\ 0 & q & -r \\\\ a & b & r+c\\end{array}\\right|$\r\n\r\nusing $\\mathrm{R}_{1} \\rightarrow \\mathrm{R}_{1}-\\mathrm{R}_{2}$ and $\\mathrm{R}_{2} \\rightarrow \\mathrm{R}_{2}-\\mathrm{R}_{3}$\r\n\r\nExpanding along $\\mathrm{C}$, we get $\\Rightarrow \\mathrm{p}[\\mathrm{q}(\\mathrm{r}+\\mathrm{c})+\\mathrm{br}]+\\mathrm{aqr}=0$\r\n\r\n$\\Rightarrow \\mathrm{pqr}+\\mathrm{pqc}+\\mathrm{prb}+\\mathrm{qra}=0$\r\n\r\n$\\Rightarrow \\frac{a}{p}+\\frac{b}{q}+\\frac{c}{r}=-1$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e80e6f5bfc7ab78aea2f", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 1, "question": {"text": "Let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>&#8712;</mo><msup><mi>R</mi><mo>+</mo></msup></math> and the system of equations <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mn>1</mn><mo>-</mo><mi>a</mi><mo>)</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi><mo>=</mo><mn>0</mn><mo>,</mo><mi>x</mi><mo>+</mo><mo>(</mo><mn>1</mn><mo>-</mo><mi>b</mi><mo>)</mo><mi>y</mi><mo>+</mo><mi>z</mi><mo>=</mo><mn>0</mn></math> and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mo>(</mo><mn>1</mn><mo>-</mo><mi>c</mi><mo>)</mo><mi>z</mi><mo>=</mo><mn>0</mn></math> has infinitely many solutions, the minimum value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mi>b</mi><mi>c</mi></math> is", "image": null}, "options": [{"id": "XveXI", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><msqrt><mn>3</mn></msqrt></math>", "isCorrect": false, "image": null}, {"id": "c94NW", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>9</mn></math>", "isCorrect": false, "image": null}, {"id": "LmBL0", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>27</mn></math>", "isCorrect": true, "image": null}, {"id": "d28U0", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>We have,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>1</mn><mo>-</mo><mi>a</mi></mrow></mfenced><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>+</mo><mfenced><mrow><mn>1</mn><mo>-</mo><mi>b</mi></mrow></mfenced><mi>y</mi><mo>+</mo><mi>z</mi><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mfenced><mrow><mn>1</mn><mo>-</mo><mi>c</mi></mrow></mfenced><mi>z</mi><mo>=</mo><mn>0</mn></math></p><p>has many solutions&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mfenced close=\"|\" open=\"|\"><mtable><mtr><mtd><mn>1</mn><mo>-</mo><mi>a</mi></mtd><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn><mo>-</mo><mi>b</mi></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>1</mn><mo>-</mo><mi>c</mi></mtd></mtr></mtable></mfenced><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>a</mi><mi>b</mi><mo>+</mo><mi>a</mi><mi>c</mi><mo>+</mo><mi>b</mi><mi>c</mi><mo>=</mo><mi>a</mi><mi>b</mi><mi>c</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mfrac><mrow><mi>a</mi><mi>b</mi><mo>+</mo><mi>b</mi><mi>c</mi><mo>+</mo><mi>a</mi><mi>c</mi></mrow><mn>3</mn></mfrac><mo>&#8805;</mo><msup><mfenced><mrow><msup><mi>a</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup><msup><mi>c</mi><mn>2</mn></msup></mrow></mfenced><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup><mspace linebreak=\"newline\"/><mo>&#8658;</mo><msup><mfenced><mrow><mi>a</mi><mi>b</mi><mi>c</mi></mrow></mfenced><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>&#8805;</mo><mn>3</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math>&nbsp;Minimum of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mi>b</mi><mi>c</mi><mo>=</mo><msup><mfenced><mn>3</mn></mfenced><mn>3</mn></msup><mo>=</mo><mn>27</mn></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e80b6f5bfc7ab78aea15", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 1, "question": {"text": "If system of equation <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi><mo>=</mo><mi>a</mi><mo>,</mo><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi><mo>+</mo><mi>z</mi><mo>=</mo><mi>b</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>c</mi><mi>z</mi><mo>=</mo><mi>c</mi></math> is inconsistent, then which of the following is correct?", "image": null}, "options": [{"id": "51mBt", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mi>b</mi><mi>c</mi><mo>-</mo><mi>a</mi><mo>-</mo><mi>b</mi><mo>-</mo><mi>c</mi><mo>+</mo><mn>2</mn><mo>=</mo><mn>0</mn></math>", "isCorrect": false, "image": null}, {"id": "YTkoj", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mi>b</mi><mi>c</mi><mo>-</mo><mi>a</mi><mo>-</mo><mi>b</mi><mo>-</mo><mi>c</mi><mo>+</mo><mn>3</mn><mo>=</mo><mn>0</mn><mo>,</mo><mo>&#160;</mo><mi>a</mi><mo>=</mo><mn>1</mn></math>", "isCorrect": false, "image": null}, {"id": "4CVQV", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mi>b</mi><mi>c</mi><mo>-</mo><mi>a</mi><mo>-</mo><mi>b</mi><mo>-</mo><mi>c</mi><mo>+</mo><mn>3</mn><mo>=</mo><mn>0</mn></math>", "isCorrect": false, "image": null}, {"id": "bZcJx", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mi>b</mi><mi>c</mi><mo>-</mo><mi>a</mi><mo>-</mo><mi>b</mi><mo>-</mo><mi>c</mi><mo>+</mo><mn>2</mn><mo>=</mo><mn>0</mn><mo>,</mo><mo>&#160;</mo><mi>a</mi><mo>&#8800;</mo><mn>1</mn><mo>,</mo><mi>b</mi><mo>&#8800;</mo><mn>1</mn><mo>,</mo><mi>c</mi><mo>&#8800;</mo><mn>1</mn></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>We have,&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>&#160;</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi><mo>=</mo><mi>a</mi></math>&nbsp; &nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>.</mo><mo>.</mo><mo>.</mo><mo>(</mo><mi mathvariant=\"normal\">i</mi><mo>)</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi><mo>+</mo><mi>z</mi><mo>=</mo><mi>b</mi></math>&nbsp; &nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>.</mo><mo>.</mo><mo>.</mo><mo>(</mo><mi>ii</mi><mo>)</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>c</mi><mi>z</mi><mo>=</mo><mi>c</mi></math>&nbsp; &nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>.</mo><mo>.</mo><mo>.</mo><mo>(</mo><mi>iii</mi><mo>)</mo></math></p><p>are inconsistent.&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtable columnalign=\"left\"><mtr><mtd><mo>&#8756;</mo></mtd><mtd><mfenced open=\"|\" close=\"|\"><mtable columnalign=\"left\"><mtr><mtd><mi>a</mi></mtd><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mi>b</mi></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd><mtd><mi>c</mi></mtd></mtr></mtable></mfenced><mo>=</mo><mn>0</mn><mo>&#160;</mo><mi>and</mi><mo>&#160;</mo><mfenced open=\"|\" close=\"|\"><mtable columnalign=\"left\"><mtr><mtd><mi>a</mi></mtd><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mi>b</mi></mtd><mtd><mi>b</mi></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mi>c</mi></mtd><mtd><mn>1</mn></mtd><mtd><mi>c</mi></mtd></mtr></mtable></mfenced><mo>&#8800;</mo><mn>0</mn></mtd></mtr></mtable></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mfenced open=\"|\" close=\"|\"><mtable columnalign=\"left\"><mtr><mtd><mi>a</mi></mtd><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mi>b</mi></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd><mtd><mi>c</mi></mtd></mtr></mtable></mfenced><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>a</mi><mo>(</mo><mi>b</mi><mi>c</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>-</mo><mn>1</mn><mo>(</mo><mi>c</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>+</mo><mn>1</mn><mo>(</mo><mn>1</mn><mo>-</mo><mi>b</mi><mo>)</mo><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mi>b</mi><mi>c</mi><mo>-</mo><mi>a</mi><mo>-</mo><mi>c</mi><mo>+</mo><mn>1</mn><mo>+</mo><mn>1</mn><mo>-</mo><mi>b</mi><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mi>b</mi><mi>c</mi><mo>-</mo><mi>a</mi><mo>-</mo><mi>b</mi><mo>-</mo><mi>c</mi><mo>+</mo><mn>2</mn><mo>=</mo><mn>0</mn></math></p><p>and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"|\" close=\"|\"><mtable columnalign=\"left\"><mtr><mtd><mi>a</mi></mtd><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mi>b</mi></mtd><mtd><mi>b</mi></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mi>c</mi></mtd><mtd><mn>1</mn></mtd><mtd><mi>c</mi></mtd></mtr></mtable></mfenced><mo>&#8800;</mo><mn>0</mn></math></p><p>It is possible only when <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>&#8800;</mo><mn>1</mn><mo>,</mo><mi>b</mi><mo>&#8800;</mo><mn>1</mn></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>c</mi><mo>&#8800;</mo><mn>1</mn></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7e16f5bfc7ab78ae8a7", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 2, "question": {"text": "Let $\\alpha_{1}, \\alpha_{2}$ and $\\beta_{1}, \\beta_{2}$ be the roots of $a x^{2}+b x+c$ $=0$ and $\\mathrm{px}^{2}+\\mathrm{qx}+\\mathrm{r}=0$ respectively. If the system of equations $\\alpha_{1} \\mathrm{y}+\\alpha_{2} \\mathrm{z}=0$ and $\\beta_{1} \\mathrm{y}+\\beta_{2} \\mathrm{z}=0$ has a non-trivial solution, then", "image": null}, "options": [{"id": "QCHuC", "text": "$\\frac{b^{2}}{q^{2}}=\\frac{a c}{p r}$", "isCorrect": true, "image": null}, {"id": "zY3vz", "text": "$\\frac{\\mathrm{c}^{2}}{\\mathrm{r}^{2}}=\\frac{\\mathrm{ab}}{\\mathrm{pq}}$", "isCorrect": false, "image": null}, {"id": "CamTA", "text": "$\\frac{a^{2}}{p^{2}}=\\frac{b c}{q r}$", "isCorrect": false, "image": null}, {"id": "pMWtD", "text": "None of these", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Since $\\alpha_{1}, \\alpha_{2}$ and $\\beta_{1}, \\beta_{2}$ are the roots of ax $^{2}$ $+b x+c=0$ and $p x^{2}+q x+r=0$ respectively\r\n\r\ntherefore\r\n\r\n$$\r\n\r\n\\alpha_{1}+\\alpha_{2}=\\frac{-b}{a}, \\alpha_{1} \\alpha_{2}=\\frac{c}{a}\r\n\r\n$$\r\n\r\nand $\\beta_{1}+\\beta_{2}=\\frac{-q}{p}, \\beta_{1} \\beta_{2}=\\frac{r}{p}$\r\n\r\nSince the given system of equation has a non-trivial solution\r\n\r\n$$\r\n\r\n\\therefore\\left|\\begin{array}{ll}\r\n\r\n\\alpha_{1} & \\alpha_{2} \\\\\r\n\r\n\\beta_{1} & \\beta_{2}\r\n\r\n\\end{array}\\right|=0 \\text { i.e. } \\alpha_{1} \\beta_{2}-\\alpha_{2} \\beta_{1}=0\r\n\r\n$$\r\n\r\nor $\\quad \\frac{\\alpha_{1}}{\\beta_{1}}=\\frac{\\alpha_{2}}{\\beta_{2}}=\\frac{\\alpha_{1}+\\alpha_{2}}{\\beta_{1}+\\beta_{2}}=\\sqrt{\\frac{\\alpha_{1} \\alpha_{2}}{\\beta_{1} \\beta_{2}}}$\r\n\r\n$\\Rightarrow \\frac{\\mathrm{pb}}{\\mathrm{qa}}=\\sqrt{\\frac{\\mathrm{pc}}{\\mathrm{ra}}} \\Rightarrow \\frac{\\mathrm{b}^{2}}{\\mathrm{q}^{2}}=\\frac{\\mathrm{ac}}{\\mathrm{pr}}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7a76f5bfc7ab78ae6b8", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 1, "question": {"text": "The equations $2 x+3 y+4=0 ; 3 x+4 y+6=0$ and $4 x+5 y+8=0$ are", "image": null}, "options": [{"id": "kCCWx", "text": "consistent with unique solution", "isCorrect": true, "image": null}, {"id": "C63P8", "text": "inconsistent", "isCorrect": false, "image": null}, {"id": "rwpSl", "text": "consistent with infinitely many solutions", "isCorrect": false, "image": null}, {"id": "oV3A2", "text": "None of the above", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Consider first two equations:\r\n$2 x+3 y=-4 \\quad$ and $\\quad 3 x+4 y=-6$\r\nWe have $\\Delta=\\left|\\begin{array}{ll}2 & 3 \\\\ 3 & 4\\end{array}\\right|=-1 \\neq 0$\r\n$$\r\n\\Delta_{\\mathrm{x}}=\\left|\\begin{array}{ll}\r\n-4 & 3 \\\\\r\n-6 & 4\r\n\\end{array}\\right|=2 \\quad \\text { and } \\quad \\Delta_{\\mathrm{y}}=\\left|\\begin{array}{cc}\r\n2 & -4 \\\\\r\n3 & -6\r\n\\end{array}\\right|=0\r\n$$\r\n$\\therefore x=-2$ and $y=0$\r\nNow this solution satisfies the third, so the equations are consistent with unique solution.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "67726daac49e8ef28ee2b4b4", "title": "Miscellaneous", "totalQuestions": 1, "questions": [{"_id": "67726d0dc49e8ef28ee2b3de", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "If $x$ is a complex root of the equation\n$\\left|\\begin{array}{ccc}1 & x & x \\\\ x & 1 & x \\\\ x & x & 1\\end{array}\\right|+\\left|\\begin{array}{ccc}1-x & 1 & 1 \\\\ 1 & 1-x & 1 \\\\ 1 & 1 & 1-x\\end{array}\\right|=0$,\nthen $x^{2007}+x^{-2007}=$", "image": null}, "options": [{"id": "Nmdie", "text": "$1$", "image": null, "isCorrect": false}, {"id": "GdKzx", "text": "$-1$", "image": null, "isCorrect": false}, {"id": "7d1ny", "text": "$-2$", "image": null, "isCorrect": true}, {"id": "753K1", "text": "$2$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Expanding the two determinants, we get\n$\\left(1-3 x^2+2 x^3\\right)+\\left(3 x^2-x^3\\right)=0$\n$\\Rightarrow x^3+1=0$\n$\\Rightarrow x=-\\omega,-\\omega^2,-1$\n$x^{2007}+x^{-2007}=-1-1=-2$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

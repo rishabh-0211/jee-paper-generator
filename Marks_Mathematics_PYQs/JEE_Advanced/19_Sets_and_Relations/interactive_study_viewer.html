@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JEE Advanced - Sets and Relations PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>📐 JEE Advanced &bull; Sets and Relations</h1>
+        <div class="sub">Mathematics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 19, "chapterId": "632c86c3bbb2801e57b3d851", "chapter": "Sets and Relations", "exam": "JEE Advanced", "subject": "Mathematics", "totalTopics": 2, "totalQuestions": 7, "downloadTime": "2026-10-08 20:36:21", "topics": [{"index": 1, "topicId": "64b16aeef23ac7d519f9b9ad", "title": "Questions on Venn Diagram", "totalQuestions": 1, "questions": [{"_id": "64b16a98f23ac7d519f9b5da", "previousYearPapers": [{"_id": "632c83573e3fd59bda92e46c", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022 (Paper 1)", "title": "JEE Advanced 2022 (Paper 1)"}], "type": "numerical", "level": 1, "question": {"text": "<p>In a study about a pandemic, data of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>900</mn></math> persons was collected. It was found that</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>190</mn></math>&nbsp;persons had symptom of fever,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>220</mn></math>&nbsp;persons had symptom of cough,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>220</mn></math>&nbsp;persons had symptom of breathing problem,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>330</mn></math>&nbsp;persons had symptom of fever or cough or both,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>350</mn></math>&nbsp;persons had symptom of cough or breathing problem or both,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>340</mn></math>&nbsp;persons had symptom of fever or breathing problem or both,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>30</mn></math>&nbsp;persons had all three symptoms (fever, cough and breathing problem).</p><p>If a person is chosen randomly from these <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>900</mn></math>&nbsp;persons, then the probability that the person has at most one symptom is ______.</p>", "image": null}, "options": [], "correctValue": "0.8", "solution": {"text": "<blockquote><p>We denote the set of people having symptoms of fever, cough and breathing problem by&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>F</mi><mo>,</mo><mi>C</mi></math>&nbsp;and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math>&nbsp;respectively</p><p>Given that&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi><mfenced><mi>F</mi></mfenced><mo>=</mo><mn>190</mn><mo>,</mo><mo>&#160;</mo><mi>n</mi><mfenced><mi>B</mi></mfenced><mo>=</mo><mn>220</mn></math>&nbsp;and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi><mfenced><mi>C</mi></mfenced><mo>=</mo><mn>220</mn></math></p><p>Also given,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi><mfenced><mrow><mi>F</mi><mo>&#8746;</mo><mi>C</mi></mrow></mfenced><mo>=</mo><mn>330</mn><mo>,</mo><mo>&#160;</mo><mi>n</mi><mfenced><mrow><mi>B</mi><mo>&#8746;</mo><mi>C</mi></mrow></mfenced><mo>=</mo><mn>350</mn><mo>,</mo></math>&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi><mfenced><mrow><mi>F</mi><mo>&#8746;</mo><mi>B</mi></mrow></mfenced><mo>=</mo><mn>340</mn></math>&nbsp;and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi><mfenced><mrow><mi>F</mi><mo>&#8745;</mo><mi>C</mi><mo>&#8745;</mo><mi>B</mi></mrow></mfenced><mo>=</mo><mn>30</mn></math></p><p>So&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi><mfenced><mrow><mi>F</mi><mo>&#8745;</mo><mi>C</mi></mrow></mfenced><mo>=</mo><mi>n</mi><mfenced><mi>F</mi></mfenced><mo>+</mo><mi>n</mi><mfenced><mi>C</mi></mfenced><mo>-</mo><mi>n</mi><mfenced><mrow><mi>F</mi><mo>&#8746;</mo><mi>C</mi></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>80</mn></math></p><p>Similarly,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi><mfenced><mrow><mi>F</mi><mo>&#8745;</mo><mi>B</mi></mrow></mfenced><mo>=</mo><mi>n</mi><mfenced><mi>F</mi></mfenced><mo>+</mo><mi>n</mi><mfenced><mi>B</mi></mfenced><mo>-</mo><mi>n</mi><mfenced><mrow><mi>F</mi><mo>&#8746;</mo><mi>B</mi></mrow></mfenced><mo>=</mo><mn>70</mn></math>&nbsp;and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi><mfenced><mrow><mi>C</mi><mo>&#8745;</mo><mi>B</mi></mrow></mfenced><mo>=</mo><mi>n</mi><mfenced><mi>C</mi></mfenced><mo>+</mo><mi>n</mi><mfenced><mi>B</mi></mfenced><mo>-</mo><mi>n</mi><mfenced><mrow><mi>B</mi><mo>&#8746;</mo><mi>C</mi></mrow></mfenced><mo>=</mo><mn>90</mn></math></p><p>Putting the data in Venn diagram</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/8c726c26-fc51-4114-be2b-5f90329b9a38-image.png\" style=\"width: 220px; height: 181px;\" /></p><p>Number of people having at most one symptom<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo></math>Number of people having zero&nbsp;symptom or one symptom</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>70</mn><mo>+</mo><mn>80</mn><mo>+</mo><mn>90</mn><mo>+</mo><mn>480</mn><mo>=</mo><mn>720</mn></math></p><p>Required probability&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mn>720</mn><mn>900</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>8</mn></math></p></blockquote>", "image": null}, "videoSolution": {"videoId": "3199ebe3a58c42cfa8eef98799789921", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/30G8Pt78bQ3Z3.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/30G8Pt78bQ3Z3.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "632c83573e3fd59bda92e46c", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022 (Paper 1)", "title": "JEE Advanced 2022 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64b16aeef23ac7d519f9b9ac", "title": "Questions on number of relations and sets", "totalQuestions": 6, "questions": [{"_id": "6a0be50d44d287c9361e5c80", "type": "numerical", "question": {"text": "Let $S = \\{1, 2, 3, \\ldots, 10\\}$. Consider the set<br>$X = \\{R : R$ is an equivalence relation on the set $S$ such that $R$ has exactly $42$ elements$\\}$.<br><br>Then the number of elements in $X$ is _____________.", "image": null}, "options": [], "correctValue": "2520", "solution": {"text": "An equivalence relation on a set $S$ corresponds to a partition of $S$ into disjoint equivalence classes. Let the sizes of these equivalence classes be $a_1, a_2, \\ldots, a_k$.<br><br>The number of elements in the equivalence relation $R$ is given by the sum of the squares of the sizes of its equivalence classes:<br>$\\sum_{i=1}^k a_i^2 = 42$<br><br>Since the total number of elements in $S$ is $10$, we also have:<br>$\\sum_{i=1}^k a_i = 10$<br><br>We need to find all possible partitions of $10$ such that the sum of their squares is $42$. Let's check the possible sizes of the largest equivalence class, $a_1$:<br><br>Case 1: $a_1 = 6$<br>$a_1^2 = 36$. The remaining sum of squares is $42 - 36 = 6$, and the remaining sum of elements is $10 - 6 = 4$.<br>The only way to partition $4$ such that the sum of squares is $6$ is $2, 1, 1$ (since $2^2 + 1^2 + 1^2 = 6$).<br>Thus, one valid partition is $\\{6, 2, 1, 1\\}$.<br><br>Case 2: $a_1 = 5$<br>$a_1^2 = 25$. The remaining sum of squares is $42 - 25 = 17$, and the remaining sum of elements is $10 - 5 = 5$.<br>The only way to partition $5$ such that the sum of squares is $17$ is $4, 1$ (since $4^2 + 1^2 = 17$).<br>Thus, another valid partition is $\\{5, 4, 1\\}$.<br><br>Case 3: $a_1 \\le 4$<br>The maximum possible sum of squares would be for the partition $\\{4, 4, 2\\}$, which gives $4^2 + 4^2 + 2^2 = 36 < 42$. No other partitions can yield a sum of $42$.<br><br>Now, we calculate the number of ways to form these partitions from the $10$ elements of $S$.<br><br>For the partition $\\{6, 2, 1, 1\\}$:<br>The number of ways to divide $10$ elements into groups of sizes $6, 2, 1, 1$ is:<br>$\\dfrac{10!}{6! \\times 2! \\times 1! \\times 1! \\times 2!} = \\dfrac{3628800}{720 \\times 2 \\times 1 \\times 1 \\times 2} = \\dfrac{3628800}{2880} = 1260$<br>(Note: We divide by $2!$ because there are two groups of identical size $1$).<br><br>For the partition $\\{5, 4, 1\\}$:<br>The number of ways to divide $10$ elements into groups of sizes $5, 4, 1$ is:<br>$\\dfrac{10!}{5! \\times 4! \\times 1!} = \\dfrac{3628800}{120 \\times 24 \\times 1} = \\dfrac{3628800}{2880} = 1260$<br><br>Total number of equivalence relations in $X$ is:<br>$1260 + 1260 = 2520$<br><br>Answer: $2520$", "image": null}, "level": 3, "videoSolution": {"videoId": "5eee117f9b53476691045c15e2266761", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/M9PczWZFVRWQG.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/M9PczWZFVRWQG.480.jpeg", "premiumModules": [{"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}, {"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "previousYearPapers": [{"_id": "6a0be4ef402904185b819b42", "title": "JEE Advanced 2026 (Paper 1)", "shortName": "2026 (Paper 1)", "isVisible": true, "heldOn": "2026-05-25T09:00:00.000Z", "examId": "615d76cfc52ffa3c944600e0"}], "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6a0be4ef402904185b819b42", "title": "JEE Advanced 2026 (Paper 1)", "shortName": "2026 (Paper 1)", "isVisible": true, "heldOn": "2026-05-25T09:00:00.000Z", "examId": "615d76cfc52ffa3c944600e0"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "685102bd6bba689a3eb09c76", "type": "numerical", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "684c67d769037fad219cb0c1", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2025-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2025 (Paper 1)", "title": "JEE Advanced 2025 (Paper 1)"}], "question": {"text": "Let the set of all relations $R$ on the set $\\{a, b, c, d, e, f\\}$, such that $R$ is reflexive and symmetric, and $R$ contains exactly 10 elements, be denoted by $S$. Then the number of elements in $S$ is ______", "image": null}, "options": [], "correctValue": "105", "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/dotJ_FKh6L4BVL2nbdGcgwQqrQArjgv3o2UyULbVZCs.original.fullsize.png\"><br>For relation to be reflexive all the diagonal elements must be taken and out of remaining 30 elements there are 15 pairs and we need 2 pairs such that R contains exactly 10 elements and is both reflexive and symmetric.\n$\\therefore$ number of ways $={ }^{15} \\mathrm{C}_2=105$", "image": null}, "videoSolution": {"videoId": "d7ea803329974c6fb195b12374fa663e", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/bs7iEPP7oYCRP.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/bs7iEPP7oYCRP.480.jpeg", "premiumModules": [{"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}, {"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "684c67d769037fad219cb0c1", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2025-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2025 (Paper 1)", "title": "JEE Advanced 2025 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "66965df1d603121f43a468e6", "type": "numerical", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "66965789b31faf98fda8fefa", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2024-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Paper 2)", "title": "JEE Advanced 2024 (Paper 2)"}], "question": {"text": "If the value of $n(Y)+n(Z)$ is $k^2$, then $|k|$ is\nLet \\(S=\\{1,2,3,4,5,6\\}\\) and \\(X\\) be the set of all relations \\(R\\) from \\(S\\) to \\(S\\) that satisfy both the following properties:\r\ni. \\(R\\) has exactly 6 elements.\r\nii. For each \\((a, b) \\in R\\), we have \\(|a-b| \\geq 2\\).\r\nLet \\(Y=\\{R \\in X\\) : The range of \\(R\\) has exactly one element \\(\\}\\) and \\(Z=\\{R \\in X: R\\) is a function from \\(S\\) to \\(S\\}\\).\r\nLet \\(n(A)\\) denote the number of elements in a set \\(A\\).", "image": null}, "options": [], "correctValue": 36, "solution": {"text": "given $|a-b| \\geq 2$ so if\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/hn7i07O6ZaG7UvnOx0EtvNsr1x2V_GouFl2skzjeIFQ.original.fullsize.png\">\ni.e. Total elements in $\\mathrm{X}$ is ${ }^{20} \\mathrm{C}_6$\nNow for $\\mathrm{n}(\\mathrm{Y})$,\nrange of $\\mathrm{R}$ has exactly one element i.e. second elements must be constant in $\\mathrm{R}$ and since $\\mathrm{R}$ must have 6 element so it is not possible to satisfy both condition so $\\mathrm{n}(\\mathrm{Y})=0$.\n$\\begin{aligned} & \\text { for } \\quad n(z) \\\\ & 1 \\rightarrow 3,4,5,6 \\\\ & 2 \\rightarrow 4,5,6 \\\\ & 3 \\rightarrow 1,5,6 \\\\ & 4 \\rightarrow 1,2,6 \\\\ & 5 \\rightarrow 1,2,3 \\\\ & 6 \\rightarrow 1,2,3,4 \\\\ & \\end{aligned}$\nno. of relation that are function will be $\\quad={ }^4 \\mathrm{C}_1 \\times{ }^3 \\mathrm{C}_1 \\times{ }^3 \\mathrm{C}_1 \\times{ }^3 \\mathrm{C}_1 \\times{ }^3 \\mathrm{C}_1 \\times{ }^4 \\mathrm{C}_1$\n$\\begin{aligned} & =(4 \\times 3 \\times 3)^2=k^2 \\\\ & \\text { i.e. } \\mathrm{k}=36\\end{aligned}$", "image": null}, "videoSolution": {"videoId": "fd810d1b6e164c5c89f87636f09a28e9", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/oFFcJQTqrIPzh.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/oFFcJQTqrIPzh.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "66965789b31faf98fda8fefa", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2024-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Paper 2)", "title": "JEE Advanced 2024 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "66965df1d603121f43a4676f", "type": "numerical", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "66965789b31faf98fda8fefa", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2024-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Paper 2)", "title": "JEE Advanced 2024 (Paper 2)"}], "question": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/on97X5TCK54arKma2zxcmrlZp_wpNv-ZITyDmpt8iQk.original.fullsize.png\">\nIf $n(X)={ }^m C_6$, then the value of $m$ is", "image": null}, "options": [], "correctValue": 20, "solution": {"text": "\\(S=\\{1,2,3,4,5,6\\} \\quad R: S \\rightarrow S\\)\r\nNumber of elements in \\(R=6\\)\r\nand for each \\((a, b) \\in R ;|a-b| \\geq 2\\)\r\n\\(X \\rightarrow\\) set of all relation \\(R: S \\rightarrow S\\)\r\nIf \\(a=1, b=3,4,5,6 \\rightarrow(4)\\)\r\n\\(a=2, b=4,5,6 \\rightarrow(3)\\)\r\n\\(a=3, b=1,5,6 \\rightarrow(3)\\)\r\n\\(a=4, b=1,2,6 \\rightarrow(3)\\)\r\n\\(a=5, b=1,2,3 \\rightarrow(3)\\)\r\n\\(a=6, b=1,2,3,4 \\rightarrow(4)\\)\r\nTotal number of ordered pairs \\((a, b)\\)\r\ns.t. \\(|a-b| \\geq 2 =20\\)\r\n\\(\\therefore n(X)=\\) number of elements in \\(\\mathrm{X}={ }^{20} C_6\\)\r\n\\(\\therefore m=20\\)", "image": null}, "videoSolution": {"videoId": "b6951478df474f4ba378c95e68beac58", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/IVGDq7d0rtDYl.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/IVGDq7d0rtDYl.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "66965789b31faf98fda8fefa", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2024-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Paper 2)", "title": "JEE Advanced 2024 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a62f23ac7d519f9b3ed", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf82b", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2017-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2017 (Paper 2)", "title": "JEE Advanced 2017 (Paper 2)"}], "type": "singleCorrect", "level": 1, "question": {"text": "Let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>S</mi><mo>=</mo><mfenced open=\"{\" close=\"}\" separators=\"|\"><mrow><mn>1,2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mo>&#8230;</mo><mo>.</mo><mn>9</mn></mrow></mfenced></math>. For <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi><mo>=</mo><mn>1,2</mn><mo>,</mo><mo>&#8230;</mo><mn>5</mn><mo>,</mo></math> let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>N</mi><mi>k</mi></msub></math> be the number of subsets of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>S</mi></math>, each containing five elements out of which exactly <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi></math> are odd. Then <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>N</mi><mn>1</mn></msub><mo>+</mo><msub><mi>N</mi><mn>2</mn></msub><mo>+</mo><msub><mi>N</mi><mn>3</mn></msub><mo>+</mo><msub><mi>N</mi><mn>4</mn></msub><mo>+</mo><msub><mi>N</mi><mn>5</mn></msub><mo>=</mo></math>", "image": null}, "options": [{"id": "wMXGv", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>125</mn></math>", "isCorrect": false, "image": null}, {"id": "a5oh7", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>252</mn></math>", "isCorrect": false, "image": null}, {"id": "fTR8a", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>210</mn></math>", "isCorrect": false, "image": null}, {"id": "LwnZz", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>126</mn></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>N</mi><mn>1</mn></msub><mo>+</mo><msub><mi>N</mi><mn>2</mn></msub><mo>+</mo><msub><mi>N</mi><mn>3</mn></msub><mo>+</mo><msub><mi>N</mi><mn>4</mn></msub><mo>+</mo><msub><mi>N</mi><mn>5</mn></msub><mo>=</mo></math>&nbsp;Total ways &ndash; {when no odd}</p><p>Total ways&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mo>=</mo><mn>9</mn></msup><msub><mi>C</mi><mn>5</mn></msub></math></p><p>Number of ways when no odd, is zero&nbsp;&nbsp;&nbsp;&nbsp; (<math><mo>&#8757;</mo></math>&nbsp;only available even are <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>,</mo><mo>&#160;</mo><mn>4</mn><mo>,</mo><mo>&#160;</mo><mn>6</mn><mo>,</mo><mo>&#160;</mo><mn>8</mn></math>)</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><msup><mo>&#160;</mo><mn>9</mn></msup><msub><mi>C</mi><mn>5</mn></msub><mo>-</mo><mi>zero</mi><mo>=</mo><mn>126</mn></math></p>", "image": null}, "videoSolution": {"videoId": "41fa12aebde748538396e9d35bb9b9a3", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/LRqHLL3x2bBoa.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/LRqHLL3x2bBoa.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf82b", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2017-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2017 (Paper 2)", "title": "JEE Advanced 2017 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a08f23ac7d519f9b0b2", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1f77301f65c2f92c47", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2010-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2010 (Paper 2)", "title": "JEE Advanced 2010 (Paper 2)"}], "question": {"text": "Let $S=\\{1,2,3,4\\}$. The total number of unordered pairs of disjoint subsets of $S$ is equal to", "image": null}, "options": [{"id": "9GQJr", "text": "\n25\n", "image": null, "isCorrect": false}, {"id": "G5Yez", "text": "\n34\n", "image": null, "isCorrect": false}, {"id": "jLJZP", "text": "\n42\n", "image": null, "isCorrect": false}, {"id": "QCokI", "text": "\n41", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Let $A \\cap B=\\phi, A, B \\subset S$\n$$\n\\begin{aligned}\n& 3^4=\\frac{81+1}{2}=41 \\\\\n\\Rightarrow \\quad & \\frac{3^4+1}{2}=41\n\\end{aligned}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1f77301f65c2f92c47", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2010-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2010 (Paper 2)", "title": "JEE Advanced 2010 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'JEE Advanced';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,944 @@
+{
+  "index": 20,
+  "chapterId": "61e7bd7dcba928c9eda96baf",
+  "chapter": "Mathematical Reasoning",
+  "exam": "BITSAT",
+  "subject": "Mathematics",
+  "totalTopics": 1,
+  "totalQuestions": 14,
+  "downloadTime": "2026-10-08 20:37:06",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e86b6f5bfc7ab78aedf3",
+      "title": "Mathematical Reasoning",
+      "totalQuestions": 14,
+      "questions": [
+        {
+          "_id": "67726d19c49e8ef28ee2b43a",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "The Boolean expression $\\sim(p \\vee q) \\vee(\\sim p \\wedge q)$ is equivalent to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "GYJUh",
+              "text": "$p$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SLhRw",
+              "text": "$q$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CzZYL",
+              "text": "$\\sim q$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SGC3l",
+              "text": "$\\sim p$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\begin{aligned} & \\text {  Given, } \\sim(p \\vee q) \\vee(\\sim p \\wedge q) \\\\ & \\Rightarrow(\\sim p \\wedge \\sim q) \\vee(\\sim p \\wedge q) \\text { (By De Morgan's Law) } \\\\ & \\Rightarrow \\sim p \\wedge(\\sim q \\vee q) \\text { (Distributive Law) } \\\\ & \\Rightarrow \\sim p \\wedge t \\text { (By complement law, where } t=\\text { tautology) } \\\\ & \\Rightarrow \\sim p \\text { (Identity law) }\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726d10c49e8ef28ee2b3f3",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Consider the following statements :\nA: Rishi is a judge.\nB : Rishi is honest.\n$\\mathrm{C}:$ Rishi is not arrogant.\nThe negation of the statement \"if Rishi is a judge and he is not arrogant, then he is honest\" is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "g7Vt9",
+              "text": "$B \\rightarrow(A \\vee C)$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "AIJjy",
+              "text": "$(\\sim B) \\wedge(A \\wedge C)$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "F7eGv",
+              "text": "$B \\rightarrow((\\sim A) \\vee(\\sim C))$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Niw2J",
+              "text": "$B \\rightarrow(A \\wedge C)$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\begin{aligned} & \\Rightarrow \\frac{2(1+\\sin t) \\cos t}{2 \\cos ^2 t}=\\sqrt{3} \\\\ & \\Rightarrow t=\\frac{\\pi}{6}, y_0=27\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726d0bc49e8ef28ee2b3d0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "If p: 2 is an even number\n$\\mathrm{q}: 2$ is a prime number,\n$\\mathrm{r}: 2+2=2^2$\nThen the symbolic statement $p \\rightarrow(q \\vee r)$ means",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "w3bHb",
+              "text": "2 is an even number and 2 is a prime number or$2+2=2^2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "eO0WE",
+              "text": "2 is an even number then 2 is a prime number or $2+2=2^2$.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "rZerz",
+              "text": "2 is an even number or 2 is a prime number then $2+2=2^2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ViHVX",
+              "text": "If2 is not even number then 2 is a primenumber $\\alpha=2+2=2^2$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{p} \\rightarrow(\\mathrm{q} \\vee \\mathrm{r})$. If 2 is even number then 2 is a prime number or $2+2=2^2$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726d03c49e8ef28ee2b38f",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Consider the following two propositions:\n$\\mathrm{P}_1: \\sim(p \\rightarrow \\sim q)$\n$P_2:(p \\wedge \\sim q) \\wedge((\\sim p) \\vee q)$\nIf the proposition $p \\rightarrow((\\sim p) \\vee q)$ is evaluated as FALSE, then :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "I2vLS",
+              "text": "$P_1$ is TRUE and $P_2$ is FALSE",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2ABI3",
+              "text": "$\\mathrm{P}_1$ is FALSE and $\\mathrm{P}_2$ is TRUE",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "NUiWM",
+              "text": "Both $P_1$ and $P_2$ are FALSE",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "g9P9q",
+              "text": "Both $P_1$ and $P_2$ are TRUE",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given propositions $\\mathrm{P}_1: \\sim(\\mathrm{p} \\rightarrow \\sim \\mathrm{q})$\n$\\mathrm{P}_2:(p \\wedge \\sim q) \\wedge((\\sim p) \\vee q)$\nRequired table is shown below.\r\n\\(\\begin{array}{|l|l|l|l|l|l|l|l|l|l|l|}\r\n\\hline \\mathbf{p} & \\mathbf{q} & \\sim p & \\sim q & \\sim p \\vee q & p \\rightarrow(\\sim(p \\vee q) & p \\rightarrow \\sim q & \\sim(p \\rightarrow \\sim q) & p \\wedge \\sim q & p_2 \\\\\r\n\\hline \\text { T } & \\text { T } & \\text { F } & \\text { F } & \\text { T } & \\text { T } & \\text { F } & \\text { T } & \\text { F } & \\text { F } \\\\\r\n\\hline \\text { T } & \\text { F } & \\text { F } & \\text { T } & \\text { F } & \\text { F } & \\text { T } & \\text { F } & \\text { T } & \\text { F } \\\\\r\n\\hline \\text { F } & \\text { T } & \\text { T } & \\text { F } & \\text { T } & \\text { T } & \\text { T } & \\text { F } & \\text { F } & \\text { F } \\\\\r\n\\hline \\text { F } & \\text { F } & \\text { T } & \\text { T } & \\text { T } & \\text { T } & \\text { T } & \\text { F } & \\text { F } & \\text { F } \\\\\r\n\\hline\r\n\\end{array}\\)\r\n\\(p \\rightarrow(\\sim p \\vee q)\\) is \\(F\\) when \\(p\\) is true \\(q\\) is false From table \\(P_1 ~\\&~ P_2\\) both are false",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726d02c49e8ef28ee2b38a",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Let $p, q, r$ be three logical statements. Consider the compound statements\n$S_1:((\\sim p) \\vee q) \\vee((\\sim p) \\vee r)$ and\n$S_2: p \\rightarrow(q \\vee r)$\nThen, which of the following is NOT true?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "4mPYv",
+              "text": "If $S_2$ is true, then $S_1$ is true",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "cuWBf",
+              "text": "If $S_2$ is false, then $S_1$ is false",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "v9Voq",
+              "text": "If $S_2$ is false, then $S_1$ is true",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "zOOqx",
+              "text": "If $S_1$ is false, then $S_2$ is false",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given statement $S_1:(\\sim p \\vee q) \\vee(\\sim p \\vee r)$\n$\\equiv \\sim p \\vee(q \\vee r)$\n$S_2: p \\rightarrow(q \\vee r)$\n$\\equiv \\sim p \\vee(q \\vee r) \\rightarrow$ By conditional law\n$S_1 \\equiv S_2$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726d01c49e8ef28ee2b384",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "If p : It raining today, $\\mathrm{q}:$ I go to school, r : I shall meet any friends and s : I shall go for a movie, then which of the following is the proposition : 'If it does not rain or if I do not go to school, then I shall meet my friend and go for a movie'?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "zmKIE",
+              "text": "$\\sim(p \\wedge q) \\Rightarrow(r \\wedge s)$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "jJ9vr",
+              "text": "$\\sim(\\mathrm{p} \\wedge \\sim \\mathrm{q}) \\Rightarrow(\\mathrm{r} \\wedge \\mathrm{s})$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "NnbIo",
+              "text": "$\\sim(p \\wedge q) \\Rightarrow(r \\vee s)$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ztQk0",
+              "text": "None of these",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Correct result is $(\\sim \\mathrm{p} \\vee \\sim \\mathrm{q}) \\Rightarrow(\\mathrm{r} \\wedge \\mathrm{s})$\nSo, $\\sim(p \\wedge q) \\Rightarrow(r \\wedge s)$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87f97ae24e9e2db8cf2",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "The negation of the Boolean expression $((\\sim q)$ $\\wedge p) \\Rightarrow((\\sim p) \\vee q)$ is logically equivalent to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "p96Yz",
+              "text": "$p \\Rightarrow q$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ECx8g",
+              "text": "$q \\Rightarrow p$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "x2DsK",
+              "text": "$\\sim(p \\Rightarrow q)$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "7GsSq",
+              "text": "$\\sim(q \\Rightarrow p)$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given boolen expression are<br />$\\begin{aligned}<br />& \\sim p \\vee q \\equiv p \\rightarrow q \\text { and } \\sim q \\wedge p \\equiv \\sim(p \\rightarrow q) \\\\<br />& \\text { Negation of } \\sim(p \\rightarrow q) \\rightarrow(p \\rightarrow q) \\\\<br />& \\text { is } \\sim(p \\rightarrow q) \\wedge(\\sim(p \\rightarrow q)) \\text { i.e., } \\sim(p \\rightarrow q)<br />\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87897ae24e9e2db8ca7",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Negation of the Boolean expression $\\mathrm{p} \\Leftrightarrow(\\mathrm{q} \\Rightarrow \\mathrm{p})$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "afIwP",
+              "text": "$(\\sim p) \\wedge q$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "awYQv",
+              "text": "$(\\mathrm{p}) \\wedge(\\sim \\mathrm{q})$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "g0Ifl",
+              "text": "$(\\sim \\mathrm{p}) \\vee(\\sim \\mathrm{q})$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "xBWcN",
+              "text": "$(\\sim p) \\wedge(\\sim q)$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given expression is $p \\Leftrightarrow(q \\Rightarrow p)$<br />$\\sim(\\mathrm{p} \\leftrightarrow(\\mathrm{q} \\rightarrow \\mathrm{p}))$<br />$\\sim(\\mathrm{p} \\leftrightarrow \\mathrm{q})=(\\mathrm{p} \\wedge \\sim \\mathrm{q}) \\vee(\\mathrm{q} \\wedge \\sim \\mathrm{p})$<br />$\\sim(\\mathrm{p} \\leftrightarrow(\\mathrm{q} \\rightarrow \\mathrm{p}))$ $=(\\mathrm{p} \\wedge \\sim(\\mathrm{q} \\rightarrow \\mathrm{p})) \\vee((\\mathrm{q} \\rightarrow \\mathrm{p}) \\wedge \\sim \\mathrm{p})$<br />$(\\mathrm{p} \\wedge \\sim(\\mathrm{q} \\rightarrow \\mathrm{p}))=\\mathrm{p} \\wedge(\\mathrm{q} \\wedge \\sim \\mathrm{p})$ $=(p \\wedge \\sim p) \\wedge q=c$<br />$(q \\rightarrow p) \\wedge \\sim p=(\\sim q \\vee p) \\wedge \\sim p$ $=\\sim p \\wedge(\\sim q \\vee p)$<br />$=(\\sim \\mathrm{p} \\wedge \\sim \\mathrm{q}) \\vee(\\sim \\mathrm{p} \\wedge \\mathrm{p})=\\sim \\mathrm{p} \\wedge \\sim \\mathrm{q}$<br />$\\sim(p \\leftrightarrow(\\dot{q} \\rightarrow p))=c \\vee(\\sim p \\wedge \\sim q)=\\sim p \\wedge \\sim q$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e82b6f5bfc7ab78aeb32",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The statement $p:$ For any real numbers $x, y$ if $x=y$, then $2 x+a=2 y+a$ when $a \\in \\mathrm{Z}$.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "gOrDH",
+              "text": "is true",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "O0Dpx",
+              "text": "is false",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Gx6QM",
+              "text": "its contrapositive is not true",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "e4R9o",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We prove the statement $p$ is true by contrapositive method and by direct method.\r\n\r\nDirect method: For any real number $x$ and $y$,\r\n\r\n$\\begin{array}{l}\r\n\r\nx=y \\\\\r\n\r\n\\Rightarrow 2 x=2 y \\\\\r\n\r\n\\Rightarrow 2 x+a=2 y+a \\text { a for some } a \\in Z\r\n\r\n\\end{array}$\r\n\r\nContrapositive method: The contrapositive statement of $p$ is \"For any real numbers $x, y$ if $2 \\mathrm{x}+\\mathrm{a} \\neq 2 \\mathrm{y}+\\mathrm{a}$, where $\\mathrm{a} \\in \\mathrm{Z}$, then $\\mathrm{x} \\neq \\mathrm{y}$.\"\r\n\r\nGiven, $2 x+a \\neq 2 y+a$\r\n\r\n$\\begin{array}{l}\r\n\r\n\\Rightarrow 2 x \\neq 2 y \\\\\r\n\r\n\\Rightarrow x \\neq y\r\n\r\n\\end{array}$\r\n\r\nHence, the given statement is true.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8016f5bfc7ab78ae9bc",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi><mo>:</mo><mn>4</mn></math>&nbsp;is an even prime number, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>q</mi><mo>:</mo><mn>6</mn></math>&nbsp;is a divisor of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>12</mn></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi><mo>:</mo></math> the <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>HCF</mi></math>&nbsp;of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>6</mn></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn></math>, then which of the following is correct?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "F0mBF",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mi>p</mi><mo>&#8743;</mo><mi>q</mi></mrow></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "3X7Sy",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mi>p</mi><mo>&#8744;</mo><mi>q</mi></mrow></mfenced><mo>&#8743;</mo><mo>~</mo><mi>r</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "WPe6m",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>~</mo><mfenced><mrow><mi>q</mi><mo>&#8743;</mo><mi>r</mi></mrow></mfenced><mo>&#8744;</mo><mi>p</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "BMMm0",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>~</mo><mi>p</mi><mo>&#8744;</mo><mfenced><mrow><mi>q</mi><mo>&#8743;</mo><mi>r</mi></mrow></mfenced></math>",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Since, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi><mo>:</mo><mn>4</mn></math>&nbsp;is an even prime number,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>q</mi><mo>:</mo><mn>6</mn></math>&nbsp;is a divisor of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>12</mn></math> and</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi><mo>:</mo></math> the <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>HCF</mi></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>6</mn></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn></math>.</p><p>So,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>~</mo><mi>p</mi><mo>&#8744;</mo><mfenced><mrow><mi>q</mi><mo>&#8743;</mo><mi>r</mi></mrow></mfenced></math> is correct.</p><p>Hence, option (d) is correct.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7fc6f5bfc7ab78ae999",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which of the following statement is a tautology?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "izHzC",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mi>p</mi><mo>&#8744;</mo><mi>q</mi></mrow></mfenced><mo>&#8744;</mo><mfenced><mrow><mo>~</mo><mi>p</mi></mrow></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ORdvS",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mo>~</mo><mi>q</mi><mo>&#8743;</mo><mi>p</mi></mrow></mfenced><mo>&#8744;</mo><mfenced><mrow><mi>p</mi><mo>&#8744;</mo><mo>~</mo><mi>p</mi></mrow></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "i6yiJ",
+              "text": "Both (a) and (b)",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "dUeWU",
+              "text": "None of the above",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Truth table</p><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px;\">\t<tbody>\t\t<tr>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>q</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>~</mo><mi>p</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>~</mo><mi>q</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi><mo>&#8744;</mo><mi>q</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>~</mo><mi>q</mi><mo>&#8743;</mo><mi>p</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi><mo>&#8744;</mo><mo>~</mo><mi>p</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mi>p</mi><mo>&#8744;</mo><mi>q</mi></mrow></mfenced><mo>&#8744;</mo><mfenced><mrow><mo>~</mo><mi>p</mi></mrow></mfenced></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mo>~</mo><mi>q</mi><mo>&#8743;</mo><mi>p</mi></mrow></mfenced><mo>&#8744;</mo><mfenced><mrow><mi>p</mi><mo>&#8744;</mo><mo>~</mo><mi>p</mi></mrow></mfenced></math></td>\t\t</tr>\t\t<tr>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">F</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">F</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">F</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t</tr>\t\t<tr>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">F</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">F</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t</tr>\t\t<tr>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">F</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">F</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">F</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t</tr>\t\t<tr>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">F</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">F</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">F</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">F</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi></math></td>\t\t</tr>\t</tbody></table><p>Hence, option (c) is correct.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b66f5bfc7ab78ae734",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Inthetruth table for the statement $(p \\wedge q) \\rightarrow(q \\vee \\sim p)$, the last column has the truth value in the following order is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "X9Jp2",
+              "text": "TTFF",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "b5H1A",
+              "text": "FTTT",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Od5dO",
+              "text": "TFTT",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "u2gIR",
+              "text": "$\\mathrm{TTTT}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{T} \\mathrm{T} \\mathrm{T} \\mathrm{T}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7986f5bfc7ab78ae63b",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "Negation of \"Paris in France and London is in England\" is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "oRn94",
+              "text": "Paris is in England and London is in France",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZBfRf",
+              "text": "Paris is not in France or London is not in England",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ffkkM",
+              "text": "Paris is in England or London is in France",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wnChf",
+              "text": "None of these",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let \\(p\\) : Paris is in France, \\(q\\) : London is in England\n\\(\\therefore \\quad\\) we have \\(p \\wedge q\\)\nIts negation is \\(\\sim(p \\wedge q)=\\sim p \\vee \\sim q\\)\ni.e., Paris is not in France or London is not in England.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e77b6f5bfc7ab78ae53a",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "If \\(f(t)=\\frac{1-t}{1+t}\\), then \\(f^{\\prime}(1 / t)\\) is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "uUqJX",
+              "text": "\\(\\frac{1}{(1+t)^2}\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "a9Hp4",
+              "text": "\\(\\frac{1}{(t-1)^2}\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "D5CWf",
+              "text": "\\(\\frac{-2 t^2}{(t+1)^2}\\)",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "wrGDY",
+              "text": "\\(\\frac{2}{(t-1)^2}\\)",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "\\(\\begin{aligned}\n& f^{\\prime}(t)=\\frac{d}{d t}\\left[\\frac{1-t}{1+t}\\right]=\\frac{(1+t)(-1)-(1-t) \\times(1)}{(1+t)^2} \\\\\n& =\\frac{-1-t-1+t}{(1+t)^2}=\\frac{-2}{(1+t)^2}\n\\end{aligned}\\)\n\\(f^{\\prime}[1 / t]=\\frac{-2}{\\left(1+\\frac{1}{t}\\right)^2}=\\frac{-2 t^2}{(t+1)^2}\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

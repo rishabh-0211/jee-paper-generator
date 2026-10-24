@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Hydrogen PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚗️ BITSAT &bull; Hydrogen</h1>
+        <div class="sub">Chemistry PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 10, "chapterId": "61e7bd80aa5a2f2b526a055e", "chapter": "Hydrogen", "exam": "BITSAT", "totalTopics": 6, "totalQuestions": 14, "downloadTime": "2026-10-08 20:02:49", "topics": [{"index": 1, "topicId": "64c0e8746f5bfc7ab78aee62", "title": "Preparation and Properties of Hydrogen", "totalQuestions": 4, "questions": [{"_id": "64c0e8326f5bfc7ab78aeb6f", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 1, "question": {"text": "Which one of the following statements in relation to the hydrogen atom is correct?", "image": null}, "options": [{"id": "eTheP", "text": "\r\n$3 s, 3 p$ and $3 d$-orbitals all have the same energy.\r\n", "isCorrect": true, "image": null}, {"id": "wqDqH", "text": "\r\n$3 s$ and $3 p$-orbitals are of lower energy than $3 d$-orbital.\r\n", "isCorrect": false, "image": null}, {"id": "i3NRI", "text": "\r\n$3 p$-orbital is lower in energy than $3 d$-orbital.\r\n", "isCorrect": false, "image": null}, {"id": "j2Dps", "text": "\r\n$3 s$-orbital is lower in energy than $3 p$-orbital.", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The hydrogen atom has the configuration $1 s$ and $3 s, 3 p$ and $3 d$-orbitals will have same energy with respect to $1 s$-orbital.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8306f5bfc7ab78aeb5c", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 2, "question": {"text": "ortho and para form of hydrogen have", "image": null}, "options": [{"id": "yokZY", "text": "\r\ndifferent physical and chemical properties\r\n", "isCorrect": false, "image": null}, {"id": "GQEG1", "text": "\r\n identical physical properties but different chemical properties\r\n", "isCorrect": false, "image": null}, {"id": "SQilk", "text": "\r\nidentical chemical properties but different physical properties\r\n", "isCorrect": true, "image": null}, {"id": "zhqzO", "text": "\r\nidentical chemical and physical properties", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Ortho and para hydrogen similar to each other in their chemical properties but they have different physical properties like boiling point, thermal conductivity, due to their difference in overall spins.\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/zOcmN1xViz_LzG6vg-f0HQRokroV91AmS1RAeR-HOeQ.original.fullsize.png\"><br>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e82f6f5bfc7ab78aeb54", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 1, "question": {"text": "Which one of the following is correct order of given isotopes?\r\nI. $T_2>D_2>P_2$ (order of boiling point)\r\nII. $T_2>D_2>P_2$ (order of bond energy)\r\nIII. $T_2=D_2=P_2$ (order of bond length)\r\nIV. $T_2 < D_2 < P_2$ (order of reactivity with $\\mathrm{Cl}_2$ )", "image": null}, "options": [{"id": "pKKgJ", "text": "\r\nI and II\r\n", "isCorrect": false, "image": null}, {"id": "ud8H2", "text": "\r\nIII and IV\r\n", "isCorrect": false, "image": null}, {"id": "x1nfn", "text": "\r\nII, III and IV\r\n", "isCorrect": false, "image": null}, {"id": "M35Ny", "text": "\r\nAll of these", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Protium $(P)$, deuterium $(D)$ and tritium $(T)$ are the three isotopes of hydrogen. These isotopes follow the order in different contexts as shown below :\r\n$T_2>D_2>P_2$ [Order of boiling point (BP)]\r\n$T_2>D_2>P_2$ [Order of bond energy $\\left.(\\mathrm{BE})\\right]$\r\n$T_2=D_2=P_2$ [Order of bond length $\\left.(\\mathrm{BL})\\right]$\r\n$T_2 < D_2 < P_2$ [Order of reactivity with $\\mathrm{Cl}_2$ ]\r\nHence, all the given order are correct.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7a26f5bfc7ab78ae695", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 1, "question": {"text": "When chlorine water is exposed to sunlight, $\\mathrm{O}_{2}$ is liberated. Hence,", "image": null}, "options": [{"id": "DIojG", "text": "hydrogen has little affinity to $\\mathrm{O}_{2}$", "isCorrect": false, "image": null}, {"id": "gZe3R", "text": "hydrogen has more affinity to $\\mathrm{O}_{2}$", "isCorrect": false, "image": null}, {"id": "gHbhH", "text": "hydrogen has more affinity to chlorine", "isCorrect": true, "image": null}, {"id": "zkfJJ", "text": "it is a reducing agent", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{Cl}_{2}+\\mathrm{H}_{2} \\mathrm{O} \\rightarrow 2 \\mathrm{HCl}+\\frac{1}{2} \\mathrm{O}_{2}$\r\nHydrogen has more affinity for chlorine.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8746f5bfc7ab78aee64", "title": "Chemical properties of hydrogen", "totalQuestions": 2, "questions": [{"_id": "64c0e8086f5bfc7ab78ae9fc", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 1, "question": {"text": "Which of the following reactions is an example of use of water gas in the synthesis of other compounds?", "image": null}, "options": [{"id": "qOCdv", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CH</mi><mn>4</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><munderover><mo>&#8594;</mo><mi>Ni</mi><mrow><mn>1270</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></mrow></munderover><mi>CO</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></math>", "isCorrect": false, "image": null}, {"id": "QUJqI", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CO</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><munderover><mo>&#8594;</mo><mi>Catalyst</mi><mrow><mn>673</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></mrow></munderover><msub><mi>CO</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></math>", "isCorrect": false, "image": null}, {"id": "s2fZk", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">n</mi></msub><msub><mi mathvariant=\"normal\">H</mi><mrow><mn>2</mn><mi mathvariant=\"normal\">n</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>+</mo><mi mathvariant=\"normal\">n</mi><mo>.</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><munderover><mo>&#8594;</mo><mi>Ni</mi><mrow><mn>1270</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></mrow></munderover><mi mathvariant=\"normal\">n</mi><mo>.</mo><mi>CO</mi><mo>+</mo><mfenced><mrow><mn>2</mn><mi mathvariant=\"normal\">n</mi><mo>+</mo><mn>1</mn></mrow></mfenced><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub></math>", "isCorrect": false, "image": null}, {"id": "3u8vI", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CO</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><mn>2</mn><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><munderover><mo>&#8594;</mo><mi>Catalyst</mi><mi>Cobalt</mi></munderover><msub><mi>CH</mi><mn>3</mn></msub><mo>&#183;</mo><mi>OH</mi><mfenced><mi mathvariant=\"normal\">I</mi></mfenced></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>The mixture of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CO</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></math> is known water gas as it is used in the synthesis of other compounds.</p><p>When carbon monoxide reacts with hydrogen in presence of catalyst cobalt&nbsp;the product formed is&nbsp;methanol. Therefore, water gas is producing a an alcohol in this reaction.</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/6803a5b7-299e-41c6-9ec2-3050566c05b1-image.png\" style=\"width: 481px; height: 131px;\" /></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7fa6f5bfc7ab78ae986", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 3, "question": {"text": "Which of the following reactions increases the production of dihydrogen from synthesis gas?", "image": null}, "options": [{"id": "iqzz7", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CH</mi><mn>4</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><munderover><mo>&#8594;</mo><mi>Ni</mi><mrow><mn>1270</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></mrow></munderover><mi>CO</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><mn>3</mn><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></math>", "isCorrect": false, "image": null}, {"id": "a5fjP", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">C</mi><mfenced><mi mathvariant=\"normal\">s</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mover><mo>&#10230;</mo><mrow><mn>1270</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></mrow></mover><mi>CO</mi><mfenced><mi>g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></math>", "isCorrect": false, "image": null}, {"id": "W50BS", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CO</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><munderover><mo>&#8594;</mo><mrow><mi>Catalyst</mi><mo>&#160;</mo></mrow><mrow><mn>673</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></mrow></munderover><msub><mi>CO</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></math>", "isCorrect": true, "image": null}, {"id": "bh2CA", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">C</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>6</mn></msub><mo>+</mo><mn>2</mn><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><munderover><mo>&#8594;</mo><mi>Ni</mi><mrow><mn>1270</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></mrow></munderover><mn>2</mn><mi>CO</mi><mo>+</mo><mn>5</mn><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub></math>,", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<blockquote><p>The process of producing syn gas or synthesis gas from coal is called &#39;coal gasification&#39;.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><munder><mrow><mi mathvariant=\"normal\">C</mi><mfenced><mi mathvariant=\"normal\">s</mi></mfenced></mrow><mi>Coal</mi></munder><mo>+</mo><munder><mrow><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></mrow><mi>Steam</mi></munder><munderover><mo>&#8594;</mo><mi>Ni</mi><mrow><mn>1270</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></mrow></munderover><munder><munder><mrow><mi>CO</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></mrow><mo>&#9183;</mo></munder><mrow><mi>Synthesis</mi><mo>gas</mo></mrow></munder></math></p><p>The production of hydrogen can be increased by reacting carbon monoxide of the syn gas with steam in the presence of iron chromate as a catalyst at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>673</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></math>.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CO</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mover><mo>&#10230;</mo><mrow><msub><mi>FeCrO</mi><mn>4</mn></msub><mo>,</mo><mo>&#160;</mo><mn>673</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></mrow></mover><msub><mi>CO</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CO</mi><mn>2</mn></msub></math> is removed by scrubbing with a solution of sodium arsenite.</p></blockquote>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e8756f5bfc7ab78aee65", "title": "Preparation and Properties of Hydrogen Peroxide", "totalQuestions": 1, "questions": [{"_id": "64c0e8306f5bfc7ab78aeb5d", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 3, "question": {"text": "The structure of $\\mathrm{H}_2 \\mathrm{O}_2$ is", "image": null}, "options": [{"id": "TRFVA", "text": "\r\nplanar, linear\r\n", "isCorrect": false, "image": null}, {"id": "U43Cw", "text": "\r\nnon-planar, linear\r\n", "isCorrect": false, "image": null}, {"id": "Phz9L", "text": "\r\nplanar, non-linear\r\n", "isCorrect": false, "image": null}, {"id": "qXgtj", "text": "\r\nnon-planar, non-linear", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Hydrogen peroxide $\\left(\\mathrm{H}_2 \\mathrm{O}_2\\right)$ is a non-planar molecule with twisted symmetrical structure. It has non-linear structure with an open book structure.\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/UQ9SMbB9p4ao6qVk3JEXZAwWkaLw36PYNwbrNoZBwp8.original.fullsize.png\"><br>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "64c0e8746f5bfc7ab78aee61", "title": "Chemical properties of hydrogen peroxide", "totalQuestions": 3, "questions": [{"_id": "67726d08c49e8ef28ee2b3b5", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "In which of the following reactions of $\\mathrm{H}_2 \\mathrm{O}_2$ acts as an oxidising agent (either in acidic, alkaline or neutral medium)?\n(i) $2 \\mathrm{Fe}^{2+}+\\mathrm{H}_2 \\mathrm{O}_2{ }^{\\prime} \\rightarrow$\n(ii) $2 \\mathrm{MnO}_4^{-}+6 \\mathrm{H}^{+}+5 \\mathrm{H}_2 \\mathrm{O}_2 \\rightarrow$\n(iii) $\\mathrm{I}_2+\\mathrm{H}_2 \\mathrm{O}_2+2 \\mathrm{OH}^{-} \\rightarrow$\n(iv) $\\mathrm{Mn}^{2+}+\\mathrm{H}_2 \\mathrm{O}_2 \\rightarrow$", "image": null}, "options": [{"id": "v54EN", "text": "(ii),(iii)", "image": null, "isCorrect": false}, {"id": "fFf1t", "text": "(i), (iv)", "image": null, "isCorrect": true}, {"id": "XwkdE", "text": "(i), (iii)", "image": null, "isCorrect": false}, {"id": "1KFFh", "text": "(ii), (iv)", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Let us complete the reactions:\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/wD_itkbrplBb1Zude2Iv9cWkJ2yY3VwZJP0e4EgFLws.original.fullsize.png\"/>\nIn reactions, $(i)$ and $(i v) \\mathrm{H}_2 \\mathrm{O}_2$, acts as oxidising agent and itself gets reduced to $\\mathrm{H}_2 \\mathrm{O}$,", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87e97ae24e9e2db8ce6", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "Which of the following can be used to prevent the decomposition of $\\mathrm{H}_2 \\mathrm{O}_2$ ?", "image": null}, "options": [{"id": "F1vP6", "text": "<br />Urea", "image": null, "isCorrect": true}, {"id": "8cCKb", "text": "<br />Formaldehyde", "image": null, "isCorrect": false}, {"id": "NaNvE", "text": "<br />Formic acid", "image": null, "isCorrect": false}, {"id": "rOSbu", "text": "<br />Ethanol", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Urea acts as stablising agent. It prevents the decomposition of $\\mathrm{H}_2 \\mathrm{O}_2$.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7886f5bfc7ab78ae5a9", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "Experiment to study kinetics of the dissociation of hydrogen peroxide must be performed by group of two or three so that-", "image": null}, "options": [{"id": "Ynztd", "text": "when one is recording data other should be swirling flask at constant rate.", "image": null, "isCorrect": true}, {"id": "VDf3N", "text": "experiment can be performed by one student only as outcomes are independent on rate of mixing of mixture 1 and 3 .", "image": null, "isCorrect": false}, {"id": "9SWn2", "text": "for safety purpose.", "image": null, "isCorrect": false}, {"id": "vXXoj", "text": "none of these.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "No Solution available", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 5, "topicId": "64c0e8746f5bfc7ab78aee63", "title": "Preparation and Properties of Water", "totalQuestions": 1, "questions": [{"_id": "64c0e7cf6f5bfc7ab78ae814", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 1, "question": {"text": "Which one the following removes temporary hardness of water?", "image": null}, "options": [{"id": "tRzgP", "text": "Slaked lime", "isCorrect": true, "image": null}, {"id": "46TBx", "text": "$\\quad$ Plaster of Paris", "isCorrect": false, "image": null}, {"id": "gwRZQ", "text": "Epsom", "isCorrect": false, "image": null}, {"id": "xXlhN", "text": "Hydrolith", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "This method is known as Clark's process. In this method temporary hardness is removed byadding lime water or milk of lime.\r\n\r\n$$\r\n\r\n\\mathrm{Ca}(\\mathrm{OH})_{2}+\\mathrm{Ca}\\left(\\mathrm{HCO}_{3}\\right)_{2} \\longrightarrow \\underset{\\mathrm{ppt} .}{2 \\mathrm{CaCO}_{3}} \\downarrow+2 \\mathrm{H}_{2} \\mathrm{O}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 6, "topicId": "65b7b89397ae24e9e2db8d32", "title": "Hydrides", "totalQuestions": 3, "questions": [{"_id": "67726d09c49e8ef28ee2b3c0", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "The strongest reducing agent among the following is:", "image": null}, "options": [{"id": "IDcws", "text": "$\\mathrm{SbH}_3$", "image": null, "isCorrect": false}, {"id": "Gi0yA", "text": "$\\mathrm{NH}_3$", "image": null, "isCorrect": false}, {"id": "ZHcVB", "text": "$\\mathrm{BiH}_3$", "image": null, "isCorrect": true}, {"id": "VaTXE", "text": "$\\mathrm{PH}_3$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "The stability of hydrides decreases from $\\mathrm{NH}_3$ to $\\mathrm{BiH}_3$ but their reducing character increases down the group.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726d07c49e8ef28ee2b3b2", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "Among the following the correct statements are\nI. $\\mathrm{LiH}, \\mathrm{BeH}_2$ and $\\mathrm{MgH}_2$ are saline hydrides with significant covalent character\nII. Saline hydrides are volatile\nIII. Electron - precise hydrides are Lewis bases\nIV. The formula for chromium hydride is CrH", "image": null}, "options": [{"id": "YcFIR", "text": "I, III only", "image": null, "isCorrect": false}, {"id": "LJnPg", "text": "II, IV only", "image": null, "isCorrect": false}, {"id": "Hfb4j", "text": "I, IV only", "image": null, "isCorrect": true}, {"id": "QZr2y", "text": "III, IV only", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Saline hydrides are not volatile as the strong ionic bonds keep the constituent ions together.\nThus, statement II is incorrect.\nElectron-precise hydrides like $\\mathrm{CH}_4, \\mathrm{SiH}_4$, act as pH - neutral species.\nThus, statement 3 is incorrect.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87497ae24e9e2db8c80", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "Ionic hydrides reacts with water to give", "image": null}, "options": [{"id": "dxvZE", "text": "acidic solutions", "image": null, "isCorrect": false}, {"id": "5JKgb", "text": "hydride ions", "image": null, "isCorrect": false}, {"id": "pMZKn", "text": "basic solutions", "image": null, "isCorrect": true}, {"id": "ErhUK", "text": "electrons", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Ionic hydrides give the basic solution when it reacts with water, e.g.,<br />$\\mathrm{LiH}+\\mathrm{H}_2 \\mathrm{O} \\longrightarrow \\mathrm{LiOH}+\\mathrm{H}_2$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

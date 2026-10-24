@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - p Block Elements (Group 13 & 14) PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚗️ BITSAT &bull; p Block Elements (Group 13 & 14)</h1>
+        <div class="sub">Chemistry PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 12, "chapterId": "61e7bd7af8d061d1d44f4a4c", "chapter": "p Block Elements (Group 13 & 14)", "exam": "BITSAT", "totalTopics": 5, "totalQuestions": 16, "downloadTime": "2026-10-08 20:02:50", "topics": [{"index": 1, "topicId": "64c0e8736f5bfc7ab78aee54", "title": "Boron and Its Compounds", "totalQuestions": 5, "questions": [{"_id": "65b7b87e97ae24e9e2db8ce3", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "In reaction $\\mathrm{BF}_3+3 \\mathrm{LiBH}_4 \\rightarrow 3 \\mathrm{LiF}+X ; X$ is", "image": null}, "options": [{"id": "ZAoZG", "text": "$\\mathrm{B}_4 \\mathrm{H}_{10}$", "image": null, "isCorrect": false}, {"id": "zVRon", "text": "$\\mathrm{B}_2 \\mathrm{H}_6$", "image": null, "isCorrect": true}, {"id": "FYhwK", "text": "$\\mathrm{BH}_3$", "image": null, "isCorrect": false}, {"id": "P1XTX", "text": "$\\mathrm{B}_3 \\mathrm{H}_8$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$2 \\mathrm{BF}_3+3 \\mathrm{LiBH}_4 \\rightarrow 2 \\mathrm{~B}_2 \\mathrm{H}_6+3 \\mathrm{LiF}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8316f5bfc7ab78aeb67", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 1, "question": {"text": "The number of $3 \\mathrm{C}-2 e^{-}$bonds present in diborane is", "image": null}, "options": [{"id": "vrMq4", "text": "\r\n1\r\n", "isCorrect": false, "image": null}, {"id": "O3WkL", "text": "\r\n2\r\n", "isCorrect": true, "image": null}, {"id": "fZWOS", "text": "\r\n3\r\n", "isCorrect": false, "image": null}, {"id": "eCNWC", "text": "\r\n4", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The structure of diborane is\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/-4EAmcvZnHO8X3GVHSqcsEvyeQS8-dTaftJ_-g9aGeo.original.fullsize.png\"><br>\r\nIn this structure, there are two $3 \\mathrm{C}-2 e^{-}$bonds. 3 atoms, $\\quad \\mathrm{B}-\\mathrm{H}-\\mathrm{B}$ share two electrons and form an angular geometry, leading bent bond, also known as banana bond.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8266f5bfc7ab78aeb07", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 1, "question": {"text": "Diborane $\\left(\\mathrm{B}_{2} \\mathrm{H}_{6}\\right)$ reacts independently with $\\mathrm{O}_{2}$ and $\\mathrm{H}_{2} \\mathrm{O}$ to produce, respectively:", "image": null}, "options": [{"id": "5KWSH", "text": "$\\mathrm{B}_{2} \\mathrm{O}_{3}$ and $\\mathrm{H}_{3} \\mathrm{BO}_{3}$", "isCorrect": true, "image": null}, {"id": "r1hKJ", "text": "$\\mathrm{B}_{2} \\mathrm{O}_{3}$ and $\\left[\\mathrm{BH}_{4}\\right]^{-}$", "isCorrect": false, "image": null}, {"id": "fK0Pg", "text": "$\\mathrm{H}_{3} \\mathrm{BO}_{3}$ and $\\mathrm{B}_{2} \\mathrm{O}_{3}$", "isCorrect": false, "image": null}, {"id": "ioPoK", "text": "$\\mathrm{HBO}_{2}$ and $\\mathrm{H}_{3} \\mathrm{BO}_{3}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{B}_{2} \\mathrm{H}_{6}+3 \\mathrm{O}_{2} \\rightarrow \\mathrm{B}_{2} \\mathrm{O}_{3}+3 \\mathrm{H}_{2} \\mathrm{O}$\r\n\r\n$\\mathrm{B}_{2} \\mathrm{H}_{6}+6 \\mathrm{H}_{2} \\mathrm{O} \\rightarrow 2 \\mathrm{H}_{3} \\mathrm{BO}_{3}+6 \\mathrm{H}_{2}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8076f5bfc7ab78ae9f4", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 1, "question": {"text": "The order of acidic strength of boron trihalides", "image": null}, "options": [{"id": "oG98Q", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>BF</mi><mn>3</mn></msub><mo>&#60;</mo><msub><mi>BCl</mi><mn>3</mn></msub><mo>&#60;</mo><msub><mi>BBr</mi><mn>3</mn></msub><mo>&#60;</mo><msub><mi>BI</mi><mn>3</mn></msub></math>", "isCorrect": true, "image": null}, {"id": "Izk7z", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>BI</mi><mn>3</mn></msub><mo>&#60;</mo><msub><mi>BBr</mi><mn>3</mn></msub><mo>&#60;</mo><msub><mi>BCl</mi><mn>3</mn></msub><mo>&#60;</mo><msub><mi>BF</mi><mn>3</mn></msub></math>", "isCorrect": false, "image": null}, {"id": "uHxd0", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>BCl</mi><mn>3</mn></msub><mo>&#60;</mo><msub><mi>BBr</mi><mn>3</mn></msub><mo>&#60;</mo><msub><mi>BI</mi><mn>3</mn></msub><mo>&#60;</mo><msub><mi>BF</mi><mn>3</mn></msub></math>", "isCorrect": false, "image": null}, {"id": "CsNXt", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>BBr</mi><mn>3</mn></msub><mo>&#60;</mo><msub><mi>BCl</mi><mn>3</mn></msub><mo>&#60;</mo><msub><mi>BF</mi><mn>3</mn></msub><mo>&#60;</mo><msub><mi>BI</mi><mn>3</mn></msub></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>The strength of acidic character of boron trihalides depends upon <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p&#960;</mi><mo>-</mo><mi>p&#960;</mi></math> back bonding.</p><p>In boron trihalides, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p&#960;</mi><mo>-</mo><mi>p&#960;</mi></math> -back bonding occurs due to empty orbital of boron and filled orbitals of halogens.</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/bf2f12fc-7efd-4bd8-b002-c137c0c9320c-image.png\" style=\"width: 398px; height: 255px;\" /></p><p>The <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p&#960;</mi><mo>-</mo><mi>p&#960;</mi></math> back bonding is shown maximum by <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>BF</mi><mn>3</mn></msub></math>, as the size of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">B</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">F</mi></math> are small and comparatively same. Due to this effect tendency of accepting lone-pair of electrons of boron decreases as size of halogen increases. The order of size of halogens are <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">F</mi><mo>&#60;</mo><mi>Cl</mi><mo>&#60;</mo><mi>Br</mi><mo>&#60;</mo><mi mathvariant=\"normal\">I</mi></math>. Thus, acidic nature is in order</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>BF</mi><mn>3</mn></msub><mo>&#60;</mo><msub><mi>BCl</mi><mn>3</mn></msub><mo>&#60;</mo><msub><mi>BBr</mi><mn>3</mn></msub><mo>&#60;</mo><msub><mi>BI</mi><mn>3</mn></msub></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7fa6f5bfc7ab78ae985", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 2, "question": {"text": "A mixture of Boron trichloride and hydrogen is subjected to silent electric discharge to form <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>HCl</mi></math>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi></math> is mixed with <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>NH</mi><mn>3</mn></msub></math> and heated to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>200</mn><mn>0</mn></msup><mi mathvariant=\"normal\">C</mi></math> to form <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">y</mi></math>. The formula of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">y</mi></math> is", "image": null}, "options": [{"id": "gnW5z", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">B</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>3</mn></msub></math>", "isCorrect": false, "image": null}, {"id": "cpiq7", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">B</mi><mn>3</mn></msub><msub><mi mathvariant=\"normal\">N</mi><mn>3</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>6</mn></msub></math>", "isCorrect": true, "image": null}, {"id": "Ip1Hs", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>3</mn></msub><msub><mi>BO</mi><mn>3</mn></msub></math>", "isCorrect": false, "image": null}, {"id": "q8m7T", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">B</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>6</mn></msub></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>When a mixture of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>BCl</mi><mn>3</mn></msub></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub></math> is subjected to silent electric discharge, diborane and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>HCl</mi></math> are formed. Diborane reacts with <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>NH</mi><mn>3</mn></msub></math> at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>200</mn><mo>&#176;</mo><mi mathvariant=\"normal\">C</mi></math> to give Borazine (inorganic benzene).</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><msub><mi>BCl</mi><mn>3</mn></msub><mo>+</mo><mn>6</mn><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><munderover><mo>&#8594;</mo><mi>discharge</mi><mi>Electric</mi></munderover><munder><mrow><msub><mi mathvariant=\"normal\">B</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>6</mn></msub></mrow><mfenced><mi mathvariant=\"normal\">x</mi></mfenced></munder><mo>+</mo><mn>6</mn><mi>HCl</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><munder><mrow><mn>3</mn><msub><mi mathvariant=\"normal\">B</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>6</mn></msub></mrow><mn>1</mn></munder><mo>+</mo><munder><mrow><mn>6</mn><msub><mi>NH</mi><mn>3</mn></msub></mrow><mn>2</mn></munder><mover><mo>&#10230;</mo><mrow><mn>200</mn><mo>&#176;</mo><mi mathvariant=\"normal\">C</mi></mrow></mover><munder><mrow><mn>2</mn><msub><mi mathvariant=\"normal\">B</mi><mn>3</mn></msub><msub><mi mathvariant=\"normal\">N</mi><mn>3</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>6</mn></msub></mrow><mrow><mi>Borazine</mi><mo>(</mo><mi mathvariant=\"normal\">y</mi><mo>)</mo></mrow></munder><mo>+</mo><mn>12</mn><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8736f5bfc7ab78aee52", "title": "Aluminium and Its Compounds", "totalQuestions": 2, "questions": [{"_id": "65b7b87497ae24e9e2db8c7e", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "What is $x$ in the following reaction?<br />$\\mathrm{Al}(\\mathrm{s})+\\mathrm{NaOH}(\\mathrm{aq})+\\mathrm{H}_2 \\mathrm{O}(\\mathrm{l}) \\rightarrow x+\\mathrm{H}_2(\\mathrm{~g})$", "image": null}, "options": [{"id": "3ZHE9", "text": " $\\mathrm{Na}_2\\left[\\mathrm{Al}(\\mathrm{OH})_4\\right]^{-}$", "image": null, "isCorrect": false}, {"id": "j0cfU", "text": "$\\mathrm{Na}^{+}\\left[\\mathrm{Al}(\\mathrm{OH})_4\\right]^{-}$", "image": null, "isCorrect": true}, {"id": "ycVJN", "text": "$\\mathrm{Na}_2\\left[\\mathrm{Al}(\\mathrm{OH})_6\\right]^{-}$", "image": null, "isCorrect": false}, {"id": "MGcX0", "text": "$\\mathrm{Na}^{+}\\left[\\mathrm{Al}(\\mathrm{OH})_6\\right]^{-}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$2 \\mathrm{Al}(\\mathrm{s})+2 \\mathrm{NaOH}(\\mathrm{aq})+6 \\mathrm{H}_2 \\mathrm{O}(\\mathrm{l}) \\rightarrow$ $2 \\mathrm{Na}^{+}\\left[\\mathrm{Al}(\\mathrm{OH})_4\\right]^{-}(\\mathrm{aq})+3 \\mathrm{H}_2(\\mathrm{~g})$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7926f5bfc7ab78ae603", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "Among $\\mathrm{Al}_{2} \\mathrm{O}_{3}, \\mathrm{SiO}_{2}, \\mathrm{P}_{2} \\mathrm{O}_{3}$ and $\\mathrm{SO}_{2}$, the correct\norder of acid strength is:", "image": null}, "options": [{"id": "K2JS6", "text": "$\\mathrm{Al}_{2} \\mathrm{O}_{3}<\\mathrm{SiO}_{2}<\\mathrm{SO}_{2}<\\mathrm{P}_{2} \\mathrm{O}_{3}$", "image": null, "isCorrect": false}, {"id": "xkJpJ", "text": "$\\mathrm{SiO}_{2}<\\mathrm{SO}_{2}<\\mathrm{Al}_{2} \\mathrm{O}_{3}<\\mathrm{P}_{2} \\mathrm{O}_{3}$", "image": null, "isCorrect": false}, {"id": "nkMV4", "text": "$\\mathrm{SO}_{2}<\\mathrm{P}_{2} \\mathrm{O}_{3}<\\mathrm{SiO}_{2}<\\mathrm{Al}_{2} \\mathrm{O}_{3}$", "image": null, "isCorrect": false}, {"id": "etP2W", "text": "$\\mathrm{Al}_{2} \\mathrm{O}_{3}<\\mathrm{SiO}_{2}<\\mathrm{P}_{2} \\mathrm{O}_{3}<\\mathrm{SO}_{2}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/ebJ1lXX8iQocLFz2YT5-cWGQdpuJ-avN5Hg4fLWAbO0.original.fullsize.png\">", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e8736f5bfc7ab78aee50", "title": "Carbon and Its Compounds", "totalQuestions": 3, "questions": [{"_id": "64c0e8316f5bfc7ab78aeb63", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 2, "question": {"text": "Ge (II) compounds are powerful reducing agents whereas $\\mathrm{Pb}$ (IV) compounds are strong oxidants. It can be because", "image": null}, "options": [{"id": "x6WH0", "text": "\r\n$\\mathrm{Pb}$ is more electropositive than $\\mathrm{Ge}$.\r\n", "isCorrect": false, "image": null}, {"id": "L2OyP", "text": "\r\nionisation potential of lead is less than that of Ge.\r\n", "isCorrect": false, "image": null}, {"id": "FxFGE", "text": "\r\nionic radii of $\\mathrm{Pb}^{2+}$ and $\\mathrm{Pb}^{4+}$ are larger than that of $\\mathrm{Ge}^{2+}$ and $\\mathrm{Ge}^{4+}$\r\n", "isCorrect": false, "image": null}, {"id": "uuYqk", "text": "\r\nmore pronounced inert pair effect in lead has.", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Inert pair effect is more pronounced in heavier members like Pb.\r\nHence, $\\mathrm{Pb}$ (IV) compounds act as strong oxidising agents and are reduced to more stable $\\mathrm{Pb}$ (II) compounds.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7cf6f5bfc7ab78ae815", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 1, "question": {"text": "Graphite is a", "image": null}, "options": [{"id": "mSa7o", "text": "molecular solid", "isCorrect": false, "image": null}, {"id": "fHl5X", "text": "covalent solid", "isCorrect": true, "image": null}, {"id": "7gxIj", "text": "ionic solid", "isCorrect": false, "image": null}, {"id": "pIVMl", "text": "metallic solid", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Graphite is covalent solid.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7856f5bfc7ab78ae58e", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "Which of the following is similar to graphite", "image": null}, "options": [{"id": "GYrSY", "text": "$\\underline{B}$", "image": null, "isCorrect": false}, {"id": "yUbIS", "text": "$\\mathrm{BN}$", "image": null, "isCorrect": true}, {"id": "91TjB", "text": "$\\mathrm{B}_{2} \\mathrm{H}_{6}$", "image": null, "isCorrect": false}, {"id": "2XfBQ", "text": "$\\mathrm{B}_{4} \\mathrm{C}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Graphite and boron nitride have similar structure.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "64c0e8736f5bfc7ab78aee53", "title": "Silicon and Its Compounds", "totalQuestions": 4, "questions": [{"_id": "64c0e8166f5bfc7ab78aea78", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 2, "question": {"text": "Identify the incorrect statement:", "image": null}, "options": [{"id": "EHGYl", "text": "In $\\left(\\mathrm{Si}_{3} \\mathrm{O}_{9}\\right)^{6-},$ tetrahedral $\\mathrm{SiO}_{4}$ units share two oxygen atoms.", "isCorrect": false, "image": null}, {"id": "vTlIv", "text": "Trialkylchlorosilane on hydrolysis gives $\\mathrm{R}_{3} \\mathrm{SiOH}$", "isCorrect": true, "image": null}, {"id": "A8Cpd", "text": "$\\mathrm{SiCl}_{4}$ undergoes hydrolysis to give $\\mathrm{H}_{4} \\mathrm{SiO}_{4}$.", "isCorrect": false, "image": null}, {"id": "yPHDh", "text": "$\\left(\\mathrm{Si}_{3} \\mathrm{O}_{9}\\right)^{6-}$ has cyclic structure.", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The hydrolysis of Trialkylchlorosilane $\\mathrm{R}_{3} \\mathrm{SiCl}$ yields dimer:\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/E2EfFeWjsUrwDgG-xoAtPamBEslUShffPJuvUT32pto.original.fullsize.png\">", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8076f5bfc7ab78ae9f1", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 2, "question": {"text": "Among the following substituted silanes, the one which will give rise to cross linked silicone polymer on hydrolysis is?", "image": null}, "options": [{"id": "wid25", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">R</mi><mn>4</mn></msub><mo>&#160;</mo><mi>Si</mi></math>", "isCorrect": false, "image": null}, {"id": "ZG2ql", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">R</mi><mo>&#160;</mo><msub><mi>SiCl</mi><mn>3</mn></msub></math>", "isCorrect": true, "image": null}, {"id": "QCLmA", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">R</mi><mn>2</mn></msub><mo>&#160;</mo><msub><mi>SiCl</mi><mn>2</mn></msub></math>", "isCorrect": false, "image": null}, {"id": "4dGW2", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">R</mi><mn>3</mn></msub><mo>&#160;</mo><mi>SiCl</mi></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Among the following substituted silanes, the one which will give rise to cross-linked silicone polymer on hydrolysis is&nbsp;trichloroalkylsilane&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>RSiCl</mi><mn>3</mn></msub></math>.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>RSCl</mi><mn>3</mn></msub></math> gives cross-linked silicon polymer on hydrolysis.</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/3339b557-90b1-403d-af07-adf5f3a28ca7-image.png\" style=\"width: 600px; height: 315px;\" /></p><p>&nbsp;</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7fb6f5bfc7ab78ae989", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 2, "question": {"text": "The correct statement about silicone is", "image": null}, "options": [{"id": "NjvXR", "text": "They are ketones with silyl group <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><msub><mi>SiH</mi><mn>3</mn></msub></mfenced></math> similar to alkyl, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mfenced><msub><mi>SiH</mi><mn>3</mn></msub></mfenced><mn>2</mn></msub><mi>CO</mi></math>", "isCorrect": false, "image": null}, {"id": "OMOPx", "text": "They are synthetic polymer containing repeated <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">R</mi><mn>2</mn></msub><msub><mi>SiO</mi><mn>2</mn></msub><mo>&#160;</mo><mi>units</mi></math>.", "isCorrect": false, "image": null}, {"id": "nEoFD", "text": "They are formed by hydrolysis of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">R</mi><mn>2</mn></msub><msub><mi>SiCl</mi><mn>2</mn></msub></math>.", "isCorrect": true, "image": null}, {"id": "TEb2N", "text": "All of the above", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<blockquote><p>Silicones are synthetic organo-silicon polymers containing repeated <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">R</mi><mn>2</mn></msub><mi>SiO</mi></math> units. Since the empirical formula is same as that of a ketone <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><msub><mi mathvariant=\"normal\">R</mi><mn>2</mn></msub><mi>CO</mi></mrow></mfenced></math>, the name silicon has been given to these materials. They can be formed by hydrolysis of dichlorosilanes <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><msub><mi mathvariant=\"normal\">R</mi><mn>2</mn></msub><msub><mi>SiCl</mi><mn>2</mn></msub></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">R</mi><mn>2</mn></msub><msub><mi>SiCl</mi><mn>2</mn></msub><mo>+</mo><mn>2</mn><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mo>&#10230;</mo><msub><mi mathvariant=\"normal\">R</mi><mn>2</mn></msub><mi>Si</mi><msub><mfenced><mi>OH</mi></mfenced><mn>2</mn></msub><mo>+</mo><mn>2</mn><mi>HCl</mi></math></p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/c7856c4e-79e0-4292-850d-d703c5b70342-image.png\" style=\"width: 505px; height: 239px;\" /></p></blockquote>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7cd6f5bfc7ab78ae805", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 1, "question": {"text": "Ordinary glass is:", "image": null}, "options": [{"id": "OjzXG", "text": "Sodium silicate", "isCorrect": true, "image": null}, {"id": "i23ES", "text": "Calcium silicate", "isCorrect": false, "image": null}, {"id": "eT3xf", "text": "Sodium and calcium silicate", "isCorrect": false, "image": null}, {"id": "wjawi", "text": "Mixed salt of $\\mathrm{Na}$ and $\\mathrm{Ca}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Normal glass is calcium alkali silicate glass made by fusing the alkali metal carbonate, $\\mathrm{CaCO}_{3}$ and $\\mathrm{SiO}_{2}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 5, "topicId": "64c0e8736f5bfc7ab78aee51", "title": "Tin and Lead Containing Compounds", "totalQuestions": 2, "questions": [{"_id": "64c0e7ce6f5bfc7ab78ae807", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 2, "question": {"text": "Which of the following is the most basic oxide?", "image": null}, "options": [{"id": "hv1Nd", "text": "$\\mathrm{Sb}_{2} \\mathrm{O}_{3}$", "isCorrect": false, "image": null}, {"id": "QTB1o", "text": "$\\mathrm{Bi}_{2} \\mathrm{O}_{3}$", "isCorrect": true, "image": null}, {"id": "Yxhga", "text": "$\\mathrm{SeO}_{2}$", "isCorrect": false, "image": null}, {"id": "37C3o", "text": "$\\mathrm{Al}_{2} \\mathrm{O}_{3}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "More the oxidation state of the central atom (metal) more is its acidity. Hence $\\mathrm{SeO}_{2}(\\mathrm{O} . \\mathrm{S} .$ of $\\mathrm{Se}=+4)$ is acidic. Further for a given O.S., the basic character of the oxides increases with the increasing size of the central atom. Thus $\\mathrm{Al}_{2} \\mathrm{O}_{3}$ and $\\mathrm{Sb}_{2} \\mathrm{O}_{3}$ are amphoteric and $\\mathrm{Bi}_{2} \\mathrm{O}_{3}$ is basic.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7886f5bfc7ab78ae5a8", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "Three separate samples of a solution of a single salt gave these results. One formed a white precipitate with excess ammonia solution, one formed a white precipitate with dil. HCl solution and one formed a black precipitate with $\\mathrm{H}_{2} \\mathrm{~S}$. The salt could be", "image": null}, "options": [{"id": "I8pKT", "text": "$\\mathrm{AgNO}_{3}$", "image": null, "isCorrect": false}, {"id": "LRuXp", "text": "$\\mathrm{Pb}\\left(\\mathrm{NO}_{3}\\right)_{2}$", "image": null, "isCorrect": true}, {"id": "KUjC1", "text": "$\\mathrm{Hg}\\left(\\mathrm{NO}_{3}\\right)_{2}$", "image": null, "isCorrect": false}, {"id": "K5S5d", "text": "$\\mathrm{MnSO}_{4}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\mathrm{Pb}\\left(\\mathrm{NO}_{3}\\right)_{2}+2 \\mathrm{NH}_{4} \\mathrm{OH}$\n$$\n\\begin{array}{r}\n\\rightarrow \\mathrm{Pb}(\\mathrm{OH})_{2} \\downarrow+2 \\mathrm{NH}_{4} \\mathrm{NO}_{3}(\\text { white ppt }) \\\\\n\\mathrm{Pb}\\left(\\mathrm{NO}_{3}\\right)_{2}+2 \\mathrm{HCl} \\rightarrow \\mathrm{PbCl}_{2} \\downarrow+2 \\mathrm{HNO}_{3}(\\text { whiteppt }) \\\\\n\\mathrm{Pb}\\left(\\mathrm{NO}_{3}\\right)_{2}+\\mathrm{H}_{2} \\mathrm{~S} \\rightarrow \\mathrm{PbS} \\downarrow+2 \\mathrm{HNO}_{3} \\text { (black) }\n\\end{array}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

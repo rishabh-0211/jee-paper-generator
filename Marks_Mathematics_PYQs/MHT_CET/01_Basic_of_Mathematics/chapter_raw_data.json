@@ -1,0 +1,1252 @@
+{
+  "index": 1,
+  "chapterId": "61c089bff16721489e89c8cc",
+  "chapter": "Basic of Mathematics",
+  "exam": "MHT CET",
+  "subject": "Mathematics",
+  "totalTopics": 4,
+  "totalQuestions": 18,
+  "downloadTime": "2026-10-08 20:42:16",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "65a263510279619d9d8a3e20",
+      "title": "Ratio and Proportion",
+      "totalQuestions": 5,
+      "questions": [
+        {
+          "_id": "6792143d0aee93fa0796df14",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665ccf",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-16T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (16 May Shift 1)",
+              "title": "MHT CET 2024 (16 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "The assets of a person are reduced in his business such that the rate of reduction is proportional to the square root of the existing assets. If the assets were initially ₹ $10,00,000$ and due to loss they reduce to ₹ 10,000 after 3 years, then the number of years required for the person to go bankrupt will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "GR62v",
+              "text": "$\\frac{10}{3}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "tLkKk",
+              "text": "$\\frac{10}{9}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "U1Msi",
+              "text": "$\\frac{20}{9}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4zUT4",
+              "text": "$\\frac{20}{3}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $A$ be the assets of the person at time $t$ (in years).<br><br>Given that the rate of reduction of assets is proportional to the square root of the existing assets, we can write the differential equation as:<br><br>$\\dfrac{dA}{dt} = -k\\sqrt{A}$<br><br>Separating the variables and integrating both sides:<br><br>$\\int \\dfrac{dA}{\\sqrt{A}} = \\int -k dt$<br><br>$2\\sqrt{A} = -kt + C$<br><br>Initially, at $t = 0$, the assets are $A = 10,00,000 = 10^6$. Substituting these values:<br><br>$2\\sqrt{10^6} = -k(0) + C$<br><br>$2(1000) = C \\Rightarrow C = 2000$<br><br>The equation becomes:<br><br>$2\\sqrt{A} = -kt + 2000$<br><br>After $3$ years, at $t = 3$, the assets reduce to $A = 10,000 = 10^4$. Substituting these values:<br><br>$2\\sqrt{10^4} = -k(3) + 2000$<br><br>$2(100) = -3k + 2000$<br><br>$200 = -3k + 2000$<br><br>$3k = 1800 \\Rightarrow k = 600$<br><br>The equation for the assets at any time $t$ is:<br><br>$2\\sqrt{A} = -600t + 2000$<br><br>For the person to go bankrupt, the assets must become zero, so $A = 0$. Substituting $A = 0$ into the equation:<br><br>$2\\sqrt{0} = -600t + 2000$<br><br>$0 = -600t + 2000$<br><br>$600t = 2000$<br><br>$t = \\dfrac{2000}{600} = \\dfrac{10}{3}$ years<br><br>Answer: $\\frac{10}{3}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665ccf",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-16T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (16 May Shift 1)",
+            "title": "MHT CET 2024 (16 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679214250aee93fa0796de55",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e159a8109c6c5665cd0",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (15 May Shift 2)",
+              "title": "MHT CET 2024 (15 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "If $y=\\frac{x^{\\frac{2}{3}}-x^{\\frac{-1}{3}}}{x^{\\frac{2}{3}}+x^{\\frac{-1}{3}}}, x \\neq 0$, then $(x+1)^2 y_1=$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Td68i",
+              "text": "2",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "4OZZx",
+              "text": "-2",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GTdCu",
+              "text": "$\\frac{-1}{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "yBv6C",
+              "text": "3",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given $y = \\dfrac{x^{2/3} - x^{-1/3}}{x^{2/3} + x^{-1/3}}$<br><br>Multiplying the numerator and denominator by $x^{1/3}$:<br><br>$y = \\dfrac{x^{2/3} \\cdot x^{1/3} - x^{-1/3} \\cdot x^{1/3}}{x^{2/3} \\cdot x^{1/3} + x^{-1/3} \\cdot x^{1/3}}$<br><br>$y = \\dfrac{x - 1}{x + 1}$<br><br>Differentiating with respect to $x$ using the quotient rule:<br><br>$y_1 = \\dfrac{d}{dx} \\left( \\dfrac{x - 1}{x + 1} \\right)$<br><br>$y_1 = \\dfrac{(x + 1)(1) - (x - 1)(1)}{(x + 1)^2}$<br><br>$y_1 = \\dfrac{2}{(x + 1)^2}$<br><br>$(x + 1)^2 y_1 = 2$<br><br>Answer: 2",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e159a8109c6c5665cd0",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (15 May Shift 2)",
+            "title": "MHT CET 2024 (15 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a262860279619d9d8a353a",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b5",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-14T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (14 May Shift 2)",
+              "title": "MHT CET 2023 (14 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "If a body cools from $80^{\\circ} \\mathrm{C}$ to $50^{\\circ} \\mathrm{C}$ in the room temperature of $25^{\\circ} \\mathrm{C}$ in 30 minutes, then the temperature of the body after 1 hour is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "CvW7V",
+              "text": "$31.36^{\\circ} \\mathrm{C}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iebIr",
+              "text": "$32.25^{\\circ} \\mathrm{C}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "1VhJw",
+              "text": "$36.36^{\\circ} \\mathrm{C}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "zKs4f",
+              "text": "$33.25^{\\circ} \\mathrm{C}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $\\theta$ be the temperature of the body at any time $t$.\n$\\begin{aligned}\n\\therefore \\quad & \\frac{\\mathrm{d} \\theta}{\\mathrm{dt}} \\propto(\\theta-25) \\\\\n& \\Rightarrow \\frac{\\mathrm{d} \\theta}{\\mathrm{dt}}=-\\mathrm{k}(\\theta-25), \\mathrm{k}>0\n\\end{aligned}$\nIntegrating on both sides, we get\n$\\begin{aligned}\n& \\log |\\theta-25|=-\\mathrm{kt}+\\mathrm{c} \\\\\n& \\text { When } \\mathrm{t}=0, \\theta=80^{\\circ} \\\\\n\\therefore \\quad & \\log 55=0+\\mathrm{c} \\\\\n\\Rightarrow \\quad \\mathrm{c}=\\log 55 & \\log |\\theta-25|=-\\mathrm{kt}+\\log 55 \\\\\n\\therefore \\quad & \\text { When } \\mathrm{t}=30, \\theta=50^{\\circ} \\\\\n\\therefore \\quad & \\log 25=-30 \\mathrm{k}+\\log 55 \\\\\n\\Rightarrow & \\mathrm{k}=-\\frac{1}{30} \\log \\frac{5}{11} \\\\\n\\therefore \\quad & \\log |\\theta-25|=\\frac{\\mathrm{t}}{30} \\log \\frac{5}{11}+\\log 55\n\\end{aligned}$\nWhen $\\mathrm{t}=1$ hour $=60$ minutes, ... [From (i)]\n$\\begin{aligned}\n& \\log |\\theta-25|=\\frac{60}{30} \\log \\frac{5}{11}+\\log 55 \\\\\n& \\Rightarrow \\log \\left(\\frac{\\theta-25}{55}\\right)=2 \\log \\left(\\frac{5}{11}\\right) \\\\\n& \\Rightarrow \\frac{\\theta-25}{55}=\\left(\\frac{5}{11}\\right)^2 \\\\\n& \\Rightarrow \\frac{\\theta-25}{55}=\\frac{25}{121} \\\\\n& \\Rightarrow \\theta=25+\\frac{125}{11}=25+11.36=36.36^{\\circ} \\mathrm{C}\n\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b5",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-14T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (14 May Shift 2)",
+            "title": "MHT CET 2023 (14 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a262750279619d9d8a34af",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b4",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-14T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (14 May Shift 1)",
+              "title": "MHT CET 2023 (14 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "The money invested in a company is compounded continuously. If $₹ 200$ invested today becomes $₹ 400$ in 6 years, then at the end of 33 years it will become ₹",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "F7WbK",
+              "text": "$1600 \\sqrt{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "1hipE",
+              "text": "$3200 \\sqrt{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "p6ClL",
+              "text": "$12800 \\sqrt{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "WMyYR",
+              "text": "$6400 \\sqrt{2}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Here, Amount $(A)=₹ 400$\nPrincipal $(P)=₹ 200, N=6$ years\n$$\n\\begin{aligned}\n& A-P\\left(1+\\frac{R}{100}\\right)^N \\\\\n& \\Rightarrow 400=200\\left(1+\\frac{R}{100}\\right)^6 \\\\\n& \\Rightarrow\\left(1+\\frac{R}{100}\\right)^6=2 \\\\\n& \\Rightarrow 1+\\frac{R}{100}=2^{\\frac{1}{6}} \\\\\n& \\begin{aligned}\nA & =P\\left(1+\\frac{R}{100}\\right)^N \\\\\n& =200\\left(1+\\frac{R}{100}\\right)^{33} \\\\\n& =200\\left(2^{\\frac{1}{6}}\\right)^{33} \\\\\n& =200\\left(2^5 \\cdot 2^{\\frac{1}{2}}\\right) \\\\\n& =200(32 \\sqrt{2}) \\\\\n& =6400 \\sqrt{2}\n\\end{aligned}\n\\end{aligned}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b4",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-14T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (14 May Shift 1)",
+            "title": "MHT CET 2023 (14 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a262270279619d9d8a323b",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b0",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-12T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (12 May Shift 1)",
+              "title": "MHT CET 2023 (12 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "The decay rate of radio active material at any time $t$ is proportional to its mass at that time. The mass is 27 grams when $t=0$. After three hours it was found that 8 grams are left. Then the substance left after one more hour is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "iALTV",
+              "text": "$\\frac{27}{8}$ grams",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "xwIyG",
+              "text": "$\\frac{81}{4}$ grams",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "uTjkp",
+              "text": "$\\frac{16}{3}$ grams",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "BRODR",
+              "text": "$\\frac{16}{9}$ grams",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let ' $x$ ' be the mass of the material at time ' $t$ '.\n$\\therefore \\quad \\frac{\\mathrm{d} x}{\\mathrm{dt}}=-\\mathrm{k} x,(-\\mathrm{ve}$ sign indicates decay. $)$\n$$\n\\therefore \\quad \\int \\frac{\\mathrm{d} x}{x}=-\\mathrm{k} \\int \\mathrm{dt}\n$$\n$\\therefore \\quad \\log |x|=-\\mathrm{kt}+\\mathrm{c}$\nWhen $\\mathrm{t}=0, x=27$\n$\\therefore \\quad \\mathrm{c}=\\log 27$\n$\\therefore \\quad \\log |x|=-\\mathrm{kt}+\\log 27$\nWhen $\\mathrm{t}=3, x=8$\n$$\n\\therefore \\quad \\mathrm{k}=\\log \\left(\\frac{3}{2}\\right)\n$$\nWhen $\\mathrm{t}=4$, we get\n$$\n\\begin{array}{ll} \n& \\log |x|=-4 \\log \\left(\\frac{3}{2}\\right)+\\log 27 \\\\\n\\therefore \\quad & \\log |x|=\\log \\left(\\frac{16}{3}\\right) \\\\\n\\therefore \\quad & x=\\frac{16}{3} \\text { grams }\n\\end{array}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b0",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-12T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (12 May Shift 1)",
+            "title": "MHT CET 2023 (12 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "65a263510279619d9d8a3e1f",
+      "title": "Logarithm",
+      "totalQuestions": 8,
+      "questions": [
+        {
+          "_id": "6abb88c515a9fc0fc8c146d3",
+          "type": "singleCorrect",
+          "question": {
+            "text": "Given $\\log_{10} 2 = 0.3010$. Then the number of digits in the number $20^{10}$ is...",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "4aurw",
+              "label": "A",
+              "text": "$11$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "mh2l8",
+              "label": "B",
+              "text": "$12$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "DW8Se",
+              "label": "C",
+              "text": "$13$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "GTokm",
+              "label": "D",
+              "text": "$14$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $N = 20^{10}$<br><br>Taking logarithm to the base $10$, we get<br><br>$\\log_{10} N = \\log_{10} (20^{10})$<br><br>$\\log_{10} N = 10 \\log_{10} (2 \\times 10)$<br><br>$\\log_{10} N = 10 (\\log_{10} 2 + \\log_{10} 10)$<br><br>Substituting the value of $\\log_{10} 2 = 0.3010$, we get<br><br>$\\log_{10} N = 10 (0.3010 + 1)$<br><br>$\\log_{10} N = 10 (1.3010) = 13.010$<br><br>The characteristic of the logarithm is $13$.<br><br>The number of digits in $N$ is given by characteristic $+ 1$.<br><br>Number of digits $= 13 + 1 = 14$.<br><br>Answer: $14$",
+            "image": null
+          },
+          "level": 2,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87ef2fe711bb1be99966",
+              "title": "MHT CET 2026 (12 May Shift 2)",
+              "shortName": "2026 (12 May Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-05-12T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87ef2fe711bb1be99966",
+            "title": "MHT CET 2026 (12 May Shift 2)",
+            "shortName": "2026 (12 May Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-05-12T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6a44d2e58c30a4553e1bddf4",
+          "type": "singleCorrect",
+          "question": {
+            "text": "If $x$, y, z are the sides of a right angled triangle, where z is the largest side, then $\\dfrac{1}{\\log_{x+z} y} + \\dfrac{1}{\\log_{z-x} y} =$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "35FGo",
+              "label": "A",
+              "text": "$1$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Yx0Qm",
+              "label": "B",
+              "text": "$2$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "vfiSB",
+              "label": "C",
+              "text": "$3$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "IgfQM",
+              "label": "D",
+              "text": "$4$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Since $x, y, z$ are the sides of a right-angled triangle and $z$ is the largest side, $z$ is the hypotenuse.<br><br>By Pythagoras theorem, $x^2 + y^2 = z^2$, which gives $y^2 = z^2 - x^2$.<br><br>The given expression is $\\dfrac{1}{\\log_{x+z} y} + \\dfrac{1}{\\log_{z-x} y}$.<br><br>Using the property $\\dfrac{1}{\\log_a b} = \\log_b a$, the expression can be written as:<br><br>$\\log_y (x+z) + \\log_y (z-x)$<br><br>Using the property $\\log_a m + \\log_a n = \\log_a (mn)$, we get:<br><br>$\\log_y ((x+z)(z-x))$<br><br>$\\Rightarrow \\log_y (z^2 - x^2)$<br><br>Substituting $z^2 - x^2 = y^2$, we get:<br><br>$\\log_y (y^2) = 2 \\log_y y = 2$<br><br>Answer: $2$",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d2802d2155b816ec4a73",
+              "title": "MHT CET 2026 (15 April Shift 2)",
+              "shortName": "2026 (15 April Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-04-15T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 1,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d2802d2155b816ec4a73",
+            "title": "MHT CET 2026 (15 April Shift 2)",
+            "shortName": "2026 (15 April Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-04-15T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871be3bf9280d7f9932d50",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376df9b67616acec78f7b",
+              "heldOn": "2025-04-26T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (26 Apr Shift 2)",
+              "title": "MHT CET 2025 (26 Apr Shift 2)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "If $p^3=q^4=r^6=t^7=s^2$, then $\\log _t(p q r s)=\\ldots$.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "EnTmz",
+              "text": "$\\frac{168}{5}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8KqEM",
+              "text": "28",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "1cEs7",
+              "text": "$\\frac{31}{4}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "KSKnG",
+              "text": "$\\frac{35}{4}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $p^3 = q^4 = r^6 = t^7 = s^2 = k$<br><br>Expressing $p, q, r, s$ and $t$ in terms of $k$:<br><br>$p = k^{1/3}$, $q = k^{1/4}$, $r = k^{1/6}$, $s = k^{1/2}$, $t = k^{1/7}$<br><br>Finding the product $pqrs$:<br><br>$pqrs = k^{1/3} \\cdot k^{1/4} \\cdot k^{1/6} \\cdot k^{1/2}$<br><br>$pqrs = k^{1/3 + 1/4 + 1/6 + 1/2}$<br><br>$pqrs = k^{\\dfrac{4 + 3 + 2 + 6}{12}} = k^{\\dfrac{15}{12}} = k^{\\dfrac{5}{4}}$<br><br>Substituting the values in terms of $k$ into the logarithm:<br><br>$\\log_t(pqrs) = \\log_{k^{1/7}}(k^{5/4})$<br><br>Using the property $\\log_{a^m}(a^n) = \\dfrac{n}{m}$:<br><br>$\\log_t(pqrs) = \\dfrac{\\dfrac{5}{4}}{\\dfrac{1}{7}} = \\dfrac{5}{4} \\times 7 = \\dfrac{35}{4}$<br><br>Answer: $\\frac{35}{4}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376df9b67616acec78f7b",
+            "heldOn": "2025-04-26T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (26 Apr Shift 2)",
+            "title": "MHT CET 2025 (26 Apr Shift 2)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b5dbf9280d7f9932899",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376de9b67616acec78f73",
+              "heldOn": "2025-04-21T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (21 Apr Shift 2)",
+              "title": "MHT CET 2025 (21 Apr Shift 2)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "If $\\sqrt{\\log _3 x^{16}}+9 \\log _{27} \\sqrt[3]{\\frac{3}{x}}=5$\nthen $x=\\ldots$.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "WMn9x",
+              "text": "$81$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "RelJ6",
+              "text": "$\\frac{1}{405}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6fTqY",
+              "text": "$27$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8pMDh",
+              "text": "$405$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given equation: $\\sqrt{\\log _3 x^{16}}+9 \\log _{27} \\sqrt[3]{\\dfrac{3}{x}}=5$<br><br>Simplify the first term:<br>$\\sqrt{\\log _3 x^{16}} = \\sqrt{16 \\log _3 x} = 4 \\sqrt{\\log _3 x}$<br><br>Simplify the second term:<br>$9 \\log _{27} \\sqrt[3]{\\dfrac{3}{x}} = 9 \\log _{3^3} \\left(\\dfrac{3}{x}\\right)^{\\dfrac{1}{3}}$<br><br>Using the property $\\log_{a^m} b^n = \\dfrac{n}{m} \\log_a b$:<br>$9 \\times \\dfrac{\\dfrac{1}{3}}{3} \\log _3 \\left(\\dfrac{3}{x}\\right) = 9 \\times \\dfrac{1}{9} \\log _3 \\left(\\dfrac{3}{x}\\right) = \\log _3 \\left(\\dfrac{3}{x}\\right)$<br><br>Using the quotient rule for logarithms:<br>$\\log _3 \\left(\\dfrac{3}{x}\\right) = \\log _3 3 - \\log _3 x = 1 - \\log _3 x$<br><br>Substitute these back into the original equation:<br>$4 \\sqrt{\\log _3 x} + 1 - \\log _3 x = 5$<br><br>Let $t = \\sqrt{\\log _3 x}$. Then $\\log _3 x = t^2$. The equation becomes:<br>$4t + 1 - t^2 = 5$<br><br>$t^2 - 4t + 4 = 0$<br><br>$(t - 2)^2 = 0$<br><br>$t = 2$<br><br>Substituting back $t = \\sqrt{\\log _3 x}$:<br>$\\sqrt{\\log _3 x} = 2$<br><br>$\\log _3 x = 4$<br><br>$x = 3^4 = 81$<br><br>Answer: $81$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376de9b67616acec78f73",
+            "heldOn": "2025-04-21T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (21 Apr Shift 2)",
+            "title": "MHT CET 2025 (21 Apr Shift 2)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b08bf9280d7f99325ce",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376de9b67616acec78f6e",
+              "heldOn": "2025-04-19T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (19 Apr Shift 1)",
+              "title": "MHT CET 2025 (19 Apr Shift 1)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "If $x+\\log _{15}\\left(5+3^x\\right)=x \\log _{15} 5+\\log _{15} 24$, then $x=\\ldots .$.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "jOlFE",
+              "text": "$1$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "jtzge",
+              "text": "$5$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "bNaCh",
+              "text": "$2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GD7q8",
+              "text": "$8$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The given equation is:<br><br>$x + \\log_{15}(5 + 3^x) = x \\log_{15} 5 + \\log_{15} 24$<br><br>Rearranging the terms, we get:<br><br>$x - x \\log_{15} 5 + \\log_{15}(5 + 3^x) = \\log_{15} 24$<br><br>$x(1 - \\log_{15} 5) + \\log_{15}(5 + 3^x) = \\log_{15} 24$<br><br>Using $1 = \\log_{15} 15$, we have:<br><br>$x(\\log_{15} 15 - \\log_{15} 5) + \\log_{15}(5 + 3^x) = \\log_{15} 24$<br><br>$x \\log_{15} \\left(\\dfrac{15}{5}\\right) + \\log_{15}(5 + 3^x) = \\log_{15} 24$<br><br>$x \\log_{15} 3 + \\log_{15}(5 + 3^x) = \\log_{15} 24$<br><br>$\\log_{15}(3^x) + \\log_{15}(5 + 3^x) = \\log_{15} 24$<br><br>Using the property $\\log a + \\log b = \\log(ab)$:<br><br>$\\log_{15}(3^x(5 + 3^x)) = \\log_{15} 24$<br><br>Equating the arguments:<br><br>$3^x(5 + 3^x) = 24$<br><br>Let $3^x = y$. Then the equation becomes:<br><br>$y(5 + y) = 24$<br><br>$y^2 + 5y - 24 = 0$<br><br>$(y + 8)(y - 3) = 0$<br><br>$y = -8$ or $y = 3$<br><br>Since $3^x > 0$ for all real $x$, we must have $y = 3$.<br><br>$3^x = 3$<br><br>$x = 1$<br><br>Answer: $1$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376de9b67616acec78f6e",
+            "heldOn": "2025-04-19T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (19 Apr Shift 1)",
+            "title": "MHT CET 2025 (19 Apr Shift 1)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6792137b0aee93fa0796d921",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665cc9",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-04T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (04 May Shift 1)",
+              "title": "MHT CET 2024 (04 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "The approximate value of $\\log _{10} 1002$ is (Given $\\log _{10} \\mathrm{e}=0.4343$ )",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "F0tqS",
+              "text": "3.0117",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Jh2T7",
+              "text": "3.0009",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "cJXd8",
+              "text": "2.9999",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "24Njf",
+              "text": "3.1119",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $y = \\log_{10} x$<br><br>Differentiating with respect to $x$, we get $\\dfrac{dy}{dx} = \\dfrac{1}{x} \\log_{10} e$<br><br>Let $x = 1000$ and $\\Delta x = 2$<br><br>$\\Delta y \\approx \\dfrac{dy}{dx} \\Delta x = \\dfrac{1}{1000} \\times 0.4343 \\times 2 = 0.0008686$<br><br>The approximate value is $y + \\Delta y = \\log_{10} 1000 + 0.0008686 = 3 + 0.0008686 = 3.0008686$<br><br>Rounding off to four decimal places, we get $3.0009$<br><br>Answer: 3.0009",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665cc9",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-04T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (04 May Shift 1)",
+            "title": "MHT CET 2024 (04 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679213690aee93fa0796d895",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665cc8",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-03T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (03 May Shift 2)",
+              "title": "MHT CET 2024 (03 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "If $y=[(x+1)(2 x+1)(3 x+1) \\ldots \\ldots \\ldots \\ldots(\\mathrm{n} x+1)]^4$ then $\\dfrac{\\mathrm{d} y}{\\mathrm{~d} x}$ at $x=0$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "oHKv0",
+              "text": "$\\dfrac{\\mathrm{n}(\\mathrm{n}+1)}{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6YITq",
+              "text": "$4 \\mathrm{n}(\\mathrm{n}+1)$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "jDk7p",
+              "text": "$\\left(\\dfrac{\\mathrm{n}(\\mathrm{n}+1)}{2}\\right)^2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pMhEd",
+              "text": "$2 \\mathrm{n}(\\mathrm{n}+1)$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given $y = [(x+1)(2x+1)(3x+1) \\dots (nx+1)]^4$<br><br>Taking natural logarithm on both sides:<br><br>$\\ln y = 4 [\\ln(x+1) + \\ln(2x+1) + \\ln(3x+1) + \\dots + \\ln(nx+1)]$<br><br>Differentiating with respect to $x$:<br><br>$\\dfrac{1}{y} \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 4 \\left[ \\dfrac{1}{x+1} + \\dfrac{2}{2x+1} + \\dfrac{3}{3x+1} + \\dots + \\dfrac{\\mathrm{n}}{\\mathrm{n}x+1} \\right]$<br><br>Substituting $x = 0$, we get $y = [(0+1)(0+1)(0+1) \\dots (0+1)]^4 = 1$<br><br>$\\dfrac{1}{1} \\left( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right)_{x=0} = 4 \\left[ \\dfrac{1}{0+1} + \\dfrac{2}{0+1} + \\dfrac{3}{0+1} + \\dots + \\dfrac{\\mathrm{n}}{0+1} \\right]$<br><br>$\\left( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right)_{x=0} = 4 [1 + 2 + 3 + \\dots + \\mathrm{n}]$<br><br>$\\left( \\dfrac{\\mathrm{d}y}{\\mathrm{d}x} \\right)_{x=0} = 4 \\left( \\dfrac{\\mathrm{n}(\\mathrm{n}+1)}{2} \\right) = 2\\mathrm{n}(\\mathrm{n}+1)$<br><br>Answer: $2 \\mathrm{n}(\\mathrm{n}+1)$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665cc8",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-03T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (03 May Shift 2)",
+            "title": "MHT CET 2024 (03 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a261ca0279619d9d8a2f5d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892ab",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-09T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (09 May Shift 2)",
+              "title": "MHT CET 2023 (09 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "If $\\log _2 x+\\log _4 x+\\log _y x+\\log _{16} x-\\frac{25}{36}$ and $x=2^k$, then $k$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "atUEx",
+              "text": "1",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "eVAL4",
+              "text": "$\\frac{1}{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "cMeJc",
+              "text": "$\\frac{1}{3}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Cc4in",
+              "text": "$\\frac{1}{8}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\begin{aligned}\n& \\log _2 x+\\log _4 x+\\log _8 x+\\log _{16} x=\\frac{25}{36} \\\\\n& \\frac{\\log x}{\\log 2}+\\frac{\\log x}{\\log 4}+\\frac{\\log x}{\\log 8}+\\frac{\\log x}{\\log 16}=\\frac{25}{36} \\\\\n& \\frac{\\log x}{\\log 2}+\\frac{\\log x}{2 \\log 2}+\\frac{\\log x}{3 \\log 2}+\\frac{\\log x}{4 \\log 2}=\\frac{25}{36} \\\\\n& \\frac{\\log x}{\\log 2}\\left[1+\\frac{1}{2}+\\frac{1}{3}+\\frac{1}{4}\\right]=\\frac{25}{36} \\\\\n& \\frac{\\log x}{\\log 2}\\left[\\frac{25}{12}\\right]=\\frac{25}{36} \\\\\n& \\frac{25}{12} \\log _2 x=\\frac{25}{36} \\\\\n& \\log _2 x=\\frac{1}{3} \\\\\n& \\therefore \\quad x=2^{\\frac{1}{3}} \\\\\n&\n\\end{aligned}$\nBut $x=2^{\\mathrm{k}}$ ... [Given]\n$\\therefore \\quad \\mathrm{k}=\\frac{1}{3}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892ab",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-09T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (09 May Shift 2)",
+            "title": "MHT CET 2023 (09 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "6abb891815a9fc0fc8c147a2",
+      "title": "Divisibility Test",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "6abb88d615a9fc0fc8c14768",
+          "type": "singleCorrect",
+          "question": {
+            "text": "The digit present at the unit place of the sum $(1! + 2! + 3! + 4! + \\ldots + 2026!)$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "q3P8V",
+              "label": "A",
+              "text": "$0$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "KMdSU",
+              "label": "B",
+              "text": "$1$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "6jCHW",
+              "label": "C",
+              "text": "$2$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "8YKTg",
+              "label": "D",
+              "text": "$3$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The unit digit of a number is its remainder when divided by $10$.<br><br>For $n \\ge 5$, $n!$ contains both $2$ and $5$ as factors, so $n!$ is a multiple of $10$.<br><br>Thus, the unit digit of $n!$ for $n \\ge 5$ is $0$.<br><br>The unit digit of the given sum is determined by the sum of the first four terms:<br><br>$1! + 2! + 3! + 4! = 1 + 2 + 6 + 24 = 33$<br><br>The unit digit of $33$ is $3$.<br><br>Therefore, the unit digit of the sum $(1! + 2! + 3! + 4! + \\ldots + 2026!)$ is $3$.<br><br>Answer: $3$",
+            "image": null
+          },
+          "level": 1,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87f02fe711bb1be9996f",
+              "title": "MHT CET 2026 (20 May Shift 1)",
+              "shortName": "2026 (20 May Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-05-20T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87f02fe711bb1be9996f",
+            "title": "MHT CET 2026 (20 May Shift 1)",
+            "shortName": "2026 (20 May Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-05-20T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "65a263510279619d9d8a3e1e",
+      "title": "Inequalities",
+      "totalQuestions": 4,
+      "questions": [
+        {
+          "_id": "6a44d2ad8c30a4553e1bdba5",
+          "type": "singleCorrect",
+          "question": {
+            "text": "The statement having truth value 'T' from the following is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "lrsrc",
+              "label": "A",
+              "text": "$\\sin(x)$ is an even function.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "J1kHW",
+              "label": "B",
+              "text": "Every square matrix is non-singular.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "bQ0LE",
+              "label": "C",
+              "text": "The product of complex number and its conjugate is purely imaginary.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "YsP34",
+              "label": "D",
+              "text": "A square of any real number is non-negative.",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Evaluating statement (1): $\\sin(-x) = -\\sin(x)$, which means $\\sin(x)$ is an odd function. The statement is false.<br><br>Evaluating statement (2): A square matrix with a zero determinant is a singular matrix. Therefore, not every square matrix is non-singular. The statement is false.<br><br>Evaluating statement (3): Let a complex number be $z = x + iy$, its conjugate is $\\bar{z} = x - iy$. The product $z\\bar{z} = (x + iy)(x - iy) = x^2 + y^2$, which is a purely real number. The statement is false.<br><br>Evaluating statement (4): For any real number $x$, the square is $x^2 \\ge 0$. The square of any real number is non-negative. The statement is true.",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d2802d2155b816ec4a7d",
+              "title": "MHT CET 2026 (20 April Shift 2)",
+              "shortName": "2026 (20 April Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-04-20T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 1,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d2802d2155b816ec4a7d",
+            "title": "MHT CET 2026 (20 April Shift 2)",
+            "shortName": "2026 (20 April Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-04-20T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6a44d2bb8c30a4553e1bdc39",
+          "type": "singleCorrect",
+          "question": {
+            "text": "If $A = \\{1, 2, 3, 4, 5\\}$, then which of the following statements is not true?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "SnBOM",
+              "label": "A",
+              "text": "$\\exists x \\in A$, such that $x + 4 \\leq 9$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "c8GTk",
+              "label": "B",
+              "text": "$\\exists x \\in A$, such that $12 - x = 7$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "9wcMx",
+              "label": "C",
+              "text": "$\\forall x \\in A, x + 3 \\geq 4$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "BNLP9",
+              "label": "D",
+              "text": "$\\exists x \\in A$, such that $x + 2 < 3$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given the set $A = \\{1, 2, 3, 4, 5\\}$.<br><br>Checking the first statement: $\\exists x \\in A$, such that $x + 4 \\leq 9$. For $x = 1$, $1 + 4 = 5 \\leq 9$. This statement is true.<br><br>Checking the second statement: $\\exists x \\in A$, such that $12 - x = 7$. Solving for $x$ gives $x = 5$. Since $5 \\in A$, this statement is true.<br><br>Checking the third statement: $\\forall x \\in A, x + 3 \\geq 4$. The minimum value of $x$ in $A$ is $1$. For $x = 1$, $1 + 3 = 4 \\geq 4$. For all other values in $A$, $x + 3 > 4$. This statement is true.<br><br>Checking the fourth statement: $\\exists x \\in A$, such that $x + 2 < 3$. Solving for $x$ gives $x < 1$. There is no element in $A$ that is strictly less than $1$. This statement is false.<br><br>Therefore, the fourth statement is not true.<br><br>Answer: $\\exists x \\in A$, such that $x + 2 < 3$",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d27f2d2155b816ec4a6e",
+              "title": "MHT CET 2026 (11 April Shift 1)",
+              "shortName": "2026 (11 April Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-04-11T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 1,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d27f2d2155b816ec4a6e",
+            "title": "MHT CET 2026 (11 April Shift 1)",
+            "shortName": "2026 (11 April Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-04-11T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b30bf9280d7f99326fb",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376de9b67616acec78f70",
+              "heldOn": "2025-04-20T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (20 Apr Shift 1)",
+              "title": "MHT CET 2025 (20 Apr Shift 1)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "The shaded region in the following figure represents a solution set of\n<img src=\"https://cdn.quizrr.in/question-assets/mhtcet/mhtcet2025/kCX5j0MMq0hh68wg-PooSp1irW5FOunRjPD-t4JeAKY.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "lNdLe",
+              "text": "$x-y \\geq 0, x+y \\geq 0$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "xq48R",
+              "text": "$x-y \\leq 0, x+y \\geq 0$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vc1Iz",
+              "text": "$x-y \\geq 0, x+y \\leq 0$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "gX7ky",
+              "text": "$x-\\mathrm{y} \\leq 0, x+\\mathrm{y} \\leq 0$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The shaded region is bounded by the lines $x - y = 0$ and $x + y = 0$.<br><br>To determine the correct inequalities, we can select a test point clearly located within the shaded region. Let us choose the point $(1, 0)$ on the positive x-axis.<br><br>Substitute $x = 1$ and $y = 0$ into the expressions for the two lines:<br>For the first line: $x - y = 1 - 0 = 1$. Since $1 \\geq 0$, the inequality is $x - y \\geq 0$.<br>For the second line: $x + y = 1 + 0 = 1$. Since $1 \\geq 0$, the inequality is $x + y \\geq 0$.<br><br>Alternatively, observe the region relative to the lines:<br>The shaded region lies below the line $y = x$, which means $y \\leq x$, or $x - y \\geq 0$.<br>The shaded region lies above the line $y = -x$, which means $y \\geq -x$, or $x + y \\geq 0$.<br><br>Therefore, the system of inequalities representing the shaded region is $x - y \\geq 0$ and $x + y \\geq 0$.<br><br>Answer: $x-y \\geq 0, x+y \\geq 0$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376de9b67616acec78f70",
+            "heldOn": "2025-04-20T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (20 Apr Shift 1)",
+            "title": "MHT CET 2025 (20 Apr Shift 1)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f2b0279619d9d8a1a53",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f67",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-12T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (12 Oct Shift 1)",
+              "title": "MHT CET 2020 (12 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "If $|3 x-2| \\leq \\frac{1}{2} \\quad$ then $x \\in$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "2YAS4",
+              "text": "$\\left[\\frac{1}{2}, \\frac{5}{6}\\right]$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "9FFFP",
+              "text": "$\\left(\\frac{1}{2}, \\frac{5}{6}\\right]$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0TnOZ",
+              "text": "$\\left[\\frac{1}{2}, \\frac{5}{6}\\right)$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BrLip",
+              "text": "$\\left(\\frac{1}{2}, \\frac{5}{6}\\right)$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We have $|3 x-2| \\leq \\frac{1}{2}$\n$\\therefore \\frac{-1}{2} \\leq(3 x-2) \\leq \\frac{1}{2}$\n$\\therefore \\frac{-1}{2} \\leq 3 x-2 \\quad$ and $\\quad 3 x-2 \\leq \\frac{1}{2}$\n$\\therefore \\quad \\frac{3}{2} \\leq 3 x \\quad$ and $\\quad 3 x \\leq \\frac{5}{2}$\n$\\quad \\frac{1}{2} \\leq x \\quad$ and $\\quad x \\leq \\frac{5}{6}$\n$\\therefore x \\in\\left[\\frac{1}{2}, \\frac{5}{6}\\right]$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f67",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-12T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (12 Oct Shift 1)",
+            "title": "MHT CET 2020 (12 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

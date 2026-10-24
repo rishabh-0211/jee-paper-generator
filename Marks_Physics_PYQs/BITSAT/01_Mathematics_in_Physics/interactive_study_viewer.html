@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Mathematics in Physics PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚡ BITSAT &bull; Mathematics in Physics</h1>
+        <div class="sub">Physics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 1, "chapterId": "61e7bd79c8ca5ec1f00e8ceb", "chapter": "Mathematics in Physics", "exam": "BITSAT", "subject": "Physics", "totalTopics": 3, "totalQuestions": 6, "downloadTime": "2026-10-08 20:27:42", "topics": [{"index": 1, "topicId": "64c0e8516f5bfc7ab78aecc9", "title": "Fundamentals of Vectors", "totalQuestions": 1, "questions": [{"_id": "64c0e7e86f5bfc7ab78ae8e4", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 1, "question": {"text": "<p>The velocity of a projectile at the initial point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math>&nbsp;is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>2</mn><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>-</mo><mn>3</mn><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover></mrow></mfenced><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>. Its velocity (in&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>) at point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math> is</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/37ddd8a8-ec7d-4555-bea7-f806e51fc14e-image.png\" style=\"width: 190px; height: 183px;\" /></p>", "image": null}, "options": [{"id": "WJXM9", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mn>2</mn><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>-</mo><mn>3</mn><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover></math>", "isCorrect": false, "image": null}, {"id": "UGyqN", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mn>2</mn><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>+</mo><mn>3</mn><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover></math>", "isCorrect": false, "image": null}, {"id": "vZsT8", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>-</mo><mn>3</mn><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover></math>", "isCorrect": false, "image": null}, {"id": "kEhFb", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>+</mo><mn>3</mn><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>From the figure, the <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>X</mi></math>-component remains unchanged while the <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Y</mi></math>-component is reverse. Then, the velocity at point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>2</mn><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>+</mo><mn>3</mn><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover></mrow></mfenced><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8516f5bfc7ab78aecc8", "title": "Addition and Subtraction of Vectors", "totalQuestions": 2, "questions": [{"_id": "64c0e78d6f5bfc7ab78ae5d9", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "The two vectors $\\overrightarrow{\\mathrm{A}}$ and $\\overrightarrow{\\mathrm{B}}$ are drawn from a common point and $\\overrightarrow{\\mathrm{C}}=\\overrightarrow{\\mathrm{A}}+\\overrightarrow{\\mathrm{B}},$ then angle\nbetween $\\overrightarrow{\\mathrm{A}}$ and $\\overrightarrow{\\mathrm{B}}$ is -\n(1) $90^{\\circ}$ if $\\mathrm{C}^{2}=\\mathrm{A}^{2}+\\mathrm{B}^{2}$\n(2) greater than $90^{\\circ}$ if $\\mathrm{C}^{2}<\\mathrm{A}^{2}+\\mathrm{B}^{2}$\n(3) greater than $90^{\\circ}$ if $\\mathrm{C}^{2}>\\mathrm{A}^{2}+\\mathrm{B}^{2}$\n(4) less than $90^{\\circ}$ if $\\mathrm{C}^{2}>\\mathrm{A}^{2}+\\mathrm{B}^{2}$\nCorrect options are -", "image": null}, "options": [{"id": "1ZKrR", "text": "1,2", "image": null, "isCorrect": false}, {"id": "N8RQQ", "text": "1,2,3,4", "image": null, "isCorrect": false}, {"id": "PLCHn", "text": "2,3,4", "image": null, "isCorrect": false}, {"id": "uytAh", "text": "1,2,4", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "No Solution available", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7706f5bfc7ab78ae4db", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "Given that $\\overrightarrow{\\mathrm{A}}+\\overrightarrow{\\mathrm{B}}=\\overrightarrow{\\mathrm{R}}$ and $\\mathrm{A}^{2}+\\mathrm{B}^{2}=\\mathrm{R}^{2}$. The angle between $\\overrightarrow{\\mathrm{A}}$ and $\\overrightarrow{\\mathrm{B}}$ is", "image": null}, "options": [{"id": "KT2CN", "text": "0", "image": null, "isCorrect": false}, {"id": "HktK6", "text": "$\\pi / 4$", "image": null, "isCorrect": false}, {"id": "rCrtt", "text": "$\\pi / 2$", "image": null, "isCorrect": true}, {"id": "b6x6K", "text": "$\\pi$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\cos \\theta=\\frac{\\mathrm{R}^{2}-\\mathrm{A}^{2}-\\mathrm{B}^{2}}{2 \\mathrm{~A} \\mathrm{~B}}=\\frac{\\mathrm{R}^{2}-\\mathrm{R}^{2}}{2 \\mathrm{AB}}=0$\n$\\therefore \\theta=\\pi / 2$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e8516f5bfc7ab78aecca", "title": "Errors of Measurement", "totalQuestions": 3, "questions": [{"_id": "67726d13c49e8ef28ee2b40b", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "You measure two quantities as $A=1.0 \\mathrm{~m} \\pm 0.2 \\mathrm{~m}$, $B=2.0 \\mathrm{~m} \\pm 0.2 \\mathrm{~m}$. We should report correct value for $\\sqrt{A B}$ as", "image": null}, "options": [{"id": "midHw", "text": "$1.4 \\mathrm{~m} \\pm 0.4 \\mathrm{~m}$", "image": null, "isCorrect": false}, {"id": "aWYBZ", "text": "$1.41 \\mathrm{~m} \\pm 0.15 \\mathrm{~m}$", "image": null, "isCorrect": false}, {"id": "AFRwY", "text": "$1.4 \\mathrm{~m} \\pm 0.3 \\mathrm{~m}$", "image": null, "isCorrect": false}, {"id": "3cZSo", "text": "$1.4 \\mathrm{~m} \\pm 0.2 \\mathrm{~m}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Given, $A=1.0 \\mathrm{~m} \\pm 0.2 \\mathrm{~m}, B=2.0 \\mathrm{~m} \\pm 0.2 \\mathrm{~m}$\nLet $Y=\\sqrt{A B}=\\sqrt{(1.0)(20)}=1.414 \\mathrm{~m}$\nRounding off to two significant digits\n$\\begin{aligned}\nY & =1.4 \\mathrm{~m} \\\\\n\\frac{\\Delta Y}{Y} & =\\frac{1}{2}\\left[\\frac{\\Delta A}{A}+\\frac{\\Delta B}{B}\\right] \\\\\n& =\\frac{1}{2}\\left[\\frac{0.2}{1.0}+\\frac{0.2}{2.0}\\right] \\\\\n& =\\frac{0.6}{2 \\times 20} \\\\\n\\Rightarrow \\quad \\Delta Y & =\\frac{0.6 Y}{2 \\times 20}=\\frac{0.6 \\times 1.4}{2 \\times 20}=0.212\n\\end{aligned}$\nRounding off to one significant digit,\n$\\Delta Y=0.2 \\mathrm{~m}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87a97ae24e9e2db8cc0", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "Two resistances are given as $R_1=(10 \\pm$ $0.5) \\Omega$ and $R_2=(15 \\pm 0.5) \\Omega$. The percentage error in the measurement of equivalent resistance when they are connected in parallel is", "image": null}, "options": [{"id": "sbxtl", "text": "<br />6.33", "image": null, "isCorrect": false}, {"id": "WZm7W", "text": "<br />2.33", "image": null, "isCorrect": false}, {"id": "agqey", "text": "<br />4.33", "image": null, "isCorrect": true}, {"id": "4KdwL", "text": "<br />5.33", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Equivalent resistance in parallel combination is given by<br />$\\begin{aligned}<br />& \\frac{1}{R_{\\text {eq }}}=\\frac{1}{R_1}+\\frac{1}{R_2} \\\\<br />& \\Rightarrow R_{\\text {eq }}=\\frac{R_1 R_2}{R_1+R_2}=\\frac{10 \\times 15}{10+15}=6<br />\\end{aligned}$<br />Differentiating both sides, we get<br />$\\begin{aligned} & \\frac{\\Delta R_{\\text {eq }}}{\\mathrm{R}_{\\mathrm{eq}}^2}=\\frac{\\Delta \\mathrm{R}_1}{\\mathrm{R}_1^2}+\\frac{\\Delta \\mathrm{R}_2}{\\mathrm{R}_2^2} \\\\ & \\Rightarrow \\frac{\\Delta \\mathrm{R}_{\\mathrm{eq}}}{\\mathrm{R}_{\\mathrm{eq}}}=\\left(\\frac{\\Delta \\mathrm{R}_1}{\\mathrm{R}_1^2}+\\frac{\\Delta \\mathrm{R}_2}{\\mathrm{R}_2^2}\\right) \\mathrm{R}_{\\mathrm{eq}} \\\\ & =\\left(\\frac{0.5}{100}+\\frac{0.5}{225}\\right) \\cdot 6=\\left(\\frac{6 \\times 0.5}{25}\\right)\\left(\\frac{1}{4}+\\frac{1}{9}\\right)=\\frac{13}{300} \\\\ & \\frac{\\Delta \\mathrm{R}_{\\mathrm{eq}}}{\\mathrm{R}_{\\mathrm{eq}}} \\times 100=\\frac{13}{3}=4.33 \\%\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8106f5bfc7ab78aea41", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 1, "question": {"text": "The heat generated in a circuit is given by $\\mathrm{Q}=\\mathrm{I}^{2} \\mathrm{Rt},$ where I is current, $\\mathrm{R}$ is resistance and tis time. If the percentage errors in measuring I. $\\mathrm{R}$ and $\\mathrm{t}$ are $2 \\%, 1 \\%$ and $1 \\%$ respectively, then the maximum error in measuring heat will be", "image": null}, "options": [{"id": "iejjN", "text": "$2 \\%$", "isCorrect": false, "image": null}, {"id": "QVdW3", "text": "$3 \\%$", "isCorrect": false, "image": null}, {"id": "dvNU9", "text": "$4 \\%$", "isCorrect": false, "image": null}, {"id": "827Iu", "text": "$6 \\%$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "$\\begin{aligned} \\frac{\\Delta Q}{Q} \\times 100 &=\\frac{2 \\Delta I}{I} \\times 100+\\frac{\\Delta R}{R} \\times 100+\\frac{\\Delta t}{t} \\times 100 \\\\ &=2 \\times 2 \\%+1 \\%+1 \\%=6 \\% \\end{aligned}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

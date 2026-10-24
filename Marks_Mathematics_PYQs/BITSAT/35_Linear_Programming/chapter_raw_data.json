@@ -1,0 +1,746 @@
+{
+  "index": 35,
+  "chapterId": "61e7bd7eb24061ba422052cf",
+  "chapter": "Linear Programming",
+  "exam": "BITSAT",
+  "subject": "Mathematics",
+  "totalTopics": 1,
+  "totalQuestions": 11,
+  "downloadTime": "2026-10-08 20:37:23",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e8766f5bfc7ab78aee73",
+      "title": "Linear Programming",
+      "totalQuestions": 11,
+      "questions": [
+        {
+          "_id": "67726d1bc49e8ef28ee2b44a",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "If the number of available constraints is 3 and the number of parameters to be optimise is 4 , then",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "4xTy2",
+              "text": "the objective function can be optimised",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "UvrIy",
+              "text": "the constraint are short in number",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "zsAbP",
+              "text": "the solution is problem oriented",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "RTXF4",
+              "text": "None of the above",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "To optimised $n$ number of parameters, we need atleast $n$ constraints.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87f97ae24e9e2db8cf1",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Minimum value of $Z=3 x+5 y$ subject to constraints $x+y \\geq 2, x+3 y \\geq 3, x, y \\geq 0$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "j9AVj",
+              "text": "<br />6",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "PJ74y",
+              "text": "<br />7",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ubkw1",
+              "text": "<br />8",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vU7k4",
+              "text": "<br />9",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{Z}$ is 7 minimum at $\\left(\\frac{3}{2}, \\frac{1}{2}\\right)$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87897ae24e9e2db8ca8",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "The maximum value of $z=5 x+2 y$ subject to constraints $x+y \\leq 7, x+2 y \\leq 10, x, y \\geq 0$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "DQ0rp",
+              "text": "10",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "EPaYE",
+              "text": "26",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Ea5mO",
+              "text": "35",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "kvfsM",
+              "text": "70",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Change the inequalities into equations and draw the graph of lines, thus we get the required feasible region as shown below.<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/PM-tPvPQ2yDHDSeIf6ZrVRVLLrMIduwNfTr1Y8ScXcU.original.fullsize.png\"><br><br />The region bounded by the vertices $A(0,5), B(4,3), C(7,0)$<br />The objective function is maximum at $\\mathrm{C}(7,0)$ and $\\operatorname{Max} z=5 \\times 7+2 \\times 0=35$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e81c6f5bfc7ab78aeab2",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The maximum value of $z=6 x+8 y$ subject to constraints $2 x+y \\leq 30, x+2 y \\leq 24$ and $x \\geq 0, y \\geq 0$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "JsWko",
+              "text": "90",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "g1woE",
+              "text": "120",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "gFa99",
+              "text": "96",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "XCbTI",
+              "text": "240",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Here, $2 x+y \\leq 30, x+2 y \\leq 24, x, y \\geq 0$\r\n\r\nThe shaded region represents the feasible region, hence $\\mathrm{z}=6 \\mathrm{x}+8 \\mathrm{y}$. Obviously it is maximum at (12,6) Hence $z=12 \\times 6+8 \\times 6=120$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/qxz5bvmr2xmJCHqxpyt9F0AeSB9p03OvCuJniSYliOI.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8016f5bfc7ab78ae9be",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The coordinates of the point at which minimum value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Z</mi><mo>=</mo><mn>7</mn><mi>x</mi><mo>-</mo><mn>8</mn><mi>y</mi></math> subject to constraints <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>+</mo><mi>y</mi><mo>-</mo><mn>20</mn><mo>&#8804;</mo><mn>0</mn><mo>,</mo></math>&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>&#8805;</mo><mn>5</mn><mo>,</mo></math>&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>&#8805;</mo><mn>0</mn><mo>,</mo></math>&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>&#8805;</mo><mn>0</mn></math>&nbsp;is attained, is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "hRHN9",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>20</mn><mo>,</mo><mn>0</mn></mrow></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "5tsk7",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>15</mn><mo>,</mo><mn>5</mn></mrow></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "OcCYR",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>0</mn><mo>,</mo><mn>5</mn></mrow></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "r7ukC",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>0</mn><mo>,</mo><mn>20</mn></mrow></mfenced></math>",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Feasible region is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mi>B</mi><mi>C</mi><mi>A</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Z</mi><mo>=</mo><mn>7</mn><mi>x</mi><mo>-</mo><mn>8</mn><mi>y</mi></math><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/29ad1c2a-a79d-4dee-9be2-09892ed13180-image.png\" style=\"width: 370px; height: 264px;\" /></p><p>At&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mfenced><mrow><mn>0</mn><mo>,</mo><mn>5</mn></mrow></mfenced><mo>,</mo><mo>&#160;</mo><mi>Z</mi><mo>=</mo><mn>7</mn><mo>&#215;</mo><mn>0</mn><mo>-</mo><mn>8</mn><mo>&#215;</mo><mn>5</mn><mo>=</mo><mo>-</mo><mn>40</mn></math></p><p>At&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi><mfenced><mrow><mn>15</mn><mo>,</mo><mn>5</mn></mrow></mfenced><mo>,</mo><mo>&#160;</mo><mi>Z</mi><mo>=</mo><mn>7</mn><mfenced><mn>15</mn></mfenced><mo>-</mo><mn>8</mn><mfenced><mn>5</mn></mfenced><mo>=</mo><mn>65</mn></math></p><p>At&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi><mfenced><mrow><mn>0</mn><mo>,</mo><mn>20</mn></mrow></mfenced><mo>,</mo><mo>&#160;</mo><mi>Z</mi><mo>=</mo><mn>7</mn><mfenced><mn>0</mn></mfenced><mo>-</mo><mn>8</mn><mfenced><mn>20</mn></mfenced><mo>=</mo><mo>-</mo><mn>160</mn></math></p><p>Hence, the minimum value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Z</mi></math> is attained at point&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>0</mn><mo>,</mo><mn>20</mn></mrow></mfenced></math></p><p>So, option <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi>d</mi></mfenced></math> is correct.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8016f5bfc7ab78ae9bd",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The maximum value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Z</mi><mo>=</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi></math> subject to constraints <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>&#8804;</mo><mn>18</mn><mo>,</mo><mo>&#160;</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>&#8805;</mo><mn>10</mn></math>&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>,</mo><mi>y</mi><mo>&#8805;</mo><mn>0</mn></math>&nbsp;is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "W9MRI",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>20</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ZuUpN",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>36</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "azm7q",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>40</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "MCLtb",
+              "text": "None of these",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We have,<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Z</mi><mo>=</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi></math></p><p>And,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>&#8804;</mo><mn>18</mn><mo>,</mo><mo>&#160;</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>&#8805;</mo><mn>10</mn></math></p><p>Let</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>L</mi><mn>1</mn></msub><mo>:</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>18</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>L</mi><mn>2</mn></msub><mo>:</mo><mo>&#160;</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>10</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>L</mi><mn>3</mn></msub><mo>:</mo><mi>x</mi><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>L</mi><mn>4</mn></msub><mo>:</mo><mi>y</mi><mo>=</mo><mn>0</mn></math></p><p>Then the feasible region is</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/3697c4e7-aefa-40a0-89bf-3ff4d8185590-image.png\" style=\"width: 250px; height: 238px;\" /></p><p>From the figure, it is clear that there is no common area. So, we cannot find maximum value of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Z</mi></math>.</p><p>Hence, option <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi>d</mi></mfenced></math> is correct.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7d46f5bfc7ab78ae830",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Minimise $Z=\\sum_{j=1}^{n} \\sum_{i=1}^{m} c_{i j} x_{i j}$\r\n\r\nSubject to $\\sum_{i=1}^{m} x_{i j}=b_{j}, j=1,2, \\ldots, n$\r\n\r\n$\\sum_{j=1}^{n} x_{i j}=b_{j}, i=1,2, \\ldots, m$ is a $L P P$ with number of constr",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "A9vS2",
+              "text": "$m-n$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "eA4bk",
+              "text": "$m$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ux6QN",
+              "text": "$\\mathrm{m}+\\mathrm{n}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "T20T6",
+              "text": "$\\frac{\\mathrm{m}}{\\mathrm{n}}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Constraints will be\r\n\r\n$$\r\n\r\n\\mathrm{x}_{11}+\\mathrm{x}_{21}+\\ldots .+\\mathrm{x}_{\\mathrm{ml}}=\\mathrm{b}_{1}\r\n\r\n$$\r\n\r\n$\\mathrm{x}_{12}+\\mathrm{x}_{22}+\\ldots \\ldots \\mathrm{x}_{\\mathrm{m} 2}=\\mathrm{b}_{2}$\r\n\r\n$\\mathrm{x}_{\\ln }+\\mathrm{x}_{2 \\mathrm{n}}+\\ldots .+\\mathrm{x}_{\\mathrm{mn}}=\\mathrm{b}_{\\mathrm{n}}$\r\n\r\n$\\mathrm{x}_{11}+\\mathrm{x}_{12}+\\ldots+\\mathrm{x}_{1 \\mathrm{n}}=\\mathrm{b}_{1}$\r\n\r\n$\\mathrm{x}_{21}+\\mathrm{x}_{22}+\\ldots+\\mathrm{x}_{2 \\mathrm{n}}=\\mathrm{b}_{2}$\r\n\r\n$\\mathrm{x}_{\\mathrm{ml}}+\\mathrm{x}_{\\mathrm{m} 2}+\\ldots+\\mathrm{x}_{\\mathrm{mn}}=\\mathrm{b}_{\\mathrm{n}}$\r\n\r\nSo, total number of constraints $=\\mathrm{m}+\\mathrm{n}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c66f5bfc7ab78ae7c6",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Consider $\\frac{x}{2}+\\frac{y}{4} \\geq 1$ and $\\frac{x}{3}+\\frac{y}{2} \\leq 1, x, y \\geq 0$. Then\r\n\r\nnumber of possible solutions are :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "pM3Ev",
+              "text": "Zero",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "SGJqN",
+              "text": "Unique",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "sttFc",
+              "text": "Infinite",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "a1KUn",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Consider $\\frac{x}{2}+\\frac{y}{4} \\geq 1, \\frac{x}{3}+\\frac{y}{2} \\leq 1$,\r\n\r\nx, $y \\geq 0$ convert them into equation and solve them and draw the graph of these equations we get $y=1$ and $x=3 / 2$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/pqsQXvwe_zHQ5cwo8qh2MrIz3R4I7XqKtqBIDKGKnb0.original.fullsize.png\"><br>\r\n\r\nFrom graph region is finite but numbers of possible solutions are infinite because for different values of $x$ and $y$ we have different or infinite no. of solutions.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b96f5bfc7ab78ae74d",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "A shopkeeper wants to purchase two articles A and $\\mathrm{B}$ of cost price 4 and 3 respectively. He thought that he mayearn 30 paise byselling article A and 10 paise by selling article $B$. He has not to purchase total articles worth more than ' 24 . If he purchases the number of articles of $\\mathrm{A}$ and $\\mathrm{B}, \\mathrm{x}$ and y respectively, then linear constraints are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "czWNz",
+              "text": "$x \\geq 0, y \\geq 0,4 x+3 y \\leq 24$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "BYjIO",
+              "text": "$x \\geq 0, y \\geq 0,30 x+10 y \\leq 24$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "CB3JQ",
+              "text": "$x \\geq 0, y \\geq 0,4 x+3 y \\geq 24$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "jUn4M",
+              "text": "$x \\geq 0, y \\geq 0,30 x+40 y \\geq 24$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$x, y \\geq 0$ and $4 x+3 y \\leq 24$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e79b6f5bfc7ab78ae653",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "For the constraints of a L.P. Problem given by \\(x_1+2 x_2 \\leq 2000, x_1+x_2 \\leq 1500\\) and \\(x_2 \\leq 600\\) and \\(\\mathrm{x}_1, \\mathrm{x}_2 \\geq 0\\), which one of the following points does not lie in the positive bounded region",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "uzJJy",
+              "text": "\\((1000,0)\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "MUPDe",
+              "text": "\\((0,500)\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3fw6J",
+              "text": "\\((2,0)\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "rWuyJ",
+              "text": "\\((2000,0)\\)",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Clearly point \\((2000,0)\\) is outside.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7976f5bfc7ab78ae62e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is not a vertex of the positive region bounded by the inqualities \\(2 x+3 y \\leq 6,5 x+3 y \\leq 15\\) and \\(x, y \\geq 0\\)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "td3m8",
+              "text": "\\((0,2)\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "gv6wa",
+              "text": "\\((0,0)\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iu0uf",
+              "text": "\\((3,0)\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6RBuB",
+              "text": "None of these",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Here \\((0,2),(0,0)\\) and \\((3,0)\\) all are vertices of feasible region.\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/f16yshOH3fXpGz3hrQSgkl90s_Dw29-XOpCrtsfBmAI.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

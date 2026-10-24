@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Some Basic Concepts of Chemistry PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚗️ BITSAT &bull; Some Basic Concepts of Chemistry</h1>
+        <div class="sub">Chemistry PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 1, "chapterId": "61e7bd805efaa7da04a98fac", "chapter": "Some Basic Concepts of Chemistry", "exam": "BITSAT", "totalTopics": 5, "totalQuestions": 24, "downloadTime": "2026-10-08 20:02:44", "topics": [{"index": 1, "topicId": "64c0e85d6f5bfc7ab78aed54", "title": "Laws of chemical combination", "totalQuestions": 2, "questions": [{"_id": "64c0e8306f5bfc7ab78aeb61", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 3, "question": {"text": "A certain metal sulphide, $M S_2$, is used extensively as a high temperature lubricant. If $\\mathrm{MS}_2$ is $40.06 \\%$ by mass sulphur, metal $M$ has atomic mass.", "image": null}, "options": [{"id": "xCvO6", "text": "\r\n$160 \\mathrm{u}$\r\n", "isCorrect": false, "image": null}, {"id": "Gdi8o", "text": "\r\n$64 \\mathrm{u}$\r\n", "isCorrect": false, "image": null}, {"id": "8AYyS", "text": "\r\n$40 \\mathrm{u}$\r\n", "isCorrect": false, "image": null}, {"id": "zsd18", "text": "\r\n$96 \\mathrm{u}$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "$M S_2=M+32 \\times 2=M+64$\r\n$\\%$ of sulphur $=\\left(\\frac{64}{M+64}\\right) \\times 100=40.06$\r\n$M+64=\\frac{6400}{40.06}$\r\n$M+64=160$\r\n$M=160-64=96$ u", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7bd6f5bfc7ab78ae776", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 1, "question": {"text": "The formation of $\\mathrm{CO}$ and $\\mathrm{CO}_{2}$ illustrates the law of", "image": null}, "options": [{"id": "GmDny", "text": "reciprocal proportion", "isCorrect": false, "image": null}, {"id": "oZ37a", "text": "conservation of mass", "isCorrect": false, "image": null}, {"id": "rGgGC", "text": "multiple proportion", "isCorrect": true, "image": null}, {"id": "nJBVE", "text": "constant composition", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Formation of $\\mathrm{CO}$ and $\\mathrm{CO}_{2}$ illustrates the law of multiple proportion that is constant mass of $\\mathrm{C}$ reacts with different masses of oxygen. These masses here bears simple ratio of 1: 2 .", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e85d6f5bfc7ab78aed52", "title": "Mole concept", "totalQuestions": 8, "questions": [{"_id": "67726d0ac49e8ef28ee2b3ca", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "1 L closed flask contains a mixture of 4 g of methane and 4.4 g of carbon dioxide. The pressure inside the flask at $27^{\\circ} \\mathrm{C}$ is [Assume ideal behaviour of gases]", "image": null}, "options": [{"id": "68uxu", "text": "8.6 atm", "image": null, "isCorrect": true}, {"id": "oepSs", "text": "2.2 atm", "image": null, "isCorrect": false}, {"id": "BPktt", "text": "4.2 atm", "image": null, "isCorrect": false}, {"id": "hUDuQ", "text": "6.1 atm", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "no. of moles of $\\mathrm{CH}_4\\left(\\mathrm{n}_1\\right)=\\frac{4}{16}=0.25 \\mathrm{~mol}$\nno. of moles of $\\mathrm{CO}_2\\left(\\mathrm{n}_2\\right)=\\frac{4.4}{44}=0.1 \\mathrm{~mol}$\nTotal no. of moles $\\left(\\mathrm{n}_{\\mathrm{T}}\\right)=\\mathrm{n}_1+\\mathrm{n}_2=0.35 \\mathrm{~mol}$\n$\\therefore \\quad P=\\frac{0.35 \\times 0.082 \\times 300}{1}=8.6 \\mathrm{~atm}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e80a6f5bfc7ab78aea0c", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 1, "question": {"text": "In a compound <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">C</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant=\"normal\">H</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">N</mi></math> are present in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>9</mn><mo>:</mo><mn>1</mn><mo>:</mo><mn>3</mn><mo>.</mo><mn>5</mn></math> by weight. If molecular weight of compound is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>108</mn></math>, the molecular formula of compound is", "image": null}, "options": [{"id": "EN95D", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">C</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>6</mn></msub><mo>&#160;</mo><msub><mi mathvariant=\"normal\">N</mi><mn>2</mn></msub></math>", "isCorrect": false, "image": null}, {"id": "qPnk1", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">C</mi><mn>3</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>4</mn></msub><mo>&#160;</mo><mi mathvariant=\"normal\">N</mi></math>", "isCorrect": false, "image": null}, {"id": "BmCRZ", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">C</mi><mn>6</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>8</mn></msub><mo>&#160;</mo><msub><mi mathvariant=\"normal\">N</mi><mn>2</mn></msub></math>", "isCorrect": true, "image": null}, {"id": "eevmv", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">C</mi><mn>9</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>12</mn></msub><mo>&#160;</mo><msub><mi mathvariant=\"normal\">N</mi><mn>3</mn></msub></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px;\">\t<tbody>\t\t<tr>\t\t\t<td>Element</td>\t\t\t<td>Ratio (by weight)</td>\t\t\t<td>Atomic weight</td>\t\t\t<td>Mol<br />\t\t\tRatio</td>\t\t\t<td>Simplest Mol Ratio</td>\t\t</tr>\t\t<tr>\t\t\t<td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">C</mi></math></td>\t\t\t<td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>9</mn></math></td>\t\t\t<td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>12</mn></math></td>\t\t\t<td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>9</mn><mn>12</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>75</mn></math></td>\t\t\t<td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>0</mn><mo>.</mo><mn>75</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>25</mn></mrow></mfrac><mo>=</mo><mn>3</mn></math></td>\t\t</tr>\t\t<tr>\t\t\t<td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">H</mi></math></td>\t\t\t<td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math></td>\t\t\t<td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math></td>\t\t\t<td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mn>1</mn></mfrac><mo>=</mo><mn>1</mn><mo>.</mo><mn>00</mn></math></td>\t\t\t<td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>1</mn><mo>.</mo><mn>00</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>25</mn></mrow></mfrac><mo>=</mo><mn>4</mn></math></td>\t\t</tr>\t\t<tr>\t\t\t<td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">N</mi></math></td>\t\t\t<td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>.</mo><mn>5</mn></math></td>\t\t\t<td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>14</mn></math></td>\t\t\t<td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>3</mn><mo>.</mo><mn>5</mn></mrow><mn>14</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>25</mn></math></td>\t\t\t<td><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>0</mn><mo>.</mo><mn>25</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>25</mn></mrow></mfrac><mo>=</mo><mn>1</mn></math></td>\t\t</tr>\t</tbody></table><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> Empirical formula <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><msub><mi mathvariant=\"normal\">C</mi><mn>3</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>4</mn></msub><mo>&#160;</mo><mi mathvariant=\"normal\">N</mi></math></p><p>The empirical formula mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>3</mn><mo>&#215;</mo><mn>12</mn><mo>+</mo><mn>4</mn><mo>&#215;</mo><mn>1</mn><mo>+</mo><mn>14</mn><mo>=</mo><mn>54</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math></p><p>Given, molecular mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>108</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math></p><p>Thus, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>=</mo><mfrac><mn>108</mn><mn>54</mn></mfrac><mo>=</mo><mn>2</mn></math></p><p>Hence, molecular formula = (Empirical formula) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#215;</mo><mn>2</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><msub><mi mathvariant=\"normal\">C</mi><mn>3</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>4</mn></msub><mo>&#160;</mo><mi mathvariant=\"normal\">N</mi></mrow></mfenced><mo>&#215;</mo><mn>2</mn><mo>=</mo><msub><mi mathvariant=\"normal\">C</mi><mn>6</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>8</mn></msub><mo>&#160;</mo><msub><mi mathvariant=\"normal\">N</mi><mn>2</mn></msub></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7f86f5bfc7ab78ae96e", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 2, "question": {"text": "The empirical formula and molecular mass of a compound are <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CH</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>180</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> respectively. The molecular formula of the compound will be", "image": null}, "options": [{"id": "s8Hpw", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">C</mi><mn>9</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>18</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>9</mn></msub></math>", "isCorrect": false, "image": null}, {"id": "ZVlv2", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CH</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></math>", "isCorrect": false, "image": null}, {"id": "jNd1q", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">C</mi><mn>6</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>12</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>6</mn></msub></math>", "isCorrect": true, "image": null}, {"id": "TI1FX", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">C</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>4</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>As we know that,&nbsp;the Molar mass of Carbon=12</p><p>Molar mass of Hydrogen=1</p><p>Molar mass of Oxygen=16</p><p>Empirical formula mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><msub><mi>CH</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mo>=</mo><mn>12</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>&#215;</mo><mn>16</mn><mo>=</mo><mn>30</mn></math></p><p>Molecular mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>180</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi><mo>=</mo><mfrac><mtext>&#160;Molccular Mass&#160;</mtext><mtext>&#160;Empirical formula mass&#160;</mtext></mfrac><mo>=</mo><mfrac><mn>100</mn><mn>30</mn></mfrac><mo>=</mo><mn>6</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo></math>&nbsp;Molecular formula <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mi mathvariant=\"normal\">n</mi><mo>&#215;</mo></math> empirical formula</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math>&nbsp;Molecular formula <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>6</mn><mo>&#215;</mo><msub><mi>CH</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mo>=</mo><msub><mi mathvariant=\"normal\">C</mi><mn>6</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>12</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>6</mn></msub></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ed6f5bfc7ab78ae913", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 2, "question": {"text": "Which of the following has the largest&nbsp;number of moles?", "image": null}, "options": [{"id": "D8g5m", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>8</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math>&nbsp;of oxygen atoms", "isCorrect": false, "image": null}, {"id": "TGxlL", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>16</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of oxygen gas", "isCorrect": false, "image": null}, {"id": "7jwRE", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>14</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of nitrogen gas <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><msub><mi mathvariant=\"normal\">N</mi><mn>2</mn></msub></mfenced></math>", "isCorrect": false, "image": null}, {"id": "zCu2x", "text": "All have the same number of&nbsp;moles", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo><mo>&#160;</mo><mi mathvariant=\"normal\">n</mi><mo>=</mo><mfrac><mrow><mo>(</mo><mi>actual</mi><mo>&#160;</mo><mi>mass</mi><mo>)</mo><mo>&#160;</mo></mrow><mrow><mo>(</mo><mi>molar</mi><mo>&#160;</mo><mi>mass</mi><mo>)</mo></mrow></mfrac></math></p><p>(a) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>=</mo><mfrac><mi mathvariant=\"normal\">w</mi><mi mathvariant=\"normal\">m</mi></mfrac><mo>=</mo><mfrac><mn>8</mn><mn>16</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#160;</mo><mi>mole</mi></math>&nbsp;</p><p>(b) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>=</mo><mfrac><mn>16</mn><mn>32</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#160;</mo><mi>mole</mi></math>&nbsp;</p><p>(c) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>=</mo><mfrac><mn>14</mn><mn>28</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#160;</mo><mi>mole</mi></math></p><p>(d) Thus, all have the same number of&nbsp;moles.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7eb6f5bfc7ab78ae903", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 2, "question": {"text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>765</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of an acid gives <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>535</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CO</mi><mn>2</mn></msub></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>138</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></math>. Then, the ratio of percentage of carbon and hydrogen is&nbsp;", "image": null}, "options": [{"id": "Oz6YR", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>19</mn><mo>:</mo><mn>2</mn></math>", "isCorrect": true, "image": null}, {"id": "WOxZx", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>18</mn><mo>:</mo><mn>17</mn></math>", "isCorrect": false, "image": null}, {"id": "dZHfK", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>20</mn><mo>:</mo><mn>17</mn></math>", "isCorrect": false, "image": null}, {"id": "Ku4tf", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>:</mo><mn>7</mn></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>%</mo></math> for <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CO</mi><mn>2</mn></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo><mo>&#160;</mo><mn>0</mn><mo>.</mo><mn>765</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of acid gives <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CO</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn><mo>.</mo><mn>535</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mn>100</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of acid gives <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CO</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>535</mn><mo>&#215;</mo><mn>100</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>765</mn></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>%</mo></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CO</mi><mn>2</mn></msub><mo>=</mo><mn>70</mn><mo>.</mo><mn>00</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>%</mo></math> for carbon&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo><mo>&#160;</mo><mn>44</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CO</mi><mn>2</mn></msub></math> gives, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">C</mi><mo>=</mo><mn>12</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mn>70</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CO</mi><mn>2</mn></msub></math> gives, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">C</mi><mo>=</mo><mfrac><mrow><mn>12</mn><mo>&#215;</mo><mn>70</mn></mrow><mn>44</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>19</mn><mo>.</mo><mn>09</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mo>%</mo></math> of carbon <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>19</mn><mo>.</mo><mn>00</mn></math></p><p>Similarly,&nbsp;</p><p>(i) for hydrogen&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>%</mo></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>138</mn><mo>&#215;</mo><mn>100</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>765</mn></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>18</mn><mo>.</mo><mn>03</mn><mo>=</mo><mn>18</mn><mo>.</mo><mn>00</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>%</mo></math> of Hydrogen</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mfrac><mrow><mn>2</mn><mo>&#215;</mo><mn>18</mn></mrow><mn>18</mn></mfrac><mo>=</mo><mn>2</mn><mo>.</mo><mn>00</mn></math></p><p>Hence ratio of carbon and hydrogen is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>19</mn><mo>:</mo><mn>2</mn></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ea6f5bfc7ab78ae8f7", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 2, "question": {"text": "On electrolysis of water, a total of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&#160;</mo><mi>mole</mi></math> of gases is evolved. The amount of water decomposed is", "image": null}, "options": [{"id": "6q6H4", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&#160;</mo><mi>mol</mi></math>", "isCorrect": false, "image": null}, {"id": "s8W5a", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>&#160;</mo><mi>mol</mi></math>", "isCorrect": false, "image": null}, {"id": "7gNO0", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>&#160;</mo><mi>mol</mi></math>", "isCorrect": false, "image": null}, {"id": "omXQd", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>&#160;</mo><mi>mol</mi></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo></math> Only one mole of total gases are evolved and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></math> decomposes as</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mover><mo>&#8594;</mo><mi>decomposition</mi></mover><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub></math></p><p>i.e. total moles <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></math> moles by one mole of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></math></p><p>Now,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo><mo>&#160;</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></math> moles of gases are evolved by <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>1</mn><mo>&#160;</mo><mi>mole</mi></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mn>1</mn><mo>&#160;</mo><mi>mole</mi></math> of gases are evolved by <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mn>1</mn><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></math></p><p>Hence, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&#160;</mo><mi>mole</mi></math> of total gases are evolved by <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>&#160;</mo><mi>mole</mi></math>&nbsp;of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></math>.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e79f6f5bfc7ab78ae67c", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 2, "question": {"text": "Number of atoms of He in 100 amu of He(atomic wt. of He is 4) are:", "image": null}, "options": [{"id": "mPvQN", "text": "25", "isCorrect": true, "image": null}, {"id": "b7huY", "text": "100", "isCorrect": false, "image": null}, {"id": "K38wE", "text": "50", "isCorrect": false, "image": null}, {"id": "idpJU", "text": "$100 \\times 6 \\times 10^{-23}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\begin{array}{l}\r\n100 \\text { amu of He }=\\frac{100}{4} \\text { atoms of He } \\\\\r\n=25 \\text { atoms. }\r\n\\end{array}$\r\n$[1$ a.m.u. $=$ mass of one proton (approx.)]", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7916f5bfc7ab78ae5ff", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "The product of atomic weight and specific heat of any element is a constant, approximately $6.4 .$ This is known as:", "image": null}, "options": [{"id": "v0Oa8", "text": "Dalton's law", "image": null, "isCorrect": false}, {"id": "ZrcVj", "text": "Avogadro's law", "image": null, "isCorrect": false}, {"id": "c1ZL5", "text": "Newton's law", "image": null, "isCorrect": false}, {"id": "onqXF", "text": "Dulong Pettit law", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "According to Dulong and Pettit's law\nAtomic weight $\\times$ Specific heat $=6.4$ (approx) This law is applicable only to solid elements but it fails to explain very high specific heat of diamond.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e85d6f5bfc7ab78aed51", "title": "Quantitative measures in chemical equations", "totalQuestions": 5, "questions": [{"_id": "64c0e8146f5bfc7ab78aea64", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 2, "question": {"text": "If 0.2 gram of an organic compound containing carbon, hydrogen and oxygen on combustion, yielded 0.147 gram carbon dioxide and 0.12 gram water. What will be the content of oxygen in the substance?", "image": null}, "options": [{"id": "0vbKF", "text": "$73.29 \\%$", "isCorrect": true, "image": null}, {"id": "yKgNW", "text": "$78.45 \\%$", "isCorrect": false, "image": null}, {"id": "XGWYW", "text": "$83.23 \\%$", "isCorrect": false, "image": null}, {"id": "O6Ge5", "text": "$89.50 \\%$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\%$ of $\\mathrm{C}=\\frac{12}{44} \\times \\frac{0.147}{0.2} \\times 100=20.045 \\%$\r\n\r\n$\\%$ of $\\mathrm{H}=\\frac{2}{18} \\times \\frac{0.12}{0.2} \\times 100=6.666 \\%$\r\n\r\n$\\%$ of $\\mathrm{O}=100-(20.045+6.666)=73.29 \\%$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7df6f5bfc7ab78ae897", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 1, "question": {"text": "A compound of Xe and $\\mathrm{F}$ is found to have $53.5 \\%$ of Xe. What is oxidation number of Xe in this compound?", "image": null}, "options": [{"id": "YaZwM", "text": "-4", "isCorrect": false, "image": null}, {"id": "R74kg", "text": "0", "isCorrect": false, "image": null}, {"id": "uaIYD", "text": "4", "isCorrect": false, "image": null}, {"id": "A91va", "text": "6", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{Xe}=53.5 \\% \\therefore \\mathrm{F}=46.5 \\%$\r\n\r\nRelative number of atoms Xe\r\n\r\n$$\r\n\r\n=\\frac{53.5}{131.2}=0.4 \\text { and } \\mathrm{F}=\\frac{46.5}{19}=2.4\r\n\r\n$$\r\n\r\nSimple ratio $\\mathrm{Xe}=1$ and $\\mathrm{F}=6 ;$ Molecular formula is $\\mathrm{XeF}_{6}$\r\n\r\nO. $\\mathrm{N}$.of $\\mathrm{Xe}$ is +6", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7dc6f5bfc7ab78ae87f", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 3, "question": {"text": "Formation of polyethylene from calcium carbide takes place as follows\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\mathrm{CaC}_{2}+2 \\mathrm{H}_{2} \\mathrm{O} \\longrightarrow \\mathrm{Ca}(\\mathrm{OH})_{2}+\\mathrm{C}_{2} \\mathrm{H}_{2} \\\\\r\n\r\n\\mathrm{C}_{2} \\mathrm{H}_{2}+\\mathrm{H}_{2} \\longrightarrow \\mathrm{C}_{2} \\mathrm{H}_{4} \\\\\r\n\r\n\\mathrm{nC}_{2} \\mathrm{H}_{4} \\longrightarrow\\left(-\\mathrm{CH}_{2}-\\mathrm{CH}_{2}-\\right)_{\\mathrm{n}}\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nThe amount of polyethylene obtained from $64.1 \\mathrm{~kg}$ of $\\mathrm{CaC}_{2}$ is", "image": null}, "options": [{"id": "ZFwvP", "text": "$7 \\mathrm{~kg}$", "isCorrect": false, "image": null}, {"id": "fOOat", "text": "$14 \\mathrm{~kg}$", "isCorrect": false, "image": null}, {"id": "65v4a", "text": "$21 \\mathrm{~kg}$", "isCorrect": false, "image": null}, {"id": "VzlVx", "text": "$28 \\mathrm{~kg}$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "The concerned chemical reactions are\r\n\r\n(i) $\\underset{64 \\mathrm{~kg}}{\\mathrm{CaC}_{2}+2 \\mathrm{H}_{2} \\mathrm{O} \\rightarrow \\mathrm{Ca}(\\mathrm{OH})_{2}}+\\underset{\\text { Ethyne, } 26 \\mathrm{~kg}}{\\mathrm{C}_{2} \\mathrm{H}_{2}}$\r\n\r\n(ii) $\\mathrm{C}_{2} \\mathrm{H}_{2}+\\mathrm{H}_{2} \\rightarrow \\underset{\\text { Ethylene }, 28 \\mathrm{~kg}}{\\mathrm{C}_{2} \\mathrm{H}_{4}}$\r\n\r\n$$\r\n\r\n\\text { (iii) } \\mathrm{nC}_{2} \\mathrm{H}_{2} \\rightarrow\\left[-\\mathrm{CH}_{2}-\\mathrm{CH}_{2}-\\right]_{\\mathrm{n}}\r\n\r\n$$\r\n\r\n$\\begin{array}{ll}\\mathrm{n} \\times 28 \\mathrm{~kg} & \\mathrm{n} \\times 28 \\mathrm{~kg} \\text { polythene } \\\\ \\text { or } 28 \\mathrm{~kg} & \\text { or } 28 \\mathrm{~kg}\\end{array}$\r\n\r\nThus $64 \\mathrm{~kg}$ of $\\mathrm{CaC}_{2}$ gives $26 \\mathrm{~kg}$ of acetylene which in turn gives $28 \\mathrm{~kg}$ of ethylene whose $28 \\mathrm{~kg}$ gives $28 \\mathrm{~kg}$ of the polymer, polythene.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7c26f5bfc7ab78ae79d", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 2, "question": {"text": "$3.92 \\mathrm{~g}$ of ferrous ammonium sulphate react completely with $50 \\mathrm{ml} \\frac{\\mathrm{N}}{10} \\mathrm{KMnO}_{4}$ solution. The percentage purity of the sample is", "image": null}, "options": [{"id": "c5pHL", "text": "50", "isCorrect": true, "image": null}, {"id": "GkH9q", "text": "78.4", "isCorrect": false, "image": null}, {"id": "y1Ph9", "text": "80", "isCorrect": false, "image": null}, {"id": "arIL5", "text": "39.2", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Eq of $\\mathrm{KMnO}_{4}$ used $=\\frac{50 \\times 1}{1000 \\times 10}=0.005$\r\n\r\n$\\therefore$ Eq of FAS reacted $=0.005$\r\n\r\n$\\therefore$ weight of FAS needed\r\n\r\n$$\r\n\r\n=0.005 \\times 392=1.96 \\mathrm{~g}\r\n\r\n$$\r\n\r\nThus percentage purity of FAS is $50 \\%$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7836f5bfc7ab78ae582", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "The vapour density of ozone is", "image": null}, "options": [{"id": "lzmt5", "text": "16", "image": null, "isCorrect": false}, {"id": "apWn5", "text": "32", "image": null, "isCorrect": false}, {"id": "dHGz8", "text": "24", "image": null, "isCorrect": true}, {"id": "7YUuN", "text": "48", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "We know that, Molecular weight of compound or molecules $=2 \\times \\mathrm{V}$. $\\mathrm{D}$\nVapour density (V. D.) of ozone molecules\n$=\\frac{\\mathrm{M} . \\text { wt. of } \\mathrm{O}_{3}}{2}=\\frac{48}{2}=24$\nHence, $\\mathrm{V} . \\mathrm{D}$. of $\\mathrm{O}_{3}$ is 24", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "64c0e85d6f5bfc7ab78aed53", "title": "Concentration terms", "totalQuestions": 8, "questions": [{"_id": "67726cfcc49e8ef28ee2b359", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "In which mode of expression, the concentration of a solution remains independent of temperature?", "image": null}, "options": [{"id": "UoQZd", "text": "Molarity", "image": null, "isCorrect": false}, {"id": "j7DAJ", "text": "Normality", "image": null, "isCorrect": false}, {"id": "TZntt", "text": "Fermality", "image": null, "isCorrect": false}, {"id": "thdfT", "text": "Molality", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Molality-Moles of solute/mass of solvent in kg\n$\\because \\quad$ Molality does not involve volume term.\n$\\therefore \\quad$ It is independent of temperature.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8166f5bfc7ab78aea76", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 2, "question": {"text": "The amount of $\\mathrm{H}_{2} \\mathrm{O}_{2}$ present in 1 litre of $1.5 \\mathrm{~N} \\mathrm{H}_{2} \\mathrm{O}_{2}$ solution, is:", "image": null}, "options": [{"id": "rOw51", "text": "$25.5 \\mathrm{~g}$", "isCorrect": true, "image": null}, {"id": "E7IzF", "text": "$3.0 \\mathrm{~g}$", "isCorrect": false, "image": null}, {"id": "L9s4x", "text": "$8.0 \\mathrm{~g}$", "isCorrect": false, "image": null}, {"id": "xj3hq", "text": "$2.5 \\mathrm{~g}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Molecular weight of $\\mathrm{H}_{2} \\mathrm{O}_{2}=34$ Equivalent weight of $\\mathrm{H}_{2} \\mathrm{O}_{2}=17$\r\n\r\n$\\therefore 1 \\mathrm{~L}$ of $1 \\mathrm{~N} \\mathrm{H}_{2} \\mathrm{O}_{2} \\mathrm{has}=17 \\mathrm{~g}$ of $\\mathrm{H}_{2} \\mathrm{O}$\r\n\r\n$\\therefore 1$ Lof $1.5 \\mathrm{NH}_{2} \\mathrm{O}_{2}$ has $=1.5 \\times 17=25.5 \\mathrm{~g} \\mathrm{of} \\mathrm{H}_{2} \\mathrm{O}_{2}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8146f5bfc7ab78aea6c", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 2, "question": {"text": "An ideal gaseous mixture of ethane $\\left(\\mathrm{C}_{2} \\mathrm{H}_{6}\\right)$ and ethene $\\left(\\mathrm{C}_{2} \\mathrm{H}_{4}\\right)$ occupies 28 litre at 1 atm and $273 \\mathrm{~K}$. The mixture reacts completely with $128 \\mathrm{~g}$ $\\mathrm{O}_{2}$ to produce $\\mathrm{CO}_{2}$ and $\\mathrm{H}_{2} \\mathrm{O} .$ Mole fraction at $\\mathrm{C}_{2} \\mathrm{H}_{6}$ in the mixture is:", "image": null}, "options": [{"id": "UfpFR", "text": "0.6", "isCorrect": false, "image": null}, {"id": "PR1nN", "text": "0.4", "isCorrect": true, "image": null}, {"id": "7cj9y", "text": "0.5", "isCorrect": false, "image": null}, {"id": "YkjXq", "text": "0.8", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{C}_{2} \\mathrm{H}_{6}+3.5 \\mathrm{O}_{2} \\longrightarrow 2 \\mathrm{CO}_{2}+3 \\mathrm{H}_{2} \\mathrm{O} ;$\r\n\r\n$\\mathrm{C}_{2} \\mathrm{H}_{4}+3 \\mathrm{O}_{2} \\longrightarrow 2 \\mathrm{CO}_{2}+2 \\mathrm{H}_{2} \\mathrm{O}$\r\n\r\nLet volume of ethane is $\\mathrm{x}$ litre, $22.4 \\times 4=3.5 \\mathrm{x}+3(28-\\mathrm{x})$\r\n\r\n$\\Rightarrow \\mathrm{x}=11.2$ litre\r\n\r\nat constant $\\mathrm{T}$ and $\\mathrm{P}, \\mathrm{V} \\propto \\mathrm{n} ;$\r\n\r\n$\\Rightarrow$ Mole fraction of $\\mathrm{C}_{2} \\mathrm{H}_{6}$ in mixture $=\\frac{11.2}{28}=0.4$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7dc6f5bfc7ab78ae877", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 2, "question": {"text": "$1.25 \\mathrm{~g}$ of a sample of $\\mathrm{Na}_{2} \\mathrm{CO}_{3}$ and $\\mathrm{Na}_{2} \\mathrm{SO}_{4}$ is\r\n\r\ndissolved in $250 \\mathrm{ml}$ solution. $25 \\mathrm{ml}$ of this solution neutralises $20 \\mathrm{ml}$ of $0.1 \\mathrm{~N} \\mathrm{H}_{2} \\mathrm{SO}_{4}$. The $\\%$ of $\\mathrm{Na}_{2} \\mathrm{CO}_{3}$\r\n\r\nin this sample is", "image": null}, "options": [{"id": "8Jjul", "text": "$84.8 \\%$", "isCorrect": true, "image": null}, {"id": "gzB0I", "text": "$8.48 \\%$", "isCorrect": false, "image": null}, {"id": "hl9GO", "text": "$15.2 \\%$", "isCorrect": false, "image": null}, {"id": "e6Lg4", "text": "$42.4 \\%$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Let the amount of $\\mathrm{Na}_{2} \\mathrm{CO}_{3}$ present in the mixture be $\\mathrm{xg} . \\mathrm{Na}_{2} \\mathrm{SO}_{4}$ will not react with $\\mathrm{H}_{2} \\mathrm{SO}_{4} .$ Then\r\n\r\n$\\frac{x}{53}=\\frac{20 \\times 0.1 \\times 10}{1000} \\therefore x=1.06 g$\r\n\r\n$\\therefore$ Percentage of $\\mathrm{Na}_{2} \\mathrm{CO}_{3}=$\r\n\r\n$\\frac{1.06 \\times 100}{1.25}=84.8 \\%$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7db6f5bfc7ab78ae876", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 1, "question": {"text": "The normality of $26 \\%$ (wt/vol) solution of ammonia (density $=0.855$ ) is approximately:", "image": null}, "options": [{"id": "myzHE", "text": "1.5", "isCorrect": false, "image": null}, {"id": "oCHOy", "text": "0.4", "isCorrect": false, "image": null}, {"id": "60N2L", "text": "15.3", "isCorrect": true, "image": null}, {"id": "Tn3lq", "text": "4", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Wt. of $\\mathrm{NH}_{3}=26 \\mathrm{~g}=\\frac{26}{17} \\mathrm{~g} \\mathrm{eq}=1.53 \\mathrm{~g} \\mathrm{eq}$\r\n\r\nVol. of soln. $=100 \\mathrm{mc}=0.1 \\mathrm{~L}$\r\n\r\n$\\therefore$ Normality $=\\frac{1.53}{0.1}=15.3 \\mathrm{~N}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7b26f5bfc7ab78ae70e", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 3, "question": {"text": "Equal weights of $\\mathrm{NaCl}$ and $\\mathrm{KCl}$ are dissolved separately in equal volumes of solutions. Molarity of the two solutions will be :", "image": null}, "options": [{"id": "Wj1Rh", "text": "Equal", "isCorrect": false, "image": null}, {"id": "WY9LW", "text": "That of $\\mathrm{NaCl}$ will be less than that of $\\mathrm{KCl}$", "isCorrect": false, "image": null}, {"id": "TghcH", "text": "That of $\\mathrm{NaCl}$ will be more than that of $\\mathrm{KCl}$ solution", "isCorrect": true, "image": null}, {"id": "g9eWb", "text": "That of $\\mathrm{NaCl}$ will be about half of that of $\\mathrm{KCl}$ solution", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "When equal weights of different solutes are present in equal volumes of solution the molarity is inversely related to molecular mass of the solute. Mol. mass of $\\mathrm{NaCl}$ is less than $\\mathrm{KCl}$. Hence, molarity of $\\mathrm{NaCl}$ solution will be more.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7af6f5bfc7ab78ae6f9", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 2, "question": {"text": "How many grams of concentrated nitric acid solution should be used to prepare $250 \\mathrm{~mL}$ of $2.0 \\mathrm{MHNO}_{3} ?$ The concentrated acid is $70 \\% \\mathrm{HNO}_{3}$", "image": null}, "options": [{"id": "iYAiD", "text": "$90.0 \\mathrm{~g}$ conc. $\\mathrm{HNO}_{3}$", "isCorrect": false, "image": null}, {"id": "9MEd2", "text": "$70.0 \\mathrm{~g}$ conc. $\\mathrm{HNO}_{3}$", "isCorrect": false, "image": null}, {"id": "uwYgH", "text": "$54.0 \\mathrm{~g}$ conc. $\\mathrm{HNO}_{3}$", "isCorrect": false, "image": null}, {"id": "JYqf4", "text": "$45.0 \\mathrm{~g}$ conc. $\\mathrm{HNO}_{3}$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "$\\quad$ Molarity $(\\mathrm{M})=\\frac{\\mathrm{wt} \\times 1000}{\\text { mol. wt. } \\times \\mathrm{vol}(\\mathrm{mL})}$\r\n\r\n$2=\\frac{\\mathrm{wt} .}{63} \\times \\frac{1000}{250}$\r\n\r\n$\\mathrm{wt}=\\frac{63}{2} \\mathrm{~g}$\r\n\r\nwt. of $70 \\%$ acid $=\\frac{100}{70} \\times 31.5=45 \\mathrm{~g}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7a46f5bfc7ab78ae6a2", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 3, "question": {"text": "In the reaction of $\\mathrm{KMnO}_{4}$ with an oxalate in acidic medium, $\\mathrm{MnO}_{4}^{-}$ is reduced to $\\mathrm{Mn}^{2+}$ and $\\mathrm{C}_{2} \\mathrm{O}_{4}^{2-}$ is oxidised to $\\mathrm{CO}_{2}$. Hence, $50 \\mathrm{~mL}$ of 0.02 $\\mathrm{M} \\mathrm{KMnO}_{4}$ is equivalent to", "image": null}, "options": [{"id": "CFgs2", "text": "$100 \\mathrm{~mL}$ of $0.05 \\mathrm{M} \\mathrm{H}_{2} \\mathrm{C}_{2} \\mathrm{O}_{4}$", "isCorrect": false, "image": null}, {"id": "JNV2Z", "text": "$50 \\mathrm{~mL}$ of $0.05 \\mathrm{M} \\mathrm{H}_{2} \\mathrm{C}_{2} \\mathrm{O}_{4}$", "isCorrect": true, "image": null}, {"id": "YtFOf", "text": "$25 \\mathrm{~mL}$ of $0.2 \\mathrm{M} \\mathrm{H}_{2} \\mathrm{C}_{2} \\mathrm{O}_{4}$", "isCorrect": false, "image": null}, {"id": "4d7R5", "text": "$50 \\mathrm{~mL}$ of $0.10 \\mathrm{M} \\mathrm{H}_{2} \\mathrm{C}_{2} \\mathrm{O}_{4}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "eg. of \\(\\mathrm{KMnO}_{4}\\)\r\n\\(\\begin{aligned}\r\n&=5 \\times 0.02 \\times 50 \\\\\r\n&=250 \\times 0.02 \\\\\r\n&=509 .\r\n\\end{aligned}\\)\r\n<img src=\"images\\hfhyry784783647y2.png\">\r\neq. of \\(\\mathrm{KAnO}_{4} \\equiv \\mathrm{eq}_{1}\\) of \\(\\mathrm{C}_{2} \\mathrm{O}_{4}{ }_{2}-\\)\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/ewehr3yi48ejw37.png\">\r\n\\(\\begin{aligned} 5=\\operatorname{option} 2 &=50 \\times 0.05 \\times 2 \\\\ &=589 . \\end{aligned}\\)", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 5, "topicId": "64c0e85d6f5bfc7ab78aed50", "title": "Significant Figures", "totalQuestions": 1, "questions": [{"_id": "64c0e7756f5bfc7ab78ae503", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "Given the numbers $: 161 \\mathrm{~cm}, 0.161 \\mathrm{~cm}, 0.0161 \\mathrm{~cm}$. The number of significant figures for the three numbers are", "image": null}, "options": [{"id": "U5UIe", "text": "3,4 and 5 respectively", "image": null, "isCorrect": false}, {"id": "YbR7V", "text": "3,3 and 4 respectively", "image": null, "isCorrect": false}, {"id": "4Mrhn", "text": "3,3 and 3 respectively", "image": null, "isCorrect": true}, {"id": "OpAMo", "text": "3,4 and 4 respectively", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Each has three significant figures. When zero is used to locate the decimal point, it is not considered as significant figure.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

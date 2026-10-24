@@ -1,0 +1,3406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JEE & Entrance Exam Paper Generator &bull; PCM Question Bank</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- KaTeX for formula rendering -->
+  <link rel="stylesheet" href="/static/katex.min.css">
+  <script src="/static/katex.min.js"></script>
+  <script src="/static/auto-render.min.js"></script>
+
+  <!-- MathJax as fallback -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0b1120;
+      --surface: #131d31;
+      --surface-card: #1e293b;
+      --border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-hover: #0284c7;
+      --accent: #fbbf24;
+      --success: #34d399;
+      --danger: #f87171;
+      --warning: #f59e0b;
+      --warning-bg: rgba(245, 158, 11, 0.12);
+      --warning-border: rgba(245, 158, 11, 0.4);
+    }
+    [data-theme="light"] {
+      --bg: #f1f5f9;
+      --surface: #ffffff;
+      --surface-card: #f8fafc;
+      --border: #cbd5e1;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-hover: #0369a1;
+      --accent: #d97706;
+      --success: #059669;
+      --danger: #dc2626;
+      --warning: #d97706;
+      --warning-bg: #fef3c7;
+      --warning-border: #fcd34d;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header Nav */
+    header.app-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-icon {
+      font-size: 26px;
+    }
+    .brand-title {
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      color: var(--primary);
+    }
+    .brand-subtitle {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.15s ease;
+      background: var(--surface-card);
+      color: var(--text);
+    }
+    .btn:hover {
+      border-color: var(--primary);
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #0f172a;
+    }
+    .btn-primary:hover {
+      background: var(--primary-hover);
+      color: #fff;
+    }
+    .btn-success {
+      background: var(--success);
+      color: #064e3b;
+    }
+    .btn-success:hover {
+      filter: brightness(1.1);
+    }
+    .btn-danger {
+      background: rgba(239, 68, 68, 0.15);
+      color: var(--danger);
+      border-color: rgba(239, 68, 68, 0.3);
+    }
+    .btn-danger:hover {
+      background: var(--danger);
+      color: #fff;
+    }
+    .btn-warning {
+      background: var(--warning-bg);
+      color: var(--warning);
+      border-color: var(--warning-border);
+    }
+    .btn-sm {
+      padding: 4px 8px;
+      font-size: 11px;
+    }
+
+    /* Layout */
+    .app-body {
+      display: flex;
+      flex: 1;
+      height: calc(100vh - 65px);
+      overflow: hidden;
+    }
+
+    /* Sidebar Builder Controls */
+    aside.sidebar {
+      width: 440px;
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      overflow-y: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .section-card {
+      background: var(--surface-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--primary);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .form-group {
+      margin-bottom: 12px;
+    }
+    .form-group:last-child {
+      margin-bottom: 0;
+    }
+    label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 5px;
+    }
+    input[type="text"], input[type="number"], input[type="date"], select, textarea {
+      width: 100%;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px 10px;
+      border-radius: 6px;
+      font-size: 13px;
+      outline: none;
+      transition: border 0.15s;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--primary);
+    }
+
+    .row-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    /* Checkbox pills */
+    .checkbox-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .pill-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 5px 9px;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .pill-label:has(input:checked) {
+      border-color: var(--primary);
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    /* Topics Container */
+    .topics-box {
+      max-height: 150px;
+      overflow-y: auto;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .topic-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      padding: 4px 6px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .topic-item:hover {
+      background: var(--surface-card);
+    }
+    .topic-item label {
+      cursor: pointer;
+      margin: 0;
+      color: var(--text);
+      font-size: 12px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .badge {
+      font-size: 11px;
+      background: rgba(251, 191, 36, 0.15);
+      color: var(--accent);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+    .badge-warning {
+      background: var(--warning-bg);
+      color: var(--warning);
+      border: 1px solid var(--warning-border);
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 11px;
+    }
+
+    /* Action bar in sidebar */
+    .action-box {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    /* Main Workspace */
+    main.workspace {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: var(--bg);
+    }
+
+    /* Workspace Tabs */
+    .workspace-tabs {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+    .tab-buttons {
+      display: flex;
+      gap: 6px;
+    }
+    .tab-btn {
+      padding: 12px 18px;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.15s;
+    }
+    .tab-btn:hover {
+      color: var(--text);
+    }
+    .tab-btn.active {
+      color: var(--primary);
+      border-bottom-color: var(--primary);
+    }
+    .basket-counter {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    /* Tab Content Area */
+    .tab-content {
+      flex: 1;
+      overflow-y: auto;
+      padding: 24px;
+    }
+
+    /* Basket View / Questions list */
+    .basket-list {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .basket-empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-muted);
+    }
+    .basket-empty-state .icon {
+      font-size: 50px;
+      margin-bottom: 16px;
+    }
+    .basket-empty-state h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    /* Warning Banner */
+    .repeat-warning-banner {
+      background: var(--warning-bg);
+      border: 1px solid var(--warning-border);
+      color: var(--warning);
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    /* Question Card in Basket & Browser */
+    .q-card {
+      background: var(--surface-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+      position: relative;
+      transition: border 0.15s;
+    }
+    .q-card:hover {
+      border-color: var(--primary);
+    }
+    .q-card.is-repeat {
+      border: 2px solid var(--warning);
+      background: var(--warning-bg);
+    }
+    .q-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: var(--text-muted);
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .q-tags {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .q-num {
+      font-weight: 800;
+      color: var(--primary);
+      background: rgba(56, 189, 248, 0.15);
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+    .q-type-badge {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+    .q-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .q-text {
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+    .options-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .opt-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .opt-box.correct {
+      border-color: var(--success);
+      background: rgba(52, 211, 153, 0.1);
+    }
+    .opt-lbl {
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .ans-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(52, 211, 153, 0.12);
+      border: 1px solid rgba(52, 211, 153, 0.35);
+      color: var(--success);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-top: 8px;
+    }
+    [data-theme="light"] .ans-badge {
+      background: #ecfdf5;
+      border-color: #a7f3d0;
+      color: #065f46;
+    }
+    .examside-unit-btn.active {
+      background: #6366f1 !important;
+      color: #ffffff !important;
+      font-weight: 700;
+    }
+    math {
+      font-family: 'KaTeX_Main', 'Latin Modern Math', 'STIX Two Math', 'Cambria Math', serif;
+      font-size: 1.05em;
+    }
+    math mo {
+      padding: 0 0.12em;
+    }
+
+    /* Exam Paper Printable Sheets */
+    .paper-sheet {
+      background: #ffffff;
+      color: #111827;
+      max-width: 850px;
+      margin: 0 auto 30px auto;
+      padding: 40px 50px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      border-radius: 4px;
+      font-family: "Times New Roman", Times, Georgia, serif;
+    }
+    .paper-header {
+      text-align: center;
+      border-bottom: 2px solid #111827;
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+    }
+    .paper-institute {
+      font-size: 22px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #000;
+      margin-bottom: 6px;
+    }
+    .paper-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 12px;
+    }
+    .paper-info-bar {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13.5px;
+      font-weight: 600;
+      border-top: 1px solid #d1d5db;
+      border-bottom: 1px solid #d1d5db;
+      padding: 6px 10px;
+      margin-bottom: 10px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .student-info-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      font-style: italic;
+      padding: 4px 6px;
+      margin-bottom: 10px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .paper-instructions {
+      font-size: 13px;
+      line-height: 1.5;
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      padding: 10px 14px;
+      border-radius: 4px;
+      margin-bottom: 24px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .section-banner {
+      font-size: 14.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: #f3f4f6;
+      border-left: 4px solid #1f2937;
+      padding: 6px 12px;
+      margin: 24px 0 16px 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .paper-q {
+      margin-bottom: 20px;
+      page-break-inside: avoid;
+    }
+    .paper-q-header {
+      font-weight: 700;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+    .paper-pyq-tag {
+      font-size: 11px;
+      font-weight: 600;
+      color: #0369a1;
+      background: transparent;
+      border: none;
+      padding: 0 4px;
+      margin-left: 6px;
+      vertical-align: baseline;
+      font-style: italic;
+      display: inline-block;
+      line-height: 1.4;
+    }
+    .q-pyq-pill {
+      font-size: 11px;
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--primary);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      padding: 2px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.15s ease;
+      font-weight: 600;
+    }
+    .q-pyq-pill:hover {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+    }
+    .modal-pyq-pill {
+      font-size: 11px;
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--primary);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    .paper-q-text {
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .paper-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 20px;
+      margin-left: 20px;
+    }
+    .paper-opt {
+      font-size: 14px;
+      display: flex;
+      gap: 6px;
+    }
+    .paper-num-box {
+      margin: 10px 0 10px 20px;
+      font-size: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    .num-answer-space {
+      display: inline-block;
+      width: 140px;
+      border-bottom: 1px solid #000;
+      margin-left: 8px;
+    }
+
+    /* Solutions View */
+    .solution-key-wrapper {
+      width: 100%;
+      margin-bottom: 24px;
+      overflow-x: auto;
+    }
+    .solution-key-table {
+      width: 100%;
+      table-layout: fixed;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+      font-size: 13px;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      page-break-inside: avoid;
+    }
+    .solution-key-table th, .solution-key-table td {
+      border: 1px solid #d1d5db;
+      padding: 6px 3px;
+      text-align: center;
+      width: 10%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
+    .solution-key-table th {
+      background: #f1f5f9;
+      color: #1e293b;
+      font-weight: 700;
+      font-size: 12px;
+    }
+    .solution-key-table td {
+      background: #ffffff;
+      color: #0f172a;
+      font-size: 12.5px;
+    }
+    .solution-key-table th.empty-cell, .solution-key-table td.empty-cell {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+    }
+    .sol-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 16px;
+      margin-bottom: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      word-break: break-word;
+      overflow-wrap: break-word;
+      page-break-inside: avoid;
+    }
+    .sol-card-header {
+      font-weight: 700;
+      font-size: 14px;
+      color: #0284c7;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .sol-card-ans {
+      font-weight: 700;
+      color: #16a34a;
+      background: #dcfce7;
+      padding: 4px 10px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+    .sol-card-body {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #334155;
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+    .paper-sol-item {
+      margin-bottom: 24px;
+      page-break-inside: avoid;
+    }
+    .sol-answer-box {
+      margin: 10px 0 8px 0;
+      padding: 8px 12px;
+      background: #ecfdf5;
+      border-left: 4px solid #10b981;
+      border-radius: 4px;
+      color: #065f46;
+      font-size: 13.5px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .sol-steps-box {
+      margin: 8px 0 16px 0;
+      padding: 12px 16px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      font-size: 13.5px;
+      line-height: 1.65;
+      color: #334155;
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+    .sol-steps-title {
+      font-weight: 700;
+      color: #0369a1;
+      margin-bottom: 6px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+    .sol-steps-body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .paper-opt-correct {
+      background: #dcfce7 !important;
+      border: 1px solid #86efac !important;
+      border-radius: 4px;
+      padding: 2px 6px;
+      color: #14532d !important;
+      font-weight: 600;
+    }
+    .correct-badge {
+      display: inline-block;
+      background: #16a34a;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 1px 6px;
+      border-radius: 3px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .paper-q-sub-chap {
+      font-size: 11px;
+      font-weight: 500;
+      color: #64748b;
+      margin-left: auto;
+    }
+
+    /* Modal Question Browser */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 200;
+      padding: 20px;
+    }
+    .modal-overlay.open {
+      display: flex;
+    }
+    .modal-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      width: 950px;
+      max-width: 96vw;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+    .modal-header {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .modal-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .modal-footer {
+      padding: 14px 20px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--surface-card);
+    }
+
+    /* Mobile & Tablet Responsive Layout */
+    .mobile-section-nav {
+      display: none;
+    }
+    @media (max-width: 900px) {
+      .mobile-section-nav {
+        display: flex;
+        background: var(--surface);
+        border-bottom: 2px solid var(--border);
+        position: sticky;
+        top: 0;
+        z-index: 95;
+        padding: 6px 10px;
+        gap: 8px;
+      }
+      .mobile-nav-btn {
+        flex: 1;
+        padding: 9px 8px;
+        border-radius: 8px;
+        font-size: 12.5px;
+        font-weight: 700;
+        border: 1px solid var(--border);
+        background: var(--bg);
+        color: var(--text-muted);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        transition: all 0.15s ease;
+      }
+      .mobile-nav-btn.active {
+        background: var(--primary);
+        color: #0f172a;
+        border-color: var(--primary);
+      }
+      .app-header {
+        flex-direction: column;
+        height: auto;
+        padding: 12px;
+        gap: 10px;
+        align-items: stretch;
+      }
+      .brand {
+        justify-content: center;
+        text-align: center;
+      }
+      .header-actions {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        width: 100%;
+      }
+      .header-actions .btn {
+        font-size: 11px;
+        padding: 5px 8px;
+      }
+      .app-body {
+        flex-direction: column;
+        height: auto;
+        min-height: calc(100vh - 120px);
+        overflow: visible;
+      }
+      aside.sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        overflow-y: visible;
+        padding: 14px;
+      }
+      main.workspace {
+        width: 100%;
+        display: none; /* Controlled by mobile switcher */
+        overflow-y: visible;
+        padding: 12px;
+      }
+      .workspace-tabs {
+        flex-direction: column;
+        gap: 8px;
+        align-items: stretch;
+      }
+      .tab-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .tab-btn {
+        flex: 1;
+        min-width: 80px;
+        text-align: center;
+        font-size: 12px;
+        padding: 7px 8px;
+      }
+      .basket-counter {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 11px;
+        gap: 4px;
+      }
+      .paper-sheet {
+        padding: 16px 10px;
+        margin-bottom: 16px;
+      }
+      .paper-options {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        gap: 8px;
+      }
+      .paper-opt {
+        font-size: 13px;
+      }
+      .row-2 {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+      .options-grid {
+        grid-template-columns: 1fr;
+      }
+      .modal-box {
+        width: 96vw !important;
+        max-height: 90vh !important;
+        margin: 10px;
+      }
+    }
+
+    /* On-Screen Table Layout */
+    .print-layout-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    .print-only-thead, .print-only-tfoot {
+      display: none;
+    }
+    .print-content-td {
+      border: none;
+      padding: 0;
+    }
+
+    @page {
+      size: A4 portrait;
+      margin: 0 !important;
+    }
+
+    /* Print Styles - Strips out browser date, timestamp, localhost URL, and title headers */
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 0 !important;
+      }
+      header.app-header, aside.sidebar, .workspace-tabs, .btn, .modal-overlay, .repeat-warning-banner, .solutions-action-bar {
+        display: none !important;
+      }
+      html, body, .app-body, main.workspace, .tab-content {
+        background: #fff !important;
+        color: #000 !important;
+        overflow: visible !important;
+        height: auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .paper-sheet {
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+      .print-only-thead {
+        display: table-header-group !important;
+      }
+      .print-only-tfoot {
+        display: table-footer-group !important;
+      }
+      .print-spacer-td {
+        height: 16mm !important;
+        border: none !important;
+        padding: 0 !important;
+      }
+      .print-only-tfoot .print-spacer-td {
+        height: 12mm !important;
+      }
+      .print-content-td {
+        border: none !important;
+        padding: 0 14mm !important;
+      }
+      .paper-header {
+        padding-top: 2mm !important;
+      }
+      .paper-q {
+        page-break-inside: avoid !important;
+      }
+      .solution-key-wrapper {
+        overflow: visible !important;
+      }
+      .solution-key-table {
+        page-break-inside: avoid !important;
+        width: 100% !important;
+      }
+      .sol-card {
+        page-break-inside: avoid !important;
+      }
+      .paper-sol-item {
+        page-break-inside: avoid !important;
+      }
+      .sol-answer-box {
+        background: #ecfdf5 !important;
+        border-left: 4px solid #10b981 !important;
+        color: #065f46 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .sol-steps-box {
+        background: #f8fafc !important;
+        border: 1px solid #e2e8f0 !important;
+        color: #334155 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .paper-opt-correct {
+        background: #dcfce7 !important;
+        border: 1px solid #86efac !important;
+        color: #14532d !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .correct-badge {
+        background: #16a34a !important;
+        color: #fff !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .paper-pyq-tag {
+        color: #4b5563 !important;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        font-size: 11px !important;
+        font-weight: 600 !important;
+        font-style: italic !important;
+        padding: 0 4px !important;
+        margin-left: 6px !important;
+      }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+
+  <!-- Header -->
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand-icon">🎓</div>
+      <div>
+        <div class="brand-title">JEE & Entrance Exam Paper Generator</div>
+        <div class="brand-subtitle">51,011 Questions &bull; Anti-Repeat 7-Day History &bull; Anonymous Question Paper</div>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="btn" style="background:#8b5cf6; color:#fff; font-weight:700;" onclick="openMobileModal()" title="Access Generator on your Mobile Phone or Tablet">📱 Mobile Access</button>
+      <button class="btn" style="background:#6366f1; color:#fff; font-weight:700;" onclick="openExamSideModal()" title="Browse all 32 JEE Main Chapter PYQ Booklets from ExamSIDE (5,517 Questions with Official Answer Keys)">📚 ExamSIDE PYQs (5,517 Qs)</button>
+      <button class="btn btn-warning btn-sm" onclick="openHistoryModal()">📜 Batch History (<span id="history-papers-count">0</span>)</button>
+      <button class="btn btn-primary" onclick="printTestPaper()" title="Print or Save Student Question Paper as PDF">🖨️ Paper PDF</button>
+      <button class="btn btn-success" onclick="exportWordDoc('paper')" title="Download Student Question Paper as Word (.docx)">📄 Paper (.docx)</button>
+      <button class="btn" style="background:#0284c7; color:#fff;" onclick="printSolutionsPaper()" title="Print or Save Complete Solutions Paper as PDF">🔑 Solutions PDF</button>
+      <button class="btn" style="background:#059669; color:#fff;" onclick="printAnswerKeyOnly()" title="Print or Save Quick 1-Page Answer Key Table as PDF">📋 Answer Key PDF</button>
+      <button class="btn btn-success" onclick="exportWordDoc('solutions')" title="Download Complete Answer Key & Solutions as Word (.docx)">📘 Solutions (.docx)</button>
+      <button class="btn" onclick="saveCurrentTest()">💾 Save</button>
+      <button class="btn" onclick="openLoadModal()">📂 Load</button>
+      <button class="btn btn-sm" onclick="toggleTheme()" id="theme-btn">☀️ Light</button>
+    </div>
+  </header>
+
+  <!-- Mobile View Switcher (Visible only on mobile screens < 900px) -->
+  <div class="mobile-section-nav" id="mobile-section-nav">
+    <button class="mobile-nav-btn active" id="btn-show-sidebar" onclick="switchMobileView('sidebar')">
+      ⚙️ Builder Controls
+    </button>
+    <button class="mobile-nav-btn" id="btn-show-workspace" onclick="switchMobileView('workspace')">
+      📄 Questions & Paper (<span class="m-basket-count">0</span>)
+    </button>
+  </div>
+
+  <div class="app-body">
+    <!-- Left Sidebar: Builder Controls -->
+    <aside class="sidebar">
+
+      <!-- Test Metadata Section -->
+      <div class="section-card">
+        <div class="section-title">📋 1. Test Details & Target Batch</div>
+        <div class="form-group">
+          <label>Institute / Coaching Name</label>
+          <input type="text" id="cfg-institute" value="Narayana" oninput="updatePaperHeader()">
+        </div>
+        <div class="form-group">
+          <label>Test Title / Examination Name</label>
+          <input type="text" id="cfg-title" value="JEE Main Unit Test - 2026" oninput="updatePaperHeader()">
+        </div>
+
+        <!-- Batch & Date Input (Requested by user) -->
+        <div class="row-2 form-group">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
+              <label style="color:var(--primary); font-weight:700; margin:0;">Target Batch</label>
+              <label style="font-size:11px; cursor:pointer; display:flex; align-items:center; gap:3px; color:var(--text-muted);" title="Check to show Batch in paper header, uncheck to remove Batch tag">
+                <input type="checkbox" id="cfg-show-batch" onchange="updatePaperHeader()"> Tag Batch
+              </label>
+            </div>
+            <input type="text" id="cfg-batch" list="batch-suggestions" value="Batch 12-A" placeholder="e.g. Batch A" oninput="onBatchOrDateChange()">
+            <datalist id="batch-suggestions">
+              <option value="Batch 11-A">
+              <option value="Batch 12-A">
+              <option value="Target 2026">
+              <option value="Droppers Alpha">
+              <option value="Foundation Batch">
+            </datalist>
+          </div>
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
+              <label style="color:var(--primary); font-weight:700; margin:0;">Date of Test</label>
+              <label style="font-size:11px; cursor:pointer; display:flex; align-items:center; gap:3px; color:var(--text-muted);" title="Check to show Date in paper header, uncheck to remove Date tag">
+                <input type="checkbox" id="cfg-show-date" onchange="updatePaperHeader()"> Tag Date
+              </label>
+            </div>
+            <input type="date" id="cfg-date" onchange="onBatchOrDateChange()">
+          </div>
+        </div>
+
+        <div class="row-2 form-group">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
+              <label style="margin:0;">Time Duration</label>
+              <label style="font-size:11px; cursor:pointer; display:flex; align-items:center; gap:3px; color:var(--text-muted);" title="Check to show Time in paper header, uncheck to remove Time tag">
+                <input type="checkbox" id="cfg-show-time" onchange="updatePaperHeader()"> Tag Time
+              </label>
+            </div>
+            <input type="text" id="cfg-time" value="60 Minutes" oninput="updatePaperHeader()">
+          </div>
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
+              <label style="margin:0;">Marks / Question</label>
+              <label style="font-size:11px; cursor:pointer; display:flex; align-items:center; gap:3px; color:var(--text-muted);" title="Check to show Max Marks in paper header, uncheck to remove Max Marks tag">
+                <input type="checkbox" id="cfg-show-marks" onchange="updatePaperHeader()"> Tag Marks
+              </label>
+            </div>
+            <input type="text" id="cfg-marks" value="4 Marks (-1 Neg)" oninput="updatePaperHeader()">
+          </div>
+        </div>
+        <div class="form-group">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
+            <label style="margin:0;">General Instructions for Students</label>
+            <label style="font-size:11px; cursor:pointer; display:flex; align-items:center; gap:3px; color:var(--text-muted);" title="Check to include Instructions in paper, uncheck to remove instructions block">
+              <input type="checkbox" id="cfg-show-instructions" onchange="updatePaperHeader()"> Tag Instructions
+            </label>
+          </div>
+          <textarea id="cfg-instructions" rows="2" oninput="updatePaperHeader()">1. This paper contains Section A (MCQs) and Section B (Numerical).
+2. For MCQs: +4 for correct, -1 for wrong.
+3. For Numerical: +4 for correct, 0 for wrong.</textarea>
+        </div>
+
+        <!-- PYQ Year Tagging Toggle Option -->
+        <div class="form-group" style="background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.25); padding: 10px 12px; border-radius: 8px; margin-top: 12px;">
+          <label style="display:flex; align-items:center; gap:8px; margin:0; cursor:pointer; font-weight:700; color:var(--text); font-size:12.5px;">
+            <input type="checkbox" id="cfg-show-pyq-year" onchange="togglePyqYearOption()">
+            <span>🏷️ Tag PYQ Year with Questions on Paper (PDF)</span>
+          </label>
+          <div id="pyq-year-format-group" style="display:none; margin-top:8px; padding-top:8px; border-top:1px dashed var(--border);">
+            <label style="font-size:11px; margin-bottom:4px; color:var(--text-muted);">Year Tag Display Format:</label>
+            <select id="cfg-pyq-format" style="font-size:12px; padding:5px 8px;" onchange="updatePaperHeader()">
+              <option value="full">Full Reference (e.g. [JEE Main 2024 (30 Jan Shift 2)])</option>
+              <option value="exam_year">Exam & Year (e.g. [JEE Main 2024])</option>
+              <option value="year_only">Year Only (e.g. [2024])</option>
+            </select>
+          </div>
+          <div style="font-size:11px; color:var(--text-muted); margin-top:5px; line-height:1.4;">
+            Toggle ON to show the previous year exam tag beside each question in the test paper and PDF. Toggle OFF for 100% anonymous mock test questions.
+          </div>
+        </div>
+
+        <!-- Answer Key at end of Question Paper Toggle -->
+        <div class="form-group" style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); padding: 10px 12px; border-radius: 8px; margin-top: 10px;">
+          <label style="display:flex; align-items:center; gap:8px; margin:0; cursor:pointer; font-weight:700; color:var(--text); font-size:12.5px;">
+            <input type="checkbox" id="cfg-include-answer-key" onchange="updatePaperHeader()">
+            <span>📋 Add Answer Key table at end of Question Paper</span>
+          </label>
+          <div style="font-size:11px; color:var(--text-muted); margin-top:5px; line-height:1.4;">
+            When checked, an Answer Key table is automatically appended at the bottom of the Question Paper (PDF & Word export) without detailed step-by-step solutions.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question Filtering Section -->
+      <div class="section-card">
+        <div class="section-title">🎯 2. Select Chapter & Subtopics</div>
+
+        <!-- Subject -->
+        <div class="form-group">
+          <label>Subject</label>
+          <select id="sel-subject" onchange="onSubjectChange()">
+            <option value="Mathematics" selected>📐 Mathematics</option>
+            <option value="Physics">⚡ Physics</option>
+            <option value="Chemistry">⚗️ Chemistry</option>
+          </select>
+        </div>
+
+        <!-- Exam Filter -->
+        <div class="form-group">
+          <label>Exam PYQ Source</label>
+          <select id="sel-exam" onchange="onExamChange()">
+            <option value="all">🌟 All Exams</option>
+            <option value="ExamSIDE_JEE_Main" selected>📚 ExamSIDE (JEE Main 32 Chapters &bull; 5,954 Qs)</option>
+            <option value="JEE_Main">JEE Main</option>
+            <option value="JEE_Advanced">JEE Advanced</option>
+            <option value="BITSAT">BITSAT</option>
+            <option value="NTA_Abhyas">NTA Abhyas (JEE Main)</option>
+            <option value="MHT_CET">MHT CET</option>
+          </select>
+        </div>
+
+        <!-- PYQ Year Selection (Range & Multiselect) -->
+        <div class="form-group" style="background: rgba(255,255,255,0.03); border: 1px solid var(--border); padding: 10px 12px; border-radius: 8px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+            <label style="margin:0; font-weight:700; color:var(--primary); font-size:12px;">📅 PYQ Year Range & Multiselect</label>
+            <span id="year-filter-badge" style="font-size:11px; color:var(--text-muted); font-weight:600;">All Years</span>
+          </div>
+
+          <!-- Quick Range Selector -->
+          <div style="display:grid; grid-template-columns: 1fr 1fr auto; gap:6px; align-items:center; margin-bottom:8px;">
+            <div>
+              <span style="font-size:10px; color:var(--text-muted); display:block; margin-bottom:2px;">From Year</span>
+              <select id="year-range-from" style="font-size:11.5px; padding:4px 6px;">
+                <option value="all">Any (Oldest)</option>
+                <option value="2026">2026</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020" selected>2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2010">2010</option>
+              </select>
+            </div>
+            <div>
+              <span style="font-size:10px; color:var(--text-muted); display:block; margin-bottom:2px;">To Year</span>
+              <select id="year-range-to" style="font-size:11.5px; padding:4px 6px;">
+                <option value="2026" selected>2026</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+              </select>
+            </div>
+            <div style="padding-top:14px;">
+              <button type="button" class="btn btn-sm btn-primary" onclick="applyYearRange()" style="padding:5px 9px;" title="Select all years in this range">Set Range</button>
+            </div>
+          </div>
+
+          <!-- Quick Presets -->
+          <div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px;">
+            <button type="button" class="btn btn-sm" onclick="setPresetYearRange(2024, 2026)" style="font-size:10.5px; padding:2px 6px;">2024-2026</button>
+            <button type="button" class="btn btn-sm" onclick="setPresetYearRange(2020, 2024)" style="font-size:10.5px; padding:2px 6px;">2020-2024</button>
+            <button type="button" class="btn btn-sm" onclick="setPresetYearRange(2015, 2019)" style="font-size:10.5px; padding:2px 6px;">2015-2019</button>
+            <button type="button" class="btn btn-sm" onclick="selectAllYears(true)" style="font-size:10.5px; padding:2px 6px; color:var(--primary);">All Years</button>
+            <button type="button" class="btn btn-sm" onclick="selectAllYears(false)" style="font-size:10.5px; padding:2px 6px; color:var(--danger);">Clear</button>
+          </div>
+
+          <!-- Multiselect Checkbox Pills -->
+          <div style="font-size:11px; margin-bottom:5px; color:var(--text-muted);">Multiselect individual years:</div>
+          <div class="checkbox-pills" id="year-pills-container">
+            <label class="pill-label"><input type="checkbox" class="year-cb" value="2026" onchange="onYearPillsChange()"> 2026</label>
+            <label class="pill-label"><input type="checkbox" class="year-cb" value="2025" onchange="onYearPillsChange()"> 2025</label>
+            <label class="pill-label"><input type="checkbox" class="year-cb" value="2024" onchange="onYearPillsChange()"> 2024</label>
+            <label class="pill-label"><input type="checkbox" class="year-cb" value="2023" onchange="onYearPillsChange()"> 2023</label>
+            <label class="pill-label"><input type="checkbox" class="year-cb" value="2022" onchange="onYearPillsChange()"> 2022</label>
+            <label class="pill-label"><input type="checkbox" class="year-cb" value="2021" onchange="onYearPillsChange()"> 2021</label>
+            <label class="pill-label"><input type="checkbox" class="year-cb" value="2020" onchange="onYearPillsChange()"> 2020</label>
+            <label class="pill-label"><input type="checkbox" class="year-cb" value="2019" onchange="onYearPillsChange()"> 2019</label>
+            <label class="pill-label"><input type="checkbox" class="year-cb" value="2018" onchange="onYearPillsChange()"> 2018</label>
+            <label class="pill-label"><input type="checkbox" class="year-cb" value="2017" onchange="onYearPillsChange()"> 2017</label>
+            <label class="pill-label"><input type="checkbox" class="year-cb" value="2016" onchange="onYearPillsChange()"> 2016</label>
+            <label class="pill-label"><input type="checkbox" class="year-cb" value="2015" onchange="onYearPillsChange()"> 2015 & older</label>
+          </div>
+        </div>
+
+        <!-- Chapter Selector -->
+        <div class="form-group">
+          <label>Chapter (<span id="chapter-count-lbl">0</span> available)</label>
+          <select id="sel-chapter" onchange="onChapterChange()">
+            <option value="">-- Choose Chapter --</option>
+          </select>
+        </div>
+
+        <!-- Subtopics Selector -->
+        <div class="form-group">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:5px;">
+            <label style="margin:0;">Subtopics / Topics</label>
+            <a href="javascript:void(0)" onclick="toggleAllTopics()" style="font-size:11px; color:var(--primary); text-decoration:none;">Toggle All</a>
+          </div>
+          <div class="topics-box" id="topics-list-container">
+            <div style="font-size:12px; color:var(--text-muted); text-align:center; padding:12px;">Select a chapter above to load subtopics</div>
+          </div>
+        </div>
+
+        <!-- Question Types -->
+        <div class="form-group">
+          <label>Question Type(s)</label>
+          <div class="checkbox-pills">
+            <label class="pill-label">
+              <input type="checkbox" id="qtype-single" value="singleCorrect" checked> Single Correct MCQ
+            </label>
+            <label class="pill-label">
+              <input type="checkbox" id="qtype-num" value="numerical" checked> Numerical / Integer
+            </label>
+            <label class="pill-label">
+              <input type="checkbox" id="qtype-multi" value="multipleCorrect"> Multiple Correct
+            </label>
+          </div>
+        </div>
+
+        <!-- Difficulty Levels -->
+        <div class="form-group">
+          <label>Difficulty Levels</label>
+          <div class="checkbox-pills">
+            <label class="pill-label">
+              <input type="checkbox" id="lvl-1" value="1" checked> Level 1 (Easy)
+            </label>
+            <label class="pill-label">
+              <input type="checkbox" id="lvl-2" value="2" checked> Level 2 (Moderate)
+            </label>
+            <label class="pill-label">
+              <input type="checkbox" id="lvl-3" value="3" checked> Level 3 (Tough)
+            </label>
+          </div>
+        </div>
+
+        <!-- Anti-Repeat Filter Setting -->
+        <div class="form-group" style="background:var(--warning-bg); border:1px solid var(--warning-border); padding:8px 10px; border-radius:6px; margin-top:10px;">
+          <label style="display:flex; align-items:center; gap:6px; margin:0; cursor:pointer; color:var(--warning); font-size:12px;">
+            <input type="checkbox" id="cfg-exclude-recent" checked>
+            <span><b>Anti-Repeat:</b> Exclude questions conducted in this batch within 7 days</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Action Section -->
+      <div class="section-card action-box">
+        <div class="section-title">⚡ 3. Add to Test Paper</div>
+
+        <div class="row-2">
+          <div>
+            <label>MCQs Count</label>
+            <input type="number" id="auto-mcq-count" value="20" min="0" max="100">
+          </div>
+          <div>
+            <label>Numerical Count</label>
+            <input type="number" id="auto-num-count" value="5" min="0" max="100">
+          </div>
+        </div>
+
+        <button class="btn btn-primary" onclick="triggerAutoPick()" style="justify-content:center; padding:10px;">
+          🎲 Auto-Pick Fresh Questions
+        </button>
+        <button class="btn btn-success" onclick="addAllFromYearRange()" style="justify-content:center; padding:10px; font-weight:700;" title="Instantly adds every question matching your selected year range to the test paper">
+          📥 Add ALL Questions from Selected Year(s)
+        </button>
+        <button class="btn" onclick="openBrowseModal()" style="justify-content:center; padding:10px;">
+          🔍 Browse & Handpick Questions
+        </button>
+      </div>
+
+    </aside>
+
+    <!-- Main Workspace -->
+    <main class="workspace">
+
+      <!-- Navigation Tabs -->
+      <div class="workspace-tabs">
+        <div class="tab-buttons">
+          <button class="tab-btn active" onclick="switchTab('basket')" id="tab-btn-basket">
+            📦 Paper Questions (<span id="basket-count-badge">0</span>)
+          </button>
+          <button class="tab-btn" onclick="switchTab('student')" id="tab-btn-student">
+            📝 Student Question Paper
+          </button>
+          <button class="tab-btn" onclick="switchTab('solutions')" id="tab-btn-solutions">
+            🔑 Answer Key & Solutions
+          </button>
+        </div>
+        <div class="basket-counter">
+          <span>Batch: <b id="bar-batch-lbl" style="color:var(--text);">Batch 12-A</b></span>
+          &bull;
+          <span>Date: <b id="bar-date-lbl" style="color:var(--text);">-</b></span>
+          &bull;
+          <span id="stat-total-q" style="color:var(--text); font-weight:700;">0 Qs</span>
+          &bull;
+          <span id="stat-total-marks" style="color:var(--primary); font-weight:700;">0 Marks</span>
+          <button class="btn btn-danger btn-sm" onclick="clearBasket()" style="margin-left:10px;">Clear Paper</button>
+        </div>
+      </div>
+
+      <!-- Tab 1: Basket Question Manager -->
+      <div class="tab-content" id="tab-view-basket">
+        <div class="basket-list" id="basket-items-container">
+          <div class="basket-empty-state">
+            <div class="icon">📝</div>
+            <h3>Your Test Paper is Empty</h3>
+            <p>Select a Chapter on the left and click <b>Auto-Pick</b> or <b>Browse & Handpick</b> to add questions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Student Paper Preview -->
+      <div class="tab-content" id="tab-view-student" style="display:none;">
+        <div class="paper-sheet" id="student-paper-render">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+
+      <!-- Tab 3: Solutions Preview -->
+      <div class="tab-content" id="tab-view-solutions" style="display:none;">
+        <div class="solutions-action-bar" style="margin-bottom:14px; display:flex; justify-content:space-between; align-items:center; background:var(--surface); border:1px solid var(--border); padding:12px 18px; border-radius:8px;">
+          <div>
+            <b style="color:var(--primary); font-size:14px;">🔑 Answer Key & Step-by-Step Solutions</b>
+            <div style="font-size:12px; color:var(--text-muted);">Save/Print clean Solutions PDF or download editable Word document (.docx)</div>
+          </div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <button class="btn btn-primary" onclick="printSolutionsPaper()">🖨️ Print Complete Solutions PDF</button>
+            <button class="btn" style="background:#059669; color:#fff;" onclick="printAnswerKeyOnly()">📋 Print Answer Key Only PDF</button>
+            <button class="btn btn-success" onclick="exportWordDoc('solutions')">📘 Download Solutions Word (.docx)</button>
+          </div>
+        </div>
+        <div class="paper-sheet" id="solutions-render">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Modal: Question Browser -->
+  <div class="modal-overlay" id="browse-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <h3 style="font-size:16px; font-weight:700; color:var(--primary);">Handpick Questions</h3>
+          <div style="font-size:12px; color:var(--text-muted);" id="modal-subtitle">Loading matching questions...</div>
+        </div>
+        <div style="display:flex; gap:10px; align-items:center;">
+          <label style="display:flex; align-items:center; gap:5px; font-size:12px; color:var(--warning); cursor:pointer;">
+            <input type="checkbox" id="modal-filter-hide-repeat" onchange="filterModalQuestions()">
+            Hide questions used within 7 days
+          </label>
+          <input type="text" id="modal-search-input" placeholder="Search question text..." style="width:180px;" oninput="filterModalQuestions()">
+          <button class="btn btn-sm" onclick="closeBrowseModal()">✕ Close</button>
+        </div>
+      </div>
+      <div class="modal-body" id="modal-questions-container">
+        <!-- Questions rendered here -->
+      </div>
+      <div class="modal-footer">
+        <div>
+          <span id="modal-selected-count" style="font-weight:700; color:var(--primary);">0</span> questions selected
+        </div>
+        <div style="display:flex; gap:10px;">
+          <button class="btn btn-sm" onclick="modalToggleSelectAll()">Toggle Select All</button>
+          <button class="btn btn-sm btn-warning" onclick="modalSelectAllVisible()" title="Select all questions currently loaded in this list">✨ Select All Matching</button>
+          <button class="btn btn-primary" onclick="addSelectedFromModal()">Add to Test Paper</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Load Paper -->
+  <div class="modal-overlay" id="load-modal">
+    <div class="modal-box" style="width:550px;">
+      <div class="modal-header">
+        <h3 style="font-size:16px; font-weight:700;">📂 Load Saved Test Paper</h3>
+        <button class="btn btn-sm" onclick="closeLoadModal()">✕ Close</button>
+      </div>
+      <div class="modal-body" id="saved-papers-list">
+        <!-- List of saved tests -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: History Manager -->
+  <div class="modal-overlay" id="history-modal">
+    <div class="modal-box" style="width:650px;">
+      <div class="modal-header">
+        <div>
+          <h3 style="font-size:16px; font-weight:700; color:var(--warning);">📜 Batch Conducted Tests History</h3>
+          <div style="font-size:12px; color:var(--text-muted);">Questions conducted within 7 days are automatically flagged to prevent repeats</div>
+        </div>
+        <button class="btn btn-sm" onclick="closeHistoryModal()">✕ Close</button>
+      </div>
+      <div class="modal-body" id="history-modal-body">
+        <!-- History rendered here -->
+      </div>
+      <div class="modal-footer">
+        <span style="font-size:12px; color:var(--text-muted);">7-day repeat warnings automatically expire after 1 week</span>
+        <button class="btn btn-danger btn-sm" onclick="clearAllHistory()">Reset History</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: ExamSIDE Official PYQ Library -->
+  <div class="modal-overlay" id="examside-modal">
+    <div class="modal-box" style="width: 960px; max-width: 95vw; height: 88vh; display: flex; flex-direction: column;">
+      <div class="modal-header" style="border-bottom: 1px solid var(--border); padding-bottom: 12px;">
+        <div>
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span style="font-size:22px;">📚</span>
+            <h3 style="font-size:17px; font-weight:800; color:var(--text); margin:0;">ExamSIDE Official JEE Main PYQ Library</h3>
+            <span class="badge" style="background:#6366f1; color:#fff; font-size:11px; padding:3px 10px; border-radius:12px; font-weight:700;">32 Chapters &bull; 5,517 Verified PYQs</span>
+          </div>
+          <div style="font-size:12px; color:var(--text-muted); margin-top:4px;">
+            Complete Official Chapter Question Booklets with Official Answer Keys &bull; Organized by Proper Syllabus Sequence
+          </div>
+        </div>
+        <button class="btn btn-sm" onclick="closeExamSideModal()">✕ Close</button>
+      </div>
+
+      <!-- Search & Unit Filter Toolbar -->
+      <div style="padding: 12px 16px; background: var(--surface); border-bottom: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between;">
+        <div style="display:flex; align-items:center; gap:8px; flex: 1; min-width: 250px;">
+          <input type="text" id="examside-search-input" placeholder="🔍 Search chapter name (e.g. Matrices, Integration)..." oninput="filterExamSideChapters()" style="width:100%; max-width:340px; padding:7px 12px; font-size:13px; border-radius:6px; border:1px solid var(--border); background:var(--surface-card); color:var(--text);">
+        </div>
+        <div style="display:flex; gap:6px; flex-wrap:wrap;" id="examside-unit-filters">
+          <button class="btn btn-sm examside-unit-btn active" onclick="setExamSideUnitFilter('all', this)">All Units (32)</button>
+          <button class="btn btn-sm examside-unit-btn" onclick="setExamSideUnitFilter('01_Algebra', this)">Algebra (12)</button>
+          <button class="btn btn-sm examside-unit-btn" onclick="setExamSideUnitFilter('02_Trigonometry', this)">Trigonometry (5)</button>
+          <button class="btn btn-sm examside-unit-btn" onclick="setExamSideUnitFilter('03_Coordinate_Geometry', this)">Coordinate Geo (5)</button>
+          <button class="btn btn-sm examside-unit-btn" onclick="setExamSideUnitFilter('04_Calculus', this)">Calculus (8)</button>
+          <button class="btn btn-sm examside-unit-btn" onclick="setExamSideUnitFilter('05_Vectors_and_3D_Geometry', this)">Vectors & 3D (2)</button>
+        </div>
+      </div>
+
+      <!-- Chapters Grid Container -->
+      <div class="modal-body" id="examside-chapters-container" style="flex:1; overflow-y:auto; padding:16px;">
+        <div style="text-align:center; padding:30px; color:var(--text-muted);">Loading ExamSIDE PYQ Library...</div>
+      </div>
+      
+      <div class="modal-footer" style="padding:10px 16px; font-size:12px; color:var(--text-muted); display:flex; justify-content:space-between; align-items:center;">
+        <span>💡 Click <b>"🎯 Generate Paper"</b> to load questions into the interactive paper generator, <b>"👁️ View PDF"</b> to inspect the booklet, or <b>"🔑 Answer Key"</b> for the solutions key.</span>
+        <button class="btn btn-sm" onclick="closeExamSideModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: ExamSIDE Answer Key Viewer -->
+  <div class="modal-overlay" id="examside-key-modal" style="z-index: 1100;">
+    <div class="modal-box" style="width: 750px; max-width: 95vw; max-height: 85vh; display: flex; flex-direction: column;">
+      <div class="modal-header" style="border-bottom: 1px solid var(--border); padding-bottom: 12px;">
+        <div>
+          <h3 style="font-size:16px; font-weight:700; color:var(--success); margin:0;" id="examside-key-title">Official Answer Key</h3>
+          <div style="font-size:12px; color:var(--text-muted);" id="examside-key-subtitle">ExamSIDE Verified Solutions Key</div>
+        </div>
+        <button class="btn btn-sm" onclick="closeExamSideKeyModal()">✕ Close</button>
+      </div>
+      <div class="modal-body" id="examside-key-content" style="flex:1; overflow-y:auto; padding:16px;">
+        <!-- Answer key table rendered here -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-sm" onclick="closeExamSideKeyModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Mobile Access -->
+  <div class="modal-overlay" id="mobile-modal">
+    <div class="modal-box" style="width:480px; text-align:center;">
+      <div class="modal-header">
+        <div>
+          <h3 style="font-size:16px; font-weight:700; color:var(--primary);">📱 Access Generator on Mobile</h3>
+          <div style="font-size:12px; color:var(--text-muted);">Open anywhere on 4G/5G or Home/Office Wi-Fi</div>
+        </div>
+        <button class="btn btn-sm" onclick="closeMobileModal()">✕ Close</button>
+      </div>
+      <div class="modal-body" style="padding:22px; display:flex; flex-direction:column; align-items:center; gap:14px;">
+        <div style="background:#ffffff; padding:12px; border-radius:12px; box-shadow:0 4px 14px rgba(0,0,0,0.2);">
+          <img id="mobile-qr-img" src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Forder-have-two-smell.trycloudflare.com" alt="Mobile QR Code" style="width:180px; height:180px; display:block;">
+        </div>
+        <div style="font-size:12.5px; color:var(--text);">
+          📷 <b>Point your Phone Camera at the QR code above</b> to open instantly!
+        </div>
+        <div style="width:100%; display:flex; flex-direction:column; gap:8px;">
+          <a id="mobile-cloud-link" href="https://order-have-two-smell.trycloudflare.com" target="_blank" style="display:block; padding:10px 14px; background:rgba(99,102,241,0.12); border:1px solid #6366f1; border-radius:8px; color:#6366f1; font-weight:700; font-size:13px; word-break:break-all; text-decoration:none;">
+            https://order-have-two-smell.trycloudflare.com
+          </a>
+          <button class="btn btn-primary" onclick="copyMobileLink()" id="btn-copy-mobile-link" style="width:100%; justify-content:center;">📋 Copy Mobile Link</button>
+        </div>
+        <div style="font-size:11.5px; color:var(--text-muted); background:var(--surface); border:1px solid var(--border); padding:10px 14px; border-radius:8px; width:100%; text-align:left;">
+          <b>📶 Connected to the same Wi-Fi?</b><br/>
+          You can also open: <code style="color:var(--primary); font-size:12px;" id="mobile-local-wifi-link">http://192.168.1.35:5000</code>
+        </div>
+      </div>
+      <div class="modal-footer" style="justify-content:center;">
+        <button class="btn" onclick="closeMobileModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Logic -->
+  <script>
+    let CATALOG = null;
+    let paperQuestions = []; // Array of questions in the test
+    let modalFetchedQuestions = []; // Array of questions in the browser modal
+
+    window.addEventListener('DOMContentLoaded', async () => {
+      // Set default test date to today
+      const todayStr = new Date().toISOString().split('T')[0];
+      document.getElementById('cfg-date').value = todayStr;
+      document.getElementById('bar-date-lbl').textContent = todayStr;
+
+      const selSub = document.getElementById('sel-subject');
+      if (selSub) selSub.value = 'Mathematics';
+
+      await fetchCatalog();
+      await updateHistoryBadge();
+      if (selSub) selSub.value = 'Mathematics';
+      onSubjectChange();
+      renderBasket();
+      updatePaperHeader();
+    });
+
+    async function fetchCatalog() {
+      try {
+        const res = await fetch('/api/catalog');
+        CATALOG = await res.json();
+      } catch (e) {
+        console.error('Failed to load catalog', e);
+      }
+    }
+
+    async function updateHistoryBadge() {
+      try {
+        const res = await fetch('/api/history');
+        const hist = await res.json();
+        const papers = hist.papers || [];
+        document.getElementById('history-papers-count').textContent = papers.length;
+      } catch (e) {
+        console.error(e);
+      }
+    }
+
+    function toggleTheme() {
+      const b = document.body;
+      const isDark = b.getAttribute('data-theme') === 'dark';
+      b.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark' : '☀️ Light';
+    }
+
+    function onBatchOrDateChange() {
+      const b = document.getElementById('cfg-batch').value || 'General Batch';
+      const d = document.getElementById('cfg-date').value || new Date().toISOString().split('T')[0];
+      document.getElementById('bar-batch-lbl').textContent = b;
+      document.getElementById('bar-date-lbl').textContent = d;
+      updatePaperHeader();
+    }
+
+    function togglePyqYearOption() {
+      const isChecked = document.getElementById('cfg-show-pyq-year').checked;
+      const formatGroup = document.getElementById('pyq-year-format-group');
+      if (formatGroup) {
+        formatGroup.style.display = isChecked ? 'block' : 'none';
+      }
+      updatePaperHeader();
+    }
+
+    function formatPyqTag(tag, mode) {
+      if (!tag) return '';
+      if (mode === 'full') return tag;
+      const mYear = tag.match(/\b(19\d\d|20\d\d)\b/);
+      if (mode === 'year_only') {
+        return mYear ? mYear[1] : tag;
+      }
+      if (mode === 'exam_year') {
+        const mEy = tag.match(/^(.*?)\s*(\b(?:19|20)\d{2}\b)/);
+        if (mEy) return `${mEy[1].trim()} ${mEy[2]}`;
+        return tag;
+      }
+      return tag;
+    }
+
+    function editQuestionTag(idx) {
+      if (idx < 0 || idx >= paperQuestions.length) return;
+      const currentTag = paperQuestions[idx].examTag || '';
+      const newTag = prompt(`Edit PYQ Year / Exam Tag for Q${idx + 1}:\n(e.g., JEE Main 2024 (30 Jan Shift 2), BITSAT 2023, 2025, etc.)`, currentTag);
+      if (newTag !== null) {
+        paperQuestions[idx].examTag = newTag.trim();
+        const mYear = newTag.match(/\b(19\d\d|20\d\d)\b/);
+        paperQuestions[idx].pyqYear = mYear ? mYear[1] : '';
+        renderBasket();
+        if (document.getElementById('tab-view-student').style.display !== 'none') renderStudentPaper();
+        if (document.getElementById('tab-view-solutions').style.display !== 'none') renderSolutions();
+      }
+    }
+
+    function applyYearRange() {
+      const fromVal = document.getElementById('year-range-from').value;
+      const toVal = document.getElementById('year-range-to').value;
+      
+      const fromY = fromVal === 'all' ? 1980 : parseInt(fromVal);
+      const toY = parseInt(toVal);
+      
+      const min = Math.min(fromY, toY);
+      const max = Math.max(fromY, toY);
+
+      document.querySelectorAll('.year-cb').forEach(cb => {
+        const val = parseInt(cb.value);
+        if (cb.value === '2015') {
+          cb.checked = (min <= 2015);
+        } else {
+          cb.checked = (val >= min && val <= max);
+        }
+      });
+      onYearPillsChange();
+    }
+
+    function setPresetYearRange(fromY, toY) {
+      if (document.getElementById('year-range-from')) document.getElementById('year-range-from').value = fromY;
+      if (document.getElementById('year-range-to')) document.getElementById('year-range-to').value = toY;
+      applyYearRange();
+    }
+
+    function selectAllYears(selectAll) {
+      document.querySelectorAll('.year-cb').forEach(cb => cb.checked = selectAll);
+      if (selectAll) {
+        if (document.getElementById('year-range-from')) document.getElementById('year-range-from').value = 'all';
+        if (document.getElementById('year-range-to')) document.getElementById('year-range-to').value = '2026';
+      }
+      onYearPillsChange();
+    }
+
+    function onYearPillsChange() {
+      const cbs = document.querySelectorAll('.year-cb');
+      const checked = Array.from(document.querySelectorAll('.year-cb:checked')).map(cb => cb.value);
+      const badge = document.getElementById('year-filter-badge');
+      if (!badge) return;
+
+      if (checked.length === 0 || checked.length === cbs.length) {
+        badge.textContent = 'All Years';
+        badge.style.color = 'var(--text-muted)';
+      } else if (checked.length === 1) {
+        badge.textContent = `${checked[0]} Only`;
+        badge.style.color = 'var(--primary)';
+      } else {
+        const nums = checked.filter(v => v !== '2015').map(Number);
+        if (nums.length > 0) {
+          const min = Math.min(...nums);
+          const max = Math.max(...nums);
+          badge.textContent = `${checked.length} Yrs (${min}-${max})`;
+        } else {
+          badge.textContent = `${checked.length} Yrs Selected`;
+        }
+        badge.style.color = 'var(--primary)';
+      }
+    }
+
+    function getYearFilterSummaryLabel() {
+      const cbs = document.querySelectorAll('.year-cb');
+      const checked = Array.from(document.querySelectorAll('.year-cb:checked')).map(cb => cb.value);
+      if (checked.length === 0 || checked.length === cbs.length) return 'All PYQ Years';
+      const nums = checked.filter(v => v !== '2015').map(Number);
+      if (nums.length > 0) {
+        const min = Math.min(...nums);
+        const max = Math.max(...nums);
+        return `Years ${min} - ${max} (${checked.length} selected)`;
+      }
+      return `${checked.join(', ')}`;
+    }
+
+    async function addAllFromYearRange() {
+      const criteria = getSelectedFilterCriteria();
+      if (!criteria.chapter_folder) {
+        alert('Please select a Chapter first!');
+        return;
+      }
+      
+      const btn = event ? event.currentTarget : null;
+      const oldText = btn ? btn.textContent : '';
+      if (btn) { btn.textContent = '⏳ Loading questions...'; btn.disabled = true; }
+
+      try {
+        const res = await fetch('/api/questions', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(criteria)
+        });
+        const data = await res.json();
+        const qs = data.questions || [];
+        if (qs.length === 0) {
+          alert('No questions match the selected year range/filters for this chapter.');
+          return;
+        }
+
+        const existingIds = new Set(paperQuestions.map(q => q.id));
+        let added = 0;
+        qs.forEach(q => {
+          if (!existingIds.has(q.id)) {
+            paperQuestions.push(q);
+            added++;
+          }
+        });
+
+        renderBasket();
+        updatePaperHeader();
+        const yrLabel = getYearFilterSummaryLabel();
+        alert(`Successfully added all ${added} question(s) from ${yrLabel} to your test paper!\nTotal questions in paper: ${paperQuestions.length}.`);
+      } catch (e) {
+        alert('Error adding questions: ' + e);
+      } finally {
+        if (btn) { btn.textContent = oldText; btn.disabled = false; }
+      }
+    }
+
+    function modalSelectAllVisible() {
+      const cbs = document.querySelectorAll('.modal-q-cb');
+      cbs.forEach(cb => cb.checked = true);
+      updateModalCount();
+    }
+
+    function onSubjectChange() {
+      if (!CATALOG) return;
+      const sub = document.getElementById('sel-subject').value;
+      const exam = document.getElementById('sel-exam').value;
+      populateChapters(sub, exam);
+    }
+
+    function onExamChange() {
+      if (!CATALOG) return;
+      const sub = document.getElementById('sel-subject').value;
+      const exam = document.getElementById('sel-exam').value;
+      populateChapters(sub, exam);
+    }
+
+    function populateChapters(subject, exam) {
+      const chSelect = document.getElementById('sel-chapter');
+      chSelect.innerHTML = '<option value="">-- Choose Chapter --</option>';
+
+      let chList = [];
+      if (exam === 'all') {
+        const seen = new Set();
+        CATALOG.chapters.filter(c => c.subject === subject).forEach(c => {
+          if (!seen.has(c.chapter)) {
+            seen.add(c.chapter);
+            chList.push(c);
+          }
+        });
+      } else {
+        chList = CATALOG.chapters.filter(c => c.subject === subject && c.exam === exam);
+      }
+
+      document.getElementById('chapter-count-lbl').textContent = chList.length;
+
+      chList.forEach((c, idx) => {
+        const opt = document.createElement('option');
+        opt.value = c.folder;
+        opt.dataset.json = c.json_path;
+        opt.textContent = `${idx + 1}. ${c.chapter} (${c.totalQuestions} Qs)`;
+        chSelect.appendChild(opt);
+      });
+
+      document.getElementById('topics-list-container').innerHTML = '<div style="font-size:12px; color:var(--text-muted); text-align:center; padding:12px;">Select a chapter above to load subtopics</div>';
+    }
+
+    function onChapterChange() {
+      const folder = document.getElementById('sel-chapter').value;
+      const sub = document.getElementById('sel-subject').value;
+      const exam = document.getElementById('sel-exam').value;
+      const container = document.getElementById('topics-list-container');
+      container.innerHTML = '';
+
+      if (!folder) return;
+
+      const chItem = CATALOG.chapters.find(c => c.subject === sub && (exam === 'all' || c.exam === exam) && c.folder === folder);
+      if (!chItem || !chItem.topics || chItem.topics.length === 0) {
+        container.innerHTML = '<div style="font-size:12px; color:var(--text-muted); text-align:center; padding:12px;">No subtopic breakdown (entire chapter)</div>';
+        return;
+      }
+
+      chItem.topics.forEach((t, i) => {
+        const div = document.createElement('div');
+        div.className = 'topic-item';
+        div.innerHTML = `
+          <label>
+            <input type="checkbox" class="topic-cb" value="${t.topicId}" checked>
+            <span>${t.index || i+1}. ${t.title}</span>
+          </label>
+          <span class="badge">${t.totalQuestions} Qs</span>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    function toggleAllTopics() {
+      const cbs = document.querySelectorAll('.topic-cb');
+      const allChecked = Array.from(cbs).every(cb => cb.checked);
+      cbs.forEach(cb => cb.checked = !allChecked);
+    }
+
+    function getSelectedFilterCriteria() {
+      const subject = document.getElementById('sel-subject').value;
+      const exam = document.getElementById('sel-exam').value;
+      const chapterFolder = document.getElementById('sel-chapter').value;
+      const batch = document.getElementById('cfg-batch').value || 'General Batch';
+      const testDate = document.getElementById('cfg-date').value || new Date().toISOString().split('T')[0];
+      const excludeRecent = document.getElementById('cfg-exclude-recent').checked;
+
+      const topicIds = [];
+      document.querySelectorAll('.topic-cb:checked').forEach(cb => topicIds.push(cb.value));
+
+      const qTypes = [];
+      if (document.getElementById('qtype-single').checked) qTypes.push('singleCorrect');
+      if (document.getElementById('qtype-num').checked) qTypes.push('numerical');
+      if (document.getElementById('qtype-multi').checked) qTypes.push('multipleCorrect');
+
+      const levels = [];
+      if (document.getElementById('lvl-1').checked) levels.push(1);
+      if (document.getElementById('lvl-2').checked) levels.push(2);
+      if (document.getElementById('lvl-3').checked) levels.push(3);
+
+      const allYearCbs = document.querySelectorAll('.year-cb');
+      const checkedYearCbs = Array.from(document.querySelectorAll('.year-cb:checked')).map(cb => cb.value);
+      let years = [];
+      let yearStart = null;
+      let yearEnd = null;
+
+      if (checkedYearCbs.length > 0 && checkedYearCbs.length < allYearCbs.length) {
+        years = checkedYearCbs;
+        const nums = checkedYearCbs.filter(v => v !== '2015').map(Number);
+        if (nums.length > 0) {
+          yearStart = Math.min(...nums);
+          yearEnd = Math.max(...nums);
+          if (checkedYearCbs.includes('2015')) yearStart = 1980;
+        }
+      }
+
+      return {
+        subject,
+        exam,
+        chapter_folder: chapterFolder,
+        topic_ids: topicIds,
+        q_types: qTypes,
+        levels,
+        batch,
+        test_date: testDate,
+        exclude_recent: excludeRecent,
+        years,
+        year_start: yearStart,
+        year_end: yearEnd
+      };
+    }
+
+    // Auto-Pick Trigger
+    async function triggerAutoPick() {
+      const criteria = getSelectedFilterCriteria();
+      if (!criteria.chapter_folder) {
+        alert('Please select a Chapter first!');
+        return;
+      }
+
+      const mcqCount = parseInt(document.getElementById('auto-mcq-count').value) || 0;
+      const numCount = parseInt(document.getElementById('auto-num-count').value) || 0;
+
+      const payload = {
+        subject: criteria.subject,
+        exam: criteria.exam,
+        chapter_folder: criteria.chapter_folder,
+        topic_ids: criteria.topic_ids,
+        mcq_count: mcqCount,
+        numerical_count: numCount,
+        levels: criteria.levels,
+        batch: criteria.batch,
+        test_date: criteria.test_date,
+        exclude_recent: criteria.exclude_recent,
+        years: criteria.years,
+        year_start: criteria.year_start,
+        year_end: criteria.year_end
+      };
+
+      try {
+        const res = await fetch('/api/auto_pick', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        if (data.questions && data.questions.length > 0) {
+          const existingIds = new Set(paperQuestions.map(q => q.id));
+          let added = 0;
+          data.questions.forEach(q => {
+            if (!existingIds.has(q.id)) {
+              paperQuestions.push(q);
+              added++;
+            }
+          });
+          renderBasket();
+          let msg = `Successfully added ${added} fresh questions to test paper! (MCQs: ${data.picked_mcqs}, Numerical: ${data.picked_nums})`;
+          if (data.excluded_recent_count > 0) {
+            msg += `\n\n🛡️ Anti-Repeat Shield: ${data.excluded_recent_count} questions were excluded because they were already conducted in '${criteria.batch}' within the past week.`;
+          }
+          alert(msg);
+        } else {
+          let msg = 'No questions found matching your criteria.';
+          if (data.excluded_recent_count > 0) {
+            msg += ` (${data.excluded_recent_count} matching questions were excluded due to 7-day anti-repeat filter for ${criteria.batch}).`;
+          }
+          alert(msg);
+        }
+      } catch (e) {
+        console.error(e);
+        alert('Error picking questions: ' + e);
+      }
+    }
+
+    // Open Handpick Modal
+    async function openBrowseModal() {
+      const criteria = getSelectedFilterCriteria();
+      if (!criteria.chapter_folder) {
+        alert('Please select a Chapter first!');
+        return;
+      }
+
+      const modal = document.getElementById('browse-modal');
+      modal.classList.add('open');
+      const container = document.getElementById('modal-questions-container');
+      container.innerHTML = '<div style="text-align:center; padding:40px; color:var(--text-muted);">Fetching questions and checking 7-day history for ' + criteria.batch + '...</div>';
+      document.getElementById('modal-subtitle').textContent = `${criteria.subject} • ${document.getElementById('sel-chapter').selectedOptions[0].text} • ${getYearFilterSummaryLabel()} • Target: ${criteria.batch}`;
+
+      try {
+        const res = await fetch('/api/questions', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(criteria)
+        });
+        const data = await res.json();
+        modalFetchedQuestions = data.questions || [];
+        renderModalQuestions(modalFetchedQuestions);
+      } catch (e) {
+        console.error(e);
+        container.innerHTML = '<div style="color:red; text-align:center;">Failed to load questions</div>';
+      }
+    }
+
+    function closeBrowseModal() {
+      document.getElementById('browse-modal').classList.remove('open');
+    }
+
+    function renderModalQuestions(list) {
+      const container = document.getElementById('modal-questions-container');
+      container.innerHTML = '';
+      if (!list || list.length === 0) {
+        container.innerHTML = '<div style="text-align:center; padding:40px; color:var(--text-muted);">No questions match the current filters.</div>';
+        return;
+      }
+
+      const paperIds = new Set(paperQuestions.map(q => q.id));
+
+      list.forEach((q, idx) => {
+        const isAdded = paperIds.has(q.id);
+        const usage = q.recentUsage || { is_recent: false, records: [] };
+        const isRepeat = usage.is_recent;
+
+        const card = document.createElement('div');
+        card.className = 'q-card' + (isRepeat ? ' is-repeat' : '');
+        card.dataset.isRepeat = isRepeat ? 'true' : 'false';
+
+        let warningPillHtml = '';
+        if (isRepeat) {
+          const rec = usage.records[0] || {};
+          const sameBatchStr = usage.is_same_batch ? 'THIS BATCH' : rec.batch;
+          warningPillHtml = `
+            <div style="background:var(--warning); color:#000; font-weight:700; font-size:11px; padding:3px 8px; border-radius:4px; display:inline-flex; align-items:center; gap:4px;">
+              ⚠️ Repeated: Conducted in ${sameBatchStr} on ${rec.test_date} (${rec.days_ago} days ago)
+            </div>
+          `;
+        }
+
+        card.innerHTML = `
+          <div class="q-card-header">
+            <div class="q-tags">
+              <input type="checkbox" class="modal-q-cb" value="${q.id}" ${isAdded ? 'checked' : ''} onchange="updateModalCount()">
+              <span class="q-num">#${idx + 1}</span>
+              <span class="q-type-badge">${q.type === 'numerical' ? 'Numerical' : 'MCQ'} &bull; Lvl ${q.level}</span>
+              <span class="modal-pyq-pill">🏷️ ${q.examTag || 'PYQ'}</span>
+              <span style="color:var(--text-muted); font-size:11px;">(${q.topicTitle})</span>
+              ${warningPillHtml}
+            </div>
+            ${isAdded ? '<span style="color:var(--success); font-weight:bold; font-size:11px;">Already in Paper</span>' : ''}
+          </div>
+          <div class="q-text">${q.questionText}</div>
+          ${q.options && q.options.length ? `
+            <div class="options-grid">
+              ${q.options.map(opt => `
+                <div class="opt-box ${opt.isCorrect ? 'correct' : ''}">
+                  <span class="opt-lbl">(${opt.label})</span>
+                  <span>${opt.text}</span>
+                </div>
+              `).join('')}
+            </div>
+          ` : ''}
+          ${(q.correctValue !== null && q.correctValue !== undefined && String(q.correctValue).trim() !== '') ? `
+            <div class="ans-badge">
+              <span>✓ Correct Numerical Answer:</span> <b>${q.correctValue}</b>
+            </div>
+          ` : ''}
+        `;
+        container.appendChild(card);
+      });
+
+      renderMath(container);
+      updateModalCount();
+    }
+
+    function filterModalQuestions() {
+      const term = document.getElementById('modal-search-input').value.toLowerCase();
+      const hideRepeat = document.getElementById('modal-filter-hide-repeat').checked;
+
+      const filtered = modalFetchedQuestions.filter(q => {
+        const matchesTerm = q.questionText.toLowerCase().includes(term) || (q.examTag && q.examTag.toLowerCase().includes(term));
+        const isRepeat = q.recentUsage && q.recentUsage.is_recent;
+        if (hideRepeat && isRepeat) return false;
+        return matchesTerm;
+      });
+      renderModalQuestions(filtered);
+    }
+
+    function updateModalCount() {
+      const count = document.querySelectorAll('.modal-q-cb:checked').length;
+      document.getElementById('modal-selected-count').textContent = count;
+    }
+
+    function modalToggleSelectAll() {
+      const cbs = document.querySelectorAll('.modal-q-cb');
+      const allChecked = Array.from(cbs).every(cb => cb.checked);
+      cbs.forEach(cb => cb.checked = !allChecked);
+      updateModalCount();
+    }
+
+    function addSelectedFromModal() {
+      const selectedIds = new Set(Array.from(document.querySelectorAll('.modal-q-cb:checked')).map(cb => cb.value));
+      const existingIds = new Set(paperQuestions.map(q => q.id));
+      let added = 0;
+      let repeatedWarn = 0;
+
+      modalFetchedQuestions.forEach(q => {
+        if (selectedIds.has(q.id) && !existingIds.has(q.id)) {
+          paperQuestions.push(q);
+          added++;
+          if (q.recentUsage && q.recentUsage.is_recent) repeatedWarn++;
+        }
+      });
+
+      closeBrowseModal();
+      renderBasket();
+
+      let msg = `Added ${added} questions to test paper! Total in paper: ${paperQuestions.length}.`;
+      if (repeatedWarn > 0) {
+        msg += `\n\n⚠️ Notice: ${repeatedWarn} selected question(s) were conducted in the past week and are highlighted in your paper basket.`;
+      }
+      alert(msg);
+    }
+
+    // Basket & Paper Management
+    function renderBasket() {
+      const container = document.getElementById('basket-items-container');
+      const countBadge = document.getElementById('basket-count-badge');
+      const statQ = document.getElementById('stat-total-q');
+      const statMarks = document.getElementById('stat-total-marks');
+
+      countBadge.textContent = paperQuestions.length;
+      statQ.textContent = `${paperQuestions.length} Qs`;
+      statMarks.textContent = `${paperQuestions.length * 4} Marks`;
+      updateMobileCounter();
+
+      if (paperQuestions.length === 0) {
+        container.innerHTML = `
+          <div class="basket-empty-state">
+            <div class="icon">📝</div>
+            <h3>Your Test Paper is Empty</h3>
+            <p>Select a Chapter on the left and click <b>Auto-Pick</b> or <b>Browse & Handpick</b> to add questions.</p>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = '';
+
+      // Check if any question in paper is a repeat
+      const repeatQuestions = paperQuestions.filter(q => q.recentUsage && q.recentUsage.is_recent);
+      if (repeatQuestions.length > 0) {
+        const warnBanner = document.createElement('div');
+        warnBanner.className = 'repeat-warning-banner';
+        warnBanner.innerHTML = `
+          <span>⚠️ <b>Warning:</b> ${repeatQuestions.length} question(s) in this paper were conducted within the last 7 days for this batch. They are highlighted below with amber borders.</span>
+        `;
+        container.appendChild(warnBanner);
+      }
+
+      paperQuestions.forEach((q, idx) => {
+        const usage = q.recentUsage || { is_recent: false, records: [] };
+        const isRepeat = usage.is_recent;
+
+        const card = document.createElement('div');
+        card.className = 'q-card' + (isRepeat ? ' is-repeat' : '');
+        
+        let repeatPill = '';
+        if (isRepeat) {
+          const rec = usage.records[0] || {};
+          repeatPill = `
+            <span class="badge-warning">⚠️ Conducted ${rec.days_ago} days ago (${rec.batch} &bull; ${rec.test_date})</span>
+          `;
+        }
+
+        card.innerHTML = `
+          <div class="q-card-header">
+            <div class="q-tags">
+              <span class="q-num">Q${idx + 1}</span>
+              <span class="q-type-badge">${q.type === 'numerical' ? 'Numerical' : 'MCQ'} &bull; Lvl ${q.level}</span>
+              <span class="q-pyq-pill" onclick="editQuestionTag(${idx})" title="Click to edit or custom-tag PYQ Year for Q${idx + 1}">🏷️ ${q.examTag || 'Tag Year'} ✏️</span>
+              <span style="color:var(--text-muted); font-size:11px;">[${q.subject} &bull; ${q.chapter}]</span>
+              ${repeatPill}
+            </div>
+            <div class="q-actions">
+              <button class="btn btn-sm" onclick="moveQuestion(${idx}, -1)" ${idx === 0 ? 'disabled' : ''}>▲</button>
+              <button class="btn btn-sm" onclick="moveQuestion(${idx}, 1)" ${idx === paperQuestions.length - 1 ? 'disabled' : ''}>▼</button>
+              <button class="btn btn-danger btn-sm" onclick="removeQuestion(${idx})">🗑️ Remove</button>
+            </div>
+          </div>
+          <div class="q-text">${q.questionText}</div>
+          ${q.options && q.options.length ? `
+            <div class="options-grid">
+              ${q.options.map(opt => `
+                <div class="opt-box ${opt.isCorrect ? 'correct' : ''}">
+                  <span class="opt-lbl">(${opt.label})</span>
+                  <span>${opt.text}</span>
+                </div>
+              `).join('')}
+            </div>
+          ` : ''}
+          ${(q.correctValue !== null && q.correctValue !== undefined && String(q.correctValue).trim() !== '') ? `
+            <div class="ans-badge">
+              <span>✓ Correct Numerical Answer:</span> <b>${q.correctValue}</b>
+            </div>
+          ` : ''}
+        `;
+        container.appendChild(card);
+      });
+
+      renderMath(container);
+    }
+
+    function moveQuestion(index, direction) {
+      const target = index + direction;
+      if (target < 0 || target >= paperQuestions.length) return;
+      const temp = paperQuestions[index];
+      paperQuestions[index] = paperQuestions[target];
+      paperQuestions[target] = temp;
+      renderBasket();
+      if (document.getElementById('tab-view-student').style.display !== 'none') renderStudentPaper();
+      if (document.getElementById('tab-view-solutions').style.display !== 'none') renderSolutions();
+    }
+
+    function removeQuestion(index) {
+      paperQuestions.splice(index, 1);
+      renderBasket();
+      if (document.getElementById('tab-view-student').style.display !== 'none') renderStudentPaper();
+      if (document.getElementById('tab-view-solutions').style.display !== 'none') renderSolutions();
+    }
+
+    function clearBasket() {
+      if (paperQuestions.length === 0) return;
+      if (confirm('Are you sure you want to clear all questions from this test paper?')) {
+        paperQuestions = [];
+        renderBasket();
+      }
+    }
+
+    // Tabs Switching
+    function switchTab(tab) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('tab-btn-' + tab).classList.add('active');
+
+      document.getElementById('tab-view-basket').style.display = tab === 'basket' ? 'block' : 'none';
+      document.getElementById('tab-view-student').style.display = tab === 'student' ? 'block' : 'none';
+      document.getElementById('tab-view-solutions').style.display = tab === 'solutions' ? 'block' : 'none';
+
+      if (tab === 'student') renderStudentPaper();
+      if (tab === 'solutions') renderSolutions();
+    }
+
+    // Render Student Examination Paper (ANONYMOUS - NO EXAM SOURCE OR DATES)
+    function renderStudentPaper() {
+      const container = document.getElementById('student-paper-render');
+      if (paperQuestions.length === 0) {
+        container.innerHTML = '<div style="text-align:center; padding:40px; color:#6b7280;">No questions added yet. Use the sidebar to add questions first.</div>';
+        return;
+      }
+
+      const inst = document.getElementById('cfg-institute').value;
+      const title = document.getElementById('cfg-title').value;
+      const batch = document.getElementById('cfg-batch').value || 'General Batch';
+      const testDate = document.getElementById('cfg-date').value || new Date().toISOString().split('T')[0];
+      const time = document.getElementById('cfg-time').value;
+      const instructions = document.getElementById('cfg-instructions').value;
+      const showDate = document.getElementById('cfg-show-date') ? document.getElementById('cfg-show-date').checked : false;
+      const showTime = document.getElementById('cfg-show-time') ? document.getElementById('cfg-show-time').checked : false;
+      const showBatch = document.getElementById('cfg-show-batch') ? document.getElementById('cfg-show-batch').checked : false;
+      const showMarks = document.getElementById('cfg-show-marks') ? document.getElementById('cfg-show-marks').checked : false;
+      const showInstructions = document.getElementById('cfg-show-instructions') ? document.getElementById('cfg-show-instructions').checked : false;
+      const showPyqYear = document.getElementById('cfg-show-pyq-year') ? document.getElementById('cfg-show-pyq-year').checked : false;
+      const pyqFormat = document.getElementById('cfg-pyq-format') ? document.getElementById('cfg-pyq-format').value : 'full';
+
+      const mcqs = paperQuestions.filter(q => q.type !== 'numerical');
+      const nums = paperQuestions.filter(q => q.type === 'numerical');
+
+      const infoItems = [];
+      if (showBatch && batch) infoItems.push(`<span>Batch: <b>${batch}</b></span>`);
+      if (showDate && testDate) infoItems.push(`<span>Date: <b>${testDate}</b></span>`);
+      if (showTime && time) infoItems.push(`<span>Time Allowed: <b>${time}</b></span>`);
+      if (showMarks) infoItems.push(`<span>Max Marks: <b>${paperQuestions.length * 4}</b></span>`);
+
+      let html = `
+        <div class="paper-header">
+          <div class="paper-institute">${inst}</div>
+          <div class="paper-title">${title}</div>
+          ${infoItems.length > 0 ? `
+            <div class="paper-info-bar">
+              ${infoItems.join('')}
+            </div>
+          ` : ''}
+          <div class="student-info-row">
+            <span>Candidate Name: __________________________________</span>
+            <span>Roll Number: ________________</span>
+            ${(showBatch && batch) ? `<span>Batch: <b>${batch}</b></span>` : ''}
+          </div>
+        </div>
+        ${(showInstructions && instructions) ? `
+          <div class="paper-instructions">
+            <b>General Instructions:</b><br/>
+            ${instructions.replace(/\n/g, '<br/>')}
+          </div>
+        ` : ''}
+      `;
+
+      // Section A: MCQs
+      if (mcqs.length > 0) {
+        html += `<div class="section-banner">SECTION A: MULTIPLE CHOICE QUESTIONS (${mcqs.length} Questions &bull; Single Correct)</div>`;
+        mcqs.forEach((q, idx) => {
+          const tagDisplay = (showPyqYear && q.examTag) ? `<span class="paper-pyq-tag">[${formatPyqTag(q.examTag, pyqFormat)}]</span>` : '';
+          html += `
+            <div class="paper-q">
+              <div class="paper-q-header">
+                <span>Q${idx + 1}.</span>
+                ${tagDisplay}
+              </div>
+              <div class="paper-q-text">${q.questionText}</div>
+              ${q.options && q.options.length ? `
+                <div class="paper-options">
+                  ${q.options.map(opt => `
+                    <div class="paper-opt">
+                      <b>(${opt.label})</b>
+                      <span>${opt.text}</span>
+                    </div>
+                  `).join('')}
+                </div>
+              ` : ''}
+            </div>
+          `;
+        });
+      }
+
+      // Section B: Numerical
+      if (nums.length > 0) {
+        const startIdx = mcqs.length + 1;
+        html += `<div class="section-banner">SECTION B: NUMERICAL / INTEGER VALUE QUESTIONS (${nums.length} Questions)</div>`;
+        nums.forEach((q, idx) => {
+          const qNum = startIdx + idx;
+          const tagDisplay = (showPyqYear && q.examTag) ? `<span class="paper-pyq-tag">[${formatPyqTag(q.examTag, pyqFormat)}]</span>` : '';
+          html += `
+            <div class="paper-q">
+              <div class="paper-q-header">
+                <span>Q${qNum}.</span>
+                ${tagDisplay}
+              </div>
+              <div class="paper-q-text">${q.questionText}</div>
+              <div class="paper-num-box">
+                Answer: <span class="num-answer-space"></span>
+              </div>
+            </div>
+          `;
+        });
+      }
+
+      // Optional Answer Key Summary at the end of Question Paper
+      const includeAnswerKey = document.getElementById('cfg-include-answer-key') ? document.getElementById('cfg-include-answer-key').checked : false;
+      if (includeAnswerKey && (mcqs.length > 0 || nums.length > 0)) {
+        const orderedQuestions = [...mcqs, ...nums];
+        html += `
+          <div class="paper-end-answer-key" style="margin-top:32px; padding-top:20px; border-top:2px dashed #94a3b8; page-break-inside:avoid;">
+            <div class="section-banner" style="background:#f1f5f9; border-left:4px solid #059669; color:#065f46; margin-top:0;">
+              🔑 OFFICIAL ANSWER KEY SUMMARY (${orderedQuestions.length} Questions)
+            </div>
+            <div class="solution-key-wrapper" style="margin-bottom:0;">
+        `;
+
+        const chunkSize = 10;
+        for (let i = 0; i < orderedQuestions.length; i += chunkSize) {
+          const chunk = orderedQuestions.slice(i, i + chunkSize);
+          const paddingNeeded = chunkSize - chunk.length;
+
+          html += `
+            <table class="solution-key-table">
+              <thead>
+                <tr>
+                  ${chunk.map((_, idx) => `<th>Q${i + idx + 1}</th>`).join('')}
+                  ${Array(paddingNeeded).fill('<th class="empty-cell"></th>').join('')}
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  ${chunk.map(q => {
+                    let ans = '-';
+                    if (q.type === 'numerical') {
+                      ans = (q.correctValue !== null && q.correctValue !== undefined && String(q.correctValue).trim() !== '') ? q.correctValue : '-';
+                    } else {
+                      const cOpts = (q.options || []).filter(o => o.isCorrect);
+                      if (cOpts.length > 0) {
+                        ans = cOpts.map(o => o.label).join(',');
+                      } else if (q.correctValue !== null && q.correctValue !== undefined && String(q.correctValue).trim() !== '') {
+                        ans = q.correctValue;
+                      }
+                    }
+                    return `<td><b>${ans}</b></td>`;
+                  }).join('')}
+                  ${Array(paddingNeeded).fill('<td class="empty-cell"></td>').join('')}
+                </tr>
+              </tbody>
+            </table>
+          `;
+        }
+
+        html += `
+            </div>
+          </div>
+        `;
+      }
+
+      container.innerHTML = `
+        <table class="print-layout-table">
+          <thead class="print-only-thead"><tr><td class="print-spacer-td"></td></tr></thead>
+          <tbody><tr><td class="print-content-td">${html}</td></tr></tbody>
+          <tfoot class="print-only-tfoot"><tr><td class="print-spacer-td"></td></tr></tfoot>
+        </table>
+      `;
+      renderMath(container);
+    }
+
+    // Render Solutions Sheet (Matched 1-to-1 with Question Paper Structure)
+    function renderSolutions() {
+      const container = document.getElementById('solutions-render');
+      if (paperQuestions.length === 0) {
+        container.innerHTML = '<div style="text-align:center; padding:40px; color:#6b7280;">No questions added yet.</div>';
+        return;
+      }
+
+      const inst = document.getElementById('cfg-institute').value;
+      const title = document.getElementById('cfg-title').value;
+      const batch = document.getElementById('cfg-batch').value || 'General Batch';
+      const testDate = document.getElementById('cfg-date').value || new Date().toISOString().split('T')[0];
+      const time = document.getElementById('cfg-time').value;
+      const showDate = document.getElementById('cfg-show-date') ? document.getElementById('cfg-show-date').checked : false;
+      const showTime = document.getElementById('cfg-show-time') ? document.getElementById('cfg-show-time').checked : false;
+      const showBatch = document.getElementById('cfg-show-batch') ? document.getElementById('cfg-show-batch').checked : false;
+      const showMarks = document.getElementById('cfg-show-marks') ? document.getElementById('cfg-show-marks').checked : false;
+      const showPyqYear = document.getElementById('cfg-show-pyq-year') ? document.getElementById('cfg-show-pyq-year').checked : false;
+      const pyqFormat = document.getElementById('cfg-pyq-format') ? document.getElementById('cfg-pyq-format').value : 'full';
+
+      const mcqs = paperQuestions.filter(q => q.type !== 'numerical');
+      const nums = paperQuestions.filter(q => q.type === 'numerical');
+      const orderedQuestions = [...mcqs, ...nums];
+
+      const infoItems = [];
+      if (showBatch && batch) infoItems.push(`<span>Batch: <b>${batch}</b></span>`);
+      if (showDate && testDate) infoItems.push(`<span>Date: <b>${testDate}</b></span>`);
+      if (showTime && time) infoItems.push(`<span>Time Allowed: <b>${time}</b></span>`);
+      infoItems.push(`<span>Total Questions: <b>${orderedQuestions.length}</b></span>`);
+      if (showMarks) infoItems.push(`<span>Max Marks: <b>${orderedQuestions.length * 4}</b></span>`);
+
+      let html = `
+        <div class="paper-header">
+          <div class="paper-institute">${inst}</div>
+          <div class="paper-title">${title} &bull; ANSWER KEY & STEP-BY-STEP SOLUTIONS</div>
+          <div class="paper-info-bar">
+            ${infoItems.join('')}
+          </div>
+        </div>
+      `;
+
+      // Answer Key Summary Grid (Ordered exactly as Question Paper, rows of 10)
+      html += `
+        <div class="solution-key-section" id="solution-key-summary-section">
+          <h4 style="margin-bottom:12px; font-family:sans-serif; color:var(--text); display:flex; align-items:center; gap:8px;">
+            <span>📋 Complete Answer Key Summary</span>
+            <span style="font-size:12px; font-weight:normal; color:#6b7280;">(${orderedQuestions.length} Questions)</span>
+          </h4>
+          <div class="solution-key-wrapper">
+      `;
+
+      const chunkSize = 10;
+      for (let i = 0; i < orderedQuestions.length; i += chunkSize) {
+        const chunk = orderedQuestions.slice(i, i + chunkSize);
+        const paddingNeeded = chunkSize - chunk.length;
+
+        html += `
+          <table class="solution-key-table">
+            <thead>
+              <tr>
+                ${chunk.map((_, idx) => `<th>Q${i + idx + 1}</th>`).join('')}
+                ${Array(paddingNeeded).fill('<th class="empty-cell"></th>').join('')}
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                ${chunk.map(q => {
+                  let ans = '-';
+                  if (q.type === 'numerical') {
+                    ans = (q.correctValue !== null && q.correctValue !== undefined && String(q.correctValue).trim() !== '') ? q.correctValue : '-';
+                  } else {
+                    const cOpts = (q.options || []).filter(o => o.isCorrect);
+                    if (cOpts.length > 0) {
+                      ans = cOpts.map(o => o.label).join(',');
+                    } else if (q.correctValue !== null && q.correctValue !== undefined && String(q.correctValue).trim() !== '') {
+                      ans = q.correctValue;
+                    }
+                  }
+                  return `<td><b>${ans}</b></td>`;
+                }).join('')}
+                ${Array(paddingNeeded).fill('<td class="empty-cell"></td>').join('')}
+              </tr>
+            </tbody>
+          </table>
+        `;
+      }
+
+      html += `
+          </div>
+        </div>
+        <div id="solution-details-container">
+      `;
+
+      // SECTION A: MULTIPLE CHOICE QUESTIONS
+      if (mcqs.length > 0) {
+        html += `<div class="section-banner">SECTION A: MULTIPLE CHOICE QUESTIONS (${mcqs.length} Questions &bull; Single Correct)</div>`;
+        mcqs.forEach((q, idx) => {
+          const qNum = idx + 1;
+          const tagDisplay = (showPyqYear && q.examTag) ? `<span class="paper-pyq-tag">[${formatPyqTag(q.examTag, pyqFormat)}]</span>` : (q.examTag ? `<span class="paper-pyq-tag">[${q.examTag}]</span>` : '');
+          
+          let correctTxt = '';
+          const cOpts = (q.options || []).filter(o => o.isCorrect);
+          if (cOpts.length > 1) {
+            correctTxt = `Correct Options: <b>(${cOpts.map(o => o.label).join(', ')})</b> &bull; Multiple Correct`;
+          } else if (cOpts.length === 1) {
+            correctTxt = `Correct Option: <b>(${cOpts[0].label})</b> ${cOpts[0].text ? `&bull; ${cOpts[0].text}` : ''}`;
+          } else if (q.correctValue !== null && q.correctValue !== undefined && String(q.correctValue).trim() !== '') {
+            correctTxt = `Correct Value: <b>${q.correctValue}</b>`;
+          } else {
+            correctTxt = `Answer: Key Not Specified`;
+          }
+
+          html += `
+            <div class="paper-q paper-sol-item">
+              <div class="paper-q-header">
+                <span>Q${qNum}.</span>
+                ${tagDisplay}
+                <span class="paper-q-sub-chap">[${q.subject} &bull; ${q.chapter}]</span>
+              </div>
+              <div class="paper-q-text">${q.questionText}</div>
+              ${q.options && q.options.length ? `
+                <div class="paper-options">
+                  ${q.options.map(opt => `
+                    <div class="paper-opt ${opt.isCorrect ? 'paper-opt-correct' : ''}">
+                      <b>(${opt.label})</b>
+                      <span>${opt.text}</span>
+                      ${opt.isCorrect ? '<span class="correct-badge">✓ Correct</span>' : ''}
+                    </div>
+                  `).join('')}
+                </div>
+              ` : ''}
+              <div class="sol-answer-box">
+                ${correctTxt}
+              </div>
+              <div class="sol-steps-box">
+                <div class="sol-steps-title">💡 Detailed Step-by-Step Solution:</div>
+                <div class="sol-steps-body">
+                  ${q.solutionText ? q.solutionText : '<em>No step-by-step solution available for this question.</em>'}
+                </div>
+              </div>
+            </div>
+          `;
+        });
+      }
+
+      // SECTION B: NUMERICAL / INTEGER VALUE QUESTIONS
+      if (nums.length > 0) {
+        const startIdx = mcqs.length + 1;
+        html += `<div class="section-banner">SECTION B: NUMERICAL / INTEGER VALUE QUESTIONS (${nums.length} Questions)</div>`;
+        nums.forEach((q, idx) => {
+          const qNum = startIdx + idx;
+          const tagDisplay = (showPyqYear && q.examTag) ? `<span class="paper-pyq-tag">[${formatPyqTag(q.examTag, pyqFormat)}]</span>` : (q.examTag ? `<span class="paper-pyq-tag">[${q.examTag}]</span>` : '');
+          const val = (q.correctValue !== null && q.correctValue !== undefined && String(q.correctValue).trim() !== '') ? q.correctValue : 'Not Specified';
+
+          html += `
+            <div class="paper-q paper-sol-item">
+              <div class="paper-q-header">
+                <span>Q${qNum}.</span>
+                ${tagDisplay}
+                <span class="paper-q-sub-chap">[${q.subject} &bull; ${q.chapter}]</span>
+              </div>
+              <div class="paper-q-text">${q.questionText}</div>
+              <div class="sol-answer-box">
+                Correct Numerical Value: <span style="font-size:15px; color:#15803d; font-weight:800;">${val}</span>
+              </div>
+              <div class="sol-steps-box">
+                <div class="sol-steps-title">💡 Detailed Step-by-Step Solution:</div>
+                <div class="sol-steps-body">
+                  ${q.solutionText ? q.solutionText : '<em>No step-by-step solution available for this question.</em>'}
+                </div>
+              </div>
+            </div>
+          `;
+        });
+      }
+
+      html += `</div>`;
+
+      container.innerHTML = `
+        <table class="print-layout-table">
+          <thead class="print-only-thead"><tr><td class="print-spacer-td"></td></tr></thead>
+          <tbody><tr><td class="print-content-td">${html}</td></tr></tbody>
+          <tfoot class="print-only-tfoot"><tr><td class="print-spacer-td"></td></tr></tfoot>
+        </table>
+      `;
+      renderMath(container);
+    }
+
+    function updatePaperHeader() {
+      if (document.getElementById('tab-view-student').style.display !== 'none') renderStudentPaper();
+      if (document.getElementById('tab-view-solutions').style.display !== 'none') renderSolutions();
+    }
+
+    function polyfillMfenced(root) {
+      if (!root) return;
+      let mf = root.querySelector('mfenced');
+      let safeguard = 0;
+      while (mf && safeguard < 500) {
+        safeguard++;
+        const open = mf.getAttribute('open') !== null ? mf.getAttribute('open') : '(';
+        const close = mf.getAttribute('close') !== null ? mf.getAttribute('close') : ')';
+        const mrow = document.createElementNS('http://www.w3.org/1998/Math/MathML', 'mrow');
+        if (open) {
+          const moOpen = document.createElementNS('http://www.w3.org/1998/Math/MathML', 'mo');
+          moOpen.textContent = open;
+          mrow.appendChild(moOpen);
+        }
+        while (mf.firstChild) {
+          mrow.appendChild(mf.firstChild);
+        }
+        if (close) {
+          const moClose = document.createElementNS('http://www.w3.org/1998/Math/MathML', 'mo');
+          moClose.textContent = close;
+          mrow.appendChild(moClose);
+        }
+        if (mf.parentNode) {
+          mf.parentNode.replaceChild(mrow, mf);
+        }
+        mf = root.querySelector('mfenced');
+      }
+    }
+
+    function renderMath(element) {
+      if (!element) return;
+      polyfillMfenced(element);
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(element, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch(e) {}
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([element]).catch(() => {});
+      }
+    }
+
+    // Print & Export
+    async function printTestPaper() {
+      if (paperQuestions.length === 0) {
+        alert('Please add questions to your paper before printing!');
+        return;
+      }
+      switchTab('student');
+      renderStudentPaper();
+
+      // Auto-record questions for this batch & date in history
+      const batch = document.getElementById('cfg-batch').value || 'General Batch';
+      const testDate = document.getElementById('cfg-date').value || new Date().toISOString().split('T')[0];
+      const title = document.getElementById('cfg-title').value;
+      const qIds = paperQuestions.map(q => q.id).filter(Boolean);
+
+      try {
+        await fetch('/api/record_usage', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            batch: batch,
+            test_date: testDate,
+            paper_title: title,
+            paper_id: `conducted_${Date.now()}`,
+            question_ids: qIds
+          })
+        });
+        updateHistoryBadge();
+      } catch (e) {
+        console.error(e);
+      }
+
+      // Temporarily blank document.title so no paper generator / title tag is printed
+      const originalTitle = document.title;
+      document.title = "";
+
+      window.addEventListener('afterprint', () => {
+        document.title = originalTitle;
+      }, { once: true });
+
+      setTimeout(() => {
+        window.print();
+        setTimeout(() => {
+          document.title = originalTitle;
+        }, 1500);
+      }, 250);
+    }
+
+    // Print / Save Answer Key & Step-by-Step Solutions PDF (Clean - no browser date/time/localhost tags)
+    async function printSolutionsPaper() {
+      if (paperQuestions.length === 0) {
+        alert('Please add questions to your paper before printing solutions!');
+        return;
+      }
+      switchTab('solutions');
+      renderSolutions();
+
+      const originalTitle = document.title;
+      document.title = "";
+
+      window.addEventListener('afterprint', () => {
+        document.title = originalTitle;
+      }, { once: true });
+
+      setTimeout(() => {
+        window.print();
+        setTimeout(() => {
+          document.title = originalTitle;
+        }, 1500);
+      }, 250);
+    }
+
+    // Print / Save Compact 1-Page Answer Key PDF
+    async function printAnswerKeyOnly() {
+      if (paperQuestions.length === 0) {
+        alert('Please add questions to your paper before printing answer key!');
+        return;
+      }
+      switchTab('solutions');
+      renderSolutions();
+
+      const detailsEl = document.getElementById('solution-details-container');
+      const prevDisplay = detailsEl ? detailsEl.style.display : '';
+      if (detailsEl) detailsEl.style.display = 'none';
+
+      const originalTitle = document.title;
+      document.title = "";
+
+      const restore = () => {
+        if (detailsEl) detailsEl.style.display = prevDisplay;
+        document.title = originalTitle;
+      };
+
+      window.addEventListener('afterprint', restore, { once: true });
+
+      setTimeout(() => {
+        window.print();
+        setTimeout(restore, 1500);
+      }, 250);
+    }
+
+    async function exportWordDoc(mode) {
+      if (paperQuestions.length === 0) {
+        alert('Please add questions to your paper before exporting!');
+        return;
+      }
+      const inst = document.getElementById('cfg-institute').value;
+      const title = document.getElementById('cfg-title').value;
+      const batch = document.getElementById('cfg-batch').value || 'General Batch';
+      const testDate = document.getElementById('cfg-date').value || new Date().toISOString().split('T')[0];
+      const time = document.getElementById('cfg-time').value;
+      const marks = `${paperQuestions.length * 4}`;
+      const instructions = document.getElementById('cfg-instructions').value;
+      const showPyqYear = document.getElementById('cfg-show-pyq-year') ? document.getElementById('cfg-show-pyq-year').checked : false;
+      const pyqFormat = document.getElementById('cfg-pyq-format') ? document.getElementById('cfg-pyq-format').value : 'full';
+      const showDate = document.getElementById('cfg-show-date') ? document.getElementById('cfg-show-date').checked : false;
+      const showTime = document.getElementById('cfg-show-time') ? document.getElementById('cfg-show-time').checked : false;
+      const showBatch = document.getElementById('cfg-show-batch') ? document.getElementById('cfg-show-batch').checked : false;
+      const showMarks = document.getElementById('cfg-show-marks') ? document.getElementById('cfg-show-marks').checked : false;
+      const showInstructions = document.getElementById('cfg-show-instructions') ? document.getElementById('cfg-show-instructions').checked : false;
+      const includeAnswerKey = document.getElementById('cfg-include-answer-key') ? document.getElementById('cfg-include-answer-key').checked : false;
+
+      const payload = {
+        mode: mode,
+        institute: inst,
+        title: title,
+        batch: batch,
+        test_date: testDate,
+        time_limit: time,
+        max_marks: marks,
+        instructions: instructions,
+        show_pyq_year: showPyqYear,
+        pyq_format: pyqFormat,
+        show_date: showDate,
+        show_time: showTime,
+        show_batch: showBatch,
+        show_marks: showMarks,
+        show_instructions: showInstructions,
+        include_answer_key: includeAnswerKey,
+        questions: paperQuestions
+      };
+
+      try {
+        const res = await fetch('/api/export_docx', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(payload)
+        });
+        if (!res.ok) throw new Error('Export failed');
+        const blob = await res.blob();
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${title.replace(/\s+/g, '_')}_${batch.replace(/\s+/g, '_')}_${mode}.docx`;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        updateHistoryBadge();
+      } catch (e) {
+        alert('Error exporting Word document: ' + e);
+      }
+    }
+
+    // Save & Load
+    async function saveCurrentTest() {
+      if (paperQuestions.length === 0) {
+        alert('Add some questions before saving!');
+        return;
+      }
+      const title = prompt('Enter a name for this Test Paper:', document.getElementById('cfg-title').value);
+      if (!title) return;
+
+      const payload = {
+        title: title,
+        institute: document.getElementById('cfg-institute').value,
+        batch: document.getElementById('cfg-batch').value || 'General Batch',
+        test_date: document.getElementById('cfg-date').value || new Date().toISOString().split('T')[0],
+        time: document.getElementById('cfg-time').value,
+        marks: document.getElementById('cfg-marks').value,
+        instructions: document.getElementById('cfg-instructions').value,
+        show_date: document.getElementById('cfg-show-date') ? document.getElementById('cfg-show-date').checked : false,
+        show_time: document.getElementById('cfg-show-time') ? document.getElementById('cfg-show-time').checked : false,
+        show_batch: document.getElementById('cfg-show-batch') ? document.getElementById('cfg-show-batch').checked : false,
+        show_marks: document.getElementById('cfg-show-marks') ? document.getElementById('cfg-show-marks').checked : false,
+        show_instructions: document.getElementById('cfg-show-instructions') ? document.getElementById('cfg-show-instructions').checked : false,
+        include_answer_key: document.getElementById('cfg-include-answer-key') ? document.getElementById('cfg-include-answer-key').checked : false,
+        show_pyq_year: document.getElementById('cfg-show-pyq-year') ? document.getElementById('cfg-show-pyq-year').checked : false,
+        pyq_format: document.getElementById('cfg-pyq-format') ? document.getElementById('cfg-pyq-format').value : 'full',
+        savedAt: new Date().toLocaleString(),
+        questions: paperQuestions
+      };
+
+      try {
+        const res = await fetch('/api/save_paper', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        updateHistoryBadge();
+        alert(`Test Paper saved and registered in history for '${payload.batch}' on ${payload.test_date}!\nQuestions will be tracked for 7-day anti-repeat.`);
+      } catch(e) {
+        alert('Failed to save paper: ' + e);
+      }
+    }
+
+    async function openLoadModal() {
+      const modal = document.getElementById('load-modal');
+      modal.classList.add('open');
+      const listDiv = document.getElementById('saved-papers-list');
+      listDiv.innerHTML = '<div style="text-align:center; padding:20px;">Loading saved tests...</div>';
+
+      try {
+        const res = await fetch('/api/list_papers');
+        const papers = await res.json();
+        if (!papers || papers.length === 0) {
+          listDiv.innerHTML = '<div style="text-align:center; padding:20px; color:var(--text-muted);">No saved test papers found yet.</div>';
+          return;
+        }
+
+        listDiv.innerHTML = '';
+        papers.forEach(p => {
+          const item = document.createElement('div');
+          item.className = 'q-card';
+          item.style.marginBottom = '8px';
+          item.innerHTML = `
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <b style="font-size:14px; color:var(--text);">${p.title}</b>
+                <div style="font-size:12px; color:var(--text-muted);">${p.batch || 'General'} &bull; ${p.test_date || ''} &bull; ${p.questionCount} Questions</div>
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="loadSavedPaper('${p.id}')">Load Test</button>
+            </div>
+          `;
+          listDiv.appendChild(item);
+        });
+      } catch(e) {
+        listDiv.innerHTML = '<div style="color:red; text-align:center;">Failed to list saved papers</div>';
+      }
+    }
+
+    function closeLoadModal() {
+      document.getElementById('load-modal').classList.remove('open');
+    }
+
+    async function loadSavedPaper(id) {
+      try {
+        const res = await fetch('/api/load_paper/' + id);
+        const data = await res.json();
+        if (data.questions) {
+          paperQuestions = data.questions;
+          if (data.title) document.getElementById('cfg-title').value = data.title;
+          if (data.institute) document.getElementById('cfg-institute').value = data.institute;
+          if (data.batch) document.getElementById('cfg-batch').value = data.batch;
+          if (data.test_date) document.getElementById('cfg-date').value = data.test_date;
+          if (data.time) document.getElementById('cfg-time').value = data.time;
+          if (data.instructions) document.getElementById('cfg-instructions').value = data.instructions;
+          if (data.show_date !== undefined) document.getElementById('cfg-show-date').checked = !!data.show_date;
+          if (data.show_time !== undefined) document.getElementById('cfg-show-time').checked = !!data.show_time;
+          if (data.show_batch !== undefined) document.getElementById('cfg-show-batch').checked = !!data.show_batch;
+          if (data.show_marks !== undefined) document.getElementById('cfg-show-marks').checked = !!data.show_marks;
+          if (data.show_instructions !== undefined) document.getElementById('cfg-show-instructions').checked = !!data.show_instructions;
+          if (data.include_answer_key !== undefined) document.getElementById('cfg-include-answer-key').checked = !!data.include_answer_key;
+          if (data.show_pyq_year !== undefined) {
+            document.getElementById('cfg-show-pyq-year').checked = !!data.show_pyq_year;
+            togglePyqYearOption();
+          }
+          if (data.pyq_format) {
+            document.getElementById('cfg-pyq-format').value = data.pyq_format;
+          }
+          onBatchOrDateChange();
+          renderBasket();
+          closeLoadModal();
+          alert(`Loaded '${data.title}' (${data.batch || 'General'}) with ${data.questions.length} questions!`);
+        }
+      } catch(e) {
+        alert('Failed to load paper: ' + e);
+      }
+    }
+
+    // History Modal
+    async function openHistoryModal() {
+      const modal = document.getElementById('history-modal');
+      modal.classList.add('open');
+      const body = document.getElementById('history-modal-body');
+      body.innerHTML = '<div style="text-align:center; padding:20px;">Loading history...</div>';
+
+      try {
+        const res = await fetch('/api/history');
+        const hist = await res.json();
+        const papers = hist.papers || [];
+
+        if (papers.length === 0) {
+          body.innerHTML = `
+            <div style="text-align:center; padding:30px; color:var(--text-muted);">
+              <div style="font-size:36px; margin-bottom:8px;">📜</div>
+              <b>No conducted tests recorded yet.</b>
+              <p style="font-size:12px; margin-top:4px;">When you Save, Print, or Export a paper, it is automatically logged here to prevent questions from repeating within 7 days.</p>
+            </div>
+          `;
+          return;
+        }
+
+        body.innerHTML = '';
+        const today = new Date();
+
+        papers.slice().reverse().forEach(p => {
+          let daysAgo = 0;
+          let isWithinWeek = false;
+          try {
+            const pDate = new Date(p.test_date);
+            daysAgo = Math.floor((today - pDate) / (1000 * 60 * 60 * 24));
+            isWithinWeek = daysAgo >= 0 && daysAgo <= 7;
+          } catch(e) {}
+
+          const item = document.createElement('div');
+          item.className = 'q-card';
+          item.style.marginBottom = '10px';
+          item.innerHTML = `
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <b style="font-size:14px; color:var(--text);">${p.paper_title}</b>
+                <div style="font-size:12px; color:var(--text-muted); margin-top:3px;">
+                  <b>Batch:</b> ${p.batch} &bull; <b>Date:</b> ${p.test_date} (${daysAgo} days ago) &bull; <b>${p.question_count} Qs</b>
+                </div>
+                <div style="margin-top:6px;">
+                  ${isWithinWeek ? '<span class="badge-warning">⚠️ Active within 7-Day Window</span>' : '<span style="font-size:11px; color:#10b981; font-weight:600;">✓ Expired (>7 days, marks cleared)</span>'}
+                </div>
+              </div>
+              <button class="btn btn-danger btn-sm" onclick="removeHistoryPaper('${p.paper_id}')">🗑️ Remove</button>
+            </div>
+          `;
+          body.appendChild(item);
+        });
+      } catch (e) {
+        body.innerHTML = '<div style="color:red; text-align:center;">Failed to load history</div>';
+      }
+    }
+
+    function closeHistoryModal() {
+      document.getElementById('history-modal').classList.remove('open');
+    }
+
+    async function removeHistoryPaper(paperId) {
+      if (!confirm('Remove this test from history? Its questions will no longer be flagged as recent.')) return;
+      try {
+        await fetch('/api/clear_history', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({ paper_id: paperId })
+        });
+        openHistoryModal();
+        updateHistoryBadge();
+      } catch(e) {
+        alert('Failed to remove record');
+      }
+    }
+
+    async function clearAllHistory() {
+      if (!confirm('Are you sure you want to reset the ENTIRE question history? All 7-day repeat warnings will be cleared.')) return;
+      try {
+        await fetch('/api/clear_history', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({})
+        });
+        openHistoryModal();
+        updateHistoryBadge();
+      } catch(e) {
+        alert('Failed to reset history');
+      }
+    }
+
+    // ==================== EXAMSIDE PYQ INTEGRATION ====================
+    let examsideCatalog = null;
+    let currentExamSideUnit = 'all';
+
+    async function openExamSideModal() {
+      document.getElementById('examside-modal').classList.add('open');
+      if (!examsideCatalog) {
+        try {
+          const res = await fetch('/api/examside/catalog');
+          examsideCatalog = await res.json();
+        } catch(e) {
+          console.error(e);
+        }
+      }
+      renderExamSideChapters();
+    }
+
+    function closeExamSideModal() {
+      document.getElementById('examside-modal').classList.remove('open');
+    }
+
+    function setExamSideUnitFilter(unit, btn) {
+      currentExamSideUnit = unit;
+      document.querySelectorAll('.examside-unit-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      renderExamSideChapters();
+    }
+
+    function filterExamSideChapters() {
+      renderExamSideChapters();
+    }
+
+    function renderExamSideChapters() {
+      const container = document.getElementById('examside-chapters-container');
+      if (!examsideCatalog || !examsideCatalog.units) {
+        container.innerHTML = '<div style="text-align:center; padding:30px; color:var(--text-muted);">Failed to load ExamSIDE catalog.</div>';
+        return;
+      }
+      const search = (document.getElementById('examside-search-input').value || '').trim().toLowerCase();
+      
+      let allChapters = [];
+      examsideCatalog.units.forEach(u => {
+        if (currentExamSideUnit === 'all' || u.unit_folder === currentExamSideUnit) {
+          u.chapters.forEach(ch => allChapters.push(ch));
+        }
+      });
+
+      if (search) {
+        allChapters = allChapters.filter(ch => 
+          ch.chapter_name.toLowerCase().includes(search) || 
+          ch.unit_title.toLowerCase().includes(search)
+        );
+      }
+
+      if (allChapters.length === 0) {
+        container.innerHTML = `<div style="text-align:center; padding:40px; color:var(--text-muted);">No chapters matching "${search}".</div>`;
+        return;
+      }
+
+      let html = `<div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 12px;">`;
+      
+      allChapters.forEach((ch, idx) => {
+        html += `
+          <div class="q-card" style="padding:14px; display:flex; flex-direction:column; justify-content:space-between; gap:10px;">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                <span style="font-size:11px; font-weight:700; color:var(--primary); background:rgba(56,189,248,0.12); padding:2px 8px; border-radius:4px;">${ch.unit_title}</span>
+                <span style="font-size:11px; color:var(--text-muted);">${ch.size_mb} MB &bull; ${ch.pages} Pages</span>
+              </div>
+              <div style="font-size:14px; font-weight:700; color:var(--text); line-height:1.3; margin-bottom:4px;">
+                ${ch.chapter_name}
+              </div>
+              <div style="font-size:12px; color:var(--success); font-weight:600;">
+                ✓ ${ch.questions_count} Questions with Official Answer Key
+              </div>
+            </div>
+            
+            <div style="display:flex; gap:6px; flex-wrap:wrap; border-top:1px solid var(--border); padding-top:10px; margin-top:4px;">
+              <a href="/api/examside/view/${ch.unit_folder}/${encodeURIComponent(ch.filename)}" target="_blank" class="btn btn-sm btn-primary" style="text-decoration:none;" title="Open official ExamSIDE booklet in browser">👁️ View PDF</a>
+              <a href="/api/examside/download/${ch.unit_folder}/${encodeURIComponent(ch.filename)}" class="btn btn-sm" style="text-decoration:none;" title="Download PDF file">📥 Download</a>
+              <button class="btn btn-sm btn-warning" onclick="showExamSideAnswerKey('${ch.unit_folder}', '${encodeURIComponent(ch.filename)}')" title="View question-by-question answer key table">🔑 Answer Key</button>
+              ${ch.mapped_folder ? `
+                <button class="btn btn-sm btn-success" onclick="generateFromExamSideChapter('${ch.mapped_folder}', '${ch.chapter_name.replace(/'/g, "\\'")}')" title="Generate interactive mock test from this chapter's PYQs">🎯 Generate Paper</button>
+              ` : ''}
+            </div>
+          </div>
+        `;
+      });
+      
+      html += `</div>`;
+      container.innerHTML = html;
+    }
+
+    function showExamSideAnswerKey(unitFolder, filename) {
+      const decFilename = decodeURIComponent(filename);
+      let targetCh = null;
+      if (examsideCatalog && examsideCatalog.units) {
+        for (const u of examsideCatalog.units) {
+          if (u.unit_folder === unitFolder) {
+            for (const ch of u.chapters) {
+              if (ch.filename === decFilename) {
+                targetCh = ch;
+                break;
+              }
+            }
+          }
+        }
+      }
+
+      if (!targetCh) return;
+
+      document.getElementById('examside-key-title').textContent = `🔑 Official Answer Key: ${targetCh.chapter_name}`;
+      document.getElementById('examside-key-subtitle').textContent = `${targetCh.unit_title} • ${targetCh.questions_count} Questions • ExamSIDE Official Verified Key`;
+      
+      const contentDiv = document.getElementById('examside-key-content');
+      const keys = targetCh.answer_keys || [];
+      
+      if (keys.length === 0) {
+        contentDiv.innerHTML = '<div style="text-align:center; padding:30px; color:var(--text-muted);">No answer keys found for this chapter.</div>';
+      } else {
+        const chunkSize = 10;
+        let html = `
+          <div style="margin-bottom:12px; font-size:12px; color:var(--text-muted);">
+            Displaying official answer key for all ${keys.length} questions:
+          </div>
+          <div class="solution-key-wrapper" style="max-height:55vh; overflow-y:auto;">
+        `;
+        
+        for (let i = 0; i < keys.length; i += chunkSize) {
+          const chunk = keys.slice(i, i + chunkSize);
+          const paddingNeeded = chunkSize - chunk.length;
+          html += `
+            <table class="solution-key-table" style="margin-bottom:8px;">
+              <thead>
+                <tr>
+                  ${chunk.map(item => `<th>Q${item.q}</th>`).join('')}
+                  ${Array(paddingNeeded).fill('<th class="empty-cell"></th>').join('')}
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  ${chunk.map(item => `<td><b>${item.ans}</b></td>`).join('')}
+                  ${Array(paddingNeeded).fill('<td class="empty-cell"></td>').join('')}
+                </tr>
+              </tbody>
+            </table>
+          `;
+        }
+        html += `</div>`;
+        contentDiv.innerHTML = html;
+      }
+      
+      document.getElementById('examside-key-modal').classList.add('open');
+    }
+
+    function closeExamSideKeyModal() {
+      document.getElementById('examside-key-modal').classList.remove('open');
+    }
+
+    function generateFromExamSideChapter(folderName, chapterTitle) {
+      closeExamSideModal();
+      // Select Mathematics
+      document.getElementById('sel-subject').value = 'Mathematics';
+      onSubjectChange();
+      
+      // Select ExamSIDE (JEE Main)
+      document.getElementById('sel-exam').value = 'ExamSIDE_JEE_Main';
+      onExamChange();
+      
+      // Select chapter
+      setTimeout(() => {
+        const chSelect = document.getElementById('sel-chapter');
+        chSelect.value = folderName;
+        onChapterChange();
+        
+        // Switch to basket tab & open browse modal
+        switchTab('basket');
+        openBrowseModal();
+      }, 100);
+    }
+
+    async function openMobileModal() {
+      try {
+        const res = await fetch('/api/mobile_info');
+        const data = await res.json();
+        const cloudUrl = data.cloud_url || 'https://order-have-two-smell.trycloudflare.com';
+        const wifiUrl = data.local_wifi_url || 'http://192.168.1.35:5000';
+        
+        const linkEl = document.getElementById('mobile-cloud-link');
+        if (linkEl) {
+          linkEl.href = cloudUrl;
+          linkEl.textContent = cloudUrl;
+        }
+        const qrEl = document.getElementById('mobile-qr-img');
+        if (qrEl) {
+          qrEl.src = 'https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=' + encodeURIComponent(cloudUrl);
+        }
+        const wifiEl = document.getElementById('mobile-local-wifi-link');
+        if (wifiEl) wifiEl.textContent = wifiUrl;
+      } catch (e) {
+        console.error(e);
+      }
+      document.getElementById('mobile-modal').classList.add('open');
+    }
+
+    function closeMobileModal() {
+      document.getElementById('mobile-modal').classList.remove('open');
+    }
+
+    function copyMobileLink() {
+      const url = document.getElementById('mobile-cloud-link').href;
+      navigator.clipboard.writeText(url).then(() => {
+        const btn = document.getElementById('btn-copy-mobile-link');
+        btn.textContent = '✅ Copied to Clipboard!';
+        setTimeout(() => {
+          btn.textContent = '📋 Copy Mobile Link';
+        }, 2000);
+      });
+    }
+
+    function switchMobileView(view) {
+      if (window.innerWidth > 900) return;
+      const sidebar = document.querySelector('aside.sidebar');
+      const workspace = document.querySelector('main.workspace');
+      const btnSidebar = document.getElementById('btn-show-sidebar');
+      const btnWorkspace = document.getElementById('btn-show-workspace');
+
+      if (view === 'sidebar') {
+        if (sidebar) sidebar.style.display = 'flex';
+        if (workspace) workspace.style.display = 'none';
+        if (btnSidebar) btnSidebar.classList.add('active');
+        if (btnWorkspace) btnWorkspace.classList.remove('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        if (sidebar) sidebar.style.display = 'none';
+        if (workspace) workspace.style.display = 'flex';
+        if (btnSidebar) btnSidebar.classList.remove('active');
+        if (btnWorkspace) btnWorkspace.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
+    function updateMobileCounter() {
+      document.querySelectorAll('.m-basket-count').forEach(el => {
+        el.textContent = paperQuestions.length;
+      });
+    }
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 900) {
+        const sidebar = document.querySelector('aside.sidebar');
+        const workspace = document.querySelector('main.workspace');
+        if (sidebar) sidebar.style.display = 'flex';
+        if (workspace) workspace.style.display = 'flex';
+      }
+    });
+  </script>
+</body>
+</html>

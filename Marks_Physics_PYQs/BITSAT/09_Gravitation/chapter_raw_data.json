@@ -1,0 +1,1784 @@
+{
+  "index": 9,
+  "chapterId": "61e7bd7e6b5fb113f0acb24c",
+  "chapter": "Gravitation",
+  "exam": "BITSAT",
+  "subject": "Physics",
+  "totalTopics": 7,
+  "totalQuestions": 26,
+  "downloadTime": "2026-10-08 20:27:48",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e8536f5bfc7ab78aece4",
+      "title": "Newton's Law of Gravitation",
+      "totalQuestions": 4,
+      "questions": [
+        {
+          "_id": "67726cf6c49e8ef28ee2b330",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "For a particle inside a uniform spherical shell, the gravitational force on the particle is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "QEuNk",
+              "text": "infinite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "eTt8y",
+              "text": "zero",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "GFsxq",
+              "text": "$\\frac{-G m_1 m_2}{r^2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "LCwZQ",
+              "text": "$\\frac{\\mathrm{Gm}_1 \\mathrm{~m}_2}{\\mathrm{r}^2}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Various regions of spherical shell attract the point mass inside it in various directions. These forces cancel each other completely. Therefore the gravitational force on the particle is zero.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7d66f5bfc7ab78ae848",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "What should be the velocity of rotation of earth due to rotation about its own axis so that the weight of a person becomes $\\frac{3}{5}$ of the present weight at the equator. Equatorial radius of the earth is $6400 \\mathrm{~km}$.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ckaSx",
+              "text": "$8.7 \\times 10^{-7} \\mathrm{rad} / \\mathrm{s}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Rs9Bc",
+              "text": "$7.8 \\times 10^{-4} \\mathrm{rad} / \\mathrm{s}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "frkgl",
+              "text": "$6.7 \\times 10^{-4} \\mathrm{rad} / \\mathrm{s}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "PorBm",
+              "text": "$7.4 \\times 10^{-3} \\mathrm{rad} / \\mathrm{s}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "True weight at equator, $W=m g$ Observed weight at equator,\r\n\r\n$$\r\n\r\n\\mathrm{W}^{\\prime}=\\mathrm{mg}^{\\prime}=\\frac{3}{5} \\mathrm{mg}\r\n\r\n$$\r\n\r\nAt equator, latitude $\\lambda=0$ Using the formula,\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\mathrm{mg}^{\\prime}=\\mathrm{mg}-\\mathrm{mR} \\omega^{2} \\cos ^{2} \\lambda \\\\\r\n\r\n\\frac{3}{5} \\mathrm{mg}=\\mathrm{mg}-\\mathrm{mR} \\omega^{2} \\cos ^{2} 0=\\mathrm{mg}-\\mathrm{mR} \\omega^{2} \\\\\r\n\r\n\\Rightarrow \\mathrm{mR} \\omega^{2}=\\mathrm{mg}-\\frac{3}{5} \\mathrm{mg}=\\frac{2}{5} \\mathrm{mg} \\\\\r\n\r\n\\therefore \\quad \\omega=\\left(\\frac{2}{5} \\frac{\\mathrm{g}}{\\mathrm{R}}\\right)^{1 / 2} \\\\\r\n\r\n=\\left(\\frac{2 \\times 9.8}{5 \\times 6.4 \\times 10^{6}}\\right)^{1 / 2}=7.8 \\times 10^{-4} \\mathrm{rad} / \\mathrm{s}\r\n\r\n\\end{array}\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e78e6f5bfc7ab78ae5df",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "A man of mass m starts falling towards a planet of mass $\\mathrm{M}$ and radius $\\mathrm{R}$. As he reaches near to the surface, he realizes that he will pass through a small hole in the planet. As he enters the hole, he sees that the planet is really made of two pieces a spherical shell of negligible thickness of mass $2 \\mathrm{M} / 3$ and a point mass $\\mathrm{M} / 3$ at the centre. Change in the force of gravity experienced by the man is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "TrmzI",
+              "text": "$\\frac{2}{3} \\frac{\\mathrm{GMm}}{\\mathrm{R}^{2}}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "VFfXm",
+              "text": "0",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CmKnv",
+              "text": "$\\frac{1}{3} \\frac{\\mathrm{GMm}}{\\mathrm{R}^{2}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wJJeJ",
+              "text": "$\\frac{4}{3} \\frac{\\mathrm{GMm}}{\\mathrm{R}^{2}}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\quad$ Change in force of gravity\n$$\n=\\frac{\\mathrm{GMm}}{\\mathrm{R}^{2}}-\\frac{\\mathrm{G} \\frac{\\mathrm{M}}{3} \\mathrm{~m}}{\\mathrm{R}^{2}}\n$$\n(only due to mass $\\mathrm{M} / 3$ due to shell gravitational field is zero (inside the shell))\n$$\n=\\frac{2 \\mathrm{GMm}}{3 \\mathrm{R}^{2}}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7806f5bfc7ab78ae564",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "Suppose the gravitational force varies inversely as the nth power of distance. Then the time period of a planet in circular orbit of radius ' $\\mathrm{R}$ ' around the sun will be proportional to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "JKmBY",
+              "text": "$\\mathrm{R}^{\\mathrm{n}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Qg85O",
+              "text": "$\\mathrm{R}^{\\left(\\frac{\\mathrm{n}-1}{2}\\right)}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "s9QxV",
+              "text": "$\\mathrm{R}\\left(\\frac{\\mathrm{n}+1}{2}\\right)$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "bs6pV",
+              "text": "$\\mathrm{R}^{\\left(\\frac{\\mathrm{n}-2}{2}\\right)}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$$\n\\mathrm{F}=\\mathrm{KR}^{-\\mathrm{n}}=\\mathrm{MR} \\omega^{2} \\Rightarrow \\omega^{2}=\\mathrm{KR}^{-(\\mathrm{n}+1)}\n$$\nor $\\omega=\\mathrm{K}^{\\prime} \\mathrm{R}^{\\frac{-(\\mathrm{n}+1)}{2}}$\n[where $\\mathrm{K}^{\\prime}=\\mathrm{K}^{1 / 2}$, a constant $]$\n$\\frac{2 \\pi}{T} \\alpha R^{\\frac{-(n+1)}{2}} \\quad \\therefore T \\alpha R^{\\frac{(n+1)}{2}}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "65b7b88d97ae24e9e2db8d2d",
+      "title": "Newton’s Law of Gravitation",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "65b7b87a97ae24e9e2db8cbf",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Two identical particles each of mass ' $m$ ' go round a circle of radius $a$ under the action of their mutual gravitational attraction. The angular speed of each particle will be:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "3KwgM",
+              "text": "$\\sqrt{\\frac{G m}{2 a^3}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pHzMs",
+              "text": "$\\sqrt{\\frac{\\mathrm{Gm}}{8 \\mathrm{a}^3}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "jthcR",
+              "text": "$\\sqrt{\\frac{G m}{4 a^3}}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "1bPEl",
+              "text": "$\\sqrt{\\frac{G m}{a^3}}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Radius of circle, $\\mathrm{r}=\\mathrm{a}$<br />Centrifugal force, $F=m \\omega^2 r$<br />$\\begin{aligned}<br />& \\Rightarrow \\frac{\\mathrm{Gmm}}{(2 \\mathrm{a})^2}=\\mathrm{m} \\omega^2 \\mathrm{a} \\\\<br />& \\left(\\because \\mathrm{F}=\\frac{\\mathrm{G} \\mathrm{M} \\mathrm{M}_2}{\\mathrm{~d}}\\right)<br />\\end{aligned}$<br />Here $M_1=m ; M_2=m$ and $d=2 a$<br />$\\Rightarrow$ angular speed, $\\omega=\\sqrt{\\frac{G m}{4 a^3}}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87297ae24e9e2db8c68",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Two planets $A$ and $B$ of radii $R$ and $1.5 R$ have densities $\\rho$ and $\\rho / 2$ respectively. The ratio of acceleration due to gravity at the surface of $B$ to A is :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "59452",
+              "text": "$2: 3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "oqRlE",
+              "text": "$2: 1$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "YgyTn",
+              "text": "$3: 4$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "zCTmV",
+              "text": "$4: 3$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Acceleration due to gravity,<br />$\\mathrm{g}=\\frac{\\mathrm{GM}}{\\mathrm{R}^2}=\\frac{4}{3} \\pi \\mathrm{G} \\rho \\mathrm{R}$<br />$\\therefore \\frac{g_2}{g_1}=\\frac{\\rho_2}{\\rho_1} \\times \\frac{R_2}{R_1}=\\frac{1}{2} \\times 1.5=\\frac{3}{4}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e8546f5bfc7ab78aece7",
+      "title": "Gravitational field",
+      "totalQuestions": 3,
+      "questions": [
+        {
+          "_id": "64c0e8216f5bfc7ab78aeadc",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "A point particle is held on the axis of a ring of mass $m$ and radius $r$ at a distance $r$ from its centre C. When released, it reaches $\\mathrm{C}$ under the gravitational attraction of the ring. Its speed at $C$ will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "q2eml",
+              "text": "$\\sqrt{\\frac{2 \\mathrm{G} m}{r}(\\sqrt{2}-1)}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "4Y4KC",
+              "text": "$\\sqrt{\\frac{\\mathrm{G} m}{r}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Zekzw",
+              "text": "$\\sqrt{\\frac{2 \\mathrm{G} m}{r}\\left(1-\\frac{1}{\\sqrt{2}}\\right)}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "DevnE",
+              "text": "$\\sqrt{\\frac{2 \\mathrm{G} m}{r}}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let ' $\\mathrm{M}$ ' be the mass of the particle\r\n\r\nNow, $E_{\\text {initial }}=E_{\\text {final }}$\r\n\r\ni.e. $\\frac{\\mathrm{GMm}}{\\sqrt{2} r}+0=\\frac{\\mathrm{GM} m}{r}+\\frac{1}{2} \\mathrm{MV}^{2}$\r\n\r\nor, $\\frac{1}{2} \\mathrm{MV}^{2}=\\frac{\\mathrm{GM} m}{r}\\left[1-\\frac{1}{\\sqrt{2}}\\right]$\r\n\r\n$\\Rightarrow \\frac{1}{2} \\mathrm{~V}^{2}=\\frac{\\mathrm{G} m}{r}\\left[1-\\frac{1}{\\sqrt{2}}\\right]$ or,\r\n\r\n$\\mathrm{V}=\\sqrt{\\frac{2 \\mathrm{Gm}}{r}\\left(1-\\frac{1}{\\sqrt{2}}\\right)}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7f66f5bfc7ab78ae961",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "<p>A spherically symmetric gravitational systom of particles has mass density&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#961;</mi><mo>=</mo><mfenced open=\"{\" close=\"\"><mtable columnalign=\"left\"><mtr><mtd><msub><mi>&#961;</mi><mn>0</mn></msub><mtext>&#160;for&#160;</mtext><mi>r</mi><mo>&#8804;</mo><mi>R</mi></mtd></mtr><mtr><mtd><mn>0</mn><mtext>&#160;for&#160;</mtext><mi>r</mi><mo>&#62;</mo><mi>R</mi></mtd></mtr></mtable></mfenced></math>&nbsp;where, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#961;</mi><mn>0</mn></msub></math> is a constant. A test mass can undergo circular motion under the influence of the gravitational field of particles. Its speed <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi></math> as a function of distance <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi><mo>(</mo><mn>0</mn><mo>&#60;</mo><mi>r</mi><mo>&#60;</mo><mo>&#8734;</mo><mo>)</mo></math> from the centre of the system is represented by</p>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "R62qZ",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/ee9959d4-c3de-4b7e-a650-b7177c2b466e-image.png\" style=\"width: 200px; height: 199px;\" />",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "DiFEL",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/5bdfa4e5-1fa4-48aa-9367-d42bb5fc7a9e-image.png\" style=\"width: 200px; height: 186px;\" />",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Yvx7o",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/f3d51331-af17-47e0-8711-e46893c7b554-image.png\" style=\"width: 200px; height: 192px;\" />",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "g9MbN",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/2fce4ae9-45e4-4e84-bc1c-3ece4cf1970b-image.png\" style=\"width: 200px; height: 196px;\" />",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>When <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi><mo>&#8804;</mo><mi>R</mi></math>, then force on the test mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi></math> at the surface of the sphere <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mi>m</mi><mi>g</mi></math></p><p>Force on the test mass at distance <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi></math> from the centre of sphere is</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/eceb191e-a1ed-4170-868c-67d4c4662a07-image.png\" style=\"width: 200px; height: 226px;\" /></p><p>If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi><mo>&#60;</mo><mi>R</mi></math>, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>F</mi><mo>=</mo><mfrac><mrow><mi>G</mi><mi>M</mi><mi>m</mi></mrow><msup><mi>R</mi><mn>2</mn></msup></mfrac><mo>&#183;</mo><mfrac><mi>r</mi><mi>R</mi></mfrac><mo>=</mo><mfrac><mrow><mi>G</mi><mi>M</mi><mi>m</mi></mrow><msup><mi>R</mi><mn>3</mn></msup></mfrac><mo>&#183;</mo><mi>r</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mi>r</mi></mfrac><mo>=</mo><mfrac><mrow><mi>G</mi><mi>M</mi><mi>m</mi></mrow><msup><mi>R</mi><mn>3</mn></msup></mfrac><mo>&#183;</mo><mi>r</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mi>v</mi><mo>&#160;</mo><mi>&#945;</mi><mo>&#160;</mo><mi>r</mi></math></p><p>If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi><mo>&#62;</mo><mi>R</mi></math>&nbsp;then <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>F</mi><mo>=</mo><mfrac><mrow><mi>G</mi><mi>M</mi><mi>m</mi></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mfrac><mrow><mi>M</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mi>r</mi></mfrac><mo>=</mo><mfrac><mrow><mi>G</mi><mi>M</mi><mi>m</mi></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi>v</mi><mo>&#160;</mo><mi>&#945;</mi><mo>&#160;</mo><mfrac><mn>1</mn><msqrt><mi>r</mi></msqrt></mfrac></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ac6f5bfc7ab78ae6dd",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "There is a shell of mass $\\mathrm{M}$ and density of the shell is uniform. The work done to take a point mass from point $\\mathrm{A}$ to $\\mathrm{B}$ is $[\\mathrm{AB}=\\mathrm{r}]$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/VKDS3exp_mPpaUxE5VNAVq47HazwfPBr5FF5wVCqd7o.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "J7yVt",
+              "text": "$\\frac{\\mathrm{GmM}}{\\mathrm{r}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "WxMbd",
+              "text": "$\\frac{\\mathrm{GmM}}{\\mathrm{R}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "xiWIV",
+              "text": "$-\\frac{\\mathrm{GmM}}{\\mathrm{r}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "nX1pv",
+              "text": "zero",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Gravitaional field inside the shell is zero, so no work required.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "64c0e8536f5bfc7ab78aece3",
+      "title": "Acceleration Due to Gravity",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "64c0e79c6f5bfc7ab78ae65d",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If the radius of the earth were to shrink by one per cent, its mass remaining the same, the value of g on the earth's surface would",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "i62yD",
+              "text": "increase by $0.5 \\%$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "7jGGP",
+              "text": "increase by $2 \\%$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "SzOLP",
+              "text": "decrease by $0.5 \\%$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "vWqWW",
+              "text": "decrease by $2 \\%$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\quad \\mathrm{g}=\\frac{\\mathrm{GM}}{\\mathrm{R}^{2}} \\Rightarrow \\frac{\\mathrm{dg}}{\\mathrm{g}}=-2 \\frac{\\mathrm{dR}}{\\mathrm{R}}$\r\n$\\frac{\\mathrm{dR}}{\\mathrm{R}}=-1 \\% \\Rightarrow \\frac{\\mathrm{dg}}{\\mathrm{g}}=2 \\%$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7716f5bfc7ab78ae4e3",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "The rotation of the earth having radius $\\mathrm{R}$ about its axis speeds upto a value such that a man at latitude angle $60^{\\circ}$ feels weightless. The duration of the day in such case will be:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "cu7Bn",
+              "text": "$8 \\pi \\sqrt{\\frac{\\mathrm{R}}{\\mathrm{g}}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fLTsO",
+              "text": "$8 \\pi \\sqrt{\\frac{g}{R}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Z62Dk",
+              "text": "$\\pi \\sqrt{\\frac{\\mathrm{R}}{\\mathrm{g}}}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Yhyp2",
+              "text": "$4 \\pi \\sqrt{\\frac{\\mathrm{g}}{\\mathrm{R}}}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution available",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "64c0e8536f5bfc7ab78aece5",
+      "title": "Gravitational potential and Potential Energy",
+      "totalQuestions": 9,
+      "questions": [
+        {
+          "_id": "67726d10c49e8ef28ee2b3f4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "A body which is initially at rest at a height $R$ above the surface of the Earth of radius R, falls freely towards the Earth, then its velocity on reaching the surface of the Earth is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "K4DWE",
+              "text": "$\\sqrt{(2 g R)}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "28e2T",
+              "text": "$\\sqrt{(g R)}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Z0NQt",
+              "text": "$\\sqrt{\\frac{3}{2} g R}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FTE5v",
+              "text": "$\\sqrt{(4 g R)}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Increase in kinetic energy = Decrease in potential energy\n$\\begin{aligned}\n& \\therefore \\quad \\frac{1}{2} m v^2=\\frac{m g R}{1+\\frac{R}{R}}=\\frac{m g R}{2} \\quad\\left(\\Delta U=\\frac{m g h}{1+\\frac{h}{R}}, h=R\\right) \\\\\n& \\Rightarrow \\quad m v^2=m g R \\Rightarrow v=\\sqrt{g R}\n\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726cf8c49e8ef28ee2b33c",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "The kinetic energy of a satellite in its orbit around the earth is E . What should be the kinetic energy of the satellite so as to enable it to escape from the gravitational pull of the earth?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "sLpWY",
+              "text": "$4 E$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fNt46",
+              "text": "2 E",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "8u2rW",
+              "text": "$\\sqrt{2} \\mathrm{E}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vgPT7",
+              "text": "E",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We know that $v_e=\\sqrt{2} v_0$, where $\\mathrm{v}_0$ is orbital velocity.\nK.E. in the orbit, $E=\\frac{1}{2} M v_0{ }^2$\nK.E. to escape $E=\\frac{1}{2} M v_e^2=\\frac{1}{2} M\\left(2 v_0{ }^2\\right)$\n$=\\frac{1}{2} M v_0^2 \\times 2=2 E$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87b97ae24e9e2db8cc5",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "If $\\mathrm{V}$ is the gravitational potential due to sphere of uniform density on it's surface, then it's value at the center of sphere will be:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "mGuhy",
+              "text": "$\\frac{3 V}{2}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "HhlDv",
+              "text": "<br />V",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2q9Pv",
+              "text": "$\\frac{4}{3} \\mathrm{~V}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "HmNRu",
+              "text": "$\\frac{\\mathrm{V}}{2}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Potential due to sphere<br />$\\mathrm{V}=\\frac{\\mathrm{GM}}{2 \\mathrm{R}^3}\\left(3 \\mathrm{R}^2-\\mathrm{r}^2\\right)$<br />At surface $r=R \\Rightarrow V=\\left(\\frac{G M}{R}\\right)$<br />At centre, $r=0$<br />$\\therefore \\mathrm{V}_0=\\frac{3 \\mathrm{GM}}{2 \\mathrm{R}}=\\left(\\frac{3 \\mathrm{~V}}{2}\\right)$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8136f5bfc7ab78aea63",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The potential energy of a satellite of mass $\\mathrm{m}$ and revolving at a height $\\mathrm{R}_{\\mathrm{e}}$ above the surface of earth where $\\mathrm{R}_{\\mathrm{e}}=$ radius of earth, is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "JrlAQ",
+              "text": "$-\\mathrm{m} \\mathrm{g} \\mathrm{R}_{\\mathrm{e}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "pTpYO",
+              "text": "$\\frac{-\\mathrm{mg} \\mathrm{R}_{\\mathrm{e}}}{2}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "DpASm",
+              "text": "$\\frac{-\\mathrm{mg} \\mathrm{R}_{\\mathrm{e}}}{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Go04k",
+              "text": "$\\frac{-\\mathrm{mg} \\mathrm{R}_{\\mathrm{e}}}{4}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "At a height h above the surface of earth the gravitational potential energy of the particle of mass m is $\\mathrm{U}_{\\mathrm{h}}=-\\frac{\\mathrm{GM}_{\\mathrm{e}} \\mathrm{m}}{\\mathrm{R}_{\\mathrm{e}}+\\mathrm{h}}$\r\n\r\nWhere $M_{e} \\& R_{e}$ are the mass $\\&$ radius of earth respectively. In this question, since $\\mathrm{h}=\\mathrm{R}_{\\mathrm{e}}$ \r\n\r\nSo $U_{h-R_{e}}=-\\frac{G M_{e} m}{2 R_{e}}=\\frac{-m g R_{e}}{2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8106f5bfc7ab78aea47",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The escape velocity from a planet is $v_{e}$. A tunnel is dug along a diameter of the planet and a small body is dropped into it at the surface. When the body reaches the centre of the planet, its speed will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "fGJVW",
+              "text": "$\\mathrm{V}_{\\mathrm{e}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "BKAUu",
+              "text": "$\\mathrm{v}_{\\mathrm{e}} / \\sqrt{2}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "qG3m1",
+              "text": "$\\mathrm{v}_{\\mathrm{e}} / 2$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "yYOor",
+              "text": "zero",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\frac{1}{2} \\mathrm{mv}_{\\mathrm{e}}^{2}=\\frac{\\mathrm{GMm}}{\\mathrm{R}} ; \\mathrm{v}_{\\mathrm{e}}=\\sqrt{\\frac{\\mathrm{GMm}}{\\mathrm{R}}}=\\sqrt{2 \\mathrm{gR}}$\r\n\r\nIn tunnel body will perform SHM at centre $\\mathrm{V}_{\\mathrm{max}}=\\mathrm{A\\omega}$ (see chapter on SHM)\r\n\r\n$=\\frac{\\mathrm{R} 2 \\pi}{2 \\pi \\sqrt{\\mathrm{R} / \\mathrm{g}}}=\\sqrt{\\mathrm{gR}}=\\frac{\\mathrm{v}_{\\mathrm{e}}}{\\sqrt{2}}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8046f5bfc7ab78ae9da",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The escape velocity from the surface of earth is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>v</mi><mi>e</mi></msub><mo>.</mo></math> A body is projected with velocity <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><msub><mi>v</mi><mi>e</mi></msub><mo>.</mo></math> With what constant velocity will it move in the inter planetary space?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "5h965",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>v</mi><mi>e</mi></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "scK6Y",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><msub><mi>v</mi><mi>e</mi></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "3F2ic",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msqrt><mn>2</mn></msqrt><msub><mi>v</mi><mi>e</mi></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ItT0V",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><msqrt><mn>2</mn></msqrt><msub><mi>v</mi><mi>e</mi></msub></math>",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>&nbsp;If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi></math> be the velocity in the inter planetary space and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>U</mi><mrow><mi>i</mi><mo>,</mo></mrow></msub><mo>&#160;</mo><msub><mi>U</mi><mi>f</mi></msub></math> initial and final PE</p><p>Then, by the law of conservation of energy,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>U</mi><mi>i</mi></msub><mo>+</mo><msub><mi>K</mi><mi>i</mi></msub><mo>=</mo><msub><mi>U</mi><mi>f</mi></msub><mo>+</mo><msub><mi>K</mi><mi>f</mi></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mo>-</mo><mi>G</mi><msub><mi>M</mi><mi>e</mi></msub><mi>m</mi></mrow><msub><mi>R</mi><mi>e</mi></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mfenced><mrow><mn>3</mn><msub><mi>v</mi><mi>e</mi></msub></mrow></mfenced><mn>2</mn></msup><mo>=</mo><mn>0</mn><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mo>-</mo><mi>G</mi><msub><mi>M</mi><mi>e</mi></msub></mrow><msub><mi>R</mi><mi>e</mi></msub></mfrac><mo>+</mo><mfrac><mn>9</mn><mn>2</mn></mfrac><msubsup><mi>v</mi><mi>e</mi><mn>2</mn></msubsup><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msup><mi>v</mi><mn>2</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;&#160;</mo><mfrac><mrow><mo>-</mo><mn>2</mn><mi>G</mi><msub><mi>M</mi><mi>e</mi></msub></mrow><msub><mi>R</mi><mi>e</mi></msub></mfrac><mo>+</mo><mn>9</mn><msubsup><mi>V</mi><mi>e</mi><mn>2</mn></msubsup><mo>=</mo><msup><mi>v</mi><mn>2</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;&#160;</mo><mfrac><mrow><mo>-</mo><mn>2</mn><mi>g</mi><msubsup><mi>R</mi><mi>e</mi><mn>2</mn></msubsup></mrow><msub><mi>R</mi><mi>e</mi></msub></mfrac><mo>+</mo><mn>9</mn><msubsup><mi>v</mi><mi>e</mi><mn>2</mn></msubsup><mo>=</mo><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;&#160;</mo><mfenced close=\"]\" open=\"[\"><mrow><mo>&#8757;</mo><mi>G</mi><msub><mi>M</mi><mi>e</mi></msub><mo>=</mo><mi>g</mi><msubsup><mi>R</mi><mi>e</mi><mn>2</mn></msubsup></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mn>2</mn><mi>g</mi><msub><mi>R</mi><mi>e</mi></msub><mo>+</mo><mn>9</mn><mo>&#215;</mo><mn>2</mn><mi>g</mi><msub><mi>R</mi><mi>e</mi></msub><mo>=</mo><msup><mi>v</mi><mn>2</mn></msup><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mfenced open=\"[\" close=\"]\"><mrow><mo>&#8757;</mo><msubsup><mi>v</mi><mi>e</mi><mn>2</mn></msubsup><mo>=</mo><mn>2</mn><mi>g</mi><msub><mi>R</mi><mi>e</mi></msub></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>16</mn><mo>&#160;</mo><mi>g</mi><msub><mi>R</mi><mi mathvariant=\"italic\">e</mi></msub><mo>=</mo><msup><mi>v</mi><mn>2</mn></msup></math><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;&#160;</mo><mi>v</mi><mo>=</mo><msqrt><mn>8</mn></msqrt><mo>&#183;</mo><msqrt><mn>2</mn><mi>g</mi><msub><mi>R</mi><mi>e</mi></msub></msqrt><mo>=</mo><mn>2</mn><msqrt><mn>2</mn></msqrt><msub><mi>v</mi><mi>e</mi></msub></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7f66f5bfc7ab78ae95d",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "An asteroid of mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi></math> is approaching earth, initially at a distance <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>10</mn><msub><mi>R</mi><mi>e</mi></msub></math> with speed <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>v</mi><mi>i</mi></msub><mo>.</mo></math> It hite oarth with a speed&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>v</mi><mi>f</mi></msub><mo>&#160;</mo><mo>,</mo></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"\"><msub><mi>R</mi><mi>e</mi></msub></mfenced></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>M</mi><mi>e</mi></msub></math> are radius and mass of earth<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>)</mo></math>, then",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "EQOUi",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>v</mi><mi>f</mi><mn>2</mn></msubsup><mo>=</mo><msubsup><mi>v</mi><mi>i</mi><mn>2</mn></msubsup><mo>+</mo><mfrac><mrow><mn>2</mn><mi>G</mi><mi>m</mi></mrow><msub><mi>R</mi><mi>e</mi></msub></mfrac><mfenced><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mn>10</mn></mfrac></mrow></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "u1wXx",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>v</mi><mi>f</mi><mn>2</mn></msubsup><mo>=</mo><msubsup><mi>v</mi><mi>i</mi><mn>2</mn></msubsup><mo>+</mo><mfrac><mrow><mn>2</mn><mi>G</mi><msub><mi>M</mi><mi>e</mi></msub></mrow><msub><mi>R</mi><mi>e</mi></msub></mfrac><mfenced><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mn>10</mn></mfrac></mrow></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "0fpnX",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>v</mi><mi>f</mi><mn>2</mn></msubsup><mo>=</mo><msubsup><mi>v</mi><mi>i</mi><mn>2</mn></msubsup><mo>+</mo><mfrac><mrow><mn>2</mn><mi>G</mi><msub><mi>M</mi><mi>e</mi></msub></mrow><msub><mi>R</mi><mi>&#952;</mi></msub></mfrac><mfenced><mrow><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><mn>10</mn></mfrac></mrow></mfenced></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "dZ05P",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>v</mi><mi>f</mi><mn>2</mn></msubsup><mo>=</mo><msubsup><mi>v</mi><mi>i</mi><mn>2</mn></msubsup><mo>+</mo><mfrac><mrow><mn>2</mn><mi>G</mi><mi>m</mi></mrow><msub><mi>R</mi><mi>e</mi></msub></mfrac><mfenced><mrow><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><mn>10</mn></mfrac></mrow></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Initial energy of the asteroid is<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>E</mi><mi>i</mi></msub><mo>=</mo><msub><mi>K</mi><mi>i</mi></msub><mo>+</mo><msub><mi>U</mi><mi>i</mi></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msubsup><mi>v</mi><mi>i</mi><mn>2</mn></msubsup><mo>-</mo><mfrac><mrow><mi>G</mi><msub><mi>M</mi><mi>&#952;</mi></msub><mi>m</mi></mrow><mrow><mn>10</mn><msub><mi>R</mi><mi>e</mi></msub></mrow></mfrac></math></p><p>Final energy of the asteroid,<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>E</mi><mi>f</mi></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msubsup><mi>v</mi><mi>f</mi><mn>2</mn></msubsup><mo>-</mo><mfrac><mrow><mi>G</mi><msub><mi>M</mi><mi>&#952;</mi></msub><mi>m</mi></mrow><msub><mi>R</mi><mi>&#952;</mi></msub></mfrac></math></p><p>According to law of conservation of energy, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>E</mi><mi>i</mi></msub><mo>=</mo><msub><mi>E</mi><mi>f</mi></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msubsup><mi>v</mi><mi>i</mi><mn>2</mn></msubsup><mo>-</mo><mfrac><mrow><mi>G</mi><msub><mi>M</mi><mi>&#952;</mi></msub><mi>m</mi></mrow><mrow><mn>10</mn><msub><mi>R</mi><mi>&#952;</mi></msub></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msubsup><mi>v</mi><mi>f</mi><mn>2</mn></msubsup><mo>-</mo><mfrac><mrow><mi>G</mi><msub><mi>M</mi><mi>&#952;</mi></msub><mi>m</mi></mrow><msub><mi>R</mi><mi>&#952;</mi></msub></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>v</mi><mi>f</mi><mn>2</mn></msubsup><mo>-</mo><mfrac><mrow><mn>2</mn><mi>G</mi><msub><mi>M</mi><mi>&#952;</mi></msub></mrow><msub><mi>R</mi><mi>&#952;</mi></msub></mfrac><mo>=</mo><msubsup><mi>v</mi><mi>i</mi><mn>2</mn></msubsup><mo>-</mo><mfrac><mrow><mn>2</mn><mi>G</mi><msub><mi>M</mi><mi>&#952;</mi></msub></mrow><mrow><mn>10</mn><msub><mi>R</mi><mi>&#952;</mi></msub></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><msubsup><mi>v</mi><mi>f</mi><mn>2</mn></msubsup><mo>=</mo><msubsup><mi>v</mi><mi>i</mi><mn>2</mn></msubsup><mo>+</mo><mfrac><mrow><mn>2</mn><mi>G</mi><msub><mi>M</mi><mi>&#952;</mi></msub></mrow><msub><mi>R</mi><mi>&#952;</mi></msub></mfrac><mfenced><mrow><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><mn>10</mn></mfrac></mrow></mfenced></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7e96f5bfc7ab78ae8ea",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "A geostationary satellite orbits around the earth in a circular orbit of radius <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>36000</mn><mo>&#160;</mo><mi>km</mi></math>. Then, the time period of a sky satellite orbiting a few <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>100</mn><mo>&#160;</mo><mi>km</mi></math> above the earth&#39;s surface <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mi>R</mi><mo>=</mo><mn>64000</mn><mo>&#160;</mo><mi>km</mi></mrow></mfenced></math> will approximately be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "AGGfz",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#160;</mo><mi mathvariant=\"normal\">h</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "107Am",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">h</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "lxd7U",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>&#160;</mo><mi mathvariant=\"normal\">h</mi></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "ZjlLg",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><mo>&#160;</mo><mi mathvariant=\"normal\">h</mi></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>By Kepler&#39;s law of planetary motion,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>T</mi><mn>2</mn></msup><mo>&#8733;</mo><msup><mi>r</mi><mn>3</mn></msup></math>, hence <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>T</mi><mn>1</mn><mn>2</mn></msubsup><mo>&#8733;</mo><msubsup><mi>r</mi><mn>1</mn><mn>3</mn></msubsup></math></p><p>Similarly <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>T</mi><mn>2</mn><mn>2</mn></msubsup><mo>&#8733;</mo><msubsup><mi>r</mi><mn>2</mn><mn>3</mn></msubsup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><msubsup><mi>T</mi><mn>1</mn><mn>2</mn></msubsup><mo>&#8733;</mo><msup><mfenced><mn>36000</mn></mfenced><mn>3</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>T</mi><mn>2</mn><mn>2</mn></msubsup><mo>&#8733;</mo><msup><mfenced><mrow><mn>6400</mn><mo>+</mo><mi>h</mi></mrow></mfenced><mn>3</mn></msup></math></p><p>Therefore,&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><msub><mi>T</mi><mn>2</mn></msub></mfenced><mn>2</mn></msup><mo>=</mo><msubsup><mi>T</mi><mn>1</mn><mn>2</mn></msubsup><msup><mfenced><mfrac><mrow><mn>6400</mn><mo>+</mo><mi>h</mi></mrow><mn>36000</mn></mfrac></mfenced><mn>3</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#62;</mo><msubsup><mi>T</mi><mn>1</mn><mn>2</mn></msubsup><msup><mfenced close=\"]\" open=\"[\"><mfrac><mn>6400</mn><mn>3600</mn></mfrac></mfenced><mn>3</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#62;</mo><msup><mfenced><mn>24</mn></mfenced><mn>2</mn></msup><msup><mfenced close=\"]\" open=\"[\"><mfrac><mn>8</mn><mn>45</mn></mfrac></mfenced><mn>3</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><msub><mi>T</mi><mn>2</mn></msub><mo>&#62;</mo><mfrac><mrow><mn>24</mn><mo>&#215;</mo><mn>8</mn><mo>&#215;</mo><msqrt><mn>8</mn></msqrt></mrow><mrow><mn>45</mn><mo>&#215;</mo><msqrt><mn>45</mn></msqrt></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#62;</mo><mn>1</mn><mo>.</mo><mn>8</mn><mo>&#160;</mo><mi mathvariant=\"normal\">h</mi></math></p><p>So, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>T</mi><mn>2</mn></msub><mo>&#8773;</mo><mn>2</mn><mo>&#160;</mo><mi mathvariant=\"normal\">h</mi></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7806f5bfc7ab78ae565",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "Two planets $\\mathrm{A}$ and $\\mathrm{B}$ have the same material density. If the radius of $\\mathrm{A}$ is twice that of $\\mathrm{B}$, then the ratio of the escape velocity $\\mathrm{v}_{\\mathrm{A}} / \\mathrm{v}_{\\mathrm{B}}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "WzRgi",
+              "text": "2",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "4jIFV",
+              "text": "$\\sqrt{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Wd5Sw",
+              "text": "$1 / \\sqrt{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "KnkAw",
+              "text": "$1 / 2$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$v_{e}=\\sqrt{2 g R}=\\sqrt{\\frac{2 G M}{R^{2}}} R=\\sqrt{\\frac{2 G d \\frac{4}{3} \\pi R^{3}}{R^{2}}} R$\n$=\\mathrm{R} \\sqrt{2 \\mathrm{Gd} \\frac{4}{3} \\pi}$\nas $v_{e} \\propto R$ for same density, $\\frac{v_{A}}{v_{B}}=2$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "topicId": "64c0e8536f5bfc7ab78aece6",
+      "title": "Motion of satellite",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "64c0e7c76f5bfc7ab78ae7cb",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "An artificial satellite is moving in a circular orbit around the earth with a speed equal to half the magnitude of the escape velocity from the earth. The height $(h)$ of the satellite above the earth's surface is (Take radius of earth as $R_{e}$ )",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "HzCz9",
+              "text": "$h=R_{e}^{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "hXHsU",
+              "text": "$h=R_{e}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "6PtIJ",
+              "text": "$h=2 R_{e}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "WLgeX",
+              "text": "$h=4 R_{e}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The escape velocity from earth is given by $v_{e}=\\sqrt{2 \\mathrm{~g} R_{e}} \\ldots$ (i)\r\n\r\nThe orbital velocity of a satellite revolving around earth is given by\r\n\r\n$$\r\n\r\nv_{0}=\\frac{\\sqrt{\\mathrm{G} M_{e}}}{\\left(R_{e}+h\\right)}\r\n\r\n$$\r\n\r\nwhere, $M_{e}=$ mass of earth, $R_{e}=$ radius of earth, $h=$ height of satellite from surface of earth.\r\n\r\nBy the relation $\\mathrm{G} M_{e}=\\mathrm{g} R_{e}^{2}$\r\n\r\n$$\r\n\r\n\\text { So, } \\quad v_{0}=\\frac{\\sqrt{g R_{e}^{2}}}{\\left(R_{e}+h\\right)} \\ldots\r\n\r\n$$\r\n\r\nDividing equation (i) by (ii), we get\r\n\r\n$$\r\n\r\n\\frac{v_{e}}{v_{0}}=\\frac{\\sqrt{2\\left(R_{e}+h\\right)}}{\\left(R_{e}\\right)}\r\n\r\n$$\r\n\r\nGiven, $v_{0}=\\frac{v_{e}}{2}$\r\n\r\n$$\r\n\r\n\\frac{2 v_{e}}{v_{e}}=\\frac{\\sqrt{2\\left(R_{e}+h\\right)}}{R_{e}}\r\n\r\n$$\r\n\r\nSquaring on both side, we get\r\n\r\n$$\r\n\r\n4=\\frac{2\\left(R_{e}+h\\right)}{R_{e}}\r\n\r\n$$\r\n\r\nor $R_{e}+h=2 R_{e} \\quad$ i.e., $h=R_{e}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e78e6f5bfc7ab78ae5e0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "Geo-stationary satellite is one which",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "7vNUc",
+              "text": "remains stationary at a fixed height from the earth's surface",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "EI939",
+              "text": "revolves like other satellites but in the opposite direction of earth's rotation",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "I6jq6",
+              "text": "revolves round the earth at a suitable height with same angular velocity and in the same direction as earth does about its own axis",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "yx19g",
+              "text": "None of these",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Geo-stationary satellites are also called synchronous satellite. They always remain about the same path on equater, i.e., it has a period of exactly one day $(86400 \\mathrm{sec})$ So orbit radius $\\left(\\mathrm{T}=2 \\pi \\sqrt{\\frac{\\mathrm{r}^{3}}{\\mathrm{GM}}}\\right)$ comes out\nto be $42400 \\mathrm{~km}$, which is nearly equal to the circumference of earth. So height of Geostationary satellite from the earth\n$$\n\\text { surface is } 42,400-6400=36,000 \\mathrm{~km} \\text { . }\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "topicId": "64c0e8546f5bfc7ab78aece8",
+      "title": "Kepler laws",
+      "totalQuestions": 4,
+      "questions": [
+        {
+          "_id": "67726d05c49e8ef28ee2b3a4",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "The distance between Sun and Earth is $R$. The duration of year if the distance between Sun and Earth becomes $3 R$ will be:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "krCou",
+              "text": "$\\sqrt{3}$ years",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "sP5Qr",
+              "text": "3 years",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Atsfr",
+              "text": "9 years",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "dWiax",
+              "text": "$3 \\sqrt{3}$ years",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Basically 1 year is equal to time period of earth revolution around sun.\nSo, $T_i=1$ year\nNow,\n$T^2 \\propto R^3$\n$\\therefore\\left(\\frac{T_2}{T_1}\\right)^2=\\left(\\frac{R_2}{R_1}\\right)^3$\n$\\Rightarrow T_2=\\left(\\frac{R_2}{R_1}\\right)^{3 / 2} T_1=\\left(\\frac{3 R}{R}\\right)^{3 / 2} \\times 1$\n$=3 \\sqrt{3}$ years.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e81e6f5bfc7ab78aeac2",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Suppose the law of gravitational attraction suddenly changes and becomes an inverse cube law i.e. F $\\propto \\frac{1}{r^{3}}$, but still remaining a central force. Then",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "wb5WU",
+              "text": "Kepler's law of area still holds",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "sBfV9",
+              "text": "Kepler's law of period still holds",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "YP8tc",
+              "text": "Kepler's law of area and period still holds",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "zDY8C",
+              "text": "neither the law of area, nor the law of period still holds",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "According to kepler's law of area $\\frac{\\mathrm{d} \\mathrm{A}}{\\mathrm{dt}}=\\frac{\\mathrm{L}}{2 \\mathrm{~m}}$\r\n\r\nFor central forces, torque $=0$\r\n\r\n$\\therefore \\mathrm{L}=$ constant\r\n\r\n$\\therefore \\frac{\\mathrm{d} \\mathrm{A}}{\\mathrm{dt}}=$ constant",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8106f5bfc7ab78aea48",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If the the earth is at one-fourth of its present distance from the sun, the duration of year will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "oPWBL",
+              "text": "half the present year",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "UfZzp",
+              "text": "one-eight the present year",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "pWwM4",
+              "text": "one-fourth the present year",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "zeBuJ",
+              "text": "one-sixth the present year",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7d86f5bfc7ab78ae857",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Kepler's third law states that square of period of revolution (T) of a planet around the sun, is proportional to third power of average distance $\\mathrm{r}$\r\n\r\nbetween sun and planet i.e. $\\mathrm{T}^{2}=\\mathrm{Kr}^{3}$ here $\\mathrm{K}$ is constant. If the masses of sun and planet are $\\mathrm{M}$ and $\\mathrm{m}$ respectively then as per Newton's law of gravitation force of attraction between them is\r\n\r\n$\\mathrm{F}=\\frac{\\mathrm{GMm}}{\\mathrm{r}^{2}}$, here $\\mathrm{G}$ is gravitational constant. The relation between $\\mathrm{G}$ and $\\mathrm{K}$ is described as",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "YmFA0",
+              "text": "$\\mathrm{GMK}=4 \\pi^{2}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "MptF0",
+              "text": "$\\quad \\mathrm{K}=\\mathrm{G}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "SY6Fc",
+              "text": "$\\mathrm{K}=\\frac{1}{\\mathrm{G}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "HC3KO",
+              "text": "$\\quad \\mathrm{GK}=4 \\pi^{2}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "As we know, orbital speed, $V_{\\text {orb }}=\\sqrt{\\frac{\\text { GM }}{\\text { r }}}$ \r\n\r\nTime period $\\mathrm{T}=\\frac{2 \\pi \\mathrm{r}}{\\mathrm{v}_{\\text {orb }}}=\\frac{2 \\pi \\mathrm{r}}{\\sqrt{\\mathrm{GM}}} \\sqrt{\\mathrm{r}}$\r\n\r\nSquarring both sides,\r\n\r\n$\\mathrm{T}^{2}=\\left(\\frac{2 \\pi \\mathrm{r} \\sqrt{\\mathrm{r}}}{\\sqrt{\\mathrm{GM}}}\\right)^{2}=\\frac{4 \\pi^{2}}{\\mathrm{GM}} \\cdot \\mathrm{r}^{3}$\r\n\r\n$\\Rightarrow \\quad \\frac{\\mathrm{T}^{2}}{\\mathrm{r}^{3}}=\\frac{4 \\pi^{2}}{\\mathrm{GM}}=\\mathrm{K} \\Rightarrow \\mathrm{GMK}=4 \\pi^{2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

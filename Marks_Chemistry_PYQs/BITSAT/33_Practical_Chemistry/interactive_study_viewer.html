@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Practical Chemistry PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚗️ BITSAT &bull; Practical Chemistry</h1>
+        <div class="sub">Chemistry PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 33, "chapterId": "61e7bd772a8aeaa5a90af103", "chapter": "Practical Chemistry", "exam": "BITSAT", "totalTopics": 3, "totalQuestions": 12, "downloadTime": "2026-10-08 20:03:04", "topics": [{"index": 1, "topicId": "64c0e8656f5bfc7ab78aedb5", "title": "Radicals", "totalQuestions": 4, "questions": [{"_id": "64c0e7c16f5bfc7ab78ae79c", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 2, "question": {"text": "Which of the following ions can be separated by aq. $\\mathrm{NH}_{4} \\mathrm{OH}$ in presence of $\\mathrm{NH}_{4} \\mathrm{Cl}$", "image": null}, "options": [{"id": "YtTwo", "text": "$\\mathrm{Al}^{3+}$ and $\\mathrm{Fe}^{3+}$", "isCorrect": false, "image": null}, {"id": "Rc96r", "text": "$\\mathrm{Cr}^{3+}$ and $\\mathrm{Al}^{3+}$", "isCorrect": false, "image": null}, {"id": "B93ZM", "text": "$\\mathrm{Cu}^{2+}$ and $\\mathrm{Al}^{3+}$", "isCorrect": true, "image": null}, {"id": "TosPb", "text": "None of these", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{Cu}^{2+}$ is of group II and $\\mathrm{Al}^{3+}$ is of group III of cation analysis.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7b36f5bfc7ab78ae71f", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 3, "question": {"text": "A mixture of chlorides of copper, cadmium, chromium, iron and aluminium was dissolved in water acidified with $\\mathrm{HCl}$ and hydrogen sulphide gas was passed for sufficient time. It was filtered, boiled and a few drops of nitric acid were added while boiling. To this solution ammonium chloride and sodium hydroxide were added and filtered. The filterate shall give test for.", "image": null}, "options": [{"id": "4wi5i", "text": "Sodium and iron", "isCorrect": false, "image": null}, {"id": "CZuZP", "text": "Sodium and aluminium", "isCorrect": true, "image": null}, {"id": "rhhnP", "text": "Aluminium and iron", "isCorrect": false, "image": null}, {"id": "ahisu", "text": "Sodium, iron, cadmium and Al", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "CuS and CdS are precipitated by $\\mathrm{H}_{2} \\mathrm{~S}$. Hydroxide of Al will pass into the solution in the form of $\\mathrm{NaAlO}_{2}$ being amphoteric in nature. Hence filtrate will give test for sodium and aluminium.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7a46f5bfc7ab78ae6a3", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 3, "question": {"text": "Which of the following is soluble in yellow ammonium sulphide?", "image": null}, "options": [{"id": "ZqVRl", "text": "$\\mathrm{CuS}$", "isCorrect": false, "image": null}, {"id": "j6fDd", "text": "$\\mathrm{CdS}$", "isCorrect": false, "image": null}, {"id": "M9oke", "text": "$\\mathrm{SnS}$", "isCorrect": true, "image": null}, {"id": "xQT4b", "text": "$\\mathrm{PbS}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{SnS}+\\left(\\mathrm{NH}_{4}\\right)_{2} \\mathrm{~S}_{2} \\rightarrow\\left(\\mathrm{NH}_{4}\\right)_{2} \\mathrm{SnS}_{3}$ soluble", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7796f5bfc7ab78ae528", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "An aqueous solution of a substance gives a white precipitate on treatment with dil. HCl which dissolves on heating. When $\\mathrm{H}_{2} \\mathrm{~S}$ is passed through the hot acidic solution, a black precipitate is obtained. The substance is a", "image": null}, "options": [{"id": "IfzkF", "text": "$\\mathrm{Hg}_{2}^{2+}$ salt", "image": null, "isCorrect": false}, {"id": "AAAG8", "text": "$\\mathrm{Cu}^{2+}$ salt", "image": null, "isCorrect": false}, {"id": "G73Kc", "text": "$\\mathrm{Ag}^{+}$ salt", "image": null, "isCorrect": false}, {"id": "YWYgG", "text": "$\\mathrm{Pb}^{2+}$ salt", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "$\\mathrm{PbCl}_{2}$ is insoluble in cold water, soluble in hot water and $\\mathrm{PbS}$ is black ppt in acidic medium.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8666f5bfc7ab78aedb6", "title": "Preliminary Tests", "totalQuestions": 6, "questions": [{"_id": "64c0e8256f5bfc7ab78aeafb", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 2, "question": {"text": "When $\\mathrm{C}_{2} \\mathrm{H}_{2}, \\mathrm{CH}_{4}$ and $\\mathrm{C}_{2} \\mathrm{H}_{4}$ pass through a test tube which has ammonical $\\mathrm{Cu}_{2} \\mathrm{Cl}_{2}$, find out which gas comes out unaffected from test tube?", "image": null}, "options": [{"id": "oE184", "text": "$\\mathrm{C}_{2} \\mathrm{H}_{2}$ and $\\mathrm{CH}_{4}$", "isCorrect": false, "image": null}, {"id": "mtdvF", "text": "$\\mathrm{C}_{2} \\mathrm{H}_{2}$ and $\\mathrm{C}_{2} \\mathrm{H}_{4}$", "isCorrect": false, "image": null}, {"id": "hULU7", "text": "$\\mathrm{C}_{2} \\mathrm{H}_{4}$ and $\\mathrm{CH}_{4}$", "isCorrect": true, "image": null}, {"id": "WXxT4", "text": "$\\mathrm{C}_{2} \\mathrm{H}_{2}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{C}_{2} \\mathrm{H}_{2}$ forms copper acetylide with ammonical $\\mathrm{Cu}_{2} \\mathrm{Cl}_{2}$\r\n\r\n$\\begin{array}{l}\r\n\r\n\\mathrm{Cu}_{2} \\mathrm{Cl}_{2}+2 \\mathrm{NH}_{4} \\mathrm{OH} \\rightarrow \\mathrm{Cu}_{2} \\mathrm{O}+\\mathrm{H}_{2} \\mathrm{O}+2 \\mathrm{NH}_{4} \\mathrm{Cl} \\\\\r\n\r\n\\mathrm{Cu}_{2} \\mathrm{O}+\\mathrm{C}_{2} \\mathrm{H}_{2} \\rightarrow \\underset{\\text { (copper acetylide) }}{\\mathrm{Cu}_{2} \\mathrm{C}_{2}}+\\mathrm{H}_{2} \\mathrm{O}\r\n\r\n\\end{array}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8086f5bfc7ab78aea00", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 3, "question": {"text": "Sodium nitroprusside, when added to an alkaline solution of sulphide ions, produce a", "image": null}, "options": [{"id": "MKbVe", "text": "red colouration", "isCorrect": false, "image": null}, {"id": "YlIcE", "text": "blue colouration", "isCorrect": false, "image": null}, {"id": "zwgo8", "text": "purple colouration", "isCorrect": true, "image": null}, {"id": "RwOBU", "text": "brown colouration", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>This test is used for the presence of sulphur in any compound. When sodium nitroprusside, react with sulphide ion, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mi mathvariant=\"normal\">e</mi><mo>.</mo><mi mathvariant=\"normal\">g</mi><mo>.</mo><msub><mi>Na</mi><mn>2</mn></msub><mo>&#160;</mo><mi mathvariant=\"normal\">S</mi></mrow></mfenced></math> the following reaction takes place</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtable><mtr><mtd><msub><mi>Na</mi><mn>2</mn></msub><mi mathvariant=\"normal\">S</mi><mo>+</mo><msub><mi>Na</mi><mn>2</mn></msub><mfenced open=\"[\" close=\"]\"><mrow><mi>Fe</mi><msub><mfenced><mi>CN</mi></mfenced><mn>5</mn></msub><mi>NO</mi></mrow></mfenced></mtd><mtd><mo>&#10230;</mo></mtd><mtd><msub><mi>Na</mi><mn>4</mn></msub><mfenced open=\"[\" close=\"]\"><mrow><mi>Fe</mi><msub><mfenced><mi>CN</mi></mfenced><mn>5</mn></msub><msub><mi>NO</mi><mn>5</mn></msub></mrow></mfenced></mtd></mtr><mtr><mtd><mfenced><mrow><mi>Sod</mi><mo>.</mo><mo>&#160;</mo><mi>nitroprusside</mi></mrow></mfenced></mtd><mtd><mo>&#160;</mo></mtd><mtd><mi>purple</mi><mo>&#160;</mo><mi>coloration</mi><mo>&#160;</mo><mfenced><mrow><mi>sod</mi><mo>.</mo><mo>&#160;</mo><mi>thionitroprusside</mi></mrow></mfenced></mtd></mtr></mtable></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8086f5bfc7ab78ae9fd", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 2, "question": {"text": "Which of the following compounds, on reaction with <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>NaOH</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Na</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub></math> gives yellow colour?", "image": null}, "options": [{"id": "S74M5", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Zn</mi><msub><mfenced><mi>OH</mi></mfenced><mn>2</mn></msub></math>", "isCorrect": false, "image": null}, {"id": "A0DK9", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Al</mi><msub><mfenced><mi>OH</mi></mfenced><mn>3</mn></msub></math>", "isCorrect": false, "image": null}, {"id": "dubpV", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Cr</mi><msub><mfenced><mi>OH</mi></mfenced><mn>3</mn></msub></math>", "isCorrect": true, "image": null}, {"id": "3ZLrw", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CaCO</mi><mn>3</mn></msub></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Chromium hydroxide, i.e.<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Cr</mi><msub><mfenced><mi>OH</mi></mfenced><mn>3</mn></msub></math> when reacts with <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>NaOH</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Na</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub></math>, gives yellow colour of sodium chromate. The whole reaction is as follows</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><msub><mi>Na</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>2</mn></msub><mo>+</mo><mn>2</mn><mi>Cr</mi><msub><mfenced><mi>OH</mi></mfenced><mn>3</mn></msub><mo>&#10230;</mo><munder><mrow><mn>2</mn><msub><mi>Na</mi><mn>2</mn></msub><msub><mi>CrO</mi><mn>4</mn></msub></mrow><mrow><mo>(</mo><mi>yellow</mi><mo>)</mo></mrow></munder><mo>+</mo><mn>2</mn><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mo>+</mo><mn>2</mn><mi>NaOH</mi></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7fa6f5bfc7ab78ae984", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 3, "question": {"text": "When <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">S</mi></math> gas is passed into a mixture of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Mn</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>,</mo><mo>&#160;</mo><msup><mi>Ni</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>,</mo><mo>&#160;</mo><msup><mi>Cu</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></math>&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Hg</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></math> ion in an acidified aqueous solution, the precipitates formed are", "image": null}, "options": [{"id": "D8z0e", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CuS</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>HgS</mi></math>", "isCorrect": true, "image": null}, {"id": "CVF8b", "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>MnS</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CuS</mi></math></p>", "isCorrect": false, "image": null}, {"id": "2luY1", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>MnS</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>NiS</mi></math>", "isCorrect": false, "image": null}, {"id": "qLRmW", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>NiS</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>HgS</mi></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>In presence of acidic medium, ionisation of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">S</mi></math> is supressed so less number of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">S</mi><mrow><mn>2</mn><mo>-</mo></mrow></msup></math> ions are produced. So only those sulphides are precipitated which have low solubility product <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><msub><mi mathvariant=\"normal\">K</mi><mi>sp</mi></msub></mfenced></math> value.</p><p>Thus, in acidic medium, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">S</mi></math> is very feebly ionised giving very small concentration of sulphide ion for precipitation. Therefore, the most insoluble salts <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CuS</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>HgS</mi></math> are precipitated.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7dd6f5bfc7ab78ae881", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 2, "question": {"text": "Sometimes, the colour observed in Lassaigne's test for nitrogen is green. It is because", "image": null}, "options": [{"id": "Lk2uJ", "text": "of green colour of ferrous sulphate", "isCorrect": false, "image": null}, {"id": "32xN8", "text": "ferric ferrocyanide is also green", "isCorrect": false, "image": null}, {"id": "hPzXj", "text": "of green colour of copper sulphate", "isCorrect": false, "image": null}, {"id": "5sI8A", "text": "of excess of Fe $^{3+}$ ions whose yellow colour makes the blue colour of ferric ferrocyanide to appear green.", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Although blue coloured ferric ferrocyanide is formed but due to the presence of yellow coloured $\\mathrm{Fe}^{3+}$ salts, the blue colour gives the shade of green.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7876f5bfc7ab78ae5a6", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "When $\\mathrm{H}_{2} \\mathrm{~S}$ gas is passed through the $\\mathrm{HCl}$ containing aqueous solution of $\\mathrm{CuCl}_{2}, \\mathrm{HgCl}_{2}$, $\\mathrm{BiCl}_{3}$ and $\\mathrm{CoCl}_{2}$ it does not precipitate out", "image": null}, "options": [{"id": "42N7H", "text": "$\\mathrm{CuS}$", "image": null, "isCorrect": false}, {"id": "JNsNK", "text": "$\\mathrm{HgS}$", "image": null, "isCorrect": false}, {"id": "A8TVA", "text": "$\\mathrm{Bi}_{2} \\mathrm{~S}_{3}$", "image": null, "isCorrect": false}, {"id": "QeFE7", "text": "$\\mathrm{CoS}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "$\\operatorname{CoS}$ is not precipitated in acidic medium.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e8666f5bfc7ab78aedb7", "title": "Identification of Basic Radicals", "totalQuestions": 2, "questions": [{"_id": "64c0e7cf6f5bfc7ab78ae812", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 2, "question": {"text": "$\\mathrm{K}_{4}\\left[\\mathrm{Fe}(\\mathrm{CN})_{6}\\right]$ is used in detecting.", "image": null}, "options": [{"id": "vpte4", "text": "$\\mathrm{Fe}^{3+} \\mathrm{ion}$", "isCorrect": true, "image": null}, {"id": "mKlBE", "text": "$\\mathrm{Cu}^{+} \\mathrm{ion}$", "isCorrect": false, "image": null}, {"id": "MFkzr", "text": "$\\mathrm{Cu}^{3+}$ ion", "isCorrect": false, "image": null}, {"id": "y0WZa", "text": "$\\mathrm{Fe}^{2+}$ ion", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{Fe}^{3+}$ ion can be detected by $\\mathrm{K}_{4}\\left[\\mathrm{Fe}(\\mathrm{CN})_{6}\\right]$\r\n\r\n$$\r\n\r\n\\begin{aligned}\r\n\r\n4 \\mathrm{Fe}^{3+}+3 \\mathrm{~K}_{4}\\left[\\mathrm{Fe}(\\mathrm{CN})_{6}\\right] \\\\\r\n\r\n& \\longrightarrow \\mathrm{Fe}_{4}\\left[\\mathrm{Fe}(\\mathrm{CN})_{6}\\right]_{3}+12 \\mathrm{~K}^{+}\r\n\r\n\\end{aligned}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7926f5bfc7ab78ae607", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "$\\mathrm{H}_{2} \\mathrm{~S}$ gas when passed through a solution of cations containing $\\mathrm{HCl}$ precipitates the cations of second group of qualitative analysis but not those belonging to the fourth group. It is because", "image": null}, "options": [{"id": "chNcX", "text": "presence of HC1 decreases the sulphide ion concentration.", "image": null, "isCorrect": true}, {"id": "K3qST", "text": "solubility product of group II sulphides is more than that of group IV sulphides.", "image": null, "isCorrect": false}, {"id": "3nsU6", "text": "presence of HCl increases the sulphide ion concentration.", "image": null, "isCorrect": false}, {"id": "GCLzL", "text": "sulphides of group IV cations are unstable in $\\mathrm{HC} 1$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "IV $^{\\text {th }}$ group needs higher $\\mathrm{S}^{2-}$ ion concentration. In presence of $\\mathrm{HCl}$, the dissociation of $\\mathrm{H}_{2} \\mathrm{~S}$ decreases hence produces less amount of sulphide ions due to common ion effect, thus $\\mathrm{HCl}$ decreases the solubility of $\\mathrm{H}_{2} \\mathrm{~S}$ which is sufficient to precipitate II $^{\\text {nd }}$ group radicals.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,1224 @@
+{
+  "index": 29,
+  "chapterId": "61e7bd7ae99b266d87234830",
+  "chapter": "Nuclear Physics",
+  "exam": "BITSAT",
+  "subject": "Physics",
+  "totalTopics": 3,
+  "totalQuestions": 18,
+  "downloadTime": "2026-10-08 20:28:17",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e85c6f5bfc7ab78aed47",
+      "title": "Nuclear energy",
+      "totalQuestions": 6,
+      "questions": [
+        {
+          "_id": "67726d05c49e8ef28ee2b3a1",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "The atomic mass of ${ }_6 \\mathrm{C}^{12}$ is 12.000000 u and that of ${ }_6 \\mathrm{C}^{13}$ is 13.003354 u . The required energy to remove a neutron from ${ }_6 \\mathrm{C}^{13}$, if mass of neutron is 1.008665 u , will be:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ksXk8",
+              "text": "62.5 MeV",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2D3Le",
+              "text": "6.25 MeV",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iZU7F",
+              "text": "4.95 MeV",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ukoXR",
+              "text": "49.5 MeV",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "${ }_6 \\mathrm{C}^{13}+$ Energy $\\rightarrow{ }_6 \\mathrm{C}^{12}+{ }_0 \\mathrm{n}^1$\nMass defect, $\\Delta \\mathrm{m}=(12.000000+1.008665)-$ 13.003354\n$=-0.00531 \\mathrm{u}$\n$\\therefore$ Energyrequired $=\\Delta \\mathrm{m} \\times 931.5=0.00531 \\times 931.5$\n$\\mathrm{MeV}=4.95 \\mathrm{MeV}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726cf9c49e8ef28ee2b343",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "The nucleus having highest binding energy per nucleon is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "h555V",
+              "text": "${ }_8^{16} \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "mqZ57",
+              "text": "${ }_{26}^{56} \\mathrm{Fe}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "zRH2G",
+              "text": "${ }_{84}^{208} \\mathrm{~Pb}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "NDXfG",
+              "text": "$\\frac{4}{2} \\mathrm{He}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The binding energy per nucleon is practically independent of the atomic number for nuclei of mass number in range $30 \\lt \\mathrm{A} \\lt 17^{\\circ}$.\nSo, $26^{\\mathrm{Fe}^{56}}$ has maximum binding energy per nucleon.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7d96f5bfc7ab78ae85e",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The mass of $_{7} \\mathrm{~N}^{15}$ is $15.00011 \\mathrm{amu}$, mass of $_{8} \\mathrm{O}^{16}$ is 15.99492 amu and $m_{p}=1.00783$ amu. Determine binding energy of last proton of ${ }_{8} \\mathrm{O}^{16}$.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "9qIjK",
+              "text": "$2.13 \\mathrm{MeV}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "3S4fW",
+              "text": "$0.13 \\mathrm{MeV}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "dsRFH",
+              "text": "$10 \\mathrm{MeV}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "QGLoj",
+              "text": "$12.13 \\mathrm{MeV}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{M}\\left({ }_{8} \\mathrm{O}^{16}\\right)=\\mathrm{M}\\left({ }_{7} \\mathrm{~N}^{15}\\right)+1 \\mathrm{~m}_{\\mathrm{p}}$\r\n\r\nbinding energy of last proton $=M\\left(N^{15}\\right)+m_{P}-M\\left({ }_{1} O^{16}\\right)$\r\n\r\n$=15.00011+1.00783-15.99492$\r\n\r\n$=0.01302 \\mathrm{amu}=12.13 \\mathrm{MeV}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7bd6f5bfc7ab78ae773",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Let binding energy per nucleon of nucleus is denoted by $\\mathrm{E}_{\\mathrm{bn}}$ and radius of nucleus is denoted as $r$. If mass number of nuclei $\\mathrm{A}, \\mathrm{B}$ and 64 and 125 respectively then",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Plnys",
+              "text": "\\(r_{A} < r_{B}, E_{b n A} < E_{b n B}\\)",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "hH6De",
+              "text": "\\(r_{A} < r_{B}, E_{b n A} < E_{b n A}\\)",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "bN3uZ",
+              "text": "\\(r_{A}=\\frac{4}{5} r_{B}, E_{b n A} < E_{b n B}\\)",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Wqrgq",
+              "text": "\\(r_{A} < r_{B}, E_{b n A} > E_{b n B}\\)",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{r}=\\mathrm{r}_{0}(\\mathrm{~A})^{1 / 3}$\r\n\r\nr increases with increasing A mass number So, $r_{A}<r_{B}$ as mass number of $A$ is smaller \r\n\r\n$\\mathrm{E}_{\\mathrm{bn}}$ decreases with increasing $\\mathrm{A}$ for $\\mathrm{A}>56$ ${ }^{56} \\mathrm{Fe}$ has highest $\\mathrm{E}_{\\mathrm{bn}}$ value. So, $E_{b n}$ for $A=64$ is larger as compared to $\\mathrm{E}_{\\mathrm{bn}}$ for nucleus with $\\mathrm{A}=125$\r\n\r\n$\\mathrm{E}_{\\mathrm{bnA}}>\\mathrm{E}_{\\mathrm{bnB}}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e79f6f5bfc7ab78ae678",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "If the total binding energies of ${ }_{1}^{2} \\mathrm{H},{ }_{2}^{4} \\mathrm{He},$ ${ }_{26}^{56} \\mathrm{Fe} \\&{ }_{92}^{235} \\mathrm{U}$ nuclei are 2.22,28.3,492 and 1786 MeV respectively, identify the most stable nucleus of the following.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "bp7zu",
+              "text": "${ }_{26}^{56} \\mathrm{Fe}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "EglD7",
+              "text": "${ }_{1}^{2} \\mathrm{H}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "PtqCO",
+              "text": "${ }_{92}^{235} \\mathrm{U}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "5rXLZ",
+              "text": "${ }_{2}^{4} \\mathrm{He}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\begin{aligned} \\mathrm{B.E}_{\\mathrm{H}} &=\\frac{2.22}{2}=1.11 \\\\ \\mathrm{B.E}_{\\mathrm{He}} &=\\frac{28.3}{4}=7.08 \\\\ \\mathrm{B.E}_{\\mathrm{Fe}} &=\\frac{492}{56}=8.78=\\text { maximum } \\\\ \\mathrm{B.E}_{\\mathrm{U}} &=\\frac{1786}{235}=7.6 \\end{aligned}$\r\n$\\frac{56}{26} \\mathrm{Fe}$ is most stable as it has maximum binding energy per nucleon.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7756f5bfc7ab78ae500",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "Nuclear energy is released in fission since binding energy per nucleon is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "9xEvL",
+              "text": "sometimes larger and sometimes smaller",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lm3C1",
+              "text": "larger for fission fragments than for parent nucleus",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Qm2qR",
+              "text": "same for fission fragments and nucleus",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "IAq3I",
+              "text": "smaller for fission fragments than for parent nucleus",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Nuclear energy is relased in fission because $\\mathrm{BE} /$ nucleon is larger for fission fragments than for parent nucleus.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e85c6f5bfc7ab78aed49",
+      "title": "Radioactivity",
+      "totalQuestions": 10,
+      "questions": [
+        {
+          "_id": "65b7b87b97ae24e9e2db8ccc",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Two radioactive elements $A$ and $B$ initially have same number of atoms. The half life of $A$ is same as the average life of $B$. If $\\lambda_A$ and $\\lambda_B$ are decay constants of $A$ and $B$ respectively, then choose the correct relation from the given options.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "U1nxn",
+              "text": "$\\lambda_A=\\lambda_B$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wPUjA",
+              "text": "$\\lambda_A=2 \\lambda_B$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "IjWGC",
+              "text": "$\\lambda_{\\mathrm{A}}=\\lambda_{\\mathrm{B}} \\ln 2$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "4Kfw1",
+              "text": "$\\lambda_{\\mathrm{A}} \\ln 2=\\lambda_{\\mathrm{B}}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "It is given that<br />$\\begin{aligned}<br />& \\left(\\frac{\\mathrm{T}_1}{2}\\right)_{\\mathrm{A}}=\\left(\\mathrm{T}_{\\mathrm{av}}\\right)_{\\mathrm{B}} \\\\<br />& \\because \\mathrm{T}_{1 / 2}=\\frac{\\ell \\mathrm{n} 2}{\\lambda} \\text { and } \\mathrm{T}_{\\mathrm{av}}=\\frac{1}{\\lambda} \\\\<br />& \\therefore \\frac{\\ell \\mathrm{n} 2}{\\lambda_{\\mathrm{A}}}=\\frac{1}{\\lambda_{\\mathrm{B}}} \\Rightarrow \\lambda_{\\mathrm{A}}=\\lambda_{\\mathrm{B}} \\ell n 2<br />\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87097ae24e9e2db8c53",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "A radio-active material is reduced to $1 / 8$ of its original amount in 3 days. If $8 \\times 10^{-3} \\mathrm{~kg}$ of the material is left after 5 days. The initial amount of the material is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ZMIvA",
+              "text": "$700 \\mathrm{gm}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6iIyZ",
+              "text": "$900 \\mathrm{gm}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "N6QPv",
+              "text": "$475 \\mathrm{gm}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "sRFGS",
+              "text": "$256 \\mathrm{gm}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{N}=\\mathrm{N}_0\\left(\\frac{1}{2}\\right)^{\\mathrm{n}}$<br />$\\mathrm{N}=\\frac{\\mathrm{N}_0}{8}$<br />$\\frac{\\mathrm{N}_0}{8}=\\mathrm{N}_0\\left(\\frac{1}{2}\\right)^{\\mathrm{n}} \\Rightarrow\\left(\\frac{1}{2}\\right)^3=\\left(\\frac{1}{2}\\right)^{\\mathrm{n}}$<br />$\\mathrm{n}=3$<br />3 half lives $=3$ days<br />1 half life $=1$ day<br />5 days $=5$ half life<br />$\\mathrm{N}=\\mathrm{N}_0\\left(\\frac{1}{2}\\right)^{\\mathrm{n}} \\Rightarrow 8 \\times 10^{-3}=\\mathrm{N}_0\\left(\\frac{1}{2}\\right)^5$<br />$\\Rightarrow \\quad N_0=2^5 \\times 8 \\times 10^{-3}=256 \\mathrm{gm}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e82e6f5bfc7ab78aeb4c",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "In a radioactive material the activity at time $t_1$, is $A_1$ and at a later time $t_2$, it is $A_2$. If the decay constant of the material is $\\lambda$, then",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Y8xBk",
+              "text": "\r\n$A_1=A_2 e^{-\\lambda\\left(t_1-t_2\\right)}$\r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "sFd8y",
+              "text": "\r\n$A_1=A_2 e^{\\lambda\\left(t_1-t_2\\right)}$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "DNf3F",
+              "text": "\r\n$A_1=A_2\\left(t_2 / t_1\\right)$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "cuMFv",
+              "text": "\r\n$A_1=A_2$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "From radioactive decay law,\r\n$$\r\n-\\frac{d N}{d t} \\propto N \\text { or }-\\frac{d N}{d t}=\\lambda N\r\n$$\r\nThus,\r\n$$\r\nA=-\\frac{d N}{d t} \\text { or } A=\\lambda N\r\n$$\r\n$$\r\n\\Rightarrow \\quad A=\\lambda N_0 e^{-\\lambda t}\r\n$$\r\nWhere, $A_0=\\lambda N_0$ is the activity of the radioactive material at time, $t=0$\r\nAt time, $t_1 \\quad A_1=A_0 e^{-\\lambda t_1}$\r\nAt time, $t_2 \\quad A_2=A_0 e^{-\\lambda t_2}$\r\nOn dividing Eq. (ii) by Eq. (iii), we have\r\n$$\r\n\\begin{aligned}\r\n\\quad \\frac{A_1}{A_2} & =\\frac{e^{-\\lambda t_1}}{e^{-\\lambda t_2}}=e^{-\\lambda\\left(t_1-t_2\\right)} \\\\\r\n\\Rightarrow \\quad \\quad A_1 & =A_2 e^{-\\lambda\\left(t_1-t_2\\right)}\r\n\\end{aligned}\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e81e6f5bfc7ab78aeac3",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Three specimens A, B, C of same radioactive element has activities 1 microcurie, 1 rutherford and 1 becquerel respectively. Which specimen has maximum mass?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Ga7gi",
+              "text": "A",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "0rWLa",
+              "text": "B",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "SDpOm",
+              "text": "C",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "YEk51",
+              "text": "all have equal masses",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "1 becquerel $=1 \\mathrm{dis} / \\mathrm{s}$\r\n\r\n1 rutherford $=10^{6} \\mathrm{dis} / \\mathrm{s}$\r\n\r\n1 curie $=3.7 \\times 10^{10} \\mathrm{dis} / \\mathrm{s}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8016f5bfc7ab78ae9bf",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "A radioactive sample of half life <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>23</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mi>days</mi></math>&nbsp;is disintegrating continuously. The percentage decay of&nbsp;the sample&nbsp;between the&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>15</mn><mi>th</mi></msup></math>&nbsp;and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>16</mn><mi>th</mi></msup></math> day&nbsp;will be [Take, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>e</mi><mrow><mn>0</mn><mo>.</mo><mn>03</mn></mrow></msup><mo>=</mo><mn>1</mn><mo>.</mo><mn>03</mn></math>]",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "sxvMn",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn><mo>&#160;</mo><mo>%</mo></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "SqUU2",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&#160;</mo><mo>%</mo></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "J84XC",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>.</mo><mn>9</mn><mo>&#160;</mo><mo>%</mo></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "PMc1H",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mo>%</mo></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Given, half life <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><msub><mi>T</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msub></mfenced><mo>=</mo><mn>23</mn><mo>.</mo><mn>1</mn></math>&nbsp;days</p><p>If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>N</mi><mn>0</mn></msub></math> be the initial amount, then active nuclei at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi><mo>=</mo><mn>15</mn></math>&nbsp;days</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>N</mi><mn>1</mn></msub><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>-</mo><mn>15</mn><mi>&#955;</mi></mrow></msup><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi mathvariant=\"normal\">i</mi></mfenced></math></p><p>Active nuclei at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi><mo>=</mo><mn>16</mn></math>&nbsp;days</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>N</mi><mn>2</mn></msub><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>-</mo><mn>16</mn><mi>&#955;</mi></mrow></msup><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi>ii</mi></mfenced></math></p><p>Disintegration constant,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#955;</mi><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>693</mn></mrow><msub><mi>T</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msub></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>693</mn></mrow><mrow><mn>23</mn><mo>.</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>03</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mo>%</mo></math> decay in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>15</mn><mi>th</mi></math>&nbsp;to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>16</mn><mi>th</mi></math>&nbsp;days</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><msub><mi>N</mi><mn>1</mn></msub><mo>-</mo><msub><mi>N</mi><mn>2</mn></msub></mrow><msub><mi>N</mi><mn>1</mn></msub></mfrac><mo>&#215;</mo><mn>100</mn><mo>=</mo><mfrac><mrow><msub><mi>N</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>-</mo><mn>15</mn><mi>&#955;</mi></mrow></msup><mo>-</mo><msub><mi>N</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>-</mo><mn>16</mn><mi>&#955;</mi></mrow></msup></mrow><mrow><msub><mi>N</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>-</mo><mn>15</mn><mi>&#955;</mi></mrow></msup></mrow></mfrac><mo>&#215;</mo><mn>100</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfenced><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>&#955;</mi></mrow></msup></mrow></mfenced><mo>&#215;</mo><mn>100</mn><mo>=</mo><mfenced><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mn>0</mn><mo>.</mo><mn>03</mn></mrow></msup></mrow></mfenced><mo>&#215;</mo><mn>100</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfenced><mrow><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><msup><mi>e</mi><mrow><mn>0</mn><mo>.</mo><mn>03</mn></mrow></msup></mfrac></mrow></mfenced><mo>&#215;</mo><mn>100</mn><mo>=</mo><mfenced><mrow><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>.</mo><mn>03</mn></mrow></mfrac></mrow></mfenced><mo>&#215;</mo><mn>100</mn><mo>=</mo><mn>2</mn><mo>.</mo><mn>9</mn><mo>&#160;</mo><mo>%</mo></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7f56f5bfc7ab78ae959",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Some amount of a radioactive substance (half-life <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>10</mn></math>&nbsp;days ) is spread inside a room and consequently, the level of radiation becomes <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>50</mn></math> times the permissible level&nbsp;for normal occupancy of the room. After how many days will the room be safe for occupation?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "lCBHD",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>20</mn></math> days",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "rfh5q",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>34</mn><mo>.</mo><mn>8</mn></math> days",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ynYZ0",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>56</mn><mo>.</mo><mn>4</mn></math> days",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "1DP7s",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>62</mn><mo>.</mo><mn>9</mn></math> days",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>since, the initial activity is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>50</mn></math>&nbsp;times the activity for safe occupancy, therefore <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>R</mi><mn>0</mn></msub><mo>=</mo><mn>50</mn><mi>R</mi><mo>,</mo></math>&nbsp;where <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi><mo>=</mo><mi>&#955;</mi><mi>N</mi></math>.<br />since, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi><mo>&#8733;</mo><mi>N</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi>R</mi><msub><mi>R</mi><mn>0</mn></msub></mfrac><mo>=</mo><mfrac><mi>N</mi><msub><mi>N</mi><mn>0</mn></msub></mfrac><mo>=</mo><msup><mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></mfenced><mi>n</mi></msup><mo>=</mo><msup><mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></mfenced><mrow><mi>t</mi><mo>/</mo><mi>T</mi></mrow></msup></math></p><p>Or <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></mfenced><mrow><mi>t</mi><mo>/</mo><mn>10</mn></mrow></msup><mo>=</mo><mfrac><mn>1</mn><mn>50</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mn>2</mn></mfenced><mrow><mi>t</mi><mo>/</mo><mn>10</mn></mrow></msup><mo>-</mo><mn>50</mn><mo>&#8658;</mo><mfrac><mi>t</mi><mn>10</mn></mfrac><msub><mi>log</mi><mn>10</mn></msub><mn>2</mn><mo>=</mo><msub><mi>log</mi><mn>10</mn></msub><mn>50</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;&#160;</mo><mi>t</mi><mo>=</mo><mfrac><mrow><mn>10</mn><msub><mi>log</mi><mn>10</mn></msub><mn>50</mn></mrow><msubsup><mi>log</mi><mn>10</mn><mn>2</mn></msubsup></mfrac><mo>=</mo><mfrac><mrow><mn>10</mn><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>699</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>301</mn></mrow></mfrac><mo>=</mo><mn>56</mn><mo>.</mo><mn>4</mn></math>&nbsp;days</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7e76f5bfc7ab78ae8dc",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The activity of a radioactive sample is measured as <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>N</mi><mn>0</mn></msub></math> counts per minute at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi><mo>=</mo><mn>0</mn></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msub><mi>N</mi><mn>0</mn></msub><mi>e</mi></mfrac></math> counts per minute at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi><mo>=</mo><mn>5</mn><mo>&#160;</mo><mi>min</mi></math>. The time (in minutes) at which the activity reduces to half its value is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "HlxKm",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>log</mi><mi>e</mi></msub><mfrac><mn>2</mn><mn>5</mn></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "1RDC3",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>5</mn><mrow><msub><mi>log</mi><mi>e</mi></msub><mn>2</mn></mrow></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "rC52R",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn><msub><mi>log</mi><mn>10</mn></msub><mn>2</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "jsAPP",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn><msub><mi>log</mi><mi>e</mi></msub><mn>2</mn></math>",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Fraction remains after <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi></math> half-lives&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi>N</mi><msub><mi>N</mi><mn>0</mn></msub></mfrac><mo>=</mo><msup><mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></mfenced><mi>n</mi></msup><mo>=</mo><msup><mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></mfenced><mfrac><mi>t</mi><mi>T</mi></mfrac></msup></math></p><p>Given, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>N</mi><mo>=</mo><mfrac><msub><mi>N</mi><mn>0</mn></msub><mi>e</mi></mfrac><mo>&#8658;</mo><mfrac><msub><mi>N</mi><mn>0</mn></msub><mrow><mi>e</mi><msub><mi>N</mi><mn>0</mn></msub></mrow></mfrac><mo>=</mo><msup><mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></mfenced><mfrac><mn>5</mn><mi>T</mi></mfrac></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mfrac><mn>1</mn><mi>e</mi></mfrac><mo>=</mo><msup><mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></mfenced><mfrac><mn>5</mn><mi>T</mi></mfrac></msup></math></p><p>Taking log on both sides, we get</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>log</mi><mn>1</mn><mo>-</mo><mi>log</mi><mi>e</mi><mo>=</mo><mfrac><mn>5</mn><mi>T</mi></mfrac><mi>log</mi><mfrac><mn>1</mn><mn>2</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mo>-</mo><mn>1</mn><mo>=</mo><mfrac><mn>5</mn><mi>T</mi></mfrac><mfenced><mrow><mo>-</mo><mi>log</mi><mn>2</mn></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>T</mi><mo>=</mo><mn>5</mn><msub><mi>log</mi><mi>e</mi></msub><mn>2</mn></math></p><p>Now, let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi></math> be the time after which activity reduces to half</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></mfenced><mo>=</mo><msup><mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></mfenced><mrow><mi>t</mi><mo>/</mo><mn>5</mn><msub><mi>log</mi><mi>e</mi></msub><mn>2</mn></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><msup><mi>t</mi><mo>&#39;</mo></msup><mo>=</mo><mn>5</mn><msub><mi>log</mi><mi>e</mi></msub><mn>2</mn></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7d76f5bfc7ab78ae851",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "A radioactive element X converts into another stable element Y. Half life of $\\mathrm{X}$ is $2 \\mathrm{hrs}$. Initially only $\\mathrm{X}$ is present. After time $\\mathrm{t},$ the ratio of atoms of $X$ and $Y$ is found to be $1: 4,$ then $t$ in hours is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "U70GL",
+              "text": "2",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "I9fZH",
+              "text": "4",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "eLVcW",
+              "text": "between 4 and 6",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "U4FEB",
+              "text": "6",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $\\mathrm{N}_{0}$ be the number of atoms of $\\mathrm{X}$ at time $\\mathrm{t}=0$\r\n\r\nThen at $\\mathrm{t}=4$ hrs (two half lives)\r\n\r\n$\\mathrm{N}_{\\mathrm{x}}=\\frac{\\mathrm{N}_{0}}{4}$ and $\\mathrm{N}_{\\mathrm{y}}=\\frac{3 \\mathrm{~N}_{0}}{4}$\r\n\r\n$\\therefore \\mathrm{N}_{\\mathrm{x}} / \\mathrm{N}_{\\mathrm{y}}=1 / 3$\r\n\r\nand at $\\mathrm{t}=6 \\mathrm{hrs}$ (three half lives)\r\n\r\n$\\mathrm{N}_{\\mathrm{x}}=\\frac{\\mathrm{N}_{0}}{8}$ and $\\mathrm{N}_{\\mathrm{y}}=\\frac{7 \\mathrm{~N}_{0}}{8}$\r\n\r\nor $\\frac{\\mathrm{N}_{\\mathrm{x}}}{\\mathrm{N}_{\\mathrm{y}}}=\\frac{1}{7}$\r\n\r\nThe given ratio $\\frac{1}{4}$ lies between $\\frac{1}{3}$ and $\\frac{1}{7}$ Therefore, t lies between $4 \\mathrm{hrs}$ and $6 \\mathrm{hrs}$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ca6f5bfc7ab78ae7e3",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "In an ore containing uranium, the ratio of $U^{238}$ to $\\mathrm{Pb}^{206}$ is 3. Calculate the àge of the ore, assuming that all the lead present in the ore is the final stable product of $U^{238}$. Take the half-life of $U^{238}$ to be $4.5 \\times 10^{9} \\mathrm{yr}$.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ORt5z",
+              "text": "$1.6 \\times 19^{3} \\mathrm{yr}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "4fxfX",
+              "text": "$1.5 \\times 10^{4} \\mathrm{yr}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "pfsE3",
+              "text": "$1.867 \\times 10^{9} \\mathrm{yr}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "yTtda",
+              "text": "$2 \\times 10^{5} \\mathrm{yr}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let the initial mass of uranium be $\\mathrm{M}_{0}$ Final mass of uranium after time $\\mathrm{t}$\r\n\r\n$$\r\n\r\n\\mathrm{M}=\\frac{3}{4} \\mathrm{M}_{0}\r\n\r\n$$\r\n\r\nAccording to the law of radioactive disintegration.\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\frac{\\mathrm{M}}{\\mathrm{M}_{0}}=\\left(\\frac{1}{2}\\right)^{\\mathrm{t} / \\mathrm{T}} \\Rightarrow \\frac{\\mathrm{M}_{0}}{\\mathrm{M}}=(2)^{\\mathrm{t} / \\mathrm{T}} \\\\\r\n\r\n\\therefore \\log _{10}\\left(\\frac{\\mathrm{M}_{0}}{\\mathrm{M}}\\right)=\\frac{\\mathrm{t}}{\\mathrm{T}} \\log _{10}(2) \\\\\r\n\r\n\\mathrm{t}=\\mathrm{T} \\frac{\\log _{10}\\left(\\frac{\\mathrm{M}_{0}}{\\mathrm{M}}\\right)}{\\log _{10}(2)}=\\frac{\\mathrm{T} \\log _{10}\\left(\\frac{4}{3}\\right)}{\\log _{10}(2)} \\\\\r\n\r\n=\\frac{\\mathrm{T} \\log _{10}(1.333)}{\\log _{10}(2)}=4.5 \\times 10^{9}\\left(\\frac{0.1249}{0.3010}\\right) \\\\\r\n\r\n\\Rightarrow \\mathrm{t}=1.867 \\times 10^{9} \\mathrm{yr} .\r\n\r\n\\end{array}\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7bd6f5bfc7ab78ae772",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "A nucleus of uranium decays at rest into nuclei of thorium and helium. Then :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "djbhY",
+              "text": "the helium nucleus has less momentum than the thorium nucleus",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "CY3Kg",
+              "text": "the helium nucleus has more momentum than the thorium nucleus",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "OuRlu",
+              "text": "the helium nucleus has less kinetic energy than the thorium nucleus",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "aaQuZ",
+              "text": "the helium nucleus has more kinetic energy than the thorium nucleus",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In an explosion a body breaks up into two pieces of unequal masses both part will have numerically equal momentum and lighter part will have more velocity. $\\mathrm{U} \\rightarrow \\mathrm{Th}+\\mathrm{He}$\r\n\r\n$$\r\n\r\n\\mathrm{KE}_{\\mathrm{Th}}=\\frac{\\mathrm{P}^{2}}{2 \\mathrm{~m}_{\\mathrm{Th}}}, \\mathrm{KE}_{\\mathrm{He}}=\\frac{\\mathrm{P}^{2}}{2 \\mathrm{~m}_{\\mathrm{He}}}\r\n\r\n$$\r\n\r\nsinc $\\mathrm{m}_{\\mathrm{He}}$ is less so $\\mathrm{KE}_{\\mathrm{He}}$ will be more.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e85c6f5bfc7ab78aed48",
+      "title": "Nuclear reactions",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "64c0e7916f5bfc7ab78ae5fa",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "Which one is correct about fission?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "gqn07",
+              "text": "Approx. $0.1 \\%$ mass converts into energy.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "PeZQc",
+              "text": "Most of energy of fission is in the form of heat.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GPTD7",
+              "text": "In a fission of $U^{235}$ about 200 eV energy is released.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "VYcWu",
+              "text": "On an average, one neutron is released per fission of $\\mathrm{U}^{235}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution available",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7836f5bfc7ab78ae57f",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is best nuclear fuel",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ztuWR",
+              "text": "thorium 236",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "igGeH",
+              "text": "plutonium 239",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "2Pfho",
+              "text": "$\\quad$ uranium 236",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "foPLB",
+              "text": "neptunium 239",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Plutonium 239 is processed by breeder mechanism to be used as nuclear feul.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

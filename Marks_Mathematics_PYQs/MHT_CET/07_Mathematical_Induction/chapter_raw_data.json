@@ -1,0 +1,152 @@
+{
+  "index": 7,
+  "chapterId": "65a261f00279619d9d8a308d",
+  "chapter": "Mathematical Induction",
+  "exam": "MHT CET",
+  "subject": "Mathematics",
+  "totalTopics": 1,
+  "totalQuestions": 2,
+  "downloadTime": "2026-10-08 20:42:37",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "65a263510279619d9d8a3e23",
+      "title": "Mathematical Induction",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "65a2623d0279619d9d8a32e9",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b1",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-12T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (12 May Shift 2)",
+              "title": "MHT CET 2023 (12 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "The given following circuit is equivalent to\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/iqu9jFtaPXB3Zr7tKnLvS9hKKz6InU5D7nSt0xgiAiU.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "gVw1C",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/FXoT7f2NJenEiurYNt5FeFozNsKz4NfKtZmRsDx4TZU.original.fullsize.png\"><br>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "9iJUc",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/3kYdmVcOu7dJl5kLpFVfz7LJqkBVwwI9Wy_E_rxBKSw.original.fullsize.png\"><br>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "haGcK",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/3COy6DuNDNktKOu1ugNak7to8lmf8Y41fWK4pz_AKf8.original.fullsize.png\"><br>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "R5JkZ",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/SSwQDqSw5bFY3wGbmOBA7nlRj3nin0s2Dd_syUvMoPU.original.fullsize.png\"><br>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $\\mathrm{p}$ : The switch $\\mathrm{S}_1$\n$\\mathrm{q}$ : The switch $\\mathrm{S}_2$\n\nThe symbolic form is\n$$\n(p \\wedge \\sim q) \\vee(\\sim p \\wedge q) \\vee(\\sim p \\wedge \\sim q)\n$$\n$\\begin{aligned} & \\equiv(p \\wedge \\sim q) \\vee[\\sim p \\wedge(q \\vee \\sim q)] \\\\ & \\text {...[Distributive Law] } \\\\ & \\equiv(p \\wedge \\sim q) \\vee[\\sim p \\wedge t] \\\\ & \\text {...[Complement Law] } \\\\ & \\equiv(p \\wedge \\sim q) \\vee \\sim p \\\\ & \\text {...[Identity Law] } \\\\ & \\equiv \\sim p \\vee(p \\wedge \\sim q) \\\\ & \\text { [Commutative Law] } \\\\ & \\equiv(\\sim p \\vee p) \\wedge(\\sim p \\vee \\sim q) \\\\ & \\text {.[Distributive Law] } \\\\ & \\equiv \\mathrm{t} \\wedge(\\sim \\mathrm{p} \\vee \\sim \\mathrm{q}) \\\\ & \\text {.[Complement Law] } \\\\ & \\equiv \\sim p \\vee \\sim q \\\\ & \\text {.[Identity Law] } \\\\ & \\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b1",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-12T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (12 May Shift 2)",
+            "title": "MHT CET 2023 (12 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a261f00279619d9d8a308b",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892ad",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-10T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (10 May Shift 2)",
+              "title": "MHT CET 2023 (10 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "The shaded area in the figure given below is a solution set of a system of inequations. The minimum value of objective function $3 x+5 y$, subject to the linear constraints given by this system of inequations is\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/drMGeZRoSv_yUwKJUMzg4OT_pnPxwYjnfRDsw9X791Q.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "HqIBf",
+              "text": "$19.5$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "j0x9v",
+              "text": "$2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "rAC8T",
+              "text": "$195$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nSNl8",
+              "text": "$19.8$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/Lxbwup4-Amc5ZFkltVoCGUZmNhmwRteXrqL8Ihw8TMc.original.fullsize.png\"><br>\nLet the corner points of the feasible region be A, $\\mathrm{B}, \\mathrm{C}, \\mathrm{D}$.\nSolving equations $y=, 3$ and $2 x+3 y=12$, we get\n$\\mathrm{A}=(1.5,3)$\nSimilarly,\n$\\begin{aligned}\n& \\mathrm{B}=(4,3) \\\\\n& \\mathrm{C}=(4,7) \\\\\n& \\mathrm{D}=\\left(\\frac{3}{5}, \\frac{18}{5}\\right)\n\\end{aligned}$\nLet $Z=3 x+5 y$\n$\\therefore \\quad$ Value of $Z$ at point $A=19.5$\nValue of $Z$ at point $B=27$\nValue of $Z$ at point $C=47$\nValue of $Z$ at point $D=\\frac{99}{5}$\n$\\therefore \\quad$ The minimum value of $Z$ is 19.5 .",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892ad",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-10T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (10 May Shift 2)",
+            "title": "MHT CET 2023 (10 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

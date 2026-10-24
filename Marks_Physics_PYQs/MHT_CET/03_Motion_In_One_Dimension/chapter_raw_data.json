@@ -1,0 +1,3800 @@
+{
+  "index": 3,
+  "chapterId": "61c08986d11ca9833ffe852f",
+  "chapter": "Motion In One Dimension",
+  "exam": "MHT CET",
+  "subject": "Physics",
+  "totalTopics": 6,
+  "totalQuestions": 56,
+  "downloadTime": "2026-10-08 20:33:42",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "65a263490279619d9d8a3dd0",
+      "title": "Rest and Motion",
+      "totalQuestions": 15,
+      "questions": [
+        {
+          "_id": "6abb889d15a9fc0fc8c1455f",
+          "type": "singleCorrect",
+          "question": {
+            "text": "The minute hand of a wall-clock is $10$ cm long. The average velocity of the tip of the minute hand between $6.00$ am to $7.30$ am is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "hZrD6",
+              "label": "A",
+              "text": "zero",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "74hT1",
+              "label": "B",
+              "text": "$\\dfrac{1}{270}$ cm/s",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "9EOtn",
+              "label": "C",
+              "text": "$\\dfrac{1}{180}$ cm/s",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "vdSIA",
+              "label": "D",
+              "text": "$\\dfrac{1}{90}$ cm/s",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Length of the minute hand, $R = 10$ cm.<br><br>At $6.00$ am, the minute hand is at the $12$ mark.<br><br>At $7.30$ am, the minute hand is at the $6$ mark.<br><br>The displacement of the tip of the minute hand is the straight line distance between these two positions, which is the diameter of the circular path.<br><br>Displacement $= 2R = 2 \\times 10 = 20$ cm.<br><br>The time elapsed between $6.00$ am and $7.30$ am is $1.5$ hours.<br><br>Time $= 1.5 \\times 60 \\times 60 = 5400$ s.<br><br>Average velocity $= \\dfrac{\\text{Displacement}}{\\text{Time}} = \\dfrac{20}{5400} = \\dfrac{1}{270}$ cm/s.<br><br>Answer: $\\dfrac{1}{270}$ cm/s",
+            "image": null
+          },
+          "level": 2,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87f02fe711bb1be9996e",
+              "title": "MHT CET 2026 (19 May Shift 2)",
+              "shortName": "2026 (19 May Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-05-19T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87f02fe711bb1be9996e",
+            "title": "MHT CET 2026 (19 May Shift 2)",
+            "shortName": "2026 (19 May Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-05-19T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6abb884b15a9fc0fc8c14258",
+          "type": "singleCorrect",
+          "question": {
+            "text": "A person travelling in a straight line moves with uniform velocity $V_1$ for a distance $x$ and with a uniform velocity $V_2$ for the next $\\dfrac{3x}{2}$ distance. The average velocity in this motion is $\\dfrac{50}{7}$ m/s. If $V_1$ is $5$ m/s then $V_2$ (in m/s) is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "fAVQr",
+              "label": "A",
+              "text": "$5$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Rkks9",
+              "label": "B",
+              "text": "$15$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "aOSD7",
+              "label": "C",
+              "text": "$10$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "7zhha",
+              "label": "D",
+              "text": "$8$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Total distance travelled is $d = x + \\dfrac{3x}{2} = \\dfrac{5x}{2}$<br><br>Total time taken is $t = t_1 + t_2 = \\dfrac{x}{V_1} + \\dfrac{3x}{2V_2}$<br><br>Average velocity $V_{avg} = \\dfrac{d}{t} = \\dfrac{\\dfrac{5x}{2}}{\\dfrac{x}{V_1} + \\dfrac{3x}{2V_2}}$<br><br>Given $V_{avg} = \\dfrac{50}{7}$ m/s and $V_1 = 5$ m/s:<br><br>$\\dfrac{50}{7} = \\dfrac{\\dfrac{5}{2}}{\\dfrac{1}{5} + \\dfrac{3}{2V_2}}$<br><br>$\\dfrac{10}{7} = \\dfrac{\\dfrac{1}{2}}{\\dfrac{1}{5} + \\dfrac{3}{2V_2}}$<br><br>$\\dfrac{10}{7} \\left( \\dfrac{1}{5} + \\dfrac{3}{2V_2} \\right) = \\dfrac{1}{2}$<br><br>$\\dfrac{2}{7} + \\dfrac{15}{7V_2} = \\dfrac{1}{2}$<br><br>$\\dfrac{15}{7V_2} = \\dfrac{1}{2} - \\dfrac{2}{7} = \\dfrac{3}{14}$<br><br>$V_2 = \\dfrac{15 \\times 14}{7 \\times 3} = 10$ m/s<br><br>Answer: $10$",
+            "image": null
+          },
+          "level": 1,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87f02fe711bb1be9996c",
+              "title": "MHT CET 2026 (15 May Shift 2)",
+              "shortName": "2026 (15 May Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-05-15T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87f02fe711bb1be9996c",
+            "title": "MHT CET 2026 (15 May Shift 2)",
+            "shortName": "2026 (15 May Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-05-15T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6abb884b15a9fc0fc8c14255",
+          "type": "singleCorrect",
+          "question": {
+            "text": "A student runs along a circular track of diameter $80$ m. The distance travelled and the magnitude of displacement of the student when he covers $\\left(\\dfrac{3}{4}\\right)^{th}$ of the circle is (in m)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "4R5Cw",
+              "label": "A",
+              "text": "$60\\pi,\\,40\\sqrt{2}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "UetML",
+              "label": "B",
+              "text": "$40\\pi,\\,60\\sqrt{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "CFrCH",
+              "label": "C",
+              "text": "$120\\pi,\\,80\\sqrt{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "9H19d",
+              "label": "D",
+              "text": "$80\\pi,\\,120\\sqrt{2}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Radius of the circular track $R = \\dfrac{80}{2} = 40$ m.<br><br>Distance travelled by the student in covering $\\dfrac{3}{4}$ of the circle is given by $d = \\dfrac{3}{4} \\times 2\\pi R$.<br><br>$d = \\dfrac{3}{4} \\times 2\\pi \\times 40 = 60\\pi$ m.<br><br>The angle between the initial and final position vectors from the center is $90^{\\circ}$ since $\\dfrac{3}{4}$ of the circle is covered.<br><br>Magnitude of displacement is the straight line distance between the initial and final positions, which is $\\sqrt{R^2 + R^2} = \\sqrt{2}R$.<br><br>Displacement $= 40\\sqrt{2}$ m.<br><br>Answer: $60\\pi,\\,40\\sqrt{2}$",
+            "image": null
+          },
+          "level": 1,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87f02fe711bb1be9996c",
+              "title": "MHT CET 2026 (15 May Shift 2)",
+              "shortName": "2026 (15 May Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-05-15T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87f02fe711bb1be9996c",
+            "title": "MHT CET 2026 (15 May Shift 2)",
+            "shortName": "2026 (15 May Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-05-15T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b88bf9280d7f9932a1d",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376df9b67616acec78f76",
+              "heldOn": "2025-04-23T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (23 Apr Shift 1)",
+              "title": "MHT CET 2025 (23 Apr Shift 1)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "The acceleration (a) - time (T) graph for the body starting from rest is given below. The maximum speed of the body is\n<img src=\"https://cdn.quizrr.in/question-assets/mhtcet/mhtcet2025/8va9GKO4_ju6kbVbBkJBU5-PtcVEgOjpCYx1pLs9X1s.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "lDUoa",
+              "text": "$40 \\mathrm{~m} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "FMvSp",
+              "text": "$80 \\mathrm{~m} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "EOPjS",
+              "text": "$160 \\mathrm{~m} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SlSvV",
+              "text": "$200 \\mathrm{~m} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The change in velocity of a body is equal to the area under the acceleration-time graph.<br><br>Since the body starts from rest, its initial velocity is $u = 0$.<br><br>The acceleration is positive from $t = 0$ to $t = 10 \\text{ s}$, so the velocity increases continuously and reaches its maximum at $t = 10 \\text{ s}$ when the acceleration becomes zero.<br><br>Maximum velocity $v_{\\text{max}} = \\text{Area under } a\\text{-}t \\text{ graph}$<br><br>$v_{\\text{max}} = \\dfrac{1}{2} \\times \\text{base} \\times \\text{height}$<br><br>$v_{\\text{max}} = \\dfrac{1}{2} \\times 10 \\times 8$<br><br>$v_{\\text{max}} = 40 \\text{ m/s}$<br><br>Answer: $40 \\mathrm{~m} / \\mathrm{s}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376df9b67616acec78f76",
+            "heldOn": "2025-04-23T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (23 Apr Shift 1)",
+            "title": "MHT CET 2025 (23 Apr Shift 1)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b74bf9280d7f9932960",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376df9b67616acec78f75",
+              "heldOn": "2025-04-22T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (22 Apr Shift 2)",
+              "title": "MHT CET 2025 (22 Apr Shift 2)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "At any time ' $t$ ', the co-ordinates of moving particle are $x=a t^2$ and $\\mathrm{y}=\\mathrm{bt}^2$. The speed of the particle is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "kZE10",
+              "text": "$2 t \\sqrt{a^2+b^2}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "TkCNK",
+              "text": "$2 t \\sqrt{a^2-b^2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3okaN",
+              "text": "$2 t(a+b)$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "NnMaa",
+              "text": "$\\frac{2 \\mathrm{t}}{\\sqrt{\\mathrm{a}^2+\\mathrm{b}^2}}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given $x = a t^2$ and $y = b t^2$.<br><br>The velocity components along the X and Y axes are:<br><br>$v_x = \\dfrac{dx}{dt} = \\dfrac{d}{dt}(a t^2) = 2at$<br><br>$v_y = \\dfrac{dy}{dt} = \\dfrac{d}{dt}(b t^2) = 2bt$<br><br>The speed of the particle is the magnitude of the velocity vector:<br><br>$v = \\sqrt{v_x^2 + v_y^2}$<br><br>$v = \\sqrt{(2at)^2 + (2bt)^2}$<br><br>$v = \\sqrt{4a^2t^2 + 4b^2t^2}$<br><br>$v = 2t\\sqrt{a^2 + b^2}$<br><br>Answer: $2 t \\sqrt{a^2+b^2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376df9b67616acec78f75",
+            "heldOn": "2025-04-22T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (22 Apr Shift 2)",
+            "title": "MHT CET 2025 (22 Apr Shift 2)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b44bf9280d7f99327aa",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376de9b67616acec78f72",
+              "heldOn": "2025-04-21T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (21 Apr Shift 1)",
+              "title": "MHT CET 2025 (21 Apr Shift 1)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "The velocity time graph of a body moving in a straight line is shown in figure. The ratio of displacement to distance travelled by the body in time 0 to 8 s is\n<img src=\"https://cdn.quizrr.in/question-assets/mhtcet/mhtcet2025/4ITsfl4U0cchdEYnpnmP6QGwgIn3I-x5yyzbJf2eXXo.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "dQ2wM",
+              "text": "$8: 5$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "G7wT0",
+              "text": "$3: 5$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "H4pP6",
+              "text": "$5: 9$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "FLkE8",
+              "text": "$7: 4$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The area under the velocity-time graph gives the displacement of the body when considered with the appropriate sign, and the distance travelled when absolute values of the areas are taken.<br><br>Let us calculate the area of each segment from the given graph:<br>Area from $t = 0$ to $t = 2$ s: $A_1 = 3 \\times 2 = 6$ m<br>Area from $t = 2$ to $t = 3$ s: $A_2 = -2 \\times 1 = -2$ m<br>Area from $t = 3$ to $t = 5$ s: $A_3 = 2 \\times 2 = 4$ m<br>Area from $t = 5$ to $t = 6$ s: $A_4 = -2 \\times 1 = -2$ m<br>Area from $t = 6$ to $t = 8$ s: $A_5 = 2 \\times 2 = 4$ m<br><br>Total displacement is the algebraic sum of the areas:<br>$\\text{Displacement} = A_1 + A_2 + A_3 + A_4 + A_5$<br>$\\text{Displacement} = 6 - 2 + 4 - 2 + 4 = 10$ m<br><br>Total distance is the sum of the absolute values of the areas:<br>$\\text{Distance} = |A_1| + |A_2| + |A_3| + |A_4| + |A_5|$<br>$\\text{Distance} = 6 + 2 + 4 + 2 + 4 = 18$ m<br><br>The ratio of displacement to distance travelled is:<br>$\\text{Ratio} = \\dfrac{10}{18} = \\dfrac{5}{9}$<br><br>Answer: $5: 9$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376de9b67616acec78f72",
+            "heldOn": "2025-04-21T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (21 Apr Shift 1)",
+            "title": "MHT CET 2025 (21 Apr Shift 1)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6792142e0aee93fa0796dea0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665ccf",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-16T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (16 May Shift 1)",
+              "title": "MHT CET 2024 (16 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "The co-ordinates of a moving particle at any time ' t ' are given by $x=\\alpha \\mathrm{t}^3$ and $y=\\beta \\mathrm{t}^3$ where $\\alpha$ and $\\beta$ are constants. The speed of the particle at time ' $t$ ' is given by",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "YMyyx",
+              "text": "$t \\sqrt{\\alpha^2+\\beta^2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "O3UsK",
+              "text": "$3 \\mathrm{t} \\sqrt{\\alpha^2+\\beta^2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BmgiC",
+              "text": "$t^2 \\sqrt{\\alpha^2+\\beta^2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZwzIP",
+              "text": "$3 \\mathrm{t}^2 \\sqrt{\\alpha^2+\\beta^2}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The position coordinates of the particle are given by $x = \\alpha t^3$ and $y = \\beta t^3$.<br><br>The velocity components along the x and y axes are:<br>$v_x = \\dfrac{dx}{dt} = \\dfrac{d}{dt}(\\alpha t^3) = 3\\alpha t^2$<br>$v_y = \\dfrac{dy}{dt} = \\dfrac{d}{dt}(\\beta t^3) = 3\\beta t^2$<br><br>The speed of the particle is the magnitude of the resultant velocity:<br>$v = \\sqrt{v_x^2 + v_y^2}$<br><br>Substituting the values of $v_x$ and $v_y$:<br>$v = \\sqrt{(3\\alpha t^2)^2 + (3\\beta t^2)^2}$<br>$v = \\sqrt{9\\alpha^2 t^4 + 9\\beta^2 t^4}$<br>$v = \\sqrt{9t^4(\\alpha^2 + \\beta^2)}$<br>$v = 3t^2 \\sqrt{\\alpha^2 + \\beta^2}$<br><br>Answer: $3 \\mathrm{t}^2 \\sqrt{\\alpha^2+\\beta^2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665ccf",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-16T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (16 May Shift 1)",
+            "title": "MHT CET 2024 (16 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679213f80aee93fa0796dcf2",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665ccd",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-11T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (11 May Shift 2)",
+              "title": "MHT CET 2024 (11 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Two cars start from a point at the same time in a straight line and their positions are represented by $\\mathrm{x}_1(\\mathrm{t})=\\mathrm{at}+\\mathrm{bt}^2$ and $\\mathrm{x}_2(\\mathrm{t})=\\mathrm{Ft}-\\mathrm{t}^2$. At what time do the cars have the same velocity?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "sxJWW",
+              "text": "$\\frac{a+F}{2(b-1)}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iGORP",
+              "text": "$\\frac{\\mathrm{a}-\\mathrm{F}}{1+\\mathrm{b}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "b0hAp",
+              "text": "$\\frac{\\mathrm{a}+\\mathrm{F}}{2(1+\\mathrm{b})}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "HFuv8",
+              "text": "$\\frac{\\mathrm{F}-\\mathrm{a}}{2(1+\\mathrm{b})}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The position of the first car is given by $x_1(t) = at + bt^2$.<br><br>The velocity of the first car is $v_1(t) = \\dfrac{dx_1}{dt} = a + 2bt$.<br><br>The position of the second car is given by $x_2(t) = Ft - t^2$.<br><br>The velocity of the second car is $v_2(t) = \\dfrac{dx_2}{dt} = F - 2t$.<br><br>Equating the velocities of the two cars:<br><br>$v_1(t) = v_2(t)$<br><br>$a + 2bt = F - 2t$<br><br>$2bt + 2t = F - a$<br><br>$2t(b + 1) = F - a$<br><br>$t = \\dfrac{F - a}{2(1 + b)}$<br><br>Answer: $\\frac{\\mathrm{F}-\\mathrm{a}}{2(1+\\mathrm{b})}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665ccd",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-11T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (11 May Shift 2)",
+            "title": "MHT CET 2024 (11 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679213cd0aee93fa0796dba0",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665cc4",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-10T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (10 May Shift 2)",
+              "title": "MHT CET 2024 (10 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A vehicle runs on a straight road of length ' L '. It travels half the distance with speed V and the remaining distance with speed $\\dfrac{\\mathrm{V}}{3}$. Its average speed is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "G7uDn",
+              "text": "$\\dfrac{3 \\mathrm{~V}}{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "P18w2",
+              "text": "V",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4Zyb2",
+              "text": "$\\dfrac{\\mathrm{V}}{2}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "FlNIU",
+              "text": "$\\dfrac{2 \\mathrm{~V}}{3}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Total distance is $L$.<br><br>Time taken to travel the first half of the distance is $t_1 = \\dfrac{L/2}{V} = \\dfrac{L}{2V}$.<br><br>Time taken to travel the remaining half of the distance is $t_2 = \\dfrac{L/2}{V/3} = \\dfrac{3L}{2V}$.<br><br>Total time taken is $t = t_1 + t_2 = \\dfrac{L}{2V} + \\dfrac{3L}{2V} = \\dfrac{4L}{2V} = \\dfrac{2L}{V}$.<br><br>Average speed is given by $\\dfrac{\\text{Total distance}}{\\text{Total time}} = \\dfrac{L}{\\dfrac{2L}{V}} = \\dfrac{V}{2}$.<br><br>Answer: $\\dfrac{\\mathrm{V}}{2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665cc4",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-10T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (10 May Shift 2)",
+            "title": "MHT CET 2024 (10 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a261950279619d9d8a2db9",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892a9",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2022-08-11T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022 (11 Aug Shift 1)",
+              "title": "MHT CET 2022 (11 Aug Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A body covers half of its distance with speed $u$ and the other half with a speed $v$, the average speed of the body is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "L6nhV",
+              "text": "$\\frac{2 u v}{u+v}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "4zOct",
+              "text": "$\\frac{u-v}{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lISGj",
+              "text": "$\\frac{u+v}{2 u v}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "JRNmC",
+              "text": "$\\frac{u+v}{2}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Average speed $=\\frac{\\text { Total Distance }}{\\text { Time }}=\\frac{d}{\\left(\\frac{d / 2}{u}\\right)+\\left(\\frac{d / 2}{v}\\right)}=\\frac{2 u v}{u+v}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892a9",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2022-08-11T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022 (11 Aug Shift 1)",
+            "title": "MHT CET 2022 (11 Aug Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fea0279619d9d8a2041",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f72",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-19T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (19 Oct Shift 2)",
+              "title": "MHT CET 2020 (19 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Two spherical rain drops reach the surface of the earth with terminal velocities\nhaving ratio $16: 9$. The ratio of their surface area is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "yGgw5",
+              "text": "$4: 3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "9uKry",
+              "text": "$64: 27$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "AiMVX",
+              "text": "$16: 9$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ybsyh",
+              "text": "$9: 16$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The terminal velocity of rain drop is\n$\\begin{array}{l}\nv_{T}=\\frac{2(\\sigma-\\rho) r^{2} g}{9 \\eta} \\\\\n\\Rightarrow v_{T} \\propto r^{2} \\ldots(i)\n\\end{array}$\nAlso, surface area of rain drop, $A=4 \\pi r^{2}$ $\\Rightarrow \\mathrm{A} \\propto \\mathrm{r}^{2} \\quad$...(ii)\nFrom Eqs. (i) and (ii), we get\n$\\begin{array}{l}\n\\frac{A_{1}}{A_{2}}=\\frac{V_{T_{1}}}{V_{T_{2}}} \\\\\n=\\frac{16}{9} \\text { or } 16: 9\n\\end{array}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f72",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-19T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (19 Oct Shift 2)",
+            "title": "MHT CET 2020 (19 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fa00279619d9d8a1e00",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6e",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (15 Oct Shift 2)",
+              "title": "MHT CET 2020 (15 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A vehicle moving with $15 \\mathrm{~km} / \\mathrm{hr}$ comes to rest by covering $5 \\mathrm{~m}$ distance by applying brakes. If the same vehicle moves at $45 \\mathrm{~km} / \\mathrm{hr}$, then by applying brakes, it will come to rest by covering a distance",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "8lRur",
+              "text": "$15 \\mathrm{~m}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "hMGvc",
+              "text": "$45 \\mathrm{~m}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "VdV6Y",
+              "text": "$60 \\mathrm{~m}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BnNDv",
+              "text": "$30 \\mathrm{~m} .$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "\\(\\mathrm{u}=15 \\mathrm{~km} / \\mathrm{hr}=\\frac{15 \\times 1000}{60 \\times 60}=\\frac{150}{36} \\mathrm{~m} / \\mathrm{s}\\)\n\\(\\mathrm{v}^{2}=\\mathrm{u}^{2}-2 \\mathrm{as}\\)\n\\(\\therefore \\mathrm{a} \\frac{u^{2}}{2 \\mathrm{~s}}=\\frac{150 \\times 150}{36 \\times 36 \\times 2 \\times 5} \\mathrm{~m} / \\mathrm{s}^{2}\\)\nNext \\(\\mathrm{s}=\\frac{u^{2}}{2 a}=\\frac{45000}{60 \\times 60} \\times \\frac{45000}{60 \\times 60} \\times \\frac{1}{2} \\times \\frac{36 \\times 36}{150 \\times 15}\\)\n\\(=45 \\mathrm{~m}\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6e",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (15 Oct Shift 2)",
+            "title": "MHT CET 2020 (15 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f8f0279619d9d8a1d76",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6d",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (15 Oct Shift 1)",
+              "title": "MHT CET 2020 (15 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A body of mass $5 \\mathrm{~kg}$ is moving in a straight line. The relation between its\ndisplacement and time is $\\mathrm{x}=\\left(\\mathrm{t}^{3}-2 \\mathrm{t}-10\\right) \\mathrm{m}$. What is the force acting on it at the end of 5 second?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Rn6JC",
+              "text": "$150 \\mathrm{~N}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "TgaSV",
+              "text": "$120 \\mathrm{~N}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4gICr",
+              "text": "$80 \\mathrm{~N}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "IUGgR",
+              "text": "$100 \\mathrm{~N}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "A body of mass rig,\n\\begin{array}{l}\nm=5 k g \\\\\nx=\\left(t^{3}-2 t-10\\right) m\n\\end{array}\nF after $t=5 \\mathrm{sec}$,\n\\begin{array}{l}\n\\frac{d x}{d t}=v=3 t^{2}-2 \\\\\n\\frac{d v}{d t}=a=6 t \\\\\nF=m a=5 \\times 6 t=30 \\times 5 \\\\\nF=150 \\mathrm{~N}\n\\end{array}",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6d",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (15 Oct Shift 1)",
+            "title": "MHT CET 2020 (15 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f410279619d9d8a1b03",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f69",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-13T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (13 Oct Shift 1)",
+              "title": "MHT CET 2020 (13 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A body of mass 'M' moving with velocity 'V' explodes into two equal parts. If one\npart comes to rest and the other part moves with velocity ' $\\mathrm{v}_{0}$ ', what would be the\nvalue of $^{\\prime} \\mathrm{V}_{0}$ '?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "0mVRO",
+              "text": "V",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "aTmC9",
+              "text": "$\\frac{\\mathrm{V}}{\\sqrt{2}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "YlwET",
+              "text": "$2 \\mathrm{~V}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "rbtBM",
+              "text": "$4 \\mathrm{~V}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "conservation of linear momentum\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/0zLaGzLLXTcTovzPaGnJzi0dpk7s5GiktYt77MhT6JU.original.fullsize.png\"><br>\n$\\begin{aligned} \\text { initial } &=\\text { final } \\\\ \\text { MV } &=\\frac{m}{2}(0)+\\frac{m}{2}(u) \\\\ M V &=\\frac{M}{2} u \\\\ u &=2 v \\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f69",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-13T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (13 Oct Shift 1)",
+            "title": "MHT CET 2020 (13 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25ef90279619d9d8a18c2",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d0071b5bb33b3f9f64",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019 (Shift 1)",
+              "title": "MHT CET 2019 (Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A block of mass M is pulled along a smooth horizontal surface with a rope of mass m by force F. The acceleration of the block will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "N2qVS",
+              "text": "<math><mfrac><mrow><mi>F</mi></mrow><mrow><mfenced separators=\"|\"><mrow><mi>M</mi><mo>-</mo><mi>m</mi></mrow></mfenced></mrow></mfrac></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iD4JQ",
+              "text": "<math><mfrac><mrow><mi>F</mi></mrow><mrow><mfenced separators=\"|\"><mrow><mi>M</mi><mo>+</mo><mi>m</mi></mrow></mfenced></mrow></mfrac></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "BVVo8",
+              "text": "<math><mfrac><mrow><mi>F</mi></mrow><mrow><mi>m</mi></mrow></mfrac></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "7eNKW",
+              "text": "<math><mfrac><mrow><mi>F</mi></mrow><mrow><mi>M</mi></mrow></mfrac></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "When a block of mass m is pulled along smooth horizontal surface with rope of mass m by force F, then (M + m) will be the total mass of the system. <br/><math><mo>∴</mo><mi>F</mi><mo>=</mo><mfenced separators=\"|\"><mrow><mi>M</mi><mo>+</mo><mi>m</mi></mrow></mfenced><mi>a</mi></math>  <br/><math><mo>⇒</mo><mi>a</mi><mo>=</mo><mfrac><mrow><mi>F</mi></mrow><mrow><mi>M</mi><mo>+</mo><mi>m</mi></mrow></mfrac></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d0071b5bb33b3f9f64",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019 (Shift 1)",
+            "title": "MHT CET 2019 (Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "65a263490279619d9d8a3dce",
+      "title": "Uniform Motion",
+      "totalQuestions": 22,
+      "questions": [
+        {
+          "_id": "6abb88ca15a9fc0fc8c14701",
+          "type": "singleCorrect",
+          "question": {
+            "text": "A body moving with uniform acceleration travel $16$ m in the third second of its motion and $24$ m in the fifth second of its motion. The velocity of the body in $10$ second is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "0UMXM",
+              "label": "A",
+              "text": "$42$ m/s",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "OR9qZ",
+              "label": "B",
+              "text": "$46$ m/s",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "wp8zD",
+              "label": "C",
+              "text": "$50$ m/s",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "TMP6r",
+              "label": "D",
+              "text": "$56$ m/s",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The distance traveled by a body in the $n$-th second is given by the formula:<br><br>$S_n = u + \\dfrac{a}{2}(2n - 1)$<br><br>For the 3rd second ($n = 3$):<br><br>$S_3 = u + \\dfrac{a}{2}(2 \\times 3 - 1) = u + \\dfrac{5a}{2} = 16$<br><br>For the 5th second ($n = 5$):<br><br>$S_5 = u + \\dfrac{a}{2}(2 \\times 5 - 1) = u + \\dfrac{9a}{2} = 24$<br><br>Subtracting the first equation from the second equation:<br><br>$\\dfrac{9a}{2} - \\dfrac{5a}{2} = 24 - 16$<br><br>$2a = 8 \\Rightarrow a = 4$ m/s$^2$<br><br>Substituting $a = 4$ into the first equation:<br><br>$u + \\dfrac{5 \\times 4}{2} = 16$<br><br>$u + 10 = 16 \\Rightarrow u = 6$ m/s<br><br>The velocity of the body at the end of $10$ seconds is given by:<br><br>$v = u + at$<br><br>$v = 6 + 4 \\times 10 = 46$ m/s<br><br>Answer: $46$ m/s",
+            "image": null
+          },
+          "level": 2,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87f02fe711bb1be9996f",
+              "title": "MHT CET 2026 (20 May Shift 1)",
+              "shortName": "2026 (20 May Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-05-20T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87f02fe711bb1be9996f",
+            "title": "MHT CET 2026 (20 May Shift 1)",
+            "shortName": "2026 (20 May Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-05-20T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6a44d2b18c30a4553e1bdbcd",
+          "type": "singleCorrect",
+          "question": {
+            "text": "A car passes three points A, B and C at $3$ m/s, $6$ m/s and $9$ m/s respectively in a straight line with uniform acceleration. If distance $AB = 60$ m then find the distance BC.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "fbM1R",
+              "label": "A",
+              "text": "$100$ m",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "8w4pg",
+              "label": "B",
+              "text": "$75$ m",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "cdKnI",
+              "label": "C",
+              "text": "$200$ m",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "T5OGB",
+              "label": "D",
+              "text": "$125$ m",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Using the equation of motion $v^2 - u^2 = 2as$ for the interval AB:<br><br>$v_B^2 - v_A^2 = 2a(AB)$<br><br>$6^2 - 3^2 = 2a(60)$<br><br>$36 - 9 = 120a$<br><br>$27 = 120a \\Rightarrow a = \\dfrac{27}{120} = \\dfrac{9}{40}$ m/s$^2$<br><br>Applying the same equation for the interval BC:<br><br>$v_C^2 - v_B^2 = 2a(BC)$<br><br>$9^2 - 6^2 = 2 \\times \\dfrac{9}{40} \\times BC$<br><br>$81 - 36 = \\dfrac{9}{20} \\times BC$<br><br>$45 = \\dfrac{9}{20} \\times BC$<br><br>$BC = \\dfrac{45 \\times 20}{9} = 100$ m<br><br>Answer: $100$ m",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d27f2d2155b816ec4a6e",
+              "title": "MHT CET 2026 (11 April Shift 1)",
+              "shortName": "2026 (11 April Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-04-11T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 2,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d27f2d2155b816ec4a6e",
+            "title": "MHT CET 2026 (11 April Shift 1)",
+            "shortName": "2026 (11 April Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-04-11T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871beabf9280d7f9932d94",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376df9b67616acec78f7c",
+              "heldOn": "2025-04-27T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (27 Apr Shift 2)",
+              "title": "MHT CET 2025 (27 Apr Shift 2)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "If a ball is thrown vertically upwards with speed ' $u$ ', the distance covered by it during the last ' $t$ ' second of its ascent is ( $g=$ acceleration due to gravity)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "dFSx9",
+              "text": "$\\frac{1}{2} g t^2$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "z570U",
+              "text": "ut",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "mSUmO",
+              "text": "$(u+g t) t$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BUMzx",
+              "text": "$\\mathrm{ut}-\\frac{1}{2} g \\mathrm{t}^2$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let the total time of ascent be $T$. At the highest point, the final velocity is $0$.<br><br>Using $v = u - gT$, we get $T = \\dfrac{u}{g}$.<br><br>The distance covered in the last $t$ seconds of ascent is the distance covered from time $(T-t)$ to $T$.<br><br>By the symmetry of motion under gravity, the distance covered in the last $t$ seconds of ascent is exactly equal to the distance covered in the first $t$ seconds of free fall from the highest point.<br><br>For a freely falling body from the highest point, the initial velocity is $0$.<br><br>The distance covered in time $t$ is given by $s = 0 + \\dfrac{1}{2}gt^2 = \\dfrac{1}{2}gt^2$.<br><br>Answer: $\\frac{1}{2} g t^2$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376df9b67616acec78f7c",
+            "heldOn": "2025-04-27T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (27 Apr Shift 2)",
+            "title": "MHT CET 2025 (27 Apr Shift 2)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871bdabf9280d7f9932d06",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376df9b67616acec78f7b",
+              "heldOn": "2025-04-26T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (26 Apr Shift 2)",
+              "title": "MHT CET 2025 (26 Apr Shift 2)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "A car moving at a speed ' $V$ ' is stopped in a certain distance when the brakes produce a deceleration 'a'. If the speed of the car is 'nv', what must be the deceleration of the car to stop it in the same distance?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "UtlDU",
+              "text": "$\\sqrt{\\mathrm{n}} \\cdot \\mathrm{a}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "TgoZ0",
+              "text": "n.a",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "zVlSF",
+              "text": "$\\mathrm{n}^2 \\cdot \\mathrm{a}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "9KhFm",
+              "text": "$\\mathrm{n}^3 \\cdot \\mathrm{a}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Using the third equation of motion, $v^2 = u^2 + 2as$.<br><br>For the first case, the final velocity is zero, initial velocity is $V$, and deceleration is $a$.<br><br>$0 = V^2 - 2as \\Rightarrow s = \\dfrac{V^2}{2a}$<br><br>For the second case, the initial velocity is $nV$, final velocity is zero, and let the new deceleration be $a'$.<br><br>$0 = (nV)^2 - 2a's \\Rightarrow s = \\dfrac{n^2 V^2}{2a'}$<br><br>Since the stopping distance $s$ is the same in both cases, we equate the two expressions for $s$:<br><br>$\\dfrac{V^2}{2a} = \\dfrac{n^2 V^2}{2a'}$<br><br>$a' = n^2 a$<br><br>Answer: $\\mathrm{n}^2 \\cdot \\mathrm{a}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376df9b67616acec78f7b",
+            "heldOn": "2025-04-26T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (26 Apr Shift 2)",
+            "title": "MHT CET 2025 (26 Apr Shift 2)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871bcbbf9280d7f9932c76",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376df9b67616acec78f7a",
+              "heldOn": "2025-04-26T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (26 Apr Shift 1)",
+              "title": "MHT CET 2025 (26 Apr Shift 1)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "A boy throws a ball vertically upwards from a bridge with velocity $5 \\mathrm{~m} / \\mathrm{s}$. It strikes water surface after 2 s . The height of the bridge is $\\left(\\right.$ Take $\\left.g=10 \\mathrm{~m} / \\mathrm{s}^2\\right)$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "C7eGU",
+              "text": "20 m",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "B3k7O",
+              "text": "15 m",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qeLD6",
+              "text": "12 m",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2TQKa",
+              "text": "10 m",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Taking the upward direction as positive and the point of projection as the origin, the displacement of the ball when it strikes the water surface is $s = -h$, where $h$ is the height of the bridge.<br><br>Initial velocity, $u = 5 \\text{ m/s}$<br><br>Acceleration, $a = -g = -10 \\text{ m/s}^2$<br><br>Time, $t = 2 \\text{ s}$<br><br>Using the second equation of motion:<br><br>$s = ut + \\dfrac{1}{2}at^2$<br><br>$-h = 5(2) + \\dfrac{1}{2}(-10)(2)^2$<br><br>$-h = 10 - 5(4)$<br><br>$-h = 10 - 20$<br><br>$-h = -10$<br><br>$h = 10 \\text{ m}$<br><br>Answer: 10 m",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376df9b67616acec78f7a",
+            "heldOn": "2025-04-26T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (26 Apr Shift 1)",
+            "title": "MHT CET 2025 (26 Apr Shift 1)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b53bf9280d7f9932836",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376de9b67616acec78f73",
+              "heldOn": "2025-04-21T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (21 Apr Shift 2)",
+              "title": "MHT CET 2025 (21 Apr Shift 2)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "A body starts from rest and moves with a uniform acceleration. The ratio of the distance covered by the body in the $\\mathrm{n}^{\\text {th }}$ second of its motion to the total distance travelled in n second is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "3aJdZ",
+              "text": "$\\frac{2}{n^2}-\\frac{1}{n}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "IV3r4",
+              "text": "$\\frac{1}{n}-\\frac{1}{n^2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "R5g4S",
+              "text": "$\\frac{2}{n}-\\frac{1}{n^2}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "6wQMf",
+              "text": "$\\frac{2}{n^2}+\\frac{1}{n}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let the initial velocity be $u = 0$ and the uniform acceleration be $a$.<br><br>The distance covered by the body in the $n^{\\text{th}}$ second is given by:<br>$S_n = u + \\dfrac{a}{2}(2n - 1)$<br><br>Since $u = 0$, we get:<br>$S_n = \\dfrac{a}{2}(2n - 1)$<br><br>The total distance travelled by the body in $n$ seconds is given by:<br>$S = un + \\dfrac{1}{2}an^2$<br><br>Since $u = 0$, we get:<br>$S = \\dfrac{1}{2}an^2$<br><br>The required ratio is:<br>$\\dfrac{S_n}{S} = \\dfrac{\\dfrac{a}{2}(2n - 1)}{\\dfrac{1}{2}an^2}$<br><br>$\\dfrac{S_n}{S} = \\dfrac{2n - 1}{n^2} = \\dfrac{2}{n} - \\dfrac{1}{n^2}$<br><br>Answer: $\\frac{2}{n}-\\frac{1}{n^2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376de9b67616acec78f73",
+            "heldOn": "2025-04-21T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (21 Apr Shift 2)",
+            "title": "MHT CET 2025 (21 Apr Shift 2)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b32bf9280d7f9932708",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376de9b67616acec78f71",
+              "heldOn": "2025-04-20T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (20 Apr Shift 2)",
+              "title": "MHT CET 2025 (20 Apr Shift 2)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "Two bodies A and B move in same straight line starting from same position. Body A moves with constant velocity 'u' and body B moves with constant acceleration ' $a$ '. When their velocities become equal, the distance between them is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "DZj2A",
+              "text": "$\\frac{\\mathrm{u}}{2 \\mathrm{a}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "bLzF0",
+              "text": "$\\frac{u^2}{4 a}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0iozR",
+              "text": "$\\frac{\\mathrm{u}^2}{\\mathrm{a}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Lx0as",
+              "text": "$\\frac{\\mathrm{u}^2}{2 \\mathrm{a}}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let the bodies start at $t=0$ from the same position.<br><br>Velocity of body A at time $t$ is $v_A = u$.<br><br>Assuming body B starts from rest, its velocity at time $t$ is $v_B = at$.<br><br>The time when their velocities become equal is given by $v_A = v_B$.<br><br>$u = at \\Rightarrow t = \\dfrac{u}{a}$<br><br>Distance traveled by body A in time $t$ is $x_A = ut = u \\left(\\dfrac{u}{a}\\right) = \\dfrac{u^2}{a}$.<br><br>Distance traveled by body B in time $t$ is $x_B = \\dfrac{1}{2}at^2 = \\dfrac{1}{2}a \\left(\\dfrac{u}{a}\\right)^2 = \\dfrac{u^2}{2a}$.<br><br>The distance between them at this instant is $x_A - x_B = \\dfrac{u^2}{a} - \\dfrac{u^2}{2a} = \\dfrac{u^2}{2a}$.<br><br>Answer: $\\frac{\\mathrm{u}^2}{2 \\mathrm{a}}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376de9b67616acec78f71",
+            "heldOn": "2025-04-20T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (20 Apr Shift 2)",
+            "title": "MHT CET 2025 (20 Apr Shift 2)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679214400aee93fa0796df27",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e159a8109c6c5665cd1",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-16T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (16 May Shift 2)",
+              "title": "MHT CET 2024 (16 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A body travelling with uniform acceleration crosses two points A and B with velocities $20 \\mathrm{~m} / \\mathrm{s}$ and $30 \\mathrm{~m} / \\mathrm{s}$ respectively. The speed of the body at mid point of A and B is (nearly)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "cxFGj",
+              "text": "$25 \\mathrm{~m} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZLoUa",
+              "text": "$25.5 \\mathrm{~m} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "fGKfO",
+              "text": "$24 \\mathrm{~m} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "TcNNG",
+              "text": "$10 \\sqrt{6} \\mathrm{~m} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $v_A$ and $v_B$ be the velocities at points A and B respectively.<br><br>Let $s$ be the distance between A and B, and $a$ be the uniform acceleration.<br><br>Using the third equation of motion for the journey from A to B:<br><br>$v_B^2 = v_A^2 + 2as \\Rightarrow as = \\dfrac{v_B^2 - v_A^2}{2}$<br><br>Let $v_M$ be the velocity at the midpoint. The distance from A to the midpoint is $\\dfrac{s}{2}$.<br><br>$v_M^2 = v_A^2 + 2a\\left(\\dfrac{s}{2}\\right) = v_A^2 + as$<br><br>Substituting the value of $as$:<br><br>$v_M^2 = v_A^2 + \\dfrac{v_B^2 - v_A^2}{2} = \\dfrac{v_A^2 + v_B^2}{2}$<br><br>$v_M = \\sqrt{\\dfrac{v_A^2 + v_B^2}{2}}$<br><br>Given $v_A = 20 \\text{ m/s}$ and $v_B = 30 \\text{ m/s}$:<br><br>$v_M = \\sqrt{\\dfrac{20^2 + 30^2}{2}} = \\sqrt{\\dfrac{400 + 900}{2}} = \\sqrt{650}$<br><br>Since $25.5^2 = 650.25$, we get $v_M \\approx 25.5 \\text{ m/s}$.<br><br>Answer: $25.5 \\mathrm{~m} / \\mathrm{s}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e159a8109c6c5665cd1",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-16T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (16 May Shift 2)",
+            "title": "MHT CET 2024 (16 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6792141a0aee93fa0796de02",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e159a8109c6c5665cd0",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (15 May Shift 2)",
+              "title": "MHT CET 2024 (15 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A ball is released from the top of a tower of height H m. It takes T second to reach the ground. The height of the ball from the ground after $\\frac{T}{4}$ second is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "PLfjw",
+              "text": "$\\frac{13 \\mathrm{H}}{14}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "74Bjd",
+              "text": "$\\frac{15 \\mathrm{H}}{16}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ttGC8",
+              "text": "$\\frac{11 \\mathrm{H}}{12}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nCdKx",
+              "text": "$\\frac{9 \\mathrm{H}}{10}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Using the second equation of motion for a freely falling body, the total height of the tower is given by<br><br>$H = \\dfrac{1}{2} g T^2$<br><br>The distance fallen by the ball from the top of the tower in time $t = \\dfrac{T}{4}$ is<br><br>$h = \\dfrac{1}{2} g \\left( \\dfrac{T}{4} \\right)^2$<br><br>$h = \\dfrac{1}{16} \\left( \\dfrac{1}{2} g T^2 \\right)$<br><br>Substituting $H = \\dfrac{1}{2} g T^2$, we get<br><br>$h = \\dfrac{H}{16}$<br><br>The height of the ball from the ground after $\\dfrac{T}{4}$ seconds is<br><br>$H' = H - h$<br><br>$H' = H - \\dfrac{H}{16} = \\dfrac{15H}{16}$<br><br>Answer: $\\frac{15 \\mathrm{H}}{16}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e159a8109c6c5665cd0",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (15 May Shift 2)",
+            "title": "MHT CET 2024 (15 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679213e00aee93fa0796dc36",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665ccc",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-11T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (11 May Shift 1)",
+              "title": "MHT CET 2024 (11 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A bullet is fired on a target with velocity V. Its velocity decreases from $v$ to $v / 2$. When it penetrates 30 cm in a target. Through what thickness it will penetrate further in the target before coming to rest?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "mSnAT",
+              "text": "5 cm",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BwmhV",
+              "text": "8 cm",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "5ZcHf",
+              "text": "10 cm",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "tyvB9",
+              "text": "12 cm",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Using the equation of motion $v^2 = u^2 + 2as$.<br><br>For the first part of the penetration:<br>Final velocity $v_1 = \\dfrac{v}{2}$, initial velocity $u_1 = v$, distance $s_1 = 30$ cm.<br>$\\left(\\dfrac{v}{2}\\right)^2 = v^2 + 2a(30)$<br>$\\dfrac{v^2}{4} - v^2 = 60a$<br>$-\\dfrac{3v^2}{4} = 60a$<br>$a = -\\dfrac{v^2}{80}$<br><br>For the further penetration before coming to rest:<br>Final velocity $v_2 = 0$, initial velocity $u_2 = \\dfrac{v}{2}$, let the further distance be $x$.<br>$0 = \\left(\\dfrac{v}{2}\\right)^2 + 2ax$<br>$0 = \\dfrac{v^2}{4} + 2\\left(-\\dfrac{v^2}{80}\\right)x$<br>$\\dfrac{v^2}{4} = \\dfrac{v^2}{40}x$<br>$x = 10$ cm.<br><br>Answer: 10 cm",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665ccc",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-11T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (11 May Shift 1)",
+            "title": "MHT CET 2024 (11 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679213360aee93fa0796d705",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e139a8109c6c5665cc3",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-02T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (02 May Shift 2)",
+              "title": "MHT CET 2024 (02 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A driver applies the brakes on seeing the red traffic signal 400 m ahead. At the time of applying brakes, the vehicle was moving with $15 \\mathrm{~m} / \\mathrm{s}$ and retarding at $0.3 \\mathrm{~m} / \\mathrm{s}^2$. The distance of the vehicle from the traffic light one minute after application of brakes is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "No5H4",
+              "text": "375 m",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "1GCTD",
+              "text": "360 m",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "XXj9o",
+              "text": "40 m",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "RLD9D",
+              "text": "25 m",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Initial velocity $u = 15 \\mathrm{~m/s}$<br><br>Acceleration $a = -0.3 \\mathrm{~m/s^2}$<br><br>Time taken by the vehicle to come to rest is given by $v = u + at$<br><br>$0 = 15 - 0.3t \\Rightarrow t = 50 \\mathrm{~s}$<br><br>Since $50 \\mathrm{~s} < 60 \\mathrm{~s}$, the vehicle stops before $1$ minute. The distance traveled by the vehicle before coming to rest is:<br><br>$v^2 - u^2 = 2as$<br><br>$0 - (15)^2 = 2(-0.3)s$<br><br>$-225 = -0.6s \\Rightarrow s = 375 \\mathrm{~m}$<br><br>The initial distance of the vehicle from the traffic light was $400 \\mathrm{~m}$.<br><br>Distance of the vehicle from the traffic light after $1$ minute $= 400 - 375 = 25 \\mathrm{~m}$<br><br>Answer: 25 m",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e139a8109c6c5665cc3",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-02T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (02 May Shift 2)",
+            "title": "MHT CET 2024 (02 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a262790279619d9d8a34d1",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b5",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-14T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (14 May Shift 2)",
+              "title": "MHT CET 2023 (14 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "The position ' $x$ ' of a particle varies with a time as $x=a t^2-b t^3$ where ' $a$ ' and ' $b$ ' are constants. The acceleration of the particle will be zero at",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "osNjV",
+              "text": "$\\frac{2a}{3b}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Kjmof",
+              "text": "$\\frac{a}{b}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6RjaE",
+              "text": "$\\frac{a}{3b}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "7ZGU4",
+              "text": "zero",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$x=a t^2-b t^3$\nDifferentiating the displacement, we get velocity\n$\\mathrm{V}=2 \\mathrm{at}-3 \\mathrm{bt} \\mathrm{t}^2$\nDifferentiating, we get acceleration\n$A=2 a-6 b t$\nSubstituting $\\mathrm{A}=0$\n$\\begin{aligned}\n0 & =2 \\mathrm{a}-6 \\mathrm{bt} & \\therefore \\quad 6 \\mathrm{bt}=2 \\mathrm{a} \\\\\n\\therefore \\quad \\mathrm{t} & =\\frac{2 \\mathrm{a}}{6 \\mathrm{~b}}=\\frac{\\mathrm{a}}{3 \\mathrm{~b}} &\n\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b5",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-14T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (14 May Shift 2)",
+            "title": "MHT CET 2023 (14 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a262540279619d9d8a33a2",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b3",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-13T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (13 May Shift 2)",
+              "title": "MHT CET 2023 (13 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Two bodies 'A' an 'B' start from the same point at the same instant and move along a straight line. Body 'A' moves with uniform acceleration ' $a$ ' and body ' $B$ ' moves with uniform velocity ' $V$ '. They meet after time ' $t$ '. The value of ' $t$ ' is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "lThHe",
+              "text": "$\\frac{2 \\mathrm{~V}}{\\mathrm{a}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4igNI",
+              "text": "$\\frac{a}{2 V}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "VK6Ar",
+              "text": "$\\frac{\\mathrm{V}}{2 \\mathrm{a}}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "LBEA8",
+              "text": "$\\sqrt{\\frac{V}{a}}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "At point $A$,\n$\\mathrm{S}_{\\mathrm{A}}=\\mathrm{ut}+\\frac{1}{2} \\mathrm{at}^2$\n$\\mathrm{S}_{\\mathrm{A}}=\\frac{1}{2} \\mathrm{at}^2$\nAt point $B$,\n$\\mathrm{S}_{\\mathrm{B}}=\\mathrm{vt}$\n$\\therefore \\quad$ At the point where they meet,\n$\\mathrm{S}_{\\mathrm{A}}=\\mathrm{S}_{\\mathrm{B}}$\n$\\frac{1}{2} a t^2=v t$\n$t=\\frac{2 v}{a}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b3",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-13T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (13 May Shift 2)",
+            "title": "MHT CET 2023 (13 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a262440279619d9d8a3327",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b2",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-13T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (13 May Shift 1)",
+              "title": "MHT CET 2023 (13 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Which one of the following statements is wrong?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "GyJA3",
+              "text": "A body can have zero velocity and still be accelerated.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "bFaqp",
+              "text": "A body can have a constant velocity and still have a varying speed.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Dmww5",
+              "text": "A body can have a constant speed and still have a varying velocity.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4PJUV",
+              "text": "The direction of the velocity of a body can change when its acceleration is constant.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "\\begin{array}{|l|l|l|} \\hline Std.11 & Ch-3 & Subtopic-3.2 \\\\ \\hline \\end{array}",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b2",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-13T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (13 May Shift 1)",
+            "title": "MHT CET 2023 (13 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a2620c0279619d9d8a3165",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892af",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-11T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (11 May Shift 2)",
+              "title": "MHT CET 2023 (11 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Two cars A and B start from a point at the same time in a straight line and their positions are represented by $\\mathrm{R}_{\\mathrm{A}}(\\mathrm{t})=\\mathrm{at}+\\mathrm{bt}^2$ and $\\mathrm{R}_{\\mathrm{B}}(\\mathrm{t})=x \\mathrm{t}-\\mathrm{t}^2$. At what time do the cars have same velocity?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "NGmaQ",
+              "text": "$\\frac{x-a}{2(b+1)}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Cb1T9",
+              "text": "$\\frac{x+a}{2(b-1)}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "n8vRs",
+              "text": "$\\frac{x-a}{(b+1)}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "w9OKe",
+              "text": "$\\frac{x+a}{(b-1)}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\therefore \\quad$ Velocity of car A and B:\n$\\begin{aligned}\n\\mathrm{V}_{\\mathrm{A}} & =\\frac{\\mathrm{d}\\left(\\mathrm{R}_{\\mathrm{A}}\\right)}{\\mathrm{dt}} \\\\\n& =\\mathrm{a}+2 \\mathrm{bt} \\\\\n\\mathrm{V}_{\\mathrm{B}} & =\\frac{\\mathrm{d}\\left(\\mathrm{R}_{\\mathrm{B}}\\right)}{\\mathrm{dt}} \\\\\n& =\\mathrm{x}-2 \\mathrm{t}\n\\end{aligned}$\n$\\therefore \\quad$ So, time at which cars have same velocity is\n$\\begin{array}{ll} \n& V_A=V_B \\\\\n& a+2 b t=x-2 t \\\\\n\\therefore \\quad & t=\\frac{x-a}{2(b+1)}\n\\end{array}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892af",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-11T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (11 May Shift 2)",
+            "title": "MHT CET 2023 (11 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a261270279619d9d8a2a39",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892a3",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2022-08-07T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022 (07 Aug Shift 1)",
+              "title": "MHT CET 2022 (07 Aug Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A vehicle without passengers is moving on a frictionless horizontal road with velocity ' $u$ ' can be stopped in a distance ' $d$ '. Now $40 \\%$ of it's weight is added. If the retardation remains same the stopping distance at velocity ' $u$ ' is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "OeH2P",
+              "text": "(1.6)d",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "365jx",
+              "text": "(1.4)d",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "B7RfT",
+              "text": "d",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "mg8S6",
+              "text": "(1.2)d",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given, $\\mathrm{m}_1=\\mathrm{m}$ and $\\mathrm{m}_2=1.4 \\mathrm{~m}$\n$\\because \\mathrm{v}^2=\\mathrm{u}^2+2 \\mathrm{aS}$\n$\\therefore 0=\\mathrm{u}^2-2 \\mathrm{ad}$\n$\\therefore \\mathrm{a}=\\frac{\\mathrm{u}^2}{2 \\mathrm{~d}}$\n$\\therefore$ Retarding force $\\mathrm{f}=\\mathrm{ma}=\\frac{\\mathrm{mu}^2}{2 \\mathrm{~d}}$\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/8v_dXA5UWRMLEHHP8mhaqGMNdicGRfzlFw2pBj5i0JI.original.fullsize.png\">\n$\\therefore \\frac{\\mathrm{d}^{\\prime}}{\\mathrm{d}}=1.4$ or $\\mathrm{d}^{\\prime}=1.4 \\mathrm{~d}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892a3",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2022-08-07T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022 (07 Aug Shift 1)",
+            "title": "MHT CET 2022 (07 Aug Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260a50279619d9d8a262e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b87f20917a5f418929c",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2021-09-23T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021 (23 Sep Shift 2)",
+              "title": "MHT CET 2021 (23 Sep Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A student is throwing balls vertically upwards such that he throws the $2^{\\text {nd }}$ ball when the $1^{\\text {st }}$ ball reaches maximum height. If he throws balls at an interval of 3 second, the maximum height of the balls is $\\left(\\mathrm{g}=10 \\frac{\\mathrm{m}}{\\mathrm{s}^2}\\right)$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "bilZm",
+              "text": "$45 \\mathrm{~m}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "BD67c",
+              "text": "$35 \\mathrm{~m}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "1Zhe8",
+              "text": "$25 \\mathrm{~m}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6QFbO",
+              "text": "$30 \\mathrm{~m}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "At the highest point $\\mathrm{v}=0$\n$$\n\\begin{aligned}\n& \\therefore \\mathrm{u}=\\mathrm{u}-\\mathrm{gt} \\\\\n& \\therefore \\mathrm{u}=\\mathrm{gt}=10 \\times 3=30 \\mathrm{~ms}\n\\end{aligned}\n$$\nAlso $0=\\mathrm{u}^2-2 \\mathrm{gh}$\n$$\n\\therefore \\mathrm{h}=\\frac{\\mathrm{u}^2}{2 \\mathrm{~g}}=\\frac{(30)^2}{2 \\times 10}=45 \\mathrm{~m}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b87f20917a5f418929c",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2021-09-23T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021 (23 Sep Shift 2)",
+            "title": "MHT CET 2021 (23 Sep Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260830279619d9d8a2516",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b87f20917a5f418929a",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2021-09-22T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021 (22 Sep Shift 2)",
+              "title": "MHT CET 2021 (22 Sep Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A driver applies the brakes on seeing the red traffic single $400 \\mathrm{~m}$ ahead. At the time of applying the brakes, the vehicle was moving with $15 \\mathrm{~m} / \\mathrm{s}$ and retarding at $0.3 \\mathrm{~m} / \\mathrm{s}^2$. The distance covered by the vehicle from the traffic light 1 minute after the application of brakes is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "4AS3Z",
+              "text": "25 m",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZYJ41",
+              "text": "360 m",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Z4q0R",
+              "text": "40 m",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Kn2m4",
+              "text": "375 m",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$$\n\\begin{aligned}\n& \\mathrm{u}=15 \\mathrm{~m} / \\mathrm{s}, \\mathrm{a}=-0.3 \\mathrm{~m} / \\mathrm{s}^2, \\mathrm{t}=60 \\mathrm{~s} \\\\\n& \\mathrm{~s}=\\mathrm{ut}+\\frac{1}{2} \\mathrm{at}^2 \\\\\n& =15 \\times 60+\\frac{1}{2} \\times(-0.3) \\times(60)^2 \\\\\n& =900-540=360 \\mathrm{~m}\n\\end{aligned}\n$$\nDistance from traffic light $=400-360=40 \\mathrm{~m}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b87f20917a5f418929a",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2021-09-22T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021 (22 Sep Shift 2)",
+            "title": "MHT CET 2021 (22 Sep Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260370279619d9d8a22b2",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b87f20917a5f4189296",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2021-09-20T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021 (20 Sep Shift 2)",
+              "title": "MHT CET 2021 (20 Sep Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Two bodies ' $A$ ' and ' $B$ ' start from the same point at the same instant and move along a straight line. 'A' moves with uniform acceleration ‘A’ and 'B' moves with uniform velocity (V). They meet after time ' $t$ '. value of ' $t$ ' is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "V8IPj",
+              "text": "$\\frac{2 \\mathrm{~V}}{\\mathrm{a}}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "bSpMV",
+              "text": "$\\sqrt{\\frac{V}{a}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "dqC0g",
+              "text": "$\\frac{\\mathrm{a}}{2 \\mathrm{~V}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4VhB0",
+              "text": "$\\frac{\\mathrm{V}}{2 \\mathrm{a}}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "For body $\\mathrm{B}$, distance travelled is $\\mathrm{x}=\\mathrm{Vt}$\nFor body $\\mathrm{A}, \\mathrm{x}=\\frac{1}{2} \\mathrm{at}^2$\n$$\n\\begin{aligned}\n& \\Rightarrow \\frac{1}{2} \\mathrm{at}^2=\\mathrm{Vt} \\\\\n& \\text { Or } \\mathrm{t}=\\frac{2 \\mathrm{~V}}{\\mathrm{a}}\n\\end{aligned}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b87f20917a5f4189296",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2021-09-20T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021 (20 Sep Shift 2)",
+            "title": "MHT CET 2021 (20 Sep Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fb50279619d9d8a1e9e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6f",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-16T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (16 Oct Shift 1)",
+              "title": "MHT CET 2020 (16 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A vehicle of mass 'M' is moving with momentum 'P' on a rough horizontal road. The coefficient of friction between the tyres and the horizontal road is '$\\mu$'. The stopping distance is (g $=$ acceleration due to gravity)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "nmkIN",
+              "text": "$\\frac{\\mathrm{P}^{2}}{2 \\mu \\mathrm{g}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "JIzVn",
+              "text": "$\\frac{\\mathrm{P}^{2}}{2 \\mu \\mathrm{gM}^{2}}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "GwevB",
+              "text": "$\\frac{\\mathrm{P}^{2}}{\\mu \\mathrm{gM}^{2}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "o0key",
+              "text": "$\\frac{\\mathrm{P}^{2}}{2 \\mu \\mathrm{m}^{2}}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Initial velocity $\\mathrm{u}=\\frac{\\mathrm{p}}{\\mathrm{m}}$\nFinal velocity $\\mathrm{v}=0$ (as the vehicle must stop)\nForce of friction $=\\mu \\mathrm{mg}$\n(where $\\mathrm{g}$ is acceleration due to gravity)\nAcceleration due to friction $=-\\frac{\\mu \\mathrm{mg}}{\\mathrm{m}}=-\\mu \\mathrm{g}$\n(-ve sign shows that it is retardation )\nUsing the kinematic expression\n$$\n\\mathrm{v}^{2}=\\mathrm{u}^{2}=2 \\mathrm{as}\n$$\nand inserting various values we get stopping distance $s$\n$$\n\\begin{array}{l}\n(0)^{2}-\\frac{\\mathrm{p}^{2}}{\\mathrm{~m}^{2}}=2(-\\mu \\mathrm{g}) \\mathrm{s} \\\\\n\\Rightarrow \\mathrm{s}=\\frac{\\mathrm{p}^{2}}{2 \\mu^{2} \\mu \\mathrm{g}}\n\\end{array}\n$$\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/JPSNEeI-DM-cYaOoH0lAWV_6UjqHlZ7dS2-I1cnKCQM.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6f",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-16T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (16 Oct Shift 1)",
+            "title": "MHT CET 2020 (16 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fb30279619d9d8a1e8f",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6f",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-16T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (16 Oct Shift 1)",
+              "title": "MHT CET 2020 (16 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A moving body is covering distances which are proportional to square of the time. Then the acceleration of the body is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "UEHT2",
+              "text": "decreasing.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Nchx6",
+              "text": "Constant but not Zero",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "fgLs4",
+              "text": "Zero",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "J3F5U",
+              "text": "Increasing",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$s \\propto t^{2}$\n$s=k t^{2}$\n$\\frac{d s}{d t}=2 k t$\n$\\frac{d^{2} s}{d t^{2}}=2 k$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6f",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-16T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (16 Oct Shift 1)",
+            "title": "MHT CET 2020 (16 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e9b0279619d9d8a15cf",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f60",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "MHT CET 2012"
+            }
+          ],
+          "question": {
+            "text": "The distance $x$ covered in time $t$ by a body having initial velocity $u$ and having constant acceleration $a$ is given by $x=u t+\\frac{1}{2} a t^{2} .$ This result follows from",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "AClME",
+              "text": "Newton's first law",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "kxe3k",
+              "text": "Newton's second law",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ulXox",
+              "text": "Newton's third law",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "COZD1",
+              "text": "None of the above",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The equation of motion, $x=u t+\\frac{1}{2} a t^{2}$ does not follow any of the Newton's laws of motion.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f60",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "MHT CET 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "65a263490279619d9d8a3dcf",
+      "title": "Non-uniform Motion",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "65a25eaa0279619d9d8a1648",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f61",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "MHT CET 2016"
+            }
+          ],
+          "question": {
+            "text": "A particle moves along a circle of radius <math><msup><mrow><mi>r</mi></mrow></msup></math>&nbsp;with constant tangential acceleration. If the velocity of the particle is <math><msup><mrow><mi>v</mi></mrow></msup></math>&nbsp;at the end of second revolution after the revolution has started then the tangential acceleration is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "CCENJ",
+              "text": "<math><mfrac><mrow><msup><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>8</mn><mi>π</mi><mi>r</mi></mrow></mfrac></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "iZYv7",
+              "text": "<math><mfrac><mrow><msup><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>6</mn><mi>π</mi><mi>r</mi></mrow></mfrac></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CWavC",
+              "text": "<math><mfrac><mrow><msup><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>4</mn><mi>π</mi><mi>r</mi></mrow></mfrac></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "k9G3C",
+              "text": "<math><mfrac><mrow><msup><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>10</mn><mi>π</mi><mi>r</mi></mrow></mfrac></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Using  <math><msup><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>-</mo><msup><mrow><mi>u</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>2</mn><mi>a</mi><mi>s</mi><mi> </mi></math> and  <math><mi>u</mi><mo>=</mo><msub><mrow><mi>u</mi></mrow><mrow><mn>1</mn></mrow></msub></math>  and  <math><mi>s</mi><mo>=</mo><mn>4</mn><mi>π</mi><mi>r</mi></math> <br/> <math><mo>∴</mo><mi> </mi><mn>2</mn><mi>a</mi><mi>s</mi><mo>=</mo><msup><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>⇒</mo><mfrac><mrow><msup><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>2</mn><mi>s</mi></mrow></mfrac><mo>=</mo><mi>a</mi><mo>=</mo><mfrac><mrow><msup><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>2</mn><mo>×</mo><mn>4</mn><mi>π</mi><mi>r</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><msup><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>8</mn><mi>π</mi><mi>r</mi></mrow></mfrac></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f61",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "MHT CET 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "65a263490279619d9d8a3dd2",
+      "title": "Relative motion",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "6a44d34c8c30a4553e1be23f",
+          "type": "singleCorrect",
+          "question": {
+            "text": "A boat crosses a river from one bank A to another bank B which is opposite. The distance between them is D. The speed of water is $V_W$ and that of boat relative to water is $V_B$. If $V_B = 2V_W$, the time taken by the boat to cross the river directly along AB is $\\left(\\sin 30^\\circ = \\dfrac{1}{2}\\right)$, $\\left(\\cos 30^\\circ = \\dfrac{\\sqrt{3}}{2}\\right)$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "PzAS6",
+              "label": "A",
+              "text": "$\\dfrac{D}{V_B\\sqrt{2}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "uXDlA",
+              "label": "B",
+              "text": "$\\dfrac{D\\sqrt{2}}{V_B}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "3uurJ",
+              "label": "C",
+              "text": "$\\dfrac{2D}{V_B\\sqrt{3}}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "zcVk2",
+              "label": "D",
+              "text": "$\\dfrac{\\sqrt{3}D}{2V_B}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let the boat be steered at an angle $\\theta$ upstream with respect to the line AB to cross the river directly.<br><br>For the boat to move exactly along AB, the component of its velocity parallel to the river flow must cancel the river's velocity $V_W$.<br><br>$V_B \\sin \\theta = V_W$<br><br>Given $V_B = 2V_W$, substituting this yields:<br><br>$2V_W \\sin \\theta = V_W \\Rightarrow \\sin \\theta = \\dfrac{1}{2} \\Rightarrow \\theta = 30^\\circ$<br><br>The net velocity of the boat along the line AB is the component of $V_B$ perpendicular to the river flow:<br><br>$V = V_B \\cos \\theta = V_B \\cos 30^\\circ = V_B \\left(\\dfrac{\\sqrt{3}}{2}\\right)$<br><br>The time taken to cross the river of width $D$ is:<br><br>$t = \\dfrac{D}{V} = \\dfrac{D}{V_B \\dfrac{\\sqrt{3}}{2}} = \\dfrac{2D}{V_B \\sqrt{3}}$<br><br>Answer: $\\dfrac{2D}{V_B\\sqrt{3}}$",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d2802d2155b816ec4a7c",
+              "title": "MHT CET 2026 (20 April Shift 1)",
+              "shortName": "2026 (20 April Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-04-20T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 2,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d2802d2155b816ec4a7c",
+            "title": "MHT CET 2026 (20 April Shift 1)",
+            "shortName": "2026 (20 April Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-04-20T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a261e00279619d9d8a300a",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892ad",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-10T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (10 May Shift 2)",
+              "title": "MHT CET 2023 (10 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Two trains, each $30 \\mathrm{~m}$ long are travelling in opposite directions with velocities $5 \\mathrm{~m} / \\mathrm{s}$ and $10 \\mathrm{~m} / \\mathrm{s}$. They will cross after",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "X0dhZ",
+              "text": "$4 \\mathrm{~s}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Wx1sF",
+              "text": "$3 \\mathrm{~s}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nQzQi",
+              "text": "$2 \\mathrm{~s}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GfVMd",
+              "text": "$1 \\mathrm{~s}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Relative velocity of one train w. r. t other $=5+0$\n$=15 \\mathrm{~m} / \\mathrm{s}$\nTotal length to cross $(\\mathrm{L})=30+30=60 \\mathrm{~m}$\n$\\therefore \\quad t=\\frac{L}{V}=\\frac{60}{15}=4 s$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892ad",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-10T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (10 May Shift 2)",
+            "title": "MHT CET 2023 (10 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "65a263490279619d9d8a3dd1",
+      "title": "Motion Under Gravity",
+      "totalQuestions": 11,
+      "questions": [
+        {
+          "_id": "6abb883b15a9fc0fc8c141bb",
+          "type": "singleCorrect",
+          "question": {
+            "text": "A juggler throws balls into air. He throws one ball whenever the previous one is at its highest point. If he throws 4 balls in one second, the height from which each ball returns is nearly [acceleration due to gravity is $9.8 \\text{ m/s}^2$]",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "SiLj0",
+              "label": "A",
+              "text": "$30 \\text{ cm}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "2tHYG",
+              "label": "B",
+              "text": "$40 \\text{ cm}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Km6T9",
+              "label": "C",
+              "text": "$50 \\text{ cm}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "lcnbH",
+              "label": "D",
+              "text": "$60 \\text{ cm}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The juggler throws 4 balls in one second, so the time interval between two consecutive throws is $\\Delta t = \\dfrac{1}{4} = 0.25 \\text{ s}$.<br><br>Since a new ball is thrown when the previous one is at its highest point, the time taken by each ball to reach its maximum height is $t = 0.25 \\text{ s}$.<br><br>At the maximum height, the vertical velocity becomes zero. Using the equation of motion for the upward journey:<br><br>$h = \\dfrac{1}{2} g t^2$<br><br>Substituting the given values ($g = 9.8 \\text{ m/s}^2$ and $t = 0.25 \\text{ s}$):<br><br>$h = \\dfrac{1}{2} \\times 9.8 \\times (0.25)^2$<br><br>$h = 4.9 \\times 0.0625$<br><br>$h = 0.30625 \\text{ m}$<br><br>$h = 30.625 \\text{ cm}$<br><br>The height from which each ball returns is nearly $30 \\text{ cm}$.<br><br>Answer: $30 \\text{ cm}$",
+            "image": null
+          },
+          "level": 1,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87f02fe711bb1be9996d",
+              "title": "MHT CET 2026 (19 May Shift 1)",
+              "shortName": "2026 (19 May Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-05-19T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87f02fe711bb1be9996d",
+            "title": "MHT CET 2026 (19 May Shift 1)",
+            "shortName": "2026 (19 May Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-05-19T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6a44d32f8c30a4553e1be117",
+          "type": "singleCorrect",
+          "question": {
+            "text": "A ball is released from height 'h' which makes perfectly elastic collision with ground. The frequency of periodic vibratory motion is (g=acceleration due to gravity)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "w91dl",
+              "label": "A",
+              "text": "$\\dfrac{1}{2}\\sqrt{\\dfrac{g}{2h}}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "IKnb0",
+              "label": "B",
+              "text": "$\\dfrac{1}{2}\\sqrt{\\dfrac{2h}{g}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "O8QYL",
+              "label": "C",
+              "text": "$\\dfrac{1}{2\\pi}\\sqrt{\\dfrac{g}{2h}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "DAbyy",
+              "label": "D",
+              "text": "$\\dfrac{1}{2\\pi}\\sqrt{\\dfrac{2h}{g}}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Time taken by the ball to fall from height $h$ to the ground is given by $t = \\sqrt{\\dfrac{2h}{g}}$.<br><br>Since the collision is perfectly elastic, the ball rebounds with the same speed and reaches the same height $h$. The time taken to go up is also $t = \\sqrt{\\dfrac{2h}{g}}$.<br><br>The total time period of one complete oscillation is $T = 2t = 2\\sqrt{\\dfrac{2h}{g}}$.<br><br>The frequency of the periodic motion is $f = \\dfrac{1}{T} = \\dfrac{1}{2}\\sqrt{\\dfrac{g}{2h}}$.<br><br>Answer: $\\dfrac{1}{2}\\sqrt{\\dfrac{g}{2h}}$",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d2802d2155b816ec4a74",
+              "title": "MHT CET 2026 (16 April Shift 1)",
+              "shortName": "2026 (16 April Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-04-16T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 2,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d2802d2155b816ec4a74",
+            "title": "MHT CET 2026 (16 April Shift 1)",
+            "shortName": "2026 (16 April Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-04-16T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6a44d3178c30a4553e1be013",
+          "type": "singleCorrect",
+          "question": {
+            "text": "A stone falls from the top of a tower of height $100$ m and at the same time another stone is projected vertically upwards from the ground with a velocity $25$ m/s. The two stones meet after",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "KYYST",
+              "label": "A",
+              "text": "$2$ s",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "9Kudq",
+              "label": "B",
+              "text": "$5$ s",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "wJCmK",
+              "label": "C",
+              "text": "$4$ s",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "j3XBN",
+              "label": "D",
+              "text": "$3$ s",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let the two stones meet after time $t$.<br><br>For the stone falling from the top of the tower:<br>Displacement downwards, $h_1 = \\dfrac{1}{2}gt^2$<br><br>For the stone projected upwards from the ground:<br>Displacement upwards, $h_2 = 25t - \\dfrac{1}{2}gt^2$<br><br>When the two stones meet, the sum of their displacements is equal to the height of the tower.<br>$h_1 + h_2 = 100$<br><br>$\\dfrac{1}{2}gt^2 + 25t - \\dfrac{1}{2}gt^2 = 100$<br><br>$25t = 100$<br><br>$t = 4$ s",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d27f2d2155b816ec4a72",
+              "title": "MHT CET 2026 (15 April Shift 1)",
+              "shortName": "2026 (15 April Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-04-15T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 2,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d27f2d2155b816ec4a72",
+            "title": "MHT CET 2026 (15 April Shift 1)",
+            "shortName": "2026 (15 April Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-04-15T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6a44d2978c30a4553e1bdab0",
+          "type": "singleCorrect",
+          "question": {
+            "text": "Spherical insulating ball and a spherical metallic ball of same size and mass are dropped from the same height. Choose the correct statement out of the following {Assume negligible air friction}",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "TVmX3",
+              "label": "A",
+              "text": "Time taken by them to reach the earth's surface will be independent of the properties of their materials.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "HXDi6",
+              "label": "B",
+              "text": "Insulating ball will reach the earth's surface earlier than the metal ball.",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "8mey1",
+              "label": "C",
+              "text": "Both will reach the earth's surface simultaneously.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "DNljG",
+              "label": "D",
+              "text": "Metal ball will reach the earth's surface earlier than the insulating ball.",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "As the metallic ball falls through the Earth's magnetic field, it cuts the magnetic field lines, which induces an electromotive force (EMF) in it.<br><br>Since the ball is a conductor, this induced EMF generates eddy currents within the metallic ball.<br><br>According to Lenz's law, these eddy currents oppose the motion that causes them, creating an upward magnetic retarding force.<br><br>As a result, the net downward acceleration of the metallic ball becomes less than the acceleration due to gravity $g$.<br><br>The insulating ball is a non-conductor, so no eddy currents are induced in it. It falls with the full acceleration $g$.<br><br>Because the insulating ball has a greater downward acceleration, it will reach the Earth's surface earlier than the metallic ball.<br><br>Answer: Insulating ball will reach the earth's surface earlier than the metal ball.",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d27f2d2155b816ec4a71",
+              "title": "MHT CET 2026 (13 April Shift 2)",
+              "shortName": "2026 (13 April Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-04-13T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 1,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d27f2d2155b816ec4a71",
+            "title": "MHT CET 2026 (13 April Shift 2)",
+            "shortName": "2026 (13 April Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-04-13T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a262570279619d9d8a33ba",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b3",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-13T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (13 May Shift 2)",
+              "title": "MHT CET 2023 (13 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A small steel ball is dropped from a height of $1.5 \\mathrm{~m}$ into a glycerine jar. The ball reaches the bottom of the jar 1.5 second after it was dropped. If the retardation is $2.66 \\mathrm{~m} / \\mathrm{s}^2$, the height of the glycerine in the jar is about (acceleration due to gravity $g=9.8 \\mathrm{~m} / \\mathrm{s}^2$ )",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "xOlMP",
+              "text": "$7.0 \\mathrm{~m}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BPiAI",
+              "text": "$7.5 \\mathrm{~m}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "G4HfP",
+              "text": "$5.5 \\mathrm{~m}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "OjiJa",
+              "text": "$3.2 \\mathrm{~m}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The velocity of the ball after it has been dropped from height till it reaches the glycerine surface is\n$\\mathrm{v}_{\\mathrm{i}}^2=0+2 \\mathrm{gh} \\quad \\quad \\ldots .\\left(\\because \\mathrm{v}^2-\\mathrm{u}^2=2 \\mathrm{gh}\\right)$\n$v_i^2=2 \\times 9.8 \\times 1.5$\n$v_i^2=29.4$\nThe velocity of the ball after it enters glycerine is $v_f^2=v_i^2-2 g h$\n$0=29.4-(2 \\times 2.66 \\times h)$\n$\\therefore \\quad \\mathrm{h}=\\frac{29.4}{2 \\times 2.66}=5.5 \\mathrm{~m}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b3",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-13T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (13 May Shift 2)",
+            "title": "MHT CET 2023 (13 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a262310279619d9d8a3289",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b1",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-12T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (12 May Shift 2)",
+              "title": "MHT CET 2023 (12 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A ball is projected vertically upwards from ground. It reaches a height ' $h$ ' in time $t_1$, continues its motion and then takes a time $t_2$ to reach ground. The height $h$ in terms of $g, t_1$ and $t_2$ is $(g=$ acceleration due to gravity)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "bLYlP",
+              "text": "$\\frac{1}{2} \\frac{\\mathrm{gt}_1}{\\mathrm{t}_2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "LMr4g",
+              "text": "$\\frac{1}{2} \\mathrm{gt}_1 \\mathrm{t}_2$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "jqEWn",
+              "text": "$\\mathrm{g} \\mathrm{t}_1 \\mathrm{t}_2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "JAB1k",
+              "text": "$2 \\mathrm{gt}_1 \\mathrm{t}_2$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We know,\n$$\n\\mathrm{S}=\\mathrm{ut}+\\frac{1}{2} \\mathrm{at}^2\n$$\n\nThe total time required for the ball to go up and reach the ground is $t=t_1+t_2$, and the total displacement is zero.\n$$\n\\begin{aligned}\n& \\therefore \\quad 0=\\mathrm{u}\\left(\\mathrm{t}_1+\\mathrm{t}_2\\right)+\\frac{1}{2} \\mathrm{~g}\\left(\\mathrm{t}_1+\\mathrm{t}_2\\right)^2 \\\\\n& \\therefore \\quad \\mathrm{u}=\\frac{1}{2} \\mathrm{~g}\\left(\\mathrm{t}_1+\\mathrm{t}_2\\right)\n\\end{aligned}\n$$\n\nThe displacement in time $t_1$ is\n$$\n\\begin{aligned}\n\\mathrm{h} & =\\frac{1}{2} \\mathrm{~g}\\left(\\mathrm{t}_1+\\mathrm{t}_2\\right) \\mathrm{t}_1-\\frac{1}{2} \\mathrm{gt}_1^2 \\\\\n\\mathrm{~h} & =\\frac{1}{2} \\mathrm{gt}_1\\left(\\mathrm{t}_1+\\mathrm{t}_2-\\mathrm{t}_1\\right) \\\\\n\\therefore \\quad \\mathrm{h} & =\\frac{1}{2} \\mathrm{gt}_1 \\mathrm{t}_2\n\\end{aligned}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b1",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-12T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (12 May Shift 2)",
+            "title": "MHT CET 2023 (12 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a262070279619d9d8a313c",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892af",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-11T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (11 May Shift 2)",
+              "title": "MHT CET 2023 (11 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A ball kept at $20 \\mathrm{~m}$ height falls freely in vertically downward direction and hits the ground. The coefficient of restitution is $0.4$. Velocity of the ball first rebound is $\\left[\\mathrm{g}=10 \\mathrm{~ms}^{-2}\\right]$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "4oqFd",
+              "text": "$4 \\mathrm{~ms}^{-1}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "DOJw6",
+              "text": "$8 \\mathrm{~ms}^{-1}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "kTDoQ",
+              "text": "$12 \\mathrm{~ms}^{-1}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "zyUn8",
+              "text": "$16 \\mathrm{~ms}^{-1}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\begin{aligned}\nv^2 & =0+2 g h \\quad \\ldots\\left(\\because v^2-u^2=2 g h\\right) \\\\\n& v^2=2 \\times 10 \\times 20=400 \\\\\n& v=20 \\mathrm{~m} / \\mathrm{s} \\\\\n& \\mathrm{e}=\\frac{\\mathrm{u}}{\\mathrm{v}}\n\\end{aligned}$\n$\\therefore \\quad$ The velocity of the body after the first rebound is\n$\\begin{aligned}\n& u=0.4 \\times 20 \\\\\n& u=8 \\mathrm{~m} / \\mathrm{s}\n\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892af",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-11T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (11 May Shift 2)",
+            "title": "MHT CET 2023 (11 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a261d00279619d9d8a2f89",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892ac",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-10T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (10 May Shift 1)",
+              "title": "MHT CET 2023 (10 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A body is released from the top of a tower ' $\\mathrm{H}$ ' metre high. It takes $t$ second to reach the ground. The height of the body $\\frac{t}{2}$ second after release is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "L5IHd",
+              "text": "$\\frac{\\mathrm{H}}{2}$ metre from ground",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "L2iRe",
+              "text": "$\\frac{\\mathrm{H}}{4}$ metre from ground",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "MwkBV",
+              "text": "$3 \\frac{\\mathrm{H}}{4}$ metre from ground",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "QheaM",
+              "text": "$\\frac{\\mathrm{H}}{6}$ metre from ground",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let the body be at $\\mathrm{x}$ from the top after $\\frac{\\mathrm{t}}{2} \\mathrm{~s}$.\n$\\begin{aligned}\n\\therefore \\quad \\mathrm{x} & =\\frac{1}{2} \\mathrm{~g} \\frac{\\mathrm{t}^2}{4}=\\frac{\\mathrm{gt}^2}{8}.... (i) \\\\\n\\mathrm{H} & =\\frac{1}{2} \\mathrm{gt}^2 .... (ii)\n\\end{aligned}$\nEliminating $\\mathrm{t}$ from (i) and (ii), we get $\\frac{8 \\mathrm{x}}{\\mathrm{g}}=\\frac{2 \\mathrm{H}}{\\mathrm{g}} \\Rightarrow \\mathrm{x}=\\frac{\\mathrm{H}}{4}$\n$\\therefore \\quad$ Height of the body from the ground $=\\mathrm{H}-\\frac{\\mathrm{H}}{4}=\\frac{3 \\mathrm{H}}{4}$ metres",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892ac",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-10T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (10 May Shift 1)",
+            "title": "MHT CET 2023 (10 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260590279619d9d8a23c4",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b87f20917a5f4189298",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2021-09-21T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021 (21 Sep Shift 2)",
+              "title": "MHT CET 2021 (21 Sep Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A body at rest falls through a height ' $h$ ' with velocity ' $\\mathrm{V}$ '. If it has to fall down further for its velocity to become three times, the distance travelled in that interval is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "VxgEZ",
+              "text": "8 h",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "23map",
+              "text": "6 h",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "kl8nL",
+              "text": "4 h",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZGmBX",
+              "text": "12 h",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The body acquired velocity $\\mathrm{V}$ when it falls through a height $\\mathrm{h}$, starting from rest.\n$$\n\\begin{aligned}\n& \\therefore \\mathrm{V}^2=2 \\mathrm{gh} \\\\\n& \\therefore \\mathrm{h}=\\frac{\\mathrm{V}^2}{2 \\mathrm{~g}}\n\\end{aligned}\n$$\nIf it falls further and attains velocity $3 \\mathrm{~V}$ and if the total height through which it falls is h', then\n$$\n\\begin{aligned}\n& \\left(3 \\mathrm{~V}^2\\right)=2 \\mathrm{gh}^{\\prime} \\\\\n& \\therefore 9 \\mathrm{~V}^2=2 \\mathrm{gh}^{\\prime} \\\\\n& \\therefore \\mathrm{h}^{\\prime}=\\frac{9 \\mathrm{~V}^2}{2 \\mathrm{~g}}=9 \\mathrm{~h} \\\\\n& \\therefore \\mathrm{h}^{\\prime}-\\mathrm{h}=9 \\mathrm{~h}-\\mathrm{h}=8 \\mathrm{~h}\n\\end{aligned}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b87f20917a5f4189298",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2021-09-21T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021 (21 Sep Shift 2)",
+            "title": "MHT CET 2021 (21 Sep Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fda0279619d9d8a1fc7",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f71",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-19T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (19 Oct Shift 1)",
+              "title": "MHT CET 2020 (19 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A lift of mass 'm' is ascending with an acceleration 'a' (a $ < \\mathrm{g}$ ). The tension in the\ncable of the lift is\n(g= acceleration due to gravity)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "D15m6",
+              "text": "$\\mathrm{m}(\\mathrm{g}-\\mathrm{a})$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SCfaH",
+              "text": "$\\mathrm{m}(\\mathrm{g}+\\mathrm{a})$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "DJMQS",
+              "text": "$\\mathrm{m}(2 \\mathrm{~g}+\\mathrm{a})$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "gJyUy",
+              "text": "$\\mathrm{m}(\\mathrm{a}-\\mathrm{g})$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "m(g+a)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f71",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-19T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (19 Oct Shift 1)",
+            "title": "MHT CET 2020 (19 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f320279619d9d8a1a86",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f68",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-12T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (12 Oct Shift 2)",
+              "title": "MHT CET 2020 (12 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Five objects of different masses are simultaneously released vertically downwards from height 'h' (in air). Which physical quantity associated with the objects will\nchange at the instant they strike the ground ? (Neglect the air resistance.)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "gULM8",
+              "text": "Momentum",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "lXrXR",
+              "text": "Time",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "gxgGo",
+              "text": "Acceleration",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CWqdJ",
+              "text": "Velocity",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f68",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-12T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (12 Oct Shift 2)",
+            "title": "MHT CET 2020 (12 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "topicId": "6792165c0aee93fa0796e18f",
+      "title": "Graphs of motion in one dimension",
+      "totalQuestions": 5,
+      "questions": [
+        {
+          "_id": "6a44d2988c30a4553e1bdabd",
+          "type": "singleCorrect",
+          "question": {
+            "text": "The velocity time graph of a body moving in a straight line is shown in a figure. The ratio of displacement to distance travelled by the body in time $0$ to $10$ s is<br><img style=\"width: 400px\" src=\"https://cdn.quizrr.in/question-assets/mht_cet_pyqs_2026/april/watermarked_images/13_april_shift_2__q31_d1.png\" />",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "VPrTk",
+              "label": "A",
+              "text": "$1:1$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "mab5J",
+              "label": "B",
+              "text": "$1:4$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "xfdDw",
+              "label": "C",
+              "text": "$1:2$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "CGONx",
+              "label": "D",
+              "text": "$1:3$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Displacement is the algebraic sum of the areas under the velocity-time graph, and distance is the sum of their absolute values.<br><br>Calculating the areas for each time interval:<br>Area for $0$ to $2$ s: $A_1 = 8 \\times 2 = 16$ m<br>Area for $2$ to $4$ s: $A_2 = -4 \\times 2 = -8$ m<br>Area for $4$ to $8$ s: $A_3 = 4 \\times 4 = 16$ m<br>Area for $8$ to $10$ s: $A_4 = -4 \\times 2 = -8$ m<br><br>Total displacement $= A_1 + A_2 + A_3 + A_4 = 16 - 8 + 16 - 8 = 16$ m<br><br>Total distance $= |A_1| + |A_2| + |A_3| + |A_4| = 16 + 8 + 16 + 8 = 48$ m<br><br>Ratio of displacement to distance $= \\dfrac{16}{48} = \\dfrac{1}{3}$<br><br>Thus, the required ratio is $1:3$.<br><br>Answer: $1:3$",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d27f2d2155b816ec4a71",
+              "title": "MHT CET 2026 (13 April Shift 2)",
+              "shortName": "2026 (13 April Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-04-13T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 2,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d27f2d2155b816ec4a71",
+            "title": "MHT CET 2026 (13 April Shift 2)",
+            "shortName": "2026 (13 April Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-04-13T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679213e40aee93fa0796dc5b",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665ccc",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-11T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (11 May Shift 1)",
+              "title": "MHT CET 2024 (11 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "For the velocity-time graph shown in the figure below, the distance covered by the body in last two second of its motion is ' $\\mathrm{S}_1$ '. What is the ratio of ' $S_1$ ' to the total distance covered by it\r\n<img src=\"https://cdn.quizrr.in/question-assets/mhtcet/py35bdsq/uuW-ddp9PTeGPo6oxHRfa837gavlTQAGPQAy6XyPHLM.original.fullsize.png\"/><br/>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "9ghCH",
+              "text": "$\\frac{1}{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vCQxK",
+              "text": "$\\frac{1}{4}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "wyWSK",
+              "text": "$\\frac{1}{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Bq5ll",
+              "text": "$\\frac{2}{3}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "From the given velocity-time graph, the motion starts at $t = 1$ s and ends at $t = 7$ s.<br><br>The distance covered in the last two seconds ($t = 5$ s to $t = 7$ s) is given by the area of $\\triangle CDE$:<br><br>$S_1 = \\dfrac{1}{2} \\times \\text{base} \\times \\text{height} = \\dfrac{1}{2} \\times (7 - 5) \\times 10 = 10$ m<br><br>The total distance covered is the area of the trapezium $ABCD$:<br><br>$S_{\\text{total}} = \\dfrac{1}{2} \\times (AD + BC) \\times \\text{height}$<br><br>$S_{\\text{total}} = \\dfrac{1}{2} \\times ((7 - 1) + (5 - 3)) \\times 10$<br><br>$S_{\\text{total}} = \\dfrac{1}{2} \\times (6 + 2) \\times 10 = 40$ m<br><br>The required ratio is:<br><br>$\\dfrac{S_1}{S_{\\text{total}}} = \\dfrac{10}{40} = \\dfrac{1}{4}$<br><br>Answer: $\\frac{1}{4}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665ccc",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-11T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (11 May Shift 1)",
+            "title": "MHT CET 2024 (11 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679213a60aee93fa0796da6e",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665ccb",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-09T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (09 May Shift 2)",
+              "title": "MHT CET 2024 (09 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "The following figures show the variation of displacement with time of a particular object.\r\n(a)<img src=\"https://cdn.quizrr.in/question-assets/mhtcet/py35bdsq/rhg_8iY4E5DGxGG6xntc5griKEcZYmkWk_M8PyvXd_c.original.fullsize.png\"/><br/>(b)<img src=\"https://cdn.quizrr.in/question-assets/mhtcet/py35bdsq/6VFaXSY46QtQIqShoPNykavkjgUmwvF-INCFuBsDeIQ.original.fullsize.png\"/><br/>(c)<img src=\"https://cdn.quizrr.in/question-assets/mhtcet/py35bdsq/uyhQGzJakRrFoEr2yMq9-O3zZssd7AkRn6rpmxNMXJo.original.fullsize.png\"/><br/>(d)<img src=\"https://cdn.quizrr.in/question-assets/mhtcet/py35bdsq/ilRFSJNEwOpw7d8Y_hmZXmNjvYlzXxHZeygsvSn1zQc.original.fullsize.png\"/><br/>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "9l5Bf",
+              "text": "Figure (a) and (b) show object at rest and object moving with uniform velocity in positive $x$ direction respectively.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "5g67z",
+              "text": "Figure (b) and (c) show object at rest and object moving with uniform velocity in negative $x$ direction respectively.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BnEBs",
+              "text": "Figure (c) and (d) show object at rest and object moving with uniform velocity in negative $x$ direction respectively.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "C1uGl",
+              "text": "Figure (a) and (b) show object at rest.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In a displacement-time ($X-t$) graph, the slope of the curve represents the velocity of the object, since $v = \\dfrac{dX}{dt}$.<br><br>For figure (a), the displacement $X$ is constant over time. The slope of the graph is zero, which means the velocity is zero. Therefore, the object is at rest.<br><br>For figure (b), the displacement $X$ increases linearly with time $t$. The graph is a straight line with a positive constant slope. This indicates that the object is moving with a uniform (constant) velocity in the positive $x$-direction.<br><br>For figure (c), the graph is a straight line with a negative constant slope, indicating uniform velocity in the negative $x$-direction.<br><br>For figure (d), the slope alternates between positive and negative constant values, indicating oscillatory motion with constant speed.<br><br>Thus, figure (a) shows an object at rest, and figure (b) shows an object moving with uniform velocity in the positive $x$-direction.<br><br>Answer: Figure (a) and (b) show object at rest and object moving with uniform velocity in positive $x$ direction respectively.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665ccb",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-09T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (09 May Shift 2)",
+            "title": "MHT CET 2024 (09 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679213980aee93fa0796da00",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665cca",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-09T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (09 May Shift 1)",
+              "title": "MHT CET 2024 (09 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A velocity - time graph of a body is shown below. The distance covered by the body from 6 second to 9 second is\n<img width=300px src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/e5xw16ezoGH9oM_-_8gN6s2Cp6yOTkbixu_cUxX-j2A.original.fullsize.png\"/><br/>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "h19I3",
+              "text": "22.5 m",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qDeHH",
+              "text": "60.0 m",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nrLyv",
+              "text": "82.5 m",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "776Lm",
+              "text": "120.0 m",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "From the given velocity-time graph, the velocity at $t = 6$ s is $20$ m/s and at $t = 10$ s is $40$ m/s.<br><br>The acceleration in this interval is constant and is given by the slope of the graph:<br><br>$a = \\dfrac{40 - 20}{10 - 6} = 5 \\text{ m/s}^2$<br><br>The velocity at $t = 9$ s is:<br><br>$v = u + at = 20 + 5(9 - 6) = 35$ m/s<br><br>The distance covered from $t = 6$ s to $t = 9$ s is the area under the $v-t$ graph in this time interval, which forms a trapezium:<br><br>$\\text{Distance} = \\dfrac{1}{2} \\times (\\text{sum of parallel sides}) \\times \\text{height}$<br><br>$\\text{Distance} = \\dfrac{1}{2} \\times (20 + 35) \\times (9 - 6)$<br><br>$\\text{Distance} = \\dfrac{1}{2} \\times 55 \\times 3 = 82.5$ m<br><br>Answer: 82.5 m",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665cca",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-09T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (09 May Shift 1)",
+            "title": "MHT CET 2024 (09 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679213240aee93fa0796d675",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e139a8109c6c5665cc2",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-02T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (02 May Shift 1)",
+              "title": "MHT CET 2024 (02 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "The acceleration of a moving body can be found from",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "kzraA",
+              "text": "area under velocity - time graph.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BP1Xe",
+              "text": "area under distance - time graph.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "WbpJ4",
+              "text": "slope of the velocity - time graph.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "gb9R2",
+              "text": "slope of the distance - time graph.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Acceleration is defined as the rate of change of velocity with respect to time, which is mathematically given by $a = \\dfrac{dv}{dt}$.<br><br>In a velocity-time graph, the slope of the curve at any point is equal to $\\dfrac{dv}{dt}$.<br><br>Therefore, the acceleration of a moving body can be found from the slope of the velocity-time graph.<br><br>Answer: slope of the velocity - time graph.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e139a8109c6c5665cc2",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-02T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (02 May Shift 1)",
+            "title": "MHT CET 2024 (02 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

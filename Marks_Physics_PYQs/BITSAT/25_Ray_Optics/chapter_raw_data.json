@@ -1,0 +1,2122 @@
+{
+  "index": 25,
+  "chapterId": "61e7bd71a2dd607688d6c01b",
+  "chapter": "Ray Optics",
+  "exam": "BITSAT",
+  "subject": "Physics",
+  "totalTopics": 8,
+  "totalQuestions": 31,
+  "downloadTime": "2026-10-08 20:28:13",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e85b6f5bfc7ab78aed3d",
+      "title": "Reflection of Light from Plane Mirror",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e82e6f5bfc7ab78aeb4d",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "A mosquito $O$ is sitting infront of a glass rod having spherical end of radius of curvature $40 \\mathrm{~cm}$. The image would be formed at\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/weLGNMYc7iY8HKVyLvwJjxS4kZCrETIc0bLDHgLJXiY.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "vd8Hd",
+              "text": "\r\n$40 \\mathrm{~cm}$ left\r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "hsQT3",
+              "text": "\r\ninfinity\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "6om1p",
+              "text": "\r\n$20 \\mathrm{~cm}$ to the right\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "t1hhQ",
+              "text": "\r\n$15 \\mathrm{~cm}$ to the left",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "As, we know, $\\frac{\\mu_2}{v}-\\frac{\\mu_1}{u}=\\frac{\\mu_2-\\mu_1}{R}$\r\n$$\r\n\\begin{aligned}\r\n& \\Rightarrow \\quad \\frac{1.5}{v}-\\frac{1}{(-20)}=\\frac{1.5-1}{+40} \\\\\r\n& v=-40 \\mathrm{~cm} \\\\\r\n&\r\n\\end{aligned}\r\n$$\r\nNegative sign shows that image is obtained on the same side of object i.e., towards left.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e85b6f5bfc7ab78aed3a",
+      "title": "Mirror Formula, Reflection in Spherical Mirror",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "67726cf8c49e8ef28ee2b33d",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "If the distance between object and its two times magnified virtual image produced by a curved mirror is 15 cm , the focal length of the mirror must be:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "uBM3J",
+              "text": "$\\frac{10}{3} \\mathrm{~cm}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "MxgXO",
+              "text": "$-12 \\mathrm{~cm}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vQ0Gy",
+              "text": "$-10 \\mathrm{~cm}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "kN6YT",
+              "text": "15 cm",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Since, image is magnified. So, it is a concave mirror.\n$\\therefore \\mathrm{m}=2=\\frac{-\\mathrm{v}}{\\mathrm{u}}$\n$2=\\frac{-(15-u)}{-u}$\n$2 u=15-u$\n$3 \\mathrm{u}=15 \\Rightarrow \\mathrm{u}=5 \\mathrm{~cm}$\n$\\mathrm{v}=15-\\mathrm{u}=15-5=10 \\mathrm{~cm}$\nBymirror formula,\n$\\frac{1}{\\mathrm{f}}=\\frac{1}{\\mathrm{v}}+\\frac{1}{\\mathrm{u}}$\n$=\\frac{1}{10}+\\frac{1}{(-5)}=\\frac{1-2}{10}=\\frac{-1}{10}$\n$\\mathrm{f}=-10 \\mathrm{~cm}$\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/FMbhPp1ipYEEuzeZmymNO3AKFKp_64mssvs6hDpV_Mk.original.fullsize.png\"/><br/>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c76f5bfc7ab78ae7cf",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "A ray parallel to principal axis is incident at $30^{\\circ}$ from normal on concave mirror having radius of curvature $R$. The point on principal axis where rays are focussed is $Q$ such that $\\mathrm{PQ}$ is\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/rueiuBD3_u-ZkcDC2Wdf5GeygQBjLNAolOzYsaqtes0.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "XXOpP",
+              "text": "$\\frac{R}{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "rkXkw",
+              "text": "$\\frac{R}{\\sqrt{3}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "hICkX",
+              "text": "$\\frac{2 \\sqrt{R}-R}{\\sqrt{2}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "DwxGM",
+              "text": "$R\\left(1-\\frac{1}{\\sqrt{3}}\\right)$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "From similar triangles,\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/XHNSXpn6kBt78iTdzYBxZhp-Uyp1yRN1TqalGBhb0xg.original.fullsize.png\"><br>\r\n\r\n$$\r\n\r\n\\frac{Q C}{\\sin 30^{\\circ}}=\\frac{R}{\\sin 120^{\\circ}}\r\n\r\n$$\r\n\r\nor $\\quad Q C=R \\times \\frac{\\sin 30^{\\circ}}{\\sin 120^{\\circ}}=\\frac{R}{\\sqrt{3}}$\r\n\r\nThus $P Q=P C-Q C=R-\\frac{R}{\\sqrt{3}}=R\\left(1-\\frac{1}{\\sqrt{3}}\\right)$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e85b6f5bfc7ab78aed3c",
+      "title": "Critical angle and total internal reflection",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e81e6f5bfc7ab78aeac0",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Green light of wavelength $5460 Å$ is incident on an airglass interface. If the refractive index of glass is $1.5$, the wavelength of light in glass would be $\\left(\\mathrm{c}=3 \\times 10^{8} \\mathrm{~ms}^{-1}\\right)$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "mxT1r",
+              "text": "$3640 Å$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "N5Qm8",
+              "text": "$5460 Å$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ey5Jz",
+              "text": "$4861 Å$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "egVOp",
+              "text": "None of the above",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{a}^{\\lambda} \\mathrm{g}=\\frac{\\lambda_{\\mathrm{a}}}{\\mu}=\\frac{5460}{1.5}=3640 Å$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "64c0e85b6f5bfc7ab78aed39",
+      "title": "Refraction of light from plane surface",
+      "totalQuestions": 5,
+      "questions": [
+        {
+          "_id": "64c0e80f6f5bfc7ab78aea3d",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "A vessel of depth $2 \\mathrm{~d} \\mathrm{~cm}$ is half filled with a liquid of refractive index $\\mu_{1}$ and the upper half with a liquid of refractive index $\\mu_{2}$. The apparent depth of the vessel seen perpendicularly is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "1Wx4E",
+              "text": "$\\left(\\frac{\\mu_{1} \\mu_{2}}{\\mu_{1}+\\mu_{2}}\\right) \\mathrm{d}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "yV9FM",
+              "text": "$\\left(\\frac{1}{\\mu_{1}}+\\frac{1}{\\mu_{2}}\\right) \\mathrm{d}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "trx0c",
+              "text": "$\\left(\\frac{1}{\\mu_{1}}+\\frac{1}{\\mu_{2}}\\right) 2 \\mathrm{~d}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "EqvXZ",
+              "text": "$\\left(\\frac{1}{\\mu_{1} \\mu_{2}}\\right) 2 \\mathrm{~d}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Apparent depth $=\\mathrm{d} / \\mu_{1}+\\mathrm{d} / \\mu_{2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7d86f5bfc7ab78ae859",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "A ray of light of intensity I is incident on a parallel glass slab at point $A$ as shown in diagram. It undergoes partial reflection and refraction. At each reflection, $25 \\%$ of incident energy is reflected. The rays $\\mathrm{AB}$ and $\\mathrm{A}^{\\prime} \\mathrm{B}^{\\prime}$ undergo interference. The ratio of $\\mathrm{I}_{\\max }$ and $\\mathrm{I}_{\\min }$ is :\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/BeHYcB4nAXifb9OiyggZJVUqMftkEO7FaHfVoh3spYw.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ROwWN",
+              "text": "49: 1",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "IewJM",
+              "text": "7: 1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "aP91X",
+              "text": "4: 1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "N8Ce6",
+              "text": "8: 1",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/IYtubaSAS9B_I-_VHoJuIo93YIPa5VI5ha3u9RLc9Eo.original.fullsize.png\"><br>\r\n\r\nFrom figure $\\mathrm{I}_{1}=\\frac{\\mathrm{I}}{4}$ and $\\mathrm{I}_{2}=\\frac{9 \\mathrm{I}}{64}$\r\n\r\n$\\begin{aligned} \\text { By using } \\frac{\\mathrm{I}_{\\max }}{\\mathrm{I}_{\\min }} &=\\left(\\frac{\\sqrt{\\frac{\\mathrm{I}_{2}}{\\mathrm{I}_{1}}}+1}{\\sqrt{\\frac{\\mathrm{I}_{2}}{\\mathrm{I}_{1}}}-1}\\right)^{2} \\\\ &=\\left(\\frac{\\sqrt{\\frac{9}{16}}+1}{\\sqrt{\\frac{9}{16}}-1}\\right)^{2}=\\frac{49}{1} \\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7af6f5bfc7ab78ae6f4",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "When light is refracted, which of the following does not change ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "lgITP",
+              "text": "Wavelength",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "lNcdj",
+              "text": "Frequency",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Bp4fC",
+              "text": "Velocity",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "imW3a",
+              "text": "Amplitude",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Frequency does not change on refraction.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e79f6f5bfc7ab78ae674",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "A ray of light is incident at the glass-water interface at an angle i, it emerges finally parallel to the surface of water, then the value of $\\mu_{\\mathrm{g}}$ would be\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/w84qX6WRFSY6p-nNmtWiyMfUP0Y6b3wXeEmORQ98xv8.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "0OfRB",
+              "text": "$(4 / 3) \\sin i$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "vaQqh",
+              "text": "$1 / \\sin i$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "7UwRc",
+              "text": "$4 / 3$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "TGBbK",
+              "text": "1",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mu_{g} \\sin i=\\mu_{\\text {air }} \\sin 90^{\\circ} \\Rightarrow \\mu_{g}=\\frac{1}{\\sin i}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7906f5bfc7ab78ae5f6",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "A vessel of depth $2 \\mathrm{~d} \\mathrm{~cm}$. is halffilled with a liquid of refractive index $\\mu_{1}$ and the upper half with a liquid of refractive index $\\mu_{2} .$ The apparent depth of the vessel seen perpendicularly is -",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "wVaja",
+              "text": "$d\\left(\\frac{\\mu_{1} \\mu_{2}}{\\mu_{1}+\\mu_{2}}\\right)$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0Ajwy",
+              "text": "$d\\left(\\frac{1}{\\mu_{1}}+\\frac{1}{\\mu_{2}}\\right)$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "9pH6J",
+              "text": "$2 d\\left(\\frac{1}{\\mu_{1}}+\\frac{1}{\\mu_{2}}\\right)$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0BIAO",
+              "text": "$2 d\\left(\\frac{1}{\\mu_{1} \\mu_{2}}\\right)$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{h}^{\\prime}=\\frac{\\mathrm{d}_{1}}{\\mu_{1}}+\\frac{\\mathrm{d}_{2}}{\\mu_{2}}=\\mathrm{d}\\left(\\frac{1}{\\mu_{1}}+\\frac{1}{\\mu_{2}}\\right)$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "64c0e85a6f5bfc7ab78aed38",
+      "title": "Lens Formula, Refraction of light from curved surface",
+      "totalQuestions": 9,
+      "questions": [
+        {
+          "_id": "67726d10c49e8ef28ee2b3f9",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "Power of biconvex lens is $P$ diopter. When it is cut into two symmetrical halves by a plane containing the principal axis. The ratio of power of two halves is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "lLotS",
+              "text": "$1: 2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iOUNw",
+              "text": "$2: 1$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "idiWn",
+              "text": "$1: 4$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ST3CN",
+              "text": "$1: 1$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Power of equiconvex lens $=P$\ni.e $P=\\frac{1}{f}$, where $f$ is focal length of equiconvex lens.\nWhen an equiconvex lens is cut into two symmetrical halves by a plane containing the principal axis, then its focal length remains same.\nHence, power of lens (each halves)\n$\\begin{aligned}\n& P^{\\prime}=\\frac{1}{f} \\Rightarrow P^{\\prime}=P \\\\\n& \\Rightarrow \\quad \\frac{P^{\\prime}}{P}=1 \\\\\n& \\Rightarrow \\quad P: P=1: 1\n\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8036f5bfc7ab78ae9d5",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "<p>In the shown situation, if middle portion of the lens is painted black, then</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/88a8e0cf-5050-4907-8217-10ab27ba46a8-image.png\" style=\"width: 260px; height: 152px;\" /></p>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "F9DPy",
+              "text": "complete image of the object will form with low intensity",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "9kcfM",
+              "text": "complete image of the object will form with high intensity",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "QLdyi",
+              "text": "incomplete image of the object will form with low intensity",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "UQn2Y",
+              "text": "incomplete image of the object will form with high intensity",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "If middle portion of lens is painted black, then less number of refracted rays will intersect, therefore intensity of the corresponding image of object will be less. Though, the rays coming from object refracted with small portion of lens, but complete image of object will be formed but of lesser intensity.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8036f5bfc7ab78ae9d0",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "A convex lens of focal length <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>25</mn><mo>&#160;</mo><mi>cm</mi></math> produces images of the same magnification <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn></math>, when an object is kept at two positions <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>x</mi><mn>1</mn></msub></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>x</mi><mn>2</mn></msub></math>&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>&#62;</mo><msub><mi>x</mi><mn>2</mn></msub></mrow></mfenced></math> from the lens. The ratio of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>x</mi><mn>2</mn></msub></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>x</mi><mn>1</mn></msub></math> is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "CrtYC",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>:</mo><mn>1</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Y2JH5",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>:</mo><mn>3</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "FQKMc",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>:</mo><mn>2</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Sn4nj",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>:</mo><mn>1</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>For the given convex lens, focal length, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>=</mo><mn>25</mn><mo>&#160;</mo><mi>cm</mi></math></p><p>Magnification of lens in terms of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi></math> is given by,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi><mo>=</mo><mfrac><mi>f</mi><mrow><mi>f</mi><mo>+</mo><mi>u</mi></mrow></mfrac><mo>=</mo><mfrac><mn>25</mn><mrow><mn>25</mn><mo>+</mo><mi>u</mi></mrow></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi mathvariant=\"normal\">i</mi></mfenced></math></p><p>When the image is real, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi><mo>=</mo><mo>-</mo><mn>2</mn></math>&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi><mo>=</mo><mo>-</mo><msub><mi>x</mi><mn>1</mn></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> From Eq. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">i</mi><mo>)</mo></math>,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mn>2</mn><mo>=</mo><mfrac><mn>25</mn><mrow><mn>25</mn><mo>-</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mfrac><mo>&#8658;</mo><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mfrac><mn>75</mn><mn>2</mn></mfrac></math></p><p>Again, when the image is virtual, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi><mo>=</mo><mn>2</mn></math>&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi><mo>=</mo><mo>-</mo><msub><mi>x</mi><mn>2</mn></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math>&nbsp;From Eq. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">i</mi><mo>)</mo></math>,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>=</mo><mfrac><mn>25</mn><mrow><mn>25</mn><mo>-</mo><msub><mi>x</mi><mn>2</mn></msub></mrow></mfrac><mo>&#8658;</mo><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mfrac><mn>25</mn><mn>2</mn></mfrac></math></p><p>Hence, the ratio of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>x</mi><mn>2</mn></msub></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>x</mi><mn>1</mn></msub></math> is</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mfrac><msub><mi>x</mi><mn>2</mn></msub><msub><mi>x</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><mrow><mn>25</mn><mo>/</mo><mn>2</mn></mrow><mrow><mn>75</mn><mo>/</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7f66f5bfc7ab78ae960",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "A planoconvex lens has thickness of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><mo>&#160;</mo><mi>cm</mi><mo>.</mo></math> When placed on a horizontal table, with the curved surface in contact with it, the apparent depth of the bottom most point of the lens is found to be <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>&#160;</mo><mi>cm</mi><mo>.</mo></math> If the lens is inverted such that the plane face is in contact with the table, the apparent depth of the centre of the plane face is found to be <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>25</mn><mn>8</mn></mfrac><mo>&#160;</mo><mi>cm</mi><mo>.</mo></math> The focal length of the lens is (assume thickness of lens to be negligible)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "asdft",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>85</mn><mo>&#160;</mo><mi>cm</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "JLQkT",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>59</mn><mo>&#160;</mo><mi>cm</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ETMhA",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>75</mn><mo>&#160;</mo><mi>cm</mi></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "VcarG",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>7</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi>cm</mi></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/727ec91f-0e7a-4c2a-8986-84e1edf26463-image.png\" style=\"width: 400px; height: 107px;\" /></p><p>In first case refraction of the rays, takes place from a plane surface, so we can use <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>d</mi><mi>app</mi></msub><mo>=</mo><mfrac><msub><mi>d</mi><mtext>actual&#160;</mtext></msub><mi>&#956;</mi></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>=</mo><mfrac><mn>4</mn><mi>&#956;</mi></mfrac><mo>&#8658;</mo><mi>&#956;</mi><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac></math></p><p>where, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>d</mi><mtext>app&#160;</mtext></msub></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>d</mi><mtext>actual&#160;</mtext></msub><mo>=</mo></math> apparent and real depth, respectively.</p><p>Now, in second case, as from Fig. (b), refraction takes place from a spherical surface, so</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msub><mi>&#956;</mi><mn>2</mn></msub><mi>v</mi></mfrac><mo>-</mo><mfrac><msub><mi>&#956;</mi><mn>1</mn></msub><mi>u</mi></mfrac><mo>=</mo><mfrac><mrow><msub><mi>&#956;</mi><mn>2</mn></msub><mo>-</mo><msub><mi>&#956;</mi><mn>1</mn></msub></mrow><mrow><mi>R</mi><mi>m</mi></mrow></mfrac></math></p><p>or&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mrow><mo>(</mo><mo>-</mo><mn>25</mn><mo>/</mo><mn>8</mn><mo>)</mo></mrow></mfrac><mo>-</mo><mfrac><mrow><mn>4</mn><mo>/</mo><mn>3</mn></mrow><mrow><mo>(</mo><mo>-</mo><mn>4</mn><mo>)</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mo>-</mo><mn>4</mn><mo>/</mo><mn>3</mn></mrow><mrow><mo>-</mo><mi>R</mi></mrow></mfrac></math></p><p>or&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mrow><mn>3</mn><mi>R</mi></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>-</mo><mfrac><mn>8</mn><mn>25</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>75</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi><mo>=</mo><mn>25</mn><mo>&#160;</mo><mi>cm</mi></math></p><p>Now, using Lens&#39; Makers formula, to calculate focal length</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mi>f</mi></mfrac><mo>=</mo><mfenced><mrow><mi>&#956;</mi><mo>-</mo><mn>1</mn></mrow></mfenced><mfenced><mrow><mfrac><mn>1</mn><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>-</mo><mfrac><mn>1</mn><msub><mi>R</mi><mn>2</mn></msub></mfrac></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mi>f</mi></mfrac><mo>=</mo><mfenced><mrow><mfrac><mn>4</mn><mn>3</mn></mfrac><mo>-</mo><mn>1</mn></mrow></mfenced><mfenced><mrow><mfrac><mn>1</mn><mo>&#8734;</mo></mfrac><mo>-</mo><mfrac><mn>1</mn><mrow><mo>(</mo><mo>-</mo><mn>25</mn><mo>)</mo></mrow></mfrac></mrow></mfenced><mo>=</mo><mfrac><mn>1</mn><mn>75</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>=</mo><mn>75</mn><mo>&#160;</mo><mi>cm</mi></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7f56f5bfc7ab78ae954",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "A convex lens shown in the figure is made up of two types of transparent materials. A point sources of light is placed on its principal axis. If reflections from the boundaries between layers are ignored, the lens will form<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/9d490464-232a-4a92-a368-eb213a0feddd-image.png\" style=\"width: 90px; height: 261px;\" />",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "bRFTC",
+              "text": "only one image",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "wYE8T",
+              "text": "two images",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "mHVtT",
+              "text": "infinite images",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "IvHOs",
+              "text": "no image at all",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Since, the lens is made up of two kinds of transparent material, it has two refractive indices for the incident beam of light. Hence, there will be two focal lengths of the lens and therefore two images will be observed.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7db6f5bfc7ab78ae86e",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "A lens having focal length $f$ and aperture of diameter $d$ forms an image of intensity $I$. Aperture of diameter $\\frac{d}{2}$ in central region of lens is covered by a black paper. Focal length of lens and intensity of image now will be respectively:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "7YG8H",
+              "text": "$f$ and $\\frac{I}{4}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "C20xo",
+              "text": "$\\frac{3 f}{4}$ and $\\frac{I}{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "JPQLs",
+              "text": "$f$ and $\\frac{3 I}{4}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "R1voC",
+              "text": "$\\frac{f}{2}$ and $\\frac{I}{2}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Bycovering aperture, focal length does not change. But intensity is reduced by $\\frac{1}{4}$ times\r\n\r\nas aperture diameter $\\frac{d}{2}$ is covered.\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\therefore \\quad I^{\\prime}=I-\\frac{I}{4}=\\frac{3 I}{4} \\\\\r\n\r\n\\therefore \\quad \\text { New focal length }=\\mathrm{f} \\text { and intensity }=\\frac{3 I}{4} .\r\n\r\n\\end{array}\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7d76f5bfc7ab78ae84f",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "A biconvex lens has a radius of curvature of magnitude $20 \\mathrm{~cm}$. Which one of the following options best describe the image formed of an object of height $2 \\mathrm{~cm}$ placed $30 \\mathrm{~cm}$ from the lens?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "9K20m",
+              "text": "Virtual, upright, height $=1 \\mathrm{~cm}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "VwnEl",
+              "text": "Virtual, upright, height $=0.5 \\mathrm{~cm}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "YFVgx",
+              "text": "Real, inverted, height $=4 \\mathrm{~cm}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "zK3v2",
+              "text": "Real, inverted, height $=1 \\mathrm{~cm}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In the branch containing \\(L\\) and \\(R_{2}\\)\r\n\r\n\\(\\begin{aligned} &\\mathrm{i}=\\frac{\\mathrm{E}}{\\mathrm{R}_{2}}\\left(1-\\mathrm{e}^{-\\frac{\\mathrm{R}_{2} \\mathrm{t}}{\\mathrm{L}}}\\right) \\\\ &\\frac{\\mathrm{di}}{\\mathrm{dt}}=\\frac{\\mathrm{E}}{\\mathrm{R}_{2}} \\mathrm{e}^{-\\frac{\\mathrm{R}_{2} \\mathrm{t}}{\\mathrm{L}}} \\cdot \\frac{\\mathrm{R}_{2}}{\\mathrm{~L}}=\\frac{\\mathrm{E}}{\\mathrm{L}} \\mathrm{e}^{-\\frac{\\mathrm{R}_{2} \\mathrm{t}}{\\mathrm{L}}} \\\\ &\\therefore \\mathrm{V}_{\\mathrm{L}}=\\mathrm{L} \\frac{\\mathrm{di}}{\\mathrm{dt}}=\\mathrm{Ee}^{-\\frac{\\mathrm{R}_{2} \\mathrm{t}}{\\mathrm{L}}} \\\\ &=12 \\mathrm{e}^{-\\frac{2 \\mathrm{t}}{400 \\times 10^{-3}}}=12 \\mathrm{e}^{-5 \\mathrm{t}} \\mathrm{V} \\end{aligned}\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7af6f5bfc7ab78ae6f5",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The given lens is broken into four parts and rearranged as shown. If the initial focal length is $f$ then after rearrangement the equivalent focal length is-\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/iaDcJLPT7cdlw7MhByr5aEMjKOw_fw4MqXt7of4IIWM.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "7kbGb",
+              "text": "$f$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "UbpK1",
+              "text": "$f / 2$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "AJ0cy",
+              "text": "$f / 4$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "8fIbI",
+              "text": "$4 f$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Cutting a lens in transverse direction doubles their focal length i.e. $2 f$. Using the formula of equivalent focal length, $\\frac{1}{f}=\\frac{1}{f_{1}}+\\frac{1}{f_{2}}+\\frac{1}{f_{3}}+\\frac{1}{f_{4}}$\r\n\r\nWe get equivalent focal length as $f / 2$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7906f5bfc7ab78ae5f5",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "A thin convergent glass lens $\\left(\\mu_{g}=1.5\\right)$ has a power of $+5.0 \\mathrm{D}$. When this lens is immersed in a liquid of refractive index $\\mu,$ it acts as a divergent lens of focal length $100 \\mathrm{~cm}$. The value of $\\mu$ must be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Y4ldx",
+              "text": "$4 / 3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZeJYf",
+              "text": "$5 / 3$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "IFU0v",
+              "text": "$5 / 4$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "tUM2y",
+              "text": "$6 / 5$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\frac{\\mathrm{P}_{\\mathrm{a}}}{\\mathrm{P}_{1}}=\\frac{\\left(\\frac{\\mu_{\\mathrm{g}}}{\\mu_{\\mathrm{a}}}-1\\right)}{\\left(\\frac{\\mu_{\\mathrm{g}}}{\\mu_{1}}-1\\right)}=\\frac{+5}{-100 / 100}=-5$\n$-5\\left(\\frac{\\mu_{\\mathrm{g}}}{\\mu_{1}}-1\\right)=\\frac{\\mu_{\\mathrm{g}}}{\\mu_{\\mathrm{a}}}-1$\n$\\frac{1.5}{\\mu_{1}}-1=\\frac{-1}{5}(1.5-1)=-0.1$\n$$\n\\begin{array}{ll}\\mu_{1}=\\frac{1.5}{0.9}=\\frac{5}{3}\\end{array}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "topicId": "64c0e85a6f5bfc7ab78aed36",
+      "title": "Combination of Lens and Mirrors",
+      "totalQuestions": 4,
+      "questions": [
+        {
+          "_id": "64c0e82f6f5bfc7ab78aeb53",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "An achromatic convergent doublet of two lense in contact has a power of $+5 \\mathrm{D}$. The power of converging lens is $+6 \\mathrm{D}$. The ratio of the dispersive power of the convergent and divergent lenses is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "xfBub",
+              "text": "\r\n$3: 7$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "JnoZl",
+              "text": "\r\n$2: 3$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "3yGwO",
+              "text": "\r\n$1: 5$\r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "dxgNb",
+              "text": "\r\n$5: 3$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "- The condition of achromatism is $W_1 P_1+W_2 P_2=0$\r\n$$\r\n\\begin{array}{rlrl}\r\n\\Rightarrow & W_1 P_1 & =-W_2 P_2 \\\\\r\n\\Rightarrow & & \\frac{W_1}{W_2} & =-\\frac{P_2}{P_1}\r\n\\end{array}\r\n$$\r\nNow, $\\quad P_1+P_2=4 \\mathrm{D}$\r\nbut, Power of converging lens,\r\n$$\r\nP_1=5 \\mathrm{D}\r\n$$\r\n$\\because$ Power of diverging lens\r\n$$\r\n\\begin{aligned}\r\nP_2 & =4 \\mathrm{D}-P_1 \\\\\r\n& =4 \\mathrm{D}-5 \\mathrm{D}=-\\mathrm{D}\r\n\\end{aligned}\r\n$$\r\n[From ii]\r\n$\\therefore$ From Eq. (i), we have\r\n$$\r\n\\frac{W_1}{W_2}=-\\frac{P_2}{P_1}=\\frac{-(-D)}{5 D}=\\frac{1}{5} \\Rightarrow \\frac{W_1}{W_2}=\\frac{1}{5}\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7e76f5bfc7ab78ae8dd",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "A plano-convex lens fits exactly into a plano-concave lens. Their plane surfaces are parallel to each other. If lenses are made of different materials of refractive indices <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#956;</mi><mn>1</mn></msub></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#956;</mi><mn>2</mn></msub><mo>,</mo><mi>R</mi></math> is the radius of curvature of the curved surface of the lenses, then the focal length of combination is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Q9VdA",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi>R</mi><mrow><mn>2</mn><mfenced><mrow><msub><mi>&#956;</mi><mn>1</mn></msub><mo>+</mo><msub><mi>&#956;</mi><mn>2</mn></msub></mrow></mfenced></mrow></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "z58ic",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi>R</mi><mrow><mn>2</mn><mfenced><mrow><msub><mi>&#956;</mi><mn>1</mn></msub><mo>-</mo><msub><mi>&#956;</mi><mn>2</mn></msub></mrow></mfenced></mrow></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "oB8GY",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi>R</mi><mfenced><mrow><msub><mi>&#956;</mi><mn>1</mn></msub><mo>-</mo><msub><mi>&#956;</mi><mn>2</mn></msub></mrow></mfenced></mfrac></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "1Oelg",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>2</mn><mi>R</mi></mrow><mrow><msub><mi>&#956;</mi><mn>1</mn></msub><mo>-</mo><msub><mi>&#956;</mi><mn>2</mn></msub></mrow></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Focal length of combination</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mi>f</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><msub><mi>f</mi><mn>1</mn></msub></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>f</mi><mn>2</mn></msub></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8230;</mo><mfenced><mi mathvariant=\"normal\">i</mi></mfenced></math></p><p>Using lens maker&#39;s formula&nbsp;<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><msub><mi>f</mi><mn>2</mn></msub></mfrac><mo>=</mo><mfenced><mrow><msub><mi>&#956;</mi><mn>2</mn></msub><mo>-</mo><mn>1</mn></mrow></mfenced><mfenced><mrow><mfrac><mn>1</mn><mrow><mo>-</mo><mi>R</mi></mrow></mfrac><mo>-</mo><mfrac><mn>1</mn><mo>&#8734;</mo></mfrac></mrow></mfenced><mo>=</mo><mo>-</mo><mfrac><mfenced><mrow><msub><mi>&#956;</mi><mn>2</mn></msub><mo>-</mo><mn>1</mn></mrow></mfenced><mi>R</mi></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><msub><mi>f</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfenced><mrow><msub><mi>&#956;</mi><mn>1</mn></msub><mo>-</mo><mn>1</mn></mrow></mfenced><mfenced><mrow><mfrac><mn>1</mn><mo>&#8734;</mo></mfrac><mo>-</mo><mfrac><mn>1</mn><mrow><mo>-</mo><mi>R</mi></mrow></mfrac></mrow></mfenced><mo>=</mo><mfrac><mrow><msub><mi>&#956;</mi><mn>1</mn></msub><mo>-</mo><mn>1</mn></mrow><mi>R</mi></mfrac></math></p><p>or&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><msub><mi>f</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><mfenced><mrow><msub><mi>&#956;</mi><mn>1</mn></msub><mo>-</mo><mn>1</mn></mrow></mfenced><mi>R</mi></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><msub><mi>f</mi><mn>2</mn></msub></mfrac><mo>=</mo><mo>-</mo><mfrac><mfenced><mrow><msub><mi>&#956;</mi><mn>2</mn></msub><mo>-</mo><mn>1</mn></mrow></mfenced><mi>R</mi></mfrac></math></p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/f477415a-ba04-43a0-b7a5-9bdb81b2bf33-image.png\" style=\"width: 180px; height: 242px;\" /></p><p>Putting these values in Equation&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">i</mi><mo>)</mo></math>, we get</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mfrac><mn>1</mn><mi>f</mi></mfrac><mo>=</mo><mfrac><mfenced><mrow><msub><mi>&#956;</mi><mn>1</mn></msub><mo>-</mo><mn>1</mn></mrow></mfenced><mi>R</mi></mfrac><mo>-</mo><mfrac><mfenced><mrow><msub><mi>&#956;</mi><mn>2</mn></msub><mo>-</mo><mn>1</mn></mrow></mfenced><mi>R</mi></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mfrac><mn>1</mn><mi>f</mi></mfrac><mo>=</mo><mfrac><mfenced><mrow><msub><mi>&#956;</mi><mn>1</mn></msub><mo>-</mo><mn>1</mn><mo>-</mo><msub><mi>&#956;</mi><mn>2</mn></msub><mo>+</mo><mn>1</mn></mrow></mfenced><mi>R</mi></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mfrac><mn>1</mn><mi>f</mi></mfrac><mo>=</mo><mfrac><mrow><msub><mi>&#956;</mi><mn>1</mn></msub><mo>-</mo><msub><mi>&#956;</mi><mn>2</mn></msub></mrow><mi>R</mi></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>=</mo><mfrac><mi>R</mi><mfenced><mrow><msub><mi>&#956;</mi><mn>1</mn></msub><mo>-</mo><msub><mi>&#956;</mi><mn>2</mn></msub></mrow></mfenced></mfrac></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ca6f5bfc7ab78ae7e5",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "A planoconvex lens fits exactly into a planoconcave lens. Their plane surface are parallel to each other. If the lenses are made of different materials of refractive indices $\\mu_{1} \\& \\mu_{2}$ and $R$ is the radius of curvature of the curved surface of the lenses, then focal length of combination is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "c1Zrk",
+              "text": "$\\frac{R}{\\mu_{1}-\\mu_{2}}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "no9SD",
+              "text": "$\\frac{2 R}{\\mu_{1}-\\mu_{2}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "J933M",
+              "text": "$\\frac{R}{2\\left(\\mu_{1}-\\mu_{2}\\right)}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "puVSr",
+              "text": "$\\frac{R}{2-\\left(\\mu_{1}+\\mu_{2}\\right)}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "If F be the equivalent focal length, then\r\n\r\n$$\r\n\r\n\\begin{aligned}\r\n\r\n\\frac{1}{F}=\\frac{1}{f_{1}}+\\frac{1}{f_{2}} \\quad \\frac{1}{F}=\\left(\\mu_{1}-1\\right)\\left(\\frac{1}{\\infty}+\\frac{1}{R}\\right) \\\\\r\n\r\n+\\left(\\mu_{2}-1\\right)\\left(\\frac{1}{-R}-\\frac{1}{\\infty}\\right)=\\frac{\\mu_{1}-\\mu_{2}}{R} \\\\\r\n\r\nF=\\frac{R}{\\mu_{1}-\\mu_{2}}\r\n\r\n\\end{aligned}\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7746f5bfc7ab78ae4fa",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "A plano-convex lens of focal length $30 \\mathrm{~cm}$ has its plane surface silvered An object is placed $40 \\mathrm{~cm}$ from the lens on the convex side. The distance of the image from the lens is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "EJ0Nc",
+              "text": "$18 \\mathrm{~cm}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6Gexy",
+              "text": "$24 \\mathrm{~cm}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "BFqfs",
+              "text": "$30 \\mathrm{~cm}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2j6qT",
+              "text": "$40 \\mathrm{~cm}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution available",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "topicId": "64c0e85b6f5bfc7ab78aed3b",
+      "title": "Prism and Dispersion of Light",
+      "totalQuestions": 3,
+      "questions": [
+        {
+          "_id": "65b7b87a97ae24e9e2db8cc3",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "A thin prism $P_1$ with an angle $6^{\\circ}$ and made of glass of refractive index 1.54 is combined with another prism $\\mathrm{P}_2$ made from glass of refractive index 1.72 to produce dispersion without average deviation. The angle of prism $\\mathrm{P}_2$ is :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "gn182",
+              "text": "$6^{\\circ}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0QZRL",
+              "text": "$1.3^{\\circ}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CBTcA",
+              "text": "$7.8^{\\circ}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3nGuf",
+              "text": "$4.5^{\\circ}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Angle of deviation for first prism<br />$\\delta_1=A_1\\left(\\mu_1-1\\right)=6(1.54-1)$<br />Angle of deviation for second prism<br />$\\begin{aligned}<br />& \\delta_2=A_2\\left(\\mu_2-1\\right) \\\\<br />& =A_2(1.72-1)<br />\\end{aligned}$<br />For dispersion without deviation<br />$\\begin{aligned}<br />& \\delta_1=\\delta_2 \\\\<br />& \\Rightarrow 6^{\\circ}(1.54-1)=\\mathrm{A}_2(1.72-1) \\\\<br />& \\Rightarrow \\mathrm{A}_2=\\frac{6^{\\circ} \\times 0.54}{0.72}=\\frac{18^{\\circ}}{4}=4.5^{\\circ}<br />\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7e56f5bfc7ab78ae8c7",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The focal length of a thin convex lens for red and blue rays are <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>100</mn><mo>&#160;</mo><mi>cm</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>96</mn><mo>.</mo><mn>8</mn><mo>&#160;</mo><mi>cm</mi></math> respectively. Then, the dispersive power of the material of the lens is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ZnuVG",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>968</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "hsTVL",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>98</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "DMrZo",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>0325</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "J8FcG",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>325</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<blockquote><p>Dispersive power is ratio of angular dispersion and mean deviation.</p><p>It can be written in terms of focal length as,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#969;</mi><mo>=</mo><mfrac><mrow><msub><mi>f</mi><mi>r</mi></msub><mo>-</mo><msub><mi>f</mi><mi>b</mi></msub></mrow><msub><mi>f</mi><mi>y</mi></msub></mfrac></math></p><p>Here&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>f</mi><mi>r</mi></msub><mo>=</mo><mn>100</mn><mo>&#160;</mo><mi>cm</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>f</mi><mi>b</mi></msub><mo>=</mo><mn>96</mn><mo>.</mo><mn>8</mn><mo>&#160;</mo><mi>cm</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>f</mi><mi>y</mi></msub><mo>=</mo><msqrt><msub><mi>f</mi><mi>b</mi></msub><mo>&#215;</mo><msub><mi>f</mi><mi>r</mi></msub></msqrt></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><msqrt><mn>96</mn><mo>.</mo><mn>8</mn><mo>&#215;</mo><mn>100</mn></msqrt></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8776;</mo><mn>98</mn><mo>.</mo><mn>34</mn><mo>&#160;</mo><mi>cm</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> Dispersive power</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#969;</mi><mo>=</mo><mfrac><mrow><msub><mi>f</mi><mi>r</mi></msub><mo>-</mo><msub><mi>f</mi><mi>b</mi></msub></mrow><msub><mi>f</mi><mi>y</mi></msub></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mn>100</mn><mo>-</mo><mn>96</mn><mo>.</mo><mn>8</mn></mrow><mrow><mn>98</mn><mo>.</mo><mn>34</mn></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8776;</mo><mn>0</mn><mo>.</mo><mn>0325</mn></math><br />Hence, the dispersive power of the material of the lens is&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>0325</mn></math>.</p></blockquote>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7da6f5bfc7ab78ae865",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "For the angle of minimum deviation of a prism to be equal to its refracting angle, the prism must be made of a material whose refractive index:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "wWxXV",
+              "text": "lies between $\\sqrt{2}$ and 1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "tkzLe",
+              "text": "lies between 2 and $\\sqrt{2}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Fkpgb",
+              "text": "is less than 1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "kpvoA",
+              "text": "is greater than 2",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/vBf9AydqoolnOnr1k-AKjQXgtl9K0dyNQLyAHlqZttw.original.fullsize.png\"><br>\r\n\r\nThe angle of minimum deviation is given as\r\n\r\n$$\r\n\r\n\\delta_{\\min }=i+e-A\r\n\r\n$$\r\n\r\nfor minimum deviation\r\n\r\n$$\r\n\r\n\\begin{aligned}\r\n\r\n\\delta_{\\min } &=A \\text { then } \\\\\r\n\r\n2 A &=i+e\r\n\r\n\\end{aligned}\r\n\r\n$$\r\n\r\nin case of $\\delta_{\\min } i=e$\r\n\r\n$$\r\n\r\n\\begin{aligned}\r\n\r\n2 A &=2 i \\quad r_{1}=r_{2}=\\frac{A}{2} \\\\\r\n\r\ni &=A=90^{\\circ}\r\n\r\n\\end{aligned}\r\n\r\n$$\r\n\r\nfrom smell's law\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n1 \\sin i=n \\sin r_{1} \\\\\r\n\r\n\\sin A=n \\sin \\frac{A}{2} \\\\\r\n\r\n2 \\sin \\frac{A}{2} \\cos \\frac{A}{2}=n \\sin \\frac{A}{2} \\\\\r\n\r\n2 \\cos \\frac{A}{2}=n\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\text { when } \\quad A=90^{\\circ}=i_{\\min } \\\\\r\n\r\n\\text { then } \\quad n_{\\min }=\\sqrt{2} \\\\\r\n\r\ni=A=0 \\quad n_{\\max }=2\r\n\r\n\\end{array}\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "topicId": "64c0e85a6f5bfc7ab78aed37",
+      "title": "Optical Instruments",
+      "totalQuestions": 6,
+      "questions": [
+        {
+          "_id": "67726d11c49e8ef28ee2b3ff",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "The magnifying power of a telescope is 9 . When it is adjusted for parallel rays, the distance between the objective and eyepiece is 20 cm . The ratio of focal length of objective lens to focal length of eyepiece is found to be $m$, then the value of $m$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "RLDvJ",
+              "text": "8",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "K3btn",
+              "text": "7",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "W8xOC",
+              "text": "9",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "6biJ3",
+              "text": "12",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Magnifying power of telescope,m = 9\n$\\begin{array}{ll}\n\\Rightarrow & \\frac{f_0}{f_e}=9 \\\\\n\\Rightarrow & f_0=9 f_e \\ldots(i)\n\\end{array}$\nDistance between objective and eyepiece is given as\n$\\begin{aligned}\n& f_0+f_e=20 \\ldots(ii)\\\\\n& \\Rightarrow \\quad 9 f_e+f_e=20 \\\\\n& \\text { [from Eq. (i)] } \\\\\n& \\Rightarrow \\quad 10 f_e=20 \\\\\n& \\Rightarrow \\quad f_e=2 \\mathrm{~cm}\n\\end{aligned}$\n$\\begin{aligned} & \\therefore \\text { From Eq. (i), } f_0=9 \\times 2=18 \\mathrm{~cm} \\\\ & \\therefore \\quad \\frac{f_0}{f_e}=\\frac{18}{2}=9\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726d05c49e8ef28ee2b3a0",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "In normal adjustment, for a refracting telescope, the distance between objective and eye piece is 30 cm . The focal length of the objective, when the angular magnification of the telescope is 2 , will be:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ApduF",
+              "text": "20 cm",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "N6NKX",
+              "text": "30 cm",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Ezu2B",
+              "text": "10 cm",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "I7zc8",
+              "text": "15 cm",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\because \\mathrm{f}_0+\\mathrm{f}_{\\mathrm{e}}=30$\nAnd magnification, $\\mathrm{m}=\\frac{\\mathrm{f}_0}{\\mathrm{f}_e}$\n$2=\\frac{\\mathrm{f}_0}{\\mathrm{f}_{\\mathrm{e}}} \\Rightarrow \\mathrm{f}_0=2 \\mathrm{f}_{\\mathrm{e}} \\Rightarrow \\mathrm{f}_0+\\frac{\\mathrm{f}_0}{2}=30 \\therefore \\mathrm{f}_0=20cm$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87097ae24e9e2db8c5c",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "In a reflecting telescope, a secondary mirror is used to:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "uZsOS",
+              "text": "reduce the problem of mechanical support",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "xvWZv",
+              "text": "remove spherical aberration",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "RzFpb",
+              "text": "make chromatic aberration zero",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "LZiLv",
+              "text": "move the eyepiece outside the telescopic tube",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "(d) To redirect the light that enters the telescope to the eyepiece or camera. The primary mirror of a reflecting telescopes gathers the light and reflects towards the secondary mirror which then reflect the light towards the eyepiece allowing the observer to see image.<br />It has advantage of a large focal length in a short telescope.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7bc6f5bfc7ab78ae76c",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The magnifying power of a telescope is $9 .$ When it is adjusted for parallel rays, the distance between the objective and the eye piece is found to be $20 \\mathrm{~cm}$. The focal length of lenses are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "qjN2Q",
+              "text": "$18 \\mathrm{~cm}, 2 \\mathrm{~cm}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "CSPOT",
+              "text": "$11 \\mathrm{~cm}, 9 \\mathrm{~cm}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "W0xt9",
+              "text": "$10 \\mathrm{~cm}, 10 \\mathrm{~cm}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "agQjf",
+              "text": "$15 \\mathrm{~cm}, 5 \\mathrm{~cm}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\frac{\\mathrm{f}_{0}}{\\mathrm{f}_{\\mathrm{e}}}=9, \\quad \\therefore \\mathrm{f}_{0}=9 \\mathrm{f}_{\\mathrm{e}}$\r\n\r\nAlso $\\mathrm{f}_{0}+\\mathrm{f}_{\\mathrm{e}}=20(\\because$ final image is at infinity $)$ $9 \\mathrm{f}_{\\mathrm{e}}+\\mathrm{f}_{\\mathrm{e}}=20, \\mathrm{f}_{\\mathrm{e}}=2 \\mathrm{~cm}, \\quad \\therefore \\mathrm{f}_{0}=18 \\mathrm{~cm}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7bc6f5bfc7ab78ae76b",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Resolving power of the telescope will be more, if the diameter of the objective is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "47LPY",
+              "text": "larger",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "vm42A",
+              "text": "smaller",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "PYNLD",
+              "text": "it does not depends on diameter",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "px2IR",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7836f5bfc7ab78ae57b",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "The diameter of the objective of a telescope is a, its magnifying power is $\\mathrm{m}$ and wavelength of light is $\\lambda,$ The resolving power of the telescope is:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ybm3p",
+              "text": "$(1.22 \\lambda) / \\mathrm{a}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "TLY0b",
+              "text": "$(1.22 \\mathrm{a}) / \\lambda$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4GueX",
+              "text": "$\\lambda \\mathrm{m} /(1.22 \\mathrm{a})$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Met1g",
+              "text": "a/(1.22\\lambda)",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution available",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

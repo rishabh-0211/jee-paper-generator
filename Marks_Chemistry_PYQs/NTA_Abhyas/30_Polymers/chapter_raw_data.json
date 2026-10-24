@@ -1,0 +1,2014 @@
+{
+  "index": 30,
+  "chapterId": "61602517cce07a382d4595d9",
+  "chapter": "Polymers",
+  "exam": "NTA Abhyas (JEE Main)",
+  "totalTopics": 2,
+  "totalQuestions": 33,
+  "downloadTime": "2026-10-08 20:05:38",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "6aa3ab79aa8dc1ff68177efc",
+      "title": "Classification of Polymers",
+      "totalQuestions": 14,
+      "questions": [
+        {
+          "_id": "6151e863e64b4264f16ad7f4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "103",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Natural rubber belongs to which class of polymer",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "0n9YZ",
+              "text": "Addition polymer",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "MjUn1",
+              "text": "Condensation polymer",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "owXUb",
+              "text": "Co-ordination polymer",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qFMhg",
+              "text": "Co-polymer",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Natural rubber is addition polymer of isoprene (2-methyl-1, 3-butadiene)<br /><br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/667070.PNG\" style=\"max-width:100%; object-fit:contain\" style=\"width: 474px; height: 77px;\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863e3df7e0ff7d1f5e0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "46",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Under hydrolytic conditions, the compounds used for preparation of linear polymer and for chain termination, respectively, are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "g7V7S",
+              "text": "<math><mtext>C</mtext><msub><mrow><mtext>H</mtext></mrow><mrow><mn>3</mn></mrow></msub><mtext>SiC</mtext><msub><mrow><mtext>l</mtext></mrow><mrow><mn>3</mn></mrow></msub></math> and <math><msub><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">i</mi><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>4</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "c02WJ",
+              "text": "<math><msub><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>2</mn></mrow></msub></math> and  <math><msub><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>3</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">l</mi></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "MNEG2",
+              "text": "<math><msub><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>2</mn></mrow></msub></math>  and  <math><mtext>C</mtext><msub><mrow><mtext>H</mtext></mrow><mrow><mn>3</mn></mrow></msub><mtext>SiC</mtext><msub><mrow><mtext>l</mtext></mrow><mrow><mn>3</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "aa7Yc",
+              "text": "<math><mtext>SiC</mtext><msub><mrow><mtext>l</mtext></mrow><mrow><mn>4</mn></mrow></msub></math>  and  <math><msub><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>3</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">l</mi></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Under hydrolytic conditions, the compound used for the preparation of linear polymer and for chain termination are <math><mo>(</mo><mtext>C</mtext><msub><mrow><mtext>H</mtext></mrow><mrow><mn>3</mn></mrow></msub><msub><mrow><mo>)</mo></mrow><mrow><mn>2</mn></mrow></msub><mtext>SiC</mtext><msub><mrow><mtext>l</mtext></mrow><mrow><mn>2</mn></mrow></msub></math> and <math><mo>(</mo><mtext>C</mtext><msub><mrow><mtext>H</mtext></mrow><mrow><mn>3</mn></mrow></msub><msub><mrow><mo>)</mo></mrow><mrow><mn>3</mn></mrow></msub><mtext>SiCl</mtext></math> respectively.<br /><br />The hydrolysis of dimethyldichlorosilane gives dimethyl silane diol which on condensation polymerization forms a linear polymer.<br /><br />The hydrolysis of trimethylchlorosilane gives trimethyl silanol which can not undergo polymerization as it contains only one -OH group so it is used for chain termination.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863e25f5990c1337da7",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "08",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is thermoplastic?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "uuCDA",
+              "text": "Dacron",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "n75hk",
+              "text": "Nylon",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "UGFy3",
+              "text": "Polythene",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "rMn92",
+              "text": "All of these",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Polythene is thermoplasitc.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863ddbf14cacb711509",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "13",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Condensation polymerization among the following polymer is:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "EpiBi",
+              "text": "Teflon",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "AUHUF",
+              "text": "Polystyrene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "k8JGJ",
+              "text": "PVC",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "b5tX0",
+              "text": "Dacron",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Dacron is condensation polymer of Glycol and Terphthalic acid.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863d970c783bbf1af16",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "31",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Preparation of Bakelite proceeds via reactions",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "UGgIA",
+              "text": "Electrophilic substitution and dehydration",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "JOSpN",
+              "text": "Nucleophilic addition and dehydration",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "bB0DG",
+              "text": "Electrophilic addition and dehydration",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iguoo",
+              "text": "Condensation and elimination",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Formation of Bakelite follows electrophillic substitution of phenol and formaldehyde followed by dehydration.<br /><br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/634774_5.JPG\" style=\"width: 621px; height: 326px;\" /><br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/634774_6.JPG\" style=\"width: 257px; height: 192px;\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863d67feadca22417b4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "104",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which among the given below is a natural biodegradable polymer?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ChXL6",
+              "text": "Nylon-2-Nylon-6",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "D0sTd",
+              "text": "Poly lactic acid polymer",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Cg5aY",
+              "text": "Cellulose",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ycgzN",
+              "text": "Nylon-2 polymer",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Cellulose is the natural fibre and biodegradable polymer while Nylon-2-Nylon-6 and Poly lactic acid polymer is synthetic biodegradable. Nylon-2 polymer synthetic polymer which is not biodegradable.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863d3506dc1a384d5d4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "61",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Arrange the following polymers in an increasing order of intermolecular forces; fibre, plastic, elastomer.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "synxg",
+              "text": "Elastomer < Fibre < Plastic",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "1T90u",
+              "text": "Elastomer < Plastic < Fibre",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "IwvU1",
+              "text": "Plastic < Elastomer < Fibore",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wFfg5",
+              "text": "Fibre < Elastomer < Plastic",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Elastomers or rubbers have the weakest intermolecular forces of attraction followed by plastics while fibres have the strongest forces of attraction. Thus, the increasing intermolecular forces of attraction follows the order<br/><br/>elastomer < plastic < fibre.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8639e6b2655421ecf73",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "89",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The following chain-growth polymer is made up of how many difluoroethylene monomer units ?<br />\r<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/d3b79601-ae53-4495-b1f5-c2d4ea94d65b.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"width:3.48333in;height:1.15in\" />",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "4.00",
+          "solution": {
+            "text": "4 momomer units<br /><img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/a4a5b7a9-cd49-441f-848d-e0281a2de9b2.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"width:3.88333in;height:1.75833in\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8637deab1b64e6c3e7d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "67",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Match the column I with column II and mark the appropriate choice.<br/><br/><table border=\"1\"><tr><td></td><td> Column I</td><td></td><td> Column II</td></tr><tr><td> (p)</td><td> Natural polymer</td><td> (i)</td><td> Rayon</td></tr><tr><td> (q)</td><td> Addition polymer</td><td> (ii)</td><td> Bakelite</td></tr><tr><td> (r)</td><td> Copolymer</td><td> (iii)</td><td> Silk</td></tr><tr><td> (s)</td><td> Semi-synthetic polymer</td><td> (iv)</td><td> Neoprene</td></tr></table>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "h5lXi",
+              "text": "(p)-(i), (q)-(ii), (r)-(iv), (s)-(iii)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "9lxcU",
+              "text": "(p)-(iii), (q)-(iv), (r)-(ii), (s)-(i)",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "FTk3x",
+              "text": "(p)-(ii), (q)-(iii), (r)-(i), (s)-(iv)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4LTEo",
+              "text": "(p)-(iv), (q)-(i), (r)-(iii), (s)-(ii)",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<table border=\"1\"><tr><td></td><td> Column I</td><td></td><td> Column II</td></tr><tr><td> (p)</td><td> Natural polymer</td><td> (iii)</td><td> Silk</td></tr><tr><td> (q)</td><td> Addition polymer</td><td> (iv)</td><td> Neoprene</td></tr><tr><td> (r)</td><td> Copolymer</td><td> (ii)</td><td> Bakelite</td></tr><tr><td> (s)</td><td> Semi-synthetic polymer</td><td> (i)</td><td> Rayon</td></tr></table>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8635b0222eaf5bf29b9",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "98",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which is correct about 'Rayon'?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "MAtFa",
+              "text": "Natural silk",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "LNMxp",
+              "text": "Artificial silk",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "00qtO",
+              "text": "Natural plastic or rubber",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "s89Ky",
+              "text": "Synthetic plastic",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "'Rayon' is semi-synthetic fibre which consists of purified cellulose in the form of long threads. Rayon resembles silk in appearance. Hence called as artificial silk.<br /><br /><math> <mrow>  <mtext>Cellulose</mtext><munderover>   <mo>&#x2192;</mo>   <mrow>    <msub>     <mrow>      <mtext>CS</mtext></mrow>     <mtext>2</mtext>    </msub>    </mrow>   <mrow>    <mtext>NaOH</mtext></mrow>  </munderover>  <munder>   <mrow>    <mtext>Viscose</mtext></mrow>   <mrow>    <mtext>(Syrup</mtext><mtext>&#x2004;</mtext><mtext>like</mtext><mtext>&#x2004;</mtext><mtext>liquid)</mtext></mrow>  </munder>  <munderover>   <mo>&#x2192;</mo>   <mtable columnalign='left'>    <mtr>     <mtd>      <mrow>       <mtext>Spinneret</mtext></mrow>     </mtd>    </mtr>    <mtr>     <mtd>      <mrow>       <mtext>into</mtext><mtext>&#x2004;</mtext><mtext>dil</mtext><mtext>.</mtext><mtext>&#x2004;</mtext><msub>        <mtext>H</mtext>        <mtext>2</mtext>       </msub>       <msub>        <mrow>         <mtext>SO</mtext></mrow>        <mtext>4</mtext>       </msub>       </mrow>     </mtd>    </mtr>   </mtable>      <mrow>    <mtext>Pass</mtext><mtext>&#x2004;</mtext><mtext>through</mtext></mrow>  </munderover>  <munder>   <mrow>    <mtext>Rayon</mtext></mrow>   <mrow>    <mtext>(Fine</mtext><mtext>&#x2004;</mtext><mtext>silken</mtext><mtext>&#x2004;</mtext><mtext>thread)</mtext></mrow>  </munder>  </mrow></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8635698a9fa3ce92e42",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "47",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The intermediate never formed during chain growth polymerization is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "xyVLw",
+              "text": "<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/58846_a.PNG\" style=\"width: 90px; height: 116px;\" />",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wH6Ot",
+              "text": "<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/58846_b.PNG\" style=\"height: 113px; width: 100px;\" />",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "TnNxt",
+              "text": "<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/412341afdgaas.png\" style=\"width: 100px; height: 85px;\" />",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "oWA1V",
+              "text": "<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/58846_d.PNG\" style=\"width: 100px; height: 106px;\" />",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Chain growth polymerisation can be free radical, cationic, anionic polymerisation.<br />Carbenes are never produced during chain growth polymerisation.<br />&nbsp;",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8633b2d864d5b790d7a",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "73",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "How many of these polymers are condensation polymers?<br />\r<br />\rNylonn-6,6, Dacron, Bakelite, Teflon, Buna-N, Nylon-6, Glyptal, Polythene",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "5",
+          "solution": {
+            "text": "Here Nylonn-6,6, Dacron, Bakelite, Nylon-6 and Glyptal are condensation polymers while rest four are addition polymers.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86332129c9c8000cd55",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "35",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Polyvinyl alcohol is an important polymer. The structure is given below<br />\r<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/wzdbvrptrvosufawdxwhqdybgedmtbdrkyzidoowjgizthfhfa.jpeg\" /><br />\rIt is prepared by polymerization of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "vU0Io",
+              "text": "<math><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">H</mi><mo>-</mo><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "eE1O8",
+              "text": "<math><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">H</mi><mo>-</mo><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></math>, followed by hydrolysis",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "lkw9x",
+              "text": "<math><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">H</mi><mo>-</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">N</mi></math>, followed by hydrolysis",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "rNRPO",
+              "text": "<math><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">H</mi><mo>-</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></math>, followed by hydrolysis",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "PVA is prepared by hydrolysis of polyvinyl acetate. Other vinyl ester-derived polymers are sometimes used, with formate, chloroacetate groups instead of acetate. The conversion of the polyesters is usually conducted by base-catalysed transesterification with ethanol:<br /><math><msub><mrow><mfenced close=\"]\" open=\"[\" separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">H</mi><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">A</mi><mi mathvariant=\"normal\">c</mi></mrow></mfenced></mrow></mfenced></mrow><mrow><mi mathvariant=\"normal\">n</mi></mrow></msub><mo>+</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>5</mn></mrow></msub><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi><mo>→</mo><msub><mrow><mfenced close=\"]\" open=\"[\" separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">H</mi><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></mrow></mfenced></mrow></mfenced></mrow><mrow><mi mathvariant=\"normal\">n</mi></mrow></msub><mo>+</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>5</mn></mrow></msub><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">A</mi><mi mathvariant=\"normal\">c</mi></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86318312cb992e4bb9e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "76",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Acrilan fibre used for cloth, carpets and blankets, it the polymer of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "dsVG5",
+              "text": "acrylonitrile",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "5QZui",
+              "text": "ethylacrylate",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nFQzS",
+              "text": "styrene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8U6n1",
+              "text": "monochlorotrifluoro ethane",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Acrilan fibre used for cloth, carpets and blankets, it the polymer of acrylonitrile<br/><br/> <math><munder><mrow><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mover><mrow><mover><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">H</mi></mrow><mrow><mo>|</mo><mtext>  </mtext></mrow></mover></mrow><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">N</mi></mrow></mover></mrow><mrow><mfenced separators=\"|\"><mrow><mtext>Acrylonitrile</mtext></mrow></mfenced></mrow></munder><mo>→</mo><munder><mrow><msub><mrow><mfenced close=\"]\" open=\"[\" separators=\"|\"><mrow><mo>-</mo><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>-</mo><mover><mrow><mover><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">H</mi></mrow><mrow><mo>|</mo><mtext>  </mtext></mrow></mover></mrow><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">N</mi></mrow></mover><mo>-</mo></mrow></mfenced></mrow><mrow><mi mathvariant=\"normal\">n</mi></mrow></msub></mrow><mrow><mfenced separators=\"|\"><mrow><mtext>Polyacrylonitrile</mtext></mrow></mfenced></mrow></munder></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "6aa3ab79aa8dc1ff68177efd",
+      "title": "Preparation and Properties of Polymers",
+      "totalQuestions": 19,
+      "questions": [
+        {
+          "_id": "6151e863ddbf14cacb711509",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "13",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Condensation polymerization among the following polymer is:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "EpiBi",
+              "text": "Teflon",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "AUHUF",
+              "text": "Polystyrene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "k8JGJ",
+              "text": "PVC",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "b5tX0",
+              "text": "Dacron",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Dacron is condensation polymer of Glycol and Terphthalic acid.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863d970c783bbf1af16",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "31",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Preparation of Bakelite proceeds via reactions",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "UGgIA",
+              "text": "Electrophilic substitution and dehydration",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "JOSpN",
+              "text": "Nucleophilic addition and dehydration",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "bB0DG",
+              "text": "Electrophilic addition and dehydration",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iguoo",
+              "text": "Condensation and elimination",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Formation of Bakelite follows electrophillic substitution of phenol and formaldehyde followed by dehydration.<br /><br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/634774_5.JPG\" style=\"width: 621px; height: 326px;\" /><br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/634774_6.JPG\" style=\"width: 257px; height: 192px;\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863d8cd7c4c195ec540",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "52",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which one of the following is used to make non-stick cookware?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "9F19V",
+              "text": "poly-ethylene terephthalate",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "HlhLo",
+              "text": "polyetrafluoroethylene",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "5MzdD",
+              "text": "PVC",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Z4kG3",
+              "text": "polystyrene",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Polytetrafluoroethylene or teflon is a tough material, resistance to heat and bad conductor of electricity. It is used for coating the cookware to make them non-sticky.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863cf5478e2e698b5ef",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "49",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is not correctly matched?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "O1I1i",
+              "text": "Neoprene:<br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/641027_1.JPG\" style=\"width: 258px; height: 67px;\" />",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "eyr5l",
+              "text": "Nylon-66:<br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/641027_2.JPG\" style=\"width: 321px; height: 61px;\" />",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Fmhf4",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/adfnaslfslfdsdf.png\" style=\"width: 347px; height: 158px;\" />",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "p8XgH",
+              "text": "Polymethyl methacrylate (PMMA): <math><munder><mrow><mover><mrow><mi>&nbsp;</mi><mover><mrow><munder><mrow><mo>(</mo><mo>-</mo><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>-</mo><mi mathvariant=\"normal\">C</mi><mo>-</mo><msub><mrow><mo>)</mo></mrow><mrow><mi mathvariant=\"normal\">n</mi></mrow></msub></mrow><mrow><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mo>|</mo></mrow></munder></mrow><mrow><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mo>|</mo></mrow></mover></mrow><mrow><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></mrow></mover></mrow><mrow><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></mrow></munder></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/txnsdakwylfbiqdrjasmucxmzawamzkvmkvexmtljpqtepvosn.png\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863b54889283b7a35f0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "77",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "A polymer containing nitrogen is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "SdPCP",
+              "text": "Bakelite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "EpDzf",
+              "text": "Dacron",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "WybGV",
+              "text": "Rubber",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "DV9En",
+              "text": "Nylon-6,6",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Nylon-6,6 is polymer of&nbsp; COOH -(CH<sub>2</sub>)<sub>4</sub> -COOH<br /><br />Adipic acid and H<sub>2</sub>N -(CH<sub>2</sub>)<sub>6</sub> -NH<sub>2</sub>&nbsp;&nbsp; (Hexamethylenediamine)<br /><br /><math><mo>∴</mo></math>&nbsp; Nylon-6,6 has nitrogen in it.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863afda5b8a6a46b0ae",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "01",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Match the polymers in <strong>column-A</strong> with their main uses in <strong>column-B</strong> and choose the correct answer:<br />\r&nbsp;\r<table border=\"1\">\r\t<tbody>\r\t\t<tr>\r\t\t\t<td>&nbsp;</td>\r\t\t\t<td><strong>Column - A</strong></td>\r\t\t\t<td>&nbsp;</td>\r\t\t\t<td><strong>Column - B</strong></td>\r\t\t</tr>\r\t\t<tr>\r\t\t\t<td><strong>A.</strong></td>\r\t\t\t<td>Polystyrene</td>\r\t\t\t<td><strong>i.</strong></td>\r\t\t\t<td>Paints and lacquers</td>\r\t\t</tr>\r\t\t<tr>\r\t\t\t<td><strong>B.</strong></td>\r\t\t\t<td>Glyptal</td>\r\t\t\t<td><strong>ii.</strong></td>\r\t\t\t<td>Rain coats</td>\r\t\t</tr>\r\t\t<tr>\r\t\t\t<td><strong>C.</strong></td>\r\t\t\t<td>Polyvinyl chloride&nbsp;</td>\r\t\t\t<td><strong>iii.</strong></td>\r\t\t\t<td>Manufacture of toys</td>\r\t\t</tr>\r\t\t<tr>\r\t\t\t<td><strong>D.</strong></td>\r\t\t\t<td>Bakelite</td>\r\t\t\t<td><strong>iv.</strong></td>\r\t\t\t<td>Computer discs</td>\r\t\t</tr>\r\t</tbody>\r</table>\r",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "BIrB3",
+              "text": "A - iii , B - i , C - ii , D - iv",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "FTHJN",
+              "text": "A - ii , B - i , C - iii , D - iv",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "moowl",
+              "text": "A - ii , B - iv , C - iii , D - i",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "hhKsB",
+              "text": "A - iii , B - iv , C - ii , D - i",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "This is the correct order<br />&nbsp;​<table border=\"1\">\t<tbody>\t\t<tr>\t\t\t<td>&nbsp;</td>\t\t\t<td><strong>Column - A</strong></td>\t\t\t<td>&nbsp;</td>\t\t\t<td><strong>Column - B</strong></td>\t\t</tr>\t\t<tr>\t\t\t<td><strong>A.</strong></td>\t\t\t<td>Polystyrene</td>\t\t\t<td><strong>i.</strong></td>\t\t\t<td>Manufacture of toys</td>\t\t</tr>\t\t<tr>\t\t\t<td><strong>B.</strong></td>\t\t\t<td>Glyptal</td>\t\t\t<td><strong>ii.</strong></td>\t\t\t<td>Paints and lacquers</td>\t\t</tr>\t\t<tr>\t\t\t<td><strong>C.</strong></td>\t\t\t<td>Polyvinyl chloride chloride</td>\t\t\t<td><strong>iii.</strong></td>\t\t\t<td>Raincoats</td>\t\t</tr>\t\t<tr>\t\t\t<td><strong>D.</strong></td>\t\t\t<td>Bakelite</td>\t\t\t<td><strong>iv.</strong></td>\t\t\t<td>Computer discs</td>\t\t</tr>\t</tbody></table>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863add9fc705da8b363",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "56",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Dacron is continuous filament yarn used in curtains, dress fabrics and pressure fire hoses. The reaction for preparing dacron is by the combination of which of the following?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "L1uPt",
+              "text": "Hexamethylene diamene and adipic acid",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "PWu6o",
+              "text": "Caprolactum",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "o66zW",
+              "text": "Phenol and formaldehyde",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "tI4A2",
+              "text": "Ethylene glycol and terephthalic acid",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The continuous filament yarn is used in curtains, dress fabrics, high-pressure fire hoses, men's shirts, and thread. The staple fiber is ideal for mixing with wool in men's and women's suits, as well as in dress fabrics, knitted wear, and washable woven sportswear.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863a1b79fe7bb309f49",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "96",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "What is monomer for Orlon polymer",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "UXwfu",
+              "text": "Styrene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pZLU5",
+              "text": "Tetrafluoro ethylene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "y0BHF",
+              "text": "Vinyl chloride",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Xewny",
+              "text": "Acrylonitrile",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Acrylonitrile is a hard, horny and high melting material. It is used in the manufacture of oron and Acrilan fibres which are used for making clothes, carpets and blankets.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8639dfad3901cd87c9d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "78",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Melamine polymer is a copolymer of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "nXHKd",
+              "text": "melamine and acetaldehyde",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "NsmkG",
+              "text": "melamine and formaldehyde",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "EDyxE",
+              "text": "phenol and formaldehyde",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "NuSDl",
+              "text": "non of the above",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Melamine polymer is a copolymer of melamine and formaldehyde. <br/><img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/400f50f3-4e39-476f-9dc9-3589cd36f5c7.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"width:4.275in;height:1.41667in\"> <br/><img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/e99f7725-458f-44b7-bd8f-0f14e8542038.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"width:3.69167in;height:1.525in\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8636a761b4c54aa4525",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "54",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "What is the IUPAC nomenclature of isoprene monomer present in natural rubber?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "UneG8",
+              "text": "2-methyl-1, 3-butadiene",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "3lyKW",
+              "text": "1,3-Hexadiene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "yizqm",
+              "text": "2, 3-Dimethyl-1, 3-butadiene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "jvMHp",
+              "text": "2-Methyl-1, 3-pentadiene",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/fajkdfbaskjdfbaslfd.png\" style=\"width: 270px; height: 127px;\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86341788972379483a0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "46",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "On complete hydrogenation, natural rubber produces",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "utVQY",
+              "text": "ethylene-propylene copolymer",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "co1Sj",
+              "text": "vulcanised rubber",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Xkgxr",
+              "text": "polypropylene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "IAqrR",
+              "text": "polybutylene",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><munder><mrow><munder><mrow><mo>=</mo><mi mathvariant=\"normal\">C</mi><mo>-</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">H</mi></mrow><mrow><mo>|</mo><mtext>      </mtext></mrow></munder></mrow><mrow><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub><mi mathvariant=\"normal\"> </mi></mrow></munder><mo>=</mo><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>→</mo><munder><mrow><mo>(</mo><mo>-</mo><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><munder><mrow><munder><mrow><mo>-</mo><mi mathvariant=\"normal\">C</mi><mo>=</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">H</mi></mrow><mrow><mo>|</mo><mtext>       </mtext></mrow></munder><mo>-</mo></mrow><mrow><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub><mtext>  </mtext></mrow></munder><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>-</mo><msub><mrow><mo>)</mo></mrow><mrow><mi mathvariant=\"normal\">n</mi></mrow></msub></mrow><mrow><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">u</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">l</mi><mtext> rubber</mtext></mrow></munder><mover accent=\"false\"><mo>→</mo><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow><mo>/</mo><mrow><mi mathvariant=\"normal\">P</mi><mi mathvariant=\"normal\">t</mi></mrow></mrow></mrow></mover><msub><mrow><mfenced close=\"]\" open=\"[\" separators=\"|\"><mrow><mo>-</mo><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><munder><mrow><munder><mrow><mo>-</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">H</mi><mo>-</mo></mrow><mrow><mo>|</mo><mtext>   </mtext></mrow></munder></mrow><mrow><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></mrow></munder><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>-</mo><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>-</mo></mrow></mfenced></mrow><mrow><mi mathvariant=\"normal\">n</mi></mrow></msub></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8634147ab38966e378b",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "65",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Polyethylene is obtained from calcium carbide.<br />\r<br />\r<math><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>+</mo><mn>2</mn><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">O</mi><mo>→</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><msub><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msub><mo>+</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub></math><br />\r<br />\r<math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>+</mo><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>→</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>4</mn></mrow></msub></math><br />\r<br />\r<math><mi mathvariant=\"normal\">n</mi><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>4</mn></mrow></msub><mo>→</mo><mfenced separators=\"|\"><mrow><mo>-</mo><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>-</mo><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>-</mo></mrow></mfenced><mi mathvariant=\"normal\">n</mi></math><br />\r<br />\rTherefore, the amount of polyethylene (in kg) obtained for 64 kg <math><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub></math> is",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "28",
+          "solution": {
+            "text": "Moles of  <math><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn>64</mn><mo>×</mo><mn>1</mn><msup><mrow><mn>0</mn></mrow><mrow><mn>3</mn></mrow></msup></mrow><mrow><mn>64</mn></mrow></mfrac><mo>≅</mo><mn>1</mn><mo>×</mo><mn>1</mn><msup><mrow><mn>0</mn></mrow><mrow><mn>3</mn></mrow></msup></math> <br/><br/>So from the balanced chemical equation, moles of  <math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo></math>  moles of  <math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>4</mn></mrow></msub></math> <br/><br/> <math><mo>=</mo></math>  moles of  <math><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mn>1</mn><mo>×</mo><mn>1</mn><msup><mrow><mn>0</mn></mrow><mrow><mn>3</mn></mrow></msup></math> <br/><br/>So moles of polythene  <math><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mi mathvariant=\"normal\">n</mi></mrow></mfrac><mo>×</mo><mn>1</mn><mo>×</mo><mn>1</mn><msup><mrow><mn>0</mn></mrow><mrow><mn>3</mn></mrow></msup></math> <br/><br/>So weight of polythene  <math><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mi mathvariant=\"normal\">n</mi></mrow></mfrac><mo>×</mo><mn>1</mn><mo>×</mo><mn>1</mn><mo>×</mo><mn>28</mn><mi mathvariant=\"normal\">n</mi></math> kg <br/><br/>= 28 kg",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8634072bdda47ed4c8e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "108",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following polymers are correctly matched?<br />\r<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/f59e9ceb-6cce-4370-aa42-a8338460187d.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"width:2.075in;height:1.15in\" /><br />\r<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/EM0670900.jpg\" style=\"max-width:100%; object-fit:contain\" style=\"width: 324px; height: 143px;\" /><br />\r<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/509746e0-8f00-4977-aeb3-b160c82bf141.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"width:3.775in;height:1.625in\" />",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "6g3zn",
+              "text": "1, 2",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "eqDGR",
+              "text": "3, 4",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "JvlHJ",
+              "text": "1, 3, 4",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "G9EA0",
+              "text": "1, 2, 3, 4",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Accept terylene (2) rest are correctly matched. The correct structure of Terylene is given below<br /><img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/09d02e47-b2c2-4bbf-986b-d989bc0dea88.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"width:2.46667in;height:0.85in\" />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86338644231c4a86fb3",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "83",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "One of the monomer of Nylon 6,6 is an acid. How many <math><mo>-</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></math> groups are present in this acidic monomer.",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "2.00",
+          "solution": {
+            "text": "Nylon 6,6 is a polymer of adipic acid and hexa methylene diamine. <br/>Adipic acid <math><mover><mrow><munder><mrow><mo>(</mo><mover><mrow><munder><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mo>|</mo></mrow></munder></mrow><mrow><mo>|</mo></mrow></mover><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mo>)</mo></mrow><mrow><mn>4</mn></mrow></msub></mrow><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></mrow></munder></mrow><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></mrow></mover></math>  <br/>It has <math><mn>2</mn><mo>-</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></math> groups.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8632ee6e70f32026807",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "39",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Choose the biodegradable pollutant out of the following.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "PSfpY",
+              "text": "DDT",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "C7cVl",
+              "text": "Polyglycolic acid",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "djfp2",
+              "text": "Alkyl benzene sulphonate",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FJH9E",
+              "text": "Mercury",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Polyglycolic acid is a biodegradable pollutant. Rest are non biodegradable.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86321c13007036d88d2",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "68",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is nylon 6, 6 -",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "nJdrU",
+              "text": "<br/><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/ci/image9-410574a8-651b-40ad-9fa6-e101b82583c2.jpg\" />",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "k2ZfK",
+              "text": "<br/><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/ci/image10-9ae8bd39-9559-4e8c-b413-2428c9177fb6.jpg\" />",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "UIAuZ",
+              "text": "<br/><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/ci/image11-c65c2bf7-c194-4572-afae-78d5bd661c84.jpg\" />",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vQpZ9",
+              "text": "<br/><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/ci/image12-2900c263-5aff-4430-bc7a-4f2891c8197c.jpg\" />",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Nylon 6, 6 is a polymer of hexamethylane diamine & adipic acid.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86318312cb992e4bb9e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "76",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Acrilan fibre used for cloth, carpets and blankets, it the polymer of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "dsVG5",
+              "text": "acrylonitrile",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "5QZui",
+              "text": "ethylacrylate",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nFQzS",
+              "text": "styrene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8U6n1",
+              "text": "monochlorotrifluoro ethane",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Acrilan fibre used for cloth, carpets and blankets, it the polymer of acrylonitrile<br/><br/> <math><munder><mrow><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mover><mrow><mover><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">H</mi></mrow><mrow><mo>|</mo><mtext>  </mtext></mrow></mover></mrow><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">N</mi></mrow></mover></mrow><mrow><mfenced separators=\"|\"><mrow><mtext>Acrylonitrile</mtext></mrow></mfenced></mrow></munder><mo>→</mo><munder><mrow><msub><mrow><mfenced close=\"]\" open=\"[\" separators=\"|\"><mrow><mo>-</mo><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>-</mo><mover><mrow><mover><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">H</mi></mrow><mrow><mo>|</mo><mtext>  </mtext></mrow></mover></mrow><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">N</mi></mrow></mover><mo>-</mo></mrow></mfenced></mrow><mrow><mi mathvariant=\"normal\">n</mi></mrow></msub></mrow><mrow><mfenced separators=\"|\"><mrow><mtext>Polyacrylonitrile</mtext></mrow></mfenced></mrow></munder></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86306ef74e6a65b0278",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "94",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which polymer can be used for making contact lenses for eyes",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "gxUeI",
+              "text": "Polymethylmethacrylate",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "jEzp7",
+              "text": "Polyethelene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Ncq0D",
+              "text": "Polyethylacrylate",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "DUfRU",
+              "text": "Nylon-6",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Also known as PMMA. It is a transparent, excellent light transmitter and its optical clarity better than glass so it is used in the preparation of lenses for eyes.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86306853c70b9a3e5ea",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "96",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Formation of polyethylene from calcium carbide takes place as follows<br />\r<br />\r<math><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>+</mo><mn>2</mn><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">O</mi><mo>→</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><mo>(</mo><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi><msub><mrow><mo>)</mo></mrow><mrow><mn>2</mn></mrow></msub><mo>+</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub></math><br />\r<br />\r<math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>+</mo><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>→</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>4</mn></mrow></msub></math><br />\r<br />\r<math><mi mathvariant=\"normal\">n</mi><mo>(</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>4</mn></mrow></msub><mo>)</mo><mo>→</mo><mo>(</mo><mo>-</mo><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>-</mo><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>-</mo><msub><mrow><mo>)</mo></mrow><mrow><mi mathvariant=\"normal\">n</mi></mrow></msub></math><br />\r<br />\rThe mass of polyethylene obtained in kg from 64 kg <math><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub></math> is",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "28",
+          "solution": {
+            "text": "<math><munder><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow><mrow><mn>64</mn><mi mathvariant=\"normal\">g</mi></mrow></munder><mo>+</mo><mn>2</mn><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">O</mi><mo>→</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><mo>(</mo><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi><msub><mrow><mo>)</mo></mrow><mrow><mn>2</mn></mrow></msub><mo>+</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub></math><br /><br /><math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>+</mo><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>→</mo><munder><mrow><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>4</mn></mrow></msub></mrow><mrow><mn>28</mn><mi mathvariant=\"normal\">g</mi></mrow></munder></math><br /><br />64g of <math><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub></math> gives 28g of ethylene<br /><br /><math><mo>∴</mo></math> 64kg of <math><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>2</mn></mrow></msub></math> will give 28kg of polyethylene",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

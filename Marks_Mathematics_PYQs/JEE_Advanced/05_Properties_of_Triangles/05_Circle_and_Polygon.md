@@ -1,0 +1,27 @@
+# JEE Advanced Mathematics - Properties of Triangles
+
+## Topic 5: Circle and Polygon
+
+**Total Questions:** 1
+
+---
+
+### Q1. JEE Advanced 2022 (Paper 1)
+
+*Type:* `numerical` | *Level:* `2`
+
+Let <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi><mi>B</mi><mi>C</mi></math> be the triangle with <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi><mi>B</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>A</mi><mi>C</mi><mo>=</mo><mn>3</mn></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8736;</mo><mi>B</mi><mi>A</mi><mi>C</mi><mo>=</mo><mfrac><mi>&#960;</mi><mn>2</mn></mfrac></math>. If a circle of radius <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>r</mi><mo>&#62;</mo><mn>0</mn></math> touches the sides <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi><mi>B</mi><mo>,</mo><mi>A</mi><mi>C</mi></math> and also touches internally the circumcircle of the triangle <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi><mi>B</mi><mi>C</mi></math>, then the value of <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>r</mi></math> is ______. (round-off the value to two decimal place)
+
+<details>
+<summary><b>View Answer & Solution</b></summary>
+
+**Correct Value:** **0.84**
+
+**Detailed Solution:**
+
+<blockquote><p>Let <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math> be the origin <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>B</mi></math> on <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>-</mo></math>axis, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi></math> on <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>y</mi><mo>-</mo></math>axis,</p><p>So on plotting the diagram we get,</p><p><img src="https://cdn-question-pool.getmarks.app/pyq/jee_advanced/5e78c3da-dbb0-440f-abdd-be6e63e79dda-image.png" style="width: 180px; height: 152px;" /></p><p>Now equation of circumcircle is given by </p><p><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mfenced><mrow><mi>x</mi><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></mfenced><mn>2</mn></msup><mo>+</mo><msup><mfenced><mrow><mi>y</mi><mo>-</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow></mfenced><mn>2</mn></msup><mo>=</mo><msup><mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>+</mo><msup><mfenced><mfrac><mn>3</mn><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>=</mo><mfrac><mn>5</mn><mn>2</mn></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8943;</mo><mfenced><mn>1</mn></mfenced></math></p><p>Required equation of circle touches <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi><mi>B</mi></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi><mi>C</mi></math> and have radius <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>r</mi></math> so its equation is given by,</p><p><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mfenced><mrow><mi>x</mi><mo>-</mo><mi>r</mi></mrow></mfenced><mn>2</mn></msup><mo>+</mo><msup><mfenced><mrow><mi>y</mi><mo>-</mo><mi>r</mi></mrow></mfenced><mn>2</mn></msup><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8943;</mo><mfenced><mn>2</mn></mfenced></math></p><p>Now given circle in equation <math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced><mn>2</mn></mfenced></math> touches circumcircle internally, so by property distance between the centre will be equal to modulus of difference of radii,</p><p>So, <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>d</mi><mrow><msub><mi>c</mi><mn>1</mn></msub><msub><mi>c</mi><mn>2</mn></msub></mrow></msub><mo>=</mo><mfenced close="|" open="|"><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>-</mo><msub><mi>r</mi><mn>2</mn></msub></mrow></mfenced></math></p><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8658;</mo><msup><mfenced><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>-</mo><mi>r</mi></mrow></mfenced><mn>2</mn></msup><mo>+</mo><msup><mfenced><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>-</mo><mi>r</mi></mrow></mfenced><mn>2</mn></msup><mo>=</mo><msup><mfenced><mfenced close="|" open="|"><mrow><msqrt><mfrac><mn>5</mn><mn>2</mn></mfrac></msqrt><mo>-</mo><mi>r</mi></mrow></mfenced></mfenced><mn>2</mn></msup></math></p><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8658;</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><msup><mi>r</mi><mn>2</mn></msup><mo>-</mo><mi>r</mi><mo>+</mo><mfrac><mn>9</mn><mn>4</mn></mfrac><mo>+</mo><msup><mi>r</mi><mn>2</mn></msup><mo>-</mo><mn>3</mn><mi>r</mi><mo>=</mo><msup><mfenced><mrow><msqrt><mfrac><mn>5</mn><mn>2</mn></mfrac></msqrt><mo>-</mo><mi>r</mi></mrow></mfenced><mn>2</mn></msup></math></p><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8658;</mo><mn>2</mn><msup><mi>r</mi><mn>2</mn></msup><mo>-</mo><mn>4</mn><mi>r</mi><mo>+</mo><mfrac><mn>5</mn><mn>2</mn></mfrac><mo>=</mo><mfrac><mn>5</mn><mn>2</mn></mfrac><mo>+</mo><msup><mi>r</mi><mn>2</mn></msup><mo>-</mo><msqrt><mn>10</mn></msqrt><mi>r</mi></math></p><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>r</mi><mo>=</mo><mn>0</mn></math> or <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>r</mi><mo>=</mo><mn>4</mn><mo>-</mo><msqrt><mn>10</mn></msqrt><mo>=</mo><mn>0</mn><mo>.</mo><mn>837</mn></math></p><p>So, <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>r</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>84</mn></math>  (on rounding off)</p></blockquote>
+
+</details>
+
+---
+

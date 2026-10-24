@@ -1,0 +1,1503 @@
+{
+  "index": 8,
+  "chapterId": "61e7bd804a3e6975c0cdc355",
+  "chapter": "Ionic Equilibrium",
+  "exam": "BITSAT",
+  "totalTopics": 5,
+  "totalQuestions": 22,
+  "downloadTime": "2026-10-08 20:02:49",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e8726f5bfc7ab78aee4b",
+      "title": "Theories of Acids and Bases",
+      "totalQuestions": 5,
+      "questions": [
+        {
+          "_id": "65b7b87e97ae24e9e2db8ced",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following molecules acts as a Lewis acid?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "UtZO2",
+              "text": "$\\left(\\mathrm{CH}_3\\right)_2 \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SVhA3",
+              "text": "$\\left(\\mathrm{CH}_3\\right)_3 \\mathrm{P}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2MixX",
+              "text": "$\\left(\\mathrm{CH}_3\\right)_3 \\mathrm{~N}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "L9VWr",
+              "text": "$\\left(\\mathrm{CH}_3\\right)_3 \\mathrm{~B}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "According to Lewis concept \"Acids are electron acceptor and bases are electron donor\" Since, electron deficient compounds also have an ability to accept electrons, these are regarded as acids.<br />Trimethylborane \\((\\mathrm{CH})_3\\) B have incomplete octet thus, act as Lewis acid.<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/kjxc7ecut7tvvcfsre4.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87597ae24e9e2db8c8b",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Which one of the following molecular hydrides acts as a Lewis acid?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "W1LbA",
+              "text": "$\\mathrm{NH}_3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "hH4XX",
+              "text": "$\\mathrm{H}_2 \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "czK1f",
+              "text": "$\\mathrm{B}_2 \\mathrm{H}_6$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "liVYt",
+              "text": "$\\mathrm{CH}_4$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Boron in $\\mathrm{B}_2 \\mathrm{H}_6$ is electron deficient",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ec6f5bfc7ab78ae909",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>BF</mi><mn>3</mn></msub></math> is an acid, according to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "VnLct",
+              "text": "Lewis",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "7cxFq",
+              "text": "Arrhenius",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "aA3JI",
+              "text": "Bronsted and Lowery",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "BNFDr",
+              "text": "All of the above",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<blockquote><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>BF</mi><mn>3</mn></msub></math> is a Lewis acid, as it accepts lone pair of electrons.</p><p>It is not an Arrhenius acid because it does not furnish <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">H</mi><mo>+</mo></msup></math> ion in its aqueous solution.</p><p>It is also not a Bronsted Lowry acid as if does not give <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">H</mi><mo>+</mo></msup></math>&nbsp;ions in any solvent.</p></blockquote>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7cc6f5bfc7ab78ae7fb",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "What is the correct increasing order of Bronsted bases?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "klWV4",
+              "text": "$\\mathrm{ClO}_{4}^{-}<\\mathrm{ClO}_{3}^{-}<\\mathrm{ClO}_{2}^{-}<\\mathrm{ClO}^{-}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "sWeW9",
+              "text": "$\\mathrm{ClO}_{4}^{-}>\\mathrm{ClO}_{3}^{-}>\\mathrm{ClO}_{2}^{-}>\\mathrm{ClO}^{-}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Dsbg5",
+              "text": "$\\mathrm{ClO}_{3}^{-}<\\mathrm{ClO}_{4}^{-}<\\mathrm{ClO}_{2}^{-}<\\mathrm{ClO}^{-}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "wdG97",
+              "text": "$\\mathrm{ClO}^{-}>\\mathrm{ClO}_{3}^{-}>\\mathrm{ClO}_{2}^{-}<\\mathrm{ClO}_{4}^{-}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{ClO}_{4}^{-}<\\mathrm{ClO}_{3}^{-}<\\mathrm{ClO}_{2}^{-}<\\mathrm{ClO}^{-}$ is the correct\r\n\r\nincreasing order of Bronsted base. With increase in the number of oxygen atoms in the conjugate bases, the delocalisation of the $\\pi$ bond becomes more and more extended. This results in decrease in the electron density. Consequently basicity also decreases.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7846f5bfc7ab78ae58a",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "Which of these is least likely to act as Lewis base?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "bhV71",
+              "text": "$\\mathrm{F}^{-}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CVfIf",
+              "text": "$\\mathrm{BF}_{3}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "crFvS",
+              "text": "$\\mathrm{PF}_{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "96Im2",
+              "text": "$\\mathrm{CO}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{BF}_{3}$ is Lewis acid (e- pair acceptor)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e8736f5bfc7ab78aee4d",
+      "title": "PH of solutions",
+      "totalQuestions": 7,
+      "questions": [
+        {
+          "_id": "67726d15c49e8ef28ee2b41a",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "The pH of 1 N aqueous solutions of HCl , $\\mathrm{CH}_3 \\mathrm{COOH}$ and HCOOH follows the order:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "2XKqU",
+              "text": "$\\mathrm{HCl}\\gt\\mathrm{HCOOH}\\gt\\mathrm{CH}_3 \\mathrm{OOH}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6iLDy",
+              "text": "$\\mathrm{HCl}=\\mathrm{HCOOH}\\gt\\mathrm{CH}_3 \\mathrm{COOH}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "sbOl0",
+              "text": "$\\mathrm{CH}_3 \\mathrm{COOH}\\gt\\mathrm{HCOOH}\\gt\\mathrm{HCl}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "6Jar1",
+              "text": "$\\mathrm{CH}_3 \\mathrm{COOH}=\\mathrm{HCOOH}\\gt\\mathrm{HCl}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Stronger the acid, lower is the pH or weaker the acid, higher the pH .\nThe strength of the given acid is in the order\n$\\mathrm{HCl}\\gt\\mathrm{HCOOH}\\gt\\mathrm{CH}_3 \\mathrm{COOH}$\nHence, their pH is in the order\n$\\mathrm{CH}_3 \\mathrm{COOH}\\gt\\mathrm{HCOOH}\\gt\\mathrm{HCl}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8316f5bfc7ab78aeb65",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "$100 \\mathrm{~mL}$ of $2 \\mathrm{M}$ of formic acid $\\left(\\mathrm{p} K_a=3.74\\right)$ is neutralise by $\\mathrm{NaOH}$, at the equivalence point $\\mathrm{pH}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "yoF07",
+              "text": "\r\n$7$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "7v4gK",
+              "text": "\r\n$6$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "E1rcp",
+              "text": "\r\n$9.5$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "mhEyt",
+              "text": "\r\n$8.87$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Sodium formate is present at the equivalence point. It is the salt of weak acid $+$ strong base. So, final solution will be basic in nature.\r\nAs we know\r\n$\\mathrm{pH}=7+\\frac{\\mathrm{p} K_a}{2}+\\frac{\\log C}{2}$\r\nwhere, $C$ is concentration of salt.\r\nTotal volume of solution $=100+100=200 \\mathrm{~mL}$\r\nConcentration of salt $(C)=2 \\times \\frac{100}{200}=1 \\mathrm{M}$\r\n$\\mathrm{pH}=7+\\frac{3.74}{2}+\\frac{\\log [1]}{2}$\r\n$\\mathrm{pH}=7+1.87+0$\r\n$\\mathrm{pH}=8.87$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8096f5bfc7ab78aea03",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Given <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>pH</mi></math> of a solution <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#39;</mo><mi mathvariant=\"normal\">A</mi><mo>&#39;</mo></math> is&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#39;</mo><mn>3</mn><mo>&#39;</mo></math>and it is mixed with another solution <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#39;</mo><mi mathvariant=\"normal\">B</mi><mo>&#39;</mo></math> having <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>pH</mi></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#39;</mo><mn>2</mn><mo>&#39;</mo></math>. If both solutions are mixed, the resultant <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>pH</mi></math> of the solution will be (Assume concentration and volume remain unchanged after mixing of individual&nbsp;solution)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "DwcrJ",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>.</mo><mn>2</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "XkRle",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>.</mo><mn>9</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Pt1xT",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>.</mo><mn>4</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "KsRWW",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>.</mo><mn>5</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Given that,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>pH</mi></math> of solution <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">A</mi><mo>=</mo><mn>3</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"]\" open=\"[\"><msup><mi mathvariant=\"normal\">H</mi><mo>+</mo></msup></mfenced></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">A</mi><mo>=</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><mi mathvariant=\"normal\">M</mi></math> and, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>pH</mi></math> of solution <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">B</mi><mo>=</mo><mn>2</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"]\" open=\"[\"><msup><mi mathvariant=\"normal\">H</mi><mo>+</mo></msup></mfenced></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">B</mi><mo>=</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>&#160;</mo><mi mathvariant=\"normal\">M</mi></math></p><p>Thus, total <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"]\" open=\"[\"><msup><mi mathvariant=\"normal\">H</mi><mo>+</mo></msup></mfenced></math> are <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>+</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>=</mo><mn>1</mn><mo>.</mo><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><mi mathvariant=\"normal\">M</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><msub><mi>pH</mi><mfenced><mi>final</mi></mfenced></msub><mo>=</mo><mo>-</mo><mi>log</mi><mfenced close=\"]\" open=\"[\"><msup><mi mathvariant=\"normal\">H</mi><mo>+</mo></msup></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mo>-</mo><mi>log</mi><mfenced close=\"]\" open=\"[\"><mrow><mn>1</mn><mo>.</mo><mn>1</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>3</mn><mo>-</mo><mi>log</mi><mn>1</mn><mo>.</mo><mn>1</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>3</mn><mo>-</mo><mn>1</mn><mo>.</mo><mn>04</mn><mo>=</mo><mn>1</mn><mo>.</mo><mn>9</mn></math></p><p>Therefore, the resultant <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>pH</mi></math> of the solution will be&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>.</mo><mn>9</mn></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7f96f5bfc7ab78ae97e",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>pH</mi></math> of a saturated solution of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Ba</mi><msub><mfenced><mi>OH</mi></mfenced><mn>2</mn></msub></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>12</mn></math> . The value of its <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">K</mi><mi>sp</mi></msub></math> is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "jkTjK",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>.</mo><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>7</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant=\"normal\">M</mi><mn>3</mn></msup></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "aPnMF",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn><mo>.</mo><mn>0</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>7</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant=\"normal\">M</mi><mn>3</mn></msup></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "HYCfy",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><mo>.</mo><mn>0</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant=\"normal\">M</mi><mn>3</mn></msup></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "54I6n",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn><mo>.</mo><mn>0</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup><mo>&#160;</mo><mi mathvariant=\"normal\">M</mi></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Given that,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>pH</mi></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Ba</mi><msub><mfenced><mi>OH</mi></mfenced><mn>2</mn></msub><mo>=</mo><mn>12</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo><mo>&#160;</mo><mi>pH</mi><mo>+</mo><mi>pOH</mi><mo>=</mo><mn>14</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi>pOH</mi><mo>=</mo><mn>14</mn><mo>-</mo><mi>pH</mi><mo>=</mo><mn>14</mn><mo>-</mo><mn>12</mn><mo>=</mo><mn>2</mn></math></p><p>Now, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>pOH</mi><mo>=</mo><mo>-</mo><mi>log</mi><mfenced close=\"]\" open=\"[\"><msup><mi>OH</mi><mo>-</mo></msup></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mn>2</mn><mo>=</mo><mo>-</mo><mi>log</mi><mfenced close=\"]\" open=\"[\"><mi>OH</mi></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"[\" close=\"]\"><msup><mi>OH</mi><mo>-</mo></msup></mfenced><mo>=</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>&#160;</mo><mi mathvariant=\"normal\">M</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><munder><mrow><mi>Ba</mi><msub><mfenced><mi>OH</mi></mfenced><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">s</mi></mfenced></mrow><mrow><mi mathvariant=\"normal\">S</mi><mo>&#160;</mo><mi>mol</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">L</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></munder><mo>&#8652;</mo><munder><msup><mi>Ba</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mi mathvariant=\"normal\">S</mi></munder><mo>+</mo><munder><mrow><mn>2</mn><msup><mi>OH</mi><mo>-</mo></msup></mrow><mrow><mn>2</mn><mi mathvariant=\"normal\">S</mi></mrow></munder></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"[\" close=\"]\"><msup><mi>OH</mi><mo>-</mo></msup></mfenced><mo>=</mo><mn>2</mn><mi mathvariant=\"normal\">S</mi><mo>=</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>&#160;</mo><mi mathvariant=\"normal\">M</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi mathvariant=\"normal\">S</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>=</mo><mn>5</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><mi mathvariant=\"normal\">M</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">K</mi><mi>sp</mi></msub><mo>=</mo><mfenced close=\"]\" open=\"[\"><msup><mi>Ba</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></mfenced><msup><mfenced close=\"]\" open=\"[\"><msup><mi>OH</mi><mo>-</mo></msup></mfenced><mn>2</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>(</mo><mn>5</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>)</mo><msup><mrow><mo>(</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>5</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>7</mn></mrow></msup><msup><mi mathvariant=\"normal\">M</mi><mn>3</mn></msup></math></p><p>Therefore, the value of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#160;</mo><msub><mi mathvariant=\"normal\">K</mi><mi>sp</mi></msub></math>&nbsp;is&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn><mo>.</mo><mn>0</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>7</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant=\"normal\">M</mi><mn>3</mn></msup></math>.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a16f5bfc7ab78ae68e",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "$\\mathrm{CO}_{2}$ goes to air, causes green house effect and gets dissolved in water. What will be the effect on soil fertility and $\\mathrm{pH}$ of the water?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Vsv3a",
+              "text": "Increases",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "dkDKx",
+              "text": "Decreases",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "eFxB8",
+              "text": "Remain same",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "2UdMz",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{CO}_{2}+\\mathrm{H}_{2} \\mathrm{O} \\rightleftharpoons \\mathrm{H}_{2} \\mathrm{CO}_{3} \\rightarrow \\mathrm{H}^{+}+\\mathrm{HCO}_{3}^{-}$\r\nHere $\\left[\\mathrm{H}^{+}\\right]$ increases hence, $\\mathrm{pH}$ decreases due to which soil fertility will also decreases.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a06f5bfc7ab78ae683",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "The pOH value of a solution whose hydroxide ion concentration is $6.2 \\times 10^{-9} \\mathrm{~mol} /$ litre is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Uh6WA",
+              "text": "8.21",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "QuLsy",
+              "text": "6.21",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "xnpyG",
+              "text": "7.75",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "heSLK",
+              "text": "7.21",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$-\\log (\\mathrm{OH})=\\mathrm{pOH} ;-\\log 6.2 \\times 10^{-9}=\\mathrm{pOH}$\r\n$\\therefore \\mathrm{pOH}=8.21$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7926f5bfc7ab78ae608",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "The pH of a solution is increased from 3 to 6 ; its $\\mathrm{H}^{+}$ ion concentration will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "eHgcH",
+              "text": "reduced to half",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "y53CI",
+              "text": "doubled",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "WWmWE",
+              "text": "reduced by 1000 times",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "aIqiz",
+              "text": "increased by 1000 times",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{pH}=3 \\ldots\\left[\\mathrm{H}^{+}\\right]=10^{-3} ; \\quad \\mathrm{pH}=6$\n$\\therefore\\left[\\mathrm{H}^{+}\\right]=10^{-6}$. Hence $\\left[\\mathrm{H}^{+}\\right]$ is reduced by\n$10^{-3}$ times.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e8736f5bfc7ab78aee4f",
+      "title": "Salt Hydrolysis",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e7de6f5bfc7ab78ae88e",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The percentage hydrolysis of $0.15 \\mathrm{M}$ solution of ammonium acetate, $\\mathrm{K}_{\\mathrm{a}}$ for $\\mathrm{CH}_{3} \\mathrm{COOH}$ is $1.8 \\times 10^{-5}$\r\n\r\nand $\\mathrm{K}_{\\mathrm{b}}$ for $\\mathrm{NH}_{3}$ is $1.8 \\times 10^{-5}$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "XVy7p",
+              "text": "0.556",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "EnraT",
+              "text": "4.72",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ixyEM",
+              "text": "9.38",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "NwGKB",
+              "text": "5.56",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\alpha=\\sqrt{\\frac{\\mathrm{K}_{\\mathrm{w}}}{\\mathrm{K}_{\\mathrm{a}} \\times \\mathrm{K}_{\\mathrm{b}}}}=\\sqrt{\\frac{1 \\times 10^{-14}}{1.8 \\times 10^{-5} \\times 1.8 \\times 10^{-5}}}=0.55$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "64c0e8736f5bfc7ab78aee4e",
+      "title": "Buffer solutions",
+      "totalQuestions": 3,
+      "questions": [
+        {
+          "_id": "67726d15c49e8ef28ee2b41c",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "20 mL of 0.1 M acetic acid is mixed with 50 mL of potassium acetate. $K_\\alpha$ of acetic acid $=1.8 \\times 10^{-5}$ at $27^{\\circ} \\mathrm{C}$. Calculate the concentration of potassium acetate if pH of mixture is 4.8 .",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "tgBnt",
+              "text": "0.1 M",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ncVYK",
+              "text": "0.04 M",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "l7akj",
+              "text": "0.03 M",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "tAuYJ",
+              "text": "0.02 M",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "For an acidic buffer,\n$\\mathrm{pH}=\\mathrm{p} K_\\alpha+\\log \\frac{[\\text { Salt }]}{[\\text { Acid }]}\\ldots(i)$\nLet the concentration of potassium acetate solution $=x \\mathrm{M}$ 20 mL of 0.1 M acetic acid $=20 \\times 0.1 \\mathrm{millimol}$ $=2$ millimol\n50 mL of $x \\mathrm{M}$ potassium acetate $=x \\times 50 \\mathrm{millimol}$\n$\\begin{aligned}\n& =50 x \\text { milimol } \\\\\n\\mathrm{pH} & =4.8\n(Given)\\end{aligned}$\nSubstitute all value in eq. (i),\n$\\begin{aligned}\n4.8 & =-\\left(\\log 1.8+10^{-5}\\right)+\\log \\frac{50 x}{2} \\\\\n\\log 25 x & =0.06 \\\\\nx & =0.04 \\mathrm{M}\n\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8316f5bfc7ab78aeb6b",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "What is $\\left[\\mathrm{NH}_4^{+}\\right]$in a solution that is $0.02 \\mathrm{M} \\mathrm{NH}_3$ $0.01 \\mathrm{M} \\mathrm{KOH} ?\\left[K_b\\left(\\mathrm{NH}_3\\right)=1.8 \\times 10^{-5}\\right]$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "XGJeT",
+              "text": "\r\n$3.6 \\times 10^{-5} \\mathrm{M}$\r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "s8myz",
+              "text": "\r\n$1.8 \\times 10^{-5} \\mathrm{M}$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "MrXwP",
+              "text": "\r\n$0.9 \\times 10^{-5} \\mathrm{M}$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ZIT8a",
+              "text": "\r\n$7.2 \\times 10^{-5} \\mathrm{M}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{NH}_4 \\mathrm{OH} \\rightleftharpoons \\mathrm{NH}_4^{+}+\\mathrm{OH}^{-}$\r\n$K_b=\\frac{\\left[\\mathrm{NH}_4^{+}\\right]\\left[\\mathrm{OH}^{-}\\right]}{\\left[\\mathrm{NH}_4 \\mathrm{OH}\\right]}$\r\n$1.8 \\times 10^{-5}=\\frac{\\left[\\mathrm{NH}_4^{+}\\right][0.01]}{[0.02]}$\r\n$\\therefore \\quad\\left[\\mathrm{NH}_4^{+}\\right]=3.6 \\times 10^{-5} \\mathrm{M}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a06f5bfc7ab78ae684",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which of the following combinations would not result in the formation of a buffer solution?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "plXFP",
+              "text": "$\\mathrm{NH}_{3}+\\mathrm{HCl}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "SstL2",
+              "text": "$\\mathrm{NH}_{4} \\mathrm{Cl}+\\mathrm{NH}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "04GDy",
+              "text": "$\\mathrm{CH}_{3} \\mathrm{COOH}+\\mathrm{NaCl}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "e46mE",
+              "text": "$\\mathrm{NaOH}+\\mathrm{CH}_{3} \\mathrm{COOH}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Combination of $\\mathrm{NaOH}$ and $\\mathrm{CH}_{3} \\mathrm{COOH}$ is the mixture of alkali and acetic acid. Therefore this combination can not be buffer forming solution.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "64c0e8726f5bfc7ab78aee4c",
+      "title": "Solubility",
+      "totalQuestions": 6,
+      "questions": [
+        {
+          "_id": "64c0e8256f5bfc7ab78aeaf9",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The solubility of silver bromide in hypo solution involves the formation of:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "DoU6U",
+              "text": "$\\mathrm{Ag}_{2} \\mathrm{SO}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Z0EYe",
+              "text": "$\\mathrm{Ag}_{2} \\mathrm{~S}_{2} \\mathrm{O}_{3}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "APDFG",
+              "text": "$\\mathrm{Ag}^{+}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "xEdaG",
+              "text": "$\\mathrm{NH}_{4}{ }^{+}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Hypo solution is $\\mathrm{Na}_{2} \\mathrm{~S}_{2} \\mathrm{O}_{3}$ solution which is used in photography for fixing films \\& prints. Photographic emulsions are made of AgBr. After developing, the film is put into hypo solution. This forms soluble complex with $\\mathrm{Ag}$.\r\n\r\n$\\mathrm{Na}_{2} \\mathrm{~S}_{2} \\mathrm{O}_{3}+\\mathrm{Ag} \\mathrm{Br} \\rightarrow \\mathrm{Ag}_{2} \\mathrm{~S}_{2} \\mathrm{O}_{3} \\longrightarrow \\mathrm{Na}_{2} \\mathrm{~S}_{2} \\mathrm{O}_{3} }{\\mathrm{Na}_{5}\\left[\\mathrm{Ag}\\left(\\mathrm{S}_{2} \\mathrm{O}_{3}\\right)_{3}\\right]$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8156f5bfc7ab78aea74",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "A solution of $\\mathrm{NH}_{4} \\mathrm{Cl}$ and $\\mathrm{NH}_{3}$ has $\\mathrm{pH}=8.0 .$ Which of the following hydroxides may be precipitated when this solution is mixed with equal volume of 0.2 M of metal ion.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "iedc2",
+              "text": "$\\mathrm{Ba}(\\mathrm{OH})_{2}\\left(\\mathrm{~K}_{\\mathrm{sp}}=1.1 \\times 10^{-4}\\right)$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "oPcnE",
+              "text": "$\\mathrm{Mg}(\\mathrm{OH})_{2}\\left(\\mathrm{~K}_{\\mathrm{sp}}=3.5 \\times 10^{-4}\\right)$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "i2nnT",
+              "text": "$\\mathrm{Fe}(\\mathrm{OH})_{2}\\left(\\mathrm{~K}_{\\mathrm{sp}}=8.1 \\times 10^{-16}\\right)$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "WyZZP",
+              "text": "$\\mathrm{Ca}(\\mathrm{OH})_{2}\\left(\\mathrm{~K}_{\\mathrm{sp}}=2.1 \\times 10^{-5}\\right)$ ).",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{pH}=8, \\mathrm{pOH}=6 ;\\left[\\mathrm{OH}^{-}\\right]=10^{-6} \\mathrm{M}$\r\n\r\nIonic product of $\\mathrm{Fe}(\\mathrm{OH})_{2}=0.2 \\times\\left(1 \\times 10^{-6}\\right)^{2}$\r\n\r\n$=2 \\times 10^{-13}>\\mathrm{K}_{\\mathrm{sp}}\\left(=8.1 \\times 10^{-16}\\right)$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7de6f5bfc7ab78ae88f",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "For a sparingly soluble salt $A_{p} B_{q}$, the relationship of its solubility product $L s \\rightarrow K_{s p}$ with its solubility (S) is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "bKdDV",
+              "text": "$\\quad \\mathrm{Ls} \\rightarrow \\mathrm{K}_{\\mathrm{sp}}=\\mathrm{S}^{\\mathrm{pq}}(\\mathrm{pq})^{\\mathrm{P}+\\mathrm{q}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "SiZxz",
+              "text": "$\\mathrm{Ls}=\\mathrm{S}^{\\mathrm{p}+\\mathrm{q}} \\cdot \\mathrm{p}^{\\mathrm{p}} \\mathrm{q}^{\\mathrm{q}}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "6iXyW",
+              "text": "$\\quad \\mathrm{Ls} \\rightarrow \\mathrm{K}_{\\mathrm{sp}}=\\mathrm{S}^{\\mathrm{p}+\\mathrm{q}} \\cdot \\mathrm{p}^{\\mathrm{q}} \\mathrm{q}^{\\mathrm{p}}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "MXPfM",
+              "text": "$\\quad \\mathrm{Ls} \\rightarrow \\mathrm{K}_{\\mathrm{sp}}=\\mathrm{S}^{\\mathrm{pq}} \\mathrm{p}^{\\mathrm{P}} \\mathrm{q}^{\\mathrm{q}}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{ApBq} \\rightleftharpoons \\mathrm{pA}_{\\mathrm{Sp}}^{+}+\\mathrm{qB}_{\\mathrm{Sq}}$\r\n\r\nLet the solubility be $\\mathrm{S} \\mathrm{mol} /$ liter Thus,\r\n\r\n\\begin{aligned}\r\n\r\n\\mathrm{K}_{\\mathrm{sp}} &=\\left[\\mathrm{A}^{+}\\right]^{\\mathrm{p}}\\left[\\mathrm{B}^{-}\\right]^{\\mathrm{q}} \\\\\r\n\r\n&=[\\mathrm{Sp}]^{\\mathrm{p}}[\\mathrm{Sq}]^{\\mathrm{q}}=\\mathrm{p}^{\\mathrm{p} \\cdot} \\mathrm{q}^{\\mathrm{q}}(\\mathrm{S})^{\\mathrm{p}+\\mathrm{q}}\r\n\r\n\\end{aligned}",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7bf6f5bfc7ab78ae787",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Identify the correct order of solubilty of $\\mathrm{Na}_{2} \\mathrm{~S}$, $\\mathrm{CuS}$ and $\\mathrm{ZnS}$ in aqueous medium",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "7uZUx",
+              "text": "$\\mathrm{CuS}>\\mathrm{ZnS}>\\mathrm{Na}_{2} \\mathrm{~S}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "xVKVP",
+              "text": "$\\mathrm{ZnS}>\\mathrm{Na}_{2} \\mathrm{~S}>\\mathrm{CuS}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "WhaHn",
+              "text": "$\\mathrm{Na}_{2} \\mathrm{~S}>\\mathrm{CuS}>\\mathrm{ZnS}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "bxh8N",
+              "text": "$\\mathrm{Na}_{2} \\mathrm{~S}>\\mathrm{ZnS}>\\mathrm{CuS}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The correct order of solublity of sulphides is $\\mathrm{Na}_{2} \\mathrm{~S}>\\mathrm{ZnS}>\\mathrm{CuS}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7be6f5bfc7ab78ae77e",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "$K_{c}$ for the the reaction, $\\left[\\mathrm{Ag}(\\mathrm{CN})_{2}\\right] \\rightleftharpoons \\mathrm{Ag}^{+}+2 \\mathrm{CN}^{-},$\r\n\r\nthe equillibrium constant at $25^{\\circ} \\mathrm{C}$ is $4.0 \\times 10^{-19}$ then the silver ion concentration in a solution which was originally 0.1 molar in $\\mathrm{KCN}$ and 0.03 molar in $\\mathrm{AgNO}_{3}$ is:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "mtrgk",
+              "text": "$7.5 \\times 10^{18}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "QOO8f",
+              "text": "$7.5 \\times 10^{-19}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "GCtna",
+              "text": "$7.5 \\times 10^{19}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "uswKA",
+              "text": "$7.5 \\times 10^{-18}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\left.\\begin{array}{c}2 \\mathrm{KCN}+\\mathrm{AgNO}=\\left[\\underset{0.1}{0.03}=\\left[\\begin{array}{c}\\mathrm{Ag}(\\mathrm{CN})_{2} \\\\ 0\\end{array}\\right]^{-}\\right. \\\\ (0.1-0.06) & 0\\end{array}\\right] \\begin{array}{c}\\mathrm{KNO}_{3}+\\mathrm{K}_{0}^{+} \\\\ (0.03)\\end{array}$\r\n\r\n$\\therefore\\left[\\mathrm{Ag}(\\mathrm{CN})_{2}\\right]^{-}=\\mathrm{Ag}^{+}+\\underset{\\mathrm{a}}{0.03} \\mathrm{a} \\quad 2 \\mathrm{CN}$\r\n\r\n$(0.03-\\mathrm{a}) \\quad \\mathrm{a} .04(\\mathrm{left} \\mathrm{from} \\mathrm{KCN}$\r\n\r\n$\\quad 0.04 \\approx 0.04$\r\n\r\n$\\therefore \\quad \\mathrm{K}_{\\mathrm{c}}=4 \\times 10^{-19}=\\frac{(0.04)^{2} \\times \\mathrm{a}}{0.03}$\r\n\r\n$\\mathrm{a}=7.5 \\times 10^{-18}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7846f5bfc7ab78ae58b",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "The $\\mathrm{K}_{\\mathrm{sp}}$ of $\\mathrm{CuS}, \\mathrm{Ag}_{2} \\mathrm{~S}$ and $\\mathrm{HgS}$ are $10^{-31}, 10^{-44}$ and $10^{-54}$ respectively. The solubility of these sulphides are in the order :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "vo6FH",
+              "text": "$\\quad \\mathrm{Ag}_{2} \\mathrm{~S}>\\mathrm{CuS}>\\mathrm{HgS}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "gXI1F",
+              "text": "$\\quad \\mathrm{AgS}>\\mathrm{HgS}>\\mathrm{CuS}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GBik3",
+              "text": "$\\mathrm{HgS}>\\mathrm{Ag}_{2} \\mathrm{~S}>\\mathrm{CuS}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iwjoz",
+              "text": "$\\quad\\mathrm{CuS}>\\mathrm{Ag}_{2} \\mathrm{~S}>\\mathrm{HgS}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "For CuS, solubility $=\\left(10^{-31}\\right)^{1 / 2}$;\n$$\n\\begin{array}{l}\n\\text { For } \\mathrm{Ag}_{2} \\mathrm{~S}=\\left(\\frac{\\mathrm{K}_{\\mathrm{sp}}}{4}\\right)^{\\frac{1}{3}}=\\left(\\frac{10^{-44}}{4}\\right)^{\\frac{1}{3}} \\text { and } \\\\\n\\text { for } \\mathrm{HgS}=\\left(10^{-54}\\right)^{\\frac{1}{2}}\n\\end{array}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

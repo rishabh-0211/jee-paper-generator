@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Solutions PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚗️ BITSAT &bull; Solutions</h1>
+        <div class="sub">Chemistry PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 17, "chapterId": "61e7bd7b8e5525f8a94b4576", "chapter": "Solutions", "exam": "BITSAT", "totalTopics": 3, "totalQuestions": 17, "downloadTime": "2026-10-08 20:02:54", "topics": [{"index": 1, "topicId": "64c0e8616f5bfc7ab78aed86", "title": "Vapour pressure and raoult's law", "totalQuestions": 2, "questions": [{"_id": "64c0e8236f5bfc7ab78aeaea", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 2, "question": {"text": "Liquids A and B form an ideal solution in the entire composition range. At $350 \\mathrm{~K}$, the vapor pressures of pure A and pure B are $7 \\times 10^{3} \\mathrm{~Pa}$ and $12 \\times 10^{3} \\mathrm{~Pa}$, respectively. The composition of the vapour is in equilibrium with a solution containing 40 mole percent of $\\mathrm{A}$ at this temperature is:", "image": null}, "options": [{"id": "JamXa", "text": "$x_{\\mathrm{A}}=0.37 ; x_{\\mathrm{B}}=0.63$", "isCorrect": false, "image": null}, {"id": "Rzw9z", "text": "$x_{\\mathrm{A}}=0.28 ; x_{\\mathrm{B}}=0.72$", "isCorrect": true, "image": null}, {"id": "68eOs", "text": "$x_{\\mathrm{A}}=0.4 ; x_{\\mathrm{B}}=0.6$", "isCorrect": false, "image": null}, {"id": "93xxO", "text": "$x_{\\mathrm{A}}=0.76 ; x_{\\mathrm{B}}=0.24$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{P}_{\\mathrm{A}}^{\\circ}=7 \\times 10^{3}$\r\n\r\n$\\mathrm{P}_{\\mathrm{B}}^{\\circ}=12 \\times 10^{3}$\r\n\r\n$x_{\\mathrm{A}}^{\\prime}=0.4 ; x_{\\mathrm{B}}^{\\prime}=1-0.4$\r\n\r\n$x_{\\mathrm{B}}^{\\prime}=0.6$\r\n\r\n$\\mathrm{P}_{\\text {total }}=\\mathrm{P}_{\\mathrm{A}^{\\circ}}^{x_{\\mathrm{A}}^{\\prime}}+\\mathrm{P}_{\\mathrm{B}}^{\\circ} x_{\\mathrm{B}}^{\\prime}$\r\n\r\n$=7 \\times 10^{3} \\times 0.4+12 \\times 10^{3} \\times 0.6$\r\n\r\n$=(7 \\times 0.4+12 \\times 0.6) \\times 10^{3}=10^{4}$\r\n\r\n$x_{\\mathrm{A}}=\\frac{\\mathrm{P}_{\\mathrm{A}^{\\circ}}^{x^{\\prime}} \\mathrm{A}}{\\mathrm{P}_{\\text {total }}}=\\frac{7 \\times 10^{3} \\times 0.4}{10^{4}}$\r\n\r\n$\\therefore x_{\\mathrm{A}}=0.28, x_{\\mathrm{B}}=1-0.28=0.72$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8166f5bfc7ab78aea7b", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 2, "question": {"text": "The vapour pressure of two pure liquids $A$ and $B$ that form an ideal solution, are 400 and $800 \\mathrm{~mm}$ of Hg respectivelyat a temperature $t^{\\circ} \\mathrm{C}$. The mole fraction of $A$ in a solution of $A$ and $B$ whose boiling point is $t^{\\circ} \\mathrm{C}$ will be", "image": null}, "options": [{"id": "NWIzH", "text": "0.4", "isCorrect": false, "image": null}, {"id": "EyQm2", "text": "0.8", "isCorrect": false, "image": null}, {"id": "0TVzE", "text": "0.1", "isCorrect": true, "image": null}, {"id": "Sxizi", "text": "0.2", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "V.P. of solution at $t^{\\circ} \\mathrm{C}=760 \\mathrm{~mm}$ [at b.p., V.P. of solution =atompheric pressure] Thus $=\\mathrm{P}_{\\mathrm{A}}^{\\circ} \\mathrm{x}_{\\mathrm{A}}+\\mathrm{P}_{\\mathrm{B}}^{\\infty} \\mathrm{x}_{\\mathrm{B}}$\r\n\r\nor $\\mathrm{P}=\\mathrm{P}_{\\mathrm{A}}^{0} \\cdot \\mathrm{x}_{\\mathrm{A}}+\\mathrm{P}_{\\mathrm{B}}^{0}\\left(1-\\mathrm{x}_{\\mathrm{A}}\\right)\\left[\\because \\mathrm{x}_{\\mathrm{A}}+\\mathrm{x}_{\\mathrm{B}}=1\\right]$\r\n\r\nor $760=400 \\mathrm{X}_{\\mathrm{A}}+800\\left(1-\\mathrm{X}_{\\mathrm{A}}\\right)[\\because \\mathrm{P}=760 \\mathrm{mmofHg}]$\r\n\r\nor $-800+760=-400 x_{\\mathrm{A}}$\r\n\r\nor $-40=-400 \\mathrm{x}_{\\mathrm{A}}$\r\n\r\nor $x_{\\mathrm{A}}=\\frac{40}{400}=0.1$\r\n\r\nThus mole fraction in solution is 0.1", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8616f5bfc7ab78aed85", "title": "Colligative Properties and Abnormal Molecular Masses", "totalQuestions": 14, "questions": [{"_id": "67726d15c49e8ef28ee2b41d", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "58.5 g of NaCl and 180 g of glucose were separately dissolved in 1000 mL of water. Identify the correct statement regarding the elevation of boiling point of the resulting solution.", "image": null}, "options": [{"id": "dudhB", "text": "NaCl solution will show higher elevation of boiling point.", "image": null, "isCorrect": true}, {"id": "TOax5", "text": "Glucose solution will show higher elevation of boiling point.", "image": null, "isCorrect": false}, {"id": "8Eg7Y", "text": "Both the solution will show equal elevation of boiling point.", "image": null, "isCorrect": false}, {"id": "doFNh", "text": "None will show boiling point elevation.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\begin{aligned}\n\\text {  } 58.5 \\mathrm{~g} \\mathrm{NaCl} & =\\frac{58.5}{58.5} \\mathrm{~mol} \\\\\n& =1 \\mathrm{~mol} \\\\\n180 \\mathrm{~g} \\text { of glucose } & =\\frac{180}{180}=1 \\mathrm{~mol}\n\\end{aligned}$\nThus, we have 1 M NaCl and 1 M glucose solution.\nBut NaCl dissociates in the solution and glucose does not dissociates.\nThus particle concentration is more in NaCl .\nHence, NaCl solution will have higher elevation in boiling point.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726d14c49e8ef28ee2b414", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "A decimolar solution potassium ferrocyanide is $50 \\%$ dissociated at 300 K . The osmotic pressure of solution is $\\left(R=8.314 \\mathrm{JK}^{-1} \\mathrm{~mol}^{-1}\\right)$", "image": null}, "options": [{"id": "8fu25", "text": "7.48 atm", "image": null, "isCorrect": true}, {"id": "dM3n2", "text": "4.99 atm", "image": null, "isCorrect": false}, {"id": "Jeo2t", "text": "3.74 atm", "image": null, "isCorrect": false}, {"id": "Ptaod", "text": "6.23 atm", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\alpha=0.5$ (50\\% dissociated)\nThe reaction involves is\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/b1M_7YrgLHM_mVudRlR4zl-Q_1PFYW3Edez6iDF0NL4.original.fullsize.png\"/>\nTotal moles at equilibrium $=1-\\alpha+4 \\alpha+\\alpha$\n$\\text { Total }=1+4 \\alpha$\n$\\therefore$ van't Hoff factor $(i)=\\frac{1+4 \\alpha}{1}=1+4 \\times 0.5=3$\nOsmotic pressure, $\\pi=i C R T$\n$\\begin{aligned}\nC & =0.1 \\mathrm{M}=10^2 \\mathrm{~mol} \\mathrm{~m}^{-3} \\\\\n\\pi & =3 \\times 10^2 \\times 8.314 \\times 300 \\\\\n& =7.483 \\times 10^5 \\mathrm{Nm}^{-2}\n\\end{aligned}$\nor\n$\\pi=7.48 \\mathrm{~atm}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726cfcc49e8ef28ee2b360", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "Which of the following substances show the highest colligative properties?", "image": null}, "options": [{"id": "9B8sI", "text": "$0.1 \\mathrm{MBaCl}_2$", "image": null, "isCorrect": false}, {"id": "1d2vz", "text": "$0.1 \\mathrm{M} \\mathrm{AgNO}_3$", "image": null, "isCorrect": false}, {"id": "sMVjQ", "text": "0.1 M urea", "image": null, "isCorrect": false}, {"id": "orUXm", "text": "$0.1 \\mathrm{M}\\left(\\mathrm{NH}_4\\right)_3 \\mathrm{PO}_4$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Colligative property depends on the number of particles or ions. Option (d) consists 4 of ions due to which it shows highest colligative property.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87f97ae24e9e2db8cef", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "A 0.5 molal solution of ethylene glycol in water is used as coolant in a car. If the freezing point constant of water be $1.86^{\\circ} \\mathrm{C}$ per mole, the mixture shall freeze at", "image": null}, "options": [{"id": "gREjN", "text": "$0.93^{\\circ} \\mathrm{C}$", "image": null, "isCorrect": false}, {"id": "Heut9", "text": "$-0.93^{\\circ} \\mathrm{C}$", "image": null, "isCorrect": true}, {"id": "fPN3J", "text": "$1.86^{\\circ} \\mathrm{C}$", "image": null, "isCorrect": false}, {"id": "3VzNv", "text": "$-1.86^{\\circ} \\mathrm{C}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<br />$\\begin{aligned} &\\Delta T_f=K_f \\times m=1.86 \\times 0.5=0.93^{\\circ} \\mathrm{C} \\text {; } \\\\ & T_f=-0.93^{\\circ} \\mathrm{C}\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87397ae24e9e2db8c74", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "How much ethyl alcohol must be added to 1 litre of water so that the solution will freeze at $14^{\\circ} \\mathrm{C}$ ?<br />$\\left(\\mathrm{K}_{\\mathrm{f}}\\right.$ for water $\\left.=1.86^{\\circ} \\mathrm{C} / \\mathrm{mol}\\right)$", "image": null}, "options": [{"id": "jQ0TB", "text": "$7.5 \\mathrm{~mol}$", "image": null, "isCorrect": true}, {"id": "aeJF2", "text": "$8.5 \\mathrm{~mol}$", "image": null, "isCorrect": false}, {"id": "MmiZW", "text": "$9.5 \\mathrm{~mol}$", "image": null, "isCorrect": false}, {"id": "Q7lOy", "text": "$10.5 \\mathrm{~mol}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$7.5 \\mathrm{~mol}$<br />$\\Delta T_f=K_f m$<br />$\\Delta T_f=K_f \\frac{n_2 \\times 1000}{w_1}$<br />$\\Rightarrow 14=1.86 \\times \\frac{n_2 \\times 1000}{1000}$<br />$n_2=7.5 \\mathrm{~mol}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8076f5bfc7ab78ae9f3", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 2, "question": {"text": "An aqueous solution freezes at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>272</mn><mo>.</mo><mn>4</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></math>,&nbsp;while pure water freezes at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>273</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></math>,&nbsp;given <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">K</mi><mi mathvariant=\"normal\">f</mi></msub><mo>=</mo><mn>1</mn><mo>.</mo><mn>86</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi><mo>&#160;</mo><mi>kg</mi><mo>&#160;</mo><msup><mi>mol</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>,&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">K</mi><mi mathvariant=\"normal\">b</mi></msub><mo>=</mo><mn>0</mn><mo>.</mo><mn>512</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi><mo>&#160;</mo><mi>kg</mi><mo>&#160;</mo><msup><mi>mol</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>;</mo></math> the molality of solution and boiling point of solution respectively will be -", "image": null}, "options": [{"id": "C0Dt8", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>322</mn></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>373</mn><mo>.</mo><mn>16</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></math>", "isCorrect": true, "image": null}, {"id": "o3v53", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>222</mn></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>273</mn><mo>.</mo><mn>15</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></math>", "isCorrect": false, "image": null}, {"id": "DLS0e", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>413</mn></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>400</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></math>", "isCorrect": false, "image": null}, {"id": "4OIsB", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>5</mn></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>300</mn><mo>.</mo><mn>73</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Depression in freezing point is given as <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#916;T</mi><mi mathvariant=\"normal\">f</mi></msub><mo>=</mo><msub><mi mathvariant=\"normal\">K</mi><mi mathvariant=\"normal\">f</mi></msub><mi mathvariant=\"normal\">m</mi></math></p><p>Molality of solution <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi mathvariant=\"normal\">m</mi></mfenced><mo>=</mo><mfrac><msub><mi>&#916;T</mi><mi mathvariant=\"normal\">f</mi></msub><msub><mi mathvariant=\"normal\">K</mi><mi mathvariant=\"normal\">f</mi></msub></mfrac></math></p><p>or&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">m</mi><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>6</mn></mrow><mrow><mn>1</mn><mo>.</mo><mn>86</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>322</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math></p><p>Elevation in boiling point of solution is given as</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#916;T</mi><mi mathvariant=\"normal\">b</mi></msub><mo>=</mo><msub><mi mathvariant=\"normal\">k</mi><mi mathvariant=\"normal\">b</mi></msub><mo>&#215;</mo><mi mathvariant=\"normal\">m</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#916;T</mi><mi mathvariant=\"normal\">b</mi></msub><mo>=</mo><mn>0</mn><mo>.</mo><mn>512</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>322</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#916;T</mi><mi mathvariant=\"normal\">b</mi></msub><mo>=</mo><mn>0</mn><mo>.</mo><mn>165</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> Boiling point of solution <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>373</mn><mo>+</mo><mn>0</mn><mo>.</mo><mn>16</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>373</mn><mo>.</mo><mn>16</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7fb6f5bfc7ab78ae98d", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 2, "question": {"text": "Which of the following <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">M</mi></math> aqueous solution will have lowest freezing point?", "image": null}, "options": [{"id": "zhtSD", "text": "Potassium sulphate", "isCorrect": true, "image": null}, {"id": "Fyuzj", "text": "Sodium chloride", "isCorrect": false, "image": null}, {"id": "lr0le", "text": "Urea", "isCorrect": false, "image": null}, {"id": "21MMO", "text": "Glucose", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Potassium sulphate <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><msub><mi mathvariant=\"normal\">K</mi><mn>2</mn></msub><msub><mi>SO</mi><mn>4</mn></msub></mrow></mfenced><mo>,</mo><mo>&#160;</mo><mi mathvariant=\"normal\">i</mi><mo>=</mo><mn>3</mn></math></p><p>Sodium chloride <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi>NaCl</mi></mfenced><mo>,</mo><mo>&#160;</mo><mi mathvariant=\"normal\">i</mi><mo>=</mo><mn>2</mn></math></p><p>Urea, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">i</mi><mo>=</mo><mn>1</mn></math></p><p>Glucose, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">i</mi><mo>=</mo><mn>1</mn></math></p><p>Greater the value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">i</mi></math>, greater lowering in freezing point and hence, lower will be the freezing temperature.</p><p>Therefore, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">K</mi><mn>2</mn></msub><msub><mi>SO</mi><mn>4</mn></msub></math> solution has the lowest freezing point.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7a26f5bfc7ab78ae690", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 1, "question": {"text": "If the elevation in boiling point of a solution of $10 \\mathrm{~g}$ of solute $(\\mathrm{mol} . \\mathrm{wt}=100)$ in $100 \\mathrm{~g}$ of water is $\\Delta T b$, the ebullioscopic constant of water is", "image": null}, "options": [{"id": "Lo3WX", "text": "$\\frac{\\Delta T_{b}}{10}$", "isCorrect": false, "image": null}, {"id": "CiBs9", "text": "$\\Delta T_{b}$", "isCorrect": true, "image": null}, {"id": "LkYnW", "text": "$10 \\Delta T_{b}$", "isCorrect": false, "image": null}, {"id": "IhFr2", "text": "$100 \\Delta T_{b}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{m}=\\frac{1000 \\times \\mathrm{k}_{b} \\times \\mathrm{w}}{W \\times \\Delta T_{b}}$\r\nor $\\quad \\begin{aligned} k_{\\mathrm{b}} &=\\frac{\\mathrm{m} \\times W \\times \\Delta T_{b}}{1000 \\times \\mathrm{w}}=\\frac{100 \\times 100 \\times \\Delta T_{b}}{1000 \\times 10} \\\\ &=\\Delta T_{b} \\end{aligned}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7a26f5bfc7ab78ae68f", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 2, "question": {"text": "The van't Hoff factor i for an electrolyte which undergoes dissociation and association in solvents are respectively", "image": null}, "options": [{"id": "JukTt", "text": "greater than 1 and greater than 1", "isCorrect": false, "image": null}, {"id": "nG5qp", "text": "less than 1 and greater than 1", "isCorrect": false, "image": null}, {"id": "zC5qG", "text": "less than 1 and less than 1", "isCorrect": false, "image": null}, {"id": "8PwrF", "text": "greater than 1 and less than 1", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "When an electrolyte dissociates van't Hoff factor i is greater than 1 and when it associates the $\\mathrm{i}$ is less than $1.$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7936f5bfc7ab78ae611", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "$1.00 \\mathrm{~g}$ of a non-electrolyte solute (molar mass $\\left.250 \\mathrm{~g} \\mathrm{~mol}^{-1}\\right)$ was dissolved in $51.2 \\mathrm{~g}$ of benzene. If the freezing point depression constant, $\\mathrm{K}_{\\mathrm{f}}$ of benzene is $5.12 \\mathrm{~K} \\mathrm{~kg} \\mathrm{~mol}^{-1}$, the freezing point of benzene will be lowered by", "image": null}, "options": [{"id": "XM5ik", "text": "$0.3 \\mathrm{~K}$", "image": null, "isCorrect": false}, {"id": "kBEty", "text": "$0.5 \\mathrm{~K}$", "image": null, "isCorrect": false}, {"id": "MdPDG", "text": "$0.4 \\mathrm{~K}$", "image": null, "isCorrect": true}, {"id": "EYx7q", "text": "0.2", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\Delta \\mathrm{T}_{\\mathrm{f}}=\\mathrm{K}_{\\mathrm{f}} \\mathrm{m}=5.12 \\times \\frac{1}{250} \\times \\frac{1000}{51.2}=0.4 \\mathrm{~K}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7866f5bfc7ab78ae599", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "Which of the following will form the cathode with respect to iron anode in an electrolyte cell?", "image": null}, "options": [{"id": "DrIAW", "text": "$\\mathrm{Mg}$", "image": null, "isCorrect": true}, {"id": "Jsuvu", "text": "$\\mathrm{Al}$", "image": null, "isCorrect": false}, {"id": "7YykS", "text": "$\\mathrm{Cu}$", "image": null, "isCorrect": false}, {"id": "IphLW", "text": "$\\mathrm{Zn}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "In electrolytic cell the cathode is of higher reduction potential.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7866f5bfc7ab78ae598", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "Coolant used in car radiator is aqueous solution of ethylene glycol. In order to prevent the solution from freezing at $-0.3^{\\circ} \\mathrm{C}$. How much ethylene glycol must be added to $5 \\mathrm{~kg}$ of water ? $\\left(\\mathrm{K}_{\\mathrm{f}}=1.86 \\mathrm{~K} \\mathrm{Kg} \\mathrm{mol}^{-1}\\right)$", "image": null}, "options": [{"id": "3sULO", "text": "$50 \\mathrm{~g}$", "image": null, "isCorrect": true}, {"id": "lbJoA", "text": "$55 \\mathrm{~g}$", "image": null, "isCorrect": false}, {"id": "KDrvR", "text": "$45 \\mathrm{~g}$", "image": null, "isCorrect": false}, {"id": "eBsLr", "text": "$40 \\mathrm{~g}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\Delta \\mathrm{T}_{\\mathrm{f}}=0.3^{\\circ} \\mathrm{C}$\n$$\n\\begin{array}{l}\n\\Delta \\mathrm{T}_{\\mathrm{f}}=\\frac{\\mathrm{K}_{\\mathrm{f}} \\times \\mathrm{W}_{\\mathrm{B}} \\times 1000}{\\mathrm{M}_{\\mathrm{B}} \\times \\mathrm{W}_{\\mathrm{A}}} \\\\\n0.3=\\frac{1.86 \\times \\mathrm{W}_{\\mathrm{B}} \\times 1000}{62 \\times 5000}\n\\end{array}\n$$\n$\\therefore \\mathrm{W}_{\\mathrm{B}}=50 \\mathrm{~g}$\nThe amount used should be more than $50 \\mathrm{~g}$.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7776f5bfc7ab78ae518", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "The degree of dissociation of $\\mathrm{Ca}\\left(\\mathrm{NO}_{3}\\right)_{2}$ in dilute aq. solution containing $7.0 \\mathrm{~g}$ of salt per $100 \\mathrm{~g}$ of water at $100^{\\circ} \\mathrm{C}$ is $70 \\%$. If vapour pressure of water at $100^{\\circ} \\mathrm{C}$ is $760 \\mathrm{~mm} \\mathrm{Hg}$. The vapour pressure of solution is", "image": null}, "options": [{"id": "XDhN4", "text": "735", "image": null, "isCorrect": false}, {"id": "48ihW", "text": "$\\quad 730$", "image": null, "isCorrect": false}, {"id": "jzrCU", "text": "760", "image": null, "isCorrect": false}, {"id": "9AbXB", "text": "$\\quad 746$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "$\\mathrm{Ca}\\left(\\mathrm{NO}_{3}\\right)_{2} \\rightleftharpoons \\mathrm{Ca}^{2+}+2 \\mathrm{NO}_{3}^{-}$\n$1-0.71 \\quad 0.7 \\quad 2 \\times 0.7$\n$\\quad\\left(\\because \\alpha=\\frac{70}{100}=0.7\\right)$\n$\\quad \\mathrm{n}_{1}=\\frac{100}{18}=5.55$\n$\\frac{\\mathrm{p}^{0}-\\mathrm{p}_{\\mathrm{s}}}{\\mathrm{p}^{0}}=\\frac{\\mathrm{n}_{2} \\times \\mathrm{i}}{\\mathrm{n}_{1}+\\mathrm{n}_{2}}, \\frac{760-\\mathrm{p}_{\\mathrm{s}}}{760}$\n$=\\frac{0.042 \\times 2.4}{5.55+0.042}$\n$\\therefore \\mathrm{p}_{\\mathrm{s}}-746 \\mathrm{~mm} \\mathrm{Hg} .$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7776f5bfc7ab78ae517", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "Which one of the following statements is false?", "image": null}, "options": [{"id": "jiy2c", "text": "The correct order of osmotic pressure for 0.01 M aqueous solution of each compound is $\\mathrm{BaCl}_{2}>\\mathrm{KCl}>\\mathrm{CH}_{3} \\mathrm{COOH}>$ sucrose.", "image": null, "isCorrect": false}, {"id": "v4Vl4", "text": "The osmotic pressure $(\\pi)$ of a solution is given by the equation $\\pi=\\mathrm{MRT}$, where $\\mathrm{M}$ is the molarity of the solution.", "image": null, "isCorrect": false}, {"id": "GDTGy", "text": "Raoult's law states that the vapour pressure of a component over a solution is proportional to its mole fraction.", "image": null, "isCorrect": false}, {"id": "IBG2m", "text": "Two sucrose solutions of same molality prepared in different solvents will have the same freezing point depression.", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "$\\Delta \\mathrm{T}_{\\mathrm{f}}=\\mathrm{K}_{\\mathrm{f}} \\times \\mathrm{m} \\times \\mathrm{i}$. Since $\\mathrm{K}_{\\mathrm{f}}$ has different values\nfor different solvents, hence even if the $\\mathrm{m}$ is the same $\\Delta \\mathrm{T}_{\\mathrm{f}}$ will be different.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "67726d9cc49e8ef28ee2b4ac", "title": "Solubility and Concentration of Solutions", "totalQuestions": 1, "questions": [{"_id": "67726d07c49e8ef28ee2b3ae", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "One molar concentration of a solution represents :", "image": null}, "options": [{"id": "OW2Wp", "text": "1 mole of solute in 1 kg of solution.", "image": null, "isCorrect": false}, {"id": "e5uWy", "text": "1 mole of solute in 1 L of solution.", "image": null, "isCorrect": true}, {"id": "kxtEo", "text": "1 mole of solvent in 1 kg of solution.", "image": null, "isCorrect": false}, {"id": "Kz3ac", "text": "1 mole of solvent in 1 L of solution.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$1 \\mathrm{M}= 1$ mole of solute in 1 L solution.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

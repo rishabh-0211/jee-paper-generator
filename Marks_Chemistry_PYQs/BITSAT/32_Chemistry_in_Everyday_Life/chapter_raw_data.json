@@ -1,0 +1,1033 @@
+{
+  "index": 32,
+  "chapterId": "61e7bd7c7389a0aaeb51e10c",
+  "chapter": "Chemistry in Everyday Life",
+  "exam": "BITSAT",
+  "totalTopics": 4,
+  "totalQuestions": 15,
+  "downloadTime": "2026-10-08 20:03:03",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e8776f5bfc7ab78aee83",
+      "title": "Drugs and It's Classification",
+      "totalQuestions": 10,
+      "questions": [
+        {
+          "_id": "67726cfdc49e8ef28ee2b363",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "............ is a potent vasodilator.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "XBeI1",
+              "text": "Histamine",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "tokgD",
+              "text": "Serotonin",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pVLDV",
+              "text": "Codeine",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CA3nK",
+              "text": "Cimetidine",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Histamine is a potent vasodilator. It contracts smooth muscles and relaxes other muscles of blood vessels of stomach walls. In stomach, histamine stimulates the secretion of hydrochloric acid and pepsin.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87e97ae24e9e2db8ce4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is a hypnotic drug?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Iq2XW",
+              "text": "<br />luminal",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "scRi2",
+              "text": "<br />salol",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FORHB",
+              "text": "<br />catechol",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "gHz5Q",
+              "text": "<br />chemisol",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "These drugs induce sleep and are habit forming common example of hypnotic drugs are luminal and saconal.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87497ae24e9e2db8c81",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "The drug used as an antidepressant is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "DjSSw",
+              "text": "Luminol",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lichw",
+              "text": "Tofranil",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "e6hU6",
+              "text": "Mescaline",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "HMPRW",
+              "text": "Sulphadiazine",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Tofranil is used for the treatment of antidepressant.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8246f5bfc7ab78aeaf3",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Arsenic containing medicine used for the treatment of syphilis, is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "9hehY",
+              "text": "erythromycin",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "qyNPl",
+              "text": "ofloxacin",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "neZDq",
+              "text": "tetracycline",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "wM9c8",
+              "text": "salvarsan",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No solution required.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8226f5bfc7ab78aeae4",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Aspirin is known as :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "eUQc7",
+              "text": "acetyl salicylic acid",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "puFoT",
+              "text": "phenyl salicylate",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "p6OOA",
+              "text": "acetyl salicylate",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "vh6lc",
+              "text": "methyl salicylic acid",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/5mx9qy3jnj4pb9PWsEEGN3niVPHoQeS_nqveV6REURk.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8186f5bfc7ab78aea88",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Select the incorrect statement.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "sOODw",
+              "text": "Equanil is used to control depression and hypertension.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "rLc43",
+              "text": "Mifepristone is a synthetic steroid used as \"moming after pill\".",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "go5bP",
+              "text": "0.2 per cent solution of phenol is an antiseptic while its 1.0 per cent solution is a disinfectant.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Pxj3v",
+              "text": "A drug which kills the organism in the body is called bacteriostatic.",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Bacteriostatic drugs inhibit the growth of organisms while bactericidal drugs kill the microorganisms.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8076f5bfc7ab78ae9f7",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The drug that is antipyretic as well as analgesic is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "0aDF5",
+              "text": "chloroquine",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "bJffB",
+              "text": "penicillin",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "C4ii2",
+              "text": "paracetamol",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "mJGIR",
+              "text": "chloropromazine hydrochloride",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Acetamidophenol is an antipyretic as well as analgesic drug. It is commonly known by the name of paracetamol. It lowers body temperature as well as is used to get relief from pain.&nbsp;</p><p>So, the drug which acts as both antipyretic and analgesic is Acetamidophenol.</p><p>Its structure is as follows</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/0865379c-8bec-4472-852e-a63743debf65-image.png\" style=\"width: 177px; height: 270px;\" /></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c16f5bfc7ab78ae79b",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which among the following is not an antibiotic?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "95d9X",
+              "text": "Penicillin",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "9XLkV",
+              "text": "Oxytocin",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "nsIy5",
+              "text": "$\\quad$ Ofloxacin",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "evyYU",
+              "text": "Tetracycline",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Oxytocin is a hormone (nanopetide) which contracts uterus after the child birth and produces lactation in the mammary glands.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c16f5bfc7ab78ae79a",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which of the following can possibly be used as analgesic without causing addiction and modification?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ppmiF",
+              "text": "morphine",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "EhKE6",
+              "text": "$\\mathrm{N}$ -acetyl-para-aminophenol",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "5gNI8",
+              "text": "diazepam",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "mimrj",
+              "text": "tetrahydrocatenol",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a46f5bfc7ab78ae6a0",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "2,4 -Dichlorophenoxyacetic add is used as",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "MXVN0",
+              "text": "Fungicide",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "zFHBY",
+              "text": "Insecticide",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "0stcQ",
+              "text": "Herbicide",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "AfSs9",
+              "text": "Moth repellant",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "2,4 -dichlorophenoxyacetic acid is used as a herbicide.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e8786f5bfc7ab78aee86",
+      "title": "Cleansing Agents",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e8236f5bfc7ab78aeaef",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Cetyltrimethyl ammonium bromide is a popular",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Cbi0L",
+              "text": "anionic detergent",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "KqowP",
+              "text": "cationic detergent",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Vse7O",
+              "text": "non-ionic detergent",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "bglkN",
+              "text": "sweetener",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Cetyltrimethyl ammonium bromide which is a germicide, is a popular cationic detergent.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e8776f5bfc7ab78aee84",
+      "title": "Enzymes and Receptors",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "64c0e7fb6f5bfc7ab78ae98e",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "A penicillin is a member of a family of drugs that have a",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Awey5",
+              "text": "four membered cyclic amide fused to a five membered thiazole ring.",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "uyU4X",
+              "text": "three membered cyclic amide fused to a five-membered thiazole ring.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "elU5L",
+              "text": "four-membered cyclic amide fused to have a four membered thiazole ring.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "OxCCJ",
+              "text": "five-membered cyclic amide fused to have a five membered thiazole ring.",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>A penicillin is a member of a family of drugs that have a four membered cyclic amide fused to a five membered thiazole ring. It is narrow spectrum antibiotic.</p><p>Penicillin is an antibiotic or group of antibiotics produced naturally by certain blue moulds, now usually prepared synthetically.&nbsp;</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/7b96c52e-e034-41d9-8765-0cfb3c98f85c-image.png\" style=\"width: 283px; height: 184px;\" /></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b36f5bfc7ab78ae71d",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Insulin production and its action in human body are responsible for the level of diabetes. This compound belongs to which of the following categories?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "q8NFu",
+              "text": "An enzyme",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "bO5Q6",
+              "text": "A hormone",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "2l0hd",
+              "text": "A co-enzyme",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "opYEV",
+              "text": "An antibiotic",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Insulin is a biochemically active peptide harmone secreted by pancreas.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "64c0e8786f5bfc7ab78aee85",
+      "title": "Artificial Sweetning Agents and Food Preservatives",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "64c0e8246f5bfc7ab78aeaf0",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which of the following chemicals can be added for sweetening of food items at cooking temperature and does not provides calories?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "1e4j9",
+              "text": "Sucrose",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "L1fq4",
+              "text": "Glucose",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "8lmXK",
+              "text": "Aspartame",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "1Ob4X",
+              "text": "Sucralose",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Sucralose is trichloro derivative of sucrose. It is stable at cooking temperture. It does not provide calories.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7dd6f5bfc7ab78ae885",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The important antioxidant used in food is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "igDHF",
+              "text": "$\\mathrm{BHT}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "iRcnZ",
+              "text": "$\\mathrm{BHC}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "U1OvV",
+              "text": "$\\mathrm{BTX}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "96U8Y",
+              "text": "All the three",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "BHT is the important antioxidant used in food.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JEE Advanced - Motion In One Dimension PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚡ JEE Advanced &bull; Motion In One Dimension</h1>
+        <div class="sub">Physics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 3, "chapterId": "620ab20d4acf095bc46b4615", "chapter": "Motion In One Dimension", "exam": "JEE Advanced", "subject": "Physics", "totalTopics": 4, "totalQuestions": 4, "downloadTime": "2026-10-08 20:27:00", "topics": [{"index": 1, "topicId": "64b16aeff23ac7d519f9b9b3", "title": "Rest and Motion", "totalQuestions": 1, "questions": [{"_id": "64b16a83f23ac7d519f9b517", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf831", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2020-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2020 (Paper 2)", "title": "JEE Advanced 2020 (Paper 2)"}], "type": "multipleCorrect", "level": 2, "question": {"text": "Starting at time&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi><mo>=</mo><mn>0</mn></math> from the origin with speed&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>, a particle follows a two-dimensional trajectory in the&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>-</mo><mi>y</mi></math> plane so that its coordinates are related by the equation&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac></math>. The&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math>&nbsp;and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math>&nbsp;components of its acceleration are denoted by&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>a</mi><mi>x</mi></msub></math> and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>a</mi><mi>y</mi></msub></math>, respectively. Then", "image": null}, "options": [{"id": "z1vHq", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>a</mi><mi>x</mi></msub><mo>=</mo><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math> implies that when the particle is at the origin, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>a</mi><mi>y</mi></msub><mo>=</mo><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>", "isCorrect": true, "image": null}, {"id": "JrSid", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>a</mi><mi>x</mi></msub><mo>=</mo><mn>0</mn></math> implies&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>a</mi><mi>y</mi></msub><mo>=</mo><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>&nbsp;at all times", "isCorrect": true, "image": null}, {"id": "4in3i", "text": "at&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo></math> the particle&#39;s velocity points in the&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math>-direction", "isCorrect": true, "image": null}, {"id": "qODYC", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>a</mi><mi>x</mi></msub><mo>=</mo><mn>0</mn></math> implies that at&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi><mo>=</mo><mn>1</mn><mi mathvariant=\"normal\">s</mi><mo>,</mo></math> the angle between the particle&#39;s velocity and the&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math> axis is&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>45</mn><mo>&#176;</mo></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac></math></p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/dd9428b6-9da1-41d6-9a8d-581bc1dda5cd-image.png\"/></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mn>2</mn><mi>x</mi><mfrac><mrow><mi>d</mi><mi>x</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">v</mi><mi mathvariant=\"normal\">y</mi></msub><mo>=</mo><mi>x</mi><msub><mi>v</mi><mi mathvariant=\"normal\">x</mi></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi><msub><mi>v</mi><mi>y</mi></msub></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>d</mi><mi>x</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>×</mo><mfrac><mrow><mi>d</mi><mi>x</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>+</mo><mi>x</mi><mfenced><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><msub><mi>v</mi><mi>x</mi></msub></mrow><mrow><mi>d</mi><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>a</mi><mi>y</mi></msub><mo>=</mo><msubsup><mi>v</mi><mi>x</mi><mn>2</mn></msubsup><mo>+</mo><mi>x</mi><msub><mi>a</mi><mi>x</mi></msub></math></p><p>If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mn>0</mn><mo>,</mo><mo> </mo><msub><mi>a</mi><mi>y</mi></msub><mo>=</mo><msubsup><mi>v</mi><mi>x</mi><mn>2</mn></msubsup><mo>=</mo><mn>1</mn><mo>,</mo></math> No matters what is the value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>a</mi><mi>x</mi></msub></math> hence, Option <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math> is correct.</p><p>If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>a</mi><mi>x</mi></msub><mo>=</mo><mn>0</mn></math> then <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><msub><mi>v</mi><mi>x</mi></msub><mi>t</mi><mo>=</mo><mi>t</mi></math></p><p>at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi><mo>=</mo><mn>1</mn><mo>;</mo><mo> </mo><mi>x</mi><mo>=</mo><mn>1</mn><mo> </mo><mi mathvariant=\"normal\">m</mi></math></p><p>then angle made by velocity vector with <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math> -axis</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>tan</mi><mi>θ</mi><mo>=</mo><mfrac><msub><mi mathvariant=\"normal\">v</mi><mi mathvariant=\"normal\">y</mi></msub><msub><mi mathvariant=\"normal\">v</mi><mi mathvariant=\"normal\">x</mi></msub></mfrac><mo>=</mo><mi mathvariant=\"normal\">x</mi><mo>=</mo><mn>1</mn><mo>⇒</mo><mi>θ</mi><mo>=</mo><mn>45</mn><mo>°</mo></math></p>", "image": null}, "videoSolution": {"videoId": "565bc855e77e443a8c0c7a67d9ea00e1", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/F8F2e5j46W1kB.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/F8F2e5j46W1kB.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf831", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2020-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2020 (Paper 2)", "title": "JEE Advanced 2020 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64b16aeff23ac7d519f9b9b1", "title": "Graphs of motion in one dimension", "totalQuestions": 1, "questions": [{"_id": "64b16a0bf23ac7d519f9b0d2", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1f77301f65c2f92c48", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011 (Paper 1)", "title": "JEE Advanced 2011 (Paper 1)"}], "question": {"text": "<strong>Paragraph:</strong>\nPhase space diagrams are useful tools in analyzing all kinds of dynamical problems. They are especially useful in studying the changes in motion as initial position and momentum are changed. Here we consider some simple dynamical systems in one-dimension. For such systems, phase space is a plane in which position is plotted along horizontal axis and momentum is plotted along vertical axis. The phase space diagram is $x(t) v s p(t)$ curve in this plane. The arrow on the\ncurve indicates the time flow. For example, the phase space diagram for a particle moving with constant velocity is a straight line as shown in the figure. We use the sign convention in which position or momentum upwards (or to right) is positive and downwards (or to left) is negative.<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/XUS9yb1oVClHFXXo1R2Su7FpnIAGiALCHaAWRaCkIxo.original.fullsize.png\"><br><strong>Question:</strong>\nThe phase space diagram for a ball thrown vertically up from ground is", "image": null}, "options": [{"id": "xcd7J", "text": "\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/iI0Kxu2WnV4NkRO9yY3V7z6whEGe6AvixYB2vbO-hD8.original.fullsize.png\"><br>", "image": null, "isCorrect": false}, {"id": "ydrD0", "text": "\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/DOfzCHyzibJNVnxn0HafBRyOgKJe6uLD1830_7T21VI.original.fullsize.png\"><br>", "image": null, "isCorrect": false}, {"id": "9TrM5", "text": "\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/O1yAEKHii2lM3o6tCdd5OomqXot_8p1UEg0sH2_8QuA.original.fullsize.png\"><br>", "image": null, "isCorrect": false}, {"id": "0eQN0", "text": "\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/h80ZqR_DLfd3NCpT3nZGdB647TUEv-dWcd5q3qSkx1k.original.fullsize.png\"><br>", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Momentum is first positive but decreasing. Displacement (or say position). is initially zero.\nIt will first increase. At highest point, momentum is zero and displacement is maximum. After that momentum is downwards (negative) and increasing but displacement is decreasing. Only (d) option satisfies these conditions.\nAnalysis of Question\n(i) Question is simple.\n(ii) Since all the graphs given in question are parabolic type, we need not to check the mathematical part of the question.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1f77301f65c2f92c48", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011 (Paper 1)", "title": "JEE Advanced 2011 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64b16aeff23ac7d519f9b9b2", "title": "Non-uniform Motion", "totalQuestions": 1, "questions": [{"_id": "64b16a4df23ac7d519f9b331", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf828", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016 (Paper 1)", "title": "JEE Advanced 2016 (Paper 1)"}], "type": "multipleCorrect", "level": 1, "question": {"text": "The positon vector <math><mover accent=\"true\"><mrow><mi>r</mi></mrow><mo>&#8594;</mo></mover></math> of a particle of mass m is given by the following equation <math><mover accent=\"true\"><mrow><mi>r</mi></mrow><mo>&#8594;</mo></mover><mfenced separators=\"|\"><mrow><mi>t</mi></mrow></mfenced><mo>=</mo><mi>&#945;</mi><msup><mrow><mi>t</mi></mrow><mrow><mn>3</mn></mrow></msup><mover accent=\"true\"><mrow><mi>i</mi></mrow><mo>^</mo></mover><mo>+</mo><mi>&#946;</mi><msup><mrow><mi>t</mi></mrow><mrow><mn>2</mn></mrow></msup><mover accent=\"true\"><mrow><mi>j</mi></mrow><mo>^</mo></mover><mo>,</mo><mi>&#160;</mi><mi>w</mi><mi>h</mi><mi>e</mi><mi>r</mi><mi>e</mi><mi>&#160;</mi><mi>&#945;</mi><mo>=</mo><mfrac><mrow><mn>10</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mi>&#160;</mi><mi>m</mi><msup><mrow><mi>s</mi></mrow><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>,</mo><mi>&#160;</mi><mi>&#946;</mi><mo>=</mo><mn>5</mn><mi>&#160;</mi><mi>m</mi><msup><mrow><mi>s</mi></mrow><mrow><mo>-</mo><mn>2</mn></mrow></msup><mi>&#160;</mi><mi>a</mi><mi>n</mi><mi>d</mi><mi>&#160;</mi><mi>m</mi><mo>=</mo><mn>0.1</mn><mi>&#160;</mi><mi>k</mi><mi>g</mi><mo>.</mo><mi>&#160;</mi><mi>A</mi><mi>t</mi><mi>&#160;</mi><mi>t</mi><mo>=</mo><mn>1</mn><mi>s</mi><mo>,</mo></math> which of the following statements (s) is (are) true about the particle?", "image": null}, "options": [{"id": "EwnuX", "text": "The velocity  <math><mover accent=\"true\"><mrow><mi>v</mi></mrow><mo>→</mo></mover></math>  is given by  <math><mover accent=\"true\"><mrow><mi>v</mi></mrow><mo>→</mo></mover><mo>=</mo><mfenced separators=\"|\"><mrow><mn>10</mn><mover accent=\"true\"><mrow><mi>i</mi></mrow><mo>^</mo></mover><mo>+</mo><mn>10</mn><mover accent=\"true\"><mrow><mi>j</mi></mrow><mo>^</mo></mover></mrow></mfenced><mi> </mi><mi>m</mi><msup><mrow><mi>s</mi></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>", "isCorrect": true, "image": null}, {"id": "tt9Da", "text": "The angular momentum  <math><mover accent=\"true\"><mrow><mi>L</mi></mrow><mo>→</mo></mover></math>  with respect to the origin is given by  <math><mover accent=\"true\"><mrow><mi>L</mi></mrow><mo>→</mo></mover><mo>=</mo><mo>-</mo><mfenced separators=\"|\"><mrow><mfrac><mrow><mn>5</mn></mrow><mrow><mn>3</mn></mrow></mfrac></mrow></mfenced><mover accent=\"true\"><mrow><mi>k</mi></mrow><mo>^</mo></mover><mi> </mi><mi>N</mi><mi>m</mi><mi>s</mi></math>", "isCorrect": true, "image": null}, {"id": "oYx1K", "text": "The force  <math><mover accent=\"true\"><mrow><mi>F</mi></mrow><mo>→</mo></mover></math>  is given by  <math><mover accent=\"true\"><mrow><mi>F</mi></mrow><mo>→</mo></mover><mo>=</mo><mfenced separators=\"|\"><mrow><mover accent=\"true\"><mrow><mi>i</mi></mrow><mo>^</mo></mover><mo>+</mo><mn>2</mn><mover accent=\"true\"><mrow><mi>j</mi></mrow><mo>^</mo></mover></mrow></mfenced><mi>N</mi></math>", "isCorrect": false, "image": null}, {"id": "Qy7cU", "text": "The torque  <math><mover accent=\"true\"><mrow><mi>τ</mi></mrow><mo>→</mo></mover></math>  with respect to the origin is given by  <math><mover accent=\"true\"><mrow><mi>τ</mi></mrow><mo>→</mo></mover><mo>=</mo><mo>-</mo><mfenced separators=\"|\"><mrow><mfrac><mrow><mn>20</mn></mrow><mrow><mn>3</mn></mrow></mfrac></mrow></mfenced><mover accent=\"true\"><mrow><mi>k</mi></mrow><mo>^</mo></mover><mi> </mi><mi>N</mi><mi>m</mi><mi> </mi></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<math><mover accent=\"true\"><mrow><mi>r</mi></mrow><mo>→</mo></mover><mo>=</mo><mi>α</mi><msup><mrow><mi>t</mi></mrow><mrow><mn>3</mn></mrow></msup><mover accent=\"true\"><mrow><mi>i</mi></mrow><mo>^</mo></mover><mo>+</mo><mi>β</mi><msup><mrow><mi>t</mi></mrow><mrow><mn>2</mn></mrow></msup><mover accent=\"true\"><mrow><mi>j</mi></mrow><mo>^</mo></mover></math>  <br > <math><mover accent=\"true\"><mrow><mi>v</mi></mrow><mo>→</mo></mover><mo>=</mo><mfrac><mrow><mi>d</mi><mover accent=\"true\"><mrow><mi>r</mi></mrow><mo>→</mo></mover></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mn>3</mn><mi>α</mi><msup><mrow><mi>t</mi></mrow><mrow><mn>2</mn></mrow></msup><mover accent=\"true\"><mrow><mi>i</mi></mrow><mo>^</mo></mover><mo>+</mo><mn>2</mn><mi>β</mi><mi>t</mi><mover accent=\"true\"><mrow><mi>j</mi></mrow><mo>^</mo></mover></math>  <br > <math><mover accent=\"true\"><mrow><mi>a</mi></mrow><mo>→</mo></mover><mo>=</mo><mfrac><mrow><msup><mrow><mi>d</mi></mrow><mrow><mn>2</mn></mrow></msup><mover accent=\"true\"><mrow><mi>r</mi></mrow><mo>→</mo></mover></mrow><mrow><mi>d</mi><msup><mrow><mi>t</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfrac><mo>=</mo><mn>6</mn><mi>α</mi><mi>t</mi><mover accent=\"true\"><mrow><mi>i</mi></mrow><mo>^</mo></mover><mo>+</mo><mn>2</mn><mi>β</mi><mover accent=\"true\"><mrow><mi>j</mi></mrow><mo>^</mo></mover></math>  <br >At t = 1<br >(i)  <math><mover accent=\"true\"><mrow><mi>v</mi></mrow><mo>→</mo></mover><mo>=</mo><mn>3</mn><mo>×</mo><mfrac><mrow><mn>10</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mo>×</mo><mn>1</mn><mover accent=\"true\"><mrow><mi>i</mi></mrow><mo>^</mo></mover><mo>+</mo><mn>2</mn><mo>×</mo><mi>J</mi><mo>×</mo><mn>1</mn><mover accent=\"true\"><mrow><mi>j</mi></mrow><mo>^</mo></mover></math> <br > <math><mo>=</mo><mn>10</mn><mover accent=\"true\"><mrow><mi>i</mi></mrow><mo>^</mo></mover><mo>+</mo><mn>10</mn><mover accent=\"true\"><mrow><mi>j</mi></mrow><mo>^</mo></mover></math>  <br >(ii)  <math><mover accent=\"true\"><mrow><mi>L</mi></mrow><mo>→</mo></mover><mo>=</mo><mover accent=\"true\"><mrow><mi>r</mi></mrow><mo>→</mo></mover><mo>×</mo><mover accent=\"true\"><mrow><mi>p</mi></mrow><mo>→</mo></mover></math> <br > <math><mo>=</mo><mfenced separators=\"|\"><mrow><mfrac><mrow><mn>10</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mo>×</mo><mn>1</mn><mover accent=\"true\"><mrow><mi>i</mi></mrow><mo>^</mo></mover><mo>+</mo><mn>5</mn><mo>×</mo><mn>1</mn><mover accent=\"true\"><mrow><mi>j</mi></mrow><mo>^</mo></mover></mrow></mfenced><mo>×</mo><mn>0.1</mn><mfenced separators=\"|\"><mrow><mn>10</mn><mover accent=\"true\"><mrow><mi>i</mi></mrow><mo>^</mo></mover><mo>+</mo><mn>10</mn><mover accent=\"true\"><mrow><mi>j</mi></mrow><mo>^</mo></mover></mrow></mfenced></math>  <br > <math><mo>=</mo><mi> </mi><mo>-</mo><mfrac><mrow><mn>5</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover accent=\"true\"><mrow><mi>k</mi></mrow><mo>^</mo></mover><mi> </mi></math>  <br >(iii)  <math><mover accent=\"true\"><mrow><mi>F</mi></mrow><mo>→</mo></mover><mo>=</mo><mi>m</mi><mo>×</mo><mfenced separators=\"|\"><mrow><mn>6</mn><mo>×</mo><mfrac><mrow><mn>10</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mo>×</mo><mn>1</mn><mover accent=\"true\"><mrow><mi>i</mi></mrow><mo>^</mo></mover><mo>+</mo><mn>2</mn><mo>×</mo><mn>5</mn><mover accent=\"true\"><mrow><mi>j</mi></mrow><mo>^</mo></mover></mrow></mfenced><mo>=</mo><mn>2</mn><mover accent=\"true\"><mrow><mi>i</mi></mrow><mo>^</mo></mover><mo>+</mo><mover accent=\"true\"><mrow><mi>j</mi></mrow><mo>^</mo></mover></math> <br >(iv)  <math><mover accent=\"true\"><mrow><mi>τ</mi></mrow><mo>→</mo></mover><mo>=</mo><mi>r</mi><mo>×</mo><mover accent=\"true\"><mrow><mi>F</mi></mrow><mo>→</mo></mover></math> <br > <math><mo>=</mo><mfenced separators=\"|\"><mrow><mfrac><mrow><mn>10</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover accent=\"true\"><mrow><mi>i</mi></mrow><mo>^</mo></mover><mo>+</mo><mn>5</mn><mover accent=\"true\"><mrow><mi>j</mi></mrow><mo>^</mo></mover></mrow></mfenced><mo>×</mo><mfenced separators=\"|\"><mrow><mn>2</mn><mover accent=\"true\"><mrow><mi>i</mi></mrow><mo>^</mo></mover><mo>+</mo><mover accent=\"true\"><mrow><mi>j</mi></mrow><mo>^</mo></mover></mrow></mfenced></math>  <br > <math><mo>=</mo><mo>+</mo><mfrac><mrow><mn>10</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover accent=\"true\"><mrow><mi>k</mi></mrow><mo>^</mo></mover><mo>+</mo><mn>10</mn><mfenced separators=\"|\"><mrow><mo>-</mo><mover accent=\"true\"><mrow><mi>k</mi></mrow><mo>^</mo></mover></mrow></mfenced></math>  <br > <math><mo>=</mo><mo>-</mo><mfrac><mrow><mn>20</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover accent=\"true\"><mrow><mi>k</mi></mrow><mo>^</mo></mover><mi> </mi></math>", "image": null}, "videoSolution": {"videoId": "72e6f7b0dd9f42969d6acf7b30b4938c", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/2a6R7oLq8vYqi.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/2a6R7oLq8vYqi.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf828", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016 (Paper 1)", "title": "JEE Advanced 2016 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "66965e0b844b5f1d94e798b7", "title": "Relative Motion", "totalQuestions": 1, "questions": [{"_id": "66965dd8d603121f43a40e72", "type": "numerical", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "66965789b31faf98fda8fefa", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2024-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Paper 2)", "title": "JEE Advanced 2024 (Paper 2)"}], "question": {"text": "A ball is thrown from the location $\\left(x_0, y_0\\right)=(0,0)$ of a horizontal playground with an initial speed $v_0$ at an angle $\\theta_0$ from the $+x$-direction. The ball is to be hit by a stone, which is thrown at the same time from the location $\\left(x_1, y_1\\right)=(L, 0)$. The stone is thrown at an angle $\\left(180-\\theta_1\\right)$ from the $+x$-direction with a suitable initial speed. For a fixed $v_0$, when $\\left(\\theta_0, \\theta_1\\right)=\\left(45^{\\circ}, 45^{\\circ}\\right)$, the stone hits the ball after time $T_1$, and when $\\left(\\theta_0, \\theta_1\\right)=\\left(60^{\\circ}, 30^{\\circ}\\right)$, it hits the ball after time $T_2$. In such a case, $\\left(T_1 / T_2\\right)^2$ is _______ .", "image": null}, "options": [], "correctValue": 2, "solution": {"text": "For case I :\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/u9Al_faN8FMZKamCLt15IzlCUp4QrsdixqkMC0Y2syo.original.fullsize.png\">\n$a_{\\text {rel }}=0$\nFor collision $\\frac{\\mathrm{v}_0}{\\sqrt{2}}=\\frac{\\mathrm{v}}{\\sqrt{2}}$\n$\\therefore \\mathrm{v}=\\mathrm{v}_0$\nSo $\\mathrm{T}_1=\\frac{\\mathrm{L}}{\\frac{\\mathrm{v}_0}{\\sqrt{2}}+\\frac{\\mathrm{v}}{\\sqrt{2}}}$\n$\\therefore \\tau_1=\\frac{\\mathrm{L}}{\\sqrt{2} \\mathrm{v}_0} \\ldots . .(1)$\nFor case II,\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/GboTeS8Qff495XnPuDOZa0th_x8sv7aKL18Z5jCjG3o.original.fullsize.png\">\n$a_{\\text {rel }}=0$\nFor collision, $\\frac{\\mathrm{v}_0 \\sqrt{3}}{2}=\\frac{\\mathrm{v}}{2}$\n$\\begin{aligned}\n& \\therefore \\mathrm{v}=\\sqrt{3} \\mathrm{v}_0 \\\\\n& \\text { So, } \\mathrm{T}_2=\\frac{\\mathrm{L}}{\\frac{\\mathrm{v}_0}{2}+\\mathrm{v} \\frac{\\sqrt{3}}{2}} \\\\\n& \\mathrm{~T}_2=\\frac{\\mathrm{L}}{\\frac{\\mathrm{v}_0}{2}+\\frac{3 \\mathrm{v}_0}{2}} \\\\\n& \\therefore \\mathrm{T}_2=\\frac{\\mathrm{L}}{2 \\mathrm{v}_0} \\ldots \\ldots . .(2) \\\\\n& \\text { so, }\\left(\\frac{\\mathrm{T}_1}{\\mathrm{~T}_2}\\right)^2=(\\sqrt{2})^2=2 \\Rightarrow\\left(\\frac{\\mathrm{T}_1}{\\mathrm{~T}_2}\\right)^2=2\n\\end{aligned}$", "image": null}, "videoSolution": {"videoId": "81c6cc07fd9e4b68829a83820fe399a3", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/AXGBOXCkQbqu3.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/AXGBOXCkQbqu3.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "66965789b31faf98fda8fefa", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2024-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Paper 2)", "title": "JEE Advanced 2024 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'JEE Advanced';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

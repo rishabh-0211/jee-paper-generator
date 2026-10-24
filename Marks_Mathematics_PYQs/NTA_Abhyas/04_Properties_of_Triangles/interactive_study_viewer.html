@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NTA Abhyas (JEE Main) - Properties of Triangles PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>📐 NTA Abhyas (JEE Main) &bull; Properties of Triangles</h1>
+        <div class="sub">Mathematics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 4, "chapterId": "6160254c7465fbff31a26d47", "chapter": "Properties of Triangles", "exam": "NTA Abhyas (JEE Main)", "subject": "Mathematics", "totalTopics": 5, "totalQuestions": 8, "downloadTime": "2026-10-08 20:39:13", "topics": [{"index": 1, "topicId": "6aa3ab79aa8dc1ff68177ff4", "title": "Sine Rule and Its Application", "totalQuestions": 1, "questions": [{"_id": "6151e863ae42edeea77c0910", "type": "singleCorrect", "level": 1, "questionLabels": [{"title": "NTA Abhyas Paper", "value": "01", "isVisible": true}], "previousYearPapers": [{"_id": "6904b6feef55966cf1d71f2a", "title": "NTA Abhyas (JEE Main) 2020", "shortName": "2020", "isVisible": true, "heldOn": "2020-05-25T09:00:00.000Z"}], "question": {"text": "Suppose that the side lengths of a triangle are three consecutive integers and one of the angles is twice another. The number of such triangles is/are", "image": null}, "options": [{"id": "owQa1", "text": "<math> <mn>1</mn> </math>", "image": null, "isCorrect": true}, {"id": "I7EQn", "text": "<math> <mn>0</mn></math>", "image": null, "isCorrect": false}, {"id": "FTACW", "text": "<math> <mn>4</mn></math>", "image": null, "isCorrect": false}, {"id": "70k52", "text": "<math> <mn>2</mn></math>", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Let <math> <mtext>B</mtext><mo>=</mo><mn>2</mn><mtext>A</mtext> </math> and <math> <mtext>B</mtext><mtext>D</mtext> </math> be the bisector of angle <math> <mrow> <mtext>B</mtext><mo>,</mo></mrow> </math> then<br /><br /><math><mrow><mtext>CD</mtext> <mo>=</mo> <mfrac> <mrow> <mtext>ab</mtext> </mrow> <mrow> <mtext>a</mtext> <mo>+</mo> <mtext>c</mtext> </mrow> </mfrac> <mo>&nbsp;&nbsp;&amp;&nbsp;&nbsp;</mo> <mtext>AD</mtext> <mo>=</mo> <mfrac> <mrow> <mtext>bc</mtext> </mrow> <mrow> <mtext>a</mtext> <mo>+</mo> <mtext>c</mtext> </mrow> </mfrac> </mrow> </math><br /><br />Now,&nbsp; <math> <mrow> <mo>Δ</mo> <mtext>ABC</mtext> <mo>&nbsp;and&nbsp;</mo> <mo>Δ</mo> <mtext>BDC</mtext> </mrow> </math> are similar, so<br /><br /><math><mrow><mfrac><mrow><mtext>BC</mtext> </mrow> <mrow> <mtext>AC</mtext> </mrow> </mfrac> <mo>=</mo> <mfrac> <mrow> <mtext>CD</mtext> </mrow> <mrow> <mtext>BC</mtext> </mrow> </mfrac> <mo>⇒</mo> <msup> <mtext>a</mtext> <mn>2</mn> </msup> <mo>=</mo> <mfrac> <mrow> <mtext>ab</mtext> </mrow> <mrow> <mtext>a</mtext> <mo>+</mo> <mtext>c</mtext> </mrow> </mfrac> <mtext>b</mtext> <mo>&nbsp;⇒&nbsp;</mo> <msup> <mtext>b</mtext> <mn>2</mn> </msup> <mo>=</mo> <mtext>a</mtext> <mfenced close=\")\" open=\"(\" separators=\",\"> <mrow> <mtext>a</mtext> <mo>+</mo> <mtext>c</mtext> </mrow> </mfenced> </mrow> </math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;......(i)<br /><br />Since, <math> <mrow> <mtext>b</mtext><mo>&gt;</mo><mtext>a</mtext><mtext> </mtext><mtext> </mtext><mo>⇒</mo></mrow> </math> Either <math> <mrow> <mtext>b</mtext><mo>=</mo><mtext>a</mtext><mo>+</mo><mn>1</mn></mrow> </math> or <math> <mrow> <mtext>b</mtext><mo>=</mo><mtext>a</mtext><mo>+</mo><mn>2</mn></mrow><mo>,</mo> </math> if <math> <mrow> <mtext>b</mtext><mo>=</mo><mtext>a</mtext><mo>+</mo><mn>1</mn></mrow><mo>,</mo> </math> then [From Eq.(i)]<br /><br /><math><mrow><msup><mrow><mfenced close=\")\" open=\"(\" separators=\",\"><mrow><mtext>a</mtext> <mo>+</mo> <mn>1</mn> </mrow> </mfenced> </mrow> <mn>2</mn> </msup> <mo>=</mo> <mfenced close=\")\" open=\"(\" separators=\",\"> <mrow> <mtext>a</mtext> <mo>+</mo> <mtext>c</mtext> </mrow> </mfenced> <mtext>a</mtext> <mo>⇒</mo> <mtext>c</mtext> <mo>=</mo> <mn>2</mn> <mo>+</mo> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mtext>a</mtext> </mrow> </mfrac> </mrow> </math><br /><br />&nbsp;<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/fvvvvvv.JPG\" style=\"width: 300px; height: 169px;\" /><br /><math><mtext>c</mtext> </math> is integer <math><mrow><mo>⇒</mo></mrow></math> <math> <mrow><mtext>a</mtext><mo>=</mo><mn>1</mn><mo>,</mo><mtext>b</mtext><mo>=</mo><mn>2</mn><mo>,</mo><mtext>c</mtext><mo>=</mo><mn>3</mn></mrow> </math> but then, no triangle will form.<br />If <math> <mrow> <mtext>b</mtext><mo>=</mo><mtext>a</mtext><mo>+</mo><mn>2</mn><mo>,</mo></mrow> </math> then obviously <math> <mrow> <mtext>c</mtext><mo>=</mo><mtext>a</mtext><mo>+</mo><mn>1</mn><mo>,</mo></mrow> </math> and then, [from Eq. (i)]<br /><br /><math> <msup> <mfenced> <mrow> <mtext>a</mtext><mo>+</mo><mn>2</mn></mrow> </mfenced> <mn>2</mn> </msup> <mo>=</mo><mtext>a</mtext><mfenced> <mrow> <mn>2</mn><mtext>a</mtext><mo>+</mo><mn>1</mn></mrow> </mfenced> </math><br /><br /><math> <mo>⇒</mo><msup> <mtext>a</mtext> <mn>2</mn> </msup> <mo>−</mo><mn>3</mn><mi>a</mi><mo>−</mo><mn>4</mn><mo>=</mo><mn>0</mn><mtext> </mtext><mtext> </mtext><mtext>or</mtext><mtext> </mtext><mtext>a</mtext><mo>=</mo><mn>4</mn> </math><br /><br /><math> <mo>∴</mo><mtext> </mtext><mtext> </mtext><mtext>a</mtext><mo>=</mo><mn>4</mn><mo>,</mo><mtext> </mtext><mtext>b</mtext><mo>=</mo><mn>6</mn><mo>,</mo><mtext>c</mtext><mo>=</mo><mn>5</mn> </math> is the only possible solution.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": null, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "6aa3ab79aa8dc1ff68177ff2", "title": "Cosine Rule and Projection Formula", "totalQuestions": 3, "questions": [{"_id": "6151e863daadbb9da261c1bf", "type": "singleCorrect", "level": 1, "questionLabels": [{"title": "NTA Abhyas Paper", "value": "03", "isVisible": true}], "previousYearPapers": [{"_id": "6904b6feef55966cf1d71f2a", "title": "NTA Abhyas (JEE Main) 2020", "shortName": "2020", "isVisible": true, "heldOn": "2020-05-25T09:00:00.000Z"}], "question": {"text": "The lengths of two adjacent sides of a cyclic quadrilateral are <math><mn>2</mn></math> units and <math><mn>5</mn></math> units and the angle between them is <math><msup><mrow><mn>60</mn></mrow><mrow><mn>o</mn></mrow></msup></math>. If the area of the quadrilateral is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><msqrt><mn>3</mn></msqrt></math>&nbsp;sq. units, then the perimeter of the quadrilateral is", "image": null}, "options": [{"id": "AkBgE", "text": "<math><mn>12.5</mn></math> units", "image": null, "isCorrect": false}, {"id": "f6GTk", "text": "<math><mn>13</mn></math> units", "image": null, "isCorrect": false}, {"id": "rd4L5", "text": "<math><mn>13.2</mn></math> units", "image": null, "isCorrect": false}, {"id": "2QjU6", "text": "<math><mn>12</mn></math> units", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/179792.png\" style=\"width: 147px; height: 159px;\" /><br /><br /><math><mrow><mrow><mi mathvariant=\"normal\">cos</mi></mrow><mo>⁡</mo><mrow><mrow> <msup> <mrow> <mn>60</mn></mrow> <mi>o</mi> </msup> </mrow></mrow></mrow><mo>=</mo><mfrac><mrow><mn>4</mn><mo>+</mo><mn>25</mn><mo>-</mo><msup><mrow><mi>c</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>2.2</mn><mo>.</mo><mn>5</mn></mrow></mfrac></math><br /><br /><math><mo>⇒</mo><mn>10</mn><mo>=</mo><mn>29</mn><mo>-</mo><msup><mrow><mi>c</mi></mrow><mrow><mn>2</mn></mrow></msup></math><br /><br /><math><mo>⇒</mo><msup><mrow><mi>c</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>19</mn></math><br /><br /><math><mo>⇒</mo><mi>c</mi><mo>=</mo><msqrt><mn>19</mn></msqrt></math><br /><br />Now,<br /><br /><math> <mrow> <mi>cos</mi><mn>120</mn><mi>°</mi><mo>=</mo><mfrac> <mrow> <msup> <mi>a</mi> <mn>2</mn> </msup> <mo>+</mo><msup> <mi>b</mi> <mn>2</mn> </msup> <mo>−</mo><msup> <mi>c</mi> <mn>2</mn> </msup> </mrow> <mrow> <mn>2</mn><mi>a</mi><mi>b</mi> </mrow> </mfrac> </mrow> </math><br /><br /><math> <mo>⇒</mo> </math> <math><mo>-</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><msup><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>-</mo><mn>19</mn></mrow><mrow><mn>2</mn><mi>a</mi><mi>b</mi></mrow></mfrac></math><br /><br /><math><mo>⇒</mo><msup><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>-</mo><mn>19</mn><mo>=</mo><mo>-</mo><mi>a</mi><mi>b</mi></math><br /><br /><math><mo>⇒</mo><msup><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><mi>a</mi><mi>b</mi><mo>=</mo><mn>19</mn></math><br /><br />Area of quadrilateral&nbsp;&nbsp;<math><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mo>×</mo><mn>2</mn><mo>×</mo><mn>5</mn><mrow><mrow><mi mathvariant=\"normal\">sin</mi></mrow><mo>⁡</mo><mrow><mn>60°</mn></mrow></mrow><mo>+</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mi>a</mi><mi>b</mi><mrow><mrow><mi mathvariant=\"normal\">sin</mi></mrow><mo>⁡</mo><mrow><mi>120°</mi></mrow></mrow><mo>=</mo><mn>4</mn><msqrt><mn>3</mn></msqrt></math><br /><br /><math><mo>⇒</mo><mfrac><mrow><mn>5</mn><msqrt><mn>3</mn></msqrt></mrow><mrow><mn>2</mn></mrow></mfrac><mo>+</mo><mfrac><mrow><mi>a</mi><mi>b</mi><msqrt><mn>3</mn></msqrt></mrow><mrow><mn>4</mn></mrow></mfrac><mo>=</mo><mn>4</mn><msqrt><mn>3</mn></msqrt></math><br /><br /><math><mo>⇒</mo><mfrac><mrow><mi>a</mi><mi>b</mi></mrow><mrow><mn>4</mn></mrow></mfrac><mo>=</mo><mn>4</mn><mo>-</mo><mfrac><mrow><mn>5</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn></mrow><mrow><mn>2</mn></mrow></mfrac></math><br /><br /><math><mo>⇒</mo><mi>a</mi><mi>b</mi><mo>=</mo><mn>6</mn></math><br /><br /><math><mo>⇒</mo><msup><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>13</mn></math><br /><br /><math><mo>⇒</mo><mi>a</mi><mo>=</mo><mn>2</mn><mo>,</mo><mi>&nbsp;</mi><mi>b</mi><mo>=</mo><mn>3</mn></math><br /><br />Perimeter<br /><br /><math><mo>=</mo><mn>2</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn></math><br /><br /><math><mo>=</mo><mn>12</mn></math>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": null, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6151e863ae42edeea77c0910", "type": "singleCorrect", "level": 1, "questionLabels": [{"title": "NTA Abhyas Paper", "value": "01", "isVisible": true}], "previousYearPapers": [{"_id": "6904b6feef55966cf1d71f2a", "title": "NTA Abhyas (JEE Main) 2020", "shortName": "2020", "isVisible": true, "heldOn": "2020-05-25T09:00:00.000Z"}], "question": {"text": "Suppose that the side lengths of a triangle are three consecutive integers and one of the angles is twice another. The number of such triangles is/are", "image": null}, "options": [{"id": "owQa1", "text": "<math> <mn>1</mn> </math>", "image": null, "isCorrect": true}, {"id": "I7EQn", "text": "<math> <mn>0</mn></math>", "image": null, "isCorrect": false}, {"id": "FTACW", "text": "<math> <mn>4</mn></math>", "image": null, "isCorrect": false}, {"id": "70k52", "text": "<math> <mn>2</mn></math>", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Let <math> <mtext>B</mtext><mo>=</mo><mn>2</mn><mtext>A</mtext> </math> and <math> <mtext>B</mtext><mtext>D</mtext> </math> be the bisector of angle <math> <mrow> <mtext>B</mtext><mo>,</mo></mrow> </math> then<br /><br /><math><mrow><mtext>CD</mtext> <mo>=</mo> <mfrac> <mrow> <mtext>ab</mtext> </mrow> <mrow> <mtext>a</mtext> <mo>+</mo> <mtext>c</mtext> </mrow> </mfrac> <mo>&nbsp;&nbsp;&amp;&nbsp;&nbsp;</mo> <mtext>AD</mtext> <mo>=</mo> <mfrac> <mrow> <mtext>bc</mtext> </mrow> <mrow> <mtext>a</mtext> <mo>+</mo> <mtext>c</mtext> </mrow> </mfrac> </mrow> </math><br /><br />Now,&nbsp; <math> <mrow> <mo>Δ</mo> <mtext>ABC</mtext> <mo>&nbsp;and&nbsp;</mo> <mo>Δ</mo> <mtext>BDC</mtext> </mrow> </math> are similar, so<br /><br /><math><mrow><mfrac><mrow><mtext>BC</mtext> </mrow> <mrow> <mtext>AC</mtext> </mrow> </mfrac> <mo>=</mo> <mfrac> <mrow> <mtext>CD</mtext> </mrow> <mrow> <mtext>BC</mtext> </mrow> </mfrac> <mo>⇒</mo> <msup> <mtext>a</mtext> <mn>2</mn> </msup> <mo>=</mo> <mfrac> <mrow> <mtext>ab</mtext> </mrow> <mrow> <mtext>a</mtext> <mo>+</mo> <mtext>c</mtext> </mrow> </mfrac> <mtext>b</mtext> <mo>&nbsp;⇒&nbsp;</mo> <msup> <mtext>b</mtext> <mn>2</mn> </msup> <mo>=</mo> <mtext>a</mtext> <mfenced close=\")\" open=\"(\" separators=\",\"> <mrow> <mtext>a</mtext> <mo>+</mo> <mtext>c</mtext> </mrow> </mfenced> </mrow> </math>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;......(i)<br /><br />Since, <math> <mrow> <mtext>b</mtext><mo>&gt;</mo><mtext>a</mtext><mtext> </mtext><mtext> </mtext><mo>⇒</mo></mrow> </math> Either <math> <mrow> <mtext>b</mtext><mo>=</mo><mtext>a</mtext><mo>+</mo><mn>1</mn></mrow> </math> or <math> <mrow> <mtext>b</mtext><mo>=</mo><mtext>a</mtext><mo>+</mo><mn>2</mn></mrow><mo>,</mo> </math> if <math> <mrow> <mtext>b</mtext><mo>=</mo><mtext>a</mtext><mo>+</mo><mn>1</mn></mrow><mo>,</mo> </math> then [From Eq.(i)]<br /><br /><math><mrow><msup><mrow><mfenced close=\")\" open=\"(\" separators=\",\"><mrow><mtext>a</mtext> <mo>+</mo> <mn>1</mn> </mrow> </mfenced> </mrow> <mn>2</mn> </msup> <mo>=</mo> <mfenced close=\")\" open=\"(\" separators=\",\"> <mrow> <mtext>a</mtext> <mo>+</mo> <mtext>c</mtext> </mrow> </mfenced> <mtext>a</mtext> <mo>⇒</mo> <mtext>c</mtext> <mo>=</mo> <mn>2</mn> <mo>+</mo> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mtext>a</mtext> </mrow> </mfrac> </mrow> </math><br /><br />&nbsp;<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/fvvvvvv.JPG\" style=\"width: 300px; height: 169px;\" /><br /><math><mtext>c</mtext> </math> is integer <math><mrow><mo>⇒</mo></mrow></math> <math> <mrow><mtext>a</mtext><mo>=</mo><mn>1</mn><mo>,</mo><mtext>b</mtext><mo>=</mo><mn>2</mn><mo>,</mo><mtext>c</mtext><mo>=</mo><mn>3</mn></mrow> </math> but then, no triangle will form.<br />If <math> <mrow> <mtext>b</mtext><mo>=</mo><mtext>a</mtext><mo>+</mo><mn>2</mn><mo>,</mo></mrow> </math> then obviously <math> <mrow> <mtext>c</mtext><mo>=</mo><mtext>a</mtext><mo>+</mo><mn>1</mn><mo>,</mo></mrow> </math> and then, [from Eq. (i)]<br /><br /><math> <msup> <mfenced> <mrow> <mtext>a</mtext><mo>+</mo><mn>2</mn></mrow> </mfenced> <mn>2</mn> </msup> <mo>=</mo><mtext>a</mtext><mfenced> <mrow> <mn>2</mn><mtext>a</mtext><mo>+</mo><mn>1</mn></mrow> </mfenced> </math><br /><br /><math> <mo>⇒</mo><msup> <mtext>a</mtext> <mn>2</mn> </msup> <mo>−</mo><mn>3</mn><mi>a</mi><mo>−</mo><mn>4</mn><mo>=</mo><mn>0</mn><mtext> </mtext><mtext> </mtext><mtext>or</mtext><mtext> </mtext><mtext>a</mtext><mo>=</mo><mn>4</mn> </math><br /><br /><math> <mo>∴</mo><mtext> </mtext><mtext> </mtext><mtext>a</mtext><mo>=</mo><mn>4</mn><mo>,</mo><mtext> </mtext><mtext>b</mtext><mo>=</mo><mn>6</mn><mo>,</mo><mtext>c</mtext><mo>=</mo><mn>5</mn> </math> is the only possible solution.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": null, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6151e8636b5fd962e9b430f3", "type": "singleCorrect", "level": 1, "questionLabels": [{"title": "NTA Abhyas Paper", "value": "04", "isVisible": true}], "previousYearPapers": [{"_id": "6904b6feef55966cf1d71f2a", "title": "NTA Abhyas (JEE Main) 2020", "shortName": "2020", "isVisible": true, "heldOn": "2020-05-25T09:00:00.000Z"}], "question": {"text": "Two sides of a triangle are given by the roots of the equation&nbsp;<math> <mrow> <msup> <mtext>x</mtext> <mn>2</mn> </msup> <mo>-</mo> <mn>2</mn> <msqrt> <mn>3</mn> </msqrt> <mtext>x</mtext> <mo>+</mo> <mn>2</mn> <mo>=</mo> <mn>0</mn> </mrow> </math>&nbsp;and the angle between the sides is <math><mrow><mfrac><mrow><mi>π</mi> </mrow> <mrow> <mn>3</mn> </mrow> </mfrac> </mrow> </math>. The perimeter of the triangle is", "image": null}, "options": [{"id": "uXdBj", "text": "<math> <mrow> <mn>2</mn> <msqrt> <mn>3</mn> </msqrt> </mrow> </math>&nbsp;units", "image": null, "isCorrect": false}, {"id": "fVlGz", "text": "<math> <mrow> <msqrt> <mn>6</mn> </msqrt> </mrow> </math>&nbsp;units", "image": null, "isCorrect": false}, {"id": "zhXvD", "text": "<math> <mrow> <mn>2</mn> <msqrt> <mn>3</mn> </msqrt> <mo>+</mo> <msqrt> <mn>6</mn> </msqrt> </mrow> </math>&nbsp;units", "image": null, "isCorrect": true}, {"id": "X6d6P", "text": "<math> <mrow> <mn>2</mn> <mfenced close=\")\" open=\"(\" separators=\",\"> <mrow> <msqrt> <mn>3</mn> </msqrt> <mo>+</mo> <msqrt> <mn>6</mn> </msqrt> </mrow> </mfenced> </mrow> </math>&nbsp;units", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Let the two sides <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">a</mi></math> and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">b</mi></math> are the roots of the equation&nbsp;<math> <mrow> <msup> <mtext>x</mtext> <mn>2</mn> </msup> <mo>-</mo> <mn>2</mn> <msqrt> <mn>3</mn> </msqrt> <mtext>x</mtext> <mo>+</mo> <mn>2</mn> <mo>=</mo> <mn>0</mn> </mrow> </math>.<br /><br /><math> <mrow> <mo>∴&nbsp;&nbsp;</mo> <mtext>a</mtext> <mo>+</mo> <mtext>b</mtext> <mo>=</mo> <mn>2</mn> <msqrt> <mn>3</mn> </msqrt> </mrow> </math>&nbsp; and&nbsp;<math> <mrow> <mtext>ab</mtext> <mo>=</mo> <mn>2</mn> </mrow> </math>. Also,&nbsp;<math> <mrow> <mo>∠</mo> <mtext>C</mtext> <mo>=</mo> <mfrac> <mrow> <mi>π</mi> </mrow> <mrow> <mn>3</mn> </mrow> </mfrac> </mrow> </math><br /><br />Using cosine rule,<br /><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtext>cosC</mtext><mo>=</mo><mfrac><mrow><msup><mtext>a</mtext><mn>2</mn></msup><mo>+</mo><msup><mtext>b</mtext><mn>2</mn></msup><mo>-</mo><msup><mtext>c</mtext><mn>2</mn></msup></mrow><mrow><mn>2</mn><mtext>ab</mtext></mrow></mfrac><mo>⇒</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><msup><mtext>a</mtext><mn>2</mn></msup><mo>+</mo><msup><mtext>b</mtext><mn>2</mn></msup><mo>-</mo><msup><mtext>c</mtext><mn>2</mn></msup></mrow><mrow><mn>2</mn><mtext>ab</mtext></mrow></mfrac></math><br /><br /><math> <mrow> <mo>⇒&nbsp;&nbsp;</mo> <msup> <mtext>a</mtext> <mn>2</mn> </msup> <mo>+</mo> <msup> <mtext>b</mtext> <mn>2</mn> </msup> <mo>-</mo> <msup> <mtext>c</mtext> <mn>2</mn> </msup> <mo>=</mo> <mtext>ab</mtext> <mo>&nbsp;&nbsp;⇒&nbsp;&nbsp;</mo> <msup> <mrow> <mfenced close=\")\" open=\"(\" separators=\",\"> <mrow> <mtext>a</mtext> <mo>+</mo> <mtext>b</mtext> </mrow> </mfenced> </mrow> <mn>2</mn> </msup> <mo>-</mo> <msup> <mtext>c</mtext> <mn>2</mn> </msup> <mo>=</mo> <mn>3</mn> <mtext>ab</mtext> </mrow> </math><br /><br /><math> <mrow> <mo>⇒&nbsp;&nbsp;</mo> <msup> <mrow> <mfenced close=\")\" open=\"(\" separators=\",\"> <mrow> <mn>2</mn> <msqrt> <mn>3</mn> </msqrt> </mrow> </mfenced> </mrow> <mn>2</mn> </msup> <mo>-</mo> <msup> <mtext>c</mtext> <mn>2</mn> </msup> <mo>=</mo> <mn>3</mn> <mo>×</mo> <mn>2</mn> <mo>⇒</mo> <mtext>c</mtext> <mo>=</mo> <msqrt> <mn>6</mn> </msqrt> </mrow> </math><br /><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>∴&nbsp;&nbsp;</mo></math>&nbsp;Perimeter <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mtext>a</mtext><mo>+</mo><mtext>b</mtext><mo>+</mo><mtext>c</mtext><mo>=</mo><mn>2</mn><msqrt><mn>3</mn></msqrt><mo>+</mo><msqrt><mn>6</mn></msqrt></math>&nbsp;&nbsp;units", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": null, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "6aa3ab79aa8dc1ff68177ff3", "title": "Napiers Analogy, Area of Triangle & Half Angle Formulae", "totalQuestions": 1, "questions": [{"_id": "6151e8635ad837045f1238ac", "type": "singleCorrect", "level": 1, "questionLabels": [{"title": "NTA Abhyas Paper", "value": "05", "isVisible": true}], "previousYearPapers": [{"_id": "6904b6feef55966cf1d71f2a", "title": "NTA Abhyas (JEE Main) 2020", "shortName": "2020", "isVisible": true, "heldOn": "2020-05-25T09:00:00.000Z"}], "question": {"text": "Two medians drawn from acute angles vertices of a right angled triangle intersects at an angle <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi mathvariant=\"normal\">π</mi><mn>6</mn></mfrac></math>. If the length of the hypotenuse of the triangle is <math> <mn>3</mn> </math> units, then area of the triangle (in sq. units) is", "image": null}, "options": [{"id": "tmQ7z", "text": "<math><msqrt><mn>3</mn></msqrt></math>", "image": null, "isCorrect": true}, {"id": "uuHtq", "text": "<math> <mn>3</mn></math>", "image": null, "isCorrect": false}, {"id": "ONNMd", "text": "<math><msqrt><mn>2</mn></msqrt></math>", "image": null, "isCorrect": false}, {"id": "1lzmS", "text": "<math> <mn>9</mn></math>", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Slope of&nbsp;<math> <mrow> <mi>A</mi><mi>G</mi><mo>=</mo><mo>−</mo><mfrac> <mi>b</mi> <mrow> <mn>2</mn><mi>a</mi></mrow> </mfrac> <mo>,</mo><mtext> </mtext><mi>tan</mi><msup> <mrow> <mn>30</mn></mrow> <mi>o</mi> </msup> <mo>=</mo><mfrac> <mrow> <mfrac> <mrow> <mn>3</mn><mi>b</mi></mrow> <mrow> <mn>2</mn><mi>a</mi></mrow> </mfrac> </mrow> <mrow> <mn>1</mn><mo>+</mo><mfrac> <mrow> <msup> <mi>b</mi> <mn>2</mn> </msup> </mrow> <mrow> <msup> <mi>a</mi> <mn>2</mn> </msup> </mrow> </mfrac> </mrow> </mfrac> </mrow> </math><br /><br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/WhatsApp_Image_2020-05-23_at_5.54.07_PM.jpeg\" style=\"width: 190px; height: 195px;\" /><br /><br /><math><msup><mrow><mi mathvariant=\"normal\">a</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>9</mn><mo>⇒</mo><mi mathvariant=\"normal\"></mi><mfrac><mrow><mn>1</mn></mrow><mrow><msqrt><mn>3</mn></msqrt></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn><mi mathvariant=\"normal\">b</mi><mo>.</mo><mi mathvariant=\"normal\">a</mi></mrow><mrow><mn>2</mn><mfenced separators=\"|\"><mrow><msup><mrow><mi mathvariant=\"normal\">a</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfenced></mrow></mfrac></math><br /><br /><math><mo>⇒</mo><mi mathvariant=\"normal\">&nbsp;</mi><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">b</mi><mo>=</mo><mfenced separators=\"|\"><mrow><mfrac><mrow><msup><mrow><mi mathvariant=\"normal\">a</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>3</mn><msqrt><mn>3</mn></msqrt></mrow></mfrac></mrow></mfenced><mo>=</mo><mfrac><mrow><mn>9</mn></mrow><mrow><mn>3</mn><msqrt><mn>3</mn></msqrt></mrow></mfrac><mo>=</mo><msqrt><mn>3</mn></msqrt></math>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": null, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "6aa3ab79aa8dc1ff68177ff1", "title": "Circle Connected to Triangle", "totalQuestions": 2, "questions": [{"_id": "6151e8636a67b7ee23b3b738", "type": "numerical", "level": 1, "questionLabels": [{"title": "NTA Abhyas Paper", "value": "02", "isVisible": true}], "previousYearPapers": [{"_id": "6904b6feef55966cf1d71f2a", "title": "NTA Abhyas (JEE Main) 2020", "shortName": "2020", "isVisible": true, "heldOn": "2020-05-25T09:00:00.000Z"}], "question": {"text": "The inradius of the triangle having sides <math><mn>26, 28, 30</mn></math> units is", "image": null}, "options": [], "correctValue": "8", "solution": {"text": "<math><mi mathvariant=\"normal\">s</mi><mo>=</mo><mfrac><mrow><mn>26</mn><mo>+</mo><mn>28</mn><mo>+</mo><mn>30</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mo>=</mo><mn>42</mn></math><br /><math><mi mathvariant=\"normal\">Δ</mi><mo>=</mo><msqrt><mi mathvariant=\"normal\">s</mi><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">s</mi><mo>-</mo><mi mathvariant=\"normal\">a</mi></mrow></mfenced><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">s</mi><mo>-</mo><mi mathvariant=\"normal\">b</mi></mrow></mfenced><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">s</mi><mo>-</mo><mi mathvariant=\"normal\">c</mi></mrow></mfenced></msqrt></math><br /><math><mo>=</mo><msqrt><mn>42</mn><mfenced separators=\"|\"><mrow><mn>42</mn><mo>-</mo><mn>26</mn></mrow></mfenced><mfenced separators=\"|\"><mrow><mn>42</mn><mo>-</mo><mn>28</mn></mrow></mfenced><mfenced separators=\"|\"><mrow><mn>42</mn><mo>-</mo><mn>30</mn></mrow></mfenced></msqrt></math><br /><math><mo>=</mo><msqrt><mn>42</mn><mo>×</mo><mn>16</mn><mo>×</mo><mn>14</mn><mo>×</mo><mn>12</mn></msqrt></math><br /><math><mo>=</mo><msqrt><mfenced separators=\"|\"><mrow><mn>7</mn><mo>×</mo><mn>6</mn></mrow></mfenced><mo>×</mo><mfenced separators=\"|\"><mrow><mn>4</mn><mo>×</mo><mn>4</mn></mrow></mfenced><mo>×</mo><mfenced separators=\"|\"><mrow><mn>7</mn><mo>×</mo><mn>2</mn></mrow></mfenced><mo>×</mo><mfenced separators=\"|\"><mrow><mn>6</mn><mo>×</mo><mn>2</mn></mrow></mfenced></msqrt></math><br /><math><mo>=</mo><mn>7</mn><mo>×</mo><mn>6</mn><mo>×</mo><mn>4</mn><mo>×</mo><mn>2</mn></math><br /><math><mi mathvariant=\"normal\">r</mi><mo>=</mo><mfrac><mrow><mi mathvariant=\"normal\">Δ</mi></mrow><mrow><mi mathvariant=\"normal\">s</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>7</mn><mo>×</mo><mn>6</mn><mo>×</mo><mn>4</mn><mo>×</mo><mn>2</mn></mrow><mrow><mn>42</mn></mrow></mfrac><mo>=</mo><mn>8</mn></math>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": null, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6151e8635ad837045f1238ac", "type": "singleCorrect", "level": 1, "questionLabels": [{"title": "NTA Abhyas Paper", "value": "05", "isVisible": true}], "previousYearPapers": [{"_id": "6904b6feef55966cf1d71f2a", "title": "NTA Abhyas (JEE Main) 2020", "shortName": "2020", "isVisible": true, "heldOn": "2020-05-25T09:00:00.000Z"}], "question": {"text": "Two medians drawn from acute angles vertices of a right angled triangle intersects at an angle <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi mathvariant=\"normal\">π</mi><mn>6</mn></mfrac></math>. If the length of the hypotenuse of the triangle is <math> <mn>3</mn> </math> units, then area of the triangle (in sq. units) is", "image": null}, "options": [{"id": "tmQ7z", "text": "<math><msqrt><mn>3</mn></msqrt></math>", "image": null, "isCorrect": true}, {"id": "uuHtq", "text": "<math> <mn>3</mn></math>", "image": null, "isCorrect": false}, {"id": "ONNMd", "text": "<math><msqrt><mn>2</mn></msqrt></math>", "image": null, "isCorrect": false}, {"id": "1lzmS", "text": "<math> <mn>9</mn></math>", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Slope of&nbsp;<math> <mrow> <mi>A</mi><mi>G</mi><mo>=</mo><mo>−</mo><mfrac> <mi>b</mi> <mrow> <mn>2</mn><mi>a</mi></mrow> </mfrac> <mo>,</mo><mtext> </mtext><mi>tan</mi><msup> <mrow> <mn>30</mn></mrow> <mi>o</mi> </msup> <mo>=</mo><mfrac> <mrow> <mfrac> <mrow> <mn>3</mn><mi>b</mi></mrow> <mrow> <mn>2</mn><mi>a</mi></mrow> </mfrac> </mrow> <mrow> <mn>1</mn><mo>+</mo><mfrac> <mrow> <msup> <mi>b</mi> <mn>2</mn> </msup> </mrow> <mrow> <msup> <mi>a</mi> <mn>2</mn> </msup> </mrow> </mfrac> </mrow> </mfrac> </mrow> </math><br /><br /><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/WhatsApp_Image_2020-05-23_at_5.54.07_PM.jpeg\" style=\"width: 190px; height: 195px;\" /><br /><br /><math><msup><mrow><mi mathvariant=\"normal\">a</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>9</mn><mo>⇒</mo><mi mathvariant=\"normal\"></mi><mfrac><mrow><mn>1</mn></mrow><mrow><msqrt><mn>3</mn></msqrt></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn><mi mathvariant=\"normal\">b</mi><mo>.</mo><mi mathvariant=\"normal\">a</mi></mrow><mrow><mn>2</mn><mfenced separators=\"|\"><mrow><msup><mrow><mi mathvariant=\"normal\">a</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfenced></mrow></mfrac></math><br /><br /><math><mo>⇒</mo><mi mathvariant=\"normal\">&nbsp;</mi><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">b</mi><mo>=</mo><mfenced separators=\"|\"><mrow><mfrac><mrow><msup><mrow><mi mathvariant=\"normal\">a</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>3</mn><msqrt><mn>3</mn></msqrt></mrow></mfrac></mrow></mfenced><mo>=</mo><mfrac><mrow><mn>9</mn></mrow><mrow><mn>3</mn><msqrt><mn>3</mn></msqrt></mrow></mfrac><mo>=</mo><msqrt><mn>3</mn></msqrt></math>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": null, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 5, "topicId": "6aa3ab79aa8dc1ff68177ff0", "title": "Circle and Polygon", "totalQuestions": 1, "questions": [{"_id": "6151e863daadbb9da261c1bf", "type": "singleCorrect", "level": 1, "questionLabels": [{"title": "NTA Abhyas Paper", "value": "03", "isVisible": true}], "previousYearPapers": [{"_id": "6904b6feef55966cf1d71f2a", "title": "NTA Abhyas (JEE Main) 2020", "shortName": "2020", "isVisible": true, "heldOn": "2020-05-25T09:00:00.000Z"}], "question": {"text": "The lengths of two adjacent sides of a cyclic quadrilateral are <math><mn>2</mn></math> units and <math><mn>5</mn></math> units and the angle between them is <math><msup><mrow><mn>60</mn></mrow><mrow><mn>o</mn></mrow></msup></math>. If the area of the quadrilateral is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><msqrt><mn>3</mn></msqrt></math>&nbsp;sq. units, then the perimeter of the quadrilateral is", "image": null}, "options": [{"id": "AkBgE", "text": "<math><mn>12.5</mn></math> units", "image": null, "isCorrect": false}, {"id": "f6GTk", "text": "<math><mn>13</mn></math> units", "image": null, "isCorrect": false}, {"id": "rd4L5", "text": "<math><mn>13.2</mn></math> units", "image": null, "isCorrect": false}, {"id": "2QjU6", "text": "<math><mn>12</mn></math> units", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/179792.png\" style=\"width: 147px; height: 159px;\" /><br /><br /><math><mrow><mrow><mi mathvariant=\"normal\">cos</mi></mrow><mo>⁡</mo><mrow><mrow> <msup> <mrow> <mn>60</mn></mrow> <mi>o</mi> </msup> </mrow></mrow></mrow><mo>=</mo><mfrac><mrow><mn>4</mn><mo>+</mo><mn>25</mn><mo>-</mo><msup><mrow><mi>c</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>2.2</mn><mo>.</mo><mn>5</mn></mrow></mfrac></math><br /><br /><math><mo>⇒</mo><mn>10</mn><mo>=</mo><mn>29</mn><mo>-</mo><msup><mrow><mi>c</mi></mrow><mrow><mn>2</mn></mrow></msup></math><br /><br /><math><mo>⇒</mo><msup><mrow><mi>c</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>19</mn></math><br /><br /><math><mo>⇒</mo><mi>c</mi><mo>=</mo><msqrt><mn>19</mn></msqrt></math><br /><br />Now,<br /><br /><math> <mrow> <mi>cos</mi><mn>120</mn><mi>°</mi><mo>=</mo><mfrac> <mrow> <msup> <mi>a</mi> <mn>2</mn> </msup> <mo>+</mo><msup> <mi>b</mi> <mn>2</mn> </msup> <mo>−</mo><msup> <mi>c</mi> <mn>2</mn> </msup> </mrow> <mrow> <mn>2</mn><mi>a</mi><mi>b</mi> </mrow> </mfrac> </mrow> </math><br /><br /><math> <mo>⇒</mo> </math> <math><mo>-</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><msup><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>-</mo><mn>19</mn></mrow><mrow><mn>2</mn><mi>a</mi><mi>b</mi></mrow></mfrac></math><br /><br /><math><mo>⇒</mo><msup><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>-</mo><mn>19</mn><mo>=</mo><mo>-</mo><mi>a</mi><mi>b</mi></math><br /><br /><math><mo>⇒</mo><msup><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><mi>a</mi><mi>b</mi><mo>=</mo><mn>19</mn></math><br /><br />Area of quadrilateral&nbsp;&nbsp;<math><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mo>×</mo><mn>2</mn><mo>×</mo><mn>5</mn><mrow><mrow><mi mathvariant=\"normal\">sin</mi></mrow><mo>⁡</mo><mrow><mn>60°</mn></mrow></mrow><mo>+</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mi>a</mi><mi>b</mi><mrow><mrow><mi mathvariant=\"normal\">sin</mi></mrow><mo>⁡</mo><mrow><mi>120°</mi></mrow></mrow><mo>=</mo><mn>4</mn><msqrt><mn>3</mn></msqrt></math><br /><br /><math><mo>⇒</mo><mfrac><mrow><mn>5</mn><msqrt><mn>3</mn></msqrt></mrow><mrow><mn>2</mn></mrow></mfrac><mo>+</mo><mfrac><mrow><mi>a</mi><mi>b</mi><msqrt><mn>3</mn></msqrt></mrow><mrow><mn>4</mn></mrow></mfrac><mo>=</mo><mn>4</mn><msqrt><mn>3</mn></msqrt></math><br /><br /><math><mo>⇒</mo><mfrac><mrow><mi>a</mi><mi>b</mi></mrow><mrow><mn>4</mn></mrow></mfrac><mo>=</mo><mn>4</mn><mo>-</mo><mfrac><mrow><mn>5</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn></mrow><mrow><mn>2</mn></mrow></mfrac></math><br /><br /><math><mo>⇒</mo><mi>a</mi><mi>b</mi><mo>=</mo><mn>6</mn></math><br /><br /><math><mo>⇒</mo><msup><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>13</mn></math><br /><br /><math><mo>⇒</mo><mi>a</mi><mo>=</mo><mn>2</mn><mo>,</mo><mi>&nbsp;</mi><mi>b</mi><mo>=</mo><mn>3</mn></math><br /><br />Perimeter<br /><br /><math><mo>=</mo><mn>2</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn></math><br /><br /><math><mo>=</mo><mn>12</mn></math>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": null, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'NTA Abhyas (JEE Main)';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,886 @@
+{
+  "index": 22,
+  "chapterId": "61c089ad0e6506a2165b63c5",
+  "chapter": "Sets and Relations",
+  "exam": "MHT CET",
+  "subject": "Mathematics",
+  "totalTopics": 2,
+  "totalQuestions": 13,
+  "downloadTime": "2026-10-08 20:43:25",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "65a263440279619d9d8a3da5",
+      "title": "Questions on Venn Diagram",
+      "totalQuestions": 5,
+      "questions": [
+        {
+          "_id": "65a261df0279619d9d8a3005",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892ac",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-10T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (10 May Shift 1)",
+              "title": "MHT CET 2023 (10 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "The given circuit is equivalent to\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/MbEYCI1htgKCfE1IXW4MFN8jHta0OXTjwjhIoRTeCpo.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ZbB1b",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/4wadTwDttKcCkDbL4yZpuDPrm5df0evBs5LiEdhOZEc.original.fullsize.png\"><br>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "KY2Nt",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/3NdQr1OEjhzCg81hc5-EZiWGDaP8OpbUIxCAQodWBj4.original.fullsize.png\"><br>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "9TbMU",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/VBI_1DB6cJcBQwhFFWhYpDaP2O3dZTodnUM4YByO2Fs.original.fullsize.png\"><br>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "EQeKY",
+              "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/DirbDRI81WxzGWYEotJsymmqjhwS_iMn9AIzCszULg0.original.fullsize.png\"><br>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The symbolic form of the given circuit is\n$\\begin{aligned}\n& (\\mathrm{p} \\vee \\sim \\mathrm{q} \\vee \\sim \\mathrm{r}) \\wedge(\\mathrm{p} \\vee(\\mathrm{q} \\wedge \\mathrm{r})) \\\\\n& \\equiv \\mathrm{p} \\vee[(\\sim \\mathrm{q} \\vee \\sim \\mathrm{r}) \\wedge(\\mathrm{q} \\wedge \\mathrm{r})]\n\\end{aligned}$\n...[Distributive law]\n$\\equiv p \\vee[\\sim(q \\wedge r) \\wedge(q \\wedge r)]$\n...[De Morgan's law]\n$\\equiv \\mathrm{p} \\vee \\mathrm{F}$\n...[Complement law]\n$\\equiv \\mathrm{p}$\n[Identity law]",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892ac",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-10T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (10 May Shift 1)",
+            "title": "MHT CET 2023 (10 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a2601a0279619d9d8a21c6",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f74",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-20T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (20 Oct Shift 2)",
+              "title": "MHT CET 2020 (20 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "$\\begin{array}{l}\n\\text { If } \\mathrm{A} \\text { and } \\mathrm{B} \\text { are subsets of universal set } \\mathrm{X} \\text { such that } \\mathrm{n}(\\mathrm{X})=200, \\mathrm{n}(\\mathrm{A})=90, \\mathrm{n}(\\mathrm{B})=80 \\text { , }\\\\\nn\\left(A^{\\prime} \\cap B^{\\prime}\\right)=40, \\text { then } n\\left(A \\cap B^{\\prime}\\right)=\n\\end{array}$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "MFylC",
+              "text": "70",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "y0dCh",
+              "text": "80",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "X7bRx",
+              "text": "20",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0FcMu",
+              "text": "10",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/eKKs_-GVd2utn24_S_6Rnp9JG-GWNWdU8B5OewFrcdk.original.fullsize.png\"><br>\n$$\n\\begin{aligned}\nn\\left(A \\cap B^{\\prime}\\right) &=n(A)-n(A \\cap B) \\\\\nn(x) &=200 \\\\\n& \\sim(A \\cap B)=n(A)+n(B)+2\\left(A^{\\prime} \\cap B^{\\prime}\\right) \\\\\n&-n(X) \\\\\nn\\left(A \\cap B^{\\prime}\\right) &=90-10 \\\\\n&=80\n\\end{aligned}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f74",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-20T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (20 Oct Shift 2)",
+            "title": "MHT CET 2020 (20 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f140279619d9d8a199e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f65",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2019-04-30T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019 (Shift 2)",
+              "title": "MHT CET 2019 (Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "If <math><mi>A</mi><mo>=</mo><mo>{</mo><mi>x</mi><mo>|</mo><mi>x</mi><mo>∈</mo><mi>N</mi><mo>,</mo><mi>x</mi></math> is a prime number less than 12} and B = {x | <math><mi>x</mi><mo>∈</mo><mi>N</mi></math> , x is factor of 10}, then <math><mi>A</mi><mo>∩</mo><mi>B</mi></math> =…",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Awh1q",
+              "text": "<math><mfenced close=\"}\" open=\"{\" separators=\"|\"><mrow><mn>2</mn></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "RXHyB",
+              "text": "<math><mfenced close=\"}\" open=\"{\" separators=\"|\"><mrow><mn>2,5</mn></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "eawMJ",
+              "text": "<math><mfenced close=\"}\" open=\"{\" separators=\"|\"><mrow><mn>2,5</mn><mo>,</mo><mn>10</mn></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Mb0m1",
+              "text": "<math><mfenced close=\"}\" open=\"{\" separators=\"|\"><mrow><mn>1,2</mn><mo>,</mo><mn>5,10</mn></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We have, <math><mfenced close=\"}\" open=\"{\" separators=\"|\"><mrow><mi>x</mi><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>x</mi><mo>∈</mo><mi>N</mi><mo>,</mo><mi>x</mi></mrow></mfenced><mo>,</mo><mi>i</mi><mi>s</mi><mi></mi><mi>a</mi><mi></mi><mi>p</mi><mi>r</mi><mi>i</mi><mi>m</mi><mi>e</mi><mi></mi><mi>n</mi><mi>u</mi><mi>m</mi><mi>b</mi><mi>e</mi><mi>r</mi><mi></mi><mi>l</mi><mi>e</mi><mi>s</mi><mi>s</mi><mi></mi><mi>t</mi><mi>h</mi><mi>a</mi><mi>n</mi><mi></mi><mn>12</mn></mrow></mfenced></math>  <br/>={2, 3, 5,7, 11} <br/>And B = <math><mfenced close=\"}\" open=\"{\" separators=\"|\"><mrow><mi>x</mi></mrow><mrow><mi>x</mi><mo>∈</mo><mi>N</mi><mo>,</mo><mi>x</mi><mi></mi><mi>i</mi><mi>s</mi><mi></mi><mi>a</mi><mi></mi><mi>f</mi><mi>a</mi><mi>c</mi><mi>t</mi><mi>o</mi><mi>r</mi><mi></mi><mi>o</mi><mi>f</mi><mi></mi><mn>10</mn></mrow></mfenced></math> = {1, 2, 5, 10} <br/><math><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mfenced close=\"}\" open=\"{\" separators=\"|\"><mrow><mn>2,5</mn></mrow></mfenced></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f65",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2019-04-30T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019 (Shift 2)",
+            "title": "MHT CET 2019 (Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25edb0279619d9d8a17d8",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cf071b5bb33b3f9f63",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "MHT CET 2018"
+            }
+          ],
+          "question": {
+            "text": "If <math><mi>X</mi><mo>=</mo><mfenced separators=\"|\"><mrow><msup><mrow><mn>4</mn></mrow><mrow><mi>n</mi></mrow></msup><mo>-</mo><mn>3</mn><mi>n</mi><mo>-</mo><mn>1</mn><mo>:</mo><mi>n</mi><mo>∈</mo><mi>N</mi><mi>&nbsp;</mi></mrow></mfenced></math> and <math><mi>Y</mi><mo>=</mo><mfenced close=\"}\" open=\"{\" separators=\"|\"><mrow><mn>9</mn><mfenced separators=\"|\"><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mfenced><mo>:</mo><mi>n</mi><mo>∈</mo><mi>N</mi></mrow></mfenced></math> , then <math><mi>X</mi><mi>&nbsp;</mi><mo>∩</mo><mi>Y</mi><mo>=</mo><mi>&nbsp;</mi></math>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "EHtGh",
+              "text": "<math><mi>X</mi></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "B9JnA",
+              "text": "<math><mi>Y</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "glpUw",
+              "text": "<math><mi>ϕ</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "xOYwO",
+              "text": "<math><mfenced close=\"}\" open=\"{\" separators=\"|\"><mrow><mn>0</mn></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math> <mrow> <mi>X</mi><mo>=</mo><mrow><mo>{</mo> <mrow> <msup> <mn>4</mn> <mi>n</mi> </msup> <mo>−</mo><mn>3</mn><mi>n</mi><mo>−</mo><mn>1</mn><mo>:</mo><mi>n</mi><mo>∈</mo><mi>N</mi></mrow> <mo>}</mo></mrow></mrow> </math><br /><math> <mrow> <mi>X</mi><mo>=</mo><mrow><mo>{</mo> <mrow> <msup> <mrow> <mrow><mo>(</mo> <mrow> <mn>1</mn><mo>+</mo><mn>3</mn></mrow> <mo>)</mo></mrow></mrow> <mi>n</mi> </msup> <mo>−</mo><mn>3</mn><mi>n</mi><mo>−</mo><mn>1</mn><mo>:</mo><mi>n</mi><mo>∈</mo><mi>N</mi></mrow> <mo>}</mo></mrow></mrow> </math><br /><math> <mrow> <mi>X</mi><mo>=</mo><mrow><mo>{</mo> <mrow> <mn>1</mn><mo>+</mo><mn>3</mn><mi>n</mi><mo>+</mo><mfrac> <mrow> <msup> <mn>3</mn> <mn>2</mn> </msup> <mi>n</mi><mrow><mo>(</mo> <mrow> <mi>n</mi><mo>−</mo><mn>1</mn></mrow> <mo>)</mo></mrow></mrow> <mrow> <mn>2</mn><mo>!</mo></mrow> </mfrac> <mo>+</mo><mfrac> <mrow> <msup> <mn>3</mn> <mn>3</mn> </msup> <mi>n</mi><mrow><mo>(</mo> <mrow> <mi>n</mi><mo>−</mo><mn>1</mn></mrow> <mo>)</mo></mrow><mrow><mo>(</mo> <mrow> <mn>2</mn><mi>n</mi><mo>−</mo><mn>1</mn></mrow> <mo>)</mo></mrow></mrow> <mn>6</mn> </mfrac> <mn>....3</mn><mi>n</mi><mo>−</mo><mn>1</mn></mrow> <mo>}</mo></mrow></mrow> </math><br /><math> <mrow> <mi>X</mi><mo>=</mo><mrow><mo>{</mo> <mrow> <msup> <mn>3</mn> <mn>2</mn> </msup> <mrow><mo>(</mo> <mrow> <mi>n</mi><mo>−</mo><mn>1</mn></mrow> <mo>)</mo></mrow><mi>n</mi><mrow><mo>(</mo> <mrow> <mfrac> <mn>1</mn> <mrow> <mn>2</mn><mo>!</mo></mrow> </mfrac> <mo>+</mo><mfrac> <mrow> <mn>3</mn><mrow><mo>(</mo> <mrow> <mn>2</mn><mi>n</mi><mo>−</mo><mn>1</mn></mrow> <mo>)</mo></mrow></mrow> <mn>6</mn> </mfrac> <mo>+</mo><mn>.....</mn></mrow> <mo>)</mo></mrow></mrow> <mo>}</mo></mrow></mrow> </math><br /><math> <mrow> <mi>X</mi><mo>=</mo><mrow><mo>{</mo> <mrow> <mn>9</mn><mrow><mo>(</mo> <mrow> <mi>n</mi><mo>−</mo><mn>1</mn></mrow> <mo>)</mo></mrow><mi>n</mi><mrow><mo>(</mo> <mrow> <mfrac> <mn>1</mn> <mrow> <mn>2</mn><mo>!</mo></mrow> </mfrac> <mo>+</mo><mn>......</mn></mrow> <mo>)</mo></mrow></mrow> <mo>}</mo></mrow></mrow> </math><br /><math> <mrow> <mi>Y</mi><mo>=</mo><mrow><mo>{</mo> <mrow> <mn>9</mn><mrow><mo>(</mo> <mrow> <mi>n</mi><mo>−</mo><mn>1</mn></mrow> <mo>)</mo></mrow><mo>:</mo><mi>n</mi><mo>∈</mo><mi>N</mi></mrow> <mo>}</mo></mrow></mrow> </math><br /><math> <mrow> <mo>∴</mo><mi>X</mi><mo>⊆</mo><mi>Y</mi></mrow> </math><br /><math> <mrow> <mo>∴</mo><mi>X</mi><mo>∩</mo><mi>Y</mi><mo>=</mo><mi>X</mi></mrow> </math><br />(or)<br />Put <math> <mrow> <mi>n</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>.....</mn></mrow> </math> in X and Y<br /><math> <mrow> <mi>X</mi><mo>=</mo><mrow><mo>{</mo> <mrow> <mn>0</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>54</mn><mo>,</mo><mn>....</mn></mrow> <mo>}</mo></mrow></mrow> </math><br /><math> <mrow> <mi>Y</mi><mo>=</mo><mrow><mo>{</mo> <mrow> <mn>0</mn><mo>,</mo><mn>9</mn><mo>,</mo><mn>18</mn><mo>,</mo><mn>27</mn><mo>,</mo><mn>36</mn><mo>,</mo><mn>45</mn><mo>,</mo><mn>54</mn><mo>,</mo><mn>63......</mn></mrow> <mo>}</mo></mrow></mrow> </math><br /><math> <mrow> <mi>X</mi><mo>⊆</mo><mi>Y</mi></mrow> </math><br /><math> <semantics> <mrow> <mo>∴</mo><mi>X</mi><mo>∩</mo><mi>Y</mi><mo>=</mo><mi>X</mi></mrow> </semantics></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cf071b5bb33b3f9f63",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "MHT CET 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e5b0279619d9d8a13c3",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f5c",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2008-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2008",
+              "title": "MHT CET 2008"
+            }
+          ],
+          "question": {
+            "text": "The chances to fail in Physics are $20 \\%$ and the chances to fail in Mathematics are $10 \\% .$ What are the chances to fail in at least one subject?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "gxNLv",
+              "text": "$28 \\%$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "thl1S",
+              "text": "$38 \\%$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "mW8N0",
+              "text": "$72 \\%$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "9bgkl",
+              "text": "$82 \\%$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $P(A)=\\frac{20}{100}=\\frac{1}{5}, P(B)=\\frac{10}{100}=\\frac{1}{10}$\nSince, event are independent and we have to\n$$\n\\text { find } \\begin{aligned}\nP(A&\\cup B)=P(A)+P(B)-P(A) \\cdot P(B) \\\\\n&=\\frac{1}{5}+\\frac{1}{10}-\\frac{1}{5} \\cdot \\frac{1}{10} \\\\\n&=\\frac{3}{10}-\\frac{1}{50}=\\frac{14}{50}=\\frac{14}{50} \\times 100=28 \\%\n\\end{aligned}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f5c",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2008-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2008",
+            "title": "MHT CET 2008"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "65a263440279619d9d8a3da6",
+      "title": "Questions on number of relations and sets",
+      "totalQuestions": 8,
+      "questions": [
+        {
+          "_id": "6792143b0aee93fa0796df03",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665ccf",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-16T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (16 May Shift 1)",
+              "title": "MHT CET 2024 (16 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Let $S$ be a non-empty subset of $\\mathbb{R}$. Consider the following statement:\r\np : There is a rational number $x \\in \\mathrm{~S}$ such that $x\\gt0$.\r\nWhich of the following statements is the negation of the statement p?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "J8i4u",
+              "text": "There is a rational number $x \\in \\mathrm{~S}$ such that $x \\leq 0$.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "y4DJz",
+              "text": "There is no rational number $x \\in \\mathrm{~S}$ such that $x \\leq 0$.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vnxsi",
+              "text": "Every rational number $x \\in \\mathrm{~S}$ satisfies $x \\leq 0$.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "fZEs3",
+              "text": "$x \\in \\mathrm{~S}$ and $x \\leq 0 \\Rightarrow x$ is not a rational number.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The given statement is $p : \\exists x \\in \\mathrm{S}$ such that $x$ is a rational number and $x > 0$.<br><br>The negation of an existential quantifier ($\\exists$) is the universal quantifier ($\\forall$). The negation of the inequality $x > 0$ is $x \\leq 0$.<br><br>Therefore, the negation of the statement $p$ is $\\sim p : \\forall x \\in \\mathrm{S}$, if $x$ is a rational number, then $x \\leq 0$.<br><br>This can be written in words as: Every rational number $x \\in \\mathrm{S}$ satisfies $x \\leq 0$.<br><br>Answer: Every rational number $x \\in \\mathrm{~S}$ satisfies $x \\leq 0$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665ccf",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-16T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (16 May Shift 1)",
+            "title": "MHT CET 2024 (16 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679214130aee93fa0796ddc9",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665cce",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (15 May Shift 1)",
+              "title": "MHT CET 2024 (15 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "If $n(A)=4, n(B)=2$. Then the number of subsets of the set $\\mathrm{A} \\times \\mathrm{B}$ each having at least 3 elements are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "nrJrV",
+              "text": "275",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2TQ4H",
+              "text": "510",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fTjOY",
+              "text": "219",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "6JcnY",
+              "text": "256",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given $n(A) = 4$ and $n(B) = 2$<br><br>The number of elements in $A \\times B$ is $n(A \\times B) = n(A) \\times n(B) = 4 \\times 2 = 8$<br><br>The total number of subsets of $A \\times B$ is $2^8 = 256$<br><br>The number of subsets having at least 3 elements is the total number of subsets minus the number of subsets having 0, 1, or 2 elements.<br><br>Number of subsets with at least 3 elements $= 2^8 - (^{8}C_{0} + ^{8}C_{1} + ^{8}C_{2})$<br><br>$^{8}C_{0} = 1$<br><br>$^{8}C_{1} = 8$<br><br>$^{8}C_{2} = \\dfrac{8 \\times 7}{2} = 28$<br><br>Number of subsets with at least 3 elements $= 256 - (1 + 8 + 28) = 256 - 37 = 219$<br><br>Answer: 219",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665cce",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (15 May Shift 1)",
+            "title": "MHT CET 2024 (15 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260450279619d9d8a2325",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b87f20917a5f4189296",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2021-09-20T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021 (20 Sep Shift 2)",
+              "title": "MHT CET 2021 (20 Sep Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Let $\\mathrm{A}=[\\mathrm{a}, \\mathrm{b}, \\mathrm{c}, \\mathrm{d}], \\mathrm{B}=[1,2,3]$. Relation $\\mathrm{R}_1, \\mathrm{R}_2, \\mathrm{R}_4$ are as follows:\n$$\n\\begin{aligned}\n& \\mathrm{R}_1=[(\\mathrm{a}, 1),(\\mathrm{b}, 2),(\\mathrm{c}, 1),(\\mathrm{d}, 2)] \\\\\n& \\mathrm{R}_2=[(\\mathrm{a}, 1),(\\mathrm{b}, 1),(\\mathrm{c}, 1),(\\mathrm{d}, 1)] \\\\\n& \\mathrm{R}_3=[(\\mathrm{a}, 2),(\\mathrm{b}, 3),(\\mathrm{c}, 2),(\\mathrm{d}, 2)] \\\\\n& \\mathrm{R}_4=[(\\mathrm{a}, 1),(\\mathrm{b}, 2),(\\mathrm{a}, 2),(\\mathrm{d}, 3)], \\text { then }\n\\end{aligned}\n$$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Ehmx8",
+              "text": "only $\\mathrm{R}_3$ and $\\mathrm{R}_4$ are not functions",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "TszmV",
+              "text": "only $R_1$ and $R_2$ are not functions",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "7MYKv",
+              "text": "only $\\mathrm{R}_3$ is not a function",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "hDSDR",
+              "text": "only $\\mathrm{R}_4$ is not a function",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We find that in $R_4, f(a)=1$ and $f(a)=2$. Hence $R_4$ is not a function.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b87f20917a5f4189296",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2021-09-20T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021 (20 Sep Shift 2)",
+            "title": "MHT CET 2021 (20 Sep Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fc30279619d9d8a1f09",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6f",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-16T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (16 Oct Shift 1)",
+              "title": "MHT CET 2020 (16 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "If $\\mathrm{A}=\\{x, y, z\\}, \\mathrm{B}=\\{1,2\\}$, then the total number of relations from set $\\mathrm{A}$ to set $\\mathrm{B}$ are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "LRey1",
+              "text": "64",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "1jZUz",
+              "text": "16",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "zLFHj",
+              "text": "32",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fkmX8",
+              "text": "8",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "It is given that $A=\\{x, y, z\\}$ and $B=\\{1,2\\} .$\n$\\therefore A \\times B=\\{(x, 1),(x, 2),(y, 1),(y, 2),(z, 1),(z, 2)\\}$\nSince $n(A \\times B)=6$, the number of subsets of $A \\times B$ is $2^{6} .$\nTherefore, the number of relations from $A$ to $B$ is $2^{6} .$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6f",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-16T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (16 Oct Shift 1)",
+            "title": "MHT CET 2020 (16 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f840279619d9d8a1d1a",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6c",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-14T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (14 Oct Shift 2)",
+              "title": "MHT CET 2020 (14 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Given $\\mathrm{A}=\\{1,2,3,4,5\\}, \\mathrm{B}=\\{1,4,5\\} .$ If $\\mathrm{R}$ is a relation from $\\mathrm{A}$ to $\\mathrm{B}$ such that $\\quad(x, y)$\n$\\in \\mathrm{R}$ with $x>y$, then range of $\\mathrm{R}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "zr9HK",
+              "text": "{1,4}",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "NrzkJ",
+              "text": "{4,5}",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "m6Lqq",
+              "text": "{1,4,5}",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "w84r1",
+              "text": "{2,4}",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$A=\\{1,2,3,4,5\\} ; B=\\{1,4,5\\}$\n$R: \\quad A \\rightarrow B(x>y)$\nDomain \n$\\left(\\begin{array}{l}2 \\\\ 3 \\\\ 4 \\\\ 5\\end{array}\\right)$\nRange\n$\\left(\\begin{array}{l}1 \\\\ 4\\end{array}\\right)$\nRange $R=\\{1,4\\}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6c",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-14T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (14 Oct Shift 2)",
+            "title": "MHT CET 2020 (14 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f600279619d9d8a1bf8",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6a",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-13T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (13 Oct Shift 2)",
+              "title": "MHT CET 2020 (13 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "If $A=\\{x / x$ is a prime number, $0 \\leq x \\leq 9]$, then the number of elements of power\nset of $A$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "9J4ZO",
+              "text": "12",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "I4R2r",
+              "text": "4",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "frKvl",
+              "text": "16",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "7giDw",
+              "text": "8",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\begin{aligned} A=\\{2,3,5,7\\} & \\\\ \\text { Power set of } A &=2^{4} \\\\ &=16 . \\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6a",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-13T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (13 Oct Shift 2)",
+            "title": "MHT CET 2020 (13 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f290279619d9d8a1a3c",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f67",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-12T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (12 Oct Shift 1)",
+              "title": "MHT CET 2020 (12 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "If $A=\\{2,4\\}, \\quad B=\\{3,4,5\\}$, then $(\\mathrm{A} \\cap \\mathrm{B}) \\times(\\mathrm{AUB})=$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "6Ghaw",
+              "text": "$\\{(3,2),(3,4),(4,4),(5,4)\\}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "w5AHF",
+              "text": "$\\{(2,3),(2,4),(2,5)\\}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nr0xk",
+              "text": "$\\{(4,2),(4,3),(4,4),(4,5)\\}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "5oWp9",
+              "text": "$\\{(4,3),(4,4),(4,5)\\}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{A} \\cap \\mathrm{B}=\\{4\\}$\n$\\mathrm{A} \\cup \\mathrm{B}=\\{2,3,4,5\\}$\nHence\n$(\\mathrm{A} \\cap \\mathrm{B}) \\times(\\mathrm{A} \\cup \\mathrm{B})$\n$=\\{(4,2),(4,3),(4,4),(4,5)\\}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f67",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-12T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (12 Oct Shift 1)",
+            "title": "MHT CET 2020 (12 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25ef10279619d9d8a1888",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f66",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2019-05-02T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019 (02 May Shift 1)",
+              "title": "MHT CET 2019 (02 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "If <math><mi>A</mi><mo>=</mo><mfenced close=\"}\" open=\"{\" separators=\"|\"><mrow><mi>x</mi><mo>∈</mo><mi>R</mi><mo>:</mo><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>-</mo><mn>5</mn><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>+</mo><mn>6</mn><mo>=</mo><mn>0</mn></mrow></mfenced><mo>,</mo></math> then <math><mi>n</mi><mfenced separators=\"|\"><mrow><mi>A</mi></mrow></mfenced><mo>=</mo></math> ________",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "cs4f7",
+              "text": "<math><mn>2</mn></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "paUYh",
+              "text": "<math><mn>0</mn></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "N4vDB",
+              "text": "<math><mn>1</mn></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "MuZnG",
+              "text": "<math><mn>4</mn></math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given: <math><mi>A</mi><mo>=</mo><mfenced close=\"\" open=\"{\" separators=\"|\"><mrow><mi>x</mi><mo>∈</mo><mi>R</mi><mo>:</mo><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>-</mo><mn>5</mn><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>+</mo><mn>6</mn><mo>=</mo><mfenced close=\"}\" open=\"\" separators=\"|\"><mrow><mn>0</mn></mrow></mfenced></mrow></mfenced></math>  <br/><math><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>-</mo><mn>5</mn><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>+</mo><mn>6</mn><mo>=</mo><mn>0</mn><mo>&#8658;</mo><msup><mrow><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup><mo>-</mo><mn>5</mn><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>+</mo><mn>6</mn><mo>=</mo><mn>0</mn></math>  <br/><math><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>=</mo><mn>2</mn><mo>,</mo><mi mathvariant=\"normal\"></mi><mn>3</mn><mo>&#8658;</mo><mi>x</mi><mo>=</mo><mo>±</mo><mn>2</mn><mo>,</mo><mo>±</mo><mn>3</mn></math>  <br/>Hence, <math><mi>n</mi><mfenced separators=\"|\"><mrow><mi>A</mi></mrow></mfenced><mo>=</mo><mn>4</mn></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f66",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2019-05-02T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019 (02 May Shift 1)",
+            "title": "MHT CET 2019 (02 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

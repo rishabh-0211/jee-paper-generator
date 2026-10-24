@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Redox Reactions PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚗️ BITSAT &bull; Redox Reactions</h1>
+        <div class="sub">Chemistry PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 9, "chapterId": "61e7bd807dd8eca92f8a1d18", "chapter": "Redox Reactions", "exam": "BITSAT", "totalTopics": 6, "totalQuestions": 19, "downloadTime": "2026-10-08 20:02:49", "topics": [{"index": 1, "topicId": "64c0e85f6f5bfc7ab78aed6f", "title": "Oxidation and Reduction Reactions", "totalQuestions": 7, "questions": [{"_id": "67726d16c49e8ef28ee2b425", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "Volume of $\\mathrm{M} / 8 \\mathrm{KMnO}_4$ solution required to react completely with $25.0 \\mathrm{~cm}^3$ of $M / 4 \\mathrm{FeSO}_4$ in acidic medium is.", "image": null}, "options": [{"id": "rFvo6", "text": "8.0 mL", "image": null, "isCorrect": false}, {"id": "2lZOz", "text": "5.0 mL", "image": null, "isCorrect": false}, {"id": "HpgIL", "text": "15.0 mL", "image": null, "isCorrect": false}, {"id": "NC0Ii", "text": "10.0 mL", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "The balance ionic equation for the reaction is\n$\\mathrm{MnO}_4^{-}+5 \\mathrm{Fe}^{2+}+8 \\mathrm{H}^{+} \\longrightarrow \\mathrm{Mn}^{2+}+5 \\mathrm{Fe}^{3+}+4 \\mathrm{H}_2 \\mathrm{O}$\nFrom the above equation it is clear that 1 mole of $\\mathrm{KMnO}_4=5$ moles of $\\mathrm{FeSO}_4$.\nApply molarity equation to balance the redox reaction\n$\\begin{aligned}\n\\frac{M_1 V_1}{n_1}\\left(\\mathrm{KMnO}_4\\right) & =\\frac{M_2 V_2}{n_2}\\left(\\mathrm{FeSO}_4\\right) \\\\\n\\frac{1 \\times V_1}{8 \\times 1} & =\\frac{1}{4} \\times \\frac{25}{5} \\\\\nV_1 & =\\frac{1 \\times 25 \\times 8}{4 \\times 5} \\\\\nV_1 & =10 \\mathrm{~cm}^3 \\text { or } V_1=10.0 \\mathrm{~mL}\n\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8096f5bfc7ab78aea06", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 1, "question": {"text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>45</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> acid of molecular mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>90</mn></math> was neutralise by <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>20</mn></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>ml</mi></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi mathvariant=\"normal\">N</mi><mo>&#160;</mo><mi>KOH</mi></math>. The basicity of the acid is", "image": null}, "options": [{"id": "jvi5O", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn></math>", "isCorrect": true, "image": null}, {"id": "dWCOf", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn></math>", "isCorrect": false, "image": null}, {"id": "eRQng", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math>", "isCorrect": false, "image": null}, {"id": "FwEGj", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Given that&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>45</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math>&nbsp;of the acid of molecular mass&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>90</mn></math>&nbsp;was neutralized by&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>20</mn><mo>&#160;</mo><mi>ml</mi></math>&nbsp;of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mfenced><mi mathvariant=\"normal\">N</mi></mfenced></math>&nbsp;caustic potash.</p><p>We know that,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Normality</mi><mo>&#160;</mo><mfenced><mi mathvariant=\"normal\">N</mi></mfenced><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mfrac><mrow><mi>Weight</mi><mo>&#160;</mo><mi>of</mi><mo>&#160;</mo><mi>the</mi><mo>&#160;</mo><mi>base</mi><mo>&#160;</mo><mo>&#215;</mo><mn>1000</mn></mrow><mrow><mi>Eq</mi><mo>.</mo><mo>&#160;</mo><mi>weight</mi><mo>&#215;</mo><mi>volume</mi></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo></math> Gram equivalents of an acid</p><p>Gram equivalents of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>KOH</mi></math> i.e. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>0</mn><mo>.</mo><mn>45</mn></mrow><mi mathvariant=\"normal\">E</mi></mfrac><mo>=</mo><mfrac><mrow><mn>20</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>5</mn></mrow><mn>1000</mn></mfrac></math></p><p>where, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">E</mi><mo>=</mo></math> Equivalent mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">E</mi><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>45</mn><mo>&#215;</mo><mn>1000</mn></mrow><mrow><mn>20</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>5</mn></mrow></mfrac><mo>=</mo><mn>45</mn></math></p><p>Thus, basicity <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mn>90</mn><mn>45</mn></mfrac><mo>=</mo><mn>2</mn></math>&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"]\" open=\"[\"><mrow><mo>&#8757;</mo><mi>Basicity</mi><mo>=</mo><mfrac><mrow><mi>Molecular</mi><mo>mass</mo></mrow><mrow><mi>Equivalent</mi><mo>mass</mo></mrow></mfrac></mrow></mfenced></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7f96f5bfc7ab78ae97c", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 2, "question": {"text": "Which of the following statement is incorrect regarding the equation<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>MeCHO</mi><mo>+</mo><msup><mfenced close=\"]\" open=\"[\"><mrow><mi>Ag</mi><msub><mfenced><msub><mi>NH</mi><mn>3</mn></msub></mfenced><mn>2</mn></msub></mrow></mfenced><mo>+</mo></msup><mo>+</mo><mover><mi mathvariant=\"normal\">O</mi><mo>&#175;</mo></mover><mi mathvariant=\"normal\">H</mi><mo>&#10230;</mo><msup><mi>MeCOO</mi><mo>-</mo></msup><mo>+</mo><mi>Ag</mi></math>", "image": null}, "options": [{"id": "ssRKV", "text": "The equivalent weight of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>MeCHO</mi></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>22</mn></math> .", "isCorrect": false, "image": null}, {"id": "o68me", "text": "Three moles of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi mathvariant=\"normal\">O</mi><mo>&#175;</mo></mover><mi mathvariant=\"normal\">H</mi></math> are required in the reaction.", "isCorrect": false, "image": null}, {"id": "KvmNF", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>MeCHO</mi></math> acts as an oxidising agent.", "isCorrect": true, "image": null}, {"id": "tym5K", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced open=\"[\" close=\"]\"><mrow><mi>Ag</mi><msub><mfenced><msub><mi>NH</mi><mn>3</mn></msub></mfenced><mn>2</mn></msub></mrow></mfenced><mo>+</mo></msup></math> gets reduced.", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Oxidation :&nbsp;<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CH</mi><mn>3</mn></msub><msup><mi>COO</mi><mo>-</mo></msup><mo>+</mo><mn>3</mn><mover><mi mathvariant=\"normal\">O</mi><mo>&#175;</mo></mover><mi mathvariant=\"normal\">H</mi><mo>&#8594;</mo><msub><mi>CH</mi><mn>3</mn></msub><msup><mi>COO</mi><mo>-</mo></msup><mo>+</mo><mn>2</mn><msup><mi mathvariant=\"normal\">e</mi><mo>-</mo></msup><mo>+</mo><mn>2</mn><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></math></p><p>Reduction :&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"]\" open=\"\"><mrow><msup><mfenced close=\"]\" open=\"[\"><mrow><mi>Ag</mi><msub><mfenced><msub><mi>NH</mi><mn>3</mn></msub></mfenced><mn>2</mn></msub></mrow></mfenced><mo>+</mo></msup><mo>+</mo><msup><mi mathvariant=\"normal\">e</mi><mo>-</mo></msup><mo>&#10230;</mo><mi>Ag</mi><mo>+</mo><msub><mi>NH</mi><mn>3</mn></msub></mrow></mfenced><mo>&#215;</mo><mn>2</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CH</mi><mn>3</mn></msub><mi>CHO</mi><mo>+</mo><mn>2</mn><msup><mfenced close=\"]\" open=\"[\"><mrow><mi>Ag</mi><msub><mfenced><msub><mi>NH</mi><mn>3</mn></msub></mfenced><mn>2</mn></msub></mrow></mfenced><mo>+</mo></msup><mo>+</mo><mn>3</mn><mover><mi mathvariant=\"normal\">O</mi><mo>&#175;</mo></mover><mi mathvariant=\"normal\">H</mi><mo>&#10230;</mo><msub><mi>CH</mi><mn>3</mn></msub><mi mathvariant=\"normal\">O</mi><mover><mi mathvariant=\"normal\">O</mi><mo>&#175;</mo></mover><mo>+</mo><mn>2</mn><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></math></p><p>Molecular mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi mathvariant=\"normal\">M</mi></mfenced></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CH</mi><mn>3</mn></msub><mi>CHO</mi><mo>=</mo><mn>44</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi><mo>&#160;</mo><msup><mi>mol</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math></p><p>Equivalent weight <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi>E&#969;</mi></mfenced><mo>=</mo><mfrac><mi mathvariant=\"normal\">M</mi><mrow><mi mathvariant=\"normal\">n</mi><mo>-</mo><mi>factor</mi></mrow></mfrac><mo>=</mo><mfrac><mn>44</mn><mn>2</mn></mfrac><mo>=</mo><mn>22</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi><mo>&#160;</mo><msup><mi>mol</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math></p><p>Since aldehyde is getting oxidised therefore, it is acting as reducing agent and not oxidising agent.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7e96f5bfc7ab78ae8ed", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 2, "question": {"text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of copper was dissolved in&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#160;</mo><mi>conc</mi><mo>.</mo><msub><mi>HNO</mi><mn>3</mn></msub></math>. The copper nitrate thus obtained gave <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of its oxide on strong heating the equivalent weight of copper is", "image": null}, "options": [{"id": "jMMOl", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>23</mn></math>", "isCorrect": false, "image": null}, {"id": "HAqAq", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>32</mn></math>", "isCorrect": true, "image": null}, {"id": "fSBOE", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>12</mn></math>", "isCorrect": false, "image": null}, {"id": "P1Ins", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>20</mn></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math>&nbsp;of copper gave <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of its oxide means,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of oxygen combine with <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of copper.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo></math> Eq. wt of oxygen <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>8</mn></math>,</p><p>Therefore,&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>8</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of oxygen combine with <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>4</mn><mo>&#215;</mo><mn>8</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of copper <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>32</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math></p><p>Hence,&nbsp;</p><p>Equivalent weight of copper <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>32</mn></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7a16f5bfc7ab78ae686", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 2, "question": {"text": "In the reaction\r\n$3 \\mathrm{Br}_{2}+6 \\mathrm{CO}_{3}^{2-}+3 \\mathrm{H}_{2} \\mathrm{O} \\rightarrow 5 \\mathrm{Br}^{-}+\\mathrm{BrO}_{3}^{-}+6 \\mathrm{HCO}_{3}^{-}$", "image": null}, "options": [{"id": "ucQWH", "text": "Bromine is oxidised and carbonate is reduced.", "isCorrect": false, "image": null}, {"id": "IcIFi", "text": "Bromine is reduced and water is oxidised.", "isCorrect": false, "image": null}, {"id": "FPNdo", "text": "Bromine is neither reduced nor oxidised.", "isCorrect": false, "image": null}, {"id": "DNOxB", "text": "Bromine is both reduced and oxidised.", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "$\\begin{aligned}\r\n3 \\mathrm{Br}_{2}+6 \\mathrm{CO}_{3}^{2-}+3 \\mathrm{H}_{2} \\mathrm{O} & \\rightarrow \\\\\r\n5 \\mathrm{Br}^{-} &+\\mathrm{BrO}_{3}^{-}+6 \\mathrm{HCO}_{3}^{-}\r\n\\end{aligned}$\r\nO.N. of $\\mathrm{Br}_{2}$ changes from 0 to -1 and +5 , hence it is reduced as well as oxidised.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7926f5bfc7ab78ae609", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "A gas $X$ at 1 atm is bubbled through a solution containing a mixture of $1 \\mathrm{M} \\mathrm{Y}^{-}$ and $1 \\mathrm{M} \\mathrm{Z}^{-}$ at $25^{\\circ} \\mathrm{C}$. If the reduction potential is $Z>Y>X$, then", "image": null}, "options": [{"id": "Rh2Vx", "text": "$\\mathrm{Y}$ will oxidise $\\mathrm{X}$ and $\\mathrm{not} \\mathrm{Z}$", "image": null, "isCorrect": true}, {"id": "vAoMP", "text": "$\\mathrm{Y}$ will oxidise $Z$ and $\\mathrm{not} \\mathrm{X}$", "image": null, "isCorrect": false}, {"id": "aKpot", "text": "$\\mathrm{Y}$ will oxidise both $\\mathrm{X}$ and $\\mathrm{Z}$", "image": null, "isCorrect": false}, {"id": "qkTyV", "text": "$\\mathrm{Y}$ will reduce both $\\mathrm{X}$ and $\\mathrm{Z}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "The more the reduction potential, the more the oxidising power.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7846f5bfc7ab78ae58c", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "In which of the following reactions, $\\mathrm{H}_{2} \\mathrm{O}_{2}$ is acting as a reducing agent?", "image": null}, "options": [{"id": "kJP5i", "text": "$\\mathrm{H}_{2} \\mathrm{O}_{2}+\\mathrm{SO}_{2} \\rightarrow \\mathrm{H}_{2} \\mathrm{SO}_{4}$", "image": null, "isCorrect": false}, {"id": "qT5A1", "text": "$2 \\mathrm{KI}+\\mathrm{H}_{2} \\mathrm{O}_{2} \\rightarrow 2 \\mathrm{KOH}+\\mathrm{I}_{2}$", "image": null, "isCorrect": false}, {"id": "gY67x", "text": "$\\quad \\mathrm{PbS}+4 \\mathrm{H}_{2} \\mathrm{O}_{2} \\rightarrow \\mathrm{PbSO}_{4}+4 \\mathrm{H}_{2} \\mathrm{O}$", "image": null, "isCorrect": false}, {"id": "lGOlg", "text": "$\\mathrm{Ag}_{2} \\mathrm{O}+\\mathrm{H}_{2} \\mathrm{O}_{2} \\rightarrow 2 \\mathrm{Ag}+\\mathrm{H}_{2} \\mathrm{O}+\\mathrm{O}_{2}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "$\\mathrm{SO}_{2}$ changes to $\\mathrm{H}_{2} \\mathrm{SO}_{4}$ (O.N. changes from +4 to +6 oxidation $)$ $2 \\mathrm{KI} \\rightarrow \\mathrm{I}_{2}(\\mathrm{O} . \\mathrm{S} .$ changes from -1 to 0\noxidation) $\\mathrm{PbS} \\rightarrow \\mathrm{PbSO}_{4}(\\mathrm{O} . \\mathrm{S}$. changes from -2 to +6\noxidation) $\\mathrm{Ag}_{2} \\mathrm{O} \\rightarrow 2 \\mathrm{Ag}(\\mathrm{O} . \\mathrm{S} .$ changes from +1 to 0\nreduction)", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8606f5bfc7ab78aed71", "title": "Types of redox reactions", "totalQuestions": 2, "questions": [{"_id": "67726d0ac49e8ef28ee2b3c8", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "Which of the following is only a redox reaction but not a disproportionation reaction?", "image": null}, "options": [{"id": "BPX8S", "text": "$4 \\mathrm{H}_3 \\mathrm{PO}_3 \\rightarrow 3 \\mathrm{H}_3 \\mathrm{PO}_4+\\mathrm{PH}_3$", "image": null, "isCorrect": false}, {"id": "jzJsq", "text": "$2 \\mathrm{H}_2 \\mathrm{O}_2 \\rightarrow 2 \\mathrm{H}_2 \\mathrm{O}+\\mathrm{O}_2$", "image": null, "isCorrect": false}, {"id": "WPTpI", "text": "$\\mathrm{P}_4+3 \\mathrm{NaOH}+3 \\mathrm{H}_2 \\mathrm{O} \\rightarrow 3 \\mathrm{NaH}_2 \\mathrm{PO}_2+\\mathrm{PH}_3$", "image": null, "isCorrect": false}, {"id": "omo57", "text": "$\\mathrm{P}_4+8 \\mathrm{SOCl}_2 \\rightarrow 4 \\mathrm{PCl}_3+2 \\mathrm{~S}_2 \\mathrm{Cl}_2+4 \\mathrm{SO}_2$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "The reaction $\\mathrm{P}_4+8 \\mathrm{SOCl}_2 \\rightarrow 4 \\mathrm{PCl}_3+2 \\mathrm{~S}_2 \\mathrm{Cl}_2$ $+4 \\mathrm{SO}_2$ involves change of oxidation state of P from 0 to +3 and that of $S$ from +4 to +2 .\nThus, it is a redox reaction but not a disproportionation reaction.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8156f5bfc7ab78aea75", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 1, "question": {"text": "Which of the following is not a disproportionation reaction?", "image": null}, "options": [{"id": "U8PqB", "text": "$\\mathrm{P}_{4}+5 \\mathrm{OH}^{-} \\longrightarrow \\mathrm{H}_{2} \\mathrm{PO}_{2}^{-}+\\mathrm{PH}_{3}$", "isCorrect": false, "image": null}, {"id": "rob5F", "text": "$\\mathrm{Cl}_{2}+\\mathrm{OH}^{-} \\longrightarrow \\mathrm{Cl}^{-}+\\mathrm{ClO}$", "isCorrect": false, "image": null}, {"id": "Cb0Dv", "text": "$2 \\mathrm{H}_{2} \\mathrm{O}_{2} \\longrightarrow 2 \\mathrm{H}_{2} \\mathrm{O}+\\mathrm{O}_{2}$", "isCorrect": false, "image": null}, {"id": "nEECr", "text": "$\\mathrm{PbO}_{2}+\\mathrm{H}_{2} \\mathrm{O} \\longrightarrow \\mathrm{PbO}+\\mathrm{H}_{2} \\mathrm{O}_{2}$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Disproportionation involves simultaneous oxidation and reduction of the same atom in a molecule.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e85f6f5bfc7ab78aed6d", "title": "Oxidation number", "totalQuestions": 3, "questions": [{"_id": "64c0e7be6f5bfc7ab78ae77f", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 1, "question": {"text": "The ratio of oxidation states of $\\mathrm{Cl}$ in potassium chloride to that in potassium chlorate is", "image": null}, "options": [{"id": "u9Z5G", "text": "$\\frac{+1}{5}$", "isCorrect": false, "image": null}, {"id": "ZmMVG", "text": "$\\frac{-1}{5}$", "isCorrect": true, "image": null}, {"id": "f6Sck", "text": "$\\frac{-2}{5}$", "isCorrect": false, "image": null}, {"id": "8IAsp", "text": "$\\frac{+3}{5}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "\\mathrm{KCl} x & =-1 & \\mathrm{KClO}_{3}\r\n\r\npotassium chloride $+1+x-6=0$\r\n\r\n$$\r\n\r\nx=+5\r\n\r\n$$\r\n\r\npotassium chlorate.\r\n\r\n$\\therefore$ Ratio of oxidation state of $\\mathrm{Cl}=\\frac{-1}{5}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7b06f5bfc7ab78ae704", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 1, "question": {"text": "The oxidation state of sulphur in $\\mathrm{Na}_{2} \\mathrm{~S}_{4} \\mathrm{O}_{6}$ is", "image": null}, "options": [{"id": "0fhA1", "text": "6", "isCorrect": false, "image": null}, {"id": "tMMzZ", "text": "$\\frac{+3}{2}$", "isCorrect": false, "image": null}, {"id": "T2Tm1", "text": "$\\frac{+5}{2}$", "isCorrect": true, "image": null}, {"id": "l0wK6", "text": "-2", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{Na}_{2} \\mathrm{~S}_{4} \\mathrm{O}_{6}$\r\n\r\n$2+4 x-12=0$\r\n\r\n$4 x-10=0$\r\n\r\n$x=\\frac{10}{4}=\\frac{+5}{2}$\r\n\r\nOxidation state of $\\mathrm{S}$ is $=\\frac{+5}{2}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7766f5bfc7ab78ae50c", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "The oxidation states of sulphur in the anions $\\mathrm{SO}_{3}^{2-}, \\mathrm{S}_{2} \\mathrm{O}_{4}^{2-}$ and $\\mathrm{S}_{2} \\mathrm{O}_{6}^{2-}$ follow the order", "image": null}, "options": [{"id": "qR84Y", "text": "$\\mathrm{SO}_{3}^{2-}<\\mathrm{S}_{2} \\mathrm{O}_{4}^{2-}<\\mathrm{S}_{2} \\mathrm{O}_{6}^{2-}$", "image": null, "isCorrect": false}, {"id": "gw6OK", "text": "$\\mathrm{S}_{2} \\mathrm{O}_{4}^{2-}<\\mathrm{S}_{2} \\mathrm{O}_{6}^{2-}<\\mathrm{SO}_{3}^{2-}$", "image": null, "isCorrect": false}, {"id": "fSTnA", "text": "$\\mathrm{S}_{2} \\mathrm{O}_{6}^{2-}<\\mathrm{S}_{2} \\mathrm{O}_{4}^{2-}<\\mathrm{SO}_{3}^{2-}$", "image": null, "isCorrect": false}, {"id": "RQYJo", "text": "$\\mathrm{S}_{2} \\mathrm{O}_{4}^{2-}<\\mathrm{SO}_{3}^{2-}<\\mathrm{S}_{2} \\mathrm{O}_{6}^{2-}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "According to chemical bond method:\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/CiGhmbDxmHV-6qt6fbLHgAigU8yCStERw-2U_gLiYs0.original.fullsize.png\">", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "64c0e8606f5bfc7ab78aed72", "title": "Balancing of redox reactions", "totalQuestions": 2, "questions": [{"_id": "67726d14c49e8ef28ee2b416", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "What is the stoichiometric coefficient of $\\mathrm{SO}_2$ in the following balance reaction?\n$\\mathrm{MnO}_4^{-}(a q)+\\mathrm{SO}_2(g) \\longrightarrow \\mathrm{Mn}^{2+}(a q)+\\mathrm{HSO}_4^{-}(a q)$\n(in acidic solution)", "image": null}, "options": [{"id": "Tu9SM", "text": "5", "image": null, "isCorrect": true}, {"id": "aArtF", "text": "4", "image": null, "isCorrect": false}, {"id": "Hcv6u", "text": "3", "image": null, "isCorrect": false}, {"id": "mGHxQ", "text": "2", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Oxidation half reaction:\n$\\mathrm{SO}_2(\\mathrm{~g})+2 \\mathrm{H}_2 \\mathrm{O}(l) \\longrightarrow \\mathrm{HSO}_4^{-}(a q)+3 \\mathrm{H}^{+}(a q)+2 e^{-}...(i)$\nReduction half reaction:\n$\\mathrm{MnO}_4^{-}(a q)+8 \\mathrm{H}^{+}+5 e^{-} \\longrightarrow \\mathrm{Mn}^{2+}(a q)+4 \\mathrm{H}_2 \\mathrm{O}(l)...(ii)$\nMultiply eq. (i) by 5 and (ii) by 2 and then add\n$\\begin{aligned}\n2 \\mathrm{MnO}_4^{-}(a q)+5 \\mathrm{SO}_2(g) & +2 \\mathrm{H}_2 \\mathrm{O}(l)+\\mathrm{H}^{+}(a q) \\\\\n& \\longrightarrow 2 \\mathrm{Mn}^{+}(a q)+5 \\mathrm{HSO}_4^{-}(a q)\n\\end{aligned}$\nThus, the stoichiometric coefficient of $\\mathrm{SO}_2$ in the above balance equation is 5 .", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8266f5bfc7ab78aeb05", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 2, "question": {"text": "For the reaction: $\\mathrm{NH}_{3}+\\mathrm{OCl}^{-} \\rightarrow \\mathrm{N}_{2} \\mathrm{H}_{4}+\\mathrm{Cl}^{-}$in basic medium, the coefficients of $\\mathrm{NH}_{3}, \\mathrm{OCl}^{-}$and $\\mathrm{N}_{2} \\mathrm{H}_{4}$ for the balanced equation are respectively", "image": null}, "options": [{"id": "twhDg", "text": "$2,2,2$", "isCorrect": false, "image": null}, {"id": "axzNy", "text": "$2,2,1$", "isCorrect": false, "image": null}, {"id": "cFdwF", "text": "$2,1,1$", "isCorrect": true, "image": null}, {"id": "l2Kgs", "text": "$4,4,2$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The balanced equation :\r\n\r\n$2 \\mathrm{NH}_{3}+\\mathrm{OCl}^{-} \\rightarrow \\mathrm{N}_{2} \\mathrm{H}_{4}+\\mathrm{Cl}^{-}+\\mathrm{H}_{2} \\mathrm{O}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 5, "topicId": "64c0e85f6f5bfc7ab78aed6e", "title": "Equivalence concept", "totalQuestions": 4, "questions": [{"_id": "64c0e7b46f5bfc7ab78ae720", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 2, "question": {"text": "Volume of $3 \\%$ solution of sodium carbonate necessary to neutralise a litre of $0.1 \\mathrm{~N}$ sulphuric acid", "image": null}, "options": [{"id": "s1AgE", "text": "$176.66 \\mathrm{ml}$", "isCorrect": true, "image": null}, {"id": "O97ru", "text": "$156.6 \\mathrm{ml}$", "isCorrect": false, "image": null}, {"id": "Y8qej", "text": "$116.0 \\mathrm{ml}$", "isCorrect": false, "image": null}, {"id": "xjVHq", "text": "$196.1 \\mathrm{ml}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Normality of $3 \\% \\mathrm{Na}_{2} \\mathrm{CO}_{3}$\r\n\r\n$\\mathrm{N}=\\frac{3 \\times 1000}{53 \\times 100}=0.566 \\mathrm{~N}$\r\n\r\nFor $\\mathrm{H}_{2} \\mathrm{SO}_{4}$ sol. $\\mathrm{N}_{1}=0.1, \\mathrm{~V}_{1}=100 \\mathrm{~mL}$\r\n\r\nFor $\\mathrm{Na}_{2} \\mathrm{CO}_{3}$ sol. $\\mathrm{N}_{2}=0.566$\r\n\r\nNow apply $\\mathrm{N}_{1} \\mathrm{~V}_{1}=\\mathrm{N}_{2} \\mathrm{~V}_{2}$\r\n\r\n$\\mathrm{V}_{2}=\\frac{\\mathrm{N}_{1} \\mathrm{~V}_{1}}{\\mathrm{~N}_{2}}=\\frac{0.1 \\times 1000 \\mathrm{~mL}}{0.566}=176.66 \\mathrm{~mL}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7a46f5bfc7ab78ae6a1", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 2, "question": {"text": "$0.45 \\mathrm{~g}$ of acid molecular weight 90 is neutralised by $20 \\mathrm{ml}$ of $0.5 \\mathrm{~N}$ caustic potash. The basicity of acid is", "image": null}, "options": [{"id": "AuZIu", "text": "1", "isCorrect": false, "image": null}, {"id": "bsWOe", "text": "2", "isCorrect": true, "image": null}, {"id": "A4ygg", "text": "3", "isCorrect": false, "image": null}, {"id": "J1Q9m", "text": "4", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Eq. of acid = Eq of base,\r\n$\\begin{array}{l}\r\n\\therefore \\frac{0.45}{\\mathrm{E} \\cdot \\mathrm{wt}}=\\frac{20 \\times 0.5}{1000}=\\mathrm{E} \\mathrm{wt}=45 \\\\\r\n\\text { Basicity }=\\frac{\\mathrm{M} \\cdot \\mathrm{wt}}{\\mathrm{E} \\cdot \\mathrm{wt}}=\\frac{90}{45}=2\r\n\\end{array}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7916f5bfc7ab78ae600", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "$1.520 \\mathrm{~g}$ of hydroxide of a metal on ignition gave $0.995 \\mathrm{~g}$ of oxide. The equivalent weight of metal is:", "image": null}, "options": [{"id": "852ia", "text": "1.52", "image": null, "isCorrect": false}, {"id": "rgzL0", "text": "0.995", "image": null, "isCorrect": false}, {"id": "DnsqS", "text": "190", "image": null, "isCorrect": false}, {"id": "QXC3w", "text": "9", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Let $E$ be the equivalent weight of the metal\n$$\n\\text { So, } \\frac{E+17}{E+8}=\\frac{1.52}{0.995}\n$$\n[17 is equivalent weight of $\\mathrm{OH}$ and 8 is equivalent weight of oxygen]\n$$\n\\begin{array}{l}\n\\Rightarrow 0.995 \\mathrm{E}+17 \\times 0.995=\\mathrm{E} \\times 1.52+8 \\times 1.52 \\\\\n\\Rightarrow 0.525 \\mathrm{E}=16.915-12.16=4.755 \\\\\n\\therefore \\quad \\mathrm{E}=\\frac{4.755}{0.525}=9\n\\end{array}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7836f5bfc7ab78ae583", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "In redox reaction $1 \\mathrm{~g}$ -eq of reducing agent requires $\\mathrm{Pgm}-\\mathrm{eq} .$ of oxidising agent. The value of $\\mathrm{P}$ is", "image": null}, "options": [{"id": "aAV6H", "text": "1", "image": null, "isCorrect": true}, {"id": "3QkWn", "text": "2", "image": null, "isCorrect": false}, {"id": "PHqdo", "text": "3", "image": null, "isCorrect": false}, {"id": "U6bPO", "text": "Depends on reaction", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "In redox reaction, $g$ equivalent of reducing agent $=\\mathrm{g}$. equivalent of oxidising agent Hence lg equ. of reducing agent $=\\mathrm{Pg}$ equ. of oxidising agent.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 6, "topicId": "64c0e85f6f5bfc7ab78aed70", "title": "Redox titration", "totalQuestions": 1, "questions": [{"_id": "64c0e7966f5bfc7ab78ae625", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "Which of the following cannot give iodometric titration?", "image": null}, "options": [{"id": "5eFJb", "text": "$\\mathrm{Fe}^{3+}$", "image": null, "isCorrect": true}, {"id": "mEaAH", "text": "$\\mathrm{Cu}^{2+}$", "image": null, "isCorrect": false}, {"id": "ykDQ9", "text": "$\\mathrm{Pb}^{2+}$", "image": null, "isCorrect": false}, {"id": "0gxNF", "text": "$\\mathrm{Ag}^{2+}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "There is no reaction between $\\mathrm{I}^{-}$ and $\\mathrm{Fe}^{3+}$.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

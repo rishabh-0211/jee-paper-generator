@@ -1,0 +1,1150 @@
+{
+  "index": 24,
+  "chapterId": "61c0899871fb803161367f9f",
+  "chapter": "Electromagnetic Waves",
+  "exam": "MHT CET",
+  "subject": "Physics",
+  "totalTopics": 2,
+  "totalQuestions": 17,
+  "downloadTime": "2026-10-08 20:35:25",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "65a263410279619d9d8a3d85",
+      "title": "Electromagnetic Waves and Maxwell's equations",
+      "totalQuestions": 13,
+      "questions": [
+        {
+          "_id": "68871b36bf9280d7f993272c",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376de9b67616acec78f71",
+              "heldOn": "2025-04-20T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (20 Apr Shift 2)",
+              "title": "MHT CET 2025 (20 Apr Shift 2)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "A parallel plate capacitor with plate area $A$ and plate separation $d$ is charged by constant current I. A plane surface of area $\\mathrm{A} / 2$, parallel to the plates is drawn simultaneously between the plates. The displacement current through this area is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "vmbNc",
+              "text": "I",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "UrtMa",
+              "text": "$\\frac{\\mathrm{I}}{2}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "3plmj",
+              "text": "$\\frac{\\mathrm{I}}{4}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "S1Prf",
+              "text": "$\\frac{\\mathrm{I}}{8}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The electric field $E$ between the plates of a parallel plate capacitor is uniform and is given by $E = \\dfrac{q}{\\varepsilon_0 A}$, where $q$ is the charge on the capacitor plates and $A$ is the plate area.<br><br>The electric flux $\\Phi_E$ through a plane surface of area $A/2$ parallel to the plates is:<br><br>$\\Phi_E = E \\times \\dfrac{A}{2} = \\dfrac{q}{\\varepsilon_0 A} \\times \\dfrac{A}{2} = \\dfrac{q}{2\\varepsilon_0}$<br><br>The displacement current $I_d$ through this area is given by:<br><br>$I_d = \\varepsilon_0 \\dfrac{d\\Phi_E}{dt}$<br><br>Substituting the value of $\\Phi_E$:<br><br>$I_d = \\varepsilon_0 \\dfrac{d}{dt} \\left( \\dfrac{q}{2\\varepsilon_0} \\right) = \\dfrac{1}{2} \\dfrac{dq}{dt}$<br><br>Since the capacitor is being charged by a constant current $I$, the rate of change of charge is $\\dfrac{dq}{dt} = I$.<br><br>Therefore, the displacement current through the given area is:<br><br>$I_d = \\dfrac{I}{2}$<br><br>Answer: $\\frac{\\mathrm{I}}{2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376de9b67616acec78f71",
+            "heldOn": "2025-04-20T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (20 Apr Shift 2)",
+            "title": "MHT CET 2025 (20 Apr Shift 2)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a2623f0279619d9d8a32fc",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b2",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-13T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (13 May Shift 1)",
+              "title": "MHT CET 2023 (13 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Select the 'WRONG' statement out of the following.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "LtRQr",
+              "text": "Electromagnetic waves do not require any medium for their propagation.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wepGu",
+              "text": "Electromagnetic waves can travel through vacuum waves speed of light",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "XuH3f",
+              "text": "Material medium is necessary for propagation of electromagnetic waves.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Up14T",
+              "text": "Electromagnetic waves are transverse in nature.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Electromagnetic waves can propagate through vacuum. This can be clearly understood from Maxwell's equations for EM waves. Selfsustaining electric and magnetic fields enable waves to travel through empty space.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b2",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-13T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (13 May Shift 1)",
+            "title": "MHT CET 2023 (13 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a2620b0279619d9d8a315d",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892af",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-11T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (11 May Shift 2)",
+              "title": "MHT CET 2023 (11 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "An electromagnetic wave, whose wave normal makes an angle of $45^{\\circ}$ with the vertical, travelling in air strikes a horizontal liquid surface. While travelling through the liquid it gets deviated through $15^{\\circ}$. What is the speed of the electromagnetic wave in the liquid, if the speed of electromagnetic wave in air is $3 \\times 10^8 \\mathrm{~m} / \\mathrm{s}$ ? $\\left(\\sin 30^{\\circ}=0 \\cdot 5, \\sin 45^{\\circ}=\\frac{1}{\\sqrt{2}}\\right)$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "RSIE3",
+              "text": "$\\frac{\\sqrt{2}}{3} \\times 10^8 \\mathrm{~m} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "9J5C4",
+              "text": "$1.5 \\times 10^8 \\mathrm{~m} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "eo1gc",
+              "text": "$2 \\cdot 1 \\times 10^8 \\mathrm{~m} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "eQguC",
+              "text": "$2.5 \\times 10^8 \\mathrm{~m} / \\mathrm{s}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The angle of incidence is $\\mathrm{i}=45^{\\circ}$\nThe angle of deviation is $\\delta=15^{\\circ}$\nThe angle of refraction is\n$\\begin{aligned}\n& \\delta=i-r \\\\\n& r=i-\\delta \\\\\n& r=45^{\\circ}-15^{\\circ} \\\\\n& r=30^{\\circ}\n\\end{aligned}$\nThe relation between the speed of the wave in the medium, the angle of incidence and the angle of refraction is given by the formula:\n$\\begin{aligned}\n& \\frac{\\mathrm{v}_2}{\\mathrm{v}_1}=\\frac{\\sin \\mathrm{r}}{\\sin \\mathrm{i}} \\\\\n& \\frac{\\mathrm{v}_2}{\\mathrm{v}_1}=\\frac{\\sin 30^{\\circ}}{\\sin 45^{\\circ}} \\\\\n& \\frac{\\mathrm{v}_2}{\\mathrm{v}_1}=\\frac{1}{\\sqrt{2}}\n\\end{aligned}$\n$\\begin{aligned} & \\mathrm{v}_2=\\frac{\\mathrm{v}_1}{\\sqrt{2}} \\\\ & \\mathrm{v}_2=\\frac{3 \\times 10^8}{\\sqrt{2}} \\\\ & \\mathrm{v}_2=2.1 \\times 10^8 \\mathrm{~m} / \\mathrm{s}\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892af",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-11T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (11 May Shift 2)",
+            "title": "MHT CET 2023 (11 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a2614e0279619d9d8a2b7e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892a5",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2022-08-08T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022 (08 Aug Shift 1)",
+              "title": "MHT CET 2022 (08 Aug Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "If $\\varepsilon_0$ and $\\varepsilon$ represent the permittivity of free space and absolute permittivity of a medium then the relative permittivity of the medium is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ZYnjp",
+              "text": "$\\frac{\\varepsilon^2}{\\varepsilon_0}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qy6RI",
+              "text": "$\\frac{\\varepsilon_0}{\\varepsilon}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "whJlv",
+              "text": "$\\varepsilon \\varepsilon_0$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Q2MzJ",
+              "text": "$\\frac{\\varepsilon}{\\varepsilon_0}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The absolute permittivity of the medium is defined as, $\\varepsilon=\\varepsilon_r \\varepsilon_0$\n\nThe relative permittivity of the medium can be written as:\n$\\varepsilon_r=\\frac{\\varepsilon}{\\varepsilon_0}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892a5",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2022-08-08T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022 (08 Aug Shift 1)",
+            "title": "MHT CET 2022 (08 Aug Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f780279619d9d8a1cbd",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6c",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-14T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (14 Oct Shift 2)",
+              "title": "MHT CET 2020 (14 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Out of the fundamental forces in nature, maximum and minimum range is respectively for",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ZxjRK",
+              "text": "gravitational force, weak nuclear force.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "oSsn2",
+              "text": "gravitational force, electromagnetic force.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "cxy6i",
+              "text": "strong nuclear force, electromagnetic force.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6opFM",
+              "text": "electromagnetic force, gravitational force.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Gravitational force,weak nuclear force",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6c",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-14T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (14 Oct Shift 2)",
+            "title": "MHT CET 2020 (14 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f530279619d9d8a1b8f",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6a",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-13T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (13 Oct Shift 2)",
+              "title": "MHT CET 2020 (13 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Which one of the following statements is 'NOT\" the property of light?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "2LG8r",
+              "text": "Light involves transportation of energy.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Iml0j",
+              "text": "Light can travel through vacuum.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wvPsz",
+              "text": "Light requires material medium for propagation.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "x9G2j",
+              "text": "Light has finite speed.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Light is electromagnetic in nature it does not require any material medium for its propogation.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6a",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-13T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (13 Oct Shift 2)",
+            "title": "MHT CET 2020 (13 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f2d0279619d9d8a1a5e",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f68",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-12T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (12 Oct Shift 2)",
+              "title": "MHT CET 2020 (12 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "An electromagnetic wave of wavelength ' $\\lambda$ ' is incident on a photosensitive surface of negligible work function. If the photoelectrons emitted from this surface have the de-Broglie wavelength ' $\\lambda_{1}{ }^{\\prime}$ then",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "pv27u",
+              "text": "$\\lambda \\propto \\frac{1}{\\lambda_{1}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "7QosA",
+              "text": "$\\lambda \\propto \\lambda_{1}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nTznp",
+              "text": "$\\lambda \\propto \\lambda_{1}^{2}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "CTNGD",
+              "text": "$\\lambda \\propto \\frac{1}{\\lambda_{1}^{2}}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f68",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-12T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (12 Oct Shift 2)",
+            "title": "MHT CET 2020 (12 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e970279619d9d8a15ad",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f60",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "MHT CET 2012"
+            }
+          ],
+          "question": {
+            "text": "The existence of electromagnetic waves were experimentally confirmed by",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "VnKgQ",
+              "text": "Maxwell",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "QUyK1",
+              "text": "Faraday",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "a0XLU",
+              "text": "Hertz",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "FaxQc",
+              "text": "Tesla",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Existence of electromagnetic waves were experimentally confirmed by a German scientist Hertz.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f60",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "MHT CET 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e970279619d9d8a15ac",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f60",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "MHT CET 2012"
+            }
+          ],
+          "question": {
+            "text": "The electromagnetic waves travel in free space with the velocity of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ojMqU",
+              "text": "sound",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "j49JK",
+              "text": "light",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ONMdx",
+              "text": "greater than that of light",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "zjESP",
+              "text": "greater than that of sound",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Electromagnetic waves travel in free space or vacuum with the velocity of light $\\left(3 \\times 10^{8} \\mathrm{~ms}^{-1}\\right)$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f60",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "MHT CET 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e970279619d9d8a15ab",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f60",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "MHT CET 2012"
+            }
+          ],
+          "question": {
+            "text": "The frequency of radio waves corresponding to a wavelength of $10 \\mathrm{~m}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "FRA2m",
+              "text": "$3 \\times 10^{7} \\mathrm{~Hz}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "XR2es",
+              "text": "$3.3 \\times 10^{8} \\mathrm{~Hz}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Vc6y0",
+              "text": "$3 \\times 10^{9} \\mathrm{~Hz}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "maYFx",
+              "text": "$3 \\times 10^{-7} \\mathrm{~Hz}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Wavelength, $\\lambda=10 \\mathrm{~m}$\n$$\nc=3 \\times 10^{8} \\mathrm{~ms}^{-1}\n$$\nBy using $c=v \\lambda$\n$$\nv=\\frac{c}{\\lambda}=\\frac{3 \\times 10^{8}}{10}=3 \\times 10^{7} \\mathrm{~Hz}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f60",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "MHT CET 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e970279619d9d8a15aa",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f60",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "MHT CET 2012"
+            }
+          ],
+          "question": {
+            "text": "Electromagnetic theory suggests that the light consists of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Goybr",
+              "text": "magnetic vector only",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "JqhDU",
+              "text": "electric vector only",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "QlwO0",
+              "text": "electric and magnetic vectors perpendicular to each other",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "smFqT",
+              "text": "parallel electric and magnetic vector",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Electro magnetic theory suggests that the light consists of electric and magnetic vectors perpendicular to each other.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f60",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "MHT CET 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e780279619d9d8a14ad",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f5e",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "MHT CET 2010"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is absorbed by the ozone layer?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "EUZy8",
+              "text": "only gamma rays",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "75BaC",
+              "text": "visible light",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "F0Nqz",
+              "text": "radio waves",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "H1YSY",
+              "text": "ultraviolet",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Ultraviolet is absorbed by the ozone layer.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f5e",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "MHT CET 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e4f0279619d9d8a1366",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f5c",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2008-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2008",
+              "title": "MHT CET 2008"
+            }
+          ],
+          "question": {
+            "text": "The velocity of electromagnetic radiation in a medium of permittivity $\\varepsilon_{0}$ and permeability $\\mu_{0}$ is given by",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "TlnY9",
+              "text": "$\\sqrt{\\frac{\\varepsilon_{0}}{\\mu_{0}}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2VHyT",
+              "text": "$\\sqrt{\\mu_{0} \\varepsilon_{0}}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "DQyYQ",
+              "text": "$\\frac{1}{\\sqrt{\\mu_{0} \\varepsilon_{0}}}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "sUFvg",
+              "text": "$\\sqrt{\\frac{\\mu_{0}}{\\varepsilon_{0}}}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Velocity of electromagnetic radiation is the velocity of light $(c)$, ie,\n$$\nc=\\frac{1}{\\sqrt{\\mu_{0} \\varepsilon_{0}}}\n$$\nwhere $\\mu_{0}$ is the permeability and $\\varepsilon_{0}$ is the permittivity of free space.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f5c",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2008-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2008",
+            "title": "MHT CET 2008"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "65a263410279619d9d8a3d86",
+      "title": "Electromagnetic Spectrum",
+      "totalQuestions": 4,
+      "questions": [
+        {
+          "_id": "65a261740279619d9d8a2cb4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892a7",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2022-08-10T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022 (10 Aug Shift 1)",
+              "title": "MHT CET 2022 (10 Aug Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Which one of the following statements is not the property of light?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "zhpym",
+              "text": "Light involves transportation of energy.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "g89Rn",
+              "text": "Light can travel through vacuum.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "apoYo",
+              "text": "Light requires material medium.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "39NR2",
+              "text": "Light has finite speed.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Light is electromagnetic in nature it does not require any material medium for its propagation.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892a7",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2022-08-10T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022 (10 Aug Shift 1)",
+            "title": "MHT CET 2022 (10 Aug Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f7b0279619d9d8a1cd0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6c",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-14T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (14 Oct Shift 2)",
+              "title": "MHT CET 2020 (14 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "In which layer of the atmosphere, the water vapour is present?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "wn6wL",
+              "text": "$\\text { Troposphere }$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "50eam",
+              "text": "Ionosphere",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "oF1oH",
+              "text": "Mesosphere",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lEP2K",
+              "text": "Stratosphere",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Water vapour in the atmosphere is confined only to its lower layer, i.e. troposphere. This is the reason all weather phenomena occur only in this layer.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6c",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-14T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (14 Oct Shift 2)",
+            "title": "MHT CET 2020 (14 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e960279619d9d8a15a9",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f60",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "MHT CET 2012"
+            }
+          ],
+          "question": {
+            "text": "Electromagnetic waves of wavelength ranging from $100 Å$ A to $400 Å$ comes under",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "aHxiA",
+              "text": "X-rays",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "WONEG",
+              "text": "UV region",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ynCtO",
+              "text": "visible region",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "MjIwp",
+              "text": "infrared region",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Electromagnetic waves of wavelength ranging from $100 Å$ to $4000 Å$ Å comes under visible regions.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f60",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "MHT CET 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e960279619d9d8a15a8",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f60",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "MHT CET 2012"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is not an electromagnetic wave?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "dPIQb",
+              "text": "Light rays",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "WS9Op",
+              "text": "X-rays",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "UZENI",
+              "text": "Alpha rays",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "eTI1K",
+              "text": "Gamma rays",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Alpha rays is not an electromagnetic wave.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f60",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "MHT CET 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,779 @@
+{
+  "index": 23,
+  "chapterId": "616024349a1ab852c3621f3c",
+  "chapter": "Electromagnetic Waves",
+  "exam": "NTA Abhyas (JEE Main)",
+  "subject": "Physics",
+  "totalTopics": 3,
+  "totalQuestions": 12,
+  "downloadTime": "2026-10-08 20:32:57",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "6aa3ab79aa8dc1ff6817804d",
+      "title": "Electromagnetic Waves and Maxwell's Equations",
+      "totalQuestions": 7,
+      "questions": [
+        {
+          "_id": "6151e863ae72b70a9503fc10",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "31",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "<p>A laser beam of power&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>27</mn><mo>&nbsp;</mo><mi>mW</mi></math> has a cross-sectional area of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>10</mn><mo>&nbsp;</mo><msup><mi>mm</mi><mn>2</mn></msup></math>. The magnitude of the maximum electric field in this electromagnetic wave is given by</p>\r\r<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>[</mo></math>Given permittivity of space&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">ε</mi><mn>0</mn></msub><mo>≈</mo><mn>9</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>12</mn></mrow></msup><mo>&nbsp;</mo><msup><mi mathvariant=\"normal\">C</mi><mn>2</mn></msup><mo>&nbsp;</mo><msup><mi mathvariant=\"normal\">N</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&nbsp;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>, speed of light&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"]\" open=\"\"><mrow><mi mathvariant=\"normal\">c</mi><mo>=</mo><mn>3</mn><mo>×</mo><msup><mn>10</mn><mn>8</mn></msup><mo>&nbsp;</mo><mi mathvariant=\"normal\">m</mi><mo>&nbsp;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mfenced></math></p>\r",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "K0KZJ",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&#160;</mo><mi>kV</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "r0WE1",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>.</mo><mn>4</mn><mo>&nbsp;</mo><mi>kV</mi><mo>&nbsp;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Fcfz9",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0.7</mn><mo>&#160;</mo><mi>kV</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "tXXJt",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>&#160;</mo><mi>kV</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">I</mi><mo>=</mo><mfrac><mi mathvariant=\"normal\">P</mi><mi mathvariant=\"normal\">A</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi mathvariant=\"normal\">ε</mi><mn>0</mn></msub><msubsup><mi mathvariant=\"normal\">E</mi><mn>0</mn><mn>2</mn></msubsup><mi mathvariant=\"normal\">c</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>∴</mo><msub><mi mathvariant=\"normal\">E</mi><mn>0</mn></msub><mo>=</mo><msqrt><mfrac><mrow><mn>2</mn><mi mathvariant=\"normal\">P</mi></mrow><mrow><msub><mi mathvariant=\"normal\">ε</mi><mn>0</mn></msub><mi>CA</mi></mrow></mfrac></msqrt><mo>=</mo><msqrt><mfrac><mrow><mn>2</mn><mo>×</mo><mn>27</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>×</mo><mn>36</mn><mi mathvariant=\"normal\">π</mi><mo>×</mo><msup><mn>10</mn><mn>9</mn></msup></mrow><mrow><mn>3</mn><mo>×</mo><msup><mn>10</mn><mn>8</mn></msup><mo>×</mo><mn>10</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow></mfrac></msqrt></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">E</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn><mo>.</mo><mn>4</mn><mo>&nbsp;</mo><mi>kV</mi><mo>&nbsp;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86375991354472da8ba",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "33",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The magnetic field of a plane electromagnetic wave is given by&nbsp;<math><mover accent=\"true\"><mrow><mi mathvariant=\"normal\">B</mi></mrow><mo>→</mo></mover><mo>=</mo><msub><mrow><mi mathvariant=\"normal\">B</mi></mrow><mrow><mn>0</mn></mrow></msub><mover accent=\"true\"><mrow><mi mathvariant=\"normal\">i</mi></mrow><mo>^</mo></mover><mfenced close=\"]\" open=\"[\" separators=\"|\"><mrow><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">s</mi><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">k</mi><mi mathvariant=\"normal\">z</mi><mo>-</mo><mi mathvariant=\"normal\">ω</mi><mi mathvariant=\"normal\">t</mi></mrow></mfenced></mrow></mfenced><mo>+</mo><msub><mrow><mi mathvariant=\"normal\">B</mi></mrow><mrow><mn>1</mn></mrow></msub><mover accent=\"true\"><mrow><mi mathvariant=\"normal\">j</mi></mrow><mo>^</mo></mover><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">s</mi><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">k</mi><mi mathvariant=\"normal\">z</mi><mo>+</mo><mi mathvariant=\"normal\">ω</mi><mi mathvariant=\"normal\">t</mi></mrow></mfenced></math>, where <math><msub><mrow><mi mathvariant=\"normal\">B</mi></mrow><mrow><mn>0</mn></mrow></msub><mo>=</mo><mn>3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>–</mo><mn>5</mn></mrow></msup><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">T</mi></math> and <math><msub><mrow><mi mathvariant=\"normal\">B</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>=</mo><mn>2</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>–</mo><mn>6</mn></mrow></msup><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">T</mi></math>. The RMS value of the force experienced by a stationary charge <math><mi mathvariant=\"normal\">Q</mi><mo>=</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>–</mo><mn>4</mn></mrow></msup><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">C</mi></math> at <math><mi mathvariant=\"normal\">z</mi><mo>=</mo><mn>0</mn></math> is closest to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "aPQGb",
+              "text": "<math><mn>0.1</mn><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">N</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Al1wu",
+              "text": "<math><mn>0.9</mn><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">N</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "T08qc",
+              "text": "<math><mn>3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>–</mo><mn>2</mn></mrow></msup><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">N</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "7mJOB",
+              "text": "<math><mn>0.6</mn><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">N</mi></math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math><mover accent=\"true\"><mrow><mi mathvariant=\"normal\">B</mi></mrow><mo>→</mo></mover><mo>=</mo><msub><mrow><mi mathvariant=\"normal\">B</mi></mrow><mrow><mn>0</mn></mrow></msub><mover accent=\"true\"><mrow><mi mathvariant=\"normal\">i</mi></mrow><mo>^</mo></mover><mfenced open=\"[\" close=\"]\" separators=\"|\"><mrow><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">s</mi><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">k</mi><mi mathvariant=\"normal\">z</mi><mo>-</mo><mi mathvariant=\"normal\">ω</mi><mi mathvariant=\"normal\">t</mi></mrow></mfenced></mrow></mfenced><mo>+</mo><msub><mrow><mi mathvariant=\"normal\">B</mi></mrow><mrow><mn>1</mn></mrow></msub><mover accent=\"true\"><mrow><mi mathvariant=\"normal\">j</mi></mrow><mo>^</mo></mover><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">s</mi><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">k</mi><mi mathvariant=\"normal\">z</mi><mo>+</mo><mi mathvariant=\"normal\">ω</mi><mi mathvariant=\"normal\">t</mi></mrow></mfenced></math>  <br/><math><msub><mrow><mi mathvariant=\"normal\">B</mi></mrow><mrow><mn>0</mn></mrow></msub><mo>=</mo><mn>3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>-</mo><mn>5</mn></mrow></msup><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\"> </mi><msub><mrow><mi mathvariant=\"normal\">B</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>=</mo><mn>2</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>-</mo><mn>6</mn></mrow></msup><mtext> </mtext><mi mathvariant=\"normal\">T</mi></math>  <br/>Electric filed associated with it is, <br/><math><mover accent=\"true\"><mrow><mi mathvariant=\"normal\">E</mi></mrow><mo>→</mo></mover><mo>=</mo><mo>-</mo><msub><mrow><mi mathvariant=\"normal\">B</mi></mrow><mrow><mn>0</mn></mrow></msub><mi mathvariant=\"normal\">c</mi><mover accent=\"true\"><mrow><mi mathvariant=\"normal\">j</mi></mrow><mo>^</mo></mover><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">s</mi><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">k</mi><mi mathvariant=\"normal\">z</mi><mo>-</mo><mi mathvariant=\"normal\">ω</mi><mi mathvariant=\"normal\">t</mi></mrow></mfenced><mo>-</mo><msub><mrow><mi mathvariant=\"normal\">B</mi></mrow><mrow><mn>1</mn></mrow></msub><mi mathvariant=\"normal\">c</mi><mover accent=\"true\"><mrow><mi mathvariant=\"normal\">i</mi></mrow><mo>^</mo></mover><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">s</mi><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">k</mi><mi mathvariant=\"normal\">z</mi><mo>+</mo><mi mathvariant=\"normal\">ω</mi><mi mathvariant=\"normal\">t</mi></mrow></mfenced></math>  <br/>Here, c is speed of light in vacuum. <br/>At <math><mi mathvariant=\"normal\">z</mi><mo>=</mo><mn>0</mn><mo>,</mo></math>  <br/><math><msub><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mtext>rms</mtext></mrow></msub><mo>=</mo><msqrt><mfrac><mrow><msup><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">Q</mi><msub><mrow><mi mathvariant=\"normal\">B</mi></mrow><mrow><mn>0</mn></mrow></msub><mi mathvariant=\"normal\">c</mi></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">Q</mi><msub><mrow><mi mathvariant=\"normal\">B</mi></mrow><mrow><mn>1</mn></mrow></msub><mi mathvariant=\"normal\">c</mi></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>2</mn></mrow></mfrac></msqrt></math>  <br/>Here <math><mi mathvariant=\"normal\">c</mi></math> is speed of light in vacuum. <br/><math><mo>=</mo><msqrt><mfrac><mrow><msup><mrow><mfenced separators=\"|\"><mrow><msup><mrow><mn>10</mn></mrow><mrow><mo>-</mo><mn>4</mn></mrow></msup><mo>×</mo><mn>3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>-</mo><mn>5</mn></mrow></msup><mo>×</mo><mn>3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>8</mn></mrow></msup></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mfenced separators=\"|\"><mrow><msup><mrow><mn>10</mn></mrow><mrow><mo>-</mo><mn>4</mn></mrow></msup><mo>×</mo><mn>2</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>-</mo><mn>6</mn></mrow></msup><mo>×</mo><mn>3</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>8</mn></mrow></msup></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>2</mn></mrow></mfrac></msqrt></math>  <br/><math><mo>=</mo><msqrt><mfrac><mrow><mn>0.81</mn><mo>+</mo><mn>0.0036</mn></mrow><mrow><mn>2</mn></mrow></mfrac></msqrt><mo>=</mo><mn>0.6</mn><mtext> </mtext><mi mathvariant=\"normal\">N</mi></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86371096e15da48a70d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "15",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "<p>A laser beam of power&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>27</mn><mo>&#160;</mo><mi>mW</mi></math> has a cross-sectional area of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>10</mn><mo>&#160;</mo><msup><mi>mm</mi><mn>2</mn></msup></math>. The magnitude of the maximum electric field in this electromagnetic wave is given by [Take&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#949;</mi><mn>0</mn></msub><mo>&#8776;</mo><mn>9</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>12</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant=\"normal\">C</mi><mn>2</mn></msup><mo>&#160;</mo><msup><mi mathvariant=\"normal\">N</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>c</mi><mo>=</mo><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>]</p>\r",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "GfFaB",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&#160;</mo><mi>kV</mi><mo>/</mo><mi mathvariant=\"normal\">m</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "jddVy",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>.</mo><mn>4</mn><mo>&nbsp;</mo><mi>kV</mi><mo>/</mo><mi mathvariant=\"normal\">m</mi></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "5OXg3",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>7</mn><mo>&#160;</mo><mi>kV</mi><mo>/</mo><mi mathvariant=\"normal\">m</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "DsNTT",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>&#160;</mo><mi>kV</mi><mo>/</mo><mi mathvariant=\"normal\">m</mi></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi><mo>=</mo><mfrac><mi>P</mi><mi>A</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>&#949;</mi><mn>0</mn></msub><msubsup><mi>E</mi><mn>0</mn><mn>2</mn></msubsup><mi>c</mi></math><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><msub><mi>E</mi><mn>0</mn></msub><mo>=</mo><msqrt><mfrac><mrow><mn>2</mn><mi>P</mi></mrow><mrow><msub><mi>&#949;</mi><mn>0</mn></msub><mi>c</mi><mi>A</mi></mrow></mfrac></msqrt><mo>=</mo><msqrt><mfrac><mrow><mn>2</mn><mo>&#215;</mo><mfenced><mrow><mn>27</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfenced></mrow><mrow><mfenced><mrow><mn>9</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>12</mn></mrow></msup></mrow></mfenced><mo>&#215;</mo><mfenced><mrow><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup></mrow></mfenced><mo>&#215;</mo><mfenced><mrow><mn>10</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow></mfenced></mrow></mfrac></msqrt></math><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><msub><mi>E</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn><mo>.</mo><mn>4</mn><mo>&#160;</mo><mi>kV</mi><mo>/</mo><mi mathvariant=\"normal\">m</mi></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8633f8440bb34ecaeb6",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "51",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "A totally reflecting small plane mirror placed horizontally faces a parallel beam of light as shown in the figure. The mass of the mirror is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>200</mn><mo>&nbsp;</mo><mi mathvariant=\"normal\">g</mi></math>. Assume that there is no absorption in the lens and that <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>20</mn><mo>%</mo></math> of the light emitted by the source goes through the lens. The power of the source needs to support the weight of the mirror is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mo>&nbsp;</mo><mo>×</mo><mo>&nbsp;</mo><msup><mn>10</mn><mn>8</mn></msup><mo>&nbsp;</mo><mi>watt</mi></math>, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi></math> is [take <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mo>&nbsp;</mo><mo>=</mo><mo>&nbsp;</mo><mn>10</mn><mo>&nbsp;</mo><mi mathvariant=\"normal\">m</mi><mo>&nbsp;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>]<br />\r<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/e6be0702-b24b-44b9-8228-7434a598d296-image18.jpeg\" />",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "15",
+          "solution": {
+            "text": "<math><mi>m</mi><mi>g</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>P</mi></mrow><mrow><mi>C</mi></mrow></mfrac></math><br /><math><msup><mrow><mi>P</mi></mrow><mrow><mi>'</mi></mrow></msup><mo>=</mo><mfrac><mrow><mn>200</mn><mo>&#215;</mo><mn>1</mn><msup><mrow><mn>0</mn></mrow><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#215;</mo><mn>10</mn><mo>&#215;</mo><mn>1</mn><msup><mrow><mn>0</mn></mrow><mrow><mn>8</mn></mrow></msup><mo>&#215;</mo><mn>3</mn></mrow><mrow><mn>2</mn></mrow></mfrac></math><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mo>&#8216;</mo><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>300</mn><mo>&#160;</mo><mo>&#215;</mo><mo>&#160;</mo><msup><mn>10</mn><mn>6</mn></msup><mo>&#160;</mo><mo>=</mo><mo>&#160;</mo><mn>300</mn><mo>&#160;</mo><mi>MW</mi></math><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mo>=</mo><mfrac><msup><mi>P</mi><mi>'</mi></msup><mn>0.2</mn></mfrac><mo>=</mo><mn>1500</mn><mo>&#215;</mo><mn>1</mn><msup><mn>0</mn><mn>6</mn></msup><mo>=</mo><mn>15</mn><mo>&#215;</mo><mn>1</mn><msup><mn>0</mn><mn>8</mn></msup><mo>&#8196;</mo><mi mathvariant=\"normal\">W</mi></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86320872d259ba5aee3",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "28",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Electromagnetic waves travel in a medium with a speed of <math> <mrow> <mtext>2</mtext><mo>×</mo><msup> <mrow> <mtext>10</mtext></mrow> <mn>8</mn> </msup> <mtext> </mtext><mtext>m</mtext><mtext> </mtext><msup> <mtext>s</mtext> <mrow> <mo>−</mo><mn>1</mn></mrow> </msup> <mo>.</mo></mrow> </math> The relative permeability of the medium is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math>. Find the relative permittivity.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "OWuT4",
+              "text": "<math> <mrow>  <mn>2.25</mn></mrow></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "NaEBw",
+              "text": "<math> <mrow>  <mn>3.25</mn></mrow></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8sgdH",
+              "text": "<math> <mrow>  <mn>3.70</mn></mrow></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "QXUmM",
+              "text": "<math> <mrow>  <mn>4.20</mn></mrow></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Here, <math> <mrow> <mtext>v</mtext><mo>=</mo><mn>2</mn><mo>×</mo><msup> <mrow> <mn>10</mn></mrow> <mn>8</mn> </msup> <mtext> </mtext><mtext>m</mtext><mtext> </mtext><msup> <mtext>s</mtext> <mrow> <mo>−</mo><mn>1</mn></mrow> </msup> </mrow> </math> and <math> <mrow> <msub> <mi>μ</mi> <mi>r</mi> </msub> <mo>=</mo><mn>1</mn></mrow> </math><br /><br />The speed of electromagnetic waves in a medium is given by<br /><br /><math> <mrow> <mtext>v</mtext> <mo>=</mo> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <msqrt> <mtext>μ</mtext> <mspace width=\"0.5em\"></mspace> <mtext>ε</mtext> </msqrt> </mrow> </mfrac> <mtext>,</mtext> <mspace width=\"0.5em\"></mspace> <mspace width=\"0.5em\"></mspace> <mspace width=\"0.5em\"></mspace> <mspace width=\"0.5em\"></mspace> <mspace width=\"0.5em\"></mspace> <mspace width=\"0.5em\"></mspace> <mspace width=\"0.5em\"></mspace> <mspace width=\"0.5em\"></mspace> <mspace width=\"0.5em\"></mspace> <mspace width=\"0.5em\"></mspace> <mspace width=\"0.5em\"></mspace> <mspace width=\"0.5em\"></mspace> <mtext>....(i)</mtext> </mrow> </math><br /><br />where <math> <mi>μ</mi> </math> and <math> <mi>ε</mi> </math> are absolute permeability and absolute permittivity of the medium.<br /><br />Now, <math> <mrow> <mi>μ</mi><mo>=</mo><msub> <mi>μ</mi> <mn>0</mn> </msub> <mtext> </mtext><mtext> </mtext><msub> <mi>μ</mi> <mi>r</mi> </msub> </mrow> </math> and <math> <mrow> <mi>ε</mi><mo>=</mo><msub> <mi>ε</mi> <mn>0</mn> </msub> <mtext> </mtext><msub> <mi>ε</mi> <mi>r</mi> </msub> </mrow> </math><br /><br />Therefore, the equation (i) becomes<br /><br /><math> <mrow> <mtext>v</mtext> <mo>=</mo> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <msqrt> <msub> <mtext>μ</mtext> <mn>0</mn> </msub> <msub> <mtext>μ</mtext> <mtext>r</mtext> </msub> <mo>×</mo> <msub> <mtext>ε</mtext> <mn>0</mn> </msub> <msub> <mtext>ε</mtext> <mtext>r</mtext> </msub> </msqrt> </mrow> </mfrac> <mo>=</mo> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <msqrt> <msub> <mtext>μ</mtext> <mn>0</mn> </msub> <msub> <mtext>ε</mtext> <mtext>0</mtext> </msub> </msqrt> </mrow> </mfrac> <mo>×</mo> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <msqrt> <msub> <mtext>μ</mtext> <mtext>r</mtext> </msub> <msub> <mtext>ε</mtext> <mtext>r</mtext> </msub> </msqrt> </mrow> </mfrac> <mo>=</mo> <mfrac> <mrow> <mtext>c</mtext> </mrow> <mrow> <msqrt> <msub> <mtext>μ</mtext> <mtext>r</mtext> </msub> <msub> <mtext>ε</mtext> <mtext>r</mtext> </msub> </msqrt> </mrow> </mfrac> </mrow> </math><br /><br /><math> <mrow> <mtext>or</mtext> <mspace width=\"0.5em\"></mspace> <msub> <mtext>ε</mtext> <mtext>r</mtext> </msub> <mo>=</mo> <mfrac> <mrow> <msup> <mtext>c</mtext> <mn>2</mn> </msup> </mrow> <mrow> <msup> <mtext>v</mtext> <mn>2</mn> </msup> <msub> <mtext>μ</mtext> <mtext>r</mtext> </msub> </mrow> </mfrac> <mo>=</mo> <mfrac> <mrow> <msup> <mrow> <mfenced close=\")\" open=\"(\" separators=\",\"> <mrow> <mn>3</mn> <mo>×</mo> <msup> <mtext>10</mtext> <mn>8</mn> </msup> </mrow> </mfenced> </mrow> <mn>2</mn> </msup> </mrow> <mrow> <msup> <mrow> <mfenced close=\")\" open=\"(\" separators=\",\"> <mrow> <mn>2</mn> <mo>×</mo> <msup> <mtext>10</mtext> <mn>8</mn> </msup> </mrow> </mfenced> </mrow> <mn>2</mn> </msup> <mo>×</mo> <mn>1</mn> </mrow> </mfrac> <mo>=</mo> <mtext>2.25</mtext> </mrow> </math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86317dffdd1bd44b647",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "37",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "In an electromagnetic wave, the maximum value of the electric field is&nbsp;<math><mn>100</mn><mi mathvariant=\"normal\">&#160;</mi><mi mathvariant=\"normal\">V&#160;</mi><msup><mrow><mi mathvariant=\"normal\">m</mi></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>. The average intensity is [<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#949;</mi><mn>0</mn></msub><mo>=</mo><mn>8</mn><mo>.</mo><mn>8</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>12</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant=\"normal\">C</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant=\"normal\">N</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mn>2</mn></msup></math>]",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "GcvqI",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>13</mn><mo>.</mo><mn>2</mn><mo>&#xA0;</mo><mi mathvariant=\"normal\">W</mi><mo>&#xA0;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "7uQSq",
+              "text": "<math><mn>36.5</mn><mi>&nbsp;</mi><mi mathvariant=\"normal\">W&nbsp;</mi><msup><mrow><mi mathvariant=\"normal\">m</mi></mrow><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6LegW",
+              "text": "<math><mn>46.7</mn><mi>&nbsp;</mi><mi mathvariant=\"normal\">W&nbsp;</mi><msup><mrow><mi mathvariant=\"normal\">m</mi></mrow><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FtoUc",
+              "text": "<math><mn>765</mn><mi>&nbsp;</mi><mi mathvariant=\"normal\">W&nbsp;</mi><msup><mrow><mi mathvariant=\"normal\">m</mi></mrow><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>I</mi><mi>avg</mi></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>c</mi><msub><mi>&#949;</mi><mn>0</mn></msub><msup><mfenced><msub><mi>E</mi><mn>0</mn></msub></mfenced><mn>2</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><msub><mi>I</mi><mi>avg</mi></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#215;</mo><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup><mo>&#215;</mo><mn>8</mn><mo>.</mo><mn>8</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>12</mn></mrow></msup><mo>&#215;</mo><msup><mfenced><mn>100</mn></mfenced><mn>2</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><msub><mi>I</mi><mi>avg</mi></msub><mo>=</mo><mn>13</mn><mo>.</mo><mn>2</mn><mo>&#160;</mo><mi mathvariant=\"normal\">W</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86317cd04bb89fc3d11",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "39",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "A&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>50</mn><mi>&nbsp;</mi><mi mathvariant=\"normal\">W</mi><mo>&nbsp;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup><mi mathvariant=\"normal\">&nbsp;</mi></math>energy density of sunlight is incident normally on the surface of a solar panel. Some part of incident energy (<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>25</mn><mo>%</mo></math>) is reflected from the surface and the rest is absorbed. The force exerted on <math><mn>1</mn><mi>&nbsp;</mi><msup><mrow><mi mathvariant=\"normal\">m</mi></mrow><mrow><mn>2</mn></mrow></msup></math> surface area will be close to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced separators=\"|\"><mrow><mi>c</mi><mo>=</mo><mn>3</mn><mo>×</mo><msup><mn>10</mn><mn>8</mn></msup><mo>&nbsp;</mo><mi mathvariant=\"normal\">m</mi><mo>&nbsp;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mfenced></math>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "wETku",
+              "text": "<math><mn>15</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>-</mo><mn>8</mn></mrow></msup><mtext> </mtext><mi mathvariant=\"normal\">N</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "rSFbi",
+              "text": "<math><mn>20</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>-</mo><mn>8</mn></mrow></msup><mtext> </mtext><mi mathvariant=\"normal\">N</mi></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "bFyJ9",
+              "text": "<math><mn>10</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>-</mo><mn>8</mn></mrow></msup><mtext> </mtext><mi mathvariant=\"normal\">N</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "XC2Hc",
+              "text": "<math><mn>35</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>-</mo><mn>8</mn></mrow></msup><mtext> </mtext><mi mathvariant=\"normal\">N</mi></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>The pressure exerted by the photons</p><p>&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mo>=</mo><mn>0.75</mn><mo>&#215;</mo><mfrac><mi>I</mi><mi>c</mi></mfrac><mo>&#160;</mo><mo>+</mo><mn>0.25</mn><mo>&#215;</mo><mfrac><mrow><mn>2</mn><mi>I</mi></mrow><mi>c</mi></mfrac></math>&nbsp; &nbsp;&nbsp;&nbsp;(&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi></math>&nbsp;= pressure,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>c</mi></math>&nbsp;= speed of light,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi></math>&nbsp;= intensity )<br /><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mo>=</mo><mn>1.25</mn><mi mathvariant=\"normal\">&#160;</mi><mo>&#215;</mo><mfrac><mi mathvariant=\"italic\">I</mi><mi mathvariant=\"italic\">c</mi></mfrac></math><br /><br />&nbsp;We know the force can be computed using<br /><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>F</mi><mo mathvariant=\"italic\">=</mo><mi>P</mi><mo mathvariant=\"italic\">&#215;</mo><mi>A</mi></math>&nbsp; &nbsp;(&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>F</mi></math>&nbsp;= force,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi></math>&nbsp;= pressure,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math>&nbsp;= area )<br /><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>F</mi><mo>=</mo><mn>1.25</mn><mo>&#215;</mo><mfenced separators=\"|\"><mfrac><mrow><mn>50</mn><mo>&#215;</mo><mn>1</mn></mrow><mrow><mn>3</mn><mo>&#215;</mo><mn>1</mn><msup><mn>0</mn><mn>8</mn></msup></mrow></mfrac></mfenced></math><br /><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>F</mi><mo>=</mo><mn>20.83</mn><mo>&#215;</mo><mn>1</mn><msup><mn>0</mn><mrow><mo>-</mo><mn>8</mn></mrow></msup><mi mathvariant=\"normal\">&#160;</mi><mi mathvariant=\"normal\">N</mi></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "6aa3ab79aa8dc1ff6817804c",
+      "title": "Electromagnetic Spectrum",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "6151e86349d5e39305d1256b",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "41",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "<p>The intensity of <math><mi>γ</mi></math> - radiation from a given source is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi></math>. On passing through <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>36</mn><mo>&nbsp;</mo><mi>mm</mi></math> of lead, it is reduced to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac bevelled=\"true\"><mi>I</mi><mn>8</mn></mfrac></math>. Assuming that the intensity in transmitted radiation varies exponentially with the thickness of the material, then the thickness of lead, which will reduce the intensity to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac bevelled=\"true\"><mi>I</mi><mn>2</mn></mfrac></math>, will be&nbsp;</p>\r",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "hAsvR",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>6</mn><mi mathvariant=\"normal\">&#xA0;</mi><mi>mm</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "XLvp0",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>9</mn><mi mathvariant=\"normal\">&#xA0;</mi><mi>mm</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SnT8a",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>18</mn><mi mathvariant=\"normal\">&#xA0;</mi><mi>mm</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wcoSC",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>12</mn><mi mathvariant=\"normal\">&#xA0;</mi><mi>mm</mi></math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>On passing through lead, the intensity of <math><mi>&#947;</mi></math> - radiation decreases exponentially with the thickness traversed and is given by</p><p><math><mi>I</mi><mo>=</mo><msub><mrow><mi>I</mi></mrow><mrow><mn>0</mn></mrow></msub><msup><mrow><mi>e</mi></mrow><mrow><mo>-</mo><mi>&#956;</mi><mi>x</mi></mrow></msup></math>&nbsp;, where <math><mi>&#956;</mi></math> is the absorption coefficient of the lead.</p><p>In the first case,&nbsp;when <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mn>36</mn><mi>&#160;</mi><mi>mm</mi></math>, <math><mi>I</mi><mo>=</mo><mfrac><mrow><msub><mrow><mi>I</mi></mrow><mrow><mn>0</mn></mrow></msub></mrow><mrow><mn>8</mn></mrow></mfrac></math></p><p>&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msub><mi>I</mi><mn>0</mn></msub><mn>8</mn></mfrac><mo>=</mo><msub><mi>I</mi><mn>0</mn></msub><mi>&#160;</mi><msup><mi>e</mi><mrow><mo>-</mo><mi>&#956;</mi><mo>&#215;</mo><mn>36</mn></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><msub><mi>log</mi><mi>e</mi></msub><mn>8</mn><mo>=</mo><mn>36</mn><mi>&#956;</mi></math></p><p>In the second case,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi><mo>=</mo><mfrac><msub><mi>I</mi><mn>0</mn></msub><mn>2</mn></mfrac></math></p><p>Let <math><mi>x</mi></math> be the thickness of the lead sheet, then</p><p><math><mfrac><mrow><msub><mrow><mi>I</mi></mrow><mrow><mn>0</mn></mrow></msub></mrow><mrow><mn>2</mn></mrow></mfrac><mo>=</mo><msub><mrow><mi>I</mi></mrow><mrow><mn>0</mn></mrow></msub><mi>&#160;</mi><msup><mrow><mi>e</mi></mrow><mrow><mo>-</mo><mi>&#956;</mi><mi>x</mi></mrow></msup></math></p><p><math><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>e</mi></mrow></msub></mrow><mo>&#8289;</mo><mrow><mn>2</mn></mrow></mrow><mo>=</mo><mi>&#956;</mi><mi>x</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>&#956;</mi><mi>x</mi></mrow><mrow><mn>36</mn><mi>&#956;</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><msub><mi>log</mi><mi>e</mi></msub><mn>2</mn></mrow><mrow><msub><mi>log</mi><mi>e</mi></msub><mn>8</mn></mrow></mfrac></math></p><p><math><mi>x</mi><mo>=</mo><mn>36</mn><mo>&#215;</mo><mfrac><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>e</mi></mrow></msub></mrow><mo>&#8289;</mo><mrow><mn>2</mn></mrow></mrow></mrow><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>e</mi></mrow></msub></mrow><mo>&#8289;</mo><mrow><msup><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></msup></mrow></mrow></mrow></mfrac><mo>=</mo><mn>36</mn><mo>&#215;</mo><mfrac><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>e</mi></mrow></msub></mrow><mo>&#8289;</mo><mrow><mn>2</mn></mrow></mrow></mrow><mrow><mn>3</mn><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>e</mi></mrow></msub></mrow><mo>&#8289;</mo><mrow><mn>2</mn></mrow></mrow></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mn>12</mn><mi mathvariant=\"normal\">&#160;</mi><mi>mm</mi></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "6aa3ab79aa8dc1ff6817804e",
+      "title": "X-Rays",
+      "totalQuestions": 4,
+      "questions": [
+        {
+          "_id": "6151e863d9e0da381b980066",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "105",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "<p>Cathode rays of velocity <math><msup><mrow><mn>10</mn></mrow><mrow><mn>6</mn></mrow></msup><mi mathvariant=\"normal\">&nbsp;</mi><msup><mrow><mi mathvariant=\"normal\">m&nbsp;</mi><mi mathvariant=\"normal\">s</mi></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math> describe an approximately circular path of radius 1 m in an electric field <math><mn>300</mn><mi>&nbsp;</mi><msup><mrow><mi mathvariant=\"normal\">V&nbsp;</mi><mi mathvariant=\"normal\">m</mi></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>.</mo></math> If the velocity of cathode rays are doubled. The value of electric field so that the rays describe the same circular path, will be</p>\r",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "qxv5a",
+              "text": "<math><mn>2400</mn><mi mathvariant=\"normal\">&nbsp;</mi><msup><mrow><mi mathvariant=\"normal\">V&nbsp;</mi><mi mathvariant=\"normal\">m</mi></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "U30l7",
+              "text": "<math><mn>600</mn><mi>&nbsp;</mi><msup><mrow><mi mathvariant=\"normal\">V&nbsp;</mi><mi mathvariant=\"normal\">m</mi></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZUm7M",
+              "text": "<math><mn>1200</mn><mi>&nbsp;</mi><msup><mrow><mi mathvariant=\"normal\">V&nbsp;</mi><mi mathvariant=\"normal\">m</mi></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Zbwe9",
+              "text": "<math><mn>12000</mn><mi>&nbsp;</mi><mi mathvariant=\"normal\">V&nbsp;</mi><msup><mrow><mi mathvariant=\"normal\">m</mi></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Cathode rays are composed of electrons, when they move in electric field a force<br /><br /><math><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>F</mi><mo>=</mo><mi>e</mi><mi>E</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi></math>...(i)<br /><br />Acts on them, this provides the necessary centripetal force to the particles<br /><br /><math><mi>F</mi><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mi>r</mi></mrow></mfrac><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi></math>...(ii)<br /><br />From Eqs. (i) and (ii), we get<br /><br /><math><mi>e</mi><mi>E</mi><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mi>r</mi></mrow></mfrac></math><br /><br /><math><mo>⇒</mo><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>r</mi><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mi>e</mi><mi>E</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mrow><mfenced separators=\"|\"><mrow><msup><mrow><mn>10</mn></mrow><mrow><mn>6</mn></mrow></msup></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mi>e</mi><mo>(</mo><mn>300</mn><mo>)</mo></mrow></mfrac><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi></math>...(iii)<br /><br />When velocity is doubled same circular path is followed, hence radius is same<br /><br /><math><mi>r</mi><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mrow><mfenced separators=\"|\"><mrow><mn>2</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>6</mn></mrow></msup></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mi>e</mi><mi>E</mi></mrow></mfrac><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi></math>...(iv)<br /><br />Equating Eqs. (iii) and (iv), we get<br /><br /><math><mi>m</mi><mo>×</mo><mfrac><mrow><msup><mrow><mfenced separators=\"|\"><mrow><msup><mrow><mn>10</mn></mrow><mrow><mn>6</mn></mrow></msup></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>300</mn><mi>e</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>m</mi><mo>×</mo><msup><mrow><mfenced separators=\"|\"><mrow><mn>2</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>6</mn></mrow></msup></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mi>e</mi><mi>E</mi></mrow></mfrac></math><br /><br /><math><mo>⇒</mo><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>E</mi><mo>=</mo><mn>300</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>1200</mn></math> V&nbsp;<math><mi mathvariant=\"normal\">c</mi><msup><mrow><mi mathvariant=\"normal\">m</mi></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8638a0eac0a28deca1e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "26",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Name the EM wave used for studying crystal structure of solids",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "OfYZM",
+              "text": "Microwave",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "t5laR",
+              "text": "Visible radiation",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CSCqP",
+              "text": "Ultraviolet",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SgszJ",
+              "text": "X – rays",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "X – Rays radiation is a form of electromagnetic radiation. X-rays have a wavelength in the range of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>01</mn><mo>&nbsp;</mo><mi>nm</mi></math> to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>10</mn><mo>&nbsp;</mo><mi>nm</mi></math>, corresponding to frequencies in the range&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>30</mn><mo>&nbsp;</mo><mi>PHz</mi></math> to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>30</mn><mo>&nbsp;</mo><mi>EHz</mi></math>. Therefore, they are used in studying crystals structure of solids.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86349d5e39305d1256b",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "41",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "<p>The intensity of <math><mi>γ</mi></math> - radiation from a given source is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi></math>. On passing through <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>36</mn><mo>&nbsp;</mo><mi>mm</mi></math> of lead, it is reduced to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac bevelled=\"true\"><mi>I</mi><mn>8</mn></mfrac></math>. Assuming that the intensity in transmitted radiation varies exponentially with the thickness of the material, then the thickness of lead, which will reduce the intensity to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac bevelled=\"true\"><mi>I</mi><mn>2</mn></mfrac></math>, will be&nbsp;</p>\r",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "hAsvR",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>6</mn><mi mathvariant=\"normal\">&#xA0;</mi><mi>mm</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "XLvp0",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>9</mn><mi mathvariant=\"normal\">&#xA0;</mi><mi>mm</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SnT8a",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>18</mn><mi mathvariant=\"normal\">&#xA0;</mi><mi>mm</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wcoSC",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>12</mn><mi mathvariant=\"normal\">&#xA0;</mi><mi>mm</mi></math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>On passing through lead, the intensity of <math><mi>&#947;</mi></math> - radiation decreases exponentially with the thickness traversed and is given by</p><p><math><mi>I</mi><mo>=</mo><msub><mrow><mi>I</mi></mrow><mrow><mn>0</mn></mrow></msub><msup><mrow><mi>e</mi></mrow><mrow><mo>-</mo><mi>&#956;</mi><mi>x</mi></mrow></msup></math>&nbsp;, where <math><mi>&#956;</mi></math> is the absorption coefficient of the lead.</p><p>In the first case,&nbsp;when <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mn>36</mn><mi>&#160;</mi><mi>mm</mi></math>, <math><mi>I</mi><mo>=</mo><mfrac><mrow><msub><mrow><mi>I</mi></mrow><mrow><mn>0</mn></mrow></msub></mrow><mrow><mn>8</mn></mrow></mfrac></math></p><p>&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msub><mi>I</mi><mn>0</mn></msub><mn>8</mn></mfrac><mo>=</mo><msub><mi>I</mi><mn>0</mn></msub><mi>&#160;</mi><msup><mi>e</mi><mrow><mo>-</mo><mi>&#956;</mi><mo>&#215;</mo><mn>36</mn></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><msub><mi>log</mi><mi>e</mi></msub><mn>8</mn><mo>=</mo><mn>36</mn><mi>&#956;</mi></math></p><p>In the second case,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi><mo>=</mo><mfrac><msub><mi>I</mi><mn>0</mn></msub><mn>2</mn></mfrac></math></p><p>Let <math><mi>x</mi></math> be the thickness of the lead sheet, then</p><p><math><mfrac><mrow><msub><mrow><mi>I</mi></mrow><mrow><mn>0</mn></mrow></msub></mrow><mrow><mn>2</mn></mrow></mfrac><mo>=</mo><msub><mrow><mi>I</mi></mrow><mrow><mn>0</mn></mrow></msub><mi>&#160;</mi><msup><mrow><mi>e</mi></mrow><mrow><mo>-</mo><mi>&#956;</mi><mi>x</mi></mrow></msup></math></p><p><math><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>e</mi></mrow></msub></mrow><mo>&#8289;</mo><mrow><mn>2</mn></mrow></mrow><mo>=</mo><mi>&#956;</mi><mi>x</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>&#956;</mi><mi>x</mi></mrow><mrow><mn>36</mn><mi>&#956;</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><msub><mi>log</mi><mi>e</mi></msub><mn>2</mn></mrow><mrow><msub><mi>log</mi><mi>e</mi></msub><mn>8</mn></mrow></mfrac></math></p><p><math><mi>x</mi><mo>=</mo><mn>36</mn><mo>&#215;</mo><mfrac><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>e</mi></mrow></msub></mrow><mo>&#8289;</mo><mrow><mn>2</mn></mrow></mrow></mrow><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>e</mi></mrow></msub></mrow><mo>&#8289;</mo><mrow><msup><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></msup></mrow></mrow></mrow></mfrac><mo>=</mo><mn>36</mn><mo>&#215;</mo><mfrac><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>e</mi></mrow></msub></mrow><mo>&#8289;</mo><mrow><mn>2</mn></mrow></mrow></mrow><mrow><mn>3</mn><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>e</mi></mrow></msub></mrow><mo>&#8289;</mo><mrow><mn>2</mn></mrow></mrow></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mn>12</mn><mi mathvariant=\"normal\">&#160;</mi><mi>mm</mi></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86346be9060fe080d43",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "106",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Cathode rays of velocity <math><msup><mrow><mn>10</mn></mrow><mrow><mn>6</mn></mrow></msup><mi mathvariant=\"normal\">&nbsp;</mi><msup><mrow><mi mathvariant=\"normal\">m&nbsp;</mi><mi mathvariant=\"normal\">s</mi></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math> describe an approximate circular path of the radius <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&nbsp;</mo><mi mathvariant=\"normal\">m</mi></math> in an electric field <math><mn>300</mn><mi>&nbsp;</mi><msup><mrow><mi mathvariant=\"normal\">V</mi><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">m</mi></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>.</mo></math> If the velocity of cathode rays are doubled. The value of electric field so that the rays describe the same circular path, will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Er9ZM",
+              "text": "<math><mn>2400</mn><mi mathvariant=\"normal\">&nbsp;</mi><msup><mrow><mi mathvariant=\"normal\">V&nbsp;</mi><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">m</mi></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "b5FjN",
+              "text": "<math><mn>600</mn><mi>&nbsp;</mi><msup><mrow><mi mathvariant=\"normal\">V&nbsp;</mi><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">m</mi></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "A4cuK",
+              "text": "<math><mn>1200</mn><mi>&nbsp;</mi><msup><mrow><mi mathvariant=\"normal\">V&nbsp;</mi><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">m</mi></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "7RwPx",
+              "text": "<math><mn>12000</mn><mi>&nbsp;</mi><mi mathvariant=\"normal\">V&nbsp;</mi><msup><mrow><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">m</mi></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Cathode rays are composed of electrons, when they move in electric field a force<br /><br /><math><mi>F</mi><mo>=</mo><mi>e</mi><mi>E</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi></math>...(i)<br /><br />Acts on them, this provides the necessary centripetal force to the particles<br /><br /><math><mi>F</mi><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mi>r</mi></mrow></mfrac><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi></math>...(ii)<br /><br />From Eqs. (i) and (ii), we get<br /><br /><math><mi>e</mi><mi>E</mi><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mi>r</mi></mrow></mfrac></math><br /><br /><math><mo>⇒</mo><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi> </mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi>r</mi><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mi>e</mi><mi>E</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mrow><mfenced separators=\"|\"><mrow><msup><mrow><mn>10</mn></mrow><mrow><mn>6</mn></mrow></msup></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mi>e</mi><mo>(</mo><mn>300</mn><mo>)</mo></mrow></mfrac><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi></math>...(iii)<br /><br />When velocity is doubled same circular path is followed, hence radius is same<br /><br /><math><mi>r</mi><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mrow><mfenced separators=\"|\"><mrow><mn>2</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>6</mn></mrow></msup></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mi>e</mi><mi>E</mi></mrow></mfrac><mi>&nbsp;</mi><mi>&nbsp;</mi><mi>&nbsp;</mi></math>...(iv)<br /><br />Equating Eqs. (iii) and (iv), we get<br /><br /><math><mi>m</mi><mo>×</mo><mfrac><mrow><msup><mrow><mfenced separators=\"|\"><mrow><msup><mrow><mn>10</mn></mrow><mrow><mn>6</mn></mrow></msup></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>300</mn><mi>e</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>m</mi><mo>×</mo><msup><mrow><mfenced separators=\"|\"><mrow><mn>2</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>6</mn></mrow></msup></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mi>e</mi><mi>E</mi></mrow></mfrac></math><br /><br /><math><mo>⇒</mo><mi>&nbsp;</mi><mi>&nbsp;</mi><mi> </mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi></mi><mi> </mi><mi>E</mi><mo>=</mo><mn>300</mn><mo>×</mo><mn>4</mn><mo>=</mo><mn>1200</mn></math> V&nbsp;<math><mi mathvariant=\"normal\">c</mi><msup><mrow><mi mathvariant=\"normal\">m</mi></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

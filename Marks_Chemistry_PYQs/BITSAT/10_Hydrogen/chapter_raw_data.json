@@ -1,0 +1,983 @@
+{
+  "index": 10,
+  "chapterId": "61e7bd80aa5a2f2b526a055e",
+  "chapter": "Hydrogen",
+  "exam": "BITSAT",
+  "totalTopics": 6,
+  "totalQuestions": 14,
+  "downloadTime": "2026-10-08 20:02:49",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e8746f5bfc7ab78aee62",
+      "title": "Preparation and Properties of Hydrogen",
+      "totalQuestions": 4,
+      "questions": [
+        {
+          "_id": "64c0e8326f5bfc7ab78aeb6f",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which one of the following statements in relation to the hydrogen atom is correct?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "eTheP",
+              "text": "\r\n$3 s, 3 p$ and $3 d$-orbitals all have the same energy.\r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "wqDqH",
+              "text": "\r\n$3 s$ and $3 p$-orbitals are of lower energy than $3 d$-orbital.\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "i3NRI",
+              "text": "\r\n$3 p$-orbital is lower in energy than $3 d$-orbital.\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "j2Dps",
+              "text": "\r\n$3 s$-orbital is lower in energy than $3 p$-orbital.",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The hydrogen atom has the configuration $1 s$ and $3 s, 3 p$ and $3 d$-orbitals will have same energy with respect to $1 s$-orbital.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8306f5bfc7ab78aeb5c",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "ortho and para form of hydrogen have",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "yokZY",
+              "text": "\r\ndifferent physical and chemical properties\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "GQEG1",
+              "text": "\r\n identical physical properties but different chemical properties\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "SQilk",
+              "text": "\r\nidentical chemical properties but different physical properties\r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "zhqzO",
+              "text": "\r\nidentical chemical and physical properties",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Ortho and para hydrogen similar to each other in their chemical properties but they have different physical properties like boiling point, thermal conductivity, due to their difference in overall spins.\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/zOcmN1xViz_LzG6vg-f0HQRokroV91AmS1RAeR-HOeQ.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e82f6f5bfc7ab78aeb54",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which one of the following is correct order of given isotopes?\r\nI. $T_2>D_2>P_2$ (order of boiling point)\r\nII. $T_2>D_2>P_2$ (order of bond energy)\r\nIII. $T_2=D_2=P_2$ (order of bond length)\r\nIV. $T_2 < D_2 < P_2$ (order of reactivity with $\\mathrm{Cl}_2$ )",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "pKKgJ",
+              "text": "\r\nI and II\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ud8H2",
+              "text": "\r\nIII and IV\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "x1nfn",
+              "text": "\r\nII, III and IV\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "M35Ny",
+              "text": "\r\nAll of these",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Protium $(P)$, deuterium $(D)$ and tritium $(T)$ are the three isotopes of hydrogen. These isotopes follow the order in different contexts as shown below :\r\n$T_2>D_2>P_2$ [Order of boiling point (BP)]\r\n$T_2>D_2>P_2$ [Order of bond energy $\\left.(\\mathrm{BE})\\right]$\r\n$T_2=D_2=P_2$ [Order of bond length $\\left.(\\mathrm{BL})\\right]$\r\n$T_2 < D_2 < P_2$ [Order of reactivity with $\\mathrm{Cl}_2$ ]\r\nHence, all the given order are correct.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a26f5bfc7ab78ae695",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "When chlorine water is exposed to sunlight, $\\mathrm{O}_{2}$ is liberated. Hence,",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "DIojG",
+              "text": "hydrogen has little affinity to $\\mathrm{O}_{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "gZe3R",
+              "text": "hydrogen has more affinity to $\\mathrm{O}_{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "gHbhH",
+              "text": "hydrogen has more affinity to chlorine",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "zkfJJ",
+              "text": "it is a reducing agent",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{Cl}_{2}+\\mathrm{H}_{2} \\mathrm{O} \\rightarrow 2 \\mathrm{HCl}+\\frac{1}{2} \\mathrm{O}_{2}$\r\nHydrogen has more affinity for chlorine.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e8746f5bfc7ab78aee64",
+      "title": "Chemical properties of hydrogen",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "64c0e8086f5bfc7ab78ae9fc",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which of the following reactions is an example of use of water gas in the synthesis of other compounds?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "qOCdv",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CH</mi><mn>4</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><munderover><mo>&#8594;</mo><mi>Ni</mi><mrow><mn>1270</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></mrow></munderover><mi>CO</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "QUJqI",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CO</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><munderover><mo>&#8594;</mo><mi>Catalyst</mi><mrow><mn>673</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></mrow></munderover><msub><mi>CO</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "s2fZk",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">n</mi></msub><msub><mi mathvariant=\"normal\">H</mi><mrow><mn>2</mn><mi mathvariant=\"normal\">n</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>+</mo><mi mathvariant=\"normal\">n</mi><mo>.</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><munderover><mo>&#8594;</mo><mi>Ni</mi><mrow><mn>1270</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></mrow></munderover><mi mathvariant=\"normal\">n</mi><mo>.</mo><mi>CO</mi><mo>+</mo><mfenced><mrow><mn>2</mn><mi mathvariant=\"normal\">n</mi><mo>+</mo><mn>1</mn></mrow></mfenced><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "3u8vI",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CO</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><mn>2</mn><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><munderover><mo>&#8594;</mo><mi>Catalyst</mi><mi>Cobalt</mi></munderover><msub><mi>CH</mi><mn>3</mn></msub><mo>&#183;</mo><mi>OH</mi><mfenced><mi mathvariant=\"normal\">I</mi></mfenced></math>",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>The mixture of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CO</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></math> is known water gas as it is used in the synthesis of other compounds.</p><p>When carbon monoxide reacts with hydrogen in presence of catalyst cobalt&nbsp;the product formed is&nbsp;methanol. Therefore, water gas is producing a an alcohol in this reaction.</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/6803a5b7-299e-41c6-9ec2-3050566c05b1-image.png\" style=\"width: 481px; height: 131px;\" /></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7fa6f5bfc7ab78ae986",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "Which of the following reactions increases the production of dihydrogen from synthesis gas?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "iqzz7",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CH</mi><mn>4</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><munderover><mo>&#8594;</mo><mi>Ni</mi><mrow><mn>1270</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></mrow></munderover><mi>CO</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><mn>3</mn><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "a5fjP",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">C</mi><mfenced><mi mathvariant=\"normal\">s</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mover><mo>&#10230;</mo><mrow><mn>1270</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></mrow></mover><mi>CO</mi><mfenced><mi>g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "W50BS",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CO</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><munderover><mo>&#8594;</mo><mrow><mi>Catalyst</mi><mo>&#160;</mo></mrow><mrow><mn>673</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></mrow></munderover><msub><mi>CO</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "bh2CA",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">C</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>6</mn></msub><mo>+</mo><mn>2</mn><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><munderover><mo>&#8594;</mo><mi>Ni</mi><mrow><mn>1270</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></mrow></munderover><mn>2</mn><mi>CO</mi><mo>+</mo><mn>5</mn><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub></math>,",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<blockquote><p>The process of producing syn gas or synthesis gas from coal is called &#39;coal gasification&#39;.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><munder><mrow><mi mathvariant=\"normal\">C</mi><mfenced><mi mathvariant=\"normal\">s</mi></mfenced></mrow><mi>Coal</mi></munder><mo>+</mo><munder><mrow><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></mrow><mi>Steam</mi></munder><munderover><mo>&#8594;</mo><mi>Ni</mi><mrow><mn>1270</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></mrow></munderover><munder><munder><mrow><mi>CO</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></mrow><mo>&#9183;</mo></munder><mrow><mi>Synthesis</mi><mo>gas</mo></mrow></munder></math></p><p>The production of hydrogen can be increased by reacting carbon monoxide of the syn gas with steam in the presence of iron chromate as a catalyst at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>673</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></math>.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>CO</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mover><mo>&#10230;</mo><mrow><msub><mi>FeCrO</mi><mn>4</mn></msub><mo>,</mo><mo>&#160;</mo><mn>673</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></mrow></mover><msub><mi>CO</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>CO</mi><mn>2</mn></msub></math> is removed by scrubbing with a solution of sodium arsenite.</p></blockquote>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e8756f5bfc7ab78aee65",
+      "title": "Preparation and Properties of Hydrogen Peroxide",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e8306f5bfc7ab78aeb5d",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "The structure of $\\mathrm{H}_2 \\mathrm{O}_2$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "TRFVA",
+              "text": "\r\nplanar, linear\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "U43Cw",
+              "text": "\r\nnon-planar, linear\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Phz9L",
+              "text": "\r\nplanar, non-linear\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "qXgtj",
+              "text": "\r\nnon-planar, non-linear",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Hydrogen peroxide $\\left(\\mathrm{H}_2 \\mathrm{O}_2\\right)$ is a non-planar molecule with twisted symmetrical structure. It has non-linear structure with an open book structure.\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/UQ9SMbB9p4ao6qVk3JEXZAwWkaLw36PYNwbrNoZBwp8.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "64c0e8746f5bfc7ab78aee61",
+      "title": "Chemical properties of hydrogen peroxide",
+      "totalQuestions": 3,
+      "questions": [
+        {
+          "_id": "67726d08c49e8ef28ee2b3b5",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "In which of the following reactions of $\\mathrm{H}_2 \\mathrm{O}_2$ acts as an oxidising agent (either in acidic, alkaline or neutral medium)?\n(i) $2 \\mathrm{Fe}^{2+}+\\mathrm{H}_2 \\mathrm{O}_2{ }^{\\prime} \\rightarrow$\n(ii) $2 \\mathrm{MnO}_4^{-}+6 \\mathrm{H}^{+}+5 \\mathrm{H}_2 \\mathrm{O}_2 \\rightarrow$\n(iii) $\\mathrm{I}_2+\\mathrm{H}_2 \\mathrm{O}_2+2 \\mathrm{OH}^{-} \\rightarrow$\n(iv) $\\mathrm{Mn}^{2+}+\\mathrm{H}_2 \\mathrm{O}_2 \\rightarrow$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "v54EN",
+              "text": "(ii),(iii)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fFf1t",
+              "text": "(i), (iv)",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "XwkdE",
+              "text": "(i), (iii)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "1KFFh",
+              "text": "(ii), (iv)",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let us complete the reactions:\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/wD_itkbrplBb1Zude2Iv9cWkJ2yY3VwZJP0e4EgFLws.original.fullsize.png\"/>\nIn reactions, $(i)$ and $(i v) \\mathrm{H}_2 \\mathrm{O}_2$, acts as oxidising agent and itself gets reduced to $\\mathrm{H}_2 \\mathrm{O}$,",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87e97ae24e9e2db8ce6",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following can be used to prevent the decomposition of $\\mathrm{H}_2 \\mathrm{O}_2$ ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "F1vP6",
+              "text": "<br />Urea",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "8cCKb",
+              "text": "<br />Formaldehyde",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "NaNvE",
+              "text": "<br />Formic acid",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "rOSbu",
+              "text": "<br />Ethanol",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Urea acts as stablising agent. It prevents the decomposition of $\\mathrm{H}_2 \\mathrm{O}_2$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7886f5bfc7ab78ae5a9",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "Experiment to study kinetics of the dissociation of hydrogen peroxide must be performed by group of two or three so that-",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Ynztd",
+              "text": "when one is recording data other should be swirling flask at constant rate.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "VDf3N",
+              "text": "experiment can be performed by one student only as outcomes are independent on rate of mixing of mixture 1 and 3 .",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "9SWn2",
+              "text": "for safety purpose.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vXXoj",
+              "text": "none of these.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution available",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "64c0e8746f5bfc7ab78aee63",
+      "title": "Preparation and Properties of Water",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e7cf6f5bfc7ab78ae814",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which one the following removes temporary hardness of water?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "tRzgP",
+              "text": "Slaked lime",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "46TBx",
+              "text": "$\\quad$ Plaster of Paris",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "gwRZQ",
+              "text": "Epsom",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "xXlhN",
+              "text": "Hydrolith",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "This method is known as Clark's process. In this method temporary hardness is removed byadding lime water or milk of lime.\r\n\r\n$$\r\n\r\n\\mathrm{Ca}(\\mathrm{OH})_{2}+\\mathrm{Ca}\\left(\\mathrm{HCO}_{3}\\right)_{2} \\longrightarrow \\underset{\\mathrm{ppt} .}{2 \\mathrm{CaCO}_{3}} \\downarrow+2 \\mathrm{H}_{2} \\mathrm{O}\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "topicId": "65b7b89397ae24e9e2db8d32",
+      "title": "Hydrides",
+      "totalQuestions": 3,
+      "questions": [
+        {
+          "_id": "67726d09c49e8ef28ee2b3c0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "The strongest reducing agent among the following is:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "IDcws",
+              "text": "$\\mathrm{SbH}_3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Gi0yA",
+              "text": "$\\mathrm{NH}_3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZHcVB",
+              "text": "$\\mathrm{BiH}_3$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "VaTXE",
+              "text": "$\\mathrm{PH}_3$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The stability of hydrides decreases from $\\mathrm{NH}_3$ to $\\mathrm{BiH}_3$ but their reducing character increases down the group.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726d07c49e8ef28ee2b3b2",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Among the following the correct statements are\nI. $\\mathrm{LiH}, \\mathrm{BeH}_2$ and $\\mathrm{MgH}_2$ are saline hydrides with significant covalent character\nII. Saline hydrides are volatile\nIII. Electron - precise hydrides are Lewis bases\nIV. The formula for chromium hydride is CrH",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "YcFIR",
+              "text": "I, III only",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "LJnPg",
+              "text": "II, IV only",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Hfb4j",
+              "text": "I, IV only",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "QZr2y",
+              "text": "III, IV only",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Saline hydrides are not volatile as the strong ionic bonds keep the constituent ions together.\nThus, statement II is incorrect.\nElectron-precise hydrides like $\\mathrm{CH}_4, \\mathrm{SiH}_4$, act as pH - neutral species.\nThus, statement 3 is incorrect.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87497ae24e9e2db8c80",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Ionic hydrides reacts with water to give",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "dxvZE",
+              "text": "acidic solutions",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "5JKgb",
+              "text": "hydride ions",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pMZKn",
+              "text": "basic solutions",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ErhUK",
+              "text": "electrons",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Ionic hydrides give the basic solution when it reacts with water, e.g.,<br />$\\mathrm{LiH}+\\mathrm{H}_2 \\mathrm{O} \\longrightarrow \\mathrm{LiOH}+\\mathrm{H}_2$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

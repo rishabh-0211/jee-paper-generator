@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Differential Equations PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>📐 BITSAT &bull; Differential Equations</h1>
+        <div class="sub">Mathematics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 32, "chapterId": "61e7bd839e4041267a866788", "chapter": "Differential Equations", "exam": "BITSAT", "subject": "Mathematics", "totalTopics": 6, "totalQuestions": 27, "downloadTime": "2026-10-08 20:37:21", "topics": [{"index": 1, "topicId": "64c0e86e6f5bfc7ab78aee1d", "title": "Order and Degree", "totalQuestions": 3, "questions": [{"_id": "64c0e7d56f5bfc7ab78ae83c", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 1, "question": {"text": "The degree of the differential equation satisfying\r\n\r\n$\\sqrt{1-x^{2}}+\\sqrt{1+y^{2}}=a(x-y)$ is", "image": null}, "options": [{"id": "a2vEH", "text": "1", "isCorrect": true, "image": null}, {"id": "kErPX", "text": "2", "isCorrect": false, "image": null}, {"id": "ZjQDI", "text": "3", "isCorrect": false, "image": null}, {"id": "pMCVe", "text": "4", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\quad$ Put $x=\\sin \\theta$ and $y=\\sin \\phi$\r\n\r\n$\\Rightarrow \\cos \\theta+\\cos \\phi=a(\\sin \\theta-\\sin \\phi)$\r\n\r\n$\\Rightarrow 2 \\cos$\r\n\r\n$\\begin{aligned} & \\frac{\\theta+\\phi}{2} \\cos \\frac{\\theta-\\phi}{2}=2 a \\cos \\frac{\\theta+\\phi}{2} \\sin \\frac{\\theta-\\phi}{2} \\\\ \\Rightarrow \\cot \\frac{\\theta-\\phi}{2}=a \\Rightarrow \\theta-\\phi=2 \\cot ^{-1} \\mathrm{a} \\\\ \\Rightarrow \\sin ^{-1} \\mathrm{x}-\\sin ^{-1} \\mathrm{y}=2 \\cot ^{-1} \\mathrm{a} \\\\ \\text { Differentiate } \\frac{1}{\\sqrt{1-\\mathrm{x}^{2}}}-\\frac{1}{\\sqrt{1-\\mathrm{y}^{2}}} \\frac{\\mathrm{dy}}{\\mathrm{dx}}=0 \\end{aligned}$\r\n\r\nso the degree is one", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7a86f5bfc7ab78ae6c3", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 2, "question": {"text": "The differential equation whose solution is $A x^{2}+B y^{2}=1$ where $A$ and $B$ are arbitrary constants is of", "image": null}, "options": [{"id": "geph7", "text": "second order and second degree", "isCorrect": false, "image": null}, {"id": "mJP2b", "text": "first order and second degree", "isCorrect": false, "image": null}, {"id": "H3hPs", "text": "first order and first degree", "isCorrect": false, "image": null}, {"id": "6CG9W", "text": "second order and first degree", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "$A x^{2}+B y^{2}=1$ ...(1)\r\n$A x+B y \\frac{d y}{d x}=0$ ...(2)\r\n$A+B y \\frac{d^{2} y}{d x^{2}}+B\\left(\\frac{d y}{d x}\\right)^{2}=0$ ...(3)\r\n$x\\left\\{-B y \\frac{d^{2} y}{d x^{2}}-B\\left(\\frac{d y}{d x}\\right)^{2}\\right\\}+B y \\frac{d y}{d x}=0$\r\nDividing both sides by $-\\mathrm{B}$, we get $x y \\frac{d^{2} y}{d x^{2}}+x\\left(\\frac{d y}{d x}\\right)^{2}-y \\frac{d y}{d x}=0$\r\nWhich is a DE of order 2 and degree 1", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e79a6f5bfc7ab78ae64e", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "The degree of the differential equation \\(\\left(\\frac{d^3 y}{d x^3}\\right)^{2 / 3}+4-3 \\frac{d^2 y}{d x^2}+5 \\frac{d y}{d x}=0\\) is", "image": null}, "options": [{"id": "vs78e", "text": "1", "image": null, "isCorrect": false}, {"id": "EfwPV", "text": "2", "image": null, "isCorrect": true}, {"id": "qPlda", "text": "3", "image": null, "isCorrect": false}, {"id": "rtWqt", "text": "None of these", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "\\(\\begin{aligned}\n& \\left(\\frac{d^3 y}{d x^3}\\right)^{2 / 3}+4-3 \\frac{d^2 y}{d x^2}+5 \\frac{d y}{d x}=0 \\\\\n& \\Rightarrow\\left(\\frac{d^3 y}{d x^3}\\right)^2=\\left[3 \\frac{d^2 y}{d x^2}-5 \\frac{d y}{d x}-4\\right]^3\n\\end{aligned}\\)\nIt is a differential equation of degree 2.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e86f6f5bfc7ab78aee1f", "title": "Formation of Differential Equation", "totalQuestions": 2, "questions": [{"_id": "64c0e7e26f5bfc7ab78ae8ae", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 1, "question": {"text": "For any differentiable function $y$ of $x$, $\\frac{d^{2} x}{d y^{2}}\\left(\\frac{d y}{d x}\\right)^{3}+\\frac{d^{2} y}{d x^{2}}=$", "image": null}, "options": [{"id": "phBSp", "text": "0", "isCorrect": true, "image": null}, {"id": "I9DBH", "text": "$y$", "isCorrect": false, "image": null}, {"id": "gkK8m", "text": "$-y$", "isCorrect": false, "image": null}, {"id": "VhRLh", "text": "$x$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\frac{d y}{d x}=\\left(\\frac{d x}{d y}\\right)^{-1}$\r\n\r\n$\\Rightarrow \\frac{d^{2} y}{d x^{2}}=-1\\left(\\frac{d x}{d y}\\right)^{-2}\\left\\{\\frac{d}{d x}\\left(\\frac{d x}{d y}\\right)\\right\\}$\r\n\r\n$\\Rightarrow \\frac{d^{2} y}{d x^{2}}=(-1)\\left(\\frac{d x}{d y}\\right)^{-2}\\left\\{\\frac{d}{d y}\\left(\\frac{d x}{d y}\\right) \\frac{d y}{d x}\\right\\}$\r\n\r\n$=(-1)\\left(\\frac{d y}{d x}\\right)^{2}\\left\\{\\frac{d^{2} x}{d y^{2}} \\cdot \\frac{d y}{d x}\\right\\}=-\\left(\\frac{d y}{d x}\\right)^{3}\\left\\{\\frac{d^{2} x}{d y^{2}}\\right\\}$\r\n\r\n$\\Rightarrow \\frac{d^{2} x}{d y^{2}}\\left(\\frac{d y}{d x}\\right)^{3}+\\frac{d^{2} y}{d x^{2}}=0$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7d46f5bfc7ab78ae838", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 2, "question": {"text": "If $y=\\left(x+\\sqrt{1+x^{2}}\\right)^{n},$ then $\\left(1+x^{2}\\right) \\frac{d^{2} y}{d x^{2}}+x \\frac{d y}{d x}$ is", "image": null}, "options": [{"id": "TB0dm", "text": "$n^{2} y$", "isCorrect": true, "image": null}, {"id": "H2I8T", "text": "$-n^{2} y$", "isCorrect": false, "image": null}, {"id": "EqTuG", "text": "$-y$", "isCorrect": false, "image": null}, {"id": "xvhy3", "text": "$2 x^{2} y$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$y=\\left(x+\\sqrt{1+x^{2}}\\right)^{n}$\r\n\r\n$$\r\n\r\n\\begin{array}{c}\r\n\r\n\\frac{d y}{d x}=n\\left(x+\\sqrt{1+x^{2}}\\right)^{n-1}\\left(1+\\frac{1}{2}\\left(1+x^{2}\\right)^{-1 / 2} \\cdot 2 x\\right) \\\\\r\n\r\n\\qquad \\begin{array}{c}\r\n\r\n\\frac{d y}{d x}=n\\left(x+\\sqrt{1+x^{2}}\\right)^{n-1} \\frac{\\left(\\sqrt{1+x^{2}}+x\\right)}{\\sqrt{1+x^{2}}} \\\\\r\n\r\n=\\frac{n\\left(\\sqrt{1+x^{2}}+x\\right)^{n}}{\\sqrt{1+x^{2}}}\r\n\r\n\\end{array}\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nor $\\sqrt{1+x^{2}} \\frac{d y}{d x}=n y$ or $\\sqrt{1+x^{2}} y_{1}=n y$\r\n\r\n$$\r\n\r\n\\left(y_{1}=\\frac{d y}{d x}\\right)\r\n\r\n$$\r\n\r\nSquaring, $\\left(1+x^{2}\\right) y_{1}^{2}=n^{2} y^{2}$\r\n\r\nDifferentiating,\r\n\r\n$$\r\n\r\n\\left(1+x^{2}\\right) 2 y_{1} y_{2}+y_{1}^{2} \\cdot 2 x=n^{2} \\cdot 2 y y_{1}\r\n\r\n$$\r\n\r\nor $\\left(1+x^{2}\\right) y_{2}+x y_{1}=n^{2} y$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e86e6f5bfc7ab78aee1c", "title": "Variable Separable Form", "totalQuestions": 6, "questions": [{"_id": "65b7b87797ae24e9e2db8c9a", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "The number of solutions of $\\frac{d y}{d x}=\\frac{y+1}{x-1}$, when $y(1)=2$ is", "image": null}, "options": [{"id": "FiCAS", "text": "none", "image": null, "isCorrect": false}, {"id": "oTEkL", "text": "one", "image": null, "isCorrect": true}, {"id": "2y2fJ", "text": "two", "image": null, "isCorrect": false}, {"id": "2Hrqa", "text": "infinite", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Since, $\\frac{d y}{d x}=\\frac{y+1}{x-1}$<br />$\\Rightarrow \\quad \\frac{d y}{y+1}=\\frac{d x}{x-1}$<br />After integrating on both sides, we have<br />$\\log (y+1)=\\log (x-1)-\\log C$<br />$C(y+1)=(x-1)$<br />$C=\\frac{x-1}{y+1}$<br />If $x=1$, then $y=2$, so $C=0$ <br />Therefore, $x-1=0$ <br />Hence, there is only one solution.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e81c6f5bfc7ab78aeaad", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 2, "question": {"text": "The solutions of $(x+y+1) d y=d x$ are", "image": null}, "options": [{"id": "PnbVe", "text": "$x+y+2=C e^{y}$", "isCorrect": true, "image": null}, {"id": "gEYUf", "text": "$x+y+4=C \\log y$", "isCorrect": false, "image": null}, {"id": "kHLLq", "text": "$\\quad \\log (x+y+2)=C y$", "isCorrect": false, "image": null}, {"id": "OrJ21", "text": "$\\log (x+y+2)=C-y$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Putting $x+y+1=u,$ we have $d u=d x+d y$ and the given equation reduces to $u(d u-d x)=$ $d x$\r\n\r\n$\\Rightarrow \\quad \\frac{u d u}{u+1}=d x \\quad \\Rightarrow \\quad u-\\log (u+1)=x$\r\n\r\n$\\Rightarrow \\log (x+y+2)=y+$ constant\r\n\r\n$\\Rightarrow x+y+2=C e^{y}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ff6f5bfc7ab78ae9b0", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 3, "question": {"text": "The solution of the differential equation <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>y</mi></mrow><mrow><mi>d</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mi>sin</mi><mn>3</mn><mi>x</mi><mo>+</mo><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></math> when <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>y</mi><mn>1</mn></msub><mfenced><mn>0</mn></mfenced><mo>=</mo><mn>1</mn></math>&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mfenced><mn>0</mn></mfenced><mo>=</mo><mn>0</mn></math>, is", "image": null}, "options": [{"id": "2TNmc", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mfrac><mrow><mi>sin</mi><mn>3</mn><mi>x</mi></mrow><mn>9</mn></mfrac><mo>+</mo><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><mfrac><msup><mi>x</mi><mn>4</mn></msup><mn>12</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>x</mi><mo>-</mo><mn>1</mn></math>", "isCorrect": true, "image": null}, {"id": "dUjfm", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mfrac><mrow><mi>sin</mi><mn>3</mn><mi>x</mi></mrow><mn>9</mn></mfrac><mo>+</mo><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><mfrac><msup><mi>x</mi><mn>4</mn></msup><mn>12</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>x</mi></math>", "isCorrect": false, "image": null}, {"id": "dAhhF", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mfrac><mrow><mi>cos</mi><mn>3</mn><mi>x</mi></mrow><mn>9</mn></mfrac><mo>+</mo><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><mfrac><msup><mi>x</mi><mn>4</mn></msup><mn>12</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>x</mi><mo>+</mo><mn>1</mn></math>", "isCorrect": false, "image": null}, {"id": "fp2K4", "text": "None of the above", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Integrating the given differential equation, we have</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>-</mo><mi>cos</mi><mn>3</mn><mi>x</mi></mrow><mn>3</mn></mfrac><mo>+</mo><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac><mo>+</mo><msub><mi>C</mi><mn>1</mn></msub></math></p><p>But&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>y</mi><mn>1</mn></msub><mfenced><mn>0</mn></mfenced><mo>=</mo><mn>1</mn></math></p><p>So,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>=</mo><mfenced><mrow><mo>-</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></mfenced><mo>+</mo><mn>1</mn><mo>+</mo><msub><mi>C</mi><mn>1</mn></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><msub><mi>C</mi><mn>1</mn></msub><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo>-</mo><mi>cos</mi><mn>3</mn><mi>x</mi></mrow><mn>3</mn></mfrac><mo>+</mo><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></math></p><p>Again integrating, we get</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mo>-</mo><mfrac><mrow><mi>sin</mi><mn>3</mn><mi>x</mi></mrow><mn>9</mn></mfrac><mo>+</mo><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><mfrac><msup><mi>x</mi><mn>4</mn></msup><mn>12</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>x</mi><mo>+</mo><msub><mi>C</mi><mn>2</mn></msub></math></p><p>But <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mfenced><mn>0</mn></mfenced><mo>=</mo><mn>0</mn><mo>,</mo></math>&nbsp;so&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>=</mo><mn>0</mn><mo>+</mo><mn>1</mn><mo>+</mo><msub><mi>C</mi><mn>2</mn></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><msub><mi>C</mi><mn>2</mn></msub><mo>=</mo><mo>-</mo><mn>1</mn></math></p><p>Thus, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mo>-</mo><mfrac><mrow><mi>sin</mi><mn>3</mn><mi>x</mi></mrow><mn>9</mn></mfrac><mo>+</mo><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><mfrac><msup><mi>x</mi><mn>4</mn></msup><mn>12</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>x</mi><mo>-</mo><mn>1</mn></math></p><p>Hence, option (a) correct.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7c56f5bfc7ab78ae7bf", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 2, "question": {"text": "Solution of differential equation\r\n\r\n$$\r\n\r\nx^{2}=1+\\left(\\frac{x}{y}\\right)^{-1} \\frac{d y}{d x}+\\frac{\\left(\\frac{x}{y}\\right)^{-2}\\left(\\frac{d y}{d x}\\right)^{2}}{2 !}+\\frac{\\left(\\frac{x}{y}\\right)^{-3}\\left(\\frac{d y}{d x}\\right)^{3}}{3 !}+\\ldots \\text { is }\r\n\r\n$$", "image": null}, "options": [{"id": "VvBqS", "text": "$y^{2}=x^{2}\\left(\\ln x^{2}-1\\right)+C$", "isCorrect": true, "image": null}, {"id": "Un0ij", "text": "$y=x^{2}(\\ln x-1)+C$", "isCorrect": false, "image": null}, {"id": "6y6YJ", "text": "$y^{2}=x(\\ln x-1)+\\mathrm{C}$", "isCorrect": false, "image": null}, {"id": "slbl8", "text": "$y=x^{2} e^{x^{2}}+\\mathrm{C}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$x^{2}=e^{\\left(\\frac{x}{y}\\right)^{-1}\\left(\\frac{d y}{d x}\\right)} \\Rightarrow x^{2}=e^{\\left(\\frac{y}{x}\\right)\\left(\\frac{d y}{d x}\\right)}$\r\n\r\n$\\Rightarrow \\ln x^{2}=\\frac{y}{x} \\frac{d y}{d x}$ or $\\int x \\ln x^{2} d x=\\int y d y$\r\n\r\nPut $x^{2}=t \\Rightarrow 2 x d x=d t \\therefore \\frac{1}{2} \\int \\ln t d t=\\frac{y^{2}}{2}$\r\n\r\n$C+t \\ln t-t=y^{2}$ or $y^{2}=x^{2}\\left(\\ln x^{2}-1\\right)+C$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7b86f5bfc7ab78ae744", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 2, "question": {"text": "The general solution of the differential equation $\\frac{d y}{d x}+\\sin (x+y)=\\sin (x-y)$ is", "image": null}, "options": [{"id": "FnGP4", "text": "$\\log \\tan y+\\sin x=\\mathrm{C}$", "isCorrect": false, "image": null}, {"id": "mjK8K", "text": "$\\quad \\log \\tan \\frac{y}{2}+2 \\sin x=\\mathrm{C}$", "isCorrect": true, "image": null}, {"id": "aUd2m", "text": "$\\tan \\frac{y}{2}+\\log \\sin x=\\mathrm{C}$", "isCorrect": false, "image": null}, {"id": "wZvg4", "text": "None of these", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The equation is,\r\n\r\n$\\frac{d y}{d x}=\\sin (x-y)-\\sin (x+y)=2 \\cos x \\sin (-y)$\r\n\r\n$\\Rightarrow \\frac{d y}{\\sin y}+2 \\cos x d x=0$\r\n\r\n$\\Rightarrow \\int \\cos e c y d y+2 \\int \\cos x d x=\\mathrm{C}$\r\n\r\n$\\Rightarrow \\log \\tan \\frac{y}{2}+2 \\sin x=\\mathrm{C}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e78b6f5bfc7ab78ae5c8", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "What is the solution of \\(\\frac{d y}{d x}+2 y=1\\) satisfying \\(y(0)=0\\) ?", "image": null}, "options": [{"id": "7Os3n", "text": "\\(y=\\frac{1-e^{-2 x}}{2}\\)", "image": null, "isCorrect": true}, {"id": "RAFXF", "text": "\\(y=\\frac{1+e^{-2 x}}{2}\\)", "image": null, "isCorrect": false}, {"id": "w3jlq", "text": "\\(y=1+e^x\\)", "image": null, "isCorrect": false}, {"id": "ZmsNf", "text": "\\(y=\\frac{1+e^x}{2}\\)", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "\\(\\begin{aligned}\n& \\frac{d y}{d x}+2 y=1 \\Rightarrow \\frac{d y}{d x}=1-2 y \\\\\n& \\int \\frac{d y}{1-2 y}=\\int d x-\\frac{1}{2} \\log |1-2 y|=x+C \\\\\n& \\text { at } x=0, y=0 ;-\\frac{1}{2} \\log 1=0+C \\Rightarrow C=0 \\\\\n& 1-2 y=e^{-2 x} \\Rightarrow y=\\frac{1-e^{-2 x}}{2}\n\\end{aligned}\\)", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "64c0e86e6f5bfc7ab78aee1e", "title": "Homogeneous DE", "totalQuestions": 2, "questions": [{"_id": "64c0e8286f5bfc7ab78aeb15", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 2, "question": {"text": "If the slope of the tangent to the curve at any point $\\mathrm{P}(x, y)$ is $\\frac{y}{x}-\\cos ^{2} \\frac{y}{x}$, then the equation of a curve passing through $\\left(1, \\frac{\\pi}{4}\\right)$ is", "image": null}, "options": [{"id": "nMX8X", "text": "$\\tan \\left(\\frac{y}{x}\\right)+\\log x=1$", "isCorrect": true, "image": null}, {"id": "vOI4U", "text": "$\\tan \\left(\\frac{y}{x}\\right)+\\log y=1$", "isCorrect": false, "image": null}, {"id": "12sOJ", "text": "$\\tan \\left(\\frac{x}{y}\\right)+\\log x=1$", "isCorrect": false, "image": null}, {"id": "B8Opp", "text": "$\\tan \\left(\\frac{x}{y}\\right)+\\log y=1$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "According to the condition,\r\n\r\n$\\frac{\\mathrm{dy}}{\\mathrm{dx}}=\\frac{y}{x}-\\cos ^{2} \\frac{y}{x} \\ldots \\text { (i) }$\r\n\r\nThis is a homogeneous differential equation Substituting $y=v x$, we get\r\n\r\n$\\begin{array}{l}\r\n\r\nv+x \\frac{\\mathrm{dv}}{\\mathrm{dx}}=v-\\cos ^{2} v \\\\\r\n\r\n\\Rightarrow x \\frac{\\mathrm{dv}}{\\mathrm{dx}}=-\\cos ^{2} v \\\\\r\n\r\n\\Rightarrow \\int \\sec ^{2} \\mathrm{vdv}=-\\int \\frac{\\mathrm{dx}}{\\mathrm{x}} \\\\\r\n\r\n\\Rightarrow \\tan v=-\\log x+\\mathrm{C} \\\\\r\n\r\n\\Rightarrow \\tan \\frac{y}{x}+\\log x=\\mathrm{C}\r\n\r\n\\end{array}$\r\n\r\nSubstituting $\\mathrm{x}=1, y=\\frac{\\pi}{4}$, we get $\\mathrm{C}=1$\r\n\r\nThus, we get\r\n\r\n$\\tan \\left(\\frac{y}{x}\\right)+\\log x=1$\r\n\r\nwhich is the required solution.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7d16f5bfc7ab78ae823", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 3, "question": {"text": "If $\\phi(\\mathrm{x})$ is a differential function, then the solution of the differential equation $\\mathrm{dy}+\\left\\{\\mathrm{y} \\phi^{\\prime}(\\mathrm{x})-\\phi(\\mathrm{x})\\right.$\r\n\r\n$\\left.\\phi^{\\prime}(x)\\right\\} d x=0,$ is", "image": null}, "options": [{"id": "ufb9a", "text": "$y=\\{\\phi(x)-1\\}+C e^{-\\phi(x)}$", "isCorrect": true, "image": null}, {"id": "yCvhy", "text": "$y \\phi(x)=\\{\\phi(x)\\}^{2}+C$", "isCorrect": false, "image": null}, {"id": "GsUMD", "text": "$y e^{\\varphi(x)}=\\phi(x) e^{\\phi(x)}+C$", "isCorrect": false, "image": null}, {"id": "3mF35", "text": "$y-\\phi(x)=\\phi(x) e^{-\\phi(x)}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Given differential equation is\r\n\r\n$\\mathrm{dy}+\\left\\{y \\phi^{\\prime}(x)-\\phi(x) \\phi^{\\prime}(x)\\right\\} d x=0$\r\n\r\n$\\Rightarrow \\frac{\\mathrm{dy}}{\\mathrm{dx}}+\\phi^{\\prime}(\\mathrm{x}) \\mathrm{y}=\\phi(\\mathrm{x}) \\phi^{\\prime}(\\mathrm{x})$\r\n\r\nwhich is a linear differential equation with $\\quad P=\\phi^{\\prime}(x), Q=\\phi(x) \\cdot \\phi^{\\prime}(x)$ and\r\n\r\n$I \\cdot F=e^{\\int \\phi^{\\prime}(x) d x}=e^{\\phi(x)}$\r\n\r\n$\\therefore$ Solution is $y \\cdot e^{\\phi(x)}=\\int \\phi(x) \\cdot \\phi^{\\prime}(x) e^{\\phi(x)} d x+C$\r\n\r\n$\\Rightarrow y \\cdot e^{\\phi(x)}=\\int \\phi(x) \\cdot e^{\\phi(x)} \\phi^{\\prime}(x) d x+C$\r\n\r\n$\\Rightarrow y \\cdot e^{\\phi(x)}=\\phi(x) e^{\\phi(x)}-\\int \\phi^{\\prime}(x) e^{\\phi(x)} d x+C$\r\n\r\n$\\Rightarrow y \\cdot e^{\\phi(x)}=\\phi(x) e^{\\phi(x)}-e^{\\phi(x)}+C$\r\n\r\n$\\Rightarrow y=\\lceil\\phi(x)-1]+C e^{-\\phi(x)}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 5, "topicId": "64c0e86e6f5bfc7ab78aee1b", "title": "Linear Differential Equation", "totalQuestions": 13, "questions": [{"_id": "67726d1ac49e8ef28ee2b447", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "The solution of the differential equation $(x+1) \\frac{d y}{d x}-y=e^{3 x}(x+1)^2$ is", "image": null}, "options": [{"id": "0vy4S", "text": "$y=(x+1) e^{3 x}+C$", "image": null, "isCorrect": false}, {"id": "eNnnk", "text": "$3 y=(x+1)+e^{3 x}+C$", "image": null, "isCorrect": false}, {"id": "Dbkec", "text": "$\\frac{3 y}{x+1}=e^{3 x}+C$", "image": null, "isCorrect": true}, {"id": "jVPCY", "text": "$y e^{-3 x}=3(x+1)+C$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Given, $\\frac{d y}{d x}-\\frac{y}{x+1}=e^{3 x}(x+1)$\nAbove is linear differential equation of form\n$\\begin{aligned}\n& \\frac{d y}{d x}+P x=Q \\\\\n& \\therefore \\quad \\mathrm{IF}=e^{\\int P d x}=e^{\\int-\\frac{1}{x+1} d x}=e^{-\\ln (1+x)}=\\frac{1}{1+x}\n\\end{aligned}$\n$\\Rightarrow$ Solution will be\n$\\begin{aligned}\ny \\cdot \\mathrm{IF} & =\\int Q \\cdot \\mathrm{IF} d x \\\\\ny \\cdot \\frac{1}{1+x} & =\\int e^{3 x}(x+1) \\times \\frac{1}{(1+x)} d x \\\\\n\\frac{y}{1+x} & =\\frac{e^{3 x}}{3}+C^{\\prime} \\\\\n\\frac{3 y}{1+x} & =e^{3 x}+C^{\\prime} \\quad \\quad\\left[\\because C=3 C^{\\prime}\\right]\n\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726d0ec49e8ef28ee2b3e9", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "If $\\frac{d y}{d x}-y \\log _e 2=2^{\\sin x}(\\cos x-1) \\log _e 2$, then $y$", "image": null}, "options": [{"id": "0vmJm", "text": "$2^{\\sin x}+c 2^x$", "image": null, "isCorrect": true}, {"id": "aX56T", "text": "$2^{\\cos x}+c 2^x$", "image": null, "isCorrect": false}, {"id": "rRL72", "text": "$2^{\\sin x}+c 2^{-x}$", "image": null, "isCorrect": false}, {"id": "0dr0H", "text": "$2^{\\cos x}+c 2^{-x}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\frac{d y}{d x}-y \\log _e 2=2^{\\sin x}(\\cos x-1) \\log _e 2$\nThis is linear differential equation\n$\\text { I.F. }=e^{-\\log _e 2 \\int d x}=e^{-x \\log _e 2}=2^{-x}$\nthen general Solution is\n$y 2^{-x}=\\int 2^{-x} 2^{\\sin x}(\\cos x-1) \\log _e 2 d x+c$\nNow let $\\sin x-x=t \\Rightarrow(\\cos x-1) d x=d t$\n$\\begin{aligned}\n& \\therefore y 2^{-x}=\\log _e 2 \\int 2^t d t+c \\\\\n& \\therefore y 2^{-x}=2^t+c \\\\\n& \\therefore y=2^{x+t}+c 2^x \\\\\n& \\therefore y=2^{\\sin x}+c 2^x\n\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b88297ae24e9e2db8d0c", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "The integrating factor of $\\frac{x d y}{d x}-y=x^4-3 x$ is", "image": null}, "options": [{"id": "Fzrlh", "text": "<br />x", "image": null, "isCorrect": false}, {"id": "d6zKS", "text": "$\\log x$", "image": null, "isCorrect": false}, {"id": "wZHpr", "text": "$\\frac{1}{x}$", "image": null, "isCorrect": true}, {"id": "lvl5q", "text": "$-\\mathbf{X}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<br />$\\begin{aligned}<br />& \\text { (c) Since } x \\frac{d y}{d x}-y=x^4-3 x \\\\<br />& \\therefore \\frac{d y}{d x}-\\frac{y}{x}=x^3-3<br />\\end{aligned}$<br />Hence $I F=e^{\\int P d x}=e^{-\\int \\frac{1}{x} d x}=e^{-\\log x}=\\frac{1}{x}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8336f5bfc7ab78aeb7d", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 2, "question": {"text": "$\\left(\\frac{d y}{d x}\\right) \\tan x=y \\sec ^2 x+\\sin x$, find general solution", "image": null}, "options": [{"id": "Gtc2m", "text": "\r\n$y=\\tan x(\\log |\\operatorname{cosec} x-\\cot x|+\\cos x+c)$\r\n", "isCorrect": true, "image": null}, {"id": "vxf9z", "text": "\r\n$y=\\sec ^2 x+\\tan x+c$\r\n", "isCorrect": false, "image": null}, {"id": "1y1r9", "text": "\r\n$y=\\log |\\sec x+\\tan x|+\\operatorname{cosec} x+c$\r\n", "isCorrect": false, "image": null}, {"id": "rAk4I", "text": "\r\n$y=\\tan ^2 x+\\sin x+c$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Given that\r\n$$\r\n\\begin{aligned}\r\n& \\left(\\frac{d y}{d x}\\right) \\tan x=y \\sec ^2 x+\\sin x \\\\\r\n& \\tan x\\left(\\frac{d y}{d x}\\right)-y \\sec ^2 x=\\sin x \\\\\r\n& \\frac{d y}{d x}+\\left(\\frac{-\\sec ^2 x}{\\tan x}\\right) y=\\frac{\\sin x}{\\tan x} \\\\\r\n& \\text { Here, } P=-\\frac{\\sec ^2 x}{\\tan x} \\text { and } Q=\\cos x \\\\\r\n& \\text { IF }=e^{\\int P d x}=e^{\\int \\frac{-\\sec ^ 2 x}{\\tan x} d x} \\\\\r\n& \\text { IF }=e^{-\\log (\\tan x)}=e^{\\log \\cot x}=\\cot x \\\\\r\n& \\text { Now, } y \\times \\mathrm{IF}=\\int(Q \\times \\mathrm{IF}) d x+C \\\\\r\n& y \\cdot \\cot x=\\int \\cos x \\cdot \\cot x+C \\\\\r\n& y \\cdot \\cot x=\\int \\frac{1-\\sin ^2 x}{\\sin x}+C \\\\\r\n& y \\cdot \\cot x=\\log |\\operatorname{cosec} x-\\cot x|+\\cos x+C\r\n\\end{aligned}\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8296f5bfc7ab78aeb24", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 2, "question": {"text": "The general solution of the differential equation $\\left(\\tan ^{-1} y-x\\right) d y=\\left(1+y^{2}\\right) d x$ is", "image": null}, "options": [{"id": "8qtCf", "text": "$x=\\left(\\tan ^{-1} y+1\\right)+\\mathrm{C} e^{-\\tan ^{-1} y}$", "isCorrect": false, "image": null}, {"id": "XJgdO", "text": "$x=\\left(\\tan ^{-1} y-1\\right)+\\mathrm{C} e^{-\\tan ^{-1} y}$", "isCorrect": true, "image": null}, {"id": "iOvva", "text": "$x=\\left(\\tan ^{-1} x-1\\right)+\\mathrm{C} e^{-\\tan ^{-1} x}$", "isCorrect": false, "image": null}, {"id": "IfkYb", "text": "$x=\\left(\\tan ^{-1} x+1\\right)+\\mathrm{Ce}^{-\\tan ^{-1} x}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The given differential equation can be written as $\\frac{d x}{d y}+\\frac{x}{1+y^{2}}=\\frac{\\tan ^{-1} y}{1+y^{2}} \\ldots$ (i)\r\n\r\nNow, eq. (i) is a linear differential equation of the form $\\frac{d x}{d y}+\\mathrm{P}_{1} x=\\mathrm{Q}_{1}$\r\n\r\nwhere $\\mathrm{P}_{1}=\\frac{1}{1+y^{2}}$ and $\\mathrm{Q}_{1}=\\frac{\\tan ^{-1} y}{1+y^{2}}$\r\n\r\nTherefore, I.F $=e^{\\int \\frac{1}{1+y^{2}} d y}=e^{\\tan ^{-1} y}$\r\n\r\nThus, the solution of the given differential equation is given by $x e^{\\tan ^{-1} y}=\\int\\left(\\frac{\\tan ^{-1} y}{1+y^{2}}\\right) e^{\\tan ^{-1} y} \\mathrm{dy}+\\mathrm{C} \\ldots$ (ii)\r\n\r\nLet $\\mathrm{I}=\\int\\left(\\frac{\\tan ^{-1} y}{1+y^{2}}\\right) e^{\\tan ^{-1} y} \\mathrm{dy}$\r\n\r\nOn substituting $\\tan ^{-1} y=t$, so that\r\n\r\n$\\left(\\frac{1}{1+y^{2}}\\right) \\mathrm{dy}=\\mathrm{dt}$, we get\r\n\r\n$I=\\int t e^{t} d t=t e^{t}-\\int 1 \\cdot e^{t} d t=t e^{t}-e^{t}=e^{t}(t-1)$\r\n\r\nor $\\mathrm{I}=e^{\\tan ^{-1} y}\\left(\\tan ^{-1} y-1\\right)$\r\n\r\nOn substituting the value of 1 in equation (i1), we get\r\n\r\n$x \\cdot e^{\\tan ^{-1} y}=\\cdot e^{\\tan ^{-1} y}\\left(\\tan ^{-1} y-1\\right)+\\mathrm{C}$\r\n\r\nor $x=\\left(\\tan ^{-1} y-1\\right)+\\mathrm{C} e^{\\tan ^{-1} y}$\r\n\r\nwhich is the general solution of the given differntial equation.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e81a6f5bfc7ab78aea9c", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 1, "question": {"text": "The solution of the differential equation\r\n\r\n$(x+1) \\frac{d y}{d x}-y=e^{3 x}(x+1)^{2}$ is", "image": null}, "options": [{"id": "o491H", "text": "$y=(x+1) e^{3 x}+c$", "isCorrect": false, "image": null}, {"id": "wF9eq", "text": "$3 y=(x+1)+e^{3 x}+c$", "isCorrect": false, "image": null}, {"id": "V8ZAY", "text": "$\\frac{3 y}{x+1}=e^{3 x}+c$", "isCorrect": true, "image": null}, {"id": "o5TXK", "text": "$y e^{-3 x}=3(x+1)+c$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The given equation is $\\frac{d y}{d x}-\\frac{y}{x+1}=e^{3 x}(x+1)$\r\n\r\nI.F. $=e^{\\int-\\frac{1}{x+1} d x}=e^{-\\log (x+1)}=\\frac{1}{x+1}$\r\n\r\nThe solution is\r\n\r\n$y\\left(\\frac{1}{x+1}\\right)=\\int e^{3 x}(x+1) \\cdot \\frac{1}{x+1} d x+a$\r\n\r\n$\\Rightarrow \\frac{y}{x+1}=\\int e^{3 x} d x+a=\\frac{e^{3 x}}{3}+a$\r\n\r\n$\\Rightarrow \\frac{3 y}{x+1}=e^{3 x}+c, c=3 a$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e80f6f5bfc7ab78aea38", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 3, "question": {"text": "If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>f</mi><mo>'</mo></msup><mfenced><mi>x</mi></mfenced><mo>=</mo><mi>f</mi><mfenced><mi>x</mi></mfenced><mo>+</mo><msubsup><mo>&#8747;</mo><mn>0</mn><mn>1</mn></msubsup><mi>f</mi><mfenced><mi>x</mi></mfenced><mi>d</mi><mi>x</mi><mo>,</mo><mi>f</mi><mfenced><mn>0</mn></mfenced><mo>=</mo><mn>1</mn></math>, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced><mi>x</mi></mfenced><mo>=</mo></math>", "image": null}, "options": [{"id": "ibX6S", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>2</mn><msup><mi>e</mi><mi>x</mi></msup></mrow><mrow><mn>3</mn><mo>-</mo><mi>e</mi></mrow></mfrac><mo>+</mo><mfrac><mrow><mn>1</mn><mo>-</mo><mi>e</mi></mrow><mrow><mn>3</mn><mo>-</mo><mi>e</mi></mrow></mfrac></math>", "isCorrect": true, "image": null}, {"id": "xrDZ6", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msup><mi>e</mi><mi>x</mi></msup><mrow><mn>3</mn><mo>-</mo><mi>e</mi></mrow></mfrac><mo>+</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mi>e</mi></mrow><mrow><mn>1</mn><mo>-</mo><mi>e</mi></mrow></mfrac></math>", "isCorrect": false, "image": null}, {"id": "wKwqY", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>3</mn><msup><mi>e</mi><mi>x</mi></msup></mrow><mrow><mn>2</mn><mo>-</mo><mi>e</mi></mrow></mfrac><mo>+</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mi>e</mi></mrow><mrow><mn>1</mn><mo>-</mo><mi>e</mi></mrow></mfrac></math>", "isCorrect": false, "image": null}, {"id": "TPLUl", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>3</mn><msup><mi>e</mi><mi>x</mi></msup></mrow><mrow><mn>2</mn><mo>-</mo><mi>e</mi></mrow></mfrac><mo>+</mo><mfrac><mrow><mn>1</mn><mo>-</mo><mi>e</mi></mrow><mrow><mn>3</mn><mo>+</mo><mi>e</mi></mrow></mfrac></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Given,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>f</mi><mo>'</mo></msup><mfenced><mi>x</mi></mfenced><mo>=</mo><mi>f</mi><mfenced><mi>x</mi></mfenced><mo>+</mo><msubsup><mo>&#8747;</mo><mn>0</mn><mn>1</mn></msubsup><mi>f</mi><mfenced><mi>x</mi></mfenced><mi>d</mi><mi>x</mi><mo>,</mo><mi>f</mi><mfenced><mn>0</mn></mfenced><mo>=</mo><mn>1</mn></math>&nbsp; &nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>.</mo><mo>.</mo><mo>.</mo><mo>(</mo><mi mathvariant=\"normal\">i</mi><mo>)</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><msup><mi>f</mi><mrow><mo>'</mo><mo>'</mo></mrow></msup><mfenced><mi>x</mi></mfenced><mo>=</mo><msup><mi>f</mi><mo>'</mo></msup><mfenced><mi>x</mi></mfenced><mo>+</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mfrac><mrow><msup><mi>f</mi><mrow><mo>'</mo><mo>'</mo></mrow></msup><mfenced><mi>x</mi></mfenced></mrow><mrow><msup><mi>f</mi><mo>'</mo></msup><mfenced><mi>x</mi></mfenced></mrow></mfrac><mo>=</mo><mn>1</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mo>&#8747;</mo><mfrac><mrow><msup><mi>f</mi><mrow><mo>'</mo><mo>'</mo></mrow></msup><mfenced><mi>x</mi></mfenced></mrow><mrow><msup><mi>f</mi><mo>'</mo></msup><mfenced><mi>x</mi></mfenced></mrow></mfrac><mi>d</mi><mi>x</mi><mo>=</mo><mo>&#8747;</mo><mi>d</mi><mi>x</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>log</mi><msup><mi>f</mi><mo>'</mo></msup><mfenced><mi>x</mi></mfenced><mo>=</mo><mi>x</mi><mo>+</mo><mi>C</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><msup><mi>f</mi><mo>'</mo></msup><mfenced><mi>x</mi></mfenced><mo>=</mo><mi>A</mi><msup><mi>e</mi><mi>x</mi></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>f</mi><mfenced><mi>x</mi></mfenced><mo>=</mo><mi>A</mi><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><mi>K</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced><mn>0</mn></mfenced><mo>=</mo><mi>A</mi><mo>+</mo><mi>K</mi><mo>=</mo><mn>1</mn></math>&nbsp; &nbsp;&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>.</mo><mo>.</mo><mo>.</mo><mo>(</mo><mi>ii</mi><mo>)</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi>A</mi><msup><mi>e</mi><mi>x</mi></msup><mo>=</mo><mi>A</mi><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><mi>K</mi><mo>+</mo><msubsup><mo>&#8747;</mo><mn>0</mn><mn>1</mn></msubsup><mfenced><mrow><mi>A</mi><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><mi>k</mi></mrow></mfenced><mi>d</mi><mi>x</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>k</mi><mo>+</mo><msubsup><mfenced open=\"[\" close=\"]\"><mrow><mi>A</mi><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><mi>K</mi><mi>x</mi></mrow></mfenced><mn>0</mn><mn>1</mn></msubsup><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>k</mi><mo>+</mo><mi>A</mi><mi>e</mi><mo>-</mo><mi>A</mi><mo>+</mo><mi>K</mi><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>A</mi><mo>(</mo><mi>e</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>+</mo><mn>2</mn><mi>k</mi><mo>=</mo><mn>0</mn></math>&nbsp; &nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>.</mo><mo>.</mo><mo>.</mo><mo>(</mo><mi>iii</mi><mo>)</mo></math></p><p>From Eqs. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi>ii</mi><mo>)</mo></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi>iii</mi><mo>)</mo></math>, we get</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>=</mo><mfrac><mn>2</mn><mrow><mn>3</mn><mo>-</mo><mi>e</mi></mrow></mfrac><mo>,</mo><mi>k</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>-</mo><mi>e</mi></mrow><mrow><mn>3</mn><mo>-</mo><mi>e</mi></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi>f</mi><mfenced><mi>x</mi></mfenced><mo>=</mo><mfrac><mrow><mn>2</mn><msup><mi>e</mi><mi>x</mi></msup></mrow><mrow><mn>3</mn><mo>-</mo><mi>e</mi></mrow></mfrac><mo>+</mo><mfrac><mrow><mn>1</mn><mo>-</mo><mi>e</mi></mrow><mrow><mn>3</mn><mo>-</mo><mi>e</mi></mrow></mfrac></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e80d6f5bfc7ab78aea27", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 2, "question": {"text": "Solution of the equation <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><msup><mi>e</mi><mrow><mi>x</mi><mo>-</mo><mi>y</mi></mrow></msup><mfenced><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><msup><mi>e</mi><mi>y</mi></msup></mrow></mfenced></math> is", "image": null}, "options": [{"id": "eGtqV", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>e</mi><mi>y</mi></msup><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mn>1</mn><mo>+</mo><mi>c</mi><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></msup></math>", "isCorrect": true, "image": null}, {"id": "LhqQG", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>e</mi><mrow><mi>y</mi><mo>-</mo><mi>x</mi></mrow></msup><mo>=</mo><mo>-</mo><mn>1</mn><mo>+</mo><mi>c</mi><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></msup></math>", "isCorrect": false, "image": null}, {"id": "103zh", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><msup><mi>e</mi><mi>y</mi></msup><mo>=</mo><mi>c</mi><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></msup></math>", "isCorrect": false, "image": null}, {"id": "fJV8q", "text": "None of these", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>We have,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><msup><mi>e</mi><mrow><mi>x</mi><mo>-</mo><mi>y</mi></mrow></msup><mfenced><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><msup><mi>e</mi><mi>y</mi></msup></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><msup><mi>e</mi><mi>y</mi></msup><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>+</mo><msup><mi>e</mi><mi>y</mi></msup><msup><mi>e</mi><mi>x</mi></msup><mo>=</mo><msup><mi>e</mi><mrow><mn>2</mn><mi>x</mi></mrow></msup></math></p><p>Put <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>e</mi><mi>y</mi></msup><mo>=</mo><mi>v</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><msup><mi>e</mi><mi>y</mi></msup><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>d</mi><mi>v</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mfrac><mrow><mi>d</mi><mi>v</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>+</mo><mi>v</mi><msup><mi>e</mi><mi>x</mi></msup><mo>=</mo><msup><mi>e</mi><mrow><mn>2</mn><mi>x</mi></mrow></msup></math></p><p>This is linear equation&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">I</mi><mo>.</mo><mi mathvariant=\"normal\">F</mi><mo>=</mo><mo>=</mo><msup><mi>e</mi><mrow><mo>&#8747;</mo><msup><mi>e</mi><mi>x</mi></msup><mi>d</mi><mi>x</mi></mrow></msup><mo>=</mo><msup><mi>e</mi><msup><mi>e</mi><mi>x</mi></msup></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> Required solution is&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi><mo>&#183;</mo><msup><mi>e</mi><msup><mi>e</mi><mi>x</mi></msup></msup><mo>=</mo><mo>&#8747;</mo><msup><mi>e</mi><msup><mi>e</mi><mi>x</mi></msup></msup><mo>&#183;</mo><msup><mi>e</mi><mrow><mn>2</mn><mi>x</mi></mrow></msup><mi>d</mi><mi>x</mi><mo>+</mo><mi>C</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi><mo>&#183;</mo><msup><mi>e</mi><msup><mi>e</mi><mi>x</mi></msup></msup><mo>=</mo><msup><mi>e</mi><msup><mi>e</mi><mi>x</mi></msup></msup><mfenced><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mn>1</mn></mrow></mfenced><mo>+</mo><mi>C</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><msup><mi>e</mi><mi>y</mi></msup><mo>&#183;</mo><msup><mi>e</mi><msup><mi>e</mi><mi>x</mi></msup></msup><mo>=</mo><msup><mi>e</mi><msup><mi>e</mi><mi>x</mi></msup></msup><mfenced><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mn>1</mn></mrow></mfenced><mo>+</mo><mi>C</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><msup><mi>e</mi><mi>y</mi></msup><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mn>1</mn><mo>+</mo><mi>c</mi><msup><mi>e</mi><mrow><mo>-</mo><msup><mi>e</mi><mi>x</mi></msup></mrow></msup></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ff6f5bfc7ab78ae9ab", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 2, "question": {"text": "Solution of the differential equation <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mi>sin</mi><mfenced><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow></mfenced><mo>+</mo><mi>cos</mi><mfenced><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow></mfenced></math> is equal to", "image": null}, "options": [{"id": "siv5J", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>log</mi><mfenced><mrow><mn>2</mn><mo>+</mo><mi>sec</mi><mfrac><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac></mrow></mfenced><mo>=</mo><mi>x</mi><mo>+</mo><mi>C</mi></math>", "isCorrect": false, "image": null}, {"id": "DkO2D", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>log</mi><mfenced><mrow><mn>1</mn><mo>+</mo><mi>tan</mi><mfenced><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow></mfenced></mrow></mfenced><mo>=</mo><mi>x</mi><mo>+</mo><mi>C</mi></math>", "isCorrect": false, "image": null}, {"id": "vg028", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>log</mi><mfenced><mrow><mn>1</mn><mo>+</mo><mi>tan</mi><mfrac><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac></mrow></mfenced><mo>=</mo><mi>y</mi><mo>+</mo><mi>C</mi></math>", "isCorrect": false, "image": null}, {"id": "QDQYN", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>log</mi><mfenced><mrow><mn>1</mn><mo>+</mo><mi>tan</mi><mfrac><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac></mrow></mfenced><mo>=</mo><mi>x</mi><mo>+</mo><mi>C</mi></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>We have,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mi>sin</mi><mfenced><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow></mfenced><mo>+</mo><mi>cos</mi><mfenced><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow></mfenced></math></p><p>Put&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mi>v</mi><mo>&#8658;</mo><mn>1</mn><mo>+</mo><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>d</mi><mi>v</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi><mi>v</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>-</mo><mn>1</mn><mo>=</mo><mi>sin</mi><mi>v</mi><mo>+</mo><mi>cos</mi><mi>v</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfrac><mrow><mi>d</mi><mi>v</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mi>sin</mi><mi>v</mi><mo>+</mo><mi>cos</mi><mi>v</mi><mo>+</mo><mn>1</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfrac><mrow><mi>d</mi><mi>v</mi></mrow><mrow><mi>sin</mi><mi>v</mi><mo>+</mo><mi>cos</mi><mi>v</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mi>d</mi><mi>x</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#8747;</mo><mfenced><mfrac><mn>1</mn><mrow><mi>sin</mi><mi>v</mi><mo>+</mo><mi>cos</mi><mi>v</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mfenced><mi>d</mi><mi>v</mi><mo>=</mo><mo>&#8747;</mo><mi>d</mi><mi>x</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#8747;</mo><mfrac><mn>1</mn><mrow><mfenced close=\"}\" open=\"{\"><mstyle displaystyle=\"true\"><mfrac><mrow><mn>2</mn><mi>tan</mi><mfenced><mstyle displaystyle=\"true\"><mfrac><mi>v</mi><mn>2</mn></mfrac></mstyle></mfenced></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>tan</mi><mn>2</mn></msup><mfenced><mstyle displaystyle=\"true\"><mfrac><mi>v</mi><mn>2</mn></mfrac></mstyle></mfenced></mrow></mfrac></mstyle></mfenced><mo>+</mo><mfenced close=\"}\" open=\"{\"><mstyle displaystyle=\"true\"><mfrac><mrow><mn>1</mn><mo>-</mo><msup><mi>tan</mi><mn>2</mn></msup><mfenced><mstyle displaystyle=\"true\"><mfrac><mi>v</mi><mn>2</mn></mfrac></mstyle></mfenced></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>tan</mi><mn>2</mn></msup><mfenced><mstyle displaystyle=\"true\"><mfrac><mi>v</mi><mn>2</mn></mfrac></mstyle></mfenced></mrow></mfrac></mstyle></mfenced><mo>+</mo><mn>1</mn></mrow></mfrac><mi>d</mi><mi>v</mi><mo>=</mo><mo>&#8747;</mo><mi>d</mi><mi>x</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#8747;</mo><mfenced close=\"]\" open=\"[\"><mfrac><mfenced close=\"}\" open=\"{\"><mrow><mn>1</mn><mo>+</mo><msup><mi>tan</mi><mn>2</mn></msup><mfenced><mstyle displaystyle=\"true\"><mfrac><mi>v</mi><mn>2</mn></mfrac></mstyle></mfenced></mrow></mfenced><mrow><mstyle displaystyle=\"true\"><mn>2</mn></mstyle><mstyle displaystyle=\"true\"><mi>tan</mi></mstyle><mstyle displaystyle=\"true\"><mfenced><mfrac><mstyle displaystyle=\"true\"><mi>v</mi></mstyle><mstyle displaystyle=\"true\"><mn>2</mn></mstyle></mfrac></mfenced></mstyle><mo>+</mo><mstyle displaystyle=\"true\"><mn>1</mn></mstyle><mstyle displaystyle=\"true\"><mo>-</mo></mstyle><mstyle displaystyle=\"true\"><msup><mstyle displaystyle=\"true\"><mi>tan</mi></mstyle><mn>2</mn></msup></mstyle><mstyle displaystyle=\"true\"><mfenced><mfrac><mstyle displaystyle=\"true\"><mi>v</mi></mstyle><mstyle displaystyle=\"true\"><mn>2</mn></mstyle></mfrac></mfenced></mstyle><mo>+</mo><mn>1</mn><mo>+</mo><msup><mi>tan</mi><mn>2</mn></msup><mfenced><mstyle displaystyle=\"true\"><mfrac><mi>v</mi><mn>2</mn></mfrac></mstyle></mfenced></mrow></mfrac></mfenced><mi>d</mi><mi>v</mi><mo>=</mo><mi>x</mi><mo>+</mo><mi>C</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#8747;</mo><mfenced close=\"]\" open=\"[\"><mfrac><mrow><msup><mi>sec</mi><mn>2</mn></msup><mfenced><mstyle displaystyle=\"true\"><mfrac><mi>v</mi><mn>2</mn></mfrac></mstyle></mfenced></mrow><mstyle displaystyle=\"true\"><mi>tan</mi><mfenced><mfrac><mstyle displaystyle=\"true\"><mi>v</mi></mstyle><mstyle displaystyle=\"true\"><mn>2</mn></mstyle></mfrac></mfenced><mo>+</mo><mn>1</mn></mstyle></mfrac></mfenced><mi>d</mi><mi>v</mi><mo>=</mo><mi>x</mi><mo>+</mo><mi>C</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>log</mi><mfenced><mrow><mi>tan</mi><mfenced><mfrac><mstyle displaystyle=\"true\"><mi>v</mi></mstyle><mstyle displaystyle=\"true\"><mn>2</mn></mstyle></mfrac></mfenced><mo>+</mo><mn>1</mn></mrow></mfenced><mo>=</mo><mi>x</mi><mo>+</mo><mi>C</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>log</mi><mfenced><mrow><mi>tan</mi><mfenced><mfrac><mstyle displaystyle=\"true\"><mi>x</mi><mo>+</mo><mi>y</mi></mstyle><mstyle displaystyle=\"true\"><mn>2</mn></mstyle></mfrac></mfenced><mo>+</mo><mn>1</mn></mrow></mfenced><mo>=</mo><mi>x</mi><mo>+</mo><mi>C</mi></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7f16f5bfc7ab78ae932", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 2, "question": {"text": "The solution of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mi>cos</mi><mfenced><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow></mfenced><mo>+</mo><mi>sin</mi><mfenced><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow></mfenced></math>, is", "image": null}, "options": [{"id": "3OeZb", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>log</mi><mfenced open=\"[\" close=\"]\"><mrow><mn>1</mn><mo>+</mo><mi>tan</mi><mfenced><mfrac><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac></mfenced></mrow></mfenced><mo>+</mo><mi>C</mi><mo>=</mo><mn>0</mn></math>", "isCorrect": false, "image": null}, {"id": "xWtTu", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>log</mi><mfenced open=\"[\" close=\"]\"><mrow><mn>1</mn><mo>+</mo><mi>tan</mi><mfenced><mfrac><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac></mfenced></mrow></mfenced><mo>=</mo><mi>x</mi><mo>+</mo><mi>C</mi></math>", "isCorrect": true, "image": null}, {"id": "zy3ag", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>log</mi><mfenced open=\"[\" close=\"]\"><mrow><mn>1</mn><mo>-</mo><mi>tan</mi><mfenced><mfrac><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac></mfenced></mrow></mfenced><mo>=</mo><mi>x</mi><mo>+</mo><mi>C</mi></math>", "isCorrect": false, "image": null}, {"id": "tKTKK", "text": "None of the above", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Put <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mi>v</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>+</mo><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>d</mi><mi>v</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac></math></p><p>Therefore, the differential equation reduces to</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi><mi>v</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mfenced><mrow><mn>1</mn><mo>+</mo><mi>cos</mi><mi>v</mi></mrow></mfenced><mo>+</mo><mi>sin</mi><mi>v</mi><mo>=</mo><mn>2</mn><msup><mi>cos</mi><mn>2</mn></msup><mfrac><mi>v</mi><mn>2</mn></mfrac><mo>+</mo><mn>2</mn><mi>sin</mi><mfrac><mi>v</mi><mn>2</mn></mfrac><mi>cos</mi><mfrac><mi>v</mi><mn>2</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>2</mn><msup><mi>cos</mi><mn>2</mn></msup><mfrac><mi>v</mi><mn>2</mn></mfrac><mfenced><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mi>tan</mi><mi>v</mi></mrow><mn>2</mn></mfrac></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mo>&#8747;</mo><mfrac><mrow><msup><mi>sec</mi><mn>2</mn></msup><mfrac><mi>V</mi><mn>2</mn></mfrac></mrow><mrow><mn>2</mn><mfenced close=\"]\" open=\"[\"><mrow><mn>1</mn><mo>+</mo><mi>tan</mi><mfenced><mfrac><mi>v</mi><mn>2</mn></mfrac></mfenced></mrow></mfenced></mrow></mfrac><mi>d</mi><mi>v</mi><mo>=</mo><mo>&#8747;</mo><mi>d</mi><mi>x</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi>log</mi><mfenced close=\"]\" open=\"[\"><mrow><mn>1</mn><mo>+</mo><mi>tan</mi><mfenced><mfrac><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac></mfenced></mrow></mfenced><mo>=</mo><mi>x</mi><mo>+</mo><mi>C</mi></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7b86f5bfc7ab78ae745", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 3, "question": {"text": "The solution to the differential equation $\\frac{d y}{d x}=\\frac{y f^{\\prime}(x)-y^{2}}{f(x)}$ where $f(x)$ is a given function is", "image": null}, "options": [{"id": "F8pb3", "text": "$f(x)=y(x+c)$", "isCorrect": true, "image": null}, {"id": "pJfch", "text": "$f(x)=c x y$", "isCorrect": false, "image": null}, {"id": "wHaNc", "text": "$f(x)=c(x+y)$", "isCorrect": false, "image": null}, {"id": "Lk7ha", "text": "$\\mathrm{yf}(\\mathrm{x})=\\mathrm{cx}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "We have $\\frac{d y}{d x}=\\frac{f^{\\prime}(x)}{f(x)} y-\\frac{y^{2}}{f(x)}$\r\n\r\n$\\Rightarrow \\frac{d y}{d x}-\\frac{f^{\\prime}(x)}{f(x)} y=-\\frac{y^{2}}{f(x)}$\r\n\r\nDivide by $y^{2}: y^{-2} \\frac{d y}{d x}-y^{-1} \\frac{f^{\\prime}(x)}{f(x)}=-\\frac{1}{f(x)}$\r\n\r\nPut $y^{-1}=z \\Rightarrow-y^{-2} \\frac{d y}{d x}=\\frac{d z}{d x}$\r\n\r\n$-\\frac{d z}{d x}-\\frac{f^{\\prime}(x)}{f(x)}(z)=-\\frac{1}{f(x)}$\r\n\r\n$\\Rightarrow \\frac{d z}{d x}+\\frac{f^{\\prime}(x)}{f(x)} z=\\frac{1}{f(x)}$\r\n\r\n$I F=e^{\\int \\frac{f^{\\prime}(x)}{f(x)} d x}=e^{\\log f(x)}=f(x)$\r\n\r\n$\\therefore$ The solution is $z(f(x))=\\int \\frac{1}{f(x)}(f(x)) d x+c$\r\n\r\n$\\Rightarrow y^{-1}(f(x))=x+c \\Rightarrow f(x)=y(x+c)$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e78b6f5bfc7ab78ae5c7", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "The area of the region bounded by the curve \\(y=x|x|, x\\)-axis and the ordinates \\(x=1, x=-1\\) is given by :", "image": null}, "options": [{"id": "D4SGO", "text": "zero", "image": null, "isCorrect": false}, {"id": "rN5jA", "text": "\\(\\frac{1}{3}\\)", "image": null, "isCorrect": false}, {"id": "09myO", "text": "\\(\\frac{2}{3}\\)", "image": null, "isCorrect": true}, {"id": "MMNBZ", "text": "1", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "The area of the region bounded by the curve \\(y=f(x)\\) and the ordinates \\(x=a, x=b\\) is given by\n\\(\\text {Area }=\\left|\\int_a^b y d x\\right|\\)\nAccording to the question,\n\\(y=x|x|= \\begin{cases}x^2, & x \\geq 0 \\\\ -x^2, & x  < 0\\end{cases}\\)<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/FZCw9yBYXriAVn3LRBhGUGiFnLoUl_9mYiLSqNxNlqc.original.fullsize.png\"><br>\nRequired area\n\\(=\\) area of region \\(\\mathrm{OAB}+\\) area of region \\(\\mathrm{OCD}\\)\n\\(=2 \\times\\) Area of region \\(\\mathrm{OAB}\\)\n\\(=2 \\int_0^1 x^2 d x=\\frac{2}{3} s q\\). units", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e77d6f5bfc7ab78ae54c", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "Area of the triangle formed by the line \\(x+y=3\\) and angle bisectors of the pair of straight lines \\(x^2-y^2+2 y=1\\) is", "image": null}, "options": [{"id": "0c6dP", "text": "2 sq. units", "image": null, "isCorrect": true}, {"id": "7i46a", "text": "4 sq. units", "image": null, "isCorrect": false}, {"id": "xityT", "text": "6 sq. units", "image": null, "isCorrect": false}, {"id": "l5mmh", "text": "8 sq. units", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "\\(\\mathrm{x}^2-\\mathrm{y}^2+2 \\mathrm{y}=1 \\Rightarrow \\mathrm{x}= \\pm(\\mathrm{y}-1)\\)\nBisectors of above line are \\(x=0 ~\\&~ y=1\\)\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/q9-e-nY41f9GD5ETl-tSN4Ed4dRtdgHVdnw95PKOA4k.original.fullsize.png\"><br>\nSo area between \\(x=0, y=1 ~\\&~ x+y=3\\) is shaded Region shown in figure.<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/HlzbRdJnBytZmsPrh3LCzmrLogiaYjEvOdpefLciUfA.original.fullsize.png\"><br>\nArea \\(=1 / 2 \\times 2 \\times 2=2\\) sq. units", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 6, "topicId": "64c0e86f6f5bfc7ab78aee20", "title": "Applications of DE", "totalQuestions": 1, "questions": [{"_id": "64c0e7ff6f5bfc7ab78ae9ae", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 1, "question": {"text": "The equation of the curve whose slope at any point is equal to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>+</mo><mn>2</mn><mi>x</mi></math> and which passes through the origin is", "image": null}, "options": [{"id": "DZYl8", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mn>2</mn><mfenced><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfenced></math>", "isCorrect": false, "image": null}, {"id": "Z4k45", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mn>2</mn><mfenced><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfenced></math>", "isCorrect": true, "image": null}, {"id": "dJjic", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mn>2</mn><mfenced><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mn>1</mn></mrow></mfenced></math>", "isCorrect": false, "image": null}, {"id": "Gzaz9", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mn>2</mn><mfenced><mrow><msup><mi>e</mi><mi>x</mi></msup><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfenced></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>We have,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mi>y</mi><mo>+</mo><mn>2</mn><mi>x</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>-</mo><mi>y</mi><mo>=</mo><mn>2</mn><mi>x</mi></math></p><p>Now,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>IF</mi><mo>=</mo><msup><mi>e</mi><mrow><mo>-</mo><mo>&#8747;</mo><mn>1</mn><mi>d</mi><mi>x</mi></mrow></msup><mo>=</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>&#183;</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mo>=</mo><mo>&#8747;</mo><mn>2</mn><mi>x</mi><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mi>d</mi><mi>x</mi><mo>+</mo><mi>k</mi><mo>,</mo><mo>&#160;</mo><mi>k</mi></math> be the constant of integration</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>2</mn><mfenced open=\"[\" close=\"]\"><mrow><mi>x</mi><mo>&#8747;</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mi>d</mi><mi>x</mi><mo>-</mo><mo>&#8747;</mo><mn>1</mn><mo>&#183;</mo><mfenced><mrow><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup></mrow></mfenced><mi>d</mi><mi>x</mi></mrow></mfenced><mo>+</mo><mi>k</mi></math>&nbsp; [using integration by parts]</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>y</mi><mo>&#183;</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mo>=</mo><mo>-</mo><mn>2</mn><mi>x</mi><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mo>-</mo><mn>2</mn><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mo>+</mo><mi>k</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi mathvariant=\"normal\">i</mi></mfenced></math></p><p>As curve (i) passes through <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mn>0</mn><mo>=</mo><mn>0</mn><mo>-</mo><mn>2</mn><mo>+</mo><mi>k</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>k</mi><mo>=</mo><mn>2</mn></math></p><p>Thus, the curve is</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mo>=</mo><mo>-</mo><mn>2</mn><mi>x</mi><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mo>-</mo><mn>2</mn><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mo>+</mo><mn>2</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi>y</mi><mo>=</mo><mn>2</mn><mfenced><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mi>x</mi><mo>-</mo><mn>1</mn></mrow></mfenced></math></p><p>Hence, option (b) is correct.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,1923 @@
+{
+  "index": 12,
+  "chapterId": "61c089a720464480d8e883ca",
+  "chapter": "p Block Elements (Group 13 & 14)",
+  "exam": "MHT CET",
+  "totalTopics": 5,
+  "totalQuestions": 28,
+  "downloadTime": "2026-10-08 20:06:06",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "65a2632f0279619d9d8a3ccb",
+      "title": "Boron and Its Compounds",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "6792139b0aee93fa0796da1a",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665cca",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-09T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (09 May Shift 1)",
+              "title": "MHT CET 2024 (09 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "What is bond angle $\\mathrm{F}-\\mathrm{B}-\\mathrm{F}$ in $\\mathrm{BF}_3$ ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "IR4ZY",
+              "text": "$107^{\\circ}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "bHZgn",
+              "text": "$104.5^{\\circ}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "G1xjS",
+              "text": "$120^{\\circ}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "qSGRV",
+              "text": "$109.5^{\\circ}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In $\\mathrm{BF}_3$, the central boron atom has $3$ valence electrons and forms $3$ single bonds with fluorine atoms.<br><br>There are no lone pairs on the central boron atom. The steric number is $3$ (bond pairs) $+ 0$ (lone pairs) $= 3$.<br><br>This corresponds to $sp^2$ hybridization.<br><br>The molecular geometry is trigonal planar, which results in an $\\mathrm{F}-\\mathrm{B}-\\mathrm{F}$ bond angle of exactly $120^{\\circ}$.<br><br>Answer: $120^{\\circ}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665cca",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-09T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (09 May Shift 1)",
+            "title": "MHT CET 2024 (09 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a261190279619d9d8a29ce",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b87f20917a5f41892a2",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2022-08-06T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022 (06 Aug Shift 2)",
+              "title": "MHT CET 2022 (06 Aug Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Which among the following is electron deficient compound?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "YJ8bf",
+              "text": "$\\mathrm{SiF}_4$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "aBjrk",
+              "text": "$\\mathrm{BCl}_3$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Gg4Zu",
+              "text": "$\\mathrm{PCl}_5$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wxpdY",
+              "text": "$\\mathrm{CCl}_4$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/zoyic5kAGDUD9S5iTDM8jN7dNGU6ro470H3Sv-6yA7A.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b87f20917a5f41892a2",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2022-08-06T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022 (06 Aug Shift 2)",
+            "title": "MHT CET 2022 (06 Aug Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "65a2632f0279619d9d8a3cc7",
+      "title": "Aluminium and Its Compounds",
+      "totalQuestions": 6,
+      "questions": [
+        {
+          "_id": "6abb88d315a9fc0fc8c1474e",
+          "type": "singleCorrect",
+          "question": {
+            "text": "What type of oxide the $\\text{Al}_2\\text{O}_3$ is?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "7Hht6",
+              "label": "A",
+              "text": "Acidic oxide",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Pb2vJ",
+              "label": "B",
+              "text": "Basic oxide",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Sk4FT",
+              "label": "C",
+              "text": "Amphoteric oxide",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "MzxdB",
+              "label": "D",
+              "text": "Neutral oxide",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Aluminium oxide ($\\text{Al}_2\\text{O}_3$) reacts with both acids and bases to form salt and water. Therefore, it exhibits both acidic and basic properties.<br><br>Reaction with acid:<br>$\\text{Al}_2\\text{O}_3 + 6\\text{HCl} \\rightarrow 2\\text{AlCl}_3 + 3\\text{H}_2\\text{O}$<br><br>Reaction with base:<br>$\\text{Al}_2\\text{O}_3 + 2\\text{NaOH} + 3\\text{H}_2\\text{O} \\rightarrow 2\\text{Na}[\\text{Al}(\\text{OH})_4]$<br><br>Hence, $\\text{Al}_2\\text{O}_3$ is an amphoteric oxide.<br><br>Answer: Amphoteric oxide",
+            "image": null
+          },
+          "level": 1,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87f02fe711bb1be9996f",
+              "title": "MHT CET 2026 (20 May Shift 1)",
+              "shortName": "2026 (20 May Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-05-20T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87f02fe711bb1be9996f",
+            "title": "MHT CET 2026 (20 May Shift 1)",
+            "shortName": "2026 (20 May Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-05-20T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6a44d3548c30a4553e1be292",
+          "type": "singleCorrect",
+          "question": {
+            "text": "Which from following oxides is amphoteric in nature?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "0vFtz",
+              "label": "A",
+              "text": "$\\text{BaO}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "7J0MI",
+              "label": "B",
+              "text": "$\\text{N}_2\\text{O}_5$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "SLY2b",
+              "label": "C",
+              "text": "$\\text{CO}_2$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "fHQU2",
+              "label": "D",
+              "text": "$\\text{Al}_2\\text{O}_3$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\text{BaO}$ is an oxide of an alkaline earth metal and is basic in nature.<br><br>$\\text{N}_2\\text{O}_5$ and $\\text{CO}_2$ are oxides of non-metals and are acidic in nature.<br><br>$\\text{Al}_2\\text{O}_3$ reacts with both acids and bases to form salt and water, exhibiting both acidic and basic properties. Hence, it is an amphoteric oxide.<br><br>Reaction with acid: $\\text{Al}_2\\text{O}_3 + 6\\text{HCl} \\rightarrow 2\\text{AlCl}_3 + 3\\text{H}_2\\text{O}$<br><br>Reaction with base: $\\text{Al}_2\\text{O}_3 + 2\\text{NaOH} + 3\\text{H}_2\\text{O} \\rightarrow 2\\text{Na}[\\text{Al}(\\text{OH})_4]$<br><br>Answer: $\\text{Al}_2\\text{O}_3$",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d2802d2155b816ec4a7c",
+              "title": "MHT CET 2026 (20 April Shift 1)",
+              "shortName": "2026 (20 April Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-04-20T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 1,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d2802d2155b816ec4a7c",
+            "title": "MHT CET 2026 (20 April Shift 1)",
+            "shortName": "2026 (20 April Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-04-20T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6a44d29c8c30a4553e1bdaee",
+          "type": "singleCorrect",
+          "question": {
+            "text": "What is the nature of $\\text{Al}_2\\text{O}_3$?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "srAFu",
+              "label": "A",
+              "text": "Acidic",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "KYyBd",
+              "label": "B",
+              "text": "Basic",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Z42Ks",
+              "label": "C",
+              "text": "Amphoteric",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "dEDDo",
+              "label": "D",
+              "text": "Neutral",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Aluminium oxide ($\\text{Al}_2\\text{O}_3$) is an amphoteric oxide because it reacts with both acids and bases to form salt and water.<br><br>Reaction with acid:<br>$\\text{Al}_2\\text{O}_3 + 6\\text{HCl} \\rightarrow 2\\text{AlCl}_3 + 3\\text{H}_2\\text{O}$<br><br>Reaction with base:<br>$\\text{Al}_2\\text{O}_3 + 2\\text{NaOH} + 3\\text{H}_2\\text{O} \\rightarrow 2\\text{Na}[\\text{Al}(\\text{OH})_4]$<br><br>Thus, it is amphoteric in nature.<br><br>Answer: Amphoteric",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d27f2d2155b816ec4a71",
+              "title": "MHT CET 2026 (13 April Shift 2)",
+              "shortName": "2026 (13 April Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-04-13T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 1,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d27f2d2155b816ec4a71",
+            "title": "MHT CET 2026 (13 April Shift 2)",
+            "shortName": "2026 (13 April Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-04-13T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a2604f0279619d9d8a2374",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b87f20917a5f4189297",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2021-09-21T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021 (21 Sep Shift 1)",
+              "title": "MHT CET 2021 (21 Sep Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Identify amphoteric oxide from following.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "KKpl6",
+              "text": "$\\mathrm{SO}_3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qA9GG",
+              "text": "$\\mathrm{Na}_2 \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZC7kx",
+              "text": "$\\mathrm{N}_2 \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Gyh6V",
+              "text": "$\\mathrm{Al}_2 \\mathrm{O}_3$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$$\n\\begin{aligned}\n& \\mathrm{SO}_3 \\rightarrow \\text { Acidic } \\\\\n& \\mathrm{Na}_2 \\mathrm{O} \\rightarrow \\text { Basic } \\\\\n& \\mathrm{N}_2 \\mathrm{O} \\rightarrow \\text { Neutral } \\\\\n& \\mathrm{Al}_2 \\mathrm{O}_3 \\rightarrow \\text { Amphoteric }\n\\end{aligned}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b87f20917a5f4189297",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2021-09-21T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021 (21 Sep Shift 1)",
+            "title": "MHT CET 2021 (21 Sep Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e460279619d9d8a131d",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078c7071b5bb33b3f9f5b",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2007-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2007",
+              "title": "MHT CET 2007"
+            }
+          ],
+          "question": {
+            "text": "Which of the following does not contain silicon?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Tt97O",
+              "text": "Kaoline",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "MuEcM",
+              "text": "Agate",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "c7Ga3",
+              "text": "Ruby",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "cfHv1",
+              "text": "Quartz",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Ruby is mineral of aluminium ie, $\\mathrm{Al}_{2} \\mathrm{O}_{3}$. It does not contain silicon.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078c7071b5bb33b3f9f5b",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2007-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2007",
+            "title": "MHT CET 2007"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e420279619d9d8a1301",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078c7071b5bb33b3f9f5b",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2007-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2007",
+              "title": "MHT CET 2007"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is an amphoteric oxide?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "X3wZf",
+              "text": "$\\mathrm{SO}_{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BijLm",
+              "text": "$\\mathrm{Mg}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "JukU9",
+              "text": "$\\mathrm{Al}_{2} \\mathrm{O}_{3}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "FLq1G",
+              "text": "$\\mathrm{P}_{4} \\mathrm{O}_{10}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No solution",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078c7071b5bb33b3f9f5b",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2007-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2007",
+            "title": "MHT CET 2007"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "65a2632f0279619d9d8a3cc9",
+      "title": "Carbon and Its Compounds",
+      "totalQuestions": 10,
+      "questions": [
+        {
+          "_id": "6a44d3538c30a4553e1be289",
+          "type": "singleCorrect",
+          "question": {
+            "text": "Identify the catalyst used to transform carbon monoxide from water gas into carbon dioxide",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "OdZk1",
+              "label": "A",
+              "text": "Potassium dichromate",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "lyPgD",
+              "label": "B",
+              "text": "Sodium chromate",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Scobf",
+              "label": "C",
+              "text": "Iron chromate",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "adH4i",
+              "label": "D",
+              "text": "Nickel",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The reaction of carbon monoxide of water gas (syngas) with steam to form carbon dioxide and dihydrogen is called the water-gas shift reaction.<br><br>$\\text{CO(g)} + \\text{H}_2\\text{O(g)} \\xrightarrow{\\text{Iron chromate, } 673\\text{ K}} \\text{CO}_2\\text{(g)} + \\text{H}_2\\text{(g)}$<br><br>The catalyst used in this process is iron chromate.<br><br>Answer: Iron chromate",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d2802d2155b816ec4a7c",
+              "title": "MHT CET 2026 (20 April Shift 1)",
+              "shortName": "2026 (20 April Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-04-20T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 2,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d2802d2155b816ec4a7c",
+            "title": "MHT CET 2026 (20 April Shift 1)",
+            "shortName": "2026 (20 April Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-04-20T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b6dbf9280d7f993291d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376df9b67616acec78f74",
+              "heldOn": "2025-04-22T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (22 Apr Shift 1)",
+              "title": "MHT CET 2025 (22 Apr Shift 1)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "Identify the catalyst used in following reaction at $500^{\\circ} \\mathrm{C}$ ?\n$\\mathrm{CO}+\\mathrm{H}_2 \\mathrm{O} \\rightleftharpoons \\mathrm{CO}_2+\\mathrm{H}_2$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "s5rSy",
+              "text": "$\\mathrm{Fe}-\\mathrm{Cr}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "93R7S",
+              "text": "Ni",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "s9BtF",
+              "text": "Co-Th",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "rwytW",
+              "text": "Platinised asbestos",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The given reaction is the water-gas shift reaction, which is used to increase the yield of hydrogen gas from syngas.<br><br>$\\mathrm{CO} + \\mathrm{H}_2\\mathrm{O} \\rightleftharpoons \\mathrm{CO}_2 + \\mathrm{H}_2$<br><br>This reaction is carried out at around $500^{\\circ} \\mathrm{C}$ (or $673 \\text{ K}$) in the presence of iron(III) oxide ($\\mathrm{Fe}_2\\mathrm{O}_3$) promoted by chromium(III) oxide ($\\mathrm{Cr}_2\\mathrm{O}_3$) as a catalyst.<br><br>Therefore, the catalyst used is $\\mathrm{Fe}-\\mathrm{Cr}$.<br><br>Answer: $\\mathrm{Fe}-\\mathrm{Cr}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376df9b67616acec78f74",
+            "heldOn": "2025-04-22T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (22 Apr Shift 1)",
+            "title": "MHT CET 2025 (22 Apr Shift 1)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a262590279619d9d8a33cb",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b3",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-13T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (13 May Shift 2)",
+              "title": "MHT CET 2023 (13 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following statements is NOT true about polymorphism?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "BKYcD",
+              "text": "The existence of substance in more than one crystalline form.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iKhj0",
+              "text": "Polymorphism occurring in element is called allotropy.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qwemN",
+              "text": "Polymorphic forms of a substance are formed under different conditions.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Ac5bm",
+              "text": "The crystal shape of polymorphic substances is identical to each other.",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The crystal shapes of the polymorphic forms of a substance are different.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b3",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-13T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (13 May Shift 2)",
+            "title": "MHT CET 2023 (13 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a262000279619d9d8a3104",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892ae",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-11T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (11 May Shift 1)",
+              "title": "MHT CET 2023 (11 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Identify the catalyst (A) used in following reaction.\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/RNQ0x4CX_DMT3CMN7pp3SUpK5IPyaFnJzxFYdhOPT6E.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Tjs3s",
+              "text": "Platinised asbestos",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "DnG6B",
+              "text": "$\\mathrm{MnO}_2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "HNTGA",
+              "text": "Co-Th alloy",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nY9g0",
+              "text": "$\\mathrm{Fe}-\\mathrm{Cr}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Carbon dioxide and hydrogen are formed by reaction of the carbon monoxide and steam at about $500^{\\circ} \\mathrm{C}$ with $\\mathrm{Fe}-\\mathrm{Cr}$ catalyst.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892ae",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-11T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (11 May Shift 1)",
+            "title": "MHT CET 2023 (11 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a261e90279619d9d8a304f",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892ad",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-10T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (10 May Shift 2)",
+              "title": "MHT CET 2023 (10 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Which from following compounds is obtained when carbon dioxide gas bubbled through slaked lime solution?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "PN1xp",
+              "text": "$\\mathrm{CaCO}_{3(\\mathrm{~s})}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "DgL5L",
+              "text": "$\\mathrm{CaCl}_{2(\\mathrm{aq})}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4jtoZ",
+              "text": "$\\mathrm{CaSO}_{4(\\mathrm{~s})}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "rBhpH",
+              "text": "$\\mathrm{NaCl}_{(\\mathrm{aq})}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "When carbon dioxide is bubbled through solution of calcium hydroxide (slaked lime), water insoluble solid calcium carbonate is formed.\n$\\mathrm{Ca}(\\mathrm{OH})_{2(\\mathrm{aq})}+\\mathrm{CO}_{2(\\mathrm{~g})} \\rightarrow \\mathrm{CaCO}_{3(\\mathrm{~s})}+\\mathrm{H}_2 \\mathrm{O}_{(\\ell)}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892ad",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-10T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (10 May Shift 2)",
+            "title": "MHT CET 2023 (10 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260710279619d9d8a2484",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b87f20917a5f4189299",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2021-09-22T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021 (22 Sep Shift 1)",
+              "title": "MHT CET 2021 (22 Sep Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Identify correct composition of water gas from following.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "AxFT1",
+              "text": "$\\mathrm{CO}_{(\\mathrm{g})}+\\mathrm{H}_2 \\mathrm{O}_{(\\mathrm{g})}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "RbdTi",
+              "text": "$\\mathrm{NO}_{(\\mathrm{g})}+2 \\mathrm{H}_{2(\\mathrm{~g})}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8jPu1",
+              "text": "$\\mathrm{CO}_{2(\\mathrm{~g})}+3 \\mathrm{H}_{2(\\mathrm{~g})}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pQYeS",
+              "text": "$\\mathrm{CO}_{(\\mathrm{g})}+\\mathrm{H}_{2(\\mathrm{~g})}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Water gas is a kind of fuel gas, a mixture of carbon monoxide and hydrogen.\n$$\n\\mathrm{CO}_{(\\mathrm{g})}+\\mathrm{H}_{2(\\mathrm{~g})}=\\text { water gas }\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b87f20917a5f4189299",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2021-09-22T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021 (22 Sep Shift 1)",
+            "title": "MHT CET 2021 (22 Sep Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25ff00279619d9d8a2074",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f72",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-19T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (19 Oct Shift 2)",
+              "title": "MHT CET 2020 (19 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "What is the range of number of carbon atoms in alkanes found in paraffin wax?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "i8dE7",
+              "text": "$\\mathrm{C}_{21}$ to $\\mathrm{C}_{30}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "MW7iC",
+              "text": "$\\mathrm{C}_{17}$ to $\\mathrm{C}_{18}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "VwF5Z",
+              "text": "$\\mathrm{C}_{19}$ to $\\mathrm{C}_{20}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "jFKH2",
+              "text": "$\\mathrm{C}_{6}$ to $\\mathrm{C}_{8}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{C}_{21}$ to $\\mathrm{C}_{30}$\nCarbon twenty $\\left(C_{20}\\right)$ to thirty $\\left(C_{30}\\right)$ Alkanes in paraffin have a wide spectrum of carbon atoms wax. It's a colourless, squishy solid derived from petroleum, coal, or shale oil is a mixture of petroleum, coal, and shale oil.\nHydrocarbon molecules in a combination. It's employed in a variety of situations. candles, wax paper, polishes, cosmetics, and other similar items insulators for electrical systems",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f72",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-19T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (19 Oct Shift 2)",
+            "title": "MHT CET 2020 (19 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fce0279619d9d8a1f67",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f70",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-16T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (16 Oct Shift 2)",
+              "title": "MHT CET 2020 (16 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Identify the hydrocarbon compound from following containing carbon atoms in the range of $\\mathrm{C}_{6}$ to $\\mathrm{C}_{8}$ ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "9l8Xo",
+              "text": "Waxes",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "1oyto",
+              "text": "Petrol",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "rbGZx",
+              "text": "Diesel",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Fza82",
+              "text": "CNG",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Petrol\nCarbon atoms in the range of $C_{6}$ to $C_{8}$ in a petroleum hydrocarbon molecule. It's made up of a number of distinct hydrocarbons.\nAlkanes (linear or branched) and cycloalkanes are the most prevalent molecules observed. Each type of petroleum has a distinct molecular composition that determines its physical and chemical qualities. Petrol is made from alkanes ranging from pentane $\\left(\\mathrm{C}_{5} \\mathrm{H}_{12}\\right)$ to octane $\\left(\\mathrm{C}_{8} \\mathrm{H} 18\\right)$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f70",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-16T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (16 Oct Shift 2)",
+            "title": "MHT CET 2020 (16 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25ec60279619d9d8a172a",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cf071b5bb33b3f9f62",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "MHT CET 2017"
+            }
+          ],
+          "question": {
+            "text": "What is the hybridization of carbon atoms in fullerene?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "cn2sR",
+              "text": "<math><mi>s</mi><msup><mrow><mi>p</mi></mrow><mrow><mn>3</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "H5seT",
+              "text": "<math><mi mathvariant=\"normal\">&nbsp;</mi><mi>s</mi><msup><mrow><mi>p</mi></mrow><mrow><mi>&nbsp;</mi></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZjlGi",
+              "text": "<math><mi>&nbsp;</mi><mi>s</mi><msup><mrow><mi>p</mi></mrow><mrow><mn>2</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "4JKWX",
+              "text": "<math><mi mathvariant=\"normal\">&nbsp;</mi><mi>d</mi><mi>s</mi><msup><mrow><mi>p</mi></mrow><mrow><mn>3</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math><mi>&nbsp;</mi><mi>s</mi><msup><mrow><mi>p</mi></mrow><mrow><mn>2</mn></mrow></msup></math> is the hybridization of carbon atoms in fullerene",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cf071b5bb33b3f9f62",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "MHT CET 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25ea20279619d9d8a1607",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f60",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "MHT CET 2012"
+            }
+          ],
+          "question": {
+            "text": "Which of the following organic compounds could not be dried by anhydrous $\\mathrm{CaCl}_{2}$ ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "KE8TG",
+              "text": "Ethanol",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ZaGUf",
+              "text": "Benzene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "XEYUL",
+              "text": "Chloroform",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "o5llJ",
+              "text": "Ethyl acetate",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Ethanol could not be dried by anhydrous $\\mathrm{CaCl}_{2}$ because it reacts with $\\mathrm{CaCl}_{2}$ as follows\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/N0ScxX8024fSlk40MC9Mpf9N8A2M2L98Jo88lEI2gmA.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f60",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "MHT CET 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "65a2632f0279619d9d8a3cc8",
+      "title": "Silicon and Its Compounds",
+      "totalQuestions": 5,
+      "questions": [
+        {
+          "_id": "6a44d2c78c30a4553e1bdcb9",
+          "type": "singleCorrect",
+          "question": {
+            "text": "Which from the following is NOT polymorphic form of silica ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "X4y67",
+              "label": "A",
+              "text": "Cristobalite",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "lNp4v",
+              "label": "B",
+              "text": "$\\alpha$ - quartz",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "YYEx0",
+              "label": "C",
+              "text": "$\\beta$ - quartz",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "kohNa",
+              "label": "D",
+              "text": "Aragonite",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Silica ($SiO_2$) exists in various polymorphic forms such as quartz ($\\alpha$-quartz and $\\beta$-quartz), cristobalite, and tridymite.<br><br>Aragonite is a naturally occurring crystalline form of calcium carbonate ($CaCO_3$), not silica.<br><br>Therefore, Aragonite is not a polymorphic form of silica.<br><br>Answer: Aragonite",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d2802d2155b816ec4a76",
+              "title": "MHT CET 2026 (17 April Shift 1)",
+              "shortName": "2026 (17 April Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-04-17T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 1,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d2802d2155b816ec4a76",
+            "title": "MHT CET 2026 (17 April Shift 1)",
+            "shortName": "2026 (17 April Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-04-17T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25ec60279619d9d8a172d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cf071b5bb33b3f9f62",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "MHT CET 2017"
+            }
+          ],
+          "question": {
+            "text": "What is the chief constituent of pyrex glass?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "EvAnF",
+              "text": "<math><msub><mrow><mtext>B</mtext></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mtext>O</mtext></mrow><mrow><mn>3</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "NTq3Q",
+              "text": "<math><mtext>S</mtext><mtext>i</mtext><msub><mrow><mtext>O</mtext></mrow><mrow><mn>2</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "9qHYe",
+              "text": "<math><mtext>A</mtext><msub><mrow><mtext>l</mtext></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mtext>O</mtext></mrow><mrow><mn>3</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "kOTy9",
+              "text": "<math> <mrow>  <mtext>N</mtext><msub>   <mtext>a</mtext>   <mn>2</mn>  </msub>  <mtext>O</mtext></mrow></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Pyrex glass is obtained by fusing together 60 to 80% <math><mtext>S</mtext><mtext>i</mtext><msub><mrow><mtext>O</mtext></mrow><mrow><mn>2</mn></mrow></msub><mo>,</mo></math> 10 to 25% <math><msub><mrow><mtext>B</mtext></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mtext>O</mtext></mrow><mrow><mn>3</mn></mrow></msub></math> and remaining amount of <math><mtext>A</mtext><msub><mrow><mtext>l</mtext></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mtext>O</mtext></mrow><mrow><mn>3</mn></mrow></msub></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cf071b5bb33b3f9f62",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "MHT CET 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e8d0279619d9d8a1558",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f5f",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "MHT CET 2011"
+            }
+          ],
+          "question": {
+            "text": "The common basic structural unit in silicates and silica is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "THDnK",
+              "text": "$\\mathrm{Si}_{2} \\mathrm{O}_{6}^{4-}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "sUHyP",
+              "text": "$\\mathrm{SiO}_{3}^{2-}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "TxHna",
+              "text": "$\\mathrm{SiO}_{4}^{4-}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "XwI44",
+              "text": "$\\mathrm{Si}_{2} \\mathrm{O}_{7}^{6-}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Silica $\\left(\\mathrm{SiO}_{2}\\right)$ and silicates contain a common structural unit $\\left(\\mathrm{SiO}_{4}\\right)^{4-}$ in which each Si is surrounded tetrahedrally by four oxygen atoms.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f5f",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "MHT CET 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e430279619d9d8a1308",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078c7071b5bb33b3f9f5b",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2007-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2007",
+              "title": "MHT CET 2007"
+            }
+          ],
+          "question": {
+            "text": "Carborundum is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "s4rvl",
+              "text": "SiC",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "9jEeD",
+              "text": "$\\mathrm{Al}_{2} \\mathrm{O}_{3} \\cdot \\mathrm{H}_{2} \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "i2eGl",
+              "text": "$\\mathrm{Al}_{2}\\left(\\mathrm{SO}_{4}\\right)_{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "xYQ3p",
+              "text": "$\\mathrm{AlCl}_{3}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "When silica is heated with carbon in electric furnace, it is reduced to carborundum or silicon carbide.\n$$\n\\mathrm{SiO}_{2}+3 \\mathrm{C} \\longrightarrow \\mathrm{SiC}+2 \\mathrm{CO}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078c7071b5bb33b3f9f5b",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2007-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2007",
+            "title": "MHT CET 2007"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e430279619d9d8a1304",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078c7071b5bb33b3f9f5b",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2007-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2007",
+              "title": "MHT CET 2007"
+            }
+          ],
+          "question": {
+            "text": "Monosilane on coming in contact with air burns with a luminous flame producing vortex rings. These rings are of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "kmBdg",
+              "text": "$\\mathrm{SiO}_{2}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ehxPs",
+              "text": "SiO",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ICeZI",
+              "text": "Si",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "cHovq",
+              "text": "$\\mathrm{H}_{2} \\mathrm{SiO}_{3}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Monosilane $\\left(e g, S i H_{4}\\right)$ on coming in contact with air burns with a luminous flame producing vortex ring. These rings are of silica.\n$$\n\\mathrm{SiH}_{4}+3 \\mathrm{O}_{2} \\longrightarrow \\mathrm{SiO}_{2}+2 \\mathrm{H}_{2} \\mathrm{O}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078c7071b5bb33b3f9f5b",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2007-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2007",
+            "title": "MHT CET 2007"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "65a2632f0279619d9d8a3cca",
+      "title": "Tin and Lead Containing Compounds",
+      "totalQuestions": 5,
+      "questions": [
+        {
+          "_id": "6a44d3298c30a4553e1be0d4",
+          "type": "singleCorrect",
+          "question": {
+            "text": "What is the formula of Tin (IV) oxide?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ddYtB",
+              "label": "A",
+              "text": "$\\text{Sn}_2\\text{O}_3$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "8AkW3",
+              "label": "B",
+              "text": "$\\text{SnO}_2$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "7FSlY",
+              "label": "C",
+              "text": "$\\text{SnO}_4$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "YMgi8",
+              "label": "D",
+              "text": "$\\text{SnO}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The oxidation state of Tin (Sn) in Tin (IV) oxide is $+4$.<br><br>The oxidation state of Oxygen (O) in an oxide ion is $-2$.<br><br>To form a neutral compound, the total positive charge must balance the total negative charge. Two oxide ions are required to balance one Tin (IV) ion.<br><br>Using the criss-cross method, the formula is initially $\\text{Sn}_2\\text{O}_4$, which simplifies to the empirical formula $\\text{SnO}_2$.<br><br>Answer: $\\text{SnO}_2$",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d2802d2155b816ec4a78",
+              "title": "MHT CET 2026 (18 April Shift 1)",
+              "shortName": "2026 (18 April Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-04-18T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 1,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d2802d2155b816ec4a78",
+            "title": "MHT CET 2026 (18 April Shift 1)",
+            "shortName": "2026 (18 April Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-04-18T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6792139c0aee93fa0796da1f",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665cca",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-09T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (09 May Shift 1)",
+              "title": "MHT CET 2024 (09 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Which from following compounds is most covalent?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "KdiMs",
+              "text": "$\\quad \\mathrm{SbCl}_3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "7zUeb",
+              "text": "$\\mathrm{PbCl}_2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wxYJA",
+              "text": "$\\mathrm{SnCl}_4$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "QbUNH",
+              "text": "$\\mathrm{SnCl}_2$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "According to Fajan's rules, the covalent character of a compound increases with an increase in the charge on the cation and a decrease in the size of the cation.<br><br>The oxidation states of the central metal ions in the given compounds are:<br>$\\mathrm{SbCl}_3$: $\\mathrm{Sb}^{3+}$<br>$\\mathrm{PbCl}_2$: $\\mathrm{Pb}^{2+}$<br>$\\mathrm{SnCl}_4$: $\\mathrm{Sn}^{4+}$<br>$\\mathrm{SnCl}_2$: $\\mathrm{Sn}^{2+}$<br><br>Among these, $\\mathrm{Sn}^{4+}$ has the highest positive charge ($+4$) and the smallest size. Therefore, it has the highest polarizing power, making $\\mathrm{SnCl}_4$ the most covalent compound among the given options.<br><br>Answer: $\\mathrm{SnCl}_4$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665cca",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-09T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (09 May Shift 1)",
+            "title": "MHT CET 2024 (09 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a262340279619d9d8a329f",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b1",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-12T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (12 May Shift 2)",
+              "title": "MHT CET 2023 (12 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Which from following formulae is of galena?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "81We1",
+              "text": "$\\mathrm{CaSO}_4 \\cdot 2 \\mathrm{H}_2 \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "sY0yu",
+              "text": "$\\mathrm{PbS}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "G1FhZ",
+              "text": "$\\mathrm{ZnS}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "7YElk",
+              "text": "$\\mathrm{BaSO}_4$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Std.12 | Ch-7 | Subtopic-7.2",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b1",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-12T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (12 May Shift 2)",
+            "title": "MHT CET 2023 (12 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25efe0279619d9d8a18ed",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d0071b5bb33b3f9f64",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019 (Shift 1)",
+              "title": "MHT CET 2019 (Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following metal halide is more covalent?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "IPmhY",
+              "text": "<math><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>2</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Pycsw",
+              "text": "<math><mi mathvariant=\"normal\">P</mi><mi mathvariant=\"normal\">b</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>2</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "aB1X5",
+              "text": "<math><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">b</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>3</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Jkqwy",
+              "text": "<math><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">b</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>5</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<strong>Key Idea</strong> Fajan’s rules help in predicting the covalent character in bond. <br/><math><mi>S</mi><mi>b</mi><mi>C</mi><msub><mrow><mi>l</mi></mrow><mrow><mn>5</mn></mrow></msub></math> metal halide is more covalent than other given options. It can be explained on the basis of Fajan’s rule. Higher the charge on the cation, greater is its polarising power. In <math><mi>S</mi><mi>b</mi><mi>C</mi><msub><mrow><mi>l</mi></mrow><mrow><mn>5</mn></mrow></msub><mo>,</mo></math> Antimony (Sb) is in + 5 oxidation state. It has maximum polarising power. Hence, possess higher covalent character.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d0071b5bb33b3f9f64",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019 (Shift 1)",
+            "title": "MHT CET 2019 (Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25ea20279619d9d8a160b",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f60",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "MHT CET 2012"
+            }
+          ],
+          "question": {
+            "text": "A solution contains $\\mathrm{Cl}^{-}, \\mathrm{I}^{-}$ and $\\mathrm{SO}_{4}^{3-}$ ions in it. Which of the following ion is capable to precipitate all of the above when added in this solution?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ZgVrH",
+              "text": "$\\mathrm{Pb}^{2+}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nuEtW",
+              "text": "$\\mathrm{Ba}^{2+}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "qedE2",
+              "text": "$\\mathrm{Hg}^{2+}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "miBXc",
+              "text": "$\\mathrm{Cu}^{2+}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{Ba}^{2+}$ ion is capable to precipitate $-\\mathrm{Cl},-\\mathrm{I}$ and $-\\mathrm{SO}_{4}^{2-}$ ions.\n$\\mathrm{Ba}^{2+}+2 \\mathrm{Cl}^{-} \\longrightarrow \\mathrm{BaCl}_{2} \\downarrow$\n$\\mathrm{Ba}^{2+}+2 \\mathrm{I}^{-} \\longrightarrow \\mathrm{BaI}_{2} \\downarrow$\n$\\mathrm{Ba}^{2+}+\\mathrm{SO}_{4}^{2-} \\longrightarrow \\mathrm{BaSO}_{4} \\downarrow$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f60",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "MHT CET 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

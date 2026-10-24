@@ -1,0 +1,2060 @@
+{
+  "index": 25,
+  "chapterId": "61c089ae661bee9c1333b0ed",
+  "chapter": "Determinants",
+  "exam": "MHT CET",
+  "subject": "Mathematics",
+  "totalTopics": 5,
+  "totalQuestions": 30,
+  "downloadTime": "2026-10-08 20:43:35",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "65a263400279619d9d8a3d77",
+      "title": "Expansion of Determinants",
+      "totalQuestions": 15,
+      "questions": [
+        {
+          "_id": "6abb888915a9fc0fc8c144a0",
+          "type": "singleCorrect",
+          "question": {
+            "text": "If $f(x) = \\begin{vmatrix} \\sin x + \\sin 2x + \\sin 3x & \\sin 2x & \\sin 3x \\\\ 3 + 4\\sin x & 3 & 4\\sin x \\\\ 1 + \\sin x & \\sin x & 1 \\end{vmatrix}$, then $\\displaystyle\\int_{0}^{\\frac{\\pi}{2}} f(x)\\,dx =$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "IobZ9",
+              "label": "A",
+              "text": "$1$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "HXk3A",
+              "label": "B",
+              "text": "$\\dfrac{1}{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "PKGLV",
+              "label": "C",
+              "text": "$\\dfrac{1}{3}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "hrqXl",
+              "label": "D",
+              "text": "$\\dfrac{1}{4}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Applying the column operation $C_1 \\rightarrow C_1 - C_2 - C_3$, we get:<br><br>$f(x) = \\begin{vmatrix} \\sin x & \\sin 2x & \\sin 3x \\\\ 0 & 3 & 4\\sin x \\\\ 0 & \\sin x & 1 \\end{vmatrix}$<br><br>Expanding the determinant along the first column:<br><br>$f(x) = \\sin x (3 \\times 1 - 4\\sin x \\times \\sin x)$<br><br>$f(x) = \\sin x (3 - 4\\sin^2 x)$<br><br>$f(x) = 3\\sin x - 4\\sin^3 x = \\sin 3x$<br><br>Now, evaluating the integral:<br><br>$\\displaystyle\\int_{0}^{\\dfrac{\\pi}{2}} f(x)\\,dx = \\displaystyle\\int_{0}^{\\dfrac{\\pi}{2}} \\sin 3x \\,dx$<br><br>$= \\left[ -\\dfrac{\\cos 3x}{3} \\right]_{0}^{\\dfrac{\\pi}{2}}$<br><br>$= -\\dfrac{1}{3} \\left( \\cos\\left(\\dfrac{3\\pi}{2}\\right) - \\cos(0) \\right)$<br><br>$= -\\dfrac{1}{3} (0 - 1) = \\dfrac{1}{3}$<br><br>Answer: $\\dfrac{1}{3}$",
+            "image": null
+          },
+          "level": 2,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87ef2fe711bb1be99969",
+              "title": "MHT CET 2026 (14 May Shift 1)",
+              "shortName": "2026 (14 May Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-05-14T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87ef2fe711bb1be99969",
+            "title": "MHT CET 2026 (14 May Shift 1)",
+            "shortName": "2026 (14 May Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-05-14T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6a44d2ae8c30a4553e1bdba7",
+          "type": "singleCorrect",
+          "question": {
+            "text": "Let $A = \\begin{bmatrix} 3 & 1 & 2 \\\\ 1 & 2 & 0 \\\\ 1 & 1 & 4 \\end{bmatrix}$ and $pC_{11} + 4C_{21} - 5C_{32} = -2$, where $C_{ij}$ denotes the cofactor of an element $a_{ij}$ of matrix $A$, then the value of $p$ is :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ZwEIm",
+              "label": "A",
+              "text": "$-2$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "rI865",
+              "label": "B",
+              "text": "$2$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "HDVmE",
+              "label": "C",
+              "text": "$4$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "LPW58",
+              "label": "D",
+              "text": "$3$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given matrix $A = \\begin{bmatrix} 3 & 1 & 2 \\\\ 1 & 2 & 0 \\\\ 1 & 1 & 4 \\end{bmatrix}$<br><br>The cofactor $C_{ij}$ is given by $(-1)^{i+j} M_{ij}$, where $M_{ij}$ is the minor of the element $a_{ij}$.<br><br>Calculating the required cofactors:<br><br>$C_{11} = (-1)^{1+1} \\begin{vmatrix} 2 & 0 \\\\ 1 & 4 \\end{vmatrix} = 1 \\times (8 - 0) = 8$<br><br>$C_{21} = (-1)^{2+1} \\begin{vmatrix} 1 & 2 \\\\ 1 & 4 \\end{vmatrix} = -1 \\times (4 - 2) = -2$<br><br>$C_{32} = (-1)^{3+2} \\begin{vmatrix} 3 & 2 \\\\ 1 & 0 \\end{vmatrix} = -1 \\times (0 - 2) = 2$<br><br>Substituting these values into the given equation $pC_{11} + 4C_{21} - 5C_{32} = -2$:<br><br>$p(8) + 4(-2) - 5(2) = -2$<br><br>$8p - 8 - 10 = -2$<br><br>$8p - 18 = -2$<br><br>$8p = 16$<br><br>$p = 2$<br><br>Answer: $2$",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d2802d2155b816ec4a7d",
+              "title": "MHT CET 2026 (20 April Shift 2)",
+              "shortName": "2026 (20 April Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-04-20T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 1,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d2802d2155b816ec4a7d",
+            "title": "MHT CET 2026 (20 April Shift 2)",
+            "shortName": "2026 (20 April Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-04-20T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b82bf9280d7f99329e7",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376df9b67616acec78f75",
+              "heldOn": "2025-04-22T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (22 Apr Shift 2)",
+              "title": "MHT CET 2025 (22 Apr Shift 2)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "The lines $x+2 a y+a=0, x+3 b y+b=0, x+4 c y+c=0$ are concurrent then $a, \\mathrm{~b}, \\mathrm{c}$ are in",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "oLDyH",
+              "text": "Harmonic progression",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "cOmxG",
+              "text": "Geometric progression",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8nzFa",
+              "text": "Arithmetic progression",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "OZl5I",
+              "text": "Arithmetico geometric progression",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The condition for the given three lines to be concurrent is that the determinant of their coefficients must be zero.<br><br>$\\begin{vmatrix} 1 & 2a & a \\\\ 1 & 3b & b \\\\ 1 & 4c & c \\end{vmatrix} = 0$<br><br>Expanding the determinant along the first column:<br><br>$1(3bc - 4bc) - 1(2ac - 4ac) + 1(2ab - 3ab) = 0$<br><br>$-bc - (-2ac) + (-ab) = 0$<br><br>$2ac - bc - ab = 0$<br><br>$2ac = ab + bc$<br><br>Dividing the entire equation by $abc$:<br><br>$\\dfrac{2ac}{abc} = \\dfrac{ab}{abc} + \\dfrac{bc}{abc}$<br><br>$\\dfrac{2}{b} = \\dfrac{1}{c} + \\dfrac{1}{a}$<br><br>This implies that $\\dfrac{1}{a}, \\dfrac{1}{b}, \\dfrac{1}{c}$ are in Arithmetic Progression.<br><br>Therefore, $a, b, c$ are in Harmonic Progression.<br><br>Answer: Harmonic progression",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376df9b67616acec78f75",
+            "heldOn": "2025-04-22T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (22 Apr Shift 2)",
+            "title": "MHT CET 2025 (22 Apr Shift 2)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b09bf9280d7f99325d2",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376de9b67616acec78f6e",
+              "heldOn": "2025-04-19T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (19 Apr Shift 1)",
+              "title": "MHT CET 2025 (19 Apr Shift 1)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "If $A=\\left[\\begin{array}{ccc}\\cos \\theta & \\sin \\theta & 0 \\\\ -\\sin \\theta & \\cos \\theta & 0 \\\\ 0 & 0 & 1\\end{array}\\right]$,\nwhere $A_{21}, A_{22}, A_{23}$ are cofactors of $a_{21}, a_{22}, a_{23}$ respectively, then the value of $a_{21} A_{21}+a_{22} A_{22}+a_{23} A_{23}=$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "znFgs",
+              "text": "$1$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "p8khK",
+              "text": "$-1$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "sksXw",
+              "text": "$0$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lNaDy",
+              "text": "$2$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The sum of the products of the elements of any row with their corresponding cofactors is equal to the determinant of the matrix.<br><br>Therefore, $a_{21} A_{21} + a_{22} A_{22} + a_{23} A_{23} = |A|$<br><br>Calculating the determinant of $A$:<br><br>$|A| = \\cos \\theta (\\cos \\theta \\cdot 1 - 0) - \\sin \\theta (-\\sin \\theta \\cdot 1 - 0) + 0$<br><br>$|A| = \\cos^2 \\theta + \\sin^2 \\theta = 1$<br><br>Thus, $a_{21} A_{21} + a_{22} A_{22} + a_{23} A_{23} = 1$<br><br>Answer: $1$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376de9b67616acec78f6e",
+            "heldOn": "2025-04-19T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (19 Apr Shift 1)",
+            "title": "MHT CET 2025 (19 Apr Shift 1)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b04bf9280d7f99325a4",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376de9b67616acec78f6e",
+              "heldOn": "2025-04-19T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (19 Apr Shift 1)",
+              "title": "MHT CET 2025 (19 Apr Shift 1)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "If \\([2 \\overline{\\mathrm{p}}-3 \\overline{\\mathrm{r}} ~\\overline{\\mathrm{q}} ~\\overline{\\mathrm{s}}]+[3 \\overline{\\mathrm{p}}+2 \\overline{\\mathrm{q}} ~\\overline{\\mathrm{r}} ~\\overline{\\mathrm{s}}]=\\mathrm{m}[\\overline{\\mathrm{p}} ~\\overline{\\mathrm{r}} ~\\overline{\\mathrm{s}}]+\\mathrm{n}[\\overline{\\mathrm{q}} ~\\overline{\\mathrm{r}} ~\\overline{\\mathrm{s}}]+\\mathrm{t}[\\overline{\\mathrm{p}} ~\\overline{\\mathrm{q}} ~\\overline{\\mathrm{s}}]\\),, then the values of $m, n, t$ respectively are ....",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "OtNuB",
+              "text": "$2,3,3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "HBNK0",
+              "text": "$3,4,5$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "PHU2u",
+              "text": "$1,2,3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "30Igt",
+              "text": "$3,5,2$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Using the properties of scalar triple product:<br><br>$[2\\bar{p} - 3\\bar{r} \\quad \\bar{q} \\quad \\bar{s}] = [2\\bar{p} \\quad \\bar{q} \\quad \\bar{s}] - [3\\bar{r} \\quad \\bar{q} \\quad \\bar{s}]$<br><br>$= 2[\\bar{p} \\quad \\bar{q} \\quad \\bar{s}] - 3[\\bar{r} \\quad \\bar{q} \\quad \\bar{s}]$<br><br>Since $[\\bar{r} \\quad \\bar{q} \\quad \\bar{s}] = -[\\bar{q} \\quad \\bar{r} \\quad \\bar{s}]$, we get:<br><br>$[2\\bar{p} - 3\\bar{r} \\quad \\bar{q} \\quad \\bar{s}] = 2[\\bar{p} \\quad \\bar{q} \\quad \\bar{s}] + 3[\\bar{q} \\quad \\bar{r} \\quad \\bar{s}]$<br><br>Similarly, for the second term:<br><br>$[3\\bar{p} + 2\\bar{q} \\quad \\bar{r} \\quad \\bar{s}] = [3\\bar{p} \\quad \\bar{r} \\quad \\bar{s}] + [2\\bar{q} \\quad \\bar{r} \\quad \\bar{s}]$<br><br>$= 3[\\bar{p} \\quad \\bar{r} \\quad \\bar{s}] + 2[\\bar{q} \\quad \\bar{r} \\quad \\bar{s}]$<br><br>Adding the two expressions:<br><br>$[2\\bar{p} - 3\\bar{r} \\quad \\bar{q} \\quad \\bar{s}] + [3\\bar{p} + 2\\bar{q} \\quad \\bar{r} \\quad \\bar{s}] = 2[\\bar{p} \\quad \\bar{q} \\quad \\bar{s}] + 3[\\bar{q} \\quad \\bar{r} \\quad \\bar{s}] + 3[\\bar{p} \\quad \\bar{r} \\quad \\bar{s}] + 2[\\bar{q} \\quad \\bar{r} \\quad \\bar{s}]$<br><br>$= 3[\\bar{p} \\quad \\bar{r} \\quad \\bar{s}] + 5[\\bar{q} \\quad \\bar{r} \\quad \\bar{s}] + 2[\\bar{p} \\quad \\bar{q} \\quad \\bar{s}]$<br><br>Comparing this with $m[\\bar{p} \\quad \\bar{r} \\quad \\bar{s}] + n[\\bar{q} \\quad \\bar{r} \\quad \\bar{s}] + t[\\bar{p} \\quad \\bar{q} \\quad \\bar{s}]$, we get:<br><br>$m = 3$, $n = 5$, $t = 2$<br><br>Answer: $3,5,2$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376de9b67616acec78f6e",
+            "heldOn": "2025-04-19T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (19 Apr Shift 1)",
+            "title": "MHT CET 2025 (19 Apr Shift 1)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679213db0aee93fa0796dc0e",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665cc4",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-10T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (10 May Shift 2)",
+              "title": "MHT CET 2024 (10 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "If $w=\\dfrac{-1-i \\sqrt{3}}{2}$ where $i=\\sqrt{-1}$, then the value of $\\left|\\begin{array}{ccc}1 & w & w^2 \\\\ w & w^2 & 1 \\\\ w^2 & 1 & w\\end{array}\\right|$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "QS4U5",
+              "text": "-1",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "n7sIr",
+              "text": "0",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "u8EvD",
+              "text": "1",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lQPF5",
+              "text": "3",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given $w = \\dfrac{-1 - i\\sqrt{3}}{2}$, which is a complex cube root of unity.<br><br>Therefore, $w^3 = 1$ and $1 + w + w^2 = 0$.<br><br>The given determinant is $\\Delta = \\left|\\begin{array}{ccc}1 & w & w^2 \\\\ w & w^2 & 1 \\\\ w^2 & 1 & w\\end{array}\\right|$.<br><br>Applying the column operation $C_1 \\rightarrow C_1 + C_2 + C_3$, we get:<br><br>$\\Delta = \\left|\\begin{array}{ccc}1 + w + w^2 & w & w^2 \\\\ 1 + w + w^2 & w^2 & 1 \\\\ 1 + w + w^2 & 1 & w\\end{array}\\right|$<br><br>Substituting $1 + w + w^2 = 0$:<br><br>$\\Delta = \\left|\\begin{array}{ccc}0 & w & w^2 \\\\ 0 & w^2 & 1 \\\\ 0 & 1 & w\\end{array}\\right|$<br><br>Since all elements of the first column are zero, the value of the determinant is $0$.<br><br>Answer: 0",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665cc4",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-10T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (10 May Shift 2)",
+            "title": "MHT CET 2024 (10 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679213b30aee93fa0796dadb",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665ccb",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-09T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (09 May Shift 2)",
+              "title": "MHT CET 2024 (09 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "For the matrix $\\mathrm{A}=\\left[\\begin{array}{ccc}2 & 0 & -1 \\\\ 3 & 1 & 2 \\\\ -1 & 1 & 2\\end{array}\\right]$, the matrix of cofactors is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ck7gA",
+              "text": "$\\left[\\begin{array}{ccc}0 & 8 & -4 \\\\ -1 & 3 & 2 \\\\ 1 & -7 & 2\\end{array}\\right]$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "X382W",
+              "text": "$\\left[\\begin{array}{ccc}0 & -8 & 4 \\\\ -1 & 3 & -2 \\\\ 1 & -7 & 2\\end{array}\\right]$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "NWykD",
+              "text": "$\\left[\\begin{array}{ccc}0 & 8 & -4 \\\\ 1 & -3 & 2 \\\\ -1 & 7 & -2\\end{array}\\right]$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "7wowf",
+              "text": "$\\left[\\begin{array}{ccc}0 & -8 & 4 \\\\ -1 & 3 & 2 \\\\ -1 & -7 & 2\\end{array}\\right]$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $C_{ij}$ be the cofactor of the element $a_{ij}$ in the given matrix $A$.<br><br>$C_{11} = (-1)^{1+1} \\begin{vmatrix} 1 & 2 \\\\ 1 & 2 \\end{vmatrix} = 2 - 2 = 0$<br><br>$C_{12} = (-1)^{1+2} \\begin{vmatrix} 3 & 2 \\\\ -1 & 2 \\end{vmatrix} = -(6 - (-2)) = -8$<br><br>$C_{13} = (-1)^{1+3} \\begin{vmatrix} 3 & 1 \\\\ -1 & 1 \\end{vmatrix} = 3 - (-1) = 4$<br><br>$C_{21} = (-1)^{2+1} \\begin{vmatrix} 0 & -1 \\\\ 1 & 2 \\end{vmatrix} = -(0 - (-1)) = -1$<br><br>$C_{22} = (-1)^{2+2} \\begin{vmatrix} 2 & -1 \\\\ -1 & 2 \\end{vmatrix} = 4 - 1 = 3$<br><br>$C_{23} = (-1)^{2+3} \\begin{vmatrix} 2 & 0 \\\\ -1 & 1 \\end{vmatrix} = -(2 - 0) = -2$<br><br>$C_{31} = (-1)^{3+1} \\begin{vmatrix} 0 & -1 \\\\ 1 & 2 \\end{vmatrix} = 0 - (-1) = 1$<br><br>$C_{32} = (-1)^{3+2} \\begin{vmatrix} 2 & -1 \\\\ 3 & 2 \\end{vmatrix} = -(4 - (-3)) = -7$<br><br>$C_{33} = (-1)^{3+3} \\begin{vmatrix} 2 & 0 \\\\ 3 & 1 \\end{vmatrix} = 2 - 0 = 2$<br><br>The matrix of cofactors is $\\left[\\begin{array}{ccc}0 & -8 & 4 \\\\ -1 & 3 & -2 \\\\ 1 & -7 & 2\\end{array}\\right]$.<br><br>Answer: $\\left[\\begin{array}{ccc}0 & -8 & 4 \\\\ -1 & 3 & -2 \\\\ 1 & -7 & 2\\end{array}\\right]$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665ccb",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-09T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (09 May Shift 2)",
+            "title": "MHT CET 2024 (09 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a261ca0279619d9d8a2f5e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892ab",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-09T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (09 May Shift 2)",
+              "title": "MHT CET 2023 (09 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "If $\\left|\\begin{array}{ccc}\\cos (A+B) & -\\sin (A+B) & \\cos (2 B) \\\\ \\sin A & \\cos A & \\sin B \\\\ -\\cos A & \\sin A & \\cos B\\end{array}\\right|=0$, then the value of $\\mathrm{B}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "68ua6",
+              "text": "$\\mathrm{n} \\pi, \\mathrm{n} \\in \\mathbb{Z}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "KFwDn",
+              "text": "$(2 \\mathrm{n}+1) \\frac{\\pi}{2}, \\mathrm{n} \\in \\mathrm{Z}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "YegxT",
+              "text": "$(2 n+1) \\frac{\\pi}{4}, n \\in \\mathbb{Z}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pWEoJ",
+              "text": "$2 \\mathrm{n} \\frac{\\pi}{3}, \\mathrm{n} \\in \\mathbb{Z}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\begin{aligned} & \\left|\\begin{array}{ccc}\\cos (A+B) & -\\sin (A+B) & \\cos (2 B) \\\\ \\sin A & \\cos A & \\sin B \\\\ -\\cos A & \\sin A & \\cos B\\end{array}\\right|=0 \\\\ & \\therefore \\quad \\cos (\\mathrm{A}+\\mathrm{B})[(\\cos \\mathrm{A} \\cos \\mathrm{B}-\\sin \\mathrm{A} \\sin \\mathrm{B})] \\\\ & +\\sin (A+B)[\\sin A \\cos B+\\sin B \\cos A] \\\\ & +\\cos 2 \\mathrm{~B}\\left[\\sin ^2 \\mathrm{~A}+\\cos ^2 \\mathrm{~A}\\right]=0 \\\\ & \\therefore \\quad \\cos (\\mathrm{A}+\\mathrm{B}) \\cdot \\cos (\\mathrm{A}+\\mathrm{B}) \\\\ & +\\sin (A+B) \\cdot \\sin (A+B)+\\cos 2 B=0 \\\\ & \\cos ^2(A+B)+\\sin ^2(A+B)+\\cos 2 B=0 \\\\ & 1+\\cos 2 B=0 \\\\ & 2 \\cos ^2 \\mathrm{~B}=0 \\\\ & \\therefore \\quad \\cos \\mathrm{B}=0 \\\\ & \\therefore \\quad B=(2 n+1) \\frac{\\pi}{2} \\text { for }(n \\in Z) \\\\ & \\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892ab",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-09T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (09 May Shift 2)",
+            "title": "MHT CET 2023 (09 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a2618e0279619d9d8a2d83",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892a8",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2022-08-10T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022 (10 Aug Shift 2)",
+              "title": "MHT CET 2022 (10 Aug Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "If $A=\\left[a_{i j}\\right]_{3 \\times 3}=\\left[\\begin{array}{ccc}1 & 3 & 3 \\\\ -1 & 2 & 2 \\\\ 1 & 1 & 4\\end{array}\\right]$ and $A_{i j}$ is a cofactor of $a_{i j}$ then the value of $a_{31} A_{31}+a_{32} A_{32}+a_{33} A_{33}$ is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "2K7e0",
+              "text": "5",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GiFIN",
+              "text": "15",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "XFD2I",
+              "text": "20",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "deyJp",
+              "text": "0",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\begin{aligned} & a_{31} A_{31}+a_{32} A_{32}+a_{33} A_{33}=|A| \\\\ & =1 \\times(8-2)-3(-4-2)+3(-1-2)=6+18-9=15\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892a8",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2022-08-10T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022 (10 Aug Shift 2)",
+            "title": "MHT CET 2022 (10 Aug Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a2616b0279619d9d8a2c69",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892a6",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2022-08-08T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022 (08 Aug Shift 2)",
+              "title": "MHT CET 2022 (08 Aug Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "If $A=\\left[a_{i j}\\right]_{3 \\times 3}=\\left[\\begin{array}{lll}3 & 2 & 4 \\\\ 1 & 4 & 1 \\\\ 2 & 6 & 3\\end{array}\\right]$ and $A_{i j}$ is a cofactor of $a_{i j}$, then the value of $a_{21} A_{21}+a_{22} A_{22}+a_{23} A_{23}$ is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "gUKnD",
+              "text": "18",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vEg1X",
+              "text": "8",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "VweeE",
+              "text": "-8",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Qmrqq",
+              "text": "0",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$a_{21} A_{21}, a_{22} A_{22}+a_{23} A_{23}=|A|=3 \\times(12-6)-2(3-2)+4(6-8)=8$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892a6",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2022-08-08T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022 (08 Aug Shift 2)",
+            "title": "MHT CET 2022 (08 Aug Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260e70279619d9d8a283a",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b87f20917a5f418929f",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2022-08-05T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022 (05 Aug Shift 1)",
+              "title": "MHT CET 2022 (05 Aug Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "If $\\mathrm{A}=\\left[\\mathrm{a}_{\\mathrm{ij}}\\right]_{3 \\times 3}=\\left[\\begin{array}{lll}1 & 2 & 3 \\\\ 1 & 1 & 5 \\\\ 2 & 4 & 7\\end{array}\\right]$ and $\\mathrm{Aij}$ is a cofactor of $\\mathrm{a}_{\\mathrm{ij}}$, then $a_{11} A_{21}+a_{12} A_{22}+a_{13} A_{23}$ is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "sMSKJ",
+              "text": "$-1$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "jVt43",
+              "text": "$2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3HA3W",
+              "text": "$0$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "fQNXy",
+              "text": "$1$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "If we multiply elements of one row to the corresponding cofactors of another row and add them then we get zero hence,\n$a_{11} A_{21}+a_{12} A_{22}+a_{13} A_{23}=0$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b87f20917a5f418929f",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2022-08-05T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022 (05 Aug Shift 1)",
+            "title": "MHT CET 2022 (05 Aug Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260c70279619d9d8a273d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b87f20917a5f418929d",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2021-09-24T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021 (24 Sep Shift 1)",
+              "title": "MHT CET 2021 (24 Sep Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "If $A=\\left[\\begin{array}{ccc}5 & 6 & 3 \\\\ -4 & 3 & 2 \\\\ -4 & -7 & 3\\end{array}\\right]$, then cofactors of all elements of second row are respectively.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "M3lto",
+              "text": "$-39,3,11$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "U4A0r",
+              "text": "$-39,27,11$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "vX5NW",
+              "text": "$39,-3-11$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "jqIID",
+              "text": "$-39,-27,11$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$$\nA=\\left[\\begin{array}{ccc}\n5 & 6 & 3 \\\\\n-4 & 3 & 2 \\\\\n-4 & -7 & 3\n\\end{array}\\right]\n$$\nCofactors of elements in second row are\nCofactor of -4\nCofactor of 3\n$$\n\\begin{aligned}\n& =(-1)^{2+1}\\left|\\begin{array}{cc}\n6 & 3 \\\\\n-7 & 3\n\\end{array}\\right|=-(18+21)=-39 \\\\\n& =(-1)^{2+2}\\left|\\begin{array}{cc}\n5 & 3 \\\\\n-4 & 3\n\\end{array}\\right|=15+12=27 \\\\\n& =(-1)^{2+3}\\left|\\begin{array}{cc}\n5 & 6 \\\\\n-4 & -7\n\\end{array}\\right|=-(-35+24)=11\n\\end{aligned}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b87f20917a5f418929d",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2021-09-24T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021 (24 Sep Shift 1)",
+            "title": "MHT CET 2021 (24 Sep Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260450279619d9d8a2323",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b87f20917a5f4189296",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2021-09-20T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021 (20 Sep Shift 2)",
+              "title": "MHT CET 2021 (20 Sep Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "The co-factors of the elements of second column of $\\left[\\begin{array}{ccc}1 & -1 & 2 \\\\ 3 & 2 & 1 \\\\ -1 & 3 & 4\\end{array}\\right]$ are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "6jdi1",
+              "text": "$-13,6,5$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "1ttAb",
+              "text": "$13,5,6$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0C7TZ",
+              "text": "$13,-6,-5$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "PaE3c",
+              "text": "$-13,-6,5$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Required cofactors are as follows:\n$$\n\\begin{aligned}\n& \\mathrm{A}_{12}=(-1)^{1+2}\\left|\\begin{array}{cc}\n3 & 1 \\\\\n-1 & 4\n\\end{array}\\right|=-(12+1)=-13 \\\\\n& \\mathrm{~A}_{22}=(-1)^{2+2}\\left|\\begin{array}{cc}\n1 & 2 \\\\\n-1 & 4\n\\end{array}\\right|=(4+2)=6 \\\\\n& \\mathrm{~A}_{32}=(-1)^{3+2}\\left|\\begin{array}{cc}\n1 & 2 \\\\\n3 & 1\n\\end{array}\\right|=-(-1-6)=5\n\\end{aligned}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b87f20917a5f4189296",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2021-09-20T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021 (20 Sep Shift 2)",
+            "title": "MHT CET 2021 (20 Sep Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260330279619d9d8a228f",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b86f20917a5f4189295",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2021-09-20T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021 (20 Sep Shift 1)",
+              "title": "MHT CET 2021 (20 Sep Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "If $A\\left[\\begin{array}{lll}3 & 2 & 4 \\\\ 1 & 2 & 1 \\\\ 3 & 2 & 6\\end{array}\\right]$ and $\\mathrm{A}_{\\mathrm{ij}}$ are cofactors of the elements $\\mathrm{a}_{\\mathrm{ij}}$ of $\\mathrm{A}$, then $a_{11} A_{11}+a_{12} A_{12}+a_{13} A_{13}$ is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "I3vaA",
+              "text": "8",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "dthNh",
+              "text": "6",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8SST5",
+              "text": "4",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "q0lxU",
+              "text": "0",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\begin{aligned} & a_{11} A_{11}+a_{12} A_{12}+a_{13} A_{13}=|A| \\\\ & \\therefore|A|=\\left|\\begin{array}{lll}3 & 2 & 4 \\\\ 1 & 2 & 1 \\\\ 3 & 2 & 6\\end{array}\\right| \\\\ & =3(12-2)-2(6-3)+4(2-6)=30-6-16=8\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b86f20917a5f4189295",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2021-09-20T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021 (20 Sep Shift 1)",
+            "title": "MHT CET 2021 (20 Sep Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f740279619d9d8a1c9c",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6b",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-14T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (14 Oct Shift 1)",
+              "title": "MHT CET 2020 (14 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "If $A=\\left[\\begin{array}{ccc}1 & 0 & 2 \\\\ 2 & 1 & 3 \\\\ 0 & 3 & -5\\end{array}\\right]$, where $A_{\\text {ij }}$ is the cofactor of the element $a_{\\text {ij }}$ of matrix $A$, then\n$a_{21} A_{21}+a_{22} A_{22}+a_{23} A_{23}=$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "RMOV9",
+              "text": "$-26$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "TGJcH",
+              "text": "0",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "7jfU4",
+              "text": "$-2$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ap809",
+              "text": "26",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\begin{aligned} a_{21} & A_{21}+a_{22} A_{22}+a_{23} A_{23} \\\\ &=-2(0-6)+1(-5-0)-3(3-0) \\\\ &=12-5-9=-2 \\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6b",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-14T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (14 Oct Shift 1)",
+            "title": "MHT CET 2020 (14 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "65a2633f0279619d9d8a3d76",
+      "title": "Multiplication of Determinants",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "65a25f020279619d9d8a1909",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d0071b5bb33b3f9f64",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019 (Shift 1)",
+              "title": "MHT CET 2019 (Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "If A and B are square matrices of order 3 such that <math><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>A</mi></mrow></mfenced><mo>=</mo><mn>2</mn><mo>,</mo><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>B</mi></mrow></mfenced><mo>=</mo><mn>4</mn><mo>,</mo></math> then <math><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>A</mi><mfenced separators=\"|\"><mrow><mi>a</mi><mi>d</mi><mi>j</mi><mtext> </mtext><mi>B</mi></mrow></mfenced></mrow></mfenced><mo>=</mo></math> …",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "HB62K",
+              "text": "16",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "e4Jw9",
+              "text": "8",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "rI7Yh",
+              "text": "64",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2j3Di",
+              "text": "32",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We have, A and B are square matrices of order 3 such that <br/><math><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>A</mi></mrow></mfenced><mo>=</mo><mn>2</mn><mo>,</mo><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>B</mi></mrow></mfenced><mo>=</mo><mn>4</mn></math>  <br/>Now, <math><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>A</mi><mfenced separators=\"|\"><mrow><mi>a</mi><mi>d</mi><mi>j</mi></mrow></mfenced><mi>B</mi></mrow></mfenced><mo>=</mo><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>A</mi></mrow></mfenced><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>a</mi><mi>d</mi><mi>j</mi><mtext> </mtext><mi>B</mi></mrow></mfenced><mtext>           </mtext><mfenced separators=\"|\"><mrow><mo>∵</mo><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>A</mi><mi>B</mi></mrow></mfenced><mo>=</mo><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>A</mi></mrow></mfenced><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>B</mi></mrow></mfenced></mrow></mfenced></math>  <br/><math><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>A</mi></mrow></mfenced><msup><mrow><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>B</mi></mrow></mfenced></mrow><mrow><mn>3</mn><mo>-</mo><mn>1</mn></mrow></msup></math>  <br/><math><mo>=</mo><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>A</mi></mrow></mfenced><msup><mrow><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>B</mi></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mfenced separators=\"|\"><mrow><mn>2</mn></mrow></mfenced><msup><mrow><mfenced separators=\"|\"><mrow><mn>4</mn></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>32</mn></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d0071b5bb33b3f9f64",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019 (Shift 1)",
+            "title": "MHT CET 2019 (Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "65a2633f0279619d9d8a3d74",
+      "title": "System of Linear Equations",
+      "totalQuestions": 12,
+      "questions": [
+        {
+          "_id": "6abb885815a9fc0fc8c142cf",
+          "type": "singleCorrect",
+          "question": {
+            "text": "If the planes $ax = y + z$, $by = z + x$, $cz = x + y$ pass through a common line, then the value of $(a + b + c - abc) = \\cdots$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "CYGYK",
+              "label": "A",
+              "text": "$-2$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "6L3p2",
+              "label": "B",
+              "text": "$-1$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "1hYnt",
+              "label": "C",
+              "text": "$1$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "zxQts",
+              "label": "D",
+              "text": "$2$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The given equations of the planes can be rewritten as:<br><br>$ax - y - z = 0$<br>$-x + by - z = 0$<br>$-x - y + cz = 0$<br><br>Since the planes pass through a common line, the system of homogeneous equations has infinitely many solutions. Thus, the determinant of the coefficient matrix must be zero.<br><br>$\\Delta = \\begin{vmatrix} a & -1 & -1 \\\\ -1 & b & -1 \\\\ -1 & -1 & c \\end{vmatrix} = 0$<br><br>Expanding the determinant along the first row:<br><br>$a(bc - 1) - (-1)(-c - 1) + (-1)(1 + b) = 0$<br><br>$abc - a - c - 1 - 1 - b = 0$<br><br>$abc - a - b - c - 2 = 0$<br><br>$a + b + c - abc = -2$<br><br>Answer: $-2$",
+            "image": null
+          },
+          "level": 2,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87f02fe711bb1be9996c",
+              "title": "MHT CET 2026 (15 May Shift 2)",
+              "shortName": "2026 (15 May Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-05-15T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87f02fe711bb1be9996c",
+            "title": "MHT CET 2026 (15 May Shift 2)",
+            "shortName": "2026 (15 May Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-05-15T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6abb88b515a9fc0fc8c14644",
+          "type": "singleCorrect",
+          "question": {
+            "text": "If $\\begin{bmatrix} 1 & 1 & 1 \\\\ 2 & -1 & 7 \\\\ 3 & 1 & 2 \\end{bmatrix} \\begin{bmatrix} x \\\\ y \\\\ z \\end{bmatrix} = \\begin{bmatrix} 1 \\\\ 7 \\\\ 2 \\end{bmatrix}$ then $\\begin{bmatrix} x \\\\ y \\\\ z \\end{bmatrix} =$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "HsvGl",
+              "label": "A",
+              "text": "$\\begin{bmatrix} 0 \\\\ -1 \\\\ 0 \\end{bmatrix}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "FBRZ4",
+              "label": "B",
+              "text": "$\\begin{bmatrix} 0 \\\\ 0 \\\\ 1 \\end{bmatrix}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "URQtY",
+              "label": "C",
+              "text": "$\\begin{bmatrix} 0 \\\\ 1 \\\\ 0 \\end{bmatrix}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "9wHUS",
+              "label": "D",
+              "text": "$\\begin{bmatrix} 0 \\\\ 1 \\\\ 2 \\end{bmatrix}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The given matrix equation can be written as $x C_1 + y C_2 + z C_3 = B$, where $C_1, C_2, C_3$ are the columns of the coefficient matrix and $B$ is the constant matrix.<br><br>Substituting the given matrices:<br><br>$x \\begin{bmatrix} 1 \\\\ 2 \\\\ 3 \\end{bmatrix} + y \\begin{bmatrix} 1 \\\\ -1 \\\\ 1 \\end{bmatrix} + z \\begin{bmatrix} 1 \\\\ 7 \\\\ 2 \\end{bmatrix} = \\begin{bmatrix} 1 \\\\ 7 \\\\ 2 \\end{bmatrix}$<br><br>Notice that the constant matrix on the right side is identical to the third column of the coefficient matrix.<br><br>Comparing both sides, we get $x = 0$, $y = 0$, and $z = 1$.<br><br>Thus, $\\begin{bmatrix} x \\\\ y \\\\ z \\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 0 \\\\ 1 \\end{bmatrix}$.<br><br>Answer: $\\begin{bmatrix} 0 \\\\ 0 \\\\ 1 \\end{bmatrix}$",
+            "image": null
+          },
+          "level": 2,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87f02fe711bb1be9996b",
+              "title": "MHT CET 2026 (15 May Shift 1)",
+              "shortName": "2026 (15 May Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-05-15T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87f02fe711bb1be9996b",
+            "title": "MHT CET 2026 (15 May Shift 1)",
+            "shortName": "2026 (15 May Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-05-15T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6abb886615a9fc0fc8c14357",
+          "type": "singleCorrect",
+          "question": {
+            "text": "Let $A^T = \\begin{bmatrix} 1 & 1 & 2 \\\\ 1 & -1 & 1 \\\\ 1 & 2 & -1 \\end{bmatrix}$, $B^T = \\begin{bmatrix} 6 & 5 & 1 \\end{bmatrix}$ and $X = \\begin{bmatrix} x \\\\ y \\\\ z \\end{bmatrix}$. If $AX = B$, then the values of $x, y, z$ are..........",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "fvMxd",
+              "label": "A",
+              "text": "$x = 2, y = 1, z = 3$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "YKTjj",
+              "label": "B",
+              "text": "$x = 3, y = 2, z = 1$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Ff4Sv",
+              "label": "C",
+              "text": "$x = 1, y = 2, z = 3$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "vvkS6",
+              "label": "D",
+              "text": "$x = 2, y = 3, z = 1$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given $A^T = \\begin{bmatrix} 1 & 1 & 2 \\\\ 1 & -1 & 1 \\\\ 1 & 2 & -1 \\end{bmatrix}$, we have $A = \\begin{bmatrix} 1 & 1 & 1 \\\\ 1 & -1 & 2 \\\\ 2 & 1 & -1 \\end{bmatrix}$.<br><br>Given $B^T = \\begin{bmatrix} 6 & 5 & 1 \\end{bmatrix}$, we have $B = \\begin{bmatrix} 6 \\\\ 5 \\\\ 1 \\end{bmatrix}$.<br><br>The equation $AX = B$ can be written as:<br><br>$\\begin{bmatrix} 1 & 1 & 1 \\\\ 1 & -1 & 2 \\\\ 2 & 1 & -1 \\end{bmatrix} \\begin{bmatrix} x \\\\ y \\\\ z \\end{bmatrix} = \\begin{bmatrix} 6 \\\\ 5 \\\\ 1 \\end{bmatrix}$<br><br>This gives the system of equations:<br><br>$x + y + z = 6$<br><br>$x - y + 2z = 5$<br><br>$2x + y - z = 1$<br><br>Adding the first two equations gives:<br><br>$2x + 3z = 11$<br><br>Adding the second and third equations gives:<br><br>$3x + z = 6 \\Rightarrow z = 6 - 3x$<br><br>Substituting $z$ into $2x + 3z = 11$ gives:<br><br>$2x + 3(6 - 3x) = 11$<br><br>$2x + 18 - 9x = 11$<br><br>$-7x = -7 \\Rightarrow x = 1$<br><br>Substituting $x = 1$ into $z = 6 - 3x$ gives:<br><br>$z = 6 - 3(1) = 3$<br><br>Substituting $x = 1$ and $z = 3$ into $x + y + z = 6$ gives:<br><br>$1 + y + 3 = 6 \\Rightarrow y = 2$<br><br>Thus, $x = 1, y = 2, z = 3$.<br><br>Answer: $x = 1, y = 2, z = 3$",
+            "image": null
+          },
+          "level": 2,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87ef2fe711bb1be99967",
+              "title": "MHT CET 2026 (13 May Shift 1)",
+              "shortName": "2026 (13 May Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-05-13T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87ef2fe711bb1be99967",
+            "title": "MHT CET 2026 (13 May Shift 1)",
+            "shortName": "2026 (13 May Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-05-13T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6a44d3648c30a4553e1be344",
+          "type": "singleCorrect",
+          "question": {
+            "text": "If $\\begin{bmatrix} 2 & 1 & -1 \\\\ -1 & 2 & 1 \\\\ 1 & -1 & 2 \\end{bmatrix} \\begin{bmatrix} a \\\\ b \\\\ c \\end{bmatrix} = \\begin{bmatrix} 4 \\\\ 0 \\\\ -2 \\end{bmatrix}$ then the distance of point $P(a, b, c)$ from the plane $2x + y + 2z = 10$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "xr3Nm",
+              "label": "A",
+              "text": "$2$ units.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ReqGK",
+              "label": "B",
+              "text": "$3$ units.",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "WULJU",
+              "label": "C",
+              "text": "$4$ units.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "tq7oa",
+              "label": "D",
+              "text": "$5$ units.",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The given matrix equation represents the following system of linear equations:<br><br>$2a + b - c = 4$<br><br>$-a + 2b + c = 0$<br><br>$a - b + 2c = -2$<br><br>Adding the first and second equations gives $a + 3b = 4$.<br><br>Adding the second and third equations gives $b + 3c = -2$.<br><br>Adding the first and third equations gives $3a + c = 2$.<br><br>Solving these equations, we get $a = 1$, $b = 1$, and $c = -1$.<br><br>The point $P(a, b, c)$ is $P(1, 1, -1)$.<br><br>The perpendicular distance of the point $P(1, 1, -1)$ from the plane $2x + y + 2z - 10 = 0$ is given by:<br><br>$d = \\dfrac{|2(1) + 1(1) + 2(-1) - 10|}{\\sqrt{2^2 + 1^2 + 2^2}}$<br><br>$d = \\dfrac{|2 + 1 - 2 - 10|}{\\sqrt{4 + 1 + 4}}$<br><br>$d = \\dfrac{|-9|}{3} = 3$ units.<br><br>Answer: $3$ units.",
+            "image": null
+          },
+          "previousYearPapers": [
+            {
+              "_id": "6a44d27f2d2155b816ec4a6f",
+              "title": "MHT CET 2026 (11 April Shift 2)",
+              "shortName": "2026 (11 April Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-04-11T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "level": 2,
+          "questionLabels": [],
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6a44d27f2d2155b816ec4a6f",
+            "title": "MHT CET 2026 (11 April Shift 2)",
+            "shortName": "2026 (11 April Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-04-11T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "68871b3fbf9280d7f993277e",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "688376de9b67616acec78f71",
+              "heldOn": "2025-04-20T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "MHT CET 2025 (20 Apr Shift 2)",
+              "title": "MHT CET 2025 (20 Apr Shift 2)",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "question": {
+            "text": "If $\\left[\\begin{array}{lll}1 & 3 & 3 \\\\ 1 & 4 & 4 \\\\ 1 & 3 & 4\\end{array}\\right]\\left[\\begin{array}{l}x \\\\ y \\\\ z\\end{array}\\right]=\\left[\\begin{array}{l}12 \\\\ 15 \\\\ 13\\end{array}\\right]$, then the value of $x^2+y^2+z^2=$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "8jXSv",
+              "text": "$6$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Zg7MO",
+              "text": "$12$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "mYzTy",
+              "text": "$3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ny0QR",
+              "text": "$14$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The given matrix equation corresponds to the system of linear equations:<br><br>$x + 3y + 3z = 12$<br><br>$x + 4y + 4z = 15$<br><br>$x + 3y + 4z = 13$<br><br>Subtracting the first equation from the second equation:<br><br>$y + z = 3$<br><br>Subtracting the first equation from the third equation:<br><br>$z = 1$<br><br>Substituting $z = 1$ into $y + z = 3$:<br><br>$y + 1 = 3 \\Rightarrow y = 2$<br><br>Substituting $y = 2$ and $z = 1$ into the first equation:<br><br>$x + 3(2) + 3(1) = 12 \\Rightarrow x + 9 = 12 \\Rightarrow x = 3$<br><br>The value of $x^2 + y^2 + z^2$ is:<br><br>$x^2 + y^2 + z^2 = 3^2 + 2^2 + 1^2 = 9 + 4 + 1 = 14$<br><br>Answer: $14$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "688376de9b67616acec78f71",
+            "heldOn": "2025-04-20T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "MHT CET 2025 (20 Apr Shift 2)",
+            "title": "MHT CET 2025 (20 Apr Shift 2)",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679213ef0aee93fa0796dcaf",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665ccc",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-11T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (11 May Shift 1)",
+              "title": "MHT CET 2024 (11 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Let $A=\\left[\\begin{array}{ccc}1 & -1 & 1 \\\\ 2 & 1 & -3 \\\\ 1 & 1 & 1\\end{array}\\right]$ and $B=\\left[\\begin{array}{l}4 \\\\ 0 \\\\ 2\\end{array}\\right]$ such that $\\mathrm{AX}=\\mathrm{B}$, then $\\mathrm{X}=$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "UmduN",
+              "text": "$\\left[\\begin{array}{c}-1 \\\\ 2 \\\\ 1\\end{array}\\right]$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SG4Wb",
+              "text": "$\\left[\\begin{array}{c}2 \\\\ -1 \\\\ 1\\end{array}\\right]$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "WYbvp",
+              "text": "$\\left[\\begin{array}{c}-1 \\\\ 1 \\\\ 2\\end{array}\\right]$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3E7fg",
+              "text": "$\\left[\\begin{array}{c}-2 \\\\ 1 \\\\ -1\\end{array}\\right]$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The given matrix equation $AX = B$ can be written as a system of linear equations:<br><br>$x - y + z = 4$<br><br>$2x + y - 3z = 0$<br><br>$x + y + z = 2$<br><br>Subtracting the third equation from the first equation gives:<br><br>$-2y = 2 \\Rightarrow y = -1$<br><br>Substituting $y = -1$ into the first and second equations:<br><br>$x - (-1) + z = 4 \\Rightarrow x + z = 3$<br><br>$2x + (-1) - 3z = 0 \\Rightarrow 2x - 3z = 1$<br><br>Multiplying $x + z = 3$ by $3$ and adding to $2x - 3z = 1$ gives:<br><br>$3x + 3z + 2x - 3z = 9 + 1$<br><br>$5x = 10 \\Rightarrow x = 2$<br><br>Substituting $x = 2$ into $x + z = 3$ gives:<br><br>$2 + z = 3 \\Rightarrow z = 1$<br><br>Thus, $X = \\begin{bmatrix} 2 \\\\ -1 \\\\ 1 \\end{bmatrix}$.<br><br>Answer: $\\left[\\begin{array}{c}2 \\\\ -1 \\\\ 1\\end{array}\\right]$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665ccc",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-11T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (11 May Shift 1)",
+            "title": "MHT CET 2024 (11 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6792133f0aee93fa0796d74c",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e139a8109c6c5665cc3",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-02T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (02 May Shift 2)",
+              "title": "MHT CET 2024 (02 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Let $X=\\left[\\begin{array}{l}\\mathrm{a} \\\\ \\mathrm{b} \\\\ \\mathrm{c}\\end{array}\\right], \\mathrm{A}=\\left[\\begin{array}{ccc}1 & -1 & 2 \\\\ 2 & 0 & 1 \\\\ 3 & 2 & 1\\end{array}\\right]$ and $\\mathrm{B}=\\left[\\begin{array}{l}3 \\\\ 1 \\\\ 4\\end{array}\\right]$.\r\nIf $A X=B$, then the value of $2 a-3 b+4 c$ will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "kSgsn",
+              "text": "0",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "p6Ptq",
+              "text": "-4",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "VdCNK",
+              "text": "6",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "kWgVh",
+              "text": "4",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given the matrix equation $AX = B$, we can write the system of linear equations as:<br><br>$a - b + 2c = 3$  ... (1)<br><br>$2a + c = 1$  ... (2)<br><br>$3a + 2b + c = 4$  ... (3)<br><br>From equation (2), we get $c = 1 - 2a$.<br><br>Substituting $c = 1 - 2a$ into equation (1):<br><br>$a - b + 2(1 - 2a) = 3$<br><br>$a - b + 2 - 4a = 3$<br><br>$-3a - b = 1 \\Rightarrow b = -3a - 1$<br><br>Substituting $b = -3a - 1$ and $c = 1 - 2a$ into equation (3):<br><br>$3a + 2(-3a - 1) + (1 - 2a) = 4$<br><br>$3a - 6a - 2 + 1 - 2a = 4$<br><br>$-5a - 1 = 4$<br><br>$-5a = 5 \\Rightarrow a = -1$<br><br>Now, substituting $a = -1$ back to find $b$ and $c$:<br><br>$b = -3(-1) - 1 = 3 - 1 = 2$<br><br>$c = 1 - 2(-1) = 1 + 2 = 3$<br><br>We need to find the value of $2a - 3b + 4c$:<br><br>$2a - 3b + 4c = 2(-1) - 3(2) + 4(3)$<br><br>$= -2 - 6 + 12$<br><br>$= 4$<br><br>Answer: 4",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e139a8109c6c5665cc3",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-02T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (02 May Shift 2)",
+            "title": "MHT CET 2024 (02 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a2607d0279619d9d8a24e6",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b87f20917a5f4189299",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2021-09-22T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021 (22 Sep Shift 1)",
+              "title": "MHT CET 2021 (22 Sep Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "The sum of three numbers is 6 . Thrice the third number when added to the first number given 7 . On adding three time first number to the sum of second and third number we get 12 . The product of these numbers is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "atiF9",
+              "text": "$20$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lmFOq",
+              "text": "$3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "w0RuE",
+              "text": "$\\frac{20}{3}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "2dbOB",
+              "text": "$\\frac{5}{3}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let the numbers be $x, y, z$\n$$\n\\begin{aligned}\n& x+y+z=6   ..(1)\\\\\n& x+3 z==7 ..(2)\\\\\n& 3 x+y+z=12..(3) \\\\\n& \\text { Eq. (3)-(1), gives } \\\\\n& 2 x=6 \\Rightarrow x=3\n\\end{aligned}\n$$\n$$\n2 \\mathrm{x}=6 \\Rightarrow \\mathrm{x}=3\n$$\nFrom eq. (2), we get\n$$\n3+3 z+7 \\Rightarrow z=\\frac{4}{3}\n$$\nFrom eq. (1), we get\n$$\n\\begin{aligned}\n& 3+y+\\frac{4}{3}=6 \\quad \\Rightarrow \\quad y=\\frac{5}{3} \\\\\n& \\therefore x y z=(3)\\left(\\frac{5}{3}\\right)\\left(\\frac{4}{3}\\right)=\\frac{20}{3}\n\\end{aligned}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b87f20917a5f4189299",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2021-09-22T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021 (22 Sep Shift 1)",
+            "title": "MHT CET 2021 (22 Sep Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fe30279619d9d8a200e",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f71",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-19T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (19 Oct Shift 1)",
+              "title": "MHT CET 2020 (19 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "If $A X=B$, where $A=\\left[\\begin{array}{lll}1 & 3 & 3 \\\\ 1 & 4 & 4 \\\\ 1 & 3 & 4\\end{array}\\right], X=\\left[\\begin{array}{l}x \\\\ y \\\\ z\\end{array}\\right]$ and $B=\\left[\\begin{array}{l}12 \\\\ 15 \\\\ 13\\end{array}\\right]$, then $x^{2}+y^{2}+z^{2}=$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "NsniR",
+              "text": "14",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "2yOOE",
+              "text": "19",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "gpFCY",
+              "text": "21",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "suAHb",
+              "text": "6",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "(A)\nGiven $\\mathrm{AX}=\\mathrm{B}$\n$\\left[\\begin{array}{lll}\n1 & 3 & 3 \\\\\n1 & 4 & 4 \\\\\n1 & 3 & 4\n\\end{array}\\right]\\left[\\begin{array}{l}\nx \\\\\ny \\\\\nz\n\\end{array}\\right]=\\left[\\begin{array}{c}\n12 \\\\\n15 \\\\\n13\n\\end{array}\\right]$\n$\\mathrm{R}_{2} \\rightarrow \\mathrm{R}_{2}-\\mathrm{R}_{1}$ and $\\mathrm{R}_{3} \\rightarrow \\mathrm{R}_{3}-\\mathrm{R}_{1}$\n$\\left[\\begin{array}{lll}1 & 3 & 3 \\\\ 0 & 1 & 1 \\\\ 0 & 0 & 1\\end{array}\\right]\\left[\\begin{array}{l}x \\\\ y \\\\ z\\end{array}\\right]=\\left[\\begin{array}{l}12 \\\\ 3 \\\\ 1\\end{array}\\right] \\Rightarrow\\left[\\begin{array}{l}x+3 y+3 z \\\\ y+z \\\\ z\\end{array}\\right]=\\left[\\begin{array}{l}12 \\\\ 3 \\\\ 1\\end{array}\\right]$\n$\\begin{aligned}\n\\therefore & x+3 y+3 z=12 \\\\\n& y+z=3 \\\\\n& z=1\n\\end{aligned}$\nThus $z=1, y=2, x=3$\n$\\therefore x^{2}+y^{2}+z^{2}=9+4+1=14$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f71",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-19T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (19 Oct Shift 1)",
+            "title": "MHT CET 2020 (19 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f960279619d9d8a1dad",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6d",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (15 Oct Shift 1)",
+              "title": "MHT CET 2020 (15 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "If $\\mathrm{AX}=\\mathrm{B}$, where $\\mathrm{A}=\\left[\\begin{array}{ccc}1 & -1 & 1 \\\\ 2 & -1 & 0 \\\\ 3 & 3 & -4\\end{array}\\right], \\mathrm{B}=\\left[\\begin{array}{l}1 \\\\ 1 \\\\ 2\\end{array}\\right]$ and $\\mathrm{X}=\\left[\\begin{array}{l}x \\\\ y \\\\ z\\end{array}\\right]$, then $x+y+z=$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "QAAPh",
+              "text": "$2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0peb7",
+              "text": "$3$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "qOntW",
+              "text": "$6$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "YxKfz",
+              "text": "$1$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given $A=\\left[\\begin{array}{ccc}1 & -1 & 1 \\\\ 2 & -1 & 0 \\\\ 3 & 3 & -4\\end{array}\\right]$ and $B=\\left[\\begin{array}{l}1 \\\\ 1 \\\\ 2\\end{array}\\right], X=\\left[\\begin{array}{l}x \\\\ y \\\\ z\\end{array}\\right]$ and $A X=B$ $\\therefore \\mathrm{AA}^{-1} \\mathrm{X}=\\mathrm{A}^{-1} \\mathrm{~B} \\Rightarrow \\mathrm{IX}=\\mathrm{A}^{-1} \\mathrm{~B} \\Rightarrow \\mathrm{X}=\\mathrm{A}^{-1} \\mathrm{~B}$\nNow $|\\mathrm{A}|=4+(-8)+9=5$\n$$\n\\begin{aligned}\n\\therefore A^{-1} &=\\left[\\begin{array}{lll}\n4 & -1 & 1 \\\\\n8 & -7 & 2 \\\\\n9 & -6 & 1\n\\end{array}\\right] \\times \\frac{1}{5} \\\\\n\\therefore\\left[\\begin{array}{l}\nx \\\\\ny \\\\\nz\n\\end{array}\\right] &=\\frac{1}{5}\\left[\\begin{array}{ccc}\n4 & -1 & 1 \\\\\n8 & -7 & 2 \\\\\n9 & -6 & 1\n\\end{array}\\right]\\left[\\begin{array}{l}\n1 \\\\\n1 \\\\\n2\n\\end{array}\\right] \\\\\n&=\\frac{1}{5}\\left[\\begin{array}{ll}\n8-1+2 \\\\\n8-7+4 \\\\\n9-6+2\n\\end{array}\\right]=\\frac{1}{5}\\left[\\begin{array}{l}\n5 \\\\\n5 \\\\\n5\n\\end{array}\\right] \\\\\ny &=\\left[\\begin{array}{l}\n1 \\\\\n1 \\\\\n1\n\\end{array}\\right]\n\\end{aligned}\n$$\nOn comparing both side, we get\n$$\nx=y=z=1 \\Rightarrow x+y+z=1+1+1=3\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6d",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (15 Oct Shift 1)",
+            "title": "MHT CET 2020 (15 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e900279619d9d8a1577",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f5f",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "MHT CET 2011"
+            }
+          ],
+          "question": {
+            "text": "The value of ${ }^{\\prime} a$ for which the system of equations\n$$\n\\begin{array}{r}\na^{3} x+(a+1)^{3} y+(a+2)^{3} z=0 \\\\\na x+(a+1) y+(a+2) z=0 \\\\\nx+y+z=0\n\\end{array}\n$$\nhas a non-zero solution is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "dBy8x",
+              "text": "1",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ozdHU",
+              "text": "0",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fbt9e",
+              "text": "$-1$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "jY9Zj",
+              "text": "None of these",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "For non-zero solution,\n$$\n\\left|\\begin{array}{ccc}\na^{3} & (a+1)^{3} & (a+2)^{3} \\\\\na & (a+1) & (a+2) \\\\\n1 & 1 & 1\n\\end{array}\\right|=0\n$$\n$$\n\\left.\\begin{array}{l}\n\\Rightarrow \\quad-\\left|\\begin{array}{ccc}\n1 & 1 & 1 \\\\\na & (a+1) & (a+2) \\\\\na^{3} & (a+1)^{3} & (a+2)^{3}\n\\end{array}\\right|=0 \\\\\n\\Rightarrow & -(a-a-1)(a+1-a-2)(a+2-a) \\\\\n& \\quad \\quad \\times(a+a+1+a+2)=0 \\\\\n\\Rightarrow & -2(3 a+3)=0 \\\\\n\\Rightarrow & \\quad a=-1 \\\\\n& {\\left[\\begin{array}{ccc}\n1 & 1 & 1 \\\\\nx & y & z \\\\\nx^{3} & y^{3} & z^{3}\n\\end{array} \\mid=\\right.} \\\\\n(x-y)(y-z)(z-x)(x+y+z)\n\\end{array}\\right]\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f5f",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "MHT CET 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e490279619d9d8a1336",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078c7071b5bb33b3f9f5b",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2007-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2007",
+              "title": "MHT CET 2007"
+            }
+          ],
+          "question": {
+            "text": "For the equations\n$$\nx+2 y+3 z=1,2 x+y+3 z=2\n$$\nand $5 x+5 y+9 z=4$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "5TLZu",
+              "text": "there is only one solution",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "7lIh7",
+              "text": "there exists infinitely many solution",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ceVG4",
+              "text": "there is no solution",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "hITTy",
+              "text": "None of the above",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "\\Delta &=\\left|\\begin{array}{lll}\n1 & 2 & 3 \\\\\n2 & 1 & 3 \\\\\n5 & 5 & 9\n\\end{array}\\right| \\\\\n&=1(9-15)-2(18-15)+3(10-5) \\\\\n&=-6-6+15=3 \\neq 0\n\\end{aligned}\n$$\nHence, the system of equations has a unique solution.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078c7071b5bb33b3f9f5b",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2007-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2007",
+            "title": "MHT CET 2007"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "6abb891615a9fc0fc8c1479e",
+      "title": "Differentiation and Integration of Determinants",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "6abb88c815a9fc0fc8c146ee",
+          "type": "singleCorrect",
+          "question": {
+            "text": "If $f(x) = \\begin{vmatrix} x^2 & \\sin x & e^x \\\\ 2 & 1 & -1 \\\\ p & p^2 & 1 \\end{vmatrix}$ then $f''(0) = $",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Hwgc0",
+              "label": "A",
+              "text": "$2p^2 - p + 1$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "05n3f",
+              "label": "B",
+              "text": "$4p^2 - p + 1$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "e5iQu",
+              "label": "C",
+              "text": "$4p^2 - p + 2$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "clkPf",
+              "label": "D",
+              "text": "$2p^2 - p + 2$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given $f(x) = \\begin{vmatrix} x^2 & \\sin x & e^x \\\\ 2 & 1 & -1 \\\\ p & p^2 & 1 \\end{vmatrix}$<br><br>Since the second and third rows are independent of $x$, we can differentiate the determinant by differentiating only the first row.<br><br>$f'(x) = \\begin{vmatrix} \\dfrac{d}{dx}(x^2) & \\dfrac{d}{dx}(\\sin x) & \\dfrac{d}{dx}(e^x) \\\\ 2 & 1 & -1 \\\\ p & p^2 & 1 \\end{vmatrix} = \\begin{vmatrix} 2x & \\cos x & e^x \\\\ 2 & 1 & -1 \\\\ p & p^2 & 1 \\end{vmatrix}$<br><br>Differentiating again with respect to $x$:<br><br>$f''(x) = \\begin{vmatrix} \\dfrac{d}{dx}(2x) & \\dfrac{d}{dx}(\\cos x) & \\dfrac{d}{dx}(e^x) \\\\ 2 & 1 & -1 \\\\ p & p^2 & 1 \\end{vmatrix} = \\begin{vmatrix} 2 & -\\sin x & e^x \\\\ 2 & 1 & -1 \\\\ p & p^2 & 1 \\end{vmatrix}$<br><br>Substituting $x = 0$:<br><br>$f''(0) = \\begin{vmatrix} 2 & -\\sin 0 & e^0 \\\\ 2 & 1 & -1 \\\\ p & p^2 & 1 \\end{vmatrix} = \\begin{vmatrix} 2 & 0 & 1 \\\\ 2 & 1 & -1 \\\\ p & p^2 & 1 \\end{vmatrix}$<br><br>Expanding the determinant along the first row:<br><br>$f''(0) = 2(1 - (-p^2)) - 0 + 1(2p^2 - p)$<br><br>$f''(0) = 2(1 + p^2) + 2p^2 - p$<br><br>$f''(0) = 4p^2 - p + 2$<br><br>Answer: $4p^2 - p + 2$",
+            "image": null
+          },
+          "level": 2,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87ef2fe711bb1be99966",
+              "title": "MHT CET 2026 (12 May Shift 2)",
+              "shortName": "2026 (12 May Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-05-12T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87ef2fe711bb1be99966",
+            "title": "MHT CET 2026 (12 May Shift 2)",
+            "shortName": "2026 (12 May Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-05-12T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "65a2633f0279619d9d8a3d75",
+      "title": "Miscellaneous",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "65a25e490279619d9d8a1339",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078c7071b5bb33b3f9f5b",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2007-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2007",
+              "title": "MHT CET 2007"
+            }
+          ],
+          "question": {
+            "text": "If the vectors $\\overrightarrow{\\mathbf{a}}=\\hat{\\mathbf{i}}+a \\hat{\\mathbf{j}}+a^{2} \\hat{\\mathbf{k}}$,\n$\\overrightarrow{\\mathbf{b}}=\\hat{\\mathbf{i}}+b \\hat{\\mathbf{j}}+b^{2} \\hat{\\mathbf{k}}$ and $\\overrightarrow{\\mathbf{c}}=\\hat{\\mathbf{i}}+c \\hat{\\mathbf{j}}+c^{2} \\hat{\\mathbf{k}}$ are three\nnon-coplanar vectors and $\\left|\\begin{array}{lll}a & a^{2} & 1+a^{3} \\\\ b & b^{2} & 1+b^{3} \\\\ c & c^{2} & 1+c^{3}\\end{array}\\right|=0$,\nthen the value of $a b c$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "TpMXR",
+              "text": "0",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "J2cLU",
+              "text": "1",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vpDA2",
+              "text": "2",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ruMa9",
+              "text": "$-1$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Since, $\\overrightarrow{\\mathbf{a}}, \\overrightarrow{\\mathbf{b}}$, and $\\overrightarrow{\\mathbf{c}}$ are non-coplanar vectors,\ntherefore $[\\overrightarrow{\\mathbf{a}} \\overrightarrow{\\mathbf{b}} \\overrightarrow{\\mathbf{c}}] \\neq 0$\n$\\Rightarrow \\Delta=\\left|\\begin{array}{lll}1 & a & a^{2} \\\\ 1 & b & b^{2} \\\\ 1 & c & c^{2}\\end{array}\\right| \\neq 0$\n$\\Rightarrow$\n$\\Delta \\neq 0$\n$$\n\\begin{array}{l}\n\\text { Now, } & \\left(\\begin{array}{lll}\na & a^{2} & 1+a^{3} \\\\\nb & b^{2} & 1+b^{3} \\\\\nc & c^{2} & 1+c^{3}\n\\end{array} \\mid=0\\right. \\\\\n\\Rightarrow\\left|\\begin{array}{lll}\na & a^{2} & 1 \\\\\nb & b^{2} & 1 \\\\\nc & c^{2} & 1\n\\end{array}\\right|+\\left|\\begin{array}{lll}\na & a^{2} & a^{3} \\\\\nb & b^{2} & b^{3} \\\\\nc & c^{2} & c^{3}\n\\end{array}\\right|=0 \\\\\n\\Rightarrow & \\quad \\Delta(1+a b c)=0\n\\end{array}\n$$\n$\\Rightarrow$\n$$\na b c=-1\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078c7071b5bb33b3f9f5b",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2007-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2007",
+            "title": "MHT CET 2007"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "index": 12,
+  "chapterId": "620ab24b610a46f9dbd34b1d",
+  "chapter": "Pair of Lines",
+  "exam": "JEE Advanced",
+  "subject": "Mathematics",
+  "totalTopics": 2,
+  "totalQuestions": 2,
+  "downloadTime": "2026-10-08 20:36:12",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64b16aedf23ac7d519f9b99c",
+      "title": "Condition for 2nd degree equationto represent pair of straight lines",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64b169e4f23ac7d519f9af6d",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "620a8a1f77301f65c2f92c42",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2008-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2008 (Paper 1)",
+              "title": "JEE Advanced 2008 (Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Let $a$ and $b$ be non-zero and real numbers. Then, the equation $\\left(a x^2+b y^2+c\\right)\\left(x^2-5 x y+6 y^2\\right)=0$ represents",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "81h78",
+              "text": "\nFour straight lines, when $c=0$ and $a, b$ are of the same sign\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qzY8t",
+              "text": "\nTwo straight lines and a circle, when $a=b$ and $c$ is of sign opposite to that of $a$\n",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "wpLhy",
+              "text": "\nTwo straight lines and a hyperbola, when $a$ and $b$ are of the same sign and $c$ is of sign opposite to that of $a$\n",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "NXEj0",
+              "text": "\nA circle and an ellipse, when $a$ and $b$ are of the same sign and $c$ is of sign opposite to that of $a$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $a$ and $b$ be non- zero real numbers.\nTherefore, the given equation $\\left(a x^2+b y^2+c\\right)\\left(x^2-5 x y+6 y^2\\right)=0$ implies either\n$$\n\\begin{array}{rc} \n& x^2-5 x y+6 y^2=0 \\\\\n\\Rightarrow & (x-2 y)(x-3 y)=0 \\\\\n\\Rightarrow & x=2 y \\text { and } x=3 y\n\\end{array}\n$$\nrepresent two straight lines passing through origin.\nOr $\\quad a x^2+b y^2+c=0$\nWhen $c=0$ and $a$ and $b$ are of same signs, then\n$$\n\\begin{aligned}\n& a x^2+b y^2+c=0 \\\\\n\\Rightarrow & x=0 \\text { and } y=0\n\\end{aligned}\n$$\nwhich is a point specified as the origin.\nWhen $a=b$ and $c$ is of sign opposite to that of $a, a x^2+b y^2+c=0$ represents a circle.\nHence, the given equation $\\left(a x^2+b y^2+c\\right)\\left(x^2-5 x y+6 y^2\\right)=0$\nmay represent two straight lines and a circle.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "620a8a1f77301f65c2f92c42",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2008-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2008 (Paper 1)",
+            "title": "JEE Advanced 2008 (Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "685103346bba689a3eb09ced",
+      "title": "general equation of second degree",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "685102c16bba689a3eb09ca2",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "684c67d769037fad219cb0c2",
+              "examId": "615d76cfc52ffa3c944600e0",
+              "heldOn": "2025-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2025 (Paper 2)",
+              "title": "JEE Advanced 2025 (Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Let $S$ denote the locus of the point of intersection of the pair of lines\n$4 x-3 y=12 \\alpha$\n$4 \\alpha x+3 \\alpha y=12$\nwhere $\\alpha$ varies over the set of non-zero real numbers. Let $T$ be the tangent to $S$ passing through the points $(p, 0)$ and $(0, q), q>0$, and parallel to the line $4 x-\\frac{3}{\\sqrt{2}} y=0$.<br>Then the value of $p q$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "znvoz",
+              "text": "$-6 \\sqrt{2}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "aUov6",
+              "text": "$-3 \\sqrt{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0ZQhv",
+              "text": "$-9 \\sqrt{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "T546J",
+              "text": "$-12 \\sqrt{2}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\left.\\begin{array}{l}4 x-3 y=12 \\alpha \\\\ 4 x+3 y=\\frac{12}{\\alpha}\\end{array}\\right\\} \\rightarrow 16 x^2-9 y^2=144$\n$\\begin{aligned} & \\frac{x^2}{9}-\\frac{y^2}{16}=1 \\rightarrow \\text { Curve :S } \\\\ & T: y=m x \\pm \\sqrt{9 m^2-16} \\\\ & m=\\frac{4 \\sqrt{2}}{3} \\\\ & y=\\frac{4 \\sqrt{2} x}{3} \\pm \\sqrt{32-16} \\\\ & 3 y=4 \\sqrt{2} x \\pm 12 \\\\ & \\text { as } q>0 \\\\ & 3 y=4 \\sqrt{2} x+12 \\\\ & p=-\\frac{3}{\\sqrt{2}} \\& q=4 \\\\ & p q=-6 \\sqrt{2}\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": {
+            "videoId": "53947743725743888d1f8b48435802d1",
+            "provider": "vdocipher",
+            "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/MVRZwQoApXwct.480.jpeg",
+            "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/MVRZwQoApXwct.480.jpeg",
+            "premiumModules": [
+              {
+                "premiumModuleId": "6788cc0b2dbc1ecacabb7026",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "6628114842d540dfcb148ecb",
+                "isFree": false
+              },
+              {
+                "premiumModuleId": "64c7e8e829737784b294e469",
+                "isFree": false
+              }
+            ],
+            "description": "JEE Advanced (All PYQs from 2023 - 2013)"
+          },
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "684c67d769037fad219cb0c2",
+            "examId": "615d76cfc52ffa3c944600e0",
+            "heldOn": "2025-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2025 (Paper 2)",
+            "title": "JEE Advanced 2025 (Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

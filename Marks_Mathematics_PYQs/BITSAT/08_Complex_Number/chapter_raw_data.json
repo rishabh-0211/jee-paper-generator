@@ -1,0 +1,2040 @@
+{
+  "index": 8,
+  "chapterId": "61e7bd7787c3b967066cf764",
+  "chapter": "Complex Number",
+  "exam": "BITSAT",
+  "subject": "Mathematics",
+  "totalTopics": 6,
+  "totalQuestions": 30,
+  "downloadTime": "2026-10-08 20:36:48",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e8686f5bfc7ab78aedd5",
+      "title": "Power of iota",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "65b7b87997ae24e9e2db8cb0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "$i^{57}+\\frac{1}{i^{25}}$, when simplified has the value",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "satwz",
+              "text": "0",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "q5sYX",
+              "text": " $2 i$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "IRi2p",
+              "text": "$-2 i$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "eZ1TH",
+              "text": "2",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$i^{57}+\\frac{1}{i^{25}}=\\left(i^4\\right)^{14} . i+\\frac{1}{\\left(i^4\\right)^6  .i}=i+\\frac{1}{i}=i-i=0$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c26f5bfc7ab78ae7a5",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "$i^{57}+\\frac{1}{i^{25}},$ when simplified has the value",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "f32XM",
+              "text": "0",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Zk6ye",
+              "text": "$2 i$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "okTKw",
+              "text": "$-2 i$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "QRd68",
+              "text": "2",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\begin{aligned} i^{57}+\\frac{1}{i^{25}}=\\left(i^{4}\\right)^{14} \\cdot i &+\\frac{1}{\\left(i^{4}\\right)^{6} \\cdot i} \\\\=i+\\frac{1}{i}\\left(\\because i^{4}=1\\right) &=i-i\\left(\\because \\frac{1}{i}=-i\\right) \\\\ &=0 \\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e8686f5bfc7ab78aedd2",
+      "title": "Algebra of complex numbers",
+      "totalQuestions": 8,
+      "questions": [
+        {
+          "_id": "64c0e8366f5bfc7ab78aeb93",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The smallest positive integral value of $n$ such that \r\n$\\left[\\frac{1+\\sin \\frac{\\pi}{8}+i \\cos \\frac{\\pi}{8}}{1+\\sin \\frac{\\pi}{8}-i \\cos \\frac{\\pi}{8}}\\right]^n$ is purely imaginary, is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Auqtq",
+              "text": "\r\n$4$\r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "UApY4",
+              "text": "\r\n$3$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "RmF6B",
+              "text": "\r\n$2$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "su4ZV",
+              "text": "\r\n$8$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\left[\\frac{1+\\sin \\frac{\\pi}{8}+i \\cos \\frac{\\pi}{8}}{1+\\sin \\frac{\\pi}{8}-i \\cos \\frac{\\pi}{8}}\\right]^n=\\left[\\frac{1+\\cos \\alpha+i \\sin \\alpha}{1+\\cos \\alpha-i \\sin \\alpha}\\right]^n$\r\n$\\left[\\because \\alpha=\\frac{\\pi}{2}-\\frac{\\pi}{8}\\right]$\r\n$=\\left[\\frac{2 \\cos ^2 \\frac{\\alpha}{2}+2 i \\sin \\frac{\\alpha}{2} \\cos \\frac{\\alpha}{2}}{2 \\cos ^2 \\frac{\\alpha}{2}-2 i \\sin \\frac{\\alpha}{2} \\cos \\frac{\\alpha}{2}}\\right]^n$\r\n$=\\left[\\frac{\\cos \\frac{\\alpha}{2}+i \\sin \\frac{\\alpha}{2}}{\\cos \\frac{\\alpha}{2}-i \\sin \\frac{\\alpha}{2}}\\right]_{-}^n=\\left(e^{2 i \\frac{\\alpha}{2}}\\right]^n=e^{i n \\alpha}$\r\n$=e^{i n\\left(\\frac{3 \\pi}{8}\\right)}=\\cos \\frac{3 n \\pi}{8}+i \\sin \\frac{3 n \\pi}{8}$\r\nFor $n=4$ we get imaginary part.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8326f5bfc7ab78aeb74",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "If $|w|=2$, then the set of points $z=w-\\frac{1}{w}$ is contained in or equal to the set of points $z$ satisfying",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "oNRNV",
+              "text": "\r\n$\\operatorname{Im}(z)=0$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Y7keg",
+              "text": "\r\n$|\\operatorname{Im}(z)| \\leq 1$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "iaNZO",
+              "text": "\r\n$|\\operatorname{Re}(z)| \\leq 2$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "9j3ww",
+              "text": "\r\n$|z| \\leq 3$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We have, $|w|=2 \\Rightarrow w=2(\\cos \\theta+i \\sin \\theta)$\r\n$\\therefore \\quad z=w-\\frac{1}{w}$\r\n$=2(\\cos \\theta+i \\sin \\theta)-\\frac{1}{2}(\\cos \\theta-i \\sin \\theta)$\r\n$\\Rightarrow \\quad z=\\frac{3}{2} \\cos \\theta+\\frac{5}{2} i \\sin \\theta$\r\n$\\Rightarrow \\quad|z|=\\sqrt{\\frac{9}{4}+\\frac{25}{4}}=\\frac{\\sqrt{17}}{2} < 3$\r\nHence, option (d) is correct.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8296f5bfc7ab78aeb1c",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "If $z$ is a complex number such that $z^{2}=(\\bar{z})^{2}$, then",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "szIJ0",
+              "text": "$z$ is purely real",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "XPedj",
+              "text": "$z$ is purely imaginary",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "TjB3N",
+              "text": "either $z$ is purely real or purely imaginary",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "yLfpy",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $z=x+i y$, then its conjugate $\\bar{z}=x-i y$\r\n\r\nGiven that $z^{2}=(\\bar{z})^{2}$\r\n\r\n$\\begin{array}{l}\r\n\r\n\\Rightarrow x^{2}-y^{2}+2 i x y=x^{2}-y^{2}-2 i x y \\\\\r\n\r\n\\Rightarrow 4 i x y=0\r\n\r\n\\end{array}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e80d6f5bfc7ab78aea2a",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>z</mi><mn>1</mn></msub></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mover><mi>z</mi><mo>&#175;</mo></mover><mn>1</mn></msub></math> represents adjacent vertices of a regular polygon of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi></math> sides and if <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>I</mi><mi>m</mi><mfenced><msub><mi>z</mi><mn>1</mn></msub></mfenced></mrow><mrow><mi>R</mi><mi>e</mi><mfenced><msub><mi>z</mi><mn>1</mn></msub></mfenced></mrow></mfrac><mo>=</mo><msqrt><mn>2</mn></msqrt><mo>-</mo><mn>1</mn></math>, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi></math> is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "XfCW1",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>8</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "umslz",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>16</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Z1tao",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>18</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "R59cv",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>24</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>z</mi><mn>1</mn></msub><mo>=</mo><mi>r</mi><msup><mi>e</mi><mrow><mi>i</mi><mi>&#952;</mi></mrow></msup></math></p><p>then, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mover><mi>z</mi><mo>&#175;</mo></mover><mn>1</mn></msub><mo>=</mo><mi>r</mi><msup><mi>e</mi><mrow><mo>-</mo><mi>i</mi><mi>&#952;</mi></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msub><mi>z</mi><mn>1</mn></msub><msub><mover><mi>z</mi><mo>&#175;</mo></mover><mn>1</mn></msub></mfrac><mo>=</mo><msup><mi>e</mi><mrow><mn>2</mn><mi>i</mi><mi>&#952;</mi></mrow></msup><mo>=</mo><msup><mi>e</mi><mrow><mn>2</mn><mi>&#960;</mi><mi>i</mi><mo>/</mo><mi>n</mi></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>&#952;</mi><mo>=</mo><mfrac><mi>&#960;</mi><mi>n</mi></mfrac></math></p><p>Also, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><msub><mi>I</mi><mi>m</mi></msub><mfenced><msub><mi>z</mi><mn>1</mn></msub></mfenced></mrow><mrow><msub><mi>R</mi><mi>e</mi></msub><mfenced><msub><mi>z</mi><mn>1</mn></msub></mfenced></mrow></mfrac><mo>=</mo><mi>tan</mi><mi>&#952;</mi><mo>=</mo><mi>tan</mi><mfrac><mi>&#960;</mi><mi>n</mi></mfrac><mo>=</mo><msqrt><mn>2</mn></msqrt><mo>-</mo><mn>1</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>tan</mi><mfrac><mi>&#960;</mi><mn>8</mn></mfrac><mo>=</mo><msqrt><mn>2</mn></msqrt><mo>-</mo><mn>1</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi>n</mi><mo>=</mo><mn>8</mn></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7e16f5bfc7ab78ae8a5",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If $z_{1}=\\sqrt{3}+i \\sqrt{3}$ and $z_{2}=\\sqrt{3}+i$, then the\r\n\r\ncomplex number $\\left(\\frac{\\mathrm{z}_{1}}{\\mathrm{z}_{2}}\\right)^{50}$ lies in the :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "fn4o6",
+              "text": "first quadrant",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "wRR2a",
+              "text": "second quadrant",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "GKGzH",
+              "text": "third quadrant",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "r26JV",
+              "text": "fourth quadrant",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\left(\\frac{z_{1}}{z_{2}}\\right)^{50}=\\left(\\frac{\\sqrt{3}+i \\sqrt{3}}{\\sqrt{3}+i}\\right)^{50}$\r\n\r\n$=\\left[\\left(\\frac{\\sqrt{3}(1+i)}{\\sqrt{3}+i}\\right)^{2}\\right]^{25}=\\left[\\frac{3(2 i)}{3-1+2 \\sqrt{3} i}\\right]^{25}$\r\n\r\n$=\\left(\\frac{3 i}{1+\\sqrt{3} i}\\right)^{25}=\\frac{3^{25} i^{25}}{\\left(-2 \\omega^{2}\\right)^{25}}$\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n=-i . \\omega\\left(\\frac{3}{2}\\right)^{25}=-\\mathrm{i}\\left(\\frac{-1+\\sqrt{3} \\mathrm{i}}{2}\\right)\\left(\\frac{3}{2}\\right)^{25} \\\\\r\n\r\n=\\left(\\frac{3}{2}\\right)^{25}\\left(\\frac{\\sqrt{3}}{2}+\\frac{1}{2} \\mathrm{i}\\right)\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nHence, $\\left(\\frac{z_{1}}{z_{2}}\\right)^{50}$ lies in the first quadrant as both real and imaginary parts of this number are positive.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c26f5bfc7ab78ae7a4",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If $z=x+i y, z^{1 / 3}=a-i b,$ then $\\frac{x}{a}-\\frac{y}{b}=k\\left(a^{2}-b^{2}\\right)$\r\n\r\nwhere $k$ is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "oxuqd",
+              "text": "1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ldm7K",
+              "text": "2",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "U84Ii",
+              "text": "3",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "g7DK5",
+              "text": "4",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$z^{1 / 3}=a-i b \\Rightarrow z=(a-i b)^{3}$\r\n\r\n$\\therefore x+i y=a^{3}+i b^{3}-3 i a^{2} b-3 a b^{2}$\r\n\r\n$\\Rightarrow x=a^{3}-3 a b^{2} \\Rightarrow \\frac{x}{a}=a^{2}-3 b^{2}$\r\n\r\nand $y=b^{3}-3 a^{2} b \\Rightarrow \\frac{y}{b}=b^{2}-3 a^{2}$\r\n\r\nSo, $\\frac{x}{a}-\\frac{y}{b}=4\\left(a^{2}-b^{2}\\right)$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7966f5bfc7ab78ae62d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "If \\(a > 0, a \\in R, z=a+2 i\\) and \\(z|z|-a z+1=0\\) then",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "wZCmv",
+              "text": "\\(z\\) is always a positive real number",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "L5Dv4",
+              "text": "\\(z\\) is always a negative real number",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "5EsYn",
+              "text": "\\(z\\) is purely imaginary number",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "7fHGP",
+              "text": "such a complex z does not exist",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Putting \\(z=a+2 i\\) in the given equation and comparing imaginary parts, we get \\(\\mathrm{a}^2+4=\\mathrm{a}^2\\), which is not possible.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7886f5bfc7ab78ae5ad",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "The roots of the equation \\(x^2-2 \\sqrt{2} x+1=0\\) are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "w10XM",
+              "text": "Real and different",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "GtvUQ",
+              "text": "Imaginary and different",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "oW5le",
+              "text": "Real and equal",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "1icio",
+              "text": "Rational and different",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The discriminant of the equation \\((-2 \\sqrt{2})^2-4(1)(1)=8-4=4 > 0\\) and \\(a\\) perfect square, so roots are real and different but we can't say that roots are rational because coefficients are not rational therefore.\n\\(\\frac{\\sqrt{2 \\sqrt{2} \\pm \\sqrt{(2 \\sqrt{2})^2-4}}}{2}=\\frac{2 \\sqrt{2} \\pm 2}{2}=\\sqrt{2} \\pm 1\\)\nthis is irrational \\(\\therefore\\) the roots are real and different.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e8686f5bfc7ab78aedd1",
+      "title": "Conjugate, modulus and argument",
+      "totalQuestions": 11,
+      "questions": [
+        {
+          "_id": "67726d1cc49e8ef28ee2b453",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "The modulus of the complex number $z$ such that $|z+3-i|=1$ and $\\arg (z)=\\pi$ is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "IMb9i",
+              "text": "3",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "VDyW2",
+              "text": "2",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "T9ish",
+              "text": "9",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "R6TVu",
+              "text": "4",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $z=x+i y$\nGiven, $\\quad|z+3-i|=1$\n$\\begin{aligned}\n& \\Rightarrow \\quad|(x+3)+(y-1) i|=1 \\\\\n& \\Rightarrow \\quad \\sqrt{(x+3)^2+(y-1)^2}=1 \\\\\n& \\Rightarrow \\quad(x+3)^2+(y-1)^2=1\\ldots(i)\n\\end{aligned}$\nAbove is the equation of circle with centre $\\equiv(-3,1)$ and\n$\\text { radius }=1$\nAlso, $\\arg (z)=\\pi \\Rightarrow \\tan ^{-1}\\left|\\frac{y}{x}\\right|=\\pi$\n$\\Rightarrow \\quad\\left|\\frac{y}{x}\\right|=\\tan \\pi=0 \\Rightarrow y=0$\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/0Cx_H71UrlvsAaWxnnhhCkMW9pD0N85P8K2TMcRVynI.original.fullsize.png\"/>\nBy Eq. (i),\n$\\begin{aligned}\n\\Rightarrow & x & =-3 \\\\\n\\therefore & z & =-3+0 i \\\\\n\\Rightarrow & \\text { Modulus of } z & =3\n\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726d0bc49e8ef28ee2b3d2",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "If $z_1, z_2, \\ldots . . z_n$ are complex numbers such that $\\left|z_1\\right|=\\left|z_2\\right|=\\ldots . .=\\left|z_n\\right|=1$, then $\\left|z_1+z_2+\\ldots . .+z_n\\right|$ is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "fhUWJ",
+              "text": "$\\left|z_1 z_2 z_3 \\ldots . . z_n\\right|$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "KYpYU",
+              "text": "$\\left|z_1\\right|+\\left|z_2\\right|+\\ldots . .+\\left|z_n\\right|$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "LA09F",
+              "text": "$\\left|\\frac{1}{z_1}+\\frac{1}{z_2}+\\ldots . .+\\frac{1}{z_n}\\right|$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "rPiQA",
+              "text": "n",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\left|z_1\\right|=\\left|z_2\\right|=\\left|z_3\\right|=\\ldots \\ldots .=\\left|z_n\\right|=1$\n$\\Rightarrow z_1 \\bar{z}_1=z_2 \\bar{z}_2=z_3 \\bar{z}_3=\\ldots \\ldots=z_n \\bar{z}_n=1$\n$\\overline{\\mathrm{z}}_1=\\frac{1}{\\mathrm{z}}, \\overline{\\mathrm{z}}_2=\\frac{1}{\\mathrm{z}_2}, \\overline{\\mathrm{z}}_3=\\frac{1}{\\mathrm{z}_3}, \\ldots \\ldots, \\overline{\\mathrm{z}}_{\\mathrm{n}}=\\frac{1}{\\mathrm{z}_{\\mathrm{n}}}$\nNow, $\\left|z_1+z_2+z_3+\\ldots \\ldots .+z_n\\right|$\n$=\\left|\\bar{z}_1+\\bar{z}_2+\\ldots \\ldots+\\bar{z}_n\\right|$\n$\\left|\\bar{z}_1+\\bar{z}_2+\\bar{z}_3+\\ldots .+\\bar{z}_n\\right|=\\left|\\frac{1}{z_1}+\\frac{1}{z_2}+\\frac{1}{z_3}+\\ldots \\ldots+\\frac{1}{z_n}\\right|$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726cfec49e8ef28ee2b369",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "If $\\left|z_1\\right|=2,\\left|z_2\\right|=3,\\left|z_3\\right|=4$ and $\\left|2 z_1+3 z_2+4 z_3\\right|=$ 4 , then absolute value of $8 z_2 z_3+27 z_3 z_1+$ $64 z_1 z_2$ equals",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ujK2E",
+              "text": "$24$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8KLH3",
+              "text": "$48$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vtHkM",
+              "text": "$72$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vSNle",
+              "text": "$96$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\left|8 z_2 z_3+27 z_3 z_1+64 z_1 z_2\\right|=\\left|z_1\\right|\\left|z_2\\right|\\left|z_3\\right|$\n$\\left|\\frac{8}{z_1}+\\frac{27}{z_2}+\\frac{64}{z_3}\\right|$\n$=(2)(3)(4)\\left|\\frac{8 \\bar{z}_1}{\\left|z_1\\right|^2}+\\frac{27 \\bar{z}_2}{\\left|z_2\\right|^2}+\\frac{64 \\bar{z}_3}{\\left|z_3\\right|^2}\\right|$\n$=24\\left|2 \\bar{z}_1+3 \\bar{z}_2+4 \\bar{z}_3\\right|$\n$=24\\left|\\overline{2 z_1+3 z_2+4 z_3}\\right|$\n$=24\\left|2 z_1+3 z_2+4 z_3\\right|=(24)(4)=96$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b88297ae24e9e2db8d14",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "The modulus of $\\frac{(1+i \\sqrt{3})(2+2 i)}{(\\sqrt{3}-i)}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "JjxS2",
+              "text": "<br />2",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "9gPAD",
+              "text": "<br />4",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "OX8IT",
+              "text": "$3 \\sqrt{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "68eIK",
+              "text": "$2 \\sqrt{2}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<br />$\\begin{aligned} & \\frac{(1+i \\sqrt{3})(2+2 i)}{\\sqrt{3}-i}=\\frac{2+2 \\sqrt{3} i+2 i-2 \\sqrt{3}}{\\sqrt{3}-i} \\\\ & =\\frac{(2-2 \\sqrt{3})+(2 \\sqrt{3}+2) i}{\\sqrt{3}-i} \\times \\frac{\\sqrt{3}+i}{\\sqrt{3}+i} \\\\ & =\\frac{2 \\sqrt{3}-6+2 i-2 \\sqrt{3} i+6 i+2 \\sqrt{3} i-2 \\sqrt{3}-2}{3+1} \\\\ & =\\frac{8 i-8}{4}=-2+2 i \\\\ & \\therefore \\text { Modulus }=\\sqrt{(-2)^2+(2)^2}=2 \\sqrt{2}\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e82b6f5bfc7ab78aeb33",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "$\\text { If } z_{1}=\\sqrt{2}\\left[\\cos \\frac{\\pi}{4}+i \\sin \\frac{\\pi}{4}\\right] \\text { and } z_{2}=\\sqrt{3}\\left[\\cos \\frac{\\pi}{3}+i \\sin \\frac{\\pi}{3}\\right]$ then $\\left|z_{1} z_{2}\\right|$ is equal to $\\sqrt{m}$. Value of $m$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "OR9ay",
+              "text": "6",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "70zXE",
+              "text": "3",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "V3tPq",
+              "text": "2",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "H3qMf",
+              "text": "5",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$z_{1}=\\sqrt{2}\\left[\\cos \\frac{\\pi}{4}+i \\sin \\frac{\\pi}{4}\\right]=\\sqrt{2}\\left[\\frac{1}{\\sqrt{2}}+i \\frac{1}{\\sqrt{2}}\\right]=1+i$\r\n\r\n$\\left|z_{1}\\right|=\\sqrt{2}$\r\n\r\nand $z_{2}=\\sqrt{3}\\left[\\cos \\frac{\\pi}{3}+i \\sin \\frac{\\pi}{3}\\right]=\\sqrt{3}\\left[\\frac{1}{2}+i \\frac{\\sqrt{3}}{2}\\right]$\r\n\r\n$\\left|z_{2}\\right|=\\sqrt{\\frac{3}{4}+\\frac{9}{4}}=\\sqrt{3}$\r\n\r\n$\\left|z_{1} z_{2}\\right|=\\left|z_{1}\\right|\\left|z_{2}\\right|=\\sqrt{2} \\cdot \\sqrt{3}=6$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8196f5bfc7ab78aea95",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "If $\\left|z_{1}\\right|=\\left|z_{2}\\right|=\\ldots \\ldots \\ldots . .\\left|z_{n}\\right|=1,$ then the\r\n\r\nvalue of $\\left|z_{1}+z_{2}+\\ldots \\ldots . z_{n}\\right|-$\r\n\r\n$\\left|\\frac{1}{z_{1}}+\\frac{1}{z_{2}}+\\ldots \\ldots .+\\frac{1}{z_{n}}\\right|$ is,",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Z11vn",
+              "text": "0",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "UER5o",
+              "text": "1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "zoJuN",
+              "text": "-1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "TziZ9",
+              "text": "None",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$z_{1} \\bar{z}_{1}=z_{2} \\bar{z}_{2}=\\ldots .=z_{n} \\bar{z}_{n}=1$\r\n\r\n$\\Rightarrow \\overline{\\mathrm{z}}_{1}=\\frac{1}{\\mathrm{z}_{1}}, \\overline{\\mathrm{z}}_{2}=\\frac{1}{\\mathrm{z}_{2}}, \\overline{\\mathrm{z}}_{3}=\\frac{1}{\\mathrm{z}_{3}}, \\ldots \\ldots, \\overline{\\mathrm{z}}_{\\mathrm{n}}=\\frac{1}{\\mathrm{z}_{\\mathrm{n}}}$\r\n\r\n$\\therefore\\left|z_{1}+z_{2}+\\ldots .+z_{n}\\right|-\\left|\\frac{1}{z_{1}}+\\frac{1}{z_{2}}+\\ldots .+\\frac{1}{z_{n}}\\right|$\r\n\r\n$=\\left|z_{1}+z_{2}+\\ldots+z_{n}\\right|-\\left|\\bar{z}_{1}+\\bar{z}_{2}+\\ldots .+\\bar{z}_{n}\\right|=0$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e80b6f5bfc7ab78aea1b",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#955;</mi></math> for which the loci <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>arg</mi><mi>z</mi><mo>=</mo><mfrac><mi>&#960;</mi><mn>6</mn></mfrac></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>|</mo><mi>z</mi><mo>-</mo><mn>2</mn><msqrt><mn>3</mn></msqrt><mi>i</mi><mo>|</mo><mo>=</mo><mi>&#955;</mi></math> on the argand plane touch each other is&nbsp;",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "5TaOF",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "CaFfh",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "SKRzS",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "IC04D",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>6</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>z</mi><mo>=</mo><mi>x</mi><mo>+</mo><mi>i</mi><mi>y</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>arg</mi><mi>z</mi><mo>=</mo><msup><mi>tan</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mfrac><mi>y</mi><mi>x</mi></mfrac></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>arg</mi><mfenced><mi>z</mi></mfenced><mo>=</mo><mfrac><mi>&#960;</mi><mn>6</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><msup><mi>tan</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfrac><mi>y</mi><mi>x</mi></mfrac><mo>=</mo><mfrac><mi>&#960;</mi><mn>6</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi>y</mi><mi>x</mi></mfrac><mo>=</mo><mi>tan</mi><mfrac><mi>&#960;</mi><mn>6</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>x</mi><mo>=</mo><msqrt><mn>3</mn></msqrt><mi>y</mi></math></p><p>Also given,&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>|</mo><mi>z</mi><mo>-</mo><mn>2</mn><msqrt><mn>3</mn></msqrt><mi>i</mi><mo>|</mo><mo>=</mo><mi>&#955;</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>|</mo><mi>x</mi><mo>+</mo><mi>i</mi><mi>y</mi><mo>-</mo><mn>2</mn><msqrt><mn>3</mn></msqrt><mi>i</mi><mo>|</mo><mo>=</mo><mi>&#955;</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mfenced><mrow><mi>y</mi><mo>-</mo><mn>2</mn><msqrt><mn>3</mn></msqrt></mrow></mfenced><mn>2</mn></msup><mo>=</mo><msup><mi>&#955;</mi><mn>2</mn></msup></math></p><p>This is the equation of circle whose centre&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>-</mo><msqrt><mn>3</mn></msqrt><mi>y</mi><mo>=</mo><mn>0</mn></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mn>0</mn><mo>,</mo><mn>2</mn><msqrt><mn>3</mn></msqrt><mo>)</mo></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi><mo>=</mo><mi>&#955;</mi></math>. Now, the line touches the circle</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi>&#955;</mi><mo>=</mo><mfenced close=\"|\" open=\"|\"><mfrac><mrow><mn>0</mn><mo>-</mo><msqrt><mn>3</mn></msqrt><mfenced><mrow><mn>2</mn><msqrt><mn>3</mn></msqrt></mrow></mfenced></mrow><msqrt><mn>1</mn><mo>+</mo><mn>3</mn></msqrt></mfrac></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#955;</mi><mo>=</mo><mfenced close=\"|\" open=\"|\"><mfrac><mn>6</mn><mn>2</mn></mfrac></mfenced><mo>=</mo><mn>3</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi>&#955;</mi><mo>=</mo><mn>3</mn></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ee6f5bfc7ab78ae916",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>z</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>i</mi><mi>b</mi></math> satisfies <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>arg</mi><mo>(</mo><mi>z</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>=</mo><mi>arg</mi><mo>(</mo><mi>z</mi><mo>+</mo><mn>3</mn><mi>i</mi><mo>)</mo></math>, then&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi>a</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>:</mo><mi>b</mi><mo>=</mo></math>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "zljXu",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>:</mo><mn>1</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "7HkzL",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>:</mo><mn>3</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Sqv4K",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mn>1</mn><mo>:</mo><mn>3</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "OPS2n",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>We have,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>arg</mi><mo>(</mo><mi>z</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>=</mo><mi>arg</mi><mo>(</mo><mi>z</mi><mo>+</mo><mn>3</mn><mi>i</mi><mo>)</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>arg</mi><mo>(</mo><mo>(</mo><mi>a</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>+</mo><mi>i</mi><mi>b</mi><mo>)</mo><mo>=</mo><mi>arg</mi><mo>(</mo><mi>a</mi><mo>+</mo><mo>(</mo><mi>b</mi><mo>+</mo><mn>3</mn><mo>)</mo><mi>i</mi><mo>)</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><msup><mi>tan</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mfrac><mi>b</mi><mrow><mi>a</mi><mo>-</mo><mn>1</mn></mrow></mfrac></mfenced><mo>=</mo><msup><mi>tan</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mfenced><mfrac><mrow><mi>b</mi><mo>+</mo><mn>3</mn></mrow><mi>a</mi></mfrac></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mfrac><mi>b</mi><mrow><mi>a</mi><mo>-</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>b</mi><mo>+</mo><mn>3</mn></mrow><mi>a</mi></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>a</mi><mi>b</mi><mo>=</mo><mo>(</mo><mi>a</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>(</mo><mi>b</mi><mo>+</mo><mn>3</mn><mo>)</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mn>3</mn><mo>(</mo><mi>a</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>=</mo><mi>b</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mo>(</mo><mi>a</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>:</mo><mi>b</mi><mo>=</mo><mn>1</mn><mo>:</mo><mn>3</mn></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7d06f5bfc7ab78ae81d",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The root of the equation\r\n\r\n$2(1+i) x^{2}-4(2-i) x-5-3 i=0$ which has\r\n\r\ngreater modulus is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "9rynk",
+              "text": "$\\frac{3-5 i}{2}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "jZTZP",
+              "text": "$\\frac{5-3 \\mathrm{i}}{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "w7CVU",
+              "text": "$\\frac{3-i}{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "cSsXm",
+              "text": "none",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\begin{aligned} \\text { Roots } &=\\frac{4(2-i) \\pm \\sqrt{16(2-i)^{2}+8(1+i)(5+3 i)}}{4(1+i)} \\\\ &=\\frac{4-i}{1+i} \\text { or } \\frac{-i}{1+i}=\\frac{3-5 i}{2} \\text { or } \\frac{-1-i}{2} \\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a56f5bfc7ab78ae6a8",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The amplitude of $\\sin \\frac{\\pi}{5}+i\\left(1-\\cos \\frac{\\pi}{5}\\right)$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "rmn0V",
+              "text": "$\\pi / 5$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Nxjzp",
+              "text": "$2 \\pi / 5$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "VOVxa",
+              "text": "$\\pi / 10$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Qy50e",
+              "text": "$\\pi / 15$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\sin \\frac{\\pi}{5}+\\mathrm{i}\\left(1-\\cos \\frac{\\pi}{5}\\right)$\r\n$=2 \\sin \\frac{\\pi}{10} \\cos \\frac{\\pi}{10}+\\mathrm{i} 2 \\sin ^{2} \\frac{\\pi}{10}$\r\n$=2 \\sin \\frac{\\pi}{10}\\left(\\cos \\frac{\\pi}{10}+\\mathrm{i} \\sin \\frac{\\pi}{10}\\right)$\r\nFor amplitude, $\\tan \\theta=\\frac{\\pi}{\\sin \\frac{\\pi}{10}}{\\cos \\frac{\\pi}{10}}=\\tan \\frac{\\pi}{10}$\r\n$\\Rightarrow \\theta=\\frac{\\pi}{10}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e77a6f5bfc7ab78ae532",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "For the equation \\(\\frac{1}{x+a}-\\frac{1}{x+b}=\\frac{1}{x+c}\\), if the product of roots is zero, then the sum of roots is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "0cxUo",
+              "text": "0",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "sHjhS",
+              "text": "\\(\\frac{2 \\mathrm{ab}}{\\mathrm{b}+\\mathrm{c}}\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CAzLB",
+              "text": "\\(\\frac{2 b c}{b+c}\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "R1uLT",
+              "text": "\\(\\frac{-2 b c}{b+c}\\)",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "\\(\\frac{1}{x+a}-\\frac{1}{x+b}=\\frac{1}{x+c}\\)\nor \\(x^2+(a+b) x+a b=(b-a) x+(b-a) c\\) or \\(\\mathrm{x}^2+2 \\mathrm{ax}+\\mathrm{ab}+\\mathrm{ca}-\\mathrm{bc}=0\\) Since product of the roots \\(=0\\)\n\\(a b+c a-b c=0 ; a=\\frac{b c}{b+c}\\)\nThus sum of roots \\(=-2 a=\\frac{-2 b c}{b+c}\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "64c0e8686f5bfc7ab78aedd3",
+      "title": "Cube Root of Unity",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "64c0e7b46f5bfc7ab78ae725",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If $\\alpha$ and $\\beta$ are the roots of $x^{2}-x+1=0,$ then the equation whose roots are $\\alpha^{100}$ and $\\beta^{100}$ are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "iG7ih",
+              "text": "$x^{2}-x+1=0$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "b8fXB",
+              "text": "$x^{2}+x-1=0$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "vjp08",
+              "text": "$x^{2}-x-1=0$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "FDPcs",
+              "text": "$x^{2}+x+1=0$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We have $x^{3}+1 \\equiv(x+1)\\left(x^{2}-x+1\\right)$. Therefore, $\\alpha$ and $\\beta$ are the complex cube roots of -1 so that we may take $\\alpha=-\\omega$ and $\\beta=-\\omega^{2},$ where $\\omega \\neq 1$ is a cube root of unity.\r\n\r\nThus $\\alpha^{100}=(-\\omega)^{100}=\\omega$ and\r\n\r\n$\\beta^{100}=\\left(-\\omega^{2}\\right)^{100}=\\omega^{2},$ so that the required\r\n\r\nequation is $\\mathrm{x}^{2}+\\mathrm{x}+1=0$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a56f5bfc7ab78ae6a9",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "If $x=\\omega-\\omega^{2}-2,$ then the value of $x^{4}+3 x^{3}+2 x^{2}-11 x-6$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "MvJS0",
+              "text": "1",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "mMTAF",
+              "text": "-1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "3Fj8D",
+              "text": "2",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "1Qe4J",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We have, $x=\\omega-\\omega^{2}-2$ or $x+2=\\omega-\\omega^{2}$\r\nSquaring, $x^{2}+4 x+4=\\omega^{2}+\\omega^{4}-2 \\omega^{3}$\r\n$=\\omega^{2}+\\omega^{3} \\omega \\cdot-2 \\omega^{3}=\\omega^{2}+\\omega-2 \\quad\\left[\\omega^{3}=1\\right]$\r\n$=-1-2=-3 \\Rightarrow$\r\n$x^{2}+4 x+7=0$\r\nDividing $x^{4}+3 x^{3}+2 x^{2}-11 x-6$ by $x^{2}+4 x+7$\r\nwe get $x^{4}+3 x^{3}+2 x^{2}-11 x-6=\\left(x^{2}+4 x+7\\right)\\left(x^{2}-x-1\\right)+1$\r\n$=(0)\\left(\\mathrm{x}^{2}-\\mathrm{x}-1\\right)+1=0+1=1$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "64c0e8686f5bfc7ab78aedd6",
+      "title": "nth roots of unity",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e7fc6f5bfc7ab78ae994",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>n</mi><mi>th</mi></msup></math> roots of unity are in",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "GX7Au",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>AP</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "YIaA8",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>GP</mi></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "6GYab",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>HP</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ut5bp",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mn>1</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mi>cos</mi><mn>0</mn><mo>&#176;</mo><mo>+</mo><mi>i</mi><mi>sin</mi><mn>0</mn><mo>&#176;</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><msup><mi>x</mi><mrow><mn>1</mn><mo>/</mo><mi>n</mi></mrow></msup><mo>=</mo><msup><mi>e</mi><mrow><mi>i</mi><mfenced><mrow><mn>2</mn><mi>&#960;</mi><mi>r</mi></mrow></mfenced><mo>/</mo><mi>n</mi></mrow></msup><mo>;</mo><mo>&#160;</mo><mi>r</mi><mo>=</mo><mn>0</mn><mo>,</mo><mo>&#160;</mo><mn>1</mn><mo>,</mo><mo>&#160;</mo><mn>2</mn><mo>,</mo><mo>&#8230;</mo></math></p><p>Then, the roots are <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>,</mo><mo>&#160;</mo><msup><mi>e</mi><mfrac><mrow><mn>2</mn><mi>&#960;</mi><mi>i</mi></mrow><mi>n</mi></mfrac></msup><mo>,</mo><mo>&#160;</mo><msup><mi>e</mi><mfrac><mrow><mn>4</mn><mi>&#960;</mi><mi>i</mi></mrow><mi>n</mi></mfrac></msup><mo>,</mo><mo>&#8230;</mo></math>&nbsp;which are clearly on <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>GP</mi></math> with common ratio <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>e</mi><mrow><mn>2</mn><mi>&#960;</mi><mi>i</mi><mo>/</mo><mi>n</mi></mrow></msup></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "topicId": "64c0e8686f5bfc7ab78aedd4",
+      "title": "Geometry of Complex Number",
+      "totalQuestions": 6,
+      "questions": [
+        {
+          "_id": "67726d18c49e8ef28ee2b437",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "The points represented by the complex number $1+i,-2+3 i, \\frac{5}{3} i$ on the argand plane are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "EszIU",
+              "text": "Vertices of an equilateral triangle",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "D0stg",
+              "text": "Vertical of an isosceles triangle",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "sgpSG",
+              "text": "Collinear",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "A61ZC",
+              "text": "None of the above",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "According to question,\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/_0atlPd0xNFWe4Nv21YtL27zD-stVAdxmilFQ-sRn0Q.original.fullsize.png\"/>\nLet find slope of $A B, B C$ and $C A$\nSlope of $A B=\\frac{1-3}{1-(-2)}=\\frac{-2}{3}$\nSlope of $B C=\\frac{3-\\left(\\frac{5}{3}\\right)}{-2-0}=\\frac{-2}{3}$\nSlope of $C A=\\frac{\\frac{5}{3}-1}{0-1}=\\frac{-2}{3}$\nSince, slope of all lines are same, therefore, points are collinear.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726d0bc49e8ef28ee2b3ce",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "If $z, \\bar{z},-z,-\\bar{z}$ forms a rectangle of area $2 \\sqrt{3}$ square units, then one such $z$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ik3sP",
+              "text": "$\\frac{1}{2}+\\sqrt{3 i}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "00cHS",
+              "text": "$\\frac{\\sqrt{5}+\\sqrt{3 i}}{4}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6KvTQ",
+              "text": "$\\frac{3}{2}+\\frac{\\sqrt{3 i}}{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pHBaL",
+              "text": "$\\frac{\\sqrt{3}+\\sqrt{11 i}}{2}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let a complex number, $z=x+i y$\n$\\Rightarrow \\bar{z}=\\bar{x}-i y$\nThen, vertices of rectangle for $z, \\bar{z},-z,-\\bar{z}$ are $(x, y),(x,-y),(-x,-y),(-x, y)$\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/NFU4Az-iHlpF5xPsxP1ZxykEOeV7R7l72OMXxo4Bn-A.original.fullsize.png\"/>\nNow, Area of rectangle $=(2 x)(2 y)=4 x y$\nIt is given that,\nArea $=2 \\sqrt{3}=4 x y \\Rightarrow 2 x y=\\sqrt{3}$\n$\\therefore x=\\frac{1}{2}, y=\\sqrt{3} \\quad \\therefore z=\\frac{1}{2}+\\sqrt{3} i$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7f26f5bfc7ab78ae93e",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>z</mi><mn>1</mn></msub><mo>,</mo><msub><mi>z</mi><mn>2</mn></msub></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>z</mi><mn>3</mn></msub></math> represent the vertices of an equilateral triangle such that <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"|\" close=\"|\"><msub><mi>z</mi><mn>1</mn></msub></mfenced><mo>=</mo><mfenced open=\"|\" close=\"|\"><msub><mi>z</mi><mn>2</mn></msub></mfenced><mo>=</mo><mfenced open=\"|\" close=\"|\"><msub><mi>z</mi><mn>3</mn></msub></mfenced></math> then",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "PeBOX",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>z</mi><mn>1</mn></msub><mo>+</mo><msub><mi>z</mi><mn>2</mn></msub><mo>=</mo><msub><mi>z</mi><mn>3</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "SUs1O",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>z</mi><mn>1</mn></msub><mo>+</mo><msub><mi>z</mi><mn>2</mn></msub><mo>+</mo><msub><mi>z</mi><mn>3</mn></msub><mo>=</mo><mn>0</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "sIMRr",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>z</mi><mn>1</mn></msub><msub><mi>z</mi><mn>2</mn></msub><mo>=</mo><mfrac><mn>1</mn><msub><mi>z</mi><mn>3</mn></msub></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "lTyHk",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>z</mi><mn>1</mn></msub><mo>-</mo><msub><mi>z</mi><mn>2</mn></msub><mo>=</mo><msub><mi>z</mi><mn>3</mn></msub><mo>-</mo><msub><mi>z</mi><mn>2</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<blockquote><p>Since, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"|\" open=\"|\"><msub><mi>z</mi><mn>1</mn></msub></mfenced><mo>=</mo><mfenced close=\"|\" open=\"|\"><msub><mi>z</mi><mn>2</mn></msub></mfenced><mo>=</mo><mfenced close=\"|\" open=\"|\"><msub><mi>z</mi><mn>3</mn></msub></mfenced><mo>.</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfenced open=\"|\" close=\"|\"><mrow><msub><mi>z</mi><mn>1</mn></msub><mo>-</mo><mn>0</mn></mrow></mfenced><mo>=</mo><mfenced open=\"|\" close=\"|\"><mrow><msub><mi>z</mi><mn>2</mn></msub><mo>-</mo><mn>0</mn></mrow></mfenced><mo>=</mo><mfenced open=\"|\" close=\"|\"><mrow><msub><mi>z</mi><mn>3</mn></msub><mo>-</mo><mn>0</mn></mrow></mfenced><mo>.</mo></math></p><p>Thus, the given points are equidistant from origin, and we know that the point which is equidistant from the vertices of a triangle is the circumcentre of the triangle.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mn>0</mn></math> is the circumcentre of an equilateral <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8710;</mo><mi>A</mi><mi>B</mi><mi>C</mi></math>&nbsp;and we also know that for an equilateral triangle the centroid and circumcentre are same.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mfrac><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><msub><mi>x</mi><mn>3</mn></msub></mrow><mn>3</mn></mfrac><mo>=</mo><mn>0</mn><mo>=</mo><mfrac><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><msub><mi>y</mi><mn>2</mn></msub><mo>+</mo><msub><mi>y</mi><mn>3</mn></msub></mrow><mn>3</mn></mfrac></math></p><p>where, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>z</mi><mn>1</mn></msub><mo>=</mo><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><mi>i</mi><msub><mi>y</mi><mn>1</mn></msub></math>.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfrac><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><msub><mi>x</mi><mn>3</mn></msub></mrow><mn>3</mn></mfrac><mo>+</mo><mi>i</mi><mfenced><mfrac><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><msub><mi>y</mi><mn>2</mn></msub><mo>+</mo><msub><mi>y</mi><mn>3</mn></msub></mrow><mn>3</mn></mfrac></mfenced><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfenced><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><mi>i</mi><msub><mi>y</mi><mn>1</mn></msub></mrow></mfenced><mo>+</mo><mfenced><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><mi>i</mi><msub><mi>y</mi><mn>2</mn></msub></mrow></mfenced><mo>+</mo><mfenced><mrow><msub><mi>x</mi><mn>3</mn></msub><mo>+</mo><mi>i</mi><msub><mi>y</mi><mn>3</mn></msub></mrow></mfenced><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><msub><mi>z</mi><mn>1</mn></msub><mo>+</mo><msub><mi>z</mi><mn>2</mn></msub><mo>+</mo><msub><mi>z</mi><mn>3</mn></msub><mo>=</mo><mn>0</mn><mo>.</mo></math></p></blockquote>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7d66f5bfc7ab78ae842",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If complex number $z_{1}, z_{2}$ and 0 are vertices of equilateral triangle, then $z_{1}^{2}+z_{2}^{2}-z_{1} z_{2}$ is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "iTZ6l",
+              "text": "$0$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "LuRUZ",
+              "text": "$z_{1}-z_{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "GtyZg",
+              "text": "$z_{1}+z_{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "MKgrT",
+              "text": "1",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$z_{1}, z_{2}, 0$ are vertices of an equilateral triangle, so we have $z_{1}^{2}+z_{2}^{2}+0^{2}=z_{1} z_{2}+z_{2} \\cdot 0+0 \\cdot z_{1}$\r\n\r\n$$\r\n\r\n\\Rightarrow z_{1}^{2}+z_{2}^{2}=z_{1} z_{2} \\Rightarrow z_{1}^{2}+z_{2}^{2}-z_{1} z_{2}=0\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c36f5bfc7ab78ae7a6",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The complex number $z=z+i y$ which satisfies\r\n\r\nthe equation $\\left|\\frac{z-3 i}{z+3 i}\\right|=1,$ lies on",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "do3jY",
+              "text": "the $X$ -axis",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "My2pW",
+              "text": "the straight line $y=3$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "QugIM",
+              "text": "a circle passing through origin",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ZXZ5q",
+              "text": "None of the above",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\left|\\frac{z-3 i}{z+3 i}\\right|=1 \\Rightarrow|z-3 i|=|z+3 i|$\r\n\r\n[if $\\left|z-z_{1}\\right|=\\left|z+z_{2}\\right|,$ then it is a perpendicular bisector of $z_{1}$ and $z_{2}$ ] Hence, perpendicular bisector of (0,3) and (0,-3) is $X$ -axis.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b46f5bfc7ab78ae724",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "If the real part of $\\frac{\\bar{z}+2}{\\bar{z}-1}$ is $4, z \\neq 1,$ then the locus of the point representing $z$ in the complex plane is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "wWAy7",
+              "text": "a straight line parallel to $x$ -axis",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "UvPdi",
+              "text": "a straight line equally inclined to axes",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "OprY6",
+              "text": "a circle with radius 2",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "4dsLE",
+              "text": "a circle with radius $\\frac{1}{2}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Real part of $\\frac{\\bar{z}+2}{\\bar{z}-1}$ is given by\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\frac{1}{2}\\left[\\frac{\\bar{z}+2}{\\bar{z}-1}+\\left(\\frac{\\bar{z}+2}{\\bar{z}-1}\\right)\\right]=4 \\\\\r\n\r\n\\Rightarrow \\frac{\\bar{z}+2}{\\bar{z}-1}+\\frac{z+2}{z-1}=8 \\\\\r\n\r\n\\Rightarrow z \\bar{z}-\\bar{z}+2 z-2+z \\bar{z}+2 \\bar{z}-z-2 \\\\\r\n\r\n=8(z \\bar{z}-\\bar{z}-z+1) \\\\\r\n\r\n\\Rightarrow z \\bar{z}-\\frac{3}{2} z-\\frac{3}{2} \\bar{z}+2=0\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nComparing with the equation $z \\bar{z}+\\bar{a} z+a \\bar{z}+b=0,$ we get $a=-\\frac{3}{2}$ and $b$\r\n\r\n$=2$. Thus, the locus of $z$ given by the equation\r\n\r\n(i) is a circle with centre $=\\frac{1}{2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

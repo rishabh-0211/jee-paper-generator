@@ -1,0 +1,1899 @@
+{
+  "index": 22,
+  "chapterId": "61e7bd72934cc32c8e6dc08d",
+  "chapter": "p Block Elements (Group 15, 16, 17 & 18)",
+  "exam": "BITSAT",
+  "totalTopics": 5,
+  "totalQuestions": 28,
+  "downloadTime": "2026-10-08 20:02:56",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e8636f5bfc7ab78aed95",
+      "title": "Nitrogen and Its Compounds",
+      "totalQuestions": 9,
+      "questions": [
+        {
+          "_id": "64c0e8246f5bfc7ab78aeaf7",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Nitrogen is obtained by the thermal decomposition of:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "P3M8m",
+              "text": "$\\mathrm{NH}_{4} \\mathrm{NO}_{2}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "iVA9e",
+              "text": "$\\mathrm{NH}_{4} \\mathrm{NO}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Dq1iL",
+              "text": "$\\mathrm{AgNO}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "p3hH9",
+              "text": "$\\mathrm{Pb}\\left(\\mathrm{NO}_{3}\\right)_{2}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{NH}_{4} \\mathrm{NO}_{2} \\stackrel{\\Delta}{\\rightarrow} \\mathrm{N}_{2}+2 \\mathrm{H}_{2} \\mathrm{O}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8236f5bfc7ab78aeaeb",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Hydrolysis of $\\mathrm{NCl}_{3}$ gives $\\mathrm{NH}_{3}$ and $\\mathrm{X}$. Which of the following is $\\mathrm{X}$ ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "wwZN8",
+              "text": "$\\mathrm{HClO}_{4}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "u6Ja5",
+              "text": "$\\mathrm{HClO}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "rh0v4",
+              "text": "$\\mathrm{HOCl}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "PujTY",
+              "text": "$\\mathrm{HClO}_{2}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Completing the reaction, we get\r\n\r\n$\\mathrm{NCl}_{3}+3 \\mathrm{H}_{2} \\mathrm{O} \\rightarrow 3 \\underset{' \\mathrm{x}^{\\prime}}{\\mathrm{HClO}}+\\mathrm{NH}_{3}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ec6f5bfc7ab78ae90a",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "<p>For the reaction&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">N</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>4</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced><mo>&#10230;</mo><mn>2</mn><msub><mi>NO</mi><mn>2</mn></msub><mfenced><mi mathvariant=\"normal\">g</mi></mfenced></math></p>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ujyed",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#916;H</mi><mo>&#62;</mo><mi>&#916;E</mi></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "o83JZ",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#916;H</mi><mo>&#60;</mo><mi>&#916;E</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "qZEPY",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#916;H</mi><mo>=</mo><mi>&#916;E</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "2ixLq",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#916;H</mi><mo>=</mo><mn>0</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo><mo>&#160;</mo><mi>&#916;H</mi><mo>=</mo><mi>&#916;E</mi><mo>+</mo><msub><mi>&#916;n</mi><mi mathvariant=\"normal\">g</mi></msub><mi>RT</mi></math></p><p>and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#916;n</mi><mi mathvariant=\"normal\">g</mi></msub></math> (for the given reaction) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>2</mn><mo>-</mo><mn>1</mn><mo>=</mo><mo>+</mo><mn>1</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi>&#916;H</mi><mo>&#62;</mo><mi>&#916;E</mi></math></p><p>In exothermic reactions, heat from the system is lost to the surrounding. For such reactions, ∆H is negative.</p><p>In endothermic reactions, heat is absorbed by the system from the surroundings. For such reactions, ∆H is positive.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ec6f5bfc7ab78ae906",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "The most acidic oxide for nitrogen is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "M9eCJ",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>NO</mi><mn>2</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "hjV7p",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">N</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "qIIiS",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>NO</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "8lFK4",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">N</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>5</mn></msub></math>",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>The acidic nature of the oxides of nitrogen can be determined by the strength of the acid formed by the nitrogen oxide in water.&nbsp;</p><p>More higher be the <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mo>+</mo><mo>)</mo><mo>&#160;</mo><mi>ve</mi></math> oxidation number of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">N</mi></math>-atom in its oxide more acidic be the nature of oxide. Thus <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">N</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>5</mn></msub></math>, is most acidic oxide.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7cd6f5bfc7ab78ae7ff",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Laughing gas is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "YDzDY",
+              "text": "nitrogen pentoxide",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "og0TC",
+              "text": "nitrous oxide",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "KPlsk",
+              "text": "$\\quad$ nitrogen trioxide",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "jt08q",
+              "text": "nitric oxide",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Nitrous oxide (i.e, $\\mathrm{N}_{2} \\mathrm{O}$ ) is the laughing gas.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b36f5bfc7ab78ae71c",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "When $\\mathrm{NH}_{3}$ is passed over heated metal $\\mathrm{A}$, its amide is formed. The metal is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "R08ui",
+              "text": "$\\mathrm{Mg}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "CAICA",
+              "text": "$\\mathrm{K}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "g7nEq",
+              "text": "$\\mathrm{Al}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ofked",
+              "text": "$\\mathrm{Pb}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "When Potassium is treated with ammonia, then potassium amide is obtained\r\n\r\n$\\mathrm{K}+\\mathrm{NH}_{3} \\longrightarrow \\underset{\\text { Pot. amide }}{\\mathrm{KNH}_{2}}+\\frac{1}{2} \\mathrm{H}_{2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7866f5bfc7ab78ae59c",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "Which liberates ammonia when treated with water?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ZcJtR",
+              "text": "$\\mathrm{Li}_{3} \\mathrm{~N}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8w03k",
+              "text": "$\\mathrm{Mg}_{3} \\mathrm{~N}_{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "tPBxo",
+              "text": "$\\mathrm{CaCN}_{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "eti17",
+              "text": "All",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "All nitrides react with $\\mathrm{H}_{2} \\mathrm{O}$ to give $\\mathrm{NH}_{3}$ and $\\mathrm{CaCN}_{2}$ also react with $\\mathrm{H}_{2} \\mathrm{O}$\n$$\n\\mathrm{CaNCN}+3 \\mathrm{H}_{2} \\mathrm{O} \\longrightarrow \\mathrm{CaCO}_{3}+\\mathrm{NH}_{3}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7796f5bfc7ab78ae527",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "Ammonia forms the complex ion $\\left[\\mathrm{Cu}\\left(\\mathrm{NH}_{3}\\right)_{4}\\right]^{2+}$ with copper ions in alkaline solutions but not in acidic solutions. What is the reason for it?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "P4m6z",
+              "text": "In acidic solutions protons coordinate with ammonia molecules forming $\\mathrm{NH}_{4}^{+}$ ions and $\\mathrm{NH}_{3}$ molecules are not available.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "YSzLA",
+              "text": "In alkaline solutions insoluble $\\mathrm{Cu}(\\mathrm{OH})_{2}$ is precipitated which is soluble in excess of any alkali.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Y5jUj",
+              "text": "Copper hydroxide is an amphoteric substance.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Fm15h",
+              "text": "In acidic solutions hydration protects copper ions.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\quad \\mathrm{N} \\mathrm{H}_{3}+\\mathrm{H}^{+}$ (acidic medium) $\\rightleftharpoons \\mathrm{NH}_{4}^{+}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7796f5bfc7ab78ae525",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "Which of the following compound is obtained by heating ammonium cyanate?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "zWs63",
+              "text": "Alkane",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CznlG",
+              "text": "Urea",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "0J9Lk",
+              "text": "Ethylamine",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "M6CFI",
+              "text": "Ammonium thiocyanate",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Urea is obtained by heating ammonium cyanate\n$$\n\\mathrm{NH}_{4} \\mathrm{CNO} \\stackrel{\\Delta}{\\longrightarrow} \\mathrm{NH}_{2} \\mathrm{CONH}_{2}\n$$\nAmmonium cyanate Urea",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e8636f5bfc7ab78aed96",
+      "title": "Phosphorus and Its Compounds",
+      "totalQuestions": 6,
+      "questions": [
+        {
+          "_id": "64c0e8316f5bfc7ab78aeb69",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The total number of $\\mathrm{P}-\\mathrm{OH}$ bonds for pyrophosphoric acid",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "H2yjn",
+              "text": "\r\n4\r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "A64PC",
+              "text": "\r\n5\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "n0Dp1",
+              "text": "\r\n6\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "T9T1k",
+              "text": "\r\n8",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The structure of pyrophosphoric acid is\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/6N37zROY_-PvgRSnSTWr7u_zDWKo5dnhVX499Ej9dzQ.original.fullsize.png\"><br>\r\nThere are $4 \\mathrm{P}-\\mathrm{OH}$ bonds, $1 \\mathrm{P}-\\mathrm{O}-\\mathrm{P}$ bond and two $\\mathrm{P}=\\mathrm{O}$ bonds.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8146f5bfc7ab78aea6b",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Phosphine is not obtained by which of the following reaction?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "PN84H",
+              "text": "White $\\mathrm{P}$ is heated with $\\mathrm{NaOH}$.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "4IXvZ",
+              "text": "Red P is heated with $\\mathrm{NaOH}$.",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Jo8YP",
+              "text": "$\\mathrm{Ca}_{3} \\mathrm{P}_{2}$ reacts with water.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "V22gS",
+              "text": "Both (a) and (c).",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Red P doesnot react with $\\mathrm{NaOH}$ to give $\\mathrm{PH}_{3}$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8066f5bfc7ab78ae9ee",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The hybridisation of phosphorous in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>PO</mi><mn>4</mn><mrow><mn>3</mn><mo>-</mo></mrow></msubsup></math>&nbsp;is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Rgi76",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>sp</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "OnuD3",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>sp</mi><mn>2</mn></msup></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "tRkjs",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>sp</mi><mn>3</mn></msup></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "tIQwH",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>sp</mi><mn>3</mn></msup><mi mathvariant=\"normal\">d</mi></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>The structure of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>PO</mi><mn>4</mn><mrow><mn>3</mn><mo>-</mo></mrow></msubsup></math> is as follows</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/d43adad2-02bd-4518-820f-6dba48b24acd-image.png\" style=\"width: 222px; height: 252px;\" /></p><p>In the given molecule, The P atom have 5 valence electrons. The hybridization can be determined by the number of sigma bonds and the number of lone pair.</p><p>As phosphorous central atom forms four <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mn>4</mn></mfenced></math> sigma bonds and has no lone pair of electrons. It uses four hybrid orbital and thus, hybridisation of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">p</mi></math>-atom is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>sp</mi><mn>3</mn></msup></math>.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ce6f5bfc7ab78ae80e",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "The $\\mathrm{P}-\\mathrm{P}-\\mathrm{P}$ angle in $\\mathrm{P}_{4}$ molecule and $\\mathrm{S}-\\mathrm{S}-\\mathrm{S}$\r\n\r\nangle in $\\mathrm{S}_{8}$ molecule is(in degree) respectively",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "AYSuk",
+              "text": "$60^{\\circ}, 107^{\\circ}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "3ggc6",
+              "text": "$107^{\\circ}, 60^{\\circ}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "W5eZy",
+              "text": "$40^{\\circ}, 60^{\\circ}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ED5EN",
+              "text": "$60^{\\circ}, 40^{\\circ}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In $P_{4}$ molecule, the four sp $^{3}$ -hybridised phosphorous atoms lie at the corners of a regular tetrahedron with $\\angle \\mathrm{PPP}=60^{\\circ}$.\r\n\r\nIn $\\mathrm{S}_{8}$ molecule S-S-S angle is $107^{\\circ}$ rings.\r\n\r\nIn $\\mathrm{S}_{8}$ molecule $\\mathrm{S}-\\mathrm{S}-\\mathrm{S}$ angle is $107^{\\circ} \\mathrm{rings} .$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/bCMNUWQbSz_47wNXjl6sKLPpZSFLyWgnN3wewtcz7tY.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b26f5bfc7ab78ae714",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Strong reducing behaviour of $\\mathrm{H}_{3} \\mathrm{PO}_{2}$ is due to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "MZeQX",
+              "text": "presence of one $-\\mathrm{OH}$ group and two $\\mathrm{P}-\\mathrm{H}$ bonds",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "95fxQ",
+              "text": "high electron gain enthalpy of phosphorus",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "dCO3j",
+              "text": "high oxidation state of phosphorus",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "1x5Xa",
+              "text": "presence of two -OH groups and one $\\mathrm{P}-\\mathrm{H}$ bond",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The acids which contain $\\mathrm{P}-\\mathrm{H}$ bond have strong reducing properties. Thus $\\mathrm{H}_{3} \\mathrm{PO}_{2}$ acid is good reducing agent as it contains two P-H bonds. For example, it reduces $\\mathrm{AgNO}_{3}$ to metallic silver.\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/9jdPCxj4Th9wFFql8EsIaNkzC-sXhad3i2tPe2Jn5yg.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7946f5bfc7ab78ae617",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "Phosphine is not obtained by the reaction",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "yFaLo",
+              "text": "White $P$ is heated with $\\mathrm{NaOH}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "MqbWu",
+              "text": "$\\operatorname{Red} P$ is heated with $\\mathrm{NaOH}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ikiWJ",
+              "text": "$\\mathrm{Ca}_{3} \\mathrm{P}_{2}$ reacts with water",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ij6iO",
+              "text": "Phosphorus trioxide is boiled with water",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Red P does not react with $\\mathrm{NaOH}$ to give\n$\\mathrm{PH}_{3}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e8636f5bfc7ab78aed98",
+      "title": "Sulphur and Its Compounds",
+      "totalQuestions": 4,
+      "questions": [
+        {
+          "_id": "67726cfdc49e8ef28ee2b366",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "The sol formed in the following unbalanced equation is\n$\\mathrm{As}_2 \\mathrm{O}_3+\\mathrm{H}_2 \\mathrm{~S} \\rightarrow$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Dk8Vl",
+              "text": "$\\mathrm{As}_2 \\mathrm{~S}_2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "s4Vct",
+              "text": "$\\mathrm{As}_2 \\mathrm{~S}_3$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "nk8Tj",
+              "text": "As",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "VYPIX",
+              "text": "S",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{As}_2 \\mathrm{O}_3+3 \\mathrm{H}_2 \\mathrm{~S} \\rightarrow \\mathrm{As}_2 \\mathrm{~S}_3+3 \\mathrm{H}_2 \\mathrm{O}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87e97ae24e9e2db8ce8",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following oxo acid of sulphur has O-O bond?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "6OI4R",
+              "text": "$\\mathrm{H}_2 \\mathrm{~S}_2 \\mathrm{O}_7$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "YGADj",
+              "text": "$\\mathrm{H}_2 \\mathrm{~S}_2 \\mathrm{O}_8$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "cUb3J",
+              "text": "$\\mathrm{H}_2 \\mathrm{~S}_2 \\mathrm{O}_6$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3BJ3N",
+              "text": "$\\mathrm{H}_2 \\overline{\\mathrm{S}}_2 \\mathrm{O}_5$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/KeU4GARjqcbABo17ABpNbO5LLVFIhokpTdsR75Un4ys.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87597ae24e9e2db8c89",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "$\\mathrm{S}-\\mathrm{S}$ bond is not present in",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "VLzTd",
+              "text": "$\\mathrm{S}_2 \\mathrm{O}_4^{2-}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CF5RO",
+              "text": "$\\mathrm{S}_2 \\mathrm{O}_5^{2-}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "cr0kK",
+              "text": "$\\mathrm{S}_2 \\mathrm{O}_3^{2-}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "hzljx",
+              "text": "$\\mathrm{S}_2 \\mathrm{O}_7^{2-}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{S}_2 \\mathrm{O}_7^{2-}$ has  $\\mathrm{S}-\\mathrm{O}-\\mathrm{S}$ bond.<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/-CKmAGRwM3ThbB8zyZlo7Z8MvD8Muyz0dSpKgRJh5Rc.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8236f5bfc7ab78aeae7",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Identify the incorrect statement:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "WZMWD",
+              "text": "The $S-S-S$ bond angles in the $S_{8}$ and $S_{6}$ rings are the same.",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "O53y9",
+              "text": "Rhombic and monoclinic sulphur have $\\mathrm{S}_{8}$ molecules.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "05EwS",
+              "text": "$\\mathrm{S}_{2}$ is paramagnetic like oxygen",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "5sCiT",
+              "text": "$\\mathrm{S}_{8}$ ring has a crown shape.",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The $\\mathrm{S}_{6}$ molecule has a chair-form hexagon ring with the approx same bond length as that in $\\mathrm{S}_{8}$, but with some what smaller bond angles i.e. bond lengths are approx same but bond angles are different.\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/E-c3AMR5IubP27iad2Hx_7WQjtsSoNSegmc_4UZdGFg.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "64c0e8636f5bfc7ab78aed94",
+      "title": "Halogens and Its Compounds",
+      "totalQuestions": 8,
+      "questions": [
+        {
+          "_id": "67726cfbc49e8ef28ee2b353",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "In which of the following molecules, all bond lengths are not equal?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "8uWeU",
+              "text": "$\\mathrm{SF}_6$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "zxVXl",
+              "text": "$\\mathrm{PCl}_5$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "KuCXZ",
+              "text": "$\\mathrm{BCl}_3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "queLb",
+              "text": "$\\mathrm{CCl}_4$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In $\\mathrm{PCl}_5$ bond length of axial bond is greater than the length of equatorial bond.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ed6f5bfc7ab78ae90c",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "When aqueous solutions of borax is acidified with <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>HCl</mi></math>, we get",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "c4b2E",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">B</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">H</mi><mn>6</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "I9Sjv",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>3</mn></msub><msub><mi>BO</mi><mn>3</mn></msub></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "84uI8",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">B</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>3</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "kHWxH",
+              "text": "All of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>When aqueous solution of borax <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><msub><mi>Na</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">B</mi><mn>4</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>7</mn></msub></mrow></mfenced></math> is acidified<br />with <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>HCl</mi></math>, we get <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">H</mi><mn>3</mn></msub><msub><mi>BO</mi><mn>3</mn></msub></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>NaCl</mi></math> as follows</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><munder><mrow><msub><mi>Na</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">B</mi><mn>4</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>7</mn></msub></mrow><mi>Borox</mi></munder><mo>+</mo><mn>2</mn><mi>HCl</mi><mo>+</mo><mn>5</mn><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mo>&#10230;</mo><mn>2</mn><mi>NaCl</mi><mo>+</mo><munder><mrow><mn>4</mn><msub><mi mathvariant=\"normal\">H</mi><mn>3</mn></msub><msub><mi>BO</mi><mn>3</mn></msub></mrow><mrow><mi>Boric</mi><mo>&#160;</mo><mi>acid</mi></mrow></munder></math></p><p>Boric acid is not a proticacid it does not give <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">H</mi><mo>+</mo></msup></math> ion accepts a pair of electrons and acts as a Lewis acid.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c06f5bfc7ab78ae78e",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Which of the following halogens exhibit only one oxidation state in its compounds?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "kWeXL",
+              "text": "Bromine",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "BAuWa",
+              "text": "Chlorine",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "RFqQF",
+              "text": "Fluorine",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "oIjgZ",
+              "text": "Iodine",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Fluorine, since it is the most electronegative element.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b26f5bfc7ab78ae716",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "Which of the following is less acidic among the given halogen compounds?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Ibqty",
+              "text": "$\\mathrm{CHF}_{3}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "NgvHl",
+              "text": "$\\mathrm{CH}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "1mBwB",
+              "text": "$\\mathrm{CHCl}_{3}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Km6ep",
+              "text": "$\\mathrm{CHBr}_{3}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Due to stronger-I-effect of $\\mathrm{F}$ than that of Cl, $\\mathrm{CHF}_{3}$ should be more acidic than $\\mathrm{CHCl}_{3} .$ But actually reverse is true.\r\n\r\nThis is due to : $\\mathrm{CCl}_{3}^{-}$ left after the removal of a proton from $\\mathrm{CHCl}_{3}$ is stabilised due to presence of $d$ -orbitals in\r\n\r\nCl than: $\\mathrm{CF}_{3}^{-}$ left after the removal of a\r\n\r\nproton from $\\mathrm{CHF}_{3}$ which is not stabilised due to the absence of $d$ -orbitals on $\\mathrm{F}$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b26f5bfc7ab78ae713",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Which of the following is incorrect with respect to property indicated?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "2UVRa",
+              "text": "$\\mathrm{E} \\cdot \\mathrm{N}: \\mathrm{F}>\\mathrm{Cl}>\\mathrm{Br}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "SR8QS",
+              "text": "$\\quad$ E.A: $\\mathrm{Cl}>\\mathrm{F}>\\mathrm{Br}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "vyNWu",
+              "text": "Oxidising power : $\\mathrm{F}_{2}>\\mathrm{Cl}_{2}>\\mathrm{Br}_{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "vklVg",
+              "text": "Bond energy : $\\mathrm{F}_{2}>\\mathrm{Cl}_{2}>\\mathrm{Br}_{2}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{F}_{2}$ is expected to have highest bond energy but the correct decreasing order is $\\mathrm{Cl}_{2}>\\mathrm{Br}_{2}>\\mathrm{F}_{2}$ because of fluorine atom has very small size due to which there is a high inter electronic repulsion between two fluorine atoms so the bond between two fluorine gets weaker and need less energy.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7946f5bfc7ab78ae618",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "Which of the following halides is not oxidized by $\\mathrm{MnO}_{2}$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "RQPSD",
+              "text": "$\\mathrm{F}^{-}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "M08R3",
+              "text": "$\\mathrm{Cl}^{-}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BFJlo",
+              "text": "$\\mathrm{Br}^{-}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZB2OT",
+              "text": "$\\Gamma$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{F}_{2}$ is strongest oxidising agent. $\\mathrm{F}^{-}$ is not oxidised by $\\mathrm{MnO}_{2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7866f5bfc7ab78ae59d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "The correct order of reactivity of halogens with alkalies is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Pzmvm",
+              "text": "$\\quad \\mathrm{F}>\\mathrm{Cl}>\\mathrm{Br}>\\mathrm{I}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "OFwPq",
+              "text": "$\\quad \\mathrm{F}<\\mathrm{Cl}>\\mathrm{Br}<\\mathrm{I}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6WcPZ",
+              "text": "$\\quad \\mathrm{F}<\\mathrm{Cl}<\\mathrm{Br}<\\mathrm{I}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qUque",
+              "text": "$\\quad \\mathrm{F}<\\mathrm{Cl}<\\mathrm{Br}>\\mathrm{I}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Reactivity follows the order $\\mathrm{F}>\\mathrm{Cl}>\\mathrm{Br}>\\mathrm{I}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7786f5bfc7ab78ae51f",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is used in the preparation of chlorine?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "LmPDq",
+              "text": "Only $\\mathrm{MnO}_{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "hlNf8",
+              "text": "$\\quad$ Only $\\mathrm{KMnO}_{4}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "kzMh2",
+              "text": "Both $\\mathrm{MnO}_{2}$ and $\\mathrm{KMnO}_{4}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Ywok9",
+              "text": "Either $\\mathrm{MnO}_{2}$, or $\\mathrm{KMnO}_{4}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Both $\\mathrm{MnO}_{2}$ and $\\mathrm{KMnO}_{4}$ used for the preparation of chlorine by the action of conc. $\\mathrm{HCl}$\n$$\n\\begin{array}{l}\n\\mathrm{MnO}_{2}+4 \\mathrm{HCl} \\rightarrow \\mathrm{MnCl}_{2}+2 \\mathrm{H}_{2} \\mathrm{O}+\\mathrm{Cl}_{2} \\\\\n2 \\mathrm{KMnO}_{4}+16 \\mathrm{HCl} \\rightarrow 2 \\mathrm{KCl}+2 \\mathrm{MnCl}_{2} \\\\\n+8 \\mathrm{H}_{2} \\mathrm{O}+5 \\mathrm{Cl}_{2}\n\\end{array}\n$$\nChlorine is not obtained by dil. $\\mathrm{HCl}$\n$$\n\\mathrm{Ag}_{2} \\mathrm{~S}_{2} \\mathrm{O}_{3}+\\mathrm{H}_{2} \\mathrm{O} \\rightarrow \\mathrm{Ag}_{2} \\mathrm{~S}+\\mathrm{H}_{2} \\mathrm{SO}_{4}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "64c0e8636f5bfc7ab78aed97",
+      "title": "Noble Gases",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e7cf6f5bfc7ab78ae817",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "Which of the following fluorides of xenon is impossible?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "4phHX",
+              "text": "$\\mathrm{XeF}_{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Zlifr",
+              "text": "$\\mathrm{XeF}_{3}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Y1j3b",
+              "text": "$\\mathrm{XeF}_{4}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "sRfuj",
+              "text": "$\\mathrm{XeF}_{6}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/bHzQu3nxlmZVDSX6S_WZrTAn59VY3q7yiRvQWUKDlqM.original.fullsize.png\"><br>\r\n\r\nXe $\\mathrm{F}_{2}:$ Hybridization $\\mathrm{sp}^{3} \\mathrm{~d}$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/Z7BI2elZRf_oQcKnvbzkQ8zVM2kZidvJgjVFi1kLM_w.original.fullsize.png\"><br>\r\n\r\nLinear\r\n\r\nXe $\\mathrm{F}_{4}:$ Hybridization $\\mathrm{sp}^{3} \\mathrm{~d}^{2}$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/bKS_u9i2gYBdQfZ3lo7bPq737lj2oGsuI9ifcNOm150.original.fullsize.png\"><br>\r\n\r\nSquare planar\r\n\r\n$\\mathrm{XeF}_{6}:$ Hybribisation $\\mathrm{sp}^{3} \\mathrm{~d}^{3}$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/E7dOOuxqFyYDIyl-Z2kK9ZP1ABUSvrl0OtaSpahtxrw.original.fullsize.png\"><br>\r\n\r\nPentagonal pyramidal or distorted octahedral",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

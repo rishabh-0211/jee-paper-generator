@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Statistics PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>📐 BITSAT &bull; Statistics</h1>
+        <div class="sub">Mathematics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 21, "chapterId": "61e7bd78ba6ebf4e7c5844dc", "chapter": "Statistics", "exam": "BITSAT", "subject": "Mathematics", "totalTopics": 6, "totalQuestions": 19, "downloadTime": "2026-10-08 20:37:06", "topics": [{"index": 1, "topicId": "64c0e86b6f5bfc7ab78aedf7", "title": "Statistics", "totalQuestions": 6, "questions": [{"_id": "64c0e7d36f5bfc7ab78ae82d", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 2, "question": {"text": "The mean square deviation of a set of n observation $\\mathrm{x}_{1}, \\mathrm{x}_{2^{2}}, \\ldots \\mathrm{x}_{\\mathrm{n}}$ about a point $\\mathrm{c}$ is defined as $\\frac{1}{n} \\sum_{i=1}^{n}\\left(x_{i}-c\\right)^{2}$\r\n\r\nThe mean square deviations about -2 and 2 are 18 and 10 respectively, the standard deviation of this set of observations is", "image": null}, "options": [{"id": "sfNjj", "text": "3", "isCorrect": true, "image": null}, {"id": "v0nos", "text": "2", "isCorrect": false, "image": null}, {"id": "keMbk", "text": "1", "isCorrect": false, "image": null}, {"id": "RyV8J", "text": "None of these", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "We have $\\frac{1}{n} \\sum_{i=1}^{n}\\left(x_{i}+2\\right)^{2}=18$ and\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\frac{1}{n} \\sum_{i=1}^{n}\\left(x_{i}-2\\right)^{2}=10 \\\\\r\n\r\n\\Rightarrow \\sum_{i=1}^{n}\\left(x_{i}+2\\right)^{2}=18 n \\text { and }\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\sum_{i=1}^{n}\\left(x_{i}-2\\right)^{2}=10 n \\\\\r\n\r\n\\Rightarrow \\sum_{i=1}^{n}\\left(x_{i}+2\\right)^{2}+\\sum_{i=1}^{n}\\left(x_{i}-2\\right)^{2}=28 n\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nand $\\sum_{i=1}^{n}\\left(x_{i}+2\\right)^{2}-\\sum_{i=1}^{n}\\left(x_{i}-2\\right)^{2}=8 n$\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\Rightarrow 2 \\sum_{i=1}^{n}\\left(x_{i}+4\\right)^{2}=28 n \\text { and } 2 \\sum_{i=1}^{n} 4 x_{i}=8 n \\\\\r\n\r\n\\Rightarrow \\sum_{i=1}^{n} x_{1}^{2}+4 n=14 n \\text { and } \\sum_{i=1}^{n} x_{i}=n \\\\\r\n\r\n\\Rightarrow \\sum_{i=1}^{n} x_{i}^{2}=10 n \\text { and } \\sum_{i=1}^{n} x_{i}=n \\\\\r\n\r\n\\therefore \\sigma=\\sqrt{\\frac{1}{n} \\sum_{i=1}^{n} x_{i}^{2}-\\left(\\frac{1}{n} \\sum_{i=1^{\\prime}}^{n} x_{i}\\right)^{2}}=\\sqrt{\\frac{10 n}{n}-\\left(\\frac{n}{n}\\right)^{2}}=3\r\n\r\n\\end{array}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7d36f5bfc7ab78ae82c", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 2, "question": {"text": "The arithmetic mean of the data $0,1,2, \\ldots \\ldots, n$ with frequencies $1,{ }^{4} \\mathrm{C}_{1}{ }^{4} \\mathrm{C}_{2}, \\ldots . .,{ }^{\\infty} \\mathrm{C}_{\\mathrm{a}}$ is", "image": null}, "options": [{"id": "V6F2d", "text": "$\\mathrm{n}$", "isCorrect": false, "image": null}, {"id": "TwBOY", "text": "$\\frac{2^{n}}{n}$", "isCorrect": false, "image": null}, {"id": "bLH8Y", "text": "$\\mathrm{n}+1$", "isCorrect": false, "image": null}, {"id": "Q8F5p", "text": "$\\frac{\\mathrm{n}}{2}$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Since, Mean $=\\frac{\\sum \\mathrm{f}_{\\mathrm{i}} \\mathrm{x}_{\\mathrm{i}}}{\\sum \\mathrm{f}_{\\mathrm{i}}}$ where $\\mathrm{x}_{\\mathrm{i}}$ are\r\n\r\nobservations with frequencies $\\mathrm{f}_{\\mathrm{i}}, \\mathrm{i}=1,2,$ $\\ldots \\ldots \\ldots$\r\n\r\nThe required mean is given by\r\n\r\n$$\r\n\r\n\\begin{aligned}\r\n\r\n\\overline{\\mathrm{X}} &=\\frac{0.1+1 .{ }^{\\mathrm{n}} \\mathrm{C}_{1}+2{ }^{\\mathrm{n}} \\mathrm{C}_{2}+\\ldots \\ldots+\\mathrm{n} .{ }^{\\mathrm{n}} \\mathrm{C}_{\\mathrm{n}}}{1+{ }^{\\mathrm{n}} \\mathrm{C}_{1}+{ }^{\\mathrm{n}} \\mathrm{C}_{2}+\\ldots+{ }^{\\mathrm{n}} \\mathrm{C}_{\\mathrm{n}}} \\\\\r\n\r\n=& \\frac{\\sum_{\\mathrm{r}=0}^{\\mathrm{n}} \\mathrm{r}^{\\mathrm{n}} \\mathrm{C}_{\\mathrm{r}}}{\\sum_{\\mathrm{r}=0}^{\\mathrm{n}}{ }^{\\mathrm{n}} \\mathrm{C}_{\\mathrm{r}}}=\\frac{\\sum_{\\mathrm{r}=1}^{\\mathrm{n}} \\mathrm{r} \\cdot \\frac{\\mathrm{n}}{\\mathrm{r}}{ }^{\\mathrm{n}-1} \\mathrm{C}_{\\mathrm{r}-1}}{\\sum_{\\mathrm{r}=0}^{\\mathrm{n}}{ }^{\\mathrm{n}} \\mathrm{C}_{\\mathrm{r}}} \\\\\r\n\r\n=& \\frac{\\mathrm{n} \\sum{\\sum}^{\\mathrm{n}-1} \\mathrm{C}_{\\mathrm{r}-1}}{\\sum_{\\mathrm{r}=0}^{\\mathrm{n}}{ }^{\\mathrm{n}} \\mathrm{C}_{\\mathrm{r}}}=\\frac{\\mathrm{n} .2^{\\mathrm{n}-1}}{2^{\\mathrm{n}}}=\\frac{\\mathrm{n}}{2}\r\n\r\n\\end{aligned}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7c46f5bfc7ab78ae7b2", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 1, "question": {"text": "IfM. D. is 12, the value of S.D. will be", "image": null}, "options": [{"id": "drDNt", "text": "15", "isCorrect": true, "image": null}, {"id": "AzIWN", "text": "12", "isCorrect": false, "image": null}, {"id": "vqaD6", "text": "24", "isCorrect": false, "image": null}, {"id": "46hD1", "text": "None of these", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "We know that Q.D $=\\frac{5}{6} \\times M \\cdot D .=\\frac{5}{6} \\times 12=10$\r\n\r\n$\\therefore \\mathrm{S} . \\mathrm{D}=\\frac{3}{2} \\times Q \\cdot D .=\\frac{3}{2} \\times 10 \\Rightarrow S . D .=15$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7b66f5bfc7ab78ae736", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 2, "question": {"text": "Find the variance of the data given below\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/Q1_qX08ZmSDQZtRQhBAkXVuXBWPpNP7JOyUiOmkl1dk.original.fullsize.png\">", "image": null}, "options": [{"id": "PPnvx", "text": "1.29", "isCorrect": false, "image": null}, {"id": "B9k5g", "text": "2.19", "isCorrect": false, "image": null}, {"id": "fUlZP", "text": "1.32", "isCorrect": true, "image": null}, {"id": "PPxQM", "text": "None of these", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/kRvMCXp-xf90BT57eT8FSPawF_Dy9slbWGadTFDRwng.original.fullsize.png\"><br>\r\n\r\nVariance $\\sigma^{2}=\\frac{\\Sigma f_{i}\\left(x_{i}-\\bar{x}\\right)^{2}}{\\Sigma f_{i}}=\\frac{286.49}{217}$\r\n\r\n$=1.32$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7b66f5bfc7ab78ae735", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 1, "question": {"text": "If the value of mode and mean is 60 and 66 respectively, then the value of median is", "image": null}, "options": [{"id": "9kDIM", "text": "70", "isCorrect": false, "image": null}, {"id": "cI3aU", "text": "64", "isCorrect": true, "image": null}, {"id": "efTUS", "text": "90", "isCorrect": false, "image": null}, {"id": "qhr0a", "text": "50", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\quad$ Mode $=3$ Median -2 Mean\r\n\r\n$\\therefore \\quad$ Median $=\\frac{1}{3}($ mode +2 mean $)=\\frac{1}{3}(60+2 \\times 66)=64$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7a66f5bfc7ab78ae6b3", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 3, "question": {"text": "If sample A contains 100 observations $101,102, \\ldots$ 200 and sample B contains 100 obsections $151,152,$ \\ldots 250, then ratio of variance $\\mathrm{v}_{\\mathrm{A}} / \\mathrm{v}_{\\mathrm{B}}=$", "image": null}, "options": [{"id": "wx4uW", "text": "1", "isCorrect": true, "image": null}, {"id": "I4isR", "text": "$\\frac{9}{4}$", "isCorrect": false, "image": null}, {"id": "qQf08", "text": "$\\frac{4}{9}$", "isCorrect": false, "image": null}, {"id": "vAhS3", "text": "$\\frac{2}{3}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\because \\quad \\delta_{\\mathrm{x}}^{2}=\\frac{\\Sigma \\mathrm{d}^{2} \\mathrm{i}}{\\mathrm{n}}$\r\nBut both $A$ and $B$ have 100 observations, then both the sample $A$ and $B$ have same standard deviation and the same variance.\r\nHence, $\\frac{\\mathrm{V}_{\\mathrm{A}}}{\\mathrm{V}_{\\mathrm{B}}}=1$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e86b6f5bfc7ab78aedf5", "title": "Mean", "totalQuestions": 5, "questions": [{"_id": "67726d01c49e8ef28ee2b380", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "If the function $f(x)$, defined below, is continuous on the interval $[0,8]$, then\n$f(x)=\\left\\{\\begin{array}{cc}x^2+a x+b & , 0 \\leq x \\lt 2 \\\\ 3 x+2, & 2 \\leq x \\leq 4 \\\\ 2 a x+5 b, & 4 \\lt x \\leq 8\\end{array}\\right.$", "image": null}, "options": [{"id": "SDayV", "text": "$a=3, b=-2$", "image": null, "isCorrect": true}, {"id": "0pftf", "text": "$a=-3, b=2$", "image": null, "isCorrect": false}, {"id": "raywP", "text": "$a=-3, b=-2$", "image": null, "isCorrect": false}, {"id": "Jlhau", "text": "$a=3, b=2$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Here, $f(x)$ is continuous on the interval $[0,8]$.\nSo it will also be continuous on 2 and 4.\nAt $x=2$,\n$\\lim _{x \\rightarrow 2^{-}} f(x)=\\lim _{x \\rightarrow 2^{+}} f(x)$\n$\\lim _{x \\rightarrow 2^{-}}\\left(x^2+\\mathrm{ax}+\\mathrm{b}\\right)=\\lim _{x \\rightarrow 2^{+}}(3 x+2)$\n$4+2 a+b=3(2)+2$\n$\\therefore 2 a+b=4$    ...(i)\nAt $x=4$\n$\\lim _{x \\rightarrow 4^{-}} f(x)=\\lim _{x \\rightarrow 4^{+}} f(x)$\n$\\lim _{x \\rightarrow 4^{-}}(3 x+2)=\\lim _{x \\rightarrow 4^{+}} 2 a x+5 b$\n$3(4)+2=2 a(4)+5 b$\n$\\therefore 8 a+5 b=14$  .......(ii)\nOn solving Eqs. (i) and (ii), we get\n$a=3$ and $b=-2$.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726cffc49e8ef28ee2b376", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "The mean of n items is X . If the first item is increased by 1 , second by 2 and so on, the new mean is :", "image": null}, "options": [{"id": "wT6qJ", "text": "$\\bar{X}+\\frac{x}{2}$", "image": null, "isCorrect": false}, {"id": "aneRW", "text": "$\\bar{X}+x$", "image": null, "isCorrect": false}, {"id": "IaCFQ", "text": "$\\overline{\\mathrm{X}}+\\frac{\\mathrm{n}+1}{2}$", "image": null, "isCorrect": true}, {"id": "Y97nh", "text": "None of these", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Let the items be $\\mathrm{a}_1, \\mathrm{a}_2, \\ldots \\ldots . ., \\mathrm{a}_{\\mathrm{n}}$\nthen $\\bar{X}=\\frac{a_1+a_2+\\ldots \\ldots .+a_n}{n}$\nNow, according to the given condition:\n$\\bar{X}=\\frac{\\left(a_1+1\\right)+\\left(a_2+2\\right)+\\ldots \\ldots \\ldots+\\left(a_n+n\\right)}{n}$\n$=\\overline{\\mathrm{X}}+\\frac{1+2+3+\\ldots \\ldots \\ldots+n}{n}=\\bar{X}+\\frac{n(n+1)}{2 n}$\n(using sum of n natural nos.)\n$=\\overline{\\mathrm{X}}+\\frac{\\mathrm{n}+1}{2}$.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8366f5bfc7ab78aeb8f", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 1, "question": {"text": "The mean of five observations is $4$ and their variance is $5.2$. If three of these observations are $1$,$2$ and $6$ , then the other two are", "image": null}, "options": [{"id": "WAD0l", "text": "\r\n$2$ and $9$\r\n", "isCorrect": false, "image": null}, {"id": "GjFtD", "text": "\r\n$3$ and $8$\r\n", "isCorrect": false, "image": null}, {"id": "cSXG4", "text": "\r\n$4$ and $7$\r\n", "isCorrect": true, "image": null}, {"id": "hiZmm", "text": "\r\n$5$ and $6$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Let the two unknown items be $x$ and $y$. Then,\r\n$\\operatorname{Mean}=4 \\Rightarrow \\frac{1+2+6+x+y}{5}=4$\r\n$\\Rightarrow \\quad x+y=11\\dots(i)$\r\nand variance $=5.2$\r\n$\\Rightarrow \\frac{1^2+2^2+6^2+x^2+y^2}{5}-(\\text { mean })^2=5.2$\r\n$\\Rightarrow \\quad 41+x^2+y^2=5(5.2+16)$\r\n$\\begin{array}{ll}\\Rightarrow & 41+x^2+y^2=106 \\\\ \\Rightarrow & x^2+y^2=65\\end{array}$\r\nOn solving Eqs. (i) and (ii), we get\r\n$x=4, y=7 \\text { or } x=7, y=4$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8006f5bfc7ab78ae9b4", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 1, "question": {"text": "The arithmetic mean of a set of observation is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi>X</mi><mo>&#175;</mo></mover></math>. If each observation is divided by <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#945;</mi></math> and increased by <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>10</mn></math>,&nbsp;then the mean of the new series is", "image": null}, "options": [{"id": "0Z8GX", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mover><mi>X</mi><mo>&#175;</mo></mover><mi>&#945;</mi></mfrac></math>", "isCorrect": false, "image": null}, {"id": "FaGmQ", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mover><mi>X</mi><mo>&#175;</mo></mover><mo>+</mo><mn>10</mn></mrow><mi>&#945;</mi></mfrac></math>", "isCorrect": false, "image": null}, {"id": "Gh6Jl", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mover><mi>X</mi><mo>&#175;</mo></mover><mo>+</mo><mn>10</mn><mi>&#945;</mi></mrow><mi>&#945;</mi></mfrac></math>", "isCorrect": true, "image": null}, {"id": "jGzqH", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#945;</mi><mover><mi>X</mi><mo>&#175;</mo></mover><mo>+</mo><mn>10</mn></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mo>&#160;</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mo>&#8230;</mo><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub></math> be <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi></math> observations.</p><p>Then, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi>X</mi><mo>&#175;</mo></mover><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mi>&#931;</mi><msub><mi>x</mi><mi>i</mi></msub></math></p><p>Let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>y</mi><mi>i</mi></msub><mo>=</mo><mfrac><msub><mi>x</mi><mi>i</mi></msub><mi>&#945;</mi></mfrac><mo>+</mo><mn>10</mn></math></p><p>Then. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>&#8721;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>y</mi><mi>i</mi></msub><mo>=</mo><mfrac><mn>1</mn><mi>&#945;</mi></mfrac><mfenced><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><mi>&#931;</mi><msub><mi>x</mi><mi>i</mi></msub></mrow></mfenced><mo>+</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mfenced><mrow><mn>10</mn><mi>n</mi></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><msub><mover><mi>X</mi><mo>&#175;</mo></mover><mtext>new</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mi>&#945;</mi></mfrac><mover><mi>X</mi><mo>&#175;</mo></mover><mo>+</mo><mn>10</mn><mo>=</mo><mfrac><mrow><mover><mi>X</mi><mo>&#175;</mo></mover><mo>+</mo><mn>10</mn><mi>&#945;</mi></mrow><mi>&#945;</mi></mfrac></math></p><p>Hence option (c) is correct.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7896f5bfc7ab78ae5b8", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "Find the value of \\(\\lim _{x \\rightarrow 0} \\frac{\\sqrt{\\left(1+x^2\\right)}-\\sqrt{1-x^2}}{x^2}\\)", "image": null}, "options": [{"id": "jIcM5", "text": "1", "image": null, "isCorrect": true}, {"id": "fhgiU", "text": "2", "image": null, "isCorrect": false}, {"id": "v7e7O", "text": "3", "image": null, "isCorrect": false}, {"id": "qk2XG", "text": "5", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "\\(\\begin{aligned}\n& \\lim _{x \\rightarrow 0} \\frac{\\sqrt{1+x^2}-\\sqrt{1-x^2}}{x^2} \\cdot \\frac{\\sqrt{1+x^2}+\\sqrt{1-x^2}}{\\sqrt{1+x^2}+\\sqrt{1-x^2}} \\\\\n\\Rightarrow & \\lim _{x \\rightarrow 0} \\frac{1+x^2-1+x^2}{x^2\\left(\\sqrt{1+x^2}+\\sqrt{1-x^2}\\right)} \\\\\n\\Rightarrow & \\lim _{x \\rightarrow 0} \\frac{2 x^2}{x^2\\left(\\sqrt{1+x^2}+\\sqrt{1-x^2}\\right)}=\\frac{2}{\\sqrt{1}+\\sqrt{1}}=\\frac{2}{2}=1\n\\end{aligned}\\)", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e86b6f5bfc7ab78aedf4", "title": "Median", "totalQuestions": 1, "questions": [{"_id": "64c0e77b6f5bfc7ab78ae53b", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "If: \\(p\\) Raju is tall and \\(q\\) : Raju is intelligent, then the symbolic statement \\(\\sim p \\vee q\\) means", "image": null}, "options": [{"id": "MgjUD", "text": "Raju is not tall or he is intelligent.", "image": null, "isCorrect": true}, {"id": "BeTR0", "text": "Raju is tall or he is intelligent", "image": null, "isCorrect": false}, {"id": "fUTfr", "text": "Raju is not tall and he is intelligent", "image": null, "isCorrect": false}, {"id": "aLz7Z", "text": "Raju is not tall implies he is intelligent", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "\\(\\sim \\mathrm{p} \\vee \\mathrm{q}:\\) Raju is not tall or he is intelligent.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "64c0e86b6f5bfc7ab78aedf6", "title": "Relation Between Mean, Median and Mode", "totalQuestions": 1, "questions": [{"_id": "64c0e78a6f5bfc7ab78ae5b9", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "Mean of 25 observations was found to be 78.4. But later on it was found that 96 was misread 69 . The correct mean is", "image": null}, "options": [{"id": "gHLi7", "text": "79.24", "image": null, "isCorrect": false}, {"id": "EaoPv", "text": "79.48", "image": null, "isCorrect": true}, {"id": "5p2v9", "text": "80.10", "image": null, "isCorrect": false}, {"id": "NLsW7", "text": "None of these", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Mean \\(\\bar{x}=\\frac{\\sum x}{n}\\) or \\(\\Sigma x=n \\bar{x}\\)\n\\(\\Sigma \\mathrm{x}=25 \\times 78.4=1960\\)\nBut this \\(\\Sigma \\mathrm{x}\\) is incorrect as 96 was misread as 69 .\n\\(\\begin{aligned}\n& \\therefore \\text { correct } \\Sigma \\mathrm{x}=1960+(96-69)=1987 \\\\\n& \\therefore \\text { correct mean }=\\frac{1987}{25}=79.48\n\\end{aligned}\\)", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 5, "topicId": "64c0e86b6f5bfc7ab78aedf8", "title": "Measures of Dispersion", "totalQuestions": 3, "questions": [{"_id": "65b7b87897ae24e9e2db8ca9", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "Find the mean deviation about the mean for the data $4,7,8,9,10,12,13,17$", "image": null}, "options": [{"id": "pEJNe", "text": "3", "image": null, "isCorrect": true}, {"id": "77cHf", "text": "24", "image": null, "isCorrect": false}, {"id": "rUGdv", "text": "10", "image": null, "isCorrect": false}, {"id": "vE004", "text": "8", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Arithmetic mean $\\bar{x}$ of $4,7,8,9,10,12,13$, 17 is<br />$\\bar{x}=$ $\\frac{4+7+8+9+10+12+13+17}{8}=\\frac{80}{8}=10$<br />$\\Sigma\\left|x_i-\\bar{x}\\right|=6+3+2+1+0+2+3+7=24$<br />$\\therefore$ Mean deviation about mean<br />$=\\text { M.D. }(\\bar{x})=\\frac{\\sum\\left|x_i-\\bar{x}\\right|}{n}=\\frac{24}{8}=3$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7f26f5bfc7ab78ae939", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 1, "question": {"text": "Coefficient of variation of two distributions are <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>50</mn></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>60</mn></math> and their arithmetic means are <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>30</mn></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>25</mn></math>, respectively. Difference of their standard deviation is", "image": null}, "options": [{"id": "2mYUQ", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn></math>", "isCorrect": true, "image": null}, {"id": "RbBSV", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math>", "isCorrect": false, "image": null}, {"id": "p0ND8", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>.</mo><mn>3</mn></math>", "isCorrect": false, "image": null}, {"id": "n4o72", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>.</mo><mn>5</mn></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Given, coefficient of variation <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>C</mi><mn>1</mn></msub><mo>=</mo><mn>50</mn></math></p><p>and coefficient of variation <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>C</mi><mn>2</mn></msub><mo>=</mo><mn>60</mn></math>.</p><p>We have, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mover><mi>x</mi><mo>&#175;</mo></mover><mn>1</mn></msub><mo>=</mo><mn>30</mn></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mover><mi>x</mi><mo>&#175;</mo></mover><mn>2</mn></msub><mo>=</mo><mn>25</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo><mo>&#160;</mo><mi>C</mi><mo>=</mo><mfrac><mi>&#963;</mi><mover><mi>x</mi><mo>&#175;</mo></mover></mfrac><mo>&#215;</mo><mn>100</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>50</mn><mo>=</mo><mfrac><msub><mi>&#963;</mi><mn>1</mn></msub><mn>30</mn></mfrac><mo>&#215;</mo><mn>100</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><msub><mi>&#963;</mi><mn>1</mn></msub><mo>=</mo><mn>15</mn></math></p><p>and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>60</mn><mo>=</mo><mfrac><msub><mi>&#963;</mi><mn>2</mn></msub><mn>25</mn></mfrac><mo>&#215;</mo><mn>100</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><msub><mi>&#963;</mi><mn>2</mn></msub><mo>=</mo><mn>15</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> Required difference <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#963;</mi><mn>1</mn></msub><mo>-</mo><msub><mi>&#963;</mi><mn>2</mn></msub><mo>=</mo><mn>15</mn><mo>-</mo><mn>15</mn><mo>=</mo><mn>0</mn></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7f16f5bfc7ab78ae938", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 1, "question": {"text": "If the variance of the observations <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mo>&#8230;</mo><mo>&#8230;</mo><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub></math>&nbsp;is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>&#963;</mi><mn>2</mn></msup></math>,&nbsp;then the variance of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#945;</mi><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi>&#945;</mi><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mo>&#8230;</mo><mo>&#8230;</mo><mo>,</mo><mi>&#945;</mi><msub><mi>x</mi><mi>n</mi></msub><mo>,</mo><mi>&#945;</mi><mo>&#8800;</mo><mn>0</mn></math> is", "image": null}, "options": [{"id": "LUSXw", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>&#963;</mi><mn>2</mn></msup></math>", "isCorrect": false, "image": null}, {"id": "SEZkY", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#945;</mi><msup><mi>&#963;</mi><mn>2</mn></msup></math>", "isCorrect": false, "image": null}, {"id": "dqEjF", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>&#945;</mi><mn>2</mn></msup><msup><mi>&#963;</mi><mn>2</mn></msup></math>", "isCorrect": true, "image": null}, {"id": "oWvxp", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msup><mi>&#963;</mi><mn>2</mn></msup><msup><mi>&#945;</mi><mn>2</mn></msup></mfrac></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Variance <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mi>&#931;</mi><mo>(</mo><mi>x</mi><mo>-</mo><mover><mi>x</mi><mo>&#175;</mo></mover><mrow><msup><mo>)</mo><mn>2</mn></msup><mo>=</mo></mrow><msup><mi>&#963;</mi><mn>2</mn></msup></math></p><p>New variance <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mi>&#931;</mi><mo>(</mo><mi>&#945;</mi><mi>x</mi><mo>-</mo><mi>&#945;</mi><mover><mi>x</mi><mo>&#175;</mo></mover><msup><mo>)</mo><mn>2</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><msup><mi>&#945;</mi><mn>2</mn></msup><mfrac><mn>1</mn><mi>n</mi></mfrac><mi>&#931;</mi><mo>(</mo><mi>x</mi><mo>-</mo><mover><mi>x</mi><mo>&#175;</mo></mover><msup><mo>)</mo><mn>2</mn></msup><mo>=</mo><msup><mi>&#945;</mi><mn>2</mn></msup><msup><mi>&#963;</mi><mn>2</mn></msup></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 6, "topicId": "65b7b89c97ae24e9e2db8d35", "title": "Relation Between Variance and Mean Deviation", "totalQuestions": 3, "questions": [{"_id": "67726d0cc49e8ef28ee2b3db", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "If the variance of the data $2,3,5,8,12$ is $\\sigma^2$ and the mean deviation from the median for this data is M , then $\\sigma^2-\\mathrm{M}=$", "image": null}, "options": [{"id": "na946", "text": "$10.2$", "image": null, "isCorrect": true}, {"id": "dn7xx", "text": "$5.8$", "image": null, "isCorrect": false}, {"id": "WAwOg", "text": "$10.6$", "image": null, "isCorrect": false}, {"id": "Ge36o", "text": "$8.2$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Observations : $2,3,5,8,12$\nMean $=\\frac{2+3+5+8+12}{5}=6$\n$\\therefore \\sigma^2=13.2$\nMedian $=5=m$\n$\\therefore \\quad$ Mean deviation about median\n$\\Rightarrow \\quad \\frac{\\Sigma\\left|x_i-m\\right|}{n}=\\frac{3+2+0+3+7}{5}=3$\n$M=3 \\Rightarrow \\sigma^2-M=13.2-3=10.2$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726d00c49e8ef28ee2b37a", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "The variance of 20 observations is 5 . If each observation is multiplied by 2 , then the new variance of the resulting observation is", "image": null}, "options": [{"id": "3WebB", "text": "$2^3 \\times 5$", "image": null, "isCorrect": false}, {"id": "4cwRg", "text": "$2^2 \\times 5$", "image": null, "isCorrect": true}, {"id": "jEuV4", "text": "$2 \\times 5$", "image": null, "isCorrect": false}, {"id": "4K5Fg", "text": "$2^4 \\times 5$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Let the observations be $x_1, x_2, \\ldots, x_{20}$ and $\\bar{x}$ be their mean. Given that, variance $=5$ and $n=$ 20. We know that,\nVariance $\\left(\\sigma^2\\right)=\\frac{1}{n} \\sum_{i=1}^{20}\\left(x_i-\\bar{x}\\right)^2$\ni.e. $5=\\frac{1}{20} \\sum_{i=1}^{20}\\left(x_i-\\bar{x}\\right)^2$\nor $\\sum_{i=1}^{20}\\left(x_i-\\bar{x}\\right)^2=100$     .....(i)\nIf each observation is multiplied by 2 and the new resulting observations are $y_i$, then\n$y_i=2 x_i$ i.e., $x_i=\\frac{1}{2} y_i$\nTherefore,\n$\\overline{\\mathrm{y}}=\\frac{1}{\\mathrm{n}} \\sum_{\\mathrm{i}=1}^{20} \\mathrm{y}_{\\mathrm{i}}=\\frac{1}{20} \\sum_{\\mathrm{i}=1}^{20} 2 \\mathrm{x}_{\\mathrm{i}}=2 \\cdot \\frac{1}{20} \\sum_{\\mathrm{i}=1}^{20} \\mathrm{x}_{\\mathrm{i}}$\ni.e., $\\bar{y}=2 \\bar{x}$ or $\\bar{x}=\\frac{1}{2} \\bar{y}$.\nOn substituting the values of $x_i$ and $\\bar{x}$ in eq. (i), we get\n$\\sum_{i=1}^{20}\\left(\\frac{1}{2} y_i-\\frac{1}{2} \\bar{y}\\right)^2=100$\ni.e., $\\sum_{i=1}^{20}\\left(y_i-\\bar{y}\\right)^2=400$\nThus, the variance of new observations\n$=\\frac{1}{20} \\times 400=20=2^2 \\times 5$.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b88397ae24e9e2db8d18", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "The standard deviation of 5 scores $1,2,3,4,5$ is $\\sqrt{a}$. The value of ' $a$ ' is", "image": null}, "options": [{"id": "Njpqf", "text": "<br />2", "image": null, "isCorrect": true}, {"id": "3oGNp", "text": "<br />3", "image": null, "isCorrect": false}, {"id": "dz0Gt", "text": "<br />5", "image": null, "isCorrect": false}, {"id": "SqDG2", "text": "<br />1", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<br />$\\begin{aligned} & \\text { Mean }(\\bar{x})=\\frac{1+2+3+4+5}{5}=3 \\\\ & \\text { S.D }=\\sigma=\\sqrt{\\frac{1}{5}(1+4+9+16+25)-9}=\\sqrt{11-9} \\\\ & =\\sqrt{2}\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

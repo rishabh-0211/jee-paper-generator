@@ -1,0 +1,3697 @@
+{
+  "index": 21,
+  "chapterId": "61c0898c9787d1bb215c4f6e",
+  "chapter": "General Principles and Processes of Isolation of Metals",
+  "exam": "MHT CET",
+  "totalTopics": 6,
+  "totalQuestions": 55,
+  "downloadTime": "2026-10-08 20:06:47",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "65a263440279619d9d8a3d9f",
+      "title": "Minerals and ores",
+      "totalQuestions": 22,
+      "questions": [
+        {
+          "_id": "679214100aee93fa0796ddac",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665cce",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (15 May Shift 1)",
+              "title": "MHT CET 2024 (15 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Which from following is a mineral of copper?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "enHUP",
+              "text": "Chalcopyrite",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "5v1QV",
+              "text": "Zincite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fmzlb",
+              "text": "Limonite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "PSWt1",
+              "text": "Siderite",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Chalcopyrite has the chemical formula $\\text{CuFeS}_2$ and is a principal mineral of copper.<br><br>Zincite is a mineral of zinc ($\\text{ZnO}$).<br><br>Limonite is a mineral of iron ($\\text{FeO(OH)} \\cdot n\\text{H}_2\\text{O}$).<br><br>Siderite is a mineral of iron ($\\text{FeCO}_3$).<br><br>Answer: Chalcopyrite",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665cce",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (15 May Shift 1)",
+            "title": "MHT CET 2024 (15 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679213fb0aee93fa0796dd0e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665ccd",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-11T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (11 May Shift 2)",
+              "title": "MHT CET 2024 (11 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Which among the following minerals contains radioactive element in it?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Qmbx7",
+              "text": "Cleveite",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "AEiQT",
+              "text": "Carnallite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "E3RjJ",
+              "text": "Chile salt petre",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lFBZk",
+              "text": "Baryte",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Cleveite is an impure variety of uraninite, which is a radioactive mineral. It primarily contains uranium, which is a radioactive element, along with lead, thorium, and rare earth elements. It is also known for being a source of helium gas on Earth, which is produced by the alpha decay of uranium.<br><br>Carnallite is a potassium magnesium chloride mineral ($KMgCl_3 \\cdot 6H_2O$).<br><br>Chile salt petre is sodium nitrate ($NaNO_3$).<br><br>Baryte is barium sulfate ($BaSO_4$).<br><br>Therefore, Cleveite is the mineral that contains a radioactive element.<br><br>Answer: Cleveite",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665ccd",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-11T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (11 May Shift 2)",
+            "title": "MHT CET 2024 (11 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679213740aee93fa0796d8e5",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665cc9",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-04T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (04 May Shift 1)",
+              "title": "MHT CET 2024 (04 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Identify a mineral of zinc from following.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "aivVw",
+              "text": "Siderite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "AtUml",
+              "text": "Calamine",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "s5qi0",
+              "text": "Chalcocite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "moZVF",
+              "text": "Limonite",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Siderite is an ore of iron with the chemical formula $FeCO_3$.<br><br>Calamine is an ore of zinc with the chemical formula $ZnCO_3$.<br><br>Chalcocite is an ore of copper with the chemical formula $Cu_2S$.<br><br>Limonite is an ore of iron with the chemical formula $FeO(OH) \\cdot nH_2O$.<br><br>Thus, calamine is a mineral of zinc.<br><br>Answer: Calamine",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665cc9",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-04T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (04 May Shift 1)",
+            "title": "MHT CET 2024 (04 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6792132c0aee93fa0796d6b4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e139a8109c6c5665cc2",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-02T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (02 May Shift 1)",
+              "title": "MHT CET 2024 (02 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Identify elements present in copper pyrites.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "gEmOv",
+              "text": "$\\mathrm{Cu}, \\mathrm{K}, \\mathrm{S}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ixITE",
+              "text": "$\\mathrm{Mg}, \\mathrm{Cu}, \\mathrm{P}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "DunP0",
+              "text": "$\\mathrm{Ca}, \\mathrm{S}, \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wfTuq",
+              "text": "$\\mathrm{Fe}, \\mathrm{Cu}, \\mathrm{S}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The chemical formula of copper pyrites is $\\mathrm{CuFeS_2}$.<br><br>Thus, the elements present in copper pyrites are iron ($\\mathrm{Fe}$), copper ($\\mathrm{Cu}$), and sulphur ($\\mathrm{S}$).<br><br>Answer: $\\mathrm{Fe}, \\mathrm{Cu}, \\mathrm{S}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e139a8109c6c5665cc2",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-02T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (02 May Shift 1)",
+            "title": "MHT CET 2024 (02 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a261c20279619d9d8a2f1c",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892ab",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-09T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (09 May Shift 2)",
+              "title": "MHT CET 2023 (09 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "What different elements are found in baryte?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "O3pIk",
+              "text": "$\\mathrm{Ca}, \\mathrm{S}, \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Aog5e",
+              "text": "$\\mathrm{Zn}, \\mathrm{S}, \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "QRddq",
+              "text": "$\\mathrm{Ba}, \\mathrm{S}, \\mathrm{O}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "zjmRe",
+              "text": "$\\mathrm{Mg}, \\mathrm{S}, \\mathrm{H}, \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The formula of baryte is $\\mathrm{BaSO}_4$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892ab",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-09T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (09 May Shift 2)",
+            "title": "MHT CET 2023 (09 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a261420279619d9d8a2b18",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892a4",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2022-08-07T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022 (07 Aug Shift 2)",
+              "title": "MHT CET 2022 (07 Aug Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "What are the different elements present in mineral barite?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "OXAaj",
+              "text": "Ca, O, H",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0HjBr",
+              "text": "Ba S, O",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "XCJ6c",
+              "text": "Zn, C, O",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "VAALh",
+              "text": "$\\mathrm{K}, \\mathrm{N}, \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Barite contain $\\mathrm{BaSO}_4$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892a4",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2022-08-07T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022 (07 Aug Shift 2)",
+            "title": "MHT CET 2022 (07 Aug Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260760279619d9d8a24b2",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b87f20917a5f4189299",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2021-09-22T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021 (22 Sep Shift 1)",
+              "title": "MHT CET 2021 (22 Sep Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Identify the correct pair of minerals and its formula from following.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "RWS84",
+              "text": "$\\text { Baryte }-\\mathrm{MgSO}_{4 .} .7 \\mathrm{H}_2 \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8AQ8w",
+              "text": "Cryolite $-\\mathrm{Na}_3 \\mathrm{AlF}_6$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "8OwGJ",
+              "text": "Galena - Zns",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CRXxm",
+              "text": "Epsom salt $-\\mathrm{CaSO}_4 \\cdot 2 \\mathrm{H}_2 \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Baryte - $\\mathrm{BaSO}_4$\nCryolite - $\\mathrm{Na}_3 \\mathrm{AlF}_6$\nGalena - PbS\nEpsom salt - $\\mathrm{MgSO}_4$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b87f20917a5f4189299",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2021-09-22T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021 (22 Sep Shift 1)",
+            "title": "MHT CET 2021 (22 Sep Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260180279619d9d8a21b3",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f74",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-20T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (20 Oct Shift 2)",
+              "title": "MHT CET 2020 (20 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following magnetic impurity is present in Cassiterite ore?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "VLUn7",
+              "text": "$\\mathrm{Fe}_{2} \\mathrm{O}_{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "NULFs",
+              "text": "$\\mathrm{FeW} \\mathrm{O}_{4}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "xHtfh",
+              "text": "$\\mathrm{FeO}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "IGqPJ",
+              "text": "$\\mathrm{Fe}_{3} \\mathrm{O}_{4}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The magnetic impurity present in cassiterite ore is wolframite $\\left([\\mathrm{Fe} / \\mathrm{Mn}] \\mathrm{W} \\mathrm{O}_{4}\\right)$,\nIt contains magnetic impurities of tungstates of iron and managanese and the combination is called as wolfromite.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f74",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-20T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (20 Oct Shift 2)",
+            "title": "MHT CET 2020 (20 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260170279619d9d8a21b0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f74",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-20T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (20 Oct Shift 2)",
+              "title": "MHT CET 2020 (20 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Which among the following is a mineral of copper?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "s0ydr",
+              "text": "Carnotite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "WVVgA",
+              "text": "Azurite",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "DB3PG",
+              "text": "Pyrolusite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "uARbz",
+              "text": "Chromite",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Azurite is a soft, deep-blue copper mineral produced by weathering of copper ore deposits. During the early $19~th$ century, it was also known as chessylite, after the type locality at Chessy-les-Mines near Lyon, France.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f74",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-20T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (20 Oct Shift 2)",
+            "title": "MHT CET 2020 (20 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260030279619d9d8a210a",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f73",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-20T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (20 Oct Shift 1)",
+              "title": "MHT CET 2020 (20 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Identify the mineral from following containing aluminium",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "uAPPh",
+              "text": "Magnesite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Eho0W",
+              "text": "Haematite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "YNFdK",
+              "text": "Cryolite",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Rl2tH",
+              "text": "Siderite",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The chemical name of cryolite is sodium hexafluoroaluminate and its chemical formula is $Na_{3}AlF_{6}$. It's a rare mineral associated with the once-large deposit at Ivittuut on Greenland's west coast, which was depleted by $1987$. Cryolite, sodium aluminium fluoride, is a colourless to white halide mineral. It's found in large quantities in Ivigtut, Greenland, and in small amounts in Spain, Colorado, and other places. \nIt is used as a solvent for bauxite in the electrolytic production of aluminium and has various other metallurgical applications, and it is used in the glass or ceramic industries and enamel factories, inbounded abrasives as filtering membranes, and in the manufacture of insect-killing chemicals (insecticides). A huge amount of synthetic or artificial cryolite is made from fluorite.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f73",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-20T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (20 Oct Shift 1)",
+            "title": "MHT CET 2020 (20 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25ff50279619d9d8a2097",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f72",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-19T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (19 Oct Shift 2)",
+              "title": "MHT CET 2020 (19 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Which mineral among the following contains Vanadium in it?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "iGcHh",
+              "text": "Azurite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iFTAV",
+              "text": "Malachite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pwTdl",
+              "text": "Carnotite",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "q6hfG",
+              "text": "Crocoisite",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Carnotite\nCarnotite is a mineral that includes vanadium. It contains approximately $53 \\%$ uranium, $12 \\%$ vanadium, and a trace quantity of radium. It is a radioactive, bright-yellow, soft, and earthy vanadium mineral that is a significant uranium source.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f72",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-19T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (19 Oct Shift 2)",
+            "title": "MHT CET 2020 (19 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25ff30279619d9d8a2089",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f72",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-19T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (19 Oct Shift 2)",
+              "title": "MHT CET 2020 (19 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Which among the following sets of elements is present in chalcopyrite?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "fFZOB",
+              "text": "$\\mathrm{Fe}, \\mathrm{S}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "HiQYD",
+              "text": "Al, O",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "DZNOk",
+              "text": "Al, Fe, 0",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fzSgI",
+              "text": "Cu, Fe, $S$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{Cu}, \\mathrm{Fe}, \\mathrm{S}$\n$\\mathrm{Cu}, \\mathrm{Fe}$, and $\\mathrm{S}$ are among the elements found in chalcopyrite. It's a copper iron sulphide mineral with a tetragonal crystal structure. $\\mathrm{CuFeS}_{2}$ is the chemical formula for it. It is brassy to golden yellow in colour and has a Mohr hardness of $3.5$ to 4 . It has a distinctive green-tinged black stripe.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f72",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-19T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (19 Oct Shift 2)",
+            "title": "MHT CET 2020 (19 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fe10279619d9d8a1ff9",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f71",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-19T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (19 Oct Shift 1)",
+              "title": "MHT CET 2020 (19 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following alloy contain Al, Cu, Mg and Mn?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "YeuGE",
+              "text": "Babbitt metal",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GDSQj",
+              "text": "Stainless steel",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Ejgfh",
+              "text": "Spiegeleisen",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "DDZ6z",
+              "text": "Duralumin",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "(B)\nDuralumin is an alloy, a trade name given to the earliest types of the age hardenable aluminum alloys.\nIt is an alloy made up of $90 \\%$ aluminum, $4 \\%$ copper, $1 \\%$ magnesium and $0.5 \\%$ to $1 \\%$ manganese. It is a very hard alloy.\nOption B is correct.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f71",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-19T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (19 Oct Shift 1)",
+            "title": "MHT CET 2020 (19 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fdc0279619d9d8a1fd4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f71",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-19T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (19 Oct Shift 1)",
+              "title": "MHT CET 2020 (19 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Which among the following is a mineral of magnesium?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "hW1wH",
+              "text": "Limonite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "EbOgW",
+              "text": "Cryolite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "EIzQ0",
+              "text": "Magnesite",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "hUl7k",
+              "text": "Magnetite",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Magnesite is a mineral with the chemical formula MgCOâ‚ƒ. Iron, manganese, cobalt and nickel may occur as admixtures, but only in small amounts.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f71",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-19T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (19 Oct Shift 1)",
+            "title": "MHT CET 2020 (19 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f930279619d9d8a1d95",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6d",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (15 Oct Shift 1)",
+              "title": "MHT CET 2020 (15 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is a product of first step and is used as reactant in next step for manufacture of $\\mathrm{K}_{2} \\mathrm{Cr}_{2} \\mathrm{O}_{7}$ from concentrated chromite ore ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Q9GlG",
+              "text": "Sodium dichromate",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "5TwKb",
+              "text": "Potassium chromate",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "e5TN3",
+              "text": "Sodium sulphate",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nQ9ow",
+              "text": "Sodium chromate",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "(1) Conversion of chromite ore into sodium chromate\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/vMI5eD4U-TbTOwrsdClgkEqQvHuEdP_yeCCjNqQm7UA.original.fullsize.png\"><br>\n(2) Conversion of sodium chromate into sodium dichromate<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/ARxKKzCiXfXKyd6kj_tJm6Wh6J6PXizzSy3ktYEstgA.original.fullsize.png\"><br>\n(3) Conversion of sodium dicbromate to potassium dichromate\n$\\underset{\\text { Sod. dichromate }}{\\mathrm{Na}_{2} \\mathrm{Cr}_{2} \\mathrm{O}_{7}}+2 \\mathrm{KCl} \\longrightarrow \\underset{\\text { Pot. dicbromate }}{\\mathrm{K}_{2} \\mathrm{Cr}_{2} \\mathrm{O}_{7}}+2 \\mathrm{NaCl}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6d",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (15 Oct Shift 1)",
+            "title": "MHT CET 2020 (15 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f810279619d9d8a1d04",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6c",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-14T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (14 Oct Shift 2)",
+              "title": "MHT CET 2020 (14 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "What is the formula of pyrolusite ore?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "t4XlL",
+              "text": "$\\mathrm{PbCrO}_{4}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3U0Mc",
+              "text": "$\\mathrm{Cu}_{2} \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "JDKVD",
+              "text": "$\\mathrm{Cr}_{2} \\mathrm{O}_{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BDTik",
+              "text": "$\\mathrm{MnO}_{2}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Pyrolusite is a mineral consisting essentially of manganese dioxide (MnO2) and is important as an ore of manganese",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6c",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-14T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (14 Oct Shift 2)",
+            "title": "MHT CET 2020 (14 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f5c0279619d9d8a1bdc",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6a",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-13T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (13 Oct Shift 2)",
+              "title": "MHT CET 2020 (13 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Identify the mineral of aluminium from following",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Rm3NI",
+              "text": "Diaspore",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "cNjot",
+              "text": "Limonite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "u7i3d",
+              "text": "Azurite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "YrJpA",
+              "text": "Chalcopyrite",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Diaspore, also known as diasporite, empholite, kayserite, or tanatarite, is an aluminium oxide hydroxide mineral, a-AlO, crystallizing in the orthorhombic system and isomorphous with goethite.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6a",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-13T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (13 Oct Shift 2)",
+            "title": "MHT CET 2020 (13 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f580279619d9d8a1bb8",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6a",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-13T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (13 Oct Shift 2)",
+              "title": "MHT CET 2020 (13 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "What is the formula of calamine?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "EJonu",
+              "text": "$\\mathrm{ZnCO}_{3}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "bX0v4",
+              "text": "$\\mathrm{MgCO}_{3}, \\mathrm{CaCO}_{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pg657",
+              "text": "$\\mathrm{Fe}_{2} \\mathrm{O}_{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FcokM",
+              "text": "$\\mathrm{FeCO}_{3}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\text { Calamine is an ore of zinc. It is zinc carbonate with the formula, } \\mathrm{ZnCO}_{3} \\text {. }$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6a",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-13T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (13 Oct Shift 2)",
+            "title": "MHT CET 2020 (13 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25efe0279619d9d8a18ec",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d0071b5bb33b3f9f64",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019 (Shift 1)",
+              "title": "MHT CET 2019 (Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is not the mineral of iron?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "rr6jU",
+              "text": "Limonite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qigDz",
+              "text": "Magnetite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "JmUv9",
+              "text": "Corundum",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "e2NMX",
+              "text": "Haematite",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<strong>Key Idea</strong> Corundum is not a mineral of iron. It is a crystalline form of aluminium oxide typically containing traces of Fe, Ti, V and Cr. Limonite, magnetite and haematite are minerals of iron. Name and molecular formula of given minerals is given below: <br/><table border='1px solid'> <thead> <tr> <th><strong>Name</strong></th> <th><strong>Mineral</strong></th> </tr> </thead> <tbody> <tr> <td>Limonite</td> <td> <math><mi mathvariant=\"normal\">F</mi><mi mathvariant=\"normal\">e</mi><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></mrow></mfenced><mo>.</mo><mi mathvariant=\"normal\">n</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">O</mi></math> </td> </tr> <tr> <td>Magnetite</td> <td> <math><mi mathvariant=\"normal\">F</mi><msub><mrow><mi mathvariant=\"normal\">e</mi></mrow><mrow><mn>3</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>4</mn></mrow></msub></math> </td> </tr> <tr> <td>Corundum</td> <td> <math><mi mathvariant=\"normal\">A</mi><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub></math> </td> </tr> <tr> <td>Haematite</td> <td> <math><mi mathvariant=\"normal\">F</mi><msub><mrow><mi mathvariant=\"normal\">e</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub></math> </td> </tr> </tbody> </table>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d0071b5bb33b3f9f64",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019 (Shift 1)",
+            "title": "MHT CET 2019 (Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25ec30279619d9d8a1713",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cf071b5bb33b3f9f62",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "MHT CET 2017"
+            }
+          ],
+          "question": {
+            "text": "Which among the following is <u><b>NOT</b></u> a mineral of iron?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "j8dNS",
+              "text": "Haematite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "TLBTF",
+              "text": "Magnesite",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "KCA5D",
+              "text": "Magnetite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "bp6EY",
+              "text": "Siderite",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Magnesite -  <math><mi>M</mi><mi>g</mi><mi>C</mi><msub><mrow><mi>O</mi></mrow><mrow><mn>3</mn></mrow></msub></math> <br/>It is a mineral of Magnesium.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cf071b5bb33b3f9f62",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "MHT CET 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25ea30279619d9d8a160c",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f60",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "MHT CET 2012"
+            }
+          ],
+          "question": {
+            "text": "Fool's gold is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "zLZ3A",
+              "text": "$\\mathrm{Cu}_{2} \\mathrm{~S}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8hpd4",
+              "text": "$\\mathrm{FeS}_{2}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "qV5IY",
+              "text": "$\\mathrm{Al}_{2} \\mathrm{O}_{5}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vaBqj",
+              "text": "$\\mathrm{CuFeS}_{2}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Iron pyrite, $\\mathrm{FeS}_{2}$ is also known as fool's gold.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f60",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "MHT CET 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e9d0279619d9d8a15df",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f60",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "MHT CET 2012"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is not an iron ore?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "BULgd",
+              "text": "Malachite",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "SyZ5G",
+              "text": "Haematite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "UcGWG",
+              "text": "Siderite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "tT4Qe",
+              "text": "Limonite",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/Zy7D0IvCQvbCzVaAR1vFyBLmSW7Gd7o7hbmZQCMyzR4.original.fullsize.png\"><br>\nThus, malachite is not an ore of iron.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f60",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "MHT CET 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "6abb891215a9fc0fc8c1479d",
+      "title": "Reduction to Crude Metal",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "6abb884315a9fc0fc8c1420a",
+          "type": "singleCorrect",
+          "question": {
+            "text": "Which of following reactions occur at zone of reduction in blast furnace for extraction of iron?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "UgWDd",
+              "label": "A",
+              "text": "$\\text{C} + \\dfrac{1}{2}\\text{O}_2 \\rightarrow \\text{CO}_{(g)}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "i4uUY",
+              "label": "B",
+              "text": "$\\text{Fe}_2\\text{O}_3 + 3\\text{CO} \\rightarrow 2\\text{Fe} + 3\\text{CO}_2$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "kSiyn",
+              "label": "C",
+              "text": "$\\text{CaCO}_3 \\text{ (heat)} \\rightarrow \\text{CaO} + \\text{CO}_2$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "iKQbc",
+              "label": "D",
+              "text": "$\\text{CaO} + \\text{SiO}_2 \\rightarrow \\text{CaSiO}_3$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In the blast furnace for the extraction of iron, different reactions take place in different temperature zones.<br><br>The zone of reduction is located in the upper part of the furnace where the temperature is relatively low, around $500 - 800 \\text{ K}$. In this zone, iron oxides are reduced by carbon monoxide ($\\text{CO}$) to form spongy iron.<br><br>The primary reduction reaction is:<br>$\\text{Fe}_2\\text{O}_3 + 3\\text{CO} \\rightarrow 2\\text{Fe} + 3\\text{CO}_2$<br><br>The other reactions occur in different zones:<br>$\\text{C} + \\dfrac{1}{2}\\text{O}_2 \\rightarrow \\text{CO}$ occurs in the zone of combustion (lower part).<br>$\\text{CaCO}_3 \\rightarrow \\text{CaO} + \\text{CO}_2$ and $\\text{CaO} + \\text{SiO}_2 \\rightarrow \\text{CaSiO}_3$ occur in the zone of slag formation (middle part).<br><br>Answer: $\\text{Fe}_2\\text{O}_3 + 3\\text{CO} \\rightarrow 2\\text{Fe} + 3\\text{CO}_2$",
+            "image": null
+          },
+          "level": 2,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87f02fe711bb1be9996d",
+              "title": "MHT CET 2026 (19 May Shift 1)",
+              "shortName": "2026 (19 May Shift 1)",
+              "isVisible": true,
+              "heldOn": "2026-05-19T09:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87f02fe711bb1be9996d",
+            "title": "MHT CET 2026 (19 May Shift 1)",
+            "shortName": "2026 (19 May Shift 1)",
+            "isVisible": true,
+            "heldOn": "2026-05-19T09:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "65a263440279619d9d8a3da0",
+      "title": "Concentration of the Ore",
+      "totalQuestions": 4,
+      "questions": [
+        {
+          "_id": "65a25fb70279619d9d8a1eaf",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6f",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-16T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (16 Oct Shift 1)",
+              "title": "MHT CET 2020 (16 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Which among the following ore is concentrated by froth floatation process?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "E6xSQ",
+              "text": "Diaspore",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "tFkCV",
+              "text": "Bauxite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "dAo2L",
+              "text": "Dolomite",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "47U9P",
+              "text": "Galena",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Galena\nGalena is also known as the lead glance. It is present in the form of Lead (II) sulphide, PbS.\nAs the galena ore contains sulphide group, therefore galena is best concentrated by the froth flotation method. Galena is the correct answer.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6f",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-16T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (16 Oct Shift 1)",
+            "title": "MHT CET 2020 (16 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25ee70279619d9d8a1834",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f66",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2019-05-02T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019 (02 May Shift 1)",
+              "title": "MHT CET 2019 (02 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following methods is used to separate wolframite and stannic oxide present in cassiterite?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "j0eOR",
+              "text": "Hydraulic washing using Wilﬂey table",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "KfcZF",
+              "text": "Froth ﬂotation",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "kXpI0",
+              "text": "Hydraulic classiﬁer",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "i0TYk",
+              "text": "Magnetic separation",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Cassiterite <math><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">n</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfenced></math> is a non-magnetic ore from which magnetic impurities of Wolframite <math><mfenced separators=\"|\"><mrow><msub><mrow><mi mathvariant=\"normal\">F</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">W</mi><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>4</mn></mrow></msub></mrow></mfenced></math> are removed by magnetic separation method.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f66",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2019-05-02T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019 (02 May Shift 1)",
+            "title": "MHT CET 2019 (02 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25efb0279619d9d8a18d5",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d0071b5bb33b3f9f64",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019 (Shift 1)",
+              "title": "MHT CET 2019 (Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "In leaching of alumina from bauxite by Bayer’s process, then ore is treated with",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "M92Wi",
+              "text": "<math><mi>N</mi><mi>a</mi><mi>O</mi><mi>H</mi><mfenced separators=\"|\"><mrow><mi>a</mi><mi>q</mi></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "kQtNs",
+              "text": "<math><mi>N</mi><mi>a</mi><mi>C</mi><mi>N</mi><mfenced separators=\"|\"><mrow><mi>a</mi><mi>q</mi></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "olD3D",
+              "text": "<math><mi>K</mi><mi>C</mi><mi>N</mi><mi></mi><mfenced separators=\"|\"><mrow><mi>a</mi><mi>q</mi></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iUjZ6",
+              "text": "<math><mi>N</mi><msub><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>C</mi><msub><mrow><mi>O</mi></mrow><mrow><mn>3</mn></mrow></msub><mfenced separators=\"|\"><mrow><mi>a</mi><mi>q</mi></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In leaching of alumina from bauxite by Bayer’s process, the ore is treated with NaOH (aq). Concentration is carried out by heating the powdered ore with a concentrated solution of NaOH at <math><mn>473</mn><mo>-</mo><mn>523</mn><mi></mi><mi>K</mi></math> and 35 – 36 bar pressure. <math><mi>A</mi><msub><mrow><mi>l</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>O</mi></mrow><mrow><mn>3</mn></mrow></msub></math> is extracted out as sodium aluminate. <br/><math><mi>A</mi><msub><mrow><mi>l</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>O</mi></mrow><mrow><mn>3</mn></mrow></msub><mfenced separators=\"|\"><mrow><mi>s</mi></mrow></mfenced><mo>+</mo><mn>2</mn><mi>N</mi><mi>a</mi><mi>O</mi><mi>H</mi><mfenced separators=\"|\"><mrow><mi>a</mi><mi>q</mi></mrow></mfenced><mo>+</mo><mn>3</mn><msub><mrow><mi>H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>o</mi><mfenced separators=\"|\"><mrow><mi>l</mi></mrow></mfenced><mo>→</mo><mn>2</mn><mi>N</mi><mi>a</mi><mfenced close=\"]\" open=\"[\" separators=\"|\"><mrow><mi>A</mi><mi>l</mi><msub><mrow><mfenced separators=\"|\"><mrow><mi>O</mi><mi>H</mi></mrow></mfenced></mrow><mrow><mn>4</mn></mrow></msub></mrow></mfenced><mfenced separators=\"|\"><mrow><mi>a</mi><mi>q</mi></mrow></mfenced></math>  <br/>The sodium aluminate formed is neutralised by passing <math><mi>C</mi><msub><mrow><mi>O</mi></mrow><mrow><mn>2</mn></mrow></msub></math> gas and hydrated <math><mi>A</mi><msub><mrow><mi>l</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>O</mi></mrow><mrow><mn>3</mn></mrow></msub></math> is precipitated. <br/><math><mn>2</mn><mi>N</mi><mi>a</mi><mfenced close=\"]\" open=\"[\" separators=\"|\"><mrow><mi>A</mi><mi>l</mi><msub><mrow><mfenced separators=\"|\"><mrow><mi>O</mi><mi>H</mi></mrow></mfenced></mrow><mrow><mn>4</mn></mrow></msub></mrow></mfenced><mfenced separators=\"|\"><mrow><mi>a</mi><mi>q</mi></mrow></mfenced><mo>+</mo><mi>C</mi><msub><mrow><mi>O</mi></mrow><mrow><mn>2</mn></mrow></msub><mfenced separators=\"|\"><mrow><mi>g</mi></mrow></mfenced><mo>→</mo><mi>A</mi><msub><mrow><mi>l</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>O</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>.</mo><mi>x</mi><msub><mrow><mi>H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>O</mi><mfenced separators=\"|\"><mrow><mi>s</mi></mrow></mfenced><mo>+</mo><mn>2</mn><mi>N</mi><mi>a</mi><mi>H</mi><mi>C</mi><msub><mrow><mi>O</mi></mrow><mrow><mn>3</mn></mrow></msub><mfenced separators=\"|\"><mrow><mi>a</mi><mi>q</mi></mrow></mfenced></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d0071b5bb33b3f9f64",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019 (Shift 1)",
+            "title": "MHT CET 2019 (Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25eb00279619d9d8a1677",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f61",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "MHT CET 2016"
+            }
+          ],
+          "question": {
+            "text": "Name the reagent that is used in leaching of gold.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Efvq3",
+              "text": "Carbon",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FIDcB",
+              "text": "Sodium cyanide",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "eGA9D",
+              "text": "Carbon monoxide",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "79GF8",
+              "text": "Iodine",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Sodium cyanide is used in leaching of gold.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f61",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "MHT CET 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "65a263440279619d9d8a3d9e",
+      "title": "Refining of Crude Metal",
+      "totalQuestions": 11,
+      "questions": [
+        {
+          "_id": "65a25fe00279619d9d8a1ff6",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f71",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-19T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (19 Oct Shift 1)",
+              "title": "MHT CET 2020 (19 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Which among the following elements is obtained in pure form by liquation process of refining?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "tCCaN",
+              "text": "Copper",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZiTu4",
+              "text": "Tin",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "nc6k4",
+              "text": "Gallium",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "o6FNy",
+              "text": "Silicon",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Liquation is used for the refining of metals having low melting point and are associated with high melting impurities. For example, Pb, Sn, Sb, Bi and Hg. The impure metal is heated on the sloping hearth of a furnace. The pure metal flows down leaving behind the non-fusible material on the hearth.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f71",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-19T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (19 Oct Shift 1)",
+            "title": "MHT CET 2020 (19 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fcb0279619d9d8a1f49",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f70",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-16T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (16 Oct Shift 2)",
+              "title": "MHT CET 2020 (16 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following metals is refined by vapour phase refining in Mond process?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "4yxbs",
+              "text": "Zn",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "172lV",
+              "text": "Si",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CHKWw",
+              "text": "Ni",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "WcDXD",
+              "text": "Zr",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathbf{N i}$\nThe vapour phase refining technique refines nickel (Ni) metal. Nickel interacts with carbon monoxide to generate highly volatile nickel tetracarbonyl, which decomposes at high temperatures to yield pure nickel metal.\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/DqLWM4firtNHFh9Xf-3S9uwqvJgsGObuclD-gbOG9vU.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f70",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-16T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (16 Oct Shift 2)",
+            "title": "MHT CET 2020 (16 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fca0279619d9d8a1f42",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f70",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-16T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (16 Oct Shift 2)",
+              "title": "MHT CET 2020 (16 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Identify the process of refining to obtain pig tin",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "LCLBr",
+              "text": "Liquation",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Uk2T2",
+              "text": "Mond process",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "mn0pe",
+              "text": "van Arkel",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "xixnN",
+              "text": "Polling",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Liquation\nPig tin is obtained using the liquation process, which is a partial melting technique for separating elements of an ore, metal, or alloy. The liquid constituent can be drained off when the material is heated to a temperature where one of the constituents melts and the other stays solid. The non-fusible substance on the health is left behind when the pure metal (tin) flows down.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f70",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-16T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (16 Oct Shift 2)",
+            "title": "MHT CET 2020 (16 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fba0279619d9d8a1ec2",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6f",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-16T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (16 Oct Shift 1)",
+              "title": "MHT CET 2020 (16 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Zirconium is refined by",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "D2skm",
+              "text": "Liquation process",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GZdym",
+              "text": "Mond process",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "NgtSn",
+              "text": "Van Arkel method",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "lxPO2",
+              "text": "Electrolytic refining process",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Zirconium is refined by van Arkel method.\nZirconium is refined using the van Arkel technique. By heating metal in an evacuated vessel with iodine, oxygen and nitrogen present as impurities are eliminated. On a tungsten filament heated to roughly $1800 \\mathrm{~K}$, the metal iodide volatilizes and is degraded. On the filament, pure metal is deposited.\n$\\begin{array}{l}\n\\underset{\\text { (Impure) }}{\\mathrm{Zr}}+2 \\mathrm{l}_{2} \\longrightarrow \\mathrm{Zrl}_{4} \\\\\n\\mathrm{Zrl}_{4} \\longrightarrow \\underset{\\text { (Pure) }}{\\mathrm{Zr}}+2 \\mathrm{l}_{2}\n\\end{array}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6f",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-16T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (16 Oct Shift 1)",
+            "title": "MHT CET 2020 (16 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fa60279619d9d8a1e2c",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6e",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (15 Oct Shift 2)",
+              "title": "MHT CET 2020 (15 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Which among the following elements is obtained in pure form by zone refining process?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "gP3sB",
+              "text": "Germanium",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "TCZSh",
+              "text": "Tin",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "15FVm",
+              "text": "Copper",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iQvxV",
+              "text": "Bismuth",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Zone refining process is used for the purification of metal. -Metals are purified through this process to a very high degree. The other name of zone refining is called fractional crystallization. -Ultra-pure samples of metals like germanium, silicon, boron, and gallium are obtained through this process.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6e",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (15 Oct Shift 2)",
+            "title": "MHT CET 2020 (15 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25fa60279619d9d8a1e29",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6e",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (15 Oct Shift 2)",
+              "title": "MHT CET 2020 (15 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Which following method is used for refining of impure zirconium?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "yZXHN",
+              "text": "Liquation",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "LbC6Q",
+              "text": "Zone refining",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8TyHy",
+              "text": "Polling",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "7y7Co",
+              "text": "Van Arkel method",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Van Arkel method is used for refining $Zr$ and $Ti$. Van Arkel process involves heating the impure metal with Iodine. It forms a volatile complex which on decomposition at high temperatures, gives back the metal but in very pure form.\nRefining of $Zr$ and $Ti$ using Van Arkel method\nFor Zirconium,\n$\\mathrm{Zr}$ (impure) $+2 \\mathrm{l}_{2} \\rightarrow \\mathrm{Zrl}_{4}$\n$\\mathrm{Zrl}_{4} \\rightarrow \\mathrm{Zr}$ (pure) $+2 \\mathrm{I}_{2}$ (at 1800K)\nFor Titanium,\nTi(impure) $+2 \\mathrm{I}_{2} \\rightarrow \\mathrm{Til}_{4}$\n$\\mathrm{Til}_{4} \\rightarrow \\mathrm{Ti}($ pure $)+2 \\mathrm{I}_{2}($ at $1800 \\mathrm{~K})$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6e",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (15 Oct Shift 2)",
+            "title": "MHT CET 2020 (15 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25eec0279619d9d8a185b",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f66",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2019-05-02T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019 (02 May Shift 1)",
+              "title": "MHT CET 2019 (02 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Bassemerization is used in the extraction of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "qE1mK",
+              "text": "Iron",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Y1uxL",
+              "text": "Copper",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "xP85K",
+              "text": "Aluminium",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "sXTOZ",
+              "text": "Zinc",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Bessemerization is used as a process of purification for copper when it contains the impurities which can be oxidized by air easily.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f66",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2019-05-02T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019 (02 May Shift 1)",
+            "title": "MHT CET 2019 (02 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25ed80279619d9d8a17c0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cf071b5bb33b3f9f63",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "MHT CET 2018"
+            }
+          ],
+          "question": {
+            "text": "Which element is obtained in the pure form by Van Arkel method?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "QpRdt",
+              "text": "Aluminium",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BTZCP",
+              "text": "Titanium",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "IQQW3",
+              "text": "Silicon",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CbIG7",
+              "text": "Nickel",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Titanium is obtained in the pure form by Van Arkel method",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cf071b5bb33b3f9f63",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "MHT CET 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25eb10279619d9d8a1682",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f61",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "MHT CET 2016"
+            }
+          ],
+          "question": {
+            "text": "Which metal is refined by Mond process?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Cvkml",
+              "text": "Titanium",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "f8acN",
+              "text": "Copper",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FJ2DE",
+              "text": "Nickel",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "yFvRv",
+              "text": "Zinc",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Nickel is refined by Mond process.\n\\(\\underset{\\text{pure}}{\\mathrm{Ni}} +4 \\mathrm{CO}\\xrightarrow[]{330-350 \\mathrm{~K}} \\mathrm{Ni}\\left(\\mathrm{CO}_{4}\\right)\\)\n\\(\\mathrm{Ni}\\left(\\mathrm{CO}_{4}\\right) \\xrightarrow[]{450-470 \\mathrm{~K}} \\underset{\\text{pure}}{\\mathrm{Ni}}+4 \\mathrm{CO}\\)\nReaction in Mond Process",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f61",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "MHT CET 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e8e0279619d9d8a1565",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f5f",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "MHT CET 2011"
+            }
+          ],
+          "question": {
+            "text": "TiI $_{4}$ on heating gives",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "BWYSH",
+              "text": "$\\mathrm{TiI}_{2}+\\mathrm{I}_{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8cGkw",
+              "text": "$\\mathrm{Ti}+2 \\mathrm{I}_{2}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ck6FI",
+              "text": "$\\mathrm{Ti} \\mathrm{I}_{3}+\\frac{1}{2} \\mathrm{I}_{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "h3nhm",
+              "text": "None of these",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{TiI}_{4}$ ôn heating gives titanium ând iodinè. It is the van Arkel method for the production of pure Ti.\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/7J7QJyRhnaG8u4OAK3odB9H06hNqhE6cczCJEWRFscY.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f5f",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "MHT CET 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e560279619d9d8a139f",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f5c",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2008-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2008",
+              "title": "MHT CET 2008"
+            }
+          ],
+          "question": {
+            "text": "The purest zinc is made by",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "5H6GE",
+              "text": "electrolytic refining",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "7ckxg",
+              "text": "zone refining",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "BC0Bh",
+              "text": "the van Arkel method",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pItt1",
+              "text": "the Mond process",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The purest zinc is made by zone refining.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f5c",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2008-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2008",
+            "title": "MHT CET 2008"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "65a263440279619d9d8a3da1",
+      "title": "Flux and Refractory materials",
+      "totalQuestions": 3,
+      "questions": [
+        {
+          "_id": "65a260030279619d9d8a210b",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f73",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-20T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (20 Oct Shift 1)",
+              "title": "MHT CET 2020 (20 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Which following compound acts as a flux in extraction of copper from copper pyrites",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "gduzU",
+              "text": "$\\mathrm{CaSiO}_{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SRNQt",
+              "text": "$\\mathrm{FeO}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0jx69",
+              "text": "$\\mathrm{FeSiO}_{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "khpFw",
+              "text": "$\\mathrm{SiO}_{2}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Copper is extracted from the ore copper pyrite by smelting in a blast furnace.\nThe flux used is $\\mathrm{SiO}_{2}$ and slag formed is $\\mathrm{FeSiO}_{3}$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f73",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-20T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (20 Oct Shift 1)",
+            "title": "MHT CET 2020 (20 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f480279619d9d8a1b32",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f69",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-13T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (13 Oct Shift 1)",
+              "title": "MHT CET 2020 (13 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Which among following processes occurs at $1500 \\mathrm{~K}$ in blast furnace for extraction of iron?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "EB3gT",
+              "text": "Reduction of ore",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "tTYAt",
+              "text": "Ore loses moisture",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "xzZa7",
+              "text": "Combustion of coke",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "09bro",
+              "text": "Slag formation",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The slag formed in the extraction of iron from haematite in the blast furnace is $\\mathrm{CaSiO}_{3}$. The reaction in the blast furnace is as follows:\n$\\mathrm{CaO}+\\mathrm{SiO}_{2} \\rightarrow \\mathrm{CaSiO}_{3} \\text { (slag) }$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f69",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-13T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (13 Oct Shift 1)",
+            "title": "MHT CET 2020 (13 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f0e0279619d9d8a196d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f65",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2019-04-30T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019 (Shift 2)",
+              "title": "MHT CET 2019 (Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Limestone is used as a flux in the extraction of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "R1wU9",
+              "text": "Iron",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "GHNXO",
+              "text": "Aluminium",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Ci3dC",
+              "text": "Zinc",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BIowf",
+              "text": "Copper",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Limestone is used as a flux in the extraction of iron because it decomposes in hot furnace to form calcium oxide and carbon dioxide. The formed calcium oxide actually acts as flux and combined with silica to form fusible calcium silicate slag.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f65",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2019-04-30T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019 (Shift 2)",
+            "title": "MHT CET 2019 (Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "topicId": "65a263430279619d9d8a3d9d",
+      "title": "Extraction of Metals",
+      "totalQuestions": 14,
+      "questions": [
+        {
+          "_id": "6abb88c215a9fc0fc8c146ba",
+          "type": "singleCorrect",
+          "question": {
+            "text": "Which from following properties is exhibited by cast iron ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "dz1Gk",
+              "label": "A",
+              "text": "It is very soft and contains $4\\%$ C.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "iil3B",
+              "label": "B",
+              "text": "It is very soft and contains $2\\%$ C",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "A0WeR",
+              "label": "C",
+              "text": "It is hard, brittle and contains $4\\%$ C.",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "tcdTt",
+              "label": "D",
+              "text": "It is hard and contains less than $0.2\\%$ C.",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Cast iron is an alloy of iron that typically contains $2\\%$ to $4\\%$ carbon, along with varying amounts of other impurities like silicon and manganese.<br><br>Due to its high carbon content, cast iron is extremely hard and brittle, which makes it unsuitable for forging but excellent for casting.<br><br>In contrast, wrought iron contains less than $0.2\\%$ carbon and is relatively soft and malleable.<br><br>Therefore, the property exhibited by cast iron is that it is hard, brittle, and contains about $4\\%$ carbon.<br><br>Answer: It is hard, brittle and contains $4\\%$ C.",
+            "image": null
+          },
+          "level": 1,
+          "videoSolution": null,
+          "previousYearPapers": [
+            {
+              "_id": "6abb87ef2fe711bb1be99966",
+              "title": "MHT CET 2026 (12 May Shift 2)",
+              "shortName": "2026 (12 May Shift 2)",
+              "isVisible": true,
+              "heldOn": "2026-05-12T14:00:00.000Z",
+              "examId": "615d7745c52ffa3c944600e5"
+            }
+          ],
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "6abb87ef2fe711bb1be99966",
+            "title": "MHT CET 2026 (12 May Shift 2)",
+            "shortName": "2026 (12 May Shift 2)",
+            "isVisible": true,
+            "heldOn": "2026-05-12T14:00:00.000Z",
+            "examId": "615d7745c52ffa3c944600e5"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260190279619d9d8a21c0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f74",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-20T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (20 Oct Shift 2)",
+              "title": "MHT CET 2020 (20 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Identify the product formed when bauxite ore is treated with sodium hydroxide?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "bBoOS",
+              "text": "Sodium hydrogen carbonate",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FuOoQ",
+              "text": "Aluminium hydroxide",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4x722",
+              "text": "Sodium meta aluminate",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ECV2J",
+              "text": "Aluminium chloride",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Aluminium oxide is converted to sodium metal aluminate and water when bauxite is treated with sodium hydroxide solution. The sodium aluminate obtained can be reduced to aluminium.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f74",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-20T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (20 Oct Shift 2)",
+            "title": "MHT CET 2020 (20 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25ff40279619d9d8a2095",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f72",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-19T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (19 Oct Shift 2)",
+              "title": "MHT CET 2020 (19 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "How many moles of gaseous oxygen at one atmosphere is considered for the reaction with element for plotting a graph in Ellingham diagram?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "JEL7o",
+              "text": "2",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ASCDz",
+              "text": "$0 \\cdot 25$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3rYMR",
+              "text": "$0 \\cdot 5$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6JL8k",
+              "text": "1",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "1\nThe standard free energy change (6G0 ) per 1 mole of oxygen is represented on the $y$-axis, while temperature (K) is plotted on the $x$-axis in the Ellingham diagram graph. For the Ellingham diagram, one mole of gaseous oxygen at one atmosphere is used to create a graph for the reaction with element. The following is an example:\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/Ah6LYEOAwl4z2-AqxDTG-r6GWWNntmUQZvo5Jan2JhU.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f72",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-19T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (19 Oct Shift 2)",
+            "title": "MHT CET 2020 (19 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f940279619d9d8a1da0",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6d",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (15 Oct Shift 1)",
+              "title": "MHT CET 2020 (15 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Which reaction from following occurs at $2000 \\mathrm{~K}$ in the blast furnace for extraction of iron?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "glufF",
+              "text": "$\\mathrm{CaO}+\\mathrm{SiO}_{2} \\longrightarrow \\mathrm{CaSiO}_{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "J05fW",
+              "text": "$\\mathrm{CaCO}_{3} \\longrightarrow \\mathrm{CaO}+\\mathrm{CO}_{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "yr1Sx",
+              "text": "$\\mathrm{Fe}_{2} \\mathrm{O}_{3}+3 \\mathrm{CO} \\longrightarrow 2 \\mathrm{Fe}+3 \\mathrm{CO}_{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "kAC7v",
+              "text": "$2 \\mathrm{C}+\\mathrm{O}_{2} \\longrightarrow 2 \\mathrm{CO}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "At bottom of furnace, 2000Â°K occurs, and here Carbon reacts with oxygen to give Carbon mono oxide",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6d",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (15 Oct Shift 1)",
+            "title": "MHT CET 2020 (15 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f830279619d9d8a1d13",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6c",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-14T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (14 Oct Shift 2)",
+              "title": "MHT CET 2020 (14 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "What is the approximate ratio of roasted ore, coke and lime stone respectively in the charge to\nbe added into blast furnace for extraction of iron?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "tzRLd",
+              "text": "$5: 12: 3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "biuCc",
+              "text": "$12: 3: 5$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Fw33V",
+              "text": "$12: 5: 3$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "j6E8B",
+              "text": "$5: 3: 12$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "\"The ratio of roasted ore, coke and limestone fed into the blast furnace in the manufacture of iron is 12:5:3.\nThis mixture is known as charge.\"",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6c",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-14T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (14 Oct Shift 2)",
+            "title": "MHT CET 2020 (14 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f7d0279619d9d8a1ce4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6c",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-14T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (14 Oct Shift 2)",
+              "title": "MHT CET 2020 (14 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "What is the role of tuyers used in blast furnace for extraction of iron?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "QYCTJ",
+              "text": "It enables the even distribution of charge.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "JcQ4e",
+              "text": "To blow a blast of preheated air in to the furnace.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "UN4O3",
+              "text": "It is used to remove molten slag and iron.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "tqKOX",
+              "text": "It prevents loss of hot gases.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Near the base, the furnace is provided with pipes called tuyeres for supplying a hot blast of air, a tapping hole for molten iron and a slag hole through which slag flows out. There is an outlet near the top of the waste gases. Near the tuyeres, carbon burns to give carbon dioxide producing a lot of heat.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6c",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-14T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (14 Oct Shift 2)",
+            "title": "MHT CET 2020 (14 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f6c0279619d9d8a1c58",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6b",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-14T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (14 Oct Shift 1)",
+              "title": "MHT CET 2020 (14 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "What is the product formed when bauxite ore is treated with sodium hydroxide?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "z0eO5",
+              "text": "Sodium meta aluminate",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Eu7f3",
+              "text": "Aluminium hydroxide",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "zec6J",
+              "text": "Sodium aluminate",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "OTCn9",
+              "text": "Sodium hydrogen carbonate",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Conc. sodium hydroxide.\nBauxite ore is finely divided and heated under pressure with concentrated caustic soda solution at $150^{\\circ} \\mathrm{C}$ to obtain sodium meta-aluminate. The following reaction is as follows:\n$\\underset{\\text { Bauxite }}{\\mathrm{Al}_{2} \\mathrm{O}_{3} .2 \\mathrm{H}_{2} \\mathrm{O}+2 \\mathrm{NaOH}} \\stackrel{150^{0} \\mathrm{C}}{\\longrightarrow} 2 \\mathrm{NaAlO}_{2}+\\underset{\\text { sodium meta aluminate }}{3 \\mathrm{H}_{2} \\mathrm{O}}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6b",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-14T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (14 Oct Shift 1)",
+            "title": "MHT CET 2020 (14 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f360279619d9d8a1aac",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f68",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-12T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (12 Oct Shift 2)",
+              "title": "MHT CET 2020 (12 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Which oxide formation according to Ellingham diagram shows a graph with sudden change in slope?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "IVXxG",
+              "text": "$\\mathrm{CO}_{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "9Hs4A",
+              "text": "$\\mathrm{Ag}_{2} \\mathrm{O}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "QVXwp",
+              "text": "$\\mathrm{Al}_{2} \\mathrm{O}_{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "aAGmE",
+              "text": "$\\mathrm{Mg} \\mathrm{O}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/yWEb5wbQFUEuD_4qhdL5vPx3dCtbsNxfNaXf-QzDRvk.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f68",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-12T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (12 Oct Shift 2)",
+            "title": "MHT CET 2020 (12 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f240279619d9d8a1a1a",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f67",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-12T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (12 Oct Shift 1)",
+              "title": "MHT CET 2020 (12 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "What happens during bessemerization process of extraction of copper from copper pyrites?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "MVP0W",
+              "text": "Au and Ag metals are deposited as anode mud.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pfyTR",
+              "text": "Impurities as As and Sb are removed as volatile oxides.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "9KyiI",
+              "text": "Cu is obtained by auto reduction of $\\mathrm{Cu}_{2} \\mathrm{O}$ and Cus.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Uj1Lw",
+              "text": "Iron is removed in the form of slag.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Process for extraction of copper from copper pyrite\nAt the starting copper pyrite is roasted in a reverberatory furnace because on roasting we will get copper oxide from the copper pyrite from which the copper can be extracted by doing reduction.\n$2 \\mathrm{CuFeS}_{2}+\\mathrm{O}_{2} \\rightarrow \\mathrm{Cu}_{2} \\mathrm{~S}+2 \\mathrm{FeS}+\\mathrm{SO}_{2}$\nNow as we know that the iron is more reactive than the copper.\nSo, ferrous sulphide and cuprous sulphide must react with oxygen to form ferrous oxide, copper sulphur dioxide.\n$2 \\mathrm{FeS}+3 \\mathrm{O}_{2} \\rightarrow 2 \\mathrm{FeO}+2 \\mathrm{SO}_{2}$\n$\\mathrm{Cu}_{2} \\mathrm{~S}+\\mathrm{O}_{2} \\rightarrow \\mathrm{Cu}_{2} \\mathrm{O}+\\mathrm{FeO}_{2}$ \n$\\mathrm{Cu}_{2} \\mathrm{O}+\\mathrm{FeS} \\rightarrow \\mathrm{Cu}_{2} \\mathrm{~S}+\\mathrm{FeO}$\nNow ferrous sulphide is not allowing cuprous sulphide to oxidise as iron is more reactive.\nSo, compounds left in the furnace will be,\n$\\mathrm{Cu}_{2} \\mathrm{~S}, \\mathrm{FeO}$ and some unreacted $\\mathrm{FeS}$.\nSo, now we are smelting the roasted ore in the furnace.\nSo, we put roasted ore in a blast furnace with coke and flux (silica flux).\nSo, the reaction in the blast furnace will be,\n$\\mathrm{FeO}+\\mathrm{SiO}_{2} \\rightarrow \\mathrm{FeSiO}_{3}($ slag $)$\nAs the temperature of the blast furnace is very high. So, everything changes to molten form\nSo, there will be two molten layers\nFirst layer will be of slag because it is light, and the second layer will be of Copper matte $\\left(\\mathrm{Cu}_{2} \\mathrm{~S}\\right.$ and some unchanged\nNow copper matte is put in a Bessemer converter to recover copper from copper matte and remove all impurities and this process is known as Bessemerisation process.\nSo, impurities like sulphur, arsenic and antimony are oxidised to their respective volatile oxides.\n$\\begin{array}{c}\n\\mathrm{FeS}+\\mathrm{O}_{2} \\rightarrow \\mathrm{FeO}+\\mathrm{SO}_{2} \\\\\n\\mathrm{FeO}+\\mathrm{SiO}_{2} \\rightarrow \\mathrm{FeS} i \\mathrm{O}_{3} \\text { (slag) }\n\\end{array}$\nAs the slag is floating on the top. So, here slag is removed. So, iron has been removed as slag.\nNow oxidation of copper sulphide starts to form cuprous oxide and sulphur dioxide.\nAnd then cuprous oxide reacts with copper sulphide to form copper metal and this process is called the auto reduction process.\n$\\begin{array}{c}\n2 \\mathrm{Cu}_{2} \\mathrm{~S}+3 \\mathrm{O}_{2} \\rightarrow 2 \\mathrm{Cu}_{2} \\mathrm{O}+2 \\mathrm{SO}_{2} \\\\\n2 \\mathrm{Cu}_{2} \\mathrm{O}+\\mathrm{Cu}_{2} \\mathrm{~S} \\rightarrow 6 \\mathrm{Cu}+\\mathrm{SO}_{2}\n\\end{array}$\nNow copper metal is below. So, the Bessemer converter is tilted so that it falls in sand mounds and then is left to solidify and cool.\nNow sulphur dioxide starts removing but some are trapped inside.\nSo, the appearance of the solidified copper will be like blisters.\nTherefore the copper we get from here is known as blister copper.\nSo, we do electrolytic refining of that copper.\nSo, in anode there will be blister copper and pure copper will be in cathode.\nSo, after refining, pure copper starts collecting at cathode.\nSo, at the end of the process we will get the pure copper.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f67",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-12T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (12 Oct Shift 1)",
+            "title": "MHT CET 2020 (12 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f220279619d9d8a1a07",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f67",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-12T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (12 Oct Shift 1)",
+              "title": "MHT CET 2020 (12 Oct Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "Which among the following reactions occurs at the zone of slag formation in extraction of iron by blast furnace?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "S0FC2",
+              "text": "$\\mathrm{C}+\\frac{1}{2} \\mathrm{O}_{2} \\longrightarrow \\mathrm{CO}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Fgell",
+              "text": "$\\mathrm{CaO}+\\mathrm{SiO}_{2} \\longrightarrow \\mathrm{CaSiO}_{3}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "qd9Fq",
+              "text": "$\\mathrm{Fe}_{2} \\mathrm{O}_{3}+3 \\mathrm{CO} \\longrightarrow 2 \\mathrm{Fe}+3 \\mathrm{CO}_{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "r1Ugu",
+              "text": "$\\mathrm{Fe}_{2} \\mathrm{O}_{3}+3 \\mathrm{C} \\longrightarrow 2 \\mathrm{Fe}+3 \\mathrm{CO}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The slag formed in the extraction of iron from haematite in the blast furnace is $\\mathrm{CaSiO}_{3}$. The reaction in the blast furnace is as follows:\n$\\mathrm{CaO}+\\mathrm{SiO}_{2} \\rightarrow \\mathrm{CaSiO}_{3} \\text { (slag) }$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f67",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-12T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (12 Oct Shift 1)",
+            "title": "MHT CET 2020 (12 Oct Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25ed80279619d9d8a17ba",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cf071b5bb33b3f9f63",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "MHT CET 2018"
+            }
+          ],
+          "question": {
+            "text": "Bauxite, an ore of aluminium, is purified by which process?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "DLUTu",
+              "text": "Hoope's process",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "tMG2H",
+              "text": "Hall's process",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Zn4QV",
+              "text": "Mond's process",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "LeldK",
+              "text": "Liquation process",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Bauxite, an ore of aluminium, is purified by Hall's process",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cf071b5bb33b3f9f63",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "MHT CET 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25ec40279619d9d8a171d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cf071b5bb33b3f9f62",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "MHT CET 2017"
+            }
+          ],
+          "question": {
+            "text": "Name the process that is employed to refine aluminium.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "BltwJ",
+              "text": "Hall's process",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "mV0EG",
+              "text": "Mond process",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Jj6RK",
+              "text": "Hoope's process",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "fGqLV",
+              "text": "Serperck's process",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Hoope's process is the process that is employed to refine aluminium.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cf071b5bb33b3f9f62",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "MHT CET 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e670279619d9d8a1426",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f5d",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "MHT CET 2009"
+            }
+          ],
+          "question": {
+            "text": "Willemite is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "rlVly",
+              "text": "$\\mathrm{Zn}_{2} \\mathrm{SiO}_{4}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "VSBD8",
+              "text": "$\\mathrm{H}_{2} \\mathrm{Pt} \\mathrm{Cl}_{6}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "IAh2z",
+              "text": "$\\mathrm{ZnO}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "9Uy6M",
+              "text": "$\\mathrm{ZnOFe}_{2} \\mathrm{O}_{3}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Willemite, a rare zinc silicate mineral, is $\\mathrm{Zn}_{2} \\mathrm{SiO}_{4} .$ It has trigonal symmetry and is strongly fluorescent green.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f5d",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "MHT CET 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25e540279619d9d8a1391",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f5c",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2008-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2008",
+              "title": "MHT CET 2008"
+            }
+          ],
+          "question": {
+            "text": "Calamine is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "l1WeE",
+              "text": "$\\mathrm{CaCO}_{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SlNoG",
+              "text": "$\\mathrm{MgCO}_{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FL9EA",
+              "text": "$\\mathrm{ZnCO}_{3}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ZX2RD",
+              "text": "$\\mathrm{CaCO}_{3}+\\mathrm{CaO}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Calamine is the carbonate ore of zinc $\\left(\\mathrm{ZnCO}_{3}\\right)$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f5c",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2008-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2008",
+            "title": "MHT CET 2008"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

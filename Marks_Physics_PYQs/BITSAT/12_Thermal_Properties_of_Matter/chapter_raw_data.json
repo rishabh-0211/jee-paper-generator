@@ -1,0 +1,1174 @@
+{
+  "index": 12,
+  "chapterId": "61e7bd7f80092b5aa328b5a1",
+  "chapter": "Thermal Properties of Matter",
+  "exam": "BITSAT",
+  "subject": "Physics",
+  "totalTopics": 5,
+  "totalQuestions": 17,
+  "downloadTime": "2026-10-08 20:27:50",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e8556f5bfc7ab78aecf6",
+      "title": "Thermometry",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e7d76f5bfc7ab78ae84e",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Two spheres of different materials one with double the radius and one-fourth wall thickness of the other are filled with ice. If the time taken for complete melting of ice in the larger sphere is 25 minute and for smaller one is 16 minute, the ratio of thermal conductivities of the materials of larger spheres to that of smaller sphere is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "eytVp",
+              "text": "4: 5",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "DBt5n",
+              "text": "5: 4",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ytcB5",
+              "text": "25: 8",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "NXNiW",
+              "text": "8: 25",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Radius of small sphere $=\\mathrm{r}$ Thickness of small sphere $=\\mathrm{t}$ Radius of bigger sphere $=2 \\mathrm{r}$ Thickness of bigger sphere $=\\mathrm{t} / 4$ Mass of ice melted $=($ volume of sphere $) \\times$ (density of ice) Let $\\mathrm{K}_{1}$ and $\\mathrm{K}_{2}$ be the thermal conductivities of larger and smaller sphere. \r\n\r\nFor bigger sphere, $\\frac{K_{1} 4 \\pi(2 r)^{2} \\times 100}{t / 4}=\\frac{\\frac{4}{3} \\pi(2 r)^{3} \\rho L}{25 \\times 60}$\r\n\r\nFor smaller sphere,\r\n\r\n$\\frac{\\mathrm{K}_{2} \\times 4 \\pi \\mathrm{r}^{2} \\times 100}{\\mathrm{t}}=$  $\\frac{\\frac{4}{3} \\pi(2 \\mathrm{r})^{3} \\rho \\mathrm{L}}{25 \\times 60}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e8556f5bfc7ab78aecf7",
+      "title": "Thermal Expansion",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "67726d06c49e8ef28ee2b3ab",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "A solid metallic cube having total surface area $24 \\mathrm{~m}^2$ is uniformly heated. If its temperature is increased by $10^{\\circ} \\mathrm{C}$, calculate the increase in volume of the cube.\n$\\left(\\right.$ Given : $\\left.\\alpha=5.0 \\times 10^{-4}{ }^{\\circ} \\mathrm{C}^{-1}\\right)$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "QuD1Z",
+              "text": "$2.4 \\times 10^6 \\mathrm{~cm}^3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ozPnI",
+              "text": "$1.2 \\times 10^5 \\mathrm{~cm}^3$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "xXeHi",
+              "text": "$6.0 \\times 10^4 \\mathrm{~cm}^3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lny1D",
+              "text": "$4.8 \\times 10^5 \\mathrm{~cm}^3$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We have $\\Delta V=V_0 \\gamma \\Delta T$\n$\\Delta V=a^3,(3 \\alpha) \\Delta T$\nNow, $6 a^2=24 \\quad[\\because$ Total surface area of cube $\\left.=6 a^2\\right]$\n$\\Rightarrow a^2=4 \\Rightarrow a=2$\nSo, $\\Delta V=2^3\\left(3 \\times 5 \\times 10^{-4}\\right) \\times 10=1200 \\times 10^{-4} \\mathrm{~m}^3$\n$=1200 \\times 10^2 \\mathrm{~cm}^3=1.2 \\times 10^5 \\mathrm{~cm}^3$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8116f5bfc7ab78aea51",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "A crystal has a coefficient of expansion $13 \\times 10^{-7}$ in one direction and $231 \\times 10^{-7}$ in every direction at right angles to it. Then the cubical coefficient of expansion is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "m0xeT",
+              "text": "$462 \\times 10^{-7}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "fFczW",
+              "text": "$244 \\times 10^{-7}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "JUA0X",
+              "text": "$475 \\times 10^{-7}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "0Lqua",
+              "text": "$257 \\times 10^{-7}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\begin{aligned} \\gamma &=\\alpha_{1}+\\alpha_{2}+\\alpha_{3} \\\\ &=13 \\times 10^{-7}+231 \\times 10^{-7}+231 \\times 10^{-7} \\\\ &=475 \\times 10^{-7} \\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e8556f5bfc7ab78aecf4",
+      "title": "Calorimetry",
+      "totalQuestions": 3,
+      "questions": [
+        {
+          "_id": "64c0e8206f5bfc7ab78aead3",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The two ends of a rod of length $L$ and a uniform crosssectional area $A$ are kept at two temperatures $T_{1}$ and $\\mathrm{T}_{2}\\left(\\mathrm{~T}_{1}>\\mathrm{T}_{2}\\right)$. The rate of heat transfer, $\\frac{\\mathrm{dQ}}{\\mathrm{dt}}$ through the rod in a steady state is given by:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "hTD5k",
+              "text": "$\\frac{k\\left(T_{1}-T_{2}\\right)}{L A}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "9BzYk",
+              "text": "$k L A\\left(T_{1}-T_{2}\\right)$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "hCBFD",
+              "text": "$\\frac{k A\\left(T_{1}-T_{2}\\right)}{L}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "PMTo5",
+              "text": "$\\frac{k L\\left(T_{1}-T_{2}\\right)}{A}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\frac{\\mathrm{dQ}}{\\mathrm{dt}}=\\frac{\\mathrm{kA}\\left(\\mathrm{T}_{1}-\\mathrm{T}_{2}\\right)}{\\mathrm{L}}$ $\\left[\\left(\\mathrm{T}_{1}-\\mathrm{T}_{2}\\right)\\right.$ is the temperature difference $]$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7f36f5bfc7ab78ae944",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Steam at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>100</mn><mo>&#160;</mo><mo>&#176;</mo><mi mathvariant=\"normal\">C</mi></math> is passed into <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mi>kg</mi></math> of water contained in a calorimoter of water equivalent to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>2</mn><mo>&#160;</mo><mi>kg</mi></math> at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>15</mn><mo>&#160;</mo><mo>&#176;</mo><mi mathvariant=\"normal\">C</mi></math> till the temperature of the calorimeter and its contents rises to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>80</mn><mo>&#160;</mo><mo>&#176;</mo><mi mathvariant=\"normal\">C</mi></math>. The mass of steam condensed (in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>kg</mi></math> ) is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "XlnI6",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>130</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "j7XsL",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>065</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "zWJl2",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>260</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "7odtn",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>135</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>(a) According to principle of calorimetry,<br />heat gained <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo></math>&nbsp;heat lost<br />Heat is lost by steam in two stages</p><p>(i) Change of state from steam at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>100</mn><mo>&#160;</mo><mo>&#176;</mo><mi mathvariant=\"normal\">C</mi></math> to water at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>100</mn><mo>&#160;</mo><mo>&#176;</mo><mi mathvariant=\"normal\">C</mi></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi><mo>&#215;</mo><mn>540</mn><mo>.</mo></math></p><p>(ii) To change water at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>100</mn><mo>&#160;</mo><mo>&#176;</mo><mi mathvariant=\"normal\">C</mi></math> to water at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>80</mn><mo>&#160;</mo><mo>&#176;</mo><mi mathvariant=\"normal\">C</mi></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi><mo>&#215;</mo><mn>1</mn><mo>&#215;</mo><mfenced><mrow><mn>100</mn><mo>-</mo><mn>80</mn></mrow></mfenced><mo>,</mo></math>&nbsp;where <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi></math> is the mass of the steam condensed.</p><p>Total heat lost by steam is<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi><mo>&#215;</mo><mn>540</mn><mo>+</mo><mi>m</mi><mo>&#215;</mo><mn>20</mn><mo>=</mo><mi>m</mi><mo>&#160;</mo><mfenced><mrow><mn>540</mn><mo>+</mo><mn>20</mn></mrow></mfenced><mo>=</mo><mn>560</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math></p><p>Heat gained by calorimeter and its contents is<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>1</mn><mo>.</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo>.</mo><mn>2</mn></mrow></mfenced><mo>&#215;</mo><mfenced><mrow><mn>80</mn><mo>-</mo><mn>15</mn></mrow></mfenced><mo>=</mo><mn>1</mn><mo>.</mo><mn>12</mn><mo>&#215;</mo><mn>65</mn><mtext>&#160;cal&#160;</mtext></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;&#160;</mo><mn>560</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>=</mo><mn>1</mn><mo>.</mo><mn>12</mn><mo>&#215;</mo><mn>65</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;&#160;</mo><mi>m</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>12</mn><mo>&#215;</mo><mn>65</mn></mrow><mn>560</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>130</mn><mo>&#160;</mo><mi>kg</mi></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7816f5bfc7ab78ae56a",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "One kilogram of ice at $0^{\\circ} \\mathrm{C}$ is mixed with one kilogram of water at $80^{\\circ} \\mathrm{C}$. The final temperature of the mixture is (Take specific heat of water $=4200 \\mathrm{~kJ} / \\mathrm{kg}-{ }^{\\circ} \\mathrm{C},$ Latent heat of ice $\\left.=336 \\mathrm{~kJ} / \\mathrm{kg}\\right)$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "xURy6",
+              "text": "$0^{\\rho} \\mathrm{C}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "riKnm",
+              "text": "$40^{\\circ} \\mathrm{C}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pNm7t",
+              "text": "$50^{\\circ} \\mathrm{C}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "uDXI4",
+              "text": "$60^{\\circ} \\mathrm{C}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution available",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "64c0e8556f5bfc7ab78aecf3",
+      "title": "Conduction",
+      "totalQuestions": 5,
+      "questions": [
+        {
+          "_id": "64c0e7f46f5bfc7ab78ae94e",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Three rods of identical cross-sectional area and made from the same metal, form the sides of an isosceles triangle <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mi>B</mi><mi>C</mi></math>&nbsp;right angled at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math> as shown in figure. The point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math> are maintained at temperature <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>T</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msqrt><mn>2</mn></msqrt><mi>T</mi></math> respectively, in the&nbsp;steady state. Now, assuming that only heat conduction takes place. The temperature of point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi></math> will be<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/902d5ed5-7c34-42f9-b93b-f5e60dd206eb-image.png\" style=\"width: 200px; height: 188px;\" />",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "l42xk",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi>T</mi><mrow><msqrt><mn>2</mn></msqrt><mo>+</mo><mn>1</mn></mrow></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "zzOJf",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi>T</mi><mrow><msqrt><mn>2</mn></msqrt><mo>-</mo><mn>1</mn></mrow></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "0ZTFG",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>3</mn><mi>T</mi></mrow><mrow><msqrt><mn>2</mn></msqrt><mo>+</mo><mn>1</mn></mrow></mfrac></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "7mMbA",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><msqrt><mn>3</mn></msqrt><mi>T</mi></mrow><mrow><mo>(</mo><msqrt><mn>2</mn></msqrt><mo>+</mo><mn>1</mn><mo>)</mo></mrow></mfrac></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>T</mi><mn>0</mn></msub></math> be the temperature of point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math> be the length of rod&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mi>B</mi></math> or <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi><mi>C</mi></math>.</p><p>Then, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi><mi>A</mi><mo>=</mo><msqrt><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></msqrt><mo>=</mo><msqrt><mn>2</mn></msqrt><mi>x</mi></math></p><p>At steady state, the rate of heat flowing from <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math> to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi><mo>=</mo></math> rate of heat flowing from <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi></math> to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math>.</p><p>So, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>K</mi><mi>A</mi><mfenced><mrow><msqrt><mn>2</mn></msqrt><mi>T</mi><mo>-</mo><msub><mi>T</mi><mn>0</mn></msub></mrow></mfenced></mrow><mi>x</mi></mfrac><mo>=</mo><mfrac><mrow><mi>K</mi><mi>A</mi><mfenced><mrow><msub><mi>T</mi><mn>0</mn></msub><mo>-</mo><mi>T</mi></mrow></mfenced></mrow><mrow><msqrt><mn>2</mn></msqrt><mi>x</mi></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msqrt><mn>2</mn></msqrt><mfenced><mrow><msqrt><mn>2</mn></msqrt><mi>T</mi><mo>-</mo><msub><mi>T</mi><mn>0</mn></msub></mrow></mfenced><mo>=</mo><msub><mi>T</mi><mn>0</mn></msub><mo>-</mo><mi>T</mi></math></p><p>By solving, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>T</mi><mn>0</mn></msub><mo>=</mo><mfrac><mrow><mn>3</mn><mi>T</mi></mrow><mrow><mo>(</mo><msqrt><mn>2</mn></msqrt><mo>+</mo><mn>1</mn><mo>)</mo></mrow></mfrac></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c86f5bfc7ab78ae7d6",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "0.5 mole of an ideal gas at constant temperature $27^{\\circ} \\mathrm{C}$ kept inside a cylinder of length $L$ and crosssection area A closed by a massless piston.\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/-iowH4MfsQxjSAxWlKQFCRBmNPye5ME0xQT28-7P41c.original.fullsize.png\"><br>\r\n\r\nThe cylinder is attached with a conducting rod of length $L,$ cross-section area $(1 / 9) \\mathrm{m}^{2}$ and thermal conductivity $\\mathrm{k}$, whose other end is maintained at $0^{\\circ} \\mathrm{C}$. If piston is moved such that rate of heat flow through the conducing rod is constant then velocity of piston when it is at height $L / 2$ from the bottom of cylinder is :\r\n\r\n[Neglect any kind of heat loss from system",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "JX6oL",
+              "text": "$\\left(\\frac{\\mathrm{k}}{R}\\right) \\mathrm{m} / \\mathrm{sec}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "CNmVN",
+              "text": "$\\left(\\frac{\\mathrm{k}}{10 R}\\right) \\mathrm{m} / \\mathrm{sec}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "hwBOx",
+              "text": "$\\left(\\frac{\\mathrm{k}}{100 R}\\right) \\mathrm{m} / \\mathrm{sec}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "9ualh",
+              "text": "$\\left(\\frac{\\mathrm{k}}{1000 R}\\right) \\mathrm{m} / \\mathrm{sec}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\frac{\\Delta Q}{\\Delta t}=\\frac{\\Delta W}{\\Delta t}=$ work done per unit time = $\\frac{\\mathrm{k} a \\theta}{L}$\r\n\r\n$$\r\n\r\n\\frac{d W}{d t}=P \\frac{d v}{d t}=\\mathrm{k} \\frac{a \\theta}{L}, P=\\frac{n R T}{V}\r\n\r\n$$\r\n\r\n$\\Rightarrow \\quad \\frac{0.5 R(300)}{V} A \\cdot \\frac{d \\ell}{d t}=\\frac{\\mathrm{k} a \\theta}{L}$\r\n\r\n$$\r\n\r\n\\Rightarrow \\frac{0.5 R(300)}{A \\cdot \\frac{L}{2}} A \\cdot v=\\frac{\\mathrm{k} a \\theta}{L}\r\n\r\n$$\r\n\r\n$\\Rightarrow \\quad v=\\frac{\\mathrm{k} a}{R}\\left(\\frac{27}{300}\\right)=\\frac{\\mathrm{k}}{100 R}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ac6f5bfc7ab78ae6e0",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Figure shows a copper rod joined to a steel rod. The rods have equal length and equal crosssectional area. The free end of the copper rod is kept at $0^{\\circ} \\mathrm{C}$ and that of steel rod is kept at $100^{\\circ} \\mathrm{C}$. Find the temperature of the junction of the rod. Conductivity of copper $=390 \\mathrm{~W} / \\mathrm{m}^{\\circ} \\mathrm{C}$\r\n\r\nConductivity of steel $=46 \\mathrm{~W} / \\mathrm{m}^{\\circ} \\mathrm{C}$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/pCFpa_b6RdhIUWc8PZceUFwlSkcvkwaLJIZ9Ypun41U.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "J1u6g",
+              "text": "$18.01^{\\circ} \\mathrm{C}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "eddUW",
+              "text": "$26^{\\circ} \\mathrm{C}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "0CGBN",
+              "text": "$10.6^{\\circ} \\mathrm{C}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "36ez2",
+              "text": "$20^{\\circ} \\mathrm{C}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Heat current in first rod (copper)\r\n\r\n$$\r\n\r\n=\\frac{390 \\times \\mathrm{A}(0-\\theta)}{\\ell}\r\n\r\n$$\r\n\r\nHere $\\theta$ is temperature of the junction and $\\mathrm{A}$ $\\& \\ell$ are area and length of copper rod. Heat current in second rod (steel)\r\n\r\n$$\r\n\r\n=\\frac{46 \\times \\mathrm{A}(\\theta-100)}{\\ell}\r\n\r\n$$\r\n\r\nIn series combination, heat current remains same. So,\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\frac{390 \\times \\mathrm{A}(0-\\theta)}{\\ell}=\\frac{46 \\times \\mathrm{A}(\\theta-100)}{\\ell} \\\\\r\n\r\n-390 \\theta==46 \\theta-4600 \\\\\r\n\r\n436 \\theta=4600 \\Rightarrow \\theta=10.6^{\\circ} \\mathrm{C}\r\n\r\n\\end{array}\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7726f5bfc7ab78ae4e7",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "Which of the following combinations of properties would be most desirable for a cooking pot?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "jgKH7",
+              "text": "High specific heat and low conductivity.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0M7qW",
+              "text": "Low specific heat and high conductivity.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "LM777",
+              "text": "High specific heat and high conductivity.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "5viPP",
+              "text": "Low specific heat and low conductivity.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution available",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7726f5bfc7ab78ae4e6",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "A body of length $1 \\mathrm{~m}$ having cross-sectional area $0.75 \\mathrm{~m}^{2}$ has heat flow through it at the rate of 6000 Joule/sec. Then find the temperature difference if $\\mathrm{K}=200 \\mathrm{Jm}^{-1} \\mathrm{~K}^{-1}$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "TfRc8",
+              "text": "$20^{\\circ} \\mathrm{C}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FQanM",
+              "text": "$40^{\\circ} \\mathrm{C}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "iI9uO",
+              "text": "$80^{\\circ} \\mathrm{C}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "uU3ZZ",
+              "text": "$100^{\\circ} \\mathrm{C}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\frac{Q}{t}=\\frac{\\operatorname{KA} \\Delta \\theta}{\\ell} \\Rightarrow 6000=\\frac{200 \\times 0.75 \\times \\Delta \\theta}{1}$\n$\\therefore \\Delta \\theta=\\frac{6000 \\times 1}{200 \\times 0.75}=40^{\\circ} \\mathrm{C}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "64c0e8556f5bfc7ab78aecf5",
+      "title": "Radiation",
+      "totalQuestions": 6,
+      "questions": [
+        {
+          "_id": "65b7b87c97ae24e9e2db8ccf",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "A bowl filled with very hot soup cools from $98^{\\circ} \\mathrm{C}$ to $86^{\\circ} \\mathrm{C}$ in 2 minutes when the room temperature is $22^{\\circ} \\mathrm{C}$. How long it will take to cool from $75^{\\circ} \\mathrm{C}$ to $69^{\\circ} \\mathrm{C}$ ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "5g5WP",
+              "text": "<br />2 minutes",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "27fzx",
+              "text": "<br />1.4 minutes",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "xtziZ",
+              "text": "<br />0.5 minute",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Iosw2",
+              "text": "<br />1 minute",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The rate of heat flow is given by<br />$\\begin{aligned}<br />& \\frac{\\Delta Q}{\\Delta t}=-K\\left(T-T_0\\right) \\Rightarrow \\frac{\\Delta Q}{\\Delta t}=-K\\left(T_{a v g}-T_0\\right) \\\\<br />& \\text { Initially } T_{a v g}=\\frac{T_1+T_2}{2} \\\\<br />& \\text { Here, } T_1=98^{\\circ} \\mathrm{C} \\\\<br />& T_2=86^{\\circ} \\mathrm{C}<br />\\end{aligned}$<br />$\\begin{aligned} & \\text { (i) } \\frac{\\mathrm{ms} \\times 12}{2}=-\\mathrm{K}\\left(\\frac{98+86}{2}-22\\right) \\\\ & 6=-\\frac{\\mathrm{K}}{\\mathrm{ms}}\\left[\\frac{98+86}{2}-22\\right] \\quad(\\because \\Delta \\mathrm{Q}=\\mathrm{ms} \\Delta \\mathrm{T})\\end{aligned}$<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/m-qxoSp3pUGTs9hNmklcIiM0y5wsfF4lw7tCcyRjGXc.original.fullsize.png\"><br><br />Now, cool from $\\mathrm{T}_1^{\\prime}=75^{\\circ} \\mathrm{C}$<br />$\\begin{aligned}<br />& \\mathrm{T}_2=69^{\\circ} \\mathrm{C} \\\\<br />& \\mathrm{T}_{\\mathrm{avg}}=\\frac{\\mathrm{T}_1^{\\prime}+\\mathrm{T}_2^{\\prime}}{2}=\\frac{75+69}{2}<br />\\end{aligned}$<br />(ii) $\\frac{\\mathrm{ms} \\times 6}{\\Delta \\mathrm{t}}=-\\mathrm{K}\\left(\\frac{75+69}{2}-22\\right)$<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/bQrJV0HZxZIN7yecVk6HwfeL4MYFknI9xPA7NGCSfTw.original.fullsize.png\"><br><br />Divide equation (ii) by (i), we have<br />$\\begin{aligned}<br />& \\frac{6}{\\Delta t(6)}=\\frac{50}{70} \\\\<br />& \\Delta t=\\frac{7}{5}=1.4 \\mathrm{~min}<br />\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7e46f5bfc7ab78ae8c5",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "If temperature of a black body increases from <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>300</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></math> to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>900</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi></math>, then the rate of energy radiation increases by",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "x7348",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>81</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "6Tmjw",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "0sYTa",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>9</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "jyK8a",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>According to Stefan&#39;s law <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#961;</mi><mo>=</mo><mfrac><mi>E</mi><mi>t</mi></mfrac><mo>=</mo><mi>&#963;</mi><mi>A</mi><mi>e</mi><msup><mi>T</mi><mn>4</mn></msup></math></p><p>So, we can write as</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msub><mi>E</mi><mn>2</mn></msub><msub><mi>E</mi><mn>1</mn></msub></mfrac><mo>=</mo><msup><mfenced><mfrac><msub><mi>T</mi><mn>2</mn></msub><msub><mi>T</mi><mn>1</mn></msub></mfrac></mfenced><mn>4</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msub><mi>E</mi><mn>2</mn></msub><msub><mi>E</mi><mn>1</mn></msub></mfrac><mo>=</mo><msup><mfenced><mfrac><mn>900</mn><mn>300</mn></mfrac></mfenced><mn>4</mn></msup><mo>&#8658;</mo><mfrac><msub><mi>E</mi><mn>2</mn></msub><msub><mi>E</mi><mn>1</mn></msub></mfrac><mo>=</mo><msup><mfenced><mn>3</mn></mfenced><mn>4</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>E</mi><mn>2</mn></msub><mo>=</mo><mn>81</mn><msub><mi>E</mi><mn>1</mn></msub><mo>&#160;&#160;</mo><mo>&#8658;</mo><mfrac><msub><mi>E</mi><mn>2</mn></msub><msub><mi>E</mi><mn>1</mn></msub></mfrac><mo>=</mo><mn>81</mn></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ba6f5bfc7ab78ae758",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The wavelength of radiation emitted by a body depends upon",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "wGeQn",
+              "text": "the nature of its surface",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "C3JZf",
+              "text": "the area of its surface",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "FFpKI",
+              "text": "the temperature of its surface",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "4p98e",
+              "text": "All of the above",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ac6f5bfc7ab78ae6e1",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "If the radius of a star is $R$ and it acts as a black body, what would be the temperature of the star, in which the rate of energy production is $Q$ ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "8kmOu",
+              "text": "$Q / 4 \\pi R^{2} \\sigma$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "rg8R9",
+              "text": "$\\left(\\mathrm{Q} / 4 \\pi R^{2} \\sigma\\right)^{-1 / 2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "h6D1i",
+              "text": "$\\left(4 \\pi R^{2} Q / \\sigma\\right)^{1 / 4}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ifApV",
+              "text": "$\\left(\\mathrm{Q} / 4 \\pi R^{2} \\sigma\\right)^{1 / 4}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Stefan's law for black bodyradiation $Q=\\sigma e A T^{4}$\r\n\r\n$$\r\n\r\nT=\\left[\\frac{Q}{\\sigma\\left(4 \\pi R^{2}\\right)}\\right]^{1 / 4}\r\n\r\n$$\r\n\r\nHere $e=1$\r\n\r\n$$\r\n\r\nA=4 \\pi R^{2}\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e78e6f5bfc7ab78ae5e5",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "A copper sphere cools from $62^{\\circ} \\mathrm{C}$ to $50^{\\circ} \\mathrm{C}$ in 10 minutes and to $42^{\\circ} \\mathrm{C}$ in the next 10 minutes. Calculate the temperature of the surroundings.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "shLDL",
+              "text": "$18.01^{\\circ} \\mathrm{C}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Jp31h",
+              "text": "$26^{\\circ} \\mathrm{C}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "QM610",
+              "text": "$10.6^{\\circ} \\mathrm{C}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SIAiF",
+              "text": "$20^{\\circ} \\mathrm{C}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "By Newton's law of cooling, $\\frac{\\theta_{1}-\\theta_{2}}{t}=-k\\left[\\frac{\\theta_{1}+\\theta_{2}}{2}-\\theta_{0}\\right]$ ....(1)\n\nA sphere cools from $62^{\\circ} \\mathrm{C}$ to $50^{\\circ} \\mathrm{C}$ in $10 \\mathrm{~min}$. $\\frac{62-50}{10}=-\\mathrm{k}\\left[\\frac{62+50}{2}-\\theta_{0}\\right]$ ....(2)\nNow, sphere cools from $50^{\\circ} \\mathrm{C}$ to $42^{\\circ} \\mathrm{C}$ in next $10 \\mathrm{~min} .$\n$$\n\\frac{50-42}{10}=-\\mathrm{k}\\left[\\frac{50+42}{2}-\\theta_{0}\\right] ....(3)\n$$\nDividing eq $^{\\text {n }}$. (2) by (3) we get, $\\frac{56-\\theta_{0}}{46-\\theta_{0}}=\\frac{1.2}{0.8}$ or $0.4 \\theta_{0}=10.4$\nHence $\\theta_{0}=26^{\\circ} \\mathrm{C}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e78e6f5bfc7ab78ae5e4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "The radiation emitted by a perfectly black body is proportional to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "lakcL",
+              "text": "temperature on ideal gas scale",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "syLxQ",
+              "text": "fourth root of temperature on ideal gas scale",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "xGJXV",
+              "text": "fourth power of temperature on ideal gas scale",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "AFgUk",
+              "text": "square of temperature on ideal gas scale",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution available",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

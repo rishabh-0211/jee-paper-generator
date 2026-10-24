@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Capacitance PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚡ BITSAT &bull; Capacitance</h1>
+        <div class="sub">Physics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 18, "chapterId": "61e7bd750f84ffa5822273d0", "chapter": "Capacitance", "exam": "BITSAT", "subject": "Physics", "totalTopics": 5, "totalQuestions": 18, "downloadTime": "2026-10-08 20:28:03", "topics": [{"index": 1, "topicId": "64c0e8576f5bfc7ab78aed14", "title": "Capacitance", "totalQuestions": 2, "questions": [{"_id": "65b7b87c97ae24e9e2db8cd0", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "A capacitor of capacitance $C$ is charged to a potential V. The flux of the electric field through a closed surface enclosing the positive plate of the capacitor is:", "image": null}, "options": [{"id": "xt3Ic", "text": "$\\frac{C V}{2 \\varepsilon_0}$", "image": null, "isCorrect": false}, {"id": "uZpSP", "text": "$\\frac{2 \\mathrm{CV}}{\\varepsilon_0}$", "image": null, "isCorrect": false}, {"id": "ZXAZ4", "text": "$\\frac{\\mathrm{CV}}{\\varepsilon_0}$", "image": null, "isCorrect": true}, {"id": "aqbZK", "text": "<br />Zero", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "From the Gauss's law<br />$\\begin{aligned}<br />& \\phi=\\frac{\\mathrm{q}_{\\text {in }}}{\\epsilon_0}=\\frac{\\mathrm{Q}}{\\epsilon_0} \\quad \\because \\mathrm{Q}=\\mathrm{CV} \\\\<br />& \\therefore \\phi=\\frac{\\mathrm{CV}}{\\epsilon_0}<br />\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7736f5bfc7ab78ae4f1", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "Calculate the area of the plates of a one farad parallel plate capacitor if separation between plates is $1 \\mathrm{~mm}$ and plates are in vacuum", "image": null}, "options": [{"id": "xOuVs", "text": "$18 \\times 10^{8} \\mathrm{~m}^{2}$", "image": null, "isCorrect": false}, {"id": "PX1qp", "text": "$0.3 \\times 10^{8} \\mathrm{~m}^{2}$", "image": null, "isCorrect": false}, {"id": "RPHTD", "text": "$1.3 \\times 10^{8} \\mathrm{~m}^{2}$", "image": null, "isCorrect": false}, {"id": "lSTt2", "text": "$1.13 \\times 10^{8} \\mathrm{~m}^{2}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "For a parallel plate capacitor $\\mathrm{C}=\\frac{\\varepsilon_{0} \\mathrm{~A}}{\\mathrm{~d}}$\n$$\n\\begin{aligned}\n\\therefore \\quad & \\mathrm{A}=\\frac{\\mathrm{Cd}}{\\varepsilon_{0}}=\\frac{1 \\times 10^{-3}}{8.85 \\times 10^{-12}} \\\\\n&=1.13 \\times 10^{8} \\mathrm{~m}^{2}\n\\end{aligned}\n$$\nThis corresponds to area of square of side $10.6 \\mathrm{~km}$ which shows that one farad is very large unit of capacitance.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8586f5bfc7ab78aed16", "title": "Grouping of capacitors", "totalQuestions": 7, "questions": [{"_id": "64c0e81f6f5bfc7ab78aeaca", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 2, "question": {"text": "In a given network the equivalent capacitance between $A$ and $B$ is $C_{1}=C_{4}=1 \\mu F, C_{2}=C_{3}=2 \\mu F$.\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/UR7fH5N3eUVaBtywXMK5A3XxXEaBTe-YDzT_Imfa3NA.original.fullsize.png\">", "image": null}, "options": [{"id": "D10OZ", "text": "$3 \\mu \\mathrm{F}$", "isCorrect": true, "image": null}, {"id": "xNq3b", "text": "$6 \\mu \\mathrm{F}$", "isCorrect": false, "image": null}, {"id": "WEE4z", "text": "$4.5 \\mu \\mathrm{F}$", "isCorrect": false, "image": null}, {"id": "cgrvr", "text": "$2.5 \\mu \\mathrm{F}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The equivalent circuit is shown in figure.\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/JJ0PmMzYakzoR5r60KIBHbJN9RsEesxnbhvs4TT-7M0.original.fullsize.png\"><br>\r\n\r\n$\\mathrm{C}_{\\mathrm{AB}}=1+\\frac{2 \\times 2}{2+2}+1$\r\n\r\n$\\mathrm{C}_{\\mathrm{AB}}=3 \\mu \\mathrm{F}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8116f5bfc7ab78aea50", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 1, "question": {"text": "In the circuit given below, the charge in $\\mu \\mathrm{C},$ on the capacitor having $5 \\mu \\mathrm{F}$ is\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/O33zcfEW8hFj-ynlLZAV1V0aMC-qTMsxK-IC-6pbWLM.original.fullsize.png\">", "image": null}, "options": [{"id": "LpsV2", "text": "4.5", "isCorrect": false, "image": null}, {"id": "W9YOJ", "text": "9", "isCorrect": true, "image": null}, {"id": "HjezH", "text": "7", "isCorrect": false, "image": null}, {"id": "5T0Hz", "text": "15", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Potential difference across the branch de is\r\n\r\n$6 \\mathrm{~V}$. Net capacitance of de branch is $2.1 \\mu \\mathrm{F}$ So, $q=C V$ $\\Rightarrow \\mathrm{q}=2.1 \\times 6 \\mu \\mathrm{C} \\quad \\Rightarrow \\mathrm{q}=12.6 \\mu \\mathrm{C}$\r\n\r\nPotential across $3 \\mu \\mathrm{F}$ capacitance is $\\mathrm{V}=\\frac{12.6}{3}=4.2 \\mathrm{volt}$\r\n\r\nPotential across 2 and 5 combination in parallel is $6-4.2=1.8 \\mathrm{~V}$\r\n\r\nSo, $q^{\\prime}=(1.8)(5)=9 \\mu C$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7e76f5bfc7ab78ae8de", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 2, "question": {"text": "<p>In the given circuit diagram,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>E</mi><mo>=</mo><mn>5</mn><mo>&#160;</mo><mi mathvariant=\"normal\">V</mi><mo>,</mo><mo>&#160;</mo><mi>r</mi><mo>=</mo><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">&#937;</mi><mo>,</mo><mo>&#160;</mo><msub><mi>R</mi><mn>2</mn></msub><mo>=</mo><mn>4</mn><mo>&#160;</mo><mi mathvariant=\"normal\">&#937;</mi><mo>,</mo><mo>&#160;</mo><msub><mi>R</mi><mn>1</mn></msub><mo>=</mo><msub><mi>R</mi><mn>3</mn></msub><mo>=</mo><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">&#937;</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi><mo>=</mo><mn>3</mn><mo>&#160;</mo><mi>&#956;</mi><mi mathvariant=\"normal\">F</mi></math></p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/5ad9a203-a9be-4e03-bbae-704afa819346-image.png\" style=\"width: 220px; height: 160px;\" /></p><p>Then, what will be the numerical value of charge on each plates of the capacitor.</p>", "image": null}, "options": [{"id": "OsZpf", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>24</mn><mo>&#160;</mo><mi>&#956;C</mi></math>", "isCorrect": false, "image": null}, {"id": "gpjAh", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>12</mn><mo>&#160;</mo><mi>&#956;C</mi></math>", "isCorrect": false, "image": null}, {"id": "UHz5F", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>6</mn><mo>&#160;</mo><mi>&#956;C</mi></math>", "isCorrect": true, "image": null}, {"id": "JmEr5", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>&#160;</mo><mi>&#956;C</mi></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Current will flow only through the branch containing resistance <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>R</mi><mn>2</mn></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi>i</mi><mo>=</mo><mfrac><mi>E</mi><mrow><msub><mi>R</mi><mn>2</mn></msub><mo>+</mo><mi>r</mi></mrow></mfrac><mo>=</mo><mfrac><mn>5</mn><mrow><mn>4</mn><mo>+</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">A</mi></math></p><p>Potential difference across <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>R</mi><mn>2</mn></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>1</mn><mo>&#215;</mo><mn>4</mn><mo>=</mo><mn>4</mn><mo>&#160;</mo><mi mathvariant=\"normal\">V</mi></math></p><p>If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>q</mi></math> be the charge on each plate of capacitor, then</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi>q</mi><mi>c</mi></mfrac><mo>+</mo><mfrac><mi>q</mi><mi>c</mi></mfrac><mo>=</mo><mn>4</mn></math></p><p>or <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>2</mn><mi>q</mi></mrow><mi>c</mi></mfrac><mo>=</mo><mn>4</mn></math></p><p>or <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>2</mn><mi>q</mi></mrow><mrow><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow></mfrac><mo>=</mo><mn>4</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>q</mi><mo>=</mo><mn>6</mn><mo>&#160;</mo><mi>&#956;C</mi></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7d76f5bfc7ab78ae850", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 1, "question": {"text": "In the figure below, what is the potential difference between the point $A$ and $B$ and between $B$ and $C$ respectively in steady state\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/05n1XZBNDOJvFz3awJy97ZmZHCfchGzAyeAunMvSmJM.original.fullsize.png\">", "image": null}, "options": [{"id": "YcTuo", "text": "$\\quad V_{A B}=V_{B C}=100 \\mathrm{~V}$", "isCorrect": false, "image": null}, {"id": "EGX66", "text": "$\\quad V_{A B}=75 V, V_{B C}=25 V$", "isCorrect": false, "image": null}, {"id": "JZUnK", "text": "$\\quad V_{A B}=25 V, V_{B C}=75 V$", "isCorrect": true, "image": null}, {"id": "uZRu8", "text": "$\\quad V_{A B}=V_{B C}=50 \\mathrm{~V}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The equivalent circuit is shown in figure.\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\nV_{1}+V_{2}=100 \\\\\r\n\r\n\\text { and } 2 V_{1}=6 V_{2}\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/s2O76azAVpnq35rd4-HqwdGjim3m6EWgcmopPQHMzZQ.original.fullsize.png\"><br>\r\n\r\nOn solving above equations, we get $V_{1}=75 V, V_{2}=25 V$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7cb6f5bfc7ab78ae7ee", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 2, "question": {"text": "A parallel plate capacitor of capacitance $\\mathrm{C}$ is connected to a battery and is charged to a potential difference $\\mathrm{V}$. Another capacitor of capacitance $2 \\mathrm{C}$ is similarly charge to a potential difference $2 \\mathrm{~V}$. The charging battery is now disconnected and the capacitors are connected in parallel to each other in such a way that the positive terminal of one is connected to the negative terminal of the other. The final energy of the configuration is", "image": null}, "options": [{"id": "rjgLi", "text": "Zero", "isCorrect": false, "image": null}, {"id": "TN9c5", "text": "$\\frac{3}{2} \\mathrm{CV}^{2}$", "isCorrect": true, "image": null}, {"id": "dzKU4", "text": "$\\frac{25}{6} \\mathrm{CV}^{2}$", "isCorrect": false, "image": null}, {"id": "BYZyp", "text": "$\\frac{9}{2} \\mathrm{CV}^{2}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "From the figure. The net charge shared between the capacitors\r\n\r\n$$\r\n\r\nQ^{\\prime}=Q_{2}-Q_{2}=4 C V-C V=3 C V\r\n\r\n$$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/uC14fhROzIYYJ0pa2wGnML5VYknjH1G83FGfD57wcRo.original.fullsize.png\"><br>\r\n\r\nThe two capacitors will have some potential, say $\\mathrm{V}^{\\prime}$. The net capacitance of the parallel combination of the two capacitors\r\n\r\n$$\r\n\r\nC^{\\prime}=C_{1}+C_{2}=C+2 C+3 C\r\n\r\n$$\r\n\r\nThe potential of the capacitors\r\n\r\n$$\r\n\r\n\\mathrm{V}^{\\prime}=\\frac{\\mathrm{Q}^{\\prime}}{\\mathrm{C}^{\\prime}}=\\frac{3 \\mathrm{CV}}{3 \\mathrm{C}}=\\mathrm{V}\r\n\r\n$$\r\n\r\nThe electrostatic energy of the capacitors\r\n\r\n$$\r\n\r\n\\mathrm{E}^{\\prime}=\\frac{1}{2} \\mathrm{C}^{\\prime} \\mathrm{V}^{\\prime 2}=\\frac{1}{2}(3 \\mathrm{C}) \\mathrm{V}^{2}=\\frac{3}{2} \\mathrm{CV}^{2}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7bb6f5bfc7ab78ae763", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 1, "question": {"text": "Three capacitors $\\mathrm{C}_{1}=1 \\mu \\mathrm{F}, \\mathrm{C}_{2}=2 \\mu \\mathrm{F}$ and $\\mathrm{C}_{3}=3$\r\n\r\n$\\mu \\mathrm{F}$ are connected as shown in figure, then the equivalent capacitance between points A and $\\mathrm{B}$ is\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/nKt5fLXSPwjtsXbOg4wO8EatBqST2InQ8Z6UkJFzx0U.original.fullsize.png\">", "image": null}, "options": [{"id": "p82gT", "text": "$3 \\mu \\mathrm{F}$", "isCorrect": false, "image": null}, {"id": "gXLs1", "text": "$4 \\mu \\mathrm{F}$", "isCorrect": false, "image": null}, {"id": "h3tro", "text": "$5 \\mu \\mathrm{F}$", "isCorrect": false, "image": null}, {"id": "eW2bZ", "text": "$6 \\mu \\mathrm{F}$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "$C_{\\mathrm{eq}}=(1+2+3) \\mu \\mathrm{F}=6 \\mu \\mathrm{F}$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/T3_BJa5_QUYp1OR9JBd76KOMdM-IxehcKrjQY5bDF_U.original.fullsize.png\">", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e79e6f5bfc7ab78ae66c", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 2, "question": {"text": "Two capacitors $\\mathrm{C}_{1}$ and $\\mathrm{C}_{2}$ are charged to $120 \\mathrm{~V}$ and $200 \\mathrm{~V}$ respectively. It is found that by connecting them together the potential on each one can be made zero. Then", "image": null}, "options": [{"id": "ZKWrP", "text": "$5 C_{1}=3 C_{2}$", "isCorrect": false, "image": null}, {"id": "obd0x", "text": "$3 C_{1}=5 C_{2}$", "isCorrect": true, "image": null}, {"id": "XP6KC", "text": "$3 C_{1}+5 C_{2}=0$", "isCorrect": false, "image": null}, {"id": "8OZr5", "text": "$9 C_{1}=4 C_{2}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/jJt7_1JooJMVJ7r7l-Vi3gZJm26QwjPZ7jK8J2r7ps8.original.fullsize.png\"><br>\r\nFor potential to be made zero, after connection\r\n$120 \\mathrm{C}_{1}=200 \\mathrm{C}_{2} \\quad\\left[\\because C=\\frac{q}{v}\\right]$\r\n$\\Rightarrow 3 C_{1}=5 C_{2}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e8586f5bfc7ab78aed17", "title": "Capacitors with Dielectric", "totalQuestions": 4, "questions": [{"_id": "67726cf8c49e8ef28ee2b33b", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "A parallel plate capacitor with plate area A and plate separation $d=2 \\mathrm{~m}$ has a capacitance of $4 \\mu \\mathrm{~F}$.\nThe new capacitance of the system if half of the space between them is filled with a dielectric material of dielectric constant $\\mathrm{K}=3$ (as shown in figure) will be:\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/gnNODDb46rlSYm79fYRjnQTl5L8pmrwgZaF9dr7NDfc.original.fullsize.png\"/><br/>", "image": null}, "options": [{"id": "NtFor", "text": "$2 \\mu \\mathrm{~F}$", "image": null, "isCorrect": false}, {"id": "sgw73", "text": "$32 \\mu \\mathrm{~F}$", "image": null, "isCorrect": false}, {"id": "X6SZ5", "text": "$6 \\mu \\mathrm{~F}$", "image": null, "isCorrect": true}, {"id": "SQi7K", "text": "$8 \\mu \\mathrm{~F}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "We have, $C_i=\\frac{A \\epsilon_0}{d}=4 \\mu F$\n$C_f=\\frac{A \\epsilon_0}{d-t+\\frac{t}{k}}=\\frac{A \\epsilon_0}{d-\\frac{d}{2}+\\frac{d}{2 \\times 3}}$\n$=\\frac{A \\in_0}{d\\left(1-\\frac{1}{2}+\\frac{1}{6}\\right)}$\n$=\\frac{4 \\mu F}{\\frac{2}{3}}=6 \\mu F$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7f36f5bfc7ab78ae943", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 3, "question": {"text": "<p>A parallel plate capacitor <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi></math> with plates of unit area and separation <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>d</mi></math> is filled with a liquid of dielectric constant <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>K</mi><mo>=</mo><mn>2</mn></math>, the level of liquid is<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi>d</mi><mn>3</mn></mfrac><mo>,</mo></math>initially.&nbsp;<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/974c2e8a-cf06-4938-97ce-f4fba41c1918-image.png\" style=\"width: 300px; height: 183px;\" /><br />Suppose, the liquid level decreases at a constant speed <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi></math>, the time constant as a function of time is</p>", "image": null}, "options": [{"id": "4j5hn", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>6</mn><msub><mi>&#949;</mi><mn>0</mn></msub><mi>R</mi></mrow><mrow><mn>5</mn><mi>d</mi><mo>+</mo><mn>3</mn><mi>v</mi><mi>t</mi></mrow></mfrac></math>", "isCorrect": true, "image": null}, {"id": "9hUi1", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mo>(</mo><mn>15</mn><mi>d</mi><mo>+</mo><mn>9</mn><mi>v</mi><mi>t</mi><mo>)</mo><msub><mi>&#949;</mi><mn>0</mn></msub><mi>R</mi></mrow><mrow><mn>2</mn><msup><mi>d</mi><mn>3</mn></msup><mo>-</mo><mn>3</mn><mi>d</mi><mi>v</mi><mi>t</mi><mo>-</mo><mi>g</mi><msup><mi>v</mi><mn>2</mn></msup><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac></math>", "isCorrect": false, "image": null}, {"id": "iXeqA", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>6</mn><msub><mi>&#949;</mi><mn>0</mn></msub><mi>R</mi></mrow><mrow><mn>5</mn><mi>d</mi><mo>-</mo><mn>3</mn><mi>v</mi><mi>t</mi></mrow></mfrac></math>", "isCorrect": false, "image": null}, {"id": "2AsF7", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mo>(</mo><mn>15</mn><mi>d</mi><mo>-</mo><mn>9</mn><mi>v</mi><mi>t</mi><mo>)</mo><msub><mi>&#949;</mi><mn>0</mn></msub><mi>R</mi></mrow><mrow><mn>2</mn><msup><mi>d</mi><mn>3</mn></msup><mo>+</mo><mn>3</mn><mi>d</mi><mi>v</mi><mi>t</mi><mo>-</mo><mn>9</mn><msup><mi>v</mi><mn>2</mn></msup><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>We have, the time constant, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#964;</mi><mo>=</mo><mi>R</mi><mi>C</mi><mo>'</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8230;</mo><mfenced><mi mathvariant=\"normal\">i</mi></mfenced></math></p><p>Now, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi><mo>'</mo><mo>=</mo><mfrac><mrow><msub><mi>C</mi><mn>1</mn></msub><msub><mi>C</mi><mn>2</mn></msub></mrow><mrow><msub><mi>C</mi><mn>1</mn></msub><mo>+</mo><msub><mi>C</mi><mn>2</mn></msub></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mfenced><mfrac><mrow><mi>A</mi><msub><mi>&#949;</mi><mn>0</mn></msub></mrow><mrow><mi>d</mi><mo>-</mo><mi>x</mi></mrow></mfrac></mfenced><mfenced><mfrac><mrow><mi>K</mi><mi>A</mi><msub><mi>&#949;</mi><mn>0</mn></msub></mrow><mi>x</mi></mfrac></mfenced></mrow><mrow><mfrac><mrow><mi>A</mi><msub><mi>&#949;</mi><mn>0</mn></msub></mrow><mrow><mi>d</mi><mo>-</mo><mi>x</mi></mrow></mfrac><mo>+</mo><mfrac><mrow><mi>K</mi><mi>A</mi><msub><mi>&#949;</mi><mn>0</mn></msub></mrow><mi>x</mi></mfrac></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;&#160;</mo><mi>C</mi><mo>'</mo><mo>=</mo><mfrac><mrow><mi>K</mi><mi>A</mi><msub><mi>&#949;</mi><mn>0</mn></msub></mrow><mrow><mi>x</mi><mo>+</mo><mi>K</mi><mo>(</mo><mi>d</mi><mo>-</mo><mi>x</mi><mo>)</mo></mrow></mfrac></math></p><p>Putting the value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi><mo>'</mo></math> in Equation. (i), we get</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#964;</mi><mo>=</mo><mfrac><mrow><mi>R</mi><mi>K</mi><mi>A</mi><msub><mi>&#949;</mi><mn>0</mn></msub></mrow><mrow><mfrac><mi>d</mi><mn>3</mn></mfrac><mo>-</mo><mi>v</mi><mi>t</mi><mo>+</mo><mi>k</mi><mfenced><mrow><mi>d</mi><mo>-</mo><mfrac><mi>d</mi><mn>3</mn></mfrac><mo>+</mo><mi>v</mi><mi>t</mi></mrow></mfenced></mrow></mfrac><mfenced close=\"]\" open=\"[\"><mrow><mo>&#8757;</mo><mi>x</mi><mo>=</mo><mfrac><mi>d</mi><mn>3</mn></mfrac><mo>-</mo><mi>v</mi><mi>t</mi></mrow></mfenced></math></p><p>Given, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>=</mo><mn>1</mn></math>&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>K</mi><mo>=</mo><mn>2</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;&#160;</mo><mi>&#964;</mi><mo>=</mo><mfrac><mrow><mn>3</mn><mo>&#215;</mo><mn>2</mn><msub><mi>&#949;</mi><mn>0</mn></msub><mo>&#215;</mo><mi>R</mi></mrow><mrow><mi>d</mi><mo>-</mo><mn>3</mn><mi>v</mi><mi>t</mi><mo>+</mo><mn>6</mn><mi>d</mi><mo>-</mo><mn>2</mn><mi>d</mi><mo>+</mo><mn>6</mn><mi>v</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>6</mn><mi>R</mi><msub><mi>&#949;</mi><mn>0</mn></msub></mrow><mrow><mn>5</mn><mi>d</mi><mo>+</mo><mn>3</mn><mi>v</mi><mi>t</mi></mrow></mfrac></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7e86f5bfc7ab78ae8e8", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 3, "question": {"text": "A parallel plate capacitor with air between the plates has a capacitance of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>9</mn><mo>&#160;</mo><mi>pF</mi></math>. The separation between the plates is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>d</mi></math>. The space between the plates is now filled with two dielectrics constant <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>K</mi><mn>1</mn></msub><mo>=</mo><mn>3</mn></math> and thickness <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi>d</mi><mn>3</mn></mfrac></math> while the other one has dielectric constant <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>K</mi><mn>2</mn></msub><mo>=</mo><mn>6</mn></math> and thickness <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>2</mn><mi>d</mi></mrow><mn>3</mn></mfrac></math>. Capacitance of the capacitor is now&nbsp;", "image": null}, "options": [{"id": "d0VSF", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>.</mo><mn>8</mn><mo>&#160;</mo><mi>pF</mi></math>", "isCorrect": false, "image": null}, {"id": "bCqn5", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>45</mn><mo>&#160;</mo><mi>pF</mi></math>", "isCorrect": false, "image": null}, {"id": "G2mF7", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>40</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi>pF</mi></math>", "isCorrect": true, "image": null}, {"id": "ucX1v", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>20</mn><mo>.</mo><mn>25</mn><mo>&#160;</mo><mi>pF</mi></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>The two capacitors formed are in parallel, hence capacitance of the combination</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi><mo>=</mo><mfrac><mrow><msub><mi>C</mi><mn>1</mn></msub><msub><mi>C</mi><mn>2</mn></msub></mrow><mrow><msub><mi>C</mi><mn>1</mn></msub><mo>+</mo><msub><mi>C</mi><mn>2</mn></msub></mrow></mfrac></math>&nbsp; &nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>.</mo><mo>.</mo><mo>.</mo><mo>(</mo><mi mathvariant=\"normal\">i</mi><mo>)</mo></math></p><p>where, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>C</mi><mn>1</mn></msub><mo>=</mo><mfrac><mrow><msub><mi>K</mi><mn>1</mn></msub><msub><mi>&#949;</mi><mn>0</mn></msub><mi>A</mi></mrow><mfrac><mi>d</mi><mn>3</mn></mfrac></mfrac></math>&nbsp; &nbsp;&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mo>&#8757;</mo><mi>C</mi><mo>=</mo><mfrac><mrow><msub><mi>&#949;</mi><mn>0</mn></msub><mi>A</mi></mrow><mi>d</mi></mfrac></mrow></mfenced></math>&nbsp; &nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>.</mo><mo>.</mo><mo>.</mo><mo>(</mo><mi>ii</mi><mo>)</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>C</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><msub><mi>K</mi><mn>2</mn></msub><msub><mi>&#949;</mi><mn>0</mn></msub><mi>A</mi></mrow><mfrac><mrow><mn>2</mn><mi>d</mi></mrow><mn>3</mn></mfrac></mfrac></math>&nbsp; &nbsp;&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>.</mo><mo>.</mo><mo>.</mo><mo>(</mo><mi>iii</mi><mo>)</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>C</mi><mi>eq</mi></msub><mo>=</mo><mfrac><mrow><mfrac><mrow><mn>3</mn><msub><mi>K</mi><mn>1</mn></msub><msub><mi>&#949;</mi><mn>0</mn></msub><mi>A</mi></mrow><mi>d</mi></mfrac><mo>&#215;</mo><mfrac><mrow><msub><mi>K</mi><mn>2</mn></msub><msub><mi>&#949;</mi><mn>0</mn></msub><mi>A</mi><mo>&#183;</mo><mn>3</mn></mrow><mrow><mn>2</mn><mi>d</mi></mrow></mfrac></mrow><mrow><mfrac><mrow><mn>3</mn><msub><mi>K</mi><mn>1</mn></msub><msub><mi>&#949;</mi><mn>0</mn></msub><mi>A</mi></mrow><mi>d</mi></mfrac><mo>+</mo><mfrac><mrow><mn>3</mn><msub><mi>K</mi><mn>2</mn></msub><msub><mi>&#949;</mi><mn>0</mn></msub><mi>A</mi></mrow><mrow><mn>2</mn><mi>d</mi></mrow></mfrac></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mn>9</mn><msub><mi>K</mi><mn>1</mn></msub><msub><mi>K</mi><mn>2</mn></msub><msubsup><mi>&#949;</mi><mn>0</mn><mn>2</mn></msubsup><msup><mi>A</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><msup><mi>d</mi><mn>2</mn></msup></mrow></mfrac><mo>&#215;</mo><mfrac><mi>d</mi><mrow><msub><mi>&#949;</mi><mn>0</mn></msub><mi>A</mi><mo>&#215;</mo><mn>18</mn></mrow></mfrac></math></p><p>It is given</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/5b6eb6e7-1086-4057-8b85-750395666a01-image.png\" style=\"width: 210px; height: 123px;\" /></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><msub><mi>&#949;</mi><mn>0</mn></msub><mi>A</mi></mrow><mi>d</mi></mfrac><mo>=</mo><mn>9</mn><mo>&#160;</mo><mi>pF</mi></math></p><p>Using given values</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>C</mi><mi>eq</mi></msub><mo>=</mo><mn>40</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi>pF</mi></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7d86f5bfc7ab78ae85c", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 2, "question": {"text": "A parallel plate capacitor of area ' $A$ ' plate separation ' $d$ ' is filled with two dielectrics as shown. What is the capacitance of the arrangement?\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/Uwdipp_XL3YUGOKXcHsavEPIHKMk-pr-KF77AodoFoU.original.fullsize.png\">", "image": null}, "options": [{"id": "9QCvE", "text": "$\\frac{3 K \\varepsilon_{0} A}{4 d}$", "isCorrect": false, "image": null}, {"id": "O6hck", "text": "$\\frac{4 K \\varepsilon_{0} A}{3 d}$", "isCorrect": false, "image": null}, {"id": "GRXLR", "text": "$\\frac{(K+1) \\varepsilon_{0} A}{2 d}$", "isCorrect": false, "image": null}, {"id": "6baeY", "text": "$\\frac{K(K+3) \\varepsilon_{0} A}{2(K+1) d}$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "$$\r\n\r\nc_{1}=\\frac{(A / 2) \\varepsilon_{0}}{d / 2}=\\frac{A \\varepsilon_{0}}{d}, c_{2}=K \\frac{A \\varepsilon_{0}}{d}, c_{3}=K \\frac{A \\varepsilon_{0}}{2 d}\r\n\r\n$$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/-2J2c5Qbdiu4RPjNxqVYEm9IxIFFFQQ25PfTCZIJjOo.original.fullsize.png\"><br>\r\n\r\n$$\r\n\r\n\\therefore \\quad c_{e q .}=\\frac{c_{1} \\times c_{2}}{c_{1}+c_{2}}+c_{3}=\\frac{(3+\\mathrm{K}) \\mathrm{K} A \\varepsilon_{0}}{2 d(\\mathrm{~K}+1)}\r\n\r\n$$\r\n\r\n$\\left(\\because C_{1}\\right.$ and $C_{2}$ are in series and resultant of these two in parallel with $C_{3}$ )", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "64c0e8576f5bfc7ab78aed15", "title": "Force and Energy stored in capacitor", "totalQuestions": 3, "questions": [{"_id": "65b7b87097ae24e9e2db8c57", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "The work done in placing a charge of $8 \\times 10^{-18}$ coulomb on a condenser of capacity 100 microfarad is", "image": null}, "options": [{"id": "FrSJX", "text": "$3.1 \\times 10^{-26}$ joule", "image": null, "isCorrect": false}, {"id": "R7aSY", "text": "$4 \\times 10^{-10}$ joule", "image": null, "isCorrect": false}, {"id": "Xxtkt", "text": "$32 \\times 10^{-32}$ joule", "image": null, "isCorrect": true}, {"id": "ydSMq", "text": "$16 \\times 10^{-32}$ joule", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Work done $=\\frac{1}{2} \\frac{\\mathrm{q}^2}{\\mathrm{C}}=\\frac{\\left(8 \\times 10^{-18}\\right)^2}{2 \\times 100 \\times 10^{-6}}$<br />$=32 \\times 10^{-32} \\mathrm{~J}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ad6f5bfc7ab78ae6eb", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 2, "question": {"text": "Two identical capacitors, have the same capacitance $\\mathrm{C}$. One of them is charged to potential $\\mathrm{V}_{1}$ and the other to $\\mathrm{V}_{2}$. The negative ends of the capacitors are connected together. When the positive ends are also connected, the decrease in energy of the combined system is -", "image": null}, "options": [{"id": "MVPpr", "text": "$\\frac{1}{4} \\mathrm{C}\\left(\\mathrm{V}_{1}^{2}-\\mathrm{V}_{2}^{2}\\right)$", "isCorrect": false, "image": null}, {"id": "nwRYW", "text": "$\\frac{1}{4} C\\left(V_{1}^{2}+V_{2}^{2}\\right)$", "isCorrect": false, "image": null}, {"id": "ctNqY", "text": "$\\frac{1}{4} \\mathrm{C}\\left(\\mathrm{V}_{1}-\\mathrm{V}_{2}\\right)^{2}$", "isCorrect": true, "image": null}, {"id": "h1PLt", "text": "$\\frac{1}{4} C\\left(V_{1}+V_{2}\\right)^{2}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Initial energy of combined system\r\n\r\n$$\r\n\r\n\\mathrm{U}_{1}=\\frac{1}{2} \\mathrm{CV}_{1}^{2}+\\frac{1}{2} \\mathrm{CV}_{2}^{2}\r\n\r\n$$\r\n\r\nFinal common potential, $\\mathrm{V}=\\frac{\\mathrm{V}_{1}+\\mathrm{V}_{2}}{2},$\r\n\r\nFinal energy of system,\r\n\r\n$$\r\n\r\n\\mathrm{U}_{2}=2 \\times \\frac{1}{2} \\mathrm{C}\\left(\\frac{\\mathrm{V}_{1}+\\mathrm{V}_{2}}{2}\\right)^{2}\r\n\r\n$$\r\n\r\nHence loss of energy $=\\mathrm{U}_{1}-\\mathrm{U}_{2}$\r\n\r\n$$\r\n\r\n=\\frac{1}{4} \\mathrm{C}\\left(\\mathrm{V}_{1}-\\mathrm{V}_{2}\\right)^{2}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e78f6f5bfc7ab78ae5ee", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "If the potential of a capacitor having capacity $6 \\mu \\mathrm{F}$ is increased from $10 \\mathrm{~V}$ to $20 \\mathrm{~V}$, then increase in its energywill be", "image": null}, "options": [{"id": "jbCk5", "text": "$4 \\times 10^{-4} \\mathrm{~J}$", "image": null, "isCorrect": false}, {"id": "wFw5F", "text": "$4 \\times 10^{-6} \\mathrm{~J}$", "image": null, "isCorrect": false}, {"id": "1zl4v", "text": "$9 \\times 10^{-4} \\mathrm{~J}$", "image": null, "isCorrect": true}, {"id": "1FYmU", "text": "$12 \\times 10^{-6} \\mathrm{~J}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Capacitance of capacitor (C) $=6 \\mu \\mathrm{F}$ $=6 \\times 10^{-6} \\mathrm{~F}$; Initial potential $\\left(\\mathrm{V}_{1}\\right)=10 \\mathrm{~V}$ and\nfinal potential $\\left(\\mathrm{V}_{2}\\right)=20 \\mathrm{~V}$.\nThe increase in energy $(\\Delta \\mathrm{U})$\n$$\n\\begin{array}{l}\n=\\frac{1}{2} \\mathrm{C}\\left(\\mathrm{V}_{2}^{2}-\\mathrm{V}_{1}^{2}\\right) \\\\\n=\\frac{1}{2} \\times\\left(6 \\times 10^{-6}\\right) \\times\\left[(20)^{2}-(10)^{2}\\right] \\\\\n=\\left(3 \\times 10^{-6}\\right) \\times 300=9 \\times 10^{-4} \\mathrm{~J} .\n\\end{array}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 5, "topicId": "64c0e8586f5bfc7ab78aed18", "title": "Charging and Discarging of capacitors", "totalQuestions": 2, "questions": [{"_id": "64c0e8046f5bfc7ab78ae9d9", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 2, "question": {"text": "A charged capacitor of capacitance <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi></math> is discharging through a resistor of resistance <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi></math>. At what time the charge on the capacitor is equal to one half&nbsp;of its initial value?", "image": null}, "options": [{"id": "Qz7fw", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>R</mi><mi>C</mi></mrow><mn>2</mn></mfrac></math>", "isCorrect": false, "image": null}, {"id": "du2bh", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>R</mi><mi>C</mi></mrow><mrow><msub><mi>log</mi><mi>e</mi></msub><mn>2</mn></mrow></mfrac></math>", "isCorrect": false, "image": null}, {"id": "tVGk1", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi><mi>C</mi><msub><mi>log</mi><mrow><mi>e</mi><mo>&#160;</mo></mrow></msub><mn>2</mn></math>", "isCorrect": true, "image": null}, {"id": "UxA3b", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mrow><mi>R</mi><mi>C</mi></mrow></mfrac><msub><mi>log</mi><mi>e</mi></msub><mn>2</mn></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>The charge on the capacitor at time <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi></math> in a discharging circuit is given by&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>q</mi><mo>=</mo><msub><mi>q</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>-</mo><mi>t</mi><mo>/</mo><mi>&#964;</mi></mrow></msup></math></p><p>where, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#964;</mi><mo>=</mo><mi>R</mi><mi>C</mi><mo>=</mo></math> time constant<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>q</mi><mo>=</mo><msub><mi>q</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>-</mo><mi>t</mi><mo>/</mo><mi>R</mi><mi>C</mi></mrow></msup></math></p><p>when, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#160;&#160;</mo><mi>q</mi><mo>=</mo><mfrac><msub><mi>q</mi><mn>0</mn></msub><mn>2</mn></mfrac></math></p><p>then&nbsp;&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msub><mi>q</mi><mn>0</mn></msub><mn>2</mn></mfrac><mo>=</mo><msub><mi>q</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>-</mo><mi>t</mi><mo>/</mo><mi>R</mi><mi>C</mi></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>=</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>t</mi><mo>/</mo><mi>R</mi><mi>C</mi></mrow></msup></math></p><p>Taking natural log on both side <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>log</mi><mi>e</mi></msub><mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></mfenced><mo>=</mo><msub><mi>log</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>-</mo><mi>t</mi><mo>/</mo><mi>R</mi><mi>C</mi></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><msub><mi>log</mi><mi>e</mi></msub><mn>2</mn><mo>=</mo><mo>-</mo><mfrac><mi>t</mi><mrow><mi>R</mi><mi>C</mi></mrow></mfrac><msub><mi>log</mi><mi>e</mi></msub><mi>e</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>t</mi><mo>=</mo><mi>R</mi><mi>C</mi><msub><mi>log</mi><mi>e</mi></msub><mn>2</mn></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8046f5bfc7ab78ae9d8", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 2, "question": {"text": "<p>When a capacitor is fully charged as shown in the following figure, then current drawn from the cell is</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/9e6da9e7-b415-4494-b2d5-5afaa5c11870-image.png\" style=\"width: 230px; height: 156px;\" /></p>", "image": null}, "options": [{"id": "SuZ0U", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&#160;</mo><mi>mA</mi></math>", "isCorrect": false, "image": null}, {"id": "XkdXf", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi>mA</mi></math>", "isCorrect": true, "image": null}, {"id": "ikiaI", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>&#160;</mo><mi>mA</mi></math>", "isCorrect": false, "image": null}, {"id": "dxsWM", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn><mo>&#160;</mo><mi>mA</mi></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>When capacitor is fully charged, then it acts like a open switch, therefore <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>8</mn><mo>&#160;</mo><mi>k&#937;</mi></math> resistor has no use. So, rest of the resistances <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><mo>&#160;</mo><mi>k&#937;</mi><mo>,</mo><mo>&#160;</mo><mn>7</mn><mo>&#160;</mo><mi>k&#937;</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>9</mn><mo>&#160;</mo><mi>k&#937;</mi></math> will be in series. Hence, current drawn from cell</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi><mo>=</mo><mfrac><mn>10</mn><mrow><mfenced><mrow><mn>4</mn><mo>+</mo><mn>7</mn><mo>+</mo><mn>9</mn></mrow></mfenced><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mn>10</mn><mrow><mn>20</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi>mA</mi></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

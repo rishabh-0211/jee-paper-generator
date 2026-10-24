@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Kinetic Theory of Gases PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚡ BITSAT &bull; Kinetic Theory of Gases</h1>
+        <div class="sub">Physics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 14, "chapterId": "61e7bd7482d856975c795885", "chapter": "Kinetic Theory of Gases", "exam": "BITSAT", "subject": "Physics", "totalTopics": 4, "totalQuestions": 18, "downloadTime": "2026-10-08 20:27:52", "topics": [{"index": 1, "topicId": "64c0e8726f5bfc7ab78aee44", "title": "Gas Laws", "totalQuestions": 4, "questions": [{"_id": "67726cf9c49e8ef28ee2b347", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "Two vessels $A$ and $B$ are of the same size and are at same temperature. A contains 1 g of hydrogen and $B$ contains 1 g of oxygen. $\\mathrm{P}_{\\mathrm{A}}$ and $P_B$ are the pressures of the gases in $A$ and $B$ respectively, then $\\frac{P_A}{P_B}$ is:", "image": null}, "options": [{"id": "S3L6t", "text": "$8$", "image": null, "isCorrect": false}, {"id": "46enD", "text": "$16$", "image": null, "isCorrect": true}, {"id": "hkCTO", "text": "$32$", "image": null, "isCorrect": false}, {"id": "KHMs9", "text": "$4$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\mathrm{n}_{\\mathrm{A}}=\\frac{1}{2} \\mathrm{~mol}, \\mathrm{n}_{\\mathrm{B}}=\\frac{1}{32} \\mathrm{~mol}$\nBy ideal gas equation,\n$P V=n R T \\Rightarrow P \\propto n$\n$\\therefore \\frac{\\mathrm{P}_{\\mathrm{A}}}{\\mathrm{P}_{\\mathrm{B}}}=\\frac{\\mathrm{n}_{\\mathrm{A}}}{\\mathrm{n}_{\\mathrm{B}}}=\\frac{32}{2}=16$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87197ae24e9e2db8c5f", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "A bicycle tyre is filled with air having pressure of $270 \\mathrm{kPa}$ at $27^{\\circ} \\mathrm{C}$. The approximate pressure of the air in the tyre when the temperature increases to $36^{\\circ} \\mathrm{C}$ is", "image": null}, "options": [{"id": "Qf6WQ", "text": "$270 \\mathrm{kPa}$", "image": null, "isCorrect": false}, {"id": "WmJ9q", "text": "$262 \\mathrm{KPa}$", "image": null, "isCorrect": false}, {"id": "uqA4y", "text": "$278 \\mathrm{kPa}$", "image": null, "isCorrect": true}, {"id": "qiY5A", "text": "$360 \\mathrm{kPa}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "From the ideal gas equation $\\mathrm{PV}=\\mathrm{nRT}$ Here, volume is constant $\\therefore \\frac{\\mathrm{P}_1}{\\mathrm{~T}_1}=\\frac{\\mathrm{P}_2}{\\mathrm{~T}_2}$<br />Here, $T_1=27+273=300 \\mathrm{~K}$<br />$P_1=270 \\mathrm{kPa}$<br />$\\mathrm{T}_2=36+273=309 \\mathrm{~K}$<br />$\\Rightarrow P_2=\\frac{P_1}{T_1} \\times T_2=\\frac{270 \\times(309)}{300}=278 \\mathrm{kPa}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e82e6f5bfc7ab78aeb4e", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 1, "question": {"text": "One mole of an ideal diatomic gas undergoes a process as shown in the figure. The molar specific heat of the gas in the process is\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/wZYV1jP2W2EUUOAi4XFZ99EiTwe_EEulWyjSo5CNNEA.original.fullsize.png\"><br>", "image": null}, "options": [{"id": "zIwac", "text": "\r\n$3 R / 2$\r\n", "isCorrect": true, "image": null}, {"id": "x5fpf", "text": "\r\n $R / 2$\r\n", "isCorrect": false, "image": null}, {"id": "2lFVr", "text": "\r\n$5 R / 2$\r\n", "isCorrect": false, "image": null}, {"id": "uUTKq", "text": "\r\n$7 R / 2$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "In the curve, $V \\propto \\frac{1}{T}$\r\n$$\r\n\\begin{aligned}\r\n& \\Rightarrow V=m \\frac{1}{T} \\text { where, } m=\\text { slope of curve. } \\\\\r\n& \\Rightarrow V T=\\text { constant } \\\\\r\n& \\therefore \\quad T d V+V d T=0 \\\\\r\n& \\Rightarrow \\quad d V=-\\frac{V}{T} d T \\\\\r\n& \\text { As, } Q=\\Delta U+W \\\\\r\n& C d T=C_V d T+p d V \\\\\r\n& C d T=C_V d T-\\frac{p}{T} V d T \\\\\r\n& \\Rightarrow \\quad C=C_V-\\frac{p V}{T} \\\\\r\n& =C_V-R \\quad\\left(\\because \\frac{p V}{T}=R\\right) \\\\\r\n&\r\n\\end{aligned}\r\n$$\r\nFor diatomic gas, $C_V=\\frac{5}{2} R$\r\n$$\r\n\\therefore \\quad C=C_V-R=\\frac{5}{2} R-R=\\frac{3 R}{2}\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7e66f5bfc7ab78ae8d7", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 1, "question": {"text": "A balloon is filled at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>27</mn><mo>&#160;</mo><mo>&#176;</mo><mi mathvariant=\"normal\">C</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&#160;</mo><mi>atm</mi></math> pressure by <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>500</mn><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mn>3</mn></msup></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>He</mi></math>. At&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mn>3</mn><mo>&#160;</mo><mo>&#176;</mo><mi mathvariant=\"normal\">C</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi>atm</mi></math> pressure, the volume of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>He</mi></math> will be", "image": null}, "options": [{"id": "EtA1m", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>700</mn><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mn>3</mn></msup></math>", "isCorrect": false, "image": null}, {"id": "OnIhz", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>900</mn><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mn>3</mn></msup></math>", "isCorrect": true, "image": null}, {"id": "OvDVD", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1000</mn><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mn>3</mn></msup></math>", "isCorrect": false, "image": null}, {"id": "V2Ii7", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>500</mn><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mn>3</mn></msup></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>We have, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><msub><mi>P</mi><mn>1</mn></msub><msub><mi>V</mi><mn>1</mn></msub></mrow><msub><mi>T</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><mrow><msub><mi>P</mi><mn>2</mn></msub><msub><mi>V</mi><mn>2</mn></msub></mrow><msub><mi>T</mi><mn>2</mn></msub></mfrac></math></p><p>or <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>V</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><msub><mi>P</mi><mn>1</mn></msub><msub><mi>V</mi><mn>1</mn></msub><msub><mi>T</mi><mn>2</mn></msub></mrow><mrow><msub><mi>P</mi><mn>2</mn></msub><msub><mi>T</mi><mn>1</mn></msub></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mn>1</mn><mo>&#215;</mo><mn>500</mn><mo>&#215;</mo><mfenced><mrow><mn>273</mn><mo>-</mo><mn>3</mn></mrow></mfenced></mrow><mrow><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#215;</mo><mfenced><mrow><mn>273</mn><mo>+</mo><mn>27</mn></mrow></mfenced></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mo>&#215;</mo><mn>500</mn><mo>&#215;</mo><mn>270</mn></mrow><mrow><mn>0</mn><mo>.</mo><mn>5</mn><mo>&#215;</mo><mn>300</mn></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>V</mi><mn>2</mn></msub><mo>=</mo><mn>900</mn><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mn>3</mn></msup></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8726f5bfc7ab78aee42", "title": "Speed of Gas", "totalQuestions": 9, "questions": [{"_id": "67726d13c49e8ef28ee2b411", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "In a mixture of gases, the average number of degree of freedoms per molecule is 6 . The rms speed of the molecule of the gas is $c$, then the velocity of sound in the gas is", "image": null}, "options": [{"id": "5eWIm", "text": "$\\frac{c}{\\sqrt{3}}$", "image": null, "isCorrect": false}, {"id": "hjNKg", "text": "$\\frac{c}{\\sqrt{2}}$", "image": null, "isCorrect": false}, {"id": "r4CH6", "text": "$\\frac{2 c}{3}$", "image": null, "isCorrect": true}, {"id": "WKtK5", "text": "$\\frac{3 c}{3}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "($v_{\\mathrm{rms}}=\\sqrt{\\frac{3 R T}{M}}$ and $v_{\\text {sound }}=\\sqrt{\\frac{\\gamma R T}{M}}$ $\\frac{v_{\\text {sound }}}{v_{\\text {rms }}}=\\sqrt{\\frac{\\gamma}{3}}$\nDegree of freedom is 6 .\n$\\begin{array}{lr}\n\\therefore & \\gamma=1+\\frac{2}{f}=1+\\frac{2}{6}=\\frac{4}{3} \\\\\n\\therefore & v_{\\text {sound }}=\\sqrt{\\frac{4 / 3}{3}} v_{\\text {rms }}=\\frac{2}{3} v_{\\text {rms }}=\\frac{2 c}{3}\n\\end{array}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726d06c49e8ef28ee2b3a6", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "The temperature of an ideal gas is increased from 200 K to 800 K . If r.m.s. speed of gas at 200 K is $v_0$. Then, r.m.s. speed of the gas at 800 K will be:", "image": null}, "options": [{"id": "sUOLA", "text": "$\\mathrm{v}_0$", "image": null, "isCorrect": false}, {"id": "2iRu6", "text": "$4 v_0$", "image": null, "isCorrect": false}, {"id": "QKCXz", "text": "$\\frac{v_0}{4}$", "image": null, "isCorrect": false}, {"id": "69sbr", "text": "$2 \\mathrm{v}_0$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "RMS speed,\n$\\mathrm{V}_{\\mathrm{rms}}=\\sqrt{\\frac{3 \\mathrm{RT}}{\\mathrm{M}}}$\n$\\Rightarrow \\quad \\mathrm{V}_{\\mathrm{mm}} \\propto \\sqrt{\\mathrm{T}}$\nHere, $\\mathrm{T}_{\\text {initiol }}=200 \\mathrm{~K}$\n$\\mathrm{T}_{\\mathrm{fing1}}=800 \\mathrm{~K}$\nInitial RMS speed $=\\mathrm{v}_0$\n$\\therefore \\frac{v_0}{v_{\\mathrm{rms}}}=\\sqrt{\\frac{200}{800}} \\Rightarrow v_{\\mathrm{ms}}=2 v_0$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e82d6f5bfc7ab78aeb47", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 1, "question": {"text": "A monoatomic gas of molar mass $m$ is kept in a insulated container. Container is moving with velocity $v$. If the container is suddenly stopped, then the change in the temperature of the gas is", "image": null}, "options": [{"id": "PtM62", "text": "\r\n$m v^2 / 4 R$\r\n", "isCorrect": false, "image": null}, {"id": "jS09r", "text": "\r\n$m v^2 / 2 R$\r\n", "isCorrect": false, "image": null}, {"id": "QA5Bg", "text": "\r\n$m v^2 / R$\r\n", "isCorrect": false, "image": null}, {"id": "ktran", "text": "\r\n$m v^2 / 3 R$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Let the insulated container has $n$ moles of the monoatomic gas. The loss of kinetic energy of the gas,\r\n$$\r\n\\Delta E_K=\\frac{1}{2}(m n) v^2\r\n$$\r\nIf the change in temperature of the gas is $\\Delta T$, then heat gained by the gas is,\r\n$$\r\n\\Delta Q=\\frac{3}{2} n R \\Delta T\r\n$$\r\nNow, according to question,\r\n$$\r\n\\begin{aligned}\r\n\\Delta Q & =\\Delta E_K \\\\\r\n\\frac{3}{2} n R \\Delta T & =\\frac{1}{2} m n v^2 \\\\\r\n\\Rightarrow \\quad \\Delta T & =\\frac{m v^2}{3 R}\r\n\\end{aligned}\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8216f5bfc7ab78aeadb", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 2, "question": {"text": "The temperature of an ideal gas is increased from $120 \\mathrm{~K}$ to $480 \\mathrm{~K}$. If at $120 \\mathrm{~K}$, the root mean square velocity of the gas molecules is $v$, at $480 \\mathrm{~K}$ it becomes", "image": null}, "options": [{"id": "IBb1n", "text": "$4 u$", "isCorrect": false, "image": null}, {"id": "BTUv5", "text": "$2 u$", "isCorrect": true, "image": null}, {"id": "ZP9Gv", "text": "$\\frac{u}{2}$", "isCorrect": false, "image": null}, {"id": "NfIyP", "text": "$\\frac{u}{4}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "\\(\\frac{\\mathrm{v}_{1}}{\\mathrm{v}_{2}}=\\frac{\\sqrt{\\frac{3 \\mathrm{RT}_{1}}{\\mathrm{M}}}}{\\sqrt{\\frac{3 \\mathrm{RT}_{2}}{\\mathrm{M}}}}=\\sqrt{\\frac{\\mathrm{T}_{1}}{\\mathrm{~T}_{2}}} \\therefore \\mathrm{v}_{2}=2 \\mathrm{v}_{1}\\)", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8106f5bfc7ab78aea42", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 1, "question": {"text": "Ther.m.s. velocity of oxygen molecule at $16^{\\circ} \\mathrm{C}$ is $474 \\mathrm{~m} / \\mathrm{sec}$. The r.m.s. velocity in $\\mathrm{m} / \\mathrm{s}$ of hydrogen molecule at $127^{\\circ} \\mathrm{C}$ is", "image": null}, "options": [{"id": "9sjmR", "text": "1603", "isCorrect": false, "image": null}, {"id": "6Rp4r", "text": "1896", "isCorrect": false, "image": null}, {"id": "FLfzx", "text": "2230.59", "isCorrect": true, "image": null}, {"id": "CW4r2", "text": "2730", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$v_{\\operatorname{oxg} .}=\\sqrt{\\frac{3 R \\times 289}{32}}\\left(v_{\\mathrm{rms}}=\\sqrt{\\frac{3 R T}{\\mathrm{M}}}\\right)$\r\n\r\n$\\mathrm{v}_{\\mathrm{H}}=\\sqrt{\\frac{3 \\mathrm{R} \\times 400}{2}}$ so $\\mathrm{v}_{\\mathrm{H}}=2230.59 \\mathrm{~m} / \\mathrm{sec}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7d76f5bfc7ab78ae84b", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 2, "question": {"text": "The molecules of a given mass of a gas have\r\n\r\nr.m.s. velocity of $200 \\mathrm{~ms}^{-1}$ at $27^{\\circ} \\mathrm{C}$ and $1.0 \\times 10^{5}$ $\\mathrm{Nm}^{-2}$ pressure. When the temperature and pressure of the gas are respectively, $127^{\\circ} \\mathrm{C}$ and $0.05 \\times 10^{5} \\mathrm{Nm}^{-2},$ the r.m.s. velocity of its molecules in $\\mathrm{ms}^{-1}$ is :", "image": null}, "options": [{"id": "4aFc3", "text": "$100 \\sqrt{2}$", "isCorrect": false, "image": null}, {"id": "0x9Hy", "text": "$\\frac{400}{\\sqrt{3}}$", "isCorrect": true, "image": null}, {"id": "hpGaD", "text": "$\\frac{100 \\sqrt{2}}{3}$", "isCorrect": false, "image": null}, {"id": "03ifR", "text": "$\\frac{100}{3}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Here $v_{1}=200 \\mathrm{~m} / \\mathrm{s}$; temperature $\\mathrm{T}_{1}=27^{\\circ} \\mathrm{C}=27+273=300 \\mathrm{k}$\r\n\r\ntemperature $\\mathrm{T}_{2}=127^{\\circ} \\mathrm{C}=127+273=400 \\mathrm{k}$\r\n\r\n$\\mathrm{V}=?$\r\n\r\nR.M.S. Velocity, $\\mathrm{V} \\propto \\sqrt{\\mathrm{T}}$\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\Rightarrow \\quad \\frac{v}{200}=\\sqrt{\\frac{400}{300}} \\\\\r\n\r\n\\Rightarrow \\quad v=\\frac{200 \\times 2}{\\sqrt{3}} \\mathrm{~m} / \\mathrm{s} \\\\\r\n\r\n\\Rightarrow \\quad \\mathrm{v}=\\frac{400}{\\sqrt{3}} \\mathrm{~m} / \\mathrm{s}\r\n\r\n\\end{array}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ba6f5bfc7ab78ae75b", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 2, "question": {"text": "In the kinetic theory of gases, which of these statements is/are true?\r\n\r\n(i) The pressure of a gas is proportional to the mean speed of the molecules.\r\n\r\n(ii) The root mean square speed of the molecules is proportional to the pressure.\r\n\r\n(iii) The rate of diffusion is proportional to the mean speed of the molecules.\r\n\r\n(iv) The mean translational kinetic energy of a gas is proportional to its kelvin temperature.", "image": null}, "options": [{"id": "5JeIz", "text": "(ii) and (iii) only", "isCorrect": false, "image": null}, {"id": "o0EQZ", "text": "(i),(ii) and (iv) only", "isCorrect": false, "image": null}, {"id": "pbqX4", "text": "(i) and (iii) only", "isCorrect": false, "image": null}, {"id": "YPFQO", "text": "(iii) and (iv) only", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "No Solution", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ad6f5bfc7ab78ae6e5", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 2, "question": {"text": "The temperature of an ideal gas is increased from $27^{\\circ} \\mathrm{C}$ to $127^{\\circ} \\mathrm{C}$, then percentage increase in $\\mathrm{v}_{\\mathrm{rms}}$\r\n\r\nis", "image": null}, "options": [{"id": "7eKEC", "text": "$37 \\%$", "isCorrect": false, "image": null}, {"id": "nuWUt", "text": "$11 \\%$", "isCorrect": false, "image": null}, {"id": "KKXlg", "text": "$33 \\%$", "isCorrect": false, "image": null}, {"id": "cmXD6", "text": "$15.5 \\%$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "We know, $\\mathrm{V}_{\\mathrm{mms}}=\\sqrt{\\frac{3 \\mathrm{RT}}{\\mathrm{M}}}$\r\n\r\n$\\Rightarrow \\%$ increase in\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\mathrm{V}_{\\mathrm{rms}}=\\frac{\\sqrt{\\frac{3 \\mathrm{R} \\mathrm{T}_{2}}{\\mathrm{M}}}-\\sqrt{\\frac{3 \\mathrm{RT}_{1}}{\\mathrm{M}}}}{\\sqrt{\\frac{3 \\mathrm{RT}_{1}}{\\mathrm{M}}}} \\times 100 \\\\\r\n\r\n=\\frac{\\sqrt{\\mathrm{T}_{2}}-\\sqrt{\\mathrm{T}_{1}}}{\\sqrt{\\mathrm{T}_{1}}} \\times 100 \\\\\r\n\r\n=\\frac{\\sqrt{400}-\\sqrt{300}}{\\sqrt{300}} \\times 100 \\\\\r\n\r\n=\\frac{20-17.32}{17.32} \\times 100=15.5 \\%\r\n\r\n\\end{array}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e78f6f5bfc7ab78ae5e7", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "The molecules of a given mass of gas have a root mean square velocity of $200 \\mathrm{~m} \\mathrm{~s}^{-1}$ at $27^{\\circ} \\mathrm{C}$ and $1.0 \\times 10^{5} \\mathrm{Nm}^{-2}$ pressure. When the temperature is $127^{\\circ} \\mathrm{C}$ and the pressure $0.5 \\times 10^{5} \\mathrm{Nm}^{-2},$ the root mean square velocity in $\\mathrm{ms}^{-1}$, is", "image": null}, "options": [{"id": "SJkAb", "text": "$\\frac{400}{\\sqrt{3}}$", "image": null, "isCorrect": true}, {"id": "BUJbM", "text": "$100 \\sqrt{2}$", "image": null, "isCorrect": false}, {"id": "3PNtP", "text": "$\\frac{100 \\sqrt{2}}{3}$", "image": null, "isCorrect": false}, {"id": "Xnbsm", "text": "$\\frac{100}{3}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\frac{c_{2}}{c_{1}}=\\sqrt{\\frac{400}{300}}=\\frac{2}{\\sqrt{3}}$\n$$\n\\Rightarrow c_{2}=\\frac{2}{\\sqrt{3}} \\times 200=\\frac{400}{\\sqrt{3}} \\mathrm{~ms}^{-1}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e8726f5bfc7ab78aee43", "title": "Degree of Freedom and Specific Heat", "totalQuestions": 2, "questions": [{"_id": "64c0e7f76f5bfc7ab78ae964", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 3, "question": {"text": "A gas has molar heat capacity <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi><mo>=</mo><mn>37</mn><mo>.</mo><mn>55</mn><mo>&#160;</mo><mi mathvariant=\"normal\">J</mi><mo>&#160;</mo><msup><mi>mol</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant=\"normal\">K</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>, in this process <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi><mi>T</mi><mo>=</mo></math> constant. The number of degree of freedom of the molecule of gas is", "image": null}, "options": [{"id": "CLAC9", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn></math>", "isCorrect": false, "image": null}, {"id": "SSuao", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn></math>", "isCorrect": false, "image": null}, {"id": "9R6lU", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn></math>", "isCorrect": true, "image": null}, {"id": "lMTOG", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>7</mn></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Given, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi><mo>=</mo><mn>37</mn><mo>.</mo><mn>55</mn><mo>&#160;</mo><mi mathvariant=\"normal\">J</mi><mo>&#160;</mo><msup><mi>mol</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant=\"normal\">K</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math></p><p>Also, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mi>T</mi><mo>=</mo></math> constant <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>K</mi></math></p><p>According to ideal gas equation, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mi>V</mi><mo>=</mo><mi>R</mi><mi>T</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>p</mi><mo>=</mo><mfrac><mrow><mi>R</mi><mi>T</mi></mrow><mi>V</mi></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi mathvariant=\"normal\">i</mi></mfenced></math></p><p>Putting the value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi></math> in Eq. (i), we get</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>R</mi><mi>T</mi></mrow><mi>V</mi></mfrac><mo>&#215;</mo><mi>T</mi><mo>=</mo><mi>K</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>V</mi><mo>=</mo><mfrac><mrow><mi>R</mi><msup><mi>T</mi><mn>2</mn></msup></mrow><mi>K</mi></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi>ii</mi></mfenced></math></p><p>On differentiating above equation both sides, we get</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi><mi>V</mi></mrow><mrow><mi>d</mi><mi>T</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mi>R</mi><mi>T</mi></mrow><mi>K</mi></mfrac><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi>iii</mi></mfenced></math><br />But&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi>T</mi><mi>K</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mi>p</mi></mfrac><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mfenced open=\"[\" close=\"]\"><mrow><mi>from</mi><mi>Eq</mi><mo>.</mo><mo>&#160;</mo><mo>&#160;</mo><mfenced><mi mathvariant=\"normal\">i</mi></mfenced></mrow></mfenced></math><br />Hence, Eq. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi>iii</mi></mfenced></math>becomes</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi><mi>V</mi></mrow><mrow><mi>d</mi><mi>T</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>&#160;</mo><mi mathvariant=\"normal\">R</mi></mrow><mi>p</mi></mfrac></math><br />So,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi><mo>=</mo><msub><mi>C</mi><mi>V</mi></msub><mo>+</mo><mfrac><mrow><mi>p</mi><mi>d</mi><mi>V</mi></mrow><mrow><mi>d</mi><mi>T</mi></mrow></mfrac></math><br />or&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi><mo>=</mo><msub><mi>C</mi><mi>V</mi></msub><mo>+</mo><mfrac><mrow><mi>p</mi><mo>&#215;</mo><mn>2</mn><mo>&#160;</mo><mi mathvariant=\"normal\">R</mi></mrow><mi>p</mi></mfrac><mo>=</mo><msub><mi>C</mi><mi>V</mi></msub><mo>+</mo><mn>2</mn><mo>&#160;</mo><mi mathvariant=\"normal\">R</mi></math><br />or&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>C</mi><mi>V</mi></msub><mo>=</mo><mi>C</mi><mo>-</mo><mn>2</mn><mo>&#160;</mo><mi mathvariant=\"normal\">R</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi>iv</mi></mfenced></math></p><p>As <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>C</mi><mi>V</mi></msub><mo>=</mo><mfrac><mrow><mi>n</mi><mi>R</mi></mrow><mn>2</mn></mfrac><mo>,</mo></math>&nbsp;where <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi><mo>=</mo></math> number of degrees of freedom.<br />Putting the value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>C</mi><mi>V</mi></msub></math> in Eq. (iv), we get</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>n</mi><mi>R</mi></mrow><mn>2</mn></mfrac><mo>=</mo><mi>C</mi><mo>-</mo><mn>2</mn><mo>&#160;</mo><mi mathvariant=\"normal\">R</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mo>&#160;</mo><mfenced><mrow><mi>C</mi><mo>-</mo><mn>2</mn><mo>&#160;</mo><mi mathvariant=\"normal\">R</mi></mrow></mfenced></mrow><mi>R</mi></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>&#160;</mo><mfenced><mrow><mn>37</mn><mo>.</mo><mn>55</mn><mo>-</mo><mn>2</mn><mo>&#215;</mo><mn>8</mn><mo>.</mo><mn>3</mn></mrow></mfenced></mrow><mrow><mn>8</mn><mo>.</mo><mn>3</mn></mrow></mfrac><mo>=</mo><mn>5</mn><mo>.</mo><mn>048</mn><mo>&#8776;</mo><mn>5</mn></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e79d6f5bfc7ab78ae666", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 1, "question": {"text": "For a gas if ratio of specific heats at constant pressure and volume is $\\gamma$ then value of degrees of freedom is", "image": null}, "options": [{"id": "3FR8c", "text": "$\\frac{3 \\gamma-1}{2 \\gamma-1}$", "isCorrect": false, "image": null}, {"id": "mlMtd", "text": "$\\frac{2}{\\gamma-1}$", "isCorrect": true, "image": null}, {"id": "p5Clc", "text": "$\\frac{9}{2}(\\gamma-1)$", "isCorrect": false, "image": null}, {"id": "YRMDT", "text": "$\\frac{25}{2}(\\gamma-1)$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\begin{aligned} & \\gamma=1+\\frac{2}{f}, \\Rightarrow \\gamma-1=\\frac{2}{f} \\\\ & \\Rightarrow \\frac{f}{2}=\\frac{1}{\\gamma-1} \\Rightarrow f=\\frac{2}{\\gamma-1} \\end{aligned}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "64c0e8726f5bfc7ab78aee41", "title": "Pressure and Energy of gas", "totalQuestions": 3, "questions": [{"_id": "65b7b87b97ae24e9e2db8cca", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "A flask contains hydrogen and oxygen in the ratio of $2: 1$ by mass at temperature $27^{\\circ} \\mathrm{C}$. The ratio of average kinetic energy per molecule of hydrogen and oxygen respectively is :", "image": null}, "options": [{"id": "9ZQtv", "text": "<br />2 : 1", "image": null, "isCorrect": false}, {"id": "TiOK4", "text": "<br />1 : 1", "image": null, "isCorrect": true}, {"id": "QM3gZ", "text": "<br />1 : 4", "image": null, "isCorrect": false}, {"id": "sJ2yZ", "text": "<br />4 : 1", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Average kinetic energy for diatomic gases<br />$\\begin{aligned}<br />& \\mathrm{K}_{\\mathrm{av}}=\\frac{5}{2} \\mathrm{kT} \\\\<br />& \\therefore \\frac{\\left(\\mathrm{K}_{\\mathrm{av}}\\right)_{\\mathrm{H}}}{\\left(\\mathrm{K}_{\\mathrm{av}}\\right)_{\\mathrm{O}}}=\\frac{(27+273)}{(27+273)}=1<br />\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e79d6f5bfc7ab78ae665", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 2, "question": {"text": "The average translational kinetic energy of $\\mathrm{O}_{2}$ (molar mass 32) molecules at a particular temperature is $0.048 \\mathrm{eV}$. The translational kinetic energy of $\\mathrm{N}_{2}$ (molar mass 28 ) molecules in $\\mathrm{eV}$ at the same temperature is", "image": null}, "options": [{"id": "1s41u", "text": "0.0015", "isCorrect": false, "image": null}, {"id": "ZwqAV", "text": "0.003", "isCorrect": false, "image": null}, {"id": "JhT0l", "text": "0.048", "isCorrect": true, "image": null}, {"id": "eOcur", "text": "0.768", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Given,\r\n\\(\\mathrm{E}_{\\mathrm{O}_{2}}=0.048 \\mathrm{eV}\\)\r\nWe know that,\r\nTranslational kinetic energy,\r\n\\(\\mathrm{E}=\\frac{3}{2} \\mathrm{KT}\\)\r\nwhere, \\(\\mathrm{k}=\\) Boltzmann constant\r\n\\(\\mathrm{T}=\\) Temperature\r\n\\(\\therefore \\mathrm{E} \\propto \\mathrm{T}\\)\r\nSince, the temperature is same for both oxygen and nitrogen\r\ntherefore, \\(\\mathrm{E}_{\\mathrm{O}_{2}}=\\mathrm{E}_{\\mathrm{N}_{2}}\\)\r\n\\(\\therefore \\mathrm{E}_{\\mathrm{N}_{2}}=0.048 \\mathrm{eV}\\)", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7816f5bfc7ab78ae56d", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "3 moles of an ideal gas at a temperature of $27^{\\circ} \\mathrm{C}$ are mixed with 2 moles of an ideal gas at a temperature $227^{\\circ} \\mathrm{C}$, determine the equilibrium temperature of the mixture, assuming no loss of energy.", "image": null}, "options": [{"id": "1AVOF", "text": "$327^{\\circ} \\mathrm{C}$", "image": null, "isCorrect": false}, {"id": "R2MOB", "text": "$107^{\\circ} \\mathrm{C}$", "image": null, "isCorrect": true}, {"id": "XPI23", "text": "$318^{\\circ} \\mathrm{C}$", "image": null, "isCorrect": false}, {"id": "3vIE8", "text": "$410^{\\circ} \\mathrm{C}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Energy possessed by the ideal gas at $27^{\\circ} \\mathrm{C}$ is\n$$\nE_{1}=3\\left(\\frac{3}{2} R \\times 300\\right)=\\frac{2700 R}{2}\n$$\nEnergy possessed by the ideal gas at $227^{\\circ} \\mathrm{C}$ is\n$$\n\\mathrm{E}_{2}=2\\left(\\frac{3 \\mathrm{R}}{2} \\times 500\\right)=1500 \\mathrm{R}\n$$\nIf $\\mathrm{T}$ be the equilibrium temperature, of the mixture, then its energy will be\n$$\n\\mathrm{E}_{\\mathrm{m}}=5\\left(\\frac{3 \\mathrm{R} \\mathrm{T}}{2}\\right)\n$$\nSince, energy remains conserved,\n$$\n\\mathrm{E}_{\\mathrm{m}}=\\mathrm{E}_{1}+\\mathrm{E}_{2}\n$$\nor $\\quad 5\\left(\\frac{3 R T}{2}\\right)=\\frac{2700 R}{2}+1500 R$\nor $\\quad \\mathrm{T}=380 \\mathrm{~K}$ or $107^{\\circ} \\mathrm{C}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

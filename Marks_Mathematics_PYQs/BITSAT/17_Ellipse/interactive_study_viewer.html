@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Ellipse PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>📐 BITSAT &bull; Ellipse</h1>
+        <div class="sub">Mathematics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 17, "chapterId": "61e7bd7899ff80eef094c7fe", "chapter": "Ellipse", "exam": "BITSAT", "subject": "Mathematics", "totalTopics": 3, "totalQuestions": 12, "downloadTime": "2026-10-08 20:37:03", "topics": [{"index": 1, "topicId": "64c0e8756f5bfc7ab78aee67", "title": "Equation of Ellipse", "totalQuestions": 7, "questions": [{"_id": "64c0e82b6f5bfc7ab78aeb2e", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 2, "question": {"text": "An ellipse has $\\mathrm{OB}$ as semi minor axis, $\\mathrm{F}$ and $\\mathrm{F}^{\\prime}$ its focii and the angle FBF' is a right angle. Then the eccentricity of the ellipse is", "image": null}, "options": [{"id": "A4ZG2", "text": "$\\frac{1}{\\sqrt{2}}$", "isCorrect": true, "image": null}, {"id": "K8QZE", "text": "$\\frac{1}{2}$", "isCorrect": false, "image": null}, {"id": "ZukKd", "text": "$\\frac{1}{4}$", "isCorrect": false, "image": null}, {"id": "ACZV2", "text": "$\\frac{1}{\\sqrt{3}}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\because \\angle \\mathrm{FBF}^{\\prime}=90^{\\circ}$\r\n\r\n$\\Rightarrow \\mathrm{FB}^{2}+\\mathrm{F}^{\\prime} \\mathrm{B}^{2}=\\mathrm{FF}^{\\prime 2}$\r\n\r\n$\\therefore\\left(\\sqrt{a^{2} e^{2}+b^{2}}\\right)^{2}+\\left(\\sqrt{a^{2} e^{2}+b^{2}}\\right)^{2}=(2 a e)^{2}$\r\n\r\n$\\Rightarrow 2\\left(a^{2} e^{2}+b^{2}\\right)=4 a^{2} e^{2}$\r\n\r\n$\\Rightarrow e^{2}=\\frac{b^{2}}{a^{2}}$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/qqG2CtULR4Qizjzl6dtVQNINLlZsYB1djhzAAe6QstE.original.fullsize.png\"><br>\r\n\r\nAlso $e^{2}=1-\\frac{b^{2}}{a^{2}}=1-e^{2}$\r\n\r\n$\\begin{array}{l}\r\n\r\n\\Rightarrow 2 e^{2}=1 \\\\\r\n\r\n\\Rightarrow e=\\frac{1}{\\sqrt{2}}\r\n\r\n\\end{array}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8276f5bfc7ab78aeb0e", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 1, "question": {"text": "The eccentricity of the ellipse whose major axis is three times the minor axis is:", "image": null}, "options": [{"id": "wyDkR", "text": "$\\frac{\\sqrt{2}}{3}$", "isCorrect": false, "image": null}, {"id": "qhRpi", "text": "$\\frac{\\sqrt{3}}{2}$", "isCorrect": false, "image": null}, {"id": "PCh0f", "text": "$\\frac{2 \\sqrt{2}}{3}$", "isCorrect": true, "image": null}, {"id": "xFrxI", "text": "$\\frac{2}{\\sqrt{3}}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Let a be the major axis and $b$, the minor axis of the ellipse, then 3 minor axis = major axis.\r\n\r\n$\\Rightarrow 3 b=a$\r\n\r\nEccentricity is given by:\r\n\r\n$\\begin{array}{l}\r\n\r\nb^{2}=a^{2}\\left(1-e^{2}\\right) \\\\\r\n\r\n\\Rightarrow b^{2}=9 b^{2}\\left(1-e^{2}\\right) \\\\\r\n\r\n\\Rightarrow \\frac{1}{9}=\\left(1-e^{2}\\right) \\\\\r\n\r\n\\Rightarrow e^{2}=\\frac{8}{9} \\\\\r\n\r\n\\Rightarrow e=\\frac{2 \\sqrt{2}}{3}\r\n\r\n\\end{array}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e80a6f5bfc7ab78aea0f", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 1, "question": {"text": "If the length of the major axis of the ellipse <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msup><mi>x</mi><mn>2</mn></msup><msup><mi>a</mi><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn></math> is three times the length of minor axis, its eccentricity is", "image": null}, "options": [{"id": "3bMEJ", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mn>3</mn></mfrac></math>", "isCorrect": false, "image": null}, {"id": "nGH85", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac></math>", "isCorrect": false, "image": null}, {"id": "DTFBx", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msqrt><mfrac><mn>2</mn><mn>3</mn></mfrac></msqrt></math>", "isCorrect": false, "image": null}, {"id": "wzp0z", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow><mn>3</mn></mfrac></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>We have</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msup><mi>x</mi><mn>2</mn></msup><msup><mi>a</mi><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn></math></p><p>Given,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtext>Length&#160;of&#160;the&#160;major&#160;axis</mtext><mo>=</mo><mn>3</mn><mfenced><mtext>Length&#160;of&#160;the&#160;minor&#160;axis</mtext></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfenced><mrow><mn>2</mn><mi>a</mi></mrow></mfenced><mo>=</mo><mn>3</mn><mfenced><mrow><mn>2</mn><mi>b</mi></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>a</mi><mo>=</mo><mn>3</mn><mi>b</mi></math></p><p>Now,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>e</mi><mo>=</mo><msqrt><mn>1</mn><mo>-</mo><mfrac><msup><mi>b</mi><mn>2</mn></msup><msup><mi>a</mi><mn>2</mn></msup></mfrac></msqrt></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>e</mi><mo>=</mo><msqrt><mn>1</mn><mo>-</mo><mfrac><msup><mi>b</mi><mn>2</mn></msup><mrow><mn>9</mn><msup><mi>b</mi><mn>2</mn></msup></mrow></mfrac></msqrt></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>e</mi><mo>=</mo><msqrt><mn>1</mn><mo>-</mo><mfrac><mn>1</mn><mn>9</mn></mfrac></msqrt><mo>=</mo><mfrac><msqrt><mn>8</mn></msqrt><mn>3</mn></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow><mn>3</mn></mfrac></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7d46f5bfc7ab78ae836", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 1, "question": {"text": "The eccentricity of an ellipse, with its centre at the origin, is $1 / 2$. If one of the directrices is $\\mathrm{x}=4$ then the equation of the ellipse is:", "image": null}, "options": [{"id": "38qfY", "text": "$4 x^{2}+3 y^{2}=1$", "isCorrect": false, "image": null}, {"id": "qPMhj", "text": "$3 x^{2}+4 y^{2}=12$", "isCorrect": true, "image": null}, {"id": "cBt3U", "text": "$4 x^{2}+3 y^{2}=12$", "isCorrect": false, "image": null}, {"id": "ktFoP", "text": "$3 x^{2}+4 y^{2}=1$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{e}=\\frac{1}{2} .$ Directrix $, \\mathrm{x}=\\frac{\\mathrm{a}}{\\mathrm{e}}=4$\r\n\r\n$$\r\n\r\n\\therefore \\mathrm{a}=4 \\times \\frac{1}{2}=2 \\quad \\therefore \\mathrm{b}=2 \\sqrt{1-\\frac{1}{4}}=\\sqrt{3}\r\n\r\n$$\r\n\r\nEquation of ellispe is\r\n\r\n$$\r\n\r\n\\frac{x^{2}}{4}+\\frac{y^{2}}{3}=1 \\Rightarrow 3 x^{2}+4 y^{2}=12\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7b66f5bfc7ab78ae732", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 2, "question": {"text": "$\\mathrm{S}$ and $\\mathrm{T}$ are the foci of an ellipse and $\\mathrm{B}$ is an end of the minor axis. If STB is an equilateral triangle, then the eccentricity of the ellipse is", "image": null}, "options": [{"id": "QHOiy", "text": "$\\frac{1}{4}$", "isCorrect": false, "image": null}, {"id": "glMj4", "text": "$\\frac{1}{3}$", "isCorrect": false, "image": null}, {"id": "uWDm4", "text": "$\\frac{1}{2}$", "isCorrect": true, "image": null}, {"id": "coaka", "text": "$\\frac{2}{3}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Let eq. of ellipse be $\\frac{x^{2}}{a^{2}}+\\frac{y^{2}}{b^{2}}=1$, $\\mathrm{S}$ is $(-\\mathrm{ae}, 0), \\mathrm{T}$ is $(\\mathrm{ae}, 0)$ and $\\mathrm{B}$ is $(0, \\mathrm{~b})$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/oOGjD6NyVDk2FaWoimoG2G8B4w4uebxeLD-nKEOVzGg.original.fullsize.png\"><br>\r\n\r\n$\\Rightarrow \\mathrm{SB}=\\sqrt{(0+\\mathrm{ae})^{2}+\\mathrm{b}^{2}}$\r\n\r\nAlso $\\mathrm{SB}^{2}=\\mathrm{ST}^{2} \\Rightarrow 4 \\mathrm{a}^{2} \\mathrm{e}^{2}=\\mathrm{a}^{2} \\mathrm{e}^{2}+\\mathrm{b}^{2}$\r\n\r\n$\\Rightarrow 3 a^{2} e^{2}=a^{2}\\left(1-e^{2}\\right)=a^{2}-a^{2} e^{2}$\r\n\r\n$\\Rightarrow 4 a^{2} e^{2}=a^{2} \\Rightarrow e^{2}=\\frac{1}{4} \\Rightarrow e=\\frac{1}{2}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7b56f5bfc7ab78ae730", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 2, "question": {"text": "An ellipse has $O B$ as semi minor axis, $F$ and $F^{\\prime}$\r\n\r\nits focii and the angle $F B F^{\\prime}$ is a right angle. Then the eccentricity of the ellipse is", "image": null}, "options": [{"id": "FgMAD", "text": "$\\frac{1}{\\sqrt{2}}$", "isCorrect": true, "image": null}, {"id": "KYNBY", "text": "$\\frac{1}{2}$", "isCorrect": false, "image": null}, {"id": "RhlMS", "text": "$\\frac{1}{4}$", "isCorrect": false, "image": null}, {"id": "248He", "text": "$\\frac{1}{\\sqrt{3}}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\begin{aligned} & \\because \\angle F B F^{\\prime}=90^{\\circ} \\Rightarrow F B^{2}+F^{\\prime} B^{2}=F F^{\\prime 2} \\\\ \\therefore &\\left(\\sqrt{a^{2} e^{2}+b^{2}}\\right)^{2}+\\left(\\sqrt{a^{2} e^{2}+b^{2}}\\right)^{2}=(2 a e)^{2} \\\\ & \\Rightarrow 2\\left(a^{2} e^{2}+b^{2}\\right)=4 a^{2} e^{2} \\Rightarrow e^{2}=\\frac{b^{2}}{a^{2}} \\ldots(1) \\end{aligned}$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/kpmTfI4BRcO0ZxYX9ntydokI-y3lZtOTZNltcLV-Ly8.original.fullsize.png\"><br>\r\n\r\nAlso, $e^{2}=1-b^{2} / a^{2}=1-e^{2}$\r\n\r\n(By using equation (i)) $\\Rightarrow 2 e^{2}=1 \\Rightarrow e=\\frac{1}{\\sqrt{2}}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7986f5bfc7ab78ae637", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "The equation of the ellipse with focus at \\(( \\pm 5,0)\\) and \\(x=\\frac{36}{5}\\) as one directrix is", "image": null}, "options": [{"id": "XQeQu", "text": "\\(\\frac{x^2}{36}+\\frac{y^2}{25}=1\\)", "image": null, "isCorrect": false}, {"id": "fusqa", "text": "\\(\\frac{x^2}{36}+\\frac{y^2}{11}=1\\)", "image": null, "isCorrect": true}, {"id": "lEvuP", "text": "\\(\\frac{x^2}{25}+\\frac{y^2}{11}=1\\)", "image": null, "isCorrect": false}, {"id": "sjeYy", "text": "None of these", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "We have ae \\(=5\\) [Since focus is \\(( \\pm \\mathrm{ae}, 0)\\)]\nand \\(\\frac{\\mathrm{a}}{\\mathrm{e}}=\\frac{36}{5} \\quad\\left[\\right.\\) since directrix is \\(\\left.\\mathrm{x}= \\pm \\frac{\\mathrm{a}}{\\mathrm{e}}\\right]\\)\nOn solving we get \\(\\mathrm{a}=6\\)\n\\(\\text { and } \\mathrm{e}=\\frac{5}{6} \\Rightarrow \\mathrm{b}^2=\\mathrm{a}^2\\left(1-\\mathrm{e}^2\\right)=36\\left(1-\\frac{25}{36}\\right)=11\\)\nThus, the required equation of the ellipse is\n\\(\\frac{x^2}{36}+\\frac{y^2}{11}=1\\)", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8756f5bfc7ab78aee68", "title": "Auxillary Circle", "totalQuestions": 1, "questions": [{"_id": "64c0e7fe6f5bfc7ab78ae9a7", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 3, "question": {"text": "The line passing through the extremity <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math> of the major axis and extremity <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math> of the minor axis of the ellipse <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>9</mn><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>9</mn></math> meets its auxiliary circle at the point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>M</mi></math>. Then, the area of the triangle with vertices at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>,</mo><mo>&#160;</mo><mi>M</mi></math> and the origin <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>O</mi></math> is", "image": null}, "options": [{"id": "NF8cn", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>31</mn><mn>10</mn></mfrac></math>", "isCorrect": false, "image": null}, {"id": "XcNvN", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>29</mn><mn>10</mn></mfrac></math>", "isCorrect": false, "image": null}, {"id": "oDIlp", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>21</mn><mn>10</mn></mfrac></math>", "isCorrect": false, "image": null}, {"id": "PtYXJ", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>27</mn><mn>10</mn></mfrac></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>Equation of auxiliary circle is</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>9</mn><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>.</mo><mo>.</mo><mfenced><mi mathvariant=\"normal\">i</mi></mfenced></math></p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/f750c76f-c25f-4349-91fd-82f7205a7d3f-d1.png\" style=\"width: 288px; height: 230px;\" /></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> Equation of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mi>M</mi></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi>x</mi><mn>3</mn></mfrac><mo>+</mo><mfrac><mi>y</mi><mn>1</mn></mfrac><mo>=</mo><mn>1</mn><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi>ii</mi></mfenced></math></p><p>On solving Eqs. (i) and (ii), we get</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>M</mi><mfenced><mrow><mo>-</mo><mfrac><mn>12</mn><mn>5</mn></mfrac><mo>,</mo><mfrac><mn>9</mn><mn>5</mn></mfrac></mrow></mfenced></math></p><p>Now, area of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#916;</mi><mi>A</mi><mi>O</mi><mi>M</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>O</mi><mi>A</mi><mo>&#215;</mo><mi>M</mi><mi>N</mi><mo>=</mo><mfrac><mn>27</mn><mn>10</mn></mfrac></math> sq units</p><p>Hence, option (d) is correct.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e8756f5bfc7ab78aee66", "title": "Tangent to ellipse", "totalQuestions": 4, "questions": [{"_id": "64c0e81d6f5bfc7ab78aeab4", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 2, "question": {"text": "If $\\frac{\\mathrm{x}}{\\mathrm{ma}}+\\frac{\\mathrm{y}}{\\mathrm{nb}}=1$ touches the ellipse $\\frac{x^{2}}{a^{2}}+\\frac{y^{2}}{b^{2}}=1,$ then", "image": null}, "options": [{"id": "djkH1", "text": "$\\mathrm{m}^{2}=\\frac{\\mathrm{n}^{2}}{\\mathrm{n}^{2}-1}$ or $\\mathrm{n}^{2}=\\frac{\\mathrm{m}^{2}}{\\mathrm{~m}^{2}-1}$", "isCorrect": true, "image": null}, {"id": "NG0Hi", "text": "$\\mathrm{m}^{2}=\\frac{\\mathrm{n}^{2}}{\\mathrm{n}^{2}+1}$ or $\\mathrm{n}^{2}=\\frac{\\mathrm{m}^{2}}{\\mathrm{~m}^{2}+1}$", "isCorrect": false, "image": null}, {"id": "DmlOb", "text": "$\\mathrm{m}^{2}=\\frac{\\mathrm{n}^{2}+1}{\\mathrm{n}^{2}}$ or $\\mathrm{n}^{2}=\\frac{\\mathrm{m}^{2}+1}{\\mathrm{~m}^{2}}$", "isCorrect": false, "image": null}, {"id": "wVreg", "text": "$\\mathrm{m}^{2}=\\frac{\\mathrm{n}^{2}-1}{\\mathrm{n}^{2}}$ or $\\mathrm{n}^{2}=\\frac{\\mathrm{m}^{2}-1}{\\mathrm{~m}^{2}}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The line is $y=-\\frac{\\text { nb }}{\\text { ma }} x-n b$. It will touch the ellipse if $(-n b)^{2}=a^{2}\\left(-\\frac{n b}{m a}\\right)^{2}+b^{2}$\r\n\r\n$\\left[\\mathrm{c}^{2}=\\mathrm{a}^{2} \\mathrm{~m}^{2}+\\mathrm{b}^{2}\\right]$\r\n\r\n$\\Rightarrow n^{2}=\\frac{n^{2}}{m^{2}}+1$\r\n\r\n$\\Rightarrow \\mathrm{m}^{2}=\\frac{\\mathrm{n}^{2}}{\\mathrm{n}^{2}-1}$ or $\\mathrm{n}^{2}=\\frac{\\mathrm{m}^{2}}{\\mathrm{~m}^{2}-1}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e80c6f5bfc7ab78aea1d", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 3, "question": {"text": "The locus of the foot of perpendicular drawn from the centre of the ellipse <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>6</mn></math> on any tangent to it is", "image": null}, "options": [{"id": "1MToT", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfenced><mn>2</mn></msup><mo>=</mo><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><msup><mi>y</mi><mn>2</mn></msup></math>", "isCorrect": false, "image": null}, {"id": "RfDf1", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfenced><mn>2</mn></msup><mo>=</mo><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><msup><mi>y</mi><mn>2</mn></msup></math>", "isCorrect": false, "image": null}, {"id": "Jwnjy", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfenced><mn>2</mn></msup><mo>=</mo><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><msup><mi>y</mi><mn>2</mn></msup></math>", "isCorrect": true, "image": null}, {"id": "i1bJ1", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfenced><mn>2</mn></msup><mo>=</mo><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><msup><mi>y</mi><mn>2</mn></msup></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<blockquote><p>We have,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>6</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>6</mn></mfrac><mo>+</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo>=</mo><mn>1</mn></math></p><p>Centre of an ellipse is&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></mfenced></math>.</p><p>Let the foot of perpendicular be <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi>h</mi><mo>,</mo><mi>k</mi><mo>)</mo></math>.</p><p>Equation of tangent in slope form to the standard ellipse&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msup><mi>x</mi><mn>2</mn></msup><msup><mi>a</mi><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn></math>&nbsp;is</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>m</mi><mi>x</mi><mo>&#177;</mo><msqrt><msup><mi>a</mi><mn>2</mn></msup><msup><mi>m</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></msqrt></math>.</p><p>Hence, equation of tangent with slope <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi></math> passing <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi>h</mi><mo>,</mo><mi>k</mi><mo>)</mo></math> is&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>m</mi><mi>x</mi><mo>&#177;</mo><msqrt><mn>6</mn><msup><mi>m</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></msqrt></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>k</mi><mo>=</mo><mi>m</mi><mi>h</mi><mo>&#177;</mo><msqrt><mn>6</mn><msup><mi>m</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></msqrt></math>, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi><mo>=</mo><mo>-</mo><mfrac><mi>h</mi><mi>k</mi></mfrac></math>.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>k</mi><mo>=</mo><mi>h</mi><mfenced><mrow><mo>-</mo><mfrac><mi>h</mi><mi>k</mi></mfrac></mrow></mfenced><mo>&#177;</mo><msqrt><mn>6</mn><msup><mi>m</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></msqrt></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><msqrt><mfrac><mrow><mn>6</mn><msup><mi>h</mi><mn>2</mn></msup></mrow><msup><mi>k</mi><mn>2</mn></msup></mfrac><mo>+</mo><mn>2</mn></msqrt><mo>=</mo><mfrac><mrow><msup><mi>h</mi><mn>2</mn></msup><mo>+</mo><msup><mi>k</mi><mn>2</mn></msup></mrow><mi>k</mi></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mn>6</mn><msup><mi>h</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><msup><mi>k</mi><mn>2</mn></msup><mo>=</mo><msup><mfenced><mrow><msup><mi>h</mi><mn>2</mn></msup><mo>+</mo><msup><mi>k</mi><mn>2</mn></msup></mrow></mfenced><mn>2</mn></msup></math></p><p>So, required locus is</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><msup><mfenced><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfenced><mn>2</mn></msup></math>.</p></blockquote>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ee6f5bfc7ab78ae917", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 3, "question": {"text": "If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>p</mi><mo>'</mo></msup></math> denote the lengths of the perpendicular from a focus and the centre of an ellipse with semi-major axis of length <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math>, respectively, on a tangent to the ellipse and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi></math> denotes the focal distance of the point, then", "image": null}, "options": [{"id": "GL7qz", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mi>p</mi><mo>=</mo><mi>r</mi><msup><mi>p</mi><mo>'</mo></msup></math>", "isCorrect": true, "image": null}, {"id": "mGUZ7", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi><mi>p</mi><mo>=</mo><mi>a</mi><msup><mi>p</mi><mo>'</mo></msup></math>", "isCorrect": false, "image": null}, {"id": "Pn27t", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mi>p</mi><mo>=</mo><mi>r</mi><msup><mi>p</mi><mo>'</mo></msup><mo>+</mo><mn>1</mn></math>", "isCorrect": false, "image": null}, {"id": "mTZcV", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><msup><mi>p</mi><mo>'</mo></msup><mo>+</mo><mi>r</mi><mi>p</mi><mo>=</mo><mn>1</mn></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Let the ellipse be <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msup><mi>x</mi><mn>2</mn></msup><msup><mi>a</mi><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><msup><mi>y</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn></math></p><p>and let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>x</mi><mi>cos</mi><mi>&#952;</mi></mrow><mi>a</mi></mfrac><mo>+</mo><mfrac><mrow><mi>y</mi><mi>sin</mi><mi>&#952;</mi></mrow><mi>b</mi></mfrac><mo>=</mo><mn>1</mn></math>&nbsp;&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>.</mo><mo>.</mo><mo>.</mo><mo>(</mo><mi mathvariant=\"normal\">i</mi><mo>)</mo></math></p><p>be a tangent to it at point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi>a</mi><mi>cos</mi><mi>&#952;</mi><mo>,</mo><mi>b</mi><mi>sin</mi><mi>&#952;</mi><mo>)</mo></math>. Then, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi><mo>=</mo></math> length of the perpendicular from <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>S</mi><mo>(</mo><mi>a</mi><mi>e</mi><mo>,</mo><mo>&#160;</mo><mn>0</mn><mo>)</mo></math> on Eq. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">i</mi><mo>)</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi><mo>=</mo><mfenced open=\"|\" close=\"|\"><mfrac><mrow><mi>e</mi><mi>cos</mi><mi>&#952;</mi><mo>-</mo><mn>1</mn></mrow><msqrt><mfrac><mrow><msup><mi>cos</mi><mn>2</mn></msup><mi>&#952;</mi></mrow><msup><mi>a</mi><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><mrow><msup><mi>sin</mi><mn>2</mn></msup><mi>&#952;</mi></mrow><msup><mi>b</mi><mn>2</mn></msup></mfrac></msqrt></mfrac></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>p</mi><mo>'</mo></msup><mo>=</mo></math> length of the perpendicular from <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>O</mi><mo>(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>)</mo></math> on Eq. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">i</mi><mo>)</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><msup><mi>p</mi><mo>'</mo></msup><mo>=</mo><mfenced open=\"|\" close=\"|\"><mfrac><mn>1</mn><msqrt><mfrac><mrow><msup><mi>cos</mi><mn>2</mn></msup><mi>&#952;</mi></mrow><msup><mi>a</mi><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><mrow><msup><mi>sin</mi><mn>2</mn></msup><mi>&#952;</mi></mrow><msup><mi>b</mi><mn>2</mn></msup></mfrac></msqrt></mfrac></mfenced></math></p><p>and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi><mo>=</mo><mi>a</mi><mi>e</mi><mi>cos</mi><mi>&#952;</mi><mo>-</mo><mi>a</mi></math></p><p>Clearly, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi><msup><mi>p</mi><mo>'</mo></msup><mo>=</mo><mi>a</mi><mi>p</mi></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7896f5bfc7ab78ae5b5", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "If the line \\(2 x-1=0\\) is the directrix of the parabola \\(y^2-k x+6=0\\), then one of the values of \\(k\\) is", "image": null}, "options": [{"id": "lYDxQ", "text": "-6", "image": null, "isCorrect": true}, {"id": "FiW0i", "text": "6", "image": null, "isCorrect": false}, {"id": "2j1Hv", "text": "\\(1 / 4\\)", "image": null, "isCorrect": false}, {"id": "dDlJq", "text": "\\(-1 / 4\\)", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Given equation of parabola is \\(y^2-k x+6=0\\)\n\\(\\Rightarrow y^2=k x-6 \\Rightarrow y^2=k\\left(x-\\frac{6}{k}\\right)\\)\nNow, directrix, \\(x-\\frac{6}{k}=-\\frac{k}{4}\\)\n\\(\\Rightarrow x=\\frac{6}{k}-\\frac{k}{4}\\) ...(i)\nBut directrix is given \\(\\Rightarrow x=\\frac{1}{2}\\) ...(ii)\n\\(\\begin{aligned}\n& \\therefore \\frac{6}{k}-\\frac{k}{4}=\\frac{1}{2} \\Rightarrow 24-k^2=2 k \\\\\n& \\Rightarrow k^2+2 k-24=0 \\\\\n& \\Rightarrow(k+6)(k-4)=0 \\quad \\Rightarrow k=-6, k=4\n\\end{aligned}\\)", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

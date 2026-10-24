@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JEE Advanced - Basic of Mathematics PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>📐 JEE Advanced &bull; Basic of Mathematics</h1>
+        <div class="sub">Mathematics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 1, "chapterId": "6160252431ea3cbf3c3b426e", "chapter": "Basic of Mathematics", "exam": "JEE Advanced", "subject": "Mathematics", "totalTopics": 2, "totalQuestions": 6, "downloadTime": "2026-10-08 20:35:57", "topics": [{"index": 1, "topicId": "64b16aedf23ac7d519f9b9a4", "title": "Logarithm", "totalQuestions": 5, "questions": [{"_id": "66965dcdd603121f43a3e5d1", "type": "numerical", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "66965789b31faf98fda8fef9", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2024-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Paper 1)", "title": "JEE Advanced 2024 (Paper 1)"}], "question": {"text": "Let $a=3 \\sqrt{2}$ and $b=\\frac{1}{5^{1 / 6} \\sqrt{6}}$. If $x, y \\in \\mathbb{R}$ are such that\n$\\begin{gathered}3 x+2 y=\\log _a(18)^{\\frac{5}{4}} \\\\2 x-y=\\log _b(\\sqrt{1080})\\end{gathered}$\nand then $4 x+5 y$ is equal to . ________.", "image": null}, "options": [], "correctValue": 8, "solution": {"text": "$\\begin{aligned} & 3 x+2 y=\\log _{3 \\sqrt{2}}(3 \\sqrt{2})^{\\frac{5}{2}}=\\frac{5}{2} \\\\ & \\Rightarrow \\quad 6 x+4 y=5 \\quad \\ldots \\ldots(1)\\end{aligned}$\n$2 x-y=\\log _{\\frac{1}{5^{1 / 6} \\sqrt{6}}}\\left(5^{\\frac{1}{6}} \\sqrt{6}\\right)^3=-3$\n$\\begin{array}{ll}\\Rightarrow & 2 x-y=-3 \\quad.....(2)\\\\ & \\text { equation (1) }-(2) \\\\ \\Rightarrow \\quad & 4 x+5 y=8\\end{array}$", "image": null}, "videoSolution": {"videoId": "2767c7334aef4227a62956764e32e96a", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/gZSLhtq7uHAH3.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/gZSLhtq7uHAH3.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "66965789b31faf98fda8fef9", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2024-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Paper 1)", "title": "JEE Advanced 2024 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a9ef23ac7d519f9b611", "previousYearPapers": [{"_id": "632c83583e3fd59bda92e46d", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2022-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2022 (Paper 2)", "title": "JEE Advanced 2022 (Paper 2)"}], "type": "numerical", "level": 2, "question": {"text": "The product of all positive real values of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math> satisfying the equation <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>x</mi><mfenced><mrow><mn>16</mn><msup><mfenced><mrow><msub><mi>log</mi><mn>5</mn></msub><mi>x</mi></mrow></mfenced><mn>3</mn></msup><mo>-</mo><mn>68</mn><msub><mi>log</mi><mn>5</mn></msub><mi>x</mi></mrow></mfenced></msup><mo>=</mo><msup><mn>5</mn><mrow><mo>-</mo><mn>16</mn></mrow></msup></math> is", "image": null}, "options": [], "correctValue": "1", "solution": {"text": "<blockquote><p>Taking log to the base <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn></math>&nbsp;on both sides</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mn>16</mn><msup><mfenced><mrow><msub><mi>log</mi><mn>5</mn></msub><mi>x</mi></mrow></mfenced><mn>3</mn></msup><mo>-</mo><mn>68</mn><mfenced><mrow><msub><mi>log</mi><mn>5</mn></msub><mi>x</mi></mrow></mfenced></mrow></mfenced><mfenced><mrow><msub><mi>log</mi><mn>5</mn></msub><mi>x</mi></mrow></mfenced><mo>=</mo><mo>-</mo><mn>16</mn></math></p><p>Let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><msub><mi>log</mi><mn>5</mn></msub><mi>x</mi></mrow></mfenced><mo>=</mo><mi>t</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>16</mn><msup><mi>t</mi><mn>4</mn></msup><mo>-</mo><mn>68</mn><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>16</mn><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mn>4</mn><msup><mi>t</mi><mn>4</mn></msup><mo>-</mo><mn>16</mn><msup><mi>t</mi><mn>2</mn></msup><mo>-</mo><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfenced><mrow><mn>4</mn><msup><mi>t</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow></mfenced><mfenced><mrow><msup><mi>t</mi><mn>2</mn></msup><mo>-</mo><mn>4</mn></mrow></mfenced><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>t</mi><mo>=</mo><mo>&#177;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mo>&#177;</mo><mn>2</mn></math></p><p>So <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>log</mi><mn>5</mn></msub><mi>x</mi><mo>=</mo><mo>&#177;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></math> or&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#177;</mo><mn>2</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>x</mi><mo>=</mo><msup><mn>5</mn><mfrac><mn>1</mn><mn>2</mn></mfrac></msup><mo>,</mo><mo>&#160;</mo><msup><mn>5</mn><mfrac><mrow><mo>-</mo><mn>1</mn></mrow><mn>2</mn></mfrac></msup><mo>,</mo><mo>&#160;</mo><msup><mn>5</mn><mn>2</mn></msup><mo>,</mo><mo>&#160;</mo><msup><mn>5</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup></math></p><p>Hence, the product is&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msqrt><mn>5</mn></msqrt><mo>&#215;</mo><mfrac><mn>1</mn><msqrt><mn>5</mn></msqrt></mfrac><mo>&#215;</mo><mn>25</mn><mo>&#215;</mo><mfrac><mn>1</mn><mn>25</mn></mfrac><mo>=</mo><mn>1</mn></math></p></blockquote>", "image": null}, "videoSolution": {"videoId": "c201258b9d724c03bde6859d16cf76ad", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/KaRJ7kczG01l7.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/KaRJ7kczG01l7.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": true}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "632c83583e3fd59bda92e46d", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2022-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2022 (Paper 2)", "title": "JEE Advanced 2022 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a68f23ac7d519f9b428", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf82c", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018 (Paper 1)", "title": "JEE Advanced 2018 (Paper 1)"}], "type": "numerical", "level": 1, "question": {"text": "The value of <math><msup><mrow><mfenced separators=\"|\"><mrow><msup><mrow><mfenced separators=\"|\"><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow><mo>&#8289;</mo><mrow><mn>9</mn></mrow></mrow></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfenced></mrow><mrow><mfrac><mrow><mn>1</mn></mrow><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow><mo>&#8289;</mo><mrow><mfenced separators=\"|\"><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow><mo>&#8289;</mo><mrow><mn>9</mn></mrow></mrow></mrow></mfenced></mrow></mrow></mrow></mfrac></mrow></msup><mo>&#215;</mo><msup><mrow><mfenced separators=\"|\"><mrow><msqrt><mn>7</mn></msqrt></mrow></mfenced></mrow><mrow><mfrac><mrow><mn>1</mn></mrow><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mn>4</mn></mrow></msub></mrow><mo>&#8289;</mo><mrow><mn>7</mn></mrow></mrow></mrow></mfrac></mrow></msup></math> is_____.", "image": null}, "options": [], "correctValue": "8", "solution": {"text": "<math><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow><mo>⁡</mo><mrow><msup><mrow><mn>9</mn></mrow><mrow><mfrac><mrow><mn>2</mn></mrow><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow><mo>⁡</mo><mrow><mfenced separators=\"|\"><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow><mo>⁡</mo><mrow><mn>9</mn></mrow></mrow></mrow></mfenced></mrow></mrow></mrow></mfrac></mrow></msup><mo>×</mo><msup><mrow><mn>7</mn></mrow><mrow><mfrac><mrow><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac></mrow><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mn>4</mn></mrow></msub></mrow><mo>⁡</mo><mrow><mn>7</mn></mrow></mrow></mrow></mfrac></mrow></msup></mrow></mrow></math><br /><math> <mrow><mo>=</mo>  <msup>   <mrow>    <mrow><mo>(</mo>     <mrow>      <msub>       <mrow>        <mi>log</mi></mrow>       <mn>2</mn>      </msub>      <mn>9</mn></mrow>    <mo>)</mo></mrow></mrow>   <mrow>    <mn>2</mn><msub>     <mrow>      <mi>log</mi></mrow>     <mrow>      <mrow><mo>(</mo>       <mrow>        <msub>         <mrow>          <mi>log</mi></mrow>         <mn>2</mn>        </msub>        <mn>9</mn></mrow>      <mo>)</mo></mrow></mrow>    </msub>    <mn>2</mn></mrow>  </msup>  <mo>&#x00D7;</mo><msup>   <mn>7</mn>   <mrow>    <mfrac>     <mn>1</mn>     <mn>2</mn>    </mfrac>    <msub>     <mrow>      <mi>log</mi></mrow>     <mn>7</mn>    </msub>    <mn>4</mn></mrow>  </msup>  </mrow></math><br /><math> <mrow>  <mo>=</mo><msup>   <mrow>    <mrow><mo>(</mo>     <mrow>      <msub>       <mrow>        <mi>log</mi></mrow>       <mn>2</mn>      </msub>      <mn>9</mn></mrow>    <mo>)</mo></mrow></mrow>   <mrow>    <msub>     <mrow>      <mi>log</mi></mrow>     <mrow>      <mrow><mo>(</mo>       <mrow>        <msub>         <mrow>          <mi>log</mi></mrow>         <mn>2</mn>        </msub>        <mn>9</mn></mrow>      <mo>)</mo></mrow></mrow>    </msub>    <msup>     <mn>2</mn>     <mn>2</mn>    </msup>    </mrow>  </msup>  <mo>&#x00D7;</mo><msup>   <mn>7</mn>   <mrow>    <msub>     <mrow>      <mi>log</mi></mrow>     <mn>7</mn>    </msub>    <msup>     <mn>4</mn>     <mrow>      <mfrac>       <mn>1</mn>       <mn>2</mn>      </mfrac>      </mrow>    </msup>    </mrow>  </msup>  </mrow></math><br /><math> <mrow>  <mo>=</mo><msup>   <mn>2</mn>   <mn>2</mn>  </msup>  <mo>&#x00D7;</mo><msup>   <mn>4</mn>   <mrow>    <mfrac>     <mn>1</mn>     <mn>2</mn>    </mfrac>    </mrow>  </msup>  </mrow></math><br /><math><mo>=</mo><mi>&nbsp;</mi><mi>&nbsp;</mi><mn>4</mn><mo>×</mo><mn>2</mn><mo>=</mo><mn>8</mn></math>", "image": null}, "videoSolution": {"videoId": "7637128dd5d54b4e9255448c6483191b", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/mENxUU0mg4bPW.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/mENxUU0mg4bPW.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf82c", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018 (Paper 1)", "title": "JEE Advanced 2018 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a30f23ac7d519f9b223", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf823", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2013-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2013 (Paper 2)", "title": "JEE Advanced 2013 (Paper 2)"}], "type": "multipleCorrect", "level": 2, "question": {"text": "<p>If&nbsp;<math> <mrow> <msup> <mn>3</mn> <mtext>x</mtext> </msup> <mo>=</mo> <msup> <mn>4</mn> <mrow> <mtext>x</mtext> <mo>-</mo> <mn>1</mn> </mrow> </msup> </mrow> </math>,&nbsp;then x =</p>", "image": null}, "options": [{"id": "MEEaW", "text": "<math> <mrow> <mfrac> <mrow> <msub> <mtext>2 log</mtext> <mn>3</mn> </msub> <mn>2</mn> </mrow> <mrow> <msub> <mtext>2 log</mtext> <mn>3</mn> </msub> <mn>2</mn> <mo>-</mo> <mn>1</mn> </mrow> </mfrac> </mrow> </math>", "isCorrect": true, "image": null}, {"id": "TEKr3", "text": "<math> <mrow> <mfrac> <mrow> <mn>2</mn> </mrow> <mrow> <mn>2</mn> <mo>-</mo> <msub> <mtext>log</mtext> <mn>2</mn> </msub> <mn>3</mn> </mrow> </mfrac> </mrow> </math>", "isCorrect": true, "image": null}, {"id": "ToOWG", "text": "<math> <mrow> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mn>1</mn> <mo>-</mo> <msub> <mtext>log</mtext> <mn>4</mn> </msub> <mn>3</mn> </mrow> </mfrac> </mrow> </math>", "isCorrect": true, "image": null}, {"id": "lu8i9", "text": "<math> <mrow> <mfrac> <mrow> <msub> <mtext>2 log</mtext> <mn>2</mn> </msub> <mn>3</mn> </mrow> <mrow> <msub> <mtext>2 log</mtext> <mn>2</mn> </msub> <mn>3</mn> <mo>-</mo> <mn>1</mn> </mrow> </mfrac> </mrow> </math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "3<sup>x</sup> = 4<sup>x</sup><sup> - 1</sup><br />x = (x - 1) log<sub>3</sub> 4<br />x ( 1 - 2 log<sub>3</sub> 2) = -2log<sub>3</sub> 2<br /><math> <mrow> <mtext>x</mtext> <mo>=</mo> <mfrac> <mrow> <mn>2</mn> <msub> <mtext>log</mtext> <mn>3</mn> </msub> <mn>2</mn> </mrow> <mrow> <mn>2</mn> <msub> <mtext>log</mtext> <mn>3</mn> </msub> <mn>2</mn> <mo>-</mo> <mn>1</mn> </mrow> </mfrac> </mrow> </math><br />x log<sub>2</sub> 3 = (x - 1).2<br />x (log<sub>2</sub> 3 - 2) = -2<br /><math> <mrow> <mtext>x</mtext> <mo>=</mo> <mfrac> <mrow> <mn>2</mn> </mrow> <mrow> <mn>2</mn> <msub> <mrow> <mo>-</mo> <mtext>log</mtext> </mrow> <mn>2</mn> </msub> <mn>3</mn> </mrow> </mfrac> </mrow> </math><br /><math> <mrow> <mtext>x</mtext> <mo>=</mo> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mn>1</mn> <mo>-</mo> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mn>2</mn> </mrow> </mfrac> <msub> <mtext>log</mtext> <mn>2</mn> </msub> <mn>3</mn> </mrow> </mfrac> <mo>=</mo> <mfrac> <mrow> <mn>1</mn> </mrow> <mrow> <mn>1</mn> <mo>-</mo> <msub> <mtext>log</mtext> <mn>4</mn> </msub> <mn>3</mn> </mrow> </mfrac> </mrow> </math>", "image": null}, "videoSolution": {"videoId": "b16264e3402c41f38189cd818ab62380", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/a7JftPzZH8Ux1.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/a7JftPzZH8Ux1.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf823", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2013-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2013 (Paper 2)", "title": "JEE Advanced 2013 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a0ff23ac7d519f9b0f7", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1f77301f65c2f92c48", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011 (Paper 1)", "title": "JEE Advanced 2011 (Paper 1)"}], "question": {"text": "Let $\\left(x_0, y_0\\right)$ be the solution of the following equations $(2 x)^{\\log 2}=(3 y)^{\\log 3}$, $3^{\\log x}=2^{\\log y}$, then $x_0$ is equal to", "image": null}, "options": [{"id": "rIweA", "text": "\n$\\frac{1}{6}$\n", "image": null, "isCorrect": false}, {"id": "Lwepk", "text": "\n$\\frac{1}{2}$\n", "image": null, "isCorrect": false}, {"id": "QcTOM", "text": "\n$\\frac{1}{2}$\n", "image": null, "isCorrect": true}, {"id": "cDfc0", "text": "\n6", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Taking log on both sides,\n$$\n\\log 2 \\cdot \\log (2 x)=\\log 3(\\log 3 y)\n$$\n\n\n$$\n\\begin{array}{ll}\n\\Rightarrow & \\log 2\\{\\log 2+\\log x\\} \\\\\n& =\\log 3\\{\\log 3+\\log y\\} \\\\\n\\text { and } & \\log x \\cdot \\log 3=\\log y \\log 2 \\\\\n& \\log y=\\frac{\\log x \\cdot \\log 3}{\\log 2}\n\\end{array}\n$$\nFrom Eqs. (i) and (ii), we get\n$$\n\\begin{aligned}\n& \\log 2\\{\\log 2+\\log x\\} \\\\\n&=\\log 3 \\cdot\\left\\{\\log 3+\\frac{\\log x \\cdot \\log 3}{\\log 2}\\right\\} \\\\\n& \\Rightarrow \\quad(\\log 2)^2+\\log 2 \\cdot \\log x \\\\\n&=(\\log 3)^2+\\frac{(\\log 3)^2}{(\\log 2)} \\cdot \\log x \\\\\n& \\Rightarrow \\quad \\log x\\left\\{\\frac{(\\log 3)^2}{\\log 2}-\\log 2\\right\\} \\\\\n&=(\\log 2)^2-(\\log 3)^2\n\\end{aligned}\n$$\n\n$$\n\\begin{aligned}\n& \\Rightarrow \\quad \\log x=-\\log 2=\\log 2^{-1} \\\\\n& \\therefore \\quad x=\\frac{1}{2}\n\\end{aligned}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1f77301f65c2f92c48", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011 (Paper 1)", "title": "JEE Advanced 2011 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64b16aedf23ac7d519f9b9a3", "title": "Inequalities", "totalQuestions": 1, "questions": [{"_id": "64b169edf23ac7d519f9afc1", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1f77301f65c2f92c43", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2008-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2008 (Paper 2)", "title": "JEE Advanced 2008 (Paper 2)"}], "question": {"text": "Match the Statements/Expressions in Column I with the Statements/Expressions in Column II.\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/NV6MxxlCrdeWHLs9r4Y0EOApcJx3jyAt7MA2okb20P0.original.fullsize.png\"><br>", "image": null}, "options": [{"id": "b8qKo", "text": "\n(A) r, (B) q,r, (C) s, (D) p,r\n", "image": null, "isCorrect": false}, {"id": "XhihE", "text": "\n(A) s, (B) q,s, (C) r, (D) p,q\n", "image": null, "isCorrect": false}, {"id": "YfPGY", "text": "\n(A) s, (B) q,r, (C) s, (D) p,q\n", "image": null, "isCorrect": false}, {"id": "Cosfd", "text": "\n(A) r, (B) q,s, (C) r, (D) p,r", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "(A) Let $y=\\frac{x^2+2 x+4}{x+2}$\n$$\n\\begin{aligned}\n& \\Rightarrow x^2+(2-y) x+(4-2 y)=0 \\\\\n& \\Rightarrow \\quad(2-y)^2-4(4-2 y) \\geq 0 \\\\\n& \\Rightarrow \\quad y^2+4 y-12 \\geq 0 \\\\\n& \\Rightarrow \\quad y \\leq-6, y \\geq 2 \\\\\n&\n\\end{aligned}\n$$\n$\\therefore$ Minimum value of $y$ is 2 .\n(B) Since, $(A+B)(A-B)=(A-B)(A+B)$\n$$\n\\begin{aligned}\n& \\Rightarrow \\quad A^2-A B+B A-B^2=A^2+A B-B A-B^2 \\\\\n& \\Rightarrow \\quad A B=B A \\\\\n& \\text { and } \\quad(A B)^t=(-1)^k A B \\\\\n& \\Rightarrow \\quad B^t A^t=(-1)^k A B \\\\\n& \\Rightarrow \\quad-B A=(-1)^k A B \\quad\\left[\\because B^t=-B, A^t=A\\right] \\\\\n& \\Rightarrow \\quad B A=(-1)^{k+1} A B \\\\\n& \\Rightarrow \\quad(-1)^{k+1}=1 \\\\\n&\n\\end{aligned}\n$$\n\n$\\therefore k+1$ is even or $k$ is odd.\n(C) $1 < 2^{\\left(-k+3^{-a}\\right)} < 2 \\Rightarrow 0 < -k+3^{-a} < 1$\nGiven, $a=\\log _3 \\log _3 2 \\Rightarrow 3^a=\\log _3 2$\n$$\n\\begin{array}{lc}\n\\Rightarrow & 3^{-a}=\\log _2 3 \\\\\n\\therefore & k < \\log _2 3 < 2 \\\\\n\\text { and } & 1+k>\\log _2 3>1 \\Rightarrow k>0\n\\end{array}\n$$\nFrom Eqs. (ii) and (iii), $0 < k < 2 \\Rightarrow k=1$\n$[\\because k$ is an integer]\n$$\n\\begin{array}{rlrl}\n\\text { (D) } & \\sin \\theta & =\\cos \\phi \\\\\n\\Rightarrow & \\cos \\left(\\frac{\\pi}{2}-\\theta\\right) & =\\cos \\phi \\\\\n\\Rightarrow & \\frac{\\pi}{2}-\\theta & =2 n \\pi \\pm \\phi, n \\in Z \\\\\n\\Rightarrow & & \\theta \\pm \\phi-\\frac{\\pi}{2} & =-2 n \\pi, n \\in Z \\\\\n\\Rightarrow & & \\frac{1}{\\pi}\\left(\\theta \\pm \\phi-\\frac{\\pi}{2}\\right) & =-2 n, n \\in Z\n\\end{array}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1f77301f65c2f92c43", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2008-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2008 (Paper 2)", "title": "JEE Advanced 2008 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'JEE Advanced';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

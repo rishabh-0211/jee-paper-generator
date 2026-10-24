@@ -1,0 +1,1198 @@
+{
+  "index": 16,
+  "chapterId": "61e7bd73b2dc4992b0cb6ff0",
+  "chapter": "Parabola",
+  "exam": "BITSAT",
+  "subject": "Mathematics",
+  "totalTopics": 8,
+  "totalQuestions": 17,
+  "downloadTime": "2026-10-08 20:37:01",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e86a6f5bfc7ab78aedec",
+      "title": "standard equation of parabola",
+      "totalQuestions": 6,
+      "questions": [
+        {
+          "_id": "65b7b88297ae24e9e2db8d13",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "If vertex of a parabola is $(2,-1)$ and the equation of its directrix is $4 x-3 y=21$, then the length of its latus rectum is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "SMx9e",
+              "text": "<br />2",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "THBLY",
+              "text": "<br />8",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "rqZYO",
+              "text": "<br />12",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2CbdP",
+              "text": "<br />16",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/Jc4A2EcuWpvDYNl2WTCINIf_f2JCSHl9TOE5Qf0ooo0.original.fullsize.png\"><br><br />We are given that directrix of the parabola is $4 x-3 y=21$ and vertex of the parabola is $(2,-1)$<br />Now $a=\\frac{|8+3-21|}{5}=\\frac{10}{5}=2$<br />$\\therefore \\quad$ latus rectum of the parabola $=4 a=8$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e81b6f5bfc7ab78aeaa3",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The length of the latus rectum of the parabola which has focus at (-1,1) and the directrix is $4 \\mathrm{x}$ $+3 y-24=0$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "q49am",
+              "text": "4",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "IdNhV",
+              "text": "6",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "XgNND",
+              "text": "8",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "23DJK",
+              "text": "10",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Length of latus rectum $=2 \\times$ distance of focus from directrix $=2 \\times \\frac{|1-4+3-24|}{5}=10$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e80c6f5bfc7ab78aea24",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Suppose a parabola <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi></math> has two <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math> intercepts, one positive and one negative, and its vertex is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mn>2</mn><mo>,</mo><mo>-</mo><mn>2</mn><mo>)</mo></math>, then which of the following is true?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "hf47J",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mi>b</mi><mo>&#62;</mo><mn>0</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "gNKko",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi><mi>c</mi><mo>&#62;</mo><mn>0</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "QU6qW",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mi>c</mi><mo>&#62;</mo><mn>0</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "4cZGO",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>&#62;</mo><mn>0</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Given, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi></math> has two <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math>-intercepts one is positive and one is negative and vertex is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mn>2</mn><mo>,</mo><mo>-</mo><mn>2</mn><mo>)</mo></math>. The graph of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi></math> is</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/2ea76fa3-d1ce-4ab3-ae57-cb22a3955241-image.png\" style=\"width: 268px; height: 200px;\" /></p><p>Clearly from graph</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>c</mi><mo>&#62;</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mfrac><mi>b</mi><mi>a</mi></mfrac><mo>&#62;</mo><mn>0</mn><mo>&#8658;</mo><mo>-</mo><mi>b</mi><mo>&#62;</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>b</mi><mo>&#60;</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mn>1</mn><mo>)</mo><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>&#60;</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mi>b</mi><mo>&#60;</mo><mn>0</mn><mo>,</mo><mi>a</mi><mi>c</mi><mo>&#60;</mo><mn>0</mn><mo>,</mo><mi>b</mi><mi>c</mi><mo>&#62;</mo><mn>0</mn></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7e36f5bfc7ab78ae8bd",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The parabola having its focus at (3,2) and directrix along the $y$ -axis has its vertex at",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ctU9F",
+              "text": "(2,2)",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Kq2FM",
+              "text": "$\\left(\\frac{3}{2}, 2\\right)$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "r3FDk",
+              "text": "$\\left(\\frac{1}{2}, 2\\right)$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "xAF0k",
+              "text": "$\\left(\\frac{2}{3}, 2\\right)$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Vertex of the parabola is a point which lies on the axis of the parabola, which is a line $\\perp$ to the directrix through the focus, i.e., $\\mathrm{y}=2$ and equidistant from the focus and directrix $\\mathrm{x}=0$, so that the vertex is $\\left(\\frac{3}{2}, 2\\right)$.\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/PkW1gn8WS5cRe03gXSSNlVFkujUv8OduAh8NQ1i13KU.original.fullsize.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7976f5bfc7ab78ae636",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "The length of the latus-rectum of the parabola whose focus is \\(\\left(\\frac{u^2}{2 g} \\sin 2 \\alpha,-\\frac{u^2}{2 g} \\cos 2 \\alpha\\right)\\) and directrix is \\(y=\\frac{u^2}{2 g}\\), is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ZlypX",
+              "text": "\\(\\frac{u^2}{g} \\cos ^2 \\alpha\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "AAcJD",
+              "text": "\\(\\frac{u^2}{g} \\cos 2 \\alpha\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "HpzE8",
+              "text": "\\(\\frac{2 u^2}{g} \\cos ^2 2 \\alpha\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "toMhe",
+              "text": "\\(\\frac{2 u^2}{g} \\cos ^2 \\alpha\\)",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "According to the figure, the length of latus rectum is\n\\(2(S M)=2 \\times \\frac{u^2}{2 g}(1+\\cos 2 \\alpha)=\\frac{2 u^2 \\cos ^2 \\alpha}{g} .\\)\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/KsiJvQnmYP5iFazmQ_rT-r9ryUB4O8eOkjKesxo9Odg.original.fullsize.png\"><br>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e77b6f5bfc7ab78ae538",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "The line \\(3 x-4 y+7=0\\) is rotated through an angle \\(\\frac{\\pi}{4}\\) in the clockwise direction about the point \\((-1,1)\\). The equation of the line in its new position is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "W78Fo",
+              "text": "\\(7 y+x-6=0\\)",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "iJr6t",
+              "text": "\\(7 y-x-6=0\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "G8IfM",
+              "text": "\\(7 y+x+6=0\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "awbcj",
+              "text": "\\(7 y-x+6=0\\)",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "As \\((-1,1)\\) is a point on \\(3 x-4 y+7=0\\), the rotation is possible. Slope of the given line \\(=3 / 4\\). Slope of the line in its new position\n\\(=\\frac{\\frac{3}{4}-1}{1+\\frac{3}{4}}=-\\frac{1}{7}\\)\nThe required equation is\n\\(\\mathrm{y}-1=-\\frac{1}{7}(\\mathrm{x}+1) \\text { or } 7 \\mathrm{y}+\\mathrm{x}-6=0\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e86a6f5bfc7ab78aedef",
+      "title": "Chord of parabola",
+      "totalQuestions": 3,
+      "questions": [
+        {
+          "_id": "67726cffc49e8ef28ee2b373",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Let $L_1$ be the length of the common chord of the curves $x^2+y^2=9$ and $y^2=8 x$, and $L_2$ be the length of the latus rectum of $y^2=8 x$, then:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "X7Pxa",
+              "text": "$\\mathrm{L}_1\\gt\\mathrm{L}_2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wK3TE",
+              "text": "$\\mathrm{L}_1=\\mathrm{L}_2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "OnEpK",
+              "text": "$\\mathrm{L}_1 \\lt \\mathrm{L}_2$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "9yZql",
+              "text": "$\\frac{\\mathrm{L}_1}{\\mathrm{~L}_2}=\\sqrt{2}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/2oaAZTrXZKqnZTG-ScU2SBxa-MeuL7zO9oEpGvxgIeU.original.fullsize.png\"/>\nWe have : $x^2+(8 x)=9$\n$\\Rightarrow x^2+9 x-x-9=0$\n$\\Rightarrow x(x+9)-1(x+9)=0$\n$\\Rightarrow(x+9)(x-1)=0 \\quad \\Rightarrow x=-9,1$\nfor $x=1, y= \\pm 2 \\sqrt{2 x}= \\pm 2 \\sqrt{2}$\n$\\sqrt{(2 \\sqrt{2}+2 \\sqrt{2})^2+(1-1)^2}=4 \\sqrt{2}$\n$\\mathrm{L}_n=$ Length of latus rectum $=4 a=4 \\times 2=8$\n$\\mathrm{L}_1 \\lt \\mathrm{L}_2$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7d36f5bfc7ab78ae82e",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "Let $\\mathrm{S}$ be the focus of the parabola $\\mathrm{y}^{2}=8 \\mathrm{x}$ and $\\mathrm{PQ}$ be the common chord of the circle $\\mathrm{x}^{2}+\\mathrm{y}^{2}-2 \\mathrm{x}-$ $4 y=0$ and the given parabola. The area of $\\Delta P Q S$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Dzuqd",
+              "text": "$4 \\mathrm{sq}$ units",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "qSiuC",
+              "text": "$3 \\mathrm{sq}$ units",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "s92bX",
+              "text": "2 sq units",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "93KXa",
+              "text": "$8 s q$ units",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The parametric equations of the parabola $y^{2}=8 x$ are $x=2 t^{2}$ and $y=4 t$\r\n\r\nand the given equation of circle is\r\n\r\n$x^{2}+y^{2}-2 x-4 y=0$\r\n\r\nOn putting $x=2 t^{2}$ and $y=4$ t in circle\r\n\r\nwe get\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n4 t^{4}+16 t^{2}-4 t^{2}-16 t=0 \\\\\r\n\r\n\\Rightarrow 4 t^{2}+12 t^{2}-16 t=0 \\\\\r\n\r\n\\Rightarrow 4 t\\left(t^{3}+3 t-4\\right)=0 \\\\\r\n\r\n\\Rightarrow t(t-1)\\left(t^{2}+t+4\\right)=0 \\\\\r\n\r\n\\Rightarrow t=0, t=1 \\\\\r\n\r\n\\quad\\left[\\because t^{2}+t+4 \\neq 0\\right]\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nThus the coordinates of points of intersection of the circle and the parabola are $\\mathrm{Q}(0,0)$ and $\\mathrm{P}(2,4) .$ Clearly these are diametrically opposite points on the circle.\r\n\r\nThe coordinates of the focus $\\mathrm{S}$ of the parabola are (2,0) which lies on the circle.\r\n\r\n$$\r\n\r\n\\begin{aligned}\r\n\r\n\\therefore \\text { Area of } \\Delta \\mathrm{PQS} &=\\frac{1}{2} \\times \\mathrm{QS} \\times \\mathrm{SP}=\\frac{1}{2} \\times 2 \\times 4 \\\\\r\n\r\n&=4 \\mathrm{sq} . \\text { units. }\r\n\r\n\\end{aligned}\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c76f5bfc7ab78ae7c9",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "Through the vertex $\\mathrm{O}$ of a parabola $\\mathrm{y}^{2}=4 \\mathrm{x}$, chords OP and $O Q$ are drawn at right angles to one another. The locus of the middle point of $\\mathrm{PQ}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "bHJd1",
+              "text": "$y^{2}=2 x+8$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "KznN2",
+              "text": "$\\quad y^{2}=x+8$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "8yf0c",
+              "text": "$y^{2}=2 x-8$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "7xa8c",
+              "text": "$\\quad y^{2}=x-8$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given parabola is $\\mathrm{y}^{2}=4 ...(1)\r\n\r\n\\mathrm{x}$ Let $\\mathrm{P} \\equiv\\left(\\mathrm{t}_{1}^{2}, 2 \\mathrm{t}_{1}\\right)$ and $\\mathrm{Q} \\equiv\\left(\\mathrm{t}_{2}^{2}, 2 \\mathrm{t}_{2}\\right)$\r\n\r\nSlope of $\\mathrm{OP}=\\frac{2 \\mathrm{t}_{1}}{\\mathrm{t}_{1}^{2}}=\\frac{2}{\\mathrm{t}_{1}}$ and slope of $\\mathrm{OQ}=\\frac{2}{\\mathrm{t}_{2}}$\r\n\r\nSince $\\mathrm{OP} \\perp \\mathrm{OQ}, \\therefore \\frac{4}{\\mathrm{t}_{1} \\mathrm{t}_{2}}=-1$ or $\\mathrm{t}_{1} \\mathrm{t}_{2}=-4 \\ldots(2)$\r\n\r\nLet $\\mathrm{R}(\\mathrm{h}, \\mathrm{k})$ be the middle point of $\\mathrm{PQ},$ then $\\mathrm{h}=\\frac{\\mathrm{t}_{1}^{2}+\\mathrm{t}_{2}^{2}}{2} \\quad \\ldots(3) \\quad$ and $\\quad \\mathrm{k}=\\mathrm{t}_{1}+\\mathrm{t}_{2} \\ldots(4)$\r\n\r\nFrom $(4), \\mathrm{k}^{2}=\\mathrm{t}_{1}^{2}+\\mathrm{t}_{2}^{2}+2 \\mathrm{t}_{1} \\mathrm{t}_{2}=2 \\mathrm{~h}-8 \\quad[\\mathrm{From}$\r\n\r\n(2) and (3)] Hence locus of $\\mathrm{R}(\\mathrm{h}, \\mathrm{k})$ is $\\mathrm{y}^{2}=2 \\mathrm{x}-8$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e86b6f5bfc7ab78aedf2",
+      "title": "Line and parabola",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "67726d0cc49e8ef28ee2b3d5",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "If the focus of parabola $(y-k)^2=4(x-h)$ always lies between the lines $x+y=1$ and $x+y$ $=3$ then",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "OeVHl",
+              "text": "$0 \\lt h+k \\lt 2$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Hy8re",
+              "text": "$0 \\lt h+k \\lt 1$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "DpfCY",
+              "text": "$1 \\lt h+k \\lt 2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "9jsEC",
+              "text": "$1 \\lt h+k \\lt 3$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Coordinate of focus will be $(h+1, k)$\nNow focus should lie to the opposite side of origin with respect to line $x+y-1=0$ and same side as origin with respect to line $x+y-3=0$\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/fdTEuHK189IRVanbSf-fKb92yc4KighvaLBkklCp8Gs.original.fullsize.png\"/>\nHence $h+k\\gt0$ and $h+k \\lt 2$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8346f5bfc7ab78aeb7e",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "If the straight line $y=m x+c$ touches the parabola $y^2-4 a x+4 a^3=0$, then $c$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "oACqu",
+              "text": "\r\n$a m+\\frac{a}{m}$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "G0obR",
+              "text": "\r\n$a m-\\frac{a}{m}$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "VXYrD",
+              "text": "\r\n$\\frac{a}{m}+a^2 m$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "8fj3L",
+              "text": "\r\n$\\frac{a}{m}-a^2 m$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Solving the given equations,\r\n$$\r\n\\begin{aligned}\r\n&(m x+c)^2=4 a x-4 a^3 \\\\\r\n& \\Rightarrow m^2 x^2+2 m c \\cdot x+c^2=4 a x-4 a^3 \\\\\r\n& \\Rightarrow m^2 x^2+(2 m c-4 a) x+c^2+4 a^3=0\r\n\\end{aligned}\r\n$$\r\nSince the straight line touches the parabola at a point, so, the discriminant $=0$\r\n$$\r\n\\begin{aligned}\r\n& \\Rightarrow \\quad(2 m c-4 a)^2-4 m^2\\left(c^2+4 a^3\\right)=0 \\\\\r\n& \\Rightarrow 4 m^2 c^2-16 a m c+16 a^2-4 m^2 c^2-16 a^3 m^2=0 \\\\\r\n& \\Rightarrow-m c+a-a^2 m^2=0 \\\\\r\n& \\Rightarrow m c=a-a^2 m^2 \\Rightarrow c=\\frac{a}{m}-a^2 m\r\n\\end{aligned}\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "64c0e86a6f5bfc7ab78aedee",
+      "title": "Tangent to Parabola",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e7b56f5bfc7ab78ae731",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "If the line $2 \\mathrm{x}-3 \\mathrm{y}=\\mathrm{k}$ touches the parabola $\\mathrm{y}^{2}=6 \\mathrm{x},$ then find the value of $\\mathrm{k}$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "nZoGP",
+              "text": "$-15 / 4$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "PrOBQ",
+              "text": "$-27 / 4$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "a7sNm",
+              "text": "$-1 / 4$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "XEzbJ",
+              "text": "$-3 / 4$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$$\r\n\r\n\\text {  } \\begin{aligned}\r\n\r\n\\text { Given } x=\\frac{3 y+k}{2} & \\ldots \\ldots . . \\\\\r\n\r\n\\text { and } y^{2}=6 x & \\\\\r\n\r\n\\Rightarrow y^{2}=6\\left(\\frac{3 y+k}{2}\\right) \\\\\r\n\r\n\\Rightarrow y^{2}=3(3 y+k) \\Rightarrow y^{2}-9 y-3 k=0 & \\ldots \\ldots . .\r\n\r\n\\end{aligned}\r\n\r\n$$\r\n\r\nIf line (1) touches parabola (2) then roots of quadratic equation ( 3 ) is equal $\\therefore(-9)^{2}=4 \\times 1 \\times(-3 k) \\Rightarrow k=-27 / 4$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "topicId": "64c0e86a6f5bfc7ab78aedf1",
+      "title": "Normal to Parabola",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "64c0e8346f5bfc7ab78aeb7f",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "A normal is drawn at the point $P$ to the parabola $y^2=8 x$, which is inclined at $60^{\\circ}$ with the straight line $y=8$. Then the point $P$ lies on the straight line",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "dl2mH",
+              "text": "\r\n$2 x+y-12-4 \\sqrt{3}=0$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "vrzcE",
+              "text": "\r\n$2 x-y-12+4 \\sqrt{3}=0$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "xbuOo",
+              "text": "\r\n$2 x-y-12-4 \\sqrt{3}=0$\r\n",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "ffl1u",
+              "text": "\r\nNone of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "For the parabola $y^2=4 a x$, the equation of normal at $P\\left(a m^2,-2 a m\\right)$ is $y=m x-2 a m-a m^3$.\r\nHere, $m=\\tan 60^{\\circ}=\\sqrt{3}$\r\n$\\therefore P \\equiv\\left(a(\\sqrt{3})^2,-2 a(\\sqrt{3})\\right) \\equiv(6,-4 \\sqrt{3}) \\quad(\\because a=2)$\r\nThus, $P$ satisfies $2 x-y-12-4 \\sqrt{3}=0$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7fd6f5bfc7ab78ae9a0",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Normals drawn to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>4</mn><mi>a</mi><mi>x</mi></math> at the points where it is intersected by the line <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>m</mi><mi>x</mi><mo>+</mo><mi>c</mi></math> intersected at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi></math>. Coordinates of foot of the another normal drawn to the parabola from the point <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi></math> is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Wx48t",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mfrac><mi>a</mi><msup><mi>m</mi><mn>2</mn></msup></mfrac><mo>,</mo><mo>-</mo><mfrac><mrow><mn>2</mn><mi>a</mi></mrow><mi>m</mi></mfrac></mrow></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ohJDk",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mfrac><mn>9</mn><mi>m</mi></mfrac><mo>,</mo><mo>-</mo><mfrac><mrow><mn>6</mn><mi>a</mi></mrow><mi>m</mi></mfrac></mrow></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "oBJ1B",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mi>a</mi><msup><mi>m</mi><mn>2</mn></msup><mo>,</mo><mo>-</mo><mn>2</mn><mi>a</mi><mi>m</mi></mrow></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "8Oezl",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mfrac><mrow><mn>4</mn><mi>a</mi></mrow><msup><mi>m</mi><mn>2</mn></msup></mfrac><mo>,</mo><mo>-</mo><mfrac><mrow><mn>4</mn><mi>a</mi></mrow><mi>m</mi></mfrac></mrow></mfenced></math>",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>m</mi><mi>x</mi><mo>+</mo><mi>c</mi></math>,&nbsp;intersect <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>4</mn><mi>a</mi><mi>x</mi></math> at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mfenced><mrow><mi>a</mi><msubsup><mi>t</mi><mn>1</mn><mn>2</mn></msubsup><mo>,</mo><mn>2</mn><mi>a</mi><msub><mi>t</mi><mn>1</mn></msub></mrow></mfenced></math> and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi><mfenced><mrow><mi>a</mi><msubsup><mi>t</mi><mn>2</mn><mn>2</mn></msubsup><mo>,</mo><mn>2</mn><mi>a</mi><msub><mi>t</mi><mn>2</mn></msub></mrow></mfenced></math>.</p><p>Then,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>2</mn><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>+</mo><msub><mi>t</mi><mn>2</mn></msub></mrow></mfrac><mo>=</mo><mi>m</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><msub><mi>t</mi><mn>1</mn></msub><mo>+</mo><msub><mi>t</mi><mn>2</mn></msub><mo>=</mo><mfrac><mn>2</mn><mi>m</mi></mfrac></math></p><p>Let the foot of another normal be <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi><mfenced><mrow><mi>a</mi><msubsup><mi>t</mi><mn>3</mn><mn>2</mn></msubsup><mo>,</mo><mn>2</mn><mi>a</mi><msub><mi>t</mi><mn>3</mn></msub></mrow></mfenced></math></p><p>Then,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>t</mi><mn>1</mn></msub><mo>+</mo><msub><mi>t</mi><mn>2</mn></msub><mo>+</mo><msub><mi>t</mi><mn>3</mn></msub><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>t</mi><mn>3</mn></msub><mo>=</mo><mfenced><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>+</mo><msub><mi>t</mi><mn>2</mn></msub></mrow></mfenced><mo>=</mo><mo>-</mo><mfrac><mn>2</mn><mi>m</mi></mfrac></math></p><p>Thus, other foot is&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mfrac><mrow><mn>4</mn><mi>a</mi></mrow><msup><mi>m</mi><mn>2</mn></msup></mfrac><mo>,</mo><mfrac><mrow><mo>-</mo><mn>4</mn><mi>a</mi></mrow><mi>m</mi></mfrac></mrow></mfenced></math></p><p>Hence, option (d) is correct.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "topicId": "65b7b89d97ae24e9e2db8d36",
+      "title": "Common Tangent",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "65b7b87897ae24e9e2db8cad",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "The equation of a common tangent to the parabolas $y=x^2$ and $y=-(x-2)^2$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "IXRPC",
+              "text": "$y=4(x-2)$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "TUSEO",
+              "text": "$y=4(x-1)$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "DsleW",
+              "text": "$y=4(x+1)$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "se7aN",
+              "text": "$y=4(x+2)$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Equation of tangent of parabola $y=x^2$ be <br />$t x=y+a t^2$ ...(i)<br />$y=t x-\\frac{t^2}{4}$<br />Solve with $\\mathrm{y}=-(\\mathrm{x}-2)^2$<br />$t x-\\frac{t^2}{4}=-(x-2)^2$<br />$x^2+x(t-4)-\\frac{t^2}{4}+4=0$<br />Here, Discriminant $=0$.<br />$(t-4)^2-4 \\cdot\\left(4-\\frac{t^2}{4}\\right)=0 \\Rightarrow t^2-4 t=0 \\Rightarrow t=0$<br />or $\\mathrm{t}=4$<br />Put value of $t$ in eq. (i), then $y=4(x-1)$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "topicId": "64c0e86a6f5bfc7ab78aeded",
+      "title": "Director Circle",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e7896f5bfc7ab78ae5b4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "If the equations of the pairs of opposite sides of a parallelogram are \\(x^2-5 x+6=0\\) and \\(y^2-6 y+5=0\\), then equations of its diagonals are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "C1ERA",
+              "text": "\\(x+4 y=13, y=4 x-7\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "MRTJO",
+              "text": "\\(4 x+y=13,4 y=x-7\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BGX62",
+              "text": "\\(4 x+y=13, y=4 x-7\\)",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "YbedB",
+              "text": "\\(y-4 x=13, y+4 x=7\\)",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Equations of the sides of the parallelogram are\n\\((x-3)(x-2)=0\\) and \\((y-5)(y-1)=0\\)\ni.e. \\(x=3, x=2 ; y=5, y=1\\)\nHence its vertices are : \\(\\mathrm{A}(2,1) ; \\mathrm{B}(3,1)\\); \\(\\mathrm{C}(3,5) ; \\mathrm{D}(2,5)\\)\nEquation of the diagonal \\(\\mathrm{AC}\\) is\n\\(y-1=\\frac{4}{1}(x-2) \\Rightarrow y=4 x-7\\)\nEquation of the diagonal \\(\\mathrm{BD}\\) is\n\\(y-1=\\frac{4}{-1}(x-3) \\Rightarrow 4 x+y=13\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "topicId": "64c0e86a6f5bfc7ab78aedf0",
+      "title": "Locus",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e7e36f5bfc7ab78ae8bc",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "The locus of the point of intersection of two tangents to the parabola $y^{2}=4 a x,$ which are at right angle to one another is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "8weOJ",
+              "text": "$x^{2}+y^{2}=a^{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "IwcYi",
+              "text": "$a y^{2}=x$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "7f6eu",
+              "text": "$x+a=0$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "PIuC9",
+              "text": "$x+y \\pm a=0$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let the two tangents to the parabola \\(y^{2}=4 a x\\) be \\(P T\\) and \\(Q T\\) which are at right angle to one another at \\(\\mathrm{T}(\\mathrm{h}, \\mathrm{k})\\).\r\n\r\nThen we have a find the locus of \\(\\mathrm{T}(\\mathrm{h}, \\mathrm{k})\\).\r\n\r\nWe know that \\(y=m x+\\frac{a}{m}\\), where \\(m\\) is the slope is the equation of tangent to the parabola \\(\\mathrm{y}^{2}=4 \\mathrm{ax}\\) for all \\(\\mathrm{m}\\).\r\n\r\nSince this tangent to the parabola will pass through \\(\\mathrm{T}(\\mathrm{h}, \\mathrm{k})\\), so\r\n\r\n\\(\\mathrm{k}=\\mathrm{mh}+\\frac{\\mathrm{a}}{\\mathrm{m}} ; \\text { or } \\mathrm{m}^{2} \\mathrm{~h}-\\mathrm{mk}+\\mathrm{a}=0\\)\r\n\r\nThis is a quadratic equation in \\(m\\), so will have two roots, say \\(m_{1}\\) and \\(m_{2}\\), then \\(\\mathrm{m}_{1}+\\mathrm{m}_{2}=\\frac{\\mathrm{k}}{\\mathrm{h}}\\), and \\(\\mathrm{m}_{1} \\cdot \\mathrm{m}_{2}=\\frac{\\mathrm{a}}{\\mathrm{h}}\\)\r\n\r\nGiven that the two tangents intersect at right angle so\r\n\r\n\\(\\mathrm{m}_{1} \\cdot \\mathrm{m}_{2}=-1 \\text { or } \\frac{\\mathrm{a}}{\\mathrm{h}}=-1 \\text { or } \\mathrm{h}+\\mathrm{a}=0\\)\r\n\r\nThe locus of \\(\\mathrm{T}(\\mathrm{h}, \\mathrm{k})\\) is \\(\\mathrm{x}+\\mathrm{a}=0\\), which is the equation of directrix.\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/ehwyyskwi38789.png\">",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

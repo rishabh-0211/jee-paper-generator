@@ -1,0 +1,1521 @@
+{
+  "index": 14,
+  "chapterId": "616024c15b7ec0ebdc280241",
+  "chapter": "Environmental Chemistry",
+  "exam": "NTA Abhyas (JEE Main)",
+  "totalTopics": 3,
+  "totalQuestions": 24,
+  "downloadTime": "2026-10-08 20:05:03",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "6aa3ab79aa8dc1ff68177ed5",
+      "title": "Environmental Pollution and Pollutants",
+      "totalQuestions": 4,
+      "questions": [
+        {
+          "_id": "6151e863a27c25e1cd9cabe6",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "07",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is a sink for CO?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "mumDH",
+              "text": "Haemoglobin",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "YJXOq",
+              "text": "Microorganisms present in the soil",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "cd7kH",
+              "text": "Oceans",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "sKMG0",
+              "text": "Plants",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Microorganisms present in the soil act as a sink for carbon monoxide",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8637775532a0dade32d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "14",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following compounds is used in anti-knock compositions to prevent the deposition of oxides of lead on spark plug, combustion chamber and exhaust pipe?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "eu775",
+              "text": "Benzene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "TTNcG",
+              "text": "Glycol",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "NilVf",
+              "text": "1, 2-Dibromoethane",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "6jhXs",
+              "text": "Glycerol",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math> <mrow>  <mtext>1,&#x00A0;2-dibromoethane</mtext></mrow></math> compound is used in antiknock compositions to prevent lead from being deposited in the cylinder head. It is sufficiently volatile and can be removed with the exhaust gas from the exhaust pipe.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8635f3232561ea21432",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "96",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which is the most hazardous metal pollutant of automobile exhaust",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "FMa6M",
+              "text": "Mercury",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "xK157",
+              "text": "2 Tin",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2USTd",
+              "text": "3 Cadmium",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "QIcfE",
+              "text": "4 Lead",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Lead acts as a toxic substance.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8635d21d0dee311cf97",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "100",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Minamata disease is due to pollution of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "lgeaI",
+              "text": "Organic waste into drinking water",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "hArjK",
+              "text": "Oil spill in water",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "aU5vz",
+              "text": "Industrial waste mercury into fishing water",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "5R9gT",
+              "text": "Arsenic into the atmosphere",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Mercury poisoning often produces a crippling and fatal disease called Minamata disease.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "6aa3ab79aa8dc1ff68177ed4",
+      "title": "Air Pollution",
+      "totalQuestions": 13,
+      "questions": [
+        {
+          "_id": "6151e863f2051c7edd20fcdb",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "105",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following are common components of photochemical smog?<br />\r<math><mn>1</mn><mo>.</mo></math> Chlorofluorocarbons<br />\r<math><mn>2</mn><mo>.</mo></math> Acrolein<br />\r<math><mn>3</mn><mo>.</mo></math> Ozone<br />\r<math><mn>4</mn><mo>.</mo></math> Peroxyacetyl nitrate",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "pB88m",
+              "text": "2, 3",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "NCykO",
+              "text": "3, 4",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "hnWcd",
+              "text": "1, 2",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "UGElM",
+              "text": "2, 3, 4",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The common components of photochemical smog are Ozone, Nitric oxide, Acrolein, Formaldehyde<br />and Peroxyacehyl nitrate (PAN).<br />Hence Chlorofluorocarbons (CFC) is not common component of photochemical smog.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863c9e0c5d1e6792548",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "12",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "How many of the following pollutants are considered as non-viable particulate pollutants? Smoke, dust, fungi, mists, moulds, algae, smog, bacteria, fumes",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "5",
+          "solution": {
+            "text": "<table border=\"1px solid\">\t<thead>\t\t<tr>\t\t\t<th>Type of particulate pollutants</th>\t\t\t<th>Examples</th>\t\t</tr>\t</thead>\t<tbody>\t\t<tr>\t\t\t<td>Viable particulates</td>\t\t\t<td>Fungi, moulds, algae, bacteria</td>\t\t</tr>\t\t<tr>\t\t\t<td>Non-viable particulates</td>\t\t\t<td>Smoke, dust, mists, smog, fumes</td>\t\t</tr>\t</tbody></table>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863c5d6270995c693e2",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "48",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Photochemical smog consists of excessive amount of X, in addition to aldehydes, ketones, peroxyacetyl nitrates (PAN) and so forth X is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ezcK8",
+              "text": "<math><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>4</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "oyjte",
+              "text": "<math><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">O</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "dOqTC",
+              "text": "<math><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "gG8iB",
+              "text": "<math><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Chemical pollutants in photochemical smog are nitrogen oxides (NO and  <math><mi mathvariant=\"normal\">N</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub></math> ), volatile organic compounds, ozone  <math><mfenced separators=\"|\"><mrow><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub></mrow></mfenced></math> , peroxyacetyl nitrates.<br/><br/>In the presence of sunlight of the following reactions take place<br/><br/> <math><mi mathvariant=\"normal\">N</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub><mover accent=\"false\"><mo>→</mo><mrow><mi mathvariant=\"normal\">h</mi><mi mathvariant=\"normal\">v</mi></mrow></mover><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">O</mi><mo>+</mo><mi mathvariant=\"normal\">O</mi></math> <br/><br/> <math><mi mathvariant=\"normal\">O</mi><mo>+</mo><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>→</mo><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub></math> <br/><br/> <math><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>+</mo><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">O</mi><mo>→</mo><mi mathvariant=\"normal\">N</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>+</mo><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub></math> <br/><br/>Hence, it consists of excessive amount of ozone melecules.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863a27c25e1cd9cabe6",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "07",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is a sink for CO?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "mumDH",
+              "text": "Haemoglobin",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "YJXOq",
+              "text": "Microorganisms present in the soil",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "cd7kH",
+              "text": "Oceans",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "sKMG0",
+              "text": "Plants",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Microorganisms present in the soil act as a sink for carbon monoxide",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8638c0a3e65cd23422b",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "06",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Identify the pollutant gases largely responsible for the discoloured and lustreless nature of marble of the Taj Mahal.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Tjj9W",
+              "text": "<math><mtext>S</mtext><msub><mrow><mtext>O</mtext></mrow><mrow><mn>2</mn></mrow></msub><mtext>&nbsp;</mtext><mtext mathvariant=\"normal\">a</mtext><mtext mathvariant=\"normal\">n</mtext><mtext mathvariant=\"normal\">d</mtext><mtext>&nbsp;</mtext><msub><mrow><mtext>O</mtext></mrow><mrow><mn>3</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "IRkQ7",
+              "text": "<math><msub><mrow><mtext>O</mtext></mrow><mrow><mn>3</mn></mrow></msub><mtext> </mtext><mtext mathvariant=\"normal\">a</mtext><mtext mathvariant=\"normal\">n</mtext><mtext mathvariant=\"normal\">d</mtext><mtext> </mtext><mtext>C</mtext><msub><mrow><mtext>O</mtext></mrow><mrow><mn>2</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qcBDA",
+              "text": "<math><mtext> S</mtext><msub><mrow><mtext>O</mtext></mrow><mrow><mn>2</mn></mrow></msub><mtext mathvariant=\"normal\">&nbsp;a</mtext><mtext mathvariant=\"normal\">n</mtext><mtext mathvariant=\"normal\">d</mtext><mtext>&nbsp;</mtext><mtext>N</mtext><msub><mrow><mtext>O</mtext></mrow><mrow><mn>2</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "QfxUT",
+              "text": "<math><mtext>C</mtext><msub><mrow><mtext>O</mtext></mrow><mrow><mn>2</mn></mrow></msub><mtext> </mtext><mtext mathvariant=\"normal\">a</mtext><mtext mathvariant=\"normal\">n</mtext><mtext mathvariant=\"normal\">d</mtext><mtext> </mtext><mtext>N</mtext><msub><mrow><mtext>O</mtext></mrow><mrow><mn>2</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The pollutant gases <math><mtext>S</mtext><msub><mrow><mtext>O</mtext></mrow><mrow><mn>2</mn></mrow></msub><mtext>&nbsp;</mtext><mtext mathvariant=\"normal\">a</mtext><mtext mathvariant=\"normal\">n</mtext><mtext mathvariant=\"normal\">d</mtext><mtext>&nbsp;</mtext><mtext>N</mtext><msub><mrow><mtext>O</mtext></mrow><mrow><mn>2</mn></mrow></msub></math> largely responsible for the discoloured and lustreless nature of marble of the Taj Mahal.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8638889a778fa5358f7",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "69",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The reaction that is not involved in the ozone layer depletion mechanism in the stratosphere is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "MFTNy",
+              "text": "<math><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">l</mi><msub><mrow><mover><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mo>⋅</mo></mrow></mover></mrow><mrow><mo>(</mo><mi mathvariant=\"normal\">g</mi><mo>)</mo></mrow></msub><mo>+</mo><mo>(</mo><mi mathvariant=\"normal\">O</mi><msub><mrow><mo>)</mo></mrow><mrow><mi mathvariant=\"normal\">g</mi></mrow></msub><mo>→</mo><mover><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mo>⋅</mo></mrow></mover><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mo>(</mo><mi mathvariant=\"normal\">g</mi><mo>)</mo></mrow></msub><mo>+</mo><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn><mo>(</mo><mi mathvariant=\"normal\">g</mi><mo>)</mo></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wKy5m",
+              "text": "<math><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mo>(</mo><mi mathvariant=\"normal\">g</mi><mo>)</mo></mrow></msub><mo>→</mo><mover><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mo>⋅</mo></mrow></mover><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mo>(</mo><mi mathvariant=\"normal\">g</mi><mo>)</mo></mrow></msub><mo>+</mo><mover><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mo>⋅</mo></mrow></mover><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mo>(</mo><mi mathvariant=\"normal\">g</mi><mo>)</mo></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "q8I2v",
+              "text": "<math><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>4</mn></mrow></msub><mo>+</mo><mn>2</mn><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>→</mo><mn>3</mn><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mi mathvariant=\"normal\">O</mi><mo>+</mo><mn>2</mn><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">O</mi></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "l4e3L",
+              "text": "<math><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>2</mn><mo>(</mo><mi mathvariant=\"normal\">g</mi><mo>)</mo></mrow></msub><mover accent=\"false\"><mo>→</mo><mrow><mo> </mo><mi mathvariant=\"normal\">h</mi><mi mathvariant=\"normal\">v</mi><mo> </mo></mrow></mover><mover><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mo>⋅</mo></mrow></mover><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mo>(</mo><mi mathvariant=\"normal\">g</mi><mo>)</mo></mrow></msub><mo>+</mo><mover><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mo>⋅</mo></mrow></mover><msub><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mo>(</mo><mi mathvariant=\"normal\">g</mi><mo>)</mo></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "As <math><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>4</mn></mrow></msub></math> is not present in stratosphere moreover it cannot diffuse like CFCs into stratosphere from atmosphere.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86388855a1c9f3ecc12",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "02",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The number of greenhouse gases in the following is ________.<br />\r<math> <mrow> <msub> <mrow> <mtext>CO</mtext></mrow> <mn>2</mn> </msub> <mo>,</mo><msub> <mtext>O</mtext> <mn>2</mn> </msub> <mo>,</mo><msub> <mtext>N</mtext> <mn>2</mn> </msub> <mtext>O</mtext><mo>,</mo><msub> <mrow> <mtext>CH</mtext></mrow> <mn>4</mn> </msub> <mo>,</mo><mtext>CFCs</mtext><mo>,</mo><mtext>CO</mtext><mo>,</mo><msub> <mtext>H</mtext> <mn>2</mn> </msub> <mtext>O</mtext><mfenced> <mtext>g</mtext> </mfenced><mo>,</mo><msub> <mtext>O</mtext> <mn>3</mn> </msub> </mrow> </math>",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "6.00",
+          "solution": {
+            "text": "Greenhouse gases that absorbs and emits radiant energy within a thermal infrared range which causes an increase in atmospheric temperature. The list of gases are water <math> <mrow> <mrow> <msub> <mtext>H</mtext> <mtext>2</mtext> </msub> <mtext>O</mtext></mrow> </mrow> </math>, <math> <mrow> <msub> <mrow> <mtext>CO</mtext></mrow> <mn>2</mn> </msub> <mo>,</mo><mtext> </mtext><msub> <mrow> <mtext>CH</mtext></mrow> <mn>4</mn> </msub> <mo>,</mo><mtext> </mtext><msub> <mtext>N</mtext> <mtext>2</mtext> </msub> <mtext>O,</mtext><mtext> </mtext><msub> <mtext>O</mtext> <mn>3</mn> </msub> <mtext> &nbsp;</mtext><mo>&amp;</mo><mtext> &nbsp;</mtext><mtext>CFCs</mtext></mrow> </math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8637775532a0dade32d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "14",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following compounds is used in anti-knock compositions to prevent the deposition of oxides of lead on spark plug, combustion chamber and exhaust pipe?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "eu775",
+              "text": "Benzene",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "TTNcG",
+              "text": "Glycol",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "NilVf",
+              "text": "1, 2-Dibromoethane",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "6jhXs",
+              "text": "Glycerol",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math> <mrow>  <mtext>1,&#x00A0;2-dibromoethane</mtext></mrow></math> compound is used in antiknock compositions to prevent lead from being deposited in the cylinder head. It is sufficiently volatile and can be removed with the exhaust gas from the exhaust pipe.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863776c28ba5e06b5e0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "42",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Identify the pollutant gases largely responsible for the discoloured and lustreless nature of marble of the Taj Mahal.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "SwEVi",
+              "text": "<math><mi mathvariant=\"normal\">S</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub></math> and <math><mi mathvariant=\"normal\">N</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "vGR9O",
+              "text": "<math><mi mathvariant=\"normal\">S</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub></math> and <math><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8Jjoa",
+              "text": "<math><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub></math> and <math><mi mathvariant=\"normal\">N</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ugURy",
+              "text": "<math><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub></math> and <math><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Industries present nearby Taj Mahal produce a lot of <math><mi mathvariant=\"normal\">N</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub></math> and <math><mi mathvariant=\"normal\">S</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub></math> gases which react with water, oxygen and other chemicals to form sulphuric acid and nitric acid. These then mix with water and make the rain acidic which than react with marble to decolourise it as follows <br/><math><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>+</mo><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>4</mn></mrow></msub><mo>→</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">S</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>4</mn></mrow></msub><mo>+</mo><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>+</mo><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">O</mi></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8636bffb9a8db9b15e1",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "60",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Ozone depletion in the stratosphere is mainly caused by",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "59TVS",
+              "text": "<math><mtext>S</mtext><msub><mrow><mtext>O</mtext></mrow><mrow><mn>2</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "r12YI",
+              "text": "<math><mtext>N</mtext><msub><mrow><mtext>O</mtext></mrow><mrow><mn>2</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pMzag",
+              "text": "<math><mtext>N</mtext><mtext>O</mtext></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "T1y4d",
+              "text": "Chlorofluorocarbons",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Chlorofluorocarbons destroy ozone. When CFCs reach the stratosphere, they split and produce reactive free redicals.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8635f3232561ea21432",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "96",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which is the most hazardous metal pollutant of automobile exhaust",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "FMa6M",
+              "text": "Mercury",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "xK157",
+              "text": "2 Tin",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2USTd",
+              "text": "3 Cadmium",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "QIcfE",
+              "text": "4 Lead",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Lead acts as a toxic substance.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863567ac3551fb54272",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "27",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "<math> <mrow> <msub> <mrow> <mtext>SO</mtext></mrow> <mtext>2</mtext> </msub> </mrow> </math> is considered as an air pollutant because",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Hd60t",
+              "text": "Its concentration increases with temperature increase of atmosphere.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3anDB",
+              "text": "It is used as an insecticide which is air pollutant",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "QfJ3V",
+              "text": "It reacts with <math> <mrow>  <msub>   <mtext>O</mtext>   <mtext>2</mtext>  </msub>  </mrow></math> and <math> <mrow>  <msub>   <mtext>H</mtext>   <mtext>2</mtext>  </msub>  <mtext>O</mtext></mrow></math> to produce acid rain",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "kkKuL",
+              "text": "It is a strong oxidant and oxidizes other components of atmosphere",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math> <mrow>  <msub>   <mrow>    <mtext>SO</mtext></mrow>   <mtext>2</mtext>  </msub>  </mrow></math> is considered as air pollutant because it reacts with <math> <mrow>  <msub>   <mtext>O</mtext>   <mtext>2</mtext>  </msub>  </mrow></math> and <math> <mrow>  <msub>   <mtext>H</mtext>   <mtext>2</mtext>  </msub>  <mtext>O</mtext></mrow></math> to produce acid rain. Oxides from nitrogen and sulphur, released into the atmosphere from thermal power plants, industries and automobiles are the main sources of acid rain. These oxides on oxidation followed by hydrolysis give sulphuric acid and nitric acid that get dissolved in rain water and&nbsp;are responsible for the acidity of rain.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8632945690e4f53c039",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "10",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "<p>A petroleum fraction having boiling range <math>\r <mrow>\r  <mtext>70</mtext><mo>&#x2212;</mo><msup>\r   <mrow>\r    <mtext>200</mtext></mrow>\r   <mtext>o</mtext>\r  </msup>\r  <mtext>&#x2004;</mtext><mtext>C</mtext></mrow>\r</math>\r and containing <math> <mrow> <mtext>6</mtext><mo>−</mo><mtext>10</mtext></mrow> </math> carbon atoms per molecule is called</p>\r",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "vJnmK",
+              "text": "Natural gas",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "W0KSf",
+              "text": "Gas oil",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0igR5",
+              "text": "Gasoline",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "58Zyy",
+              "text": "Kerosene",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>The bulk of a typical gasoline consists of hydrocarbons with between <math > <mn>4</mn></math> and <math > <mrow>  <mn>12</mn></mrow></math> carbon atoms per molecule (commonly referred to as <math > <mrow>  <mtext>C4</mtext><mo>&#x2212;</mo><mtext>C12</mtext></mrow></math>). It is a mixture of paraffins (alkanes), cycloalkanes (naphthenes), and olefins (alkenes), where the usage of the terms paraffin and olefin is particular to the oil industry. The actual ratio depends on:</p><ul>\t<li>The oil refinery that makes the gasoline, as not all refineries have the same set of processing units;</li>\t<li>The crude oil feed used by the refinery;</li>\t<li>The grade of gasoline, in particular, the octane rating.</li></ul><p>Below carbon atoms per molecule are mentioned.</p><p><strong>(i)</strong> Gasoline <math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>6</mn></mrow></msub><mo>-</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>10</mn></mrow></msub></math><br /><br /><strong>(ii) </strong>Kerosene <math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>10</mn></mrow></msub><mo>-</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>13</mn></mrow></msub></math><br /><br /><strong>(iii)</strong> Gas oil <math><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>13</mn></mrow></msub><mo>-</mo><msub><mrow><mi mathvariant=\"normal\">C</mi></mrow><mrow><mn>18</mn></mrow></msub></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "6aa3ab79aa8dc1ff68177ed6",
+      "title": "Water Pollution",
+      "totalQuestions": 7,
+      "questions": [
+        {
+          "_id": "6151e863e44ea37c76311fc3",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "59",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Drained sewage has B.O.D.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "341vJ",
+              "text": "More than water",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "vIRmA",
+              "text": "Less than water",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vLDdA",
+              "text": "Equal than water",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "tL82Y",
+              "text": "None of the above.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Drained Sewage has more B.O.D. as it has more micro organisms.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863ca9340fead274fa4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "46",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "A water sample has ppm level concentration of following anions,  <math><msup><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mo>-</mo></mrow></msup><mo>=</mo><mn>10</mn><mo>;</mo><mi mathvariant=\"normal\">S</mi><msubsup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>4</mn></mrow><mrow><mn>2</mn><mo>-</mo></mrow></msubsup><mo>=</mo><mn>100</mn><mo>;</mo><mi mathvariant=\"normal\">N</mi><msubsup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow><mrow><mo>-</mo></mrow></msubsup><mo>=</mo><mn>50</mn></math> . The anion/anions that make/makes the water sample unsuitable for drinking is/are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "EBm4t",
+              "text": "only  <math><msup><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mo>-</mo></mrow></msup></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "ns51J",
+              "text": "only  <math><mi mathvariant=\"normal\">S</mi><msubsup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>4</mn></mrow><mrow><mn>2</mn><mo>-</mo></mrow></msubsup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "mRqdm",
+              "text": "only  <math><mi mathvariant=\"normal\">N</mi><msubsup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow><mrow><mo>-</mo></mrow></msubsup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nusu1",
+              "text": "both  <math><mi mathvariant=\"normal\">S</mi><msubsup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>4</mn></mrow><mrow><mn>2</mn><mo>-</mo></mrow></msubsup></math>  and  <math><mi mathvariant=\"normal\">N</mi><msubsup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow><mrow><mo>-</mo></mrow></msubsup></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Above 500 ppm of  <math><mi mathvariant=\"normal\">S</mi><msubsup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>4</mn></mrow><mrow><mn>2</mn><mo>-</mo></mrow></msubsup></math>  ions in drinking water, can cause laxative effect otherwise lesser ppm value is permissible for drinking.<br/><br/>Maximum limit of  <math><mi mathvariant=\"normal\">N</mi><msubsup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow><mrow><mo>-</mo></mrow></msubsup></math>  ions in drinking water is 50 ppm, above this limit it can cause the disease like methemoglobinemia.<br/><br/>More than 1 ppm  <math><msup><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mo>-</mo></mrow></msup></math>  ions in drinking water are not fit for drinking, it can cause decay of bones and teeth.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8635d21d0dee311cf97",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "100",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Minamata disease is due to pollution of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "lgeaI",
+              "text": "Organic waste into drinking water",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "hArjK",
+              "text": "Oil spill in water",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "aU5vz",
+              "text": "Industrial waste mercury into fishing water",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "5R9gT",
+              "text": "Arsenic into the atmosphere",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Mercury poisoning often produces a crippling and fatal disease called Minamata disease.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8634c7f4ed077160bfc",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "91",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Fish die in water bodies polluted by sewage due to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "WvIEk",
+              "text": "Pathogens",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qpCk0",
+              "text": "Bad odour of sewage",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Q00jS",
+              "text": "Reduction in oxygen",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "TMwMT",
+              "text": "Release of poisonous substances",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Fish die in water bodies polluted by sewage because dissolved  <math><msub><mrow><mi>O</mi></mrow><mrow><mn>2</mn></mrow></msub></math>  content of water is reduced.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863160173dc3383e653",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "90",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of two water sample A &amp; B with BOD of 10 and 20 respectively, then mark correct option",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "fNF0g",
+              "text": "<math><mi>A</mi></math>  is more polluted",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "g8E8w",
+              "text": "<math><mi>B</mi></math> is more polluted",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "kzPRw",
+              "text": "<math><mi>A</mi></math>  and  <math><mi>B</mi></math>  both are equally polluted",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "yuEJS",
+              "text": "<math><mi>A</mi></math>  and  <math><mi>B</mi></math>  both are equally suitable for drinking.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math><mi>B</mi><mi>O</mi><mi>D</mi></math> for a clean water should be less than <math><mn>5</mn><mo>;</mo></math>&nbsp;where as highly polluted water could have a BOD value of 17 ppm or more.<br />So, B is more polluted and not suitable for drinking",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8630df8a7f04d2f45c0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "50",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The recommended concentration of fluoride ion in drinking water is up to 1 ppm as fluoride ion is required to make teeth enamel harder by converting <math><mo>[</mo><mn>3</mn><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">a</mi></mrow><mrow><mn>3</mn></mrow></msub><msub><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">P</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>4</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msub><mo>.</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><msub><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msub><mo>]</mo></math> to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "xb24e",
+              "text": "<math><mo>[</mo><mn>3</mn><mfenced close=\"]\" separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi><msub><mrow><mo>)</mo></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfenced><mo>.</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><msub><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "UGWXJ",
+              "text": "<math><mfenced close=\"]\" open=\"[\" separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><msub><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "IQC1s",
+              "text": "<math><mfenced close=\"]\" open=\"[\" separators=\"|\"><mrow><mn>3</mn><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><msub><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfenced><mo>.</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><msub><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lzU4A",
+              "text": "<math><mo>[</mo><mn>3</mn><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">a</mi></mrow><mrow><mn>3</mn></mrow></msub><mfenced close=\"]\" separators=\"|\"><mrow><mi mathvariant=\"normal\">P</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>4</mn></mrow></msub><msub><mrow><mo>)</mo></mrow><mrow><mn>2</mn></mrow></msub><mo>.</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><msub><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math><mo>[</mo><mn>3</mn><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">a</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>(</mo><mi mathvariant=\"normal\">P</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>4</mn></mrow></msub><msub><mrow><mo>)</mo></mrow><mrow><mn>2</mn></mrow></msub><mo>.</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><mfenced close=\"]\" separators=\"|\"><mrow><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi><msub><mrow><mo>)</mo></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfenced><mo>+</mo><mn>2</mn><msup><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mo>-</mo></mrow></msup><mo>→</mo><mfenced close=\"]\" open=\"[\" separators=\"|\"><mrow><mn>3</mn><mi mathvariant=\"normal\">C</mi><msub><mrow><mi mathvariant=\"normal\">a</mi></mrow><mrow><mn>3</mn></mrow></msub><msub><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">P</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>4</mn></mrow></msub></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msub><mo>.</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">a</mi><msub><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfenced><mo>+</mo><mn>2</mn><mi mathvariant=\"normal\">O</mi><msup><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mo>-</mo></mrow></msup></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8630733ced8de2bebce",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "49",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The concentration of fluoride, lead, nitrate and iron in a water sample from an underground lake was found to be 1000 ppb, 40 ppb, 100 ppm and 0.2 ppm, respectively. This water is unsuitable for drinking due to high concentration of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "XkLvO",
+              "text": "Iron",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "00VnO",
+              "text": "Fluoride",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2614U",
+              "text": "Lead",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ENQWE",
+              "text": "Nitrate",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<table border=\"1\"><tr><td> Parameters</td><td> Maximum prescribed conc. in drinking water</td></tr><tr><td> Iron</td><td> 0.2 ppm</td></tr><tr><td> Fluoride</td><td> 1.5 ppm</td></tr><tr><td> Lead</td><td> 50 ppb</td></tr><tr><td> Nitrate</td><td></td></tr></table><br/><br/><br/><br/>Hence the concentration of nitrate in a given water sample exceeds from the upper limit as given above.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

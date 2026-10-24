@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Waves and Sound PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚡ BITSAT &bull; Waves and Sound</h1>
+        <div class="sub">Physics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 16, "chapterId": "61e7bd7f9d0547b1fbfd5eb1", "chapter": "Waves and Sound", "exam": "BITSAT", "subject": "Physics", "totalTopics": 9, "totalQuestions": 30, "downloadTime": "2026-10-08 20:27:54", "topics": [{"index": 1, "topicId": "64c0e8576f5bfc7ab78aed0e", "title": "Basics of Mechanical Waves", "totalQuestions": 1, "questions": [{"_id": "64c0e82c6f5bfc7ab78aeb3c", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 2, "question": {"text": "A direct current of $6 \\mathrm{~A}$ is superimposed on an alternating current $I=10 \\sin \\omega t$ flowing through a wire. The effective value of the resulting current will be", "image": null}, "options": [{"id": "3XBlT", "text": "\r\n$5 \\sqrt{2}$\r\n", "isCorrect": false, "image": null}, {"id": "g8GpD", "text": "\r\n$5 \\sqrt{3}$\r\n", "isCorrect": false, "image": null}, {"id": "PmfFU", "text": "\r\n$9.27$\r\n", "isCorrect": true, "image": null}, {"id": "8gjj3", "text": "\r\n$8.37$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Given, $I=6+10 \\sin \\omega t$\r\n$$\r\n\\begin{aligned}\r\nI_{\\mathrm{eft}} & =\\left[\\frac{\\left.\\int_0^T I^2 d t\\right]^{1 / 2}}{\\int_0^T d t}=\\left[\\frac{1}{T} \\int_0^T(6+10 \\sin \\omega t)^2 d t\\right]^{1 / 2}\\right. \\\\\r\n& =\\left[\\frac{1}{T} \\int_0^T\\left(36+120 \\sin \\omega t+100 \\sin ^2 \\omega t\\right) d t\\right]^{1 / 2}\r\n\\end{aligned}\r\n$$\r\nBut as, $\\frac{1}{T} \\int_0^T \\sin \\omega t d t=0$ and $\\frac{1}{T} \\int_0^T \\sin ^2 \\omega t=\\frac{1}{2}$\r\n$$\r\n\\Rightarrow \\quad I_{\\mathrm{eff}}=\\left[36+\\frac{1}{2} \\times 100\\right]^{1 / 2}=9.27\r\n$$\r\nThus, $\\quad I_{\\text {eff }}=9.27 \\mathrm{~A}$.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8576f5bfc7ab78aed0a", "title": "Travelling Waves", "totalQuestions": 4, "questions": [{"_id": "67726cf8c49e8ef28ee2b33e", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "A plane progressive wave is given by $y=2 \\cos$ $2 \\pi(330 t-x) \\mathrm{m}$. The frequency of the wave is:", "image": null}, "options": [{"id": "VCBmd", "text": "165 Hz", "image": null, "isCorrect": false}, {"id": "kkziS", "text": "330 Hz", "image": null, "isCorrect": true}, {"id": "cLJjF", "text": "660 Hz", "image": null, "isCorrect": false}, {"id": "zXhtQ", "text": "340 Hz", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Equation of wave is, $y=2 \\cos 2 \\pi(330 t-x)$ m\n$y=A \\cos (\\omega t-k x)$\nOn comparing $\\omega=2 \\pi \\times 330$\n$2 \\pi \\mathrm{f}=2 \\pi \\times 330 \\Rightarrow \\mathrm{f}=330 \\mathrm{~Hz}$\n$[\\because \\omega=2 \\pi \\mathrm{~F}]$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7e96f5bfc7ab78ae8eb", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 2, "question": {"text": "<p>A transverse wave propagating on a stretched string of linear density <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup><mo>&#160;</mo><msup><mi>kgm</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math> is represented by the equation</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>2</mn><mi>sin</mi><mo>(</mo><mn>1</mn><mo>.</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>60</mn><mi>t</mi><mo>)</mo></math></p><p>where, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math> in metres and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi></math> is in seconds. The tension in the string (in Newton) is</p>", "image": null}, "options": [{"id": "a16Tq", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>24</mn></math>", "isCorrect": false, "image": null}, {"id": "3RdNx", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>48</mn></math>", "isCorrect": true, "image": null}, {"id": "Ri0xr", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>.</mo><mn>20</mn></math>", "isCorrect": false, "image": null}, {"id": "nM2gP", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>.</mo><mn>80</mn></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Equation of wave,&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>2</mn><mi>sin</mi><mo>[</mo><mn>1</mn><mo>.</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>60</mn><mi>t</mi><mo>]</mo></math></p><p>Comparing with standard equation, we get&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>A</mi><mi>sin</mi><mo>[</mo><mi>k</mi><mi>x</mi><mo>+</mo><mi>&#969;</mi><mi>t</mi><mo>]</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi><mo>=</mo><mn>1</mn><mo>.</mo><mn>5</mn><mo>=</mo><mfrac><mrow><mn>2</mn><mi>&#960;</mi></mrow><mi>&#955;</mi></mfrac></math></p><p>and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#969;</mi><mo>=</mo><mn>60</mn><mo>=</mo><mfrac><mrow><mn>2</mn><mi>&#960;</mi></mrow><mi>T</mi></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> Velocity of wave, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi><mo>=</mo><mfrac><mi>&#969;</mi><mi>k</mi></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mn>60</mn><mrow><mn>1</mn><mo>.</mo><mn>5</mn></mrow></mfrac><mo>=</mo><mn>40</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math></p><p>Velocity of wave in stretched string, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi><mo>=</mo><msqrt><mfrac><mi>T</mi><mi>m</mi></mfrac></msqrt></math></p><p>where, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi></math> is the linear density, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>T</mi></math> is tension in the string.</p><p>So, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>T</mi><mo>=</mo><msup><mi>v</mi><mn>2</mn></msup><mi>m</mi><mo>=</mo><mo>(</mo><mn>40</mn><msup><mo>)</mo><mn>2</mn></msup><mo>&#215;</mo><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>0</mn><mo>.</mo><mn>48</mn><mo>&#160;</mo><mi mathvariant=\"normal\">N</mi></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ad6f5bfc7ab78ae6e9", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 3, "question": {"text": "If equation of transverse wave is $y=x_{0} \\cos$ $2 \\pi\\left(\\mathrm{nt}-\\frac{\\mathrm{x}}{\\lambda}\\right) .$ Maximum velocity of particle is twice of wave velocity, if $\\lambda$ is-", "image": null}, "options": [{"id": "VGpxB", "text": "$\\pi / 2 \\mathrm{x}_{0}$", "isCorrect": false, "image": null}, {"id": "R8Lhp", "text": "$2 \\pi x_{0}$", "isCorrect": false, "image": null}, {"id": "rPfm6", "text": "$\\pi$", "isCorrect": false, "image": null}, {"id": "Ynmmi", "text": "$\\pi x_{0}$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "$y=x_{0} \\cos 2 \\pi\\left(\\right.$ nt $\\left.-\\frac{x}{\\lambda}\\right)$\r\n\r\n$\\mathrm{y}=\\mathrm{x}_{0} \\cos \\frac{2 \\pi}{\\lambda}(\\mathrm{vt}-\\mathrm{x}) \\quad[\\because \\mathrm{v}=\\mathrm{n} \\lambda]$\r\n\r\n$\\left(\\frac{\\mathrm{dy}}{\\mathrm{dt}}\\right)_{\\max }=\\mathrm{x}_{0} \\times \\frac{2 \\pi}{\\lambda} \\mathrm{v}=2 \\mathrm{v}($ given $) \\therefore \\lambda=\\pi \\mathrm{x}_{0}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e79d6f5bfc7ab78ae668", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 2, "question": {"text": "The transverse displacement $y(x, t)$ of a wave on a string is given by \r\n$y(x, t)=e^{-\\left(a x^{2}+b t^{2}+2 \\sqrt{a b}\\right.}$ xt $)$\r\nThis represents a", "image": null}, "options": [{"id": "GgdN3", "text": "wave moving in $-x$ direction, speed $\\sqrt{\\frac{b}{a}}$", "isCorrect": true, "image": null}, {"id": "sPqnL", "text": "standing wave of frequency $\\sqrt{b}$", "isCorrect": false, "image": null}, {"id": "noqMM", "text": "standing wave of frequency $\\frac{1}{\\sqrt{b}}$", "isCorrect": false, "image": null}, {"id": "cy1Qs", "text": "wave moving in $+x$ direction, speed $\\sqrt{\\frac{a}{b}}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$y(x, t)=e^{-\\left(a x^{2}+b t^{2}+2 \\sqrt{a b} x t\\right)}=e^{-(\\sqrt{a x}+\\sqrt{b t})^{2}}$\r\nIt is a function of type $y=f(\\omega t+k x)$ $\\therefore y(x, t)$ represents wave travelling along $-x$ direction.\r\n$\\text { Speed of wave }=\\frac{\\omega}{k}=\\frac{\\sqrt{b}}{\\sqrt{a}}=\\sqrt{\\frac{b}{a}}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e8566f5bfc7ab78aed08", "title": "Stationary waves", "totalQuestions": 1, "questions": [{"_id": "64c0e7816f5bfc7ab78ae56f", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "A wave $y=a \\sin (\\omega t-k x)$ on a string meets with another wave producing a node at $\\mathrm{x}=0 .$ Then the equation of the unknown wave is", "image": null}, "options": [{"id": "NXi2e", "text": "$y=a \\sin (\\omega t+k x)$", "image": null, "isCorrect": false}, {"id": "dJoAN", "text": "$y=-a \\sin (\\omega t+k x)$", "image": null, "isCorrect": true}, {"id": "WHzA1", "text": "$y=a \\sin (\\omega t-k x)$", "image": null, "isCorrect": false}, {"id": "HJuVg", "text": "$y=-a \\sin (\\omega t-k x)$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Equation of a wave $y_{1}=a \\sin (\\omega t-k x)$....(i)\nLet equations of another wave may be, $y_{2}=a \\sin (\\omega t+k x)$....(ii)\n$y_{3}=-a \\sin (\\omega t+k x) \\quad \\ldots .$ (iii)\nIf Eq. (i) propagate with Eq. (ii), we get $\\mathrm{y}=2 \\mathrm{a} \\cos \\mathrm{kx} \\sin \\omega \\mathrm{t}$\nIf Eq. (i), propagate with Eq. (iii), we get $y=-2 a \\sin k x \\cos \\omega t$\nAt $x=0, y=0,$ wave produce node \nSo, Eq.(iii) is the equation of unknown wave", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "64c0e8576f5bfc7ab78aed0c", "title": "Vibration of String", "totalQuestions": 3, "questions": [{"_id": "64c0e7d86f5bfc7ab78ae854", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 2, "question": {"text": "A string of length $\\ell$ is fixed at both ends. It is vibrating in its $3^{\\text {rd }}$ overtone with maximum amplitude'a'. The amplitude at a distance $\\ell / 3$ from one end is", "image": null}, "options": [{"id": "HjAJF", "text": "a", "isCorrect": false, "image": null}, {"id": "ipLCS", "text": "0", "isCorrect": false, "image": null}, {"id": "RAw1c", "text": "$\\frac{\\sqrt{3} \\mathrm{a}}{2}$", "isCorrect": true, "image": null}, {"id": "PDXP9", "text": "$\\frac{a}{2}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "For a string vibrating in its $\\mathrm{n}^{\\text {th }}$ overtone $(\\mathrm{n}+1)^{\\text {th }}$ harmonic) $\\mathrm{y}=2 \\mathrm{~A} \\sin \\left(\\frac{(\\mathrm{n}+1) \\pi \\mathrm{x}}{\\mathrm{L}}\\right) \\cos \\omega \\mathrm{t}$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/q2ItQTJMVJyy48Raj7wmHRjcncF8oiXrcCY1kNpGo3E.original.fullsize.png\"><br>\r\n\r\n$$\r\n\r\n\\begin{array}{l} \r\n\r\n\\text { For } \\left.x=\\frac{\\ell}{3}\\right] 2 A=a \\& n=3 \\\\\r\n\r\ny=\\left[a \\sin \\left(\\frac{4 \\pi}{\\ell} \\cdot \\frac{\\ell}{3}\\right)\\right] \\cos \\omega t \\\\\r\n\r\n=a \\sin \\frac{4 \\pi}{3} \\cos \\omega t=-a\\left(\\frac{\\sqrt{3}}{2}\\right) \\cos \\omega t\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\ni.e. at $x=\\frac{\\ell}{3},$ the amplitude is $\\frac{\\sqrt{3} a}{2}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7cb6f5bfc7ab78ae7f1", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 3, "question": {"text": "The frequency of a sonometer wire is $100 \\mathrm{~Hz}$. When the weights producing the tensions are completely immersed in water, the frequency becomes $80 \\mathrm{~Hz}$ and on immersing the weights in a certain liquid, the frequency becomes $60 \\mathrm{~Hz}$. The specific gravity of the liquid is", "image": null}, "options": [{"id": "CPTcA", "text": "1.42", "isCorrect": false, "image": null}, {"id": "omN5m", "text": "1.77", "isCorrect": true, "image": null}, {"id": "JVTkg", "text": "1.82", "isCorrect": false, "image": null}, {"id": "IJUuV", "text": "1.21", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "As we know, frequency $f \\propto \\sqrt{m g}$ or $f \\propto \\sqrt{g}$\r\n\r\nIn water, $\\mathrm{f}_{\\mathrm{w}}=0.8 \\mathrm{f}_{\\text {air }}$\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\frac{\\mathrm{g}^{\\prime}}{\\mathrm{g}}(0.8)^{2}=0.64 \\\\\r\n\r\n\\Rightarrow 1-\\frac{\\rho_{\\mathrm{w}}}{\\rho_{\\mathrm{m}}}=0.64 \\\\\r\n\r\n\\Rightarrow \\frac{\\rho_{\\mathrm{w}}}{\\rho_{\\mathrm{m}}}=0.36\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nIn liquid, $\\frac{g^{\\prime}}{g}=(0.6)^{2}=0.36$\r\n\r\n$$\r\n\r\n1-\\frac{\\rho_{1}}{\\rho_{\\mathrm{m}}}=0.36 \\frac{\\rho_{1}}{\\rho_{\\mathrm{m}}}=0.64\r\n\r\n$$\r\n\r\nFrom eq. (1) and (2) $\\frac{\\rho_{l}}{\\rho_{n}}=\\frac{0.64}{0.36} \\therefore \\rho_{l}=1.77$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7bb6f5bfc7ab78ae760", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 2, "question": {"text": "When a string is divided into three segments of length $l_{1}, l_{2},$ and $l_{3}$, the fundamental frequencies of these three segments are $v_{1}, v_{2}$ and $v_{3}$ respectively. The original fundamental frequency\r\n\r\n(v) of the string is", "image": null}, "options": [{"id": "Vn0ma", "text": "$\\quad \\sqrt{v}=\\sqrt{v_{1}}+\\sqrt{v_{2}}+\\sqrt{v_{3}}$", "isCorrect": false, "image": null}, {"id": "cfXsI", "text": "$v=v_{1}+v_{2}+v_{3}$", "isCorrect": false, "image": null}, {"id": "Qu9v8", "text": "$\\frac{1}{v}=\\frac{1}{v_{1}}+\\frac{1}{v_{2}}+\\frac{1}{v_{3}}$.", "isCorrect": true, "image": null}, {"id": "70ysT", "text": "$\\frac{1}{\\sqrt{v}}=\\frac{1}{\\sqrt{v_{1}}}+\\frac{1}{\\sqrt{v_{2}}}+\\frac{1}{\\sqrt{v_{3}}}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Fundamental frequency is given by\r\n\r\n$$\r\n\r\nv=\\frac{1}{2 l} \\sqrt{\\frac{T}{\\mu}} \\Rightarrow v \\propto \\frac{1}{l} \\Rightarrow P \\propto \\frac{1}{v}\r\n\r\n$$\r\n\r\nSince, $P$ divided into $l_{1}, l_{2}$ and $l_{3}$ segments Here $l=l_{1}+l_{2}+l_{3}$\r\n\r\nSo $\\quad \\frac{1}{v}=\\frac{1}{v_{1}}+\\frac{1}{v_{2}}+\\frac{1}{v_{3}}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 5, "topicId": "64c0e8566f5bfc7ab78aed07", "title": "Organ Pipe (Vibration of Air Column)", "totalQuestions": 4, "questions": [{"_id": "64c0e80f6f5bfc7ab78aea3c", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 2, "question": {"text": "An organ pipe, open from both end produces 5 beats per second when vibrated with a source of frequency $200 \\mathrm{~Hz}$. The second harmonic of the same pipes produces 10 beats per second with a source of frequency $420 \\mathrm{~Hz}$. The fundamental frequency of organ pipe is", "image": null}, "options": [{"id": "6z1NG", "text": "$195 \\mathrm{~Hz}$", "isCorrect": false, "image": null}, {"id": "kYrCX", "text": "$205 \\mathrm{~Hz}$", "isCorrect": true, "image": null}, {"id": "Lca8t", "text": "$190 \\mathrm{~Hz}$", "isCorrect": false, "image": null}, {"id": "NM7zd", "text": "$210 \\mathrm{~Hz}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Let the fundamental frequency of organ pipe be $\\mathrm{f}$\r\n\r\nCase I : $f=200 \\pm 5=205 \\mathrm{~Hz}$ or $195 \\mathrm{~Hz}$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/ywxbrQVTdljHnpHBtHliQoE44rRoET_t4pqq9g_iL5g.original.fullsize.png\"><br>\r\n\r\nCase II : frequency of 2 nd harmonic of organ pipe $=2 \\mathrm{f}$ (as is clear from the second figure) $2 \\mathrm{f}=420 \\pm 10$ or $\\mathrm{f}=210 \\pm 5$ or $\\mathrm{f}=205$ or 215\r\n\r\nHence fundamental frequency oforgan pipe $=205 \\mathrm{~Hz}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8036f5bfc7ab78ae9d6", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 1, "question": {"text": "If sound travels in air with the speed of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>340</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>, then the number of tones present in an open organ pipe of length&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math>&nbsp;for a&nbsp;maximum frequency of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1200</mn><mo>&#160;</mo><mi>Hz</mi></math>, are", "image": null}, "options": [{"id": "bGLtZ", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>17</mn></math>", "isCorrect": false, "image": null}, {"id": "ClVz6", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>11</mn></math>", "isCorrect": false, "image": null}, {"id": "Kn69b", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>9</mn></math>", "isCorrect": false, "image": null}, {"id": "hxLsB", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>14</mn></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>Given, speed of sound, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi><mo>=</mo><mn>340</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math><br />Length of open organ pipe,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>l</mi><mo>=</mo><mn>2</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math></p><p>Frequency, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>=</mo><mn>1200</mn><mo>&#160;</mo><mi>Hz</mi></math><br />For open organ pipe,</p><p>Fundamental frequency, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mfrac><mi>v</mi><mrow><mn>2</mn><mi>l</mi></mrow></mfrac><mo>=</mo><mfrac><mn>340</mn><mrow><mn>2</mn><mo>&#215;</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mn>85</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> Number of tones present in the open organ pipe<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mi>f</mi><msub><mi>f</mi><mn>0</mn></msub></mfrac><mo>=</mo><mfrac><mn>1200</mn><mn>85</mn></mfrac><mo>=</mo><mn>14</mn><mo>.</mo><mn>11</mn><mo>&#8771;</mo><mn>14</mn></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e78f6f5bfc7ab78ae5ea", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "The fundamental frequency of an open organ pipe is $300 \\mathrm{~Hz}$. The first overtone of this pipe has same frequency as first overtone of a closed organ pipe. If speed of sound is $330 \\mathrm{~m} / \\mathrm{s}$, then the length of closed organ pipe is", "image": null}, "options": [{"id": "EzBrt", "text": "$41 \\mathrm{~cm}$", "image": null, "isCorrect": true}, {"id": "hSnZI", "text": "$37 \\mathrm{~cm}$", "image": null, "isCorrect": false}, {"id": "viJVG", "text": "$31 \\mathrm{~cm}$", "image": null, "isCorrect": false}, {"id": "Upwtm", "text": "$80 \\mathrm{~cm}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "For open pipe, $\\mathrm{n}=\\frac{\\mathrm{v}}{2 \\ell},$ where $\\mathrm{n}_{0}$ is the\nfundamental frequency of open pipe. $\\therefore \\ell=\\frac{\\mathrm{v}}{2 \\mathrm{n}}=\\frac{330}{2 \\times 300}=\\frac{11}{20}$\nAs freq. of 1 st overtone of open pipe $=$ freq. of 1 st overtone of closed pipe\n$\\begin{aligned} \\therefore \\quad 2 \\frac{\\mathrm{v}}{2 \\ell}=3 \\frac{\\mathrm{v}}{4 \\ell^{\\prime}} \\Rightarrow \\ell^{\\prime} &=\\frac{3 \\ell}{4}=\\frac{3}{4} \\times \\frac{11}{20} \\\\ &=41.25 \\mathrm{~cm} \\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7736f5bfc7ab78ae4ee", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "Two tuning forks $A$ and $B$ sounded together give 6 beats per second. With an air resonance tube closed at one end, the two forks give resonance when the two air columns are $24 \\mathrm{~cm}$ and 25 $\\mathrm{cm}$ respectively. Calculate the frequencies of forks.", "image": null}, "options": [{"id": "bX2HN", "text": "$120 \\mathrm{~Hz}, 124 \\mathrm{~Hz}$", "image": null, "isCorrect": false}, {"id": "FmgRL", "text": "$110 \\mathrm{~Hz}, 114 \\mathrm{~Hz}$", "image": null, "isCorrect": false}, {"id": "9nrw4", "text": "$150 \\mathrm{~Hz}, 144 \\mathrm{~Hz}$", "image": null, "isCorrect": true}, {"id": "8oMCE", "text": "$170 \\mathrm{~Hz}, 118 \\mathrm{~Hz}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Let the frequency of the first fork be $\\mathrm{f}_{1}$ and that of second be $\\mathrm{f}_{2}$\nWe then have, $\\mathrm{f}_{1}=\\frac{\\mathrm{v}}{4 \\times 24}$ and $\\mathrm{f}_{2}=\\frac{\\mathrm{v}}{4 \\times 25}$\nWe also see that $\\mathrm{f}_{1}>\\mathrm{f}_{2}$\n$$\n\\therefore \\mathrm{f}_{1}-\\mathrm{f}_{2}=6\n$$\nand $\\frac{\\mathrm{f}_{1}}{\\mathrm{f}_{2}}=\\frac{24}{25}$\nSolving (i) and (ii), we get $\\mathrm{f}_{1}=150 \\mathrm{~Hz}$ and $\\quad \\mathrm{f}_{2}=144 \\mathrm{~Hz}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 6, "topicId": "64c0e8576f5bfc7ab78aed0b", "title": "Beats", "totalQuestions": 2, "questions": [{"_id": "64c0e7c76f5bfc7ab78ae7cd", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 2, "question": {"text": "Two tuning forks with natural frequencies 340 Hz each move relative to a stationary observer. One fork moves away from the observer, while the other moves towards the observer at the same speed. The observer hears beats offrequency $3 \\mathrm{~Hz}$. Find the speed of the tuning forks.", "image": null}, "options": [{"id": "Dbl2F", "text": "$1.5 \\mathrm{~m} / \\mathrm{s}$", "isCorrect": true, "image": null}, {"id": "t8Aju", "text": "$2 \\mathrm{~m} / \\mathrm{s}$", "isCorrect": false, "image": null}, {"id": "o11PZ", "text": "$1 \\mathrm{~m} / \\mathrm{s}$", "isCorrect": false, "image": null}, {"id": "Xm1rq", "text": "$2.5 \\mathrm{~m} / \\mathrm{s}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Let $v=$ speed of sound and $v_{\\mathrm{S}}=$ speed of tuning forks. Apparent frequency of fork moving towards the observer is\r\n\r\n$$\r\n\r\n\\mathrm{n}_{1}=\\left(\\frac{\\mathrm{v}}{\\mathrm{v}-\\mathrm{v}_{\\mathrm{s}}}\\right) \\mathrm{n}\r\n\r\n$$\r\n\r\nApparent frequency of the fork moving away from the observer is\r\n\r\n$$\r\n\r\n\\mathrm{n}_{2}=\\left(\\frac{\\mathrm{v}}{\\mathrm{v}+\\mathrm{v}_{\\mathrm{s}}}\\right) \\mathrm{n}\r\n\r\n$$\r\n\r\nIf $f$ is the number of beats heard per second. then $\\mathrm{f}=\\mathrm{n}_{1}-\\mathrm{n}_{2}$\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\Rightarrow \\mathrm{f}=\\left(\\frac{\\mathrm{v}}{\\mathrm{v}-\\mathrm{v}_{\\mathrm{s}}}\\right) \\mathrm{n}-\\left(\\frac{\\mathrm{v}}{\\mathrm{v}+\\mathrm{v}_{\\mathrm{s}}}\\right) \\mathrm{n} \\\\\r\n\r\n\\Rightarrow \\mathrm{f}=\\frac{\\mathrm{v}\\left(\\mathrm{v}+\\mathrm{v}_{\\mathrm{s}}\\right)-\\mathrm{v}\\left(\\mathrm{v}-\\mathrm{v}_{\\mathrm{s}}\\right)}{\\mathrm{v}^{2}-\\mathrm{v}_{\\mathrm{s}}^{2}}(\\mathrm{n}) \\\\\r\n\r\n\\Rightarrow \\frac{2 \\mathrm{vv}_{\\mathrm{s}} \\mathrm{n}}{\\mathrm{v}^{2}-\\mathrm{v}_{\\mathrm{s}}^{2}}=\\mathrm{f} \\Rightarrow 2\\left(\\frac{\\mathrm{v}_{\\mathrm{s}}}{\\mathrm{v}}\\right)=\\mathrm{n}=\\mathrm{f}\\left\\{\\right.\\text { if } \\mathrm{v}_{\\mathrm{s}}<\\mathrm{K}v\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\n$$\r\n\r\n\\Rightarrow v_{\\mathrm{s}}=\\frac{\\mathrm{fv}}{2 \\mathrm{n}}\r\n\r\n$$\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\text { putting } \\mathrm{v}=340 \\mathrm{~m} / \\mathrm{s}, \\mathrm{f}=3, \\mathrm{n}=340 \\mathrm{~Hz} \\text { we get, } \\\\\r\n\r\n\\mathrm{v}_{\\mathrm{s}}=\\frac{340 \\times 3}{3 \\times 340}=1.5 \\mathrm{~m} / \\mathrm{s}\r\n\r\n\\end{array}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ad6f5bfc7ab78ae6e8", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 2, "question": {"text": "Two waves of wavelengths $99 \\mathrm{~cm}$ and $100 \\mathrm{~cm}$ both travelling with velocity $396 \\mathrm{~m} / \\mathrm{s}$ are made to interfere. The number of beats produced by them per second is", "image": null}, "options": [{"id": "zLSSh", "text": "1", "isCorrect": false, "image": null}, {"id": "6yKQF", "text": "2", "isCorrect": false, "image": null}, {"id": "eeoEu", "text": "4", "isCorrect": true, "image": null}, {"id": "FNpb7", "text": "8", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Velocity of wave $\\mathrm{v}=\\mathrm{n} \\lambda$ where $n=$ frequency of wave $\\Rightarrow n=\\frac{v}{\\lambda}$\r\n\r\n$\\mathrm{n}_{2}=\\frac{\\mathrm{v}_{2}}{\\lambda_{2}}=\\frac{396}{100 \\times 10^{-2}}=396 \\mathrm{~Hz}$\r\n\r\nno. of beats $=\\mathrm{n}_{1}-\\mathrm{n}_{2}=4$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 7, "topicId": "64c0e8566f5bfc7ab78aed09", "title": "Doppler's Effect", "totalQuestions": 9, "questions": [{"_id": "64c0e8206f5bfc7ab78aeacd", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 2, "question": {"text": "The frequency of whistle of an engine appears to be $(4 / 5)^{\\text {th }}$ of initial frequency when it crosses a stationary observer. If the velocity of sound is $330 \\mathrm{~m} / \\mathrm{s}$, then the speed of engine will be", "image": null}, "options": [{"id": "V9TSF", "text": "$30 \\mathrm{~m} / \\mathrm{s}$", "isCorrect": false, "image": null}, {"id": "Wyquv", "text": "$36.6 \\mathrm{~m} / \\mathrm{s}$", "isCorrect": true, "image": null}, {"id": "Yjxdr", "text": "$40 \\mathrm{~m} / \\mathrm{s}$", "isCorrect": false, "image": null}, {"id": "F1npP", "text": "$330 \\mathrm{~m} / \\mathrm{s}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$n^{\\prime}=\\frac{n v}{v-v_{s}} \\ldots \\ldots \\ldots(1)$\r\n\r\n$n^{\\prime \\prime}=\\frac{n v}{v+v_{s}} \\ldots \\ldots . .(2)$\r\n\r\nFrom (1) and (2), $\\frac{n^{\\prime}}{n^{\\prime \\prime}}=\\frac{v+v_{s}}{v-v_{s}} \\ldots \\ldots . .(3)$\r\n\r\nAccording to question, $\\frac{n^{\\prime}}{n^{\\prime}}=\\frac{5}{4}$\r\n\r\n$v_{s}=? v=330 \\mathrm{~m} / \\mathrm{s} \\ldots \\ldots \\ldots .(4)$\r\n\r\nFrom eq. (3) and (4)\r\n\r\n$\\frac{5}{4}=\\left[\\frac{330+v_{s}}{330-v_{s}}\\right] \\Rightarrow 9 v_{s}=330$\r\n\r\n$\\therefore v_{s}=36.6 \\mathrm{~m} / \\mathrm{s}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8126f5bfc7ab78aea53", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 2, "question": {"text": "A whistle of frequency $1000 \\mathrm{~Hz}$ is sounded on a car travelling towards a cliff with velocity of 18 $\\mathrm{~m} \\mathrm{~s}^{-1}$ normal to the cliff. If $\\mathrm{c}=330 \\mathrm{~m} \\mathrm{~s}^{-1}$, then the apparent frequency of the echo as heard by the car driver is nearly", "image": null}, "options": [{"id": "go6CC", "text": "$1115 \\mathrm{~Hz}$", "isCorrect": true, "image": null}, {"id": "ce5ey", "text": "$115 \\mathrm{~Hz}$", "isCorrect": false, "image": null}, {"id": "U2LgT", "text": "$67 \\mathrm{~Hz}$", "isCorrect": false, "image": null}, {"id": "4dwS9", "text": "$47.2 \\mathrm{~Hz}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "By the concept of accoustic, the observer and source are moving towards each other, each with a velocity of $18 \\mathrm{~m} \\mathrm{~s}^{-1}$ $\\therefore \\mathrm{v}^{\\prime}=\\frac{330+18}{330-18} \\times 1000 \\approx 1115 \\mathrm{~Hz}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8016f5bfc7ab78ae9c4", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 2, "question": {"text": "Two sources of sound&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math> are moving towards and away from a stationary observer with the same speed respectively. If the frequency of the sound produced by both the sources is equal to&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>400</mn><mo>&#160;</mo><mi>Hz</mi></math>, then the speed of sources (approximately) if the observer detects 4 beats per second, is [Given, speed of sound <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>340</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>]", "image": null}, "options": [{"id": "UEoUv", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>.</mo><mn>7</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>", "isCorrect": true, "image": null}, {"id": "GMSc8", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>.</mo><mn>4</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>", "isCorrect": false, "image": null}, {"id": "WsoUU", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>.</mo><mn>4</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>", "isCorrect": false, "image": null}, {"id": "o2hB1", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Given, frequency of sound produced by sources <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math>&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math>,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>f</mi><mi>A</mi></msub><mo>=</mo><msub><mi>f</mi><mi>B</mi></msub><mo>=</mo><mn>400</mn><mo>&#160;</mo><mi>Hz</mi></math></p><p>Speed of sound in air, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi><mo>=</mo><mn>340</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math></p><p>Apparent frequency heard by the observer when source <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math> is moving towards him,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>f</mi><mi>A</mi><mo>'</mo></msubsup><mo>=</mo><mfrac><mi>v</mi><mrow><mi>v</mi><mo>-</mo><msub><mi>v</mi><mi>S</mi></msub></mrow></mfrac><mo>&#215;</mo><msub><mi>f</mi><mi>A</mi></msub><mo>=</mo><mfrac><mn>340</mn><mrow><mn>340</mn><mo>-</mo><msub><mi>v</mi><mi>S</mi></msub></mrow></mfrac><mo>&#215;</mo><mn>400</mn></math></p><p>Apparent frequency heard by the observer when source <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math> is moving away from him,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>f</mi><mi>B</mi><mo>'</mo></msubsup><mo>=</mo><mfrac><mi>v</mi><mrow><mi>v</mi><mo>+</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac><mo>&#215;</mo><msub><mi>f</mi><mi>B</mi></msub><mo>=</mo><mfrac><mn>340</mn><mrow><mn>340</mn><mo>+</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac><mo>&#215;</mo><mn>400</mn></math></p><p>Given, Beats&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><msubsup><mi>f</mi><mi>A</mi><mo>'</mo></msubsup><mo>-</mo><msubsup><mi>f</mi><mi>B</mi><mo>'</mo></msubsup><mo>=</mo><mn>4</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>340</mn><mrow><mn>340</mn><mo>-</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac><mo>&#215;</mo><mn>400</mn><mo>-</mo><mfrac><mn>340</mn><mrow><mn>340</mn><mo>+</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac><mo>&#215;</mo><mn>400</mn><mo>=</mo><mn>4</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfrac><mrow><mn>34000</mn><mo>&#215;</mo><mn>2</mn><msub><mi>v</mi><mi>S</mi></msub></mrow><mrow><msup><mn>340</mn><mn>2</mn></msup><mo>-</mo><msubsup><mi>v</mi><mi>S</mi><mn>2</mn></msubsup></mrow></mfrac><mo>=</mo><mn>1</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>34000</mn><mo>&#215;</mo><mn>2</mn><msub><mi>v</mi><mi>S</mi></msub></mrow><msup><mn>340</mn><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn></math>&nbsp; &nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"[\" close=\"]\"><mrow><mo>&#8757;</mo><mo>&#160;</mo><msubsup><mi>v</mi><mi>S</mi><mn>2</mn></msubsup><mo>&#60;</mo><mo>&#60;</mo><msup><mn>340</mn><mn>2</mn></msup></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><msub><mi>v</mi><mi>s</mi></msub><mo>=</mo><mn>1</mn><mo>.</mo><mn>7</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7f36f5bfc7ab78ae947", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 2, "question": {"text": "A train moves towards a stationary observer with speed <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>34</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>. The train blows whistle and its frequency is registered by the observer as <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#957;</mi><mn>1</mn></msub></math>. If the train&#39;s speed is reduced to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>17</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>,</mo></math> then the frequency registered is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#957;</mi><mn>2</mn></msub></math>. If the speed of sound is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>340</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>, then the ratio <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msub><mi>&#957;</mi><mn>1</mn></msub><msub><mi>&#957;</mi><mn>2</mn></msub></mfrac></math> is", "image": null}, "options": [{"id": "bEkFI", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>19</mn><mn>18</mn></mfrac></math>", "isCorrect": true, "image": null}, {"id": "BjJJW", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>18</mn><mn>19</mn></mfrac></math>", "isCorrect": false, "image": null}, {"id": "F1wjR", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn></math>", "isCorrect": false, "image": null}, {"id": "LRt8r", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>/</mo><mn>2</mn></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>According to Doppler&#39;s effect, the approximate frequency heard by the stationary observer,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#957;</mi><mo>=</mo><mfrac><mi>C</mi><mrow><mi>C</mi><mo>-</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac><msub><mi>&#957;</mi><mn>0</mn></msub></math></p><p>Case (I)&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>v</mi><mi>s</mi></msub><mo>=</mo><mn>34</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>,&nbsp;where&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi><mo>=</mo></math>Speed of sound in air,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>v</mi><mi>s</mi></msub><mo>=</mo></math>Speed of source,&nbsp;and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#957;</mi><mn>0</mn></msub><mo>=</mo></math> frequency of the source.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;&#160;</mo><msub><mi>&#957;</mi><mn>1</mn></msub><mo>=</mo><mfenced><mfrac><mn>340</mn><mrow><mn>340</mn><mo>-</mo><mn>34</mn></mrow></mfrac></mfenced><msub><mi>&#957;</mi><mn>0</mn></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mn>340</mn><mn>306</mn></mfrac><msub><mi>&#957;</mi><mrow><mn>0</mn><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo></mrow></msub><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi mathvariant=\"normal\">i</mi></mfenced></math></p><p>Case (ii) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>v</mi><mi>s</mi></msub><mo>=</mo><mn>17</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><msub><mi>&#957;</mi><mn>2</mn></msub><mo>=</mo><mfrac><mn>340</mn><mrow><mn>340</mn><mo>-</mo><mn>17</mn></mrow></mfrac><msub><mi>&#957;</mi><mn>0</mn></msub><mo>=</mo><mfrac><mn>340</mn><mn>323</mn></mfrac><msub><mi>&#957;</mi><mn>0</mn></msub><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi>ii</mi></mfenced></math></p><p>From Eq. (i) and (ii), we get</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mfrac><msub><mi>&#957;</mi><mn>1</mn></msub><msub><mi>&#957;</mi><mn>2</mn></msub></mfrac><mo>=</mo><mfrac><mrow><mn>340</mn><mo>/</mo><mn>306</mn></mrow><mrow><mn>340</mn><mo>/</mo><mn>323</mn></mrow></mfrac><mo>=</mo><mfrac><mn>323</mn><mn>306</mn></mfrac><mo>=</mo><mfrac><mn>19</mn><mn>18</mn></mfrac></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7e46f5bfc7ab78ae8c6", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 2, "question": {"text": "A whistle of frequency <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>500</mn><mi>Hz</mi></math> tied to the end of a string of length <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>.</mo><mn>2</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math> revolves at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>400</mn><mo>&#160;</mo><mi>rev</mi><mo>&#160;</mo><msup><mi>min</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>. A listener standing some distance away in the plane of rotation of whistle hears frequencies in the range. (Speed of sound <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>340</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>)", "image": null}, "options": [{"id": "5WphX", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>436</mn></math> to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>574</mn></math>", "isCorrect": false, "image": null}, {"id": "8Abld", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>426</mn></math> to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>586</mn></math>", "isCorrect": false, "image": null}, {"id": "SWvvz", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>426</mn></math> to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>574</mn></math>", "isCorrect": false, "image": null}, {"id": "EtcKL", "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>436</mn></math>&nbsp;to&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>586</mn></math></p>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>v</mi><mi>s</mi></msub><mo>=</mo><mi>r</mi><mi>&#969;</mi><mo>=</mo><mn>1</mn><mo>.</mo><mn>2</mn><mo>&#215;</mo><mn>2</mn><mi>&#960;</mi><mi>f</mi></math>&nbsp; &nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"[\" close=\"]\"><mrow><mo>&#8757;</mo><mi>&#969;</mi><mo>=</mo><mn>2</mn><mi>&#960;</mi><mi>f</mi></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>1</mn><mo>.</mo><mn>2</mn><mo>&#215;</mo><mn>2</mn><mo>&#215;</mo><mn>3</mn><mo>.</mo><mn>14</mn><mo>&#215;</mo><mfenced><mfrac><mn>400</mn><mn>60</mn></mfrac></mfenced><mo>=</mo><mn>50</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>v</mi><mi>min</mi></msub><mo>=</mo><mfrac><mi>v</mi><mrow><mi>v</mi><mo>+</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac><mo>&#183;</mo><mi>v</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mn>340</mn><mrow><mn>340</mn><mo>+</mo><mn>50</mn></mrow></mfrac><mo>&#215;</mo><mn>500</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>436</mn><mo>&#160;</mo><mi>Hz</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>v</mi><mi>max</mi></msub><mo>=</mo><mfrac><mi>v</mi><mrow><mi>v</mi><mo>-</mo><msub><mi>v</mi><mi>s</mi></msub></mrow></mfrac><mo>&#183;</mo><mi>v</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mn>340</mn><mrow><mn>340</mn><mo>-</mo><mn>50</mn></mrow></mfrac><mo>&#215;</mo><mn>500</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>586</mn><mo>&#160;</mo><mi>Hz</mi></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7da6f5bfc7ab78ae86c", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 2, "question": {"text": "A source of sound S emitting waves of frequency $100 \\mathrm{~Hz}$ and an observor $\\mathrm{O}$ are located at some distance from each other. The source is moving with a speed of $19.4 \\mathrm{~ms}^{-1}$ at an angle of $60^{\\circ}$ with the source observer line as shown in the figure. The observor is at rest. The apparent frequency observed by the observer is (velocity of sound in air $330 \\mathrm{~ms}^{-1}$ )\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/gzDojaZnw4cKWu4LevpU1GrsaIDMmmjIgy7sxqgc_SM.original.fullsize.png\">", "image": null}, "options": [{"id": "yHrf4", "text": "$103 \\mathrm{~Hz}$", "isCorrect": true, "image": null}, {"id": "0mtwN", "text": "$106 \\mathrm{~Hz}$", "isCorrect": false, "image": null}, {"id": "YzyyA", "text": "$97 \\mathrm{~Hz}$", "isCorrect": false, "image": null}, {"id": "NElrg", "text": "$100 \\mathrm{~Hz}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Here, original frequency of sound, $\\mathrm{f}_{0}=100 \\mathrm{~Hz}$ Speed of source $V_{s}=19.4 \\cos 60^{\\circ}=9.7$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/kl3r4C7gEpsUBy2rdOIXHWvaF48AGvWkG4pVu5UMWEE.original.fullsize.png\"><br>\r\n\r\nFrom Doppler's formula\r\n\r\n$\\mathrm{f}^{\\mathrm{l}}=\\mathrm{f}_{0}\\left(\\frac{\\mathrm{V}-\\mathrm{V}_{0}}{\\mathrm{~V}-\\mathrm{V}_{\\mathrm{s}}}\\right)$\r\n\r\n$\\mathrm{f}^{\\mathrm{l}}=100\\left(\\frac{\\mathrm{V}-0}{\\mathrm{~V}-(+9.7)}\\right)$\r\n\r\n$\\mathrm{f}^{\\mathrm{l}}=100 \\frac{\\mathrm{V}}{\\mathrm{V}\\left(1-\\frac{9.7}{\\mathrm{~V}}\\right)}$\r\n\r\n$\\mathrm{f}^{1}=100\\left(1+\\frac{9.7}{330}\\right)=103 \\mathrm{~Hz}$\r\n\r\nApparent frequency $\\mathrm{f}^{1}=103 \\mathrm{~Hz}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7bb6f5bfc7ab78ae75f", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 2, "question": {"text": "A sound source, emitting sound of constant frequency, moves with a constant speed and crosses a stationary observer. The frequency (n) of sound heard by the observer is plotted against time (t). Which of the following graphs represents the correct variation?", "image": null}, "options": [{"id": "jOZa2", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/dxgjh0YqWHXzF8iEaFK08UYDQAykQN_t-h42ClX36r0.original.fullsize.png\">", "isCorrect": false, "image": null}, {"id": "39UQq", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/AG9jrl0KXcABKQf8Tqq6NpI8ldsZMHF4_9eLyamyihE.original.fullsize.png\">", "isCorrect": false, "image": null}, {"id": "6k89L", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/Klnuor_6ZFyxfO6yDkahYUcNnBjcNnU9ePm6J1Uvsd0.original.fullsize.png\">", "isCorrect": false, "image": null}, {"id": "sLxWB", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/MSPthFQUS_ZP9AARTiTCNWiYDHZRXNb7cfbhaG-lR9I.original.fullsize.png\">", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "No Solution", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e79d6f5bfc7ab78ae669", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 2, "question": {"text": "A sound souorce is moving towards stationary listener with $\\frac{1}{10}$ th of the speed of sound. The ratio of apparent to read frequency is", "image": null}, "options": [{"id": "Io2XH", "text": "$\\left(\\frac{9}{10}\\right)^{2}$", "isCorrect": false, "image": null}, {"id": "7w4pz", "text": "$\\left(\\frac{10}{9}\\right)$", "isCorrect": true, "image": null}, {"id": "qyRSZ", "text": "$\\left(\\frac{11}{10}\\right)$", "isCorrect": false, "image": null}, {"id": "kkKJR", "text": "$\\left(\\frac{11}{10}\\right)^{2}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$v_{\\mathrm{s}}=\\frac{\\mathrm{v}}{10} \\quad \\mathrm{n}^{\\prime}=\\mathrm{n} \\frac{\\mathrm{v}}{\\mathrm{v}-\\mathrm{v}_{\\mathrm{s}}}$\r\n$\\frac{\\mathrm{n}^{\\prime}}{\\mathrm{n}}=\\frac{\\mathrm{v}}{\\left(\\mathrm{v}-\\frac{\\mathrm{v}}{10}\\right)}=\\frac{10}{9}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7816f5bfc7ab78ae570", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "A source of sound produces waves of wavelength $60 \\mathrm{~cm}$ when it is stationary. If the speed of sound in air is $320 \\mathrm{~m} \\mathrm{~s}^{-1}$ and source moves with speed $20 \\mathrm{~m} \\mathrm{~s}^{-1},$ the wavelength of sound in the forward direction will be nearest to", "image": null}, "options": [{"id": "v5IM9", "text": "$56 \\mathrm{~cm}$", "image": null, "isCorrect": true}, {"id": "sOuo5", "text": "$60 \\mathrm{~cm}$", "image": null, "isCorrect": false}, {"id": "hqWZX", "text": "$64 \\mathrm{~cm}$", "image": null, "isCorrect": false}, {"id": "6jN9k", "text": "$68 \\mathrm{~cm}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "No Solution available", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 8, "topicId": "65b7b88e97ae24e9e2db8d2f", "title": "Doppler’s Effect", "totalQuestions": 1, "questions": [{"_id": "65b7b87c97ae24e9e2db8cd2", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "The engine of a train moving with speed $10 \\mathrm{~ms}^{-1}$ towards a platform sounds a whistle at frequency $400 \\mathrm{~Hz}$. The frequency heard by a passenger inside the train is (neglect air speed. Speed of sound in air $330 \\mathrm{~ms}^{-1}$ )", "image": null}, "options": [{"id": "wdgDK", "text": "$200 \\mathrm{~Hz}$", "image": null, "isCorrect": false}, {"id": "VwoFq", "text": "$400 \\mathrm{~Hz}$", "image": null, "isCorrect": true}, {"id": "lpLy1", "text": "$412 \\mathrm{~Hz}$", "image": null, "isCorrect": false}, {"id": "yhhrk", "text": "$388 \\mathrm{~Hz}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "The relative velocity of a passenger with respect to source of sound (engine of train) is 0 . So there will be no Doppler's effect. So frequency heard is $400 \\mathrm{~Hz}$.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 9, "topicId": "64c0e8576f5bfc7ab78aed0d", "title": "Speed of Sound Waves", "totalQuestions": 5, "questions": [{"_id": "67726d07c49e8ef28ee2b3ad", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "The speed of sound in oxygen at S.T.P. will be approximately:\n(Given, $\\left.\\mathrm{R}=8.3 \\mathrm{JK}^{-1}, \\gamma=1.4\\right)$", "image": null}, "options": [{"id": "tOfbk", "text": "$315 \\mathrm{~m} / \\mathrm{s}$", "image": null, "isCorrect": true}, {"id": "4iMRs", "text": "$333 \\mathrm{~m} / \\mathrm{s}$", "image": null, "isCorrect": false}, {"id": "Pkhei", "text": "$341 \\mathrm{~m} / \\mathrm{s}$", "image": null, "isCorrect": false}, {"id": "3BGG1", "text": "$325 \\mathrm{~m} / \\mathrm{s}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "At STP\nTemperature, $T=273 \\mathrm{~K}$\nMolecular mass of oxygen, $\\mathrm{M}=32 \\times 10^{-3} \\mathrm{~kg}$\nSpeed of sound is given by\n$\\mathrm{v}=\\sqrt{\\frac{\\gamma \\mathrm{RT}}{\\mathrm{M}}}=\\sqrt{\\frac{1.4 \\times 8.3 \\times 273}{32 \\times 10^{-3}}}$\n$=314.8541 \\simeq 315 \\mathrm{~m} / \\mathrm{s}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87297ae24e9e2db8c6a", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "The ratio of speed of sound in hydrogen gas to the speed of sound in oxygen gas at the same temperature is:", "image": null}, "options": [{"id": "GjPe9", "text": "$4: 1$", "image": null, "isCorrect": true}, {"id": "qrqvd", "text": "$1: 2$", "image": null, "isCorrect": false}, {"id": "7OxOD", "text": "$1: 4$", "image": null, "isCorrect": false}, {"id": "1imxk", "text": "$1: 1$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Given $\\mathrm{M}_{\\mathrm{H}_2}=2 ; \\mathrm{M}_{\\mathrm{O}_2}=32$<br />Speed of sound, $\\mathrm{v}=\\sqrt{\\frac{\\gamma \\mathrm{RT}}{\\mathrm{M}}}$<br />$\\Rightarrow \\quad v \\propto \\frac{1}{\\sqrt{M}}$<br />$\\therefore \\quad \\frac{\\mathrm{v}_{\\mathrm{H}_2}}{\\mathrm{v}_{\\mathrm{O}_2}}=\\sqrt{\\frac{\\mathrm{M}_{\\mathrm{O}_2}}{\\mathrm{M}_{\\mathrm{H}_2}}}=\\sqrt{\\frac{32}{2}}=4: 1$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e82c6f5bfc7ab78aeb39", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 1, "question": {"text": "Transverse waves of the same frequency are generated in two steel wires $A$ and $B$. The diameter of $A$ is twice that of $B$ and the tension in $A$ is half that in $B$. The ratio of the velocities of the waves in $A$ and $B$ is", "image": null}, "options": [{"id": "FvgIi", "text": "\r\n$1: 2$\r\n", "isCorrect": false, "image": null}, {"id": "4ttc0", "text": "\r\n$1: \\sqrt{2}$\r\n", "isCorrect": false, "image": null}, {"id": "3qbqv", "text": "\r\n$1: 2 \\sqrt{2}$\r\n", "isCorrect": true, "image": null}, {"id": "DToE0", "text": "\r\n$3: 2 \\sqrt{2}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The velocity of transverse waves is given by $v=\\sqrt{\\frac{T}{m}}$ where, $T=$ Tension and $m=$ mass per unit length of the wire. If $r$ is the radius of the wire and $\\rho$ its density then,\r\n$m=\\pi r^2 \\rho$\r\n$\\therefore \\quad v=\\sqrt{\\frac{T}{m}}=\\sqrt{\\frac{T}{\\pi r^2 \\rho}}$\r\n$\\therefore \\quad v_A=\\frac{\\sqrt{T_A}}{r_A \\sqrt{\\pi \\rho}}$\r\nand $\\quad v_B=\\frac{\\sqrt{T_B}}{r_B \\sqrt{\\pi \\rho}}$\r\nNow, $\\quad \\frac{v_A}{v_B}=\\sqrt{\\frac{T_A}{T_B}} \\cdot \\frac{r_B}{r_A}$\r\n$\\because \\quad r_A=2 r_B$ and $T_A=\\frac{1}{2} T_B$\r\nHence, $\\quad \\frac{v_A}{v_B}=\\frac{1}{2 \\sqrt{2}}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e82c6f5bfc7ab78aeb38", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 3, "question": {"text": "A submarine $A$ travelling at $17 \\mathrm{~m} / \\mathrm{s}$ is being chased along the line of its velocity by another submarine $B$ travelling at $34 \\mathrm{~m} / \\mathrm{s}$. B sends a sonar signal of $600 \\mathrm{~Hz}$ to detect $A$ and receives a reflected sound of frequency $v$. The of $v$ is\r\n[Speed of sound in water $=1500 \\mathrm{~ms}^{-1}$ ]", "image": null}, "options": [{"id": "sSnoP", "text": "\r\n$613.7 \\mathrm{~Hz}$\r\n", "isCorrect": true, "image": null}, {"id": "MzB7s", "text": "\r\n$6137 \\mathrm{~Hz}$\r\n", "isCorrect": false, "image": null}, {"id": "Hn0wn", "text": "\r\n$62 \\mathrm{~Hz}$\r\n", "isCorrect": false, "image": null}, {"id": "BtOv8", "text": "\r\n$539 \\mathrm{~Hz}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\therefore$ Given, velocity of submarine $A, v_A=17 \\mathrm{~m} / \\mathrm{s}$\r\nVelocity of submarine $B, v_B=34 \\mathrm{~m} / \\mathrm{s}$\r\nSignal sent by submarine $B$ is detected by submarine $A$ can be shown as\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/Jq4hW_ynZTPjtqs3fQMJASQbe7HfYMizbGu9xW3UZps.original.fullsize.png\"><br>\r\nFreqency of the signal, $f_0=600 \\mathrm{~Hz}$\r\nSpeed of sound in water $v_s=1500 \\mathrm{~ms}^{-1}$\r\nFrequency received by submarine $A$ is\r\n$$\r\nf_1=\\left(\\frac{v_{\\mathrm{S}}-v_A}{v_{\\mathrm{S}}-v_B}\\right) f_0=\\left[\\frac{1500-17}{1500-34}\\right] \\times 600 \\mathrm{~Hz}\r\n$$\r\n$$\r\nf_1=\\frac{1483}{1466} \\times 600\r\n$$\r\nFrequency received by submarine $B$ is\r\n$$\r\nf_2=\\left(\\frac{v_{\\mathrm{S}}+v_B}{v_s+v_A}\\right) f_1\r\n$$\r\nSubstituting given values and $f_1$ value from Eq. (i), we get\r\n$$\r\n\\begin{aligned}\r\nf_2 & =\\left(\\frac{1500+34}{1500+17}\\right) \\times\\left[\\frac{1483}{1466} \\times 600\\right] \\\\\r\nf_2 & =1.0112 \\times 1.0115 \\times 600 \\\\\r\nf_2 & =613.7 \\mathrm{~Hz}\r\n\\end{aligned}\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8216f5bfc7ab78aead6", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 1, "question": {"text": "The displacement y of a particle in a medium can be expressed as, $y=10^{-6} \\sin \\left(100 t+20 x+\\frac{\\pi}{4}\\right) m$ where $t$ is in second and $x$ in meter. The speed of the wave is", "image": null}, "options": [{"id": "WK2Ff", "text": "$20 \\mathrm{~m} / \\mathrm{s}$", "isCorrect": false, "image": null}, {"id": "rvxJC", "text": "$5 \\mathrm{~m} / \\mathrm{s}$", "isCorrect": true, "image": null}, {"id": "rIRwi", "text": "$2000 \\mathrm{~m} / \\mathrm{s}$", "isCorrect": false, "image": null}, {"id": "iFPe6", "text": "$5 \\pi \\mathrm{m} / \\mathrm{s}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "From equation given,\r\n\r\n$\\begin{array}{l}\r\n\r\n\\omega=100 \\\\\r\n\r\n\\text { and } \\mathrm{k}=20 \\\\\r\n\r\n\\mathrm{v}=\\frac{\\omega}{\\mathrm{k}}=\\frac{100}{20}=5 \\mathrm{~m} / \\mathrm{s}\r\n\r\n\\end{array}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

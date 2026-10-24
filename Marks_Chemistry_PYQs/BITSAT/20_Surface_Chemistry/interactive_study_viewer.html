@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Surface Chemistry PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚗️ BITSAT &bull; Surface Chemistry</h1>
+        <div class="sub">Chemistry PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 20, "chapterId": "61e7bd7b91f653935e43ec21", "chapter": "Surface Chemistry", "exam": "BITSAT", "totalTopics": 4, "totalQuestions": 13, "downloadTime": "2026-10-08 20:02:55", "topics": [{"index": 1, "topicId": "64c0e8766f5bfc7ab78aee72", "title": "Adsorption", "totalQuestions": 2, "questions": [{"_id": "64c0e8176f5bfc7ab78aea7f", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 1, "question": {"text": "Methylene blue, from its aqueous solution, is adsorbed on activated charcoal at $25^{\\circ} \\mathrm{C}$. For this process, which ofthe following statement is correct?", "image": null}, "options": [{"id": "9iTJ5", "text": "The adsorption requires activation at $25^{\\circ} \\mathrm{C}$", "isCorrect": false, "image": null}, {"id": "tGrJu", "text": "The adsorption is accompanied by a decrease in enthalpy", "isCorrect": true, "image": null}, {"id": "dRDjN", "text": "The adsorption increases with increase of temperature", "isCorrect": false, "image": null}, {"id": "YNmVx", "text": "The adsorption is irreversible", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The adsorption of methylene blue on activated charcoal is an example of physiosorption which is exothermic, multilayer and does not have energy barrier.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7a26f5bfc7ab78ae693", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 1, "question": {"text": "Which of the following gas molecules have maximum value of enthalpy of physisorption?", "image": null}, "options": [{"id": "R8CCi", "text": "$\\mathrm{C}_{2} \\mathrm{H}_{6}$", "isCorrect": false, "image": null}, {"id": "SEpu0", "text": "$\\mathrm{Ne}$", "isCorrect": false, "image": null}, {"id": "vplkU", "text": "$\\mathrm{H}_{2} \\mathrm{O}$", "isCorrect": true, "image": null}, {"id": "vfEFQ", "text": "$\\mathrm{H}_{2}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The more the liquifiable nature of a gas, the more is the enthalpy of adsorption. Water is more liquifiable.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8766f5bfc7ab78aee71", "title": "Adsorption isotherms", "totalQuestions": 4, "questions": [{"_id": "64c0e8246f5bfc7ab78aeaf5", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 1, "question": {"text": "Adsorption of a gas follows Freundlich adsorption isotherm. $x$ is the mass of the gas adsorbed on mass $m$ of the adsorbent. The plot of $\\frac{x}{m}$ versus $\\log p$ is shown in the given graph.\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/ZhUCvdIYQVA6OhsEZtwkp47cgQrhbfXqZ9TzF793gCw.original.fullsize.png\"><br>\r\n\r\n$\\frac{x}{m}$ is proportional to :", "image": null}, "options": [{"id": "gYNTJ", "text": "$p^{2 / 3}$", "isCorrect": true, "image": null}, {"id": "eQ1jF", "text": "$p^{3 / 2}$", "isCorrect": false, "image": null}, {"id": "gnuv1", "text": "$p^{3}$", "isCorrect": false, "image": null}, {"id": "hysx8", "text": "$p^{2}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "According to Freundlich adsorption isotherm $\\frac{x}{m} \\propto p^{\\frac{1}{n}}, \\frac{x}{m}=k p^{\\frac{1}{n}}$\r\n\r\nSlope $=\\frac{2}{3}$\r\n\r\n$\\log \\frac{x}{m}=\\log k+\\frac{1}{n} \\log p$\r\n\r\nSlope $=\\frac{1}{n}=\\frac{2}{3}$\r\n\r\n$\\frac{x}{m} \\propto p^{\\frac{2}{3}}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8096f5bfc7ab78aea04", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 3, "question": {"text": "In Freundlich adsorption isotherm, the value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>/</mo><mi mathvariant=\"normal\">n</mi></math>&nbsp;is", "image": null}, "options": [{"id": "YLfYX", "text": "between <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math> in all cases", "isCorrect": true, "image": null}, {"id": "JVyhO", "text": "between <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn></math> in all cases", "isCorrect": false, "image": null}, {"id": "v9z0N", "text": "always <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math> in case of physical adsorption", "isCorrect": false, "image": null}, {"id": "HehUV", "text": "always <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math> in use of chemical adsorption", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Freundlich isotherm is related with the pressure of gas adsorbed, as follows <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi mathvariant=\"normal\">x</mi><mi mathvariant=\"normal\">m</mi></mfrac><mo>=</mo><mi mathvariant=\"normal\">k</mi><mo>&#183;</mo><msup><mi mathvariant=\"normal\">p</mi><mrow><mn>1</mn><mo>/</mo><mi mathvariant=\"normal\">n</mi></mrow></msup></math></p><p>where, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi mathvariant=\"normal\">x</mi><mi mathvariant=\"normal\">m</mi></mfrac><mo>=</mo></math> amount of gas&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi mathvariant=\"normal\">x</mi></mfenced></math> adsorbed over the surface of mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi mathvariant=\"normal\">m</mi></mfenced></math>.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">p</mi><mo>=</mo></math> pressure of gas</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">k</mi><mo>=</mo></math> freundlich constant</p><p>Thus, value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>'</mo><mi mathvariant=\"normal\">n</mi><mo>'</mo></math> is always greater than 1 and therefore value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>/</mo><mi mathvariant=\"normal\">n</mi></math> lies between <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math>.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7f96f5bfc7ab78ae97d", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 2, "question": {"text": "Which of the following graph is correctly represented according to Freundlich isotherm.", "image": null}, "options": [{"id": "v5tpS", "text": "<p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/86555781-f85b-41b4-b7cf-e9a2fc740a1b-image.png\" style=\"width: 168px; height: 170px;\" /></p>", "isCorrect": true, "image": null}, {"id": "D3Yzz", "text": "<p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/0542279d-c55a-4bda-8c3f-a6014639f9ff-8bf60993-dff5-40ca-93b9-4eda26435630-image.png\" style=\"width: 200px; height: 185px;\" /></p>", "isCorrect": false, "image": null}, {"id": "jB1rh", "text": "<p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/016ebcfc-f596-4750-880c-df5b60ec2790-image.png\" style=\"width: 168px; height: 170px;\" /></p>", "isCorrect": false, "image": null}, {"id": "X1RK2", "text": "<p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/0251b59c-646c-4eb5-ac1d-5d232127fad1-image.png\" style=\"width: 175px; height: 170px;\" /></p>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>According to Freundlich adsorption isotherm,<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi><mo>/</mo><mi mathvariant=\"normal\">m</mi><mo>=</mo><mi mathvariant=\"normal\">k</mi><mo>&#215;</mo><msup><mi mathvariant=\"normal\">P</mi><mfrac><mn>1</mn><mi mathvariant=\"normal\">n</mi></mfrac></msup></math><br />where, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">x</mi><mo>=</mo></math> mass of gas adsorbed on mass &#39;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">m</mi></math>&#39; of the absorbent at pressure <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">p</mi></math>.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">k</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>=</mo></math> constants.</p><p>Taking logarithm on both sides, we get<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>logx</mi><mo>/</mo><mi mathvariant=\"normal\">m</mi><mo>=</mo><mi>logk</mi><mo>+</mo><mfrac><mn>1</mn><mi mathvariant=\"normal\">n</mi></mfrac><mi>logp</mi></math></p><p>This is equation of a straight line with slope of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mi mathvariant=\"normal\">n</mi></mfrac></math> and intercept of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>logk</mi></math>.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7946f5bfc7ab78ae615", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "For adsorption of a gas on a solid, the plot of log $x / m$ vs log $P$ is linear with slope equal to ( $n$ being whole number)", "image": null}, "options": [{"id": "CxCDq", "text": "$k$", "image": null, "isCorrect": false}, {"id": "pqfrn", "text": "$\\log k$", "image": null, "isCorrect": false}, {"id": "etD6U", "text": "$n$", "image": null, "isCorrect": false}, {"id": "18aSG", "text": "$\\frac{1}{n}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "According to Freundlich adsorption isotherm, at intermediate pressure, extent of adsorption\n$$\n\\frac{x}{m}=k \\mathrm{P}^{1 / n} \\text { or } \\log \\frac{x}{m}=\\log k+\\frac{1}{n} \\log \\mathrm{P}\n$$\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/qIjkRIb8xI5eL_fH_8X4PE7dWlAoqj8xv1nPisc3Cjs.original.fullsize.png\"><br>\nplot of $\\log \\frac{x}{m}$ vs log $\\mathrm{P}$ is linear with slope\n$=\\frac{1}{n}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e8766f5bfc7ab78aee70", "title": "Properties of colloidal solution", "totalQuestions": 6, "questions": [{"_id": "67726d08c49e8ef28ee2b3b6", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "The charge on colloidal particies is due to", "image": null}, "options": [{"id": "YIPjw", "text": "presence of electrolyte", "image": null, "isCorrect": false}, {"id": "g1c2G", "text": "very small size of particles", "image": null, "isCorrect": false}, {"id": "rAqSf", "text": "adsorption of ions from the solution", "image": null, "isCorrect": true}, {"id": "pakIC", "text": "can't be determined", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "The colloidal particles have a tendency to preferentially adsorb a particular type of ions form the solution. This preferential adsorption of a particular type of ions imparts a particular type of charge to colloidal narticles.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87397ae24e9e2db8c77", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "Which of the following method is used for coagulation of the sol?", "image": null}, "options": [{"id": "GNq8W", "text": "By mixing two oppositely charged sols.", "image": null, "isCorrect": false}, {"id": "ILYKV", "text": "By electrophoresis.", "image": null, "isCorrect": false}, {"id": "lrWzS", "text": "By addition of electrolytes.", "image": null, "isCorrect": false}, {"id": "KRfOm", "text": "All of the above.", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "No Solution Available", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7cf6f5bfc7ab78ae816", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 2, "question": {"text": "Which of the following ionic substances will be most effective in precipitating the sulphur sol?", "image": null}, "options": [{"id": "xzmOh", "text": "$\\mathrm{KCl}$", "isCorrect": false, "image": null}, {"id": "SpXyJ", "text": "$\\mathrm{BaCl}_{2}$", "isCorrect": false, "image": null}, {"id": "vr9tR", "text": "$\\mathrm{Fe}_{2}\\left(\\mathrm{SO}_{4}\\right)_{3}$", "isCorrect": true, "image": null}, {"id": "us3E0", "text": "$\\mathrm{Na}_{3} \\mathrm{PO}_{4}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "No Solution", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7c06f5bfc7ab78ae78d", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 1, "question": {"text": "The isoelectric-point of a colloidially dispersed material is the $\\mathrm{pH}$ value at which", "image": null}, "options": [{"id": "bPoYZ", "text": "the dispersed phase migrate in an electric field.", "isCorrect": false, "image": null}, {"id": "etrwj", "text": "the dispersed phase does not migrate in an electric field.", "isCorrect": true, "image": null}, {"id": "dgysk", "text": "the dispersed phase has $\\mathrm{pH}$ equal to 7 .", "isCorrect": false, "image": null}, {"id": "v9oxI", "text": "the dispersed phase has pH equal to zero.", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "At isoelectric point there is no migration of dispersed phase in an electric field.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7a26f5bfc7ab78ae694", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 3, "question": {"text": "Which of the following will be the most effective in the coagulation of $\\mathrm{Fe}(\\mathrm{OH})_{3}$ soil?", "image": null}, "options": [{"id": "UGTTk", "text": "$\\mathrm{Mg}_{3}\\left(\\mathrm{PO}_{4}\\right)_{2}$", "isCorrect": true, "image": null}, {"id": "BoW4O", "text": "$\\mathrm{BaCl}_{2}$", "isCorrect": false, "image": null}, {"id": "0RmtH", "text": "$\\mathrm{NaCl}$", "isCorrect": false, "image": null}, {"id": "mOSON", "text": "$\\mathrm{KCN}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "According to Hardy-Schulze rule, coagulation power of ions is directly proportional to charge on ion. $\\because \\mathrm{Fe}(\\mathrm{OH})_{3}$ is positively charged colloid. $\\therefore$ It will be coagulated by anion.\r\n(a) $\\mathrm{Mg}_{3}\\left(\\mathrm{PO}_{4}\\right)_{2} \\rightleftharpoons 3 \\mathrm{Mg}^{2+}+2 \\mathrm{PO}_{4}^{3-}$\r\n(b) $\\mathrm{BaCl}_{2} \\rightleftharpoons \\mathrm{Ba}^{2+}+2 \\mathrm{Cl}^{-}$\r\n(c) $\\mathrm{NaCl} \\rightleftharpoons \\mathrm{Na}^{+}+\\mathrm{Cl}^{-}$\r\n(d) $\\mathrm{KCN} \\rightleftharpoons \\mathrm{K}^{+}+\\mathrm{CN}^{-}$\r\nBecause $\\mathrm{PO}_{4}^{3-}$ has highest charge among the given anions, therefore, $\\mathrm{Mg}_{3}\\left(\\mathrm{PO}_{4}\\right)_{2}$ is the most effective in the coagulation of $\\mathrm{Fe}(\\mathrm{OH})_{3}$ solution.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7946f5bfc7ab78ae614", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "Position of non-polar and polar part in micelle is", "image": null}, "options": [{"id": "YrLfM", "text": "polar at outer surface and non-polar at inner surface.", "image": null, "isCorrect": true}, {"id": "8Jxes", "text": "polar at inner surface and non-polar at outer surface.", "image": null, "isCorrect": false}, {"id": "XryNH", "text": "distributed all over the surface.", "image": null, "isCorrect": false}, {"id": "ephbI", "text": "present in the surface only.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/lDb_PcltkjfAeQ7fzTl81Pma71V5iPzM9WpFVc4M9vE.original.fullsize.png\">", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "65b7b89097ae24e9e2db8d31", "title": "Emulsions and Gels", "totalQuestions": 1, "questions": [{"_id": "65b7b87d97ae24e9e2db8cdc", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "Point out the false statement :", "image": null}, "options": [{"id": "2ow4e", "text": "<br />The colloidal solution of a liquid in liquid is called gel", "image": null, "isCorrect": true}, {"id": "oQ0tf", "text": "<br />Hardy Schulze rule is related with coagulation", "image": null, "isCorrect": false}, {"id": "Omy6J", "text": "<br />Brownian movement and Tyndall effect are shown by colloidal system", "image": null, "isCorrect": false}, {"id": "2XF7r", "text": "<br />Gold number is a measure of the protective power of lyophilic colloid", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Colloid of liquid in liquid is called emulsion. Colloid of liquid in solid is gel.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

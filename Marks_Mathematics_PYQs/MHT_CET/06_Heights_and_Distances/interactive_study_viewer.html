@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MHT CET - Heights and Distances PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>📐 MHT CET &bull; Heights and Distances</h1>
+        <div class="sub">Mathematics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 6, "chapterId": "65a262170279619d9d8a31bc", "chapter": "Heights and Distances", "exam": "MHT CET", "subject": "Mathematics", "totalTopics": 1, "totalQuestions": 4, "downloadTime": "2026-10-08 20:42:36", "topics": [{"index": 1, "topicId": "65a263510279619d9d8a3e24", "title": "Heights and Distances", "totalQuestions": 4, "questions": [{"_id": "6a44d3108c30a4553e1bdfc5", "type": "singleCorrect", "question": {"text": "The lengths of the shadows of a tree of height p, thrown by sun's rays at three different moments are p, 2p and 3p. The sum of the angles of elevation of the sun's rays at these three moments is equal to...", "image": null}, "options": [{"id": "UKBp9", "label": "A", "text": "$\\dfrac{2\\pi}{3}$", "isCorrect": false, "image": null}, {"id": "bKYdP", "label": "B", "text": "$\\dfrac{3\\pi}{2}$", "isCorrect": false, "image": null}, {"id": "gUNwB", "label": "C", "text": "$\\dfrac{\\pi}{4}$", "isCorrect": false, "image": null}, {"id": "DdJHT", "label": "D", "text": "$\\dfrac{\\pi}{2}$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Let the angles of elevation of the sun's rays at the three moments be $\\theta_1$, $\\theta_2$, and $\\theta_3$.<br><br>From the given information, the height of the tree is $p$ and the lengths of the shadows are $p$, $2p$, and $3p$.<br><br>$\\tan \\theta_1 = \\dfrac{p}{p} = 1 \\Rightarrow \\theta_1 = \\dfrac{\\pi}{4}$<br><br>$\\tan \\theta_2 = \\dfrac{p}{2p} = \\dfrac{1}{2}$<br><br>$\\tan \\theta_3 = \\dfrac{p}{3p} = \\dfrac{1}{3}$<br><br>Using the tangent addition formula for $\\theta_2$ and $\\theta_3$:<br><br>$\\tan(\\theta_2 + \\theta_3) = \\dfrac{\\tan \\theta_2 + \\tan \\theta_3}{1 - \\tan \\theta_2 \\tan \\theta_3}$<br><br>Substituting the values:<br><br>$\\tan(\\theta_2 + \\theta_3) = \\dfrac{\\dfrac{1}{2} + \\dfrac{1}{3}}{1 - \\dfrac{1}{2} \\times \\dfrac{1}{3}} = \\dfrac{\\dfrac{5}{6}}{\\dfrac{5}{6}} = 1$<br><br>Since $\\theta_2$ and $\\theta_3$ are acute angles, $\\theta_2 + \\theta_3 = \\dfrac{\\pi}{4}$.<br><br>Therefore, the sum of the angles of elevation is:<br><br>$\\theta_1 + \\theta_2 + \\theta_3 = \\dfrac{\\pi}{4} + \\dfrac{\\pi}{4} = \\dfrac{\\pi}{2}$", "image": null}, "previousYearPapers": [{"_id": "6a44d2802d2155b816ec4a7b", "title": "MHT CET 2026 (19 April Shift 2)", "shortName": "2026 (19 April Shift 2)", "isVisible": true, "heldOn": "2026-04-19T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "level": 2, "questionLabels": [], "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6a44d2802d2155b816ec4a7b", "title": "MHT CET 2026 (19 April Shift 2)", "shortName": "2026 (19 April Shift 2)", "isVisible": true, "heldOn": "2026-04-19T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a2623b0279619d9d8a32de", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b89f20917a5f41892b1", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-12T14:00:00.000Z", "isVisible": true, "shortName": "2023 (12 May Shift 2)", "title": "MHT CET 2023 (12 May Shift 2)"}], "question": {"text": "A ladder, 5 meters long; rests against a vertical wall. If its top slides downwards at the rate of $10 \\mathrm{~cm} / \\mathrm{s}$, then the angle between the ladder and the floor is decreasing at the rate of radians/second when it's lower end is $\\overline{4 \\mathrm{~m} \\text { away from the wall. }}$", "image": null}, "options": [{"id": "wYy8p", "text": "$-0.1$", "image": null, "isCorrect": false}, {"id": "pmy8l", "text": "$-0.025$", "image": null, "isCorrect": false}, {"id": "5MbmO", "text": "$0.1$", "image": null, "isCorrect": false}, {"id": "YPiiV", "text": "$0.025$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/anbQ_IuBUWUDuDpRxTKPp_JiC34UZdrTbXHEqN56LpI.original.fullsize.png\"><br>\nAccording to the figure, $x^2+y^2=25$\nNote that $\\cos \\theta=\\frac{\\mathrm{OB}}{\\mathrm{AB}}=\\frac{x}{5}$\n$\\therefore \\quad x=5 \\cos \\theta$\n$\\therefore \\quad$ (i) $\\Rightarrow 25 \\cos ^2 \\theta+y^2=25$\nDifferentiating w.r.t. ' $t$ ', we get\n$$\n\\begin{aligned}\n& \\quad-50 \\cos \\theta \\sin \\theta \\frac{\\mathrm{d} \\theta}{\\mathrm{dt}}+2 y \\frac{\\mathrm{d} y}{\\mathrm{dt}}=0 \\\\\n& 25 \\sin \\theta \\cos \\theta \\frac{\\mathrm{d} \\theta}{\\mathrm{dt}}=y \\frac{\\mathrm{d} y}{\\mathrm{dt}} \\\\\n& \\therefore \\quad 25 \\sin \\theta \\cos \\theta \\frac{\\mathrm{d} \\theta}{\\mathrm{dt}}=y(-0.1) \\\\\n& \\quad \\ldots\\left[\\because \\frac{\\mathrm{d} y}{\\mathrm{~d} x}=-10 \\mathrm{~cm} / \\mathrm{s}=-0.1 \\mathrm{~m} / \\mathrm{s}\\right] \\\\\n& \\therefore \\quad 25 \\sin \\theta \\cos \\theta \\frac{\\mathrm{d} \\theta}{\\mathrm{dt}}=-(0.1) y \\\\\n& \\quad \\text { at } x=4, \\cos \\theta=\\frac{4}{5}, \\sin \\theta=\\frac{3}{5} \\text { and } y=3 \\\\\n& \\therefore \\quad \\text { (ii) } \\Rightarrow 25 \\times \\frac{3}{5} \\times \\frac{4}{5} \\times \\frac{\\mathrm{d} \\theta}{\\mathrm{dt}}=-0.3 \\\\\n& \\Rightarrow \\frac{\\mathrm{d} \\theta}{\\mathrm{dt}}=-0.025\n\\end{aligned}\n$$\ni.e., the angle is decreasing at the rate of $0.025 \\mathrm{rad} / \\mathrm{s}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b89f20917a5f41892b1", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-12T14:00:00.000Z", "isVisible": true, "shortName": "2023 (12 May Shift 2)", "title": "MHT CET 2023 (12 May Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a2622a0279619d9d8a3252", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b89f20917a5f41892b0", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-12T09:00:00.000Z", "isVisible": true, "shortName": "2023 (12 May Shift 1)", "title": "MHT CET 2023 (12 May Shift 1)"}], "question": {"text": "A ladder 5 meters long rests against a vertical wall. If its top slides downwards at the rate of $10 \\mathrm{~cm} / \\mathrm{s}$, then the angle between the ladder and the floor is decreasing at the rate of rad./s when it's lower end is $4 \\mathrm{~m}$ away from the wall.", "image": null}, "options": [{"id": "V36tT", "text": "-0.1", "image": null, "isCorrect": false}, {"id": "XsWuY", "text": "-0.025", "image": null, "isCorrect": false}, {"id": "hMwRk", "text": "0.1", "image": null, "isCorrect": false}, {"id": "NMpGS", "text": "0.025", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/O6A1pPavbToMGkoWTaLid65-zIgsGxVPVAGiYw1OkhU.original.fullsize.png\"><br>\n\nAccording to the figure, $x^2+y^2=25...(i)$\nNote that $\\cos \\theta=\\frac{\\mathrm{OB}}{\\mathrm{AB}}=\\frac{x}{5}$\n$\\therefore \\quad x=5 \\cos \\theta$\n$\\therefore \\quad$ (i) $\\Rightarrow 25 \\cos ^2 \\theta+y^2=25$\nDifferentiating w.r.t. ' $t$ ', we get\n$$\n\\begin{aligned}\n& \\quad-50 \\cos \\theta \\sin \\theta \\frac{\\mathrm{d} \\theta}{\\mathrm{dt}}+2 y \\frac{\\mathrm{d} y}{\\mathrm{dt}}=0 \\\\\n& 25 \\sin \\theta \\cos \\theta \\frac{\\mathrm{d} \\theta}{\\mathrm{dt}}=y \\frac{\\mathrm{d} y}{\\mathrm{dt}} \\\\\n& \\therefore \\quad 25 \\sin \\theta \\cos \\theta \\frac{\\mathrm{d} \\theta}{\\mathrm{dt}}=y(-0.1) \\\\\n& \\therefore \\quad \\ldots\\left[\\because \\frac{\\mathrm{d} y}{\\mathrm{~d} x}=-10 \\mathrm{~cm} / \\mathrm{s}=-0.1 \\mathrm{~m} / \\mathrm{s}\\right] \\\\\n& \\quad 25 \\sin \\theta \\cos \\theta \\frac{\\mathrm{d} \\theta}{\\mathrm{dt}}=-(0.1) y \\quad, .(\\mathrm{ii}) \\\\\n& \\quad \\text { at } x=4, \\cos \\theta=\\frac{4}{5}, \\sin \\theta=\\frac{3}{5} \\text { and } y=3 \\\\\n& \\quad \\text { (ii) } \\Rightarrow 25 \\times \\frac{3}{5} \\times \\frac{4}{5} \\times \\frac{\\mathrm{d} \\theta}{\\mathrm{dt}}=-0.3 \\\\\n& \\Rightarrow \\frac{\\mathrm{d} \\theta}{\\mathrm{dt}}=-0.025\n\\end{aligned}\n$$\ni.e., the angle is decreasing at the rate of $0.025 \\mathrm{rad} / \\mathrm{s}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b89f20917a5f41892b0", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-12T09:00:00.000Z", "isVisible": true, "shortName": "2023 (12 May Shift 1)", "title": "MHT CET 2023 (12 May Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a262170279619d9d8a31ba", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b89f20917a5f41892af", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-11T14:00:00.000Z", "isVisible": true, "shortName": "2023 (11 May Shift 2)", "title": "MHT CET 2023 (11 May Shift 2)"}], "question": {"text": "$A$ rod $A B, 13$ feet long moves with its ends $A$ and $B$ on two perpendicular lines $O X$ and $O Y$ respectively. When $\\mathrm{A}$ is 5 feet from $\\mathrm{O}$, it is moving away at the rate of $3 \\mathrm{feet} / \\mathrm{sec}$. At this instant, B is moving at the rate", "image": null}, "options": [{"id": "OYEfh", "text": "$\\frac{5}{4} \\mathrm{ft} / \\mathrm{sec}$ upwards.", "image": null, "isCorrect": false}, {"id": "d9yVR", "text": "$\\frac{4}{5} \\mathrm{ft} / \\mathrm{sec}$ upwards.", "image": null, "isCorrect": false}, {"id": "Kp6GW", "text": "$\\frac{5}{4} \\mathrm{ft} / \\mathrm{sec}$ downwards.", "image": null, "isCorrect": true}, {"id": "2OZZm", "text": "$\\frac{4}{5} \\mathrm{ft} / \\mathrm{sec}$ downwards.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/r3TdmvhqJPmWx4iMcQAFPswBoUp-nW2Td9OeQcGoNSU.original.fullsize.png\"><br>\nNote that $\\triangle \\mathrm{OAB}$ is a right angled triangle. Let $\\mathrm{OA}=x \\mathrm{ft}$ and $\\mathrm{OB}=y \\mathrm{ft}$.\n$\\therefore \\quad y^2=169-x^2$\nNow, differentiating above function w.r.t. time 't', we get\n$2 y \\frac{\\mathrm{d} y}{\\mathrm{dt}}=-2 x \\frac{\\mathrm{d} x}{\\mathrm{dt}}$\nAt $x=5, \\frac{\\mathrm{d} x}{\\mathrm{dt}}=3 \\mathrm{ft} / \\mathrm{sec}$... [Given]\nAlso, at $x=5, y=12$\n$\\therefore \\quad$ (i) $\\Rightarrow 2(12) \\frac{\\mathrm{d} y}{\\mathrm{dt}}=-2(5)(3)$\n$\\Rightarrow \\frac{\\mathrm{d} y}{\\mathrm{~d} x}=\\frac{-5}{4}$\nNegative sign indicates that B is moving downwards.\n$\\therefore \\quad$ B is moving at the rate $\\frac{5}{4} \\mathrm{ft} / \\mathrm{sec}$ downwards.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b89f20917a5f41892af", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-11T14:00:00.000Z", "isVisible": true, "shortName": "2023 (11 May Shift 2)", "title": "MHT CET 2023 (11 May Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'MHT CET';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

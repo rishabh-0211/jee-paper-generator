@@ -1,0 +1,300 @@
+{
+  "index": 14,
+  "chapterId": "61e7bd7324369ff3396e0d92",
+  "chapter": "Pair of Lines",
+  "exam": "BITSAT",
+  "subject": "Mathematics",
+  "totalTopics": 3,
+  "totalQuestions": 4,
+  "downloadTime": "2026-10-08 20:36:59",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e86e6f5bfc7ab78aee19",
+      "title": "Pair of lines through origin",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e77d6f5bfc7ab78ae54b",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "If \\(\\int_0^n[x] \\mathrm{dx}=66\\), then \\(n=\\)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "RpfBv",
+              "text": "24",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qdrof",
+              "text": "9",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0PpTH",
+              "text": "12",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "QqoIG",
+              "text": "7",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "\\(\\begin{aligned}\n& \\int_0^n[x] d x=\\int_0^1 0 d x+\\int_1^2 1 d x+\\int_2^3 2 d x+\\ldots \\ldots+ \\\\\n& \\int_{n-1}^n(n-1) d x \\\\\n& =1+2+3+\\ldots .+(n-1)=\\frac{(n-1) n}{2}=66 \\\\\n& \\Rightarrow n(n-1)=132 \\Rightarrow n=12\n\\end{aligned}\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "67726da5c49e8ef28ee2b4b2",
+      "title": "combined equation of angle bisector",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "67726cffc49e8ef28ee2b374",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6414",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 1)",
+              "title": "BITSAT 2024 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "$\\mathrm{A}(3,2,0), \\mathrm{B}(5,3,2), \\mathrm{C}(-9,6,-3)$ are three points forming a triangle. AD , the bisector of angle BAC meets BC in D. Find the co-ordinates of D.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "pi1ao",
+              "text": "$\\frac{19}{8}, \\frac{57}{15}, \\frac{57}{15}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "mi8fZ",
+              "text": "$\\frac{19}{8}, \\frac{57}{16}, \\frac{17}{16}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "sY0LR",
+              "text": "$(2,3,0)$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "12QZg",
+              "text": "$(4,5,6)$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Since $A D$ is the bisector of $\\angle B A C$.\n$\\Rightarrow \\frac{\\mathrm{BD}}{\\mathrm{DC}}=\\frac{\\mathrm{AB}}{\\mathrm{AC}}$    ....(i)\nNow,\n$\\mathrm{AB}=\\sqrt{(5-3)^2+(3-2)^2+(2-0)^2}$\n$=\\sqrt{4+1+4}=\\sqrt{9}=3$\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/CSbNXtILB1pcB-LkopQmKyTmNxU6GkvBypJfLzHuKOg.original.fullsize.png\"/>\n$A C=\\sqrt{(-9-3)^2+(6-2)^2+(-3-0)^2}$\n$=\\sqrt{144+16+9}=13$\n$\\therefore \\quad \\frac{\\mathrm{BD}}{\\mathrm{DC}}=\\frac{3}{13}$\nHence, D divides BC in the ratio $3: 13$\nThe co-ordinates of D are\n$\\left(\\frac{3(-9)+13(5)}{3+13}, \\frac{3(6)+13(3)}{3+13}, \\frac{3(-3)+13(2)}{3+13}\\right)$\n$=\\left(\\frac{19}{8}, \\frac{57}{16}, \\frac{17}{16}\\right)$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6414",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 1)",
+            "title": "BITSAT 2024 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e86e6f5bfc7ab78aee1a",
+      "title": "Condition for 2nd degree equationto represent pair of straight lines",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "64c0e8196f5bfc7ab78aea94",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "$Statement- 1$: If the general equation $x^{2}+y^{2}+2 x y+2 g x+2 f y+4=0$ represents a pair of real lines then $|\\mathrm{g}| \\geq 2$. \r\n\r\n$Statement- 2$: The equation $a x^{2}+2 h x y+b y^{2}+2 g x+2 f y+c=0$ represents pair\r\n\r\nof real lines if $a b c+2 f g h-a f^{2}-b g^{2}-c h^{2}=0$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "KVhyg",
+              "text": "Statement -1 is false, Statement- 2 is true",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "CUPsv",
+              "text": "Statement -1 is true, Statement- 2 is true; Statement -2 is a correct explanation for Statement-1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "vWYOq",
+              "text": "Statement -1 is true, Statement- 2 is true; Statement -2 is not a correct explanation for Statement-1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "VfCkI",
+              "text": "Statement -1 is true, Statement- 2 is false",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The equation represents a pair of lines if $1 \\cdot 1 \\cdot 4+2 \\cdot \\mathrm{f} \\cdot \\mathrm{g} \\cdot 1-1 \\cdot \\mathrm{f}^{2}-1 \\cdot \\mathrm{g}^{2}-4 \\cdot 1^{2}=0$\r\n\r\n$\\Rightarrow(f-g)^{2}=0 \\Rightarrow f=g$\r\n\r\nThe equation becomes $(x+y)^{2}+2 g(x+y)+4=0$ Which represents pair of parallel lines, which are real provided $(2 \\mathrm{~g})^{2}-4 \\cdot 4 \\cdot 1 \\geq 0 \\Rightarrow|\\mathrm{g}| \\geq 2$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7e36f5bfc7ab78ae8b7",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The equation $x^{2}-2 \\sqrt{3} x y+3 y^{2}-3 x+3 \\sqrt{3} y-4=0 \\quad$ represents",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "jRDil",
+              "text": "a pair of intersecting lines",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "vJrIh",
+              "text": "a pair of parallel lines with distance between\r\n\r\nthem $\\frac{5}{2}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "RzYel",
+              "text": "a pair of parallel lines with distance between them $5 \\sqrt{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "OkRWq",
+              "text": "a conic section, which is not a pair of straight lines",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We have $a=1, h=-\\sqrt{3}, b=3, g=-\\frac{3}{2}$, $\\mathrm{f}=\\frac{3 \\sqrt{3}}{2}, \\mathrm{c}=-4$\r\n\r\nThus $a b c+2 f g h-a f^{2}-b g^{2}-c h^{2}=0$\r\n\r\nHence the equation represents a pair of straight lines.\r\n\r\nAgain $\\frac{\\mathrm{a}}{\\mathrm{h}}=\\frac{\\mathrm{h}}{\\mathrm{b}}=\\frac{\\mathrm{g}}{\\mathrm{f}}=-\\frac{1}{\\sqrt{3}}$\r\n\r\n$\\therefore$ the lines are parallel. The distance between them\r\n\r\n$$\r\n\r\n=2 \\sqrt{\\frac{g^{2}-a c}{a(a+b)}}=2 \\sqrt{\\frac{\\frac{9}{4}+4}{1(1+3)}}=\\frac{5}{2}\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Mechanical Properties of Solids PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚡ BITSAT &bull; Mechanical Properties of Solids</h1>
+        <div class="sub">Physics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 10, "chapterId": "61e7bd7e21cdcfebe5eabbb8", "chapter": "Mechanical Properties of Solids", "exam": "BITSAT", "subject": "Physics", "totalTopics": 6, "totalQuestions": 19, "downloadTime": "2026-10-08 20:27:49", "topics": [{"index": 1, "topicId": "64c0e8546f5bfc7ab78aeceb", "title": "Elasticity", "totalQuestions": 1, "questions": [{"_id": "64c0e79d6f5bfc7ab78ae667", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 3, "question": {"text": "One end of a long metallic wire of length $\\mathrm{L}$ tied to the ceiling. The other end is tied with a massless spring of spring constant $\\mathrm{K}$. Amass hangs freely from the free end of the spring. The area of cross section and the young's modulus of the wire are A and Y respectively. If the mass slightly pulled down and released, it will oscillate with a time period T equal to:", "image": null}, "options": [{"id": "ANVKJ", "text": "$2 \\pi \\sqrt{(\\mathrm{m} / \\mathrm{K})}$", "isCorrect": false, "image": null}, {"id": "ApMj5", "text": "$2 \\pi \\sqrt{\\mathrm{m}(\\mathrm{YA}+\\mathrm{KL}) /(\\mathrm{YAK})}$", "isCorrect": true, "image": null}, {"id": "3zbm8", "text": "$2 \\pi \\sqrt{(\\mathrm{m} \\mathrm{YA} / \\mathrm{KL})}$", "isCorrect": false, "image": null}, {"id": "3P5pV", "text": "$2 \\pi \\sqrt{(\\mathrm{mL} / \\mathrm{YA})}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Step 1: Calculation of spring constant of wire\r\nYoung's modulus of wire, \\(\\mathrm{Y}=\\frac{\\Delta \\mathrm{F} / \\mathrm{A}}{\\Delta \\mathrm{L} / \\mathrm{L}}=\\frac{\\Delta \\mathrm{F}}{\\Delta \\mathrm{L}} \\times \\frac{\\mathrm{L}}{\\mathrm{A}}\\)\r\nDue to elasticity of the wire, it behaves as equivalent spring \\(\\left(\\mathrm{K}_{\\text {spring }}=\\mathrm{F} / \\Delta \\mathrm{x}\\right)\\).\r\nHence, Spring constant for Wire, \\(\\mathrm{K}_{\\mathrm{w}}=\\frac{\\Delta \\mathrm{F}}{\\Delta \\mathrm{L}}=\\mathrm{Y} \\frac{\\mathrm{A}}{\\mathrm{L}}\\)\r\nStep 2: Calculation of Equivalent spring constant Let a force \\(\\mathrm{F}\\) be applied to the end of the spring. The wire will extend.\r\nTotal extension \\(\\Delta \\mathrm{S}=\\mathrm{x}_{\\mathrm{wire}}+\\mathrm{x}_{\\text {spring }}=\\frac{\\mathrm{F}_{\\mathrm{w}}}{\\mathrm{K}_{\\mathrm{w}}}+\\frac{\\mathrm{F}_{\\mathrm{S}}}{\\mathrm{K}}\\)\r\nBut \\(\\mathrm{F}_{\\mathrm{S}}=\\mathrm{F}_{\\mathrm{w}} \\quad\\) (By Newton's, third Law, Both will apply equal and opposite forces at their joint A )\r\n\\(\\therefore \\Delta \\mathrm{S}=\\mathrm{F}_{\\mathrm{w}}\\left(\\frac{1}{\\mathrm{~K}_{\\mathrm{w}}}+\\frac{1}{\\mathrm{~K}}\\right)\\)\r\nSo, Equivalent spring constant \\(\\left(\\mathrm{K}_{\\text {eq }}\\right)\\) is given by:\r\n\\(\\mathrm{K}_{\\mathrm{eq}}=\\frac{\\mathrm{F}_{\\mathrm{eq}}}{\\mathrm{x}_{\\mathrm{eq}}}=\\frac{\\mathrm{F}_{\\mathrm{w}}}{\\Delta \\mathrm{S}}=\\frac{1}{\\frac{1}{\\mathrm{~K}_{\\mathrm{w}}}+\\frac{1}{\\mathrm{~K}}}\\)\r\n\\(\\mathrm{K}_{\\mathrm{eq}}=\\frac{(\\mathrm{K})\\left(\\mathrm{K}_{\\mathrm{w}}\\right)}{\\mathrm{K}_{\\mathrm{w}}+\\mathrm{K}}=\\frac{\\mathrm{KY} \\frac{\\mathrm{A}}{\\mathrm{L}}}{\\mathrm{Y} \\frac{\\mathrm{A}}{\\mathrm{L}}+\\mathrm{K}}=\\frac{\\mathrm{KYA}}{\\mathrm{YA}+\\mathrm{KL}}\\)\r\nStep 3: Calculation of Time period\r\nAngular frequency \\(\\omega\\) for spring block system is given by:\r\n\\(\\omega=\\sqrt{\\frac{\\mathrm{K}_{\\text {eq }}}{\\mathrm{m}}}=\\sqrt{\\frac{\\mathrm{KYA}}{\\mathrm{m}(\\mathrm{YA}+\\mathrm{KL})}}\\)\r\n\\(\\therefore\\) Time period, \\(\\mathrm{T}=\\frac{2 \\pi}{\\omega}=2 \\pi \\sqrt{\\frac{(\\mathrm{YA}+\\mathrm{KL}) \\mathrm{m}}{\\mathrm{KYA}}}\\)\r\nHence, Option B is correct\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/hwt6276qhuuqoipq82.png\">", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8546f5bfc7ab78aece9", "title": "Young's Modulus and Breaking Stres", "totalQuestions": 13, "questions": [{"_id": "67726d06c49e8ef28ee2b3a7", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "With rise in temperature, the Young's modulus of elasticity:", "image": null}, "options": [{"id": "NqP9W", "text": "changes erratically", "image": null, "isCorrect": false}, {"id": "bk3MC", "text": "decreases", "image": null, "isCorrect": true}, {"id": "SdJfx", "text": "increases", "image": null, "isCorrect": false}, {"id": "nYOo2", "text": "remains unchanged", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Young's modulus, $\\mathrm{Y}=\\frac{\\text { Stress }}{\\text { Strain }}$\nIf the temperature increases, strain also increases. Hence young's modulus decreases.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726cf8c49e8ef28ee2b341", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "Young's modules of materials of a wire of Length ' L ' and cross-sectional area A is Y . If the length of the wire is doubled and cross-sectional area is halved then Young's modules will be:", "image": null}, "options": [{"id": "Zh3k7", "text": "$\\frac{Y}{4}$", "image": null, "isCorrect": false}, {"id": "ICs9q", "text": "$4 Y$", "image": null, "isCorrect": false}, {"id": "JcKO0", "text": "Y", "image": null, "isCorrect": true}, {"id": "hM5sE", "text": "2 Y", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Young's modulus depends on the material not depends on length and cross sectional area. So Young's modulus remains constant.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8136f5bfc7ab78aea61", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 2, "question": {"text": "There are two wire of same material and same length while the diameter of second wire is two times the diameter of first wire, then the ratio of extension produced in the wires by applying same load will be", "image": null}, "options": [{"id": "t55eh", "text": "1: 1", "isCorrect": false, "image": null}, {"id": "zKGzF", "text": "2: 1", "isCorrect": false, "image": null}, {"id": "PR8vw", "text": "1: 2", "isCorrect": false, "image": null}, {"id": "fkvwz", "text": "4: 1", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "$\\because$ Both wires are same materials so both will have same Young's modulus, and let it be Y. $Y=\\frac{\\text { stress }}{\\text { strain }}=\\frac{F}{\\text { A. }(\\Delta L / L)}, F=$ applied force\r\n\r\n$\\mathrm{A}=$ area of cross-section of wire\r\n\r\nNow,\r\n\r\n$\\mathrm{Y}_{1}=\\mathrm{Y}_{2} \\Rightarrow \\frac{\\mathrm{FL}}{\\left(\\mathrm{A}_{1}\\right)\\left(\\Delta \\mathrm{L}_{1}\\right)}=\\frac{\\mathrm{FL}}{\\left(\\mathrm{A}_{2}\\right)\\left(\\Delta \\mathrm{L}_{2}\\right)}$\r\n\r\nSince load and length are same for both\r\n\r\n$\\begin{array}{l}\r\n\r\n\\Rightarrow \\mathrm{r}_{1}^{2} \\Delta \\mathrm{L}_{1}=\\mathrm{r}_{2}^{2} \\Delta \\mathrm{L}_{2},\\left(\\frac{\\Delta \\mathrm{L}_{1}}{\\Delta \\mathrm{L}_{2}}\\right)=\\left(\\frac{\\mathrm{r}_{2}}{\\mathrm{r}_{1}}\\right)^{2}=4 \\\\\r\n\r\n\\Delta \\mathrm{L}_{1}: \\Delta \\mathrm{L}_{2}=4: 1\r\n\r\n\\end{array}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8016f5bfc7ab78ae9c2", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 1, "question": {"text": "A steel wire of cross-sectional area <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><mo>&#160;</mo><msup><mi>cm</mi><mn>2</mn></msup></math> has elastic limit of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>.</mo><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup><mo>&#160;</mo><mi mathvariant=\"normal\">N</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>. The maximum upward acceleration that can be given to a <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1000</mn><mo>&#160;</mo><mi>kg</mi></math> elevator supported by this steel wire if the stress is to exceed one-fourth of the elastic limit is [Take, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mo>=</mo><mn>10</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>]", "image": null}, "options": [{"id": "67EQu", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>10</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>", "isCorrect": false, "image": null}, {"id": "G9038", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>9</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>", "isCorrect": false, "image": null}, {"id": "EPOIh", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>15</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>", "isCorrect": false, "image": null}, {"id": "0PVlT", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>12</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>Given, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Y</mi><mo>=</mo><mn>2</mn><mo>.</mo><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math></p><p>Area of cross-section of steel wire,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>=</mo><mn>4</mn><mo>&#160;</mo><msup><mi>cm</mi><mn>2</mn></msup><mo>=</mo><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mn>2</mn></msup></math></p><p>Mass of elevator, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi><mo>=</mo><mn>1000</mn><mo>&#160;</mo><mi>kg</mi></math></p><p>The maximum tension in the steel wire that can support elevator is given by</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>T</mi><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>&#215;</mo><mtext>&#160;stress&#160;</mtext><mo>&#215;</mo><mtext>&#160;area of cross-section&#160;</mtext></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>&#215;</mo><mn>2</mn><mo>.</mo><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup><mo>&#215;</mo><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>2</mn><mo>.</mo><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mn>4</mn></msup><mo>&#160;</mo><mi mathvariant=\"normal\">N</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math></p><p>If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi></math> be the maximum upward acceleration of the elevator, then</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>T</mi><mo>=</mo><mi>m</mi><mo>&#160;</mo><mfenced><mrow><mi>g</mi><mo>+</mo><mi>f</mi></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>.</mo><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mn>4</mn></msup><mo>=</mo><mn>1000</mn><mo>&#160;</mo><mfenced><mrow><mn>10</mn><mo>+</mo><mi>f</mi></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mo>&#160;</mo><mi>f</mi><mo>=</mo><mn>12</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7f56f5bfc7ab78ae956", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 1, "question": {"text": "Breaking stress of a steel wire is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi></math>&nbsp;and the density of steel is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#961;</mi></math>. The greatest length of steel wire that can hang vertically without breaking is", "image": null}, "options": [{"id": "XKK9N", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi>p</mi><mrow><mi>&#961;</mi><mi>g</mi></mrow></mfrac></math>", "isCorrect": true, "image": null}, {"id": "czNQD", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi>p</mi><mrow><mn>2</mn><mi>&#961;</mi><mi>g</mi></mrow></mfrac></math>", "isCorrect": false, "image": null}, {"id": "cm8r1", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>2</mn><mi>p</mi></mrow><mrow><mi>&#961;</mi><mi>g</mi></mrow></mfrac></math>", "isCorrect": false, "image": null}, {"id": "fnM5V", "text": "None of these", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Maximum stress <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mo>&#160;</mo><mi>Maximum</mi><mo>&#160;</mo><mi>weight</mi><mo>&#160;</mo></mrow><mrow><mo>&#160;</mo><mi>Cross</mi><mo>-</mo><mi>sectional</mi><mo>&#160;</mo><mi>area</mi><mo>&#160;</mo></mrow></mfrac></math></p><p>Now, maximum weight of steel wire</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo></math> Volume <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#215;</mo></math> Density <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#215;</mo><mi>g</mi></math><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mi>A</mi><mi>l</mi><mi>&#961;</mi><mi>g</mi></math></p><p>where, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>l</mi></math> is the maximum length of steel wire that can hang vertically without breaking. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#961;</mi></math> is the density of steel and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math> is the cross-sectional area of steel wire.<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> Maximum stress, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi><mo>=</mo><mfrac><mrow><mi>A</mi><mi>l</mi><mi>&#961;</mi><mi>g</mi></mrow><mi>A</mi></mfrac><mo>=</mo><mi>l</mi><mi>&#961;</mi><mi>g</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi>l</mi><mo>=</mo><mfrac><mi>p</mi><mrow><mi>&#961;</mi><mi>g</mi></mrow></mfrac></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7e66f5bfc7ab78ae8d0", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 3, "question": {"text": "<p>A mild steel wire of length <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>&#160;</mo><mi>L</mi></math> and cross-sectional area <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math> is stretched, well with in the elastic limit, horizontally between two pillars as shown in figure. A mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi></math> is suspended from the mid-point of the wire strain in the wire is</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/af66ac02-9463-4916-9de2-0a990960e650-image.png\" style=\"width: 240px; height: 150px;\" /></p>", "image": null}, "options": [{"id": "pcTW0", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>2</mn><mo>&#160;</mo><msup><mi>L</mi><mn>2</mn></msup></mrow></mfrac></math>", "isCorrect": true, "image": null}, {"id": "tYUeb", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi>x</mi><mi>L</mi></mfrac></math>", "isCorrect": false, "image": null}, {"id": "IxJNc", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msup><mi>x</mi><mn>2</mn></msup><mi>L</mi></mfrac></math>", "isCorrect": false, "image": null}, {"id": "n5Fy5", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>2</mn><mo>&#160;</mo><mi>L</mi></mrow></mfrac></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Increase in length&nbsp;</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/eae578bf-3df1-4616-948e-757cca5971f6-image.png\" style=\"width: 330px; height: 115px;\" /></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#916;</mi><mo>&#160;</mo><mi>L</mi><mo>=</mo><mi>B</mi><mi>O</mi><mo>+</mo><mi>O</mi><mi>C</mi><mo>-</mo><mfenced><mrow><mi>B</mi><mi>C</mi></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>2</mn><mi>B</mi><mi>O</mi><mo>-</mo><mn>2</mn><mi>B</mi><mi>D</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi mathvariant=\"normal\">&#916;</mi><mi>L</mi><mo>=</mo><mn>2</mn><mi>B</mi><mi>O</mi><mo>-</mo><mn>2</mn><mo>&#160;</mo><mi>L</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>2</mn><mo>&#160;</mo><msup><mfenced open=\"[\" close=\"]\"><mrow><msup><mi>L</mi><mn>2</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></msup><mo>-</mo><mn>2</mn><mo>&#160;</mo><mi>L</mi></math></p><p>or <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">&#916;</mi><mi>L</mi><mo>=</mo><mn>2</mn><mo>&#160;</mo><mi>L</mi><mo>&#160;</mo><msup><mfenced open=\"[\" close=\"]\"><mrow><mn>1</mn><mo>+</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><msup><mi>L</mi><mn>2</mn></msup></mfrac></mrow></mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></msup><mo>-</mo><mn>2</mn><mo>&#160;</mo><mi>L</mi></math>&nbsp;[<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo></math> using Bionomial theorem]</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi mathvariant=\"normal\">&#916;</mi><mi>L</mi><mo>&#8776;</mo><mn>2</mn><mo>&#160;</mo><mi>L</mi><mo>&#160;</mo><mfenced open=\"[\" close=\"]\"><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mfrac><msup><mi>x</mi><mn>2</mn></msup><msup><mi>L</mi><mn>2</mn></msup></mfrac><mo>-</mo><mn>1</mn></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mi>L</mi></mfrac></math>&nbsp; &nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"]\" open=\"[\"><mrow><mo>&#8757;</mo><mo>&#160;</mo><mi>x</mi><mo>&#60;</mo><mo>&#60;</mo><mi>L</mi></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> Strain <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mi mathvariant=\"normal\">&#916;</mi><mi>L</mi></mrow><mrow><mn>2</mn><mo>&#160;</mo><mi>L</mi></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>&#160;</mo><mi>L</mi></mrow></mfrac><mo>&#215;</mo><mo>&#8710;</mo><mi>L</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>&#160;</mo><mi>L</mi></mrow></mfrac><mo>&#215;</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mi>L</mi></mfrac><mo>=</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>2</mn><mo>&#160;</mo><msup><mi>L</mi><mn>2</mn></msup></mrow></mfrac></math>.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7d76f5bfc7ab78ae84d", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 1, "question": {"text": "Two wires are made of the same material and have the same volume. However wire 1 has crosssectional area $A$ and wire 2 has cross-sectional area $3 A$. If the length of wire 1 increases by $\\Delta x$ on applying force $F$, how much force is needed to stretch wire 2 by the same amount?", "image": null}, "options": [{"id": "0OiyW", "text": "$4 F$", "isCorrect": false, "image": null}, {"id": "vcm0e", "text": "$6 \\mathrm{~F}$", "isCorrect": false, "image": null}, {"id": "hjnU7", "text": "$9 F$", "isCorrect": true, "image": null}, {"id": "xD1qh", "text": "$F$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/P0k_WTvgv0rpNlNioPi2bv36mXT2k6sjpIj_hQkJ47w.original.fullsize.png\"><br>\r\n\r\nAs shown in the figure, the wires will have the same Young's modulus (same material) and the length of the wire of area of crosssection $3 A$ will be $\\ell / 3$ (same volume as wire 1 ). For wire $1, \\quad Y=\\frac{F / A}{\\Delta x / \\ell}$\r\n\r\nFor wire $2, Y=\\frac{F^{\\prime} / 3 A}{\\Delta x /(\\ell / 3)}$\r\n\r\nFrom (i) and\r\n\r\n(ii) $, \\frac{F}{A} \\times \\frac{\\ell}{\\Delta x}=\\frac{F^{\\prime}}{3 A} \\times \\frac{\\ell}{3 \\Delta x}$\r\n\r\n$\\Rightarrow F^{\\prime}=9 F$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ba6f5bfc7ab78ae756", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 1, "question": {"text": "The load versus elongation graph for four wires is shown. The thinnest wire is\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/FNqgPKOYJI4uU0XLo-RiCkRNhHbbnFof48miPIa87R0.original.fullsize.png\">", "image": null}, "options": [{"id": "rDEuc", "text": "$P$", "isCorrect": false, "image": null}, {"id": "YNlqw", "text": "$Q$", "isCorrect": false, "image": null}, {"id": "UlYhh", "text": "$R$", "isCorrect": false, "image": null}, {"id": "NTftQ", "text": "$S$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Using \\(\\quad \\mathrm{Y}=\\frac{\\mathrm{F} / \\mathrm{A}}{\\Delta \\mathrm{L} / \\mathrm{L}}\\)\r\n\r\nCross-section area of the wire \\(\\quad \\mathrm{A}=\\pi \\mathrm{R}^{2}\\) where \\(\\quad \\mathrm{R}\\) is the radius of the wire \\(\\therefore \\quad \\mathrm{Y}=\\frac{\\mathrm{F}}{\\pi \\mathrm{R}^{2}} \\times \\frac{\\mathrm{L}}{\\Delta \\mathrm{L}}\\)\r\n\r\n\\(\\Longrightarrow \\mathrm{F}=\\frac{\\pi \\mathrm{R}^{2} \\mathrm{Y}}{\\mathrm{L}} \\Delta \\mathrm{L}\\)\r\n\r\nThus Slope of load vs elongation graph, \\(\\mathrm{s}=\\frac{\\pi \\mathrm{R}^{2} \\mathrm{Y}}{\\mathrm{L}}\\)\r\n\r\n\\(\\Longrightarrow \\quad \\mathrm{s} \\propto \\mathrm{R}^{2}\\)\r\n\r\nNow from the graph shown, OA has the least slope and hence the least radius. Thus \\(\\mathrm{OA}\\) represents the thinnest wire.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ac6f5bfc7ab78ae6de", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 2, "question": {"text": "A cube is subjected to a uniform volume compression. If the side of the cube decreases by $2 \\%$ the bulk strain is", "image": null}, "options": [{"id": "8SVok", "text": "0.02", "isCorrect": false, "image": null}, {"id": "HET5O", "text": "0.03", "isCorrect": false, "image": null}, {"id": "kIbY3", "text": "0.04", "isCorrect": false, "image": null}, {"id": "oK3Ot", "text": "0.06", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "\\(\\begin{aligned} \\frac{\\Delta a}{d} &=2 \\% \\\\ v &=a^{3} \\\\ \\frac{\\Delta v}{v} &=3 \\frac{\\Delta a}{d} \\\\ &=6 \\% \\\\ &=0.06 \\end{aligned}\\)", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e79c6f5bfc7ab78ae65e", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 1, "question": {"text": "The Young's modulus of a perfectly rigid body is", "image": null}, "options": [{"id": "RoIor", "text": "unity", "isCorrect": false, "image": null}, {"id": "incT4", "text": "zero", "isCorrect": false, "image": null}, {"id": "NtOie", "text": "infinity", "isCorrect": true, "image": null}, {"id": "jLY5v", "text": "some finite non-zero constant", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "For a perfectly rigid body strain produced is zero for the given force applied, so $\\mathrm{Y}=$ stress/strain $=\\infty$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e78e6f5bfc7ab78ae5e2", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "An iron rod of length $2 \\mathrm{~m}$ and cross-sectional area of $50 \\mathrm{~mm}^{2}$ stretched by $0.5 \\mathrm{~mm}$, when a mass of $250 \\mathrm{~kg}$ is hung from its lower end. Young's modulus of iron rod is", "image": null}, "options": [{"id": "lVLJ8", "text": "$19.6 \\times 10^{20} \\mathrm{~N} / \\mathrm{m}^{2}$", "image": null, "isCorrect": false}, {"id": "AfF4d", "text": "$19.6 \\times 10^{18} \\mathrm{~N} / \\mathrm{m}^{2}$", "image": null, "isCorrect": false}, {"id": "BayFM", "text": "$19.6 \\times 10^{10} \\mathrm{~N} / \\mathrm{m}^{2}$", "image": null, "isCorrect": true}, {"id": "dfCjo", "text": "$19.6 \\times 10^{15} \\mathrm{~N} / \\mathrm{m}^{2}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$Y=\\frac{\\mathrm{F} / \\mathrm{A}}{\\Delta \\ell / \\ell}=\\frac{\\frac{250 \\times 9.8}{50 \\times 10^{-6}}}{\\frac{0.5 \\times 10^{-3}}{2}}$\n$=\\frac{250 \\times 9.8}{50 \\times 10^{-6}} \\times \\frac{2}{0.5 \\times 10^{-3}} \\Rightarrow 19.6 \\times 10^{10} \\mathrm{~N} / \\mathrm{m}^{2}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e78e6f5bfc7ab78ae5e1", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "Two wires are made of the same material and have the same volume. However wire 1 has crosssectional area $A$ and wire 2 has cross-sectional area $3 A$. If the length of wire 1 increases by $\\Delta x$ on applying force $F,$ how much force is needed to stretch wire 2 by the same amount?", "image": null}, "options": [{"id": "tFzJE", "text": "$4 F$", "image": null, "isCorrect": false}, {"id": "lT8hw", "text": "$6 F$", "image": null, "isCorrect": false}, {"id": "fAC1I", "text": "$9 F$", "image": null, "isCorrect": true}, {"id": "8naKt", "text": "$F$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/kk2F602ESmY8WuB4l4rk_KWl7o6VunDItj7oIZB1qpg.original.fullsize.png\"><br>\nAs shown in the figure, the wires will have the same Young's modulus (same material) and the length of the wire of area of crosssection $3 A$ will be $\\ell / 3$ (samevolume as wire 1 ). For wire $1, \\quad Y=\\frac{F / A}{\\Delta x / \\ell}$\nFor wire $2, Y=\\frac{F^{\\prime} / 3 A}{\\Delta x /(\\ell / 3)}$\nFrom (i) and (ii) $, \\frac{F}{A} \\times \\frac{\\ell}{\\Delta x}=\\frac{F^{\\prime}}{3 A} \\times \\frac{\\ell}{3 \\Delta x}$\n$\\Rightarrow F^{\\prime}=9 F$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7726f5bfc7ab78ae4e4", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "A metallic rod breaks when strain produced is $0.2 \\% .$ The Young's modulus of the material of the rod is $7 \\times 10^{9} \\mathrm{~N} / \\mathrm{m}^{2} .$ What should be its area of cross-section to support a load of $10^{4} \\mathrm{~N}$ ?", "image": null}, "options": [{"id": "TAsGo", "text": "$7.1 \\times 10^{-8} \\mathrm{~m}^{2}$", "image": null, "isCorrect": false}, {"id": "MwigE", "text": "$7.1 \\times 10^{-6} \\mathrm{~m}^{2}$", "image": null, "isCorrect": false}, {"id": "KCkdQ", "text": "$7.1 \\times 10^{-4} \\mathrm{~m}^{2}$", "image": null, "isCorrect": true}, {"id": "dEkoY", "text": "$7.1 \\times 10^{-2} \\mathrm{~m}^{2}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\quad$ Maximum possible strain $=0.2 / 100$\n$$\n\\begin{array}{l}\n\\therefore \\mathrm{A}=\\frac{\\mathrm{F}}{\\mathrm{Y} \\times \\text { strain }} \\\\\n=\\frac{10^{4} \\times 100}{\\left(7 \\times 10^{9}\\right) \\times 0.2}=7.1 \\times 10^{-4} \\mathrm{~m}^{2}\n\\end{array}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "65b7b88d97ae24e9e2db8d2e", "title": "Young’s Modulus and Breaking Stres", "totalQuestions": 2, "questions": [{"_id": "65b7b87b97ae24e9e2db8cc6", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "Young's moduli of the material of wires A and B are in the ratio of $1: 4$, while its area of cross sections are in the ratio of $1: 3$. If the same amount of load is applied to both the wires, the amount of elongation produced in the wires $\\mathrm{A}$ and $B$ will be in the ratio of<br />[Assume length of wires A and B are same]", "image": null}, "options": [{"id": "OI2ua", "text": "<br />36 : 1", "image": null, "isCorrect": false}, {"id": "MgZE4", "text": "<br />12 : 1", "image": null, "isCorrect": true}, {"id": "EcT8f", "text": "<br />1 : 36", "image": null, "isCorrect": false}, {"id": "7brhj", "text": "<br />1 : 12", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Elongation produced in the wire is given b<br />$\\Delta \\mathrm{L}=\\frac{\\mathrm{FL}}{\\mathrm{AY}}$<br />Here, $L=$ length of wire<br />$A=$ area of cross-section of wire<br />$\\mathrm{Y}=$ Young's moduli of material of wire.<br />$\\because \\mathrm{F}$ and $\\mathrm{L}$ is same and<br />$\\begin{aligned}<br />& \\frac{\\mathrm{Y}_{\\mathrm{A}}}{\\mathrm{Y}_{\\mathrm{B}}}=\\frac{1}{4} \\quad \\text { (given) } \\\\<br />& \\frac{\\mathrm{A}_{\\mathrm{A}}}{\\mathrm{A}_{\\mathrm{B}}}=\\frac{1}{3} \\quad \\text { (given) } \\\\<br />& \\therefore \\frac{\\Delta \\mathrm{L}_{\\mathrm{A}}}{\\Delta \\mathrm{L}_{\\mathrm{B}}}=\\frac{\\mathrm{A}_{\\mathrm{B}}}{\\mathrm{A}_{\\mathrm{A}}} \\frac{\\mathrm{Y}_{\\mathrm{B}}}{\\mathrm{Y}_{\\mathrm{A}}}=\\frac{3}{1} \\times \\frac{4}{1}=12<br />\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87297ae24e9e2db8c69", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "A $100 \\mathrm{~m}$ long wire having cross-sectional area $6.25 \\times 10^{-4} \\mathrm{~m}^2$ and Young's modulus is $10^{10}$ $\\mathrm{Nm}^{-2}$ is subjected to a load of $250 \\mathrm{~N}$, then the elongation in the wire will be :", "image": null}, "options": [{"id": "owm4a", "text": "$6.25 \\times 10^{-3} \\mathrm{~m}$", "image": null, "isCorrect": false}, {"id": "owPmJ", "text": "$4 \\times 10^{-4} \\mathrm{~m}$", "image": null, "isCorrect": false}, {"id": "IpubQ", "text": "$6.25 \\times 10^{-6} \\mathrm{~m}$", "image": null, "isCorrect": false}, {"id": "SZYTQ", "text": "$4 \\times 10^{-3} \\mathrm{~m}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "$\\Delta \\ell=\\frac{F \\ell}{Y A}=\\frac{250 \\times 100}{10^{10} \\times 6.25 \\times 10^{-4}}=40 \\times 10^{-4} \\mathrm{~m}$<br />$=4 \\times 10^{-3} \\mathrm{~m}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "64c0e8546f5bfc7ab78aecea", "title": "Shearing stress", "totalQuestions": 1, "questions": [{"_id": "64c0e7806f5bfc7ab78ae566", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "The upper end of a wire of diameter $12 \\mathrm{~mm}$ and length $1 \\mathrm{~m}$ is clamped and its other end is twisted through an angle of $30^{\\circ} .$ The angle of shear is", "image": null}, "options": [{"id": "IusQI", "text": "$18^{\\circ}$", "image": null, "isCorrect": false}, {"id": "SkBlK", "text": "$0.18^{\\circ}$", "image": null, "isCorrect": true}, {"id": "ZVADW", "text": "$36^{\\circ}$", "image": null, "isCorrect": false}, {"id": "SwVjW", "text": "$0.36^{\\circ}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$r \\theta=\\ell \\phi \\Rightarrow \\phi=\\frac{r \\theta}{\\ell}=\\frac{6 \\mathrm{~mm} \\times 30^{\\circ}}{1 \\mathrm{~m}}=0.18^{\\circ}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 5, "topicId": "64c0e8546f5bfc7ab78aecec", "title": "Work Done in Stretching a Wire", "totalQuestions": 1, "questions": [{"_id": "64c0e8026f5bfc7ab78ae9c6", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 2, "question": {"text": "A rubber cord has a cross-sectional area <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mn>2</mn></msup></math> and total unstretched length <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math>. It is stretched to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>125</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math> and then released to project a particle of mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn><mo>.</mo><mn>0</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math>. The velocity of projection is [Given, Young&#39;s modulus of rubber, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Y</mi><mo>=</mo><mn>5</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup><mo>&#160;</mo><mi mathvariant=\"normal\">N</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>]", "image": null}, "options": [{"id": "pK1Oc", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>45</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>", "isCorrect": false, "image": null}, {"id": "LnMid", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>30</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>", "isCorrect": false, "image": null}, {"id": "VRhuX", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>25</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>", "isCorrect": true, "image": null}, {"id": "fPo90", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>15</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Force constant <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>K</mi></math> of rubber is given by</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>K</mi><mo>=</mo><mfrac><mrow><mi>Y</mi><mi>A</mi></mrow><mi>l</mi></mfrac><mo>=</mo><mfrac><mrow><mn>5</mn><mo>&#215;</mo><msup><mn>10</mn><mn>8</mn></msup><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow><mrow><mn>0</mn><mo>.</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>5</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup><mo>&#160;</mo><mi mathvariant=\"normal\">N</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math></p><p>Now, from conservation of energy,</p><p>elastic potential energy of cord <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo></math> kinetic energy of particle</p><p>i.e. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>K</mi><msup><mfenced><mrow><mo>&#8710;</mo><mi>l</mi></mrow></mfenced><mn>2</mn></msup><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>v</mi><mo>=</mo><msqrt><mfrac><mi>K</mi><mi>m</mi></mfrac></msqrt><mo>&#183;</mo><mo>&#8710;</mo><mi>l</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><msqrt><mfrac><mrow><mn>5</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow><mrow><mn>5</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfrac></msqrt><mfenced><mrow><mn>0</mn><mo>.</mo><mn>125</mn><mo>-</mo><mn>0</mn><mo>.</mo><mn>1</mn></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><msup><mn>10</mn><mn>3</mn></msup><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>025</mn><mo>=</mo><mn>25</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 6, "topicId": "67726d92c49e8ef28ee2b4ab", "title": "Elastic Potential Energy", "totalQuestions": 1, "questions": [{"_id": "67726d10c49e8ef28ee2b3f7", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "Two wires of the same material (Young's modulus $=Y$ ) and same length $L$ but radii $R$ and $2 R$ respectively, are joined end to end and a weight $w$ is suspended from the combination as shown in the figure. The elastic potential energy in the system is\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/2n_SL8fc1mmhV9VeX7B6Vc9oP6D6cgL4XanpcBQnsdc.original.fullsize.png\"/><br/>", "image": null}, "options": [{"id": "lSPUX", "text": "$\\frac{3 w^2 L}{4 \\pi R^2 Y}$", "image": null, "isCorrect": false}, {"id": "Gt6hg", "text": "$\\frac{3 w^2 L}{8 \\pi R^2 Y}$", "image": null, "isCorrect": false}, {"id": "Ti3ot", "text": "$\\frac{5 w^2 L}{8 \\pi R^2 Y}$", "image": null, "isCorrect": true}, {"id": "ro2q3", "text": "$\\frac{w^2 L}{\\pi R^2 Y}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\begin{aligned} & \\Delta l_1=\\frac{w L}{\\left(4 \\pi R^2\\right) Y}, \\Delta l_2=\\frac{w L}{\\pi R^2 Y} \\\\ & \\therefore U=\\frac{1}{2} K_1\\left(\\Delta l_1\\right)^2+\\frac{1}{2} K_2\\left(\\Delta l_2\\right)^2 \\\\ &=\\frac{1}{2} \\times \\frac{Y\\left(4 \\pi R^2\\right)}{L} \\times\\left[\\frac{w L}{4 \\pi R^2 Y}\\right]^2+\\frac{1}{2} \\times \\frac{Y\\left(\\pi R^2\\right)}{L} \\\\ & \\times\\left[\\frac{w L}{\\pi R^2 Y}\\right]^2\\left(\\because K=\\frac{Y A}{L}\\right) \\\\ &=\\frac{5 w^2 L}{8 \\pi R^2 Y}\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

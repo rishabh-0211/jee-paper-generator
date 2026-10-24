@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JEE Advanced - Mechanical Properties of Solids PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚡ JEE Advanced &bull; Mechanical Properties of Solids</h1>
+        <div class="sub">Physics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 10, "chapterId": "616023d70225de67661db498", "chapter": "Mechanical Properties of Solids", "exam": "JEE Advanced", "subject": "Physics", "totalTopics": 3, "totalQuestions": 5, "downloadTime": "2026-10-08 20:27:07", "topics": [{"index": 1, "topicId": "64b16aeef23ac7d519f9b9a6", "title": "Elasticity", "totalQuestions": 1, "questions": [{"_id": "64b16a25f23ac7d519f9b1be", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf822", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013 (Paper 1)", "title": "JEE Advanced 2013 (Paper 1)"}], "type": "singleCorrect", "level": 1, "question": {"text": "One end of a horizontal thick copper wire of length <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi mathvariant=\"normal\">L</mi><mo>&#160;</mo></math>and radius&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi mathvariant=\"normal\">R</mi></math>&nbsp;is&nbsp;welded to an end of another horizontal thin copper wire of length<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#160;</mo><mi mathvariant=\"normal\">L</mi></math> and radius<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#160;</mo><mi mathvariant=\"normal\">R</mi></math>.&nbsp;When the arrangement stretched by applying forces at two ends, the ratio of the elongation in the thin wire to that in the thick wire is&nbsp;", "image": null}, "options": [{"id": "1A0XV", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>25</mn></math>", "isCorrect": false, "image": null}, {"id": "gLxHj", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>50</mn></math>", "isCorrect": false, "image": null}, {"id": "rX5fM", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>.</mo><mn>00</mn></math>", "isCorrect": true, "image": null}, {"id": "wZTqZ", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><mo>.</mo><mn>00</mn></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p><img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/7de68416-a5f5-4438-831d-f66cbfc1e9f0-image.png\"/> </p><p>As the two rods are in series, the force at the connecting surface will be same.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">F</mi><mn>1</mn></msub><mo>=</mo><msub><mi mathvariant=\"normal\">F</mi><mn>2</mn></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>⇒</mo><mi mathvariant=\"normal\">Y</mi><mo>×</mo><mfrac><mrow><mo>∆</mo><msub><mi mathvariant=\"normal\">l</mi><mn>1</mn></msub></mrow><msub><mi mathvariant=\"normal\">l</mi><mn>1</mn></msub></mfrac><mo>×</mo><msub><mi mathvariant=\"normal\">A</mi><mn>1</mn></msub><mo>=</mo><mi mathvariant=\"normal\">Y</mi><mo>×</mo><mfrac><mrow><mo>∆</mo><msub><mi mathvariant=\"normal\">l</mi><mn>2</mn></msub></mrow><msub><mi mathvariant=\"normal\">l</mi><mn>2</mn></msub></mfrac><mo>×</mo><msub><mi mathvariant=\"normal\">A</mi><mn>2</mn></msub></math></p><p>Where <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">Y</mi></math> is Young's modulus, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>∆</mo><msub><mi mathvariant=\"normal\">l</mi><mn>1</mn></msub></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>∆</mo><msub><mi mathvariant=\"normal\">l</mi><mn>2</mn></msub></math> is increase in length, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">l</mi><mn>1</mn></msub></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">l</mi><mn>2</mn></msub></math> are lengths, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">A</mi><mn>1</mn></msub></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">A</mi><mn>2</mn></msub></math> are areas, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi mathvariant=\"normal\">R</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">R</mi></math> are radii of thick and thin wires respectively.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"]\" open=\"[\"><mrow><mtext>∵ F</mtext><mo>=</mo><mtext>Y</mtext><mo>×</mo><mtext>strain</mtext><mo>×</mo><mtext>Area</mtext></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>⇒</mo><mfrac><mrow><mo>∆</mo><msub><mi mathvariant=\"normal\">l</mi><mn>1</mn></msub></mrow><msub><mi mathvariant=\"normal\">l</mi><mn>1</mn></msub></mfrac><mo>×</mo><msub><mi mathvariant=\"normal\">A</mi><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mo>∆</mo><msub><mi mathvariant=\"normal\">l</mi><mn>2</mn></msub></mrow><msub><mi mathvariant=\"normal\">l</mi><mn>2</mn></msub></mfrac><mo>×</mo><msub><mi mathvariant=\"normal\">A</mi><mn>2</mn></msub></math></p><p>Here, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">A</mi><mn>1</mn></msub><mo>=</mo><mi mathvariant=\"normal\">π</mi><msup><mfenced><mrow><mn>2</mn><mi mathvariant=\"normal\">R</mi></mrow></mfenced><mn>2</mn></msup><mo>,</mo><mo> </mo><msub><mi mathvariant=\"normal\">l</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mi mathvariant=\"normal\">L</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">A</mi><mn>2</mn></msub><mo>=</mo><msup><mi>πR</mi><mn>2</mn></msup><mo>,</mo><mo> </mo><msub><mi mathvariant=\"normal\">l</mi><mn>2</mn></msub><mo>=</mo><mi mathvariant=\"normal\">L</mi></math><br ><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>⇒</mo><mo>  </mo><mfrac><mrow><mo>∆</mo><msub><mi mathvariant=\"normal\">l</mi><mn>1</mn></msub></mrow><mrow><mn>2</mn><mi mathvariant=\"normal\">L</mi></mrow></mfrac><mo>×</mo><mi mathvariant=\"normal\">π</mi><msup><mfenced><mrow><mn>2</mn><mi mathvariant=\"normal\">R</mi></mrow></mfenced><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mo>∆</mo><msub><mi mathvariant=\"normal\">l</mi><mn>2</mn></msub></mrow><mi mathvariant=\"normal\">L</mi></mfrac><mo>×</mo><msup><mi>πR</mi><mn>2</mn></msup></math><br ><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>⇒</mo><mo> </mo><mfrac><mrow><mo>∆</mo><msub><mi mathvariant=\"normal\">l</mi><mn>2</mn></msub></mrow><mrow><mo>∆</mo><msub><mi mathvariant=\"normal\">l</mi><mn>1</mn></msub></mrow></mfrac><mo>=</mo><mn>2</mn></math></p>", "image": null}, "videoSolution": {"videoId": "0fada7e547494f38adae98a57f46518e", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/KnMGSNgb5WFdC.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/KnMGSNgb5WFdC.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf822", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013 (Paper 1)", "title": "JEE Advanced 2013 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64b16aedf23ac7d519f9b9a5", "title": "Young's Modulus and Breaking Stres", "totalQuestions": 3, "questions": [{"_id": "64b16a6bf23ac7d519f9b43e", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf82d", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2018-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2018 (Paper 2)", "title": "JEE Advanced 2018 (Paper 2)"}], "type": "numerical", "level": 3, "question": {"text": "A steel wire of diameter <math><mn>0.5</mn><mi>m</mi><mi>m</mi></math> and Young&#39;s modulus <math><mn>2</mn><mo>&#215;</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>11</mn></mrow></msup><mi>&#160;</mi><mi>N</mi><msup><mrow><mi>m</mi></mrow><mrow><mo>-</mo><mn>2</mn></mrow></msup></math> carries a load of mass M. The length of the wire with the load is 1.0 m. A vernier scale with 10 divisions is attached to the end of this wire. Next to the steel wire is a reference wire to which a main scale, of least count 1.0 mm, is attached. The 10 divisions of the vernier scale correspond to 9 divisions of the main scale. Initially, the zero of vernier scale coincides with the zero of main scale. If the load on the steel wire is increased by <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1.2</mn><mo>&#160;</mo><mi>k</mi><mi>g</mi></math> , the vernier scale division which coincides with a main scale division is __________. Take <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mo>=</mo><mn>10</mn><mi>&#160;</mi><mi>m</mi><msup><mi>s</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mi>&#160;</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">d</mi><mo>&#160;</mo><mi mathvariant=\"normal\">&#960;</mi><mo>=</mo><mi>&#160;</mi><mn>3.2</mn><mi>&#160;</mi><mo>.</mo></math>", "image": null}, "options": [], "correctValue": "3", "solution": {"text": "<math><mi>d</mi><mo>=</mo><mn>0.5</mn><mi>&#160;</mi><mi>m</mi><mi>m</mi></math><br /><math><mi>Y</mi><mo>=</mo><mn>2</mn><mo>&#215;</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>11</mn></mrow></msup></math><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"script\">l</mi><mo>=</mo><mn>1</mn><mi>m</mi></math><br /><math><mo>&#8710;</mo><mi>l</mi><mo>=</mo><mfrac><mrow><mi>F</mi><mi mathvariant=\"script\">l</mi></mrow><mrow><mi>A</mi><mi>y</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>m</mi><mi>g</mi><mi mathvariant=\"script\">l</mi></mrow><mrow><mfrac><mrow><mi>&#960;</mi><msup><mrow><mi>d</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>4</mn></mrow></mfrac><mi>y</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1.2</mn><mo>&#215;</mo><mn>10</mn><mo>&#215;</mo><mn>1</mn></mrow><mrow><mfrac><mrow><mi>&#960;</mi></mrow><mrow><mn>4</mn></mrow></mfrac><mo>&#215;</mo><msup><mrow><mfenced separators=\"|\"><mrow><mn>5</mn><mo>&#215;</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>-</mo><mn>4</mn></mrow></msup></mrow></mfenced></mrow><mrow><mn>2</mn></mrow></msup><mo>&#215;</mo><mn>2</mn><mo>&#215;</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>11</mn></mrow></msup></mrow></mfrac></math><br /><math><mo>&#8710;</mo><mi mathvariant=\"script\">l</mi><mo>=</mo><mfrac><mrow><mn>1.2</mn><mo>&#215;</mo><mn>10</mn></mrow><mrow><mfrac><mrow><mn>3.2</mn></mrow><mrow><mn>4</mn></mrow></mfrac><mo>&#215;</mo><mn>25</mn><mo>&#215;</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>-</mo><mn>8</mn></mrow></msup><mo>&#215;</mo><mn>2</mn><mo>&#215;</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>11</mn></mrow></msup></mrow></mfrac></math><br /><math><mo>=</mo><mi>&#160;</mi><mfrac><mrow><mn>12</mn></mrow><mrow><mn>1.6</mn><mo>&#215;</mo><mn>25</mn><mo>&#215;</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>3</mn></mrow></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>12</mn></mrow><mrow><mn>40</mn><mo>&#215;</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>3</mn></mrow></msup></mrow></mfrac><mo>=</mo><mn>0.03</mn><mi>m</mi><mi>m</mi></math><br />So 3<sup>rd</sup> division of vernier scale will coincicle with main scale", "image": null}, "videoSolution": {"videoId": "ea08b417aaf544a481145575d895228a", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/UZ9aeaEH3qtB2.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/UZ9aeaEH3qtB2.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf82d", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2018-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2018 (Paper 2)", "title": "JEE Advanced 2018 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a47f23ac7d519f9b2f8", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf827", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2015-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2015 (Paper 2)", "title": "JEE Advanced 2015 (Paper 2)"}], "type": "multipleCorrect", "level": 2, "question": {"text": "<p>In plotting stress versus strain curves for two materials <math><mi>P</mi></math> and <math><mi>Q</mi></math> , a student by mistake puts strain on the <math><mi>y</mi></math> -axis and stress on the <math><mi>x</mi></math> - axis as shown in the figure. Then the correct statement(s) is(are)<br ><br/><img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/image20-c0028362-b78e-4302-8e8f-bc17d47dc439.jpg\"/></p>", "image": null}, "options": [{"id": "Am1aH", "text": "<math><mi>P</mi></math>  has more tensile strength than  <math><mi>Q</mi></math>", "isCorrect": true, "image": null}, {"id": "MMDzc", "text": "<math><mi>P</mi></math>  is more ductile than  <math><mi>Q</mi></math>", "isCorrect": true, "image": null}, {"id": "dWNCZ", "text": "<math><mi>P</mi></math>  is more brittle than  <math><mi>Q</mi></math>", "isCorrect": false, "image": null}, {"id": "F15GM", "text": "The Young's modulus of  <math><mi>P</mi></math>  is more than that of  <math><mi>Q</mi></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Slope of this graph represents the reciprocal of Young's modulus.<br >Since slope of <math><mi>P</mi><mo>&gt;</mo><mi mathvariant=\"normal\"> </mi></math>  slope of Q<br >Hence Y of  <math><mi>P</mi><mo>&lt;</mo><mi>Y</mi></math>  of Q", "image": null}, "videoSolution": {"videoId": "4f24f1b70a5841d19e3fd94283c24a7d", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/rPila129p2ShV.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/rPila129p2ShV.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf827", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2015-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2015 (Paper 2)", "title": "JEE Advanced 2015 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b169fdf23ac7d519f9b050", "type": "numerical", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1f77301f65c2f92c46", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010 (Paper 1)", "title": "JEE Advanced 2010 (Paper 1)"}], "question": {"text": "A $0.1 \\mathrm{~kg}$ mass is suspended from a wire of negligible mass. The length of the wire is $1 \\mathrm{~m}$ and its cross-sectional area is $4.9 \\times 10^{-7} \\mathrm{~m}^2$. If the mass is pulled a little in the vertically downward direction and released, it performs simple harmonic motion of angular frequency $140 \\mathrm{rad} \\mathrm{s}^{-1}$. If the Young's modulus of the material of the wire is $n \\times 10^9 \\mathrm{Nm}^{-2}$, the value of $n$ is", "image": null}, "options": [], "correctValue": "4", "solution": {"text": "$\\omega=\\sqrt{\\frac{K}{m}}=\\sqrt{\\frac{Y A}{l m}}=\\sqrt{\\frac{\\left(n \\times 10^9\\right)\\left(4.9 \\times 10^{-7}\\right)}{1 \\times 0.1}}$\nPutting, $\\omega=140 \\operatorname{rad} \\mathrm{s}^{-1}$ in above equation we get,\n$$\nn=4\n$$\n$\\therefore$ Answer is 4 .", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1f77301f65c2f92c46", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010 (Paper 1)", "title": "JEE Advanced 2010 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64b16aeef23ac7d519f9b9a7", "title": "Bulk Modulus", "totalQuestions": 1, "questions": [{"_id": "64b16a83f23ac7d519f9b51b", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf831", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2020-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2020 (Paper 2)", "title": "JEE Advanced 2020 (Paper 2)"}], "type": "numerical", "level": 1, "question": {"text": "A cubical solid aluminum <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mi>bulk</mi><mo>&#160;</mo><mi>modulus</mi><mo>=</mo><mo>-</mo><mi>V</mi><mfrac><mrow><mi mathvariant=\"normal\">d</mi><mi>P</mi></mrow><mrow><mi mathvariant=\"normal\">d</mi><mi>V</mi></mrow></mfrac><mo>=</mo><mn>70</mn><mo>&#160;</mo><mi>GPa</mi></mrow></mfenced></math>&nbsp;block has an edge length of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math> on the surface of the earth. It is kept on the floor of a <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn><mo>&#160;</mo><mi>km</mi></math>&nbsp;deep ocean. Taking the average density of water and the acceleration due to gravity to be <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>10</mn><mn>3</mn></msup><mo>&#160;</mo><mi>kg</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup></math> and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>10</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>, respectively, the change in the edge length of the block in&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>mm</mi></math> is ________.", "image": null}, "options": [], "correctValue": "0.24", "solution": {"text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi><mo>=</mo><mfrac><mi>P</mi><mfenced><mrow><mo>-</mo><mfrac><mrow><mi mathvariant=\"normal\">d</mi><mi>V</mi></mrow><mi>V</mi></mfrac></mrow></mfenced></mfrac><mo>&#160;</mo><mo>&#8658;</mo><mfrac><mrow><mi mathvariant=\"normal\">d</mi><mi>V</mi></mrow><mi>V</mi></mfrac><mo>=</mo><mo>-</mo><mfrac><mi>P</mi><mi>B</mi></mfrac><mo>&#160;</mo><mo>&#8658;</mo><mn>3</mn><mfrac><mrow><mi mathvariant=\"normal\">d</mi><mi>&#8467;</mi></mrow><mi>&#8467;</mi></mfrac><mo>=</mo><mfrac><mi>P</mi><mi>B</mi></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">d</mi><mi>&#8467;</mi><mo>=</mo><mfenced><mfrac><mrow><mo>-</mo><mi mathvariant=\"normal\">P</mi></mrow><mi mathvariant=\"normal\">B</mi></mfrac></mfenced><mfrac><mi>&#8467;</mi><mn>3</mn></mfrac><mo>=</mo><mfrac><mrow><msup><mn>10</mn><mn>3</mn></msup><mfrac><mi>kg</mi><msup><mi mathvariant=\"normal\">m</mi><mn>3</mn></msup></mfrac><mo>&#215;</mo><mfrac><mrow><mn>10</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></mrow><msup><mi mathvariant=\"normal\">s</mi><mn>2</mn></msup></mfrac><mo>&#215;</mo><mn>5</mn><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup></mrow><mrow><mn>70</mn><mo>&#215;</mo><msup><mn>10</mn><mn>9</mn></msup></mrow></mfrac><mo>&#215;</mo><mfrac><mrow><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></mrow><mn>3</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">d</mi><mi>&#8467;</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>238</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi mathvariant=\"normal\">d</mi><mi>&#8467;</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>238</mn><mo>&#160;</mo><mi>mm</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>0</mn><mo>.</mo><mn>24</mn></math></p>", "image": null}, "videoSolution": {"videoId": "db086072c7454788bb24c81d032c024d", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/HKR4js1l5KpmE.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/HKR4js1l5KpmE.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf831", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2020-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2020 (Paper 2)", "title": "JEE Advanced 2020 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'JEE Advanced';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

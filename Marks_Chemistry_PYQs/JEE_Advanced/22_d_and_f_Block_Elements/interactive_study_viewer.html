@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JEE Advanced - d and f Block Elements PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚗️ JEE Advanced &bull; d and f Block Elements</h1>
+        <div class="sub">Chemistry PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 22, "chapterId": "616024ed438772c9179f9f0c", "chapter": "d and f Block Elements", "exam": "JEE Advanced", "totalTopics": 3, "totalQuestions": 19, "downloadTime": "2026-10-08 20:02:36", "topics": [{"index": 1, "topicId": "64b16ad7f23ac7d519f9b8a0", "title": "Properties of D-block elements", "totalQuestions": 3, "questions": [{"_id": "64b16a78f23ac7d519f9b4b6", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf82f", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2019-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2019 (Paper 2)", "title": "JEE Advanced 2019 (Paper 2)"}], "type": "multipleCorrect", "level": 2, "question": {"text": "Consider the following reactions (unbalanced)<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">Z</mi><mi mathvariant=\"normal\">n</mi><mo>+</mo><mi>H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">&#160;</mi><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">c</mi><mo>.</mo><mi mathvariant=\"normal\">&#160;</mi><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><mi mathvariant=\"normal\">S</mi><msub><mi mathvariant=\"normal\">O</mi><mn>4</mn></msub><mo>&#8594;</mo><mi mathvariant=\"normal\">G</mi><mo>+</mo><mi mathvariant=\"normal\">R</mi><mo>+</mo><mi mathvariant=\"normal\">X</mi></math><br /><math><mi mathvariant=\"normal\">Z</mi><mi mathvariant=\"normal\">n</mi><mo>+</mo><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">c</mi><mo>.</mo><mi mathvariant=\"normal\">&#160;</mi><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi><mo>&#8594;</mo><mi mathvariant=\"normal\">T</mi><mo>+</mo><mi mathvariant=\"normal\">Q</mi></math><br /><math><mi mathvariant=\"normal\">G</mi><mo>+</mo><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><mo>+</mo><msub><mrow><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>4</mn></mrow></msub><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi><mo>&#8594;</mo><mi mathvariant=\"normal\">Z</mi><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">&#160;</mi><mi mathvariant=\"normal\">p</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">p</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">e</mi></mrow></mfenced><mo>+</mo><mi mathvariant=\"normal\">X</mi><mo>+</mo><mi mathvariant=\"normal\">Y</mi></math><br />Choose the correct option(s).", "image": null}, "options": [{"id": "BxnVv", "text": "The oxidation state of <math><mi mathvariant=\"normal\">Z</mi><mi mathvariant=\"normal\">n</mi></math> in <math><mi mathvariant=\"normal\">T</mi></math> is <math><mo>+</mo><mn>1</mn></math>", "isCorrect": false, "image": null}, {"id": "IpKqc", "text": "Bond order of <math><mi mathvariant=\"normal\">Q</mi></math> is <math><mn>1</mn></math> in its ground state", "isCorrect": true, "image": null}, {"id": "dsp3s", "text": "<math><mi mathvariant=\"normal\">Z</mi></math> is dirty white in colour", "isCorrect": true, "image": null}, {"id": "lbXkI", "text": "<math><mi mathvariant=\"normal\">R</mi></math> is a <math><mi mathvariant=\"normal\">V</mi></math> -shaped molecule", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<math><mtext>Zn</mtext><mo>+</mo><munder><mrow><msub><mrow><mtext>H</mtext></mrow><mrow><mtext>2</mtext></mrow></msub><msub><mrow><mtext>SO</mtext></mrow><mrow><mtext>4</mtext></mrow></msub></mrow><mrow><mfenced separators=\"|\"><mrow><mtext>Hot&amp;Conc.</mtext></mrow></mfenced></mrow></munder><mo>→</mo><munder><mrow><msub><mrow><mtext>ZnSO</mtext></mrow><mrow><mtext>4</mtext></mrow></msub></mrow><mrow><mfenced separators=\"|\"><mrow><mtext>N</mtext></mrow></mfenced></mrow></munder><mo>+</mo><munder><mrow><msub><mrow><mtext>SO</mtext></mrow><mrow><mtext>2</mtext></mrow></msub></mrow><mrow><mi>®</mi></mrow></munder><mo>+</mo><munder><mrow><msub><mrow><mtext>H</mtext></mrow><mrow><mtext>2</mtext></mrow></msub><mtext>O</mtext></mrow><mrow><mfenced separators=\"|\"><mrow><mtext>X</mtext></mrow></mfenced></mrow></munder></math>  <br/><math><mtext>Zn</mtext><mo>+</mo><munder><mrow><mtext>2NaOH</mtext></mrow><mrow><mfenced separators=\"|\"><mrow><mtext>Conc.</mtext></mrow></mfenced></mrow></munder><mo>→</mo><munder><mrow><msub><mrow><mtext>NaZnO</mtext></mrow><mrow><mtext>2</mtext></mrow></msub></mrow><mrow><mfenced separators=\"|\"><mrow><mtext>T</mtext></mrow></mfenced></mrow></munder><mo>+</mo><munder><mrow><msub><mrow><mtext>H</mtext></mrow><mrow><mtext>2</mtext></mrow></msub></mrow><mrow><mfenced separators=\"|\"><mrow><mtext>Q</mtext></mrow></mfenced></mrow></munder></math>  <br/><math><msub><mrow><mtext>ZnSO</mtext></mrow><mrow><mn>4</mn></mrow></msub><mo>+</mo><msub><mrow><mtext>H</mtext></mrow><mrow><mtext>2</mtext></mrow></msub><mtext>S</mtext><mo>+</mo><msub><mrow><mtext>NH</mtext></mrow><mrow><mn>4</mn></mrow></msub><mtext>OH</mtext><mo>→</mo><munder><mrow><mtext>ZnS</mtext></mrow><mrow><mfenced separators=\"|\"><mrow><mtext>S</mtext></mrow></mfenced></mrow></munder><mo>+</mo><munder><mrow><msub><mrow><mtext>H</mtext></mrow><mrow><mtext>2</mtext></mrow></msub><mtext>O</mtext></mrow><mrow><mfenced separators=\"|\"><mrow><mtext>X</mtext></mrow></mfenced></mrow></munder><mo>+</mo><munder><mrow><msub><mrow><mfenced separators=\"|\"><mrow><msub><mrow><mtext>NH</mtext></mrow><mrow><mtext>4</mtext></mrow></msub></mrow></mfenced></mrow><mrow><mtext>2</mtext></mrow></msub><msub><mrow><mtext>SO</mtext></mrow><mrow><mtext>4</mtext></mrow></msub></mrow><mrow><mfenced separators=\"|\"><mrow><mtext>Y</mtext></mrow></mfenced></mrow></munder></math>", "image": null}, "videoSolution": {"videoId": "ca623935dc1a4976a4eccb019ed9ecc2", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/QpfL2a8earsMm.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/QpfL2a8earsMm.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf82f", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2019-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2019 (Paper 2)", "title": "JEE Advanced 2019 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a61f23ac7d519f9b3e4", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf82b", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2017-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2017 (Paper 2)", "title": "JEE Advanced 2017 (Paper 2)"}], "type": "multipleCorrect", "level": 1, "question": {"text": "The option(s) with only amphoteric oxides is(are)", "image": null}, "options": [{"id": "ISDH4", "text": "<math><mi>C</mi><msub><mrow><mi>r</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>O</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>,</mo><mi> </mi><mi>C</mi><mi>r</mi><mi>O</mi><mo>,</mo><mi> </mi><mi>S</mi><mi>n</mi><mi>O</mi><mo>,</mo><mi> </mi><mi>P</mi><mi>b</mi><mi>O</mi></math>", "isCorrect": false, "image": null}, {"id": "ByX07", "text": "<math><mi>N</mi><mi>O</mi><mo>,</mo><mi> </mi><msub><mrow><mi>B</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>O</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>,</mo><mi> </mi><mi>P</mi><mi>b</mi><mi>O</mi><mo>,</mo><mi> </mi><mi>S</mi><mi>n</mi><msub><mrow><mi>O</mi></mrow><mrow><mn>2</mn></mrow></msub></math>", "isCorrect": false, "image": null}, {"id": "o4ciR", "text": "<math><mi>C</mi><msub><mrow><mi>r</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>O</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>,</mo><mi>&nbsp;</mi><mi>B</mi><mi>e</mi><mi>O</mi><mo>,</mo><mi>&nbsp;</mi><mi>S</mi><mi>n</mi><mi>O</mi><mo>,</mo><mi>&nbsp;</mi><mi>S</mi><mi>n</mi><msub><mrow><mi>O</mi></mrow><mrow><mn>2</mn></mrow></msub></math>", "isCorrect": true, "image": null}, {"id": "rG0al", "text": "<math><mi>Z</mi><mi>n</mi><mi>O</mi><mo>,</mo><mi>&nbsp;</mi><mi>A</mi><msub><mrow><mi>l</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>O</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>,</mo><mi>&nbsp;</mi><mi>P</mi><mi>b</mi><mi>O</mi><mo>,</mo><mi>&nbsp;</mi><mi>P</mi><mi>b</mi><msub><mrow><mi>O</mi></mrow><mrow><mn>2</mn></mrow></msub></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>(iii)&nbsp; <math><mi>C</mi><msub><mrow><mi>r</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>O</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>,</mo><mi>&nbsp;</mi><mi>B</mi><mi>e</mi><mi>O</mi><mo>,</mo><mi>&nbsp;</mi><mi>S</mi><mi>n</mi><mi>O</mi><mo>,</mo><mi>&nbsp;</mi><mi>S</mi><mi>n</mi><msub><mrow><mi>O</mi></mrow><mrow><mn>2</mn></mrow></msub></math></p><p><span style=\"font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(223, 240, 216);\">All are amphoteric oxides&nbsp;as they react with both acids as well as bases</span></p><p>(iv)&nbsp; <math><mi>Z</mi><mi>n</mi><mi>O</mi><mo>,</mo><mi>&nbsp;</mi><mi>A</mi><msub><mrow><mi>l</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>O</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>,</mo><mi>&nbsp;</mi><mi>P</mi><mi>b</mi><mi>O</mi><mo>,</mo><mi>&nbsp;</mi><mi>P</mi><mi>b</mi><msub><mrow><mi>O</mi></mrow><mrow><mn>2</mn></mrow></msub></math></p><p><span style=\"font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(223, 240, 216);\">All are amphoteric oxides&nbsp;as they react with both acids as well as bases</span></p>", "image": null}, "videoSolution": {"videoId": "06409c21ea984984bbf85843fe8fd81d", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/o52Yof2NOH71y.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/o52Yof2NOH71y.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf82b", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2017-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2017 (Paper 2)", "title": "JEE Advanced 2017 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a43f23ac7d519f9b2cf", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf826", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015 (Paper 1)", "title": "JEE Advanced 2015 (Paper 1)"}], "type": "multipleCorrect", "level": 1, "question": {"text": "The correct statement(s) about <math><mi mathvariant=\"normal\">C</mi><msup><mrow><mi mathvariant=\"normal\">r</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup></math> and <math><mi mathvariant=\"normal\">M</mi><msup><mrow><mi mathvariant=\"normal\">n</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup></math> is (are)<br />[Atomic number of Cr = 24 and Mn = 25]", "image": null}, "options": [{"id": "w43Ga", "text": "<math><mi mathvariant=\"normal\">C</mi><msup><mrow><mi mathvariant=\"normal\">r</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup></math>  is a reducing agent", "isCorrect": true, "image": null}, {"id": "QdKAk", "text": "<math><mi mathvariant=\"normal\">M</mi><msup><mrow><mi mathvariant=\"normal\">n</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup></math>  is an oxidizing agent", "isCorrect": true, "image": null}, {"id": "ykfl1", "text": "Both  <math><mi mathvariant=\"normal\">C</mi><msup><mrow><mi mathvariant=\"normal\">r</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup></math>  and  <math><mi mathvariant=\"normal\">M</mi><msup><mrow><mi mathvariant=\"normal\">n</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup></math>  exhibit  <math><msup><mrow><mi mathvariant=\"normal\">d</mi></mrow><mrow><mn>4</mn></mrow></msup></math>  electronic configuration", "isCorrect": true, "image": null}, {"id": "cJVH4", "text": "When  <math><mi mathvariant=\"normal\">C</mi><msup><mrow><mi mathvariant=\"normal\">r</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup></math>  is used as a reducing agent, the chromium ion attains  <math><msup><mrow><mi mathvariant=\"normal\">d</mi></mrow><mrow><mn>5</mn></mrow></msup></math>  electronic configuration.", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<math><mi mathvariant=\"normal\">C</mi><msup><mrow><mi mathvariant=\"normal\">r</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>+</mo><mi mathvariant=\"normal\">M</mi><msup><mrow><mi mathvariant=\"normal\">n</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo>⇌</mo><mi mathvariant=\"normal\">C</mi><msup><mrow><mi mathvariant=\"normal\">r</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo>+</mo><mi mathvariant=\"normal\">M</mi><msup><mrow><mi mathvariant=\"normal\">n</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup></math> <br > <math><mi mathvariant=\"normal\">C</mi><msup><mrow><mi mathvariant=\"normal\">r</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup></math>  is a reducing agent agent  <math><mi mathvariant=\"normal\">M</mi><msup><mrow><mi mathvariant=\"normal\">n</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup></math>  is an oxidizing agent both  <math><mi mathvariant=\"normal\">C</mi><msup><mrow><mi mathvariant=\"normal\">r</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mi mathvariant=\"normal\"> </mi><mo>&amp;</mo><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">M</mi><msup><mrow><mi mathvariant=\"normal\">n</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup></math>  exhibit  <math><msup><mrow><mi mathvariant=\"normal\">d</mi></mrow><mrow><mn>4</mn></mrow></msup></math>  electronic configuration.", "image": null}, "videoSolution": {"videoId": "c34359caddc1422993513b5767e8b2ef", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/XgmcP9iACNtIJ.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/XgmcP9iACNtIJ.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf826", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015 (Paper 1)", "title": "JEE Advanced 2015 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64b16ad7f23ac7d519f9b89f", "title": "Compounds of Transition Metals", "totalQuestions": 15, "questions": [{"_id": "66965de8d603121f43a4470d", "type": "numerical", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "66965789b31faf98fda8fefa", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2024-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Paper 2)", "title": "JEE Advanced 2024 (Paper 2)"}], "question": {"text": "Paragraph: When potassium iodide is added to an aqueous solution of potassium ferricyanide, a reversible reaction is observed in which a complex \\(\\mathbf{P}\\) is formed. In a strong acidic medium, the equilibrium shifts completely towards \\(\\mathbf{P}\\). Addition of zinc chloride to \\(\\mathbf{P}\\) in a slightly acidic medium results in a sparingly soluble complex Q.\nQuestion: The number of zinc ions present in the molecular formula of $\\mathbf{Q}$ is", "image": null}, "options": [], "correctValue": 2.5, "solution": {"text": "$\\mathrm{Zn}^{2+}+\\mathrm{K}_4\\left[\\mathrm{Fe}(\\mathrm{CN})_6\\right] \\rightarrow \\mathrm{K}_2 \\mathrm{Zn}_3\\left[\\mathrm{Fe}(\\mathrm{CN})_6\\right]_2$\nOR\n$\\mathrm{Zn}^{2+}+\\mathrm{K}_4\\left[\\mathrm{Fe}(\\mathrm{CN})_6\\right] \\rightarrow \\mathrm{Zn}_2\\left[\\mathrm{Fe}(\\mathrm{CN})_6\\right]$", "image": null}, "videoSolution": {"videoId": "4b4ee98f2a0540a9ac71af3709805dcf", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/crALzSIM7a9hn.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/crALzSIM7a9hn.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "66965789b31faf98fda8fefa", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2024-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Paper 2)", "title": "JEE Advanced 2024 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "66965de7d603121f43a4459f", "type": "numerical", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "66965789b31faf98fda8fefa", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2024-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Paper 2)", "title": "JEE Advanced 2024 (Paper 2)"}], "question": {"text": "Paragraph: When potassium iodide is added to an aqueous solution of potassium ferricyanide, a reversible reaction is observed in which a complex \\(\\mathrm{P}\\) is formed. In a strong acidic medium, the equilibrium shifts completely towards \\(\\mathrm{P}\\). Addition of zinc chloride to \\(\\mathrm{P}\\) in a slightly acidic medium results in a sparingly soluble complex Q.\nQuestion: The number of moles of potassium iodide required to produce two moles of $\\mathbf{P}$ is", "image": null}, "options": [], "correctValue": 2, "solution": {"text": "$\\mathrm{KI}+\\mathrm{K}_3\\left[\\mathrm{Fe}(\\mathrm{CN})_6\\right] \\rightleftharpoons \\mathrm{K}_4\\left[\\mathrm{Fe}(\\mathrm{CN})_6\\right]+\\frac{1}{2} \\mathrm{I}_2$\nMoles of $\\mathrm{KI}$ required $=2$", "image": null}, "videoSolution": {"videoId": "797a86cc2c984c029cc554b9905a7e97", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/SV6OWFbhHyqUg.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/SV6OWFbhHyqUg.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "66965789b31faf98fda8fefa", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2024-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Paper 2)", "title": "JEE Advanced 2024 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16aa2f23ac7d519f9b634", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "64b1672d25f94b8a85b91cd9", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2023-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Paper 1)", "title": "JEE Advanced 2023 (Paper 1)"}], "question": {"text": "<p>In the scheme given below, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"bold\">X</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"bold\">Y</mi></math>, respectively, are</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtext>Metal&#160;halide</mtext><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mover><mo>&#8594;</mo><mrow><mo>&#160;</mo><mi>aq</mi><mo>.&#160;</mo><mi>NaOH</mi></mrow></mover><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mtext>&#160;White&#160;precipitate</mtext><mo>&#160;</mo><mfenced><mi mathvariant=\"normal\">P</mi></mfenced><mo>+</mo><mo>&#160;</mo><mtext>Filtrate</mtext><mo>&#160;</mo><mfenced><mi mathvariant=\"normal\">Q</mi></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">P</mi><mo mathvariant=\"bold\">&#160;</mo><mo mathvariant=\"bold\">&#160;</mo><mo mathvariant=\"bold\">&#160;</mo><munder><mover><mrow><mover><mo>&#10230;</mo><mrow><msub><mi>PbO</mi><mn>2</mn></msub><mo>&#160;</mo><mo>(</mo><mi>excess</mi><mo>)&#160;</mo></mrow></mover><mo mathvariant=\"bold\">&#160;</mo><mo mathvariant=\"bold\">&#160;</mo></mrow><mrow><mo>&#160;</mo><mi>aq</mi><mo>.&#160;</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><msub><mi>SO</mi><mn>4</mn></msub></mrow></mover><mrow><mo>&#160;</mo><mi>heat</mi><mo>&#160;</mo></mrow></munder><mi mathvariant=\"normal\">X</mi><mo>&#160;</mo><mfenced><mtext>a&#160;coloured&#160;species&#160;in&#160;solution</mtext></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#160;</mo><mi mathvariant=\"normal\">Q</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><munder><mover><mo>&#10230;</mo><mrow><mi>MnO</mi><mo>(</mo><mi>OH</mi><msub><mo>)</mo><mn>2</mn></msub><mo>,</mo><mo>&#160;</mo><mi>Conc</mi><mo>.</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><msub><mi>SO</mi><mn>4</mn></msub></mrow></mover><mrow><mo>&#160;</mo><mi>warm</mi><mo>&#160;</mo></mrow></munder><mo>&#160;</mo><mo>&#160;</mo><mi mathvariant=\"normal\">Y</mi><mfenced><mrow><mtext>gives&#160;blue-coloration&#160;with</mtext><mo>&#160;</mo><mi>KI</mi><mo>-</mo><mtext>starch&#160;paper</mtext></mrow></mfenced><mo>&#160;</mo></math></p>", "image": null}, "options": [{"id": "FZHoU", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>CrO</mi><mn>4</mn><mrow><mn>2</mn><mo>-</mo></mrow></msubsup></math>&nbsp;and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Br</mi><mn>2</mn></msub></math>", "image": null, "isCorrect": false}, {"id": "kdLxh", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>MnO</mi><mn>4</mn><mrow><mn>2</mn><mo>-</mo></mrow></msubsup><mo>&#160;</mo><mi>and</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><msub><mi>Cl</mi><mn>2</mn></msub></math>", "image": null, "isCorrect": false}, {"id": "KmQfe", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msubsup><mi>MnO</mi><mn>4</mn><mo>-</mo></msubsup><mo>&#160;</mo><mo>&#160;</mo><mi>and</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><msub><mi>Cl</mi><mn>2</mn></msub></math>", "image": null, "isCorrect": true}, {"id": "ekmgE", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>MnSO</mi><mn>4</mn></msub><mo>&#160;</mo><mo>&#160;</mo><mi>and</mi><mo>&#160;</mo><mo>&#160;</mo><mi>HOCl</mi></math>", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<blockquote><p>The metal halide can be manganese dichloride. It gives white precipitate of manganese hydroxide.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>MnCl</mi><mn>2</mn></msub><mover><mo>&#8594;</mo><mrow><mi>aq</mi><mo>.</mo><mi>NaOH</mi></mrow></mover><munder><mrow><mi>Mn</mi><msub><mfenced><mi>OH</mi></mfenced><mn>2</mn></msub></mrow><mfenced><mi mathvariant=\"normal\">P</mi></mfenced></munder><mo>+</mo><munder><mi>NaCl</mi><mfenced><mi mathvariant=\"normal\">Q</mi></mfenced></munder></math></p><p>The white precipitate manganese hydroxide on reaction with lead dioxide and concentrated sulphuric acid gives purple coloured solution permanganate.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Mn</mi><msub><mfenced><mi>OH</mi></mfenced><mn>2</mn></msub><munderover><mo>&#8594;</mo><mrow><mi>Conc</mi><mo>.</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><msub><mi>SO</mi><mn>4</mn></msub><mo>,</mo><mi>heat</mi></mrow><mrow><msub><mi>PbO</mi><mn>2</mn></msub><mfenced><mi>excess</mi></mfenced></mrow></munderover><msubsup><mi>MnO</mi><mn>4</mn><mo>-</mo></msubsup><mfenced><mrow><mi>purple</mi><mo>&#160;</mo><mi>solution</mi></mrow></mfenced></math></p><p>The sodium chloride gives&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Cl</mi><mn>2</mn></msub></math>&nbsp;on reaction with&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>MnO</mi><msub><mfenced><mi>OH</mi></mfenced><mn>2</mn></msub><mo>,</mo><mo>&#160;</mo><mi>conc</mi><mo>.</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub><msub><mi>SO</mi><mn>4</mn></msub></math>. The chlorine formed can oxidise iodide to iodine which gives blue colouration with starch paper.</p></blockquote>", "image": null}, "videoSolution": {"videoId": "cdd4128b1a1a4e79bafe6ec7b5317a0b", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/RJlJPk14VDC9y.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/RJlJPk14VDC9y.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64b1672d25f94b8a85b91cd9", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2023-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Paper 1)", "title": "JEE Advanced 2023 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a91f23ac7d519f9b59c", "previousYearPapers": [{"_id": "619f94437e944e1fdc2859b5", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2021-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2021 (Paper 2)", "title": "JEE Advanced 2021 (Paper 2)"}], "type": "singleCorrect", "level": 2, "question": {"text": "<strong> Paragraph: </strong>\r\n\r\nThe reaction of $\\mathrm{K}_{3}\\left[\\mathrm{Fe}(\\mathrm{CN})_{6}\\right]$ with freshly prepared $\\mathrm{FeSO}_{4}$ solution produces a dark blue precipitate called Turnbull's blue. Reaction of $\\mathrm{K}_{4}\\left[\\mathrm{Fe}(\\mathrm{CN})_{6}\\right]$ with the $\\mathrm{FeSO}_{4}$ solution in complete absence of air produces a white precipitate $\\mathbf{X}$, which turns blue in air. Mixing the $\\mathrm{FeSO}_{4}$ solution with $\\mathrm{NaNO}_{3}$, followed by a slow addition of concentrated $\\mathrm{H}_{2} \\mathrm{SO}_{4}$ through the side of the test tube produces a brown ring.\r\n\r\n<br> <strong> Question: </strong>\r\n\r\nPrecipitate $\\mathbf{X}$ is", "image": null}, "options": [{"id": "8iTQz", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Fe</mi><mn>4</mn></msub><msub><mfenced open=\"[\" close=\"]\"><mrow><mi>Fe</mi><msub><mfenced><mi>CN</mi></mfenced><mn>6</mn></msub></mrow></mfenced><mn>3</mn></msub></math>", "isCorrect": false, "image": null}, {"id": "TGXPX", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Fe</mi><mfenced open=\"[\" close=\"]\"><mrow><mi>Fe</mi><msub><mfenced><mi>CN</mi></mfenced><mn>6</mn></msub></mrow></mfenced></math>", "isCorrect": false, "image": null}, {"id": "rJRaH", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">K</mi><mn>2</mn></msub><mi>Fe</mi><mfenced open=\"[\" close=\"]\"><mrow><mi>Fe</mi><msub><mfenced><mi>CN</mi></mfenced><mn>6</mn></msub></mrow></mfenced></math>", "isCorrect": true, "image": null}, {"id": "5DSnk", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>KFe</mi><mfenced open=\"[\" close=\"]\"><mrow><mi>Fe</mi><msub><mfenced><mi>CN</mi></mfenced><mn>6</mn></msub></mrow></mfenced></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p><img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/19fc5cc5-d0fc-414e-bc00-4d01b1b760bb-image.png\" style=\"width: 419px; height: 150px;\" /></p>", "image": null}, "videoSolution": {"videoId": "b4132fa4dfc34991ba612e2ba605ad72", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/ajynjq4lZ86St.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/ajynjq4lZ86St.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "619f94437e944e1fdc2859b5", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2021-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2021 (Paper 2)", "title": "JEE Advanced 2021 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a72f23ac7d519f9b480", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf82e", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019 (Paper 1)", "title": "JEE Advanced 2019 (Paper 1)"}], "type": "multipleCorrect", "level": 2, "question": {"text": "Fusion of <math><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">n</mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub></math> with <math><mi mathvariant=\"normal\">K</mi><mi mathvariant=\"normal\">O</mi><mi mathvariant=\"normal\">H</mi></math> in presence of <math><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub></math> produces a salt <math><mi mathvariant=\"normal\">W</mi><mo>.</mo></math> Alkaline solution of <math><mi mathvariant=\"normal\">W</mi></math> upon electrolytic oxidation yields another salt <math><mi mathvariant=\"normal\">X</mi><mo>.</mo></math> The manganese containing ions present in <math><mi mathvariant=\"normal\">W</mi></math> and <math><mi mathvariant=\"normal\">X</mi><mo>,</mo></math> respectively, are <math><mi mathvariant=\"normal\">Y</mi></math> and <math><mi mathvariant=\"normal\">Z</mi><mo>.</mo></math> Correct statement(s) is (are)", "image": null}, "options": [{"id": "kiWce", "text": "<math><mi mathvariant=\"normal\">Y</mi></math>  is diamagnetic in nature while  <math><mi mathvariant=\"normal\">Z</mi></math>  is paramagnetic", "isCorrect": false, "image": null}, {"id": "WGZtn", "text": "Both  <math><mi mathvariant=\"normal\">Y</mi></math>  and  <math><mi mathvariant=\"normal\">Z</mi></math>  are coloured and have tetrahedral shape", "isCorrect": true, "image": null}, {"id": "xQpk9", "text": "In both  <math><mi mathvariant=\"normal\">Y</mi></math>  and  <math><mi mathvariant=\"normal\">Z</mi><mo>,</mo></math>   <math><mi mathvariant=\"normal\">π</mi></math> -bonding occurs between  <math><mi mathvariant=\"normal\">p</mi></math> -orbitals of oxygen and  <math><mi mathvariant=\"normal\">d</mi></math> -orbitals of manganese.", "isCorrect": true, "image": null}, {"id": "tneFh", "text": "In aqueous acidic solution,  <math><mi mathvariant=\"normal\">Y</mi></math>  undergoes disproportionation reaction to give  <math><mi mathvariant=\"normal\">Z</mi></math>  and  <math><msub><mrow><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>.</mo></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<math><msub><mrow><mtext>M</mtext></mrow><mrow><mtext>n</mtext></mrow></msub><msub><mrow><mtext>O</mtext></mrow><mrow><mtext>2</mtext></mrow></msub><mo>+</mo><mn>2</mn><mtext>KOH</mtext><mo>+</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><msub><mrow><mtext>O</mtext></mrow><mrow><mtext>2</mtext></mrow></msub><mtext> </mtext><mover><mrow><mo>→</mo></mrow><mrow><mi>Δ</mi></mrow></mover><munder><mrow><msub><mrow><mtext>K</mtext></mrow><mrow><mtext>2</mtext></mrow></msub><msub><mrow><mtext>M</mtext></mrow><mrow><mtext>n</mtext></mrow></msub><msub><mrow><mtext>O</mtext></mrow><mrow><mn>4</mn></mrow></msub></mrow><mrow><mo>(</mo><mtext>W</mtext><mo>)</mo></mrow></munder><mo>+</mo><msub><mrow><mtext>H</mtext></mrow><mrow><mtext>2</mtext></mrow></msub><mtext>O</mtext></math><br >Oxidation state <math><mo>+</mo><mn>6</mn></math><br >Paramagnetic and green colored salt<br ><math><mo>→</mo></math> shape : Tetrahedra of anion <math><msub><mrow><mtext>M</mtext></mrow><mrow><mtext>n</mtext></mrow></msub><msubsup><mrow><mtext>O</mtext></mrow><mrow><mtext>4</mtext></mrow><mrow><mtext>2-</mtext></mrow></msubsup></math><br/><img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/2c9548f6-77a1-40c3-96d3-b3c2d7cbdb40-image.png\"/><br/>Purple coloured and tetrahedra shape", "image": null}, "videoSolution": {"videoId": "a34bd0b96f554d82accea842fc0ed148", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/aRJbgxZVSHHvw.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/aRJbgxZVSHHvw.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf82e", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019 (Paper 1)", "title": "JEE Advanced 2019 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a35f23ac7d519f9b254", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf824", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014 (Paper 1)", "title": "JEE Advanced 2014 (Paper 1)"}], "type": "numerical", "level": 1, "question": {"text": "Among PbS, CuS, HgS, MnS, <math><mi mathvariant=\"normal\">A</mi><msub><mrow><mi mathvariant=\"normal\">g</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">S</mi></math> , NiS, CoS, <math><mi mathvariant=\"normal\">B</mi><msub><mrow><mi mathvariant=\"normal\">i</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">S</mi></mrow><mrow><mn>3</mn></mrow></msub></math> and <math><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">n</mi><msub><mrow><mi mathvariant=\"normal\">S</mi></mrow><mrow><mn>2</mn></mrow></msub></math> , the total number of black coloured sulphides is", "image": null}, "options": [], "correctValue": "6", "solution": {"text": "Black coloured sulphides <math><mo>{</mo><mi mathvariant=\"normal\">P</mi><mi mathvariant=\"normal\">b</mi><mi mathvariant=\"normal\">S</mi><mo>,</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">u</mi><mi mathvariant=\"normal\">S</mi><mo>,</mo><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">g</mi><mi mathvariant=\"normal\">S</mi><mo>,</mo><mi mathvariant=\"normal\">A</mi><msub><mrow><mi mathvariant=\"normal\">g</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">S</mi><mo>,</mo><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">S</mi><mo>,</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">S</mi><mo>}</mo></math><br />* <math><mi mathvariant=\"normal\">B</mi><msub><mrow><mi mathvariant=\"normal\">i</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">S</mi></mrow><mrow><mn>3</mn></mrow></msub></math> in its crystalline form is dark brown but Bi<sub>2</sub>S<sub>3</sub> precipitate obtained is black in colour.", "image": null}, "videoSolution": {"videoId": "b4f5b7611daf4732942258036bdb1a31", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/tV5AFkTlb3E7Q.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/tV5AFkTlb3E7Q.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf824", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014 (Paper 1)", "title": "JEE Advanced 2014 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a2ff23ac7d519f9b21a", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf823", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2013-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2013 (Paper 2)", "title": "JEE Advanced 2013 (Paper 2)"}], "type": "singleCorrect", "level": 2, "question": {"text": "<strong> Paragraph: </strong>\r\n\r\nAn aqueous solution of a mixture of two inorganic salts, when treated with dilute $H C$ ?, gave a precipitate $(\\boldsymbol{P})$ and a filtrate $(\\boldsymbol{Q})$. The precipitate $\\boldsymbol{P}$ was found to dissolve in hot water. The filtrate $(\\boldsymbol{Q})$ remained unchanged, when treated with $\\mathrm{H}_{2} \\mathrm{~S}$ in a dilute mineral acid medium. However, it gave a precipitate $(\\boldsymbol{R})$ with $H_{2} S$ in an ammoniacal medium. The precipitate $\\boldsymbol{R}$ gave a coloured solution $(\\boldsymbol{S})$, when treated with $\\mathrm{H}_{2} \\mathrm{O}_{2}$ in an aqueous $\\mathrm{NaOH}$ medium.\r\n\r\n<br> <strong> Question: </strong>\r\n\r\nThe coloured solution $\\boldsymbol{S}$ contains", "image": null}, "options": [{"id": "PdwmE", "text": "<math> <mrow> <mtext>F</mtext> <msub> <mtext>e</mtext> <mn>2</mn> </msub> <msub> <mrow> <mfenced close=\")\" open=\"(\" separators=\",\"> <mrow> <msub> <mtext>SO</mtext> <mn>4</mn> </msub> </mrow> </mfenced> </mrow> <mn>3</mn> </msub> </mrow> </math>", "isCorrect": false, "image": null}, {"id": "T9pCp", "text": "<math> <mrow> <msub> <mtext>CuSO</mtext> <mn>4</mn> </msub> </mrow> </math>", "isCorrect": false, "image": null}, {"id": "b7F41", "text": "<math> <mrow> <msub> <mtext>ZnSO</mtext> <mn>4</mn> </msub> </mrow> </math>", "isCorrect": false, "image": null}, {"id": "yVowr", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mtext>Na</mtext><mn>2</mn></msub><msub><mtext>CrO</mtext><mn>4</mn></msub></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/EM0012654_AnsExp_1.jpg\" style=\"width: 473px; height: 346px;\" />", "image": null}, "videoSolution": {"videoId": "c463657aa0dc482eb2a86e9edc04f170", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/ANHzO98OHKFHp.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/ANHzO98OHKFHp.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf823", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2013-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2013 (Paper 2)", "title": "JEE Advanced 2013 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a1bf23ac7d519f9b163", "previousYearPapers": [{"_id": "620a8a1f77301f65c2f92c4a", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012 (Paper 1)", "title": "JEE Advanced 2012 (Paper 1)"}], "type": "singleCorrect", "level": 2, "question": {"text": "The colour of light absorbed by an aqueous solution of $\\mathrm{CuSO}_{4}$ is:", "image": null}, "options": [{"id": "brhOb", "text": "orange-red", "isCorrect": true, "image": null}, {"id": "lDzDt", "text": "blue-green", "isCorrect": false, "image": null}, {"id": "ETNaw", "text": "yellow", "isCorrect": false, "image": null}, {"id": "agPvm", "text": "violet", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{CuSO}_{4}$ will be absorbing orange-red colour and hence will be of blue colour.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1f77301f65c2f92c4a", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012 (Paper 1)", "title": "JEE Advanced 2012 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a14f23ac7d519f9b126", "type": "multipleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1f77301f65c2f92c49", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2011-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2011 (Paper 2)", "title": "JEE Advanced 2011 (Paper 2)"}], "question": {"text": "Reduction of the metal centre in aqueous permanganate ion involves", "image": null}, "options": [{"id": "Re6CV", "text": "\nthree electrons in neutral medium\n", "image": null, "isCorrect": true}, {"id": "EdORY", "text": "\nfive electrons in neutral medium\n", "image": null, "isCorrect": false}, {"id": "0QKnx", "text": "\nthree electrons in alkaline medium\n", "image": null, "isCorrect": true}, {"id": "Lln95", "text": "\nfive electrons in acidic medium", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "In neutral medium: $\\quad \\mathrm{MnO}_4^{-} \\rightarrow \\mathrm{MnO}_2\\left(\\mathrm{Mn}^{7+}+3 e^{-} \\rightarrow \\mathrm{Mn}^{4+}\\right)$\nIn alkaline medium : $\\quad \\mathrm{MnO}_4^{-} \\rightarrow \\mathrm{MnO}_2\\left(\\mathrm{Mn}^{7+}+3 \\varepsilon^{-} \\rightarrow \\mathrm{Mn}^{4+}\\right)$\nIn acidic medium : $\\quad \\mathrm{Mn}_4^{-} \\rightarrow \\mathrm{Mn}^{2+}\\left(\\mathrm{Mn}^{7+}+5 e^{-} \\rightarrow \\mathrm{Mn}^{2+}\\right)$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1f77301f65c2f92c49", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2011-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2011 (Paper 2)", "title": "JEE Advanced 2011 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a0ef23ac7d519f9b0ea", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1f77301f65c2f92c48", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011 (Paper 1)", "title": "JEE Advanced 2011 (Paper 1)"}], "question": {"text": "<strong>Paragraph:</strong>\nWhen a metal rod $M$ is dipped into an aqueous colourless concentrated solution of compound $\\mathrm{N}$, the solution turns light blue. Addition of aqueous $\\mathrm{NaCl}$ to the blue solution gives a white precipitate $\\mathrm{O}$. Addition of aqueous $\\mathrm{NH}_3$ dissolves $\\mathrm{O}$ and gives an intense blue solution.<strong>Question:</strong>\nThe compound $N$ is", "image": null}, "options": [{"id": "WyGHf", "text": "\n$\\mathrm{AgNO}_3$\n", "image": null, "isCorrect": true}, {"id": "hjrXg", "text": "\n$\\mathrm{Zn}\\left(\\mathrm{NO}_3\\right)_2$\n", "image": null, "isCorrect": false}, {"id": "mkyfq", "text": "\n$\\mathrm{Al}\\left(\\mathrm{NO}_3\\right)_3$\n", "image": null, "isCorrect": false}, {"id": "zwMER", "text": "\n$\\mathrm{Pb}\\left(\\mathrm{NO}_3\\right)_2$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "The compound $N$ is $\\mathrm{AgNO}_3$, explained above.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1f77301f65c2f92c48", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011 (Paper 1)", "title": "JEE Advanced 2011 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a0ef23ac7d519f9b0e9", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1f77301f65c2f92c48", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011 (Paper 1)", "title": "JEE Advanced 2011 (Paper 1)"}], "question": {"text": "<strong>Paragraph:</strong>\nWhen a metal rod $M$ is dipped into an aqueous colourless concentrated solution of compound $\\mathrm{N}$, the solution turns light blue. Addition of aqueous $\\mathrm{NaCl}$ to the blue solution gives a white precipitate $\\mathrm{O}$. Addition of aqueous $\\mathrm{NH}_3$ dissolves $\\mathrm{O}$ and gives an intense blue solution.<strong>Question:</strong>\nThe metal $\\operatorname{rod} M$ is", "image": null}, "options": [{"id": "Drr5S", "text": "\n$\\mathrm{Fe}$\n", "image": null, "isCorrect": false}, {"id": "rgJ4P", "text": "\n$\\mathrm{Cu}$\n", "image": null, "isCorrect": true}, {"id": "SwKUG", "text": "\n$\\mathrm{Ni}$\n", "image": null, "isCorrect": false}, {"id": "Y4fnu", "text": "\n$\\mathrm{Co}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Appearance of blue colour on addition of the metal rod $M$ to the solution of $N$ is an indication that metal may be $\\mathrm{Cu}$. Later formation of white precipitate on addition of $\\mathrm{NaCl}$ and dissolution of this precipitate in aqueous ammonia confirm that while preipitate is of $\\mathrm{AgCl}$. This implies that the solution $N$ is of $\\mathrm{AgNO}_3$. This confirm that the metal $M$ is only $\\mathrm{Cu}$.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1f77301f65c2f92c48", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011 (Paper 1)", "title": "JEE Advanced 2011 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b169f8f23ac7d519f9b01f", "type": "numerical", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1f77301f65c2f92c45", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2009-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2009 (Paper 2)", "title": "JEE Advanced 2009 (Paper 2)"}], "question": {"text": "The oxidation number of $\\mathrm{Mn}$ in the product of alkaline oxidative fusion of $\\mathrm{MnO}_2$ is", "image": null}, "options": [], "correctValue": "6", "solution": {"text": "$2 \\mathrm{MnO}_2+4 \\mathrm{KOH}+\\mathrm{O}_2 \\stackrel{\\text { Fusion }}{\\longrightarrow} 2 \\mathrm{~K}_2 \\mathrm{MnO}_4+2 \\mathrm{H}_2 \\mathrm{O}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1f77301f65c2f92c45", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2009-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2009 (Paper 2)", "title": "JEE Advanced 2009 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b169f7f23ac7d519f9b01e", "type": "numerical", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1f77301f65c2f92c45", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2009-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2009 (Paper 2)", "title": "JEE Advanced 2009 (Paper 2)"}], "question": {"text": "The number of water molecule(s) directly bonded to the metal centre in $\\mathrm{CuSO}_4 \\cdot 5 \\mathrm{H}_2 \\mathrm{O}$ is", "image": null}, "options": [], "correctValue": "4", "solution": {"text": "$\\left[\\mathrm{Cu}\\left(\\mathrm{H}_2 \\mathrm{O}\\right)_4\\right] \\mathrm{SO}_4 \\cdot \\mathrm{H}_2 \\mathrm{O}$. Coordination number of $\\mathrm{Cu}$ is 4 .", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1f77301f65c2f92c45", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2009-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2009 (Paper 2)", "title": "JEE Advanced 2009 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b169e2f23ac7d519f9af5a", "type": "multipleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1f77301f65c2f92c42", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2008-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2008 (Paper 1)", "title": "JEE Advanced 2008 (Paper 1)"}], "question": {"text": "A solution of colourless salt $\\mathrm{H}$ on boiling with excess $\\mathrm{NaOH}$ produces a non-flammable gas. The gas evolution ceases after sometime. Upon addition of $\\mathrm{Zn}$ dust to the same solution, the gas evolution restarts. The colourless salt (s) $\\mathrm{H}$ is (are)", "image": null}, "options": [{"id": "0FcAi", "text": "\n$\\mathrm{NH}_4 \\mathrm{NO}_3$\n", "image": null, "isCorrect": true}, {"id": "b4nOT", "text": "\n$\\mathrm{NH}_4 \\mathrm{NO}_2$\n", "image": null, "isCorrect": true}, {"id": "OVHM0", "text": "\n$\\mathrm{NH}_4 \\mathrm{Cl}$\n", "image": null, "isCorrect": false}, {"id": "dLpDZ", "text": "\n$\\left(\\mathrm{NH}_4\\right)_2 \\mathrm{SO}_4$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$$\n\\begin{aligned}\n& \\mathrm{NH}_4 \\mathrm{NO}_3+\\mathrm{NaOH} \\longrightarrow \\mathrm{NaNO}_3+\\mathrm{NH}_3+\\mathrm{H}_2 \\mathrm{O} \\\\\n& \\mathrm{NaNO}_3+8[\\mathrm{H}] \\mathrm{NaOH}+\\mathrm{NH}_3+2 \\mathrm{H}_2 \\mathrm{O} \\\\\n& \\mathrm{NH}_4 \\mathrm{NO}_2+\\mathrm{NaOH} \\longrightarrow \\mathrm{NaHO}_2+\\mathrm{NH}_3+\\mathrm{H}_2 \\mathrm{O} \\\\\n& \\mathrm{NaNO}_2+6[\\mathrm{H}] \\longrightarrow \\mathrm{NaOH}+\\mathrm{NH}_3+\\mathrm{H}_2 \\mathrm{O}\n\\end{aligned}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1f77301f65c2f92c42", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2008-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2008 (Paper 1)", "title": "JEE Advanced 2008 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b169c9f23ac7d519f9ae71", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1e77301f65c2f92c3f", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2006-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2006", "title": "JEE Advanced 2006"}], "question": {"text": "$\\mathrm{CuSO}_4$ decolourises on addition of $\\mathrm{KCN}$, the product is", "image": null}, "options": [{"id": "QaX4D", "text": "\n$\\left[\\mathrm{Cu}(\\mathrm{CN})_4\\right]^{2-}$\n", "image": null, "isCorrect": false}, {"id": "MroSN", "text": "\n$\\mathrm{Cu}^{2+}$ get reduced to form $\\left[\\mathrm{Cu}(\\mathrm{CN})_4\\right]^{3-}$\n", "image": null, "isCorrect": false}, {"id": "KkDah", "text": "\n$\\mathrm{Cu}(\\mathrm{CN})_2$\n", "image": null, "isCorrect": false}, {"id": "Y2fcj", "text": "\n$\\mathrm{CuCN}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "$\\mathrm{CuSO}_4$ decolourise on addition of $\\mathrm{KCN}$, the product is $\\mathrm{CuCN}$ along with $(\\mathrm{CN})_2$ but in excess of KCN is form colourless potassium tetra cyano cuperate (I)\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/ygsirUrwGESxx7TTkRG2_eKcb8U2WwPK8vhoyu2t4EI.original.fullsize.png\"><br>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1e77301f65c2f92c3f", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2006-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2006", "title": "JEE Advanced 2006"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "685103326bba689a3eb09cec", "title": "F-Block elements", "totalQuestions": 1, "questions": [{"_id": "685102c06bba689a3eb09c94", "type": "multipleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "684c67d769037fad219cb0c1", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2025-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2025 (Paper 1)", "title": "JEE Advanced 2025 (Paper 1)"}], "question": {"text": "The pair(s) of diamagnetic ions is(are)", "image": null}, "options": [{"id": "UfvhH", "text": "$\\mathrm{La}^{3+}, \\mathrm{Ce}^{4+}$", "image": null, "isCorrect": true}, {"id": "qM4iK", "text": "$\\mathrm{Yb}^{2+}, \\mathrm{Lu}^{3+}$", "image": null, "isCorrect": true}, {"id": "4x7GG", "text": "$\\mathrm{La}^{2+}, \\mathrm{Ce}^{3+}$", "image": null, "isCorrect": false}, {"id": "xkffx", "text": "$\\mathrm{Yb}^{3+}, \\mathrm{Lu}^{2+}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\begin{aligned} \\mathrm{La}^{+3} \\rightarrow\\left[{ }_{54} \\mathrm{Xe}\\right] 4 \\mathrm{f}^0 & \\text { -diamagnetic } \\\\ \\mathrm{Yb}^{+2} \\rightarrow\\left[{ }_{54} \\mathrm{Xe}\\right] 4 \\mathrm{f}^{14} & \\text { -diamagnetic } \\\\ \\mathrm{Lu}^{+3} \\rightarrow\\left[{ }_{54} \\mathrm{Xe}\\right] 4 \\mathrm{f}^{14} & \\text { -diamagnetic } \\\\ \\mathrm{La}^{+2} \\rightarrow\\left[{ }_{54} \\mathrm{Xe}\\right] 5 \\mathrm{~d}^1 & \\text { -paramagnetic } \\\\ \\mathrm{Ce}^{+4} \\rightarrow\\left[{ }_{54} \\mathrm{Xe}\\right] 4 \\mathrm{f}^0 & \\text { -diamagnetic } \\\\ \\mathrm{Ce}^{+3} \\rightarrow\\left[{ }_{54} \\mathrm{Xe}\\right] 4 \\mathrm{f}^1 & \\text { -paramagnetic } \\\\ \\mathrm{Yb}^{+3} \\rightarrow\\left[{ }_{54} \\mathrm{Xe}\\right] 4 \\mathrm{f}^{13} & \\text { -paramagnetic } \\\\ \\mathrm{Lu}^{+2} \\rightarrow\\left[{ }_{54} \\mathrm{Xe}\\right] 4 \\mathrm{f}^{14} 5 \\mathrm{~d}^1 & \\text { -paramagnetic }\\end{aligned}$", "image": null}, "videoSolution": {"videoId": "627e8777b5104a4ea4c3590226dc6778", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/yENcO5bl3dad9.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/yENcO5bl3dad9.480.jpeg", "premiumModules": [{"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}, {"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "684c67d769037fad219cb0c1", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2025-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2025 (Paper 1)", "title": "JEE Advanced 2025 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'JEE Advanced';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

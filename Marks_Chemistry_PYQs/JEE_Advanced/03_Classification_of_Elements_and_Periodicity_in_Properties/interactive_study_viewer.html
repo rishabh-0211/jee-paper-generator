@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JEE Advanced - Classification of Elements and Periodicity in Properties PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚗️ JEE Advanced &bull; Classification of Elements and Periodicity in Properties</h1>
+        <div class="sub">Chemistry PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 3, "chapterId": "6160247b7b82dd1366035a18", "chapter": "Classification of Elements and Periodicity in Properties", "exam": "JEE Advanced", "totalTopics": 2, "totalQuestions": 6, "downloadTime": "2026-10-08 20:02:22", "topics": [{"index": 1, "topicId": "64b16aecf23ac7d519f9b99b", "title": "Modern periodic table", "totalQuestions": 1, "questions": [{"_id": "64b16a1cf23ac7d519f9b16c", "previousYearPapers": [{"_id": "620a8a1f77301f65c2f92c4a", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012 (Paper 1)", "title": "JEE Advanced 2012 (Paper 1)"}], "type": "numerical", "level": 1, "question": {"text": "The periodic table consists of 18 groups. An isotope of copper, on bombardment with protons, undergoes a nuclear reaction yielding element $X$ as shown below. To which group, element $X$ belongs in the periodic table?\r\n\r\n${ }_{29}^{63} \\mathrm{Cu}+{ }_{1}^{1} \\mathrm{H} \\rightarrow 6_{0}^{1} n+{ }_{2}^{4} \\alpha+2{ }_{1}^{1} \\mathrm{H}+\\mathrm{X}$", "image": null}, "options": [], "correctValue": "8", "solution": {"text": "${ }_{29}^{63} \\mathrm{Cu}+{ }_{1}^{1} \\mathrm{H} \\rightarrow 6{ }_{0}^{1} n+{ }_{2}^{4} \\mathrm{He}+2{ }_{1}^{1} \\mathrm{H}+{ }_{Z}^{A} X$\r\n\r\nBalancing the atomic mass and atomic number\r\n\r\n$63+1=(6 \\times 1)+4+2+A \\Rightarrow A=52$\r\n\r\n$29+1=(6 \\times 0)+2+2+Z \\Rightarrow Z=26$\r\n\r\nThus ${ }_{Z}^{A} X={ }_{26}^{52} X$ or ${ }_{26}^{52} \\mathrm{Fe}$\r\n\r\nHence, $X$ belongs to group 8 in the periodic table.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1f77301f65c2f92c4a", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012 (Paper 1)", "title": "JEE Advanced 2012 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64b16aecf23ac7d519f9b99a", "title": "Periodic properties", "totalQuestions": 5, "questions": [{"_id": "6a0be51644d287c9361e5cd2", "type": "multipleCorrect", "question": {"text": "The correct statement(s) regarding the periodic properties of elements is(are)", "image": null}, "options": [{"id": "vQYA3", "text": "Second ionization enthalpy of carbon atom is less than that of boron atom.", "isCorrect": true, "image": null}, {"id": "0LMkf", "text": "Increasing order of ionic radii: $\\text{Al}^{3+} < \\text{Mg}^{2+} < \\text{Na}^+$", "isCorrect": true, "image": null}, {"id": "rmmfF", "text": "Under identical conditions, in solid state, the density of potassium metal is more than density of sodium metal.", "isCorrect": false, "image": null}, {"id": "imG7v", "text": "The H$-$H bond is weaker than F$-$F bond.", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "For (A): The electronic configuration of $\\text{B}^+$ is $1s^2 2s^2$ and that of $\\text{C}^+$ is $1s^2 2s^2 2p^1$. Removing an electron from the fully filled, more penetrating $2s$ orbital of $\\text{B}^+$ requires more energy than removing a $2p$ electron from $\\text{C}^+$. Thus, the second ionization enthalpy of carbon is less than that of boron. Statement (A) is correct.<br><br>For (B): $\\text{Al}^{3+}$, $\\text{Mg}^{2+}$, and $\\text{Na}^+$ are isoelectronic species with $10$ electrons each. The nuclear charge increases in the order $\\text{Na}^+ (11) < \\text{Mg}^{2+} (12) < \\text{Al}^{3+} (13)$. Higher effective nuclear charge leads to a stronger pull on the electrons, resulting in a smaller ionic radius. Thus, the order of ionic radii is $\\text{Al}^{3+} < \\text{Mg}^{2+} < \\text{Na}^+$. Statement (B) is correct.<br><br>For (C): The density of potassium ($0.86 \\text{ g/cm}^3$) is less than that of sodium ($0.97 \\text{ g/cm}^3$) due to an abnormal increase in atomic volume caused by the presence of empty $3d$ orbitals in potassium. Statement (C) is incorrect.<br><br>For (D): The bond dissociation enthalpy of $\\text{H}-\\text{H}$ ($436 \\text{ kJ/mol}$) is much higher than that of $\\text{F}-\\text{F}$ ($159 \\text{ kJ/mol}$) due to strong interelectronic repulsions between the lone pairs on the small fluorine atoms. Statement (D) is incorrect.<br><br>Answer: Second ionization enthalpy of carbon atom is less than that of boron atom.; Increasing order of ionic radii: $\\text{Al}^{3+} < \\text{Mg}^{2+} < \\text{Na}^+$", "image": null}, "level": 2, "videoSolution": {"videoId": "59b729e21990436dbd6a96b0e0f98ecf", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/TpffUXZIP2xZg.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/TpffUXZIP2xZg.480.jpeg", "premiumModules": [{"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}, {"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "previousYearPapers": [{"_id": "6a0be4ef402904185b819b43", "title": "JEE Advanced 2026 (Paper 2)", "shortName": "2026 (Paper 2)", "isVisible": true, "heldOn": "2026-05-25T09:00:00.000Z", "examId": "615d76cfc52ffa3c944600e0"}], "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6a0be4ef402904185b819b43", "title": "JEE Advanced 2026 (Paper 2)", "shortName": "2026 (Paper 2)", "isVisible": true, "heldOn": "2026-05-25T09:00:00.000Z", "examId": "615d76cfc52ffa3c944600e0"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a84f23ac7d519f9b51e", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf831", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2020-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2020 (Paper 2)", "title": "JEE Advanced 2020 (Paper 2)"}], "type": "numerical", "level": 2, "question": {"text": "<p>The <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>1</mn><mi>st</mi></msup></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>2</mn><mi>nd</mi></msup></math> and the <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>3</mn><mi>rd</mi></msup></math> ionization enthalpies, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">I</mi><mn>1</mn></msub><mo>,</mo><mo>&#160;</mo><msub><mi mathvariant=\"normal\">I</mi><mn>2</mn></msub></math>&nbsp;and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">I</mi><mn>3</mn></msub></math>, of four atoms with atomic numbers&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>,</mo><mo>&#160;</mo><mi mathvariant=\"normal\">n</mi><mo>+</mo><mn>1</mn><mo>,</mo><mo>&#160;</mo><mi mathvariant=\"normal\">n</mi><mo>+</mo><mn>2</mn><mo>,</mo></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>+</mo><mn>3</mn><mo>,</mo></math> where <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>&#60;</mo><mn>10</mn><mo>,</mo></math> are tabulated below. What is the value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi></math>?</p><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 300px;\">\t<tbody>\t\t<tr>\t\t\t<td style=\"text-align: center;\">Atomic&nbsp;number</td>\t\t\t<td colspan=\"3\" rowspan=\"1\" style=\"text-align: center;\">Ionization Enthalpy (kJ/mol)</td>\t\t</tr>\t\t<tr>\t\t\t<td>&nbsp;</td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">I</mi><mn>1</mn></msub></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">I</mi><mn>2</mn></msub></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">I</mi><mn>3</mn></msub></math></td>\t\t</tr>\t\t<tr>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1681</mn></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3374</mn></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>6050</mn></math></td>\t\t</tr>\t\t<tr>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>+</mo><mn>1</mn></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2081</mn></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3952</mn></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>6122</mn></math></td>\t\t</tr>\t\t<tr>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>+</mo><mn>2</mn></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>496</mn></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4562</mn></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>6910</mn></math></td>\t\t</tr>\t\t<tr>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>+</mo><mn>3</mn></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>738</mn></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1451</mn></math></td>\t\t\t<td style=\"text-align: center;\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>7733</mn></math></td>\t\t</tr>\t</tbody></table><p>&nbsp;</p>", "image": null}, "options": [], "correctValue": "9", "solution": {"text": "<p>From given data <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">n</mi><mo>+</mo><mn>2</mn><mo>)</mo></math> atom is alkali metal which is sodium.</p><p>As&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>+</mo><mn>2</mn><mo>=</mo><mn>11</mn></math></p><p>So,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>=</mo><mn>9</mn></math></p>", "image": null}, "videoSolution": {"videoId": "1cbf410d54be49a5931bd25dcdafce9f", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/y3ZRZDRBNgihn.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/y3ZRZDRBNgihn.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf831", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2020-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2020 (Paper 2)", "title": "JEE Advanced 2020 (Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a5af23ac7d519f9b3a8", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf82a", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017 (Paper 1)", "title": "JEE Advanced 2017 (Paper 1)"}], "type": "multipleCorrect", "level": 2, "question": {"text": "The colour of the <math><msub><mrow><mi>X</mi></mrow><mrow><mn>2</mn></mrow></msub></math> molecules of group 17 elements changes gradually from yellow to violet down the group. This is due to -", "image": null}, "options": [{"id": "ikiak", "text": "Decrease <math><mi>i</mi><mi>n</mi><mi>&nbsp;</mi><mi>H</mi><mi>O</mi><mi>M</mi><mi>O</mi><mo>-</mo><mi>L</mi><mi>U</mi><mi>M</mi><mi>O</mi></math> gap down the group", "isCorrect": true, "image": null}, {"id": "jQ2Py", "text": "Decrease in <math><msup><mrow><mi>π</mi></mrow><mrow><mi>*</mi></mrow></msup><mo>-</mo><msup><mrow><mi>σ</mi></mrow><mrow><mi>*</mi></mrow></msup></math> down the group", "isCorrect": true, "image": null}, {"id": "Q2WCj", "text": "The physical state of <math><mi> </mi><msub><mrow><mi>X</mi></mrow><mrow><mn>2</mn></mrow></msub></math>  at room temperature changes from gas to solid down the group", "isCorrect": false, "image": null}, {"id": "YxSdG", "text": "Decrease in ionization energy down the group", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Halogens are coloured due to HOMO-LUMO transition of electrons.</p><p><img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/23_solu_chem_pa1.jpg\"/></p><p>On moving down the group HOMO-LUMO energy gap decreases so transition of electrons become easier from  <math><msub><mrow><msup><mrow><mi mathvariant=\"normal\">Π</mi></mrow><mrow><mi mathvariant=\"normal\">*</mi></mrow></msup></mrow><mrow><mn>2</mn><msub><mrow><mi>p</mi></mrow><mrow><mi>x</mi></mrow></msub></mrow></msub></math> to <math><msub><mrow><msup><mrow><mi mathvariant=\"normal\">σ</mi></mrow><mrow><mi mathvariant=\"normal\">*</mi></mrow></msup></mrow><mrow><mn>2</mn><msub><mrow><mi>p</mi></mrow><mrow><mi>z</mi></mrow></msub></mrow></msub></math> therefore colour intensify.</p>", "image": null}, "videoSolution": {"videoId": "263e127281dc4a89a50589e14a38319c", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/fYeysQeGqo2Hm.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/fYeysQeGqo2Hm.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf82a", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017 (Paper 1)", "title": "JEE Advanced 2017 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b16a4ef23ac7d519f9b33a", "previousYearPapers": [{"_id": "615d92eede3d91842a5cf828", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016 (Paper 1)", "title": "JEE Advanced 2016 (Paper 1)"}], "type": "singleCorrect", "level": 1, "question": {"text": "The increasing order of atomic radii of the following group <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>13</mn></math> elements is", "image": null}, "options": [{"id": "j2CmM", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Al</mi><mo>&#60;</mo><mi>Ga</mi><mo>&#60;</mo><mi>In</mi><mo>&#60;</mo><mi>Tl</mi></math>", "isCorrect": false, "image": null}, {"id": "Gml2c", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Ga</mi><mo>&#60;</mo><mi>Al</mi><mo>&#60;</mo><mi>In</mi><mo>&#60;</mo><mi>Tl</mi></math>", "isCorrect": true, "image": null}, {"id": "gzqey", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Al</mi><mo>&#60;</mo><mi>In</mi><mo>&#60;</mo><mi>Ga</mi><mo>&#60;</mo><mi>Tl</mi></math>", "isCorrect": false, "image": null}, {"id": "o2AF1", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Al</mi><mo>&#60;</mo><mi>Ga</mi><mo>&#60;</mo><mi>Tl</mi><mo>&#60;</mo><mi>In</mi></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The order of radius of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>13</mn><mi>th</mi></math> group elements is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Ga</mi><mo>&#60;</mo><mi>Al</mi><mo>&#60;</mo><mi>In</mi><mo>&#60;</mo><mi>Tl</mi></math>.<br />Reason<math><mo>&#8658;</mo></math>Due to poor shielding effect of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">d</mi></math>-orbital, radius of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Ga</mi></math> is smaller than <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Al</mi></math>.", "image": null}, "videoSolution": {"videoId": "b8e096c8dd0b4efcb20f498ef3240138", "provider": "vdocipher", "thumbnailLight": "https://d1z78r8i505acl.cloudfront.net/poster/7EeP7qu35kHtI.480.jpeg", "thumbnailDark": "https://d1z78r8i505acl.cloudfront.net/poster/7EeP7qu35kHtI.480.jpeg", "premiumModules": [{"premiumModuleId": "6628114842d540dfcb148ecb", "isFree": false}, {"premiumModuleId": "64c7e8e829737784b294e469", "isFree": false}, {"premiumModuleId": "6788cc0b2dbc1ecacabb7026", "isFree": false}], "description": "JEE Advanced (All PYQs from 2023 - 2013)"}, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "615d92eede3d91842a5cf828", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016 (Paper 1)", "title": "JEE Advanced 2016 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64b169e2f23ac7d519f9af5c", "type": "multipleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "620a8a1f77301f65c2f92c42", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2008-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2008 (Paper 1)", "title": "JEE Advanced 2008 (Paper 1)"}], "question": {"text": "$$\n\\text { The correct statement(s) concerning the structures } E, F \\text { and } G \\text { is are }\n$$\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/jee_advanced/E1DRlpw-v7S_epyvhb6ESOm6smSseP2oHONHZp5boiU.original.fullsize.png\"><br>", "image": null}, "options": [{"id": "BGndE", "text": "\n$E, F$ and $G$ are resonance structures\n", "image": null, "isCorrect": false}, {"id": "INsTH", "text": "\n$E, F$ and $E, G$ are tautomers\n", "image": null, "isCorrect": true}, {"id": "Sygx7", "text": "\n$F$ and $G$ are geometrical isomers\n", "image": null, "isCorrect": true}, {"id": "yPaVs", "text": "\n$F$ and $G$ are diastereomers", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "$E$ and $F$ possess different place of atoms, in addition to electron pair, can be isomers only and not the resonance structures. Geometrical isomers are stereoisomers but not enantiomers called diastereomers", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "620a8a1f77301f65c2f92c42", "examId": "615d76cfc52ffa3c944600e0", "heldOn": "2008-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2008 (Paper 1)", "title": "JEE Advanced 2008 (Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'JEE Advanced';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

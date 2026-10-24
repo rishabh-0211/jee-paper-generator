@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MHT CET - Communication System PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚡ MHT CET &bull; Communication System</h1>
+        <div class="sub">Physics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 31, "chapterId": "61c089b857f018f3b4d37168", "chapter": "Communication System", "exam": "MHT CET", "subject": "Physics", "totalTopics": 3, "totalQuestions": 20, "downloadTime": "2026-10-08 20:35:56", "topics": [{"index": 1, "topicId": "65a263450279619d9d8a3daa", "title": "Communication System", "totalQuestions": 9, "questions": [{"_id": "65a25fc70279619d9d8a1f2d", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f70", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-16T14:00:00.000Z", "isVisible": true, "shortName": "2020 (16 Oct Shift 2)", "title": "MHT CET 2020 (16 Oct Shift 2)"}], "question": {"text": "In commmunication system, a repeater is used to extend the range of transmission. It is the combination of", "image": null}, "options": [{"id": "l2Fnl", "text": "modulator and power amplifier.", "image": null, "isCorrect": false}, {"id": "PnvJ1", "text": "receiver and transmitter.", "image": null, "isCorrect": true}, {"id": "tJXNY", "text": "IF stage and amplifier.", "image": null, "isCorrect": false}, {"id": "nRdFk", "text": "rectifier and detector.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "receiver and transmitter", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f70", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-16T14:00:00.000Z", "isVisible": true, "shortName": "2020 (16 Oct Shift 2)", "title": "MHT CET 2020 (16 Oct Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25f8f0279619d9d8a1d78", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f6d", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-15T09:00:00.000Z", "isVisible": true, "shortName": "2020 (15 Oct Shift 1)", "title": "MHT CET 2020 (15 Oct Shift 1)"}], "question": {"text": "In communication system, for a given block diagram of receiver, the boxes ' $\\mathrm{X}$ ' and\n\"Y' respectively represent\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/lQyndzwJ3qCynR3dpAPHdB-A-9B6AaLnIUaw1AH-KDU.original.fullsize.png\">", "image": null}, "options": [{"id": "R8ZkG", "text": "Detector and amplifier", "image": null, "isCorrect": false}, {"id": "PARCj", "text": "IF stage and amplifier", "image": null, "isCorrect": true}, {"id": "uV22W", "text": "IF stage and detector", "image": null, "isCorrect": false}, {"id": "8LtSc", "text": "Amplifier and IF stage", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "IF stage and amplifier", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f6d", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-15T09:00:00.000Z", "isVisible": true, "shortName": "2020 (15 Oct Shift 1)", "title": "MHT CET 2020 (15 Oct Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25f540279619d9d8a1b96", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f6a", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-13T14:00:00.000Z", "isVisible": true, "shortName": "2020 (13 Oct Shift 2)", "title": "MHT CET 2020 (13 Oct Shift 2)"}], "question": {"text": "The digital signals are used for transmission in communication system. They are", "image": null}, "options": [{"id": "qUjui", "text": "only of discrete stepwise values.", "image": null, "isCorrect": true}, {"id": "BAB4Q", "text": "sound and picture signals in television.", "image": null, "isCorrect": false}, {"id": "O0aFl", "text": "continuous variations of current or voltage.", "image": null, "isCorrect": false}, {"id": "ZQfBn", "text": "fundamental sine waves.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Only for discrete stepwise values.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f6a", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-13T14:00:00.000Z", "isVisible": true, "shortName": "2020 (13 Oct Shift 2)", "title": "MHT CET 2020 (13 Oct Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25f300279619d9d8a1a7b", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d1071b5bb33b3f9f68", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-12T14:00:00.000Z", "isVisible": true, "shortName": "2020 (12 Oct Shift 2)", "title": "MHT CET 2020 (12 Oct Shift 2)"}], "question": {"text": "In communication system, what is used to extend the range of a communication?", "image": null}, "options": [{"id": "Ax3ki", "text": "Transducer", "image": null, "isCorrect": false}, {"id": "tZgLL", "text": "Attenuation", "image": null, "isCorrect": false}, {"id": "dOeLc", "text": "Repeater", "image": null, "isCorrect": true}, {"id": "v4OKi", "text": "Modulation", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "No Solution", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d1071b5bb33b3f9f68", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-12T14:00:00.000Z", "isVisible": true, "shortName": "2020 (12 Oct Shift 2)", "title": "MHT CET 2020 (12 Oct Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25ee30279619d9d8a1816", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d1071b5bb33b3f9f66", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2019-05-02T09:00:00.000Z", "isVisible": true, "shortName": "2019 (02 May Shift 1)", "title": "MHT CET 2019 (02 May Shift 1)"}], "question": {"text": "A layer of atmosphere that reﬂects medium frequency radio waves which is ineffective during night, is", "image": null}, "options": [{"id": "VHx9L", "text": "<math><mi>F</mi></math> layer", "image": null, "isCorrect": false}, {"id": "rEPFD", "text": "<math><mi>E</mi></math> layer", "image": null, "isCorrect": true}, {"id": "JNgwM", "text": "stratosphere", "image": null, "isCorrect": false}, {"id": "WrHK8", "text": "thermosphere", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "E Layer reflects medium frequency radio-waves during day time.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d1071b5bb33b3f9f66", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2019-05-02T09:00:00.000Z", "isVisible": true, "shortName": "2019 (02 May Shift 1)", "title": "MHT CET 2019 (02 May Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25f0c0279619d9d8a195c", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d1071b5bb33b3f9f65", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2019-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2019 (Shift 2)", "title": "MHT CET 2019 (Shift 2)"}], "question": {"text": "In frequency modulated wave", "image": null}, "options": [{"id": "RBZvv", "text": "Frequency varies with time", "image": null, "isCorrect": true}, {"id": "bKe6x", "text": "Both frequency and amplitude vary with time", "image": null, "isCorrect": false}, {"id": "GF3C8", "text": "Amplitude varies with time", "image": null, "isCorrect": false}, {"id": "wOqB2", "text": "Both frequency and amplitude are constant", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "In frequency modulated wave, only frequency varies with time, while the amplitude remains constant. This wave can be shown as <br/><img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/7ccb2248-dba7-4c10-80be-93a273f9389e.png\"> <br/>It is used in FM broadcasting, telemetry and RADAR etc.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d1071b5bb33b3f9f65", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2019-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2019 (Shift 2)", "title": "MHT CET 2019 (Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25ec10279619d9d8a1705", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078cf071b5bb33b3f9f62", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "MHT CET 2017"}], "question": {"text": "In communication system the process of superimposing a low frequency signal on a high frequency wave is known as", "image": null}, "options": [{"id": "daziF", "text": "Repeater", "image": null, "isCorrect": false}, {"id": "tkhN8", "text": "Attenuation", "image": null, "isCorrect": false}, {"id": "BI9Zb", "text": "Modulation", "image": null, "isCorrect": true}, {"id": "R4y79", "text": "Demodulation", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Modulation", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078cf071b5bb33b3f9f62", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "MHT CET 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25ead0279619d9d8a1662", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078cd071b5bb33b3f9f61", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "MHT CET 2016"}], "question": {"text": "The maximum frequency of transmitted radio waves above which the radio waves are no longer reflected back by ionosphere is ______ (<math><br> <mrow><br>  <mi>N</mi><mo>=</mo></mrow><br></math><br> maximum electron density of ionosphere,<math><mi>g</mi></math><br>= acceleration due to gravity)", "image": null}, "options": [{"id": "jZ3F9", "text": "<math><mi>g</mi><mi>N</mi></math>", "image": null, "isCorrect": false}, {"id": "0d8JV", "text": "<math><mi>g</mi><msup><mrow><mi>N</mi></mrow><mrow><mn>2</mn></mrow></msup></math>", "image": null, "isCorrect": false}, {"id": "w38by", "text": "<math><mi>g</mi><msqrt><mi>N</mi></msqrt></math>", "image": null, "isCorrect": true}, {"id": "XbSHf", "text": "<math><msup><mrow><mi>g</mi></mrow><mrow><mn>2</mn></mrow></msup><msup><mrow><mi>N</mi></mrow><mrow><mn>2</mn></mrow></msup></math>", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "For ionosphere, the maximum frequency of radius waves that can be reflected back is given by  <math><mi>g</mi><msqrt><mi>N</mi></msqrt></math> . Where N is maximum electron density of ionsphere and g is acceleration due to gravity.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078cd071b5bb33b3f9f61", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "MHT CET 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25e8a0279619d9d8a1543", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078cd071b5bb33b3f9f5f", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "MHT CET 2011"}], "question": {"text": "Which of the following is the communication channel in case of radio communication?", "image": null}, "options": [{"id": "m5aIr", "text": "Free space", "image": null, "isCorrect": true}, {"id": "7NfKP", "text": "Reception lines", "image": null, "isCorrect": false}, {"id": "AlvBx", "text": "Transmission lines", "image": null, "isCorrect": false}, {"id": "N5Y05", "text": "None of the above", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "No solution", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078cd071b5bb33b3f9f5f", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "MHT CET 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "65a263450279619d9d8a3da9", "title": "Propagation of EM Waves", "totalQuestions": 3, "questions": [{"_id": "65a25fd80279619d9d8a1fb7", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f71", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-19T09:00:00.000Z", "isVisible": true, "shortName": "2020 (19 Oct Shift 1)", "title": "MHT CET 2020 (19 Oct Shift 1)"}], "question": {"text": "In the process of space communication, use of modem is necessary.\nIn which one of the following modes modem acts as a modulator and a demodulator respectively?", "image": null}, "options": [{"id": "BQGhh", "text": "Transmitting and receiving.", "image": null, "isCorrect": true}, {"id": "Joyn9", "text": "Both receiving.", "image": null, "isCorrect": false}, {"id": "QBlwu", "text": "Both transmitting.", "image": null, "isCorrect": false}, {"id": "54xFs", "text": "Receiving and transmitting.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Transmitting and receiving", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f71", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-19T09:00:00.000Z", "isVisible": true, "shortName": "2020 (19 Oct Shift 1)", "title": "MHT CET 2020 (19 Oct Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25f670279619d9d8a1c33", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f6b", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-14T09:00:00.000Z", "isVisible": true, "shortName": "2020 (14 Oct Shift 1)", "title": "MHT CET 2020 (14 Oct Shift 1)"}], "question": {"text": "According to theoretical study of radiation from a same linear antenna, the power radiated is proportional to $[\\lambda=$ wavelength $]$", "image": null}, "options": [{"id": "cwopC", "text": "$\\lambda^{-2}$", "image": null, "isCorrect": true}, {"id": "Bdyvn", "text": "$\\lambda^{-1}$", "image": null, "isCorrect": false}, {"id": "coaum", "text": "$\\lambda^{2}$", "image": null, "isCorrect": false}, {"id": "eRMhm", "text": "$\\lambda$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "A linear antenna radiates power proportional to $\\left(\\frac{1}{\\lambda}\\right)^{2}$.\nHence a longer antenna emits more power. Also power radiated by a long wavelength base would be small.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f6b", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-14T09:00:00.000Z", "isVisible": true, "shortName": "2020 (14 Oct Shift 1)", "title": "MHT CET 2020 (14 Oct Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25e630279619d9d8a1405", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61c078cd071b5bb33b3f9f5d", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "MHT CET 2009"}], "question": {"text": "The waves which are reflected back to the earth by ionos phere is", "image": null}, "options": [{"id": "4aWtr", "text": "ground wave", "image": null, "isCorrect": false}, {"id": "sky5Y", "text": "sky wave", "image": null, "isCorrect": true}, {"id": "l8A4Q", "text": "space wave", "image": null, "isCorrect": false}, {"id": "zUSmz", "text": "All of them", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Sky waves are reflected back to the earth by ionosphere.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078cd071b5bb33b3f9f5d", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "MHT CET 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "65a263450279619d9d8a3dab", "title": "Modulation", "totalQuestions": 8, "questions": [{"_id": "65a260100279619d9d8a2173", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f74", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-20T14:00:00.000Z", "isVisible": true, "shortName": "2020 (20 Oct Shift 2)", "title": "MHT CET 2020 (20 Oct Shift 2)"}], "question": {"text": "Identify the 'INCORRECT' statement from the following.", "image": null}, "options": [{"id": "25CUV", "text": "Modulation index $\\mu$ is kept greater than one to avoid distortion.", "image": null, "isCorrect": true}, {"id": "d5enK", "text": "The receiving antenna is followed by amplifier, intermediate frequency (IF) stage and detector.", "image": null, "isCorrect": false}, {"id": "JUbCa", "text": "AM detection is carried out using a rectifier and an envelop detector.", "image": null, "isCorrect": false}, {"id": "SKY9W", "text": "Modulated signal is to be followed by power amplifier and then fed to an antenna.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Modulation index $\\mathrm{u}$ is kept greater than one to avoid distortion", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f74", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-20T14:00:00.000Z", "isVisible": true, "shortName": "2020 (20 Oct Shift 2)", "title": "MHT CET 2020 (20 Oct Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25ffd0279619d9d8a20dc", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f73", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-20T09:00:00.000Z", "isVisible": true, "shortName": "2020 (20 Oct Shift 1)", "title": "MHT CET 2020 (20 Oct Shift 1)"}], "question": {"text": "Modulation is a process of superposing", "image": null}, "options": [{"id": "3A3aO", "text": "low frequency radio signal on low frequency audio waves.", "image": null, "isCorrect": false}, {"id": "fCi0j", "text": "high frequency audio signal on low frequency radio waves.", "image": null, "isCorrect": false}, {"id": "eYCDO", "text": "low frequency audio signal on high frequency radio waves.", "image": null, "isCorrect": true}, {"id": "7lX2Q", "text": "high frequency radio signal on low frequency audio signal.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Low frequency audio signal cannot be transmitted as such over long distances. Therefore. to overcome this difficulty, the low frequency audio signal is superposed on a high frequency wave (carrier wave). This process is called modulation.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f73", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-20T09:00:00.000Z", "isVisible": true, "shortName": "2020 (20 Oct Shift 1)", "title": "MHT CET 2020 (20 Oct Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25fee0279619d9d8a2061", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f72", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-19T14:00:00.000Z", "isVisible": true, "shortName": "2020 (19 Oct Shift 2)", "title": "MHT CET 2020 (19 Oct Shift 2)"}], "question": {"text": "A carrier wave of peak voltage 16 volt is used to transmit a signal. If the\nmodulation index is $75 \\%$, the peak voltage of the modulating signal is", "image": null}, "options": [{"id": "WgVp4", "text": "6 volt", "image": null, "isCorrect": false}, {"id": "pheYM", "text": "24 volt", "image": null, "isCorrect": false}, {"id": "nqwSI", "text": "18 volt", "image": null, "isCorrect": false}, {"id": "mCP2B", "text": "12 volt", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "A carrier wave of peak voltage $16 \\mathrm{~V}$ is used to transmit a signal. If the modulation index is $75 \\%$, the peak voltage of the modulating signal is $12 \\mathrm{~V}$.\nExplanation:\nModulation Index\n$(\\mathrm{MI})=\\frac{\\text { Peak voltage of modulating signal }\\left(\\mathrm{V}_{\\mathrm{m}}\\right)}{\\text { Peak voltage of carrier } \\operatorname{signal}\\left(\\mathrm{V}_{\\mathrm{C}}\\right)}$\nGiven, $\\mathrm{Ml}=75 \\%$ and $\\mathrm{V}_{\\mathrm{C}}=16 \\mathrm{~V}$\n$\\therefore \\mathrm{V}_{\\mathrm{m}}=\\mathrm{MI} \\times \\mathrm{V}_{\\mathrm{c}}=\\frac{75}{100} \\times 16=12 \\mathrm{~V}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f72", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-19T14:00:00.000Z", "isVisible": true, "shortName": "2020 (19 Oct Shift 2)", "title": "MHT CET 2020 (19 Oct Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25fb20279619d9d8a1e86", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f6f", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-16T09:00:00.000Z", "isVisible": true, "shortName": "2020 (16 Oct Shift 1)", "title": "MHT CET 2020 (16 Oct Shift 1)"}], "question": {"text": "In amplitude modulation,", "image": null}, "options": [{"id": "gkvTt", "text": "both amplitude and frequency do not change according to information signal.", "image": null, "isCorrect": false}, {"id": "8OjSL", "text": "amplitude remains constant but frequency changes according to information\nsignal.", "image": null, "isCorrect": false}, {"id": "061rD", "text": "both amplitude and frequency change according to information signal.", "image": null, "isCorrect": false}, {"id": "X64Xu", "text": "amplitude of carrier wave changes according to information signal.", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "amplitude of carrier wave changes according to information signal", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f6f", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-16T09:00:00.000Z", "isVisible": true, "shortName": "2020 (16 Oct Shift 1)", "title": "MHT CET 2020 (16 Oct Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25f9e0279619d9d8a1ded", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f6e", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-15T14:00:00.000Z", "isVisible": true, "shortName": "2020 (15 Oct Shift 2)", "title": "MHT CET 2020 (15 Oct Shift 2)"}], "question": {"text": "In communication system, the range for line of sight propagation in case of earth is 'd', for the height of antenna (h). If 'h' is doubled then the new range is", "image": null}, "options": [{"id": "pxsTh", "text": "$\\frac{\\mathrm{d}}{\\sqrt{2}}$", "image": null, "isCorrect": false}, {"id": "5pGAo", "text": "$\\frac{\\sqrt{2}}{\\mathrm{~d}}$", "image": null, "isCorrect": false}, {"id": "5isDw", "text": "$\\frac{\\mathrm{d}}{2}$", "image": null, "isCorrect": false}, {"id": "GmPBZ", "text": "$\\sqrt{2} \\mathrm{~d}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "No Solution", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f6e", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-15T14:00:00.000Z", "isVisible": true, "shortName": "2020 (15 Oct Shift 2)", "title": "MHT CET 2020 (15 Oct Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25f430279619d9d8a1b0d", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f69", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-13T09:00:00.000Z", "isVisible": true, "shortName": "2020 (13 Oct Shift 1)", "title": "MHT CET 2020 (13 Oct Shift 1)"}], "question": {"text": "A signal of frequency $3 \\mathrm{kHz}$ is amplitude modulated on a carrier wave of frequency\n$2 \\cdot 5 \\mathrm{MHz}$. The upper and lower sideband frequencies in the resultant signal are", "image": null}, "options": [{"id": "UNnch", "text": "$2500 \\mathrm{kHz}, 2503 \\mathrm{kHz}$", "image": null, "isCorrect": false}, {"id": "Y5Oau", "text": "$2503 \\mathrm{kHz}, 2497 \\mathrm{kHz}$", "image": null, "isCorrect": true}, {"id": "XNmsU", "text": "$2 \\cdot 5 \\mathrm{MHz}, 3 \\mathrm{kHz}$", "image": null, "isCorrect": false}, {"id": "394it", "text": "$5 \\cdot 5 \\mathrm{MHz}, 0 \\cdot 5 \\mathrm{MHz}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\begin{aligned} f_{R}=f_{C}+f_{m} &=2500 \\mathrm{KHz}+3 \\mathrm{kz} \\\\ &=2503 \\mathrm{KHz} \\\\ f_{R}=f_{C}-f_{m} &=2500 \\mathrm{kHz}-3 \\mathrm{kHz} \\\\ &=2497 \\mathrm{kHz} \\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f69", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-13T09:00:00.000Z", "isVisible": true, "shortName": "2020 (13 Oct Shift 1)", "title": "MHT CET 2020 (13 Oct Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25ef40279619d9d8a1898", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d0071b5bb33b3f9f64", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019 (Shift 1)", "title": "MHT CET 2019 (Shift 1)"}], "question": {"text": "In amplitude modulation, the amplitude of carrier wave is <math><msub><mrow><mi>A</mi></mrow><mrow><mi>c</mi></mrow></msub></math> and that of the modulating signal is <math><msub><mrow><mi>A</mi></mrow><mrow><mi>m</mi></mrow></msub><mo>.</mo></math> In practice, the ratio of <math><msub><mrow><mi>A</mi></mrow><mrow><mi>m</mi></mrow></msub></math> to <math><msub><mrow><mi>A</mi></mrow><mrow><mi>c</mi></mrow></msub></math> is kept less than or equal to one, to avoid", "image": null}, "options": [{"id": "8lEQj", "text": "Distortion", "image": null, "isCorrect": true}, {"id": "GM7ov", "text": "Attenuation", "image": null, "isCorrect": false}, {"id": "aQX6B", "text": "Fading", "image": null, "isCorrect": false}, {"id": "pcem0", "text": "Noise", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Modulation index, <math><mi>μ</mi></math> = <math><mfrac><mrow><msub><mrow><mi>A</mi></mrow><mrow><mi>m</mi></mrow></msub></mrow><mrow><msub><mrow><mi>A</mi></mrow><mrow><mi>c</mi></mrow></msub></mrow></mfrac><mo>&lt;</mo><mn>1</mn></math> is carried by the carrier wave, i.e. there is no original distortion.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d0071b5bb33b3f9f64", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019 (Shift 1)", "title": "MHT CET 2019 (Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25ecf0279619d9d8a1777", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078cf071b5bb33b3f9f63", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "MHT CET 2018"}], "question": {"text": "In amplitude modulation", "image": null}, "options": [{"id": "di0MG", "text": "Amplitude remains constant but frequency change", "image": null, "isCorrect": false}, {"id": "68PWp", "text": "Both amplitude and frequency do not change", "image": null, "isCorrect": false}, {"id": "sOlGj", "text": "Both amplitude and frequency change", "image": null, "isCorrect": false}, {"id": "KHxsd", "text": "Amplitude of the carrier wave changes according to information signal", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "In amplitude modulation amplitude of the carrier wave changes according to information signal.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078cf071b5bb33b3f9f63", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "MHT CET 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'MHT CET';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

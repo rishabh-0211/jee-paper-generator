@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MHT CET - Hydrogen PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚗️ MHT CET &bull; Hydrogen</h1>
+        <div class="sub">Chemistry PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 10, "chapterId": "61c089bc41595f9e1bd91bd1", "chapter": "Hydrogen", "exam": "MHT CET", "totalTopics": 7, "totalQuestions": 36, "downloadTime": "2026-10-08 20:06:04", "topics": [{"index": 1, "topicId": "65a2634f0279619d9d8a3e11", "title": "Preparation and Properties of Hydrogen", "totalQuestions": 12, "questions": [{"_id": "6abb884015a9fc0fc8c141ef", "type": "singleCorrect", "question": {"text": "Identify unstable isotope of hydrogen from the following.", "image": null}, "options": [{"id": "8QTdJ", "label": "A", "text": "Hydrogen", "isCorrect": false, "image": null}, {"id": "77APl", "label": "B", "text": "Deuterium", "isCorrect": false, "image": null}, {"id": "fPHjP", "label": "C", "text": "Tritium", "isCorrect": true, "image": null}, {"id": "twS92", "label": "D", "text": "Deuterium and Tritium", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Hydrogen has three isotopes: Protium ($^{1}H$), Deuterium ($^{2}H$), and Tritium ($^{3}H$).<br><br>Protium and Deuterium are stable isotopes.<br><br>Tritium is a radioactive and unstable isotope of hydrogen. It decays by emitting low-energy $\\beta^{-}$ particles.<br><br>Answer: Tritium", "image": null}, "level": 1, "videoSolution": null, "previousYearPapers": [{"_id": "6abb87f02fe711bb1be9996d", "title": "MHT CET 2026 (19 May Shift 1)", "shortName": "2026 (19 May Shift 1)", "isVisible": true, "heldOn": "2026-05-19T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6abb87f02fe711bb1be9996d", "title": "MHT CET 2026 (19 May Shift 1)", "shortName": "2026 (19 May Shift 1)", "isVisible": true, "heldOn": "2026-05-19T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6abb883015a9fc0fc8c14159", "type": "singleCorrect", "question": {"text": "What is the number of neutrons present in tritium?", "image": null}, "options": [{"id": "8q2Br", "label": "A", "text": "$1$", "isCorrect": false, "image": null}, {"id": "l4Wu1", "label": "B", "text": "$3$", "isCorrect": false, "image": null}, {"id": "oZTFs", "label": "C", "text": "$2$", "isCorrect": true, "image": null}, {"id": "6QzXH", "label": "D", "text": "$0$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Tritium is an isotope of hydrogen with the symbol $^{3}_{1}\\text{H}$.<br><br>The atomic number ($Z$) of hydrogen is $1$, which means it has $1$ proton.<br><br>The mass number ($A$) of tritium is $3$.<br><br>The number of neutrons is given by $A - Z$.<br><br>Number of neutrons = $3 - 1 = 2$.<br><br>Answer: $2$", "image": null}, "level": 1, "videoSolution": null, "previousYearPapers": [{"_id": "6abb87ef2fe711bb1be99965", "title": "MHT CET 2026 (12 May Shift 1)", "shortName": "2026 (12 May Shift 1)", "isVisible": true, "heldOn": "2026-05-12T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6abb87ef2fe711bb1be99965", "title": "MHT CET 2026 (12 May Shift 1)", "shortName": "2026 (12 May Shift 1)", "isVisible": true, "heldOn": "2026-05-12T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6a44d30d8c30a4553e1bdfa9", "type": "singleCorrect", "question": {"text": "Which of the following statements is false regarding hydrogen ?", "image": null}, "options": [{"id": "2rLYz", "label": "A", "text": "It has two isotopes.", "isCorrect": true, "image": null}, {"id": "ZrW9I", "label": "B", "text": "In periodic table hydrogen is placed separately above group 1.", "isCorrect": false, "image": null}, {"id": "Txz2u", "label": "C", "text": "When one electron is lost it forms proton.", "isCorrect": false, "image": null}, {"id": "pXb68", "label": "D", "text": "It does not exist freely.", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Hydrogen has three isotopes: Protium ($^{1}H$), Deuterium ($^{2}H$), and Tritium ($^{3}H$). Thus, the statement that it has two isotopes is false.<br><br>Hydrogen is placed separately in the periodic table due to its anomalous behavior, resembling both alkali metals and halogens.<br><br>A hydrogen atom consists of one proton and one electron. When it loses its only electron, it forms an $H^{+}$ ion, which is a bare proton.<br><br>Atomic hydrogen is highly reactive and does not exist freely in nature; it exists as a diatomic molecule ($H_2$) or in combined states.", "image": null}, "previousYearPapers": [{"_id": "6a44d2802d2155b816ec4a7b", "title": "MHT CET 2026 (19 April Shift 2)", "shortName": "2026 (19 April Shift 2)", "isVisible": true, "heldOn": "2026-04-19T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "level": 1, "questionLabels": [], "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6a44d2802d2155b816ec4a7b", "title": "MHT CET 2026 (19 April Shift 2)", "shortName": "2026 (19 April Shift 2)", "isVisible": true, "heldOn": "2026-04-19T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6a44d2d28c30a4553e1bdd2d", "type": "singleCorrect", "question": {"text": "Which of the following statements is NOT correct regarding dihydrogen?", "image": null}, "options": [{"id": "k5jYX", "label": "A", "text": "It is colorless and tasteless gas.", "isCorrect": false, "image": null}, {"id": "eAggd", "label": "B", "text": "It burns with a pale blue flame.", "isCorrect": false, "image": null}, {"id": "KsY21", "label": "C", "text": "It is a polar water-soluble gas.", "isCorrect": true, "image": null}, {"id": "T66rj", "label": "D", "text": "It is lighter than air.", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Dihydrogen ($H_2$) is a homonuclear diatomic molecule, meaning both atoms have the same electronegativity. Therefore, it is a non-polar molecule.<br><br>Since water is a polar solvent, dihydrogen is practically insoluble in water due to the \"like dissolves like\" principle.<br><br>Dihydrogen is a colorless, odorless, and tasteless gas. It is lighter than air and burns with a pale blue flame.<br><br>Thus, the statement that it is a polar water-soluble gas is incorrect.<br><br>Answer: It is a polar water-soluble gas.", "image": null}, "previousYearPapers": [{"_id": "6a44d2802d2155b816ec4a75", "title": "MHT CET 2026 (16 April Shift 2)", "shortName": "2026 (16 April Shift 2)", "isVisible": true, "heldOn": "2026-04-16T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "level": 1, "questionLabels": [], "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6a44d2802d2155b816ec4a75", "title": "MHT CET 2026 (16 April Shift 2)", "shortName": "2026 (16 April Shift 2)", "isVisible": true, "heldOn": "2026-04-16T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6a44d3348c30a4553e1be147", "type": "singleCorrect", "question": {"text": "The most abundant element in the universe is", "image": null}, "options": [{"id": "rB8Qp", "label": "A", "text": "Hydrogen", "isCorrect": true, "image": null}, {"id": "Bdge9", "label": "B", "text": "Sodium", "isCorrect": false, "image": null}, {"id": "XxMOn", "label": "C", "text": "Magnesium", "isCorrect": false, "image": null}, {"id": "p98eY", "label": "D", "text": "Potassium", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Hydrogen is the most abundant element in the universe, accounting for approximately $75\\%$ of its normal matter by mass.<br><br>Helium is the second most abundant element.<br><br>Answer: Hydrogen", "image": null}, "previousYearPapers": [{"_id": "6a44d2802d2155b816ec4a74", "title": "MHT CET 2026 (16 April Shift 1)", "shortName": "2026 (16 April Shift 1)", "isVisible": true, "heldOn": "2026-04-16T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "level": 1, "questionLabels": [], "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6a44d2802d2155b816ec4a74", "title": "MHT CET 2026 (16 April Shift 1)", "shortName": "2026 (16 April Shift 1)", "isVisible": true, "heldOn": "2026-04-16T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "6a44d2e08c30a4553e1bddc3", "type": "singleCorrect", "question": {"text": "Which of the following is the most abundant element in universe?", "image": null}, "options": [{"id": "Ikh3I", "label": "A", "text": "$\\text{H}$", "isCorrect": true, "image": null}, {"id": "ZV9Lx", "label": "B", "text": "$\\text{O}$", "isCorrect": false, "image": null}, {"id": "py2xa", "label": "C", "text": "$\\text{Ne}$", "isCorrect": false, "image": null}, {"id": "u7IO8", "label": "D", "text": "$\\text{C}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Hydrogen ($\\text{H}$) is the most abundant element in the universe, accounting for approximately $75\\%$ of its normal matter by mass.<br><br>Helium is the second most abundant element, followed by oxygen.<br><br>Therefore, $\\text{H}$ is the most abundant element among the given options.<br><br>Answer: $\\text{H}$", "image": null}, "previousYearPapers": [{"_id": "6a44d2802d2155b816ec4a73", "title": "MHT CET 2026 (15 April Shift 2)", "shortName": "2026 (15 April Shift 2)", "isVisible": true, "heldOn": "2026-04-15T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "level": 1, "questionLabels": [], "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6a44d2802d2155b816ec4a73", "title": "MHT CET 2026 (15 April Shift 2)", "shortName": "2026 (15 April Shift 2)", "isVisible": true, "heldOn": "2026-04-15T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "68871b13bf9280d7f993260e", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "688376de9b67616acec78f6f", "heldOn": "2025-04-19T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (19 Apr Shift 2)", "title": "MHT CET 2025 (19 Apr Shift 2)", "examId": "615d7745c52ffa3c944600e5"}], "question": {"text": "Which of the following methods is used to prepare dihydrogen with purity greater than 99.95% ?", "image": null}, "options": [{"id": "M9nF1", "text": "Electrolysis of pure water", "image": null, "isCorrect": false}, {"id": "pif5R", "text": "Action of NaOH on Zinc", "image": null, "isCorrect": false}, {"id": "EWYmT", "text": "From hydrocarbons", "image": null, "isCorrect": false}, {"id": "P8Xvc", "text": "Electrolysis of warm $\\mathrm{Ba(OH)}_2$ solution", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "High purity dihydrogen (greater than $99.95\\%$) is prepared by the electrolysis of warm aqueous barium hydroxide solution between nickel electrodes.<br><br>Other methods such as the action of $\\mathrm{NaOH}$ on zinc or production from hydrocarbons yield dihydrogen of lower purity.<br><br>Answer: Electrolysis of warm $\\mathrm{Ba(OH)}_2$ solution", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "688376de9b67616acec78f6f", "heldOn": "2025-04-19T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (19 Apr Shift 2)", "title": "MHT CET 2025 (19 Apr Shift 2)", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a261ea0279619d9d8a3058", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b88f20917a5f41892ad", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-10T14:00:00.000Z", "isVisible": true, "shortName": "2023 (10 May Shift 2)", "title": "MHT CET 2023 (10 May Shift 2)"}], "question": {"text": "Which from following elements is most abundant on earth?", "image": null}, "options": [{"id": "sVycG", "text": "$\\mathrm{N}$", "image": null, "isCorrect": false}, {"id": "iR0TR", "text": "$\\mathrm{C}$", "image": null, "isCorrect": false}, {"id": "LU75K", "text": "$\\mathrm{O}$", "image": null, "isCorrect": true}, {"id": "rgBBB", "text": "$\\mathrm{H}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "\\begin{array}{|l|l|l|} \\hline Std.12 & \\mathrm{Ch}-7 & Subtopic-7.2 \\\\ \\hline \\end{array}", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b88f20917a5f41892ad", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-10T14:00:00.000Z", "isVisible": true, "shortName": "2023 (10 May Shift 2)", "title": "MHT CET 2023 (10 May Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a261d60279619d9d8a2fb7", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b88f20917a5f41892ac", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-10T09:00:00.000Z", "isVisible": true, "shortName": "2023 (10 May Shift 1)", "title": "MHT CET 2023 (10 May Shift 1)"}], "question": {"text": "Which of the following is NOT a difficulty in setting SHE?", "image": null}, "options": [{"id": "u61kI", "text": "To obtain pure hydrogen gas", "image": null, "isCorrect": false}, {"id": "4Wngo", "text": "To obtain dry hydrogen gas", "image": null, "isCorrect": false}, {"id": "oT5t2", "text": "To maintain exactly 1 atm pressure", "image": null, "isCorrect": false}, {"id": "gvofe", "text": "To bring the reaction in reverse direction", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "In standard hydrogen electrode (SHE), a platinum plate coated with platinum black is used as electrode. The platinum black is capable of adsorbing large quantities of $\\mathrm{H}_2$ gas. This allows the change from gaseous to ionic form and the reverse process to occur.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b88f20917a5f41892ac", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2023-05-10T09:00:00.000Z", "isVisible": true, "shortName": "2023 (10 May Shift 1)", "title": "MHT CET 2023 (10 May Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a2602d0279619d9d8a225d", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "65a25b86f20917a5f4189295", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-20T09:00:00.000Z", "isVisible": true, "shortName": "2021 (20 Sep Shift 1)", "title": "MHT CET 2021 (20 Sep Shift 1)"}], "question": {"text": "Which of the following processes does not involve use of dihydrogen?", "image": null}, "options": [{"id": "9tVx2", "text": "Gasification of coal", "image": null, "isCorrect": true}, {"id": "899S8", "text": "Formation of vanaspati ghee", "image": null, "isCorrect": false}, {"id": "ff4a6", "text": "Preparation of $\\mathrm{HCl}$", "image": null, "isCorrect": false}, {"id": "V5GUi", "text": "Preparation of metal hydride", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$3$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65a25b86f20917a5f4189295", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2021-09-20T09:00:00.000Z", "isVisible": true, "shortName": "2021 (20 Sep Shift 1)", "title": "MHT CET 2021 (20 Sep Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25f590279619d9d8a1bbe", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f6a", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-13T14:00:00.000Z", "isVisible": true, "shortName": "2020 (13 Oct Shift 2)", "title": "MHT CET 2020 (13 Oct Shift 2)"}], "question": {"text": "Which of the following is used as promoter in Bosch's process?", "image": null}, "options": [{"id": "vMwkm", "text": "$\\mathrm{CO}_{2}$", "image": null, "isCorrect": false}, {"id": "1AUHY", "text": "CO", "image": null, "isCorrect": false}, {"id": "bufjJ", "text": "$\\mathrm{Fe}_{2} \\mathrm{O}_{3}$", "image": null, "isCorrect": false}, {"id": "dEJGj", "text": "$\\mathrm{Cr}_{2} \\mathrm{O}_{3}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Cr2O3 is used as a promoter in Bosch process.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f6a", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-13T14:00:00.000Z", "isVisible": true, "shortName": "2020 (13 Oct Shift 2)", "title": "MHT CET 2020 (13 Oct Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25f460279619d9d8a1b28", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f69", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-13T09:00:00.000Z", "isVisible": true, "shortName": "2020 (13 Oct Shift 1)", "title": "MHT CET 2020 (13 Oct Shift 1)"}], "question": {"text": "Which of the following properties of hydrogen is similar to halogen family?", "image": null}, "options": [{"id": "s1Pg1", "text": "Ionisation enthalpy", "image": null, "isCorrect": true}, {"id": "2iIeC", "text": "Formation of unipositive ion", "image": null, "isCorrect": false}, {"id": "ucBrE", "text": "Electronic configuration", "image": null, "isCorrect": false}, {"id": "7FRCw", "text": "Electron gain enthalpy", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Like halogens, hydrogen exists as a diatomic gas. Like halogens, hydrogen exhibits -1 oxidation state in its compounds with metals. Like halogens, hydrogen is liberated at cathode. The ionisation energy of hydrogen is quite close to halogens.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f69", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-13T09:00:00.000Z", "isVisible": true, "shortName": "2020 (13 Oct Shift 1)", "title": "MHT CET 2020 (13 Oct Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "65a2634f0279619d9d8a3e0d", "title": "Hydrides", "totalQuestions": 6, "questions": [{"_id": "6abb886015a9fc0fc8c1431b", "type": "singleCorrect", "question": {"text": "Which of the following metals does not form $\\text{MH}_2$ type hydride when heated with hydrogen under normal conditions?", "image": null}, "options": [{"id": "IX9Um", "label": "A", "text": "Be", "isCorrect": true, "image": null}, {"id": "F5YEF", "label": "B", "text": "Mg", "isCorrect": false, "image": null}, {"id": "ScJA6", "label": "C", "text": "Ca", "isCorrect": false, "image": null}, {"id": "tg0Uu", "label": "D", "text": "Sr", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "All alkaline earth metals except beryllium combine directly with hydrogen upon heating to form their hydrides, $\\text{MH}_2$.<br><br>Beryllium hydride ($\\text{BeH}_2$) cannot be prepared by direct heating of beryllium with hydrogen under normal conditions. It is prepared indirectly by the reduction of beryllium chloride with lithium aluminium hydride.<br><br>$2\\text{BeCl}_2 + \\text{LiAlH}_4 \\rightarrow 2\\text{BeH}_2 + \\text{LiCl} + \\text{AlCl}_3$<br><br>Answer: Be", "image": null}, "level": 2, "videoSolution": null, "previousYearPapers": [{"_id": "6abb87ef2fe711bb1be99967", "title": "MHT CET 2026 (13 May Shift 1)", "shortName": "2026 (13 May Shift 1)", "isVisible": true, "heldOn": "2026-05-13T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6abb87ef2fe711bb1be99967", "title": "MHT CET 2026 (13 May Shift 1)", "shortName": "2026 (13 May Shift 1)", "isVisible": true, "heldOn": "2026-05-13T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "68871bfcbf9280d7f9932e42", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "688376de9b67616acec78f6d", "heldOn": "2025-05-05T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (5 May Shift 2)", "title": "MHT CET 2025 (5 May Shift 2)", "examId": "615d7745c52ffa3c944600e5"}], "question": {"text": "Identify the correct order of acidity of hydrides of $16^{\\text {th }}$ group elements from the following.", "image": null}, "options": [{"id": "Oxbio", "text": "$\\mathrm{H}_2 \\mathrm{O}>\\mathrm{H}_2 \\mathrm{~S}>\\mathrm{H}_2 \\mathrm{Se}>\\mathrm{H}_2 \\mathrm{Te}$", "image": null, "isCorrect": false}, {"id": "p3TNL", "text": "$\\mathrm{H}_2 \\mathrm{Te}>\\mathrm{H}_2 \\mathrm{O}>\\mathrm{H}_2 \\mathrm{~S}>\\mathrm{H}_2 \\mathrm{Se}$", "image": null, "isCorrect": false}, {"id": "bASaP", "text": "$\\mathrm{H}_2 \\mathrm{Te}>\\mathrm{H}_2 \\mathrm{Se}>\\mathrm{H}_2 \\mathrm{~S}>\\mathrm{H}_2 \\mathrm{O}$", "image": null, "isCorrect": true}, {"id": "UOf2o", "text": "$\\mathrm{H}_2 \\mathrm{Te}>\\mathrm{H}_2 \\mathrm{Se}>\\mathrm{H}_2 \\mathrm{O}>\\mathrm{H}_2 \\mathrm{~S}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "The hydrides of Group 16 elements are $\\mathrm{H}_2\\mathrm{O}$, $\\mathrm{H}_2\\mathrm{S}$, $\\mathrm{H}_2\\mathrm{Se}$, and $\\mathrm{H}_2\\mathrm{Te}$.<br><br>As we move down the group from oxygen to tellurium, the atomic size of the central atom increases.<br><br>This results in an increase in the $\\mathrm{H}-\\mathrm{E}$ bond length and a corresponding decrease in the bond dissociation enthalpy.<br><br>Consequently, the tendency to release an $\\mathrm{H}^+$ ion increases down the group.<br><br>Thus, the acidic character increases in the order: $\\mathrm{H}_2\\mathrm{O} < \\mathrm{H}_2\\mathrm{S} < \\mathrm{H}_2\\mathrm{Se} < \\mathrm{H}_2\\mathrm{Te}$.<br><br>The correct decreasing order of acidity is $\\mathrm{H}_2\\mathrm{Te} > \\mathrm{H}_2\\mathrm{Se} > \\mathrm{H}_2\\mathrm{S} > \\mathrm{H}_2\\mathrm{O}$.<br><br>Answer: $\\mathrm{H}_2 \\mathrm{Te}>\\mathrm{H}_2 \\mathrm{Se}>\\mathrm{H}_2 \\mathrm{~S}>\\mathrm{H}_2 \\mathrm{O}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "688376de9b67616acec78f6d", "heldOn": "2025-05-05T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (5 May Shift 2)", "title": "MHT CET 2025 (5 May Shift 2)", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25ff50279619d9d8a2099", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f72", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-19T14:00:00.000Z", "isVisible": true, "shortName": "2020 (19 Oct Shift 2)", "title": "MHT CET 2020 (19 Oct Shift 2)"}], "question": {"text": "What is the formula of hydrolith?", "image": null}, "options": [{"id": "M73sj", "text": "$\\mathrm{MgH}_{2}$", "image": null, "isCorrect": false}, {"id": "TsC5D", "text": "$\\mathrm{CaH}_{2}$", "image": null, "isCorrect": true}, {"id": "9AtyK", "text": "$\\mathrm{BaH}_{2}$", "image": null, "isCorrect": false}, {"id": "10io6", "text": "$\\mathrm{BeH}_{2}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\mathrm{CaH}_{2}$\nThe hydrolith formula is $\\mathrm{CaH}_{2}$. Calcium hydride is a salt-like binary molecule $\\left(\\mathrm{CaH}_{2}\\right)$ that is employed as a reducing agent and a source of hydrogen.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f72", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-19T14:00:00.000Z", "isVisible": true, "shortName": "2020 (19 Oct Shift 2)", "title": "MHT CET 2020 (19 Oct Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25fe20279619d9d8a2002", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f71", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-19T09:00:00.000Z", "isVisible": true, "shortName": "2020 (19 Oct Shift 1)", "title": "MHT CET 2020 (19 Oct Shift 1)"}], "question": {"text": "Which is an example of molecular hydride?", "image": null}, "options": [{"id": "uloHl", "text": "$\\mathrm{KH}$", "image": null, "isCorrect": false}, {"id": "FaPhx", "text": "NaH", "image": null, "isCorrect": false}, {"id": "4zxGJ", "text": "$\\mathrm{HF}$", "image": null, "isCorrect": true}, {"id": "cnpJn", "text": "LiH", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "HF is molecular hydride due to they are covalent molecules.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f71", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-19T09:00:00.000Z", "isVisible": true, "shortName": "2020 (19 Oct Shift 1)", "title": "MHT CET 2020 (19 Oct Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25f920279619d9d8a1d8d", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f6d", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-15T09:00:00.000Z", "isVisible": true, "shortName": "2020 (15 Oct Shift 1)", "title": "MHT CET 2020 (15 Oct Shift 1)"}], "question": {"text": "Which of the following hydride is deficient in hydrogen?", "image": null}, "options": [{"id": "ZoGIT", "text": "LiH", "image": null, "isCorrect": false}, {"id": "PmKMN", "text": "KH", "image": null, "isCorrect": false}, {"id": "UJJMi", "text": "NiH", "image": null, "isCorrect": true}, {"id": "vOtuA", "text": "NaH", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "NiH hydride is deficient in hydrogen. These hydrides do not have a sufficient number of electrons to form normal covalent bonds.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f6d", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-15T09:00:00.000Z", "isVisible": true, "shortName": "2020 (15 Oct Shift 1)", "title": "MHT CET 2020 (15 Oct Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25eed0279619d9d8a1863", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d1071b5bb33b3f9f66", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2019-05-02T09:00:00.000Z", "isVisible": true, "shortName": "2019 (02 May Shift 1)", "title": "MHT CET 2019 (02 May Shift 1)"}], "question": {"text": "Which hydride among the following is strongest reducing agent?", "image": null}, "options": [{"id": "gSd5k", "text": "<math><mi mathvariant=\"normal\">A</mi><mi mathvariant=\"normal\">s</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></math>", "image": null, "isCorrect": false}, {"id": "cUfnI", "text": "<math><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">i</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></math>", "image": null, "isCorrect": true}, {"id": "wsFIZ", "text": "<math><mi mathvariant=\"normal\">P</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></math>", "image": null, "isCorrect": false}, {"id": "TvggS", "text": "<math><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">b</mi><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></math>", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "In the halides of <math><msup><mrow><mn>15</mn></mrow><mrow><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">h</mi></mrow></msup></math> , metallic character increases down the group.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d1071b5bb33b3f9f66", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2019-05-02T09:00:00.000Z", "isVisible": true, "shortName": "2019 (02 May Shift 1)", "title": "MHT CET 2019 (02 May Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "6a44d3968c30a4553e1be404", "title": "Chemical properties of hydrogen", "totalQuestions": 1, "questions": [{"_id": "6a44d2b68c30a4553e1bdc01", "type": "singleCorrect", "question": {"text": "Which of the following is obtained when dihydrogen reacts with the alkali metals at high temperature?", "image": null}, "options": [{"id": "H0Mfp", "label": "A", "text": "Alkoxides", "isCorrect": false, "image": null}, {"id": "bQkfK", "label": "B", "text": "Metal hydrides", "isCorrect": true, "image": null}, {"id": "AZA1J", "label": "C", "text": "Peroxides", "isCorrect": false, "image": null}, {"id": "FnuQg", "label": "D", "text": "Metal nitrites", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Alkali metals react with dihydrogen at high temperatures to form the corresponding metal hydrides.<br><br>$2M + H_2 \\xrightarrow{\\Delta} 2M^{+}H^{-}$<br><br>where $M$ represents an alkali metal (Li, Na, K, Rb, Cs). These hydrides are ionic (salt-like) in nature.<br><br>Answer: Metal hydrides", "image": null}, "previousYearPapers": [{"_id": "6a44d27f2d2155b816ec4a6e", "title": "MHT CET 2026 (11 April Shift 1)", "shortName": "2026 (11 April Shift 1)", "isVisible": true, "heldOn": "2026-04-11T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "level": 1, "questionLabels": [], "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6a44d27f2d2155b816ec4a6e", "title": "MHT CET 2026 (11 April Shift 1)", "shortName": "2026 (11 April Shift 1)", "isVisible": true, "heldOn": "2026-04-11T09:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "65a2634f0279619d9d8a3e0e", "title": "Preparation and Properties of Hydrogen Peroxide", "totalQuestions": 6, "questions": [{"_id": "6abb887015a9fc0fc8c143b1", "type": "singleCorrect", "question": {"text": "Which of the following compounds is used to prepare $\\text{H}_2\\text{O}_2$ by Merck process using aqueous $\\text{H}_2\\text{SO}_4$?", "image": null}, "options": [{"id": "vFZAz", "label": "A", "text": "$\\text{BaSO}_4$", "isCorrect": false, "image": null}, {"id": "osNQB", "label": "B", "text": "2-ethylanthraquinol", "isCorrect": false, "image": null}, {"id": "3l071", "label": "C", "text": "$\\text{Na}_2\\text{O}_{2(aq)}$", "isCorrect": true, "image": null}, {"id": "3SXo5", "label": "D", "text": "$\\text{Na}_2\\text{CO}_3$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "In Merck's process, hydrogen peroxide is prepared by adding calculated amounts of sodium peroxide to an ice-cold $20\\%$ solution of dilute sulfuric acid.<br><br>$\\text{Na}_2\\text{O}_2 + \\text{H}_2\\text{SO}_4 \\rightarrow \\text{Na}_2\\text{SO}_4 + \\text{H}_2\\text{O}_2$<br><br>The solution is cooled to crystallize out sodium sulfate as Glauber's salt ($\\text{Na}_2\\text{SO}_4 \\cdot 10\\text{H}_2\\text{O}$), which is then filtered off, leaving behind an aqueous solution of hydrogen peroxide.<br><br>Thus, $\\text{Na}_2\\text{O}_2$ is the compound used in this process.<br><br>Answer: $\\text{Na}_2\\text{O}_{2(aq)}$", "image": null}, "level": 2, "videoSolution": null, "previousYearPapers": [{"_id": "6abb87ef2fe711bb1be9996a", "title": "MHT CET 2026 (14 May Shift 2)", "shortName": "2026 (14 May Shift 2)", "isVisible": true, "heldOn": "2026-05-14T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6abb87ef2fe711bb1be9996a", "title": "MHT CET 2026 (14 May Shift 2)", "shortName": "2026 (14 May Shift 2)", "isVisible": true, "heldOn": "2026-05-14T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "68871bcfbf9280d7f9932c9d", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "688376df9b67616acec78f7a", "heldOn": "2025-04-26T09:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (26 Apr Shift 1)", "title": "MHT CET 2025 (26 Apr Shift 1)", "examId": "615d7745c52ffa3c944600e5"}], "question": {"text": "Calculate $\\%$ by mass of a $\\mathrm{H}_2 \\mathrm{O}_2$ solution that is 67.2 volume. (Assume density of solution $= 1 \\mathrm{~g/mL}$)", "image": null}, "options": [{"id": "abqW6", "text": "$13.60 \\%$ by mass", "image": null, "isCorrect": false}, {"id": "dnq5m", "text": "$20.40 \\%$ by mass", "image": null, "isCorrect": true}, {"id": "1AWFF", "text": "$22.44 \\%$ by mass", "image": null, "isCorrect": false}, {"id": "VNFpc", "text": "$17.60 \\%$ by mass", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "The volume strength of $\\mathrm{H}_2\\mathrm{O}_2$ solution is related to its molarity by the formula:<br><br>$\\text{Volume strength} = 11.2 \\times \\text{Molarity}$<br><br>Substituting the given volume strength:<br><br>$67.2 = 11.2 \\times \\text{Molarity}$<br><br>$\\text{Molarity} = \\dfrac{67.2}{11.2} = 6 \\text{ mol L}^{-1}$<br><br>This means $1 \\text{ L}$ ($1000 \\text{ mL}$) of the solution contains $6 \\text{ moles}$ of $\\mathrm{H}_2\\mathrm{O}_2$.<br><br>Molar mass of $\\mathrm{H}_2\\mathrm{O}_2 = 2(1) + 2(16) = 34 \\text{ g mol}^{-1}$<br><br>Mass of $\\mathrm{H}_2\\mathrm{O}_2$ in $1 \\text{ L}$ of solution $= 6 \\times 34 = 204 \\text{ g}$<br><br>Given the density of the solution is $1 \\text{ g mL}^{-1}$, the mass of $1000 \\text{ mL}$ of the solution is:<br><br>$\\text{Mass of solution} = 1000 \\text{ mL} \\times 1 \\text{ g mL}^{-1} = 1000 \\text{ g}$<br><br>The percentage by mass is calculated as:<br><br>$\\% \\text{ by mass} = \\dfrac{\\text{Mass of solute}}{\\text{Mass of solution}} \\times 100$<br><br>$\\% \\text{ by mass} = \\dfrac{204}{1000} \\times 100 = 20.40 \\%$<br><br>Answer: $20.40 \\%$ by mass", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "688376df9b67616acec78f7a", "heldOn": "2025-04-26T09:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (26 Apr Shift 1)", "title": "MHT CET 2025 (26 Apr Shift 1)", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "68871babbf9280d7f9932b6c", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "688376df9b67616acec78f78", "heldOn": "2025-04-25T09:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (25 Apr Shift 1)", "title": "MHT CET 2025 (25 Apr Shift 1)", "examId": "615d7745c52ffa3c944600e5"}], "question": {"text": "Which of the following is used in preparation of hydrogen peroxide by Merck process?", "image": null}, "options": [{"id": "VEjBD", "text": "$\\mathrm{CaCO}_{3(\\mathrm{~s})}$", "image": null, "isCorrect": false}, {"id": "IJmdO", "text": "$\\mathrm{BaO}_2 \\cdot 8 \\mathrm{H}_2 \\mathrm{O}$", "image": null, "isCorrect": false}, {"id": "IS7gq", "text": "$\\mathrm{CaCl}_{2(\\mathrm{~s})}$", "image": null, "isCorrect": false}, {"id": "sdpwt", "text": "$\\mathrm{Na}_2 \\mathrm{O}_{2(\\mathrm{aq})}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Merck's process is a laboratory method used for the preparation of hydrogen peroxide.<br><br>In this process, a calculated quantity of sodium peroxide ($\\mathrm{Na}_2\\mathrm{O}_2$) is gradually added in small proportions to an ice-cold $20\\%$ dilute solution of sulfuric acid ($\\mathrm{H}_2\\mathrm{SO}_4$).<br><br>The chemical reaction is given by:<br>$\\mathrm{Na}_2\\mathrm{O}_2 + \\mathrm{H}_2\\mathrm{SO}_4 \\rightarrow \\mathrm{Na}_2\\mathrm{SO}_4 + \\mathrm{H}_2\\mathrm{O}_2$<br><br>Therefore, sodium peroxide is the reagent used in the preparation of hydrogen peroxide by Merck's process.<br><br>Answer: $\\mathrm{Na}_2 \\mathrm{O}_{2(\\mathrm{aq})}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "688376df9b67616acec78f78", "heldOn": "2025-04-25T09:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (25 Apr Shift 1)", "title": "MHT CET 2025 (25 Apr Shift 1)", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "679213d20aee93fa0796dbcc", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67920e149a8109c6c5665cc4", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-10T14:00:00.000Z", "isVisible": true, "shortName": "2024 (10 May Shift 2)", "title": "MHT CET 2024 (10 May Shift 2)"}], "question": {"text": "Which of the following is not a property of hydrogen peroxide?", "image": null}, "options": [{"id": "7UDeZ", "text": "It is immiscible in water.", "image": null, "isCorrect": true}, {"id": "VEUx6", "text": "It is pale blue coloured liquid in pure state.", "image": null, "isCorrect": false}, {"id": "ffAlO", "text": "It's strength is explained in volume unit.", "image": null, "isCorrect": false}, {"id": "wSs4I", "text": "It is mild oxidising as well reducing agent.", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Hydrogen peroxide ($H_2O_2$) is highly soluble in water and is miscible in all proportions due to its ability to form extensive hydrogen bonds with water molecules.<br><br>In its pure state, $H_2O_2$ is an almost colourless (very pale blue) liquid.<br><br>The strength of $H_2O_2$ is commonly expressed in terms of volume strength (e.g., $10$ volume, $20$ volume).<br><br>It acts as both an oxidising and a reducing agent in both acidic and alkaline media.<br><br>Therefore, the statement that it is immiscible in water is incorrect.<br><br>Answer: It is immiscible in water.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67920e149a8109c6c5665cc4", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-10T14:00:00.000Z", "isVisible": true, "shortName": "2024 (10 May Shift 2)", "title": "MHT CET 2024 (10 May Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25fcb0279619d9d8a1f4e", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f70", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-16T14:00:00.000Z", "isVisible": true, "shortName": "2020 (16 Oct Shift 2)", "title": "MHT CET 2020 (16 Oct Shift 2)"}], "question": {"text": "In gas phase $\\mathrm{H}-O-O-\\mathrm{H}$ bond angle in $\\mathrm{H}_{2} \\mathrm{O}_{2}$ is", "image": null}, "options": [{"id": "DUZ8V", "text": "$111.5^{\\circ}$", "image": null, "isCorrect": false}, {"id": "6Rj5y", "text": "$94.8^{\\circ}$", "image": null, "isCorrect": true}, {"id": "Sy3fW", "text": "$98.4^{\\circ}$", "image": null, "isCorrect": false}, {"id": "pJBOC", "text": "$147.5^{\\circ}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "In gas phase $\\mathrm{H}-\\mathrm{O}-\\mathrm{O}-\\mathrm{H}$ bond angle in $\\mathrm{H}_{2} \\mathrm{O}_{2}$ is $\\underline{94.8^{\\circ}}$.\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/3CZRAAVj-3LacRy1UTiBpNfvEigtdAUBhncd59m0hbU.original.fullsize.png\"><br>\nThere are lone pairs on the surface of the gas phase. oxygen and to reduce the number of lone-pair-lone pairs. The binding angle was lowered from $101.9^{\\circ}$ to $101.9^{\\circ}$ due to repulsion. $94.8^{\\circ}$ (crystalline phase) (gas phase).", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f70", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-16T14:00:00.000Z", "isVisible": true, "shortName": "2020 (16 Oct Shift 2)", "title": "MHT CET 2020 (16 Oct Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25f0f0279619d9d8a1973", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d1071b5bb33b3f9f65", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2019-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2019 (Shift 2)", "title": "MHT CET 2019 (Shift 2)"}], "question": {"text": "The bond angle <math><mi>H</mi><mo>-</mo><mi>O</mi><mo>-</mo><mi>O</mi></math> in <math><msub><mrow><mi>H</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>O</mi></mrow><mrow><mn>2</mn></mrow></msub></math> in gaseous phase is", "image": null}, "options": [{"id": "L4ypG", "text": "<math><msup><mrow><mn>90.2</mn></mrow><mrow><mi mathvariant=\"normal\">o</mi></mrow></msup></math>  <br/><em>", "image": null, "isCorrect": false}, {"id": "0OnFC", "text": "</em> <math><msup><mrow><mn>111.5</mn></mrow><mrow><mi mathvariant=\"normal\">o</mi></mrow></msup></math>  <br/><em>", "image": null, "isCorrect": false}, {"id": "gb8ig", "text": "</em> <math><msup><mrow><mn>101.9</mn></mrow><mrow><mi mathvariant=\"normal\">o</mi></mrow></msup></math>  <br/><em>", "image": null, "isCorrect": false}, {"id": "7cvYe", "text": "</em> <math><msup><mrow><mn>94.8</mn></mrow><mrow><mi mathvariant=\"normal\">o</mi></mrow></msup></math>", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "The molecular dimensions of <math><msub><mrow><mi>H</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>O</mi></mrow><mrow><mn>2</mn></mrow></msub></math> in the gaseous phase is shown in the following figure. <br/><img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/67a98e34-53cf-4b4c-8144-edb446e89358.png\"> <br/>Thus, the bond angle H-O-O in <math><msub><mrow><mi>H</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>O</mi></mrow><mrow><mn>2</mn></mrow></msub></math> in gaseous phase is <math><msup><mrow><mn>94.8</mn></mrow><mrow><mi>o</mi></mrow></msup><mo>.</mo></math>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d1071b5bb33b3f9f65", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2019-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2019 (Shift 2)", "title": "MHT CET 2019 (Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 5, "topicId": "65a2634f0279619d9d8a3e0f", "title": "Chemical properties of hydrogen peroxide", "totalQuestions": 4, "questions": [{"_id": "6a44d2d28c30a4553e1bdd2f", "type": "singleCorrect", "question": {"text": "What is the role of glycerol in the decomposition of hydrogen peroxide?", "image": null}, "options": [{"id": "0U5in", "label": "A", "text": "It increases the reaction rate.", "isCorrect": false, "image": null}, {"id": "7XPfQ", "label": "B", "text": "It reduces the reaction rate.", "isCorrect": true, "image": null}, {"id": "pmp6z", "label": "C", "text": "It increases the enthalpy of the reaction.", "isCorrect": false, "image": null}, {"id": "TzG0N", "label": "D", "text": "It increases the rate of collisions between reactant molecules.", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Hydrogen peroxide ($H_2O_2$) decomposes into water and oxygen gas upon standing or heating.<br><br>To prevent or slow down this decomposition, certain substances are added which act as negative catalysts (inhibitors).<br><br>Glycerol, along with urea and acetanilide, is commonly used as a stabilizer for hydrogen peroxide. It acts as a negative catalyst and retards the decomposition process.<br><br>Therefore, glycerol reduces the reaction rate of the decomposition of hydrogen peroxide.<br><br>Answer: It reduces the reaction rate.", "image": null}, "previousYearPapers": [{"_id": "6a44d2802d2155b816ec4a75", "title": "MHT CET 2026 (16 April Shift 2)", "shortName": "2026 (16 April Shift 2)", "isVisible": true, "heldOn": "2026-04-16T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "level": 2, "questionLabels": [], "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6a44d2802d2155b816ec4a75", "title": "MHT CET 2026 (16 April Shift 2)", "shortName": "2026 (16 April Shift 2)", "isVisible": true, "heldOn": "2026-04-16T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "68871be0bf9280d7f9932d37", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "688376df9b67616acec78f7b", "heldOn": "2025-04-26T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (26 Apr Shift 2)", "title": "MHT CET 2025 (26 Apr Shift 2)", "examId": "615d7745c52ffa3c944600e5"}], "question": {"text": "Identify role of glycerol in following reaction.\n$2 \\mathrm{H}_2 \\mathrm{O}_{2(\\ell)} \\xrightarrow{\\text { glycerol }} 2 \\mathrm{H}_2 \\mathrm{O}_{(\\ell)}+\\mathrm{O}_{2(\\mathrm{~g})}$", "image": null}, "options": [{"id": "iHPTY", "text": "Homogeneous catalyst", "image": null, "isCorrect": false}, {"id": "ITOap", "text": "Inhibitor", "image": null, "isCorrect": true}, {"id": "0i5PQ", "text": "Promoter", "image": null, "isCorrect": false}, {"id": "2tKQl", "text": "Heterogeneous catalyst", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Hydrogen peroxide decomposes into water and oxygen. This decomposition is retarded by the addition of certain substances like glycerol, acetanilide, or phosphoric acid.<br><br>These substances decrease the rate of decomposition of hydrogen peroxide and thus act as inhibitors (or negative catalysts).<br><br>Therefore, the role of glycerol in the given reaction is that of an inhibitor.<br><br>Answer: Inhibitor", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "688376df9b67616acec78f7b", "heldOn": "2025-04-26T14:00:00.000Z", "isVisible": true, "shortName": "MHT CET 2025 (26 Apr Shift 2)", "title": "MHT CET 2025 (26 Apr Shift 2)", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "679213b10aee93fa0796dac4", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67920e149a8109c6c5665ccb", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-09T14:00:00.000Z", "isVisible": true, "shortName": "2024 (09 May Shift 2)", "title": "MHT CET 2024 (09 May Shift 2)"}], "question": {"text": "What type of following forces stabilizes the gauche conformation of ethylene glycol?", "image": null}, "options": [{"id": "qobw2", "text": "Dipole-induced dipole", "image": null, "isCorrect": false}, {"id": "IPeLn", "text": "Dipole-dipole", "image": null, "isCorrect": false}, {"id": "gkQEy", "text": "Dispersion forces", "image": null, "isCorrect": false}, {"id": "RwtCV", "text": "Intramolecular hydrogen bonding", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Ethylene glycol is $HO-CH_2-CH_2-OH$.<br><br>In the gauche conformation, the dihedral angle between the two hydroxyl ($-OH$) groups is approximately $60^{\\circ}$.<br><br>This spatial arrangement brings the two $-OH$ groups close enough to form an intramolecular hydrogen bond between the hydrogen atom of one group and the highly electronegative oxygen atom of the other.<br><br>This intramolecular hydrogen bonding provides additional stability to the gauche conformation, making it more stable than the anti conformation despite the steric repulsion.<br><br>Answer: Intramolecular hydrogen bonding", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67920e149a8109c6c5665ccb", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2024-05-09T14:00:00.000Z", "isVisible": true, "shortName": "2024 (09 May Shift 2)", "title": "MHT CET 2024 (09 May Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25f120279619d9d8a1988", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d1071b5bb33b3f9f65", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2019-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2019 (Shift 2)", "title": "MHT CET 2019 (Shift 2)"}], "question": {"text": "In the reaction, <math><msub><mrow><mi>H</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>O</mi></mrow><mrow><mn>2</mn></mrow></msub><mfenced separators=\"|\"><mrow><mi>a</mi><mi>q</mi></mrow></mfenced><mover><mrow><mo>→</mo></mrow><mrow><msup><mrow><mi>l</mi></mrow><mrow><mo>-</mo></mrow></msup><mfenced separators=\"|\"><mrow><mi>a</mi><mi>q</mi></mrow></mfenced></mrow></mover><msub><mrow><mi>H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>O</mi><mfenced separators=\"|\"><mrow><mi>l</mi></mrow></mfenced><mo>+</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><msub><mrow><mi>O</mi></mrow><mrow><mn>2</mn></mrow></msub><mfenced separators=\"|\"><mrow><mi>g</mi></mrow></mfenced></math> iodide ion acts as", "image": null}, "options": [{"id": "7JLPZ", "text": "Homogenous catalyst", "image": null, "isCorrect": true}, {"id": "rMT3f", "text": "Acid catalyst", "image": null, "isCorrect": false}, {"id": "CsTRa", "text": "Heterogenous catalyst", "image": null, "isCorrect": false}, {"id": "oqed2", "text": "Enzyme catalyst", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "For the reaction, <br/><math><msub><mrow><mi>H</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>O</mi></mrow><mrow><mn>1</mn></mrow></msub><mfenced separators=\"|\"><mrow><mi>a</mi><mi>q</mi></mrow></mfenced><mover><mrow><mo>→</mo></mrow><mrow><msup><mrow><mi>l</mi></mrow><mrow><mo>-</mo></mrow></msup><mfenced separators=\"|\"><mrow><mi>a</mi><mi>q</mi></mrow></mfenced></mrow></mover><msub><mrow><mi>H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>O</mi><mfenced separators=\"|\"><mrow><mi>l</mi></mrow></mfenced><mo>+</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><msub><mrow><mi>O</mi></mrow><mrow><mn>2</mn></mrow></msub><mfenced separators=\"|\"><mrow><mi>g</mi></mrow></mfenced></math>  <br/>Iodide ion acts a homogenous catalyst as the phase of <math><msup><mrow><mi>l</mi></mrow><mrow><mo>-</mo></mrow></msup></math> and reactant, <math><msub><mrow><mi>H</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>O</mi></mrow><mrow><mn>2</mn></mrow></msub></math> is aqueous (same).", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d1071b5bb33b3f9f65", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2019-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2019 (Shift 2)", "title": "MHT CET 2019 (Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 6, "topicId": "65a2634f0279619d9d8a3e0c", "title": "Preparation and Properties of Water", "totalQuestions": 6, "questions": [{"_id": "6a44d29d8c30a4553e1bdaf2", "type": "singleCorrect", "question": {"text": "Which of the following ions are responsible for hardness of water?", "image": null}, "options": [{"id": "mFXkk", "label": "A", "text": "$\\text{Ag}^+, \\text{Au}^{3+}$ ions", "isCorrect": false, "image": null}, {"id": "VGQ46", "label": "B", "text": "$\\text{Hg}^{2+}, \\text{Pb}^{2+}$ ions", "isCorrect": false, "image": null}, {"id": "yjgQi", "label": "C", "text": "$\\text{Ca}^{2+}$ and $\\text{Mg}^{2+}$ ions.", "isCorrect": true, "image": null}, {"id": "RE8J6", "label": "D", "text": "$\\text{As}^{3+}, \\text{CN}^-$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Hardness of water is primarily caused by the presence of soluble salts of calcium and magnesium, such as their bicarbonates, chlorides, and sulfates.<br><br>Therefore, $\\text{Ca}^{2+}$ and $\\text{Mg}^{2+}$ ions are responsible for the hardness of water.<br><br>Answer: $\\text{Ca}^{2+}$ and $\\text{Mg}^{2+}$ ions.", "image": null}, "previousYearPapers": [{"_id": "6a44d27f2d2155b816ec4a71", "title": "MHT CET 2026 (13 April Shift 2)", "shortName": "2026 (13 April Shift 2)", "isVisible": true, "heldOn": "2026-04-13T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}], "level": 1, "questionLabels": [], "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "6a44d27f2d2155b816ec4a71", "title": "MHT CET 2026 (13 April Shift 2)", "shortName": "2026 (13 April Shift 2)", "isVisible": true, "heldOn": "2026-04-13T14:00:00.000Z", "examId": "615d7745c52ffa3c944600e5"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25ff10279619d9d8a207a", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f72", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-19T14:00:00.000Z", "isVisible": true, "shortName": "2020 (19 Oct Shift 2)", "title": "MHT CET 2020 (19 Oct Shift 2)"}], "question": {"text": "How many hydrogen atoms are surrounding each oxygen atom in structure of ice?", "image": null}, "options": [{"id": "SSesh", "text": "2", "image": null, "isCorrect": false}, {"id": "B8z9e", "text": "4", "image": null, "isCorrect": true}, {"id": "PeMd5", "text": "3", "image": null, "isCorrect": false}, {"id": "VB4es", "text": "1", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "4\nIn the structure of ice, four hydrogen atoms surround each oxygen atom. It has a crystalline structure that is based on the water molecule, which is made up of a single oxygen atom covalently bound to two hydrogen atoms $(\\mathrm{H}-\\mathrm{O}-\\mathrm{H})$.\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/j-NrwlbMvJ2a6c_EM8TazqR6iLEhTdj3J2UBQE_75uc.original.fullsize.png\">", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f72", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-19T14:00:00.000Z", "isVisible": true, "shortName": "2020 (19 Oct Shift 2)", "title": "MHT CET 2020 (19 Oct Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25f460279619d9d8a1b24", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d3071b5bb33b3f9f69", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-13T09:00:00.000Z", "isVisible": true, "shortName": "2020 (13 Oct Shift 1)", "title": "MHT CET 2020 (13 Oct Shift 1)"}], "question": {"text": "Which of the following compounds is NOT present in it's standard state at $25^{\\circ} \\mathrm{C}$ and 1 atmosphere pressure?", "image": null}, "options": [{"id": "CbYJB", "text": "$\\mathrm{CO}_{2(\\mathrm{~g})}$", "image": null, "isCorrect": false}, {"id": "Wacs7", "text": "$\\mathrm{CaCO}_{3(\\mathrm{~s})}$", "image": null, "isCorrect": false}, {"id": "gjPPr", "text": "$\\mathrm{C}_{2} \\mathrm{H}_{5} \\mathrm{OH}_{(\\mathrm{l})}$", "image": null, "isCorrect": false}, {"id": "STAxD", "text": "$\\mathrm{H}_{2} \\mathrm{O}_{(\\mathrm{g})}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "$\\mathrm{H}_{2} \\mathrm{O}_{(\\mathrm{g})}$\nWater at $25^{\\circ} \\mathrm{C}$ is present in a liquid state.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d3071b5bb33b3f9f69", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-13T09:00:00.000Z", "isVisible": true, "shortName": "2020 (13 Oct Shift 1)", "title": "MHT CET 2020 (13 Oct Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25f100279619d9d8a197c", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d1071b5bb33b3f9f65", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2019-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2019 (Shift 2)", "title": "MHT CET 2019 (Shift 2)"}], "question": {"text": "What is the density of water vapour at boiling point of water?", "image": null}, "options": [{"id": "79c2c", "text": "<math><mn>1</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>-</mo><mn>4</mn></mrow></msup><mi>g</mi><mi>c</mi><msup><mrow><mi>m</mi></mrow><mrow><mo>-</mo><mn>3</mn></mrow></msup></math>", "image": null, "isCorrect": false}, {"id": "0nG8B", "text": "<math><mn>1</mn><mi>g</mi><mi>c</mi><msup><mrow><mi>m</mi></mrow><mrow><mo>-</mo><mn>3</mn></mrow></msup></math>", "image": null, "isCorrect": false}, {"id": "iDtpH", "text": "<math><mn>6</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>-</mo><mn>4</mn></mrow></msup><mi>g</mi><mi>c</mi><msup><mrow><mi>m</mi></mrow><mrow><mo>-</mo><mn>3</mn></mrow></msup></math>", "image": null, "isCorrect": true}, {"id": "h885E", "text": "<math><mn>4</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>-</mo><mn>4</mn></mrow></msup><mi>g</mi><mi>c</mi><msup><mrow><mi>m</mi></mrow><mrow><mo>-</mo><mn>3</mn></mrow></msup></math>", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "The density of water never has absolute value because it varies with temperature. The density of water vapour at boiling point <math><mfenced separators=\"|\"><mrow><msup><mrow><mn>100</mn></mrow><mrow><mi mathvariant=\"normal\">o</mi></mrow></msup></mrow></mfenced></math> of water is <math><mn>6</mn><mo>×</mo><msup><mrow><mn>10</mn></mrow><mrow><mo>-</mo><mn>4</mn></mrow></msup><mi>g</mi><mtext> </mtext><mi mathvariant=\"normal\">c</mi><msup><mrow><mi mathvariant=\"normal\">m</mi></mrow><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>.</mo></math>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d1071b5bb33b3f9f65", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2019-04-30T14:00:00.000Z", "isVisible": true, "shortName": "2019 (Shift 2)", "title": "MHT CET 2019 (Shift 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25eda0279619d9d8a17cc", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078cf071b5bb33b3f9f63", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "MHT CET 2018"}], "question": {"text": "What is the geometry of water molecule?", "image": null}, "options": [{"id": "7UAmo", "text": "Distorted tetrahedral", "image": null, "isCorrect": true}, {"id": "BTOF9", "text": "Tetrahedral", "image": null, "isCorrect": false}, {"id": "SZFP9", "text": "Trigonal planer", "image": null, "isCorrect": false}, {"id": "xlS6l", "text": "Diagonal", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/332681.jpg\" style=\"width: 126px; height: 98px;\" /><br />It has two lone pairs. So&nbsp;its geometry is distorted tetrahedral.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078cf071b5bb33b3f9f63", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "MHT CET 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65a25ed70279619d9d8a17b9", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61c078cf071b5bb33b3f9f63", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "MHT CET 2018"}], "question": {"text": "What are the products obtained when water is auto-photolysed?", "image": null}, "options": [{"id": "KdlCz", "text": "<math><msub><mrow><mi>H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">d</mi><mi mathvariant=\"normal\"> </mi><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn></mrow></msub></math>", "image": null, "isCorrect": false}, {"id": "ARYBu", "text": "Stream", "image": null, "isCorrect": false}, {"id": "YoPnz", "text": "<math><msub><mrow><mi>H</mi></mrow><mrow><mn>3</mn></mrow></msub><msup><mrow><mi>O</mi></mrow><mrow><mo>+</mo></mrow></msup><mi>&nbsp;</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">d</mi><mi mathvariant=\"normal\">&nbsp;</mi><msup><mrow><mi>O</mi><mi>H</mi></mrow><mrow><mo>-</mo></mrow></msup></math>", "image": null, "isCorrect": true}, {"id": "BRtVB", "text": "Hydrogen peroxide", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<math > <mrow>  <msub>   <mi>H</mi>   <mn>2</mn>  </msub>  <mi>O</mi><mover>   <mo>&#x21CC;</mo>   <mrow></mrow>  </mover>  <msup>   <mi>H</mi>   <mo>+</mo>  </msup>  <mo>+</mo><mi>O</mi><msup>   <mi>H</mi>   <mo>&#x2212;</mo>  </msup>   </mrow></math><br><math> <mrow>  <msub>   <mi>H</mi>   <mn>2</mn>  </msub>  <mi>O</mi><mo>+</mo><msup>   <mi>H</mi>   <mo>+</mo>  </msup>  <mo>&#x2192;</mo><msub>   <mi>H</mi>   <mn>3</mn>  </msub>  <msup>   <mi>O</mi>   <mo>&#x2295;</mo>  </msup>   </mrow></math><br>Adding both the above equations:<br><math > <mrow>  <mn>2</mn><msub>   <mi>H</mi>   <mn>2</mn>  </msub>  <mi>O</mi><mo>&#x2192;</mo><msub>   <mi>H</mi>   <mn>3</mn>  </msub>  <msup>   <mi>O</mi>   <mo>&#x2295;</mo>  </msup>  <mo>+</mo><mi>O</mi><msup>   <mi>H</mi>   <mo>&#x2212;</mo>  </msup>   </mrow></math>", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078cf071b5bb33b3f9f63", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "MHT CET 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 7, "topicId": "65a2634f0279619d9d8a3e10", "title": "Chemical properties of heavy water", "totalQuestions": 1, "questions": [{"_id": "65a25f250279619d9d8a1a1e", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61c078d1071b5bb33b3f9f67", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-12T09:00:00.000Z", "isVisible": true, "shortName": "2020 (12 Oct Shift 1)", "title": "MHT CET 2020 (12 Oct Shift 1)"}], "question": {"text": "What is the boiling point of heavy water?", "image": null}, "options": [{"id": "Adbcl", "text": "$100 \\cdot 4^{\\circ} \\mathrm{C}$", "image": null, "isCorrect": false}, {"id": "M7jvI", "text": "$101 \\cdot 4^{\\circ} \\mathrm{C}$", "image": null, "isCorrect": true}, {"id": "NY03g", "text": "$273^{\\circ} \\mathrm{C}$", "image": null, "isCorrect": false}, {"id": "t4LY4", "text": "$100^{\\circ} \\mathrm{C}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Correct answer is $101.4^{0} \\mathrm{C}$\nThe boiling point of heavy water is $101.4^{0} \\mathrm{C}$ or $374.4 \\mathrm{~K}$. Its melting point is $3.8^{0} \\mathrm{C}$ or $276.8 \\mathrm{~K}$.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61c078d1071b5bb33b3f9f67", "examId": "615d7745c52ffa3c944600e5", "heldOn": "2020-10-12T09:00:00.000Z", "isVisible": true, "shortName": "2020 (12 Oct Shift 1)", "title": "MHT CET 2020 (12 Oct Shift 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'MHT CET';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

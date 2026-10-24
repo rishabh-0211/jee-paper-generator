@@ -1,0 +1,1957 @@
+{
+  "index": 18,
+  "chapterId": "61e7bd7bd7bb9f46da5c3b38",
+  "chapter": "Electrochemistry",
+  "exam": "BITSAT",
+  "totalTopics": 4,
+  "totalQuestions": 29,
+  "downloadTime": "2026-10-08 20:02:54",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e8626f5bfc7ab78aed89",
+      "title": "Cells and Electrode Potential, Nernst Equation",
+      "totalQuestions": 21,
+      "questions": [
+        {
+          "_id": "67726d09c49e8ef28ee2b3c3",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "When the same quantity of electricity is passed through the aqueous solutions of the given electrolytes for the same amount of time, which metal will be deposited in maximum amount on the cathode?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "3ttT0",
+              "text": "$\\mathrm{ZnSO}_4$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "thl6j",
+              "text": "$\\mathrm{FeCl}_3$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qWoSg",
+              "text": "$\\mathrm{AgNO}_3$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "WRbPR",
+              "text": "$\\mathrm{NiCl}_2$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/SMQausdQ7vakmONh1bNtDw6G6Ca9NC6p7mQT6SQqDuE.original.fullsize.png\"/>\nThe equivalent weight of silver is highest among the given options.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87e97ae24e9e2db8cea",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Given that $E_{\\mathrm{O}_2 / \\mathrm{H}_2 \\mathrm{O}}^{\\circ}=+1.23 \\mathrm{~V}$;<br />$\\begin{aligned}<br />& E_{\\mathrm{S}_2 \\mathrm{O}_8^{2-} / \\mathrm{SO}_4^{2-}}^{\\circ}=2.05 \\mathrm{~V} ; E_{\\mathrm{Br}_2 / \\mathrm{Br}^{-}}^{\\circ}=+1.09 \\mathrm{~V} \\\\<br />& E_{\\mathrm{Au}^{3+} / \\mathrm{Au}}^{\\circ}=+1.4 \\mathrm{~V}<br />\\end{aligned}$<br />The strongest oxidising agent is :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "SefFB",
+              "text": "$\\mathrm{Au}^{3+}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8D713",
+              "text": "$\\mathrm{O}_2$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "XkJ64",
+              "text": "$\\mathrm{S}_2 \\mathrm{O}_8^{2-}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "0qLV4",
+              "text": "$\\mathrm{Br}_2$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Reduction potential is maximum for $\\mathrm{S}_2 \\mathrm{O}_8{ }^{2-}$ therefore, it is the strongest oxidising agent amongst the given species.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87597ae24e9e2db8c8c",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "Electrode potential data are given below:<br />$\\mathrm{Fe}^{+3}(\\mathrm{aq})+\\mathrm{e}^{-} \\longrightarrow \\mathrm{Fe}^{+2}(\\mathrm{aq}) ; \\mathrm{E}^{\\circ}=+0.77 \\mathrm{~V}$<br />$\\mathrm{Al}^{3+}(\\mathrm{aq})+3 \\mathrm{e}^{-} \\longrightarrow \\mathrm{Al}_{(\\mathrm{s})} ; \\mathrm{E}^{\\circ}=-1.66 \\mathrm{~V}$<br />$\\mathrm{Br}_2(\\mathrm{aq})+2 \\mathrm{e}^{-} \\longrightarrow 2 \\mathrm{Br}^{-}(\\mathrm{aq}) ; \\mathrm{E}^{\\circ}=+1.08 \\mathrm{~V}$<br />Based on the data, the reducing power of $\\mathrm{Fe}^{2+}$, $\\mathrm{Al}$ and $\\mathrm{Br}^{-}$will increase in the order",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Z5THF",
+              "text": "$\\mathrm{Br}^{-} < \\mathrm{Fe}^{2+} < \\mathrm{Al}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "3vKv9",
+              "text": "$\\mathrm{Fe}^{2+} < \\mathrm{Al} < \\mathrm{Br}^{-}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "5r56i",
+              "text": "$\\mathrm{Al} < \\mathrm{Br}^{-} < \\mathrm{Fe}^{2+}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "J5roG",
+              "text": "$\\mathrm{Al} < \\mathrm{Fe}^{2+} < \\mathrm{Br}^{-}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<br />$\\begin{array}{rrrr} & \\text { Fe } & \\text { A1 } & \\text { B } \\\\ E_{\\text {Red }}^{\\circ} & 0.77 & -1.66 & 1.08 \\\\ E_{\\text {Oxi }}^{\\circ} & -0.77 & 1.66 & -1.08\\end{array}$<br />Hence, reducing power $\\mathrm{Al}>\\mathrm{Fe}^{2+}>\\mathrm{Br}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8316f5bfc7ab78aeb6a",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Using the standard electrode potential, find out the pair between which redox reaction is not feasible.\r\n$E^{\\ominus}$ values $\\mathrm{Fe}^{3+} / \\mathrm{Fe}^{2+}=+0.77 ; \\mathrm{I}_2 / \\mathrm{I}^{-}=+054$\r\n$\\mathrm{Cu}^{2+} / \\mathrm{Cu}=+0.34 ; \\mathrm{Ag}^{+} / \\mathrm{Ag}=0.80 \\mathrm{~V}$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "W4XkI",
+              "text": "\r\n$\\mathrm{Fe}^{3+}$ and $\\mathrm{I}^{-}$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "o3G1k",
+              "text": "\r\n$\\mathrm{Ag}^{+}$and $\\mathrm{Cu}$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "20wEM",
+              "text": "\r\n$\\mathrm{Fe}^{3+}$ and $\\mathrm{Cu}$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "EQh5l",
+              "text": "\r\nAg and $\\mathrm{Fe}^{3+}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "(a)<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/ok9PLwHyacfw60Pt-I1fhACQVQEJN7EEy9JanOILEpI.original.fullsize.png\"><br>\r\nThis reaction is feasible, since $E_{\\text {cell }}^{\\circ}$ is positive.\r\n(b)<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/nxJ1g2C_J4IFowzBWqJ3kIIwXxWO4-mowicPksj5AwY.original.fullsize.png\"><br>\r\nThis reaction is feasible, since $E_{\\text {cell }}^{\\circ}$ is positive.\r\n(c)<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/uYAzWqaCsCn9jugCPjGq85iTRaQXj2wyeTS2MRGdGo0.original.fullsize.png\"><br>\r\nThis reaction is feasible, since $E_{\\text {cell }}^{\\circ}$ is positive.\r\n(d)<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/rKlHBm3z2AO5UoILkXmMsxRAlIDwTgutH1XzMA8lvbQ.original.fullsize.png\"><br>\r\nThis reaction is not feasible, since $E_{\\text {cell }}^{\\circ}$ is negative.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8096f5bfc7ab78aea08",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "What time in sec is required for depositing all the silver present in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>125</mn><mo>&#160;</mo><mi>ml</mi></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">M</mi><mo>&#160;</mo><msub><mi>AgNO</mi><mn>3</mn></msub></math> solution by passing a current of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>241</mn><mo>.</mo><mn>25</mn></math>&nbsp;A (Given <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">F</mi><mo>=</mo><mo>&#160;</mo><mn>96500</mn><mo>&#160;</mo><mi mathvariant=\"normal\">C</mi></math>)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "9x8ZK",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>10</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "qSxZ9",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>50</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "GGXW6",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>100</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "z1wgk",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1000</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Given, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>125</mn><mo>&#160;</mo><mi>ml</mi></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">M</mi><mo>&#160;</mo><msub><mi>AgNO</mi><mn>3</mn></msub></math></p><p>which is equal to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>13</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Ag</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo><mo>&#160;</mo><mn>1000</mn><mo>&#160;</mo><mi>ml</mi></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>AgNO</mi><mn>3</mn></msub><mo>=</mo><mn>108</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Ag</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mn>125</mn><mo>&#160;</mo><mi>ml</mi></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>AgNO</mi><mn>3</mn></msub><mo>=</mo><mfrac><mrow><mn>108</mn><mo>&#215;</mo><mn>125</mn></mrow><mn>1000</mn></mfrac><mo>=</mo><mn>13</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math></p><p>Also, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo><mo>&#160;</mo><mn>108</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Ag</mi></math> is deposited by&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>96500</mn><mo>&#160;</mo><mi mathvariant=\"normal\">C</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mn>13</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Ag</mi></math> is deposited by&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mn>96500</mn><mo>&#215;</mo><mn>13</mn><mo>.</mo><mn>5</mn></mrow><mn>108</mn></mfrac><mo>=</mo><mn>12062</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi mathvariant=\"normal\">C</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo><mo>&#160;</mo><mi mathvariant=\"normal\">Q</mi><mo>=</mo><mi>it</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mi mathvariant=\"normal\">t</mi></math>&nbsp;(time) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mi mathvariant=\"normal\">Q</mi><mo>/</mo><mi mathvariant=\"normal\">i</mi><mo>=</mo><mfrac><mrow><mn>12062</mn><mo>.</mo><mn>50</mn></mrow><mrow><mn>241</mn><mo>.</mo><mn>25</mn></mrow></mfrac><mo>,</mo><mo>&#160;</mo><mi mathvariant=\"normal\">t</mi><mo>=</mo><mn>50</mn><mo>&#160;</mo><mi>sec</mi></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8086f5bfc7ab78ae9ff",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">E</mi><mn>1</mn></msub><mo>,</mo><mo>&#160;</mo><msub><mi mathvariant=\"normal\">E</mi><mn>2</mn></msub></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">E</mi><mn>3</mn></msub></math> are the emf of the following three galvanic cells respectively</p>(i) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Zn</mi><mfenced><mi mathvariant=\"normal\">s</mi></mfenced><mfenced open=\"|\" close=\"|\"><mrow><msup><mi>Zn</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mfenced><mrow><mn>0</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">M</mi></mrow></mfenced></mrow></mfenced><mfenced open=\"|\" close=\"|\"><mrow><msup><mi>Cu</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mfenced><mrow><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">M</mi></mrow></mfenced></mrow></mfenced><mi>Cu</mi><mfenced><mi mathvariant=\"normal\">s</mi></mfenced></math><p>(ii) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Zn</mi><mfenced><mi mathvariant=\"normal\">s</mi></mfenced><mfenced close=\"|\" open=\"|\"><mrow><msup><mi>Zn</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mfenced><mrow><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">M</mi></mrow></mfenced></mrow></mfenced><mfenced close=\"|\" open=\"|\"><mrow><msup><mi>Cu</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mfenced><mrow><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">M</mi></mrow></mfenced></mrow></mfenced><mi>Cu</mi><mfenced><mi mathvariant=\"normal\">s</mi></mfenced></math></p><p>(iii) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Zn</mi><mfenced><mi mathvariant=\"normal\">s</mi></mfenced><mfenced open=\"|\" close=\"|\"><mrow><msup><mi>Zn</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mfenced><mrow><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">M</mi></mrow></mfenced></mrow></mfenced><mfenced open=\"|\" close=\"|\"><mrow><msup><mi>Cu</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mfenced><mrow><mn>0</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mi mathvariant=\"normal\">M</mi></mrow></mfenced></mrow></mfenced><mi>Cu</mi><mfenced><mi mathvariant=\"normal\">s</mi></mfenced></math></p><p>Which of the following is true?</p>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "awkil",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">E</mi><mn>2</mn></msub><mo>&#62;</mo><msub><mi mathvariant=\"normal\">E</mi><mn>1</mn></msub><mo>&#62;</mo><msub><mi mathvariant=\"normal\">E</mi><mn>3</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "cphQT",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">E</mi><mn>1</mn></msub><mo>&#62;</mo><msub><mi mathvariant=\"normal\">E</mi><mn>2</mn></msub><mo>&#62;</mo><msub><mi mathvariant=\"normal\">E</mi><mn>3</mn></msub></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "IksyZ",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">E</mi><mn>3</mn></msub><mo>&#62;</mo><msub><mi mathvariant=\"normal\">E</mi><mn>1</mn></msub><mo>&#62;</mo><msub><mi mathvariant=\"normal\">E</mi><mn>2</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ZaFgq",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">E</mi><mn>3</mn></msub><mo>&#62;</mo><msub><mi mathvariant=\"normal\">E</mi><mn>2</mn></msub><mo>&#62;</mo><msub><mi mathvariant=\"normal\">E</mi><mn>1</mn></msub></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Key-idea</p><p>Use Nernst equation, i.e.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">E</mi><mfenced><mi>emf</mi></mfenced><mo>=</mo><mi mathvariant=\"normal\">E</mi><msub><mo>&#176;</mo><mi>cell</mi></msub><mo>-</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>0591</mn></mrow><mn>2</mn></mfrac><mi>log</mi><mfrac><mfenced open=\"[\" close=\"]\"><msup><mi>Zn</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></mfenced><mfenced open=\"[\" close=\"]\"><msup><mi>Cu</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></mfenced></mfrac></math></p><p>For reaction <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi mathvariant=\"normal\">i</mi></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">E</mi><mn>1</mn></msub><mo>=</mo><mi mathvariant=\"normal\">E</mi><msub><mo>&#176;</mo><mfenced><mi>cell</mi></mfenced></msub><mo>-</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>0591</mn></mrow><mn>2</mn></mfrac><mi>log</mi><mfrac><mrow><mn>0</mn><mo>.</mo><mn>1</mn></mrow><mn>1</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">E</mi><mn>1</mn></msub><mo>=</mo><mi mathvariant=\"normal\">E</mi><msub><mo>&#176;</mo><mfenced><mi>cell</mi></mfenced></msub><mo>+</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>0591</mn></mrow><mn>2</mn></mfrac></math></p><p>For reaction <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi>ii</mi></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">E</mi><mn>2</mn></msub><mo>=</mo><mi mathvariant=\"normal\">E</mi><msub><mo>&#176;</mo><mfenced><mi>cell</mi></mfenced></msub><mo>-</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>0591</mn></mrow><mn>2</mn></mfrac><mi>log</mi><mfrac><mn>1</mn><mn>1</mn></mfrac><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">E</mi><mn>2</mn></msub><mo>=</mo><mi mathvariant=\"normal\">E</mi><msub><mo>&#176;</mo><mfenced><mi>cell</mi></mfenced></msub></math></p><p>For reaction <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mi>iii</mi></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">E</mi><mn>3</mn></msub><mo>=</mo><mi mathvariant=\"normal\">E</mi><msub><mo>&#176;</mo><mfenced><mi>cell</mi></mfenced></msub><mo>-</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>0591</mn></mrow><mn>2</mn></mfrac><mi>log</mi><mfrac><mn>1</mn><mrow><mn>0</mn><mo>.</mo><mn>1</mn></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">E</mi><mn>3</mn></msub><mo>=</mo><mi mathvariant=\"normal\">E</mi><msub><mo>&#176;</mo><mfenced><mi>cell</mi></mfenced></msub><mo>-</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>0591</mn></mrow><mn>2</mn></mfrac></math></p><p>Hence, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">E</mi><mn>1</mn></msub><mo>&#62;</mo><msub><mi mathvariant=\"normal\">E</mi><mn>2</mn></msub><mo>&#62;</mo><msub><mi mathvariant=\"normal\">E</mi><mn>3</mn></msub></math>.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7fa6f5bfc7ab78ae982",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "For a reaction, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">A</mi><mo>+</mo><msup><mi mathvariant=\"normal\">B</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&#10230;</mo><mi mathvariant=\"normal\">B</mi><mo>+</mo><msup><mi mathvariant=\"normal\">A</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></math>, at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>25</mn><mn>0</mn></msup><mi mathvariant=\"normal\">C</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">E</mi><mn>0</mn></msup><mo>=</mo><mn>0</mn><mo>.</mo><mn>2955</mn><mi mathvariant=\"normal\">V</mi></math>. The value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">K</mi><mi>eq</mi></msub></math> is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "0wOAr",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>10</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "GAMLG",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>10</mn><mn>10</mn></msup></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "riCDn",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mn>10</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "gNTV6",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>10</mn><mrow><mo>-</mo><mn>10</mn></mrow></msup></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Given that,</p><p>For a reaction,&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">A</mi><mo>+</mo><msup><mi mathvariant=\"normal\">B</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&#10230;</mo><mi mathvariant=\"normal\">B</mi><mo>+</mo><msup><mi mathvariant=\"normal\">A</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>,</mo><mi mathvariant=\"normal\">E</mi><mo>&#176;</mo><mo>=</mo><mn>0</mn><mo>.</mo><mn>2955</mn><mi mathvariant=\"normal\">V</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">T</mi><mo>=</mo><msup><mn>25</mn><mo>&#176;</mo></msup><mi mathvariant=\"normal\">C</mi><mo>,</mo><mo>&#160;</mo><mo>&#8658;</mo><mi mathvariant=\"normal\">T</mi><mo>=</mo><mn>298</mn><mo>&#160;</mo><mi mathvariant=\"normal\">K</mi><mspace linebreak=\"newline\"></mspace><mo>&#160;</mo><mi mathvariant=\"normal\">n</mi><mo>=</mo><mn>2</mn></math></p><p>Using Nernst equation,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">E</mi><mo>&#176;</mo><mo>=</mo><mfrac><mrow><mn>2</mn><mo>.</mo><mn>303</mn><mi>RT</mi></mrow><mi>nF</mi></mfrac><msub><mi>logk</mi><mi>eq</mi></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">E</mi><mo>&#176;</mo><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>0591</mn></mrow><mi mathvariant=\"normal\">n</mi></mfrac><msub><mi>logk</mi><mrow><mi>e</mi><mi>q</mi></mrow></msub><mfenced><mrow><mi>at</mi><mo>&#160;</mo><msup><mn>25</mn><mi mathvariant=\"normal\">o</mi></msup><mi mathvariant=\"normal\">C</mi></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;&#160;</mo><mn>0</mn><mo>.</mo><mn>2955</mn><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>0591</mn></mrow><mn>2</mn></mfrac><mi>log</mi><msub><mi>k</mi><mi>eq</mi></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>k</mi><mi>eq</mi></msub><mo>=</mo><msup><mn>10</mn><mn>10</mn></msup></math></p><p>Therefore, the value of&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">K</mi><mi>eq</mi></msub><mo>&#160;</mo></math>is&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>10</mn><mn>10</mn></msup></math>.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7f96f5bfc7ab78ae978",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>5</mn><mi mathvariant=\"normal\">F</mi></math> of electricity is passed through <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>500</mn><mo>&#160;</mo><mi>mL</mi></math> of copper sulphate solution. The amount of copper which can be deposited will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "eFgFY",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>63</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "juF3v",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>31</mn><mo>.</mo><mn>75</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "lQxET",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>15</mn><mo>.</mo><mn>80</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "0B0eR",
+              "text": "unpredictable",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Cu</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>+</mo><mn>2</mn><msup><mi mathvariant=\"normal\">e</mi><mo>-</mo></msup><mo>&#10230;</mo><mi>Cu</mi></math>&nbsp; &nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#160;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi mathvariant=\"normal\">i</mi></mfenced></math></p><p>According to Faraday&#39;s first law, when an electric current is passed through an electrolyte, amount of substance deposited is directly proportional to the quantity of electric charge passed through the electrolyte.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo><mn>1</mn><mo>&#160;</mo><mi>mol</mi></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>63</mn><mo>.</mo><mn>5</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math> of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Cu</mi></math> is obtained by passing <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi mathvariant=\"normal\">F</mi></math> of electricity.</p><p>Mass of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Cu</mi></math> obtained by passing <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mi mathvariant=\"normal\">F</mi></math> of electricity&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mn>63</mn><mo>.</mo><mn>5</mn></mrow><mn>2</mn></mfrac><mi mathvariant=\"normal\">g</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> Mass of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Cu</mi></math> obtained by passing <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>5</mn><mi mathvariant=\"normal\">F</mi></math> of electricity<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mn>63</mn><mo>.</mo><mn>5</mn></mrow><mn>2</mn></mfrac><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>5</mn><mo>=</mo><mn>15</mn><mo>.</mo><mn>80</mn><mo>&#160;</mo><mi mathvariant=\"normal\">g</mi></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ea6f5bfc7ab78ae8f8",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "<p>How many moles of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Fe</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></math> ions are formed when excess of iron react with <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>500</mn><mo>&#160;</mo><mi>mL</mi><mo>&#160;</mo><mi mathvariant=\"normal\">O</mi><mo>.</mo><mn>4</mn><mo>&#160;</mo><mi mathvariant=\"normal\">N</mi><mo>&#160;</mo><mi>HCl</mi></math>, under inert atmosphere?</p><p>(assume no change in volume)</p>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "dTMw9",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>4</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "TG0D6",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>1</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "gkr9t",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>2</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "219c7",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>8</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo></math> Reaction between <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Fe</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>HCl</mi></math> is as follows</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Fe</mi><mo>+</mo><mn>2</mn><mi>HCl</mi><mo>&#10230;</mo><munder><msub><mi>FeCl</mi><mn>2</mn></msub><mrow><mo>(</mo><mo>+</mo><mn>2</mn><mo>)</mo></mrow></munder><mo>+</mo><msub><mi mathvariant=\"normal\">H</mi><mn>2</mn></msub></math> on reaction</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi></math>(moles of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Fe</mi></math>)&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mi mathvariant=\"normal\">n</mi></math> (moles of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>HCl</mi></math>)</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mo>(</mo><mi>Fe</mi><mo>)</mo><mo>=</mo></math> Normality <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi>HCl</mi><mo>)</mo><mo>&#215;</mo></math> Volume of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>HCl</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">n</mi><mfenced><mi>Fe</mi></mfenced><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>4</mn><mo>&#215;</mo><mn>500</mn></mrow><mn>1000</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>2</mn><mo>&#160;</mo><mi>moles</mi></math></p><p>As each <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Fe</mi></math> consumers <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn></math> electrons to change to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Fe</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></math> ion.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo></math> Number of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Fe</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></math> ions produced <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mn>0</mn><mo>.</mo><mn>2</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>1</mn><mo>&#160;</mo><mi>mole</mi></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ea6f5bfc7ab78ae8f6",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Blocks of magnesium are fixed to the bottom of a ship to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "7BKN4",
+              "text": "block hole in the ship",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "aQnQi",
+              "text": "acidity of sea water",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "8ISBx",
+              "text": "make the ship lighter",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "eL32v",
+              "text": "prevent the action of water and salt",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Block of magnesium prevents the action of water and salt of iron (of ship) by sacrificing itself.</p><p>This is method of protection of ship (i.e. of iron), known as sacrificial protection.&nbsp;</p><p>It&nbsp;prevents corrosive action of water and salt by providing cathodic protection.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7df6f5bfc7ab78ae894",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The equilibrium constant for the disproportionation reaction $2 \\mathrm{Cu}^{+}(\\mathrm{aq}) \\longrightarrow \\mathrm{Cu}(\\mathrm{s})+\\mathrm{Cu}^{2+}(\\mathrm{ag})$ at $25^{\\circ} \\mathrm{C}$\r\n\r\n$\\left(\\mathrm{E}^{\\circ} \\mathrm{Cu}^{+} / \\mathrm{Cu}=0.52 \\mathrm{~V}, \\mathrm{E}^{\\circ} \\mathrm{Cu}^{2+} / \\mathrm{Cu}=0.16 \\mathrm{~V}\\right)$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "wtKCp",
+              "text": "$6 \\times 10^{4}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "S36pN",
+              "text": "$6 \\times 10^{6}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "I0Lzq",
+              "text": "$1.2 \\times 10^{6}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Dbzlq",
+              "text": "$1.2 \\times 10^{-6}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The reaction\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n2 \\mathrm{Cu}^{+}(\\mathrm{aq}) \\longrightarrow \\mathrm{Cu}(\\mathrm{s})+\\mathrm{Cu}^{2+}(\\mathrm{aq}) \\\\\r\n\r\n\\mathrm{E}_{\\mathrm{cell}}=\\mathrm{E}_{\\mathrm{cell}}^{\\circ}-\\frac{0.0592}{1} \\log \\frac{\\left[\\mathrm{Cu}^{2+}\\right]}{\\left[\\mathrm{Cu}^{+}\\right]^{2}}\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nAt equilibrium $\\mathrm{E}_{\\mathrm{cell}}=0$\r\n\r\n$$\r\n\r\n\\therefore \\quad \\mathrm{E}_{\\text {cell }}^{\\circ}=0.0592 \\log \\mathrm{K}_{\\mathrm{c}}\r\n\r\n$$\r\n\r\nor, $\\quad \\log \\mathrm{K}_{\\mathrm{c}}=\\frac{0.52-0.16}{0.0592}$\r\n\r\n$\\therefore \\mathrm{K}_{\\mathrm{c}}=1.2 \\times 10^{6}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7df6f5bfc7ab78ae893",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Electrolysis is carried out in three cells\r\n\r\n(A) $1.0 \\mathrm{M} \\mathrm{OuSO}_{4}$ Pt electrode\r\n\r\n(B) $1.0 \\mathrm{M} \\mathrm{CuSO}_{4}$ copper electrodes\r\n\r\n(C) $1.0 \\mathrm{M} \\mathrm{KCl}$ Pt electrodes If volume of electrolytic solution is maintained constant in each of the cell, which is correct set of pH changes in $(\\mathrm{A}),(\\mathrm{B})$ and $(\\mathrm{C})$ cell respectively?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "0fvm1",
+              "text": "decrease in all the three",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Enw4P",
+              "text": "increase in all the three",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "4KnRY",
+              "text": "decrease, constant, increase",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "XhQ6p",
+              "text": "increase, constant, increase",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7df6f5bfc7ab78ae892",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7a",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "BITSAT 2016"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The EMF of the cell $\\mathrm{Tl} / \\mathrm{Tl}^{+}(0.001 \\mathrm{M}) \\| \\mathrm{Cu}^{2+}$\r\n\r\n$(0.01 \\mathrm{M}) / \\mathrm{Cu}$ is $0.83 .$ The cell EMF can be increased by",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "t7yRM",
+              "text": "Increasing the concentration of $\\mathrm{Tl}^{+}$ ions.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "PTjfj",
+              "text": "Increasing the concentration of $\\mathrm{Cu}^{2+}$ ions.",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "8hVms",
+              "text": "Increasing the concentration of $\\mathrm{Tl}^{+}$ and $\\mathrm{Cu}^{2+}$ ions.",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "QRRrf",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The oxidation potential\r\n\r\n$\\propto \\frac{1}{\\text { Concentration of ions }}$ and reduction\r\n\r\npotential $\\propto$ concentration of ions. The cell voltage can be increased by decreasing the concentration of ions around anode or by increasing the concentration of ions around cathode",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7a",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "BITSAT 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ce6f5bfc7ab78ae80b",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The mass of the substance deposited when one Faraday of charge is passed through its solution is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "LxCQY",
+              "text": "relative equivalent weight",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "RVKVk",
+              "text": "gram equivalent weight",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "l2C9p",
+              "text": "specific equivalent weight",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "4yG7d",
+              "text": "None of the above",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The mass of the substance deposited when one Faraday of charge is passed through its solution is equal to gram equivalent weight.",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7ce6f5bfc7ab78ae80a",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "The efficiency of fuel cell is given by the expression, $\\eta$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Z6MPJ",
+              "text": "$\\eta=-\\frac{\\mathrm{nFE}_{\\text {cell }}}{\\Delta \\mathrm{H}} \\times 100$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "eDSis",
+              "text": "$\\eta=-\\frac{\\mathrm{nFE}_{\\text {cell }}}{\\Delta \\mathrm{S}} \\times 100$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "d9kJY",
+              "text": "$\\eta=-\\frac{\\mathrm{nFE}_{\\text {cell }}}{\\Delta \\mathrm{A}} \\times 100$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "h9i9I",
+              "text": "None of the above",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Efficiency of fuel cell is:\r\n\r\n$\\eta=\\frac{-n F E_{\\text {cell }}}{\\Delta H} \\times 100$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7bf6f5bfc7ab78ae789",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "$\\mathrm{Cu}_{\\mathrm{aq}}^{+}$ is unstable in solution and undergoes simultaneous oxidation and reduction according to the reaction :\r\n\r\n$2 \\mathrm{Cu}^{+}(\\mathrm{aq}) \\rightleftharpoons \\mathrm{Cu}^{2+}(\\mathrm{aq})+\\mathrm{Cu}(\\mathrm{s})$\r\n\r\nchoose correct $\\mathrm{E}^{\\circ}$ for above reaction if\r\n\r\n$\\mathrm{E}^{\\circ} \\mathrm{Cu}^{2+}=0.34 \\mathrm{~V}$ and $\\mathrm{E}^{\\circ} \\mathrm{Cu}^{2+}=0.15 \\mathrm{~V}$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "1LWMY",
+              "text": "$-0.38 \\mathrm{~V}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "T6wyY",
+              "text": "$+0.49 \\mathrm{~V}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "BO70l",
+              "text": "$+0.38 \\mathrm{~V}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "ilbvR",
+              "text": "$-0.19 \\mathrm{~V}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$2 \\mathrm{Cu}^{+} \\longrightarrow \\mathrm{Cu}^{+2}+\\mathrm{Cu}$\r\n\r\n$2 \\mathrm{e}^{-}+\\mathrm{Cu}^{+2} \\longrightarrow \\mathrm{Cu} ; \\mathrm{E}_{1}^{\\circ}=0.34 \\mathrm{~V} ; \\ldots$ (i)\r\n\r\n$\\mathrm{e}^{-}+\\mathrm{Cu}^{+2} \\longrightarrow \\mathrm{Cu}^{+} ; \\mathrm{E}_{2}^{\\circ}=0.15 \\mathrm{~V} ; \\ldots$ (ii)\r\n\r\n$\\mathrm{Cu}^{+}+\\mathrm{e}^{-} \\rightarrow \\mathrm{Cu} ; \\mathrm{E}_{3}^{\\circ}=?$ ...(iii)\r\n\r\nNow, $\\Delta \\mathrm{G}_{1}^{\\circ}=-\\mathrm{nFE}_{1}^{\\circ}=-2 \\times 0.34 \\mathrm{~F}$\r\n\r\n$\\Delta \\mathrm{G}_{2}^{\\circ}=-1 \\times 0.15 \\mathrm{~F}, \\Delta \\mathrm{G}_{3}^{\\circ}=-1 \\times \\mathrm{E}_{3}^{\\circ} \\mathrm{F}$\r\n\r\nAgain, $\\Delta \\mathrm{G}_{1}^{\\circ}=\\Delta \\mathrm{G}_{2}^{\\circ}+\\Delta \\mathrm{G}_{3}^{\\circ}$\r\n\r\n$\\Rightarrow-0.68 \\mathrm{~F}=-0.15 \\mathrm{~F}-\\mathrm{E}_{3} \\mathrm{~F}$\r\n\r\n$0 \\Rightarrow \\mathrm{E}_{3}^{\\circ}=0.68-0.15=0.53 \\mathrm{~V}$\r\n\r\n$\\mathrm{E}_{\\text {cell }}^{\\circ}=\\mathrm{E}_{\\text {cathode }}^{\\circ}\\left(\\mathrm{Cu}^{+} / \\mathrm{Cu}\\right)$\r\n\r\n$=0.53-0.15=0.38 \\mathrm{~V}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7bf6f5bfc7ab78ae788",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "In the cell reaction\r\n\r\n$\\mathrm{Cu}(\\mathrm{s})+2 \\mathrm{Ag}^{+}(\\mathrm{aq}) \\longrightarrow \\mathrm{Cu}^{2+}(\\mathrm{aq})+2 \\mathrm{Ag}(\\mathrm{s})$\r\n\r\n$\\mathrm{E}_{\\text {cell }}^{0}=0.46 \\mathrm{~V}$. By doubling the concentration of $\\mathrm{Cu}^{2+}, \\mathrm{E}_{\\text {cell }}^{0}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "HAP49",
+              "text": "doubled",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "wDq3T",
+              "text": "halved",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "kT7Rs",
+              "text": "increases but less than double",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "t4vA0",
+              "text": "decreases by a small fraction",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b26f5bfc7ab78ae710",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The electrolytic cells, one containing acidified ferrous chloride and another acidified ferric chloride are connected in series. The ratio of iron deposited at cathodes in the two cells when electricity is passed through the cells will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "kPbz9",
+              "text": "3: 1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "fZtSo",
+              "text": "2: 1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "b3ZGb",
+              "text": "1: 1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ZhsYm",
+              "text": "3: 2",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "At cathodes: $\\mathrm{Fe}^{+}+2 \\mathrm{e}^{-} \\longrightarrow \\mathrm{Fe} ;$\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\mathrm{Fe}^{3+}+3 \\mathrm{e}^{-} \\longrightarrow \\mathrm{Fe} \\\\\r\n\r\n\\left(\\mathrm{E}_{\\mathrm{Fe}}\\right)_{1}=\\frac{\\text { At. wt. }}{2} ;\\left(\\mathrm{E}_{\\mathrm{Fe}}\\right)_{2}=\\frac{\\text { At. wt. }}{3}\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nHence, $\\frac{\\left(\\mathrm{E}_{\\mathrm{Fe}}\\right)_{1}}{\\left(\\mathrm{E}_{\\mathrm{Fe}}\\right)_{2}}=\\frac{3}{2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b26f5bfc7ab78ae70f",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "A current of 2.0 A passed for 5 hours through a molten metal salt deposits $22.2 \\mathrm{~g}$ of metal (At wt. $=177$ ). The oxidation state of the metal in the metal salt is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "sC3lk",
+              "text": "1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ev4en",
+              "text": "2",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "a8Hgs",
+              "text": "3",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "7xUAi",
+              "text": "4",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{m}=\\frac{\\mathrm{E} \\cdot \\mathrm{wt} \\times \\mathrm{Q}}{96500}$\r\n\r\n$\\begin{aligned} \\therefore \\mathrm{E} . \\mathrm{wt} &=\\frac{\\mathrm{m} \\times 96500}{\\mathrm{Q}} \\\\=\\frac{22.2 \\times 96500}{2 \\times 5 \\times 60 \\times 60}=60.3 \\end{aligned}$\r\n\r\nOxidation state $=\\frac{\\text { At wt. }}{\\text { Eq. wt. }}=\\frac{177}{60.3}=3$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7936f5bfc7ab78ae612",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "The number of coulombs required for the deposition of $108 \\mathrm{~g}$ of silver is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "LWW4r",
+              "text": "96500",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "AvGMy",
+              "text": "48250",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "54xch",
+              "text": "193000",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "UkXSe",
+              "text": "10000",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Amt. deposited $=\\frac{\\text { E. wt } \\times \\text { Q }}{96500}$;\n$$\n107.870=\\frac{107.870}{96500} \\times \\mathrm{Q} ; \\quad \\therefore \\mathrm{Q}=96500 \\mathrm{C}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7786f5bfc7ab78ae51b",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "In a cell that utilises the reaction\n$\\mathrm{Zn}(\\mathrm{s})+2 \\mathrm{H}^{+}(\\mathrm{aq}) \\rightarrow \\mathrm{Zn}^{2+}(\\mathrm{aq})+\\mathrm{H}_{2}(\\mathrm{~g})$\naddition of $\\mathrm{H}_{2} \\mathrm{SO}_{4}$ to cathode compartment, will",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "PqiLt",
+              "text": "increase the $\\mathrm{E}$ and shift equilibrium to the right.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "GYQNL",
+              "text": "lower the $E$ and shift equilibrium to the right.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ckI6w",
+              "text": "lower the $E$ and shift equlibrium to the left.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qWsAa",
+              "text": "increase the $E$ and shift equilibrium to the left.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\mathrm{Zn}(\\mathrm{s})+2 \\mathrm{H}^{+}+(\\mathrm{aq}) \\rightleftharpoons$\n$$\n\\mathrm{Zn}^{2+}(\\mathrm{aq})+\\mathrm{H}_{2}(\\mathrm{~g})\n$$\n$$\n\\mathrm{E}_{\\mathrm{cell}}=\\mathrm{E}^{\\circ} \\mathrm{cell}-\\frac{0.059}{2} \\log \\frac{\\left[\\mathrm{Zn}^{2+}\\right]\\left[\\mathrm{H}_{2}\\right]}{\\left[\\mathrm{H}^{+}\\right]^{2}}\n$$\nAddition of $\\mathrm{H}_{2} \\mathrm{SO}_{4}$ will increase $\\left[\\mathrm{H}^{+}\\right]$ and $\\mathrm{E}_{\\text {cell }}$ will also increase and the equilibrium will shift towards RHS.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e8616f5bfc7ab78aed87",
+      "title": "Concentration cell",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "64c0e7786f5bfc7ab78ae519",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "When the sample of copper with zinc impurity is to be purified by electrolysis, the appropriate electrodes are\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/4GyCFcJebA3DzfjQuoykkTTgsoLDUNfK5tgDrPvxLrQ.original.fullsize.png\">",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "M22CJ",
+              "text": "(a)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZxO8q",
+              "text": "(b)",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "nI8II",
+              "text": "(c)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "uOrSw",
+              "text": "(d)",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In electrolytic purification cathode is of pure metal and anode is of impure metal. At anode: $\\mathrm{M} \\rightarrow \\mathrm{M}^{\\mathrm{n}+}+\\mathrm{n} \\overline{\\mathrm{e}}$\nAt cathode: $\\mathrm{M}^{\\mathrm{n}+}+\\mathrm{n} \\overline{\\mathrm{e}} \\rightarrow \\mathrm{M}$.\nThe pure metal is thus deposited at cathode.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "64c0e8626f5bfc7ab78aed88",
+      "title": "Conductance and Conductivity",
+      "totalQuestions": 5,
+      "questions": [
+        {
+          "_id": "65b7b87d97ae24e9e2db8cd9",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Which of the following solutions of $\\mathrm{KCl}$ will have the highest value of specific conductance?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "qnCXp",
+              "text": "$1.0 \\mathrm{~N}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Kh0ZF",
+              "text": "$0.1 \\mathrm{~N}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "gbrM0",
+              "text": "$1.0 \\times 10^{-2} \\mathrm{~N}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "HfD6x",
+              "text": "$1.0 \\times 10^{-3} \\mathrm{~N}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The specific conductance increases with concentration. The number of ions per $\\mathrm{cm}^3$ increase with increase of concentration.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87397ae24e9e2db8c75",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "The conductivity of a weak acid HA of concentration $0.001 \\mathrm{~mol} \\mathrm{~L}^{-1}$ is $2.0 \\times 10^{-5} \\mathrm{~S} \\mathrm{~cm}^{-1}$.<br />If $\\Lambda_{\\mathrm{m}}^{\\circ}(\\mathrm{HA})=190 \\mathrm{~S} \\mathrm{~cm}^2 \\mathrm{~mol}^{-1}$, the ionization constant $\\left(\\mathrm{K}_{\\mathrm{a}}\\right)$ of $\\mathrm{HA}$ is equal to _______ x $10^{-6}$.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "G2TH6",
+              "text": "24",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "RelSu",
+              "text": "48",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "o8jRF",
+              "text": "12",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "nUpZS",
+              "text": "45",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\Lambda_{\\mathrm{m}}=1000 \\times \\frac{\\mathrm{K}}{\\mathrm{M}}$<br />$=1000 \\times \\frac{2 \\times 10^{-5}}{0.001}=20 \\mathrm{~S} \\mathrm{~cm}^2 \\mathrm{~mol}^{-1}$<br />$\\Rightarrow \\alpha=\\frac{\\Lambda_{\\mathrm{m}}}{\\Lambda_{\\mathrm{m}}^{\\circ}}=\\frac{20}{190}=\\left(\\frac{2}{19}\\right)$<br />$\\underset{0.001(1-\\alpha)}{\\mathrm{HA}} \\rightleftharpoons \\underset{0.001 \\alpha}{\\mathrm{H}^{+}}+\\underset{0.001 \\alpha}{\\mathrm{A}^{-}}$<br />$K_{\\mathrm{a}}=0.001\\left(\\frac{\\alpha^2}{1-\\alpha}\\right)=\\frac{0.001 \\times\\left(\\frac{2}{19}\\right)^2}{1-\\left(\\frac{2}{19}\\right)}$<br />$=12.3 \\times 10^{-6}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8266f5bfc7ab78aeb08",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "At $25^{\\circ} \\mathrm{C}$, the molar conductance at infinite dilution for the strong electrolytes $\\mathrm{NaOH}, \\mathrm{NaCl}$ and $\\mathrm{BaCl}_{2}$ are $248 \\times 10^{-4}, 126 \\times 10^{-4}$ and $280 \\times 10^{-4} \\mathrm{Sm}^{2} \\mathrm{~mol}^{-1}$ respectively. $\\Delta_{\\mathrm{m}}{ }^{0} \\mathrm{Ba}(\\mathrm{OH})_{2}$ in $\\mathrm{Sm}^{2} \\mathrm{~mol}^{-1}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "mDtwf",
+              "text": "$52.4 \\times 10^{-4}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "9ZthG",
+              "text": "$524 \\times 10^{-4}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "tnXJ3",
+              "text": "$402 \\times 10^{-4}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "fEwei",
+              "text": "$262 \\times 10^{-4}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\Delta_{\\mathrm{Na}^{+}}^{\\circ}+\\Delta_{\\mathrm{OH}^{-}}^{\\circ}=248 \\times 10^{-4} \\mathrm{Sm}^{2} \\mathrm{~mol}^{-1}$ $\\Delta_{\\mathrm{Na}^{+}}^{\\circ}+\\Delta_{\\mathrm{Cl}^{-}}^{\\circ}=126 \\times 10^{-4} \\mathrm{Sm}^{2} \\mathrm{~mol}^{-1}$ $\\Delta_{\\mathrm{Ba}}^{\\circ}{ }^{2+}+\\Delta{ }_{2 \\mathrm{Cl}^{-}}^{\\circ}=280 \\times 10^{-4} \\mathrm{Sm}^{2} \\mathrm{~mol}^{-1}$ $\\mathrm{NoW}$, $\\Delta_{\\mathrm{Ba}(\\mathrm{OH})_{2}}^{\\circ}=\\Delta_{\\mathrm{BaCl}_{2}}^{\\circ}+2 \\Delta{ }^{\\circ}{ }_{\\mathrm{NaOH}}^{\\circ}-2 \\Delta{ }_{\\mathrm{NaC} 1}^{\\circ}$ $\\Delta{ }_{\\mathrm{Ba}(\\mathrm{OH})_{2}}^{\\circ}=280 \\times 10^{-4}+2 \\times 248 \\times 10^{-4}-2 \\times 126 \\times 10^{-4}$ $\\Delta_{\\mathrm{Ba}(\\mathrm{OH})_{2}}^{\\circ}=524 \\times 10^{-4} \\mathrm{Sm}^{2} \\mathrm{~mol}^{-1}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a26f5bfc7ab78ae691",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "The ionic conductance of $\\mathrm{Ba}^{2+}$ and $\\mathrm{Cl}^{-}$ respectively are 127 and $76 \\Omega^{-1} \\mathrm{~cm}^{2}$ at infinite dilution. The equivalent conductance of $\\mathrm{BaCl}_{2}$, at infinite dilution will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "MjkpZ",
+              "text": "$330 \\Omega^{-1} \\mathrm{~cm}^{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "UJHg2",
+              "text": "$203 \\Omega^{-1} \\mathrm{~cm}^{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "4M6rK",
+              "text": "$139 \\Omega^{-1} \\mathrm{~cm}^{2}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "2weWo",
+              "text": "$51 \\Omega^{-1} \\mathrm{~cm}^{2}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\begin{aligned} & \\lambda_{\\mathrm{m}}^{\\circ} \\text { for } \\mathrm{BaCl}_{2}=\\lambda_{\\mathrm{m}}^{\\circ} \\mathrm{Ba}^{2+}+\\lambda_{\\mathrm{m}}^{\\circ} \\mathrm{Cl}^{-} \\\\ &=\\frac{1}{2} \\times 127+76=139.5 \\Omega^{-1} \\mathrm{~cm}^{2} \\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7786f5bfc7ab78ae51a",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0cc821b6514e527d73",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2009-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2009",
+              "title": "BITSAT 2009"
+            }
+          ],
+          "question": {
+            "text": "The conductivity of a saturated solution of $\\mathrm{BaSO}_{4}$ is $3.06 \\times 10^{-6} \\mathrm{ohm}^{-1} \\mathrm{~cm}^{-1}$ and its equivalent conductance is $1.53 \\mathrm{ohm}^{-1} \\mathrm{~cm}^{2}$ equiv $^{-1}$. The $\\mathrm{K}_{\\mathrm{sp}}$ for $\\mathrm{BaSO}_{4}$ will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "WQdlH",
+              "text": "$4 \\times 10^{-12}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lDHXc",
+              "text": "$2.5 \\times 10^{-9}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "TrBvH",
+              "text": "$2.5 \\times 10^{-13}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Jjvos",
+              "text": "$4 \\times 10^{-6}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Solublity $=\\frac{\\text { conductivity } \\times 1000}{\\Lambda_{\\text {eq }}}$\n$$\n\\begin{array}{l}\n=\\frac{3.06 \\times 10^{-6} \\times 1000}{1.53}=2 \\times 10^{-3} \\\\\nK_{\\text {sp }}=\\mathrm{S}^{2}=4 \\times 10^{-6}\n\\end{array}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0cc821b6514e527d73",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2009-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2009",
+            "title": "BITSAT 2009"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "topicId": "67726dafc49e8ef28ee2b4b6",
+      "title": "Commercial Cells and Batteries",
+      "totalQuestions": 2,
+      "questions": [
+        {
+          "_id": "67726d16c49e8ef28ee2b422",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "Calculate the molarity of a solution containing 5 g of NaOH dissolved in the product of $\\mathrm{H}_2-\\mathrm{O}_2$ fuel cell operated at 1 A current for 595.1 hours. (Assume $\\mathrm{F}=96500 \\mathrm{C} / \\mathrm{mol}$ of electron and molecular weight of NaOH as $\\left.40 \\mathrm{~g} \\mathrm{~mol}^{-1}\\right)$.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Yb1aQ",
+              "text": "0.625 M",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "jvsGA",
+              "text": "0.05 M",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Dfgsd",
+              "text": "0.1 M",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Ze2Rg",
+              "text": "6.25 M",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The overall reaction of $\\mathrm{H}_2-\\mathrm{O}_2$ fuel is,\n$2 \\mathrm{H}_2+\\mathrm{O}_2 \\longrightarrow 2 \\mathrm{H}_2 \\mathrm{O}$\nThus $4 \\mathrm{~F}=4 \\times 96500 \\mathrm{C}$ produce water $=2 \\mathrm{~mol}=36 \\mathrm{~g}$\n$\\begin{aligned}\n\\text { Charge actually passed } & =i \\times t \\\\\n& =1 \\times 595.1 \\times 60 \\times 60 \\\\\n& =2142360 \\mathrm{C}\n\\end{aligned}$\n$\\begin{aligned}\n& \\therefore \\text { Water produced }=\\frac{36}{4 \\times 96500} \\times 2142360 \\\\\n& \\cong 200 \\mathrm{~g} \\text { or } 200 \\mathrm{~mL} \\\\\n& \\therefore \\text { Molarity of } \\mathrm{NaOH} \\text { solution }=\\frac{5}{40} \\times \\frac{1}{200} \\times 1000 \\\\\n& =0.625 \\mathrm{M}\n\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726d15c49e8ef28ee2b420",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "The pH of 0.5 L of 1.0 M NaCl solution after electrolysis for 965 s using 5.0 A current is,",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "St17Y",
+              "text": "1.0",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "d0ocs",
+              "text": "12.7",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Ppfeo",
+              "text": "1.30",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iPkhQ",
+              "text": "13.0",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The reaction involved is,\n$\\mathrm{NaCl}+\\mathrm{H}_2 \\mathrm{O} \\xrightarrow{\\text { Electrolysis }} \\frac{1}{2} \\mathrm{H}_2+\\mathrm{Cl}_2+\\mathrm{NaOH}$\nAmount of NaCl present in 0.5 L of $1.0 \\mathrm{M}, \\mathrm{NaCl}=0.5$ mol\nQuantity of electricity passed $=965 \\times 5$ coulombs.\n$\\therefore 4825$ coulombs will decompose NaCl .\n$\\begin{aligned}\n& =\\frac{4825}{96500} \\mathrm{~mol} \\\\\n& =0.05 \\mathrm{~mol}\n\\end{aligned}$\nNaOH formed in the solution will also be 0.05 mol .\nVolume of solution $=0.5 \\mathrm{~L}$\n$\\therefore$ Molarity of NaOH in the solution\n$\\begin{aligned}\n& =\\frac{0.05 \\mathrm{moles}}{0.5 \\mathrm{~L}}=0.1 \\mathrm{M} \\\\\n& =10^{-1} \\mathrm{M}\n\\end{aligned}$\n$\\begin{array}{rlrl} & \\therefore & \\mathrm{pOH} & =1 \\\\ \\text { or } & \\mathrm{pH} & =14-1=13\\end{array}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

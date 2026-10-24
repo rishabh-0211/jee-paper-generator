@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Dual Nature of Matter PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚡ BITSAT &bull; Dual Nature of Matter</h1>
+        <div class="sub">Physics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 27, "chapterId": "61e7bd715989815c7f6db62f", "chapter": "Dual Nature of Matter", "exam": "BITSAT", "subject": "Physics", "totalTopics": 2, "totalQuestions": 29, "downloadTime": "2026-10-08 20:28:16", "topics": [{"index": 1, "topicId": "64c0e85b6f5bfc7ab78aed43", "title": "Matter Waves", "totalQuestions": 7, "questions": [{"_id": "65b7b87b97ae24e9e2db8cc7", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "A proton and an $\\alpha$-particle are accelerated from rest by $2 \\mathrm{~V}$ and $4 \\mathrm{~V}$ potentials, respectively. The ratio of their de-Broglie wavelength is:", "image": null}, "options": [{"id": "FD8wB", "text": "<br />4 : 1", "image": null, "isCorrect": true}, {"id": "RxBB8", "text": "<br />2 : 1", "image": null, "isCorrect": false}, {"id": "oCon1", "text": "<br />8 : 1", "image": null, "isCorrect": false}, {"id": "G7roX", "text": "<br />16 : 1", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "De-Broglie wavelength,<br />$\\begin{aligned}<br />& \\lambda=\\frac{\\mathrm{h}}{\\mathrm{mv}}=\\frac{\\mathrm{h}}{\\sqrt{2 \\mathrm{mK}}}=\\frac{\\mathrm{h}}{\\sqrt{2 \\mathrm{mq} \\Delta \\mathrm{V}}} \\\\<br />& \\therefore \\frac{\\lambda_\\alpha}{\\lambda_{\\mathrm{p}}}=\\sqrt{\\frac{2 \\mathrm{~m}_{\\mathrm{p}} \\mathrm{V}_{\\mathrm{p}} \\mathrm{q}_{\\mathrm{p}}}{2 \\mathrm{~m}_\\alpha \\mathrm{V}_\\alpha \\mathrm{q}_\\alpha}} \\\\<br />& \\because \\mathrm{V}_{\\mathrm{p}}=2 \\mathrm{~V} \\text { and } \\mathrm{V}_\\alpha=4 \\mathrm{~V} \\text { (given) } \\\\<br />& \\mathrm{m}_\\alpha=4 \\mathrm{~m}_{\\mathrm{p}} \\text { and } \\mathrm{q}_\\alpha=2 \\mathrm{q}_{\\mathrm{p}}<br />\\end{aligned}$<br />$\\therefore \\frac{\\lambda_\\alpha}{\\lambda_p}=\\sqrt{\\frac{1 \\times 2 \\times 1}{4 \\times 4 \\times 2}}=\\frac{1}{4} \\Rightarrow \\lambda_p: \\lambda_\\alpha=4: 1$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87097ae24e9e2db8c5a", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "Proton (p) and electron (e) will have same deBroglie wavelength when the ratio of their momentum is (assume, $m_p=1849 \\mathrm{~m}_{\\mathrm{e}}$ )", "image": null}, "options": [{"id": "KTZre", "text": "$1: 43$", "image": null, "isCorrect": false}, {"id": "DA6j3", "text": "$43: 1$", "image": null, "isCorrect": false}, {"id": "6vsKW", "text": "$1: 1849$", "image": null, "isCorrect": false}, {"id": "FZSva", "text": "$1: 1$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "De Broglie wavelength is $\\lambda=\\frac{\\mathrm{h}}{\\mathrm{mv}}$<br />$\\lambda_{\\mathrm{p}}=\\lambda_{\\mathrm{e}} \\Rightarrow \\frac{\\mathrm{h}}{\\mathrm{m}_{\\mathrm{p}} \\mathrm{v}_{\\mathrm{p}}}=\\frac{\\mathrm{h}}{\\mathrm{m}_{\\mathrm{e}} \\mathrm{v}_{\\mathrm{e}}}$<br />$\\mathrm{m}_{\\mathrm{e}} \\mathrm{v}_{\\mathrm{e}}=\\mathrm{m}_{\\mathrm{p}} \\mathrm{v}_{\\mathrm{p}} \\Rightarrow \\mathrm{p}_{\\mathrm{e}}=\\mathrm{p}_{\\mathrm{p}}$<br />$\\therefore \\frac{\\mathrm{p}_{\\mathrm{p}}}{\\mathrm{p}_{\\mathrm{e}}}=\\frac{1}{1}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8216f5bfc7ab78aeada", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 1, "question": {"text": "Electrons are accelerated through a potential difference $\\mathrm{V}$ and protons are accelerated through a potential difference $4 \\mathrm{~V}$. The de - Broglie wavelengths are $\\lambda_{e}$ and $\\lambda_{p}$ for electrons and protons respectively. The ratio of $\\frac{\\lambda_{e}}{\\lambda_{p}}$ is given by: (given $m_{e}$ is mass of electron and $m_{p}$ is mass of proton).", "image": null}, "options": [{"id": "ef0Dh", "text": "$\\sqrt{\\frac{m_{p}}{m_{e}}}$", "isCorrect": false, "image": null}, {"id": "FK8fv", "text": "$\\sqrt{\\frac{m_{e}}{m_{p}}}$", "isCorrect": false, "image": null}, {"id": "E9nxD", "text": "$\\frac{1}{2} \\sqrt{\\frac{m_{e}}{m_{p}}}$", "isCorrect": false, "image": null}, {"id": "fwiue", "text": "$2 \\sqrt{\\frac{m_{p}}{m_{e}}}$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Energy $=$ charge $\\times$ potential diff.\r\n\r\n$\\mathrm{E}_{\\text {electron }}=\\mathrm{q}_{\\mathrm{e}} \\mathrm{V}$ and $\\mathrm{E}_{\\text {proton }}=\\mathrm{q}_{\\mathrm{p}} 4 \\mathrm{~V}$\r\n\r\nde $-$ Broglie wavelength $\\lambda=\\frac{\\mathrm{h}}{\\mathrm{P}}=\\frac{\\mathrm{h}}{\\sqrt{2 \\mathrm{mE}}}$\r\n\r\n$\\lambda_{e}=\\frac{h}{\\sqrt{2 m_{e} \\mathrm{eV}}}$ and $\\lambda_{\\mathrm{P}}=\\frac{h}{\\sqrt{2 m_{\\mathrm{p}} e 4 \\mathrm{~V}}} \\because\\left(q_{e}=q_{p}\\right)$\r\n\r\n$\\therefore \\frac{\\lambda_{e}}{\\lambda_{\\mathrm{P}}}=\\frac{\\frac{h}{\\sqrt{2 m_{e} \\mathrm{eV}}}}{\\frac{h}{\\sqrt{2 m_{\\mathrm{p}} e 4 \\mathrm{~V}}}}=2 \\sqrt{\\frac{m_{\\mathrm{P}}}{m_{e}}}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8036f5bfc7ab78ae9d1", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 2, "question": {"text": "A particle <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>X</mi></math> of mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi></math>&nbsp;and initial velocity <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math> collides with another particle <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Y</mi></math> of mass <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>3</mn><mi>m</mi></mrow><mn>4</mn></mfrac></math>, which is at rest. The collision is head-on and perfectly elastic. The ratio of de-Broglie wavelengths <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#955;</mi><mi>Y</mi></msub></math>&nbsp;and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#955;</mi><mi>X</mi></msub></math> after the collision is,", "image": null}, "options": [{"id": "LpBVK", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><mo>:</mo><mn>3</mn></math>", "isCorrect": false, "image": null}, {"id": "Ge0EV", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>:</mo><mn>32</mn></math>", "isCorrect": false, "image": null}, {"id": "7MWSe", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>:</mo><mn>4</mn></math>", "isCorrect": false, "image": null}, {"id": "zZ5k0", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>:</mo><mn>6</mn></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>For perfectly elastic collision,</p><p>total momentum before collision <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo></math> total momentum after collision</p><p>i.e. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi><mi>u</mi><mo>+</mo><mfrac><mrow><mn>3</mn><mi>m</mi></mrow><mn>4</mn></mfrac><mo>&#215;</mo><mn>0</mn><mo>=</mo><mi>m</mi><msub><mi>v</mi><mi>x</mi></msub><mo>+</mo><mfrac><mrow><mn>3</mn><mi>m</mi></mrow><mn>4</mn></mfrac><msub><mi>v</mi><mi>y</mi></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mn>4</mn><mi>u</mi><mo>=</mo><mn>4</mn><msub><mi>v</mi><mi>x</mi></msub><mo>+</mo><mn>3</mn><msub><mi>v</mi><mi>y</mi></msub><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi mathvariant=\"normal\">i</mi></mfenced></math></p><p>Coefficient of restitution,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>e</mi><mo>=</mo><mfrac><mrow><mtext>Velocity&#160;of&#160;separation&#160;after&#160;collision</mtext><mo>&#160;</mo></mrow><mrow><mtext>Velocity&#160;of&#160;approach&#160;before&#160;collision</mtext><mo>&#160;</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>&#160;</mi><mfenced><mrow><msub><mi>v</mi><mi>y</mi></msub><mo>-</mo><msub><mi>v</mi><mi>x</mi></msub></mrow></mfenced></mrow><mfenced><mrow><msub><mi>u</mi><mi>x</mi></msub><mo>-</mo><msub><mi>u</mi><mi>y</mi></msub></mrow></mfenced></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mn>1</mn><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mi>y</mi></msub><mo>-</mo><msub><mi>v</mi><mi>x</mi></msub></mrow><mrow><mi>u</mi><mo>-</mo><mn>0</mn></mrow></mfrac></math>&nbsp; &nbsp;[<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8757;</mo><mo>&#160;</mo><msub><mi>u</mi><mi>x</mi></msub><mo>=</mo><mi>u</mi></math>&nbsp;and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>u</mi><mi>y</mi></msub><mo>=</mo><mn>0</mn></math>]</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi><mo>=</mo><msub><mi>v</mi><mi>y</mi></msub><mo>-</mo><msub><mi>v</mi><mi>x</mi></msub><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi>ii</mi></mfenced></math></p><p>From equation (i) and (ii), we get</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>v</mi><mi>x</mi></msub><mo>=</mo><mfrac><mi>u</mi><mn>7</mn></mfrac></math>&nbsp;and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>v</mi><mi>y</mi></msub><mo>=</mo><mfrac><mrow><mn>8</mn><mi>u</mi></mrow><mn>7</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mfrac><msub><mi>&#955;</mi><mi>y</mi></msub><msub><mi>&#955;</mi><mi>x</mi></msub></mfrac><mo>=</mo><mfrac><mstyle displaystyle=\"true\"><mfrac><mi>h</mi><mrow><mstyle displaystyle=\"true\"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle><mi>m</mi><msub><mi>v</mi><mi>y</mi></msub></mrow></mfrac></mstyle><mstyle displaystyle=\"true\"><mfrac><mi>h</mi><mrow><mi>m</mi><mo>&#215;</mo><msub><mi>v</mi><mi>x</mi></msub></mrow></mfrac></mstyle></mfrac><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mo>&#215;</mo><mfrac><msub><mi>v</mi><mi>x</mi></msub><msub><mi>v</mi><mi>y</mi></msub></mfrac><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mfrac><mstyle displaystyle=\"true\"><mfrac><mi>u</mi><mn>7</mn></mfrac></mstyle><mstyle displaystyle=\"true\"><mfrac><mrow><mn>8</mn><mi>u</mi></mrow><mn>7</mn></mfrac></mstyle></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7e66f5bfc7ab78ae8d2", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 1, "question": {"text": "The de-Broglie wavelength of a proton (charge <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>1</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>19</mn></mrow></msup><mo>&#160;</mo><mi mathvariant=\"normal\">C</mi><mo>,</mo><mi>m</mi><mo>=</mo><mn>1</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>27</mn></mrow></msup><mo>&#160;</mo><mi>kg</mi></math>) accelerated through a potential difference of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>&#160;</mo><mi>kV</mi></math> is&nbsp;", "image": null}, "options": [{"id": "WFK42", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>600</mn><mo>&#160;</mo><mo>&#8491;</mo></math>", "isCorrect": false, "image": null}, {"id": "lmFnT", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>9</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>12</mn></mrow></msup><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math>", "isCorrect": true, "image": null}, {"id": "OQZRz", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>7</mn><mo>&#160;</mo><mo>&#8491;</mo></math>", "isCorrect": false, "image": null}, {"id": "3K5Rl", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>9</mn><mo>&#160;</mo><mi>nm</mi></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>de-Broglie wavelength,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#955;</mi><mo>=</mo><mfrac><mi>h</mi><mi>p</mi></mfrac><mo>=</mo><mfrac><mi>h</mi><msqrt><mn>2</mn><mi>m</mi><mi>E</mi></msqrt></mfrac><mo>=</mo><mfrac><mi>h</mi><msqrt><mn>2</mn><mi>m</mi><mi>q</mi><mi>V</mi></msqrt></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>&#955;</mi><mo>=</mo><mfrac><mrow><mn>6</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>34</mn></mrow></msup></mrow><msqrt><mn>2</mn><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>27</mn></mrow></msup><mo>&#215;</mo><mn>1</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>19</mn></mrow></msup><mo>&#215;</mo><mn>1000</mn></msqrt></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>&#955;</mi><mo>=</mo><mfrac><mrow><mn>6</mn><mo>.</mo><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>34</mn></mrow></msup></mrow><mrow><mn>7</mn><mo>.</mo><mn>16</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>22</mn></mrow></msup></mrow></mfrac><mo>=</mo><mn>0</mn><mo>.</mo><mn>9</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>12</mn></mrow></msup><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7916f5bfc7ab78ae5fd", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "An electron, in a hydrogen-like atom, is in an excited state. It has a total energy of $-3.4 \\mathrm{eV}$. The kinetic energy and the de-Broglie wavelength of the electron are respectively", "image": null}, "options": [{"id": "fQ6o3", "text": "$+3.4 \\mathrm{eV}, 0.66 \\times 10^{-9} \\mathrm{~m}$", "image": null, "isCorrect": true}, {"id": "zNzlo", "text": "$-3.4 \\mathrm{eV}, 1.99 \\times 10^{-9} \\mathrm{~m}$", "image": null, "isCorrect": false}, {"id": "SDRJT", "text": "$2.8 \\mathrm{eV}, 2.38 \\times 10^{-10} \\mathrm{~m}$", "image": null, "isCorrect": false}, {"id": "6fysO", "text": "$1.1 \\mathrm{eV}, 1.28 \\times 10^{-9} \\mathrm{~m}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$E_{n}=-3.4 \\mathrm{eV}$\nThe kinetic energyis equal to the magnitude of total energy in this case. $\\therefore \\mathrm{K.E}=+3.4 \\mathrm{eV}$\nThe de Broglie wavelength of electron\n$\\begin{aligned} \\lambda=\\frac{h}{\\sqrt{2 m K}} &=\\frac{6.64 \\times 10^{-34}}{\\sqrt{2 \\times 9.1 \\times 10^{-31} \\times 3.4 \\times 1.6 \\times 10^{-19}}} \\mathrm{eV} \\\\ &=0.66 \\times 10^{-9} \\mathrm{~m} \\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7836f5bfc7ab78ae57d", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "A material particle with a rest mass $\\mathrm{m}_{0}$ is moving with a velocity of light $\\mathrm{c}$. Then the wavelength of the de Broglie wave associated with it is :", "image": null}, "options": [{"id": "ggYji", "text": "$\\left(\\mathrm{h} / \\mathrm{m}_{0} \\mathrm{c}\\right)$", "image": null, "isCorrect": false}, {"id": "FwdR8", "text": "zero", "image": null, "isCorrect": true}, {"id": "agGtA", "text": "$\\infty$", "image": null, "isCorrect": false}, {"id": "m6TeD", "text": "$\\left(\\mathrm{m}_{0} \\mathrm{c} / \\mathrm{h}\\right)$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "No Solution available", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e85b6f5bfc7ab78aed42", "title": "Photoelectric Effect", "totalQuestions": 22, "questions": [{"_id": "67726d05c49e8ef28ee2b3a3", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "The acceptor level of a p-type semiconductor is 6 eV . The maximum wavelength of light which can create a hole would be : Given hc $=1242 \\mathrm{eV}$ nm .", "image": null}, "options": [{"id": "tFFLq", "text": "407 nm", "image": null, "isCorrect": false}, {"id": "6V5jy", "text": "414 nm", "image": null, "isCorrect": false}, {"id": "Fl8QN", "text": "207 nm", "image": null, "isCorrect": true}, {"id": "oTlIZ", "text": "103.5 nm", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Energy is, $\\mathrm{E}=\\frac{\\mathrm{hc}}{\\lambda}$\n$\\mathrm{E}=\\frac{1242 \\mathrm{~nm}-\\mathrm{eV}}{\\lambda} \\Rightarrow \\lambda=\\frac{1242}{6}=207 \\mathrm{~nm}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726d04c49e8ef28ee2b39c", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "Which figure shows the correct variation of applied potential difference (V) with photoelectric current (I) at two different intensities of light $\\left(\\mathrm{I}_1 \\lt \\mathrm{I}_2\\right)$ of same wavelengths:", "image": null}, "options": [{"id": "aYqZE", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/5KvIM05JgZidruqF3foZaZ87w04AFCeTJF1gPXB1GMQ.original.fullsize.png\"/><br/>", "image": null, "isCorrect": false}, {"id": "pFG2L", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/z-wdmr73EpdFsz8CgLD9hGoh0a07fa-z-Dbyh4KScYc.original.fullsize.png\"/><br/>", "image": null, "isCorrect": false}, {"id": "XNSok", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/zqZwQzo0whVloWFY9A7K9ZLpyGj9VCSkM4AYz4jcrvY.original.fullsize.png\"/><br/>", "image": null, "isCorrect": true}, {"id": "Gru8u", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/ohc0DQGIW2FoTs7r_Xga-RiIc482MNfpDsNPv2k7ero.original.fullsize.png\"/><br/>", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Given lights are of same wavelength and stopping potential is independent on intensity. Hence stopping potential will remain same. Intensity $\\mathrm{I}_2\\gt\\mathrm{I}_1$, hence saturation current corresponding to $\\mathrm{I}_2$ will be greater than that corresponding to $\\mathrm{I}_1$.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726cf8c49e8ef28ee2b33a", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "If the kinetic energy of a free electron doubles, it's de-Broglie wavelength changes by the factor", "image": null}, "options": [{"id": "DAxY8", "text": "$2$", "image": null, "isCorrect": false}, {"id": "P88Cs", "text": "$\\frac{1}{2}$", "image": null, "isCorrect": false}, {"id": "LCny8", "text": "$\\sqrt{2}$", "image": null, "isCorrect": false}, {"id": "6U96T", "text": "$\\frac{1}{\\sqrt{2}}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "de-Broglie wavelength,\n$\\lambda=\\frac{\\mathrm{h}}{p}=\\frac{h}{\\sqrt{2 \\cdot m \\cdot(K \\cdot E)}} \\quad \\therefore \\lambda \\propto \\frac{1}{\\sqrt{K \\cdot E}}$\nIf K.E is doubled, $\\lambda$ becomes $\\frac{\\lambda}{\\sqrt{2}}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726cf6c49e8ef28ee2b32d", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "When light is incident on a metal surface the maximum kinetic energy of emitted electrons", "image": null}, "options": [{"id": "Ttghg", "text": "vary with intensity of light", "image": null, "isCorrect": false}, {"id": "w1kUQ", "text": "vary with frequency of light", "image": null, "isCorrect": true}, {"id": "KNlW0", "text": "vary with speed of light", "image": null, "isCorrect": false}, {"id": "TVGan", "text": "vary irregularly", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Max. K.E. $=h v-W_0$; so Max. K.E. $\\propto v$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87297ae24e9e2db8c6e", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "The energy levels of an atom is shown is figure. Which one of these transitions will result in the emission of a photon of wavelength $124.1 \\mathrm{~nm}$ ? Given $\\left(\\mathrm{h}=6.62 \\times 10^{-34} \\mathrm{Js}\\right)$<br /><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/hcgomixBL6ft6T8i46EY22HXi9sQB6M3nDhUsife694.original.fullsize.png\"><br>", "image": null}, "options": [{"id": "XlQpF", "text": "B", "image": null, "isCorrect": false}, {"id": "qV0aD", "text": "A", "image": null, "isCorrect": false}, {"id": "r54s0", "text": "C", "image": null, "isCorrect": false}, {"id": "zZcoT", "text": "D", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "As $\\mathrm{E}(\\mathrm{eV})=\\frac{1240}{\\lambda(\\mathrm{nm})}=\\frac{1240}{124.1} \\simeq 10 \\mathrm{eV}$<br />Only is transition (D), the energy gap is $10 \\mathrm{eV}$ So, option (d) is correct", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e82d6f5bfc7ab78aeb43", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 2, "question": {"text": "The de-Broglie wavelength of an electron moving with a velocity $\\frac{c}{3}\\left(c=3 \\times 10^8 \\mathrm{~m} / \\mathrm{s}\\right)$ is equal to the wavelength of photon. The ratio of the kinetic energies of electron and photon is", "image": null}, "options": [{"id": "FeQKf", "text": "\r\n$1: 4$\r\n", "isCorrect": false, "image": null}, {"id": "WtUA3", "text": "\r\n$1: 3$\r\n", "isCorrect": true, "image": null}, {"id": "dVwre", "text": "\r\n$1: 2$\r\n", "isCorrect": false, "image": null}, {"id": "zhG2Y", "text": "\r\n$2: 1$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The de-Broglie wavelength, $\\lambda=\\frac{h}{m v}$\r\nHere, $\\quad \\lambda_e=\\frac{h}{m_e \\frac{c}{3}}$ and $\\lambda_p=\\frac{h}{m_p c}$\r\nGiven, $\\quad \\lambda_e=\\lambda_p$\r\nSo, $\\quad \\frac{h}{m_e \\frac{c}{3}}=\\frac{h}{m_p c}$\r\n$\\Rightarrow \\quad \\frac{m_e}{m_p}=3$\r\nRatio of KE $=\\frac{K_e}{K_p}=\\frac{\\frac{1}{2} m_e v_e^2}{\\frac{1}{2} m_p v_p^2}=\\frac{1}{3}$\r\n$\\left(\\because \\frac{m_e}{m_p}=3, v_e=\\frac{c}{3}\\right.$ and $\\left.v_p=c\\right)$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8216f5bfc7ab78aeadd", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 2, "question": {"text": "A plane electromagnetic wave is incident on a plane surface of area A, normally and is perfectly reflected. If energy E strikes the surface in time $t$ then force exerted on the surface is ( $c=$ speed of light)", "image": null}, "options": [{"id": "lGEeQ", "text": "$\\frac{2 \\mathrm{E}}{\\mathrm{Atc}}$", "isCorrect": false, "image": null}, {"id": "BbIK5", "text": "$\\frac{\\mathrm{E}}{2 \\mathrm{c}}$", "isCorrect": false, "image": null}, {"id": "fTLrl", "text": "$\\frac{2 \\mathrm{E}}{\\mathrm{ct}}$", "isCorrect": true, "image": null}, {"id": "Ignor", "text": "zero", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Incident momentum, $p=\\frac{E}{c}$\r\n\r\nFor perfectly reflecting surface with normal incidence\r\n\r\n$\\Delta p=2 p=\\frac{2 \\mathrm{E}}{c} ; \\mathrm{F}=\\frac{\\Delta p}{\\Delta t}=\\frac{2 \\mathrm{E}}{c t}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8206f5bfc7ab78aead5", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 2, "question": {"text": "Monochromatic light of wavelength $667 \\mathrm{~nm}$ is produced by a helium neon laser. The power emitted is $9 \\mathrm{~mW}$. The number of photons arriving per sec on the average at a target irradiated by this beam is:", "image": null}, "options": [{"id": "Lx22k", "text": "$3 \\times 10^{16}$", "isCorrect": true, "image": null}, {"id": "bu4N8", "text": "$9 \\times 10^{15}$", "isCorrect": false, "image": null}, {"id": "OG6YY", "text": "$3 \\times 10^{19}$", "isCorrect": false, "image": null}, {"id": "LxLdO", "text": "$9 \\times 10^{17}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\lambda=667 \\times 10^{-9} m, \\mathrm{P}=9 \\times 10^{-3} \\mathrm{~W}$\r\n\r\n$\\mathrm{P}=\\frac{\\text { Nhc }}{\\lambda}, \\mathrm{N}=$ No. of photons emitted/sec.\r\n\r\n$\\mathrm{N}=\\frac{9 \\times 10^{-3} \\times 667 \\times 10^{-9}}{6.6 \\times 10^{-34} \\times 3 \\times 10^{8}}=3 \\times 10^{16} / \\mathrm{sec}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8136f5bfc7ab78aea60", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 3, "question": {"text": "A plane electromagnetic wave is incident on a plane surface of area A, normally and is perfectly reflected. If energy E strikes the surface in timet then average pressure exerted on the surface is $(\\mathrm{c}=$ speed of light $)$", "image": null}, "options": [{"id": "mHmUr", "text": "zero", "isCorrect": false, "image": null}, {"id": "qmceG", "text": "$\\mathrm{E} / \\mathrm{Atc}$", "isCorrect": false, "image": null}, {"id": "8LoFJ", "text": "$2 \\mathrm{E} / \\mathrm{Atc}$", "isCorrect": true, "image": null}, {"id": "cPs65", "text": "$\\mathrm{E} / \\mathrm{c}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Incident momentum, $\\mathrm{p}=\\frac{\\mathrm{E}}{\\mathrm{c}}$ For perfectly reflecting surface with normal incidence \r\n\r\n$\\Delta \\mathrm{p}=2 \\mathrm{p}=\\frac{2 \\mathrm{E}}{\\mathrm{c}}$\r\n\r\n$\\mathrm{F}=\\frac{\\Delta \\mathrm{p}}{\\Delta \\mathrm{t}}=\\frac{2 \\mathrm{E}}{\\mathrm{ct}}$\r\n\r\n$\\mathrm{P}=\\frac{\\mathrm{F}}{\\mathrm{A}}=\\frac{2 \\mathrm{E}}{\\mathrm{ctA}}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7f66f5bfc7ab78ae95e", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 2, "question": {"text": "When photon of energy <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><mo>.</mo><mn>0</mn><mo>&#160;</mo><mi>eV</mi></math> strikes the surface of a metal <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math>, the elected photoelectrons have maximum kinetic energy <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>T</mi><mi>A</mi></msub><mo>&#160;</mo><mi>eV</mi></math> and de-Broglie wavelength <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#955;</mi><mi>A</mi></msub></math>. The maximum kinetic energy of photoelectron liberated from another metal <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math> by photon of energy <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><mo>.</mo><mn>50</mn><mo>&#160;</mo><mi>eV</mi></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>T</mi><mi>B</mi></msub><mo>=</mo><mfenced><mrow><msub><mi>T</mi><mi>A</mi></msub><mo>-</mo><mn>1</mn><mo>.</mo><mn>50</mn></mrow></mfenced><mo>&#160;</mo><mi>eV</mi></math>. If the de-Broglie wavelength of these photoelectrons <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#955;</mi><mi>B</mi></msub><mo>=</mo><mn>2</mn><msub><mi>&#955;</mi><mi>A</mi></msub></math>, then choose the correct statement(s).", "image": null}, "options": [{"id": "9yJp4", "text": "The work function of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mo>.</mo><mn>50</mn><mo>&#160;</mo><mi>eV</mi></math>", "isCorrect": false, "image": null}, {"id": "d0rgs", "text": "The work function of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><mo>.</mo><mn>0</mn><mo>&#160;</mo><mi>eV</mi></math>", "isCorrect": true, "image": null}, {"id": "XE2yC", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>T</mi><mi>A</mi></msub><mo>=</mo><mn>3</mn><mo>.</mo><mn>2</mn><mo>&#160;</mo><mi>eV</mi></math>", "isCorrect": false, "image": null}, {"id": "Stldo", "text": "All of the above", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>From Einstein photoelectric equation,<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>E</mi><mo>=</mo><msub><mi>&#981;</mi><mn>0</mn></msub><mo>+</mo><msub><mi>KE</mi><mi>max</mi></msub></math></p><p>For metal <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>&#160;&#160;</mo><mn>4</mn><mo>=</mo><msub><mi>&#981;</mi><mi>A</mi></msub><mo>+</mo><msub><mi>T</mi><mi>A</mi></msub><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi mathvariant=\"normal\">i</mi></mfenced></math><br />For metal <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math> <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><mo>.</mo><mn>5</mn><mo>=</mo><msub><mi>&#981;</mi><mi>B</mi></msub><mo>+</mo><mfenced><mrow><msub><mi>T</mi><mi>A</mi></msub><mo>-</mo><mn>1</mn><mo>.</mo><mn>5</mn></mrow></mfenced><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi>ii</mi></mfenced></math></p><p>From Eq. (i) and (ii), wo got<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#981;</mi><mi>B</mi></msub><mo>-</mo><msub><mi>&#981;</mi><mi>A</mi></msub><mo>=</mo><mn>2</mn></math></p><p>Now, according to de-Broglie hypothesis,<br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#955;</mi><mi>A</mi></msub><mo>=</mo><mfrac><mi>h</mi><mrow><mi>m</mi><mi>v</mi></mrow></mfrac><mo>=</mo><mfrac><mi>h</mi><msqrt><mn>2</mn><mi>m</mi><msub><mi>T</mi><mi>A</mi></msub></msqrt></mfrac></math></p><p>Similarly, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#955;</mi><mi>B</mi></msub><mo>=</mo><mfrac><mi>h</mi><msqrt><mn>2</mn><mi>m</mi><msub><mi>T</mi><mi>B</mi></msub></msqrt></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mfrac><msub><mi>&#955;</mi><mi>A</mi></msub><msub><mi>&#955;</mi><mi>B</mi></msub></mfrac><mo>=</mo><msqrt><mfrac><msub><mi>T</mi><mi>B</mi></msub><msub><mi>T</mi><mi>A</mi></msub></mfrac></msqrt><mo>=</mo><msqrt><mfrac><mrow><msub><mi>T</mi><mi>A</mi></msub><mo>-</mo><mn>1</mn><mo>.</mo><mn>5</mn></mrow><msub><mi>T</mi><mi>A</mi></msub></mfrac></msqrt><mo>=</mo><msup><mfenced><mrow><mn>1</mn><mo>-</mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>5</mn></mrow><msub><mi>T</mi><mi>A</mi></msub></mfrac></mrow></mfenced><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mfenced><mfrac><mn>1</mn><mn>2</mn></mfrac></mfenced><mn>2</mn></msup><mo>=</mo><mn>1</mn><mo>-</mo><mfrac><mrow><mn>1</mn><mo>.</mo><mn>5</mn></mrow><msub><mi>T</mi><mi>A</mi></msub></mfrac></math></p><p>On solving, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>T</mi><mi>A</mi></msub><mo>=</mo><mn>2</mn><mo>.</mo><mn>0</mn><mi>eV</mi></math></p><p>or&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#981;</mi><mi>A</mi></msub><mo>=</mo><mn>4</mn><mo>-</mo><msub><mi>T</mi><mi>A</mi></msub><mo>=</mo><mn>4</mn><mo>-</mo><mn>2</mn><mo>=</mo><mn>2</mn><mo>.</mo><mn>0</mn><mi>eV</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#981;</mi><mi>B</mi></msub><mo>=</mo><mn>6</mn><mo>-</mo><msub><mi>T</mi><mi>A</mi></msub><mo>=</mo><mn>6</mn><mo>-</mo><mn>2</mn><mo>=</mo><mn>4</mn><mo>.</mo><mn>0</mn><mi>eV</mi></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7f56f5bfc7ab78ae95b", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 2, "question": {"text": "The frequency and the intensity of incident beam of light falling on the surface of a photoelectric material is increased by a factor of two. This will", "image": null}, "options": [{"id": "mT0iB", "text": "increase the maximum kinetic energy of the ejected photoelectrons by a factor of more than two and would increase the photoelectric current by a factor of two.", "isCorrect": true, "image": null}, {"id": "AWtAS", "text": "increase the maximum kinetic energy of the photo electron&nbsp;and would increase the photoelectric current both by a factor of two.", "isCorrect": false, "image": null}, {"id": "twRA8", "text": "increase the maximum kinetic energy of the photoelectron by a factor of two and will have no effect on the magnitude of the photoelectric current produced.", "isCorrect": false, "image": null}, {"id": "TUCDT", "text": "not produce any effect on the kinetic energy of the emitted photoelectrons but will increase the photoelectric current by a factor of two.", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Using Einstein&#39;s photoelectric equations,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi><mi>v</mi><mo>=</mo><mi>&#981;</mi><mo>+</mo><mi>e</mi><msub><mi>V</mi><mi>s</mi></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>e</mi><msub><mi>V</mi><mi>s</mi></msub><mo>=</mo><mi>h</mi><mi>v</mi><mo>-</mo><mi>&#981;</mi><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>(</mo><mi mathvariant=\"normal\">i</mi><mo>)</mo></math></p><p>Thus, when the frequency of incident light radiation (photons) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi></math> increases to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi>v</mi></math>, the stopping potential <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>V</mi><mi>s</mi></msub></math> changes to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>V</mi><mi>s</mi></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>e</mi><msubsup><mi>V</mi><mi>s</mi><mo>&#39;</mo></msubsup><mo>=</mo><mi>h</mi><mo>(</mo><mn>2</mn><mi>v</mi><mo>)</mo><mo>-</mo><mi>&#981;</mi><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi>ii</mi></mfenced></math></p><p>On dividing Eq. (ii) by Eq. (ii), we get</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><msup><msub><mi>V</mi><mi>s</mi></msub><mo>&#39;</mo></msup><msub><mi>V</mi><mi>s</mi></msub></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mi>h</mi><mi>v</mi><mo>-</mo><mi>&#981;</mi></mrow><mrow><mi>h</mi><mi>v</mi><mo>-</mo><mi>&#981;</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mi>h</mi><mi>v</mi><mo>-</mo><mn>2</mn><mi>&#981;</mi><mo>+</mo><mi>&#981;</mi></mrow><mrow><mi>h</mi><mi>v</mi><mo>-</mo><mi>&#981;</mi></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mn>2</mn><mo>(</mo><mi>h</mi><mi>v</mi><mo>-</mo><mi>&#981;</mi><mo>)</mo><mo>+</mo><mi>&#981;</mi></mrow><mrow><mi>h</mi><mi>v</mi><mo>-</mo><mi>&#981;</mi></mrow></mfrac><mo>=</mo><mn>2</mn><mo>+</mo><mfrac><mi>&#981;</mi><mrow><mi>h</mi><mi>v</mi><mo>-</mo><mi>&#981;</mi></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mfrac><msub><msup><mi>V</mi><mo>'</mo></msup><mi>s</mi></msub><msub><mi>V</mi><mi>s</mi></msub></mfrac><mo>&#62;</mo><mn>2</mn><mo>&#8658;</mo><msubsup><mi>V</mi><mi>s</mi><mo>'</mo></msubsup><mo>&#62;</mo><mn>2</mn><msub><mi>V</mi><mi>s</mi></msub></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7d86f5bfc7ab78ae858", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 2, "question": {"text": "Find the number of photon emitted per second by a 25 watt source of monochromatic light of wavelength $6600 Å$. What is the photoelectric current assuming $3 \\%$ efficiency for photoelectric effect?", "image": null}, "options": [{"id": "exCRO", "text": "$\\frac{25}{3} \\times 10^{19} \\mathrm{~J}, 0.4 \\mathrm{amp}$", "isCorrect": true, "image": null}, {"id": "moES6", "text": "$\\frac{25}{4} \\times 10^{19} \\mathrm{~J}, 6.2 \\mathrm{amp}$", "isCorrect": false, "image": null}, {"id": "BE6St", "text": "$\\frac{25}{2} \\times 10^{19} \\mathrm{~J}, 0.8 \\mathrm{amp}$", "isCorrect": false, "image": null}, {"id": "7YoN4", "text": "None of these", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$P_{\\text {in }}=25 \\mathrm{~W}, \\lambda=6600 \\AA=6600 \\times 10^{-10} \\mathrm{~m}$\r\n\r\n$n h v=P$\r\n\r\nNumber of photons emitted/sec $\\begin{aligned} n &=\\frac{P}{\\frac{h c}{\\lambda}}=\\frac{P \\lambda}{h c}=\\frac{25 \\times 6600 \\times 10^{-10}}{6.64 \\times 10^{-34} \\times 3 \\times 10^{8}} \\\\ &=8.28 \\times 10^{19}=\\frac{25}{3} \\times 10^{19} \\end{aligned}$\r\n\r\n$3 \\%$ of emitted photons are producing current\r\n\r\n$\\begin{aligned} \\therefore \\quad & I=\\frac{3}{100} \\times n e \\\\ &=\\frac{3}{100} \\times \\frac{25}{3} \\times 10^{19} \\times 1.6 \\times 10^{-19}=0.4 \\mathrm{~A} \\end{aligned}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7c96f5bfc7ab78ae7da", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 3, "question": {"text": "When $0.50 Ã$ X-rays strike a material, the photoelectrons from the $\\mathrm{k}$ shell are observed to move in a circle of radius $23 \\mathrm{~mm}$ in a magnetic field of $2 \\times 10^{-2}$ tesla acting perpendicularly to the direction of emission of photoelectrons. What is the binding energy of k-shell electrons?", "image": null}, "options": [{"id": "j6ndX", "text": "$3.5 \\mathrm{keV}$", "isCorrect": false, "image": null}, {"id": "ehdfc", "text": "$6.2 \\mathrm{keV}$", "isCorrect": true, "image": null}, {"id": "boYTF", "text": "$2.9 \\mathrm{keV}$", "isCorrect": false, "image": null}, {"id": "8Ozx1", "text": "$5.5 \\mathrm{keV}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "As we know,\r\n\r\n$$\r\n\r\n\\mathrm{F}=\\mathrm{qvB}=\\mathrm{m} \\frac{\\mathrm{v}^{2}}{\\mathrm{R}} \\Rightarrow \\mathrm{v}=\\frac{\\mathrm{q}}{\\mathrm{m}} \\mathrm{BR}\r\n\r\n$$\r\n\r\nThe kinetic energy of the photoelectron\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n=\\frac{1}{2} m v^{2}=\\frac{1}{2} \\frac{e^{2} B^{2} R^{2}}{m} \\\\\r\n\r\n=\\frac{1}{2} \\frac{\\left(1.6 \\times 10^{-19}\\right)^{2}\\left(2 \\times 10^{-2}\\right)^{2}\\left(23 \\times 10^{-3}\\right)^{2}}{\\left(9.1 \\times 10^{-31}\\right)} \\\\\r\n\r\n=2.97 \\times 10^{-15} \\mathrm{~J} \\\\\r\n\r\n=\\frac{2.97 \\times 10^{-15}}{1.6 \\times 10^{-19}}=18.36 \\mathrm{keV}\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nFnergy of the incident $\\mathrm{n}=\\frac{\\mathrm{hc}}{\\lambda}$\r\n\r\n$$\r\n\r\n=\\frac{12.4}{0.50}=24.8 \\mathrm{keV}\r\n\r\n$$\r\n\r\nTherefore, Binding energy $=24.8-18.6=$ $6.2 \\mathrm{keV}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7c86f5bfc7ab78ae7d8", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 2, "question": {"text": "The beam of light has three wavelengths $4144 Ã, 4972 Ã$ and $6216 Ã$ with a total intensity of $3.6 \\times 10^{-3} \\mathrm{Wm}^{2}$ equally distributed amongst the three wavelengths. The beam falls normally on the area $1 \\mathrm{~cm}^{2}$ of a clean metallic surface of work function $2.3 \\mathrm{eV}$. Assume that there is $\\mathrm{n} 0$ loss of light by reflection and that each energetically capable photon ejects one electron. Calculate the number of photoelectrons liberated in $2 \\mathrm{~s}$", "image": null}, "options": [{"id": "bIlph", "text": "$2 \\times 10^{9}$", "isCorrect": false, "image": null}, {"id": "UtRjS", "text": "$1.075 \\times 10^{12}$", "isCorrect": true, "image": null}, {"id": "iw0YD", "text": "$9 \\times 10^{8}$", "isCorrect": false, "image": null}, {"id": "vX3OM", "text": "$3.75 \\times 10^{6}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "As we know, threshold wavelength\r\n\r\n$$\r\n\r\n\\begin{array}{c}\r\n\r\n\\left(\\lambda_{0}\\right)=\\frac{\\mathrm{hc}}{\\phi} \\\\\r\n\r\n\\Rightarrow \\lambda_{0}=\\frac{\\left(6.63 \\times 10^{-34}\\right) \\times 3 \\times 10^{8}}{2.3 \\times\\left(1.6 \\times 10^{-19}\\right)}=5.404 \\times 10^{-7} \\mathrm{~m}\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\n$\\Rightarrow \\lambda_{0}=5404 Ã…$\r\n\r\nHence, wavelength $4144 Ã…$ and $4972 Ã…$ will emit electron from the metal surface. For each wavelength energy incident on the surface per unit time = intensity of each $\\times$ area of the surface wavelength\r\n\r\n$$\r\n\r\n=\\frac{3.6 \\times 10^{-3}}{3} \\times(\\mathrm{lcm})^{2}=1.2 \\times 10^{-7} \\text {joule }\r\n\r\n$$\r\n\r\nTherefore, energy incident on the surface for each wavelength in $2 \\mathrm{~s}$\r\n\r\n$$\r\n\r\n\\mathrm{E}=\\left(1.2 \\times 10^{-7}\\right) \\times 2=2.4 \\times 10^{-7} \\mathrm{~J}\r\n\r\n$$\r\n\r\nNumber of photons $\\mathrm{n}_{1}$ due to wavelength $4144 Ã…$\r\n\r\n$$\r\n\r\nn_{1}=\\frac{\\left(2.4 \\times 10^{-7}\\right)\\left(4144 \\times 10^{-10}\\right)}{\\left(6.63 \\times 10^{-34}\\right)\\left(3 \\times 10^{8}\\right)}=0.5 \\times 10^{12}\r\n\r\n$$\r\n\r\nNumber of photons $\\mathrm{n}_{2}$ due to the wavelength $4972 Ã…$\r\n\r\n$$\r\n\r\n\\mathrm{n}_{2}=\\frac{\\left(2.4 \\times 10^{-7}\\right)\\left(4972 \\times 10^{-10}\\right)}{\\left(6.63 \\times 10^{-34}\\right)\\left(3 \\times 10^{8}\\right)}=0.572 \\times 10^{12}\r\n\r\n$$\r\n\r\nTherefore total number of photoelectrons liberated in $2 \\mathrm{~s}$\r\n\r\n$$\r\n\r\n\\begin{aligned}\r\n\r\n\\mathrm{N} &=\\mathrm{n}_{1}+\\mathrm{n}_{2} \\\\\r\n\r\n&=0.5 \\times 10^{12}+0.575 \\times 10^{12} \\\\\r\n\r\n&=1.075 \\times 10^{12}\r\n\r\n\\end{aligned}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7bd6f5bfc7ab78ae770", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 1, "question": {"text": "Graph betwen stopping potential for most energetic emitted photoelectrons $\\left(\\mathrm{V}_{\\mathrm{s}}\\right)$ with frequency (v) of incident radiation on metal is given below. Value of $\\mathrm{AB} / \\mathrm{BC}$, in graph is [where $\\mathrm{h}=$ plank's constant, $\\mathrm{e}=$ electronic charge]\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/E4jxMPtxPoefnk6cqMvoKwY9jk1a26qImTwqJJpMrRY.original.fullsize.png\">", "image": null}, "options": [{"id": "EhXoo", "text": "$h$", "isCorrect": false, "image": null}, {"id": "zehCw", "text": "e", "isCorrect": false, "image": null}, {"id": "1Wgdq", "text": "$\\mathrm{h} / \\mathrm{e}$", "isCorrect": true, "image": null}, {"id": "zIGjR", "text": "$\\mathrm{e} / \\mathrm{h}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "No Solution", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7bc6f5bfc7ab78ae76f", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 2, "question": {"text": "The threshold wavelength of the tungsten is 2300 $Ã… .$ If ultraviolet light of wavelength $1800 Ã…$ is incident on it, then the maximum kinetic energy of photoelectrons would be about -", "image": null}, "options": [{"id": "EHTEc", "text": "$1.49 \\mathrm{eV}$", "isCorrect": true, "image": null}, {"id": "3QwmR", "text": "$2.2 \\mathrm{eV}$", "isCorrect": false, "image": null}, {"id": "n5SxL", "text": "$3.0 \\mathrm{eV}$", "isCorrect": false, "image": null}, {"id": "bZ958", "text": "$5.0 \\mathrm{eV}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{K}_{\\max }=\\mathrm{hv}-\\mathrm{hv}_{0}=\\mathrm{hc}\\left(\\frac{1}{\\lambda}-\\frac{1}{\\lambda_{0}}\\right)$\r\n\r\n$1.24 \\times 10^{-6}\\left(\\frac{10^{8}}{18}-\\frac{10^{8}}{23}\\right)=1.49 \\mathrm{eV}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e79f6f5bfc7ab78ae67a", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 3, "question": {"text": "In an experiment on photoelectric effect photons of wavelength $300 \\mathrm{nm}$ eject electrons from a metal of work function $2.25 \\mathrm{eV}$. A photon of energy equal to that of the most energetic electron corresponds to the following transition in the hydrogen atom:", "image": null}, "options": [{"id": "llZj7", "text": "$n=2$ to $n=1$ state", "isCorrect": false, "image": null}, {"id": "az81r", "text": "$n=3$ to $n=1$ state", "isCorrect": false, "image": null}, {"id": "08GIM", "text": "$n=3$ to $n=2$ state", "isCorrect": true, "image": null}, {"id": "VfWJ5", "text": "$n=4$ to $n=3$ state", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Given $\\phi=2.25 \\mathrm{eV}$\r\n$$\r\n\\lambda=300 \\times 100^{-3} \\mathrm{~m}\r\n$$\r\nEnergy of the given photon,\r\n$$\r\n\\mathrm{E}=\\mathrm{hv}\r\n$$\r\n$$\r\n=\\frac{\\mathrm{hc}}{\\lambda}=\\frac{663 \\times 10^{-34} \\times 3 \\times 10^8}{300 \\times 10^{-9}}=6.63 \\times 10^{-19} \\mathrm{~J}=4.13 \\mathrm{eV}\r\n$$\r\nNow,\r\n$$\r\n\\mathrm{E}=\\frac{\\mathrm{hc}}{\\lambda}-\\phi=4.137-2.25=1.88 \\mathrm{eV} \\rightarrow(1)\r\n$$\r\nSo, $1.88 \\mathrm{eV}$ energy is used to jump from one orbit to another orbit by electron. Therefore, energy of different orbital of hydrogen\r\n$$\r\n\\begin{array}{rrrr}\r\n\\Rightarrow \\mathrm{n}=1 & 2 & 3 & 4 \\\\\r\n\\mathrm{E}=-13.6 \\mathrm{ev} & -3.4 & -1.51 & -0.85\r\n\\end{array}\r\n$$\r\nAnd from statement (1),\r\n$$\r\n1.18=E_i-E_f\r\n$$\r\n$\\left\\{E_i \\& E_f \\quad\\right.$ are energy of initial and final orbit $\\}$ And also from the above table, we can observe that,\r\n$$\r\nE_{\\mathrm{i}}-\\mathrm{E}_{\\mathrm{f}}=(-1.51)-(-3.4)=1.89 \\mathrm{eV}\r\n$$\r\n$$\r\n=\\mathrm{E}_2-\\mathrm{E}_3\r\n$$\r\nThat the electron jumps from 3rd to 2nd orbit. Therefore, with one photon of 3oonm wavelength hydrogen electron can jump from 3 to 2 .", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e79f6f5bfc7ab78ae677", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 2, "question": {"text": "A light having wavelength $300 \\mathrm{nm}$ fall on a metal surface. The work function of metal is $2.54 \\mathrm{eV}$, what is stopping potential?", "image": null}, "options": [{"id": "VMu7z", "text": "$2.3 \\mathrm{~V}$", "isCorrect": false, "image": null}, {"id": "4y4Qq", "text": "$2.59 \\mathrm{~V}$", "isCorrect": false, "image": null}, {"id": "NwyC1", "text": "$1.59 \\mathrm{~V}$", "isCorrect": true, "image": null}, {"id": "wIpGU", "text": "$1.29 \\mathrm{~V}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Energy of incident radiation is given by:\r\n\\(\\mathrm{E}=\\frac{\\mathrm{hc}}{\\lambda}=\\frac{6.64 * 10^{-34} * 3 * 10^{8}}{300 * 10^{-9}}=6.64 * 10^{-19}=4.05 \\mathrm{eV}\\)\r\nThe work function of the metal is equal to \\(2.54 \\mathrm{eV}\\)\r\nHence the maximum kinetic energy of an ejected photoelectron would be \\(1.59 \\mathrm{eV}\\)\r\nAnd the stopping potential needed to stop this would be \\(1.59 \\mathrm{~V}\\).", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7916f5bfc7ab78ae5fe", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "Light of wavelength $180 \\mathrm{nm}$ ejects photoelectron from a plate of a metal whose work function is $2 \\mathrm{eV}$. If a uniform magnetic field of $5 \\times 10^{-5} \\mathrm{~T}$ is applied parallel to plate, what would be theradius of the path followed by electrons ejected normally from the plate with maximum energy?", "image": null}, "options": [{"id": "1YV79", "text": "$1.239 \\mathrm{~m}$", "image": null, "isCorrect": false}, {"id": "0bjtC", "text": "$0.149 \\mathrm{~m}$", "image": null, "isCorrect": true}, {"id": "eRJMP", "text": "$3.182 \\mathrm{~m}$", "image": null, "isCorrect": false}, {"id": "wpG1q", "text": "$2.33 \\mathrm{~m}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "If $\\mathrm{v}_{\\max }$ is the speed of the fastest electron emitted from the metal surface, then\n$$\n\\begin{aligned}\n& \\frac{h c}{\\lambda}=W_{0}+\\frac{1}{2} m v_{\\max }^{2} \\frac{\\left(6.63 \\times 10^{-34}\\right) \\times\\left(3 \\times 10^{8}\\right)}{\\left(180 \\times 10^{-9}\\right)} \\\\\n&=2 \\times\\left(1.6 \\times 10^{-19}\\right)+\\frac{1}{2}\\left(9.1 \\times 10^{-31}\\right) v_{\\max }^{2} \\\\\n\\therefore \\quad & v=1.31 \\times 10^{6} \\mathrm{~m} / \\mathrm{s}\n\\end{aligned}\n$$\nThe radius of the electron is given by\n$$\nr=\\frac{m v}{q B}=\\frac{\\left(9.1 \\times 10^{-31}\\right) \\times\\left(1.31 \\times 10^{6}\\right)}{\\left(1.6 \\times 10^{-19}\\right) \\times\\left(5 \\times 10^{-9}\\right)}=0.149 \\mathrm{~m}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7916f5bfc7ab78ae5f8", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "If the energy of a photon is $10 \\mathrm{eV}$, then its momentum is", "image": null}, "options": [{"id": "HVoQF", "text": "$5.33 \\times 10^{-23} \\mathrm{~kg} \\mathrm{~m} / \\mathrm{s}$", "image": null, "isCorrect": false}, {"id": "PqJT6", "text": "$5.33 \\times 10^{-25} \\mathrm{~kg} \\mathrm{~m} / \\mathrm{s}$", "image": null, "isCorrect": false}, {"id": "HtAoc", "text": "$5.33 \\times 10^{-29} \\mathrm{~kg} \\mathrm{~m} / \\mathrm{s}$", "image": null, "isCorrect": false}, {"id": "U2j9M", "text": "$5.33 \\times 10^{-27} \\mathrm{~kg} \\mathrm{~m} / \\mathrm{s}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Momentum of a photon $\\propto \\frac{\\mathrm{E}}{\\mathrm{c}}$\n$$\n=5.33 \\times 10^{-27} \\mathrm{~kg} \\mathrm{~ms}^{-1}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7836f5bfc7ab78ae57c", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "The photoelectric threshold of metal is $2000 \\AA$. The energy of the electrons ejected from the surface by ultraviolet light of wavelength $1500 \\AA$ is", "image": null}, "options": [{"id": "a8nEV", "text": "$2.0 \\mathrm{eV}$", "image": null, "isCorrect": true}, {"id": "s90V4", "text": "$1.5 \\mathrm{eV}$", "image": null, "isCorrect": false}, {"id": "aSyTs", "text": "$15 \\mathrm{eV}$", "image": null, "isCorrect": false}, {"id": "C9s60", "text": "$150 \\mathrm{eV}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\mathrm{E}_{\\mathrm{k}}=\\frac{\\mathrm{hc}}{\\mathrm{e}}\\left(\\frac{1}{\\lambda}-\\frac{1}{\\lambda_{0}}\\right)=2.0 \\mathrm{eV}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7746f5bfc7ab78ae4fd", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "In a photoelectric experiment, with light of wavelength $\\lambda,$ the fastest electron has speed $v$. If the exciting wavelength is changed to $3 \\lambda / 4$, the speed of the fastest emitted electron will become", "image": null}, "options": [{"id": "HeLmX", "text": "$v \\sqrt{\\frac{3}{4}}$", "image": null, "isCorrect": false}, {"id": "NrrvK", "text": "$v \\sqrt{\\frac{4}{3}}$", "image": null, "isCorrect": false}, {"id": "9I7lp", "text": "less than $v \\sqrt{\\frac{4}{3}}$", "image": null, "isCorrect": false}, {"id": "Ho6jU", "text": "greater than $v \\sqrt{\\frac{4}{3}}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "$\\frac{1}{2} \\mathrm{mv}^{2}=\\frac{\\mathrm{hc}}{\\lambda}-\\phi$\n$$\n\\begin{array}{l}\n\\frac{1}{2} \\mathrm{~m}^{\\prime}=\\frac{\\mathrm{hc}}{(3 \\lambda / 4)}-\\phi=\\frac{4 \\mathrm{hc}}{3 \\lambda}-\\phi \\\\\n\\text { Clearly, } \\mathrm{v}^{\\prime}>\\sqrt{\\frac{4}{3} \\mathrm{v}}\n\\end{array}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

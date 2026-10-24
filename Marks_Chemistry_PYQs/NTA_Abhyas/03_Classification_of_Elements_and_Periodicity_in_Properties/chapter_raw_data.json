@@ -1,0 +1,3611 @@
+{
+  "index": 3,
+  "chapterId": "6160247be77fd39da8bbabec",
+  "chapter": "Classification of Elements and Periodicity in Properties",
+  "exam": "NTA Abhyas (JEE Main)",
+  "totalTopics": 3,
+  "totalQuestions": 59,
+  "downloadTime": "2026-10-08 20:03:10",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "6aa3ab79aa8dc1ff68177ec4",
+      "title": "Earlier Attempts of Periodic Classification",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "6151e863dce5effe9fe4781a",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "02",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The atomic masses of <math><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">i</mi></math> and <math><mi mathvariant=\"normal\">K</mi></math> are <math> <mn>7</mn> </math> and <math> <mn>39,</mn> </math> respectively. According to law of triads the atomic mass of <math><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">a</mi></math> will be",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "svdyg",
+              "text": "<math> <mrow> <mn>23</mn></mrow> </math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "BGuUW",
+              "text": "<math> <mrow>  <mn>32</mn></mrow></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lhack",
+              "text": "<math> <mrow>  <mn>46</mn></mrow></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FSTni",
+              "text": "<math> <mrow>  <mn>64</mn></mrow></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Atomic mass of middle element of triad is equal to average of masses of terminal elements.<br /><br /><math><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">i</mi></math>&nbsp; &nbsp; &nbsp; &nbsp; Na&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<math><mi mathvariant=\"normal\">K</mi></math><br /><br /><math><mn>7</mn><mo> </mo><mo> </mo><mi mathvariant=\"normal\">&nbsp;</mi><mn>23</mn><mo> </mo><mo> </mo><mi mathvariant=\"normal\">&nbsp;</mi><mn>39</mn><mo> </mo><mo> </mo><mi mathvariant=\"normal\">&nbsp;</mi><mfrac><mrow><mn>7</mn><mo>+</mo><mn>39</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mo>=</mo><mn>23</mn></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "6aa3ab79aa8dc1ff68177ec5",
+      "title": "Modern Periodic Table",
+      "totalQuestions": 14,
+      "questions": [
+        {
+          "_id": "6151e863e700ab7435817d76",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "57",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Among the following metal oxides, which is most basic?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "v8tQn",
+              "text": "<math><mi mathvariant=\"normal\">Z</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">O</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FoHRY",
+              "text": "<math><mi mathvariant=\"normal\">A</mi><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "gtCxV",
+              "text": "<math><mi mathvariant=\"normal\">A</mi><msub><mrow><mi mathvariant=\"normal\">s</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pRECD",
+              "text": "<math><msub><mrow><mi mathvariant=\"normal\">K</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">O</mi></math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The basic character of metal oxides decreases from left to right in a period due to decrease in electropositive character which in turn decreases the polarity of bond as well as the internuclear distance between the oxygen and metal atom. Therefore, alkali metal oxides are most basic and halogen oxide (oxygen halides) are most acidic <math><mo>∴</mo><msub><mrow><mi mathvariant=\"normal\">K</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">O</mi><mi> </mi></math>is most basic metal oxide.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863d4746f7c7c17527e",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "19",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Total number of inner transition elements are: -<br />\r<math><mi mathvariant=\"normal\">W</mi><mo>,</mo><mi mathvariant=\"normal\"></mi><mi mathvariant=\"normal\">R</mi><mi mathvariant=\"normal\">u</mi><mo>,</mo><mi mathvariant=\"normal\"></mi><mi mathvariant=\"normal\">U</mi><mo>,</mo><mi mathvariant=\"normal\"></mi><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">c</mi><mo>,</mo><mi mathvariant=\"normal\"></mi><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">a</mi><mo>,</mo><mi mathvariant=\"normal\"></mi><mi mathvariant=\"normal\">Y</mi><mi mathvariant=\"normal\">b</mi><mo>,</mo><mi mathvariant=\"normal\"></mi><mi mathvariant=\"normal\">P</mi><mi mathvariant=\"normal\">o</mi><mo>,</mo><mi mathvariant=\"normal\"></mi><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">o</mi></math>",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "3",
+          "solution": {
+            "text": "<math><mi mathvariant=\"normal\">U</mi><mo>,</mo><mi mathvariant=\"normal\"></mi><mi mathvariant=\"normal\">Y</mi><mi mathvariant=\"normal\">b</mi><mo>,</mo><mi mathvariant=\"normal\"></mi><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">o</mi></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863c2419735cc313a17",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "88",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Consider the following four elements, which are represented according to long form of periodic table<br />\r<br />\r<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/7b2f78bc-8ab1-4171-b499-514ab773c671.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"width:0.85in;height:0.54167in\" /><br />\r<br />\rHere <math><mi mathvariant=\"normal\">W</mi><mo>,</mo><mi mathvariant=\"normal\"></mi><mi mathvariant=\"normal\">Y</mi></math> and <math><mi mathvariant=\"normal\">Z</mi></math> are left, up and right elements with respect to the element <math><mi mathvariant=\"normal\">‘</mi><mi mathvariant=\"normal\">X</mi><mi mathvariant=\"normal\">’</mi></math> and <math><mi mathvariant=\"normal\">‘</mi><mi mathvariant=\"normal\">X</mi><mi mathvariant=\"normal\">’</mi></math> belongs to <math><msup><mrow><mn>16</mn></mrow><mrow><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">h</mi></mrow></msup></math> group and <math><msup><mrow><mn>3</mn></mrow><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">d</mi></mrow></msup></math> period. Then according to given information the incorrect statement regarding given elements is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ItCIn",
+              "text": "Maximum electronegativity : Y",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "OYpoT",
+              "text": "Maximum catenation property : X",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ubceH",
+              "text": "Maximum electron affinity : Z",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pDSJQ",
+              "text": "<math><mi mathvariant=\"normal\">Y</mi></math> exhibits variable covalency",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<table border=\"1px solid\">\t<thead>\t\t<tr>\t\t\t<th><br />\t\t\t<math><mi mathvariant=\"normal\">W</mi></math> : Phosphorus<br />\t\t\tElectronegativity : <math><mi mathvariant=\"normal\">O</mi><mo>&gt;</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">l</mi><mo>&gt;</mo><mi mathvariant=\"normal\">S</mi><mo>&gt;</mo><mi mathvariant=\"normal\">P</mi></math><br />\t\t\tElectron Affinity : <math><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">l</mi><mo>&gt;</mo><mi mathvariant=\"normal\">S</mi><mo>&gt;</mo><mi mathvariant=\"normal\">O</mi><mo>&gt;</mo><mi mathvariant=\"normal\">P</mi></math></th>\t\t\t<th><br />\t\t\t<math><mi mathvariant=\"normal\">Y</mi></math> : Oxygen<br />\t\t\t&nbsp;</th>\t\t\t<th><br />\t\t\t<math><mi mathvariant=\"normal\">X</mi></math> : Sulphur<br />\t\t\tCatenation : <math><mi mathvariant=\"normal\">S</mi><mo>&gt;</mo><mi mathvariant=\"normal\">P</mi><mo>&gt;</mo><mi mathvariant=\"normal\">O</mi><mo>&gt;</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">l</mi></math></th>\t\t\t<th><br />\t\t\t<math><mi mathvariant=\"normal\">Z</mi></math> : Chlorine</th>\t\t</tr>\t</thead>\t<tbody>\t\t<tr>\t\t\t<td>&nbsp;</td>\t\t\t<td>&nbsp;</td>\t\t\t<td>Oxygen exhibits covalency of two only</td>\t\t\t<td>&nbsp;</td>\t\t</tr>\t</tbody></table>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863a8373c851bf33a1f",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "23",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Among the following, total numbers of radioactive elements are<br />\rIn, Ac, At, Ba, Tc, Pm, Ta, Xe",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "4",
+          "solution": {
+            "text": "Ac, At, Tc, Pm are radioactive elements",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86389b50e07f3f246f5",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "16",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Select the incorrect statement",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "bUgPo",
+              "text": "<math> <mrow>  <msub>   <mrow>    <mtext>IE</mtext></mrow>   <mtext>1</mtext>  </msub>  </mrow></math> of He is greater than Ne",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "7BuZT",
+              "text": "<math> <mrow>  <mtext>Cl</mtext></mrow></math> has greater election affinity than <math> <mtext>F</mtext></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "rP1PO",
+              "text": "<math> <mrow> <mtext>HClO</mtext><mtext> </mtext><mtext>&gt;</mtext><mtext> </mtext><msub> <mrow> <mtext>HClO</mtext></mrow> <mtext>2</mtext> </msub> <mtext> </mtext><mtext>&gt;</mtext><mtext> </mtext><msub> <mrow> <mtext>HClO</mtext></mrow> <mtext>3</mtext> </msub> <mtext> </mtext><mtext>&gt;</mtext><mtext> </mtext><msub> <mrow> <mtext>HClO</mtext></mrow> <mtext>4</mtext> </msub> </mrow> </math><br />(order of acidity)",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "coL5U",
+              "text": "There are <math> <mrow>  <mtext>32</mtext></mrow></math> elements in period <math> <mtext>6</mtext></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Correct acidity order is:<br><math> <mrow> <mtext>HClO</mtext><mtext> </mtext><mtext>&lt;</mtext><mtext> </mtext><msub> <mrow> <mtext>HClO</mtext></mrow> <mtext>2</mtext> </msub> <mtext> </mtext><mtext>&lt;</mtext><mtext> </mtext><msub> <mrow> <mtext>HClO</mtext></mrow> <mtext>3</mtext> </msub> <mtext> </mtext><mtext>&lt;</mtext><mtext> </mtext><msub> <mrow> <mtext>HClO</mtext></mrow> <mtext>4</mtext> </msub> </mrow> </math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86370518c22d2c0bcfe",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "64",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Match the column I with column II and mark the appropriate choice.<br/><br/><table border=\"1\"><tr><td></td><td> Column I</td><td></td><td> Column II</td></tr><tr><td> (p)</td><td> 3d-transition series</td><td> (i)</td><td> Z = 58 to Z = 71</td></tr><tr><td> (q)</td><td> Lanthanoid series</td><td> (ii)</td><td> Z = 39 to Z = 48</td></tr><tr><td> (r)</td><td> Actinoid series</td><td> (iii)</td><td> Z = 21 to Z = 30</td></tr><tr><td> (s)</td><td> 4d-transition series</td><td> (iv)</td><td> Z = 90 to Z = 103</td></tr></table>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "H7Q5h",
+              "text": "(p)-(i), (q)-(ii), (r)-(iii), (s)-(iv)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "XYY7r",
+              "text": "(p)-(ii), (q)-(iii), (r)-(iv), (s)-(i)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "YFQZK",
+              "text": "(p)-(iii), (q)-(i), (r)-(iv), (s)-(ii)",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "wOQSE",
+              "text": "(p)-(iv), (q)-(iii), (r)-(i), (s)-(ii)",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<table border=\"1\"><tr><td></td><td> Column I</td><td></td><td> Column II</td></tr><tr><td> (p)</td><td> 3d-transition series</td><td> (iii)</td><td> Z = 21 to Z = 30 (Zn)</td></tr><tr><td> (q)</td><td> Lanthanoid series</td><td> (i)</td><td> Z = 58 to Z = 71 (Lu)</td></tr><tr><td> (r)</td><td> Actinoid series</td><td> (iv)</td><td> Z = 90 to Z = 103 (Lr)</td></tr><tr><td> (s)</td><td> 4d-transition series</td><td> (ii)</td><td> Z = 39 to Z = 48 (Cd)</td></tr></table>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86362ed2bd882c37ae2",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "86",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "In the graph between <math><msqrt><mi mathvariant=\"normal\">v</mi></msqrt></math> and Z for the Mosley' equation, <math><msqrt><mi mathvariant=\"normal\">v</mi></msqrt><mo>=</mo><mi mathvariant=\"normal\">a</mi><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">Z</mi><mo>-</mo><mi mathvariant=\"normal\">b</mi></mrow></mfenced></math> , the intercept OX is 1 on <math><msqrt><mi mathvariant=\"normal\">v</mi></msqrt></math> axis.<br />\r<br />\r<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/15f0fcf2-7605-48be-b4f6-d3723db33b53.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"height: 74px; width: 100px;\" /><br />\r<br />\rWhat is the frequency v when the atomic number Z is 52?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "nwrAa",
+              "text": "<math><mn>7.14&nbsp;</mn><mtext></mtext><msup><mrow><mtext>s</mtext></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "eOi69",
+              "text": "<math><mn>7&nbsp;</mn><mtext></mtext><msup><mrow><mtext>s</mtext></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "U5W79",
+              "text": "<math><mn>2401&nbsp;</mn><mtext></mtext><msup><mrow><mtext>s</mtext></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "64TN8",
+              "text": "<math><mn>2601&nbsp;</mn><mtext></mtext><msup><mrow><mtext>s</mtext></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math><msqrt><mi mathvariant=\"normal\">v</mi></msqrt><mo>=</mo><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">Z</mi><mo>-</mo><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">b</mi></math><br /><math><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">b</mi><mo>=</mo><mn>1</mn></math><br /><math><mi mathvariant=\"normal\">a</mi><mo>=</mo><mrow><mrow><mi mathvariant=\"normal\">tan</mi></mrow><mo>⁡</mo><mrow><mn>4</mn></mrow></mrow><mn>5</mn><mo>°</mo><mo>=</mo><mn>1</mn></math><br /><math><msqrt><mi mathvariant=\"normal\">v</mi></msqrt><mo>=</mo><mn>52</mn><mo>-</mo><mn>1</mn><mo>=</mo><mn>51</mn></math><br /><math><mi mathvariant=\"normal\">v</mi><mo>=</mo><mn>5</mn><msup><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>2601&nbsp;</mn><mtext></mtext><msup><mrow><mtext>s</mtext></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863556dd25b862d30d5",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "09",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Identify the correct decreasing order of acid strength for the following compounds:<br />\r<br />\r<math> <mrow> <mtext>(I)</mtext><mtext> </mtext><mtext>HClO,</mtext><mtext> </mtext><mtext>(II)</mtext><mtext> </mtext><mtext>HBrO,</mtext><mtext> </mtext><mtext>(III)</mtext><mtext> </mtext><mtext>HIO</mtext></mrow> </math>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "HivoM",
+              "text": "I &gt; II &gt; III",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "yRqLI",
+              "text": "II &gt; I &gt; III",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "M6XFu",
+              "text": "III &gt; II &gt; I",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2dWVf",
+              "text": "I &gt; III &gt; II",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The acidic character of hypohalous acid depends on the electronegativity of halogen. As the electronegativity value of halogen increases the acidic strength of hypohalous acid increases.<br /><br />Here, Electronegativity of atom <math> <mtext>X</mtext></math> (<math> <mrow>  <mtext>Cl,</mtext><mtext>&#x2004;</mtext><mtext>Br</mtext></mrow></math> or <math> <mtext>I</mtext></math>) attached to <math> <mtext>O</mtext></math> decreases down the group, polarity of OH bond decreases, acid strength decreases. It means more the electronegativity of the halogen atom, more the tendency to pull electron and weaker the <math> <mrow>  <mtext>O</mtext><mo>&#x2212;</mo><mtext>H</mtext></mrow></math> bond and hence proton <math> <mrow>  <msup>   <mrow>    <mtext>(H</mtext></mrow>   <mtext>+</mtext>  </msup>  <mtext>)</mtext></mrow></math> can easily be removed.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8633db8fecb5d0bfb07",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "53",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Sum of total number of amphoteric and neutral oxides among the following is:<br />\r<math> <mrow> <mtext>CO</mtext><mo>,</mo><mtext>NO</mtext><mo>,</mo><msub> <mrow> <mtext>Al</mtext></mrow> <mn>2</mn> </msub> <msub> <mtext>O</mtext> <mn>3</mn> </msub> <msub> <mrow> <mtext>,PbO</mtext></mrow> <mn>2</mn> </msub> <mtext>,CaO</mtext><mo>,</mo><msub> <mrow> <mtext>SnO</mtext></mrow> <mn>2</mn> </msub> <mo>,</mo><mtext>ZnO</mtext></mrow> </math>",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "6",
+          "solution": {
+            "text": "<math> <mrow>  <mtext>CO&#x00A0;&#x0026;NO</mtext></mrow></math>are neutral oxide.<br><math> <mrow>  <mtext>CaO</mtext></mrow></math> basic oxide. Rest of them are amphoteric oxide.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8633581e815f91d283e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "63",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Match the atomic numbers of the elements given in column I with the periods given in column II and mark the appropriate choice. <br/><table border='1px solid'> <thead> <tr> <th></th> <th>Column I (Atomic number)</th> <th></th> <th>Column II (Period)</th> </tr> </thead> <tbody> <tr> <td>(p)</td> <td>31</td> <td>(i)</td> <td>5</td> </tr> <tr> <td>(q)</td> <td>50</td> <td>(ii)</td> <td>3</td> </tr> <tr> <td>(r)</td> <td>56</td> <td>(iii)</td> <td>4</td> </tr> <tr> <td>(s)</td> <td>14</td> <td>(iv)</td> <td>6</td> </tr> </tbody> </table>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "L48P8",
+              "text": "(p)-(i), (q)-(ii), (r)-(iii), (s)-(iv)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BGf06",
+              "text": "(p)-(ii), (q)-(i), (r)-(iv), (s)-(iii)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "tQtpN",
+              "text": "(p)-(iii), (q)-(iv), (r)-(i), (s)-(ii)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "bsDAe",
+              "text": "(p)-(iii), (q)-(i), (r)-(iv), (s)-(ii)",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<table border='1px solid'> <thead> <tr> <th></th> <th>Column I (Atomic number)</th> <th></th> <th>Column II (Period)</th> </tr> </thead> <tbody> <tr> <td>(p)</td> <td>31</td> <td>(i)</td> <td>4</td> </tr> <tr> <td>(q)</td> <td>50</td> <td>(ii)</td> <td>5</td> </tr> <tr> <td>(r)</td> <td>56</td> <td>(iii)</td> <td>6</td> </tr> <tr> <td>(s)</td> <td>14</td> <td>(iv)</td> <td>3</td> </tr> </tbody> </table>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8632e8fbd883f53139f",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "68",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "A trend which is common to elements of both the group 1<sup>st</sup> and group 17<sup>th</sup>, on going from top to bottom",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "W1UA9",
+              "text": "Boiling point increases",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "PEk78",
+              "text": "Electorn affinity increases",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Ue4gL",
+              "text": "Oxidising power increases",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3ReP1",
+              "text": "Ionization energy decreses.",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "A trend which is common to elements of both the group 1<sup>st</sup> and group 17<sup>th</sup>, on going from top to bottom is that the ionization energy decreases since the atomic size increases. ",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8632513e4e50f81053f",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "24",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The atomic number of elements <math> <mrow> <mtext>A,&nbsp;B,&nbsp;C</mtext></mrow> </math> and <math> <mtext>D</mtext> </math> are <math> <mrow> <mtext>Z</mtext><mo>−</mo><mtext>1,&nbsp;</mtext><mtext> </mtext><mtext>Z,&nbsp;</mtext><mtext> </mtext><mtext>Z</mtext><mtext> </mtext><mtext>+</mtext><mtext> </mtext><mtext>1,&nbsp;</mtext><mtext> </mtext><mtext>Z</mtext><mtext> </mtext><mtext>+</mtext><mtext> </mtext><mtext>2</mtext></mrow> </math> respectively. If <math> <mtext>B</mtext> </math> is a noble gas, choose the correct option<br />\r(i) <math> <mrow> <mtext>(A)</mtext></mrow> </math> has higher electron affinity<br />\r(ii) <math> <mrow> <mfenced> <mtext>C</mtext> </mfenced></mrow> </math> exists in + 2 oxidation state<br />\r(iii) <math> <mrow> <mfenced> <mtext>D</mtext> </mfenced></mrow> </math> is an alkaline earth metal",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "stZR9",
+              "text": "<math><mfenced separators=\"|\"><mrow><mi>i</mi></mrow></mfenced><mi> </mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">d</mi><mi> </mi><mfenced separators=\"|\"><mrow><mi>i</mi><mi>i</mi></mrow></mfenced><mi> </mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "g3upU",
+              "text": "<math><mfenced separators=\"|\"><mrow><mi>i</mi><mi>i</mi></mrow></mfenced><mi> </mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">d</mi><mi> </mi><mfenced separators=\"|\"><mrow><mi>i</mi><mi>i</mi><mi>i</mi></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FYYHU",
+              "text": "<math><mfenced separators=\"|\"><mrow><mi>i</mi></mrow></mfenced><mi> </mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">d</mi><mi> </mi><mfenced separators=\"|\"><mrow><mi>i</mi><mi>i</mi><mi>i</mi></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "6D6li",
+              "text": "<math><mfenced separators=\"|\"><mrow><mi>i</mi></mrow></mfenced><mo>,</mo><mi> </mi><mfenced separators=\"|\"><mrow><mi>i</mi><mi>i</mi></mrow></mfenced><mi> </mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">d</mi><mi> </mi><mfenced separators=\"|\"><mrow><mi>i</mi><mi>i</mi></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Atomic number of  <math><mfenced separators=\"|\"><mrow><mi>B</mi></mrow></mfenced><mo>=</mo><mi>Z</mi><mi> </mi></math>  and is a noble gas<br/><br/>Atomic number of  <math><mfenced separators=\"|\"><mrow><mi>A</mi></mrow></mfenced><mo>=</mo><mi>Z</mi><mo>-</mo><mn>1</mn></math>   (i.e., is a Halogen)<br/><br/>Atomic number  <math><mfenced separators=\"|\"><mrow><mi>C</mi></mrow></mfenced><mo>,</mo><mo>=</mo><mi>Z</mi><mo>+</mo><mn>1</mn></math> (i.e., is a alkali metal)<br/><br/>At number of  <math><mfenced separators=\"|\"><mrow><mi>D</mi></mrow></mfenced><mo>=</mo><mi>Z</mi><mo>+</mo><mn>2</mn></math>  (i.e., alkaline earth metal)<br/><br/>Hence, element  <math><mfenced separators=\"|\"><mrow><mi>A</mi></mrow></mfenced></math>  must be a Halogen, so has highest electron affinity among the given species.  <math><mfenced separators=\"|\"><mrow><mi>C</mi></mrow></mfenced><mo>.</mo></math>  is an alkali metal and  <math><mfenced separators=\"|\"><mrow><mi>D</mi></mrow></mfenced></math>  is an alkaline earth metal",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863162273407164aaa5",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "45",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which among the following species have the same number of electrons in its outermost as well as penultimate shell",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "l3WCR",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Mg</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "fMLDb",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">O</mi><mrow><mn>2</mn><mo>-</mo></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "LojJq",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi mathvariant=\"normal\">F</mi><mo>-</mo></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "dIcsJ",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Ca</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">&nbsp;</mi><mn>20</mn></msub><mi>Ca</mi><mo>=</mo><mn>2</mn><mo>,</mo><mo>&nbsp;&nbsp;</mo><mn>8</mn><mo>,</mo><mo>&nbsp;&nbsp;</mo><mn>8</mn><mo>,</mo><mo>&nbsp;&nbsp;</mo><mn>2</mn></math><br /><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Ca</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>=</mo><mi mathvariant=\"normal\">&nbsp;</mi><mn>2</mn><mo>,</mo><mi mathvariant=\"normal\">&nbsp;</mi><mn>8</mn><mo>,</mo><mi mathvariant=\"normal\">&nbsp;</mi><mn>8</mn></math><br /><br />Hence, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Ca</mi><mrow><mn>2</mn><mo>+</mo></mrow></msup></math> has <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>8</mn></math> electrons each in outermost and penultimate shell.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86300026e1e5681c1a8",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "06",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is metalloid ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "J8wJg",
+              "text": "<math><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">b</mi></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "AE87S",
+              "text": "<math><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">g</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "SGqiT",
+              "text": "<math><mi mathvariant=\"normal\">Z</mi><mi mathvariant=\"normal\">n</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "dJ9Wx",
+              "text": "<math><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">i</mi></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "A metalloid is a chemical element with properties that are intermediate between those of metals and nonmetals. <br><br><math><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">l</mi><mi mathvariant=\"normal\">l</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">d</mi><mi mathvariant=\"normal\">s</mi><mo>=</mo><mi mathvariant=\"normal\">B</mi><mo>,</mo><mi>&nbsp;</mi><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">i</mi><mo>,</mo><mi mathvariant=\"normal\">A</mi><mi mathvariant=\"normal\">s</mi><mo>,</mo><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">e</mi><mo>,</mo><mi mathvariant=\"normal\">A</mi><mi mathvariant=\"normal\">t</mi><mo>,</mo><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">b</mi><mo>,</mo><mi mathvariant=\"normal\">G</mi><mi mathvariant=\"normal\">e</mi></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "6aa3ab79aa8dc1ff68177ec6",
+      "title": "Periodic Properties",
+      "totalQuestions": 44,
+      "questions": [
+        {
+          "_id": "6151e863fb32db5b468442c8",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "76",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The set representing the correct order of ionic radius is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "KtRyT",
+              "text": "<math><mtext>L</mtext><msup><mrow><mtext>i</mtext></mrow><mrow><mo>+</mo></mrow></msup><mo>&gt;</mo><mtext>B</mtext><msup><mrow><mtext>e</mtext></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&gt;</mo><mtext>N</mtext><msup><mrow><mtext>a</mtext></mrow><mrow><mo>+</mo></mrow></msup><mo>&gt;</mo><mtext>M</mtext><msup><mrow><mtext>g</mtext></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "PPfQF",
+              "text": "<math><mtext>N</mtext><msup><mrow><mtext>a</mtext></mrow><mrow><mo>+</mo></mrow></msup><mo>&gt;</mo><mtext>L</mtext><msup><mrow><mtext>i</mtext></mrow><mrow><mo>+</mo></mrow></msup><mo>&gt;</mo><mtext>M</mtext><msup><mrow><mtext>g</mtext></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&gt;</mo><mtext>B</mtext><msup><mrow><mtext>e</mtext></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "5sWDV",
+              "text": "<math><mtext>L</mtext><msup><mrow><mtext>i</mtext></mrow><mrow><mo>+</mo></mrow></msup><mo>&gt;</mo><mtext>N</mtext><msup><mrow><mtext>a</mtext></mrow><mrow><mo>+</mo></mrow></msup><mo>&gt;</mo><mtext>M</mtext><msup><mrow><mtext>g</mtext></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&gt;</mo><mtext>B</mtext><msup><mrow><mtext>e</mtext></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "MMHu9",
+              "text": "<math><mtext>M</mtext><msup><mrow><mtext>g</mtext></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&gt;</mo><mtext>B</mtext><msup><mrow><mtext>e</mtext></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&gt;</mo><mtext>L</mtext><msup><mrow><mtext>i</mtext></mrow><mrow><mo>+</mo></mrow></msup><mo>&gt;</mo><mtext>N</mtext><msup><mrow><mtext>a</mtext></mrow><mrow><mo>+</mo></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In general the ionic radius increases on moving from top to bottom in group and decreases on moving from left to right in period. So, Na<sup>+</sup>&nbsp;&gt; Li<sup>+</sup>&nbsp;and Mg<sup>2+</sup>&nbsp;&gt; Be<sup>2+</sup>.&nbsp;<br /><br />The size of Mg<sup>2+</sup>&nbsp;is however smaller than Li<sup>+</sup>. Despite the Mg atom having a slightly larger atomic size, the Mg<sup>2+</sup> ion is marginally smaller in size than the Li<sup>+</sup> ion because of its higher nuclear charge<br /><br />Hence, the correct trend is<br /><br /><math><mtext>N</mtext><msubsup><mrow><mtext>a</mtext></mrow><mrow><mn>0.98</mn><mtext>Å</mtext></mrow><mrow><mo>+</mo></mrow></msubsup><mo>&gt;</mo><mtext>L</mtext><msubsup><mrow><mtext>i</mtext></mrow><mrow><mn>0.68</mn><mtext>Å</mtext></mrow><mrow><mo>+</mo></mrow></msubsup><mo>&gt;</mo><mtext>M</mtext><msubsup><mrow><mtext>g</mtext></mrow><mrow><mn>0.65</mn><mtext>Å</mtext></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msubsup><mo>&gt;</mo><mtext>B</mtext><msubsup><mrow><mtext>e</mtext></mrow><mrow><mn>0.62</mn><mtext>Å</mtext></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msubsup></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863f68104f6045005ff",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "01",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The values of electronegativity of atom <math><mtext>A</mtext></math> and <math><mtext>B</mtext></math> are 1.20 and 4.0 respectively. The percentage of ionic character of <math><mtext>A</mtext><mo>-</mo><mtext>B</mtext></math> bond is nearly",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "72.24",
+          "solution": {
+            "text": "% ionic character of a bond is determined with the help of Hanny-Smith's equation.<br /><br />% ionic characters <math> <mrow> <mtext>=1</mtext><mtext>.6</mtext><mrow><mo>(</mo> <mrow> <mtext>ΔEN</mtext> </mrow> <mo>)</mo></mrow><mtext>+3</mtext><mtext>.5</mtext><msup> <mrow> <mrow><mo>(</mo> <mrow> <mtext>ΔEN</mtext> </mrow> <mo>)</mo></mrow> </mrow> <mtext>2</mtext> </msup> </mrow> </math><br /><br />Where, <math><mrow><mrow>&nbsp;<mrow><mtext>ΔEN</mtext> </mrow></mrow>&nbsp;</mrow></math><math><mo>=</mo></math> difference of electronegativity <math><mo>=</mo></math><br /><br /><math> <mrow> <mtext>4</mtext><mtext>.0</mtext><mo>−</mo><mtext>1</mtext><mtext>.2&nbsp;=&nbsp;2</mtext><mtext>.80</mtext></mrow> </math><br /><br />So, % ionic character <math> <mrow> <mtext>=1</mtext><mtext>.6</mtext><mrow><mo>(</mo> <mrow> <mtext>2</mtext><mtext>.80</mtext> </mrow> <mo>)</mo></mrow><mtext>+3</mtext><mtext>.5</mtext><msup> <mrow> <mrow><mo>(</mo> <mrow> <mtext>2</mtext><mtext>.80</mtext> </mrow> <mo>)</mo></mrow> </mrow> <mtext>2</mtext> </msup> <mo>=</mo><mn>72.24</mn><mi>%</mi> </mrow> </math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863f5becc2604b8ad2c",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "81",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following order is correct for the property mentioned in brackets?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "FRBHp",
+              "text": "<math><msup><mrow><mi mathvariant=\"normal\">S</mi></mrow><mrow><mn>2</mn><mo>-</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">C</mi><msup><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mo>-</mo></mrow></msup><mo>&gt;</mo><msup><mrow><mi mathvariant=\"normal\">K</mi></mrow><mrow><mo>+</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">C</mi><msup><mrow><mi mathvariant=\"normal\">a</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup></math> (Ionization energy)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "L7fwx",
+              "text": "<math><mi mathvariant=\"normal\">C</mi><mo>&lt;</mo><mi mathvariant=\"normal\">N</mi><mo>&lt;</mo><mi mathvariant=\"normal\">F</mi><mo>&lt;</mo><mi mathvariant=\"normal\">O</mi></math> (2nd Ionization energy)",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "0JlhC",
+              "text": "<math><mi mathvariant=\"normal\">B</mi><mo>&gt;</mo><mi mathvariant=\"normal\">A</mi><mi mathvariant=\"normal\">l</mi><mo>&gt;</mo><mi mathvariant=\"normal\">G</mi><mi mathvariant=\"normal\">a</mi><mo>&gt;</mo><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">n</mi><mo>&gt;</mo><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">l</mi></math> (Electronegativity)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BQawD",
+              "text": "<math><mi mathvariant=\"normal\">N</mi><msup><mrow><mi mathvariant=\"normal\">a</mi></mrow><mrow><mo>+</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">L</mi><msup><mrow><mi mathvariant=\"normal\">i</mi></mrow><mrow><mo>+</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">M</mi><msup><mrow><mi mathvariant=\"normal\">g</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">B</mi><msup><mrow><mi mathvariant=\"normal\">e</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">A</mi><msup><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup></math> (Ionic radius)",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "A. Correct order <math><mo>→</mo><mi mathvariant=\"normal\">C</mi><msup><mrow><mi mathvariant=\"normal\">a</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&gt;</mo><msup><mrow><mi mathvariant=\"normal\">K</mi></mrow><mrow><mo>+</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">C</mi><msup><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mo>-</mo></mrow></msup><mo>&gt;</mo><msup><mrow><mi mathvariant=\"normal\">S</mi></mrow><mrow><mn>2</mn><mo>-</mo></mrow></msup></math> (ionization energy) <br/>for isoelectronic species (I.E. <math><mo>∝</mo><msub><mrow><mi mathvariant=\"normal\">Z</mi></mrow><mrow><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">f</mi></mrow></msub></math> ) <br/>B. Correct order <math><mo>→</mo><mi mathvariant=\"normal\">C</mi><mo>&lt;</mo><mi mathvariant=\"normal\">N</mi><mo>&lt;</mo><mi mathvariant=\"normal\">F</mi><mo>&lt;</mo><mi mathvariant=\"normal\">O</mi></math> (2nd I.E.) <br/>Second electron removal from oxygen requires more energy as it acquires stable <math><mn>2</mn><msup><mrow><mi mathvariant=\"normal\">s</mi></mrow><mrow><mn>2</mn></mrow></msup><mn>2</mn><msup><mrow><mi mathvariant=\"normal\">p</mi></mrow><mrow><mn>3</mn></mrow></msup></math> configuration after removal of one electron. <br/>C. <math><mo>→</mo><mi mathvariant=\"normal\">B</mi><mo>&gt;</mo><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">l</mi><mo>&gt;</mo><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">n</mi><mo>&gt;</mo><mi mathvariant=\"normal\">G</mi><mi mathvariant=\"normal\">a</mi><mo>&gt;</mo><mi mathvariant=\"normal\">A</mi><mi mathvariant=\"normal\">l</mi></math> (Electronegativity) <br/>In general EN increases in boron family from top to bottom due to increase in <math><msub><mrow><mi mathvariant=\"normal\">Z</mi></mrow><mrow><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">f</mi></mrow></msub></math> on valence shell while boron has highest E.N. due to its vary small size. <br/>D. Correct order <math><mo>→</mo><mi mathvariant=\"normal\">N</mi><msup><mrow><mi mathvariant=\"normal\">a</mi></mrow><mrow><mo>+</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">L</mi><msup><mrow><mi mathvariant=\"normal\">i</mi></mrow><mrow><mo>+</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">M</mi><msup><mrow><mi mathvariant=\"normal\">g</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">A</mi><msup><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">B</mi><msup><mrow><mi mathvariant=\"normal\">e</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup></math> (Ionic radius) <br/>Ionic radius depends on <math><msub><mrow><mi mathvariant=\"normal\">Z</mi></mrow><mrow><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">f</mi></mrow></msub></math> and number of shells.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863f5556820d5e0f4c0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "75",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "In a period, atom with smallest radius generally is:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "J85KV",
+              "text": "Chalcogen",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "S6AVS",
+              "text": "Halogen",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "uvTX1",
+              "text": "Aerogen",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "gPRHy",
+              "text": "Pnicogen",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In a period on moving left to right Z<sub>effective</sub>&nbsp;increases, so atomic size decreases.<br />For inert gases, Van der waal radius is considered, so it is bigger in size as compared to halogens.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863f493e40f45d39332",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "91",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The decreasing order of the bond moment of E-H bond in NH<sub>3</sub> , PH<sub>3</sub> , AsH<sub>3</sub> and SbH<sub>3</sub> is given by",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "WOKKx",
+              "text": "NH<sub>3</sub> &gt; PH<sub>3</sub> &gt; AsH<sub>3</sub> &gt; SbH<sub>3</sub>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "n4g6x",
+              "text": "SbH<sub>3</sub> &gt; AsH<sub>3</sub> &gt; PH<sub>3</sub> &gt; NH<sub>3</sub>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "JDuno",
+              "text": "NH<sub>3</sub> &gt; AsH<sub>3</sub> &gt; PH<sub>3</sub> &gt; SbH<sub>3</sub>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ZL1ts",
+              "text": "NH<sub>3</sub> &gt; SbH<sub>3</sub> &gt; AsH<sub>3</sub> &gt; PH<sub>3</sub>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Electronegativities of N(3.0), P (2.1), As (2.0), Sb (1.9) and H (2.1) point out clearly that the correct order of decreasing polarity is :<br /><br />NH<sub>3</sub> &gt; SbH<sub>3</sub> &gt; AsH<sub>3</sub> &gt; PH<sub>3</sub>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863e9a5e8a930b035b4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "14",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Correct order of Pauling's electronegativity",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "aFOmR",
+              "text": "<math> <mrow>  <mtext>H&#x00A0;&#x003E;&#x00A0;B&#x00A0;&#x003E;&#x00A0;C</mtext></mrow></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Yowxb",
+              "text": "<math> <mrow>  <mtext>B&#x00A0;&#x003E;&#x00A0;C&#x00A0;&#x003E;&#x00A0;H</mtext></mrow></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "UxdB5",
+              "text": "<math> <mrow>  <mtext>C&#x00A0;&#x003E;&#x00A0;B&#x00A0;&#x003E;&#x00A0;H</mtext></mrow></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "G8qEF",
+              "text": "<math> <mrow>  <mtext>C&#x00A0;&#x003E;&#x00A0;H&#x00A0;&#x003E;&#x00A0;B</mtext></mrow></math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Electronegativity values <math><mi mathvariant=\"normal\">H</mi><mo>→</mo><mn>2.1</mn></math> , <math><mi mathvariant=\"normal\">B</mi><mo>→</mo><mn>2.0</mn></math> , <math><mi mathvariant=\"normal\">C</mi><mo>→</mo><mn>2.5</mn></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863e700ab7435817d76",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "57",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Among the following metal oxides, which is most basic?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "v8tQn",
+              "text": "<math><mi mathvariant=\"normal\">Z</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">O</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FoHRY",
+              "text": "<math><mi mathvariant=\"normal\">A</mi><msub><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "gtCxV",
+              "text": "<math><mi mathvariant=\"normal\">A</mi><msub><mrow><mi mathvariant=\"normal\">s</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>3</mn></mrow></msub></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pRECD",
+              "text": "<math><msub><mrow><mi mathvariant=\"normal\">K</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">O</mi></math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The basic character of metal oxides decreases from left to right in a period due to decrease in electropositive character which in turn decreases the polarity of bond as well as the internuclear distance between the oxygen and metal atom. Therefore, alkali metal oxides are most basic and halogen oxide (oxygen halides) are most acidic <math><mo>∴</mo><msub><mrow><mi mathvariant=\"normal\">K</mi></mrow><mrow><mn>2</mn></mrow></msub><mi mathvariant=\"normal\">O</mi><mi> </mi></math>is most basic metal oxide.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863e150f952cab9299a",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "05",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Second ionization potential value is lowest for -",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "0gUFm",
+              "text": "Sodium",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "sidNW",
+              "text": "Magnesium",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Wrju2",
+              "text": "Fluorine",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "evu8u",
+              "text": "Oxygen",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "2<sup>nd</sup>&nbsp;ionization energy of Mg is lower because it gets the inert gas configuration after losing 2<sup>nd</sup> electron.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863e0ae76b52e5e998c",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "03",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Three elements X, Y, and Z have atomic numbers 19, 37, and 55 respectively. Then the correct statements(s) is/are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "fvZui",
+              "text": "their ionization potential would increase with increasing atomic numbers",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nPNif",
+              "text": "Y would have an ionization potential between those of X and Z",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "OPO5U",
+              "text": "Y would have the highest ionization potential",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "yip1r",
+              "text": "Z would have the highest ionization potential",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The elements X(19), Y(37) and Z(55) are the elements of same group (IA). As atomic number, increases, the ionization potential decrease down the group. Since, the position of Y is in between X and Z. Thus, the ionization potential of Y will also be in between X and Z.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863d7d1c550c6d043f1",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "22",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Incorrect order of properties given in parenthesis are",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "NJZca",
+              "text": "<math><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">l</mi><mo>&gt;</mo><mi mathvariant=\"normal\">S</mi><mo>&gt;</mo><mi mathvariant=\"normal\">F</mi><mo>&gt;</mo><mi mathvariant=\"normal\">O</mi></math> (Electron affinity)",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "pNb7l",
+              "text": "<math><mi mathvariant=\"normal\">O</mi><mo>&gt;</mo><mi mathvariant=\"normal\">F</mi><mo>&gt;</mo><mi mathvariant=\"normal\">B</mi><mo>&gt;</mo><mi mathvariant=\"normal\">C</mi></math>   <math><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">I</mi><msub><mrow><mi mathvariant=\"normal\">E</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ud6h6",
+              "text": "<math><mi mathvariant=\"normal\">N</mi><mo>&gt;</mo><mi mathvariant=\"normal\">O</mi><mo>&gt;</mo><mi mathvariant=\"normal\">P</mi><mo>&gt;</mo><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\"> </mi><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">I</mi><msub><mrow><mi mathvariant=\"normal\">E</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BoBoT",
+              "text": "<math><mi mathvariant=\"normal\">O</mi><mo>&gt;</mo><mi mathvariant=\"normal\">C</mi><mo>&gt;</mo><mi mathvariant=\"normal\">B</mi><mo>&gt;</mo><mi mathvariant=\"normal\">N</mi></math>  (Electron affinity)",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Correct order is:<br><math> <mrow>  <mtext>Cl</mtext><mo>&#x003E;</mo><mtext>F</mtext><mo>&#x003E;</mo><mtext>S</mtext><mo>&#x003E;</mo><mtext>O</mtext></mrow></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863d33da73b2dd0eff6",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "58",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is the strongest reducing agent in aqueous solution?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "wqt43",
+              "text": "<math><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">a</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "DO1fK",
+              "text": "<math><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">i</mi></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "DPuTd",
+              "text": "<math><mi mathvariant=\"normal\">K</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "kgbdE",
+              "text": "<math><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">s</mi></math> .",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math><msup><mrow><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">i</mi></mrow><mrow><mo>+</mo></mrow></msup></math> has very high hydration energy. Therefore, it is the strongest reducing agent in&nbsp;aqueous&nbsp;solution.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863c47c2dfca554ddec",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "27",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "In graph of atomic volume versus atomic weight, the elements corresponding to peaks in the curve belong to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "bnvcY",
+              "text": "Group 1",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "927VY",
+              "text": "Group 18",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "1unha",
+              "text": "Group 4",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "VLEJp",
+              "text": "Group 14",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>If we see the atomic mass versus atomic volume curve, we will notice the following features:</p><ul>\t<li>Alkali metals such as <math> <mrow>  <mtext>Na,</mtext><mtext>&#x2004;</mtext><mtext>K,</mtext><mtext>&#x2004;</mtext><mtext>Rb</mtext></mrow></math> which have similar properties occur as peaks of the curve.</li>\t<li>Halogen elements like <math> <mrow>  <mtext>F,</mtext><mtext>&#x2004;</mtext><mtext>Cl,</mtext><mtext>&#x2004;</mtext><mtext>Br,</mtext></mrow></math> which have similar properties occur at the rising or the ascending part of the curve.</li>\t<li>Noble gases such as <math> <mrow>  <mtext>Ne,</mtext><mtext>&#x2004;</mtext><mtext>Ar,</mtext><mtext>&#x2004;</mtext><mtext>Kr</mtext></mrow></math> which have similar properties occur just before the alkali elements.</li>\t<li>Hydrogen and Helium seem to be exception to the rule.</li></ul><p><img alt=\"\" src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/DPT_Lothar-Meyer_3.jpg\" style=\"width: 350px; height: 300px;\" /></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863c2419735cc313a17",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "88",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Consider the following four elements, which are represented according to long form of periodic table<br />\r<br />\r<img src=\"https://cdn-question-pool.getmarks.app/nta_abhyas/jee_main/images/7b2f78bc-8ab1-4171-b499-514ab773c671.jpeg\" style=\"max-width:100%; object-fit:contain\" style=\"width:0.85in;height:0.54167in\" /><br />\r<br />\rHere <math><mi mathvariant=\"normal\">W</mi><mo>,</mo><mi mathvariant=\"normal\"></mi><mi mathvariant=\"normal\">Y</mi></math> and <math><mi mathvariant=\"normal\">Z</mi></math> are left, up and right elements with respect to the element <math><mi mathvariant=\"normal\">‘</mi><mi mathvariant=\"normal\">X</mi><mi mathvariant=\"normal\">’</mi></math> and <math><mi mathvariant=\"normal\">‘</mi><mi mathvariant=\"normal\">X</mi><mi mathvariant=\"normal\">’</mi></math> belongs to <math><msup><mrow><mn>16</mn></mrow><mrow><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">h</mi></mrow></msup></math> group and <math><msup><mrow><mn>3</mn></mrow><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">d</mi></mrow></msup></math> period. Then according to given information the incorrect statement regarding given elements is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ItCIn",
+              "text": "Maximum electronegativity : Y",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "OYpoT",
+              "text": "Maximum catenation property : X",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ubceH",
+              "text": "Maximum electron affinity : Z",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "pDSJQ",
+              "text": "<math><mi mathvariant=\"normal\">Y</mi></math> exhibits variable covalency",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<table border=\"1px solid\">\t<thead>\t\t<tr>\t\t\t<th><br />\t\t\t<math><mi mathvariant=\"normal\">W</mi></math> : Phosphorus<br />\t\t\tElectronegativity : <math><mi mathvariant=\"normal\">O</mi><mo>&gt;</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">l</mi><mo>&gt;</mo><mi mathvariant=\"normal\">S</mi><mo>&gt;</mo><mi mathvariant=\"normal\">P</mi></math><br />\t\t\tElectron Affinity : <math><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">l</mi><mo>&gt;</mo><mi mathvariant=\"normal\">S</mi><mo>&gt;</mo><mi mathvariant=\"normal\">O</mi><mo>&gt;</mo><mi mathvariant=\"normal\">P</mi></math></th>\t\t\t<th><br />\t\t\t<math><mi mathvariant=\"normal\">Y</mi></math> : Oxygen<br />\t\t\t&nbsp;</th>\t\t\t<th><br />\t\t\t<math><mi mathvariant=\"normal\">X</mi></math> : Sulphur<br />\t\t\tCatenation : <math><mi mathvariant=\"normal\">S</mi><mo>&gt;</mo><mi mathvariant=\"normal\">P</mi><mo>&gt;</mo><mi mathvariant=\"normal\">O</mi><mo>&gt;</mo><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">l</mi></math></th>\t\t\t<th><br />\t\t\t<math><mi mathvariant=\"normal\">Z</mi></math> : Chlorine</th>\t\t</tr>\t</thead>\t<tbody>\t\t<tr>\t\t\t<td>&nbsp;</td>\t\t\t<td>&nbsp;</td>\t\t\t<td>Oxygen exhibits covalency of two only</td>\t\t\t<td>&nbsp;</td>\t\t</tr>\t</tbody></table>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863b59945444698334e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "86",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following transformation least energy is required?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "u6N0y",
+              "text": "<math><msubsup><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mo>(</mo><mi mathvariant=\"normal\">g</mi><mo>)</mo></mrow><mrow><mo>-</mo></mrow></msubsup><mo>→</mo><msub><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mo>(</mo><mi mathvariant=\"normal\">g</mi><mo>)</mo></mrow></msub><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">e</mi></mrow><mrow><mo>-</mo></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "7cuMG",
+              "text": "<math><msubsup><mrow><mi mathvariant=\"normal\">P</mi></mrow><mrow><mo>(</mo><mi mathvariant=\"normal\">g</mi><mo>)</mo></mrow><mrow><mo>-</mo></mrow></msubsup><mo>→</mo><msub><mrow><mi mathvariant=\"normal\">P</mi></mrow><mrow><mo>(</mo><mi mathvariant=\"normal\">g</mi><mo>)</mo></mrow></msub><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">e</mi></mrow><mrow><mo>-</mo></mrow></msup></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "9SVvE",
+              "text": "<math><msubsup><mrow><mi mathvariant=\"normal\">S</mi></mrow><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">g</mi></mrow></mfenced></mrow><mrow><mo>-</mo></mrow></msubsup><mo>→</mo><msub><mrow><mi mathvariant=\"normal\">S</mi></mrow><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">g</mi></mrow></mfenced></mrow></msub><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">e</mi></mrow><mrow><mo>-</mo></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0PTf9",
+              "text": "<math><msubsup><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">l</mi></mrow><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">g</mi></mrow></mfenced></mrow><mrow><mo>-</mo></mrow></msubsup><mo>→</mo><msub><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">l</mi></mrow><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">g</mi></mrow></mfenced></mrow></msub><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">e</mi></mrow><mrow><mo>-</mo></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "If we consider the opposite process <br/><math><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">A</mi></mrow></mfenced><mi></mi><mi></mi><msub><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">g</mi></mrow></mfenced></mrow></msub><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">e</mi></mrow><mrow><mo>-</mo></mrow></msup><mo>→</mo><msubsup><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mo>(</mo><mi mathvariant=\"normal\">g</mi><mo>)</mo></mrow><mrow><mo>-</mo></mrow></msubsup></math> ; <math><mo>∆</mo><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>1</mn></mrow></msub></math>  <br/><math><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">B</mi></mrow></mfenced><mi></mi><msub><mrow><mi mathvariant=\"normal\">P</mi></mrow><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">g</mi></mrow></mfenced></mrow></msub><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">e</mi></mrow><mrow><mo>-</mo></mrow></msup><mo>→</mo><msubsup><mrow><mi mathvariant=\"normal\">P</mi></mrow><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">g</mi></mrow></mfenced></mrow><mrow><mo>-</mo></mrow></msubsup></math> ; <math><mo>∆</mo><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub></math>  <br/><math><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi></mrow></mfenced><mi></mi><msub><mrow><mi mathvariant=\"normal\">S</mi></mrow><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">g</mi></mrow></mfenced></mrow></msub><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">e</mi></mrow><mrow><mo>-</mo></mrow></msup><mo>→</mo><msubsup><mrow><mi mathvariant=\"normal\">S</mi></mrow><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">g</mi></mrow></mfenced></mrow><mrow><mo>-</mo></mrow></msubsup></math> ; <math><mo>∆</mo><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub></math>  <br/><math><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">D</mi></mrow></mfenced><mi></mi><mi></mi><msub><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">l</mi></mrow><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">g</mi></mrow></mfenced></mrow></msub><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">e</mi></mrow><mrow><mo>-</mo></mrow></msup><mo>→</mo><msubsup><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">l</mi></mrow><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">g</mi></mrow></mfenced></mrow><mrow><mo>-</mo></mrow></msubsup></math> ; <math><mo>∆</mo><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>4</mn></mrow></msub></math>  <br/>Order of energy releases is : <math><mo>∆</mo><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>4</mn></mrow></msub><mo>&gt;</mo><mo>∆</mo><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>&gt;</mo><mo>∆</mo><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>3</mn></mrow></msub><mo>&gt;</mo><mo>∆</mo><mn>2</mn></math>  <br/>So, <math><msubsup><mrow><mi mathvariant=\"normal\">P</mi></mrow><mrow><mo>(</mo><mi mathvariant=\"normal\">g</mi><mo>)</mo></mrow><mrow><mo>-</mo></mrow></msubsup><mo>→</mo><msub><mrow><mi mathvariant=\"normal\">P</mi></mrow><mrow><mo>(</mo><mi mathvariant=\"normal\">g</mi><mo>)</mo></mrow></msub><mo>+</mo><msup><mrow><mi mathvariant=\"normal\">e</mi></mrow><mrow><mo>-</mo></mrow></msup></math> ; Requires least energy.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863ac49e5612f8173d0",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "94",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Arrange the given species  <math><mi mathvariant=\"normal\">F</mi><mo>,</mo><mo> </mo><msup><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mo>-</mo></mrow></msup><mo>,</mo><mo> </mo><mi mathvariant=\"normal\">O</mi></math>  and  <math><msup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mo>-</mo><mn>2</mn></mrow></msup></math>  in the order of        their radii",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "qZlX3",
+              "text": "<math><msup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn><mo>-</mo></mrow></msup><mo>&gt;</mo><msup><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mo>-</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">O</mi><mo>&gt;</mo><mi mathvariant=\"normal\">F</mi></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "cArtH",
+              "text": "<math><msup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn><mo>-</mo></mrow></msup><mo>&gt;</mo><msup><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mo>-</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">F</mi><mo>&gt;</mo><mi mathvariant=\"normal\">O</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "DMO2k",
+              "text": "<math><msup><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mo>-</mo></mrow></msup><mo>&gt;</mo><msup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn><mo>-</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">F</mi><mo>&gt;</mo><mi mathvariant=\"normal\">O</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Lu5Ic",
+              "text": "<math><msup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn><mo>-</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">O</mi><mo>&gt;</mo><msup><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mo>-</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">F</mi></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Atomic radius decreases on going from left to right in a period. Thus size of  <math><mi mathvariant=\"normal\">O</mi><mo>&gt;</mo><mi mathvariant=\"normal\">F</mi></math>  and size of anion is larger then their atoms. As  <math><msup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn><mo>-</mo></mrow></msup></math>  and  <math><msup><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mo>-</mo></mrow></msup></math> are isoelectronic, therefore, size of  <math><msup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn><mo>-</mo></mrow></msup><mo>&gt;</mo><msup><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mo>-</mo></mrow></msup><mo>.</mo></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863ac386f6acf351ed7",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "107",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is the strongest acid?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "W1xjS",
+              "text": "CIO<sub>3</sub>(OH)",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "pja3v",
+              "text": "CIO<sub>2</sub>(OH)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Ooy8F",
+              "text": "SO(OH)<sub>2</sub>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "cXyYi",
+              "text": "SO<sub>2</sub>(OH)<sub>2</sub>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "As you go from left to right in the periodic table, the acidic strength goes on increasing. Also, as you increases the oxidation state of the central atom, the acidic strength increases.<br /><br />The more the electronegativity and oxidation number of the central atom (Cl), more is the acidic character.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863aac9243620652fd9",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "90",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following statements is (are) incorrect?<br />\r<br />\r(i) Percentage ionic character in <math><mi>C</mi><mi>s</mi><mi>C</mi><mi>l</mi></math> bond is <math><mo>~</mo><mn>55</mn><mi>%</mi></math> . (Electronegativity values of <math><mi>C</mi><mi>s</mi></math> and <math><mi>C</mi><mi>l</mi></math> are <math><mn>0.7</mn></math> and <math><mn>3.0</mn></math> respectively)<br />\r<br />\r(ii) From <math><msub><mrow><mi>H</mi></mrow><mrow><mn>2</mn></mrow></msub><mi>O</mi></math> to <math><msub><mrow><mi>H</mi></mrow><mrow><mn>3</mn></mrow></msub><msup><mrow><mi>O</mi></mrow><mrow><mo>+</mo></mrow></msup></math> , the geometry around <math><mi>O</mi></math> atom changes drastically.<br />\r<br />\r(iii) The most stable oxidation state for element with atomic number <math><mn>113</mn></math> is expected to be <math><mo>+</mo><mn>2</mn><mo>.</mo></math><br />\r<br />\r(iv) The <math><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi><mi>d</mi></mrow></msup></math> ionization energy of <math><mi>C</mi><mi>a</mi></math> is greater than <math><msup><mrow><mn>1</mn></mrow><mrow><mi>s</mi><mi>t</mi></mrow></msup></math> ionization energy of it but lower than <math><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi><mi>d</mi></mrow></msup></math> ionization energy of K.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "PEpBF",
+              "text": "Only i",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wqsvB",
+              "text": "i, ii, iii",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Oh1Dw",
+              "text": "ii, iii",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "HSYTd",
+              "text": "iii, iv",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math><mo>(</mo><mi>a</mi><mo>)</mo></math> Ionic character <br /><br /><math> <mrow>  <mo>&#x0025;</mo><mtext>&#x2004;</mtext><mi>i</mi><mi>o</mi><mi>n</mi><mi>i</mi><mi>c</mi><mtext>&#x2004;</mtext><mi>c</mi><mi>h</mi><mi>a</mi><mi>r</mi><mi>a</mi><mi>c</mi><mi>t</mi><mi>e</mi><mi>r</mi><mo>=</mo><mn>16</mn><mo stretchy='false'>(</mo><msub>   <mi>x</mi>   <mi>A</mi>  </msub>  <mo>&#x2212;</mo><msub>   <mi>x</mi>   <mi>B</mi>  </msub>  <mo stretchy='false'>)</mo><mo>+</mo><mn>3.5</mn><msup>   <mrow>    <mo stretchy='false'>(</mo><msub>     <mi>x</mi>     <mi>A</mi>    </msub>    <mo>&#x2212;</mo><msub>     <mi>x</mi>     <mi>B</mi>    </msub>    <mo stretchy='false'>)</mo></mrow>   <mn>2</mn>  </msup>  </mrow></math><br><br>where, <math> <mrow>  <msub>   <mi>x</mi>   <mi>A</mi>  </msub>  <mo>&#x2212;</mo><msub>   <mi>x</mi>   <mi>B</mi>  </msub>  <mo>=</mo></mrow></math>Difference in electro-negativity of bonded atoms.<math> <mrow>  <mn>16</mn><mo>&#x00D7;</mo><mo stretchy='false'>(</mo><mn>3.0</mn><mo>&#x2212;</mo><mn>0.7</mn><mo stretchy='false'>)</mo><mo>+</mo><mn>3.5</mn><mo>&#x00D7;</mo><msup>   <mrow>    <mo stretchy='false'>(</mo><mn>3.0</mn><mo>&#x2212;</mo><mn>0.7</mn><mo stretchy='false'>)</mo></mrow>   <mn>2</mn>  </msup>  <mo>=</mo><mn>55.32</mn><mo>&#x0025;</mo></mrow></math><br> <br><math><mo>(</mo><mi>b</mi><mo>)</mo></math> Geometry for both the species is tetrahedral, as in both 'O' is <math> <mrow>  <mi>s</mi><msup>   <mi>p</mi>   <mn>3</mn>  </msup>  </mrow></math> hybridised<br /><br /><math><mfenced separators=\"|\"><mrow><mi>c</mi></mrow></mfenced><mi>&nbsp;</mi><mn>113</mn><mo>=</mo><mfenced close=\"]\" open=\"[\" separators=\"|\"><mrow><mi>R</mi><mi>n</mi></mrow></mfenced><mi>&nbsp;</mi><mn>5</mn><msup><mrow><mi>f</mi></mrow><mrow><mn>14</mn></mrow></msup><mn>6</mn><msup><mrow><mi>d</mi></mrow><mrow><mn>10</mn></mrow></msup><mn>7</mn><msup><mrow><mi>s</mi></mrow><mrow><mn>2</mn></mrow></msup><mn>7</mn><msup><mrow><mi>p</mi></mrow><mrow><mn>1</mn></mrow></msup><mo>=</mo></math> Due to inert pair effect <math> <mrow>  <mn>7</mn><msup>   <mi>s</mi>   <mn>2</mn>  </msup>  </mrow></math>electron do not take part in bond formation, so, most stable oxidation state is <math><mo>+</mo><mn>1</mn><mo>.</mo></math><br /><br /><math><mo>(</mo><mi>d</mi><mo>)</mo></math> Successive ionization energies are higher for every element. <math><msup><mrow><mn>2</mn></mrow><mrow><mi>n</mi><mi>d</mi></mrow></msup></math> ionization of K happens from <math><mn>3</mn><msup><mrow><mi>s</mi></mrow><mrow><mn>2</mn></mrow></msup><mn>3</mn><msup><mrow><mi>p</mi></mrow><mrow><mn>6</mn></mrow></msup></math> configuration which is an inert gas configuration  and for <math><mi>C</mi><mi>a</mi></math> it happens from <math><mn>4</mn><msup><mrow><mi>s</mi></mrow><mrow><mn>1</mn></mrow></msup></math>. So, K has higher second ionisation energy than Ca.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863a1c8083333860a3e",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "20",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The set representing the correct order of ionic radii is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "DF5yE",
+              "text": "<math> <mrow>  <msup>   <mrow>    <mtext>Li</mtext></mrow>   <mtext>+</mtext>  </msup>  <mtext>&#x2004;</mtext><mtext>&#x003E;</mtext><mtext>&#x2004;</mtext><msup>   <mrow>    <mtext>Be</mtext></mrow>   <mrow>    <mtext>2+</mtext></mrow>  </msup>  <mtext>&#x2004;</mtext><mtext>&#x003E;</mtext><mtext>&#x2004;</mtext><msup>   <mrow>    <mtext>Na</mtext></mrow>   <mtext>+</mtext>  </msup>  <mtext>&#x2004;</mtext><mtext>&#x003E;</mtext><mtext>&#x2004;</mtext><msup>   <mrow>    <mtext>Mg</mtext></mrow>   <mrow>    <mtext>2+</mtext></mrow>  </msup>  </mrow></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "5TJZg",
+              "text": "<math> <mrow>  <msup>   <mrow>    <mtext>Li</mtext></mrow>   <mtext>+</mtext>  </msup>  <mtext>&#x2004;</mtext><mtext>&#x003E;</mtext><mtext>&#x2004;</mtext><msup>   <mrow>    <mtext>Na</mtext></mrow>   <mtext>+</mtext>  </msup>  <mtext>&#x2004;</mtext><mtext>&#x003E;</mtext><mtext>&#x2004;</mtext><msup>   <mrow>    <mtext>Mg</mtext></mrow>   <mrow>    <mtext>2+</mtext></mrow>  </msup>  <mtext>&#x2004;</mtext><mtext>&#x003E;</mtext><mtext>&#x2004;</mtext><msup>   <mrow>    <mtext>Be</mtext></mrow>   <mrow>    <mtext>2+</mtext></mrow>  </msup>  </mrow></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GSSJa",
+              "text": "<math> <mrow>  <msup>   <mrow>    <mtext>Mg</mtext></mrow>   <mrow>    <mtext>2+</mtext></mrow>  </msup>  <mtext>&#x2004;</mtext><mtext>&#x003E;</mtext><mtext>&#x2004;</mtext><msup>   <mrow>    <mtext>Be</mtext></mrow>   <mrow>    <mtext>2+</mtext></mrow>  </msup>  <mtext>&#x2004;</mtext><mtext>&#x003E;</mtext><mtext>&#x2004;</mtext><msup>   <mrow>    <mtext>Li</mtext></mrow>   <mtext>+</mtext>  </msup>  <mtext>&#x2004;</mtext><mtext>&#x003E;</mtext><mtext>&#x2004;</mtext><msup>   <mrow>    <mtext>Na</mtext></mrow>   <mtext>+</mtext>  </msup>  </mrow></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "cZgFM",
+              "text": "<math> <mrow> <msup> <mrow> <mtext>Na</mtext></mrow> <mtext>+</mtext> </msup> <mtext> </mtext><mtext>&gt;</mtext><mtext> </mtext><msup> <mrow> <mtext>Li</mtext></mrow> <mtext>+</mtext> </msup> <mtext> </mtext><mtext>&gt;</mtext><mtext> </mtext><msup> <mrow> <mtext>Mg</mtext></mrow> <mrow> <mtext>2+</mtext></mrow> </msup> <mtext> </mtext><mtext>&gt;</mtext><mtext> </mtext><msup> <mrow> <mtext>Be</mtext></mrow> <mrow> <mtext>2+</mtext></mrow> </msup> </mrow> </math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math> <mrow> <mtext>2</mtext><mtext> </mtext><mtext>+</mtext></mrow> </math> charge cation is smaller in size than <math> <mrow> <mtext>1</mtext><mtext> </mtext><mtext>+</mtext></mrow> </math> charge cation due to more effective nuclear charge.<br /><math> <mrow> <msup> <mrow> <mtext>Na</mtext></mrow> <mtext>+</mtext> </msup> <mtext> </mtext><mtext>&gt;</mtext><mtext> </mtext><msup> <mrow> <mtext>Li</mtext></mrow> <mtext>+</mtext> </msup> </mrow> </math> (down the group)<br /><math> <mrow> <msup> <mrow> <mtext>Mg</mtext></mrow> <mrow> <mtext>2+</mtext></mrow> </msup> <mtext> </mtext><mtext>&gt;</mtext><mtext> </mtext><msup> <mrow> <mtext>Be</mtext></mrow> <mrow> <mtext>2+</mtext></mrow> </msup> </mrow> </math> (down the group)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8638fba96f7a1b3c984",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "84",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Incorrect order of radius is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "1mytQ",
+              "text": "<math><mi mathvariant=\"normal\">S</mi><msup><mrow><mi mathvariant=\"normal\">r</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&lt;</mo><mi mathvariant=\"normal\">R</mi><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mo>+</mo></mrow></msup><mo>&lt;</mo><mi mathvariant=\"normal\">B</mi><msup><mrow><mi mathvariant=\"normal\">r</mi></mrow><mrow><mo>-</mo></mrow></msup><mo>&lt;</mo><mi mathvariant=\"normal\">S</mi><msup><mrow><mi mathvariant=\"normal\">e</mi></mrow><mrow><mn>2</mn><mo>-</mo></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CEcdt",
+              "text": "<math><mi mathvariant=\"normal\">N</mi><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>5</mn><mo>+</mo></mrow></msup><mo>&lt;</mo><mi mathvariant=\"normal\">Z</mi><msup><mrow><mi mathvariant=\"normal\">r</mi></mrow><mrow><mn>4</mn><mo>+</mo></mrow></msup><mo>&lt;</mo><msup><mrow><mi mathvariant=\"normal\">Y</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "0mMNk",
+              "text": "<math><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">o</mi><mo>&gt;</mo><mi mathvariant=\"normal\">C</mi><msup><mrow><mi mathvariant=\"normal\">o</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">C</mi><msup><mrow><mi mathvariant=\"normal\">o</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">C</mi><msup><mrow><mi mathvariant=\"normal\">o</mi></mrow><mrow><mn>4</mn><mo>+</mo></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "OpCPo",
+              "text": "<math> <mrow>  <msup>   <mrow>    <mtext>Ba</mtext></mrow>   <mrow>    <mtext>2+</mtext></mrow>  </msup>  <mtext>&#x2004;</mtext><mtext>&#x003E;</mtext><mtext>&#x2004;</mtext><msup>   <mrow>    <mtext>Cs</mtext></mrow>   <mtext>+</mtext>  </msup>  <mtext>&#x2004;</mtext><mtext>&#x003E;</mtext><mtext>&#x2004;</mtext><msup>   <mrow>    <mtext>Se</mtext></mrow>   <mrow>    <mtext>2</mtext><mo>&#x2212;</mo></mrow>  </msup>  <mtext>&#x2004;</mtext><mtext>&#x003E;</mtext><mtext>&#x2004;</mtext><msup>   <mrow>    <mtext>As</mtext></mrow>   <mrow>    <mtext>3</mtext><mo>&#x2212;</mo></mrow>  </msup>  </mrow></math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "In <math><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">A</mi></mrow></mfenced></math> and <math><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">B</mi></mrow></mfenced></math> use (z/e) concept for isoelectronic species.<br />In <math><mfenced separators=\"|\"><mrow><mi mathvariant=\"normal\">C</mi></mrow></mfenced></math> size of neutral atom is greater than its cation.<br />",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86389b50e07f3f246f5",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "16",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Select the incorrect statement",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "bUgPo",
+              "text": "<math> <mrow>  <msub>   <mrow>    <mtext>IE</mtext></mrow>   <mtext>1</mtext>  </msub>  </mrow></math> of He is greater than Ne",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "7BuZT",
+              "text": "<math> <mrow>  <mtext>Cl</mtext></mrow></math> has greater election affinity than <math> <mtext>F</mtext></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "rP1PO",
+              "text": "<math> <mrow> <mtext>HClO</mtext><mtext> </mtext><mtext>&gt;</mtext><mtext> </mtext><msub> <mrow> <mtext>HClO</mtext></mrow> <mtext>2</mtext> </msub> <mtext> </mtext><mtext>&gt;</mtext><mtext> </mtext><msub> <mrow> <mtext>HClO</mtext></mrow> <mtext>3</mtext> </msub> <mtext> </mtext><mtext>&gt;</mtext><mtext> </mtext><msub> <mrow> <mtext>HClO</mtext></mrow> <mtext>4</mtext> </msub> </mrow> </math><br />(order of acidity)",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "coL5U",
+              "text": "There are <math> <mrow>  <mtext>32</mtext></mrow></math> elements in period <math> <mtext>6</mtext></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Correct acidity order is:<br><math> <mrow> <mtext>HClO</mtext><mtext> </mtext><mtext>&lt;</mtext><mtext> </mtext><msub> <mrow> <mtext>HClO</mtext></mrow> <mtext>2</mtext> </msub> <mtext> </mtext><mtext>&lt;</mtext><mtext> </mtext><msub> <mrow> <mtext>HClO</mtext></mrow> <mtext>3</mtext> </msub> <mtext> </mtext><mtext>&lt;</mtext><mtext> </mtext><msub> <mrow> <mtext>HClO</mtext></mrow> <mtext>4</mtext> </msub> </mrow> </math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8637cc9af8e0b86dbe1",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "47",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following represents the correct order of increasing first ionization enthalpy for Ca, Ba, S, Se and Ar ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "vrfEf",
+              "text": "Ba &lt; Ca &lt; Se &lt; S &lt; Ar",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "mSRmp",
+              "text": "Ca &lt; Ba &lt; S &lt; Se &lt; Ar",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "OL4xy",
+              "text": "Ca &lt; S &lt; Ba &lt; Se &lt; Ar",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GVMeI",
+              "text": "S &lt; Se &lt; Ca &lt; Ba &lt; Ar",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Ba &lt; Ca &lt; Se &lt; S &lt; Ar<br /><br />Ba,&nbsp; Ca belong to gr IIA ( alkaline earth metals)<br /><br />Se and S belong to gr Vl A (Chalcogens)<br />and as we go down the group ionaization enthalpy decreases with increasing atomic size. So,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Ba &lt; Ca&nbsp; &nbsp; &nbsp; and<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Se &lt; S<br /><br />Ar has stable completely filled electronic configuration and, therefore,has higest ionization enthalpy.Hence,the correct order is<br /><br /><math> <mrow> <mtable equalcolumns=\"true\" equalrows=\"true\"> <mtr> <mtd> <mrow></mrow> </mtd> <mtd> <mrow> <mtext>Ba</mtext></mrow> </mtd> <mtd> <mo>&lt;</mo> </mtd> <mtd> <mrow> <mtext>Ca</mtext></mrow> </mtd> <mtd> <mo>&lt;</mo> </mtd> <mtd> <mrow> <mtext>Se</mtext></mrow> </mtd> <mtd> <mo>&lt;</mo> </mtd> <mtd> <mtext>S</mtext> </mtd> <mtd> <mo>&lt;</mo> </mtd> <mtd> <mrow> <mtext>Ar</mtext></mrow> </mtd> </mtr> <mtr> <mtd> <mrow> <msup> <mrow> <mtext>in&nbsp;kJmol</mtext></mrow> <mrow> <mo>−</mo><mn>1</mn></mrow> </msup> </mrow> </mtd> <mtd> <mrow> <mn>503</mn></mrow> </mtd> <mtd> <mrow></mrow> </mtd> <mtd> <mrow> <mn>590</mn></mrow> </mtd> <mtd> <mrow></mrow> </mtd> <mtd> <mrow> <mn>941</mn></mrow> </mtd> <mtd> <mrow></mrow> </mtd> <mtd> <mrow> <mn>999</mn></mrow> </mtd> <mtd> <mrow></mrow> </mtd> <mtd> <mrow> <mn>1520</mn></mrow> </mtd> </mtr> </mtable></mrow> </math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8637a6f25cd71aaa7a3",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "96",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which one among the following ions, is smallest in size",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "fsWNw",
+              "text": "<math><msup><mrow><mi mathvariant=\"normal\">N</mi></mrow><mrow><mn>3</mn><mo>-</mo></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "g7he8",
+              "text": "<math><msup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn><mo>-</mo></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Modx1",
+              "text": "<math><msup><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mo>-</mo></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "OS5uD",
+              "text": "<math><mi mathvariant=\"normal\">N</mi><msup><mrow><mi mathvariant=\"normal\">a</mi></mrow><mrow><mo>+</mo></mrow></msup></math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math><mi mathvariant=\"normal\">N</mi><msup><mrow><mi mathvariant=\"normal\">a</mi></mrow><mrow><mo>+</mo></mrow></msup><mo>&lt;</mo><msup><mrow><mi mathvariant=\"normal\">F</mi></mrow><mrow><mo>-</mo></mrow></msup><mo>&lt;</mo><msup><mrow><mi mathvariant=\"normal\">O</mi></mrow><mrow><mn>2</mn><mo>-</mo></mrow></msup><mo>&lt;</mo><msup><mrow><mi mathvariant=\"normal\">N</mi></mrow><mrow><mn>3</mn><mo>-</mo></mrow></msup></math> , All are isoelectronic species, hence effective number charge is highest for  <math><mi mathvariant=\"normal\">N</mi><msup><mrow><mi mathvariant=\"normal\">a</mi></mrow><mrow><mo>+</mo></mrow></msup></math>  so it has smallest size.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86375d06a9e19266555",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "32",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Increasing order of density is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Qkl9z",
+              "text": "<math><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">&nbsp;</mi><mo>&lt;</mo><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">K</mi><mi mathvariant=\"normal\">&nbsp;</mi><mo>&lt;</mo><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">&nbsp;</mi><mo>&lt;</mo><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">R</mi><mi mathvariant=\"normal\">b</mi><mi mathvariant=\"normal\">&nbsp;</mi><mo>&lt;</mo><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">s</mi></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Z0lrz",
+              "text": "<math><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\"> </mi><mo>&lt;</mo><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\"> </mi><mo>&lt;</mo><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">K</mi><mi mathvariant=\"normal\"> </mi><mo>&lt;</mo><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">R</mi><mi mathvariant=\"normal\">b</mi><mi mathvariant=\"normal\"> </mi><mo>&lt;</mo><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">s</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "JkSDC",
+              "text": "<math><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\"> </mi><mo>&lt;</mo><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\"> </mi><mo>&lt;</mo><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">K</mi><mi mathvariant=\"normal\"> </mi><mo>&lt;</mo><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">s</mi><mi mathvariant=\"normal\"> </mi><mo>&lt;</mo><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">R</mi><mi mathvariant=\"normal\">b</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2qvyU",
+              "text": "<math><mi mathvariant=\"normal\">K</mi><mi mathvariant=\"normal\"> </mi><mo>&lt;</mo><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\"> </mi><mo>&lt;</mo><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\"> </mi><mo>&lt;</mo><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">R</mi><mi mathvariant=\"normal\">b</mi><mi mathvariant=\"normal\"> </mi><mo>&lt;</mo><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">s</mi></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "As per Lother-Meyer's curve, the atomic volume of <math><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">s</mi></math> is maximum among s-block elements. But atomic masses increases more rapidly than atomic volume, hence density increases along the group",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8637543af101989e9f4",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "109",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The first <math><mfenced separators=\"|\"><mrow><msub><mrow><mi mathvariant=\"normal\">Δ</mi></mrow><mrow><mi mathvariant=\"normal\">i</mi></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow></mfenced></math> and second <math><mfenced separators=\"|\"><mrow><msub><mrow><mi mathvariant=\"normal\">Δ</mi></mrow><mrow><mi mathvariant=\"normal\">i</mi></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfenced></math> ionization enthalpies (in kJ <math><mtext>mo</mtext><msup><mrow><mtext>l</mtext></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math> ) and the electron gain enthalpy <math><mfenced separators=\"|\"><mrow><msub><mrow><mi mathvariant=\"normal\">Δ</mi></mrow><mrow><mtext>eg</mtext></mrow></msub><mi mathvariant=\"normal\">H</mi></mrow></mfenced></math> (in kJ <math><mtext>mo</mtext><msup><mrow><mtext>l</mtext></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup></math> ) of the elements I, II, III, IV and V are given below\r\r<table border=\"1px solid\">\r\t<thead>\r\t\t<tr>\r\t\t\t<th>Element</th>\r\t\t\t<th><math><msub><mrow><mi mathvariant=\"normal\">Δ</mi></mrow><mrow><mi mathvariant=\"normal\">i</mi></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>1</mn></mrow></msub></math></th>\r\t\t\t<th><math><msub><mrow><mi mathvariant=\"normal\">Δ</mi></mrow><mrow><mi mathvariant=\"normal\">i</mi></mrow></msub><msub><mrow><mi mathvariant=\"normal\">H</mi></mrow><mrow><mn>2</mn></mrow></msub></math></th>\r\t\t\t<th><math><msub><mrow><mi mathvariant=\"normal\">Δ</mi></mrow><mrow><mtext>eg</mtext></mrow></msub><mi mathvariant=\"normal\">H</mi></math></th>\r\t\t</tr>\r\t</thead>\r\t<tbody>\r\t\t<tr>\r\t\t\t<td>I</td>\r\t\t\t<td>520</td>\r\t\t\t<td>7300</td>\r\t\t\t<td>− 60</td>\r\t\t</tr>\r\t\t<tr>\r\t\t\t<td>II</td>\r\t\t\t<td>419</td>\r\t\t\t<td>3051</td>\r\t\t\t<td>−48</td>\r\t\t</tr>\r\t\t<tr>\r\t\t\t<td>III</td>\r\t\t\t<td>1681</td>\r\t\t\t<td>3374</td>\r\t\t\t<td>−328</td>\r\t\t</tr>\r\t\t<tr>\r\t\t\t<td>IV</td>\r\t\t\t<td>1008</td>\r\t\t\t<td>1846</td>\r\t\t\t<td>−295</td>\r\t\t</tr>\r\t\t<tr>\r\t\t\t<td>V</td>\r\t\t\t<td>2372</td>\r\t\t\t<td>5251</td>\r\t\t\t<td>+48</td>\r\t\t</tr>\r\t</tbody>\r</table>\r<br />\rthe least reactive non- metal and the most reactive metal of these are respectively",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "0s9S3",
+              "text": "IV and V",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wv5RC",
+              "text": "II and V",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Wg8MO",
+              "text": "V and III",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "sUEd9",
+              "text": "V and II",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Generally metals having low I.E.are more reactive and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi mathvariant=\"normal\">Δ</mi><mi>eg</mi></msub><mi mathvariant=\"normal\">H</mi><mo>=</mo><mo>+</mo><mi>ve</mi></math>&nbsp;for noble gas.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8637485d54efb36c462",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "49",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following atoms has the highest first ionization energy?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Cn7Rd",
+              "text": "Sc",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "mpzbj",
+              "text": "Rb",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6wpNc",
+              "text": "Na",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "uK8Yq",
+              "text": "K",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Due to poor shielding of d-electrons in Sc, <math><msub><mrow><mi mathvariant=\"normal\">Z</mi></mrow><mrow><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">f</mi></mrow></msub></math> of Sc becomes more so that ionisation energy of Sc is more than Na, K and Rb.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86368efbd5f058a321f",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "78",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following has smallest radius?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "A7fJM",
+              "text": "<math><mn>1</mn><msup><mrow><mi mathvariant=\"normal\">s</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>,</mo><mn>2</mn><msup><mrow><mi mathvariant=\"normal\">s</mi></mrow><mrow><mn>2</mn></mrow></msup><mn>2</mn><msup><mrow><mi mathvariant=\"normal\">p</mi></mrow><mrow><mn>6</mn></mrow></msup><mo>,</mo><mn>3</mn><msup><mrow><mi mathvariant=\"normal\">s</mi></mrow><mrow><mn>2</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "eMrWV",
+              "text": "<math><mn>1</mn><msup><mrow><mi mathvariant=\"normal\">s</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>,</mo><mn>2</mn><msup><mrow><mi mathvariant=\"normal\">s</mi></mrow><mrow><mn>2</mn></mrow></msup><mn>2</mn><msup><mrow><mi mathvariant=\"normal\">p</mi></mrow><mrow><mn>6</mn></mrow></msup><mo>,</mo><mn>3</mn><msup><mrow><mi mathvariant=\"normal\">s</mi></mrow><mrow><mn>2</mn></mrow></msup><mn>3</mn><msup><mrow><mi mathvariant=\"normal\">p</mi></mrow><mrow><mn>1</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "geNEm",
+              "text": "<math><mn>1</mn><msup><mrow><mi mathvariant=\"normal\">s</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>,</mo><mn>2</mn><msup><mrow><mi mathvariant=\"normal\">s</mi></mrow><mrow><mn>2</mn></mrow></msup><mn>2</mn><msup><mrow><mi mathvariant=\"normal\">p</mi></mrow><mrow><mn>6</mn></mrow></msup><mo>,</mo><mn>3</mn><msup><mrow><mi mathvariant=\"normal\">s</mi></mrow><mrow><mn>2</mn></mrow></msup><mn>3</mn><msup><mrow><mi mathvariant=\"normal\">p</mi></mrow><mrow><mn>5</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "b2B2S",
+              "text": "<math><mn>1</mn><msup><mrow><mi mathvariant=\"normal\">s</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>,</mo><mn>2</mn><msup><mrow><mi mathvariant=\"normal\">s</mi></mrow><mrow><mn>2</mn></mrow></msup><mn>2</mn><msup><mrow><mi mathvariant=\"normal\">p</mi></mrow><mrow><mn>6</mn></mrow></msup><mo>,</mo><mn>3</mn><msup><mrow><mi mathvariant=\"normal\">s</mi></mrow><mrow><mn>2</mn></mrow></msup><mn>3</mn><msup><mrow><mi mathvariant=\"normal\">p</mi></mrow><mrow><mn>3</mn></mrow></msup></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "All the elements are of the same periods because all have the equal number of shell. In a period, the size of atom decreases as we from left to right,.i.e., from A to B to D to C. Hence, element corresponding to C is smallest in the size.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86365d43568cfc28ca1",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "55",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The effective nuclear charge of an element with three valence electrons is 2.60. What is the minimum atomic number of the element?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "wdpdK",
+              "text": "5",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "j26hC",
+              "text": "4",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "AItxV",
+              "text": "3",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Pprvy",
+              "text": "2",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "As effective nuclear charge is 2.60 and valence shell contain 3 electrons so the minimum number of main shells for the given element are two i.e., (n = 2) and its configuration will be  <math><mn>1</mn><msup><mrow><mi mathvariant=\"normal\">s</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>,</mo><mn>2</mn><msup><mrow><mi mathvariant=\"normal\">s</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>,</mo><mn>2</mn><msup><mrow><mi mathvariant=\"normal\">p</mi></mrow><mrow><mn>1</mn></mrow></msup></math> .<br/><br/>Hence the given element has 5 electrons in all.<br/><br/>Also, for a neutral atom.<br/><br/>As number of electrons = atomic number  = 5.<br/><br/>Thus, the atomic number of the element is 5.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86365bf027b2e5415e9",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "18",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Highest electron affinity is shown by:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "BYxF2",
+              "text": "F<sup>-</sup>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wez7B",
+              "text": "CI<sup>-</sup>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "gbUiJ",
+              "text": "Na<sup>+</sup>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "kiVd4",
+              "text": "Li<sup>+</sup>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Energy released, when electron is added in outer most shell of isolated gaseous atom or ions is called electron affinity. <math> <mrow> <mtext>Electron</mtext><mtext> </mtext><mtext>affinity</mtext><mo>∝</mo><mfrac> <mrow> <mtext>Nuclear</mtext><mtext> </mtext><mtext>charge</mtext></mrow> <mrow> <mtext>Radius</mtext><mtext> </mtext><mtext>of</mtext><mtext> </mtext><mtext>atoms/ions</mtext></mrow> </mfrac> </mrow> </math><br /><br /><math> <mrow> <msup> <mtext>Li</mtext> <mo>+</mo> </msup> <mo>+</mo> <mn>1</mn> <msup> <mtext>e</mtext> <mo>-</mo> </msup> <mo>→</mo>&nbsp; </mrow> </math>Attraction<br /><math> <mrow>  <msup>   <mrow>    <mtext>Li</mtext></mrow>   <mtext>+</mtext>  </msup>  <mtext>&#x2004;</mtext><mtext>&#x003E;</mtext><mtext>&#x2004;</mtext><msup>   <mrow>    <mtext>Na</mtext></mrow>   <mtext>+</mtext>  </msup>  </mrow></math> electron can reach more nearer to nucleus &amp; Energy released will be highest.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8635ec5b978a95ed994",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "12",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The atomic numbers of vanadium <math> <mrow> <mfenced> <mtext>V</mtext> </mfenced><mtext>,</mtext></mrow> </math> chromium <math> <mrow> <mfenced> <mrow> <mtext>Cr</mtext></mrow> </mfenced><mtext>,</mtext></mrow> </math> manganese <math> <mrow> <mfenced> <mrow> <mtext>Mn</mtext></mrow> </mfenced></mrow> </math> and iron <math> <mrow> <mtext>(Fe)</mtext></mrow> </math> are respectively <math> <mrow> <mtext>23,</mtext><mtext> </mtext><mtext>24,</mtext><mtext> </mtext><mtext>25</mtext></mrow> </math> and <math> <mrow> <mtext>26</mtext><mtext>.</mtext></mrow> </math> Which one of these may be expected to have the highest second ionization enthalpy?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Lh5s6",
+              "text": "<math> <mrow>  <mtext>Mn</mtext></mrow></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "TyHai",
+              "text": "<math> <mtext>V</mtext></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Hsfrf",
+              "text": "<math> <mrow> <mtext>Cr</mtext></mrow> </math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "B96IG",
+              "text": "<math> <mrow>  <mtext>Fe</mtext></mrow></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Consider Electronic configuration of <math> <mrow> <msup> <mtext>M</mtext> <mtext>+</mtext> </msup> </mrow> </math><br /><math> <mrow> <msub> <mrow></mrow> <mrow> <mtext>23</mtext></mrow> </msub> <msup> <mtext>V</mtext> <mtext>+</mtext> </msup> <msub> <mo>⇒</mo> <mrow> <mtext>18</mtext></mrow> </msub> <mtext>[Ar]</mtext><mtext> </mtext><msup> <mrow> <mtext>4s</mtext></mrow> <mtext>1</mtext> </msup> <mtext> </mtext><msup> <mrow> <mtext>3d</mtext></mrow> <mtext>3</mtext> </msup> </mrow> </math><br /><math> <mrow> <msub> <mrow></mrow> <mrow> <mtext>24</mtext></mrow> </msub> <msup> <mrow> <mtext>Cr</mtext></mrow> <mtext>+</mtext> </msup> <msub> <mo>⇒</mo> <mrow> <mtext>18</mtext></mrow> </msub> <mtext>[Ar]</mtext><mtext> </mtext><msup> <mrow> <mtext>4s</mtext></mrow> <mtext>0</mtext> </msup> <mtext> </mtext><msup> <mrow> <mtext>3d</mtext></mrow> <mtext>5</mtext> </msup> </mrow> </math><br /><math> <mrow> <msub> <mrow></mrow> <mrow> <mtext>25</mtext></mrow> </msub> <msup> <mrow> <mtext>Mn</mtext></mrow> <mtext>+</mtext> </msup> <msub> <mo>⇒</mo> <mrow> <mtext>18</mtext></mrow> </msub> <mtext>[Ar]</mtext><mtext> </mtext><msup> <mrow> <mtext>4s</mtext></mrow> <mtext>1</mtext> </msup> <mtext> </mtext><msup> <mrow> <mtext>3d</mtext></mrow> <mtext>5</mtext> </msup> </mrow> </math><br /><math> <mrow>  <msub>   <mrow></mrow>   <mrow>    <mtext>26</mtext></mrow>  </msub>  <msup>   <mrow>    <mtext>Fe</mtext></mrow>   <mtext>+</mtext>  </msup>  <msub>   <mo>&#x21D2;</mo>   <mrow>    <mtext>18</mtext></mrow>  </msub>  <mtext>[Ar]</mtext><mtext>&#x2004;</mtext><msup>   <mrow>    <mtext>3d</mtext></mrow>   <mtext>6</mtext>  </msup>  <mtext>&#x2004;</mtext><msup>   <mrow>    <mtext>4s</mtext></mrow>   <mtext>1</mtext>  </msup>  </mrow></math><br />Removal of second electron from stable configuration of <math> <mrow> <msub> <mrow></mrow> <mrow> <mtext>18</mtext></mrow> </msub> <mtext>[Ar]</mtext><mtext> </mtext><msup> <mrow> <mtext>4s</mtext></mrow> <mtext>0</mtext> </msup> <mtext> </mtext><msup> <mrow> <mtext>3d</mtext></mrow> <mtext>5</mtext> </msup> </mrow> </math> will require very high energy input i.e. <math> <mrow> <mtext>(Cr)</mtext></mrow> </math> as it will disturb the stable electronic configuration of <math> <mrow> <msup> <mrow> <mtext>3d</mtext></mrow> <mtext>5</mtext> </msup> </mrow> </math> (half filled subshell).",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86356a9b0c48707ef4d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "95",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The correct code for stability, of oxidation states for given cations is<br />\rI. <math><mi mathvariant=\"normal\">P</mi><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">P</mi><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>4</mn><mo>+</mo></mrow></msup><mo>,</mo><mi mathvariant=\"normal\">T</mi><msup><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mo>+</mo></mrow></msup><mo>&lt;</mo><mi mathvariant=\"normal\">T</mi><msup><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup></math> II. <math><mi mathvariant=\"normal\">B</mi><msup><mrow><mi mathvariant=\"normal\">i</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo>&lt;</mo><mi mathvariant=\"normal\">S</mi><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo>,</mo><mi mathvariant=\"normal\">S</mi><msup><mrow><mi mathvariant=\"normal\">n</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&lt;</mo><mi mathvariant=\"normal\">S</mi><msup><mrow><mi mathvariant=\"normal\">n</mi></mrow><mrow><mn>4</mn><mo>+</mo></mrow></msup></math><br />\rIII. <math><mi mathvariant=\"normal\">P</mi><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">P</mi><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>4</mn><mo>+</mo></mrow></msup><mo>,</mo><mi mathvariant=\"normal\">B</mi><msup><mrow><mi mathvariant=\"normal\">i</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">B</mi><msup><mrow><mi mathvariant=\"normal\">i</mi></mrow><mrow><mn>5</mn><mo>+</mo></mrow></msup></math> IV. <math><mi mathvariant=\"normal\">T</mi><msup><mrow><mi mathvariant=\"normal\">l</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo>&lt;</mo><mi mathvariant=\"normal\">I</mi><msup><mrow><mi mathvariant=\"normal\">n</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo>,</mo><mi mathvariant=\"normal\">S</mi><msup><mrow><mi mathvariant=\"normal\">n</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">S</mi><msup><mrow><mi mathvariant=\"normal\">n</mi></mrow><mrow><mn>4</mn><mo>+</mo></mrow></msup></math><br />\rV. <math><mi mathvariant=\"normal\">S</mi><msup><mrow><mi mathvariant=\"normal\">n</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&lt;</mo><mi mathvariant=\"normal\">P</mi><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>,</mo><mi mathvariant=\"normal\">S</mi><msup><mrow><mi mathvariant=\"normal\">n</mi></mrow><mrow><mn>4</mn><mo>+</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">P</mi><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>4</mn><mo>+</mo></mrow></msup></math> VI. <math><mi mathvariant=\"normal\">S</mi><msup><mrow><mi mathvariant=\"normal\">n</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&lt;</mo><mi mathvariant=\"normal\">P</mi><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>,</mo><mi mathvariant=\"normal\">S</mi><msup><mrow><mi mathvariant=\"normal\">n</mi></mrow><mrow><mn>4</mn><mo>+</mo></mrow></msup><mo>&lt;</mo><mi mathvariant=\"normal\">P</mi><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>4</mn><mo>+</mo></mrow></msup></math>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "9vhwK",
+              "text": "V and VI",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "po9eR",
+              "text": "I, III and VI",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "xxwdW",
+              "text": "III and V",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "YkmLL",
+              "text": "II and IV",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Due to inert effect the stability of lower oxidation state gradually increases while stability of higher oxidation state gradually decreases down the group in elements of group 13th to 15th. So correct order are<br />III. <math><mi mathvariant=\"normal\">P</mi><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">P</mi><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>4</mn><mo>+</mo></mrow></msup><mo>,</mo><mi mathvariant=\"normal\">B</mi><msup><mrow><mi mathvariant=\"normal\">i</mi></mrow><mrow><mn>3</mn><mo>+</mo></mrow></msup><mo>&gt;</mo><mi mathvariant=\"normal\">B</mi><msup><mrow><mi mathvariant=\"normal\">i</mi></mrow><mrow><mn>5</mn><mo>+</mo></mrow></msup></math><br />IV. <math><mi mathvariant=\"normal\">S</mi><msup><mrow><mi mathvariant=\"normal\">n</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>&lt;</mo><mi mathvariant=\"normal\">P</mi><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>2</mn><mo>+</mo></mrow></msup><mo>,</mo><mi mathvariant=\"normal\">S</mi><msup><mrow><mi mathvariant=\"normal\">n</mi></mrow><mrow><mn>4</mn><mo>+</mo></mrow></msup><mo>&lt;</mo><mi mathvariant=\"normal\">P</mi><msup><mrow><mi mathvariant=\"normal\">b</mi></mrow><mrow><mn>4</mn><mo>+</mo></mrow></msup></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863556dd25b862d30d5",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "09",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Identify the correct decreasing order of acid strength for the following compounds:<br />\r<br />\r<math> <mrow> <mtext>(I)</mtext><mtext> </mtext><mtext>HClO,</mtext><mtext> </mtext><mtext>(II)</mtext><mtext> </mtext><mtext>HBrO,</mtext><mtext> </mtext><mtext>(III)</mtext><mtext> </mtext><mtext>HIO</mtext></mrow> </math>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "HivoM",
+              "text": "I &gt; II &gt; III",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "yRqLI",
+              "text": "II &gt; I &gt; III",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "M6XFu",
+              "text": "III &gt; II &gt; I",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2dWVf",
+              "text": "I &gt; III &gt; II",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The acidic character of hypohalous acid depends on the electronegativity of halogen. As the electronegativity value of halogen increases the acidic strength of hypohalous acid increases.<br /><br />Here, Electronegativity of atom <math> <mtext>X</mtext></math> (<math> <mrow>  <mtext>Cl,</mtext><mtext>&#x2004;</mtext><mtext>Br</mtext></mrow></math> or <math> <mtext>I</mtext></math>) attached to <math> <mtext>O</mtext></math> decreases down the group, polarity of OH bond decreases, acid strength decreases. It means more the electronegativity of the halogen atom, more the tendency to pull electron and weaker the <math> <mrow>  <mtext>O</mtext><mo>&#x2212;</mo><mtext>H</mtext></mrow></math> bond and hence proton <math> <mrow>  <msup>   <mrow>    <mtext>(H</mtext></mrow>   <mtext>+</mtext>  </msup>  <mtext>)</mtext></mrow></math> can easily be removed.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86351756e3f0b501a06",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "08",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following orders is incorrect with respect to the property indicated ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ayYgD",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>NH</mi><mn>3</mn></msub><mo>&lt;</mo><msub><mi>PH</mi><mn>3</mn></msub><mo>&lt;</mo><msub><mi>AsH</mi><mn>3</mn></msub></math>&nbsp; (acidic behaviour)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "KNDH4",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Li</mi><mo>&lt;</mo><mi>Be</mi><mo>&lt;</mo><mi mathvariant=\"normal\">B</mi><mo>&lt;</mo><mi mathvariant=\"normal\">C</mi></math>&nbsp; (first ionisation energy)",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "pU7lb",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>Al</mi><mn>2</mn></msub><msub><mi mathvariant=\"normal\">O</mi><mn>3</mn></msub><mo>&lt;</mo><mi>MgO</mi><mo>&lt;</mo><msub><mi>Na</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi><mo>&lt;</mo><msub><mi mathvariant=\"normal\">K</mi><mn>2</mn></msub><mi mathvariant=\"normal\">O</mi></math>&nbsp; (basic character)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "2ThKa",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>Li</mi><mo>+</mo></msup><mo>&lt;</mo><msup><mi>Na</mi><mo>+</mo></msup><mo>&lt;</mo><msup><mi mathvariant=\"normal\">K</mi><mo>+</mo></msup><mo>&lt;</mo><msup><mi>Cs</mi><mo>+</mo></msup></math>&nbsp; (ionic radius)",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "(i) Bond angle of <math> <mrow> <msub> <mrow> <mtext>NH</mtext></mrow> <mn>3</mn> </msub> <mo>=</mo><msup> <mrow> <mn>107</mn></mrow> <mi>o</mi> </msup> </mrow> </math><br /><br /><math> <mrow>  <msub>   <mrow>    <mtext>PH</mtext></mrow>   <mtext>3</mtext>  </msub>  <mtext>&#x2004;</mtext><mo>&#x003E;</mo><mtext>&#x2004;</mtext><msub>   <mrow>    <mtext>AsH</mtext></mrow>   <mtext>3</mtext>  </msub>  <mo>=</mo><msup>   <mrow>    <mn>90</mn></mrow>   <mi>o</mi>  </msup>  </mrow></math><br /><br />According to bond angle the %s character of lp in <math> <mrow> <msub> <mrow> <mtext>NH</mtext></mrow> <mn>3</mn> </msub> <mo>=</mo><mn>22</mn><mi>%</mi></mrow> </math> while in <math> <mrow> <msub> <mrow> <mtext>PH</mtext></mrow> <mn>3</mn>&nbsp;&nbsp;</msub><mo>&amp;&nbsp;</mo><msub> <mrow> <mtext>AsH</mtext></mrow> <mn>3</mn> </msub> </mrow> </math> having approximately 100%, so the donation of lp in <math> <mrow> <msub> <mrow> <mtext>PH</mtext></mrow> <mn>3</mn> </msub> <mo>&nbsp;&amp;&nbsp;</mo><msub> <mrow> <mtext>AsH</mtext></mrow> <mn>3</mn> </msub> </mrow> </math> are difficult. Hence, the acidic character increases and the order of acidic character is <math> <mrow> <msub> <mrow> <mtext>NH</mtext></mrow> <mn>3</mn> </msub> <mo>&lt;</mo><msub> <mrow> <mtext>PH</mtext></mrow> <mn>3</mn> </msub> <mo>&lt;</mo><msub> <mrow> <mtext>AsH</mtext></mrow> <mn>3</mn> </msub> </mrow> </math> is correct<br /><br />(ii) On moving left to right in a period ionisation energy increases.&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Li</mi><mo>&lt;</mo><mi>Be</mi><mo>&lt;</mo><mi mathvariant=\"normal\">B</mi><mo>&lt;</mo><mi mathvariant=\"normal\">C</mi></math> but the first ionisation potential of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Be</mi></math> is higher than that of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">B</mi></math> because <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Be</mi></math> has fulfilled configuration.<br /><br />(iii) Metallic character increases hence the basic character of oxide increases.<br /><br />(iv) In a group from top to the bottom, the number of the shell increases hence radius increases.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e86350e051f5fa441a60",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "72",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "How many of these elements have lower electron affinity than fluorine?<br />\r<br />\rCl, S, O, N, P, Br, I, C",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "7",
+          "solution": {
+            "text": "Here S, O, N, P, Br, I and C have less electron affinity than F.<br/><br/>Only Cl has more electron affinity than F.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8634db7a19dc8f119df",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "44",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Germanium (II) compounds are powerful reducing agents whereas lead (IV) compounds are strong oxidising agents even they belongs to same group (14), this is due to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Cb1Uj",
+              "text": "More powerful inert pair effect in Pb than Ge",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "6WURV",
+              "text": "The ionisation energy of Pb &lt; IE of Ge",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "kRgfv",
+              "text": "Pb is more electronegative than Ge",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "UoKDS",
+              "text": "The ionic radius of Ge<sup>2+</sup> and Ge<sup>4+</sup> are greater than Pb<sup>2+</sup> and Pb<sup>4+</sup>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Inert pair effect increases in 14th group as the atomic number increases.<br /><br />On moving top to bottom on group 14<br /><br /><math> <mrow> <mtable> <mtr> <mtd> </mtd> <mtd> <mfenced close=\")\" open=\"(\" separators=\",\"> <mrow> <mtext>Z</mtext> </mrow> </mfenced> </mtd> </mtr> <mtr> <mtd> <mtext>C</mtext> </mtd> <mtd> <mn>6</mn> </mtd> </mtr> <mtr> <mtd> <mtext>Si</mtext> </mtd> <mtd> <mn>1</mn> <mn>4</mn> </mtd> </mtr> <mtr> <mtd> <mtext>Ge</mtext> </mtd> <mtd> <mn>3</mn> <mn>2</mn> </mtd> </mtr> <mtr> <mtd> <mtext>Sn</mtext> </mtd> <mtd> <mn>5</mn> <mn>0</mn> </mtd> </mtr> <mtr> <mtd> <mtext>Pb</mtext> </mtd> <mtd> <mn>8</mn> <mn>2</mn> </mtd> </mtr> </mtable> <mo>&darr;</mo> <mtable> <mtr> <mtd> </mtd> </mtr> <mtr> <mtd> <mo>&bull;</mo> <mtext>Atomic number increases</mtext> </mtd> </mtr> <mtr> <mtd> </mtd> </mtr> <mtr> <mtd> </mtd> </mtr> <mtr> <mtd> <mo>&bull;</mo> <mtext>Inert pair effect increases</mtext> </mtd> </mtr> <mtr> <mtd> </mtd> </mtr> </mtable> </mrow> </math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8634aea4b8f62c54fc3",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "77",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "<p>Electron gain enthalpy and ionisation energy of an atom are –a and +b eV respectively. The electronegativity of that atom on Mulliken scale is given by :</p>\r",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "WnFaW",
+              "text": "a &ndash; b",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "9m5AC",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi mathvariant=\"normal\">b</mi><mo>-</mo><mi mathvariant=\"normal\">a</mi></mrow><mn>2</mn></mfrac></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "6NImU",
+              "text": "a + b",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "xFmLW",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi mathvariant=\"normal\">a</mi><mo>+</mo><mi mathvariant=\"normal\">b</mi></mrow><mn>2</mn></mfrac></math>",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mtext>EN</mtext><mo>=</mo><mfrac><mrow><mtext>IE</mtext><mo>+</mo><mi mathvariant=\"normal\">E</mi><mo>⁡</mo><mi mathvariant=\"normal\">A</mi><mo>⁡</mo></mrow><mn>2</mn></mfrac><mspace width=\"0.5em\"></mspace><mtext>and</mtext><mspace width=\"0.5em\"></mspace><mi mathvariant=\"normal\">E</mi><mo>⁡</mo><mi mathvariant=\"normal\">A</mi><mo>⁡</mo><mo>=</mo><mo>-</mo><mi mathvariant=\"normal\">E</mi><msub><mo>⁡</mo><mrow><mtext>g</mtext><mi mathvariant=\"normal\">a</mi></mrow></msub></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8633db8fecb5d0bfb07",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "53",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Sum of total number of amphoteric and neutral oxides among the following is:<br />\r<math> <mrow> <mtext>CO</mtext><mo>,</mo><mtext>NO</mtext><mo>,</mo><msub> <mrow> <mtext>Al</mtext></mrow> <mn>2</mn> </msub> <msub> <mtext>O</mtext> <mn>3</mn> </msub> <msub> <mrow> <mtext>,PbO</mtext></mrow> <mn>2</mn> </msub> <mtext>,CaO</mtext><mo>,</mo><msub> <mrow> <mtext>SnO</mtext></mrow> <mn>2</mn> </msub> <mo>,</mo><mtext>ZnO</mtext></mrow> </math>",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "6",
+          "solution": {
+            "text": "<math> <mrow>  <mtext>CO&#x00A0;&#x0026;NO</mtext></mrow></math>are neutral oxide.<br><math> <mrow>  <mtext>CaO</mtext></mrow></math> basic oxide. Rest of them are amphoteric oxide.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863398934b7d4ef24ab",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "21",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "First and second ionization energies of magnesium are <math> <mrow> <mn>7.646</mn></mrow> </math> and <math> <mrow> <mtext>15</mtext><mtext>.035</mtext><mtext> </mtext><mtext>eV</mtext></mrow> </math> respectively. The amount of energy in <math> <mrow> <mtext>kJ/mol</mtext></mrow> </math> needed to convert all the atoms of Magnesium into <math> <mrow> <msup> <mrow> <mtext>Mg</mtext></mrow> <mrow> <mtext>2+</mtext></mrow> </msup> </mrow> </math> ions present in <math> <mrow> <mtext>12</mtext><mtext> </mtext><mtext>mg</mtext></mrow> </math> of magnesium vapours is: (Report your answer by multiplying with <math> <mrow> <mtext>10</mtext></mrow> </math> and round it upto nearest integer)<br />\r[Given: <math> <mrow> <mtext>1</mtext><mtext> </mtext><mtext>eV</mtext><mtext> </mtext><mtext>=</mtext><mtext> </mtext><mtext>96</mtext><mtext>.5</mtext><mtext> </mtext><mtext>kJ</mtext><mtext> </mtext><msup> <mrow> <mtext>mol</mtext></mrow> <mrow> <mo>−</mo><mtext>1</mtext></mrow> </msup> </mrow> </math>]",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "11",
+          "solution": {
+            "text": "<math> <mrow> <mfrac> <mrow> <mn>12</mn><mtext> </mtext><mtext>mg</mtext></mrow> <mrow> <mn>24</mn><mtext> </mtext><mtext>g</mtext></mrow> </mfrac> <mo>=</mo><mn>0.5</mn><mo>×</mo><msup> <mrow> <mn>10</mn></mrow> <mrow> <mo>−</mo><mn>3</mn></mrow> </msup> <mtext> </mtext><mtext>moles</mtext></mrow> </math><br />Energy per atom = <math> <mrow> <mtext>7</mtext><mtext>.646</mtext><mtext> </mtext><mtext>+</mtext><mtext> </mtext><mtext>15</mtext><mtext>.035</mtext><mtext> </mtext><mtext>=</mtext><mtext> </mtext><mtext>22</mtext><mtext>.68</mtext><mtext> </mtext><mtext>eV</mtext></mrow> </math><br /><math> <mrow> <mtext>22</mtext><mtext>.68</mtext><mtext> </mtext><mtext>×</mtext><mtext> </mtext><mtext>96</mtext><mtext>.48</mtext><mtext> </mtext><mtext>=</mtext><mtext> </mtext><mtext>21</mtext><mtext>.88</mtext><mtext> </mtext><mtext>×</mtext><mtext> </mtext><msup> <mrow> <mtext>10</mtext></mrow> <mtext>2</mtext> </msup> <mtext> </mtext><mtext>kJ/mol</mtext></mrow> </math><br /><math> <mtext>E</mtext> </math> (needed) &nbsp;<math> <mrow> <mn>2</mn> <mn>1</mn> <mtext>.</mtext> <mn>8</mn> <mn>8</mn> <mo>×</mo> <mn>1</mn> <msup> <mn>0</mn> <mn>2</mn> </msup> <mo>×</mo> <mn>0</mn> <mtext>.</mtext> <mn>5</mn> <mo>×</mo> <mn>1</mn> <msup> <mn>0</mn> <mrow> <mo>-</mo> <mn>3</mn> </mrow> </msup> </mrow> </math>&nbsp;<br /><math> <mrow>  <mtext>10</mtext><mtext>.94</mtext><mtext>&#x2004;</mtext><mtext>&#x00D7;</mtext><mtext>&#x2004;</mtext><msup>   <mrow>    <mtext>10</mtext></mrow>   <mrow>    <mo>&#x2212;</mo><mtext>1</mtext></mrow>  </msup>  <mtext>&#x2004;</mtext><mtext>=</mtext><mtext>&#x2004;</mtext><mtext>1</mtext><mtext>.094</mtext><mtext>&#x2004;</mtext><mtext>kJ/mol</mtext></mrow></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863358bf34b3b1c53ec",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "51",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "<p>The correct decreasing order of electropositive character among the following elements is :<br />\r<br />\rFe, Sc, Rb, Br, Te, F, Ca</p>\r",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "QfsL3",
+              "text": "Fe &gt; Sc &gt; Rb &gt; Br &gt; Te &gt; F &gt; Ca",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "lZ3Rr",
+              "text": "Ca &gt; Rb &gt; Sc &gt; Fe &gt; Te &gt; F &gt; Br",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "90BY7",
+              "text": "Rb &gt; Ca &gt; Sc &gt; Fe &gt; Br &gt; Te &gt; F",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GLfNs",
+              "text": "Rb &gt; Ca &gt; Sc &gt; Fe &gt; Te &gt; Br &gt; F",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<strong>(i)</strong>&nbsp; Alkali and alkaline earth metals are most electro-positive. Alkali metals are more electropositive than alkaline earth metals.<br /><br /><strong>(ii)</strong>&nbsp; In d-block series, the elements near alkaline earth metals are more electropositive than rest of the members.<br /><br /><strong>(iii)</strong>&nbsp; Metalloids are less electropositive than metals.<br /><br /><strong>(iv)</strong> Halogens (Non-metals) are least electropositive. In halogen group, electropositive character increases as atomic number increases.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863344bb693edc2350e",
+          "type": "numerical",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "92",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "How many of these elements have more first ionization energy then boron<br />\r<math><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">i</mi><mo>,</mo><mi mathvariant=\"normal\"></mi><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">e</mi><mo>,</mo><mi mathvariant=\"normal\"></mi><mi mathvariant=\"normal\">C</mi><mo>,</mo><mi mathvariant=\"normal\"></mi><mi mathvariant=\"normal\">N</mi><mo>,</mo><mi mathvariant=\"normal\"></mi><mi mathvariant=\"normal\">O</mi><mo>,</mo><mi mathvariant=\"normal\"></mi><mi mathvariant=\"normal\">F</mi><mo>,</mo><mi mathvariant=\"normal\"></mi><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">e</mi></math> .",
+            "image": null
+          },
+          "options": [],
+          "correctValue": "6.00",
+          "solution": {
+            "text": "Here the order of first ionization energy is as follows<br /><math><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">e</mi><mo>&gt;</mo><mi mathvariant=\"normal\">F</mi><mo>&gt;</mo><mi mathvariant=\"normal\">N</mi><mo>&gt;</mo><mi mathvariant=\"normal\">O</mi><mo>&gt;</mo><mi mathvariant=\"normal\">C</mi><mo>&gt;</mo><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">e</mi><mo>&gt;</mo><mi mathvariant=\"normal\">B</mi><mo>&gt;</mo><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">i</mi></math><br />Hence six elements have more first ionization energy then boron.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8632e8fbd883f53139f",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "68",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "A trend which is common to elements of both the group 1<sup>st</sup> and group 17<sup>th</sup>, on going from top to bottom",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "W1UA9",
+              "text": "Boiling point increases",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "PEk78",
+              "text": "Electorn affinity increases",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Ue4gL",
+              "text": "Oxidising power increases",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3ReP1",
+              "text": "Ionization energy decreses.",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "A trend which is common to elements of both the group 1<sup>st</sup> and group 17<sup>th</sup>, on going from top to bottom is that the ionization energy decreases since the atomic size increases. ",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8632513e4e50f81053f",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "24",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The atomic number of elements <math> <mrow> <mtext>A,&nbsp;B,&nbsp;C</mtext></mrow> </math> and <math> <mtext>D</mtext> </math> are <math> <mrow> <mtext>Z</mtext><mo>−</mo><mtext>1,&nbsp;</mtext><mtext> </mtext><mtext>Z,&nbsp;</mtext><mtext> </mtext><mtext>Z</mtext><mtext> </mtext><mtext>+</mtext><mtext> </mtext><mtext>1,&nbsp;</mtext><mtext> </mtext><mtext>Z</mtext><mtext> </mtext><mtext>+</mtext><mtext> </mtext><mtext>2</mtext></mrow> </math> respectively. If <math> <mtext>B</mtext> </math> is a noble gas, choose the correct option<br />\r(i) <math> <mrow> <mtext>(A)</mtext></mrow> </math> has higher electron affinity<br />\r(ii) <math> <mrow> <mfenced> <mtext>C</mtext> </mfenced></mrow> </math> exists in + 2 oxidation state<br />\r(iii) <math> <mrow> <mfenced> <mtext>D</mtext> </mfenced></mrow> </math> is an alkaline earth metal",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "stZR9",
+              "text": "<math><mfenced separators=\"|\"><mrow><mi>i</mi></mrow></mfenced><mi> </mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">d</mi><mi> </mi><mfenced separators=\"|\"><mrow><mi>i</mi><mi>i</mi></mrow></mfenced><mi> </mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "g3upU",
+              "text": "<math><mfenced separators=\"|\"><mrow><mi>i</mi><mi>i</mi></mrow></mfenced><mi> </mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">d</mi><mi> </mi><mfenced separators=\"|\"><mrow><mi>i</mi><mi>i</mi><mi>i</mi></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FYYHU",
+              "text": "<math><mfenced separators=\"|\"><mrow><mi>i</mi></mrow></mfenced><mi> </mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">d</mi><mi> </mi><mfenced separators=\"|\"><mrow><mi>i</mi><mi>i</mi><mi>i</mi></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "6D6li",
+              "text": "<math><mfenced separators=\"|\"><mrow><mi>i</mi></mrow></mfenced><mo>,</mo><mi> </mi><mfenced separators=\"|\"><mrow><mi>i</mi><mi>i</mi></mrow></mfenced><mi> </mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">d</mi><mi> </mi><mfenced separators=\"|\"><mrow><mi>i</mi><mi>i</mi></mrow></mfenced></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Atomic number of  <math><mfenced separators=\"|\"><mrow><mi>B</mi></mrow></mfenced><mo>=</mo><mi>Z</mi><mi> </mi></math>  and is a noble gas<br/><br/>Atomic number of  <math><mfenced separators=\"|\"><mrow><mi>A</mi></mrow></mfenced><mo>=</mo><mi>Z</mi><mo>-</mo><mn>1</mn></math>   (i.e., is a Halogen)<br/><br/>Atomic number  <math><mfenced separators=\"|\"><mrow><mi>C</mi></mrow></mfenced><mo>,</mo><mo>=</mo><mi>Z</mi><mo>+</mo><mn>1</mn></math> (i.e., is a alkali metal)<br/><br/>At number of  <math><mfenced separators=\"|\"><mrow><mi>D</mi></mrow></mfenced><mo>=</mo><mi>Z</mi><mo>+</mo><mn>2</mn></math>  (i.e., alkaline earth metal)<br/><br/>Hence, element  <math><mfenced separators=\"|\"><mrow><mi>A</mi></mrow></mfenced></math>  must be a Halogen, so has highest electron affinity among the given species.  <math><mfenced separators=\"|\"><mrow><mi>C</mi></mrow></mfenced><mo>.</mo></math>  is an alkali metal and  <math><mfenced separators=\"|\"><mrow><mi>D</mi></mrow></mfenced></math>  is an alkaline earth metal",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863229ba02deee6d344",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "106",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which of the following is incorrect ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "WvxS6",
+              "text": "<math><msub><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">E</mi></mrow><mrow><mn>1</mn></mrow></msub><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">&nbsp;</mi><mo>&lt;</mo><mi mathvariant=\"normal\">&nbsp;</mi><msub><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">E</mi></mrow><mrow><mn>1</mn></mrow></msub><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">e</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Iszgg",
+              "text": "<math><msub><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">E</mi></mrow><mrow><mn>1</mn></mrow></msub><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">&nbsp;</mi><mo>&lt;</mo><mi mathvariant=\"normal\">&nbsp;</mi><msub><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">E</mi></mrow><mrow><mn>1</mn></mrow></msub><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">B</mi></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Rcdff",
+              "text": "<math><msub><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">E</mi></mrow><mrow><mn>1</mn></mrow></msub><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\"> </mi><mo>&gt;</mo><mi mathvariant=\"normal\"> </mi><msub><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">E</mi></mrow><mrow><mn>1</mn></mrow></msub><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">a</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "l4qEg",
+              "text": "<math><msub><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">E</mi></mrow><mrow><mn>1</mn></mrow></msub><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\"> </mi><mo>&gt;</mo><mi mathvariant=\"normal\"> </mi><msub><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">E</mi></mrow><mrow><mn>1</mn></mrow></msub><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\"> </mi><mi mathvariant=\"normal\">N</mi><mi mathvariant=\"normal\">e</mi></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math><msub><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">E</mi></mrow><mrow><mn>1</mn></mrow></msub><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">&nbsp;</mi><mo>&gt;</mo><mi mathvariant=\"normal\">&nbsp;</mi><msub><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">E</mi></mrow><mrow><mn>1</mn></mrow></msub><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">&nbsp;</mi><mi mathvariant=\"normal\">B</mi></math> ; In <math><mi mathvariant=\"normal\">B</mi><mi mathvariant=\"normal\">e</mi></math> removal occurs from <math><mn>2</mn><mi mathvariant=\"normal\">s</mi></math> ; In <math><mi mathvariant=\"normal\">B</mi></math> it occurs from <math><mn>2</mn><mi mathvariant=\"normal\">p</mi></math> . More closer are subshell to nucleus more is <math><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">E</mi></math> .",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e8630882912df2ea2b17",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "10",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "Which among the following elements have lowest value of <math> <mrow> <msub> <mrow> <mtext>IE</mtext></mrow> <mtext>1</mtext> </msub> <mtext>?</mtext></mrow> </math>",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "KjTzC",
+              "text": "Pb",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "5tdwz",
+              "text": "Sn",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "WMQvx",
+              "text": "Si",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4pzzI",
+              "text": "C",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Ionisation energy of carbon group follows the order <math> <mrow>  <mtext>C</mtext><mtext>&#x2004;</mtext><mtext>&#x003E;</mtext><mtext>&#x2004;</mtext><mtext>Si</mtext><mtext>&#x2004;</mtext><mtext>&#x003E;</mtext><mtext>&#x2004;</mtext><mtext>Ge</mtext><mtext>&#x2004;</mtext><mtext>&#x003E;</mtext><mtext>&#x2004;</mtext><mtext>Pb</mtext><mtext>&#x2004;</mtext><mtext>&#x003E;</mtext><mtext>&#x2004;</mtext><mtext>Sn</mtext><mtext>.</mtext></mrow></math><br /><math> <mrow> <msub> <mrow> <mtext>IE</mtext></mrow> <mrow> <mtext>Pb</mtext></mrow> </msub> <mtext> </mtext><mtext>&gt;</mtext><mtext> </mtext><msub> <mrow> <mtext>IE</mtext></mrow> <mrow> <mtext>Sn</mtext></mrow> </msub> </mrow> </math> because of poor shielding effect of electrons resulting in lanthanide contraction.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "6151e863044644ab86efdf72",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [
+            {
+              "title": "NTA Abhyas Paper",
+              "value": "17",
+              "isVisible": true
+            }
+          ],
+          "previousYearPapers": [
+            {
+              "_id": "6904b6feef55966cf1d71f2a",
+              "title": "NTA Abhyas (JEE Main) 2020",
+              "shortName": "2020",
+              "isVisible": true,
+              "heldOn": "2020-05-25T09:00:00.000Z"
+            }
+          ],
+          "question": {
+            "text": "The incorrect order of first ionisation energy is:",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "MDPIS",
+              "text": "Au > Cu > Ag",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "e6VfR",
+              "text": "Pt &gt;&nbsp;Ni &gt; Pd",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "hvBDx",
+              "text": "C &gt;&nbsp;Pb &gt; Sn",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "8FiOO",
+              "text": "B > Ga > Al",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "First ionization energy of <math> <mrow>  <mtext>Pd</mtext><mtext>&#x2004;</mtext><mtext>&#x003E;</mtext><mtext>&#x2004;</mtext><mtext>Ni</mtext></mrow></math>due to its <math> <mrow>  <msup>   <mtext>d</mtext>   <mrow>    <mtext>10</mtext></mrow>  </msup>  </mrow></math>configuration.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": null,
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

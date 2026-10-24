@@ -1,0 +1,812 @@
+{
+  "index": 32,
+  "chapterId": "61c089b974141df0ffb7dc8e",
+  "chapter": "Experimental Physics",
+  "exam": "MHT CET",
+  "subject": "Physics",
+  "totalTopics": 1,
+  "totalQuestions": 12,
+  "downloadTime": "2026-10-08 20:35:56",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "65a2634b0279619d9d8a3de4",
+      "title": "Experimental Physics",
+      "totalQuestions": 12,
+      "questions": [
+        {
+          "_id": "679214300aee93fa0796deae",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e149a8109c6c5665ccf",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-16T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (16 May Shift 1)",
+              "title": "MHT CET 2024 (16 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "A simple pendulum has a periodic time ' $\\mathrm{T}_1$ ' when it is on the surface of earth of radius ' $R$ '. Its periodic time is ' $T_2$ ' when it is taken to a height ' $R$ ' above the earth's surface. The value of $\\frac{T_2}{T_1}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "jGtTA",
+              "text": "$\\sqrt{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "rSFMM",
+              "text": "1",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "zQvIA",
+              "text": "2",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "l9rOi",
+              "text": "$\\frac{1}{2}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The periodic time of a simple pendulum is given by $T = 2\\pi \\sqrt{\\dfrac{L}{g}}$.<br><br>On the surface of the earth, the acceleration due to gravity is $g_1 = \\dfrac{GM}{R^2}$ and the periodic time is $T_1 = 2\\pi \\sqrt{\\dfrac{L}{g_1}}$.<br><br>At a height $h = R$ above the earth's surface, the distance from the center of the earth is $r = R + h = 2R$.<br><br>The acceleration due to gravity at this height is $g_2 = \\dfrac{GM}{(2R)^2} = \\dfrac{g_1}{4}$.<br><br>The periodic time at this height is $T_2 = 2\\pi \\sqrt{\\dfrac{L}{g_2}}$.<br><br>Taking the ratio of the periodic times:<br><br>$\\dfrac{T_2}{T_1} = \\sqrt{\\dfrac{g_1}{g_2}} = \\sqrt{\\dfrac{g_1}{g_1 / 4}} = \\sqrt{4} = 2$.<br><br>Answer: 2",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e149a8109c6c5665ccf",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-16T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (16 May Shift 1)",
+            "title": "MHT CET 2024 (16 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "679213380aee93fa0796d714",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67920e139a8109c6c5665cc3",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2024-05-02T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (02 May Shift 2)",
+              "title": "MHT CET 2024 (02 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A meter scale is supported on a wedge at its centre of gravity. A body of weight ' $w$ ' is suspended from the 20 cm mark and another weight of 25 gram is suspended from 74 cm mark balances it and the meter scale remains perfectly horizontal. Neglecting the weight of the meter scale, the weight of the body is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "r6Klj",
+              "text": "33 gram wt.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Mzpb5",
+              "text": "30 gram wt.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "gU29K",
+              "text": "20 gram wt.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "kKgsQ",
+              "text": "15 gram wt.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The meter scale is supported at its centre of gravity, which is at the $50\\text{ cm}$ mark.<br><br>The distance of the weight $w$ from the pivot is $50 - 20 = 30\\text{ cm}$.<br><br>The distance of the $25\\text{ g}$ weight from the pivot is $74 - 50 = 24\\text{ cm}$.<br><br>For the meter scale to remain perfectly horizontal, the net torque about the pivot must be zero. Equating the anticlockwise torque to the clockwise torque:<br><br>$w \\times 30 = 25 \\times 24$<br><br>$w = \\dfrac{25 \\times 24}{30}$<br><br>$w = 20\\text{ gram wt.}$<br><br>Answer: 20 gram wt.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67920e139a8109c6c5665cc3",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2024-05-02T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (02 May Shift 2)",
+            "title": "MHT CET 2024 (02 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a262310279619d9d8a328d",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b89f20917a5f41892b1",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-12T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (12 May Shift 2)",
+              "title": "MHT CET 2023 (12 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Two resistance $\\mathrm{X}$ and $\\mathrm{Y}$ are connected in the two gaps of a meterbridge and the null points is obtained at $20 \\mathrm{~cm}$ from zero end. When the resistance of $20 \\Omega$ is connected in series with the smaller of the two resistance $\\mathrm{X}$ and $\\mathrm{Y}$, the null point shifts to $40 \\mathrm{~cm}$ from left end. The value of smaller resistance in ohm is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "wY71m",
+              "text": "$6$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "nSXh3",
+              "text": "$9$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3W2vi",
+              "text": "$12$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "pGvwM",
+              "text": "$15$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "For a meterbridge, $\\frac{\\mathrm{X}}{\\mathrm{Y}}=\\frac{l}{100-l}$\nIn the first case, $l=20 \\mathrm{~cm}$\n$$\n\\begin{aligned}\n\\frac{\\mathrm{X}}{\\mathrm{Y}} & =\\frac{20}{100-20}=\\frac{20}{80}=\\frac{1}{4} \\\\\n\\therefore \\quad 4 \\mathrm{X} & =\\mathrm{Y}\n\\end{aligned}\n$$\n\nIn the second case, $l^{\\prime}=40 \\mathrm{~cm}$\n$$\n\\begin{array}{ll}\n\\therefore & \\frac{\\mathrm{X}^{\\prime}}{\\mathrm{Y}^{\\prime}}=\\frac{40}{100-40}= \\\\\n& \\text { But, } \\mathrm{X}^{\\prime}=\\mathrm{X}+2 \\\\\n\\therefore \\quad & \\frac{\\mathrm{X}+20}{\\mathrm{Y}}=\\frac{2}{3} \\\\\n\\therefore \\quad & \\frac{\\mathrm{X}+20}{4 \\mathrm{X}}=\\frac{2}{3} \\\\\n\\therefore \\quad & 8 \\mathrm{X}=3 \\mathrm{X}+60 \\\\\n\\therefore \\quad & \\mathrm{X}=12 \\Omega\n\\end{array}\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b89f20917a5f41892b1",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-12T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (12 May Shift 2)",
+            "title": "MHT CET 2023 (12 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a261e10279619d9d8a300e",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892ad",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-10T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (10 May Shift 2)",
+              "title": "MHT CET 2023 (10 May Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "In meter bridge experiment, null point was obtained at a distance ' $l$ ' from left end. The values of resistances in the left and right gap are doubled and then interchanged. The new position of the null point is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "EhhZM",
+              "text": "$(100-l)$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "pzIgm",
+              "text": "$(100-2 l)$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "W88pa",
+              "text": "$(100-3 l)$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "IEOSL",
+              "text": "$\\left(100-\\frac{l}{2}\\right)$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\begin{aligned}\n& \\text { For a Metre bridge, } \\\\\n& \\frac{\\mathrm{X}}{\\mathrm{R}}=\\frac{l_{\\mathrm{X}}}{l_{\\mathrm{R}}}\n\\end{aligned}$\nAfter doubling and interchanging the left and right gap resistances, the ratio of the resistances do not change.\nThis means the null point does not change.\n$\\therefore \\quad$ The new position will remain at $(100-l)$.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892ad",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-10T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (10 May Shift 2)",
+            "title": "MHT CET 2023 (10 May Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a261ac0279619d9d8a2e6a",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65a25b88f20917a5f41892aa",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2023-05-09T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (09 May Shift 1)",
+              "title": "MHT CET 2023 (09 May Shift 1)"
+            }
+          ],
+          "question": {
+            "text": "In a meter bridge experiment null point is obtained at $l \\mathrm{~cm}$ from the left end. If the meter bridge wire is replaced by a wire of same material but twice the area of across-section, then the null point is obtained at a distance",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "LXGGx",
+              "text": "$2 l \\mathrm{~cm}$ from left end.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Ux34r",
+              "text": "$l \\mathrm{~cm}$ from left end.",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "dMt4y",
+              "text": "$l / 2 \\mathrm{~cm}$ from left end.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "z403M",
+              "text": "$l / 4 \\mathrm{~cm}$ from left end.",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "At null condition, $\\frac{\\mathrm{R}_1}{\\mathrm{R}_2}=\\frac{\\mathrm{X}}{100-\\mathrm{X}}$\nThis condition is independent of the crosssectional area of the wire used.\n$\\therefore \\quad$ The null point will remain the same. (i.e., $l \\mathrm{~cm}$ from left end)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65a25b88f20917a5f41892aa",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2023-05-09T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (09 May Shift 1)",
+            "title": "MHT CET 2023 (09 May Shift 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a260110279619d9d8a2179",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f74",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-20T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (20 Oct Shift 2)",
+              "title": "MHT CET 2020 (20 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "In a resonance tube experiment, a tuning fork resonates with air column of length $12 \\mathrm{~cm}$ and again resonates when air column is $38 \\mathrm{~cm}$ long. The end correction will\n(b)",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Y66aR",
+              "text": "$0.25 \\mathrm{~cm}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "voclF",
+              "text": "$0.5 \\mathrm{~cm}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "AkaH1",
+              "text": "$1 \\mathrm{~cm}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "u6qq3",
+              "text": "$0.75 \\mathrm{~cm}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$e=\\frac{l_{2}-3 l_{1}}{2} \\quad\\therefore e=\\frac{38-36}{2}=1 \\mathrm{~cm}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f74",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-20T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (20 Oct Shift 2)",
+            "title": "MHT CET 2020 (20 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f9e0279619d9d8a1dec",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d3071b5bb33b3f9f6e",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (15 Oct Shift 2)",
+              "title": "MHT CET 2020 (15 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "A glass convex lens is of refractive index $1 \\cdot 55$ with both faces of same radius of curvature. What will be the radius of curvature if focal length is to be $20 \\mathrm{~cm}$ ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "j9x82",
+              "text": "$22 \\mathrm{~cm}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "qNFlW",
+              "text": "$21 \\mathrm{~cm}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "eUbLr",
+              "text": "$18 \\mathrm{~cm}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FZZy7",
+              "text": "$20 \\mathrm{~cm}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Lens maker's formula,\n\\(\\frac{1}{\\mathrm{f}}=(\\mu-1)\\left(\\frac{1}{\\mathrm{R}_{1}}-\\frac{1}{\\mathrm{R}_{2}}\\right)\\)\nHere, \\(\\mathrm{f}=20 \\mathrm{~cm}, \\mu=1.55, \\mathrm{R}_{1}=\\mathrm{R}, \\mathrm{R}_{2}=-\\mathrm{R}\\)\n\\(\\begin{aligned}\n&\\frac{1}{20}=(1.55-1)\\left(\\frac{1}{R}-\\frac{1}{(-R)}\\right) \\text { or } \\frac{1}{20}=0.55 \\times \\frac{2}{R} \\\\\n&\\Rightarrow R=1.1 \\times 20=22 \\mathrm{~cm}\n\\end{aligned}\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d3071b5bb33b3f9f6e",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (15 Oct Shift 2)",
+            "title": "MHT CET 2020 (15 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f2e0279619d9d8a1a67",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f68",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-12T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (12 Oct Shift 2)",
+              "title": "MHT CET 2020 (12 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "In Searle's method to find Young's modulus of a wire, when a force of $1 \\cdot 5 \\mathrm{~kg}$ -wt is applied at its free end, the length of wire is ' $a$ '. When force of $2 \\cdot 5$ kg-wt is applied, the length of wire is 'b'. What would be its original length?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "16Xd2",
+              "text": "$\\mathrm{b}-\\mathrm{a}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "i0QV5",
+              "text": "$\\frac{\\mathrm{b}-\\mathrm{a}}{4}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "iyN8D",
+              "text": "$2 \\cdot 5 \\mathrm{a}-1 \\cdot 5 \\mathrm{~b}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "kmcQO",
+              "text": "$2 \\cdot 5 \\mathrm{~b}-1 \\cdot 5 \\mathrm{a}$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f68",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-12T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (12 Oct Shift 2)",
+            "title": "MHT CET 2020 (12 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f2d0279619d9d8a1a5d",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f68",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2020-10-12T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020 (12 Oct Shift 2)",
+              "title": "MHT CET 2020 (12 Oct Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "Focal length of a convex lens will be maximum for",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "fSx04",
+              "text": "yellow light.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "vxMcH",
+              "text": "violet light.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "xIsDh",
+              "text": "blue light.",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "eVqN0",
+              "text": "red light.",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "No Solution",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f68",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2020-10-12T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020 (12 Oct Shift 2)",
+            "title": "MHT CET 2020 (12 Oct Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25f0c0279619d9d8a195d",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078d1071b5bb33b3f9f65",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2019-04-30T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019 (Shift 2)",
+              "title": "MHT CET 2019 (Shift 2)"
+            }
+          ],
+          "question": {
+            "text": "With a resistance of ‘X’ in the left gap and a resistance of 9 <math><mi>Ω</mi></math> in the right gap of meter bridge, the balance point is obtained at 40 cm from the left end. In what way and to which resistance <math><mn>3</mn><mi>Ω</mi></math> resistance be connected to obtained the balance at 50 cm from the left end?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "ytxY0",
+              "text": "In series with <math><mn>9</mn><mi>Ω</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "bdNwT",
+              "text": "Parallel to <math><mi>X</mi><mi>Ω</mi></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "FomJt",
+              "text": "In series with <math><mi>X</mi><mi></mi><mi>Ω</mi></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Xr6Or",
+              "text": "Parallel to <math><mn>9</mn><mi></mi><mi>Ω</mi></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The balance condition of bridge is shown below in the first case <br/><img src=\"https://cdn-question-pool.getmarks.app/pyq/mht_cet/4d447c70-0ceb-491c-850e-d68f5b05e118.png\"> <br/>Then, <math><mfrac><mrow><mi>X</mi></mrow><mrow><mn>9</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>40</mn></mrow><mrow><mn>60</mn></mrow></mfrac><mo>⇒</mo><mi>X</mi><mo>=</mo><mfrac><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mo>×</mo><mn>9</mn><mo>=</mo><mn>6</mn><mi>Ω</mi></math>  <br/>To get the balance point at 50 cm from left end, the balanced, condition becomes, <br/><math><mfrac><mrow><msup><mrow><mi>X</mi></mrow><mrow><mi>'</mi></mrow></msup></mrow><mrow><mn>9</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>50</mn></mrow><mrow><mn>50</mn></mrow></mfrac><mo>=</mo><mn>1</mn><mo>⇒</mo><msup><mrow><mi>X</mi></mrow><mrow><mi>'</mi></mrow></msup><mo>=</mo><mn>9</mn><mi>Ω</mi></math>  <br/>As, in series combinations resistances are added, so to get <math><mn>9</mn><mi>Ω</mi></math> at left gap the <math><mn>3</mn><mi>Ω</mi></math> resistance should be added in series with <math><mi>X</mi><mi>Ω</mi><mfenced separators=\"|\"><mrow><mn>6</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>9</mn><mi>Ω</mi></mrow></mfenced></math> .",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078d1071b5bb33b3f9f65",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2019-04-30T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019 (Shift 2)",
+            "title": "MHT CET 2019 (Shift 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25ebc0279619d9d8a16d9",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cf071b5bb33b3f9f62",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "MHT CET 2017"
+            }
+          ],
+          "question": {
+            "text": "Two unknown resistances are connected in two gaps of a meter-bridge. The null point is obtained at <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>40</mn><mo>&nbsp;</mo><mi>cm</mi></math> from left end. A <math><mn>30</mn><mi>&nbsp;</mi><mi mathvariant=\"normal\">Ω</mi></math> resistance is connected in series with the smaller of the two resistances, the null point shifts by <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>20</mn><mo>&nbsp;</mo><mi>cm</mi></math> to the right end. The value of smaller resistance in <math><mi mathvariant=\"normal\">Ω</mi></math> is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "w8O8V",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>12</mn></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "seYEi",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>24</mn></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "HDAdn",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>36</mn></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "BBtQZ",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>48</mn></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>l</mi><mi>x</mi></msub><mo>=</mo><mn>40</mn><mi>&#160;</mi><mi>cm</mi><mo>,</mo><mi>&#160;</mi><msub><mi>l</mi><mi>R</mi></msub><mo>=</mo><mn>60</mn><mi mathvariant=\"normal\">&#160;</mi><mi>cm</mi></math><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mi>x</mi><mi>R</mi></mfrac><mo>=</mo><mfrac><msub><mi>l</mi><mi>x</mi></msub><msub><mi>l</mi><mi>R</mi></msub></mfrac><mo>=</mo><mfrac><mn>40</mn><mn>60</mn></mfrac><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></math> ....... (i)<br /><math><mo>&#8756;</mo><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mfrac><mrow><mi>x</mi><mo>+</mo><mn>30</mn><mi>&#160;</mi></mrow><mrow><mi>R</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>60</mn></mrow><mrow><mn>40</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn></mrow><mrow><mn>2</mn></mrow></mfrac></math><br /><math><mo>&#8756;</mo><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mfrac><mrow><mi>x</mi><mo>+</mo><mn>30</mn></mrow><mrow><mi>R</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn></mrow><mrow><mn>2</mn></mrow></mfrac></math><br /><math><mo>&#8756;</mo><mi>&#160;</mi><mi>&#160;</mi><mi>&#160;</mi><mn>2x</mn><mfenced separators=\"|\"><mrow><mo>+</mo><mn>30</mn></mrow></mfenced><mi></mi><mi></mi><mi></mi><mo>=</mo><mi></mi><mi></mi><mi></mi><mn>3</mn><mi>R</mi></math><br /><math><mi>R</mi><mo>=</mo><mi>&#160;</mi><mfrac><mrow><mn>2</mn><mo>(</mo><mi>x</mi><mo>+</mo><mn>30</mn><mo>)</mo></mrow><mrow><mn>3</mn></mrow></mfrac></math> ........ (ii)<br />From (i) and (ii),<br /><math><mfrac><mrow><mn>3</mn><mi>x</mi></mrow><mrow><mn>2</mn><mo>(</mo><mi>x</mi><mo>+</mo><mn>30</mn><mo>)</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac></math><br /><math><mn>9</mn><mi>x</mi><mo>=</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>120</mn></math><br /><math><mn>5</mn><mi>x</mi><mo>=</mo><mn>120</mn><mi>&#160;</mi><mi>&#160;</mi><mo>&#8658;</mo><mi>&#160;</mi><mi>&#160;</mi><mi>x</mi><mo>=</mo><mn>24</mn><mi>&#160;</mi><mi mathvariant=\"normal\">&#937;</mi></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cf071b5bb33b3f9f62",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "MHT CET 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65a25eaf0279619d9d8a1671",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61c078cd071b5bb33b3f9f61",
+              "examId": "615d7745c52ffa3c944600e5",
+              "heldOn": "2016-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2016",
+              "title": "MHT CET 2016"
+            }
+          ],
+          "question": {
+            "text": "In balanced meter bridge, the resistance of bridge wire is <math><mn>0.1</mn><mi>&nbsp;</mi><mrow><mrow><mi mathvariant=\"normal\">Ω&nbsp;</mi></mrow><mo>cm.</mo></mrow></math>&nbsp;Unknown resistance <math><msup><mrow><mi>X</mi></mrow></msup></math>&nbsp;is connected in left gap and <math><mn>6&nbsp;</mn><mi mathvariant=\"normal\">Ω</mi></math> in right gap, null point divides the wire in the ratio <math><mn>2</mn><mo>:</mo><mn>3</mn></math>. Find the current drawn from the battery of <math><mi> 5 V</mi></math> having negligible resistance.",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "cOuWd",
+              "text": "<math><mn>1</mn><mi>&nbsp;</mi><mn>A</mn></math>",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "OTTry",
+              "text": "<math><mn>1.5</mn><mi> </mi><mn>A</mn></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "4wE1p",
+              "text": "<math><mn>2</mn><mi> </mi><mn>A</mn></math>",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Gtgr6",
+              "text": "<math><mn>5</mn><mi> </mi><mn>A</mn></math>",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<math><mfrac><mrow><msub><mrow><mi>l</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow><mrow><msub><mrow><mi>l</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><msub><mrow><mi>v</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow><mrow><msub><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfrac></math><br />Now <math><msub><mrow><mi>v</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>+</mo><msub><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>=</mo><mi>v</mi><mo>=</mo><mn>5</mn><mi>&nbsp;</mi><mn>V</mn></math> <math><mo>=</mo><mi>I</mi><mi>R</mi></math><br />For potentiometer wire <math><mfrac><mrow><msub><mrow><mi>R</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow><mrow><msub><mrow><mi>R</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><msub><mrow><mi>l</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow><mrow><msub><mrow><mi>l</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac></math><br /><math><mfrac><mrow><mi>x</mi></mrow><mrow><mn>6</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mo>⇒</mo><mfrac><mrow><mi>x</mi></mrow><mrow><mi mathvariant=\"script\">l</mi></mrow></mfrac><mo>=</mo><mn>4</mn><mi>&nbsp;</mi><mfrac><mrow><mi mathvariant=\"normal\">Ω</mi></mrow><mrow><mi mathvariant=\"normal\">m</mi></mrow></mfrac></math><br />The resistance of wire is <math><mfrac><mrow><mn>0.1</mn><mi mathvariant=\"normal\">Ω</mi></mrow><mrow><mn>c</mn><mn>m</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mi mathvariant=\"normal\">Ω</mi></mrow><mrow><mn>m</mn></mrow></mfrac></math><br /><math><mo>∴</mo><mi>&nbsp;</mi><mfenced separators=\"|\"><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mfenced><mo>=</mo><msub><mrow><mi>R</mi></mrow><mrow><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">f</mi></mrow></msub><mo>=</mo><mn>5</mn></math><br /><math><mo>∴</mo><mi>&nbsp;</mi><mi>i</mi><mo>=</mo><mfrac><mrow><mi>V</mi></mrow><mrow><msub><mrow><mi>R</mi></mrow><mrow><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">f</mi></mrow></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>5</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mo>=</mo><mn>1</mn><mi>&nbsp;</mi><mn>A</mn></math>",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61c078cd071b5bb33b3f9f61",
+            "examId": "615d7745c52ffa3c944600e5",
+            "heldOn": "2016-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2016",
+            "title": "MHT CET 2016"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Mechanical Properties of Fluids PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚡ BITSAT &bull; Mechanical Properties of Fluids</h1>
+        <div class="sub">Physics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 11, "chapterId": "61e7bd703e2e1b09725915db", "chapter": "Mechanical Properties of Fluids", "exam": "BITSAT", "subject": "Physics", "totalTopics": 6, "totalQuestions": 28, "downloadTime": "2026-10-08 20:27:50", "topics": [{"index": 1, "topicId": "64c0e8546f5bfc7ab78aecf0", "title": "Pressure and thrust", "totalQuestions": 2, "questions": [{"_id": "64c0e7d76f5bfc7ab78ae852", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 3, "question": {"text": "The approximate depth of an ocean is $2700 \\mathrm{~m}$. The compressibility of water is $45.4 \\times 10^{-11} \\mathrm{~Pa}^{-1}$ and density of water is $10^{3} \\mathrm{~kg} / \\mathrm{m}^{3}$. What fractional compression of water will be obtained at the bottom of the ocean?", "image": null}, "options": [{"id": "y2VXy", "text": "$1.0 \\times 10^{-2}$", "isCorrect": false, "image": null}, {"id": "taBbv", "text": "$1.2 \\times 10^{-2}$", "isCorrect": true, "image": null}, {"id": "zxIdW", "text": "$1.4 \\times 10^{-2}$", "isCorrect": false, "image": null}, {"id": "1swDA", "text": "$0.8 \\times 10^{-2}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Compressibility of water, $\\mathrm{K}=45.4 \\times 10^{-11} \\mathrm{~Pa}^{-1}$\r\n\r\ndensity of water $\\mathrm{P}=10^{3} \\mathrm{~kg} / \\mathrm{m}^{3}$\r\n\r\ndepth of ocean, $\\mathrm{h}=2700 \\mathrm{~m}$ We have to find $\\frac{\\Delta \\mathrm{V}}{\\mathrm{V}}=?$\r\n\r\nAs we know, compressibility, $\\mathrm{K}=\\frac{1}{\\mathrm{~B}}=\\frac{(\\Delta \\mathrm{V} / \\mathrm{V})}{\\mathrm{P}}(\\mathrm{P}=\\mathrm{Pgh})$\r\n\r\nSo, $(\\Delta \\mathrm{V} / \\mathrm{V})=\\mathrm{KPgh}$\r\n\r\n$=45.4 \\times 10^{-11} \\times 10^{3} \\times 10 \\times 2700$\r\n\r\n$=1.2258 \\times 10^{-2}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e78f6f5bfc7ab78ae5e6", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "An air bubble of volume $\\mathrm{v}_{0}$ is released by a fish at a depth $\\mathrm{h}$ in a lake. The bubble rises to the surface. Assume constant temperature and standard atmospheric pressure above the lake. The volume of the bubble just before touching the surface will be (density) of water is $\\rho$", "image": null}, "options": [{"id": "Zo6wi", "text": "$\\mathrm{v}_{0}$", "image": null, "isCorrect": false}, {"id": "yCH2d", "text": "$\\quad v_{0}(\\rho g h / p)$", "image": null, "isCorrect": false}, {"id": "U2x61", "text": "$\\frac{\\mathrm{v}_{0}}{\\left(1+\\frac{\\rho \\mathrm{gh}}{\\mathrm{p}}\\right)}$", "image": null, "isCorrect": false}, {"id": "Upl48", "text": "$\\mathrm{v}_{0}\\left(1+\\frac{\\rho \\mathrm{gh}}{\\mathrm{p}}\\right)$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "As the bubble rises the pressure gets reduced for constant temperature, if $\\mathrm{P}$ is the standard atmospheric pressure, then $(\\mathrm{P}+\\rho \\mathrm{gh}) \\mathrm{V}_{0}=\\mathrm{PV}$\n$$\n\\text { or } \\mathrm{V}=\\mathrm{V}_{0}\\left(1+\\frac{\\rho \\mathrm{gh}}{\\mathrm{P}}\\right)\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8546f5bfc7ab78aecf1", "title": "Pascal's Law", "totalQuestions": 2, "questions": [{"_id": "64c0e7ac6f5bfc7ab78ae6df", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 2, "question": {"text": "$\\quad$ A ball whose density is $0.4 \\times 10^{3} \\mathrm{~kg} / \\mathrm{m}^{3}$ falls into water from a height of $9 \\mathrm{~cm}$. To what depth does the ball sink?", "image": null}, "options": [{"id": "2OeLZ", "text": "$2 \\mathrm{~cm}$", "isCorrect": false, "image": null}, {"id": "yebp9", "text": "$6 \\mathrm{~cm}$", "isCorrect": true, "image": null}, {"id": "AvUva", "text": "$4.5 \\mathrm{~cm}$", "isCorrect": false, "image": null}, {"id": "ENTe1", "text": "$2.25 \\mathrm{~cm}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "No Solution", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e79c6f5bfc7ab78ae65f", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 1, "question": {"text": "An ice block floats in a liquid whose density is less than water. A part of block is outside the liquid. When whole of ice has melted, the liquid level will", "image": null}, "options": [{"id": "iFFe9", "text": "rise", "isCorrect": false, "image": null}, {"id": "6IO3t", "text": "go down", "isCorrect": true, "image": null}, {"id": "8WUos", "text": "remain same", "isCorrect": false, "image": null}, {"id": "xMbS0", "text": "first rise then go down", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Ice is lighter than water. When ice melts, the volume occupied by water is less than that of ice. Due to which the level of water goes down.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e8546f5bfc7ab78aecf2", "title": "Archmidies Principle", "totalQuestions": 5, "questions": [{"_id": "67726cf7c49e8ef28ee2b336", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "A cube of ice floats partly in water and partly in kerosene oil. The radio of volume of ice immersed in water to that in kerosene oil (specific gravity of Kerosene oil $=0.8$, specific gravity of ice $=0.9)$\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/85A7ady0FX_q5EBVSVK_nfGSZm0-PuyhFV4f2W_GwFw.original.fullsize.png\"/><br/>", "image": null}, "options": [{"id": "Nq4XD", "text": "$8: 9$", "image": null, "isCorrect": false}, {"id": "HhSsp", "text": "$5: 4$", "image": null, "isCorrect": false}, {"id": "MmecI", "text": "$9: 10$", "image": null, "isCorrect": false}, {"id": "LFGs5", "text": "$1: 1$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Let $V_1$ be, the volume immersed in water.\n$V_2$ be the volume immersed in oil.\nIn equilibrium condition,\n$v_1 \\rho_w g+v_2 \\rho_0 g=\\left(v_1+v_2\\right) \\rho_e g$\n$v_1+\\frac{v_2 \\rho_0}{\\rho_w}=\\left(v_1+v_2\\right) \\frac{\\rho_c}{\\rho_w}$\n$\\Rightarrow v_1+0.8 v_2=0.9 v_1+0.9 v_2 \\Rightarrow 0.1 v_1=0.1 v_2$\n$\\Rightarrow v_1: v_2=1: 1$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8116f5bfc7ab78aea49", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 1, "question": {"text": "A vessel with water is placed on a weighing pan and it reads $600 \\mathrm{~g}$. Now a ball of mass $40 \\mathrm{~g}$ and density $0.80 \\mathrm{~g} \\mathrm{~cm}^{-3}$ is sunk into the water with a pin of negligible volume, as shown in figure keeping it sunk. The weighing pan will show a reading\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/rW9r6DaQvSqwpKV8WmWHLHNt3EVSO226-d7Su_nRK8k.original.fullsize.png\">", "image": null}, "options": [{"id": "gEpyJ", "text": "$600 \\mathrm{~g}$", "isCorrect": false, "image": null}, {"id": "Avljq", "text": "$550 \\mathrm{~g}$", "isCorrect": false, "image": null}, {"id": "06a1d", "text": "$650 \\mathrm{~g}$", "isCorrect": true, "image": null}, {"id": "DhfE2", "text": "$632 \\mathrm{~g}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Volume of ball $=\\frac{40}{0.8}=50 \\mathrm{~cm}^{3}$\r\n\r\nDownthrust on water $=50 \\mathrm{~g}$. Therefore reading is $650 \\mathrm{~g}$.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e80f6f5bfc7ab78aea3f", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 3, "question": {"text": "A body of density $\\rho^{\\prime}$ is dropped from rest at a height h into a lake of density $\\rho$ where $\\rho>\\rho^{\\prime}$ neglecting all dissipative forces, calculate the maximum depth to which the body sinks before returning to float on the surface:", "image": null}, "options": [{"id": "KNBWe", "text": "$\\frac{\\mathrm{h}}{\\rho-\\rho^{\\prime}}$", "isCorrect": false, "image": null}, {"id": "QdJJM", "text": "$\\frac{\\mathrm{h} \\rho^{\\prime}}{\\rho}$", "isCorrect": false, "image": null}, {"id": "uvZe5", "text": "$\\frac{\\mathrm{h} \\rho^{\\prime}}{\\rho-\\rho^{\\prime}}$", "isCorrect": true, "image": null}, {"id": "z4uk1", "text": "$\\frac{h \\rho}{\\rho-\\rho^{\\prime}}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "The effective acceleration of the body\r\n\r\n$\\mathrm{g}^{\\prime}=\\left(1-\\frac{\\rho}{\\rho^{\\prime}}\\right) \\mathrm{g}$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/oEm_LCHuM0OzQE1UaLX4fufNHlvQQinJ9ebj1CpNf08.original.fullsize.png\"><br>\r\n\r\nNow, the depth to which the body sinks\r\n\r\n$\\mathrm{h}^{\\prime}=\\left(\\frac{\\mathrm{u}^{2}}{2 \\mathrm{~g}^{\\prime}}\\right)=\\frac{2 \\mathrm{gh}}{2 \\mathrm{~g}^{\\prime}}=\\frac{\\mathrm{gh}}{\\mathrm{g}^{\\prime}}=\\frac{\\mathrm{h} \\times \\rho^{\\prime}}{\\rho-\\rho^{\\prime}}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7f46f5bfc7ab78ae94b", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 2, "question": {"text": "A block of wood floats in water with <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mn>4</mn><mo>/</mo><mn>5</mn><msup><mo>)</mo><mi>th</mi></msup></math>&nbsp;of its volume submerged. If the same block just floate in a liquid, the density of liquid in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mi>kg</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfenced></math>&nbsp;is", "image": null}, "options": [{"id": "q66PW", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1250</mn></math>", "isCorrect": false, "image": null}, {"id": "2cw6R", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>600</mn></math>", "isCorrect": false, "image": null}, {"id": "5Gu62", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>400</mn></math>", "isCorrect": false, "image": null}, {"id": "2OWhD", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>800</mn></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>Let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>V</mi></math>&nbsp;be the volume of the block. When block floats in water, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>V</mi><mrow><mi>block</mi><mo>&#160;</mo></mrow></msub><mi>g</mi><mo>=</mo><mfenced><mrow><mfrac><mn>4</mn><mn>5</mn></mfrac><mi>v</mi></mrow></mfenced><msub><mi>&#961;</mi><mrow><mi>water</mi><mo>&#160;</mo></mrow></msub><mi>g</mi></math></p><p>or&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>P</mi><mi>block</mi></msub><mo>=</mo><mfrac><mn>4</mn><mn>5</mn></mfrac><msub><mi>&#961;</mi><mrow><mi>water</mi><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo></mrow></msub><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>.</mo><mfenced><mi mathvariant=\"normal\">i</mi></mfenced></math></p><p>When block floats in liquid.</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>V</mi><msub><mi>&#961;</mi><mrow><mi>block</mi><mo>&#160;</mo></mrow></msub><mi>g</mi><mo>=</mo><mi>V</mi><msub><mi>&#961;</mi><mi>liquid</mi></msub><mi>g</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#961;</mi><mrow><mi>block</mi><mo>&#160;</mo></mrow></msub><mo>=</mo><msub><mi>&#961;</mi><mrow><mi>liquid</mi><mo>&#160;</mo></mrow></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>&#961;</mi><mrow><mi>liquid</mi><mo>&#160;</mo></mrow></msub><mo>=</mo><mfrac><mn>4</mn><mn>5</mn></mfrac><msub><mi>&#961;</mi><mrow><mi>water</mi><mo>&#160;</mo></mrow></msub></math>&nbsp;[from Eq. (i)]</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mn>4</mn><mn>5</mn></mfrac><mo>&#215;</mo><msup><mn>10</mn><mn>3</mn></msup><mo>&#160;</mo><mi>kg</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>800</mn><mo>&#160;</mo><mi>kg</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7e66f5bfc7ab78ae8d3", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 2, "question": {"text": "An ice-berg of density <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>900</mn><mo>&#160;</mo><msup><mi>kgm</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup></math> is floating in water of density <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1000</mn><mo>&#160;</mo><msup><mi>kgm</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup></math>. The percentage of volume of ice-berg outside the water is&nbsp;", "image": null}, "options": [{"id": "vkT75", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>20</mn><mo>&#160;</mo><mo>%</mo></math>", "isCorrect": false, "image": null}, {"id": "h9Zob", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>35</mn><mo>&#160;</mo><mo>%</mo></math>", "isCorrect": false, "image": null}, {"id": "o3UmR", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>10</mn><mo>&#160;</mo><mo>%</mo></math>", "isCorrect": true, "image": null}, {"id": "rBSSk", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>11</mn><mo>&#160;</mo><mo>%</mo></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Let the volume of ice-berg is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>V</mi></math> and its density is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#961;</mi></math>. If this ice-berg floats in water with volume <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>V</mi><mi>in</mi></msub></math> inside it, then&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>V</mi><mi>in</mi></msub><mi>&#963;</mi><mi>g</mi><mo>=</mo><mi>V</mi><mi>&#961;</mi><mi>g</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#963;</mi><mo>=</mo></math> density of water</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><msub><mi>V</mi><mi>in</mi></msub><mo>=</mo><mfenced><mfrac><mi>&#961;</mi><mi>&#963;</mi></mfrac></mfenced><mo>&#183;</mo><mi>V</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><msub><mi>V</mi><mi>out</mi></msub><mo>=</mo><mi>V</mi><mo>-</mo><msub><mi>V</mi><mi>in</mi></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfenced open=\"[\" close=\"]\"><mfrac><mrow><mi>&#963;</mi><mo>-</mo><mi>&#961;</mi></mrow><mi>&#963;</mi></mfrac></mfenced><mo>&#160;</mo><mi>V</mi><mo>=</mo><mfrac><mrow><mn>1000</mn><mo>-</mo><mn>900</mn></mrow><mn>1000</mn></mfrac><mo>&#160;</mo><mi mathvariant=\"normal\">V</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mi>V</mi><mn>10</mn></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><msub><mi>V</mi><mi>out</mi></msub><mo>&#160;</mo><mo>/</mo><mi>V</mi><mo>=</mo><mn>0</mn><mo>.</mo><mn>1</mn><mo>=</mo><mn>10</mn><mo>&#160;</mo><mo>%</mo></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 4, "topicId": "64c0e8546f5bfc7ab78aeced", "title": "Hydrodynamics", "totalQuestions": 2, "questions": [{"_id": "64c0e8206f5bfc7ab78aead4", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 3, "question": {"text": "A U - shaped tube contains a liquid of density rho and it is rotated about the left dotted line as shown in the figure. Find the difference in the levels of liquid column.\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/itbBl74FkucEKGG7QzZvFPY0cLivC7hEVSxWFXGFi0M.original.fullsize.png\">", "image": null}, "options": [{"id": "1usBy", "text": "$\\frac{\\omega^{2} \\mathrm{~L}^{2}}{2 g}$", "isCorrect": true, "image": null}, {"id": "GyoZK", "text": "$\\frac{\\omega^{2} L^{2}}{2 \\sqrt{2} g}$", "isCorrect": false, "image": null}, {"id": "wxYGe", "text": "$\\frac{2 \\omega^{2} \\mathrm{~L}^{2}}{g}$", "isCorrect": false, "image": null}, {"id": "sYSby", "text": "$\\frac{2 \\sqrt{2} \\omega^{2} \\mathrm{~L}^{2}}{g}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Weight of liquid of height \\(\\mathrm{H}=\\frac{\\pi \\mathrm{d}^{2}}{4} \\times \\mathrm{H} \\rho \\times \\mathrm{g} \\rightarrow\\) (i)\r\n\r\nLet us consider a mass dm situated at a distance \\(x\\) from \\(A\\) as shown in the figure. The centripetal force required for the mass to rotate \\(=(\\mathrm{dm}) \\omega^{2}\\)\r\n\r\n\\(\\therefore\\) The total centripetal force required for the mass of length \\(L\\) to rotate \\(=\\int_{0}^{1}\\left(\\rho \\mathrm{x} \\frac{\\pi \\mathrm{d}^{2}}{4}\\right) \\mathrm{xdx} \\times\\left(\\mathrm{x} \\omega^{2}\\right)=\\rho \\times \\frac{\\pi \\mathrm{d}^{2}}{4} \\times \\omega^{2} \\times \\frac{1^{2}}{2} \\rightarrow\\) (ii)\r\n\r\nThis centripetal force required is provided by the weight of liquid of height 'H' From (i) and (ii)\r\n\r\n\\(\\begin{aligned} & \\frac{\\pi \\mathrm{d}^{2}}{4} \\times \\mathrm{H} \\times \\rho \\times \\mathrm{g}=\\rho \\times \\frac{\\pi \\mathrm{d}^{2}}{4} \\times \\omega^{2} \\times \\frac{1^{2}}{2} \\\\ & \\Rightarrow \\mathrm{H}=\\frac{\\omega^{2} \\mathrm{l}^{2}}{2 \\mathrm{~g}} \\end{aligned}\\)\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/sdhgeeut3473.png\">", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7726f5bfc7ab78ae4e5", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "A liquid is flowing through a non-sectional tube with its axis horizontally. If two points $\\mathrm{X}$ and $\\mathrm{Y}$ on the axis of tube has a sectional area $2.0 \\mathrm{~cm}^{3}$ and $25 \\mathrm{~mm}^{2}$ respectively then find the flow velocity at $Y$ when the flow velocity at $X$ is $10 \\mathrm{~m} / \\mathrm{s}$.", "image": null}, "options": [{"id": "nXki4", "text": "$20 \\mathrm{~m} / \\mathrm{s}$", "image": null, "isCorrect": false}, {"id": "ePmxX", "text": "$40 \\mathrm{~m} / \\mathrm{s}$", "image": null, "isCorrect": false}, {"id": "TYewQ", "text": "$80 \\mathrm{~m} / \\mathrm{s}$", "image": null, "isCorrect": true}, {"id": "rgZh8", "text": "$60 \\mathrm{~m} / \\mathrm{s}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "According to principle of continuity\n$$\nv_{y}=\\frac{v_{x} A_{x}}{A_{y}}=\\frac{10(m / s) \\times 2\\left(c m^{2}\\right)}{25 \\times 10^{-2}\\left(c m^{2}\\right)}=80 \\mathrm{~m} / \\mathrm{s}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 5, "topicId": "64c0e8546f5bfc7ab78aecef", "title": "Surface tension", "totalQuestions": 12, "questions": [{"_id": "67726d06c49e8ef28ee2b3a9", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "Pressure inside two soap bubbles are 1.01 and 1.02 atmosphere, respectively. The ratio of their volumes is :", "image": null}, "options": [{"id": "cXT0l", "text": "$4: 1$", "image": null, "isCorrect": false}, {"id": "OIi8m", "text": "$0.8: 1$", "image": null, "isCorrect": false}, {"id": "vkyDc", "text": "$8: 1$", "image": null, "isCorrect": true}, {"id": "uk1pB", "text": "$2: 1$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "According to question, pressure inside, 1st soap bubble,\n$\\Delta P_1=P_1-P_0=0.01=\\frac{4 T}{R_1}$    .....(i)\nAnd $\\Delta P_2=P_2-P_0=0.02=\\frac{4 T}{R_2}$     .....(ii)\nDividing, equation (ii) by (i),\n$\\frac{1}{2}=\\frac{R_2}{R_1} \\Rightarrow R_1=2 R_2$\nVolume $V=\\frac{4}{3} \\pi R^3 \\Rightarrow \\frac{V_1}{V_2}=\\frac{R_1^3}{R_2^3}=\\frac{8 R_2^3}{R_2^3}=\\frac{8}{1}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87097ae24e9e2db8c55", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "If 1000 droplets of water of surface tension 0.07 $\\mathrm{N} / \\mathrm{m}$. having same radius $1 \\mathrm{~mm}$ each, combine to from a single drop. In the process the released surface energy is( Take $\\left.\\pi=\\frac{22}{7}\\right)$", "image": null}, "options": [{"id": "pSpTX", "text": "$7.92 \\times 10^{-6} \\mathrm{~J}$", "image": null, "isCorrect": false}, {"id": "Go1JD", "text": "$7.92 \\times 10^{-4} \\mathrm{~J}$", "image": null, "isCorrect": true}, {"id": "Sd7yZ", "text": "$9.68 \\times 10^{-4} \\mathrm{~J}$", "image": null, "isCorrect": false}, {"id": "r5G8F", "text": "$8.8 \\times 10^{-5} \\mathrm{~J}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "We have $V_f=V_i$<br />$\\Rightarrow \\frac{4}{3} \\pi r_{\\mathrm{f}}^3=1000 \\times \\frac{4}{3} \\pi \\mathrm{r}_{\\mathrm{i}}^3 \\Rightarrow \\mathrm{r}_{\\mathrm{f}}^3=1000 \\mathrm{r}_{\\mathrm{i}}^3$<br />$\\Rightarrow r_f=10 r_i$<br />So, released energy $=$ Initial surface energy - final surface energy<br />$=1000 \\times \\mathrm{T} \\times 4 \\pi \\mathrm{r}_{\\mathrm{i}}^2-\\mathrm{T} \\times 4 \\pi \\mathrm{r}_{\\mathrm{f}}^2$<br />$=4 \\pi \\mathrm{T}\\left(1000 \\mathrm{r}_{\\mathrm{i}}^2-\\mathrm{r}_{\\mathrm{f}}^2\\right)$<br />$=4 \\pi \\times 0.07\\left(1000 \\mathrm{r}_{\\mathrm{i}}^2-100 \\mathrm{r}_{\\mathrm{i}}^2\\right)$<br />$=4 \\pi \\times 0.07 \\times 900 r_i^2$<br />$=4 \\pi \\times 63 \\times 10^{-6}=7.92 \\times 10^{-4} \\mathrm{~J}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e82e6f5bfc7ab78aeb4f", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 1, "question": {"text": "A capillary tube is attached horizontally to a constant heat arrangement. If the radius of the capillary tube is increased by $25 \\%$, then the rate of flow of liquid will change nearly by", "image": null}, "options": [{"id": "s1aYk", "text": "\r\n$100 \\%$\r\n", "isCorrect": false, "image": null}, {"id": "j1Ghw", "text": "\r\n$112 \\%$\r\n", "isCorrect": false, "image": null}, {"id": "7JsEG", "text": "\r\n$124 \\%$\r\n", "isCorrect": false, "image": null}, {"id": "sQij5", "text": "\r\n$144 \\%$", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "Liquid volume coming out of the tube per second\r\n$$\r\n\\begin{aligned}\r\n& \\quad V=\\frac{p \\pi r^4}{8 \\eta l} \\\\\r\n& \\Rightarrow \\\\\r\n& \\Rightarrow \\frac{V_2}{V_1}=\\left[\\frac{r_2}{r_1}\\right]^4 \\Rightarrow V_2=V_1\\left[\\frac{125}{100}\\right]^4=V_1\\left(\\frac{5}{4}\\right)^4 \\\\\r\n& \\Rightarrow \\\\\r\n& \\text { So, now } \\frac{\\Delta V}{V}=\\frac{V_2-V_1}{V_1}=\\frac{(244) V_1-V_1}{V_1}=144 \\%\r\n\\end{aligned}\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8226f5bfc7ab78aeae0", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}], "type": "singleCorrect", "level": 1, "question": {"text": "A spherical drop of radius $R$ is divided into eight equal droplets. If surface tension is $\\mathrm{T}$, then the work done in this process is", "image": null}, "options": [{"id": "RNSIc", "text": "$2 \\pi \\mathrm{R}^{2} \\mathrm{~T}$", "isCorrect": false, "image": null}, {"id": "FPozM", "text": "$3 \\pi R^{2} T$", "isCorrect": false, "image": null}, {"id": "BJbT5", "text": "$4 \\pi R^{2} T$", "isCorrect": true, "image": null}, {"id": "jH4cQ", "text": "$2 \\pi \\mathrm{RT}^{2}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Volume of 8 small droplets $=$ Volume of 1 big drop $\\Rightarrow \\frac{4}{3} \\pi r^{3} \\times 8=\\frac{4}{3} \\pi \\mathrm{R}^{3} \\Rightarrow r=\\frac{\\mathrm{R}}{(8)^{1 / 3}}$\r\n\r\nWork done $=($ Change in area $) \\times$ surface tension $=\\left(4 \\pi r^{2} n-4 \\pi \\mathrm{R}^{2}\\right) \\mathrm{T}$\r\n\r\n$\\left\\{4 \\pi\\left(\\frac{\\mathrm{R}^{2}}{(8)^{2 / 3}}\\right) \\times 8-4 \\pi \\mathrm{R}^{2}\\right\\} \\mathrm{T}=4 \\pi \\mathrm{R}^{2} \\mathrm{~T}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2021-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2021", "title": "BITSAT 2021"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8016f5bfc7ab78ae9c0", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}], "type": "singleCorrect", "level": 1, "question": {"text": "Two separate soap bubbles of radii <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math>&nbsp;respectively, formed of same liquid (surface tension <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>65</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>2</mn></mrow></msup><mo>&#160;</mo><mi mathvariant=\"normal\">N</mi><mo>&#160;</mo><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>) come together to form a double bubble. The radius of interface of double bubble is", "image": null}, "options": [{"id": "WVAMb", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math>", "isCorrect": true, "image": null}, {"id": "kyPr0", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math>", "isCorrect": false, "image": null}, {"id": "gaFBS", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>15</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math>", "isCorrect": false, "image": null}, {"id": "4MfKt", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>66</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Excess pressure inside first bubble of radius <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>r</mi><mn>1</mn></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>p</mi><mn>1</mn></msub><mo>=</mo><msub><mi>p</mi><mn>0</mn></msub><mo>+</mo><mfrac><mrow><mn>4</mn><mi>T</mi></mrow><msub><mi>r</mi><mn>1</mn></msub></mfrac></math></p><p>Excess pressure inside second bubble of radius <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>r</mi><mn>2</mn></msub></math><br /><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>p</mi><mn>2</mn></msub><mo>=</mo><msub><mi>p</mi><mn>0</mn></msub><mo>+</mo><mfrac><mrow><mn>4</mn><mi>T</mi></mrow><msub><mi>r</mi><mn>2</mn></msub></mfrac></math></p><p>Excess pressure inside double bubble,</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi><mo>=</mo><msub><mi>p</mi><mn>2</mn></msub><mo>-</mo><msub><mi>p</mi><mn>1</mn></msub></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi><mo>=</mo><mn>4</mn><mi>T</mi><mfenced><mfrac><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>-</mo><msub><mi>r</mi><mn>2</mn></msub></mrow><mrow><msub><mi>r</mi><mn>1</mn></msub><msub><mi>r</mi><mn>2</mn></msub></mrow></mfrac></mfenced></math></p><p>If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi></math> be the radius of double bubble, then</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi><mo>=</mo><mfrac><mrow><mn>4</mn><mi>T</mi></mrow><mi>R</mi></mfrac></math></p><p>or <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><mi>T</mi><mfenced><mfrac><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>-</mo><msub><mi>r</mi><mn>2</mn></msub></mrow><mrow><msub><mi>r</mi><mn>1</mn></msub><msub><mi>r</mi><mn>2</mn></msub></mrow></mfrac></mfenced><mo>=</mo><mfrac><mrow><mn>4</mn><mi>T</mi></mrow><mi>R</mi></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>R</mi><mo>=</mo><mfrac><mrow><msub><mi>r</mi><mn>1</mn></msub><msub><mi>r</mi><mn>2</mn></msub></mrow><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>-</mo><msub><mi>r</mi><mn>2</mn></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#215;</mo><mn>2</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow><mrow><mfenced><mrow><mn>3</mn><mo>-</mo><mn>2</mn></mrow></mfenced><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfrac><mo>=</mo><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi><mo>=</mo><mn>6</mn><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>3</mn></mrow></msup><mo>&#160;</mo><mi mathvariant=\"normal\">m</mi></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2019-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2019", "title": "BITSAT 2019"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7f76f5bfc7ab78ae969", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}], "type": "singleCorrect", "level": 3, "question": {"text": "If a drop of liquid breaks into smaller droplets, it results in lowering of temperature of the droplets. Let a drop of radius <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi></math>, break into <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>N</mi></math> small droplets each of radius <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi></math>, then decrease (drop) in temperature <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Q</mi></math> (given, specific heat of liquid drop<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mi>S</mi></math> and surface tension <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mi>T</mi></math> )", "image": null}, "options": [{"id": "of4Ic", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>3</mn><mi>T</mi></mrow><mrow><mi>&#961;</mi><mi>S</mi></mrow></mfrac><mfenced open=\"[\" close=\"]\"><mrow><mfrac><mn>1</mn><mi>r</mi></mfrac><mo>-</mo><mfrac><mn>1</mn><mi>R</mi></mfrac></mrow></mfenced></math>", "isCorrect": false, "image": null}, {"id": "Qs3su", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mfrac><mrow><mn>2</mn><mi>T</mi></mrow><mrow><mi>&#961;</mi><mi>S</mi></mrow></mfrac><mfenced open=\"[\" close=\"]\"><mrow><mfrac><mn>1</mn><mi>r</mi></mfrac><mo>-</mo><mfrac><mn>1</mn><mi>R</mi></mfrac></mrow></mfenced></math>", "isCorrect": false, "image": null}, {"id": "VHEFi", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>2</mn><mi>R</mi></mrow><mrow><mi>&#961;</mi><mi>S</mi></mrow></mfrac><mfenced open=\"[\" close=\"]\"><mrow><mfrac><mn>1</mn><mi>R</mi></mfrac><mo>-</mo><mfrac><mn>1</mn><mi>r</mi></mfrac></mrow></mfenced></math>", "isCorrect": false, "image": null}, {"id": "fwSC8", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>3</mn><mi>T</mi></mrow><mrow><mi>&#961;</mi><mi>S</mi></mrow></mfrac><mfenced open=\"[\" close=\"]\"><mrow><mfrac><mn>1</mn><mi>R</mi></mfrac><mo>-</mo><mfrac><mn>1</mn><mi>r</mi></mfrac></mrow></mfenced></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>since, volume remains unchanged, during this phenomenon, so</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>&#960;</mi><msup><mi>R</mi><mn>3</mn></msup><mo>=</mo><mi>N</mi><mo>&#215;</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>&#960;</mi><msup><mi>r</mi><mn>3</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>N</mi><mo>=</mo><mfrac><msup><mi>R</mi><mn>3</mn></msup><msup><mi>r</mi><mn>3</mn></msup></mfrac></math></p><p>Now, change in surface area <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>4</mn><mi>&#960;</mi><msup><mi>R</mi><mn>2</mn></msup><mo>-</mo><mi>N</mi><mn>4</mn><mi>&#960;</mi><msup><mi>r</mi><mn>2</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>4</mn><mi>&#960;</mi><mfenced><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>-</mo><mi>N</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfenced></math></p><p>Energy released <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi>&#916;</mi><mi>U</mi><mo>)</mo><mo>=</mo><mi>T</mi><mo>&#215;</mo></math> change in surface area</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mi>T</mi><mo>&#215;</mo><mn>4</mn><mi>&#960;</mi><mfenced open=\"[\" close=\"]\"><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>-</mo><mi>N</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfenced></math></p><p>Here, all this energy released is al the cost of lowering the temperature and mass of the big drop of liquid <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>&#960;</mi><msup><mi>R</mi><mn>2</mn></msup><mi>&#961;</mi></math></p><p>Now, change in temperature, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#916;</mi><mi>&#952;</mi><mo>=</mo><mfrac><mrow><mi>&#916;</mi><mi>U</mi></mrow><mrow><mi>m</mi><mi>s</mi></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mi>T</mi><mo>&#215;</mo><mn>4</mn><mi>&#960;</mi><mfenced><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>-</mo><mi>N</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfenced></mrow><mrow><mfenced><mrow><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>&#960;</mi><msup><mi>R</mi><mn>3</mn></msup><mi>&#961;</mi></mrow></mfenced><mi>S</mi></mrow></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mn>3</mn><mi>T</mi></mrow><mrow><mi>&#956;</mi><mi>S</mi></mrow></mfrac><mfenced><mrow><mfrac><mn>1</mn><mi>R</mi></mfrac><mo>-</mo><mfrac><mrow><mi>N</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><msup><mi>R</mi><mn>3</mn></msup></mfrac></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mn>3</mn><mi>T</mi></mrow><mrow><mi>&#961;</mi><mi>S</mi></mrow></mfrac><mfenced><mrow><mfrac><mn>1</mn><mi>R</mi></mfrac><mo>-</mo><mfrac><mrow><msup><mi>R</mi><mn>3</mn></msup><mo>&#215;</mo><msup><mi>r</mi><mn>2</mn></msup></mrow><mrow><msup><mi>r</mi><mn>3</mn></msup><mo>&#215;</mo><msup><mi>R</mi><mn>3</mn></msup></mrow></mfrac></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mrow><mn>3</mn><mi>T</mi></mrow><mrow><mi>&#961;</mi><mi>S</mi></mrow></mfrac><mfenced><mrow><mfrac><mn>1</mn><mi>R</mi></mfrac><mo>-</mo><mfrac><mn>1</mn><mi>r</mi></mfrac></mrow></mfenced></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7c", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2018-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2018", "title": "BITSAT 2018"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7e86f5bfc7ab78ae8e3", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 1, "question": {"text": "Work done in increasing the size of a soap bubble from radius of (<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn></math>&nbsp;to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn></math>) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>cm</mi></math> is nearly (surface tension of soap solution <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>0</mn><mo>.</mo><mn>03</mn><mo>&#160;</mo><msup><mi>Nm</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>)", "image": null}, "options": [{"id": "HkH09", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>2</mn><mi mathvariant=\"normal\">&#960;</mi><mo>&#160;</mo><mi>mJ</mi></math>", "isCorrect": false, "image": null}, {"id": "CsOT9", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi mathvariant=\"normal\">&#960;</mi><mo>&#160;</mo><mi>mJ</mi></math>", "isCorrect": false, "image": null}, {"id": "cxWAf", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>.</mo><mn>4</mn><mi mathvariant=\"normal\">&#960;</mi><mo>&#160;</mo><mi>mJ</mi></math>", "isCorrect": false, "image": null}, {"id": "Jl4A7", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>4</mn><mi mathvariant=\"normal\">&#960;</mi><mo>&#160;</mo><mi>mJ</mi></math>", "isCorrect": true, "image": null}], "correctValue": null, "solution": {"text": "<p>Work done <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo></math> Change in surface energy</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>r</mi><mn>2</mn></msub><mo>=</mo><mn>5</mn><mo>&#160;</mo><mi>cm</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>r</mi><mn>1</mn></msub><mo>=</mo><mn>3</mn><mo>&#160;</mo><mi>cm</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>W</mi><mo>=</mo><mn>2</mn><mi>T</mi><mo>&#215;</mo><mn>4</mn><mi>&#960;</mi><mfenced><mrow><msubsup><mi>r</mi><mn>2</mn><mn>2</mn></msubsup><mo>-</mo><msubsup><mi>r</mi><mn>1</mn><mn>2</mn></msubsup></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>2</mn><mo>&#215;</mo><mn>0</mn><mo>.</mo><mn>03</mn><mo>&#215;</mo><mn>4</mn><mi>&#960;</mi><mfenced open=\"[\" close=\"]\"><mrow><msup><mfenced><mn>5</mn></mfenced><mn>2</mn></msup><mo>-</mo><msup><mfenced><mn>3</mn></mfenced><mn>2</mn></msup></mrow></mfenced><mo>&#215;</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>0</mn><mo>.</mo><mn>4</mn><mi>&#960;</mi><mo>&#160;</mo><mi>mJ</mi></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7d86f5bfc7ab78ae85a", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 1, "question": {"text": "A capillary tube of radius $\\mathrm{r}$ is immersed vertically in a liquid such that liquid rises in it to height $\\mathrm{h}$ (less than the length of the tube). Mass of liquid in the capillary tube is $\\mathrm{m}$. If radius of the capillary tube is increased by $50 \\%$, then mass of liquid that will rise in the tube, is", "image": null}, "options": [{"id": "85JX4", "text": "$\\frac{2}{3} \\mathrm{~m}$", "isCorrect": false, "image": null}, {"id": "Inh7i", "text": "$\\mathrm{m}$", "isCorrect": false, "image": null}, {"id": "209g5", "text": "$\\frac{3}{2} \\mathrm{~m}$", "isCorrect": true, "image": null}, {"id": "YqDbD", "text": "$\\frac{9}{4} \\mathrm{~m}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\mathrm{h}=\\frac{2 \\mathrm{~T} \\cos \\theta}{\\mathrm{r} \\rho \\mathrm{g}} \\Rightarrow \\mathrm{h} \\propto \\frac{1}{\\mathrm{r}} \\Rightarrow \\frac{\\mathrm{h}_{2}}{\\mathrm{~h}_{1}}=\\frac{\\mathrm{r}_{1}}{\\mathrm{r}_{2}}=\\frac{2}{3}$\r\n\r\n$$\r\n\r\n\\begin{aligned}\r\n\r\n\\left(\\because \\mathrm{r}_{1}=\\mathrm{r}, \\quad \\mathrm{r}_{2}\\right.&=\\mathrm{r}+50 \\% \\text { of } \\left.\\mathrm{r}=\\frac{3}{2} \\mathrm{r}\\right) \\\\\r\n\r\n\\text { New mass } \\mathrm{m}_{2}=\\pi \\mathrm{r}_{2}^{2} \\mathrm{~h}_{2} \\rho &=\\pi\\left(\\frac{3}{2} \\mathrm{r}_{1}\\right)^{2}\\left(\\frac{2}{3} \\mathrm{~h}_{1}\\right) \\rho \\\\\r\n\r\n&=\\frac{3}{2}\\left(\\pi \\mathrm{r}_{1}^{2} \\mathrm{~h}_{1}\\right) \\rho=\\frac{3}{2} \\mathrm{~m}\r\n\r\n\\end{aligned}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ca6f5bfc7ab78ae7e9", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 2, "question": {"text": "A glass capillary tube of internal radius $\\mathrm{r}=0.25$ $\\mathrm{mm}$ is immersed in water. The top end of the tube projected by $2 \\mathrm{~cm}$ above the surface of the water. At what angle does the liquid meet the tube? Surface tension of water $=0.7 \\mathrm{~N} / \\mathrm{m}$", "image": null}, "options": [{"id": "CE6ml", "text": "$\\theta=90^{\\circ}$", "isCorrect": false, "image": null}, {"id": "WIR5V", "text": "$\\quad \\theta=70^{\\circ}$", "isCorrect": true, "image": null}, {"id": "2hX0H", "text": "$\\theta=45^{\\circ}$", "isCorrect": false, "image": null}, {"id": "CiCRe", "text": "$\\theta=35^{\\circ}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Water wets glass and so the angle of contact is zero. For full rise, neglecting the small mass in the meniscus\r\n\r\n$$\r\n\r\n\\begin{aligned}\r\n\r\n2 \\pi \\mathrm{T} &=\\pi \\mathrm{r}^{2} \\mathrm{~h} \\rho \\mathrm{g} \\Rightarrow \\mathrm{h}=\\frac{2 \\mathrm{~T}}{\\mathrm{r} \\rho \\mathrm{g}}\\left[\\because \\text { water wets glass, } \\theta=0^{\\circ}\\right] \\\\\r\n\r\n&=\\frac{2 \\times 007}{0.25 \\times 10^{-3} \\times 1000 \\times 9.8}\r\n\r\n\\end{aligned}\r\n\r\n$$\r\n\r\nAs the tube is only $2 \\mathrm{~cm}$ above the water and so, water will rise by $2 \\mathrm{~cm}$ and meet the tube at an angle such that,\r\n\r\n$$\r\n\r\n\\begin{aligned}\r\n\r\n2 \\pi r & \\operatorname{T} \\cos \\theta=\\pi r^{2} h^{\\prime} \\rho g \\\\\r\n\r\n\\Rightarrow & 2 T \\cos \\theta=h^{\\prime} r \\rho g \\\\\r\n\r\n\\Rightarrow \\cos \\theta &=\\frac{h^{\\prime} r \\rho g}{2 T} \\\\\r\n\r\n&=\\frac{2 \\times 10^{-2} \\times 0.25 \\times 10^{-3} \\times 1000 \\times 9.8}{2 \\times 0.07}\r\n\r\n\\end{aligned}\r\n\r\n$$\r\n\r\nThe liquid will meet the tube at an angle, $\\theta$ $\\cong 70^{\\circ}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ba6f5bfc7ab78ae757", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 2, "question": {"text": "The work done in blowing a soap bubble of surface tension $0.06 \\times \\mathrm{Nm}^{-1}$ from $2 \\mathrm{~cm}$ radius to $5 \\mathrm{~cm}$ radius is", "image": null}, "options": [{"id": "9n89u", "text": "$0.004168 \\mathrm{~J}$", "isCorrect": false, "image": null}, {"id": "WKhg2", "text": "$0.003168 \\mathrm{~J}$", "isCorrect": true, "image": null}, {"id": "2rClf", "text": "$0.003158 \\mathrm{~J}$", "isCorrect": false, "image": null}, {"id": "eyYQa", "text": "$0.004568 \\mathrm{~J}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\begin{aligned} \\Delta \\mathrm{W} &=\\mathrm{S} \\times \\Delta \\mathrm{A}=0.06 \\times 4 \\pi\\left(\\mathrm{r}_{2}^{2}-\\mathrm{r}_{1}^{2}\\right) \\\\ &=0.003168 \\mathrm{~J} \\end{aligned}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7816f5bfc7ab78ae569", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "Two circular plates of radius $5 \\mathrm{~cm}$ each, have a 0.01 mm thick water film between them. Then what will be the force required to separate these plate (S.T. of water $=73$ dyne/cm)?", "image": null}, "options": [{"id": "iDIQx", "text": "$125 \\mathrm{~N}$", "image": null, "isCorrect": false}, {"id": "uvoy5", "text": "$95 \\mathrm{~N}$", "image": null, "isCorrect": false}, {"id": "0ykcr", "text": "$115 \\mathrm{~N}$", "image": null, "isCorrect": true}, {"id": "eRSRe", "text": "$105 \\mathrm{~N}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\begin{aligned} \\mathrm{F}=& \\frac{2 \\mathrm{AT}}{\\mathrm{d}}=\\frac{2 \\times \\pi \\times(0.05)^{2} \\times 73 \\times 10^{-3}}{0.01 \\times 10^{-3}} \\\\=& 36.5 \\pi \\approx 115 \\text { newton } \\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7806f5bfc7ab78ae568", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "Two mercury drops (each of radius $\\mathrm{r}$ ) merge to form a bigger drop. The surface energy of the bigger drop, if $\\mathrm{T}$ is the surface tension, is", "image": null}, "options": [{"id": "3WcZ8", "text": "$2^{5 / 3} \\pi r^{2} T$", "image": null, "isCorrect": false}, {"id": "qweqS", "text": "$4 \\pi \\mathrm{r}^{2} \\mathrm{~T}$", "image": null, "isCorrect": false}, {"id": "kk5fo", "text": "$2 \\pi^{2} T$", "image": null, "isCorrect": false}, {"id": "weppL", "text": "$2^{8 / 3} \\pi \\mathrm{r}^{2} \\mathrm{~T}$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "$\\frac{4}{3} \\pi R^{3}=2 \\times \\frac{4}{3} \\pi r^{3} \\Rightarrow \\mathrm{R}=2^{1 / 3} \\mathrm{r}$\nSurface energy of bigger drop,\n$\\mathrm{E}=4 \\pi R^{2} T=4 \\times 2^{2 / 3} \\pi r^{2} T=2^{8 / 3} \\pi r^{2} T$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 6, "topicId": "64c0e8546f5bfc7ab78aecee", "title": "Viscosity", "totalQuestions": 5, "questions": [{"_id": "65b7b87c97ae24e9e2db8cce", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "Eight equal drops of water are falling through air with a steady speed of $10 \\mathrm{~cm} / \\mathrm{s}$. If the drops coalesce, the new velocity is:", "image": null}, "options": [{"id": "kOwPx", "text": "$10 \\mathrm{~cm} / \\mathrm{s}$", "image": null, "isCorrect": false}, {"id": "cGiHS", "text": "$40 \\mathrm{~cm} / \\mathrm{s}$", "image": null, "isCorrect": true}, {"id": "PuP9R", "text": "$16 \\mathrm{~cm} / \\mathrm{s}$", "image": null, "isCorrect": false}, {"id": "ShxEU", "text": "$5 \\mathrm{~cm} / \\mathrm{s}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Let $\\mathrm{r}$ be the radius of small drops of water.<br />$\\mathrm{R}=$ radius of big drop formed as volume remain same.<br />$\\therefore 8 . \\frac{4}{3} \\pi \\mathrm{r}^3-\\frac{4}{3} \\pi \\mathrm{R}^3 \\Rightarrow \\mathrm{R}=2 \\mathrm{r}$<br />Terminal velocity,<br />$\\begin{aligned}<br />& \\mathrm{v}_{\\mathrm{T}}=\\frac{2}{9 \\eta}(\\rho-\\sigma) \\mathrm{r}^2 \\mathrm{~g} \\\\<br />& \\therefore \\mathrm{v}_{\\mathrm{T}} \\propto \\mathrm{r}^2 \\\\<br />& \\therefore \\frac{\\mathrm{v}_1}{\\mathrm{v}_2}=\\left(\\frac{\\mathrm{r}}{\\mathrm{R}}\\right)^2 \\\\<br />& \\Rightarrow \\frac{10}{\\mathrm{v}_2}=\\left(\\frac{1}{2}\\right)^2\\left(\\because \\mathrm{v}_1=10 \\mathrm{~cm} / \\mathrm{s} \\text { given }\\right) \\\\<br />& \\quad \\Rightarrow \\mathrm{v}_2=40 \\mathrm{~cm} / \\mathrm{s}<br />\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7c96f5bfc7ab78ae7e1", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 2, "question": {"text": "Water is flowing on a horizontal fixed surface, such that its flow velocity varies with $y$ (vertical direction) as $v=k\\left(\\frac{2 y^{2}}{a^{2}}-\\frac{y^{3}}{a^{3}}\\right) .$ If coefficient of viscosity for water is $\\eta$, what will be shear stress between layers of water at $y=a$.", "image": null}, "options": [{"id": "kSiYN", "text": "$\\frac{\\eta k}{a}$", "isCorrect": true, "image": null}, {"id": "vOHsQ", "text": "$\\frac{\\eta}{k a}$", "isCorrect": false, "image": null}, {"id": "7fZKu", "text": "$\\frac{\\eta a}{k}$", "isCorrect": false, "image": null}, {"id": "NOi2K", "text": "None of these", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Newton's law of viscosity, $F=\\eta A \\frac{d v}{d y}$\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\text { Stress }=\\frac{F}{A}=\\eta\\left(\\frac{d v}{d y}\\right)=\\eta k\\left(\\frac{4 y}{a^{2}}-\\frac{3 y^{2}}{a^{3}}\\right) \\\\\r\n\r\n\\text { At } y=a, \\text { stress }=\\eta k\\left(\\frac{4}{a}-\\frac{3}{a}\\right)=\\frac{\\eta k}{a}\r\n\r\n\\end{array}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e79c6f5bfc7ab78ae660", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 2, "question": {"text": "A large drop of oil (density $0.8 \\mathrm{~g} / \\mathrm{cm}^{3}$ and viscosity $\\eta_{0}$ ) floats up through a column of another liquid (density $1.2 \\mathrm{~g} / \\mathrm{cm}^{3}$ and viscosity $\\eta_{\\mathrm{L}}$ ). Assuming that the two liquids do not mix, the velocity with which the oil drop rises will depend on:", "image": null}, "options": [{"id": "bsWoM", "text": "$\\eta_{0}$ only", "isCorrect": false, "image": null}, {"id": "HT9MY", "text": "$\\eta_{L}$ only", "isCorrect": true, "image": null}, {"id": "JlhqP", "text": "both on $\\eta_{0}$ and $\\eta_{\\mathrm{L}}$", "isCorrect": false, "image": null}, {"id": "ImUCi", "text": "neither $\\eta_{0}$ nor $\\eta_{L}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Forces of viscosity arise in a fluid when different sections of the fluid move with different velocities. Here, there is no such motion inside the oil drop and hence the viscosity of oil does not come into play.", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e78e6f5bfc7ab78ae5e3", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "Viscosity is the property of a liquid due to which it :", "image": null}, "options": [{"id": "aGmvy", "text": "occupies minimum surface area", "image": null, "isCorrect": false}, {"id": "RTuXl", "text": "opposes relative motion between its adjacent layers", "image": null, "isCorrect": true}, {"id": "UnS6i", "text": "becomes spherical in shape", "image": null, "isCorrect": false}, {"id": "442mB", "text": "tends to regain its deformed position", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "No Solution available", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7806f5bfc7ab78ae567", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "A spherical ball is dropped in a long column of a viscous liquid. The speed (v) of the ball as a function of time (t) may be best represented by", "image": null}, "options": [{"id": "JSMS0", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/yA-XRpi5D97euZMz1k3L2ME1aRMPPsRi72AXDa4zprI.original.fullsize.png\">", "image": null, "isCorrect": false}, {"id": "QKbJR", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/m8awBdQcBYhNqxGk_rcK2iqimxjFX6Nxvdbl_zNIF_U.original.fullsize.png\">", "image": null, "isCorrect": true}, {"id": "RntgO", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/bUC4hYOns3Bg0jo0q_NY7eqZr7CaR1YufQ5gOrnXpQY.original.fullsize.png\">", "image": null, "isCorrect": false}, {"id": "g1iQs", "text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/LV3GllZxakI6groXRpGE5lyTCyRxxCyz5NZTqa9IzU8.original.fullsize.png\">", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "No Solution available", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

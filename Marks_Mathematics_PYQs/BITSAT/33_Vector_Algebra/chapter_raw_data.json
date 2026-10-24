@@ -1,0 +1,1686 @@
+{
+  "index": 33,
+  "chapterId": "61e7bd74291eeb125c7afd32",
+  "chapter": "Vector Algebra",
+  "exam": "BITSAT",
+  "subject": "Mathematics",
+  "totalTopics": 3,
+  "totalQuestions": 25,
+  "downloadTime": "2026-10-08 20:37:22",
+  "topics": [
+    {
+      "index": 1,
+      "topicId": "64c0e8766f5bfc7ab78aee6f",
+      "title": "Algebra of Vectors",
+      "totalQuestions": 15,
+      "questions": [
+        {
+          "_id": "67726d0fc49e8ef28ee2b3ee",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "If $\\vec{a}=2 \\hat{i}+\\hat{j}+2 \\hat{k}$, then the value of\n$|\\hat{i} \\times(\\vec{a} \\times \\hat{i})|^2+|\\hat{j} \\times(\\vec{a} \\times \\hat{j})|^2+|\\hat{k} \\times(\\vec{a} \\times \\hat{k})|^2$\nis equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "OPTKU",
+              "text": "$17$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Qw3Jy",
+              "text": "$18$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "Vzaa1",
+              "text": "$19$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "9tBDG",
+              "text": "$20$",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$\\hat{i} \\times(\\bar{a} \\times \\hat{i})=(\\hat{i} \\cdot \\hat{i}) \\bar{a}-(\\hat{i} \\cdot \\bar{a}) \\hat{i}=\\hat{j}+2 \\hat{k}$\n$\\begin{aligned}\n& \\text { Similarly, } \\hat{j} \\times(\\bar{a} \\times \\hat{j})=2 \\hat{i}+2 \\hat{k} \\\\\n& \\hat{k} \\times(\\bar{a} \\times \\hat{k})=2 \\hat{i}+\\hat{j} \\\\\n& \\Rightarrow \\|\\hat{j}+2 \\hat{k}|^2+|2 \\hat{i}+2 \\hat{k}|^2+|2 \\hat{i}+\\hat{j}|^2 \\\\\n& =5+8+5=18\n\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "67726d0ec49e8ef28ee2b3ea",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6415",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 2)",
+              "title": "BITSAT 2024 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "Let ABC be a triangle and be $\\vec{a}, \\vec{b}, \\vec{c}$ the position vectors of $\\mathrm{A}, \\mathrm{B}, \\mathrm{C}$ respectively. Let D divide $B C$ in the ratio $3: 1$ internally and $E$ divide AD in the ratio $4: 1$ internally. Let BE meet AC in F . IfE divides BF in the ratio $3: 2$ internally then the position vector of $F$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "cm6LC",
+              "text": "$\\frac{\\vec{a}+\\vec{b}+\\vec{c}}{3}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "LvuP2",
+              "text": "$\\frac{\\vec{a}-2 \\vec{b}+3 \\vec{c}}{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "OuDWd",
+              "text": "$\\frac{\\vec{a}+2 \\vec{b}+3 \\vec{c}}{2}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Ayfrk",
+              "text": "$\\frac{\\vec{a}-\\vec{b}+3 \\vec{c}}{3}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Here we are given that\n$\\overrightarrow{\\mathrm{OA}}=\\overrightarrow{\\mathrm{a}}, \\overrightarrow{\\mathrm{OB}}=\\overrightarrow{\\mathrm{b}}, \\overrightarrow{\\mathrm{OC}}=\\overrightarrow{\\mathrm{c}}$\nNow P.V of Di.e $\\overrightarrow{\\mathrm{OD}}=\\frac{1 \\times \\overrightarrow{\\mathrm{OB}}+3 \\times \\overrightarrow{\\mathrm{OC}}}{1+3}$\n$\\begin{aligned} & \\overrightarrow{\\mathrm{OD}}=\\frac{\\overrightarrow{\\mathrm{b}}+3 \\overrightarrow{\\mathrm{c}}}{4} \\\\ & \\overrightarrow{\\mathrm{OE}}=\\frac{4 \\overrightarrow{\\mathrm{OD}}+\\overrightarrow{\\mathrm{OA}}}{4+1}=\\frac{\\frac{4(\\overrightarrow{\\mathrm{~b}}+3 \\overrightarrow{\\mathrm{c}})}{4}+\\overrightarrow{\\mathrm{a}}}{5} \\\\ & \\Rightarrow \\overrightarrow{\\mathrm{OE}}=\\frac{\\overrightarrow{\\mathrm{a}}+\\overrightarrow{\\mathrm{b}}+3 \\overrightarrow{\\mathrm{c}}}{5} \\\\ & \\text { Now, } \\overrightarrow{\\mathrm{OE}}=\\frac{2 \\overrightarrow{\\mathrm{OB}}+3 \\overrightarrow{\\mathrm{OF}}}{2+3} \\\\ & \\Rightarrow \\overrightarrow{\\mathrm{OF}}=\\frac{5 \\overrightarrow{\\mathrm{OE}}-2 \\overrightarrow{\\mathrm{OB}}}{3} \\\\ & \\Rightarrow \\overrightarrow{\\mathrm{OF}}=\\frac{\\frac{5(\\vec{a}+\\vec{b}+3 \\overrightarrow{\\mathrm{c}})}{5}-2 \\overrightarrow{\\mathrm{~b}}}{3} \\\\ & \\Rightarrow \\overrightarrow{\\mathrm{OF}}=\\frac{\\overrightarrow{\\mathrm{a}}-\\overrightarrow{\\mathrm{b}}+3 \\overrightarrow{\\mathrm{c}}}{3} \\Rightarrow P . V . \\text { of } \\mathrm{F} \\text { is } \\frac{\\overrightarrow{\\mathrm{a}}-\\overrightarrow{\\mathrm{b}}+3 \\overrightarrow{\\mathrm{c}}}{3}\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6415",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 2)",
+            "title": "BITSAT 2024 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8346f5bfc7ab78aeb82",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2022-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2022",
+              "title": "BITSAT 2022"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 3,
+          "question": {
+            "text": "107. $\\hat{\\mathbf{u}}$ and $\\hat{\\mathbf{v}}$ are two non-collinear unit vectors such that $\\left|\\frac{\\hat{\\mathbf{u}}+\\hat{\\mathbf{v}}}{\\mathbf{2}}+\\hat{\\mathbf{u}} \\times \\hat{\\mathbf{v}}\\right|=1$. Then the value of $|\\hat{\\mathbf{u}} \\times \\hat{\\mathbf{v}}|$ is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "F0j7e",
+              "text": "\r\n$\\left|\\frac{\\hat{\\mathbf{u}}+\\hat{\\mathbf{v}}}{2}\\right|$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "creIa",
+              "text": "\r\n$|\\hat{\\mathbf{u}}+\\hat{\\mathbf{v}}|$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "anAxr",
+              "text": "\r\n$|\\hat{\\mathbf{u}}-\\hat{\\mathbf{v}}|$\r\n",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "pGlGo",
+              "text": "\r\n$\\left|\\frac{\\hat{\\mathbf{u}}-\\hat{\\mathbf{v}}}{2}\\right|$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given that, $\\left|\\frac{\\hat{\\mathbf{u}}+\\hat{\\mathbf{v}}}{2}+\\hat{\\mathbf{u}} \\times \\hat{\\mathbf{v}}\\right|=1$\r\n$$\r\n\\begin{array}{ll}\r\n\\Rightarrow & \\left|\\frac{\\hat{\\mathbf{u}}+\\hat{\\mathbf{v}}}{2}+\\hat{\\mathbf{u}} \\times \\hat{\\mathbf{v}}\\right|^2=1 \\\\\r\n\\Rightarrow & \\frac{2+2 \\cos \\theta}{4}+\\sin ^2 \\theta=1 \\\\\r\n & \\quad[\\because \\hat{\\mathbf{u}} \\cdot(\\hat{\\mathbf{u}} \\times \\hat{\\mathbf{v}})=\\hat{\\mathbf{v}}(\\hat{\\mathbf{u}} \\times \\hat{\\mathbf{v}})=0] \\\\\r\n\\Rightarrow & \\cos ^2 \\frac{\\theta}{2}=\\cos 2 \\theta \\\\\r\n\\Rightarrow & \\theta=n \\pi \\pm \\frac{\\theta}{2}, n \\in z \\\\\r\n\\Rightarrow & \\theta=\\frac{2 \\pi}{3}\r\n\\end{array}\r\n$$\r\n$\\Rightarrow \\quad|\\hat{\\mathbf{u}} \\times \\hat{\\mathbf{v}}|=\\sin \\frac{2 \\pi}{3}=\\sin \\frac{\\pi}{3}=\\left|\\frac{\\hat{\\mathbf{u}}-\\hat{\\mathbf{v}}}{2}\\right|$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2022-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2022",
+            "title": "BITSAT 2022"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e82b6f5bfc7ab78aeb30",
+          "previousYearPapers": [
+            {
+              "_id": "64c0e679aef333185c6bb44c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2021-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2021",
+              "title": "BITSAT 2021"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "If $\\vec{a}$ is a vector of magnitude 50 , collinear with the vector $\\vec{b}=6 \\hat{i}-8 \\hat{j}-\\frac{15}{2} \\hat{k}$ and makes an acute angle with the positive direction of $Z$ - axis, then $\\vec{a}$ is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "tkkRa",
+              "text": "$-24 \\hat{i}+32 \\hat{j}+30 \\hat{k}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "eGBxZ",
+              "text": "$24 \\hat{i}-32 \\hat{j}-30 \\hat{k}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "JMfzW",
+              "text": "$-12 \\hat{i}+16 \\hat{j}-15 \\hat{k}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "39Q6l",
+              "text": "$12 \\hat{i}-16 \\hat{j}-15 \\hat{k}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Since $\\vec{a}=m \\vec{b}$ for some scalar $m$ i.e.,\r\n\r\n$\\begin{array}{l}\r\n\r\n\\vec{a}=m\\left(6 \\hat{i}-8 \\hat{j}-\\frac{15}{2} \\hat{k}\\right) \\\\\r\n\r\n\\Rightarrow|a|=|m| \\sqrt{36+64+\\frac{225}{4}} \\\\\r\n\r\n\\Rightarrow 50=\\frac{25}{2}|m| \\\\\r\n\r\n\\Rightarrow|m|=4 \\\\\r\n\r\n\\Rightarrow m=\\pm 4\r\n\r\n\\end{array}$\r\n\r\nSince, a makes an acute angle with the positive direction of $Z$ - axis, so its $z$ component must be positive and hence, $m$ must be $-4$.\r\n\r\n$\\therefore a=-4\\left(6 \\hat{i}+8 \\hat{j}-\\frac{15}{2} \\hat{k}\\right)=-24 \\hat{i}+32 \\hat{j}+30 \\hat{k}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "64c0e679aef333185c6bb44c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2021-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2021",
+            "title": "BITSAT 2021"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8196f5bfc7ab78aea93",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7e",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2020-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2020",
+              "title": "BITSAT 2020"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "If $\\vec{r}$ and $\\vec{s}$ arenon-zero constant vectors and the scalar $b$ is chosen such that $|\\vec{r}+b \\vec{s}|$ is minimum, then the value of $|b \\vec{s}|^{2}+|\\vec{r}+b \\vec{s}|^{2}$ is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "abLnS",
+              "text": "$2|\\vec{r}|^{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Hq0Fw",
+              "text": "$|\\vec{r}|^{2} / 2$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "8bRfx",
+              "text": "$3|\\vec{r}|^{2}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "kMwOc",
+              "text": "$|\\vec{r}|^{2}$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "For minimum value $|\\vec{r}+b \\vec{s}|=0$. Let $\\vec{r}$ and $\\vec{s}$ are anti-parallel so $b \\vec{s}=-\\vec{r}$\r\n\r\n$\\therefore|b \\vec{s}|^{2}+|\\vec{r}+b \\vec{s}|^{2}=|-\\vec{r}|^{2}+|\\vec{r}-\\vec{r}|^{2}=|\\vec{r}|^{2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7e",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2020-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2020",
+            "title": "BITSAT 2020"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e80b6f5bfc7ab78aea1a",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi>a</mi><mo>&#8594;</mo></mover><mo>,</mo><mover><mi>b</mi><mo>&#8594;</mo></mover><mo>,</mo><mover><mi>c</mi><mo>&#8594;</mo></mover></math> are non-coplaner vectors such that <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi mathvariant=\"italic\">b</mi><mo mathvariant=\"italic\">&#8594;</mo></mover><mo mathvariant=\"italic\">&#215;</mo><mover><mi mathvariant=\"italic\">c</mi><mo mathvariant=\"italic\">&#8594;</mo></mover><mo mathvariant=\"italic\">=</mo><mover><mi mathvariant=\"italic\">a</mi><mo mathvariant=\"italic\">&#8594;</mo></mover><mo mathvariant=\"italic\">;</mo><mo mathvariant=\"italic\">&#160;</mo><mover><mi mathvariant=\"italic\">c</mi><mo mathvariant=\"italic\">&#8594;</mo></mover><mo mathvariant=\"italic\">&#215;</mo><mover><mi mathvariant=\"italic\">a</mi><mo mathvariant=\"italic\">&#8594;</mo></mover><mo mathvariant=\"italic\">=</mo><mover><mi mathvariant=\"italic\">b</mi><mo mathvariant=\"italic\">&#8594;</mo></mover><mo mathvariant=\"italic\">;</mo><mo mathvariant=\"italic\">&#160;</mo><mover><mi mathvariant=\"italic\">a</mi><mo mathvariant=\"italic\">&#8594;</mo></mover><mo mathvariant=\"italic\">&#215;</mo><mover><mi mathvariant=\"italic\">b</mi><mo mathvariant=\"italic\">&#8594;</mo></mover><mo mathvariant=\"italic\">=</mo><mover><mi mathvariant=\"italic\">c</mi><mo mathvariant=\"italic\">&#8594;</mo></mover></math>,&nbsp;then which of the following is not TRUE?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "U41d0",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>|</mo><mover><mi>a</mi><mo>&#8594;</mo></mover><mo>|</mo><mo>-</mo><mo>|</mo><mover><mi>b</mi><mo>&#8594;</mo></mover><mo>|</mo><mo>=</mo><mn>0</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "UFE9r",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>|</mo><mover><mi>a</mi><mo>&#8594;</mo></mover><mo>|</mo><mo>=</mo><mo>|</mo><mover><mi>b</mi><mo>&#8594;</mo></mover><mo>|</mo><mo>=</mo><mo>|</mo><mover><mi>c</mi><mo>&#8594;</mo></mover><mo>|</mo><mo>=</mo><mn>2</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "CiBIl",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"[\" close=\"]\"><mtable><mtr><mtd><mover><mi>a</mi><mo>&#8594;</mo></mover></mtd><mtd><mover><mi>b</mi><mo>&#8594;</mo></mover></mtd><mtd><mover><mi>c</mi><mo>&#8594;</mo></mover></mtd></mtr></mtable></mfenced><mo>=</mo><mn>1</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "1H83l",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>|</mo><mover><mi>a</mi><mo>&#8594;</mo></mover><mo>|</mo><mo>|</mo><mover><mi>b</mi><mo>&#8594;</mo></mover><mo>|</mo><mo>|</mo><mover><mi>c</mi><mo>&#8594;</mo></mover><mo>|</mo><mo>=</mo><mn>1</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Given,&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi>a</mi><mo>&#8594;</mo></mover><mo>&#215;</mo><mover><mi>b</mi><mo>&#8594;</mo></mover><mo>=</mo><mover><mi>c</mi><mo>&#8594;</mo></mover></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi>b</mi><mo>&#8594;</mo></mover><mo>&#215;</mo><mover><mi>c</mi><mo>&#8594;</mo></mover><mo>=</mo><mover><mi>a</mi><mo>&#8594;</mo></mover></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi>c</mi><mo>&#8594;</mo></mover><mo>&#215;</mo><mover><mi>a</mi><mo>&#8594;</mo></mover><mo>=</mo><mover><mi>b</mi><mo>&#8594;</mo></mover></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mover><mi>b</mi><mo>&#8594;</mo></mover><mo>&#215;</mo><mover><mi>c</mi><mo>&#8594;</mo></mover><mo>)</mo><mo>&#183;</mo><mover><mi>a</mi><mo>&#8594;</mo></mover><mo>=</mo><mover><mi>a</mi><mo>&#8594;</mo></mover><mo>&#183;</mo><mover><mi>a</mi><mo>&#8594;</mo></mover></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mover><mi>c</mi><mo>&#8594;</mo></mover><mo>&#215;</mo><mover><mi>a</mi><mo>&#8594;</mo></mover><mo>)</mo><mo>&#183;</mo><mover><mi>b</mi><mo>&#8594;</mo></mover><mo>=</mo><mover><mi>b</mi><mo>&#8594;</mo></mover><mo>&#183;</mo><mover><mi>b</mi><mo>&#8594;</mo></mover></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mover><mi>a</mi><mo>&#8594;</mo></mover><mn>2</mn></msup><mo>-</mo><msup><mover><mi>b</mi><mo>&#8594;</mo></mover><mn>2</mn></msup><mo>=</mo><mo>(</mo><mover><mi>b</mi><mo>&#8594;</mo></mover><mo>&#215;</mo><mover><mi>c</mi><mo>&#8594;</mo></mover><mo>)</mo><mo>&#183;</mo><mover><mi>a</mi><mo>&#8594;</mo></mover><mo>-</mo><mo>(</mo><mover><mi>c</mi><mo>&#8594;</mo></mover><mo>&#215;</mo><mover><mi>a</mi><mo>&#8594;</mo></mover><mo>)</mo><mo>&#183;</mo><mover><mi>b</mi><mo>&#8594;</mo></mover></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mo>[</mo><mtable><mtr><mtd><mover><mi>c</mi><mo>&#8594;</mo></mover></mtd><mtd><mover><mi>a</mi><mo>&#8594;</mo></mover></mtd><mtd><mover><mi>b</mi><mo>&#8594;</mo></mover></mtd></mtr></mtable><mo>]</mo><mo>-</mo><mo>[</mo><mtable><mtr><mtd><mover><mi>b</mi><mo>&#8594;</mo></mover></mtd><mtd><mover><mi>c</mi><mo>&#8594;</mo></mover></mtd><mtd><mover><mi>a</mi><mo>&#8594;</mo></mover></mtd></mtr></mtable><mo>]</mo><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mo>|</mo><mover><mi>a</mi><mo>&#8594;</mo></mover><msup><mo>|</mo><mn>2</mn></msup><mo>-</mo><mo>|</mo><mover><mi>b</mi><mo>&#8594;</mo></mover><msup><mo>|</mo><mn>2</mn></msup><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>|</mo><mover><mi>a</mi><mo>&#8594;</mo></mover><mo>|</mo><mo>-</mo><mo>|</mo><mover><mi>b</mi><mo>&#8594;</mo></mover><mo>|</mo><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>|</mo><mover><mi>a</mi><mo>&#8594;</mo></mover><mo>|</mo><mo>=</mo><mo>|</mo><mover><mi>b</mi><mo>&#8594;</mo></mover><mo>|</mo></math></p><p>We know that,&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"[\" close=\"]\"><mrow><mover><mi>a</mi><mo>&#8594;</mo></mover><mo>&#215;</mo><mover><mi>b</mi><mo>&#8594;</mo></mover><mo>&#160;</mo><mo>&#160;</mo><mover><mi>b</mi><mo>&#8594;</mo></mover><mo>&#215;</mo><mover><mi>c</mi><mo>&#8594;</mo></mover><mo>&#160;</mo><mo>&#160;</mo><mover><mi>c</mi><mo>&#8594;</mo></mover><mo>&#215;</mo><mover><mi>a</mi><mo>&#8594;</mo></mover></mrow></mfenced><mo>=</mo><mo>[</mo><mover><mi>a</mi><mo>&#8594;</mo></mover><mover><mi>b</mi><mo>&#8594;</mo></mover><mover><mi>c</mi><mo>&#8594;</mo></mover><msup><mo>]</mo><mn>2</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"[\" close=\"]\"><mtable columnalign=\"left\"><mtr><mtd><mtable><mtr><mtd><mover><mi>a</mi><mo>&#8594;</mo></mover></mtd><mtd><mover><mi>b</mi><mo>&#8594;</mo></mover></mtd><mtd><mover><mi>c</mi><mo>&#8594;</mo></mover></mtd></mtr></mtable></mtd></mtr></mtable></mfenced><mo>=</mo><msup><mfenced open=\"[\" close=\"]\"><mtable columnalign=\"left\"><mtr><mtd><mover><mi>a</mi><mo>&#8594;</mo></mover></mtd><mtd><mover><mi>b</mi><mo>&#8594;</mo></mover></mtd><mtd><mover><mi>c</mi><mo>&#8594;</mo></mover></mtd></mtr></mtable></mfenced><mn>2</mn></msup></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfenced open=\"[\" close=\"]\"><mtable><mtr><mtd><mover><mi>a</mi><mo>&#8594;</mo></mover></mtd><mtd><mover><mi>b</mi><mo>&#8594;</mo></mover></mtd><mtd><mover><mi>c</mi><mo>&#8594;</mo></mover></mtd></mtr></mtable></mfenced><mo>=</mo><mn>1</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>|</mo><mover><mi>a</mi><mo>&#8594;</mo></mover><mo>|</mo><mo>|</mo><mover><mi>b</mi><mo>&#8594;</mo></mover><mo>|</mo><mo>|</mo><mover><mi>c</mi><mo>&#8594;</mo></mover><mo>|</mo><mo>=</mo><mn>1</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mo>|</mo><mover><mi>a</mi><mo>&#8594;</mo></mover><mo>|</mo><mo>=</mo><mo>|</mo><mover><mi>b</mi><mo>&#8594;</mo></mover><mo>|</mo><mo>=</mo><mo>|</mo><mover><mi>c</mi><mo>&#8594;</mo></mover><mo>|</mo><mo>&#8800;</mo><mn>2</mn></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8006f5bfc7ab78ae9b5",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi></math> is the altitude of a parallelopiped determined by the vectors <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi>a</mi><mo>^</mo></mover><mo>,</mo><mo>&#160;</mo><mover><mi>b</mi><mo>^</mo></mover><mo>,</mo><mo>&#160;</mo><mover><mi>c</mi><mo>^</mo></mover></math> and the base is taken to be the parallelogram determined by <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi>a</mi><mo>^</mo></mover></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi>b</mi><mo>^</mo></mover></math> where&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi>a</mi><mo>^</mo></mover><mo>=</mo><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>+</mo><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover><mo>+</mo><mover><mi mathvariant=\"normal\">k</mi><mo>^</mo></mover><mo>,</mo><mo>&#160;</mo><mover><mi>b</mi><mo>^</mo></mover><mo>=</mo><mn>2</mn><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>+</mo><mn>4</mn><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover><mo>-</mo><mover><mi mathvariant=\"normal\">k</mi><mo>^</mo></mover></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi>c</mi><mo>^</mo></mover><mo>=</mo><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>+</mo><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover><mo>+</mo><mn>3</mn><mover><mi mathvariant=\"normal\">k</mi><mo>^</mo></mover><mo>,</mo></math>&nbsp;then the value of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>19</mn><msup><mi>h</mi><mn>2</mn></msup></math> is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "4Bbg3",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>19</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "N13c1",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>16</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "a3aMN",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>8</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Zf7zb",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>Volume of the parallelopiped <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfenced open=\"|\" close=\"|\"><mfenced open=\"[\" close=\"]\"><mrow><mover><mi>a</mi><mo>^</mo></mover><mo>&#160;</mo><mover><mi>b</mi><mo>^</mo></mover><mo>&#160;</mo><mover><mi>c</mi><mo>^</mo></mover></mrow></mfenced></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo></math> (area of the base parallelogram) <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#215;</mo><mi>h</mi><mo>=</mo><mfenced open=\"|\" close=\"|\"><mfenced open=\"[\" close=\"]\"><mrow><mover><mi>a</mi><mo>^</mo></mover><mo>&#160;</mo><mover><mi>b</mi><mo>^</mo></mover><mo>&#160;</mo><mover><mi>c</mi><mo>^</mo></mover></mrow></mfenced></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfenced open=\"|\" close=\"|\"><mrow><mover><mi>a</mi><mo>^</mo></mover><mo>&#215;</mo><mover><mi>b</mi><mo>^</mo></mover></mrow></mfenced><mi>h</mi><mo>=</mo><mfenced open=\"|\" close=\"|\"><mfenced open=\"[\" close=\"]\"><mrow><mover><mi>a</mi><mo>^</mo></mover><mo>&#160;</mo><mover><mi>b</mi><mo>^</mo></mover><mo>&#160;</mo><mover><mi>c</mi><mo>^</mo></mover></mrow></mfenced></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfenced close=\"|\" open=\"|\"><mrow><mo>-</mo><mn>5</mn><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>+</mo><mn>3</mn><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover><mo>+</mo><mn>2</mn><mover><mi mathvariant=\"normal\">k</mi><mo>^</mo></mover></mrow></mfenced><mi>h</mi><mo>=</mo><mfenced close=\"|\" open=\"|\"><mtable><mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>2</mn></mtd><mtd><mn>4</mn></mtd><mtd><mo>-</mo><mn>1</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>3</mn></mtd></mtr></mtable></mfenced><mtable><mtr></mtr><mtr></mtr><mtr></mtr></mtable></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><msqrt><mn>38</mn></msqrt><mi>h</mi><mo>=</mo><mn>4</mn><mo>&#8658;</mo><mi>h</mi><mo>=</mo><mfrac><mn>4</mn><msqrt><mn>38</mn></msqrt></mfrac></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mn>38</mn><msup><mi>h</mi><mn>2</mn></msup><mo>=</mo><msup><mn>4</mn><mn>2</mn></msup><mo>&#8658;</mo><mn>19</mn><msup><mi>h</mi><mn>2</mn></msup><mo>=</mo><mn>8</mn></math></p><p>Hence, option (c) is correct.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e8006f5bfc7ab78ae9b3",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7c",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2018-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2018",
+              "title": "BITSAT 2018"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "In a <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8710;</mo><mi>A</mi><mi>B</mi><mi>C</mi><mo>,</mo></math>&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>D</mi><mo>,</mo><mo>&#160;</mo><mi>E</mi><mo>,</mo><mo>&#160;</mo><mi>F</mi></math> are the mid-points of the sides <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi><mi>C</mi></math>,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi><mi>A</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mi>B</mi></math> respectively, the vector <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo>&#8594;</mo></mover></math> is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "dM6cD",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mrow><mi>B</mi><mi>E</mi></mrow><mo>&#8594;</mo></mover><mo>+</mo><mover><mrow><mi>C</mi><mi>F</mi></mrow><mo>&#8594;</mo></mover></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "mvvkq",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mrow><mi>B</mi><mi>E</mi></mrow><mo>&#8594;</mo></mover><mo>-</mo><mover><mrow><mi>C</mi><mi>F</mi></mrow><mo>&#8594;</mo></mover></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "VOR8a",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mrow><mi>C</mi><mi>F</mi></mrow><mo>&#8594;</mo></mover><mo>-</mo><mover><mrow><mi>B</mi><mi>E</mi></mrow><mo>&#8594;</mo></mover></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "CVfnv",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mover><mrow><mi>B</mi><mi>E</mi></mrow><mo>&#8594;</mo></mover><mo>-</mo><mover><mrow><mi>C</mi><mi>F</mi></mrow><mo>&#8594;</mo></mover></math>",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p><img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/78f10128-ccbf-41c5-8ffa-86e5d1ef4ddc-d52.png\" style=\"width: 343px; height: 200px;\" /></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo>&#8594;</mo></mover><mo>=</mo><mn>3</mn><mover><mrow><mi>G</mi><mi>D</mi></mrow><mo>&#8594;</mo></mover></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mn>3</mn><mo>&#183;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mfenced><mrow><mover><mrow><mi>G</mi><mi>B</mi></mrow><mo>&#8594;</mo></mover><mo>+</mo><mover><mrow><mi>G</mi><mi>C</mi></mrow><mo>&#8594;</mo></mover></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mfenced><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mover><mrow><mi>E</mi><mi>B</mi></mrow><mo>&#8594;</mo></mover><mo>+</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mover><mrow><mi>F</mi><mi>C</mi></mrow><mo>&#8594;</mo></mover></mrow></mfenced></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>=</mo><mo>-</mo><mover><mrow><mi>B</mi><mi>E</mi></mrow><mo>&#8594;</mo></mover><mo>-</mo><mover><mrow><mi>C</mi><mi>F</mi></mrow><mo>&#8594;</mo></mover></math></p><p>Hence, option (d) is correct.</p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7c",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2018-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2018",
+            "title": "BITSAT 2018"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7f16f5bfc7ab78ae937",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7b",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2017-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2017",
+              "title": "BITSAT 2017"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "Let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi mathvariant=\"italic\">a</mi><mo mathvariant=\"italic\">^</mo></mover></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi mathvariant=\"italic\">b</mi><mo mathvariant=\"italic\">^</mo></mover></math>&nbsp;are&nbsp;two non-collinear unit vectors. If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi>u</mi><mo>&#8594;</mo></mover><mo>=</mo><mover><mi>a</mi><mo>^</mo></mover><mo>-</mo><mfenced><mrow><mover><mi>a</mi><mo mathvariant=\"italic\">^</mo></mover><mo mathvariant=\"italic\">&#183;</mo><mover><mi>b</mi><mo mathvariant=\"italic\">^</mo></mover></mrow></mfenced><mover><mi>b</mi><mo>^</mo></mover></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi>v</mi><mo>&#8594;</mo></mover><mo>=</mo><mover><mi mathvariant=\"italic\">a</mi><mo mathvariant=\"italic\">^</mo></mover><mo mathvariant=\"italic\">&#215;</mo><mover><mi mathvariant=\"italic\">b</mi><mo mathvariant=\"italic\">^</mo></mover></math>, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>|</mo><mover><mi>v</mi><mo>&#8594;</mo></mover><mo>|</mo></math> is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "2R2BE",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"|\" close=\"|\"><mover><mi>u</mi><mo>&#8594;</mo></mover></mfenced></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "DN6Gb",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"|\" close=\"|\"><mover><mi>u</mi><mo>&#8594;</mo></mover></mfenced><mo>+</mo><mfenced open=\"|\" close=\"|\"><mrow><mover><mi>v</mi><mo>&#8594;</mo></mover><mo>.</mo><mover><mi>a</mi><mo>^</mo></mover></mrow></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "jXXwy",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mfenced open=\"|\" close=\"|\"><mover><mi>v</mi><mo>&#8594;</mo></mover></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "msxgi",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced open=\"|\" close=\"|\"><mover><mi>v</mi><mo>&#8594;</mo></mover></mfenced><mo>+</mo><mover><mi>u</mi><mo>&#8594;</mo></mover><mo>&#183;</mo><mfenced><mrow><mover><mi mathvariant=\"italic\">a</mi><mo mathvariant=\"italic\">^</mo></mover><mo>+</mo><mover><mi mathvariant=\"italic\">b</mi><mo mathvariant=\"italic\">^</mo></mover></mrow></mfenced></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p>We have,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"|\" open=\"|\"><mover><mi>a</mi><mo>^</mo></mover></mfenced><mo>=</mo><mfenced close=\"|\" open=\"|\"><mover><mi>b</mi><mo>^</mo></mover></mfenced><mo>=</mo><mn>1</mn></math></p><p>Given,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi>v</mi><mo>&#8594;</mo></mover><mo>=</mo><mover><mi>a</mi><mo>^</mo></mover><mo>&#215;</mo><mover><mi mathvariant=\"italic\">b</mi><mo mathvariant=\"italic\">^</mo></mover><mo>=</mo><mfenced close=\"|\" open=\"|\"><mover><mi mathvariant=\"italic\">a</mi><mo mathvariant=\"italic\">^</mo></mover></mfenced><mfenced close=\"|\" open=\"|\"><mover><mi>b</mi><mo>^</mo></mover></mfenced><mi>sin</mi><mi>&#952;</mi><mover><mi mathvariant=\"italic\">n</mi><mo mathvariant=\"italic\">^</mo></mover><mo>=</mo><mi>sin</mi><mi>&#952;</mi><mover><mi>n</mi><mo>^</mo></mover></math></p><p>where,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#952;</mi></math>&nbsp;is&nbsp;the angle between <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi>a</mi><mo>^</mo></mover></math> and&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi>b</mi><mo>^</mo></mover></math>.&nbsp;</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mo>&#160;</mo><mo>&#160;</mo><mfenced close=\"|\" open=\"|\"><mover><mi>v</mi><mo>&#8594;</mo></mover></mfenced><mo>=</mo><mi>sin</mi><mi>&#952;</mi></math></p><p>Now, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi>u</mi><mo>&#8594;</mo></mover><mo>=</mo><mover><mi>a</mi><mo>^</mo></mover><mo>-</mo><mfenced><mrow><mover><mi mathvariant=\"italic\">a</mi><mo mathvariant=\"italic\">^</mo></mover><mo mathvariant=\"italic\">&#183;</mo><mover><mi mathvariant=\"italic\">b</mi><mo mathvariant=\"italic\">^</mo></mover></mrow></mfenced><mover><mi>b</mi><mo>^</mo></mover><mo>=</mo><mover><mi>a</mi><mo>^</mo></mover><mo>-</mo><mfenced><mrow><mfenced close=\"|\" open=\"|\"><mover><mi>a</mi><mo>^</mo></mover></mfenced><mfenced close=\"|\" open=\"|\"><mover><mi>b</mi><mo>^</mo></mover></mfenced><mi>cos</mi><mi>&#952;</mi></mrow></mfenced><mover><mi>b</mi><mo>^</mo></mover></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi>u</mi><mo>&#8594;</mo></mover><mo>=</mo><mover><mi>a</mi><mo mathvariant=\"italic\">^</mo></mover><mo>-</mo><mfenced><mrow><mi>cos</mi><mi>&#952;</mi></mrow></mfenced><mover><mi>b</mi><mo>^</mo></mover></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mfenced close=\"|\" open=\"|\"><mover><mi>u</mi><mo>&#8594;</mo></mover></mfenced><mo>=</mo><msqrt><msup><mfenced close=\"|\" open=\"|\"><mover><mi>a</mi><mo>^</mo></mover></mfenced><mn>2</mn></msup><mo>+</mo><msup><mfenced close=\"|\" open=\"|\"><mrow><mo>-</mo><mi>cos</mi><mi>&#952;</mi><mfenced close=\"|\" open=\"|\"><mover><mi>b</mi><mo>^</mo></mover></mfenced></mrow></mfenced><mn>2</mn></msup><mo>-</mo><mn>2</mn><mfenced close=\"|\" open=\"|\"><mover><mi>a</mi><mo>^</mo></mover></mfenced><mfenced close=\"|\" open=\"|\"><mrow><mo>-</mo><mi>cos</mi><mi>&#952;</mi><mover><mi>b</mi><mo>^</mo></mover></mrow></mfenced><mi>cos</mi><mi>&#952;</mi></msqrt></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mfenced close=\"|\" open=\"|\"><mover><mi>u</mi><mo>&#8594;</mo></mover></mfenced><mo>=</mo><msqrt><mn>1</mn><mo>+</mo><msup><mi>cos</mi><mn>2</mn></msup><mi>&#952;</mi><mo>-</mo><mn>2</mn><msup><mi>cos</mi><mn>2</mn></msup><mi>&#952;</mi></msqrt></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mfenced close=\"|\" open=\"|\"><mover><mi>u</mi><mo>&#8594;</mo></mover></mfenced><mo>=</mo><msqrt><mn>1</mn><mo>-</mo><msup><mi>cos</mi><mn>2</mn></msup><mi>&#952;</mi></msqrt><mo>=</mo><msqrt><msup><mi>sin</mi><mn>2</mn></msup><mi>&#952;</mi></msqrt></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mfenced close=\"|\" open=\"|\"><mover><mi>u</mi><mo>&#8594;</mo></mover></mfenced><mo>=</mo><mi>sin</mi><mi>&#952;</mi></math></p><p>So,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"|\" open=\"|\"><mover><mi>v</mi><mo>&#8594;</mo></mover></mfenced><mo>=</mo><mfenced close=\"|\" open=\"|\"><mover><mi>u</mi><mo>&#8594;</mo></mover></mfenced></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7b",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2017-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2017",
+            "title": "BITSAT 2017"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c66f5bfc7ab78ae7c0",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If the middle points of sides $\\mathrm{BC}, \\mathrm{CA} \\& \\mathrm{AB}$ of triangle $\\mathrm{ABC}$ are respectively $\\mathrm{D}, \\mathrm{E}, \\mathrm{F}$ then position vector of centre of triangle $\\mathrm{DEF}$, when position vector of $A, \\quad B, \\quad C$ are respectively $\\hat{i}+\\hat{j}, \\hat{j}+\\hat{k}, \\hat{k}+\\hat{i}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "4DBqi",
+              "text": "$\\frac{1}{3}(\\hat{i}+\\hat{j}+\\hat{k})$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "PYrAg",
+              "text": "$(\\hat{i}+\\hat{j}+\\hat{k})$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "vtZeL",
+              "text": "$2(\\hat{i}+\\hat{j}+\\hat{k})$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "r1u2I",
+              "text": "$\\frac{2}{3}(\\hat{i}+\\hat{j}+\\hat{k})$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "The position vector of points $D, E, F$ are respectively $\\hat{i}+\\hat{j}+\\hat{k}, \\hat{i}+\\frac{\\hat{k}+\\hat{j}}{2}$ and $\\frac{\\hat{i}+\\hat{k}}{2}+\\hat{j}$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/0a-Uy1XmUWvPVWLHzrK4nTHUIIX4kCwelvlDzp_CzjA.original.fullsize.png\"><br>\r\n\r\nSo, position vector of centre of $\\Delta \\mathrm{DEF}$ $=\\frac{1}{3}\\left[\\frac{\\hat{i}+\\hat{j}}{2}+\\hat{k}+\\hat{i} \\frac{\\hat{k}+\\hat{j}}{2}+\\frac{\\hat{i}+\\hat{k}}{2}+\\hat{j}\\right]$\r\n\r\n$=\\frac{2}{3}[\\hat{i}+\\hat{j}+\\hat{k}]$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b86f5bfc7ab78ae747",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "If vectors $2 \\mathrm{i}-\\mathrm{j}+\\mathrm{k}, \\mathrm{i}+2 \\mathrm{j}-3 \\mathrm{k}$ and $3 \\mathrm{i}+\\mathrm{aj}+5 \\mathrm{k}$ are\r\n\r\ncoplanar, then the value of a is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "LPegY",
+              "text": "2",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "wMq4A",
+              "text": "-2",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "xlmQv",
+              "text": "-1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "jZR9f",
+              "text": "-4",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "If given vectors are coplanar, then there exists two scalar quantities $\\mathrm{x}$ and $\\mathrm{y}$ such that $2 \\hat{i}-\\hat{j}+\\hat{k}=x(\\hat{i}+2 \\hat{j}-3 \\hat{k})+y(3 \\hat{i}+a \\hat{j}+5 \\hat{k})$\r\n\r\nComparing coefficient of $\\hat{i}, \\hat{j}$ and $\\hat{k}$ on both sides of (1) we get $x+3 y=2,2 x+a y=-1,-3 x+5 y=1 \\ldots(2)$\r\n\r\nSolving first and third equations, we get $\\mathrm{x}=1 / 2, \\mathrm{y}=1 / 2$\r\n\r\nSince the vectors are coplanar, therefore these values of $x$ and $y$ will satisfy the equation $2 x+a y=-1$\r\n\r\n$\\therefore 2(1 / 2)+a(1 / 2)=-1 \\Rightarrow a=-4$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7b86f5bfc7ab78ae746",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d77",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2013-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2013",
+              "title": "BITSAT 2013"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If $\\vec{a}, \\vec{b}, \\vec{c}$ are three unit vectors such that $\\vec{a}+\\vec{b}+\\vec{c}=\\overrightarrow{0},$ where $\\overrightarrow{0}$ is null vector, then $\\vec{a} \\cdot \\vec{b}+\\vec{b} \\cdot \\vec{c}+\\vec{c} \\cdot \\vec{a}$ is :",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "PUpEg",
+              "text": "-3",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "v4ZoO",
+              "text": "-2",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "cohpV",
+              "text": "$-\\frac{3}{2}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "9X4GG",
+              "text": "0",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We have $\\vec{a}+\\vec{b}+\\vec{c}=\\overrightarrow{0}$\r\n\r\n$|\\vec{a}+\\vec{b}+\\vec{c}|=0 \\Rightarrow|\\vec{a}+\\vec{b}+\\vec{c}|^{2}=0$\r\n\r\n$\\Rightarrow|\\vec{a}|^{2}+|\\vec{b}|^{2}+|\\vec{c}|^{2}$\r\n\r\n$+2(\\vec{a} \\cdot \\vec{b}+\\vec{b} \\cdot \\vec{c}+\\vec{c} \\cdot \\vec{a})=0$\r\n\r\n$\\Rightarrow 1+1+1+2(\\vec{a} \\cdot \\vec{b}+\\vec{b} \\cdot \\vec{c}+\\vec{c} \\cdot \\vec{a})=0$\r\n\r\n$\\Rightarrow \\vec{a} \\cdot \\vec{b}+\\bar{b} \\cdot \\vec{c}+\\bar{c} \\cdot \\bar{a}=-\\frac{3}{2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d77",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2013-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2013",
+            "title": "BITSAT 2013"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e79a6f5bfc7ab78ae64f",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d75",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2011-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2011",
+              "title": "BITSAT 2011"
+            }
+          ],
+          "question": {
+            "text": "Two vectors \\(\\vec{A}\\) and \\(\\vec{B}\\) are such that \\(|\\overrightarrow{\\mathrm{A}}+\\overrightarrow{\\mathrm{B}}|=|\\overrightarrow{\\mathrm{A}}-\\overrightarrow{\\mathrm{B}}|\\). The angle between the two vectors will be-",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "YPoSF",
+              "text": "\\(60^{\\circ}\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "QVOga",
+              "text": "\\(90^{\\circ}\\)",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "C0uM3",
+              "text": "\\(180^{\\circ}\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "OxhnK",
+              "text": "\\(0^{\\circ}\\)",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "\\(\\overrightarrow{\\mathrm{A}}+\\overrightarrow{\\mathrm{B}}|=| \\overrightarrow{\\mathrm{A}}-\\overrightarrow{\\mathrm{B}} \\mid\\)\n\\(\\Rightarrow \\sqrt{\\mathrm{A}^2+\\mathrm{B}^2+2 \\mathrm{AB} \\cos \\theta}=\\sqrt{\\mathrm{A}^2+\\mathrm{B}^2-2 \\mathrm{AB} \\cos \\theta}\\)\nSquaring both the sides, we get\n\\(\\overrightarrow{\\mathrm{A}}^2+\\overrightarrow{\\mathrm{B}}^2+2 \\overrightarrow{\\mathrm{A}} \\overrightarrow{\\mathrm{B}} \\cos \\theta=\\overrightarrow{\\mathrm{A}}^2+\\overrightarrow{\\mathrm{B}}^2-2 \\overrightarrow{\\mathrm{A}} \\overrightarrow{\\mathrm{B}} \\cos \\theta\\)\nor \\(4 \\overrightarrow{\\mathrm{A}} \\overrightarrow{\\mathrm{B}} \\cos \\theta=0\\) or \\(\\cos \\theta=0\\) (since the scalar or dot product is zero). Therefore angle between \\(\\overrightarrow{\\mathrm{A}}\\) to \\(\\overrightarrow{\\mathrm{B}}\\) is \\(90^{\\circ}\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d75",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2011-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2011",
+            "title": "BITSAT 2011"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e78c6f5bfc7ab78ae5cc",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "With respect to a rectangular cartesian coordinate system, three vectors are expressed as :\n\\(\\vec{a}=4 \\hat{i}-\\hat{j}, \\vec{b}=-3 \\hat{i}+2 \\hat{j}\\) and \\(\\vec{c}=-\\hat{k} \\quad\\) where \\(\\hat{\\mathrm{i}}, \\hat{\\mathrm{j}}, \\hat{\\mathrm{k}}\\) are unit vectors, along the \\(X\\), \\(Y\\) and \\(Z\\)-axis respectively. The unit vector \\(\\hat{r}\\) along the direction of sum of these vector is -",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "6j5Sd",
+              "text": "\\(\\hat{\\mathrm{r}}=\\frac{1}{\\sqrt{3}}(\\hat{\\mathrm{i}}+\\hat{\\mathrm{j}}-\\hat{\\mathrm{k}})\\)",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "3Jesv",
+              "text": "\\(\\hat{\\mathrm{r}}=\\frac{1}{\\sqrt{2}}(\\hat{\\mathrm{i}}+\\hat{\\mathrm{j}}-\\hat{\\mathrm{k}})\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "CXTRZ",
+              "text": "\\(\\hat{\\mathrm{i}}=\\frac{1}{3}(\\hat{\\mathrm{i}}-\\hat{\\mathrm{j}}+\\hat{\\mathrm{k}})\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "W0fPb",
+              "text": "\\(\\hat{\\mathrm{r}}=\\frac{1}{\\sqrt{2}}(\\hat{\\mathrm{i}}+\\hat{\\mathrm{j}}+\\hat{\\mathrm{k}})\\)",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "\\(\\begin{aligned}\n& \\overrightarrow{\\mathrm{r}}=\\overrightarrow{\\mathrm{a}}+\\overrightarrow{\\mathrm{b}}+\\overrightarrow{\\mathrm{c}}=4 \\hat{\\mathrm{i}}-\\hat{\\mathrm{j}}-3 \\hat{\\mathrm{i}}+2 \\hat{\\mathrm{j}}-\\hat{\\mathrm{k}}=\\hat{\\mathrm{i}}+\\hat{\\mathrm{j}}-\\hat{\\mathrm{k}} \\\\\n& \\hat{\\mathrm{r}}=\\frac{\\overrightarrow{\\mathrm{r}}}{|\\mathrm{r}|}=\\frac{\\hat{\\mathrm{i}}+\\hat{\\mathrm{j}}-\\hat{\\mathrm{k}}}{\\sqrt{1^2+1^2+(-1)^2}}=\\frac{\\hat{\\mathrm{i}}+\\hat{\\mathrm{j}}-\\hat{\\mathrm{k}}}{\\sqrt{3}}\n\\end{aligned}\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e78c6f5bfc7ab78ae5cb",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "Which one of the following is the unit vector perpendicular to both \\(\\vec{a}=-\\hat{i}+\\hat{j}+\\hat{k}\\) and \\(\\overrightarrow{\\mathrm{b}}=\\hat{\\mathrm{i}}-\\hat{\\mathrm{j}}+\\hat{\\mathrm{k}}\\) ?",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "PyRnT",
+              "text": "\\(\\frac{\\hat{\\mathrm{i}}+\\hat{\\mathrm{j}}}{\\sqrt{2}}\\)",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "yVTiv",
+              "text": "\\(\\hat{\\mathrm{k}}\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "Xq4Zq",
+              "text": "\\(\\frac{\\hat{\\mathrm{j}}+\\hat{\\mathrm{k}}}{\\sqrt{2}}\\)",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "GAg6j",
+              "text": "\\(\\frac{\\hat{\\mathrm{i}}-\\hat{\\mathrm{j}}}{\\sqrt{2}}\\)",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "According to question \\(\\mathrm{a}=-\\hat{i}+\\hat{j}+\\hat{k}\\) and \\(\\mathrm{b}=\\hat{i}-\\hat{j}+\\hat{k}\\)\nThen, \\(\\mathrm{a} \\times \\mathrm{b}=\\left|\\begin{array}{lll}\\hat{i} & \\hat{j} & \\hat{k} \\\\ -1 & 1 & 1 \\\\ 1 & -1 & 1\\end{array}\\right|\\)\n\\(\\begin{gathered}\n=\\hat{i}[1+1]-\\hat{j}[-1-1]+\\hat{k}[1-1]=2(\\hat{i}+\\hat{j}) \\\\\n\\quad \\text { and }|\\mathrm{a} \\times \\mathrm{b}|=\\sqrt{4+4}=2 \\sqrt{2}\n\\end{gathered}\\)\n\\(\\therefore \\text { Required unit vector }= \\pm \\frac{2(\\hat{i}+\\hat{j})}{2 \\sqrt{2}}= \\pm \\frac{\\hat{i}+\\hat{j}}{\\sqrt{2}}\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "topicId": "64c0e8756f5bfc7ab78aee6e",
+      "title": "Product of 2 vectors",
+      "totalQuestions": 9,
+      "questions": [
+        {
+          "_id": "65b7b87f97ae24e9e2db8cf3",
+          "type": "singleCorrect",
+          "level": 2,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe85",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T14:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 2)",
+              "title": "BITSAT 2023 (Memory Based Paper 2)"
+            }
+          ],
+          "question": {
+            "text": "A vector perpendicular to the plane containing the vectors $\\hat{i}-2 \\hat{j}-\\hat{k}$ and $3 \\hat{i}-2 \\hat{j}-\\hat{k}$ is inclined to the vector $\\hat{i}+\\hat{j}+\\hat{k}$ at an angle",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "nQmeH",
+              "text": "$\\tan ^{-1} \\sqrt{14}$",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "PbGFX",
+              "text": "$\\sec ^{-1} \\sqrt{14}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "m4erq",
+              "text": "$\\tan ^{-1} \\sqrt{15}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "b6tgl",
+              "text": "<br />None of these",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "A vector perpendicular to the plane is<br />$\\begin{aligned}<br />& (\\hat{i}-2 \\hat{j}-\\hat{k}) \\times(3 \\hat{i}-2 \\hat{j}-\\hat{k}) \\\\<br />& =\\left|\\begin{array}{ccc}<br />\\hat{i} & \\hat{j} & \\hat{k} \\\\<br />1 & -2 & -1 \\\\<br />3 & -2 & -1<br />\\end{array}\\right|=-2 \\hat{j}+4 \\hat{k} \\\\<br />& \\Rightarrow \\text { unit vector } \\hat{a}=\\frac{-2 \\hat{j}+4 \\hat{k}}{\\sqrt{4+16}}=\\frac{-2 \\hat{j}+4 \\hat{k}}{2 \\sqrt{5}}<br />\\end{aligned}$<br />Angle between the unit vector and $\\vec{r}=\\hat{i}+\\hat{j}+\\hat{k}$<br />$=\\cos ^{-1} \\frac{\\vec{r} \\cdot \\hat{a}}{|\\vec{r}| \\cdot|\\hat{a}|}=\\cos ^{-1} \\frac{1}{\\sqrt{15}}=\\tan ^{-1} \\sqrt{14}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe85",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T14:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 2)",
+            "title": "BITSAT 2023 (Memory Based Paper 2)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "65b7b87897ae24e9e2db8ca4",
+          "type": "singleCorrect",
+          "level": 3,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "65b7b85fb3be70ed63adbe84",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2023-04-15T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2023 (Memory Based Paper 1)",
+              "title": "BITSAT 2023 (Memory Based Paper 1)"
+            }
+          ],
+          "question": {
+            "text": "If $\\vec{a}=\\hat{i}+\\hat{j}+\\hat{k}, \\vec{a} \\cdot \\vec{b}=1$ and $\\vec{a} \\times \\vec{b}=\\vec{j}-\\vec{k}$, then $\\vec{b}$ is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "0CVlf",
+              "text": "$\\hat{i}-\\hat{j}+\\hat{k}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "3IsiH",
+              "text": "$2 \\hat{j}-\\hat{k}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "miymd",
+              "text": "$2 \\hat{i}$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "WLSMr",
+              "text": "$\\hat{i}$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Given $\\vec{a}=\\hat{i}+\\hat{j}+\\hat{k}, \\vec{a} \\cdot \\vec{b}=1$ and $\\vec{a} \\times \\vec{b}=\\vec{j}-\\vec{k}$,<br />Let $\\bar{b}=b_1 \\hat{i}+b_2 \\hat{j}+b_3 \\widehat{k}$<br />Now, $\\hat{j}-\\widehat{k}=\\bar{a} \\times \\bar{b}=\\left|\\begin{array}{ccc}\\hat{i} & \\hat{j} & \\widehat{k} \\\\ 1 & 1 & 1 \\\\ b_2 & b_2 & b_3\\end{array}\\right|$<br />$\\Rightarrow b_3-b_2=0, b_1-b_3=1, b_2-b_1=-1$<br />$\\Rightarrow b_3=b_2, b_1=b_2+1$<br />Also, $\\bar{a} \\cdot \\bar{b}=1$<br />$\\Rightarrow b_1+b_2+b_3=1$<br />$\\Rightarrow 3 b_2+1=1$<br />$\\Rightarrow b_2=0$<br />$\\Rightarrow b_1=1, b_3=0$<br />Thus, $\\bar{b}=\\hat{i}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "65b7b85fb3be70ed63adbe84",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2023-04-15T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2023 (Memory Based Paper 1)",
+            "title": "BITSAT 2023 (Memory Based Paper 1)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e80e6f5bfc7ab78aea35",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d7d",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2019-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2019",
+              "title": "BITSAT 2019"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "If <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi mathvariant=\"normal\">a</mi><mo>&#8594;</mo></mover><mo>=</mo><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>+</mo><mn>2</mn><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover><mo>+</mo><mn>3</mn><mover><mi mathvariant=\"normal\">k</mi><mo>^</mo></mover><mo>,</mo><mo>&#160;</mo><mover><mi mathvariant=\"normal\">b</mi><mo>&#8594;</mo></mover><mo>=</mo><mo>-</mo><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>+</mo><mn>2</mn><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover><mo>+</mo><mover><mi mathvariant=\"normal\">k</mi><mo>^</mo></mover><mo>,</mo><mo>&#160;</mo><mover><mi mathvariant=\"normal\">c</mi><mo>&#8594;</mo></mover><mo>=</mo><mn>3</mn><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>+</mo><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi mathvariant=\"normal\">a</mi><mo>&#8594;</mo></mover><mo>+</mo><mi>p</mi><mover><mi mathvariant=\"normal\">b</mi><mo>&#8594;</mo></mover></math>&nbsp;is normal to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi mathvariant=\"normal\">c</mi><mo>&#8594;</mo></mover></math>, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi></math> is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "syWbz",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Uxdky",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn></math>",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "dyOOa",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>5</mn></math>",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "Te8HF",
+              "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn></math>",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mover><mi mathvariant=\"normal\">a</mi><mo>&#8594;</mo></mover><mo>+</mo><mi>p</mi><mover><mi mathvariant=\"normal\">b</mi><mo>&#8594;</mo></mover></mrow></mfenced></math> is normal to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover><mi mathvariant=\"normal\">c</mi><mo>&#8594;</mo></mover></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8756;</mo><mo>&#160;</mo><mfenced><mrow><mover><mi mathvariant=\"normal\">a</mi><mo>&#8594;</mo></mover><mo>+</mo><mi>p</mi><mover><mi mathvariant=\"normal\">b</mi><mo>&#8594;</mo></mover></mrow></mfenced><mo>&#183;</mo><mover><mi mathvariant=\"normal\">c</mi><mo>&#8594;</mo></mover><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced><mrow><mfenced><mrow><mn>1</mn><mo>-</mo><mi>p</mi></mrow></mfenced><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>+</mo><mfenced><mrow><mn>2</mn><mo>+</mo><mn>2</mn><mi>p</mi></mrow></mfenced><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover><mo>+</mo><mfenced><mrow><mn>3</mn><mo>+</mo><mi>p</mi></mrow></mfenced><mover><mi mathvariant=\"normal\">k</mi><mo>^</mo></mover></mrow></mfenced><mo>&#183;</mo><mfenced><mrow><mn>3</mn><mover><mi mathvariant=\"normal\">i</mi><mo>^</mo></mover><mo>+</mo><mover><mi mathvariant=\"normal\">j</mi><mo>^</mo></mover></mrow></mfenced><mo>=</mo><mn>0</mn></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>3</mn><mo>-</mo><mn>3</mn><mi>p</mi><mo>+</mo><mn>2</mn><mo>+</mo><mn>2</mn><mi>p</mi><mo>=</mo><mn>0</mn><mo>&#8658;</mo><mi>p</mi><mo>=</mo><mn>5</mn></math></p>",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d7d",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2019-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2019",
+            "title": "BITSAT 2019"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7d26f5bfc7ab78ae828",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d79",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2015-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2015",
+              "title": "BITSAT 2015"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "Let $a, b$ and $c$ be three vectors satisfying $a \\times b=$ $(a \\times c),|a|=|c|=1,|b|=4$ and $|b \\times c|=\\sqrt{15}$. If $b-$\r\n\r\n$2 \\mathrm{c}=\\lambda \\mathrm{a},$ then $\\lambda$ equals",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "j9pW2",
+              "text": "1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "QxN81",
+              "text": "-1",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Q9zaN",
+              "text": "2",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "ZBOan",
+              "text": "-4",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Let $\\theta$ be the angle between $\\mathbf{b}$ and $\\mathbf{c}$. Given, $|\\mathrm{b} \\times \\mathrm{c}|=\\sqrt{15}$\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\Rightarrow|\\mathrm{b} \\| \\mathrm{c}| \\sin \\theta=\\sqrt{15} \\\\\r\n\r\n\\Rightarrow \\sin \\theta=\\frac{\\sqrt{15}}{|\\mathrm{~b}| \\mathrm{c} \\mid} \\\\\r\n\r\n\\Rightarrow \\sin \\theta=\\sqrt{\\frac{15}{4 \\times 1}}=\\frac{\\sqrt{15}}{4} \\\\\r\n\r\n\\quad \\therefore \\cos \\theta=\\sqrt{1-\\frac{15}{16}}=\\frac{1}{\\sqrt{16}}=\\frac{1}{4}\r\n\r\n\\end{array}\r\n\r\n$$\r\n\r\nNow given, $\\mathrm{b}-2 \\mathrm{c}=\\lambda \\mathrm{a} \\Rightarrow\\left|\\mathrm{b}-2 \\mathrm{c}^{2}\\right|=\\mid \\lambda \\mathrm{a}^{2}$\r\n\r\n$$\r\n\r\n\\Rightarrow|\\mathrm{b}|^{2}+4|\\mathrm{c}|-4(\\mathrm{~b} \\cdot \\mathrm{c})=\\lambda^{2}|\\mathrm{a}|^{2}\r\n\r\n$$\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\Rightarrow 16+4-4|\\mathrm{~b} \\| \\mathrm{c}| \\cos \\theta=\\lambda^{2} \\\\\r\n\r\n\\Rightarrow 20-16 \\cos \\theta=\\lambda^{2} \\\\\r\n\r\n\\Rightarrow 20-4=\\lambda^{2} \\Rightarrow \\lambda^{2}=16\\left(\\therefore \\cos \\theta=\\frac{1}{4}\\right) \\\\\r\n\r\n\\Rightarrow \\lambda=\\pm 4\r\n\r\n\\end{array}\r\n\r\n$$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d79",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2015-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2015",
+            "title": "BITSAT 2015"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7c66f5bfc7ab78ae7c1",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d78",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2014-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2014",
+              "title": "BITSAT 2014"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The angle between any two diagonal of a cube is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "PxRAr",
+              "text": "$45^{\\circ}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "bbwwh",
+              "text": "$60^{\\circ}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "Wpr40",
+              "text": "$30^{\\circ}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "1vdWb",
+              "text": "$\\tan ^{-1}(2 \\sqrt{2})$",
+              "isCorrect": true,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "for a unit cube unit vector along the diagonal\r\n\r\n$$\r\n\r\n\\mathrm{OP}=\\frac{1}{\\sqrt{3}}(\\hat{\\mathrm{i}}+\\hat{\\mathrm{j}}+\\hat{\\mathrm{k}})\r\n\r\n$$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/7NTWetRK4yxOBniSvpXeh_Q4dVkdpauFDXCZLGDxbqY.original.fullsize.png\"><br>\r\n\r\nunit vector along the diagonal\r\n\r\n$\\mathrm{CD}=\\frac{1}{\\sqrt{3}}(\\hat{\\mathrm{i}}+\\hat{\\mathrm{j}}-\\hat{\\mathrm{k}})$\r\n\r\n$\\therefore \\cos \\theta=\\frac{1}{3}(1+1-1)=\\frac{1}{3} \\quad \\therefore \\tan \\theta=2 \\sqrt{2}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d78",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2014-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2014",
+            "title": "BITSAT 2014"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a86f5bfc7ab78ae6c5",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 2,
+          "question": {
+            "text": "If $a$.b $=a$.c and $a \\times b=a \\times c$, then correct statement is",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "FaPGn",
+              "text": "$\\mathrm{a} \\|(\\mathrm{b}-\\mathrm{c})$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "P7mwh",
+              "text": "$a \\perp(b-c)$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "SkpB5",
+              "text": "$a=0$ or $b=c$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "LVMoy",
+              "text": "None of these",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "$a . b .=a \\cdot c \\Rightarrow a \\cdot(b-c)=0$\r\n$\\Rightarrow \\mathrm{a}=0 \\mathrm{or} \\mathrm{b}-\\mathrm{c}=0$ or $\\mathrm{a} \\perp(\\mathrm{b}-\\mathrm{c})$\r\n$\\Rightarrow \\mathrm{a}=0$ or $\\mathrm{b}=\\mathrm{c}$ or $\\mathrm{a} \\perp(\\mathrm{b}-\\mathrm{c})$\r\nAlso a $x b=a x c \\Rightarrow a \\times(b-c)=0$\r\n$\\Rightarrow \\mathrm{a}=0$ or $\\mathrm{b}-\\mathrm{c}=0$ or a $\\|(\\mathrm{b}-\\mathrm{c})$\r\n$\\Rightarrow a=0$ or $b=c$ or $a \\|(b-c)$\r\nObserving to ( 1 ) and ( 2 ) we find that $\\mathrm{a}=0$ or $\\mathrm{b}=\\mathrm{c}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e7a86f5bfc7ab78ae6c4",
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d76",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2012-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2012",
+              "title": "BITSAT 2012"
+            }
+          ],
+          "type": "singleCorrect",
+          "level": 1,
+          "question": {
+            "text": "The unit vector perpendicular to the vectors $6 \\hat{i}+2 \\hat{j}+3 \\hat{k}$ and $3 \\hat{i}-6 \\hat{j}-2 \\hat{k}$ is $-$",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "BlahF",
+              "text": "$\\frac{2 \\hat{i}-3 \\hat{j}+6 \\hat{k}}{7}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "etfyA",
+              "text": "$\\frac{2 \\hat{\\mathrm{i}}-3 \\hat{\\mathrm{j}}-6 \\hat{\\mathrm{k}}}{7}$",
+              "isCorrect": false,
+              "image": null
+            },
+            {
+              "id": "9uRIe",
+              "text": "$\\frac{2 \\hat{\\mathrm{i}}+3 \\hat{\\mathrm{j}}-6 \\hat{\\mathrm{k}}}{7}$",
+              "isCorrect": true,
+              "image": null
+            },
+            {
+              "id": "SXFMq",
+              "text": "$\\frac{2 \\hat{i}+3 \\hat{j}+6 \\hat{k}}{7}$",
+              "isCorrect": false,
+              "image": null
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Unit vector perpendicular to both the given vectors is, $\\frac{(6 \\hat{i}+2 \\hat{j}+3 \\hat{k}) \\times(3 \\hat{i}-6 \\hat{j}-2 \\hat{k})}{|(6 \\hat{i}+2 \\hat{j}+3 \\hat{k}) \\times(3 \\hat{i}-6 \\hat{j}-2 \\hat{k})|}=\\frac{2 \\hat{i}+3 \\hat{j}-6 \\hat{k}}{7}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "questionLabels": [],
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d76",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2012-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2012",
+            "title": "BITSAT 2012"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e78b6f5bfc7ab78ae5ca",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "If \\((\\vec{a} \\times \\vec{b})^2+(\\vec{a} \\cdot \\vec{b})^2=676\\) and \\(|\\vec{b}|=2\\) then \\(|\\vec{a}|\\) is equal to",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "FkNYp",
+              "text": "13",
+              "image": null,
+              "isCorrect": true
+            },
+            {
+              "id": "5BYAL",
+              "text": "26",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "JJTZS",
+              "text": "39",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "QEbmf",
+              "text": "None of these",
+              "image": null,
+              "isCorrect": false
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "\\(\\begin{aligned} &(\\vec{a} \\times \\vec{b})^2+(\\vec{a} \\cdot \\vec{b})^2=676 \\\\ &(|\\vec{a}| \\cdot|\\vec{b}| \\sin \\theta \\hat{n})^2+(|\\vec{a}| \\cdot|\\vec{b}| \\cos \\theta)^2=676 \\\\ & \\Rightarrow a^2 b^2 \\sin ^2 \\theta+a^2 b^2 \\cos ^2 \\theta=676\\left[(\\hat{n})^2=1\\right] \\\\ & a^2 b^2\\left(\\sin ^2 \\theta+\\cos ^2 \\theta\\right)=676 \\Rightarrow a^2=\\frac{676}{b^2}=\\frac{676}{4} \\\\ &|\\vec{a}|=\\sqrt{\\frac{676}{4}} \\Rightarrow|\\vec{a}|=\\frac{26}{2} \\Rightarrow|\\vec{a}|=13\\end{aligned}\\)",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        },
+        {
+          "_id": "64c0e78b6f5bfc7ab78ae5c9",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "61a8bf0fc821b6514e527d74",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2010-04-30T09:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2010",
+              "title": "BITSAT 2010"
+            }
+          ],
+          "question": {
+            "text": "The solution of differential equation \\(2 x \\frac{d y}{d x}-y=3\\) represents a family of",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "Ug7u2",
+              "text": "circles",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "RKx7K",
+              "text": "straight lines",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "UTjLW",
+              "text": "ellipses",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "UUZfj",
+              "text": "parabola",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "We have, \\(2 x \\frac{d y}{d x}=y+3 \\Rightarrow \\frac{2}{y+3} d y=\\frac{d x}{x}\\) integrating, \\(2 \\ln (y+3)=\\ln x+\\ln c=\\ln c x\\)\n\\(\\Rightarrow \\ln (y+3)^2=\\ln \\mathrm{cx} \\Rightarrow(y+3)^2=\\mathrm{cx}\\)\nwhich is a family of parabolas.",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "61a8bf0fc821b6514e527d74",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2010-04-30T09:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2010",
+            "title": "BITSAT 2010"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "topicId": "67726db2c49e8ef28ee2b4b9",
+      "title": "Scalar Triple Product",
+      "totalQuestions": 1,
+      "questions": [
+        {
+          "_id": "67726d19c49e8ef28ee2b438",
+          "type": "singleCorrect",
+          "level": 1,
+          "questionLabels": [],
+          "previousYearPapers": [
+            {
+              "_id": "67726ce6d221dc77889e6416",
+              "examId": "615d7713c52ffa3c944600e3",
+              "heldOn": "2024-04-15T19:00:00.000Z",
+              "isVisible": true,
+              "shortName": "2024 (Memory Based Paper 3)",
+              "title": "BITSAT 2024 (Memory Based Paper 3)"
+            }
+          ],
+          "question": {
+            "text": "Let $\\mathbf{a}=\\hat{\\mathbf{i}}-\\hat{\\mathbf{k}}, \\mathbf{b}=x \\hat{\\mathbf{i}}+\\hat{\\mathbf{j}}+(1-x) \\hat{\\mathbf{k}}$ and $\\mathbf{c}=y \\hat{\\mathbf{i}}+x \\hat{\\mathbf{j}}+(1+x-y) \\hat{\\mathbf{k}}$. Then, $[\\mathbf{a} \\mathbf{b} \\mathbf{~ c}]$ depends on",
+            "image": null
+          },
+          "options": [
+            {
+              "id": "HbgKx",
+              "text": "only $y$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "ENTQO",
+              "text": "only $x$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "qzRpr",
+              "text": "both $x$ and $y$",
+              "image": null,
+              "isCorrect": false
+            },
+            {
+              "id": "wRNV2",
+              "text": "neither $x$ nor $y$",
+              "image": null,
+              "isCorrect": true
+            }
+          ],
+          "correctValue": null,
+          "solution": {
+            "text": "Here, $[a b c]=|a \\cdot(b \\times c)|$\nNow, according to question,\n$\\begin{aligned}\n{\\left[\\begin{array}{lll}\na & b c\n\\end{array}\\right] } & =\\left|\\begin{array}{ccc}\n1 & 0 & -1 \\\\\nx & 1 & 1 - x \\\\\ny & x & 1+x-y\n\\end{array}\\right| \\\\\n& =1(1+x-y-x(1-x))-1\\left(x^2-y\\right) \\\\\n& =1+x-y-x+x^2-x^2+y \\\\\n& =1 \\\\\n& =\\text { Independent of } x \\text { and } y .\n\\end{aligned}$",
+            "image": null
+          },
+          "videoSolution": null,
+          "syllabusCategory": "noChange",
+          "questionStructure": [
+            "default"
+          ],
+          "previousYear": {
+            "_id": "67726ce6d221dc77889e6416",
+            "examId": "615d7713c52ffa3c944600e3",
+            "heldOn": "2024-04-15T19:00:00.000Z",
+            "isVisible": true,
+            "shortName": "2024 (Memory Based Paper 3)",
+            "title": "BITSAT 2024 (Memory Based Paper 3)"
+          },
+          "evalStatus": "notAttempted",
+          "lastPracticed": null
+        }
+      ]
+    }
+  ]
+}

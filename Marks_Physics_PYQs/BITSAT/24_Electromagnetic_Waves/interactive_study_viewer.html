@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Electromagnetic Waves PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>⚡ BITSAT &bull; Electromagnetic Waves</h1>
+        <div class="sub">Physics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 24, "chapterId": "61e7bd75cfe22022f28241f6", "chapter": "Electromagnetic Waves", "exam": "BITSAT", "subject": "Physics", "totalTopics": 2, "totalQuestions": 10, "downloadTime": "2026-10-08 20:28:13", "topics": [{"index": 1, "topicId": "64c0e85a6f5bfc7ab78aed34", "title": "Electromagnetic Waves and Maxwell's equations", "totalQuestions": 9, "questions": [{"_id": "67726d10c49e8ef28ee2b3f8", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "A parallel plate capacitor consists of two circular plates of radius $R=0.1 \\mathrm{~m}$. They are separated by a short distance. If electric field between the capacitor plates changes as $\\frac{d E}{d t}=6 \\times 10^{13} \\frac{\\mathrm{~V}}{\\mathrm{~m} \\times \\mathrm{s}}$, then the value of displacement current is", "image": null}, "options": [{"id": "ijhBW", "text": "15.25 A", "image": null, "isCorrect": false}, {"id": "Kld9N", "text": "6.25 A", "image": null, "isCorrect": false}, {"id": "zLKfm", "text": "16.67 A", "image": null, "isCorrect": true}, {"id": "C5cOf", "text": "4.69 A", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Given, area of plates, $A=\\pi R^2=3.14 \\times(0.1)^2 \\mathrm{~m}^2$ and $\\frac{d E}{d t}=6 \\times 10^{13} \\frac{\\mathrm{~V}}{\\mathrm{~m} \\times \\mathrm{s}}$\nDisplacement current between the plates,\n$\\begin{aligned}\nI_d & =\\varepsilon_0 \\frac{d \\phi}{d t} \\\\\n\\Rightarrow \\quad I_d & =\\varepsilon_0 A\\left(\\frac{d E}{d t}\\right) \\quad\\left[\\because \\frac{d \\phi}{d t}=A \\frac{d E}{d t}\\right] \\\\\n& =8.85 \\times 10^{-12} \\times 3.14 \\times(0.1)^2 \\times 6 \\times 10^{13} \\\\\n\\Rightarrow \\quad I_d & =16.67 \\mathrm{~A}\n\\end{aligned}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726d04c49e8ef28ee2b399", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "Electromagnetic waves travel in a medium with speed of $1.5 \\times 10^8 \\mathrm{~ms}^{-1}$. The relative permeability of the medium is 2.0 . The relative permittivity will be :", "image": null}, "options": [{"id": "RAQJg", "text": "$5$", "image": null, "isCorrect": false}, {"id": "F3615", "text": "$1$", "image": null, "isCorrect": false}, {"id": "4Hxu3", "text": "$4$", "image": null, "isCorrect": false}, {"id": "tqa1I", "text": "$2$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "$v=\\frac{C}{\\sqrt{\\mu_{\\mathrm{r}} \\epsilon_{\\mathrm{r}}}}$\n$\\Rightarrow 1.5 \\times 10^8=\\frac{3 \\times 10^8}{\\sqrt{2 \\times \\epsilon_{\\mathrm{r}}}}$\n$\\Rightarrow 2 \\epsilon_{\\mathrm{T}}=4 \\Rightarrow \\epsilon_{\\mathrm{T}}=2$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87a97ae24e9e2db8cc2", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "If $\\overrightarrow{\\mathrm{E}}$ and $\\overrightarrow{\\mathrm{K}}$ represent electric field and propagation vectors of the EM waves in vacuum, then magnetic field vector is given by: ( $\\omega$ - angular frequency) :", "image": null}, "options": [{"id": "3ZuJi", "text": "$\\frac{1}{\\omega}(\\overrightarrow{\\mathrm{K}} \\times \\overrightarrow{\\mathrm{E}})$", "image": null, "isCorrect": true}, {"id": "DvSMx", "text": "$\\omega(\\overrightarrow{\\mathrm{E}} \\times \\overrightarrow{\\mathrm{K}})$", "image": null, "isCorrect": false}, {"id": "wiCY8", "text": "$\\omega(\\overrightarrow{\\mathrm{K}} \\times \\overrightarrow{\\mathrm{E}})$", "image": null, "isCorrect": false}, {"id": "mkFzp", "text": "$\\overrightarrow{\\mathrm{K}} \\times \\overrightarrow{\\mathrm{E}}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "For an EM wave<br />$\\overrightarrow{\\mathrm{B}}=\\frac{1}{\\omega}(\\overrightarrow{\\mathrm{K}} \\times \\overrightarrow{\\mathrm{E}})$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87297ae24e9e2db8c6c", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "The ratio of average electric energy density and total average energy density of electromagnetic wave is :", "image": null}, "options": [{"id": "cXrKw", "text": "2", "image": null, "isCorrect": false}, {"id": "Qr7fX", "text": "$\\frac{1}{2}$", "image": null, "isCorrect": true}, {"id": "lYn3r", "text": "1", "image": null, "isCorrect": false}, {"id": "qmdWa", "text": "3", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "We have $\\frac{\\mathrm{U}_{\\mathrm{E}}}{\\mathrm{U}_{\\mathrm{T}}}=\\frac{\\mathrm{U}_{\\mathrm{E}}}{\\mathrm{U}_{\\mathrm{E}}+\\mathrm{U}_{\\mathrm{B}}}=\\frac{\\mathrm{U}_{\\mathrm{E}}}{2 \\mathrm{U}_{\\mathrm{E}}}=\\frac{1}{2}$<br />$\\left[\\because \\mathrm{U}_{\\mathrm{E}}=\\mathrm{U}_{\\mathrm{B}}=\\frac{1}{2} \\in_0 \\mathrm{E}_0^2=\\frac{\\mathrm{B}_0^2}{2 \\mu_0}\\right]$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87197ae24e9e2db8c64", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "Which of the following Maxwell's equations is valid for time varying conditions but not valid for static conditions :", "image": null}, "options": [{"id": "y8QE8", "text": "$\\oint \\overrightarrow{\\mathrm{B}} \\cdot \\overrightarrow{\\mathrm{dl}}=\\mu_0 \\mathrm{I}$", "image": null, "isCorrect": false}, {"id": "Hta2p", "text": "$\\oint \\overrightarrow{\\mathrm{E}} \\cdot \\overrightarrow{\\mathrm{dl}}=0$", "image": null, "isCorrect": false}, {"id": "TBh23", "text": "$\\oint \\overrightarrow{\\mathrm{E}} \\cdot \\overrightarrow{\\mathrm{dl}}=-\\frac{\\partial \\phi_{\\mathrm{B}}}{\\partial \\mathrm{t}}$", "image": null, "isCorrect": true}, {"id": "SkAd3", "text": "$\\oint \\overrightarrow{\\mathrm{D}} \\cdot \\overrightarrow{\\mathrm{dA}}=\\mathrm{Q}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "For time varying condition Maxwell's equation, $\\oint \\overrightarrow{\\mathrm{E}} \\cdot \\overrightarrow{\\mathrm{dl}}=-\\frac{\\mathrm{d} \\phi_{\\mathrm{B}}}{\\mathrm{dt}}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e82d6f5bfc7ab78aeb45", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 2, "question": {"text": "An electromagnetic wave is propagating along $X$-axis. At $x=1 \\mathrm{~cm}$ and $t=18 \\mathrm{~s}$, its electric vector $|E|=8 \\mathrm{~V} / \\mathrm{m}$, then the magnitude of its magnetic vector is", "image": null}, "options": [{"id": "eOvfz", "text": "\r\n$266 \\times 10^{-8}$\r\n", "isCorrect": true, "image": null}, {"id": "87QKB", "text": "\r\n$3 \\times 10^{-7}$\r\n", "isCorrect": false, "image": null}, {"id": "S2VLy", "text": "\r\n$3.14 \\times 10^{-8}$\r\n", "isCorrect": false, "image": null}, {"id": "gCJbl", "text": "\r\n$3.16 \\times 10^{-7}$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "As we know that, $\\frac{E}{B}=c$\r\n$$\r\n\\text { so, } B=\\frac{E}{c}=\\frac{8}{3 \\times 10^8}=2.66 \\times 10^{-8}\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ae6f5bfc7ab78ae6f3", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 1, "question": {"text": "Which of the following electromagnetic radiations has the smallest wavelength?", "image": null}, "options": [{"id": "0D5Bx", "text": "Ultraviolet rays", "isCorrect": false, "image": null}, {"id": "n7pwK", "text": "X-rays", "isCorrect": false, "image": null}, {"id": "UFQYe", "text": "$\\gamma$ -rays", "isCorrect": true, "image": null}, {"id": "YCSm7", "text": "Microwaves", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "No Solution", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7906f5bfc7ab78ae5f4", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}], "question": {"text": "An electromagnetic wave passes through space and its equation is given by $\\mathrm{E}=\\mathrm{E}_{0} \\sin (\\omega \\mathrm{t}-\\mathrm{kx})$\nwhere $\\mathrm{E}$ is electric field. Energy density of electromagnetic wave in space is", "image": null}, "options": [{"id": "eTTb4", "text": "$\\frac{1}{2} \\varepsilon_{0} \\mathrm{E}_{0}^{2}$", "image": null, "isCorrect": true}, {"id": "xOqFE", "text": "$\\frac{1}{4} \\varepsilon_{0} \\mathrm{E}_{0}^{2}$", "image": null, "isCorrect": false}, {"id": "ktrtl", "text": "$\\varepsilon_{0} \\mathrm{E}_{0}^{2}$", "image": null, "isCorrect": false}, {"id": "aWePQ", "text": "$2 \\varepsilon_{0} \\mathrm{E}_{0}^{2}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Energy density\n$$\n=\\varepsilon_{0} \\mathrm{E}_{\\mathrm{rm}}^{2}=\\varepsilon_{0}\\left(\\frac{\\mathrm{E}_{0}}{\\sqrt{2}}\\right)^{2}=\\frac{1}{2} \\varepsilon_{0} \\mathrm{E}_{0}^{2}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d75", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2011-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2011", "title": "BITSAT 2011"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7746f5bfc7ab78ae4f9", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "The magnetic field in a travelling electromagnetic wave has a peak value of $20 \\mathrm{nT}$. The peak value of electric field strength is", "image": null}, "options": [{"id": "sbNoo", "text": "$3 \\mathrm{~V} / \\mathrm{m}$", "image": null, "isCorrect": false}, {"id": "V443v", "text": "$6 \\mathrm{~V} / \\mathrm{m}$", "image": null, "isCorrect": true}, {"id": "sOzOi", "text": "$9 \\mathrm{~V} / \\mathrm{m}$", "image": null, "isCorrect": false}, {"id": "cYoDM", "text": "$12 \\mathrm{~V} / \\mathrm{m}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\overrightarrow{\\mathrm{E}}_{0}=\\overrightarrow{\\mathrm{B}}_{0} \\times \\overrightarrow{\\mathrm{C}}$\n$$\n\\left|\\overrightarrow{\\mathrm{E}}_{0}\\right|=\\left|\\mathrm{B}_{0}\\right| \\cdot|\\overrightarrow{\\mathrm{C}}|=20 \\times 10^{-9} \\times 3 \\times 10^{8}=6 \\mathrm{~V} / \\mathrm{m}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e85a6f5bfc7ab78aed35", "title": "X-Rays", "totalQuestions": 1, "questions": [{"_id": "64c0e7756f5bfc7ab78ae4ff", "type": "singleCorrect", "level": 3, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "An X-ray tube is operated at $15 \\mathrm{kV}$. Calculate the upper limit of the speed of the electrons striking the target.", "image": null}, "options": [{"id": "ZWhS6", "text": "$7.26 \\times 10^{7} \\mathrm{~m} / \\mathrm{s}$", "image": null, "isCorrect": true}, {"id": "XHgq9", "text": "$7.62 \\times 10^{7} \\mathrm{~m} / \\mathrm{s}$", "image": null, "isCorrect": false}, {"id": "G7GLm", "text": "$7.62 \\times 10^{7} \\mathrm{~cm} / \\mathrm{s}$", "image": null, "isCorrect": false}, {"id": "826HL", "text": "$7.26 \\times 10^{9} \\mathrm{~m} / \\mathrm{s}$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "The maximum kinetic energy of an electron accelerated through a potential difference of $\\mathrm{V}$ volt is $\\frac{1}{2} \\mathrm{mv}^{2}=\\mathrm{eV}$\n$$\n\\begin{array}{l}\n\\therefore \\text { maximum velocity } \\mathrm{v}=\\sqrt{\\frac{2 \\mathrm{eV}}{\\mathrm{m}}} \\\\\n\\mathrm{v}=\\sqrt{\\frac{2 \\times 1.6 \\times 10^{-19} \\times 15000}{9.1 \\times 10^{-31}}} \\\\\n\\mathrm{v}=7.26 \\times 10^{7} \\mathrm{~m} / \\mathrm{s}\n\\end{array}\n$$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>

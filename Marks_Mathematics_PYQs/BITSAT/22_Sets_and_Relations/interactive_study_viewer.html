@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BITSAT - Sets and Relations PYQs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script src="../../assets/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/auto-render.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+      startup: {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          if (window.renderAllMath) window.renderAllMath();
+        }
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-light: rgba(56, 189, 248, 0.15);
+      --accent: #fbbf24;
+      --success: #4ade80;
+      --success-bg: rgba(74, 222, 128, 0.15);
+      --option-bg: rgba(255, 255, 255, 0.04);
+      --option-border: rgba(255, 255, 255, 0.08);
+      --solution-bg: rgba(15, 23, 42, 0.6);
+      --solution-border: #334155;
+    }
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-light: #e0f2fe;
+      --accent: #d97706;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --option-bg: #f8fafc;
+      --option-border: #cbd5e1;
+      --solution-bg: #f0fdf4;
+      --solution-border: #bbf7d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.75;
+      font-size: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .top-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .top-bar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .title-group h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .title-group .sub {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .controls-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+    .btn:hover { background: var(--card-border); }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 80px 16px;
+    }
+    .topic-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .topic-pill {
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      user-select: none;
+    }
+    .topic-pill:hover { border-color: var(--primary); }
+    .topic-pill.active {
+      background: var(--primary);
+      color: #0f172a;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+    .topic-pill .count {
+      background: rgba(0,0,0,0.15);
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .topic-pill.active .count {
+      background: rgba(0,0,0,0.25);
+      color: #0f172a;
+    }
+    .q-header-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--card-border);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .q-header-banner h2 {
+      margin: 0;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .q-header-banner .badge {
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .q-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    }
+    .q-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .q-number-badge {
+      background: var(--primary);
+      color: #0f172a;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 6px;
+    }
+    .q-exam-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(251, 191, 36, 0.12);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .q-type-tag {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .q-text {
+      font-size: 17px;
+      line-height: 1.85;
+      margin-bottom: 22px;
+      color: var(--text);
+      word-break: break-word;
+    }
+    .q-text img, .solution-inner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 14px 0;
+      background: #ffffff;
+      padding: 10px;
+      border: 1px solid #cbd5e1;
+      display: block;
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+    .option-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--option-bg);
+      border: 1px solid var(--option-border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--primary);
+      min-width: 26px;
+    }
+    .option-body { flex: 1; }
+    .solution-accordion {
+      margin-top: 18px;
+      border-top: 1px dashed var(--card-border);
+      padding-top: 16px;
+    }
+    details {
+      background: var(--solution-bg);
+      border: 1px solid var(--solution-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    summary {
+      padding: 12px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--success);
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      outline: none;
+      font-size: 15px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::before {
+      content: "▶";
+      font-size: 11px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::before { transform: rotate(90deg); }
+    .solution-inner {
+      padding: 18px 20px;
+      border-top: 1px solid var(--solution-border);
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+    .answer-highlight {
+      display: inline-block;
+      background: var(--success-bg);
+      color: var(--success);
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+    .katex { font-size: 1.1em; line-height: 1.2; }
+    .katex-display { margin: 1em 0; overflow-x: auto; padding: 4px 0; }
+    @media print {
+      .top-bar, .topic-pills, .controls-group { display: none !important; }
+      body { background: #fff !important; color: #000 !important; }
+      .q-card { border: 1px solid #ccc !important; box-shadow: none !important; page-break-inside: avoid; margin-bottom: 30px; }
+      details { border: 1px solid #ccc !important; }
+      details[open] { display: block !important; }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="title-group">
+        <h1>📐 BITSAT &bull; Sets and Relations</h1>
+        <div class="sub">Mathematics PYQs &bull; Detailed Step-by-Step Solutions</div>
+      </div>
+      <div class="controls-group">
+        <button class="btn" onclick="window.location.href='../index.html'">🏠 Chapter List</button>
+        <button class="btn" id="toggle-all-btn" onclick="toggleAllSolutions()">👁️ Show Solutions</button>
+        <button class="btn" onclick="toggleTheme()" id="theme-btn">☀️ Light Mode</button>
+        <button class="btn" onclick="window.print()">🖨️ Print / PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="topic-pills" id="topic-pills"></div>
+    <div class="q-header-banner">
+      <h2 id="current-topic-title">Loading...</h2>
+      <span class="badge" id="current-topic-count"></span>
+    </div>
+    <div id="questions-list"></div>
+  </div>
+
+  <script>
+    const data = {"index": 22, "chapterId": "61e7bd7de14c41a6083e62a3", "chapter": "Sets and Relations", "exam": "BITSAT", "subject": "Mathematics", "totalTopics": 3, "totalQuestions": 20, "downloadTime": "2026-10-08 20:37:07", "topics": [{"index": 1, "topicId": "64c0e8666f5bfc7ab78aedba", "title": "Questions on Symmetric Transitive and Reflexive Properties", "totalQuestions": 5, "questions": [{"_id": "67726d0dc49e8ef28ee2b3dc", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}], "question": {"text": "Let $R$ be the relation \"is congruent to\" on the set of all triangles in a plane is", "image": null}, "options": [{"id": "wQvjb", "text": "Reflexive only", "image": null, "isCorrect": false}, {"id": "DbcuY", "text": "Symmetric only", "image": null, "isCorrect": false}, {"id": "igOTr", "text": "Symmetric and reflexive only", "image": null, "isCorrect": false}, {"id": "p5aAf", "text": "Equivalence relation", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Let $S$ denote the set of all triangles in a plane.\nLet $R$ be the relation on $S$ defined by $\\left(\\Delta_1, \\Delta_2\\right) \\in$ $R$\n$\\Rightarrow$ triangle $\\Delta_1 \\cong \\Delta_2$ :\n(i) Let any triangle $\\Delta \\in S$, we have\n$\\Delta_1 \\cong \\Delta_2 \\Rightarrow(\\Delta, \\Delta) \\in R \\forall \\Delta \\in S \\Rightarrow R$ is reflexive on\n(ii) Let $\\Delta_1, \\Delta_2 \\in \\mathrm{~S}$, such that $\\left(\\Delta_1, \\Delta_2\\right) \\in R$, then $\\Delta_1 \\cong \\Delta_2 \\Rightarrow \\Delta_2 \\cong \\Delta_1 \\Rightarrow\\left(\\Delta_2, \\Delta_1\\right) \\in R \\Rightarrow R$ is symmÄ™tric\n(iii) Again, let $\\Delta_1, \\Delta_2, \\Delta_3 \\in \\mathrm{~S}$ such that $\\left(\\Delta_1, \\Delta_2\\right)$ $\\in R$ and\n$\\left(\\Delta_2, \\Delta_3\\right) \\in R \\therefore \\Delta_1 \\cong \\Delta_2 \\cong \\Delta_3$\n$\\therefore\\left(\\Delta_1, \\Delta_2\\right) \\in R$\n$\\Rightarrow R$ is transitive.\n$\\therefore \\mathrm{R}$ is an equivalence relation.", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6415", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 2)", "title": "BITSAT 2024 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ee6f5bfc7ab78ae91d", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 2, "question": {"text": "Let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>=</mo><mo>{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>}</mo></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi></math> be a relation defined by <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi><mo>=</mo><mo>{</mo><mo>(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>)</mo><mo>:</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>&#8712;</mo><mi>A</mi><mo>,</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>5</mn><mo>}</mo></math>.&nbsp;Then,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi></math> is", "image": null}, "options": [{"id": "58cH1", "text": "reflexive and symmetric but not transitive", "isCorrect": false, "image": null}, {"id": "JzdiR", "text": "an equivalence relation", "isCorrect": false, "image": null}, {"id": "KmOoN", "text": "neither reflexive nor transitive", "isCorrect": true, "image": null}, {"id": "8SRI6", "text": "neither reflexive nor symmetric but transitive", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>We first write the elements of the set <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi></math>.</p><p>i.e. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi><mo>=</mo><mo>{</mo><mo>(</mo><mn>1</mn><mo>,</mo><mn>4</mn><mo>)</mo><mo>,</mo><mo>(</mo><mn>4</mn><mo>,</mo><mn>1</mn><mo>)</mo><mo>,</mo><mo>(</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>)</mo><mo>,</mo><mo>(</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo>)</mo><mo>}</mo></math></p><p>Since,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>)</mo><mo>&#8713;</mo><mi>R</mi><mo>&#8658;</mo><mi>R</mi></math> is not reflexive.&nbsp;</p><p>Now as,<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mn>1</mn><mo>,</mo><mn>4</mn><mo>)</mo><mo>&#8712;</mo><mi>R</mi><mo>&#8658;</mo><mo>(</mo><mn>4</mn><mo>,</mo><mn>1</mn><mo>)</mo><mo>&#8712;</mo><mi>R</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>)</mo><mo>&#8712;</mo><mi>R</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mo>(</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo>)</mo><mo>&#8712;</mo><mi>R</mi></math></p><p>So,&nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi></math> is symmetric&nbsp;</p><p>Now, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mn>1</mn><mo>,</mo><mn>4</mn><mo>)</mo><mo>&#8712;</mo><mi>R</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mn>4</mn><mo>,</mo><mn>1</mn><mo>)</mo><mo>&#8712;</mo><mi>R</mi></math></p><p>Thus, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi></math> is not transitive.</p><p>Hence, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>R</mi></math> is symmetric but neither reflexive nor transitive.</p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7d66f5bfc7ab78ae843", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 1, "question": {"text": "If $\\rho=\\left\\{(x, y) \\mid x^{2}+y^{2}=1 ; x, y \\in \\mathbb{R}\\right\\}$. Then, $\\rho$ is", "image": null}, "options": [{"id": "AmIL4", "text": "reflexive", "isCorrect": false, "image": null}, {"id": "xsz3C", "text": "symmetric", "isCorrect": true, "image": null}, {"id": "fOZ5N", "text": "transitive", "isCorrect": false, "image": null}, {"id": "xYy5E", "text": "anti-symmetric", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Obviously, the relation is not reflexive and transitive, but it is symmetric, because $x^{2}+x^{2}=2 x^{2} \\neq 1$\r\n\r\n$$\r\n\r\n\\begin{array}{l}\r\n\r\n\\text { and } x^{2}+y^{2}=1, y^{2}+z^{2}=1 \\\\\r\n\r\n\\Rightarrow x^{2}+z^{2}=1 \\\\\r\n\r\n\\text { But } x^{2}+y^{2}=1 \\Rightarrow y^{2}+x^{2}=1\r\n\r\n\\end{array}\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7c46f5bfc7ab78ae7b4", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 1, "question": {"text": "Let $R=\\{(3,3),(6,6),(9,9),(12,12),(6,12), (3,9),(3,12),(3,6)$ be a relation on the set $A=\\{3,6,9,12\\}$. Then, the relation is", "image": null}, "options": [{"id": "z60sX", "text": "an equivalence relation", "isCorrect": false, "image": null}, {"id": "CeT7N", "text": "reflexive and symmetric", "isCorrect": false, "image": null}, {"id": "wzjOr", "text": "reflexive and transitive", "isCorrect": true, "image": null}, {"id": "jUChn", "text": "onlyreflexive", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$(3,3),(6,6),(9,9),(12,12), \\in R$.\r\n\r\n$R$ isnot symmetricas (6,12)$\\notin R$ but (12,6)$\\in R$ $R$ is transitive as the only pair which needs verification is (3,6) and (6,12)$\\in R$.\r\n\r\n$$\r\n\r\n\\Rightarrow \\quad(3,12) \\in R\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7b66f5bfc7ab78ae737", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 1, "question": {"text": "Let $R$ be the relation on the set $R$ of all real numbers, defined by $a R b$ If $|a-b| \\leq 1$. Then, $R$ is", "image": null}, "options": [{"id": "A39Tt", "text": "reflexive and symmetric only", "isCorrect": true, "image": null}, {"id": "Lg1PH", "text": "reflexive and transitive only", "isCorrect": false, "image": null}, {"id": "U64r3", "text": "equivalence", "isCorrect": false, "image": null}, {"id": "gPa8H", "text": "None of the above", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Since, $|a-a|=0 \\leq 1,$ so $a R a, \\forall a \\in R$ $\\therefore R$ is reflexive. Now, $a R b \\Rightarrow|a-b| \\leq 1 \\Rightarrow|b-a| \\leq 1 \\Rightarrow b R a$\r\n\r\n$\\therefore R$ is symmetric. But $R$ is not transitive as\r\n\r\n$1 R 2,2 R 3$ but $1 \\not R^{\\prime} 3$\r\n\r\n$$\r\n\r\n[\\because|1-3|=2>1]\r\n\r\n$$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 2, "topicId": "64c0e8666f5bfc7ab78aedb9", "title": "Questions on Venn Diagram", "totalQuestions": 10, "questions": [{"_id": "67726d19c49e8ef28ee2b43e", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}], "question": {"text": "In a statistical investigation of 1003 families of Calcutta, it was found that 63 families has neither a radio nor a TV, 794 families has a radio and 187 has TV. The number of families in that group having both a radio and a TV is", "image": null}, "options": [{"id": "ejQdc", "text": "36", "image": null, "isCorrect": false}, {"id": "36Y3q", "text": "41", "image": null, "isCorrect": true}, {"id": "h380Z", "text": "32", "image": null, "isCorrect": false}, {"id": "FtnsP", "text": "None of these", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "$\\begin{aligned}\n\\text {  Given, } n(R) & =794 \\\\\nn(T) & =187 \\\\\nn(R \\cup T)^{\\prime} & =63 \\\\\nn(\\mathrm{Total}) & =n(R \\cup T)+n(R \\cup T)^{\\prime} \\\\\n\\Rightarrow \\quad 1003 & =n(R \\cup T)+63 \\\\\n\\Rightarrow \\quad n(R \\cup T) & =940\n\\end{aligned}$\nBy set theory\n$\\begin{array}{lc}\n\\Rightarrow & n(R \\cup T)=n(R)+n(T)-n(R \\cap T) \\\\\n\\Rightarrow & 940=794+187-n(R \\cap T) \\\\\n\\Rightarrow & n(R \\cap T)=981-940=41\n\\end{array}$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6416", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T19:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 3)", "title": "BITSAT 2024 (Memory Based Paper 3)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "67726cfec49e8ef28ee2b36b", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "In an examination, $62 \\%$ of the candidates failed in English, 42% in Mathematics and 20% in both. The number of those who passed in both the subjects is", "image": null}, "options": [{"id": "uWXDM", "text": "$11$", "image": null, "isCorrect": false}, {"id": "O4feV", "text": "$16$", "image": null, "isCorrect": true}, {"id": "zBzfF", "text": "$18$", "image": null, "isCorrect": false}, {"id": "FpA7S", "text": "None of these", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/9I5DBY6wMJkndyAmE6yLVCTcpiLnHc7dbS0ZZNkrNDw.original.fullsize.png\"/>\nFrom the given condition,\n$\\mathrm{a}+\\mathrm{c}=62 \\mathrm{k} ; \\mathrm{b}+\\mathrm{c}=42 \\mathrm{k}$ and $\\mathrm{c}=20 \\mathrm{k}$\nHence $\\mathrm{a}=42 \\mathrm{k}$ and $\\mathrm{b}=22 \\mathrm{k}$\nNumber of students who failed in none means passed in both $=\\mathrm{n}=100 \\mathrm{k}-(\\mathrm{a}+\\mathrm{b}+\\mathrm{c})$\n$=100 \\mathrm{k}-(42 \\mathrm{k}+22 \\mathrm{k}+20 \\mathrm{k})=16 \\mathrm{k}$. or $16 \\%$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b87697ae24e9e2db8c90", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}], "question": {"text": "A set $A$ has 3 elements and another set B has 6 elements. Then", "image": null}, "options": [{"id": "d9ubV", "text": "$3 \\leq \\mathrm{n}(\\mathrm{A} \\cup \\mathrm{B}) \\leq 6$", "image": null, "isCorrect": false}, {"id": "Sytl9", "text": "$3 \\leq \\mathrm{n}(\\mathrm{A} \\cup \\mathrm{B}) \\leq 9$", "image": null, "isCorrect": false}, {"id": "UrHYN", "text": "$6 \\leq \\mathrm{n}(\\mathrm{A} \\cup \\mathrm{B}) \\leq 9$", "image": null, "isCorrect": true}, {"id": "ph5qB", "text": "$0 \\leq n(A \\cup B) \\leq 9$", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "We have<br />$\\min n(A \\cup B)=\\max \\{n(A), n(B)\\}=\\max \\{3,6\\}=6$<br />$\\operatorname{Max} n(A \\cup B)=n(A)+n(B)=9$<br />$\\therefore 6 \\leq n(A \\cup B) \\leq 9$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe84", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 1)", "title": "BITSAT 2023 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8326f5bfc7ab78aeb73", "previousYearPapers": [{"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}], "type": "singleCorrect", "level": 1, "question": {"text": "If $A=\\{x: x$ is a multiple of 4$\\}$ and, $B=\\{x: x$ is a multiple of 6$\\}$, then $A \\cap B$ consists of multiples of", "image": null}, "options": [{"id": "ZquZF", "text": "\r\n16\r\n", "isCorrect": false, "image": null}, {"id": "1GQqS", "text": "\r\n12\r\n", "isCorrect": true, "image": null}, {"id": "S0Afh", "text": "\r\n88\r\n", "isCorrect": false, "image": null}, {"id": "7zpNb", "text": "\r\n4", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Let $x \\in A \\cap B$. Then,\r\n$x \\in A$ and $x \\in B$\r\n$\\Rightarrow x$ is a multiple of 4 and $x$ is a multiple of 6\r\n$\\Rightarrow x$ is a multiple of 4 and 6 both\r\n$\\therefore x$ is a multiple of 12", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "64c0e679aef333185c6bb44d", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2022-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2022", "title": "BITSAT 2022"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e8196f5bfc7ab78aea96", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}], "type": "singleCorrect", "level": 1, "question": {"text": "In a statistical investigation of 1003 families of Calcutta, it was found that 63 families has neither a radio nor a T.V, 794 families has a radio and 187 has T.V. The number of families in that group having both a radio and a T.V is", "image": null}, "options": [{"id": "hG8B4", "text": "36", "isCorrect": false, "image": null}, {"id": "JHRGI", "text": "41", "isCorrect": true, "image": null}, {"id": "B7wk1", "text": "32", "isCorrect": false, "image": null}, {"id": "vbDa2", "text": "None of these", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/9Jni0yQvN0bRVYO4WI8L2yws0JP2EPtvxPPdAPz7vIs.original.fullsize.png\"><br>\r\n\r\nLet $\\mathrm{R}$ be the set of families having a radio and $T$ the set families having a T.V. then $\\mathrm{n}(\\mathrm{R} \\cup \\mathrm{T})=$ The number of families having at least on of the radio and $\\mathrm{T} \\mathrm{V}=1003-63=940$ $n(\\mathrm{R})=794$ and $\\mathrm{n}(\\mathrm{T})=187$\r\n\r\nLet $x$ families have both a radio and a T.V. Then number of families who have only radio $=$ $794-x$\r\n\r\nAnd the number of families who have only T.V. $=187-x$\r\n\r\nErom Venn diagram, $794-x+x-187-x=940$ $\\Rightarrow 981-x=940$ or $x=981-940=41$\r\n\r\nHence, the required number of families having both a radio and a T.V.=41", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7e", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2020-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2020", "title": "BITSAT 2020"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7ef6f5bfc7ab78ae91f", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}], "type": "singleCorrect", "level": 1, "question": {"text": "Let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math> be two sets such that <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>&#8745;</mo><mi>X</mi><mo>=</mo><mi>B</mi><mo>&#8745;</mo><mi>X</mi><mo>=</mo><mi>&#981;</mi></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>&#8746;</mo><mi>X</mi><mo>=</mo><mi>B</mi><mo>&#8746;</mo><mi>X</mi></math> for same set <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>X</mi></math>. Then,", "image": null}, "options": [{"id": "cHmQN", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>=</mo><mi>B</mi></math>", "isCorrect": true, "image": null}, {"id": "ECbym", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>=</mo><mi>X</mi></math>", "isCorrect": false, "image": null}, {"id": "A9rtj", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi><mo>=</mo><mi>X</mi></math>", "isCorrect": false, "image": null}, {"id": "0ktSR", "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>&#8746;</mo><mi>B</mi><mo>=</mo><mi>X</mi></math>", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "<p>Given, that, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>&#8746;</mo><mi>X</mi><mo>=</mo><mi>B</mi><mo>&#8746;</mo><mi>X</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>A</mi><mo>&#8745;</mo><mo>(</mo><mi>A</mi><mo>&#8746;</mo><mi>X</mi><mo>)</mo><mo>=</mo><mi>A</mi><mo>&#8745;</mo><mo>(</mo><mi>B</mi><mo>&#8746;</mo><mi>X</mi><mo>)</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>(</mo><mi>A</mi><mo>&#8745;</mo><mi>A</mi><mo>)</mo><mo>&#8746;</mo><mo>(</mo><mi>A</mi><mo>&#8745;</mo><mi>X</mi><mo>)</mo><mo>=</mo><mo>(</mo><mi>A</mi><mo>&#8745;</mo><mi>B</mi><mo>)</mo><mo>&#8746;</mo><mo>(</mo><mi>A</mi><mo>&#8745;</mo><mi>X</mi><mo>)</mo></math></p><p>[Using distributive law]</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>A</mi><mo>&#8746;</mo><mi>&#981;</mi><mo>=</mo><mo>(</mo><mi>A</mi><mo>&#8745;</mo><mi>B</mi><mo>)</mo><mo>&#8746;</mo><mi>&#981;</mi><mo>&#160;</mo><mo>[</mo><mo>&#8757;</mo><mi>A</mi><mo>&#8745;</mo><mi>X</mi><mo>=</mo><mi>&#981;</mi><mo>]</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>&#160;</mo><mi>A</mi><mo>=</mo><mi>A</mi><mo>&#8745;</mo><mi>B</mi></math>&nbsp; &nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>.</mo><mo>.</mo><mo>.</mo><mo>(</mo><mi mathvariant=\"normal\">i</mi><mo>)</mo></math></p><p>Again, consider <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>&#8746;</mo><mi>X</mi><mo>=</mo><mi>B</mi><mo>&#8746;</mo><mi>X</mi></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>B</mi><mo>&#8745;</mo><mo>(</mo><mi>A</mi><mo>&#8746;</mo><mi>X</mi><mo>)</mo><mo>=</mo><mi>B</mi><mo>&#8745;</mo><mo>(</mo><mi>B</mi><mo>&#8746;</mo><mi>X</mi><mo>)</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>(</mo><mi>B</mi><mo>&#8745;</mo><mi>A</mi><mo>)</mo><mo>&#8746;</mo><mo>(</mo><mi>B</mi><mo>&#8745;</mo><mi>X</mi><mo>)</mo><mo>=</mo><mo>(</mo><mi>B</mi><mo>&#8745;</mo><mi>B</mi><mo>)</mo><mo>&#8746;</mo><mo>(</mo><mi>B</mi><mo>&#8745;</mo><mi>X</mi><mo>)</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mo>(</mo><mi>B</mi><mo>&#8745;</mo><mi>A</mi><mo>)</mo><mo>&#8746;</mo><mi>&#981;</mi><mo>=</mo><mi>B</mi><mo>&#8746;</mo><mi>&#981;</mi><mo>[</mo><mi>B</mi><mo>&#8745;</mo><mi>X</mi><mo>=</mo><mi>&#981;</mi><mo>]</mo></math></p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>&#8658;</mo><mi>A</mi><mo>&#8745;</mo><mi>B</mi><mo>=</mo><mi>B</mi></math>&nbsp; &nbsp;<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>.</mo><mo>.</mo><mo>.</mo><mo>(</mo><mi>ii</mi><mo>)</mo></math></p><p>Thus from Eq. <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi mathvariant=\"normal\">i</mi><mo>)</mo></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mi>ii</mi><mo>)</mo></math>, we get</p><p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>=</mo><mi>B</mi></math></p>", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7b", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2017-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2017", "title": "BITSAT 2017"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7d26f5bfc7ab78ae825", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}], "type": "singleCorrect", "level": 2, "question": {"text": "Universal set,\r\n$U=\\left\\{x \\mid x^{5}-6 x^{4}+11 x^{3}-6 x^{2}=0\\right\\}$\r\n $A=\\left\\{x \\mid x^{2}-5 x+6=0\\right\\}$  $\\mathrm{B}=\\left\\{\\mathrm{x} \\mid \\mathrm{x}^{2}-3\\mathrm{x}+2=0\\right\\}$\r\n\r\nWhat is $(A \\cap B)^{\\prime}$ equal to ?", "image": null}, "options": [{"id": "qZAbs", "text": "{1,3}", "isCorrect": false, "image": null}, {"id": "2T3KF", "text": "{1,2,3}", "isCorrect": false, "image": null}, {"id": "sUt3I", "text": "{0,1,3}", "isCorrect": true, "image": null}, {"id": "kXZgB", "text": "{0,1,2,3}", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$U=\\left\\{x: x^{5}-6 x^{4}+11 x^{3}-6 x^{2}=0\\right\\}$\r\n\r\nSolving for values of $x$, we get $\\mathrm{U}=\\{0,1,2,3\\}$\r\n\r\n$\\mathrm{A}=\\left\\{\\mathrm{x}: \\mathrm{x}^{2}-5 \\mathrm{x}+6=0\\right\\}$\r\n\r\nSolving for values of $x$, we get $\\mathrm{A}=\\{2,3\\}$\r\n\r\nand $\\mathrm{B}=\\left\\{\\mathrm{x}: \\mathrm{x}^{2}-3 \\mathrm{x}+2=0\\right\\}$\r\n\r\nSolving for values of $x$, we get $\\mathrm{B}=\\{2,1\\}$\r\n\r\n$A \\cap B=\\{2\\}$\r\n\r\n$\\therefore(A \\cap B)^{\\prime}=U-(A \\cap B)$\r\n\r\n$=\\{0,1,2,3\\}-\\{2\\}=\\{0,1,3\\}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d79", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2015-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2015", "title": "BITSAT 2015"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7c26f5bfc7ab78ae79e", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}], "type": "singleCorrect", "level": 2, "question": {"text": "The set $(A \\backslash B) \\cup(B \\backslash A)$ is equal to]", "image": null}, "options": [{"id": "KVqxc", "text": "$[A \\backslash(A \\cap B)] \\cap[B \\backslash(A \\cap B)]$", "isCorrect": false, "image": null}, {"id": "51wAO", "text": "$(A \\cup B) \\backslash(A \\cap B)$", "isCorrect": true, "image": null}, {"id": "bk23l", "text": "$A \\backslash(A \\cap B)$", "isCorrect": false, "image": null}, {"id": "9ggXP", "text": "$\\overrightarrow{A \\cap B} \\backslash A \\cup B$", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "Given set can be written as $(A-B) \\cup(B-A)=(A \\cup B)-(A \\cap B)$\r\n\r\n(By definition of symmetric difference) Hence, $(\\mathrm{A} \\backslash \\mathrm{B}) \\cup(\\mathrm{B} \\backslash \\mathrm{A})=(\\mathrm{A} \\cup \\mathrm{B}) \\backslash(\\mathrm{A} \\cap \\mathrm{B})$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d78", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2014-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2014", "title": "BITSAT 2014"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7b46f5bfc7ab78ae721", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}], "type": "singleCorrect", "level": 2, "question": {"text": "A class has 175 students. The following data shows the number of students obtaining one or more subjects. Mathematics 100 , Physics 70 , Chemistry 40; Mathematics and Physics 30 , Mathematics and Chemistry 28 , Physics and Chemistry 23; Mathematics, Physics and Chemistry $18 .$ How many students have offered Mathematics alone?", "image": null}, "options": [{"id": "ykVUR", "text": "35", "isCorrect": false, "image": null}, {"id": "Fko5T", "text": "48", "isCorrect": false, "image": null}, {"id": "bFTYs", "text": "60", "isCorrect": true, "image": null}, {"id": "0WSS1", "text": "22", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\begin{aligned} & n(\\mathrm{M} \\text { alone }) \\\\ &=n(\\mathrm{M})-n(\\mathrm{M} \\cap \\mathrm{C})-n(\\mathrm{M} \\cap \\mathrm{P})+n(\\mathrm{M} \\cap \\mathrm{C} \\cap \\mathrm{P}) \\\\ &=100-28-30+18=60 \\end{aligned}$\r\n\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/4cmZ9HmBbcB8qSB0F-frwWesAJkLfXEnrdlHo_3SXNQ.original.fullsize.png\">", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d77", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2013-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2013", "title": "BITSAT 2013"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7a46f5bfc7ab78ae6a4", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}], "type": "singleCorrect", "level": 1, "question": {"text": "Let A and B be two sets then $(\\mathrm{A} \\cup \\mathrm{B}) \\cup\\left(\\mathrm{A}^{\\prime} \\cap \\mathrm{B}\\right)$ is equal to", "image": null}, "options": [{"id": "AgEzL", "text": "$\\mathrm{A}^{\\prime}$", "isCorrect": true, "image": null}, {"id": "12HoG", "text": "$\\mathrm{A}$", "isCorrect": false, "image": null}, {"id": "N9E5d", "text": "B'", "isCorrect": false, "image": null}, {"id": "o7zmb", "text": "None of these", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$\\text { From Venn-Euler's Diagram. }$\r\n<img src=\"https://cdn-question-pool.getmarks.app/pyq/bitsat/8wxGXrdi91NGzVF0HoaaVQ_kkP69EunyYFwoLp4RYVo.original.fullsize.png\"><br>\r\n$\\therefore(\\mathrm{A} \\cup \\mathrm{B})^{\\prime} \\cup\\left(\\mathrm{A}^{\\prime} \\cap \\mathrm{B}\\right)=\\mathrm{A}^{\\prime}$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d76", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2012-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2012", "title": "BITSAT 2012"}, "evalStatus": "notAttempted", "lastPracticed": null}]}, {"index": 3, "topicId": "64c0e8666f5bfc7ab78aedb8", "title": "Questions on number of relations and sets", "totalQuestions": 5, "questions": [{"_id": "67726cfdc49e8ef28ee2b368", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}], "question": {"text": "Number of subsets of set of letter of word 'MONOTONE'.", "image": null}, "options": [{"id": "iNQKj", "text": "$8$", "image": null, "isCorrect": false}, {"id": "z7JAo", "text": "$256$", "image": null, "isCorrect": false}, {"id": "idjRH", "text": "$64$", "image": null, "isCorrect": false}, {"id": "PovbR", "text": "$32$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "Set created out of alphabet of word 'MONO- TONE' is $\\{\\mathrm{M}, \\mathrm{N}, \\mathrm{O}, \\mathrm{T}, \\mathrm{E}\\}$\n$\\therefore$ Total number of subsets $=2^5=32$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "67726ce6d221dc77889e6414", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2024-04-15T09:00:00.000Z", "isVisible": true, "shortName": "2024 (Memory Based Paper 1)", "title": "BITSAT 2024 (Memory Based Paper 1)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "65b7b88097ae24e9e2db8cfb", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}], "question": {"text": "If $n(\\mathrm{~A})=1000, n(\\mathrm{~B})=500$ and if $n(\\mathrm{~A} \\cap \\mathrm{B}) \\geq 1$ and $n(\\mathrm{~A} \\cup \\mathrm{B})=p$, then", "image": null}, "options": [{"id": "7P9uj", "text": "$500 \\leq p \\leq 1000$", "image": null, "isCorrect": false}, {"id": "8M2zb", "text": "$1001 \\leq p \\leq 1498$", "image": null, "isCorrect": false}, {"id": "yOEiz", "text": "$1000 \\leq p \\leq 1498$", "image": null, "isCorrect": false}, {"id": "L6S6t", "text": "$1000 \\leq p \\leq 1499$", "image": null, "isCorrect": true}], "correctValue": null, "solution": {"text": "$\\mathrm{n}(\\mathrm{A})=1000, \\mathrm{n}(\\mathrm{B})=500, \\mathrm{n}(\\mathrm{A} \\cap \\mathrm{B}) \\geq 1$, $n(A \\cup B)=p ; n(A \\cup B)=n(A)+n(B)-n(A \\cap B)$ $\\mathrm{p}=1000+500-\\mathrm{n}(\\mathrm{A} \\cap \\mathrm{B}) \\Rightarrow 1 \\leq \\mathrm{n}(\\mathrm{A} \\cap \\mathrm{B}) \\leq 500$<br />Hence $p \\leq 1499$ and $p \\geq 1000 \\Rightarrow 1000 \\leq p \\leq 1499$", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "65b7b85fb3be70ed63adbe85", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2023-04-15T14:00:00.000Z", "isVisible": true, "shortName": "2023 (Memory Based Paper 2)", "title": "BITSAT 2023 (Memory Based Paper 2)"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7df6f5bfc7ab78ae899", "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}], "type": "singleCorrect", "level": 1, "question": {"text": "Two finite sets have $m$ and $n$ elements. The number of subsets of the first set is 112 more than that of the second set. The values of $m$ and $n$ respectively are,", "image": null}, "options": [{"id": "NvYFq", "text": "4,7", "isCorrect": false, "image": null}, {"id": "cqRRw", "text": "7,4", "isCorrect": true, "image": null}, {"id": "dKyuM", "text": "4,4", "isCorrect": false, "image": null}, {"id": "Kmrsx", "text": "7,7", "isCorrect": false, "image": null}], "correctValue": null, "solution": {"text": "$2^{m}-2^{n}=112 \\Rightarrow 2^{n}\\left(2^{m-n}-1\\right)=16.7$\r\n\r\n$\\quad \\therefore \\quad 2^{n}\\left(2^{m-n}-1\\right)=2^{4}\\left(2^{3}-1\\right)$\r\n\r\nComparing we get $n=4$ and $m-n=3$ $\\Rightarrow n=4$ and $m=7$", "image": null}, "videoSolution": null, "questionLabels": [], "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d7a", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2016-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2016", "title": "BITSAT 2016"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e7886f5bfc7ab78ae5aa", "type": "singleCorrect", "level": 2, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}], "question": {"text": "Let \\(\\mathrm{A}=\\{x: x \\in \\mathrm{R},|x|  < 1\\}\\);\n\\(\\mathrm{B}=\\{x: x \\in \\mathrm{R},|x-1| \\geq 1\\} \\text { and } \\mathrm{A} \\cup \\mathrm{B}=\\mathrm{R}-\\mathrm{D} \\text {, }\\)\nthen the set \\(\\mathrm{D}\\) is", "image": null}, "options": [{"id": "dmMSU", "text": "\\(\\{x: 1  < x \\leq 2\\}\\)", "image": null, "isCorrect": false}, {"id": "KGc2i", "text": "\\(\\{x: 1 \\leq x  < 2\\}\\)", "image": null, "isCorrect": true}, {"id": "WuDWJ", "text": "\\(\\{x: 1 \\leq x \\leq 2\\}\\)", "image": null, "isCorrect": false}, {"id": "CFXpF", "text": "None of these", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "\\(\\begin{aligned}\n& \\mathrm{A}=[x: x \\in \\mathrm{R},-1  < x < 1] \\\\\n& \\mathrm{B}=[x: x \\in \\mathrm{R}: x-1 \\leq-1 \\text { or } x-1 \\geq 1] \\\\\n&=[x: x \\in R: x \\leq 0 \\text { or } x \\geq 2] \\\\\n& \\therefore A \\cup B=R-D,\n\\end{aligned}\\)\nwhere \\(D=[x: x \\in R, 1 \\leq x < 2]\\)", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0fc821b6514e527d74", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2010-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2010", "title": "BITSAT 2010"}, "evalStatus": "notAttempted", "lastPracticed": null}, {"_id": "64c0e77a6f5bfc7ab78ae52b", "type": "singleCorrect", "level": 1, "questionLabels": [], "previousYearPapers": [{"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}], "question": {"text": "If \\(A=\\{1,2,3,4,5\\}\\), then the number of proper subsets of \\(A\\) is", "image": null}, "options": [{"id": "IRsPc", "text": "31", "image": null, "isCorrect": true}, {"id": "fJiMx", "text": "38", "image": null, "isCorrect": false}, {"id": "aKM1z", "text": "48", "image": null, "isCorrect": false}, {"id": "1VrEQ", "text": "54", "image": null, "isCorrect": false}], "correctValue": null, "solution": {"text": "Number of proper subsets of \\(A=2^n-1\\) Given: \\(A=\\{1,2,3,4,5\\}\\)\nHere \\(n=5\\)\n\\(\\therefore\\) no. of proper subsets \\(=2^5-1\\)", "image": null}, "videoSolution": null, "syllabusCategory": "noChange", "questionStructure": ["default"], "previousYear": {"_id": "61a8bf0cc821b6514e527d73", "examId": "615d7713c52ffa3c944600e3", "heldOn": "2009-04-30T09:00:00.000Z", "isVisible": true, "shortName": "2009", "title": "BITSAT 2009"}, "evalStatus": "notAttempted", "lastPracticed": null}]}]};
+    let currentTopicIndex = 0;
+    let allSolutionsOpen = false;
+
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.getAttribute('data-theme') === 'dark';
+      body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+      document.getElementById('theme-btn').textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
+    }
+
+    const pillsContainer = document.getElementById('topic-pills');
+    data.topics.forEach((t, i) => {
+      const pill = document.createElement('div');
+      pill.className = 'topic-pill' + (i === 0 ? ' active' : '');
+      pill.innerHTML = `<span>${t.index}. ${t.title}</span><span class="count">${t.totalQuestions}</span>`;
+      pill.onclick = () => selectTopic(i);
+      pillsContainer.appendChild(pill);
+    });
+
+    function selectTopic(index) {
+      currentTopicIndex = index;
+      document.querySelectorAll('.topic-pill').forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+
+      const topic = data.topics[index];
+      document.getElementById('current-topic-title').textContent = `${topic.index}. ${topic.title}`;
+      document.getElementById('current-topic-count').textContent = `${topic.totalQuestions} Questions`;
+
+      renderQuestions(topic.questions);
+    }
+
+    function renderQuestions(questions) {
+      const container = document.getElementById('questions-list');
+      let html = '';
+
+      questions.forEach((q, idx) => {
+        const papers = (q.previousYearPapers || []).map(p => p.title).join(', ') || 'BITSAT';
+        const qText = q.question ? q.question.text : '';
+        const options = q.options || [];
+        const isNumeric = q.type === 'numerical';
+        let correctOptionText = '';
+
+        html += `
+          <div class="q-card">
+            <div class="q-meta-line">
+              <span class="q-number-badge">Q${idx + 1}</span>
+              <span class="q-exam-tag">${papers}</span>
+              <span class="q-type-tag">${isNumeric ? 'Numeric / Integer' : 'Single Correct'} &bull; Level ${q.level || 1}</span>
+            </div>
+            <div class="q-text">${qText}</div>
+        `;
+
+        if (options && options.length > 0) {
+          html += '<div class="options-grid">';
+          options.forEach((opt, oIdx) => {
+            const letter = String.fromCharCode(65 + oIdx);
+            const optText = opt.text || opt;
+            if (opt.isCorrect) correctOptionText = `(${letter}) ${optText}`;
+            html += `
+              <div class="option-row">
+                <span class="option-letter">(${letter})</span>
+                <div class="option-body">${optText}</div>
+              </div>
+            `;
+          });
+          html += '</div>';
+        }
+
+        const val = q.correctValue;
+        const solText = (q.solution && q.solution.text) ? q.solution.text : '';
+
+        html += `
+          <div class="solution-accordion">
+            <details class="q-solution-details">
+              <summary>View Answer & Detailed Solution</summary>
+              <div class="solution-inner">
+                ${correctOptionText ? `<div class="answer-highlight">Correct Option: ${correctOptionText}</div>` : ''}
+                ${(val !== null && val !== undefined) ? `<div class="answer-highlight">Correct Value: ${val}</div>` : ''}
+                ${solText ? `<div><b>Step-by-Step Solution:</b><br/>${solText}</div>` : '<div><em>No solution explanation provided.</em></div>'}
+              </div>
+            </details>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      renderAllMath(container);
+    }
+
+    function renderAllMath(target) {
+      const el = target || document.getElementById('questions-list');
+      if (!el) return;
+
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(el, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false
+          });
+        } catch (e) {
+          console.warn('KaTeX error:', e);
+        }
+      } else if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise([el]).catch(err => console.log('MathJax error:', err));
+      } else {
+        setTimeout(() => renderAllMath(el), 120);
+      }
+    }
+
+    function toggleAllSolutions() {
+      allSolutionsOpen = !allSolutionsOpen;
+      document.querySelectorAll('.q-solution-details').forEach(d => {
+        d.open = allSolutionsOpen;
+      });
+      document.getElementById('toggle-all-btn').textContent = allSolutionsOpen ? '🙈 Hide Solutions' : '👁️ Show Solutions';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => selectTopic(0));
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      selectTopic(0);
+    }
+  </script>
+</body>
+</html>
