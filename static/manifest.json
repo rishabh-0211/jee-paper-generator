@@ -1,0 +1,21 @@
+{
+  "name": "JEE Exam Paper Generator",
+  "short_name": "JEE Generator",
+  "description": "Generate customized JEE Main, Advanced, and BITSAT exam papers with KaTeX math and solutions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1120",
+  "theme_color": "#38bdf8",
+  "icons": [
+    {
+      "src": "/static/app-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/app-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
